@@ -1,0 +1,555 @@
+MODE: ECONOMY
+EFFORT: HIGH
+
+PROJECT: BIOL 250 HUMAN ANATOMY MOBILE STUDY APP
+
+THIS IS THE FIRST IMPLEMENTATION PASS.
+
+Build a mobile-first anatomy study application from the course source files currently available in this Replit workspace.
+
+Do not assume missing files, answers, images, labels, rights, routes, or completed work exist.
+Do not invent anatomy content.
+Do not silently supplement the supplied course material with general anatomy knowledge.
+If a source is absent, incomplete, unclear, duplicated, or visually unreadable, record that explicitly.
+
+======================================================================
+CORE DEVELOPMENT RULES
+======================================================================
+
+1. INSPECT BEFORE WRITING
+
+Before changing the project:
+
+- inspect every anatomy source file available in the workspace
+- inspect any existing package.json, Expo configuration, TypeScript configuration, routes, source folders, assets, and tests
+- determine whether this is a blank project or whether useful code already exists
+- do not create parallel systems without first checking whether equivalent infrastructure already exists
+
+2. ONE SOURCE OF TRUTH
+
+Course content must never be hardcoded independently into screens.
+
+Create one canonical content system for:
+
+- source documents
+- labs/modules
+- anatomy structures
+- aliases
+- images/assets
+- hotspots
+- relationships/functions
+- questions
+- answer options
+- pathways/sequences
+- mastery/progress data
+
+Study screens, practice questions, practical exams, missed-item review, and progress must all derive from that same content system.
+
+3. DO NOT CONFUSE VALIDATION LEVELS
+
+Keep these statuses separate:
+
+- code implemented
+- TypeScript clean
+- automated tests passing
+- iOS export passing
+- Android export passing
+- fixture/render verification
+- physical-device verification
+- content manually verified
+
+Never describe one status as proving another.
+
+4. NO RANDOM PACKAGE CHURN
+
+Use the smallest stable Expo/React Native dependency set possible.
+
+Do not install packages speculatively.
+
+If the same technical failure occurs twice, stop patching symptoms and inspect the actual dependency tree, Metro configuration, Expo configuration, imports, package-manager state, and architecture before continuing.
+
+5. PRESERVE WORKING SYSTEMS
+
+A later content, label, image, or layout repair must not redesign unrelated navigation, storage, question logic, or visual architecture.
+
+6. BATCH QA
+
+Do not ask for repeated physical phone checks after tiny changes.
+
+Use automated tests, fixtures, developer data, and preview states during implementation.
+
+Physical-device QA will be done later as one consolidated pass.
+
+======================================================================
+PRODUCT MODEL
+======================================================================
+
+This is not primarily a flashcard app.
+
+It is an IMAGE-FIRST ANATOMY LAB-PRACTICAL STUDY APP.
+
+The course source material includes:
+
+- anatomical models
+- labeled and unlabeled diagrams
+- numbered and lettered structures
+- histology images
+- neuron/cell diagrams
+- bones and landmarks
+- muscles
+- organs
+- pathways
+- cranial and peripheral nerves
+- course quiz questions
+- lab review material
+- practical-style image questions
+
+The mobile UI must be designed around recognizing structures visually.
+
+======================================================================
+PRIMARY MOBILE NAVIGATION
+======================================================================
+
+Use four bottom tabs:
+
+1. STUDY
+2. PRACTICE
+3. MISSED
+4. PROGRESS
+
+Keep the navigation simple.
+
+Do not add social features, accounts, authentication, backend services, payments, cloud sync, or other infrastructure in this version.
+
+The app should function offline after installation.
+
+Use the existing project-wide typography direction if present.
+If no typography system exists, use Tinos as the app serif and keep the UI clean, readable, compact, and appropriate for dense academic material.
+
+======================================================================
+STUDY TAB
+======================================================================
+
+The Study tab is also the main landing experience.
+
+Organize content primarily by the actual course labs/modules represented in the source material.
+
+Do not invent lab numbering.
+
+Each module card should show:
+
+- lab/module number when supplied
+- title
+- progress/mastery
+- number of verified study items
+- number of exam-priority items if known
+
+Inside a module provide:
+
+LEARN
+- labeled image or model
+- structure names
+- concise source-supported information
+- optional function/location/relationship where supplied
+- source reference
+
+RECALL
+- same material with labels hidden
+- tap or reveal individual answers
+- reveal-all control
+
+Do not force users through long text before seeing the anatomy image.
+
+======================================================================
+PRACTICE TAB
+======================================================================
+
+The architecture must support these question types:
+
+- image identification
+- hotspot / tap-the-structure
+- letter or number identification
+- multiple choice
+- select-all-that-apply
+- typed recall
+- matching
+- ordered sequence/pathway
+- bone laterality
+- muscle action
+- muscle origin/insertion
+- function/relationship
+- histology identification
+
+Not every type must be populated during this first pass, but the data model must support them cleanly.
+
+Practice session controls should eventually support:
+
+- module selection
+- exam-priority-only toggle
+- question type
+- question count
+- missed/weak material emphasis
+
+======================================================================
+MISSED TAB
+======================================================================
+
+Every incorrect answer should be capable of entering a persistent missed-item queue.
+
+The student must be able to:
+
+- review missed structures
+- retry them
+- see the correct answer after committing an answer
+- clear an item through later successful recall
+- filter by module
+
+Do not destroy the historical attempt record simply because an item is later answered correctly.
+
+======================================================================
+PROGRESS TAB
+======================================================================
+
+Track progress at STRUCTURE level, not only module level.
+
+Use simple deterministic states:
+
+- New
+- Learning
+- Needs Review
+- Strong
+- Mastered
+
+Do not invent a complicated spaced-repetition algorithm in this first pass.
+
+Track:
+
+- attempts
+- correct answers
+- incorrect answers
+- recent performance
+- mastery state
+- module progress
+
+======================================================================
+ANATOMY CONTENT SCHEMA
+======================================================================
+
+Create a strongly typed model equivalent to the following concepts.
+
+Exact implementation may differ if there is a cleaner TypeScript design, but all information below must remain representable.
+
+SOURCE
+
+- id
+- filename
+- hash
+- pageCount
+- title
+- course/lab association
+- source type
+- attribution/license status
+- notes
+- verification status
+
+MODULE
+
+- id
+- lab number when supplied
+- title
+- ordering
+- source IDs
+- visible/published status
+
+STRUCTURE
+
+- id
+- canonical name
+- accepted aliases
+- module ID
+- structure category
+- source reference
+- source page
+- examPriority
+- verificationStatus
+
+ASSET
+
+- id
+- source ID
+- source page
+- local asset path
+- asset type:
+  - diagram
+  - model
+  - histology
+  - cadaver
+  - syndaver
+  - gross specimen
+  - worksheet
+- labeled/unlabeled status
+- attribution/license
+- verificationStatus
+
+QUESTION
+
+- id
+- module ID
+- structure ID or related structure IDs
+- task type
+- prompt
+- asset ID when applicable
+- answer
+- accepted aliases
+- distractors/options when applicable
+- explanation when source-supported
+- source ID
+- source page
+- examPriority
+- verificationStatus
+
+HOTSPOT
+
+Store hotspot positions as normalized coordinates, not device pixels:
+
+- x from 0 to 1
+- y from 0 to 1
+- radius relative to image size
+
+This is required so hotspots remain aligned when images resize on different devices.
+
+Additional useful fields:
+
+- anatomical view
+- laterality required
+- orientation
+- specimen type
+
+======================================================================
+SOURCE AUDIT
+======================================================================
+
+Before importing large amounts of content, create:
+
+docs/CONTENT_INVENTORY.md
+docs/ARCHITECTURE.md
+docs/CONTENT_RULES.md
+content/sources.json
+content/module-manifest.json
+
+For every available anatomy source file record:
+
+- exact filename
+- cryptographic hash
+- page count
+- content type
+- represented lab/system
+- useful pages
+- whether mostly text or image-based
+- whether it contains answers
+- whether it appears duplicated
+- whether attribution/license information is visible
+- unresolved issues
+
+Hash files before declaring duplicates.
+
+Do not infer duplicates from similar filenames.
+
+The source corpus may contain PDFs that are mostly screenshots/images.
+Do not treat failed text extraction as meaning the file is empty.
+
+Visually inspect image-based pages when necessary.
+
+======================================================================
+COURSE CONTENT PRIORITY
+======================================================================
+
+The supplied course review material should be used as a PRIORITY LAYER, not as the entire curriculum.
+
+Where the course explicitly emphasizes particular structures for lab exams, mark those structures:
+
+examPriority: true
+
+But still retain other verified material from the full lab manuals.
+
+Do not delete material merely because it is absent from a review sheet.
+
+======================================================================
+FIRST VERTICAL SLICE
+======================================================================
+
+After the source audit and base architecture are established, implement ONE complete module as the proof of architecture:
+
+CYTOLOGY / MITOSIS
+
+Use only source-supported content currently available in the workspace.
+
+The vertical slice should demonstrate:
+
+1. Study module card
+2. Labeled Learn view
+3. Recall/reveal view
+4. At least one image-based identification interaction if the source asset supports it
+5. Multiple-choice practice
+6. Typed recall
+7. Ordered mitosis sequence if source-supported
+8. Correct/incorrect handling
+9. Missed-item persistence
+10. Structure-level progress
+11. App restart persistence
+12. Source provenance attached to every production item
+
+Do not bulk-import the remaining anatomy curriculum yet.
+
+The purpose of this slice is to prove the architecture before multiplying content across the course.
+
+======================================================================
+IMAGE VIEWER REQUIREMENTS
+======================================================================
+
+Create a reusable anatomy image viewer designed for phone screens.
+
+It must support the architecture for:
+
+- pinch zoom
+- pan
+- maintaining aspect ratio
+- hotspot overlays
+- hiding/revealing labels
+- image captions/source reference
+
+Do not bake labels directly into UI coordinates using fixed screen pixels.
+
+Do not allow answer text or answer keys to remain visible accidentally during quiz mode.
+
+======================================================================
+ANSWER HANDLING
+======================================================================
+
+Typed-answer normalization may ignore:
+
+- capitalization
+- extra surrounding whitespace
+- ordinary punctuation differences
+
+Do not broadly fuzzy-match anatomy words.
+
+Accepted alternate terms must be explicitly stored in acceptedAliases.
+
+Example principle:
+
+If the course explicitly treats two terms as equivalents, both may be accepted.
+
+Do not invent aliases merely because two terms seem similar.
+
+======================================================================
+TESTING REQUIRED IN THIS PASS
+======================================================================
+
+Add useful tests for:
+
+- content schema validation
+- duplicate IDs
+- missing source references
+- invalid hotspot coordinates
+- questions referencing nonexistent structures/assets
+- production questions marked unverified
+- answer normalization
+- missed-item persistence
+- mastery-state transitions
+- retake/history preservation
+- module routing
+- offline content loading
+
+Prefer behavior/output tests.
+
+Do not write brittle tests that merely search source code for implementation strings unless checking an explicitly required or forbidden label.
+
+======================================================================
+DO NOT DO IN THIS PASS
+======================================================================
+
+Do not:
+
+- import all 23 labs
+- fabricate missing answers
+- generate hundreds of questions automatically and mark them verified
+- add a backend
+- add authentication
+- add cloud sync
+- add payments
+- add AI tutoring
+- add chat
+- add notifications
+- add unnecessary animations
+- create a complex spaced-repetition algorithm
+- redesign after establishing the approved base shell
+- run repeated full export checks during intermediate coding
+- claim physical verification
+- claim the app is finished
+
+======================================================================
+VALIDATION
+======================================================================
+
+When implementation is complete:
+
+1. run TypeScript
+2. run the complete automated test suite from the project root
+3. report suite count AND total test count
+4. run one iOS export validation
+5. run one Android export validation
+
+Do not substitute a targeted test run for the complete suite.
+
+Do not repeatedly rerun full exports while still making intermediate changes.
+
+======================================================================
+FINAL RESPONSE FORMAT
+======================================================================
+
+At the end, report exactly:
+
+A. SOURCE AUDIT
+- files inspected
+- exact duplicates found
+- unresolved/missing source issues
+
+B. IMPLEMENTATION
+- files created
+- files changed
+- architecture established
+- Cytology/Mitosis features actually implemented
+
+C. CONTENT
+- number of source records
+- number of modules detected
+- number of structures entered
+- number of questions entered
+- number marked verified
+- number still draft/unresolved
+
+D. VALIDATION
+- TypeScript result
+- complete test suite count
+- complete test count
+- iOS export result
+- Android export result
+
+E. EVIDENCE STATUS
+Clearly label each as:
+- implemented
+- automated verified
+- export verified
+- physically verified
+- unresolved
+
+Physical verification should remain UNVERIFIED unless a real device was actually used.
+
+F. BLOCKERS
+List every remaining blocker or unknown plainly.
+
+G. NEXT RECOMMENDED IMPLEMENTATION BATCH
+State the next logical content/feature batch, but DO NOT perform it.
+
+STOP after this first vertical slice and report.
