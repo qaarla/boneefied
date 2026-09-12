@@ -1,0 +1,58 @@
+BONEEFIED — APPLY APPROVED FINAL LOGO ASSETS ONLY
+
+Use the attached Boneefied_Final_Logo_Package.zip.
+
+APPROVED ARTWORK
+The FRONT-FACING skull with the atom/orbit structure is final.
+Foreground: deep charcoal #1E2226.
+Background: the supplied textured orange.
+
+Do not use any tilted-skull variation. Do not generate, redraw,
+trace, tilt, stretch, recolor, or redesign this artwork.
+
+White-corner removal and asset preparation are already complete.
+
+IMPLEMENTATION
+
+1. Extract the package. Read README.md and BRAND.json.
+   Run python3 validate-assets.py from the extracted package root.
+   Create a checkpoint before changing the project.
+
+2. Copy assets/boneefied/ into the app's assets directory.
+   Inspect the active Expo configuration, then merge the supplied
+   expo-icon-config.fragment.json into it. Do not replace the
+   entire configuration. Resolve any old platform-specific icon
+   overrides that still point to an earlier logo.
+
+3. Use assets/boneefied/icon.png for the native app icon.
+   It is an opaque 1024 × 1024 PNG with full-bleed orange.
+   Do not add rounded corners, transparency, white padding,
+   a border, or a second icon mask.
+
+4. For Android adaptive icons, use adaptive-foreground.png over
+   adaptive-background.png. Preserve the supplied padding.
+   Do not use the opaque native icon as the adaptive foreground.
+
+5. Use logo-rounded.png for existing in-app logo placements and
+   the logo image in an existing startup cover/splash.
+   Preserve aspect ratio with contain sizing. Do not crop the
+   skull or atom nodes. Preserve the existing cover layout and
+   timing; do not add text, blur, animation, or a new startup flow.
+   Use favicon.png for an existing web target.
+
+6. Preserve the project slug, bundle/package identifiers, EAS
+   project ID, credentials, environment variables, navigation,
+   study content, and typography. No unrelated changes or
+   dependency installations. Do not launch a paid native build
+   or publish as part of this asset-only task.
+
+VALIDATION
+
+Confirm asset paths, dimensions, and native-icon opacity.
+Inspect the rounded logo on light and dark backgrounds.
+Run the existing relevant checks.
+
+Report exact changed files, resolved icon paths, checks actually
+performed, and remaining blockers. Keep installed-device icon
+and splash verification pending until a native build containing
+these assets has been installed and inspected.
