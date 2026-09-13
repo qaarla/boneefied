@@ -1,0 +1,17 @@
+{
+  "generatedAt": "first implementation pass",
+  "modules": [
+    {
+      "id": "cytology-mitosis",
+      "title": "Cytology / Mitosis",
+      "labNumber": null,
+      "sourceIds": ["source-course-brief"],
+      "published": false,
+      "contentStatus": "content-blocked",
+      "structures": 0,
+      "assets": 0,
+      "questions": 0,
+      "reason": "The supplied brief specifies this vertical slice but does not supply anatomy content, images, labels, answers, or aliases."
+    }
+  ]
+}

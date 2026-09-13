@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/"
+title = "Boneefied"
+description = "An offline-first, image-focused anatomy lab-practical study app for BIOL 250, with Study, Practice, Missed, and Progress workflows and a canonical source-traceable content model."
+version = "1.0.0"
+id = "artifacts/boneefied"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 24169
+
+[services.development]
+run = "pnpm --filter @workspace/boneefied run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/boneefied", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/boneefied", "run", "serve" ]
+
+[services.env]
+PORT = "24169"
+BASE_PATH = "/"

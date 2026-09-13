@@ -1,0 +1,44 @@
+[
+  {
+    "id": "source-course-brief",
+    "filename": "Pasted-MODE-ECONOMY-EFFORT-HIGH-PROJECT-BIOL-250-HUMAN-ANATOMY_1789181970650.txt",
+    "sha256": "3c073563d28360c26577cc3998f94595b80bb68dc128225f24a5c05ad0e60863",
+    "pageCount": null,
+    "contentType": "plain text implementation brief",
+    "representedLabOrSystem": "BIOL 250 Human Anatomy (requested Cytology / Mitosis vertical slice)",
+    "usefulPages": [],
+    "mostlyTextOrImageBased": "text",
+    "containsAnswers": false,
+    "appearsDuplicated": false,
+    "attributionLicenseVisible": false,
+    "unresolvedIssues": ["No anatomy teaching content, answer keys, course diagrams, or lab pages supplied."]
+  },
+  {
+    "id": "source-approved-icon",
+    "filename": "assets/images/icon.png",
+    "sha256": "d1887a799a33adfad23b4a27d7baa1b69e86011a89f9477008f8e9db5a6cdf95",
+    "pageCount": null,
+    "contentType": "PNG brand icon (1024 x 1024 RGB)",
+    "representedLabOrSystem": null,
+    "usefulPages": [],
+    "mostlyTextOrImageBased": "image",
+    "containsAnswers": false,
+    "appearsDuplicated": false,
+    "attributionLicenseVisible": false,
+    "unresolvedIssues": ["Brand asset only; not course content."]
+  },
+  {
+    "id": "source-approved-logo",
+    "filename": "assets/images/logo-rounded.png",
+    "sha256": "557de13cd2ac17b1f141d0fe5fcbcdb8ba5aa16be54504f0bdbc36a828705c38",
+    "pageCount": null,
+    "contentType": "PNG transparent in-app logo (1024 x 1024 RGBA)",
+    "representedLabOrSystem": null,
+    "usefulPages": [],
+    "mostlyTextOrImageBased": "image",
+    "containsAnswers": false,
+    "appearsDuplicated": false,
+    "attributionLicenseVisible": false,
+    "unresolvedIssues": ["Brand asset only; not course content."]
+  }
+]
