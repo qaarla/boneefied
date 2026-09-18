@@ -1,0 +1,1 @@
+- [Course source access](course-source-access.md) — BIOL 250 PDFs are known in ChatGPT Library but must be transferred before Replit can extract them.
