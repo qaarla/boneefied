@@ -1,27 +1,82 @@
-import React from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useMemo, useState } from 'react';
+import { Keyboard, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { useRouter } from 'expo-router';
 import { Screen } from '@/components/Screen';
-import { EmptyState } from '@/components/EmptyState';
-import { QUESTION_TYPES } from '@/content/model';
+import { content } from '@/content/canonical';
+import { answerIsCorrect } from '@/content/study';
+import type { Question, PracticeSession } from '@/content/model';
+import { useStudy } from '@/context/StudyContext';
 import { useColors } from '@/hooks/useColors';
-import * as Haptics from 'expo-haptics';
+
+type Phase = 'setup' | 'quiz' | 'results';
+const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all']);
 
 export default function PracticeScreen() {
-  const colors = useColors();
-  return <Screen>
-    <Text style={[styles.eyebrow, { color: colors.primary }]}>PRACTICE LAB</Text>
-    <Text style={[styles.title, { color: colors.foreground }]}>Practice</Text>
-    <Text style={[styles.intro, { color: colors.mutedForeground }]}>Configure a practical session from verified course material.</Text>
-    <View style={[styles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}>
-      <Text style={[styles.panelTitle, { color: colors.foreground }]}>Session settings</Text>
-      <View style={styles.row}><Text style={{ color: colors.mutedForeground }}>Module</Text><Text style={{ color: colors.foreground, fontWeight: '600' }}>Cytology / Mitosis</Text></View>
-      <View style={styles.row}><Text style={{ color: colors.mutedForeground }}>Question count</Text><Text style={{ color: colors.foreground, fontWeight: '600' }}>Verified only</Text></View>
-      <View style={styles.row}><Text style={{ color: colors.mutedForeground }}>Focus</Text><Text style={{ color: colors.foreground, fontWeight: '600' }}>All material</Text></View>
+  const colors = useColors(); const router = useRouter(); const study = useStudy();
+  const pool = useMemo(() => content.questions.filter((q) => supported.has(q.taskType)), []);
+  const [phase, setPhase] = useState<Phase>('setup'); const [count, setCount] = useState(Math.min(5, pool.length));
+  const [questions, setQuestions] = useState<Question[]>([]); const [position, setPosition] = useState(0);
+  const [answer, setAnswer] = useState<string | string[]>(''); const [submitted, setSubmitted] = useState(false);
+  const [correct, setCorrect] = useState(0); const [answers, setAnswers] = useState<boolean[]>([]); const [currentCorrect, setCurrentCorrect] = useState(false); const [sessionId, setSessionId] = useState('');
+  const activeSession = study.sessions.find((session) => session.status !== 'completed' && session.moduleId === 'cytology-mitosis');
+  useEffect(() => {
+    if (activeSession && phase === 'setup') {
+      const resumed = activeSession.questionIds.map((id) => content.questions.find((item) => item.id === id)).filter((item): item is Question => !!item);
+      if (resumed.length) { setSessionId(activeSession.id); setQuestions(resumed); setPosition(Math.min(activeSession.position, resumed.length - 1)); setAnswers(activeSession.answers.map((item) => item.outcome === 'correct')); setCorrect(activeSession.answers.filter((item) => item.outcome === 'correct').length); setPhase('quiz'); }
+    }
+  }, [activeSession?.id]);
+  const start = () => { const selected = pool.slice(0, Math.max(1, Math.min(count, pool.length))); const now = new Date().toISOString(); const session: PracticeSession = { id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, moduleId: 'cytology-mitosis', mode: 'practice', entryPoint: 'practice', questionIds: selected.map((item) => item.id), position: 0, answers: [], startedAt: now, updatedAt: now, status: 'active' }; study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); setSubmitted(false); setCurrentCorrect(false); };
+  const q = questions[position];
+  const submit = () => {
+    if (submitted || !q) return;
+    const isCorrect = answerIsCorrect(answer, q); setCurrentCorrect(isCorrect); setSubmitted(true); setAnswers((items) => [...items, isCorrect]); if (isCorrect) setCorrect((n) => n + 1);
+    study.submitSessionAnswer(sessionId, { questionId: q.id, answer, outcome: isCorrect ? 'correct' : 'wrong', submittedAt: new Date().toISOString() }, { questionId: q.id, structureId: q.structureIds[0], correct: isCorrect, answer });
+  };
+  const next = () => { if (!submitted) return; if (position + 1 >= questions.length) { study.completeSession(sessionId); setPhase('results'); } else { setPosition((n) => n + 1); setAnswer(''); setSubmitted(false); setCurrentCorrect(false); } };
+  if (phase === 'setup') return <Screen>
+    <Text style={[styles.eyebrow, { color: colors.primary }]}>PRACTICE LAB</Text><Text style={[styles.title, { color: colors.foreground }]}>Cytology / Mitosis</Text>
+    <Text style={[styles.intro, { color: colors.mutedForeground }]}>A sourced text-only practical. No image questions are included until source images are available.</Text>
+    <View style={[styles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}><Text style={[styles.panelTitle, { color: colors.foreground }]}>Session setup</Text>
+      <Text style={{ color: colors.mutedForeground }}>Eligible questions: {pool.length}. No duplicate padding.</Text>
+      <View style={styles.counts}>{[3, 5, pool.length].filter((n, i, a) => n > 0 && a.indexOf(n) === i).map((n) => <Pressable key={n} onPress={() => setCount(Math.min(n, pool.length))} style={[styles.count, { borderColor: count === Math.min(n, pool.length) ? colors.primary : colors.border, backgroundColor: count === Math.min(n, pool.length) ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{n} questions</Text></Pressable>)}</View>
+      {activeSession ? <Pressable testID="resume-practice" onPress={() => setPhase('quiz')} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Resume saved session</Text></Pressable> : <Pressable testID="start-practice" onPress={start} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Start practice</Text></Pressable>}
     </View>
-    <EmptyState icon="lock" title="Practice is unavailable" message="The supplied brief contains no anatomy teaching content, images, answers, or verified questions. Practice will unlock when a course source is added." />
-    <Text style={[styles.section, { color: colors.foreground }]}>Supported question architecture</Text>
-    <View style={styles.types}>{QUESTION_TYPES.map((type) => <Pressable key={type.id} disabled onPress={() => Haptics.selectionAsync()} style={[styles.type, { borderColor: colors.border, backgroundColor: colors.secondary }]}><Text style={{ color: colors.mutedForeground }}>{type.label}</Text><FeatherDot color={colors.mutedForeground} /></Pressable>)}</View>
+    <Text style={[styles.note, { color: colors.mutedForeground }]}>Supported here: multiple choice, typed recall, select-all, and ordered sequence.</Text>
+  </Screen>;
+  if (phase === 'results') return <Screen>
+    <Text style={[styles.eyebrow, { color: colors.primary }]}>SESSION COMPLETE</Text><Text style={[styles.title, { color: colors.foreground }]}>Results</Text>
+    <View style={[styles.result, { backgroundColor: colors.card, borderColor: colors.border }]}><Text style={[styles.big, { color: colors.foreground }]}>{correct}/{questions.length}</Text><Text style={{ color: colors.mutedForeground }}>{Math.round(correct / Math.max(questions.length, 1) * 100)}% accuracy</Text></View>
+    {questions.map((item, index) => <View key={item.id} style={styles.review}><Text style={{ color: colors.foreground }}>{index + 1}. {answers[index] ? 'Correct' : 'Wrong / unanswered'} · {item.prompt}</Text><Text style={{ color: colors.mutedForeground }}>{item.explanation} · Lab 2 p.{item.sourcePage}</Text></View>)}
+    <Text style={{ color: colors.mutedForeground }}>Incorrect answers remain in Missed for later review; completed attempts are saved locally.</Text>
+    <Pressable onPress={start} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Retry module</Text></Pressable>
+    <Pressable onPress={() => router.replace('/(tabs)')} style={styles.link}><Text style={{ color: colors.primary, fontWeight: '700' }}>Return to Study</Text></Pressable>
+  </Screen>;
+  return <Screen>
+    <Text style={[styles.eyebrow, { color: colors.primary }]}>QUESTION {position + 1} OF {questions.length}</Text><Text style={[styles.title, { color: colors.foreground }]}>{q.prompt}</Text>
+    <Pressable accessibilityLabel="Save and exit practice" onPress={() => setPhase('setup')}><Text style={{ color: colors.primary }}>Save & exit</Text></Pressable>
+    <QuestionInput question={q} value={answer} setValue={setAnswer} disabled={submitted} colors={colors} />
+    {submitted && <View style={[styles.feedback, { backgroundColor: currentCorrect ? colors.secondary : colors.card, borderColor: colors.border }]}><Text style={{ color: colors.foreground, fontWeight: '700' }}>{currentCorrect ? 'Correct' : 'Review this one'}</Text><Text style={{ color: colors.mutedForeground }}>{q.explanation}</Text><Text style={{ color: colors.mutedForeground }}>Source: user-supplied transcribed excerpt · Lab 2 p.{q.sourcePage}</Text></View>}
+    {!submitted ? <Pressable testID="submit-answer" onPress={submit} disabled={answer === '' || (Array.isArray(answer) && answer.length === 0)} style={[styles.primary, { backgroundColor: answer === '' || (Array.isArray(answer) && answer.length === 0) ? colors.muted : colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Submit answer</Text></Pressable> : <Pressable testID="next-answer" onPress={next} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{position + 1 === questions.length ? 'See results' : 'Next question'}</Text></Pressable>}
   </Screen>;
 }
-function FeatherDot({ color }: { color: string }) { return <View style={[styles.dot, { backgroundColor: color }]} />; }
-const styles = StyleSheet.create({ eyebrow: { fontSize: 11, letterSpacing: 1.6, fontWeight: '700' }, title: { fontSize: 32, fontWeight: '700', marginTop: -10 }, intro: { fontSize: 15, lineHeight: 22, marginTop: -10 }, panel: { borderWidth: 1, borderRadius: 16, padding: 16, gap: 15 }, panelTitle: { fontSize: 16, fontWeight: '700' }, row: { flexDirection: 'row', justifyContent: 'space-between', gap: 12 }, section: { fontSize: 17, fontWeight: '700', marginTop: 4 }, types: { gap: 8 }, type: { minHeight: 46, borderWidth: 1, borderRadius: 12, paddingHorizontal: 14, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }, dot: { width: 7, height: 7, borderRadius: 7 } });
+
+function QuestionInput({ question, value, setValue, disabled, colors }: { question: Question; value: string | string[]; setValue: (v: string | string[]) => void; disabled: boolean; colors: any }) {
+  if (question.taskType === 'typed-recall') return <TextInput testID="typed-answer" accessibilityLabel="Typed recall answer" value={typeof value === 'string' ? value : ''} onChangeText={setValue} editable={!disabled} onSubmitEditing={Keyboard.dismiss} placeholder="Type your answer" placeholderTextColor={colors.mutedForeground} style={[styles.input, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} returnKeyType="done" />;
+  const options = question.options ?? (question.answer as string[]);
+  if (question.taskType === 'ordered-sequence') {
+    const selected = Array.isArray(value) ? value : [];
+    const move = (index: number, delta: number) => { const next = [...selected]; const target = index + delta; if (target >= 0 && target < next.length) [next[index], next[target]] = [next[target], next[index]]; setValue(next); };
+    return <View style={styles.options}>{options.map((option) => {
+      const index = selected.indexOf(option);
+      return <View key={option} style={styles.orderRow}>
+        <Pressable disabled={disabled} onPress={() => setValue(index >= 0 ? selected.filter((x) => x !== option) : [...selected, option])} style={[styles.option, { flex: 1, borderColor: index >= 0 ? colors.primary : colors.border, backgroundColor: index >= 0 ? colors.secondary : colors.card }]}>
+          <Text style={{ color: colors.foreground }}>{index >= 0 ? `${index + 1}. ` : ''}{option}</Text>
+        </Pressable>
+        {index >= 0 && <><Pressable disabled={disabled} accessibilityLabel={`Move ${option} up`} onPress={() => move(index, -1)}><Text style={{ color: colors.primary }}>↑</Text></Pressable><Pressable disabled={disabled} accessibilityLabel={`Move ${option} down`} onPress={() => move(index, 1)}><Text style={{ color: colors.primary }}>↓</Text></Pressable></>}
+      </View>;
+    })}</View>;
+  }
+  const selected = Array.isArray(value) ? value : [];
+  return <View style={styles.options}>{options.map((option) => { const active = question.taskType === 'select-all' ? selected.includes(option) : value === option; return <Pressable key={option} disabled={disabled} onPress={() => setValue(question.taskType === 'select-all' ? (active ? selected.filter((x) => x !== option) : [...selected, option]) : option)} style={[styles.option, { borderColor: active ? colors.primary : colors.border, backgroundColor: active ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{active ? '✓ ' : ''}{option}</Text></Pressable>; })}</View>;
+}
+const styles = StyleSheet.create({ eyebrow:{fontSize:11,letterSpacing:1.5,fontWeight:'700'},title:{fontSize:27,fontWeight:'700'},intro:{fontSize:15,lineHeight:22},panel:{borderWidth:1,borderRadius:16,padding:16,gap:16},panelTitle:{fontSize:17,fontWeight:'700'},counts:{gap:8},count:{borderWidth:1,borderRadius:10,padding:13},primary:{minHeight:48,borderRadius:12,alignItems:'center',justifyContent:'center',paddingHorizontal:16},note:{fontSize:13,lineHeight:20},options:{gap:10},orderRow:{flexDirection:'row',alignItems:'center',gap:8},option:{borderWidth:1,borderRadius:12,padding:15,minHeight:48,justifyContent:'center'},input:{borderWidth:1,borderRadius:12,padding:14,fontSize:16,minHeight:50},feedback:{borderWidth:1,borderRadius:14,padding:15,gap:8},result:{borderWidth:1,borderRadius:16,padding:22,alignItems:'center',gap:8},review:{borderBottomWidth:1,paddingVertical:10,gap:4},big:{fontSize:40,fontWeight:'700'},link:{alignItems:'center',padding:12} });

@@ -1,5 +1,19 @@
 [
   {
+    "id": "source-user-transcribed-lab2",
+    "filename": "User-supplied transcribed excerpts from Lab 2 Cytology and Quizes(2)",
+    "sha256": "user-supplied-transcription-lab2-excerpts",
+    "pageCount": null,
+    "contentType": "user-supplied transcribed text excerpts",
+    "representedLabOrSystem": "BIOL 250 Lab 2 Cytology / Mitosis",
+    "usefulPages": [5, 6, 7, 8, 11, 12],
+    "mostlyTextOrImageBased": "text",
+    "containsAnswers": "partial explicit quiz grading excerpts",
+    "appearsDuplicated": false,
+    "attributionLicenseVisible": false,
+    "unresolvedIssues": ["Original PDFs are not present in this runtime; no image questions or inferred labels are published."]
+  },
+  {
     "id": "source-course-brief",
     "filename": "Pasted-MODE-ECONOMY-EFFORT-HIGH-PROJECT-BIOL-250-HUMAN-ANATOMY_1789181970650.txt",
     "sha256": "3c073563d28360c26577cc3998f94595b80bb68dc128225f24a5c05ad0e60863",

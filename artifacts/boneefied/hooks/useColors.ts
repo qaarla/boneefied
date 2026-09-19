@@ -1,5 +1,6 @@
 import { useColorScheme } from 'react-native';
 import colors from '@/constants/colors';
+import { useOptionalStudy } from '@/context/StudyContext';
 
 /**
  * Returns the design tokens for the current color scheme.
@@ -14,7 +15,10 @@ import colors from '@/constants/colors';
  * device's appearance setting.
  */
 export function useColors() {
-  const scheme = useColorScheme();
+  const systemScheme = useColorScheme();
+  const study = useOptionalStudy();
+  const preference = study?.preferences.theme ?? 'system';
+  const scheme = preference === 'system' ? systemScheme : preference;
   const palette = scheme === 'dark' ? colors.dark : colors.light;
   return { ...palette, radius: colors.radius };
 }

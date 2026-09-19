@@ -103,6 +103,27 @@ export interface MasteryRecord {
   incorrect: number;
   updatedAt: string;
 }
+export type PracticeSessionStatus = 'active' | 'paused' | 'completed';
+export type PracticeEntryPoint = 'practice' | 'missed' | 'study';
+export interface SessionAnswer {
+  questionId: string;
+  answer?: string | string[];
+  outcome: 'correct' | 'wrong' | 'skipped' | 'unanswered';
+  submittedAt?: string;
+}
+export interface PracticeSession {
+  id: string;
+  moduleId: string;
+  mode: 'practice' | 'recall';
+  entryPoint: PracticeEntryPoint;
+  questionIds: string[];
+  position: number;
+  answers: SessionAnswer[];
+  startedAt: string;
+  updatedAt: string;
+  completedAt?: string;
+  status: PracticeSessionStatus;
+}
 export interface ContentCatalog {
   sources: SourceRecord[];
   modules: Module[];

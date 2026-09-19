@@ -33,8 +33,29 @@ const dark = {
   input: '#3A4249',
 };
 
+const light = {
+  text: '#23272B',
+  tint: '#C95618',
+  background: '#FAF7F2',
+  foreground: '#23272B',
+  card: '#FFFFFF',
+  cardForeground: '#23272B',
+  primary: '#C95618',
+  primaryForeground: '#FFFFFF',
+  secondary: '#F3E9DF',
+  secondaryForeground: '#23272B',
+  muted: '#E7DDD3',
+  mutedForeground: '#626A70',
+  accent: '#F8D7C2',
+  accentForeground: '#23272B',
+  destructive: '#B83E35',
+  destructiveForeground: '#FFFFFF',
+  border: '#D8CEC4',
+  input: '#D8CEC4',
+};
+
 const colors = {
-  light: dark,
+  light,
   dark,
 
   // Border radius (in px). Sync from the sibling web artifact's --radius

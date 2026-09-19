@@ -1,17 +1,17 @@
 {
-  "generatedAt": "first implementation pass",
+  "generatedAt": "source-checked Cytology transcription pass",
   "modules": [
     {
       "id": "cytology-mitosis",
       "title": "Cytology / Mitosis",
-      "labNumber": null,
-      "sourceIds": ["source-course-brief"],
-      "published": false,
-      "contentStatus": "content-blocked",
-      "structures": 0,
+      "labNumber": "2",
+      "sourceIds": ["source-user-transcribed-lab2"],
+      "published": true,
+      "contentStatus": "available",
+      "structures": 15,
       "assets": 0,
-      "questions": 0,
-      "reason": "The supplied brief specifies this vertical slice but does not supply anatomy content, images, labels, answers, or aliases."
+      "questions": 10,
+      "reason": "Text-only source-checked facts from user-supplied transcribed Lab 2 and quiz excerpts; no image assets or hotspots claimed."
     }
   ]
 }
