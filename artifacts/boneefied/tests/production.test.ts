@@ -16,13 +16,22 @@ import type { PracticeSession } from '../content/model.ts';
 
 test('production catalog validates with honest published counts and source provenance', () => {
   assert.deepEqual(validateContent(content), []);
-  assert.equal(content.modules.filter((module) => module.published).length, 3);
+  assert.equal(content.modules.filter((module) => module.published).length, 6);
   assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.contentStatus, 'available');
-  assert.equal(content.structures.filter((structure) => structure.moduleId === 'skeletal-system').length, 108);
-  assert.ok((content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length ?? 0) >= 8);
+  assert.equal(content.structures.filter((structure) => structure.moduleId === 'skeletal-system').length, 155);
+  assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length, 13);
+  assert.equal(content.structures.filter((structure) => structure.moduleId === 'joints-ligaments').length, 36);
+  assert.equal(content.modules.find((module) => module.id === 'joints-ligaments')?.lessons?.length, 6);
+  assert.equal(content.structures.filter((structure) => structure.moduleId === 'muscular-system').length, 59);
+  assert.equal(content.modules.find((module) => module.id === 'muscular-system')?.lessons?.length, 8);
+  assert.equal(content.structures.filter((structure) => structure.moduleId === 'nervous-system').length, 63);
+  assert.equal(content.modules.find((module) => module.id === 'nervous-system')?.lessons?.length, 8);
+  assert.equal(content.modules.find((module) => module.id === 'joints-ligaments')?.system, 'joints');
+  assert.equal(content.modules.find((module) => module.id === 'muscular-system')?.system, 'muscular');
+  assert.equal(content.modules.find((module) => module.id === 'nervous-system')?.system, 'nervous');
   assert.ok(content.structures.some((structure) => structure.id === 'external-acoustic-meatus'));
   assert.ok(content.structures.some((structure) => structure.id === 'lateral-malleolus'));
-  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 12);
+  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 20);
   assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 3);
   assert.equal(content.assets.length, 4);
   assert.equal(content.questions.filter((question) => question.hotspots?.length).length, 0);
@@ -45,14 +54,55 @@ test('production catalog validates with honest published counts and source prove
 });
 
 test('production questions only expose supported text task types', () => {
-  const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship']);
+  const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
   assert.ok(content.questions.every((question) => supported.has(question.taskType)));
-  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 8);
-  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 4);
-  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 3);
-  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 4);
+  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 63);
+  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 5);
+  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 5);
+  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 5);
   assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 3);
-  assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 3);
+  assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 4);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 1);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 1);
+  const multipleChoiceLike = new Set(['multiple-choice', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
+  for (const question of content.questions.filter((item) => multipleChoiceLike.has(item.taskType))) {
+    const answers = Array.isArray(question.answer) ? question.answer : [question.answer];
+    assert.ok(answers.some((answer) => (question.options ?? []).includes(answer) || question.acceptedAliases.some((alias) => (question.options ?? []).includes(alias))), question.id);
+  }
+  for (const question of content.questions.filter((item) => Array.isArray(item.answer))) {
+    for (const answer of question.answer as string[]) assert.ok((question.options ?? []).includes(answer), `${question.id}: ${answer}`);
+  }
+});
+
+test('published lesson coverage and domain provenance are complete', () => {
+  const sourceIds = new Set(content.sources.map((source) => source.id));
+  for (const module of content.modules.filter((item) => item.published)) {
+    const used = new Set([
+      ...content.structures.filter((item) => item.moduleId === module.id).map((item) => item.sourceId),
+      ...content.questions.filter((item) => item.moduleId === module.id).map((item) => item.sourceId),
+      ...(module.lessons ?? []).flatMap((item) => item.sourceIds),
+    ]);
+    for (const sourceId of module.sourceIds) assert.ok(sourceIds.has(sourceId), `${module.id}:${sourceId}`);
+    for (const sourceId of used) assert.ok(module.sourceIds.includes(sourceId), `${module.id} does not declare ${sourceId}`);
+    const covered = new Set((module.lessons ?? []).flatMap((lesson) => lesson.structureIds));
+    for (const lesson of module.lessons ?? []) for (const sourceId of lesson.sourceIds) assert.ok(sourceIds.has(sourceId), `${lesson.id}:${sourceId}`);
+    if (!module.id.includes('foundations') && module.id !== 'cytology-mitosis') {
+      for (const structure of content.structures.filter((item) => item.moduleId === module.id)) assert.ok(covered.has(structure.id), `${module.id}:${structure.id}`);
+    }
+  }
+  assert.equal(content.structures.find((item) => item.id === 'foramen-ovale')?.sourceId, 'source-openstax-ap-2013-skeletal-ch7');
+  assert.equal(content.structures.find((item) => item.id === 'scaphoid')?.sourceId, 'source-openstax-ap-2013-skeletal-ch8');
+  assert.equal(content.structures.find((item) => item.id === 'acl')?.sourceId, 'source-openstax-ap-2013-joints-ch9');
+  assert.equal(content.structures.find((item) => item.id === 'deltoid')?.sourceId, 'source-openstax-ap-2013-muscle-ch11');
+  assert.equal(content.structures.find((item) => item.id === 'cerebrum')?.sourceId, 'source-openstax-ap-2013-nervous-ch13');
+  const skeletalLessons = content.modules.find((item) => item.id === 'skeletal-system')?.lessons ?? [];
+  assert.ok(skeletalLessons.find((item) => item.id === 'skull-orientation')?.structureIds.includes('foramen-magnum'));
+  assert.equal(skeletalLessons.find((item) => item.id === 'skull-orientation')?.structureIds.includes('sacroiliac-joint'), false);
+  assert.ok(skeletalLessons.find((item) => item.id === 'limb-girdles')?.structureIds.includes('sacroiliac-joint'));
+  const skeletalExpansion = skeletalLessons.find((item) => item.id === 'knee-articular-landmarks');
+  assert.deepEqual(skeletalExpansion?.structureIds, ['tibial-plateau','intercondylar-eminence','femoral-linea-aspera']);
+  assert.ok(skeletalLessons.find((item) => item.id === 'hand-wrist-bones')?.structureIds.includes('radial-tuberosity'));
+  assert.ok(skeletalLessons.find((item) => item.id === 'hand-wrist-bones')?.structureIds.includes('ulnar-styloid'));
 });
 
 const session: PracticeSession = {

@@ -1,12 +1,13 @@
 import type { ContentCatalog, SourceRecord } from './model';
-import { anatomyQuestions, anatomySources, foundationStructures, foundationsModule, skeletalAssets, skeletalLandmarkStructures, skeletalModule, skeletalStructures } from './anatomy.ts';
+import { GRAY_SOURCE_ID, anatomyQuestions, anatomySources, foundationStructures, foundationsModule, skeletalAssets, skeletalLandmarkStructures, skeletalModule, skeletalStructures } from './anatomy.ts';
+import { JOINTS_SOURCE_ID, jointsLessons, jointsModule, jointsQuestions, jointsStructures, MUSCULAR_SOURCE_ID, muscularLessons, muscularModule, muscularQuestions, muscularStructures, NERVOUS_SOURCE_ID, NERVOUS_TISSUE_SOURCE_ID, nervousLessons, nervousModule, nervousQuestions, nervousStructures, SKELETAL_APPENDICULAR_SOURCE_ID, SKELETAL_AXIAL_SOURCE_ID, skeletalExpansionLessons, skeletalExpansionQuestions, skeletalExpansionStructures, systemsSources } from './systems.ts';
 
 export const BRIEF_SOURCE_ID = 'source-course-brief';
 export const CYTOLOGY_SOURCE_ID = 'source-user-transcribed-lab2';
 
 export const content: ContentCatalog = {
   sources: [
-    ...anatomySources,
+    ...anatomySources, ...systemsSources,
     {
       id: CYTOLOGY_SOURCE_ID,
       filename: 'User-supplied transcribed excerpts from Lab 2 Cytology and Quizes(2)',
@@ -65,7 +66,7 @@ export const content: ContentCatalog = {
     visible: true,
     published: true,
     contentStatus: 'available',
-  }, skeletalModule, foundationsModule],
+  }, { ...skeletalModule, sourceIds: [SKELETAL_AXIAL_SOURCE_ID, SKELETAL_APPENDICULAR_SOURCE_ID, 'source-openstax-ap-2013', GRAY_SOURCE_ID], lessons: [...(skeletalModule.lessons ?? []), ...skeletalExpansionLessons] }, { ...foundationsModule }, { ...jointsModule, sourceIds: [JOINTS_SOURCE_ID] }, { ...muscularModule, sourceIds: [MUSCULAR_SOURCE_ID] }, { ...nervousModule, sourceIds: [NERVOUS_SOURCE_ID, NERVOUS_TISSUE_SOURCE_ID] }],
   structures: [
     ...[
       ['interphase','Interphase','cell cycle',5],['g1','G1 phase','cell cycle',5],['s-phase','S phase','cell cycle',5],
@@ -80,7 +81,7 @@ export const content: ContentCatalog = {
       category: category as string, sourceId: CYTOLOGY_SOURCE_ID, sourcePage: page as number,
       examPriority: true, verificationStatus: 'verified' as const,
     })),
-    ...skeletalStructures, ...skeletalLandmarkStructures, ...foundationStructures,
+    ...skeletalStructures, ...skeletalLandmarkStructures, ...skeletalExpansionStructures, ...foundationStructures, ...jointsStructures, ...muscularStructures, ...nervousStructures,
   ],
   assets: skeletalAssets,
   questions: [
@@ -94,7 +95,7 @@ export const content: ContentCatalog = {
     { id:'q-telophase', moduleId:'cytology-mitosis', structureIds:['telophase'], taskType:'select-all', prompt:'Select the source-supported telophase events.', answer:['Nuclear envelopes form','Chromosomes unfold into chromatin','Nucleoli reappear'], acceptedAliases:[], options:['Nuclear envelopes form','Chromosomes unfold into chromatin','Nucleoli reappear','DNA replicates'], explanation:'All three selected events are in the supplied p8 transcription.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:8, examPriority:true, verificationStatus:'verified' },
     { id:'q-membrane', moduleId:'cytology-mitosis', structureIds:['plasma-membrane'], taskType:'typed-recall', prompt:'What surrounds the cell as the plasma membrane?', answer:'A phospholipid bilayer', acceptedAliases:['phospholipid bilayer'], explanation:'The supplied quiz excerpt defines the plasma membrane as a phospholipid bilayer surrounding the cell.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:11, examPriority:true, verificationStatus:'verified' },
     { id:'q-organelles', moduleId:'cytology-mitosis', structureIds:['mitochondrion','smooth-er'], taskType:'select-all', prompt:'Select the source-supported organelle functions.', answer:['Mitochondrion supports cellular respiration/energy','Smooth ER supports lipid production, carbohydrate metabolism, and detoxification'], acceptedAliases:[], options:['Mitochondrion supports cellular respiration/energy','Smooth ER supports lipid production, carbohydrate metabolism, and detoxification','Smooth ER makes the cleavage furrow'], explanation:'These functions are stated in the supplied quiz excerpt.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:12, examPriority:true, verificationStatus:'verified' },
-  ...anatomyQuestions],
+  ...anatomyQuestions, ...skeletalExpansionQuestions, ...jointsQuestions, ...muscularQuestions, ...nervousQuestions],
   pathways: [],
 };
 

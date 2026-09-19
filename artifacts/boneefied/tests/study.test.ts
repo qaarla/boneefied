@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import type { Attempt, ContentCatalog } from '../content/model.ts';
+import type { Attempt, ContentCatalog, Question } from '../content/model.ts';
 import type { StudyState } from '../content/study.ts';
 import { answersMatch, validateContent } from '../content/validation.ts';
-import { applyAttempt, clearMissed, hydrateStudyState, isQuestionScorable, masteryState, selectQuestion, serializeStudyState } from '../content/study.ts';
+import { answerIsCorrect, applyAttempt, clearMissed, hydrateStudyState, isQuestionScorable, masteryState, selectQuestion, serializeStudyState } from '../content/study.ts';
 
 const fixture: ContentCatalog = {
   sources: [{ id: 'fixture-source', filename: 'generated-fixture', hash: 'fixture', pageCount: 1, title: 'Neutral fixture', courseLabAssociation: null, sourceType: 'text', attributionLicenseStatus: 'test-only', notes: 'NON-PRODUCTION', verificationStatus: 'verified' }],
@@ -30,6 +30,13 @@ test('validation catches duplicate IDs, missing references, and hotspot bounds',
 test('answers require explicit answer or alias and normalize punctuation', () => {
   assert.equal(answersMatch(' Alpha! ', 'alpha term', ['alpha']), true);
   assert.equal(answersMatch('beta', 'alpha term', ['alpha']), false);
+});
+test('ordered sequences are positional while select-all remains set-based', () => {
+  const ordered: Question = { ...fixture.questions[0], taskType: 'ordered-sequence', answer: ['first', 'second'], options: ['second', 'first'] };
+  assert.equal(answerIsCorrect(['first', 'second'], ordered), true);
+  assert.equal(answerIsCorrect(['second', 'first'], ordered), false);
+  const selectAll: Question = { ...fixture.questions[0], taskType: 'select-all', answer: ['first', 'second'], options: ['first', 'second'] };
+  assert.equal(answerIsCorrect(['second', 'first'], selectAll), true);
 });
 test('scoring preserves history, retries missed items, and transitions mastery deterministically', () => {
   let state: StudyState = { attempts: [], missed: [], mastery: [] };

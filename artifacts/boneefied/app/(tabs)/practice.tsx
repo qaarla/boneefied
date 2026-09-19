@@ -10,7 +10,7 @@ import { useColors } from '@/hooks/useColors';
 import { sourceCitation } from '@/content/sources';
 
 type Phase = 'setup' | 'quiz' | 'results';
-const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship']);
+const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
 
 export default function PracticeScreen() {
   const colors = useColors(); const router = useRouter(); const study = useStudy();
@@ -45,7 +45,7 @@ export default function PracticeScreen() {
       <View style={styles.counts}>{[3, 5, pool.length].filter((n, i, a) => n > 0 && a.indexOf(n) === i).map((n) => <Pressable key={n} onPress={() => setCount(Math.min(n, pool.length))} style={[styles.count, { borderColor: count === Math.min(n, pool.length) ? colors.primary : colors.border, backgroundColor: count === Math.min(n, pool.length) ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{n} questions</Text></Pressable>)}</View>
       {activeSession ? <Pressable testID="resume-practice" onPress={() => setPhase('quiz')} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Resume saved session</Text></Pressable> : <Pressable testID="start-practice" onPress={start} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Start practice</Text></Pressable>}
     </View>
-     <Text style={[styles.note, { color: colors.mutedForeground }]}>Supported here: multiple choice, typed recall, select-all, ordered sequence, bone laterality, and relationship questions.</Text>
+     <Text style={[styles.note, { color: colors.mutedForeground }]}>Supported here: multiple choice, typed recall, select-all, ordered sequence, bone laterality, muscle action/attachments, and relationship questions.</Text>
   </Screen>;
   if (phase === 'results') return <Screen>
     <Text style={[styles.eyebrow, { color: colors.primary }]}>SESSION COMPLETE</Text><Text style={[styles.title, { color: colors.foreground }]}>Results</Text>

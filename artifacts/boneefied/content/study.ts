@@ -29,17 +29,20 @@ function answersMatch(input: string, answer: string, aliases: string[] = []): bo
   return [answer, ...aliases].some((candidate) => normalizeAnswer(candidate) === normalized);
 }
 export { answersMatch, normalizeAnswer };
-export function answerIsCorrect(input: string | string[] | undefined, question: Pick<Question, 'answer' | 'acceptedAliases'>): boolean {
+export function answerIsCorrect(input: string | string[] | undefined, question: Pick<Question, 'answer' | 'acceptedAliases' | 'taskType'>): boolean {
   if (input === undefined) return false;
   if (Array.isArray(question.answer)) {
     if (!Array.isArray(input) || input.length !== question.answer.length) return false;
     const expected = question.answer;
+    if (question.taskType === 'ordered-sequence') {
+      return expected.every((answer: string, index: number) => answersMatch(input[index], answer, question.acceptedAliases));
+    }
     return expected.every((answer: string) => input.some((candidate) => answersMatch(candidate, answer, question.acceptedAliases)))
       && input.every((candidate) => expected.some((answer: string) => answersMatch(candidate, answer, question.acceptedAliases)));
   }
   return typeof input === 'string' && answersMatch(input, question.answer, question.acceptedAliases);
 }
-export function checkAnswer(input: string, question: Pick<Question, 'answer' | 'acceptedAliases'>): boolean {
+export function checkAnswer(input: string, question: Pick<Question, 'answer' | 'acceptedAliases' | 'taskType'>): boolean {
   return answerIsCorrect(input, question);
 }
 

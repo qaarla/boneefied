@@ -18,9 +18,10 @@
       "title": "Skeletal System",
       "published": true,
       "contentStatus": "available",
-      "structures": 108,
+      "structures": 155,
+      "lessons": 13,
       "assets": 4,
-      "questions": 12,
+      "questions": 20,
       "reason": "Original study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0) with four individually verified public-domain Gray plates."
     },
     {
@@ -29,9 +30,43 @@
       "published": true,
       "contentStatus": "available",
       "structures": 12,
+      "lessons": 1,
       "assets": 0,
       "questions": 3,
       "reason": "Original text-first organ and endocrine orientation linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no external images activated."
+    },
+    {
+      "id": "joints-ligaments",
+      "title": "Joints & Ligaments",
+      "published": true,
+      "contentStatus": "available",
+      "structures": 36,
+      "lessons": 6,
+      "assets": 0,
+      "questions": 14,
+      "reason": "Original structural and functional joint study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no course priority claimed."
+    },
+    {
+      "id": "muscular-system",
+      "title": "Muscular System",
+      "published": true,
+      "contentStatus": "available",
+      "structures": 59,
+      "lessons": 8,
+      "assets": 0,
+      "questions": 20,
+      "reason": "Original regional muscle recognition and action study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no course priority claimed."
+    },
+    {
+      "id": "nervous-system",
+      "title": "Nervous System & Brain",
+      "published": true,
+      "contentStatus": "available",
+      "structures": 63,
+      "lessons": 8,
+      "assets": 0,
+      "questions": 20,
+      "reason": "Original introductory brain, spinal cord, cranial nerve, plexus, and peripheral nerve study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no course priority claimed."
     }
   ]
 }
