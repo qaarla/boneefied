@@ -26,10 +26,10 @@ export const anatomySources: SourceRecord[] = [
     title: "Gray's Anatomy of the Human Body (1918) plates",
     courseLabAssociation: null,
     sourceType: 'image',
-    attributionLicenseStatus: 'Public domain; Commons metadata reports Copyrighted=false. Credit Henry Vandyke Carter and Henry Gray.',
+    attributionLicenseStatus: 'Public domain; credit Henry Vandyke Carter and Henry Gray.',
     notes: 'Only individually checked public-domain plates are activated. No labels or hotspots are inferred beyond the original plates.',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/Category:Gray%27s_Anatomy_plates_of_bones',
-    licenseUrl: 'https://creativecommons.org/public-domain/cc0/',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/Category:Gray%27s_Anatomy_plates',
+    licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/',
     verificationStatus: 'verified',
   },
 ];
@@ -101,6 +101,18 @@ export const skeletalAssets: Asset[] = [
   assetType: 'diagram' as const, labelStatus: 'labeled' as const,
   attributionLicense: 'Public domain; Henry Vandyke Carter / Henry Gray, via Wikimedia Commons',
   verificationStatus: 'verified' as const, title, description: title, sourceUrl: rightsUrl, rightsUrl,
+}));
+
+export const expandedGrayAssets: Asset[] = [
+  ['asset-gray946-sweat-gland','gray946-sweat-gland.png','Sweat-gland histology plate','https://commons.wikimedia.org/wiki/File:Gray946.png'],
+  ['asset-gray880-optic-nerve-head','gray880-optic-nerve-head.png','Optic nerve head cross-section','https://commons.wikimedia.org/wiki/File:Gray880.png'],
+  ['asset-gray491-heart-posterior','gray491-heart-posterior.png','Posterior heart and coronary veins','https://commons.wikimedia.org/wiki/File:Gray491.png'],
+  ['asset-gray1121-posterior-abdominal-wall','gray1121-posterior-abdominal-wall.png','Posterior abdominal wall','https://commons.wikimedia.org/wiki/File:Gray1121.png'],
+].map(([id, filename, title, sourceUrl]) => ({
+  id, sourceId: GRAY_SOURCE_ID, sourcePage: null, localAssetPath: `assets/images/anatomy/${filename}`,
+  assetType: 'diagram' as const, labelStatus: 'labeled' as const,
+  attributionLicense: 'Public domain; Henry Vandyke Carter / Henry Gray, via Wikimedia Commons',
+  verificationStatus: 'verified' as const, title, description: title, sourceUrl, rightsUrl: sourceUrl,
 }));
 
 const lesson = (id: string, title: string, summary: string, structureIds: string[], recognitionCues: string[], landmarks: string[], relationships: string[], commonConfusions: string[], assetIds: string[] = []): Lesson => ({

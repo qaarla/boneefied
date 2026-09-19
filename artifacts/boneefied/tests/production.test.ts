@@ -43,10 +43,10 @@ test('production catalog validates with honest published counts and source prove
   const expectedCounts: Record<string, [number, number, number]> = {
     'cytology-mitosis': [15, 0, 10], 'skeletal-system': [155, 13, 86], 'anatomy-foundations': [12, 1, 9],
     'joints-ligaments': [36, 6, 28], 'muscular-system': [59, 8, 52], 'nervous-system': [63, 8, 45],
-    'cells-tissues': [46, 7, 24], 'integumentary-system': [38, 6, 20], 'special-senses': [59, 8, 28],
-    'endocrine-system': [35, 6, 16], 'cardiovascular-system': [39, 6, 22], 'blood-vessels': [30, 9, 22],
-    'lymphatic-system': [35, 6, 16], 'respiratory-system': [57, 7, 36], 'digestive-system': [70, 10, 43],
-    'urinary-system': [45, 7, 34], 'male-reproductive': [43, 7, 38], 'female-reproductive': [60, 8, 44],
+    'cells-tissues': [57, 8, 24], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 28],
+    'endocrine-system': [38, 6, 16], 'cardiovascular-system': [50, 6, 22], 'blood-vessels': [45, 10, 22],
+    'lymphatic-system': [47, 7, 16], 'respiratory-system': [64, 7, 36], 'digestive-system': [81, 10, 43],
+    'urinary-system': [49, 7, 34], 'male-reproductive': [47, 7, 38], 'female-reproductive': [65, 8, 44],
   };
   for (const [id, [structures, lessons, questions]] of Object.entries(expectedCounts)) {
     const module = content.modules.find((item) => item.id === id);
@@ -55,7 +55,7 @@ test('production catalog validates with honest published counts and source prove
     assert.equal(module?.lessons?.length ?? 0, lessons, id);
     assert.equal(content.questions.filter((item) => item.moduleId === id).length, questions, id);
   }
-  assert.equal(content.assets.length, 4);
+  assert.equal(content.assets.length, 8);
   assert.equal(content.questions.filter((question) => question.hotspots?.length).length, 0);
   assert.equal(content.modules.find((module) => module.id === 'cytology-mitosis')?.sourceIds[0], CYTOLOGY_SOURCE_ID);
   const source = content.sources.find((item) => item.id === CYTOLOGY_SOURCE_ID);
@@ -73,6 +73,39 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(sourceCitation(content, OPENSTAX_SOURCE_ID, 42), 'OpenStax Anatomy and Physiology (2013) · CC BY 4.0 · p.42');
   assert.match(sourceCitation(content, CYTOLOGY_SOURCE_ID, 5), /Lab 2.*p\.5/);
   assert.doesNotMatch(sourceCitation(content, OPENSTAX_SOURCE_ID, null), /Lab 2|null/);
+});
+
+test('verified Gray plates are local, labeled, and lesson-scoped', () => {
+  const expected = new Map([
+    ['asset-gray946-sweat-gland', ['integumentary-system', 'cutaneous-glands', 'assets/images/anatomy/gray946-sweat-gland.png', 'https://commons.wikimedia.org/wiki/File:Gray946.png']],
+    ['asset-gray880-optic-nerve-head', ['special-senses', 'lens-retina', 'assets/images/anatomy/gray880-optic-nerve-head.png', 'https://commons.wikimedia.org/wiki/File:Gray880.png']],
+    ['asset-gray491-heart-posterior', ['cardiovascular-system', 'cv-coronary', 'assets/images/anatomy/gray491-heart-posterior.png', 'https://commons.wikimedia.org/wiki/File:Gray491.png']],
+    ['asset-gray1121-posterior-abdominal-wall', ['urinary-system', 'urinary-kidney', 'assets/images/anatomy/gray1121-posterior-abdominal-wall.png', 'https://commons.wikimedia.org/wiki/File:Gray1121.png']],
+  ]);
+  assert.equal(new Set(content.assets.map((asset) => asset.id)).size, content.assets.length);
+  for (const [id, [moduleId, lessonId, path, url]] of expected) {
+    const asset = content.assets.find((item) => item.id === id);
+    assert.ok(asset);
+    assert.equal(asset?.localAssetPath, path);
+    assert.equal(asset?.sourceId, 'source-gray-1918-commons');
+    assert.equal(asset?.labelStatus, 'labeled');
+    assert.equal(asset?.verificationStatus, 'verified');
+    assert.equal(asset?.sourceUrl, url);
+    assert.equal(asset?.rightsUrl, url);
+    assert.match(asset?.attributionLicense ?? '', /Public domain/);
+    const lesson = content.modules.find((module) => module.id === moduleId)?.lessons?.find((item) => item.id === lessonId);
+    assert.ok(lesson?.assetIds?.includes(id), `${moduleId}:${lessonId}`);
+    assert.equal(content.questions.some((question) => question.assetId === id || question.hotspots?.some((hotspot) => hotspot.structureId === id)), false);
+  }
+  const gray1121Lessons = content.modules.flatMap((module) => (module.lessons ?? []).filter((lesson) => lesson.assetIds?.includes('asset-gray1121-posterior-abdominal-wall')).map((lesson) => `${module.id}:${lesson.id}`));
+  assert.deepEqual(gray1121Lessons.sort(), ['blood-vessels:ves-central-branches', 'endocrine-system:endo-adrenal', 'urinary-system:urinary-kidney']);
+  assert.equal(content.structures.some((structure) => structure.id === 'ves-carotid'), false);
+  assert.equal(content.structures.filter((structure) => structure.canonicalName.toLowerCase().replace(/[^a-z0-9]/g, '') === 'commoncarotidartery').length, 1);
+  const glottisLesson = content.modules.find((module) => module.id === 'respiratory-system')?.lessons?.find((lesson) => lesson.id === 'respiratory-larynx');
+  assert.ok(glottisLesson?.structureIds.some((id) => content.structures.find((structure) => structure.id === id)?.canonicalName === 'Rima glottidis'));
+  assert.match(glottisLesson?.summary ?? '', /glottis comprises.*rima glottidis.*opening/i);
+  const mammaryLesson = content.modules.find((module) => module.id === 'female-reproductive')?.lessons?.find((lesson) => lesson.id === 'female-histology');
+  assert.match(mammaryLesson?.summary ?? '', /alveoli.*smaller.*larger mammary ducts/i);
 });
 
 test('production questions only expose supported text task types', () => {
@@ -218,11 +251,12 @@ test('raw rewritten module exports cover their own structures before canonical a
 });
 
 test('domain source registry records match runtime source IDs and URLs', () => {
-  const registry = JSON.parse(readFileSync(new URL('../content/sources.json', import.meta.url), 'utf8')) as Array<{ id: string; sourceUrl?: string }>;
-  for (const source of content.sources.filter((item) => item.id.startsWith('source-openstax-ap-2013-'))) {
+  const registry = JSON.parse(readFileSync(new URL('../content/sources.json', import.meta.url), 'utf8')) as Array<{ id: string; sourceUrl?: string; licenseUrl?: string }>;
+  for (const source of content.sources.filter((item) => item.id.startsWith('source-openstax-ap-2013-') || item.id === 'source-gray-1918-commons')) {
     const record = registry.find((item) => item.id === source.id);
     assert.ok(record, source.id);
     if (source.sourceUrl) assert.equal(record?.sourceUrl, source.sourceUrl, source.id);
+    if (source.id === 'source-gray-1918-commons') assert.equal(record?.licenseUrl, source.licenseUrl, source.id);
   }
 });
 

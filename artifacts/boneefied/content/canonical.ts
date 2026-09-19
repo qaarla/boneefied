@@ -1,5 +1,5 @@
 import type { ContentCatalog, Question, SourceRecord } from './model';
-import { GRAY_SOURCE_ID, anatomyQuestions, anatomySources, foundationStructures, foundationsModule, skeletalAssets, skeletalLandmarkStructures, skeletalModule, skeletalStructures } from './anatomy.ts';
+import { GRAY_SOURCE_ID, anatomyQuestions, anatomySources, expandedGrayAssets, foundationStructures, foundationsModule, skeletalAssets, skeletalLandmarkStructures, skeletalModule, skeletalStructures } from './anatomy.ts';
 import { JOINTS_SOURCE_ID, jointsLessons, jointsModule, jointsQuestions, jointsStructures, MUSCULAR_SOURCE_ID, muscularLessons, muscularModule, muscularQuestions, muscularStructures, NERVOUS_SOURCE_ID, NERVOUS_TISSUE_SOURCE_ID, nervousLessons, nervousModule, nervousQuestions, nervousStructures, SKELETAL_APPENDICULAR_SOURCE_ID, SKELETAL_AXIAL_SOURCE_ID, skeletalExpansionLessons, skeletalExpansionQuestions, skeletalExpansionStructures, systemsSources } from './systems.ts';
 import { cellsModule, cellsQuestions, cellsSources, cellsStructures, sensesModule, sensesQuestions, sensesSources, sensesStructures, skinModule, skinQuestions, skinSources, skinStructures } from './sensory-systems.ts';
 import { cardiovascularModule, cardiovascularQuestions, cardiovascularStructures, circulationSources, endocrineModule, endocrineQuestions, endocrineStructures, lymphaticModule, lymphaticQuestions, lymphaticStructures, vesselsModule, vesselsQuestions, vesselsStructures } from './circulation-systems.ts';
@@ -69,7 +69,7 @@ export const content: ContentCatalog = {
       verificationStatus: 'verified',
     },
   ],
-  modules: [{
+  modules: [cellsModule, lymphaticModule, {
     id: 'cytology-mitosis',
     title: 'Cytology / Mitosis',
     ordering: 1,
@@ -78,7 +78,7 @@ export const content: ContentCatalog = {
     visible: true,
     published: true,
     contentStatus: 'available',
-  }, { ...skeletalModule, sourceIds: [SKELETAL_AXIAL_SOURCE_ID, SKELETAL_APPENDICULAR_SOURCE_ID, 'source-openstax-ap-2013', GRAY_SOURCE_ID], lessons: [...(skeletalModule.lessons ?? []), ...skeletalExpansionLessons] }, { ...foundationsModule }, { ...jointsModule, sourceIds: [JOINTS_SOURCE_ID] }, { ...muscularModule, sourceIds: [MUSCULAR_SOURCE_ID] }, { ...nervousModule, sourceIds: [NERVOUS_SOURCE_ID, NERVOUS_TISSUE_SOURCE_ID] }, cellsModule, skinModule, sensesModule, endocrineModule, cardiovascularModule, vesselsModule, lymphaticModule, ...organSystemsModules],
+    }, { ...skeletalModule, sourceIds: [SKELETAL_AXIAL_SOURCE_ID, SKELETAL_APPENDICULAR_SOURCE_ID, 'source-openstax-ap-2013', GRAY_SOURCE_ID], lessons: [...(skeletalModule.lessons ?? []), ...skeletalExpansionLessons] }, { ...foundationsModule }, { ...jointsModule, sourceIds: [JOINTS_SOURCE_ID] }, { ...muscularModule, sourceIds: [MUSCULAR_SOURCE_ID] }, { ...nervousModule, sourceIds: [NERVOUS_SOURCE_ID, NERVOUS_TISSUE_SOURCE_ID] }, { ...skinModule, sourceIds: [...skinModule.sourceIds, GRAY_SOURCE_ID], lessons: (skinModule.lessons ?? []).map((lesson) => lesson.id === 'cutaneous-glands' ? { ...lesson, assetIds: ['asset-gray946-sweat-gland'], sourceIds: [...lesson.sourceIds, GRAY_SOURCE_ID] } : lesson) }, { ...sensesModule, sourceIds: [...sensesModule.sourceIds, GRAY_SOURCE_ID], lessons: (sensesModule.lessons ?? []).map((lesson) => lesson.id === 'lens-retina' ? { ...lesson, assetIds: ['asset-gray880-optic-nerve-head'], sourceIds: [...lesson.sourceIds, GRAY_SOURCE_ID] } : lesson) }, { ...endocrineModule, sourceIds: [...endocrineModule.sourceIds, GRAY_SOURCE_ID], lessons: (endocrineModule.lessons ?? []).map((lesson) => lesson.id === 'endo-adrenal' ? { ...lesson, assetIds: ['asset-gray1121-posterior-abdominal-wall'], sourceIds: [...lesson.sourceIds, GRAY_SOURCE_ID] } : lesson) }, { ...cardiovascularModule, sourceIds: [...cardiovascularModule.sourceIds, GRAY_SOURCE_ID], lessons: (cardiovascularModule.lessons ?? []).map((lesson) => lesson.id === 'cv-coronary' ? { ...lesson, assetIds: ['asset-gray491-heart-posterior'], sourceIds: [...lesson.sourceIds, GRAY_SOURCE_ID] } : lesson) }, { ...vesselsModule, sourceIds: [...vesselsModule.sourceIds, GRAY_SOURCE_ID], lessons: (vesselsModule.lessons ?? []).map((lesson) => lesson.id === 'ves-central-branches' ? { ...lesson, assetIds: ['asset-gray1121-posterior-abdominal-wall'], sourceIds: [...lesson.sourceIds, GRAY_SOURCE_ID] } : lesson) }, ...organSystemsModules.map((module) => module.id === 'urinary-system' ? { ...module, sourceIds: [...module.sourceIds, GRAY_SOURCE_ID], lessons: (module.lessons ?? []).map((lesson) => lesson.id === 'urinary-kidney' ? { ...lesson, assetIds: ['asset-gray1121-posterior-abdominal-wall'], sourceIds: [...lesson.sourceIds, GRAY_SOURCE_ID] } : lesson) } : module)],
   structures: [
     ...[
       ['interphase','Interphase','cell cycle',5],['g1','G1 phase','cell cycle',5],['s-phase','S phase','cell cycle',5],
@@ -95,7 +95,7 @@ export const content: ContentCatalog = {
     })),
     ...allStructures,
   ],
-  assets: skeletalAssets,
+  assets: [...skeletalAssets, ...expandedGrayAssets],
   questions: [
     { id:'q-cycle-order', moduleId:'cytology-mitosis', structureIds:['g1','s-phase','g2'], taskType:'ordered-sequence', prompt:'Order the interphase stages from first to last.', answer:['G1','S','G2'], acceptedAliases:[], options:['G2','G1','S'], explanation:'The source describes G1 growth/resource accumulation, S DNA replication, then G2 second growth.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:5, examPriority:true, verificationStatus:'verified' },
     { id:'q-mitosis-order', moduleId:'cytology-mitosis', structureIds:['mitosis','prophase','metaphase','anaphase','telophase'], taskType:'ordered-sequence', prompt:'Order the traditional stages of mitosis.', answer:['Prophase','Metaphase','Anaphase','Telophase'], acceptedAliases:[], options:['Anaphase','Telophase','Prophase','Metaphase'], explanation:'The supplied quiz excerpt gives the four-stage order.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:11, examPriority:true, verificationStatus:'verified' },

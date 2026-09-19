@@ -13,6 +13,10 @@ const imageSources: Record<string, number> = {
   'asset-skull-lateral': require('@/assets/images/anatomy/gray188-skull-lateral.png'),
   'asset-vertebral-column': require('@/assets/images/anatomy/gray111-vertebral-column.png'),
   'asset-cervical-vertebra': require('@/assets/images/anatomy/gray84-cervical-vertebra.png'),
+  'asset-gray946-sweat-gland': require('@/assets/images/anatomy/gray946-sweat-gland.png'),
+  'asset-gray880-optic-nerve-head': require('@/assets/images/anatomy/gray880-optic-nerve-head.png'),
+  'asset-gray491-heart-posterior': require('@/assets/images/anatomy/gray491-heart-posterior.png'),
+  'asset-gray1121-posterior-abdominal-wall': require('@/assets/images/anatomy/gray1121-posterior-abdominal-wall.png'),
 };
 
 export default function ModuleDetailScreen() {
@@ -25,7 +29,8 @@ export default function ModuleDetailScreen() {
   const module = content.modules.find((item) => item.id === id) ?? content.modules[0];
   const lessons = module.lessons ?? [];
   const structures = content.structures.filter((item) => item.moduleId === module.id);
-  const moduleAssets = content.assets.filter((asset) => module.sourceIds.includes(asset.sourceId));
+  const assignedAssetIds = new Set((module.lessons ?? []).flatMap((lesson) => lesson.assetIds ?? []));
+  const moduleAssets = content.assets.filter((asset) => assignedAssetIds.has(asset.id));
   return <><Stack.Screen options={{ title: module.title, headerBackTitle: 'Study' }} /><Screen>
     <View style={styles.heading}>
       <Text style={[styles.eyebrow, { color: colors.primary }]}>{module.system?.toUpperCase() ?? 'STUDY MODULE'}</Text>
@@ -35,7 +40,7 @@ export default function ModuleDetailScreen() {
       <View style={[styles.sources, { borderColor: colors.border, backgroundColor: colors.card }]}><Text style={[styles.sourceHead, { color: colors.foreground }]}>Sources and rights</Text>{module.sourceIds.map((sourceId) => { const source = content.sources.find((item) => item.id === sourceId); return source ? <View key={source.id} style={styles.sourceRow}><Text style={{ color: colors.mutedForeground }}>{source.title} · {source.attributionLicenseStatus.split(';')[0]}</Text><View style={styles.sourceLinks}>{source.sourceUrl && <Pressable onPress={() => Linking.openURL(source.sourceUrl!)}><Text style={{ color: colors.primary, fontSize: 12 }}>Source</Text></Pressable>}{source.licenseUrl && <Pressable onPress={() => Linking.openURL(source.licenseUrl!)}><Text style={{ color: colors.primary, fontSize: 12 }}>Rights</Text></Pressable>}</View></View> : null; })}</View>
     </View>
     <View style={[styles.switcher, { backgroundColor: colors.secondary }]}>{(['learn', 'recall'] as const).map((item) => <Pressable key={item} accessibilityRole="tab" accessibilityState={{ selected: mode === item }} onPress={() => setMode(item)} style={[styles.switch, mode === item && { backgroundColor: colors.card }]}><Text style={{ color: mode === item ? colors.foreground : colors.mutedForeground, fontWeight: '700' }}>{item === 'learn' ? 'Learn' : 'Recall'}</Text></Pressable>)}</View>
-    {moduleAssets.length > 0 && <View style={styles.images}>{moduleAssets.map((asset) => <View key={asset.id} style={styles.imageCard}><AnatomyImageViewer source={imageSources[asset.id]} revealLabels={mode === 'learn'} caption={`${asset.title} · Public domain · ${asset.sourceUrl}`} /><Pressable onPress={() => asset.rightsUrl && Linking.openURL(asset.rightsUrl)}><Text style={{ color: colors.primary, fontSize: 12 }}>Open source and rights page</Text></Pressable></View>)}</View>}
+    {moduleAssets.length > 0 && <View style={styles.images}>{moduleAssets.map((asset) => <View key={asset.id} style={styles.imageCard}><AnatomyImageViewer source={imageSources[asset.id]} revealLabels={mode === 'learn'} caption={`${asset.title} · Public domain`} /><Pressable onPress={() => asset.rightsUrl && Linking.openURL(asset.rightsUrl)}><Text style={{ color: colors.primary, fontSize: 12 }}>Open source and rights page</Text></Pressable></View>)}</View>}
     {lessons.map((item) => <LessonCard key={item.id} lesson={item} mode={mode} expanded={expanded === item.id} onToggle={() => setExpanded(expanded === item.id ? null : item.id)} colors={colors} bookmarks={bookmarks} onBookmark={toggleBookmark} />)}
     <Pressable onPress={() => router.push(`/(tabs)/practice?moduleId=${module.id}`)} style={[styles.practice, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Practice this module · {content.questions.filter((item) => item.moduleId === module.id).length} questions</Text></Pressable>
     <Pressable onPress={() => router.back()} style={styles.back}><Text style={{ color: colors.primary, fontWeight: '700' }}>Return to library</Text></Pressable>

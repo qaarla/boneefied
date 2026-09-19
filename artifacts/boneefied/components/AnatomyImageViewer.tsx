@@ -56,12 +56,12 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
 }
 
 const styles = StyleSheet.create({
-  frame: { width: '100%', aspectRatio: 1.45, borderRadius: 16, borderWidth: 1, overflow: 'hidden', position: 'relative' },
-  gestureArea: { flex: 1, overflow: 'hidden' },
+  frame: { width: '100%', borderRadius: 16, borderWidth: 1, overflow: 'hidden', position: 'relative' },
+  gestureArea: { aspectRatio: 1.45, overflow: 'hidden' },
   image: { width: '100%', height: '100%' },
   empty: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24 },
   blocked: { fontSize: 14, textAlign: 'center' },
   hotspot: { position: 'absolute', transform: [{ translateX: '-50%' }, { translateY: '-50%' }], borderWidth: 2, borderRadius: 999 },
   reset: { position: 'absolute', right: 10, top: 10, paddingHorizontal: 10, paddingVertical: 7, borderRadius: 8, opacity: 0.94 },
-  caption: { position: 'absolute', bottom: 10, left: 12, right: 12, fontSize: 11 },
+  caption: { paddingHorizontal: 12, paddingVertical: 8, fontSize: 11 },
 });

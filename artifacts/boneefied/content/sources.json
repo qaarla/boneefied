@@ -117,7 +117,7 @@
     "sha256": "gray-1918-commons-public-domain",
     "pageCount": null,
     "contentType": "public-domain anatomy plates",
-    "representedLabOrSystem": "Skeletal system",
+    "representedLabOrSystem": "Gray's Anatomy plates across human anatomy",
     "usefulPages": [],
     "mostlyTextOrImageBased": "image",
     "containsAnswers": false,
@@ -125,7 +125,8 @@
     "attributionLicenseVisible": true,
     "license": "Public domain",
     "attribution": "Henry Vandyke Carter / Henry Gray, via Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Gray%27s_Anatomy_plates_of_bones",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Gray%27s_Anatomy_plates",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
     "unresolvedIssues": ["Only individually verified files are activated; no inferred hotspots are published."]
   },
   {
