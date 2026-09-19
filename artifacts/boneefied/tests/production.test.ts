@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import { content, CYTOLOGY_SOURCE_ID } from '../content/canonical.ts';
 import { GRAY_SOURCE_ID, OPENSTAX_SOURCE_ID } from '../content/anatomy.ts';
@@ -13,10 +14,12 @@ import {
   upsertSession,
 } from '../content/study.ts';
 import type { PracticeSession } from '../content/model.ts';
+import { endocrineModule, endocrineStructures, cardiovascularModule, cardiovascularStructures, vesselsModule, vesselsStructures, lymphaticModule, lymphaticStructures } from '../content/circulation-systems.ts';
+import { organSystemsModules, organSystemsStructures } from '../content/organ-systems.ts';
 
 test('production catalog validates with honest published counts and source provenance', () => {
   assert.deepEqual(validateContent(content), []);
-  assert.equal(content.modules.filter((module) => module.published).length, 6);
+  assert.equal(content.modules.filter((module) => module.published).length, 18);
   assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.contentStatus, 'available');
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'skeletal-system').length, 155);
   assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length, 13);
@@ -33,6 +36,21 @@ test('production catalog validates with honest published counts and source prove
   assert.ok(content.structures.some((structure) => structure.id === 'lateral-malleolus'));
   assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 20);
   assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 3);
+  const expectedCounts: Record<string, [number, number, number]> = {
+    'cytology-mitosis': [15, 0, 10], 'skeletal-system': [155, 13, 20], 'anatomy-foundations': [12, 1, 3],
+    'joints-ligaments': [36, 6, 14], 'muscular-system': [59, 8, 20], 'nervous-system': [63, 8, 20],
+    'cells-tissues': [46, 7, 24], 'integumentary-system': [38, 6, 20], 'special-senses': [59, 8, 28],
+    'endocrine-system': [35, 6, 16], 'cardiovascular-system': [39, 6, 22], 'blood-vessels': [30, 9, 22],
+    'lymphatic-system': [35, 6, 16], 'respiratory-system': [57, 7, 18], 'digestive-system': [70, 10, 24],
+    'urinary-system': [45, 7, 18], 'male-reproductive': [43, 7, 18], 'female-reproductive': [60, 8, 20],
+  };
+  for (const [id, [structures, lessons, questions]] of Object.entries(expectedCounts)) {
+    const module = content.modules.find((item) => item.id === id);
+    assert.ok(module?.published, id);
+    assert.equal(content.structures.filter((item) => item.moduleId === id).length, structures, id);
+    assert.equal(module?.lessons?.length ?? 0, lessons, id);
+    assert.equal(content.questions.filter((item) => item.moduleId === id).length, questions, id);
+  }
   assert.equal(content.assets.length, 4);
   assert.equal(content.questions.filter((question) => question.hotspots?.length).length, 0);
   assert.equal(content.modules.find((module) => module.id === 'cytology-mitosis')?.sourceIds[0], CYTOLOGY_SOURCE_ID);
@@ -56,12 +74,12 @@ test('production catalog validates with honest published counts and source prove
 test('production questions only expose supported text task types', () => {
   const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
   assert.ok(content.questions.every((question) => supported.has(question.taskType)));
-  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 63);
-  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 5);
-  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 5);
-  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 5);
+  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 275);
+  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 14);
+  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 15);
+  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 12);
   assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 3);
-  assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 4);
+  assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 12);
   assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 1);
   assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 1);
   const multipleChoiceLike = new Set(['multiple-choice', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
@@ -71,6 +89,18 @@ test('production questions only expose supported text task types', () => {
   }
   for (const question of content.questions.filter((item) => Array.isArray(item.answer))) {
     for (const answer of question.answer as string[]) assert.ok((question.options ?? []).includes(answer), `${question.id}: ${answer}`);
+  }
+  const structureModules = new Map(content.structures.map((structure) => [structure.id, structure.moduleId]));
+  for (const question of content.questions) {
+    for (const structureId of question.structureIds) assert.equal(structureModules.get(structureId), question.moduleId, `${question.id}:${structureId}`);
+    const answers = Array.isArray(question.answer) ? question.answer : [question.answer];
+    if (question.taskType !== 'typed-recall') for (const answer of answers) {
+      if (answer.trim().length > 2) assert.ok(!new RegExp(`\\b${answer.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')}\\b`, 'i').test(question.prompt), `${question.id} leaks answer`);
+    }
+    if (question.taskType === 'typed-recall') assert.ok(!/type the name of this study structure|name a structure|identify the structure/i.test(question.prompt), `${question.id} is broad category-only recall`);
+  }
+  for (const module of content.modules) for (const lesson of module.lessons ?? []) {
+    for (const structureId of lesson.structureIds) assert.equal(structureModules.get(structureId), module.id, `${lesson.id}:${structureId}`);
   }
 });
 
@@ -103,6 +133,27 @@ test('published lesson coverage and domain provenance are complete', () => {
   assert.deepEqual(skeletalExpansion?.structureIds, ['tibial-plateau','intercondylar-eminence','femoral-linea-aspera']);
   assert.ok(skeletalLessons.find((item) => item.id === 'hand-wrist-bones')?.structureIds.includes('radial-tuberosity'));
   assert.ok(skeletalLessons.find((item) => item.id === 'hand-wrist-bones')?.structureIds.includes('ulnar-styloid'));
+});
+
+test('raw rewritten module exports cover their own structures before canonical assembly', () => {
+  const raw = [
+    [endocrineModule, endocrineStructures], [cardiovascularModule, cardiovascularStructures],
+    [vesselsModule, vesselsStructures], [lymphaticModule, lymphaticStructures],
+    ...organSystemsModules.map((module) => [module, organSystemsStructures.filter((structure) => structure.moduleId === module.id)] as const),
+  ] as const;
+  for (const [module, structures] of raw) {
+    const covered = new Set((module.lessons ?? []).flatMap((lesson) => lesson.structureIds));
+    for (const structure of structures) assert.ok(covered.has(structure.id), `${module.id}:${structure.id}`);
+  }
+});
+
+test('domain source registry records match runtime source IDs and URLs', () => {
+  const registry = JSON.parse(readFileSync(new URL('../content/sources.json', import.meta.url), 'utf8')) as Array<{ id: string; sourceUrl?: string }>;
+  for (const source of content.sources.filter((item) => item.id.startsWith('source-openstax-ap-2013-'))) {
+    const record = registry.find((item) => item.id === source.id);
+    assert.ok(record, source.id);
+    if (source.sourceUrl) assert.equal(record?.sourceUrl, source.sourceUrl, source.id);
+  }
 });
 
 const session: PracticeSession = {

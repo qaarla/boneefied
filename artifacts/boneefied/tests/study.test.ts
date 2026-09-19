@@ -3,7 +3,7 @@ import test from 'node:test';
 import type { Attempt, ContentCatalog, Question } from '../content/model.ts';
 import type { StudyState } from '../content/study.ts';
 import { answersMatch, validateContent } from '../content/validation.ts';
-import { answerIsCorrect, applyAttempt, clearMissed, hydrateStudyState, isQuestionScorable, masteryState, selectQuestion, serializeStudyState } from '../content/study.ts';
+import { answerIsCorrect, applyAttempt, clearMissed, hydrateStudyState, isQuestionScorable, masteryState, progressRollups, selectQuestion, serializeStudyState } from '../content/study.ts';
 
 const fixture: ContentCatalog = {
   sources: [{ id: 'fixture-source', filename: 'generated-fixture', hash: 'fixture', pageCount: 1, title: 'Neutral fixture', courseLabAssociation: null, sourceType: 'text', attributionLicenseStatus: 'test-only', notes: 'NON-PRODUCTION', verificationStatus: 'verified' }],
@@ -56,4 +56,21 @@ test('offline state serializes and safely hydrates corrupted data', () => {
   let state = applyAttempt({ attempts: [], missed: [], mastery: [] }, attempt(false));
   assert.deepEqual(hydrateStudyState(serializeStudyState(state)), state);
   assert.deepEqual(hydrateStudyState('{bad'), { attempts: [], missed: [], mastery: [] });
+});
+test('progress rollups assign multi-structure attempts once and support overlapping lessons', () => {
+  const catalog: ContentCatalog = {
+    ...fixture,
+    modules: [{ ...fixture.modules[0], lessons: [
+      { id: 'lesson-a', title: 'A', summary: '', structureIds: ['fixture-structure'], recognitionCues: [], landmarks: [], relationships: [], commonConfusions: [], sourceIds: ['fixture-source'] },
+      { id: 'lesson-b', title: 'B', summary: '', structureIds: ['fixture-structure'], recognitionCues: [], landmarks: [], relationships: [], commonConfusions: [], sourceIds: ['fixture-source'] },
+    ] }],
+    structures: [{ ...fixture.structures[0] }, { ...fixture.structures[0], id: 'second-structure', canonicalName: 'second' }],
+    questions: [{ ...fixture.questions[0], structureIds: ['fixture-structure', 'second-structure'] }],
+  };
+  const result = progressRollups(catalog, [{ ...attempt(true), structureId: undefined }], []);
+  assert.equal(result.modules[0].attempts, 1);
+  assert.equal(result.modules[0].correct, 1);
+  assert.equal(result.lessons.find((lesson) => lesson.id === 'lesson-a')?.attempts, 1);
+  assert.equal(result.lessons.find((lesson) => lesson.id === 'lesson-b')?.attempts, 1);
+  assert.equal(result.modules[0].coveredCount, 1);
 });

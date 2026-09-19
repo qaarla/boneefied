@@ -1,72 +1,23 @@
 {
   "generatedAt": "anatomy learning library batch",
   "modules": [
-    {
-      "id": "cytology-mitosis",
-      "title": "Cytology / Mitosis",
-      "labNumber": "2",
-      "sourceIds": ["source-user-transcribed-lab2"],
-      "published": true,
-      "contentStatus": "available",
-      "structures": 15,
-      "assets": 0,
-      "questions": 10,
-      "reason": "Text-only source-checked facts from user-supplied transcribed Lab 2 and quiz excerpts; no image assets or hotspots claimed."
-    },
-    {
-      "id": "skeletal-system",
-      "title": "Skeletal System",
-      "published": true,
-      "contentStatus": "available",
-      "structures": 155,
-      "lessons": 13,
-      "assets": 4,
-      "questions": 20,
-      "reason": "Original study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0) with four individually verified public-domain Gray plates."
-    },
-    {
-      "id": "anatomy-foundations",
-      "title": "Anatomy Foundations: Organs & Glands",
-      "published": true,
-      "contentStatus": "available",
-      "structures": 12,
-      "lessons": 1,
-      "assets": 0,
-      "questions": 3,
-      "reason": "Original text-first organ and endocrine orientation linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no external images activated."
-    },
-    {
-      "id": "joints-ligaments",
-      "title": "Joints & Ligaments",
-      "published": true,
-      "contentStatus": "available",
-      "structures": 36,
-      "lessons": 6,
-      "assets": 0,
-      "questions": 14,
-      "reason": "Original structural and functional joint study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no course priority claimed."
-    },
-    {
-      "id": "muscular-system",
-      "title": "Muscular System",
-      "published": true,
-      "contentStatus": "available",
-      "structures": 59,
-      "lessons": 8,
-      "assets": 0,
-      "questions": 20,
-      "reason": "Original regional muscle recognition and action study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no course priority claimed."
-    },
-    {
-      "id": "nervous-system",
-      "title": "Nervous System & Brain",
-      "published": true,
-      "contentStatus": "available",
-      "structures": 63,
-      "lessons": 8,
-      "assets": 0,
-      "questions": 20,
-      "reason": "Original introductory brain, spinal cord, cranial nerve, plexus, and peripheral nerve study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no course priority claimed."
-    }
+    {"id":"cytology-mitosis","title":"Cytology / Mitosis","published":true,"contentStatus":"available","structures":15,"lessons":0,"assets":0,"questions":10,"reason":"Text-only source-checked cytology and mitosis content; no image assets claimed."},
+    {"id":"skeletal-system","title":"Skeletal System","published":true,"contentStatus":"available","structures":155,"lessons":13,"assets":4,"questions":20,"reason":"OpenStax Anatomy and Physiology (2013, CC BY 4.0) with four verified public-domain Gray plates."},
+    {"id":"anatomy-foundations","title":"Anatomy Foundations: Organs & Glands","published":true,"contentStatus":"available","structures":12,"lessons":1,"assets":0,"questions":3,"reason":"Text-first orientation to organs and glands from OpenStax 2013 CC BY 4.0."},
+    {"id":"joints-ligaments","title":"Joints & Ligaments","published":true,"contentStatus":"available","structures":36,"lessons":6,"assets":0,"questions":14,"reason":"Text-first joint structure and movement content from OpenStax 2013 CC BY 4.0."},
+    {"id":"muscular-system","title":"Muscular System","published":true,"contentStatus":"available","structures":59,"lessons":8,"assets":0,"questions":20,"reason":"Text-first regional muscle recognition and action content from OpenStax 2013 CC BY 4.0."},
+    {"id":"nervous-system","title":"Nervous System & Brain","published":true,"contentStatus":"available","structures":63,"lessons":8,"assets":0,"questions":20,"reason":"Text-first brain, spinal cord, cranial nerve, and plexus content from OpenStax 2013 CC BY 4.0."},
+    {"id":"cells-tissues","title":"Cells & Tissues","published":true,"contentStatus":"available","structures":46,"lessons":7,"assets":0,"questions":24,"reason":"Text-first cell and histology curriculum from OpenStax 2013 CC BY 4.0; no images claimed."},
+    {"id":"integumentary-system","title":"Integumentary System","published":true,"contentStatus":"available","structures":38,"lessons":6,"assets":0,"questions":20,"reason":"Text-first skin, appendage, gland, and receptor curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"special-senses","title":"Special Senses","published":true,"contentStatus":"available","structures":59,"lessons":8,"assets":0,"questions":28,"reason":"Text-first eye, ear, smell, and taste curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"endocrine-system","title":"Endocrine System","published":true,"contentStatus":"available","structures":35,"lessons":6,"assets":0,"questions":16,"reason":"Text-first endocrine anatomy and histology curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"cardiovascular-system","title":"Cardiovascular System: Heart","published":true,"contentStatus":"available","structures":39,"lessons":6,"assets":0,"questions":22,"reason":"Text-first heart anatomy and circulation curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"blood-vessels","title":"Blood Vessels and Circulation","published":true,"contentStatus":"available","structures":30,"lessons":9,"assets":0,"questions":22,"reason":"Text-first vessel wall, route, and portal-flow curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"lymphatic-system","title":"Lymphatic System","published":true,"contentStatus":"available","structures":35,"lessons":6,"assets":0,"questions":16,"reason":"Text-first lymphatic and lymphoid-organ curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"respiratory-system","title":"Respiratory System","published":true,"contentStatus":"available","structures":57,"lessons":7,"assets":0,"questions":18,"reason":"Text-first respiratory anatomy curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"digestive-system","title":"Digestive System","published":true,"contentStatus":"available","structures":70,"lessons":10,"assets":0,"questions":24,"reason":"Text-first digestive anatomy curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"urinary-system","title":"Urinary System","published":true,"contentStatus":"available","structures":45,"lessons":7,"assets":0,"questions":18,"reason":"Text-first urinary anatomy and histology curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"male-reproductive","title":"Male Reproductive System","published":true,"contentStatus":"available","structures":43,"lessons":7,"assets":0,"questions":18,"reason":"Text-first male reproductive anatomy curriculum from OpenStax 2013 CC BY 4.0."},
+    {"id":"female-reproductive","title":"Female Reproductive System","published":true,"contentStatus":"available","structures":60,"lessons":8,"assets":0,"questions":20,"reason":"Text-first female reproductive anatomy and histology curriculum from OpenStax 2013 CC BY 4.0."}
   ]
 }

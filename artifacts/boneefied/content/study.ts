@@ -1,7 +1,85 @@
 import type { Attempt, MasteryRecord, MasteryState, MissedItem, Question, ContentCatalog, PracticeSession, SessionAnswer } from './model';
 
 export type StudyState = { attempts: Attempt[]; missed: MissedItem[]; mastery: MasteryRecord[]; sessions?: PracticeSession[] };
+export type ProgressRollup = {
+  id: string;
+  moduleId: string;
+  title: string;
+  kind: 'module' | 'lesson';
+  structureCount: number;
+  coveredCount: number;
+  attempts: number;
+  correct: number;
+  accuracy: number | null;
+};
+export type ProgressRollups = { modules: ProgressRollup[]; lessons: ProgressRollup[] };
 export const emptyStudyState: StudyState = { attempts: [], missed: [], mastery: [] };
+
+/**
+ * Assigns each attempt to one canonical structure before aggregating it. This
+ * matters for questions (such as select-all) which reference several
+ * structures, but represent one submitted attempt.
+ */
+export function progressRollups(
+  catalog: ContentCatalog,
+  attempts: Attempt[],
+  mastery: MasteryRecord[],
+): ProgressRollups {
+  const canonical = new Map(catalog.structures.map((structure) => [structure.id, structure]));
+  const questions = new Map(catalog.questions.map((question) => [question.id, question]));
+  const attemptByStructure = new Map<string, { attempts: number; correct: number }>();
+  for (const attempt of attempts) {
+    const question = questions.get(attempt.questionId);
+    const structureId = (attempt.structureId && canonical.has(attempt.structureId))
+      ? attempt.structureId
+      : question?.structureIds.find((id) => canonical.has(id));
+    if (!structureId) continue;
+    const previous = attemptByStructure.get(structureId) ?? { attempts: 0, correct: 0 };
+    previous.attempts += 1;
+    if (attempt.correct) previous.correct += 1;
+    attemptByStructure.set(structureId, previous);
+  }
+  const mastered = new Set(
+    mastery.filter((record) => canonical.has(record.structureId)).map((record) => record.structureId),
+  );
+  const moduleRollups = catalog.modules.filter((module) => module.published).map((module) => {
+    const structureIds = new Set(catalog.structures.filter((structure) => structure.moduleId === module.id).map((structure) => structure.id));
+    return makeProgressRollup(module.id, module.id, module.title, 'module', structureIds, attemptByStructure, mastered);
+  });
+  const lessonRollups = catalog.modules.filter((module) => module.published).flatMap((module) =>
+    (module.lessons ?? []).map((lesson) => makeProgressRollup(
+      lesson.id, module.id, lesson.title, 'lesson',
+      new Set(lesson.structureIds.filter((id) => canonical.has(id))),
+      attemptByStructure, mastered,
+    )),
+  );
+  return { modules: moduleRollups, lessons: lessonRollups };
+}
+
+function makeProgressRollup(
+  id: string,
+  moduleId: string,
+  title: string,
+  kind: ProgressRollup['kind'],
+  structureIds: Set<string>,
+  attempts: Map<string, { attempts: number; correct: number }>,
+  mastered: Set<string>,
+): ProgressRollup {
+  let attemptCount = 0;
+  let correct = 0;
+  for (const structureId of structureIds) {
+    const result = attempts.get(structureId);
+    if (result) {
+      attemptCount += result.attempts;
+      correct += result.correct;
+    }
+  }
+  const coveredCount = [...structureIds].filter((id) => mastered.has(id) || attempts.has(id)).length;
+  return {
+    id, moduleId, title, kind, structureCount: structureIds.size, coveredCount,
+    attempts: attemptCount, correct, accuracy: attemptCount ? correct / attemptCount : null,
+  };
+}
 export function upsertSession(state: StudyState, session: PracticeSession): StudyState {
   const sessions = [...(state.sessions ?? [])];
   const index = sessions.findIndex((item) => item.id === session.id);

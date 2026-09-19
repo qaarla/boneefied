@@ -16,6 +16,7 @@ Boneefied is chiefly a comprehensive mobile human-anatomy learning app: students
 - Activate only individually verified, compatible source assets. Record attribution, rights URL, and source URL in `content/sources.json` and the asset record. Do not use OpenStax Anatomy & Physiology 2e because its noncommercial license is incompatible with a potentially public/commercial app.
 - Preserve the approved front-facing skull/atom branding, orange/deep-charcoal palette, Tinos typography, four tabs, and local/offline persistence.
 - Preserve the current Study/module/Practice layout and visual structure; expand the canonical anatomy library rather than redesigning working screens unless a usability fix requires it.
+- Treat Contract B only as a loose reference for curriculum breadth, subtopics, practice depth, and topic-based progress. Do not copy its UI, cards, navigation, spacing, hierarchy, or screen structure; Boneefied's current Replit preview is the visual source of truth.
 
 ## Product architecture
 
