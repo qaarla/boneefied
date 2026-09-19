@@ -1,5 +1,38 @@
 [
   {
+    "id": "source-openstax-ap-2013",
+    "filename": "OpenStax Anatomy and Physiology (2013)",
+    "sha256": "openstax-ap-2013-cc-by-4",
+    "pageCount": null,
+    "contentType": "open textbook",
+    "representedLabOrSystem": "Human anatomy reference",
+    "usefulPages": [],
+    "mostlyTextOrImageBased": "text",
+    "containsAnswers": false,
+    "appearsDuplicated": false,
+    "attributionLicenseVisible": true,
+    "sourceUrl": "https://openstax.org/books/anatomy-and-physiology/pages/preface",
+    "license": "CC BY 4.0",
+    "unresolvedIssues": ["Original study copy is paraphrased; no OpenStax 2e noncommercial content is used."]
+  },
+  {
+    "id": "source-gray-1918-commons",
+    "filename": "Gray's Anatomy 1918 plates via Wikimedia Commons",
+    "sha256": "gray-1918-commons-public-domain",
+    "pageCount": null,
+    "contentType": "public-domain anatomy plates",
+    "representedLabOrSystem": "Skeletal system",
+    "usefulPages": [],
+    "mostlyTextOrImageBased": "image",
+    "containsAnswers": false,
+    "appearsDuplicated": false,
+    "attributionLicenseVisible": true,
+    "license": "Public domain",
+    "attribution": "Henry Vandyke Carter / Henry Gray, via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Gray%27s_Anatomy_plates_of_bones",
+    "unresolvedIssues": ["Only individually verified files are activated; no inferred hotspots are published."]
+  },
+  {
     "id": "source-user-transcribed-lab2",
     "filename": "User-supplied transcribed excerpts from Lab 2 Cytology and Quizes(2)",
     "sha256": "user-supplied-transcription-lab2-excerpts",

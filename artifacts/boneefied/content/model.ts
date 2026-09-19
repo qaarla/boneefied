@@ -17,6 +17,8 @@ export interface SourceRecord {
   attributionLicenseStatus: string;
   notes: string;
   verificationStatus: VerificationStatus;
+  sourceUrl?: string;
+  licenseUrl?: string;
 }
 export interface Module {
   id: string;
@@ -27,6 +29,23 @@ export interface Module {
   visible: boolean;
   published: boolean;
   contentStatus: 'available' | 'content-blocked';
+  system?: string;
+  category?: string;
+  summary?: string;
+  coursePriority?: boolean;
+  lessons?: Lesson[];
+}
+export interface Lesson {
+  id: string;
+  title: string;
+  summary: string;
+  structureIds: string[];
+  recognitionCues: string[];
+  landmarks: string[];
+  relationships: string[];
+  commonConfusions: string[];
+  sourceIds: string[];
+  assetIds?: string[];
 }
 export interface Structure {
   id: string;
@@ -48,6 +67,10 @@ export interface Asset {
   labelStatus: 'labeled' | 'unlabeled' | 'not-applicable';
   attributionLicense: string;
   verificationStatus: VerificationStatus;
+  title?: string;
+  description?: string;
+  sourceUrl?: string;
+  rightsUrl?: string;
 }
 export interface NormalizedHotspot {
   x: number;

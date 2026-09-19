@@ -1,5 +1,5 @@
 {
-  "generatedAt": "source-checked Cytology transcription pass",
+  "generatedAt": "anatomy learning library batch",
   "modules": [
     {
       "id": "cytology-mitosis",
@@ -12,6 +12,26 @@
       "assets": 0,
       "questions": 10,
       "reason": "Text-only source-checked facts from user-supplied transcribed Lab 2 and quiz excerpts; no image assets or hotspots claimed."
+    },
+    {
+      "id": "skeletal-system",
+      "title": "Skeletal System",
+      "published": true,
+      "contentStatus": "available",
+      "structures": 108,
+      "assets": 4,
+      "questions": 12,
+      "reason": "Original study copy linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0) with four individually verified public-domain Gray plates."
+    },
+    {
+      "id": "anatomy-foundations",
+      "title": "Anatomy Foundations: Organs & Glands",
+      "published": true,
+      "contentStatus": "available",
+      "structures": 12,
+      "assets": 0,
+      "questions": 3,
+      "reason": "Original text-first organ and endocrine orientation linked to OpenStax Anatomy and Physiology (2013, CC BY 4.0); no external images activated."
     }
   ]
 }

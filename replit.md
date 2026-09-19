@@ -1,45 +1,31 @@
-# [Project name]
+# Boneefied
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Boneefied is chiefly a comprehensive mobile human-anatomy learning app: students study systems, structures, relationships, landmarks, and recognition cues, then practice and track mastery offline.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- Required env: `DATABASE_URL` — Postgres connection string
+- `pnpm --dir artifacts/boneefied run typecheck`
+- `pnpm --dir artifacts/boneefied test`
+- The native Expo workflow is the Boneefied runtime; use the Replit Expo preview for browser checks and Preview on your phone for device checks.
 
-## Stack
+## Source and content decisions
 
-- pnpm workspaces, Node.js 24, TypeScript 5.9
-- API: Express 5
-- DB: PostgreSQL + Drizzle ORM
-- Validation: Zod (`zod/v4`), `drizzle-zod`
-- API codegen: Orval (from OpenAPI spec)
-- Build: esbuild (CJS bundle)
+- `artifacts/boneefied/content/canonical.ts` is the production catalog; `content/anatomy.ts` contains the reusable skeletal and organ-foundation batch.
+- BIOL 250 labs and reviews prioritize course terminology and question styles but do not bound the product. The current PDF source pack is not present in this runtime; only the user-transcribed Cytology excerpts are course content.
+- Every published structure, lesson, question, and asset must link to a source record. Keep drafts and coming-next systems visible but non-playable.
+- Activate only individually verified, compatible source assets. Record attribution, rights URL, and source URL in `content/sources.json` and the asset record. Do not use OpenStax Anatomy & Physiology 2e because its noncommercial license is incompatible with a potentially public/commercial app.
+- Preserve the approved front-facing skull/atom branding, orange/deep-charcoal palette, Tinos typography, four tabs, and local/offline persistence.
 
-## Where things live
+## Product architecture
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
-
-## Architecture decisions
-
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
-
-## Product
-
-_Describe the high-level user-facing capabilities of this app once they exist._
-
-## User preferences
-
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Expo Router routes are in `artifacts/boneefied/app`.
+- Content models, validation, catalog, lessons, and practice logic are in `artifacts/boneefied/content`.
+- `StudyContext` owns AsyncStorage-backed attempts, misses, mastery, bookmarks, preferences, and resumable sessions.
+- Image assets must use static `require` mappings in React Native; never construct dynamic require paths.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
-
-## Pointers
-
-- See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
+- No anatomy image or hotspot may be invented, mirrored, or published without source and rights verification.
+- Worksheets are not answer keys. Ambiguous or partial-credit material stays unresolved.
+- Image recall must not expose answer keys in quiz mode.
+- Keep the bottom tab bar clear of actions at narrow phone widths and preserve safe-area padding.
