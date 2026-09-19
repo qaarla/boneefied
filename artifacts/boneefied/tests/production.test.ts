@@ -75,6 +75,51 @@ test('production catalog validates with honest published counts and source prove
   assert.doesNotMatch(sourceCitation(content, OPENSTAX_SOURCE_ID, null), /Lab 2|null/);
 });
 
+test('published module sequence and organ lesson cue depth remain stable', () => {
+  assert.deepEqual(content.modules.map((module) => module.id), [
+    'cells-tissues', 'lymphatic-system', 'cytology-mitosis', 'skeletal-system',
+    'anatomy-foundations', 'joints-ligaments', 'muscular-system', 'nervous-system',
+    'integumentary-system', 'special-senses', 'endocrine-system', 'cardiovascular-system',
+    'blood-vessels', 'respiratory-system', 'digestive-system', 'urinary-system',
+    'male-reproductive', 'female-reproductive',
+  ]);
+  const generic = new Set([
+    'Orient by position, continuity, and distinctive wall or tissue features.',
+    'Compare adjacent structures before selecting a label.',
+    'Use named boundaries, layers, and connected passages as landmarks.',
+    'Location predicts the structure’s contribution to the organ pathway or function.',
+    'Do not substitute a neighboring structure or a different tissue layer.',
+  ]);
+  for (const module of content.modules.filter((item) => ['respiratory-system', 'digestive-system', 'urinary-system', 'male-reproductive', 'female-reproductive'].includes(item.id))) {
+    for (const lesson of module.lessons ?? []) {
+      assert.ok(lesson.recognitionCues.some((text) => !generic.has(text)), `${module.id}:${lesson.id} cue`);
+      assert.ok(lesson.relationships.some((text) => !generic.has(text)), `${module.id}:${lesson.id} relationship`);
+      assert.ok(lesson.commonConfusions.some((text) => !generic.has(text)), `${module.id}:${lesson.id} confusion`);
+    }
+  }
+});
+
+test('anatomy cue routes preserve named boundaries and drainage distinctions', () => {
+  const lesson = (moduleId: string, lessonId: string) => content.modules.find((module) => module.id === moduleId)?.lessons?.find((item) => item.id === lessonId);
+  const arteries = lesson('blood-vessels', 'ves-large-arteries');
+  assert.match((arteries?.recognitionCues ?? []).join(' '), /muscular arteries distribute blood to regional territories/i);
+  assert.doesNotMatch(`${arteries?.recognitionCues.join(' ')} ${arteries?.relationships.join(' ')}`, /common carotid.{0,50}muscular distributing artery/i);
+  const lacrimal = lesson('special-senses', 'eye-accessory-structures');
+  assert.match(`${lacrimal?.landmarks.join(' ')} ${lacrimal?.relationships.join(' ')} ${lacrimal?.recognitionCues.join(' ')}`, /puncta.*canaliculi.*lacrimal sac.*nasolacrimal duct.*nasal cavity/i);
+  const ear = lesson('special-senses', 'inner-ear');
+  assert.match(`${ear?.recognitionCues.join(' ')} ${ear?.relationships.join(' ')}`, /utricle.*saccule.*semicircular ducts.*equilibrium/i);
+  assert.match(`${ear?.landmarks.join(' ')} ${ear?.relationships.join(' ')}`, /cochlear duct.*vestibular and tympanic scalae/i);
+  const renal = lesson('urinary-system', 'urinary-vessels');
+  assert.match(renal?.relationships.join(' ') ?? '', /cortical radiate veins.*arcuate veins.*interlobar veins.*renal vein/i);
+  const airflow = lesson('respiratory-system', 'respiratory-airflow');
+  assert.match(`${airflow?.recognitionCues.join(' ')} ${airflow?.relationships.join(' ')}`, /trachea ends at the carina and divides into main bronchi/i);
+  assert.match(airflow?.relationships.join(' ') ?? '', /carina.*not a conduit/i);
+  for (const id of ['male-ducts', 'male-relationships']) {
+    const male = lesson('male-reproductive', id);
+    assert.match(`${male?.recognitionCues.join(' ')} ${male?.relationships.join(' ')}`, /short straight tubules.*rete testis/i);
+  }
+});
+
 test('verified Gray plates are local, labeled, and lesson-scoped', () => {
   const expected = new Map([
     ['asset-gray946-sweat-gland', ['integumentary-system', 'cutaneous-glands', 'assets/images/anatomy/gray946-sweat-gland.png', 'https://commons.wikimedia.org/wiki/File:Gray946.png']],
