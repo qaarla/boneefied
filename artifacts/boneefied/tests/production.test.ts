@@ -16,6 +16,10 @@ import {
 import type { PracticeSession } from '../content/model.ts';
 import { endocrineModule, endocrineStructures, cardiovascularModule, cardiovascularStructures, vesselsModule, vesselsStructures, lymphaticModule, lymphaticStructures } from '../content/circulation-systems.ts';
 import { organSystemsModules, organSystemsStructures } from '../content/organ-systems.ts';
+import { skeletalPracticeExpansion } from '../content/practice-skeletal-expansion.ts';
+import { muscularPracticeExpansion, nervousPracticeExpansion } from '../content/practice-neuromuscular-expansion.ts';
+import { respiratoryPracticeExpansion, digestivePracticeExpansion, urinaryPracticeExpansion, malePracticeExpansion, femalePracticeExpansion } from '../content/practice-organ-expansion.ts';
+import { jointsPracticeExpansion, foundationsPracticeExpansion } from '../content/practice-joints-foundations-expansion.ts';
 
 test('production catalog validates with honest published counts and source provenance', () => {
   assert.deepEqual(validateContent(content), []);
@@ -34,15 +38,15 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.modules.find((module) => module.id === 'nervous-system')?.system, 'nervous');
   assert.ok(content.structures.some((structure) => structure.id === 'external-acoustic-meatus'));
   assert.ok(content.structures.some((structure) => structure.id === 'lateral-malleolus'));
-  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 20);
-  assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 3);
+  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 86);
+  assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 9);
   const expectedCounts: Record<string, [number, number, number]> = {
-    'cytology-mitosis': [15, 0, 10], 'skeletal-system': [155, 13, 20], 'anatomy-foundations': [12, 1, 3],
-    'joints-ligaments': [36, 6, 14], 'muscular-system': [59, 8, 20], 'nervous-system': [63, 8, 20],
+    'cytology-mitosis': [15, 0, 10], 'skeletal-system': [155, 13, 86], 'anatomy-foundations': [12, 1, 9],
+    'joints-ligaments': [36, 6, 28], 'muscular-system': [59, 8, 52], 'nervous-system': [63, 8, 45],
     'cells-tissues': [46, 7, 24], 'integumentary-system': [38, 6, 20], 'special-senses': [59, 8, 28],
     'endocrine-system': [35, 6, 16], 'cardiovascular-system': [39, 6, 22], 'blood-vessels': [30, 9, 22],
-    'lymphatic-system': [35, 6, 16], 'respiratory-system': [57, 7, 18], 'digestive-system': [70, 10, 24],
-    'urinary-system': [45, 7, 18], 'male-reproductive': [43, 7, 18], 'female-reproductive': [60, 8, 20],
+    'lymphatic-system': [35, 6, 16], 'respiratory-system': [57, 7, 36], 'digestive-system': [70, 10, 43],
+    'urinary-system': [45, 7, 34], 'male-reproductive': [43, 7, 38], 'female-reproductive': [60, 8, 44],
   };
   for (const [id, [structures, lessons, questions]] of Object.entries(expectedCounts)) {
     const module = content.modules.find((item) => item.id === id);
@@ -74,14 +78,14 @@ test('production catalog validates with honest published counts and source prove
 test('production questions only expose supported text task types', () => {
   const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
   assert.ok(content.questions.every((question) => supported.has(question.taskType)));
-  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 275);
-  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 14);
-  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 15);
-  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 12);
-  assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 3);
-  assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 12);
-  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 1);
-  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 1);
+  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 292);
+  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 19);
+  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 52);
+  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 69);
+  assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 8);
+  assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 119);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 9);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 5);
   const multipleChoiceLike = new Set(['multiple-choice', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
   for (const question of content.questions.filter((item) => multipleChoiceLike.has(item.taskType))) {
     const answers = Array.isArray(question.answer) ? question.answer : [question.answer];
@@ -101,6 +105,72 @@ test('production questions only expose supported text task types', () => {
   }
   for (const module of content.modules) for (const lesson of module.lessons ?? []) {
     for (const structureId of lesson.structureIds) assert.equal(structureModules.get(structureId), module.id, `${lesson.id}:${structureId}`);
+  }
+});
+
+test('practice questions expose their retained structures in answer evidence', () => {
+  const normalize = (value: string) => value.toLocaleLowerCase().replace(/[^a-z0-9]+/g, ' ').replace(/\b(the|a|an)\b/g, '').replace(/\b(\w+)s\b/g, '$1').replace(/\s+/g, ' ').trim();
+  const rawPractice = [
+    ...skeletalPracticeExpansion, ...muscularPracticeExpansion, ...nervousPracticeExpansion,
+    ...respiratoryPracticeExpansion, ...digestivePracticeExpansion, ...urinaryPracticeExpansion,
+    ...malePracticeExpansion, ...femalePracticeExpansion, ...jointsPracticeExpansion, ...foundationsPracticeExpansion,
+  ];
+  for (const question of rawPractice) {
+    assert.ok(question.structureIds.length > 0, `${question.id}: no retained structures`);
+    assert.doesNotMatch(question.explanation, /Assessed structures:/i, question.id);
+    const evidence = normalize([
+      ...(Array.isArray(question.answer) ? question.answer : [question.answer]),
+      ...(question.acceptedAliases ?? []),
+      question.explanation,
+    ].join(' '));
+    for (const structureId of question.structureIds) {
+      const structure = content.structures.find((item) => item.id === structureId);
+      assert.ok(structure, `${question.id}:${structureId}`);
+      const names = [structure.canonicalName, ...structure.acceptedAliases].map(normalize);
+      assert.ok(names.some((name) => name.length > 0 && evidence.includes(name)), `${question.id}:${structure.canonicalName}`);
+    }
+  }
+});
+
+test('practice task shapes remain unambiguous and source-owned', () => {
+  const normalize = (value: string) => value.toLocaleLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  const multipleChoiceLike = new Set(['multiple-choice', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
+  for (const question of content.questions) {
+    assert.notEqual(question.taskType, 'matching', question.id);
+    assert.ok(!/^match\b/i.test(question.prompt), question.id);
+    if (question.taskType === 'select-all') {
+      const answers = new Set(question.answer as string[]);
+      assert.ok((question.options ?? []).some((option) => !answers.has(option)), `${question.id}: no distractor`);
+    }
+    if (multipleChoiceLike.has(question.taskType)) {
+      assert.ok((question.options ?? []).length >= 3, `${question.id}: trivial options`);
+      const answers = Array.isArray(question.answer) ? question.answer : [question.answer];
+      assert.ok(answers.some((answer) => (question.options ?? []).includes(answer)), `${question.id}: answer not offered`);
+    }
+    if (question.taskType === 'ordered-sequence') {
+      const answer = (question.answer as string[]).map(normalize).sort();
+      const options = (question.options ?? []).map(normalize).sort();
+      assert.deepEqual(options, answer, `${question.id}: sequence members`);
+      assert.notDeepEqual(question.options, question.answer, `${question.id}: sequence is not scrambled`);
+    }
+    const module = content.modules.find((item) => item.id === question.moduleId);
+    assert.ok(module?.sourceIds.includes(question.sourceId), `${question.id}: undeclared source`);
+    for (const structureId of question.structureIds) {
+      const structure = content.structures.find((item) => item.id === structureId);
+      assert.ok(structure && module.sourceIds.includes(structure.sourceId), `${question.id}:${structureId}: source not declared by module`);
+    }
+  }
+});
+
+test('priority systems have broad practice structure coverage', () => {
+  const targets: Record<string, number> = {
+    'skeletal-system': 139, 'joints-ligaments': 30, 'anatomy-foundations': 8, 'muscular-system': 51,
+    'nervous-system': 51, 'respiratory-system': 51, 'digestive-system': 61, 'urinary-system': 41,
+    'male-reproductive': 37, 'female-reproductive': 52,
+  };
+  for (const [moduleId, minimum] of Object.entries(targets)) {
+    const covered = new Set(content.questions.filter((question) => question.moduleId === moduleId).flatMap((question) => question.structureIds));
+    assert.ok(covered.size >= minimum, `${moduleId}:${covered.size}`);
   }
 });
 

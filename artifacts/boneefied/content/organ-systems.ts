@@ -99,7 +99,7 @@ export const digestiveLessons=[
  makeLesson('digestive-continuity','Alimentary canal continuity',digestiveId,digestiveSource,D('Mouth','Pharynx','Esophagus','Stomach','Duodenum','Jejunum','Ileum','Cecum','Ascending colon','Transverse colon','Descending colon','Sigmoid colon','Rectum','Anal canal','Anus'),'Trace the lumen from mouth to anus without substituting accessory organs.'),
 ] as Lesson[];
 export const digestiveModule=makeModule(digestiveId,'Digestive System',8,digestiveSource,'digestive',digestiveLessons);
-const dq=(id:string,p:string,s:string,a:string|string[],o:string[],e:string,t:Question['taskType']='multiple-choice')=>q(id,p,D(s)[0],t,a,o,e);
+const dq=(id:string,p:string,s:string,a:string|string[],o:string[],e:string,t:Question['taskType']='multiple-choice')=>q(id,p,D(s)[0],t,t==='ordered-sequence' ? a.toString().split('|') : a,o,e);
 export const digestiveQuestions=bind(digestiveId,digestiveSource,[
  dq('digestive-q1','Which stomach region joins the esophagus?','Cardia','Cardia',['Cardia','Fundus','Pylorus','Cecum'],'The cardia surrounds the gastroesophageal entry.'),
  dq('digestive-q2','Which structure contains villi for absorptive surface area?','Duodenum','Duodenum',['Duodenum','Esophagus','Rectum','Gallbladder'],'Small-intestinal mucosa has villi.'),
@@ -112,7 +112,7 @@ export const digestiveQuestions=bind(digestiveId,digestiveSource,[
  dq('digestive-q9','Which organ supplies digestive enzymes and bicarbonate?','Pancreas','Pancreas',['Pancreas','Gallbladder','Spleen','Liver'],'The exocrine pancreas empties into the duodenum.'),
  dq('digestive-q10','Which structure is the first part of the large intestine?','Cecum','Cecum',['Cecum','Ileum','Rectum','Ascending colon'],'The cecum receives the ileum.'),
  dq('digestive-q11','Which narrow structure projects from the cecum?','Appendix','Appendix',['Appendix','Anal canal','Pyloric antrum','Villi'],'The appendix is attached to the cecum.'),
- dq('digestive-q12','Order the small intestine from proximal to distal.','Duodenum','Duodenum|Jejunum|Ileum',['Ileum','Duodenum','Jejunum'],'The sequence is duodenum, jejunum, ileum.','ordered-sequence'),
+  dq('digestive-q12','Order the small intestine from proximal to distal.','Duodenum','Duodenum|Jejunum|Ileum',['Ileum','Duodenum','Jejunum'],'The sequence is duodenum, jejunum, ileum.','ordered-sequence'),
  dq('digestive-q13','Which colon segment crosses the abdomen?','Transverse colon','Transverse colon',['Transverse colon','Ascending colon','Sigmoid colon','Cecum'],'The transverse colon runs between the ascending and descending segments.'),
  dq('digestive-q14','Which layer contains the muscularis mucosae?','Mucosa','Mucosa',['Mucosa','Submucosa','Serosa','Muscularis externa'],'Muscularis mucosae is a mucosal component.'),
  dq('digestive-q15','Which projection increases intestinal absorptive area?','Villi','Villi',['Villi','Rugae','Gastric pit','Haustra'],'Villi project from small-intestinal mucosa.'),
