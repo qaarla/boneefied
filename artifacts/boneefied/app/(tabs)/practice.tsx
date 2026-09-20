@@ -8,20 +8,21 @@ import type { Question, PracticeSession } from '@/content/model';
 import { useStudy } from '@/context/StudyContext';
 import { useColors } from '@/hooks/useColors';
 import { sourceCitation } from '@/content/sources';
+import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
+import { imageSources } from '@/content/imageSources';
 
 type Phase = 'setup' | 'quiz' | 'results';
-const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
-
+const supported = new Set(['multiple-choice', 'typed-recall', 'image-identification', 'hotspot', 'histology-identification', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
 export default function PracticeScreen() {
   const colors = useColors(); const router = useRouter(); const study = useStudy();
-  const { moduleId: requestedModuleId } = useLocalSearchParams<{ moduleId?: string }>();
-  const [selectedModuleId, setSelectedModuleId] = useState(requestedModuleId ?? 'cytology-mitosis');
-  const pool = useMemo(() => content.questions.filter((q) => q.moduleId === selectedModuleId && supported.has(q.taskType)), [selectedModuleId]);
+  const { moduleId: requestedModuleId, questionId: requestedQuestionId } = useLocalSearchParams<{ moduleId?: string; questionId?: string }>();
+  const [selectedModuleId, setSelectedModuleId] = useState(requestedModuleId ?? (requestedQuestionId ? content.questions.find((item) => item.id === requestedQuestionId)?.moduleId : undefined) ?? 'cytology-mitosis');
+  const pool = useMemo(() => content.questions.filter((q) => q.moduleId === selectedModuleId && supported.has(q.taskType) && (!requestedQuestionId || q.id === requestedQuestionId)), [selectedModuleId, requestedQuestionId]);
   const [phase, setPhase] = useState<Phase>('setup'); const [count, setCount] = useState(Math.min(5, pool.length));
   const [questions, setQuestions] = useState<Question[]>([]); const [position, setPosition] = useState(0);
   const [answer, setAnswer] = useState<string | string[]>(''); const [submitted, setSubmitted] = useState(false);
   const [correct, setCorrect] = useState(0); const [answers, setAnswers] = useState<boolean[]>([]); const [currentCorrect, setCurrentCorrect] = useState(false); const [sessionId, setSessionId] = useState('');
-  const activeSession = study.sessions.find((session) => session.status !== 'completed' && session.moduleId === selectedModuleId);
+  const activeSession = requestedQuestionId ? undefined : study.sessions.find((session) => session.status !== 'completed' && session.moduleId === selectedModuleId);
   useEffect(() => {
     if (activeSession && phase === 'setup') {
       const resumed = activeSession.questionIds.map((id) => content.questions.find((item) => item.id === id)).filter((item): item is Question => !!item);
@@ -29,6 +30,23 @@ export default function PracticeScreen() {
     }
   }, [activeSession?.id]);
   const start = () => { const selected = pool.slice(0, Math.max(1, Math.min(count, pool.length))); const now = new Date().toISOString(); const session: PracticeSession = { id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, moduleId: selectedModuleId, mode: 'practice', entryPoint: 'practice', questionIds: selected.map((item) => item.id), position: 0, answers: [], startedAt: now, updatedAt: now, status: 'active' }; study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); setSubmitted(false); setCurrentCorrect(false); };
+  const underpracticed = useMemo(() => {
+    const attempts = new Map<string, number>();
+    study.attempts.forEach((attempt) => attempts.set(attempt.structureId ?? '', (attempts.get(attempt.structureId ?? '') ?? 0) + 1));
+    return content.structures.filter((structure) => structure.moduleId === selectedModuleId)
+      .sort((a, b) => (attempts.get(a.id) ?? 0) - (attempts.get(b.id) ?? 0)).slice(0, 5);
+  }, [selectedModuleId, study.attempts]);
+  const startFocused = () => {
+    const targets = new Set(underpracticed.map((item) => item.id));
+    const selected = pool.filter((item) => item.structureIds.some((id) => targets.has(id)))
+      .filter((item, index, all) => all.findIndex((candidate) => candidate.id === item.id) === index)
+      .slice(0, Math.max(1, Math.min(count, pool.length)));
+    if (selected.length) {
+      const now = new Date().toISOString();
+      const session: PracticeSession = { id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, moduleId: selectedModuleId, mode: 'practice', entryPoint: 'practice', questionIds: selected.map((item) => item.id), position: 0, answers: [], startedAt: now, updatedAt: now, status: 'active' };
+      study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); setSubmitted(false); setCurrentCorrect(false);
+    }
+  };
   const q = questions[position];
   const submit = () => {
     if (submitted || !q) return;
@@ -45,7 +63,12 @@ export default function PracticeScreen() {
       <View style={styles.counts}>{[3, 5, pool.length].filter((n, i, a) => n > 0 && a.indexOf(n) === i).map((n) => <Pressable key={n} onPress={() => setCount(Math.min(n, pool.length))} style={[styles.count, { borderColor: count === Math.min(n, pool.length) ? colors.primary : colors.border, backgroundColor: count === Math.min(n, pool.length) ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{n} questions</Text></Pressable>)}</View>
       {activeSession ? <Pressable testID="resume-practice" onPress={() => setPhase('quiz')} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Resume saved session</Text></Pressable> : <Pressable testID="start-practice" onPress={start} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Start practice</Text></Pressable>}
     </View>
-     <Text style={[styles.note, { color: colors.mutedForeground }]}>Supported here: multiple choice, typed recall, select-all, ordered sequence, bone laterality, muscle action/attachments, and relationship questions.</Text>
+      <View style={[styles.focus, { borderColor: colors.border, backgroundColor: colors.card }]}>
+        <Text style={{ color: colors.foreground, fontWeight: '700' }}>Focused practice</Text>
+        <Text style={{ color: colors.mutedForeground }}>Lowest-attempt structures: {underpracticed.map((item) => item.canonicalName).join(' · ') || 'none yet'}</Text>
+        <Pressable testID="start-focused-practice" onPress={startFocused} disabled={!underpracticed.length} style={[styles.secondary, { borderColor: colors.primary, opacity: underpracticed.length ? 1 : 0.5 }]}><Text style={{ color: colors.primary, fontWeight: '700' }}>Start focused practice</Text></Pressable>
+      </View>
+      <Text style={[styles.note, { color: colors.mutedForeground }]}>Supported here: multiple choice, image identification, hotspot recall, typed recall, select-all, ordered sequence, bone laterality, muscle action/attachments, and relationship questions.</Text>
   </Screen>;
   if (phase === 'results') return <Screen>
     <Text style={[styles.eyebrow, { color: colors.primary }]}>SESSION COMPLETE</Text><Text style={[styles.title, { color: colors.foreground }]}>Results</Text>
@@ -65,7 +88,11 @@ export default function PracticeScreen() {
 }
 
 function QuestionInput({ question, value, setValue, disabled, colors }: { question: Question; value: string | string[]; setValue: (v: string | string[]) => void; disabled: boolean; colors: any }) {
-  if (question.taskType === 'typed-recall') return <TextInput testID="typed-answer" accessibilityLabel="Typed recall answer" value={typeof value === 'string' ? value : ''} onChangeText={setValue} editable={!disabled} onSubmitEditing={Keyboard.dismiss} placeholder="Type your answer" placeholderTextColor={colors.mutedForeground} style={[styles.input, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} returnKeyType="done" />;
+  const asset = question.assetId ? content.assets.find((item) => item.id === question.assetId) : undefined;
+  const image = asset ? <AnatomyImageViewer source={imageSources[asset.id]} hotspots={question.hotspots ?? asset.hotspots} labels={asset.labels} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={(hotspot) => setValue(hotspot.structureId)} /> : null;
+  if (question.taskType === 'hotspot') return <View style={{ gap: 10 }}>{image}<Text style={{ color: colors.mutedForeground }}>Tap the marked structure.</Text></View>;
+  if (question.taskType === 'typed-recall' || question.taskType === 'image-identification') return <View style={{ gap: 10 }}>{image}<TextInput testID="typed-answer" accessibilityLabel="Image identification answer" value={typeof value === 'string' ? value : ''} onChangeText={setValue} editable={!disabled} onSubmitEditing={Keyboard.dismiss} placeholder="Type your answer" placeholderTextColor={colors.mutedForeground} style={[styles.input, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} returnKeyType="done" /></View>;
+  if (question.taskType === 'histology-identification') return <View style={{ gap: 10 }}>{image}</View>;
   const options = question.options ?? (question.answer as string[]);
   if (question.taskType === 'ordered-sequence') {
     const selected = Array.isArray(value) ? value : [];
@@ -83,4 +110,4 @@ function QuestionInput({ question, value, setValue, disabled, colors }: { questi
   const selected = Array.isArray(value) ? value : [];
   return <View style={styles.options}>{options.map((option) => { const active = question.taskType === 'select-all' ? selected.includes(option) : value === option; return <Pressable key={option} disabled={disabled} onPress={() => setValue(question.taskType === 'select-all' ? (active ? selected.filter((x) => x !== option) : [...selected, option]) : option)} style={[styles.option, { borderColor: active ? colors.primary : colors.border, backgroundColor: active ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{active ? '✓ ' : ''}{option}</Text></Pressable>; })}</View>;
 }
-const styles = StyleSheet.create({ eyebrow:{fontSize:11,letterSpacing:1.5,fontWeight:'700'},title:{fontSize:27,fontWeight:'700'},intro:{fontSize:15,lineHeight:22},panel:{borderWidth:1,borderRadius:16,padding:16,gap:16},panelTitle:{fontSize:17,fontWeight:'700'},counts:{gap:8},count:{borderWidth:1,borderRadius:10,padding:13},primary:{minHeight:48,borderRadius:12,alignItems:'center',justifyContent:'center',paddingHorizontal:16},note:{fontSize:13,lineHeight:20},options:{gap:10},orderRow:{flexDirection:'row',alignItems:'center',gap:8},option:{borderWidth:1,borderRadius:12,padding:15,minHeight:48,justifyContent:'center'},input:{borderWidth:1,borderRadius:12,padding:14,fontSize:16,minHeight:50},feedback:{borderWidth:1,borderRadius:14,padding:15,gap:8},result:{borderWidth:1,borderRadius:16,padding:22,alignItems:'center',gap:8},review:{borderBottomWidth:1,paddingVertical:10,gap:4},big:{fontSize:40,fontWeight:'700'},link:{alignItems:'center',padding:12} });
+const styles = StyleSheet.create({ eyebrow:{fontSize:11,letterSpacing:1.5,fontWeight:'700'},title:{fontSize:27,fontWeight:'700'},intro:{fontSize:15,lineHeight:22},panel:{borderWidth:1,borderRadius:16,padding:16,gap:16},focus:{borderWidth:1,borderRadius:14,padding:14,gap:9},panelTitle:{fontSize:17,fontWeight:'700'},counts:{gap:8},count:{borderWidth:1,borderRadius:10,padding:13},primary:{minHeight:48,borderRadius:12,alignItems:'center',justifyContent:'center',paddingHorizontal:16},secondary:{minHeight:40,borderWidth:1,borderRadius:10,alignItems:'center',justifyContent:'center',paddingHorizontal:12},note:{fontSize:13,lineHeight:20},options:{gap:10},orderRow:{flexDirection:'row',alignItems:'center',gap:8},option:{borderWidth:1,borderRadius:12,padding:15,minHeight:48,justifyContent:'center'},input:{borderWidth:1,borderRadius:12,padding:14,fontSize:16,minHeight:50},feedback:{borderWidth:1,borderRadius:14,padding:15,gap:8},result:{borderWidth:1,borderRadius:16,padding:22,alignItems:'center',gap:8},review:{borderBottomWidth:1,paddingVertical:10,gap:4},big:{fontSize:40,fontWeight:'700'},link:{alignItems:'center',padding:12} });

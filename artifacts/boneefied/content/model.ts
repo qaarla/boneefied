@@ -71,6 +71,22 @@ export interface Asset {
   description?: string;
   sourceUrl?: string;
   rightsUrl?: string;
+  /** Verified targets in image coordinates (0..1), when available. */
+  hotspots?: NormalizedHotspot[];
+  labels?: VerifiedLabel[];
+  imageAspectRatio?: number;
+  imageOrientation?: 'portrait' | 'landscape' | 'square';
+  organism?: string;
+  specimenNote?: string;
+  adaptationNote?: string;
+}
+export interface VerifiedLabel {
+  structureId: string;
+  displayLabel: string;
+  x: number;
+  y: number;
+  radius: number;
+  labelOffset?: { x: number; y: number };
 }
 export interface NormalizedHotspot {
   x: number;

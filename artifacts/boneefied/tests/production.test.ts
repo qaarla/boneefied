@@ -5,6 +5,7 @@ import { content, CYTOLOGY_SOURCE_ID } from '../content/canonical.ts';
 import { GRAY_SOURCE_ID, OPENSTAX_SOURCE_ID } from '../content/anatomy.ts';
 import { validateContent } from '../content/validation.ts';
 import { sourceCitation } from '../content/sources.ts';
+import { ORIGINAL_VISUAL_SOURCE_ID } from '../content/visual-content.ts';
 import {
   completeSession,
   hydrateStudyState,
@@ -26,7 +27,7 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.modules.filter((module) => module.published).length, 18);
   assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.contentStatus, 'available');
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'skeletal-system').length, 155);
-  assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length, 13);
+  assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length, 14);
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'joints-ligaments').length, 36);
   assert.equal(content.modules.find((module) => module.id === 'joints-ligaments')?.lessons?.length, 6);
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'muscular-system').length, 59);
@@ -39,14 +40,14 @@ test('production catalog validates with honest published counts and source prove
   assert.ok(content.structures.some((structure) => structure.id === 'external-acoustic-meatus'));
   assert.ok(content.structures.some((structure) => structure.id === 'lateral-malleolus'));
   assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 86);
-  assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 9);
+  assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 11);
   const expectedCounts: Record<string, [number, number, number]> = {
-    'cytology-mitosis': [15, 0, 10], 'skeletal-system': [155, 13, 86], 'anatomy-foundations': [12, 1, 9],
-    'joints-ligaments': [36, 6, 28], 'muscular-system': [59, 8, 52], 'nervous-system': [63, 8, 45],
-    'cells-tissues': [57, 8, 24], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 28],
-    'endocrine-system': [38, 6, 16], 'cardiovascular-system': [50, 6, 22], 'blood-vessels': [45, 10, 22],
-    'lymphatic-system': [47, 7, 16], 'respiratory-system': [64, 7, 36], 'digestive-system': [81, 10, 43],
-    'urinary-system': [49, 7, 34], 'male-reproductive': [47, 7, 38], 'female-reproductive': [65, 8, 44],
+    'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 14, 86], 'anatomy-foundations': [20, 1, 11],
+    'joints-ligaments': [36, 6, 29], 'muscular-system': [59, 8, 52], 'nervous-system': [63, 8, 47],
+    'cells-tissues': [57, 8, 25], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 30],
+    'endocrine-system': [38, 6, 17], 'cardiovascular-system': [50, 6, 24], 'blood-vessels': [45, 10, 22],
+    'lymphatic-system': [47, 7, 17], 'respiratory-system': [64, 7, 38], 'digestive-system': [81, 10, 44],
+    'urinary-system': [49, 7, 36], 'male-reproductive': [47, 7, 39], 'female-reproductive': [65, 8, 45],
   };
   for (const [id, [structures, lessons, questions]] of Object.entries(expectedCounts)) {
     const module = content.modules.find((item) => item.id === id);
@@ -55,8 +56,10 @@ test('production catalog validates with honest published counts and source prove
     assert.equal(module?.lessons?.length ?? 0, lessons, id);
     assert.equal(content.questions.filter((item) => item.moduleId === id).length, questions, id);
   }
-  assert.equal(content.assets.length, 8);
-  assert.equal(content.questions.filter((question) => question.hotspots?.length).length, 0);
+  assert.equal(content.assets.length, 29);
+  assert.ok(content.questions.filter((question) => question.assetId).length >= 23);
+  assert.ok(content.questions.filter((question) => question.hotspots?.length).length >= 8);
+  assert.equal(content.questions.filter((question) => question.taskType === 'histology-identification').length, 2);
   assert.equal(content.modules.find((module) => module.id === 'cytology-mitosis')?.sourceIds[0], CYTOLOGY_SOURCE_ID);
   const source = content.sources.find((item) => item.id === CYTOLOGY_SOURCE_ID);
   assert.ok(source);
@@ -67,7 +70,8 @@ test('production catalog validates with honest published counts and source prove
   assert.ok(content.questions.every((question) => isQuestionScorable(question, content)));
   assert.ok(content.sources.some((source) => source.id === OPENSTAX_SOURCE_ID && source.attributionLicenseStatus.includes('CC BY 4.0')));
   assert.ok(content.sources.some((source) => source.id === GRAY_SOURCE_ID && source.attributionLicenseStatus.includes('Public domain')));
-  assert.ok(content.assets.every((asset) => asset.verificationStatus === 'verified' && asset.rightsUrl));
+  assert.ok(content.assets.every((asset) => asset.verificationStatus === 'verified'));
+  assert.ok(content.assets.filter((asset) => asset.sourceId !== ORIGINAL_VISUAL_SOURCE_ID).every((asset) => asset.rightsUrl));
   assert.ok(content.questions.every((question) => content.modules.find((module) => module.id === question.moduleId)?.published));
   assert.equal(sourceCitation(content, OPENSTAX_SOURCE_ID, null), 'OpenStax Anatomy and Physiology (2013) · CC BY 4.0');
   assert.equal(sourceCitation(content, OPENSTAX_SOURCE_ID, 42), 'OpenStax Anatomy and Physiology (2013) · CC BY 4.0 · p.42');
@@ -99,6 +103,46 @@ test('published module sequence and organ lesson cue depth remain stable', () =>
   }
 });
 
+test('Cytology visual course preserves old IDs and has the six ordered study lessons', () => {
+  const module = content.modules.find((item) => item.id === 'cytology-mitosis');
+  assert.deepEqual(module?.lessons?.map((lesson) => lesson.id), [
+    'cytology-cell-boundary', 'cytology-nucleus-genome', 'cytology-organelles',
+    'cytology-cell-cycle', 'cytology-mitotic-recognition', 'cytology-cytokinesis',
+  ]);
+  for (const id of ['q-cycle-order', 'q-mitosis-order', 'q-sister', 'q-animal-plant', 'q-prophase', 'q-metaphase', 'q-anaphase', 'q-telophase', 'q-membrane', 'q-organelles']) {
+    assert.ok(content.questions.some((question) => question.id === id), id);
+  }
+  assert.ok(content.questions.some((question) => question.id === 'q-cytology-stage-transfer'));
+  assert.ok(content.questions.some((question) => question.id === 'q-cytology-mitosis-cytokinesis'));
+  assert.ok(content.structures.some((structure) => structure.id === 'cytosol' && structure.moduleId === 'cytology-mitosis'));
+});
+
+test('every published asset has a local static resolver entry and honest rights metadata', () => {
+  const resolver = readFileSync(new URL('../content/imageSources.ts', import.meta.url), 'utf8');
+  for (const asset of content.assets) {
+    assert.ok(asset.localAssetPath, asset.id);
+    assert.match(resolver, new RegExp(`['"]${asset.id}['"]\\s*:`), `${asset.id}: missing static resolver`);
+    assert.equal(asset.verificationStatus, 'verified', asset.id);
+    if (asset.sourceId === ORIGINAL_VISUAL_SOURCE_ID) {
+      assert.equal(asset.rightsUrl, undefined, `${asset.id}: original artwork must not claim external rights`);
+      assert.match(asset.attributionLicense, /Original diagram created for Boneefied/);
+    } else {
+      assert.ok(asset.rightsUrl, `${asset.id}: missing rights URL`);
+    }
+    assert.ok(content.sources.some((source) => source.id === asset.sourceId), `${asset.id}: source`);
+    for (const hotspot of asset.hotspots ?? []) {
+      assert.ok(hotspot.x >= 0 && hotspot.x <= 1 && hotspot.y >= 0 && hotspot.y <= 1 && hotspot.radius > 0 && hotspot.radius <= 1, asset.id);
+      assert.ok(content.structures.some((structure) => structure.id === hotspot.structureId), `${asset.id}:${hotspot.structureId}`);
+    }
+    if (asset.id.startsWith('asset-servier-') || asset.id.startsWith('asset-original-')) {
+      assert.equal(asset.labels?.length, asset.hotspots?.length, `${asset.id}: every Study target needs a Learn label`);
+      for (const label of asset.labels ?? []) {
+        assert.ok(label.displayLabel.trim(), `${asset.id}:${label.structureId}: display label`);
+      }
+    }
+  }
+});
+
 test('anatomy cue routes preserve named boundaries and drainage distinctions', () => {
   const lesson = (moduleId: string, lessonId: string) => content.modules.find((module) => module.id === moduleId)?.lessons?.find((item) => item.id === lessonId);
   const arteries = lesson('blood-vessels', 'ves-large-arteries');
@@ -125,7 +169,6 @@ test('verified Gray plates are local, labeled, and lesson-scoped', () => {
     ['asset-gray946-sweat-gland', ['integumentary-system', 'cutaneous-glands', 'assets/images/anatomy/gray946-sweat-gland.png', 'https://commons.wikimedia.org/wiki/File:Gray946.png']],
     ['asset-gray880-optic-nerve-head', ['special-senses', 'lens-retina', 'assets/images/anatomy/gray880-optic-nerve-head.png', 'https://commons.wikimedia.org/wiki/File:Gray880.png']],
     ['asset-gray491-heart-posterior', ['cardiovascular-system', 'cv-coronary', 'assets/images/anatomy/gray491-heart-posterior.png', 'https://commons.wikimedia.org/wiki/File:Gray491.png']],
-    ['asset-gray1121-posterior-abdominal-wall', ['urinary-system', 'urinary-kidney', 'assets/images/anatomy/gray1121-posterior-abdominal-wall.png', 'https://commons.wikimedia.org/wiki/File:Gray1121.png']],
   ]);
   assert.equal(new Set(content.assets.map((asset) => asset.id)).size, content.assets.length);
   for (const [id, [moduleId, lessonId, path, url]] of expected) {
@@ -140,10 +183,13 @@ test('verified Gray plates are local, labeled, and lesson-scoped', () => {
     assert.match(asset?.attributionLicense ?? '', /Public domain/);
     const lesson = content.modules.find((module) => module.id === moduleId)?.lessons?.find((item) => item.id === lessonId);
     assert.ok(lesson?.assetIds?.includes(id), `${moduleId}:${lessonId}`);
-    assert.equal(content.questions.some((question) => question.assetId === id || question.hotspots?.some((hotspot) => hotspot.structureId === id)), false);
+    assert.ok(content.assets.some((asset) => asset.id === id), `${id}: catalog asset`);
   }
   const gray1121Lessons = content.modules.flatMap((module) => (module.lessons ?? []).filter((lesson) => lesson.assetIds?.includes('asset-gray1121-posterior-abdominal-wall')).map((lesson) => `${module.id}:${lesson.id}`));
-  assert.deepEqual(gray1121Lessons.sort(), ['blood-vessels:ves-central-branches', 'endocrine-system:endo-adrenal', 'urinary-system:urinary-kidney']);
+  assert.deepEqual(gray1121Lessons.sort(), ['blood-vessels:ves-central-branches', 'endocrine-system:endo-adrenal']);
+  const urinaryVisuals = content.modules.find((module) => module.id === 'urinary-system')?.lessons?.find((lesson) => lesson.id === 'urinary-kidney')?.assetIds ?? [];
+  assert.ok(urinaryVisuals.includes('asset-servier-kidney'));
+  assert.ok(urinaryVisuals.includes('asset-commons-kidney-cortex-human'));
   assert.equal(content.structures.some((structure) => structure.id === 'ves-carotid'), false);
   assert.equal(content.structures.filter((structure) => structure.canonicalName.toLowerCase().replace(/[^a-z0-9]/g, '') === 'commoncarotidartery').length, 1);
   const glottisLesson = content.modules.find((module) => module.id === 'respiratory-system')?.lessons?.find((lesson) => lesson.id === 'respiratory-larynx');
@@ -153,10 +199,10 @@ test('verified Gray plates are local, labeled, and lesson-scoped', () => {
   assert.match(mammaryLesson?.summary ?? '', /alveoli.*smaller.*larger mammary ducts/i);
 });
 
-test('production questions only expose supported text task types', () => {
-  const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
+test('production questions expose supported playable task types', () => {
+  const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion', 'image-identification', 'hotspot', 'histology-identification']);
   assert.ok(content.questions.every((question) => supported.has(question.taskType)));
-  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 292);
+  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 300);
   assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 19);
   assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 52);
   assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 69);
@@ -169,20 +215,29 @@ test('production questions only expose supported text task types', () => {
     const answers = Array.isArray(question.answer) ? question.answer : [question.answer];
     assert.ok(answers.some((answer) => (question.options ?? []).includes(answer) || question.acceptedAliases.some((alias) => (question.options ?? []).includes(alias))), question.id);
   }
-  for (const question of content.questions.filter((item) => Array.isArray(item.answer))) {
+  for (const question of content.questions.filter((item) => Array.isArray(item.answer) && item.taskType !== 'histology-identification')) {
     for (const answer of question.answer as string[]) assert.ok((question.options ?? []).includes(answer), `${question.id}: ${answer}`);
   }
   const structureModules = new Map(content.structures.map((structure) => [structure.id, structure.moduleId]));
   for (const question of content.questions) {
     for (const structureId of question.structureIds) assert.equal(structureModules.get(structureId), question.moduleId, `${question.id}:${structureId}`);
     const answers = Array.isArray(question.answer) ? question.answer : [question.answer];
-    if (question.taskType !== 'typed-recall') for (const answer of answers) {
+    if (question.taskType !== 'typed-recall' && !question.assetId) for (const answer of answers) {
       if (answer.trim().length > 2) assert.ok(!new RegExp(`\\b${answer.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')}\\b`, 'i').test(question.prompt), `${question.id} leaks answer`);
     }
     if (question.taskType === 'typed-recall') assert.ok(!/type the name of this study structure|name a structure|identify the structure/i.test(question.prompt), `${question.id} is broad category-only recall`);
   }
   for (const module of content.modules) for (const lesson of module.lessons ?? []) {
     for (const structureId of lesson.structureIds) assert.equal(structureModules.get(structureId), module.id, `${lesson.id}:${structureId}`);
+  }
+  for (const question of content.questions.filter((item) => item.assetId)) {
+    const resolver = readFileSync(new URL('../content/imageSources.ts', import.meta.url), 'utf8');
+    assert.match(resolver, new RegExp(`['"]${question.assetId}['"]\\s*:`), `${question.id}: resolver mapping`);
+    assert.ok(content.assets.some((asset) => asset.id === question.assetId), `${question.id}: asset`);
+    for (const target of question.hotspots ?? []) {
+      assert.ok(target.x >= 0 && target.x <= 1 && target.y >= 0 && target.y <= 1 && target.radius > 0 && target.radius <= 1, question.id);
+      assert.ok(content.structures.some((structure) => structure.id === target.structureId), `${question.id}:${target.structureId}`);
+    }
   }
 });
 
