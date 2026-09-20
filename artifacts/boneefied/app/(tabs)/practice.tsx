@@ -3,8 +3,8 @@ import { Keyboard, Pressable, StyleSheet, Text, TextInput, View } from 'react-na
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Screen } from '@/components/Screen';
 import { content } from '@/content/canonical';
-import { answerIsCorrect } from '@/content/study';
-import type { Question, PracticeSession } from '@/content/model';
+import { answerIsCorrect, createPracticeSession } from '@/content/study';
+import type { Question } from '@/content/model';
 import { useStudy } from '@/context/StudyContext';
 import { useColors } from '@/hooks/useColors';
 import { sourceCitation } from '@/content/sources';
@@ -24,12 +24,29 @@ export default function PracticeScreen() {
   const [correct, setCorrect] = useState(0); const [answers, setAnswers] = useState<boolean[]>([]); const [currentCorrect, setCurrentCorrect] = useState(false); const [sessionId, setSessionId] = useState('');
   const activeSession = requestedQuestionId ? undefined : study.sessions.find((session) => session.status !== 'completed' && session.moduleId === selectedModuleId);
   useEffect(() => {
+    if (!requestedQuestionId) return;
+    const requested = content.questions.find((item) => item.id === requestedQuestionId && supported.has(item.taskType));
+    if (!requested) return;
+    const session = createPracticeSession(requested.moduleId, [requested.id], 'missed');
+    study.saveSession(session);
+    setSelectedModuleId(requested.moduleId);
+    setSessionId(session.id);
+    setQuestions([requested]);
+    setPosition(0);
+    setAnswer('');
+    setSubmitted(false);
+    setCurrentCorrect(false);
+    setCorrect(0);
+    setAnswers([]);
+    setPhase('quiz');
+  }, [requestedQuestionId]);
+  useEffect(() => {
     if (activeSession && phase === 'setup') {
       const resumed = activeSession.questionIds.map((id) => content.questions.find((item) => item.id === id)).filter((item): item is Question => !!item);
       if (resumed.length) { setSessionId(activeSession.id); setQuestions(resumed); setPosition(Math.min(activeSession.position, resumed.length - 1)); setAnswers(activeSession.answers.map((item) => item.outcome === 'correct')); setCorrect(activeSession.answers.filter((item) => item.outcome === 'correct').length); setPhase('quiz'); }
     }
   }, [activeSession?.id]);
-  const start = () => { const selected = pool.slice(0, Math.max(1, Math.min(count, pool.length))); const now = new Date().toISOString(); const session: PracticeSession = { id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, moduleId: selectedModuleId, mode: 'practice', entryPoint: 'practice', questionIds: selected.map((item) => item.id), position: 0, answers: [], startedAt: now, updatedAt: now, status: 'active' }; study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); setSubmitted(false); setCurrentCorrect(false); };
+  const start = () => { const selected = pool.slice(0, Math.max(1, Math.min(count, pool.length))); const session = createPracticeSession(selectedModuleId, selected.map((item) => item.id)); study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); setSubmitted(false); setCurrentCorrect(false); };
   const underpracticed = useMemo(() => {
     const attempts = new Map<string, number>();
     study.attempts.forEach((attempt) => attempts.set(attempt.structureId ?? '', (attempts.get(attempt.structureId ?? '') ?? 0) + 1));
@@ -42,8 +59,7 @@ export default function PracticeScreen() {
       .filter((item, index, all) => all.findIndex((candidate) => candidate.id === item.id) === index)
       .slice(0, Math.max(1, Math.min(count, pool.length)));
     if (selected.length) {
-      const now = new Date().toISOString();
-      const session: PracticeSession = { id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, moduleId: selectedModuleId, mode: 'practice', entryPoint: 'practice', questionIds: selected.map((item) => item.id), position: 0, answers: [], startedAt: now, updatedAt: now, status: 'active' };
+      const session = createPracticeSession(selectedModuleId, selected.map((item) => item.id));
       study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); setSubmitted(false); setCurrentCorrect(false);
     }
   };

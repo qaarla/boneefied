@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { Image, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { Screen } from '@/components/Screen';
+import { EmptyState } from '@/components/EmptyState';
 import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
 import { content } from '@/content/canonical';
+import { resolvePublishedModule } from '@/content/study';
 import type { Asset, Lesson } from '@/content/model';
 import { useStudy } from '@/context/StudyContext';
 import { useColors } from '@/hooks/useColors';
@@ -16,7 +18,13 @@ export default function ModuleDetailScreen() {
   const { bookmarks, toggleBookmark } = useStudy();
   const [mode, setMode] = useState<'learn' | 'recall'>('learn');
   const [expanded, setExpanded] = useState<string | null>(null);
-  const module = content.modules.find((item) => item.id === id) ?? content.modules[0];
+  const module = resolvePublishedModule(content, id);
+  if (!module) return <><Stack.Screen options={{ title: 'Module unavailable', headerBackTitle: 'Study' }} /><Screen>
+    <EmptyState icon="alert-circle" title="Module unavailable" message="This study module does not exist or is not published." />
+    <Pressable onPress={() => router.replace('/(tabs)')} style={[styles.practice, { backgroundColor: colors.primary }]}>
+      <Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Return to Study</Text>
+    </Pressable>
+  </Screen></>;
   const lessons = module.lessons ?? [];
   const structures = content.structures.filter((item) => item.moduleId === module.id);
   const assignedAssetIds = new Set((module.lessons ?? []).flatMap((lesson) => lesson.assetIds ?? []));

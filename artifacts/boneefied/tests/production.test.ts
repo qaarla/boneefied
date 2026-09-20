@@ -27,7 +27,7 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.modules.filter((module) => module.published).length, 18);
   assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.contentStatus, 'available');
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'skeletal-system').length, 155);
-  assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length, 14);
+  assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length, 13);
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'joints-ligaments').length, 36);
   assert.equal(content.modules.find((module) => module.id === 'joints-ligaments')?.lessons?.length, 6);
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'muscular-system').length, 59);
@@ -42,7 +42,7 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 86);
   assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 11);
   const expectedCounts: Record<string, [number, number, number]> = {
-    'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 14, 86], 'anatomy-foundations': [20, 1, 11],
+    'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 13, 86], 'anatomy-foundations': [20, 1, 11],
     'joints-ligaments': [36, 6, 29], 'muscular-system': [59, 8, 52], 'nervous-system': [63, 8, 47],
     'cells-tissues': [57, 8, 25], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 30],
     'endocrine-system': [38, 6, 17], 'cardiovascular-system': [50, 6, 24], 'blood-vessels': [45, 10, 22],
@@ -87,6 +87,10 @@ test('published module sequence and organ lesson cue depth remain stable', () =>
     'blood-vessels', 'respiratory-system', 'digestive-system', 'urinary-system',
     'male-reproductive', 'female-reproductive',
   ]);
+  for (const module of content.modules) {
+    const lessonIds = (module.lessons ?? []).map((lesson) => lesson.id);
+    assert.equal(new Set(lessonIds).size, lessonIds.length, `${module.id}: duplicate lesson IDs`);
+  }
   const generic = new Set([
     'Orient by position, continuity, and distinctive wall or tissue features.',
     'Compare adjacent structures before selecting a label.',

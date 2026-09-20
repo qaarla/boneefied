@@ -15,6 +15,10 @@ export type ProgressRollup = {
 export type ProgressRollups = { modules: ProgressRollup[]; lessons: ProgressRollup[] };
 export const emptyStudyState: StudyState = { attempts: [], missed: [], mastery: [] };
 
+export function resolvePublishedModule(catalog: ContentCatalog, moduleId: string | undefined) {
+  return catalog.modules.find((module) => module.id === moduleId && module.published);
+}
+
 /**
  * Assigns each attempt to one canonical structure before aggregating it. This
  * matters for questions (such as select-all) which reference several
@@ -85,6 +89,27 @@ export function upsertSession(state: StudyState, session: PracticeSession): Stud
   const index = sessions.findIndex((item) => item.id === session.id);
   if (index >= 0) sessions[index] = session; else sessions.push(session);
   return { ...state, sessions };
+}
+
+export function createPracticeSession(
+  moduleId: string,
+  questionIds: string[],
+  entryPoint: PracticeSession['entryPoint'] = 'practice',
+  now = new Date().toISOString(),
+  id = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+): PracticeSession {
+  return {
+    id,
+    moduleId,
+    mode: 'practice',
+    entryPoint,
+    questionIds: [...new Set(questionIds)],
+    position: 0,
+    answers: [],
+    startedAt: now,
+    updatedAt: now,
+    status: 'active',
+  };
 }
 export function submitSessionAnswer(state: StudyState, sessionId: string, answer: SessionAnswer, attempt?: Attempt): StudyState {
   const session = (state.sessions ?? []).find((item) => item.id === sessionId);
