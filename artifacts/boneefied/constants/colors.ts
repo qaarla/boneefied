@@ -29,6 +29,8 @@ const dark = {
   accentForeground: '#F6F1E9',
   destructive: '#D95C52',
   destructiveForeground: '#FFFFFF',
+  success: '#4FA76B',
+  successForeground: '#102418',
   border: '#3A4249',
   input: '#3A4249',
 };
@@ -50,6 +52,8 @@ const light = {
   accentForeground: '#23272B',
   destructive: '#B83E35',
   destructiveForeground: '#FFFFFF',
+  success: '#2F7D4A',
+  successForeground: '#FFFFFF',
   border: '#D8CEC4',
   input: '#D8CEC4',
 };

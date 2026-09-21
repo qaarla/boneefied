@@ -39,15 +39,15 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.modules.find((module) => module.id === 'nervous-system')?.system, 'nervous');
   assert.ok(content.structures.some((structure) => structure.id === 'external-acoustic-meatus'));
   assert.ok(content.structures.some((structure) => structure.id === 'lateral-malleolus'));
-  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 86);
+  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 111);
   assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 11);
   const expectedCounts: Record<string, [number, number, number]> = {
-    'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 13, 86], 'anatomy-foundations': [20, 1, 11],
-    'joints-ligaments': [36, 6, 29], 'muscular-system': [59, 8, 52], 'nervous-system': [63, 8, 47],
-    'cells-tissues': [57, 8, 25], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 30],
-    'endocrine-system': [38, 6, 17], 'cardiovascular-system': [50, 6, 24], 'blood-vessels': [45, 10, 22],
-    'lymphatic-system': [47, 7, 17], 'respiratory-system': [64, 7, 38], 'digestive-system': [81, 10, 44],
-    'urinary-system': [49, 7, 36], 'male-reproductive': [47, 7, 39], 'female-reproductive': [65, 8, 45],
+    'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 13, 111], 'anatomy-foundations': [20, 1, 11],
+    'joints-ligaments': [36, 6, 31], 'muscular-system': [59, 8, 52], 'nervous-system': [63, 8, 51],
+    'cells-tissues': [57, 8, 28], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 33],
+    'endocrine-system': [38, 6, 17], 'cardiovascular-system': [50, 6, 27], 'blood-vessels': [45, 10, 22],
+    'lymphatic-system': [47, 7, 19], 'respiratory-system': [64, 7, 40], 'digestive-system': [81, 10, 44],
+    'urinary-system': [49, 7, 39], 'male-reproductive': [47, 7, 41], 'female-reproductive': [65, 8, 47],
   };
   for (const [id, [structures, lessons, questions]] of Object.entries(expectedCounts)) {
     const module = content.modules.find((item) => item.id === id);
@@ -56,7 +56,7 @@ test('production catalog validates with honest published counts and source prove
     assert.equal(module?.lessons?.length ?? 0, lessons, id);
     assert.equal(content.questions.filter((item) => item.moduleId === id).length, questions, id);
   }
-  assert.equal(content.assets.length, 29);
+  assert.equal(content.assets.length, 35);
   assert.ok(content.questions.filter((question) => question.assetId).length >= 23);
   assert.ok(content.questions.filter((question) => question.hotspots?.length).length >= 8);
   assert.equal(content.questions.filter((question) => question.taskType === 'histology-identification').length, 2);

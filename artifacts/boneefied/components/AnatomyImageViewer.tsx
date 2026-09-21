@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Image, PanResponder, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useColors } from '@/hooks/useColors';
 import type { NormalizedHotspot, VerifiedLabel } from '@/content/model';
+import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';
 
 type Props = {
   source?: number;
@@ -12,10 +13,14 @@ type Props = {
   onHotspotPress?: (hotspot: NormalizedHotspot) => void;
   labels?: VerifiedLabel[];
   bakedLabels?: boolean;
+  selectedHotspotId?: string;
+  correctHotspotId?: string;
+  submitted?: boolean;
+  reduceMotion?: boolean;
 };
 
 /** Source-safe image viewer. Hotspots are normalized to the contained image, not the frame. */
-export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false, caption, imageAspectRatio = 1.45, onHotspotPress, labels = [], bakedLabels = false }: Props) {
+export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false, caption, imageAspectRatio = 1.45, onHotspotPress, labels = [], bakedLabels = false, selectedHotspotId, correctHotspotId, submitted = false, reduceMotion = false }: Props) {
   const colors = useColors();
   const [zoom, setZoom] = useState(1);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
@@ -48,14 +53,33 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
   const hideAll = () => setRevealed(new Set());
   // Frame aspect ratio is 1.45. These percentages describe the contain box.
   const frameRatio = 1.45;
-  const containedWidth = Math.min(1, frameRatio / imageAspectRatio);
-  const containedHeight = Math.min(1, imageAspectRatio / frameRatio);
+  const containedWidth = Math.min(1, imageAspectRatio / frameRatio);
+  const containedHeight = Math.min(1, frameRatio / imageAspectRatio);
   return <View style={[styles.frame, { backgroundColor: colors.card, borderColor: colors.border }]} accessibilityLabel="Anatomy image viewer">
     <View {...responder.panHandlers} style={styles.gestureArea} accessibilityLabel="Pan or pinch to inspect image">
       {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>No verified course image available</Text></View>}
       {source && <View pointerEvents="box-none" style={[styles.canvas, { transform: [{ translateX: offset.x }, { translateY: offset.y }, { scale: zoom }] }]}>
         <Image source={source} resizeMode="contain" style={styles.image} />
-        {hotspots.map((hotspot) => <Pressable key={`${hotspot.structureId}-${hotspot.x}-${hotspot.y}`} disabled={!onHotspotPress} onPress={() => onHotspotPress?.(hotspot)} accessibilityRole="button" accessibilityLabel={revealLabels ? hotspot.structureId : 'Hidden structure hotspot'} testID={`hotspot-${hotspot.structureId}`} style={[styles.hotspot, { left: `${(1 - containedWidth) * 50 + hotspot.x * containedWidth * 100}%`, top: `${(1 - containedHeight) * 50 + hotspot.y * containedHeight * 100}%`, width: `${hotspot.radius * containedWidth * 200}%`, height: `${hotspot.radius * containedHeight * 200}%`, borderColor: revealLabels ? colors.primary : 'transparent' }]} />)}
+        {hotspots.map((hotspot) => {
+          const selected = selectedHotspotId === hotspot.structureId;
+          const feedback: AnswerFeedback | undefined = submitted
+            ? hotspot.structureId === correctHotspotId ? 'correct' : selected ? 'incorrect' : undefined
+            : undefined;
+          return <AnimatedAnswerPressable
+            key={`${hotspot.structureId}-${hotspot.x}-${hotspot.y}`}
+            disabled={!onHotspotPress || submitted}
+            onPress={() => onHotspotPress?.(hotspot)}
+            feedback={feedback}
+            reduceMotion={reduceMotion}
+            accessibilityLabel={feedback === 'correct' ? 'Correct structure hotspot' : feedback === 'incorrect' ? 'Incorrect selected hotspot' : revealLabels ? hotspot.structureId : 'Hidden structure hotspot'}
+            accessibilityState={{ selected }}
+            testID={`hotspot-${hotspot.structureId}`}
+            containerStyle={[styles.hotspot, { left: `${(1 - containedWidth) * 50 + hotspot.x * containedWidth * 100}%`, top: `${(1 - containedHeight) * 50 + hotspot.y * containedHeight * 100}%`, width: `${hotspot.radius * containedWidth * 200}%`, height: `${hotspot.radius * containedHeight * 200}%` }]}
+            contentStyle={[styles.hotspotContent, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected || revealLabels ? colors.primary : 'transparent', backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected ? colors.secondary : 'transparent' }]}
+          >
+            {feedback ? <Text style={{ color: feedback === 'correct' ? colors.successForeground : colors.destructiveForeground, fontWeight: '800' }}>{feedback === 'correct' ? '✓' : '✕'}</Text> : null}
+          </AnimatedAnswerPressable>;
+        })}
         {labels.map((label) => {
           const visible = revealLabels || revealed.has(label.structureId);
           return <Pressable key={`label-${label.structureId}`} onPress={() => setRevealed((current) => { const next = new Set(current); if (next.has(label.structureId)) next.delete(label.structureId); else next.add(label.structureId); return next; })} accessibilityRole="button" accessibilityState={{ selected: visible }} accessibilityLabel={visible ? `Hide ${label.displayLabel}` : `Reveal ${label.displayLabel}`} style={[styles.labelMarker, { left: `${(1 - containedWidth) * 50 + label.x * containedWidth * 100}%`, top: `${(1 - containedHeight) * 50 + label.y * containedHeight * 100}%`, borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card }]}>
@@ -77,7 +101,8 @@ const styles = StyleSheet.create({
   image: { width: '100%', height: '100%' },
   empty: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24 },
   blocked: { fontSize: 14, textAlign: 'center' },
-  hotspot: { position: 'absolute', transform: [{ translateX: '-50%' }, { translateY: '-50%' }], borderWidth: 2, borderRadius: 999 },
+  hotspot: { position: 'absolute', transform: [{ translateX: '-50%' }, { translateY: '-50%' }] },
+  hotspotContent: { width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderRadius: 999 },
   labelMarker: { position: 'absolute', transform: [{ translateX: '-50%' }, { translateY: '-50%' }], minWidth: 30, minHeight: 30, paddingHorizontal: 6, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderRadius: 999 },
   controls: { position: 'absolute', right: 10, top: 10, flexDirection: 'row', gap: 8, alignItems: 'center' },
   reset: { paddingHorizontal: 10, paddingVertical: 7, borderRadius: 8, opacity: 0.94 },

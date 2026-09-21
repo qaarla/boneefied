@@ -9,6 +9,7 @@ import { muscularPracticeExpansion, nervousPracticeExpansion } from './practice-
 import { respiratoryPracticeExpansion, digestivePracticeExpansion, urinaryPracticeExpansion, malePracticeExpansion, femalePracticeExpansion } from './practice-organ-expansion.ts';
 import { jointsPracticeExpansion, foundationsPracticeExpansion } from './practice-joints-foundations-expansion.ts';
 import { visualAssets, histologyAssets, visualQuestions, visualSources, cytologyStructures, foundationVisualStructures, cytologyLessons, cytologyGapQuestions, SERVIER_SOURCE_ID, HISTOLOGY_SOURCE_ID } from './visual-content.ts';
+import { attachPracticalVisuals, practicalVisualAssets, practicalVisualQuestions, practicalVisualSources } from './practical-visual-expansion.ts';
 
 export const BRIEF_SOURCE_ID = 'source-course-brief';
 export const CYTOLOGY_SOURCE_ID = 'source-user-transcribed-lab2';
@@ -21,7 +22,7 @@ const allStructures = [...skeletalStructures, ...skeletalLandmarkStructures, ...
 
 export const content: ContentCatalog = {
   sources: [
-    ...anatomySources, ...systemsSources, ...cellsSources, ...skinSources, ...sensesSources, ...circulationSources, ...organSystemsSources, ...visualSources,
+    ...anatomySources, ...systemsSources, ...cellsSources, ...skinSources, ...sensesSources, ...circulationSources, ...organSystemsSources, ...visualSources, ...practicalVisualSources,
     {
       id: CYTOLOGY_SOURCE_ID,
       filename: 'User-supplied transcribed excerpts from Lab 2 Cytology and Quizes(2)',
@@ -97,7 +98,7 @@ export const content: ContentCatalog = {
     })),
     ...allStructures,
   ],
-  assets: [...skeletalAssets, ...expandedGrayAssets, ...visualAssets, ...histologyAssets],
+  assets: [...skeletalAssets, ...expandedGrayAssets, ...visualAssets, ...histologyAssets, ...practicalVisualAssets],
   questions: [
     { id:'q-cycle-order', moduleId:'cytology-mitosis', structureIds:['g1','s-phase','g2'], taskType:'ordered-sequence', prompt:'Order the interphase stages from first to last.', answer:['G1','S','G2'], acceptedAliases:[], options:['G2','G1','S'], explanation:'The source describes G1 growth/resource accumulation, S DNA replication, then G2 second growth.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:5, examPriority:true, verificationStatus:'verified' },
     { id:'q-mitosis-order', moduleId:'cytology-mitosis', structureIds:['mitosis','prophase','metaphase','anaphase','telophase'], taskType:'ordered-sequence', prompt:'Order the traditional stages of mitosis.', answer:['Prophase','Metaphase','Anaphase','Telophase'], acceptedAliases:[], options:['Anaphase','Telophase','Prophase','Metaphase'], explanation:'The supplied quiz excerpt gives the four-stage order.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:11, examPriority:true, verificationStatus:'verified' },
@@ -109,9 +110,11 @@ export const content: ContentCatalog = {
     { id:'q-telophase', moduleId:'cytology-mitosis', structureIds:['telophase'], taskType:'select-all', prompt:'Select the source-supported telophase events.', answer:['Nuclear envelopes form','Chromosomes unfold into chromatin','Nucleoli reappear'], acceptedAliases:[], options:['Nuclear envelopes form','Chromosomes unfold into chromatin','Nucleoli reappear','DNA replicates'], explanation:'All three selected events are in the supplied p8 transcription.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:8, examPriority:true, verificationStatus:'verified' },
     { id:'q-membrane', moduleId:'cytology-mitosis', structureIds:['plasma-membrane'], taskType:'typed-recall', prompt:'What surrounds the cell as the plasma membrane?', answer:'A phospholipid bilayer', acceptedAliases:['phospholipid bilayer'], explanation:'The supplied quiz excerpt defines the plasma membrane as a phospholipid bilayer surrounding the cell.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:11, examPriority:true, verificationStatus:'verified' },
     { id:'q-organelles', moduleId:'cytology-mitosis', structureIds:['mitochondrion','smooth-er'], taskType:'select-all', prompt:'Select the source-supported organelle functions.', answer:['Mitochondrion supports cellular respiration/energy','Smooth ER supports lipid production, carbohydrate metabolism, and detoxification'], acceptedAliases:[], options:['Mitochondrion supports cellular respiration/energy','Smooth ER supports lipid production, carbohydrate metabolism, and detoxification','Smooth ER makes the cleavage furrow'], explanation:'These functions are stated in the supplied quiz excerpt.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:12, examPriority:true, verificationStatus:'verified' },
-     ...anatomyQuestions, ...skeletalExpansionQuestions, ...jointsQuestions, ...muscularQuestions, ...nervousQuestions, ...scorableNewQuestions([...cellsQuestions, ...skinQuestions, ...sensesQuestions, ...endocrineQuestions, ...cardiovascularQuestions, ...vesselsQuestions, ...lymphaticQuestions, ...organSystemsQuestions]), ...visualQuestions, ...cytologyGapQuestions, ...skeletalPracticeExpansion, ...muscularPracticeExpansion, ...nervousPracticeExpansion, ...respiratoryPracticeExpansion, ...digestivePracticeExpansion, ...urinaryPracticeExpansion, ...malePracticeExpansion, ...femalePracticeExpansion, ...jointsPracticeExpansion, ...foundationsPracticeExpansion],
+     ...anatomyQuestions, ...skeletalExpansionQuestions, ...jointsQuestions, ...muscularQuestions, ...nervousQuestions, ...scorableNewQuestions([...cellsQuestions, ...skinQuestions, ...sensesQuestions, ...endocrineQuestions, ...cardiovascularQuestions, ...vesselsQuestions, ...lymphaticQuestions, ...organSystemsQuestions]), ...visualQuestions, ...practicalVisualQuestions, ...cytologyGapQuestions, ...skeletalPracticeExpansion, ...muscularPracticeExpansion, ...nervousPracticeExpansion, ...respiratoryPracticeExpansion, ...digestivePracticeExpansion, ...urinaryPracticeExpansion, ...malePracticeExpansion, ...femalePracticeExpansion, ...jointsPracticeExpansion, ...foundationsPracticeExpansion],
   pathways: [],
 };
+
+content.modules = attachPracticalVisuals(content.modules);
 
 export function getSource(id: string): SourceRecord | undefined {
   return content.sources.find((source) => source.id === id);
