@@ -21,6 +21,7 @@ import { skeletalPracticeExpansion } from '../content/practice-skeletal-expansio
 import { muscularPracticeExpansion, nervousPracticeExpansion } from '../content/practice-neuromuscular-expansion.ts';
 import { respiratoryPracticeExpansion, digestivePracticeExpansion, urinaryPracticeExpansion, malePracticeExpansion, femalePracticeExpansion } from '../content/practice-organ-expansion.ts';
 import { jointsPracticeExpansion, foundationsPracticeExpansion } from '../content/practice-joints-foundations-expansion.ts';
+import { MUSCULAR_SOURCE_ID } from '../content/systems.ts';
 
 test('production catalog validates with honest published counts and source provenance', () => {
   assert.deepEqual(validateContent(content), []);
@@ -30,7 +31,7 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length, 13);
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'joints-ligaments').length, 36);
   assert.equal(content.modules.find((module) => module.id === 'joints-ligaments')?.lessons?.length, 6);
-  assert.equal(content.structures.filter((structure) => structure.moduleId === 'muscular-system').length, 59);
+  assert.equal(content.structures.filter((structure) => structure.moduleId === 'muscular-system').length, 61);
   assert.equal(content.modules.find((module) => module.id === 'muscular-system')?.lessons?.length, 8);
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'nervous-system').length, 63);
   assert.equal(content.modules.find((module) => module.id === 'nervous-system')?.lessons?.length, 8);
@@ -43,7 +44,7 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 11);
   const expectedCounts: Record<string, [number, number, number]> = {
     'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 13, 111], 'anatomy-foundations': [20, 1, 11],
-    'joints-ligaments': [36, 6, 31], 'muscular-system': [59, 8, 52], 'nervous-system': [63, 8, 51],
+    'joints-ligaments': [36, 6, 31], 'muscular-system': [61, 8, 111], 'nervous-system': [63, 8, 51],
     'cells-tissues': [57, 8, 28], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 33],
     'endocrine-system': [38, 6, 17], 'cardiovascular-system': [50, 6, 27], 'blood-vessels': [45, 10, 22],
     'lymphatic-system': [47, 7, 19], 'respiratory-system': [64, 7, 40], 'digestive-system': [81, 10, 44],
@@ -56,7 +57,7 @@ test('production catalog validates with honest published counts and source prove
     assert.equal(module?.lessons?.length ?? 0, lessons, id);
     assert.equal(content.questions.filter((item) => item.moduleId === id).length, questions, id);
   }
-  assert.equal(content.assets.length, 35);
+  assert.equal(content.assets.length, 44);
   assert.ok(content.questions.filter((question) => question.assetId).length >= 23);
   assert.ok(content.questions.filter((question) => question.hotspots?.length).length >= 8);
   assert.equal(content.questions.filter((question) => question.taskType === 'histology-identification').length, 2);
@@ -206,14 +207,14 @@ test('verified Gray plates are local, labeled, and lesson-scoped', () => {
 test('production questions expose supported playable task types', () => {
   const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion', 'image-identification', 'hotspot', 'histology-identification']);
   assert.ok(content.questions.every((question) => supported.has(question.taskType)));
-  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 300);
-  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 19);
-  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 52);
-  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 69);
+  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 309);
+  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 20);
+  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 53);
+  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 74);
   assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 8);
   assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 119);
-  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 9);
-  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 5);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 10);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 8);
   const multipleChoiceLike = new Set(['multiple-choice', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
   for (const question of content.questions.filter((item) => multipleChoiceLike.has(item.taskType))) {
     const answers = Array.isArray(question.answer) ? question.answer : [question.answer];
@@ -242,6 +243,9 @@ test('production questions expose supported playable task types', () => {
       assert.ok(target.x >= 0 && target.x <= 1 && target.y >= 0 && target.y <= 1 && target.radius > 0 && target.radius <= 1, question.id);
       assert.ok(content.structures.some((structure) => structure.id === target.structureId), `${question.id}:${target.structureId}`);
     }
+  }
+  for (const question of content.questions.filter((item) => item.id.startsWith('q-muscle-region-'))) {
+    assert.equal(question.sourceId, MUSCULAR_SOURCE_ID, `${question.id}: factual muscle question must cite the muscle chapter`);
   }
 });
 
