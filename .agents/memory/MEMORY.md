@@ -1,2 +1,3 @@
 - [Course source access](course-source-access.md) — BIOL 250 PDFs are known in ChatGPT Library but must be transferred before Replit can extract them.
 - [Expo offline evidence](expo-offline-evidence.md) — local image bundling does not prove web-preview or native-device offline rendering.
+- [GitHub connector vs Git push](github-git-push.md) — an added GitHub connector does not necessarily authenticate Git transport from the workspace.
