@@ -2,6 +2,7 @@
   "expo": {
     "name": "Boneefied",
     "slug": "boneefied",
+    "owner": "qaarla1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -23,6 +24,11 @@
       "favicon": "./assets/images/icon.png"
     },
     "plugins": ["expo-router"],
+    "extra": {
+      "eas": {
+        "projectId": "899a7bb6-b3ca-42cb-8947-a5025334f457"
+      }
+    },
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
