@@ -9,6 +9,7 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": false,
+      "bundleIdentifier": "com.qaarla.boneefied",
       "icon": "./assets/images/icon.png"
     },
     "android": {
