@@ -37,6 +37,11 @@ export function validateContent(catalog: ContentCatalog): ValidationIssue[] {
   const moduleIds = new Set(catalog.modules.map((item) => item.id));
   const structureIds = new Set(catalog.structures.map((item) => item.id));
   const assetIds = new Set(catalog.assets.map((item) => item.id));
+  catalog.modules.forEach((module) => module.lessons?.forEach((lesson) => {
+    lesson.assetIds?.forEach((id) => {
+      if (!assetIds.has(id)) issues.push({ code: 'missing-lesson-asset', message: `Lesson references missing asset: ${id}`, id: lesson.id });
+    });
+  }));
   catalog.structures.forEach((item) => {
     if (!sourceIds.has(item.sourceId)) issues.push({ code: 'missing-source', message: `Structure references missing source: ${item.sourceId}`, id: item.id });
     if (!moduleIds.has(item.moduleId)) issues.push({ code: 'missing-module', message: `Structure references missing module: ${item.moduleId}`, id: item.id });

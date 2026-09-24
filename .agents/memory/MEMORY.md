@@ -1,1 +1,2 @@
 - [Course source access](course-source-access.md) — BIOL 250 PDFs are known in ChatGPT Library but must be transferred before Replit can extract them.
+- [Expo offline evidence](expo-offline-evidence.md) — local image bundling does not prove web-preview or native-device offline rendering.

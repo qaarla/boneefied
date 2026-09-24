@@ -31,7 +31,7 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.modules.find((module) => module.id === 'skeletal-system')?.lessons?.length, 13);
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'joints-ligaments').length, 36);
   assert.equal(content.modules.find((module) => module.id === 'joints-ligaments')?.lessons?.length, 6);
-  assert.equal(content.structures.filter((structure) => structure.moduleId === 'muscular-system').length, 61);
+  assert.equal(content.structures.filter((structure) => structure.moduleId === 'muscular-system').length, 73);
   assert.equal(content.modules.find((module) => module.id === 'muscular-system')?.lessons?.length, 8);
   assert.equal(content.structures.filter((structure) => structure.moduleId === 'nervous-system').length, 63);
   assert.equal(content.modules.find((module) => module.id === 'nervous-system')?.lessons?.length, 8);
@@ -44,7 +44,7 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 11);
   const expectedCounts: Record<string, [number, number, number]> = {
     'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 13, 111], 'anatomy-foundations': [20, 1, 11],
-    'joints-ligaments': [36, 6, 31], 'muscular-system': [61, 8, 111], 'nervous-system': [63, 8, 51],
+    'joints-ligaments': [36, 6, 31], 'muscular-system': [73, 8, 129], 'nervous-system': [63, 8, 51],
     'cells-tissues': [57, 8, 28], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 33],
     'endocrine-system': [38, 6, 17], 'cardiovascular-system': [50, 6, 27], 'blood-vessels': [45, 10, 22],
     'lymphatic-system': [47, 7, 19], 'respiratory-system': [64, 7, 40], 'digestive-system': [81, 10, 44],
@@ -57,7 +57,7 @@ test('production catalog validates with honest published counts and source prove
     assert.equal(module?.lessons?.length ?? 0, lessons, id);
     assert.equal(content.questions.filter((item) => item.moduleId === id).length, questions, id);
   }
-  assert.equal(content.assets.length, 44);
+  assert.equal(content.assets.length, 57);
   assert.ok(content.questions.filter((question) => question.assetId).length >= 23);
   assert.ok(content.questions.filter((question) => question.hotspots?.length).length >= 8);
   assert.equal(content.questions.filter((question) => question.taskType === 'histology-identification').length, 2);
@@ -213,8 +213,8 @@ test('production questions expose supported playable task types', () => {
   assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 74);
   assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 8);
   assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 119);
-  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 10);
-  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 8);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 16);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 12);
   const multipleChoiceLike = new Set(['multiple-choice', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
   for (const question of content.questions.filter((item) => multipleChoiceLike.has(item.taskType))) {
     const answers = Array.isArray(question.answer) ? question.answer : [question.answer];

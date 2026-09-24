@@ -25,15 +25,19 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
   const [zoom, setZoom] = useState(1);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
+  const view = useRef({ zoom: 1, offset: { x: 0, y: 0 } });
+  view.current = { zoom, offset };
   const start = useRef({ x: 0, y: 0, zoom: 1 });
   const pinchDistance = useRef(0);
   const distance = (touches: ReadonlyArray<{ pageX: number; pageY: number }>) => touches.length > 1
     ? Math.hypot(touches[0].pageX - touches[1].pageX, touches[0].pageY - touches[1].pageY) : 0;
   const responder = useRef(PanResponder.create({
-    onStartShouldSetPanResponder: () => !!source,
-    onMoveShouldSetPanResponder: () => !!source,
+    // Let child buttons receive taps. Claim the gesture only once the user
+    // actually drags or pinches, so panning cannot submit a hotspot answer.
+    onStartShouldSetPanResponder: () => false,
+    onMoveShouldSetPanResponder: (event, gesture) => !!source && (event.nativeEvent.touches.length > 1 || Math.abs(gesture.dx) > 8 || Math.abs(gesture.dy) > 8),
     onPanResponderGrant: (event) => {
-      start.current = { x: offset.x, y: offset.y, zoom };
+      start.current = { x: view.current.offset.x, y: view.current.offset.y, zoom: view.current.zoom };
       pinchDistance.current = distance(event.nativeEvent.touches);
     },
     onPanResponderMove: (event, gesture) => {
@@ -45,7 +49,7 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
     },
     onPanResponderRelease: () => {
       pinchDistance.current = 0;
-      if (zoom <= 1) setOffset({ x: 0, y: 0 });
+      if (view.current.zoom <= 1) setOffset({ x: 0, y: 0 });
     },
   })).current;
   const reset = () => { setZoom(1); setOffset({ x: 0, y: 0 }); };

@@ -39,19 +39,17 @@ function correctAnswerText(question: Question) {
 export default function PracticeScreen() {
   const colors = useColors(); const router = useRouter(); const study = useStudy();
   const reduceMotion = useReduceMotion();
-  const { moduleId: requestedModuleId, questionId: requestedQuestionId } = useLocalSearchParams<{ moduleId?: string; questionId?: string }>();
+  const { moduleId: requestedModuleId, questionId: requestedQuestionId, retryId } = useLocalSearchParams<{ moduleId?: string; questionId?: string; retryId?: string }>();
   const [selectedModuleId, setSelectedModuleId] = useState(requestedModuleId ?? (requestedQuestionId ? content.questions.find((item) => item.id === requestedQuestionId)?.moduleId : undefined) ?? 'cytology-mitosis');
   const pool = useMemo(() => content.questions.filter((q) => q.moduleId === selectedModuleId && supported.has(q.taskType) && (!requestedQuestionId || q.id === requestedQuestionId)), [selectedModuleId, requestedQuestionId]);
   const [phase, setPhase] = useState<Phase>('setup'); const [count, setCount] = useState(Math.min(5, pool.length));
   const [questions, setQuestions] = useState<Question[]>([]); const [position, setPosition] = useState(0);
   const [answer, setAnswer] = useState<string | string[]>(''); const [submitted, setSubmitted] = useState(false);
   const [correct, setCorrect] = useState(0); const [answers, setAnswers] = useState<boolean[]>([]); const [currentCorrect, setCurrentCorrect] = useState(false); const [sessionId, setSessionId] = useState('');
-  const [feedbackPlaying, setFeedbackPlaying] = useState(false);
-  const feedbackTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  useEffect(() => () => { if (feedbackTimer.current) clearTimeout(feedbackTimer.current); }, []);
+  const submissionGuard = useRef(false);
   const activeSession = requestedQuestionId ? undefined : study.sessions.find((session) => session.status !== 'completed' && session.moduleId === selectedModuleId);
   useEffect(() => {
-    if (!requestedQuestionId) return;
+    if (!requestedQuestionId || !study.hydrated) return;
     const requested = content.questions.find((item) => item.id === requestedQuestionId && supported.has(item.taskType));
     if (!requested) return;
     const session = createPracticeSession(requested.moduleId, [requested.id], 'missed');
@@ -61,45 +59,64 @@ export default function PracticeScreen() {
     setQuestions([requested]);
     setPosition(0);
     setAnswer('');
+    submissionGuard.current = false;
     setSubmitted(false);
     setCurrentCorrect(false);
     setCorrect(0);
     setAnswers([]);
     setPhase('quiz');
-  }, [requestedQuestionId]);
+  }, [requestedQuestionId, retryId, study.hydrated]);
   useEffect(() => {
     if (activeSession && phase === 'setup') {
       const resumed = activeSession.questionIds.map((id) => content.questions.find((item) => item.id === id)).filter((item): item is Question => !!item);
       if (resumed.length) { setSessionId(activeSession.id); setQuestions(resumed); setPosition(Math.min(activeSession.position, resumed.length - 1)); setAnswers(activeSession.answers.map((item) => item.outcome === 'correct')); setCorrect(activeSession.answers.filter((item) => item.outcome === 'correct').length); setPhase('quiz'); }
     }
   }, [activeSession?.id]);
-  const start = () => { const selected = pool.slice(0, Math.max(1, Math.min(count, pool.length))); const session = createPracticeSession(selectedModuleId, selected.map((item) => item.id)); study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); setSubmitted(false); setCurrentCorrect(false); };
+  const start = () => {
+    if (!study.hydrated) return;
+    const attemptsByStructure = new Map<string, number>();
+    study.attempts.forEach((item) => attemptsByStructure.set(item.structureId ?? '', (attemptsByStructure.get(item.structureId ?? '') ?? 0) + 1));
+    const ordered = [...pool].sort((a, b) =>
+      (attemptsByStructure.get(a.structureIds[0]) ?? 0) - (attemptsByStructure.get(b.structureIds[0]) ?? 0));
+    const seen = new Set<string>();
+    const distinct = ordered.filter((item) => {
+      const key = item.structureIds[0];
+      if (seen.has(key)) return false;
+      seen.add(key); return true;
+    });
+    const selected = [...distinct, ...ordered.filter((item) => !distinct.includes(item))]
+      .slice(0, Math.max(1, Math.min(count, pool.length)));
+    const session = createPracticeSession(selectedModuleId, selected.map((item) => item.id));
+    study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); submissionGuard.current = false; setSubmitted(false); setCurrentCorrect(false);
+  };
   const underpracticed = useMemo(() => {
     const attempts = new Map<string, number>();
     study.attempts.forEach((attempt) => attempts.set(attempt.structureId ?? '', (attempts.get(attempt.structureId ?? '') ?? 0) + 1));
-    return content.structures.filter((structure) => structure.moduleId === selectedModuleId)
+    return content.structures.filter((structure) => structure.moduleId === selectedModuleId && pool.some((question) => question.structureIds[0] === structure.id))
       .sort((a, b) => (attempts.get(a.id) ?? 0) - (attempts.get(b.id) ?? 0)).slice(0, 5);
-  }, [selectedModuleId, study.attempts]);
+  }, [selectedModuleId, study.attempts, pool]);
   const startFocused = () => {
+    if (!study.hydrated) return;
     const targets = new Set(underpracticed.map((item) => item.id));
-    const selected = pool.filter((item) => item.structureIds.some((id) => targets.has(id)))
+    const selected = pool.filter((item) => targets.has(item.structureIds[0]))
       .filter((item, index, all) => all.findIndex((candidate) => candidate.id === item.id) === index)
       .slice(0, Math.max(1, Math.min(count, pool.length)));
     if (selected.length) {
       const session = createPracticeSession(selectedModuleId, selected.map((item) => item.id));
-      study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); setSubmitted(false); setCurrentCorrect(false);
+      study.saveSession(session); setSessionId(session.id); setQuestions(selected); setPhase('quiz'); setPosition(0); setCorrect(0); setAnswers([]); setAnswer(''); submissionGuard.current = false; setSubmitted(false); setCurrentCorrect(false);
     }
   };
   const q = questions[position];
   const submit = () => {
-    if (submitted || feedbackPlaying || !q) return;
+    if (submitted || submissionGuard.current || !q || !study.sessions.some((session) => session.id === sessionId && session.status !== 'completed')) return;
+    submissionGuard.current = true;
     const isCorrect = answerIsCorrect(answer, q); setCurrentCorrect(isCorrect); setSubmitted(true); setAnswers((items) => [...items, isCorrect]); if (isCorrect) setCorrect((n) => n + 1);
-    setFeedbackPlaying(true);
     resultHaptic(study.preferences.haptics, isCorrect);
-    feedbackTimer.current = setTimeout(() => setFeedbackPlaying(false), reduceMotion ? 300 : 650);
     study.submitSessionAnswer(sessionId, { questionId: q.id, answer, outcome: isCorrect ? 'correct' : 'wrong', submittedAt: new Date().toISOString() }, { questionId: q.id, structureId: q.structureIds[0], correct: isCorrect, answer });
   };
-  const next = () => { if (!submitted || feedbackPlaying) return; if (position + 1 >= questions.length) { study.completeSession(sessionId); setPhase('results'); } else { setPosition((n) => n + 1); setAnswer(''); setSubmitted(false); setCurrentCorrect(false); } };
+  const next = () => { if (!submitted) return; if (position + 1 >= questions.length) { study.completeSession(sessionId); setPhase('results'); } else { setPosition((n) => n + 1); setAnswer(''); submissionGuard.current = false; setSubmitted(false); setCurrentCorrect(false); } };
+  if (!study.hydrated) return <Screen><Text style={{ color: colors.mutedForeground }}>Loading saved study progress…</Text></Screen>;
+  if (phase !== 'setup' && !study.sessions.some((session) => session.id === sessionId)) return <Screen><Text style={{ color: colors.mutedForeground }}>Preparing saved practice session…</Text></Screen>;
   if (phase === 'setup') return <Screen>
      <Text style={[styles.eyebrow, { color: colors.primary }]}>PRACTICE</Text><Text style={[styles.title, { color: colors.foreground }]}>{content.modules.find((item) => item.id === selectedModuleId)?.title ?? 'Anatomy practice'}</Text>
      <Text style={[styles.intro, { color: colors.mutedForeground }]}>Practice uses the same source-linked structures and explanations as Study. Image questions appear only when answer mapping is verified.</Text>
@@ -129,7 +146,7 @@ export default function PracticeScreen() {
     <Pressable accessibilityLabel="Save and exit practice" onPress={() => setPhase('setup')}><Text style={{ color: colors.primary }}>Save & exit</Text></Pressable>
     <QuestionInput question={q} value={answer} setValue={setAnswer} disabled={submitted} colors={colors} reduceMotion={reduceMotion} hapticsEnabled={study.preferences.haptics} />
      {submitted && <View style={[styles.feedback, { backgroundColor: currentCorrect ? colors.secondary : colors.card, borderColor: colors.border }]}><Text style={{ color: colors.foreground, fontWeight: '700' }}>{currentCorrect ? '✓ Correct' : '✕ Review this one'}</Text>{!currentCorrect && <Text style={{ color: colors.foreground, fontWeight: '600' }}>Correct answer: {correctAnswerText(q)}</Text>}<Text style={{ color: colors.mutedForeground }}>{q.explanation}</Text><Text style={{ color: colors.mutedForeground }}>Source: {sourceCitation(content, q.sourceId, q.sourcePage)}</Text></View>}
-    {!submitted || feedbackPlaying ? <AnimatedAnswerPressable
+    <AnimatedAnswerPressable
       testID="submit-answer"
       onPress={submit}
       disabled={submitted || answer === '' || (Array.isArray(answer) && answer.length === 0)}
@@ -138,13 +155,14 @@ export default function PracticeScreen() {
       accessibilityLabel={submitted ? (currentCorrect ? 'Correct answer submitted' : 'Incorrect answer submitted') : 'Submit answer'}
       containerStyle={styles.primary}
       contentStyle={[styles.primaryContent, { backgroundColor: submitted ? (currentCorrect ? colors.success : colors.destructive) : answer === '' || (Array.isArray(answer) && answer.length === 0) ? colors.muted : colors.primary }]}
-    ><Text style={{ color: submitted ? (currentCorrect ? colors.successForeground : colors.destructiveForeground) : colors.primaryForeground, fontWeight: '700' }}>{submitted ? (currentCorrect ? '✓ Correct' : '✕ Incorrect') : 'Submit answer'}</Text></AnimatedAnswerPressable> : <AnimatedAnswerPressable testID="next-answer" onPress={next} onPressIn={() => selectionHaptic(study.preferences.haptics)} reduceMotion={reduceMotion} containerStyle={styles.primary} contentStyle={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{position + 1 === questions.length ? 'See results' : 'Next question'}</Text></AnimatedAnswerPressable>}
+    ><Text style={{ color: submitted ? (currentCorrect ? colors.successForeground : colors.destructiveForeground) : colors.primaryForeground, fontWeight: '700' }}>{submitted ? (currentCorrect ? '✓ Correct' : '✕ Incorrect') : 'Submit answer'}</Text></AnimatedAnswerPressable>
+    {submitted && <AnimatedAnswerPressable testID="next-answer" onPress={next} onPressIn={() => selectionHaptic(study.preferences.haptics)} reduceMotion={reduceMotion} containerStyle={styles.primary} contentStyle={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{position + 1 === questions.length ? 'See results' : 'Next question'}</Text></AnimatedAnswerPressable>}
   </Screen>;
 }
 
 function QuestionInput({ question, value, setValue, disabled, colors, reduceMotion, hapticsEnabled }: { question: Question; value: string | string[]; setValue: (v: string | string[]) => void; disabled: boolean; colors: any; reduceMotion: boolean; hapticsEnabled: boolean }) {
   const asset = question.assetId ? content.assets.find((item) => item.id === question.assetId) : undefined;
-  const image = asset ? <AnatomyImageViewer source={imageSources[asset.id]} hotspots={question.hotspots ?? asset.hotspots} labels={disabled ? asset.labels?.filter((label) => question.structureIds.includes(label.structureId)) : []} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={(hotspot) => { selectionHaptic(hapticsEnabled); setValue(hotspot.structureId); }} selectedHotspotId={typeof value === 'string' ? value : undefined} correctHotspotId={question.structureIds[0]} submitted={disabled} reduceMotion={reduceMotion} /> : null;
+  const image = asset ? <AnatomyImageViewer source={imageSources[asset.id]} hotspots={question.taskType === 'image-identification' ? [] : question.hotspots ?? asset.hotspots} labels={(disabled || question.taskType === 'image-identification') ? asset.labels?.filter((label) => question.structureIds.includes(label.structureId)) : []} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={question.taskType === 'image-identification' ? undefined : (hotspot) => { selectionHaptic(hapticsEnabled); setValue(hotspot.structureId); }} selectedHotspotId={typeof value === 'string' ? value : undefined} correctHotspotId={question.structureIds[0]} submitted={disabled} reduceMotion={reduceMotion} /> : null;
   if (question.taskType === 'hotspot') return <View style={{ gap: 10 }}>{image}<Text style={{ color: colors.mutedForeground }}>Tap the marked structure.</Text></View>;
   if (question.taskType === 'typed-recall' || question.taskType === 'image-identification') return <View style={{ gap: 10 }}>{image}<TextInput testID="typed-answer" accessibilityLabel={disabled ? `${answerIsCorrect(value, question) ? 'Correct' : 'Incorrect'} typed answer` : 'Image identification answer'} value={typeof value === 'string' ? value : ''} onChangeText={setValue} editable={!disabled} onSubmitEditing={Keyboard.dismiss} placeholder="Type your answer" placeholderTextColor={colors.mutedForeground} style={[styles.input, { color: colors.foreground, borderColor: disabled ? (answerIsCorrect(value, question) ? colors.success : colors.destructive) : colors.border, backgroundColor: colors.card }]} returnKeyType="done" /></View>;
   const options = question.options ?? (question.answer as string[]);

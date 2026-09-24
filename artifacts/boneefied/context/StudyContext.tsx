@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import type { Attempt, MasteryRecord, MissedItem, PracticeSession, SessionAnswer } from '@/content/model';
 import { applyAttempt, clearMissed as clearMissedState, emptyStudyState, hydrateStudyState, upsertSession, submitSessionAnswer, completeSession } from '@/content/study';
 
@@ -28,6 +28,7 @@ export function StudyProvider({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<StoredState>({ ...emptyStudyState, bookmarks: [], sessions: [], preferences: { theme: 'system', textScale: 'default', haptics: true, defaultCount: 5 } });
   const [hydrated, setHydrated] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
+  const writeQueue = useRef<Promise<void>>(Promise.resolve());
 
   useEffect(() => {
     AsyncStorage.getItem(STORAGE_KEY).then((raw) => {
@@ -38,9 +39,21 @@ export function StudyProvider({ children }: { children: React.ReactNode }) {
     }).catch(() => setHydrated(true));
   }, []);
   useEffect(() => {
-    if (hydrated) AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(state)).then(() => setSaveError(null)).catch(() => setSaveError('Local save failed. Retry to protect your offline progress.'));
+    if (hydrated) {
+      const snapshot = JSON.stringify(state);
+      writeQueue.current = writeQueue.current.catch(() => undefined)
+        .then(() => AsyncStorage.setItem(STORAGE_KEY, snapshot))
+        .then(() => setSaveError(null))
+        .catch(() => setSaveError('Local save failed. Retry to protect your offline progress.'));
+    }
   }, [hydrated, state]);
-  const retrySave = () => AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(state)).then(() => setSaveError(null)).catch(() => setSaveError('Local save failed again.'));
+  const retrySave = () => {
+    const snapshot = JSON.stringify(state);
+    writeQueue.current = writeQueue.current.catch(() => undefined)
+      .then(() => AsyncStorage.setItem(STORAGE_KEY, snapshot))
+      .then(() => setSaveError(null))
+      .catch(() => setSaveError('Local save failed again.'));
+  };
 
   const value = useMemo<StudyContextValue>(() => ({
     ...state,
@@ -55,12 +68,12 @@ export function StudyProvider({ children }: { children: React.ReactNode }) {
     toggleBookmark: (structureId) => setState((current) => ({ ...current, bookmarks: current.bookmarks.includes(structureId) ? current.bookmarks.filter((id) => id !== structureId) : [...current.bookmarks, structureId] })),
     resetLocalState: () => setState({ ...emptyStudyState, bookmarks: [], sessions: [], preferences: { theme: 'system', textScale: 'default', haptics: true, defaultCount: 5 } }),
     sessions: state.sessions,
-    saveSession: (session) => setState((current) => ({ ...upsertSession(current, session), bookmarks: current.bookmarks, sessions: upsertSession(current, session).sessions ?? [], preferences: current.preferences })),
+    saveSession: (session) => setState((current) => ({ ...current, ...upsertSession(current, session) })),
     submitSessionAnswer: (sessionId, answer, input) => setState((current) => {
       const attempt = input ? { ...input, id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, createdAt: new Date().toISOString() } : undefined;
-      return { ...submitSessionAnswer(current, sessionId, answer, attempt), bookmarks: current.bookmarks, sessions: submitSessionAnswer(current, sessionId, answer, attempt).sessions ?? [], preferences: current.preferences };
+      return { ...current, ...submitSessionAnswer(current, sessionId, answer, attempt) };
     }),
-    completeSession: (sessionId) => setState((current) => ({ ...completeSession(current, sessionId), bookmarks: current.bookmarks, sessions: completeSession(current, sessionId).sessions ?? [], preferences: current.preferences })),
+    completeSession: (sessionId) => setState((current) => ({ ...current, ...completeSession(current, sessionId) })),
     preferences: state.preferences,
     updatePreferences: (patch) => setState((current) => ({ ...current, preferences: { ...current.preferences, ...patch } })),
     saveError,
