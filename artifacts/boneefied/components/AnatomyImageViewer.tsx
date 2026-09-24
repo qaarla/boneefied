@@ -3,6 +3,7 @@ import { Image, PanResponder, Pressable, StyleSheet, Text, View } from 'react-na
 import { useColors } from '@/hooks/useColors';
 import type { NormalizedHotspot, VerifiedLabel } from '@/content/model';
 import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';
+import { useOfflineImage } from '@/hooks/useOfflineImage';
 
 type Props = {
   source?: number;
@@ -22,6 +23,7 @@ type Props = {
 /** Source-safe image viewer. Hotspots are normalized to the contained image, not the frame. */
 export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false, caption, imageAspectRatio = 1.45, onHotspotPress, labels = [], bakedLabels = false, selectedHotspotId, correctHotspotId, submitted = false, reduceMotion = false }: Props) {
   const colors = useColors();
+  const image = useOfflineImage(source);
   const [zoom, setZoom] = useState(1);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
@@ -62,8 +64,9 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
   return <View style={[styles.frame, { backgroundColor: colors.card, borderColor: colors.border }]} accessibilityLabel="Anatomy image viewer">
     <View {...responder.panHandlers} style={styles.gestureArea} accessibilityLabel="Pan or pinch to inspect image">
       {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>No verified course image available</Text></View>}
-      {source && <View pointerEvents="box-none" style={[styles.canvas, { transform: [{ translateX: offset.x }, { translateY: offset.y }, { scale: zoom }] }]}>
-        <Image source={source} resizeMode="contain" style={styles.image} />
+      {source && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ?? 'Loading anatomy image…'}</Text></View>}
+      {source && image.source && <View pointerEvents="box-none" style={[styles.canvas, { transform: [{ translateX: offset.x }, { translateY: offset.y }, { scale: zoom }] }]}>
+        <Image source={image.source} resizeMode="contain" style={styles.image} />
         {hotspots.map((hotspot) => {
           const selected = selectedHotspotId === hotspot.structureId;
           const feedback: AnswerFeedback | undefined = submitted
