@@ -1,0 +1,77 @@
+Using Expo modules
+[Expo] Enabling modular headers for pod ExpoModulesCore
+[Expo] Enabling modular headers for pod ExpoModulesWorklets
+[Expo] Enabling modular headers for pod React-RCTFabric
+[Expo] Enabling modular headers for pod ExpoModulesJSI
+[Expo] Enabling modular headers for pod React-RCTAppDelegate
+[Expo] Enabling modular headers for pod ReactAppDependencyProvider
+[Expo] Enabling modular headers for pod React-Core
+[Expo] Enabling modular headers for pod ReactCodegen
+[Expo] Enabling modular headers for pod RCTRequired
+[Expo] Enabling modular headers for pod RCTTypeSafety
+[Expo] Enabling modular headers for pod ReactCommon
+[Expo] Enabling modular headers for pod React-NativeModulesApple
+[Expo] Enabling modular headers for pod Yoga
+[Expo] Enabling modular headers for pod React-Fabric
+[Expo] Enabling modular headers for pod React-graphics
+[Expo] Enabling modular headers for pod React-utils
+[Expo] Enabling modular headers for pod React-featureflags
+[Expo] Enabling modular headers for pod React-debug
+[Expo] Enabling modular headers for pod React-ImageManager
+[Expo] Enabling modular headers for pod React-rendererdebug
+[Expo] Enabling modular headers for pod React-jsi
+[Expo] Enabling modular headers for pod React-renderercss
+[Expo] Enabling modular headers for pod hermes-engine
+[Expo] Enabling modular headers for pod glog
+[Expo] Enabling modular headers for pod boost
+[Expo] Enabling modular headers for pod DoubleConversion
+[Expo] Enabling modular headers for pod fast_float
+[Expo] Enabling modular headers for pod fmt
+[Expo] Enabling modular headers for pod RCT-Folly
+[Expo] Enabling modular headers for pod SocketRocket
+[Expo] Enabling modular headers for pod SDWebImage
+[Expo] Enabling modular headers for pod SDWebImageAVIFCoder
+[Expo] Enabling modular headers for pod SDWebImageSVGCoder
+[Expo] Enabling modular headers for pod SDWebImageWebPCoder
+[Expo] Enabling modular headers for pod libavif
+[Expo] Enabling modular headers for pod RNScreens
+[Expo-precompiled] RNReanimated: building from source (prebuilt tarball not found)
+[Expo-precompiled]   Expected tarball: /Users/expo/workingdir/build/artifacts/boneefied/packages/precompile/.build/react-native-reanimated/output/4.5.1/0.86.3/250829098.0.17/debug/xcframeworks/RNReanimated.tar.gz
+[Expo-precompiled] react-native-safe-area-context: building from source (prebuilt tarball not found)
+[Expo-precompiled]   Expected tarball: /Users/expo/workingdir/build/artifacts/boneefied/packages/precompile/.build/react-native-safe-area-context/output/5.7.0/0.86.3/250829098.0.17/debug/xcframeworks/RNCSafeAreaContext.tar.gz
+[Expo-precompiled] RNWorklets: building from source (prebuilt tarball not found)
+[Expo-precompiled]   Expected tarball: /Users/expo/workingdir/build/artifacts/boneefied/packages/precompile/.build/react-native-worklets/output/0.10.1/0.86.3/250829098.0.17/debug/xcframeworks/RNWorklets.tar.gz
+[Expo-precompiled] RNScreens: building from source (prebuilt tarball not found)
+[Expo-precompiled]   Expected tarball: /Users/expo/workingdir/build/artifacts/boneefied/packages/precompile/.build/react-native-screens/output/4.26.2/0.86.3/250829098.0.17/debug/xcframeworks/RNScreens.tar.gz
+[Expo-precompiled] RNSVG: building from source (prebuilt tarball not found)
+[Expo-precompiled]   Expected tarball: /Users/expo/workingdir/build/artifacts/boneefied/packages/precompile/.build/react-native-svg/output/15.15.4/0.86.3/250829098.0.17/debug/xcframeworks/RNSVG.tar.gz
+[Expo-precompiled] RNCAsyncStorage: building from source (prebuilt tarball not found)
+[Expo-precompiled]   Expected tarball: /Users/expo/workingdir/build/artifacts/boneefied/packages/precompile/.build/@react-native-async-storage/async-storage/output/2.2.0/0.86.3/250829098.0.17/debug/xcframeworks/RNCAsyncStorage.tar.gz
+[RNScreens] Gamma project enabled. Including source files.
+Found 10 modules for target `Boneefied`
+link_native_modules! {:ios_packages=>[{:configurations=>[], :name=>"@react-native-async-storage/async-storage", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/@react-native-async-storage+async-storage@2.2.0_react-native@0.86.3_@babel+core@7.29.7__7ff4b953a524790cf2ccaa3622b1d5ca/node_modules/@react-native-async-storage/async-storage", :path=>"../../../node_modules/.pnpm/@react-native-async-storage+async-storage@2.2.0_react-native@0.86.3_@babel+core@7.29.7__7ff4b953a524790cf2ccaa3622b1d5ca/node_modules/@react-native-async-storage/async-storage", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/@react-native-async-storage+async-storage@2.2.0_react-native@0.86.3_@babel+core@7.29.7__7ff4b953a524790cf2ccaa3622b1d5ca/node_modules/@react-native-async-storage/async-storage/RNCAsyncStorage.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"@react-native-masked-view/masked-view", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/@react-native-masked-view+masked-view@0.3.2_react-native@0.86.3_@babel+core@7.29.7_@typ_9b095dafc0b6989c6360d4c07d6d6a2f/node_modules/@react-native-masked-view/masked-view", :path=>"../../../node_modules/.pnpm/@react-native-masked-view+masked-view@0.3.2_react-native@0.86.3_@babel+core@7.29.7_@typ_9b095dafc0b6989c6360d4c07d6d6a2f/node_modules/@react-native-masked-view/masked-view", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/@react-native-masked-view+masked-view@0.3.2_react-native@0.86.3_@babel+core@7.29.7_@typ_9b095dafc0b6989c6360d4c07d6d6a2f/node_modules/@react-native-masked-view/masked-view/RNCMaskedView.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"expo", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/expo@57.0.22_@babel+core@7.29.7_@expo+metro-runtime@57.0.15_expo-router@57.0.21_react-d_c3d702cda763ba62009be58dffeb6024/node_modules/expo", :path=>"../../../node_modules/.pnpm/expo@57.0.22_@babel+core@7.29.7_@expo+metro-runtime@57.0.15_expo-router@57.0.21_react-d_c3d702cda763ba62009be58dffeb6024/node_modules/expo", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/expo@57.0.22_@babel+core@7.29.7_@expo+metro-runtime@57.0.15_expo-router@57.0.21_react-d_c3d702cda763ba62009be58dffeb6024/node_modules/expo/Expo.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-gesture-handler", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-gesture-handler@2.32.0_react-native@0.86.3_@babel+core@7.29.7_@types+react_800b74e542589165cb2783178546b05d/node_modules/react-native-gesture-handler", :path=>"../../../node_modules/.pnpm/react-native-gesture-handler@2.32.0_react-native@0.86.3_@babel+core@7.29.7_@types+react_800b74e542589165cb2783178546b05d/node_modules/react-native-gesture-handler", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-gesture-handler@2.32.0_react-native@0.86.3_@babel+core@7.29.7_@types+react_800b74e542589165cb2783178546b05d/node_modules/react-native-gesture-handler/RNGestureHandler.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-keyboard-controller", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.21.9_react-native-reanimated@4.5.1_react-native-work_aba355de633f20b317c840102ab39276/node_modules/react-native-keyboard-controller", :path=>"../../../node_modules/.pnpm/react-native-keyboard-controller@1.21.9_react-native-reanimated@4.5.1_react-native-work_aba355de633f20b317c840102ab39276/node_modules/react-native-keyboard-controller", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-keyboard-controller@1.21.9_react-native-reanimated@4.5.1_react-native-work_aba355de633f20b317c840102ab39276/node_modules/react-native-keyboard-controller/react-native-keyboard-controller.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-reanimated", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-reanimated@4.5.1_react-native-worklets@0.10.1_@babel+core@7.29.7_react-nat_0e416360b38f79b21e4ae6a2f1672c1b/node_modules/react-native-reanimated", :path=>"../../../node_modules/.pnpm/react-native-reanimated@4.5.1_react-native-worklets@0.10.1_@babel+core@7.29.7_react-nat_0e416360b38f79b21e4ae6a2f1672c1b/node_modules/react-native-reanimated", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-reanimated@4.5.1_react-native-worklets@0.10.1_@babel+core@7.29.7_react-nat_0e416360b38f79b21e4ae6a2f1672c1b/node_modules/react-native-reanimated/RNReanimated.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-safe-area-context", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-safe-area-context@5.7.0_react-native@0.86.3_@babel+core@7.29.7_@types+reac_87f635aa53b081f261ffc0cb9c97d91b/node_modules/react-native-safe-area-context", :path=>"../../../node_modules/.pnpm/react-native-safe-area-context@5.7.0_react-native@0.86.3_@babel+core@7.29.7_@types+reac_87f635aa53b081f261ffc0cb9c97d91b/node_modules/react-native-safe-area-context", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-safe-area-context@5.7.0_react-native@0.86.3_@babel+core@7.29.7_@types+reac_87f635aa53b081f261ffc0cb9c97d91b/node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-screens", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-screens@4.26.2_react-native@0.86.3_@babel+core@7.29.7_@types+react@19.2.18_react@19.2.3__react@19.2.3/node_modules/react-native-screens", :path=>"../../../node_modules/.pnpm/react-native-screens@4.26.2_react-native@0.86.3_@babel+core@7.29.7_@types+react@19.2.18_react@19.2.3__react@19.2.3/node_modules/react-native-screens", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-screens@4.26.2_react-native@0.86.3_@babel+core@7.29.7_@types+react@19.2.18_react@19.2.3__react@19.2.3/node_modules/react-native-screens/RNScreens.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-svg", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-svg@15.15.4_react-native@0.86.3_@babel+core@7.29.7_@types+react@19.2.18_react@19.2.3__react@19.2.3/node_modules/react-native-svg", :path=>"../../../node_modules/.pnpm/react-native-svg@15.15.4_react-native@0.86.3_@babel+core@7.29.7_@types+react@19.2.18_react@19.2.3__react@19.2.3/node_modules/react-native-svg", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-svg@15.15.4_react-native@0.86.3_@babel+core@7.29.7_@types+react@19.2.18_react@19.2.3__react@19.2.3/node_modules/react-native-svg/RNSVG.podspec", :script_phases=>[]}, {:configurations=>[], :name=>"react-native-worklets", :root=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-worklets@0.10.1_@babel+core@7.29.7_react-native@0.86.3_@babel+core@7.29.7__8bd6d28777ca01706445787a5672bd8d/node_modules/react-native-worklets", :path=>"../../../node_modules/.pnpm/react-native-worklets@0.10.1_@babel+core@7.29.7_react-native@0.86.3_@babel+core@7.29.7__8bd6d28777ca01706445787a5672bd8d/node_modules/react-native-worklets", :podspec_path=>"/Users/expo/workingdir/build/node_modules/.pnpm/react-native-worklets@0.10.1_@babel+core@7.29.7_react-native@0.86.3_@babel+core@7.29.7__8bd6d28777ca01706445787a5672bd8d/node_modules/react-native-worklets/RNWorklets.podspec", :script_phases=>[]}], :ios_project_root_path=>"/Users/expo/workingdir/build/artifacts/boneefied/ios", :react_native_path=>"../../../node_modules/.pnpm/react-native@0.86.3_@babel+core@7.29.7_@types+react@19.2.18_react@19.2.3/node_modules/react-native"}
+[RNScreens] Gamma project enabled. Including source files.
+Auto-linking React Native modules for target `Boneefied`: RNCAsyncStorage, RNCMaskedView, RNGestureHandler, RNReanimated, RNSVG, RNScreens, RNWorklets, react-native-keyboard-controller, and react-native-safe-area-context
+React Native requires XCode >= 16.1. Found 15.4.
+[!] Invalid `Podfile` file: Please upgrade XCode.
+ #  from /Users/expo/workingdir/build/artifacts/boneefied/ios/Podfile:53
+ #  -------------------------------------------
+ #  
+ >    use_react_native!(
+ #      :path => config[:reactNativePath],
+ #  -------------------------------------------
+pod install exited with non-zero code: 1
+
+Clean up credentials
+
+< 1s
+
+
+Fail job
+
+< 1s
+
+
+Build failed
+
+pod install exited with non-zero code: 1
