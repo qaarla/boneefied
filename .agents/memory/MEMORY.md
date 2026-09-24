@@ -1,3 +1,4 @@
 - [Course source access](course-source-access.md) — BIOL 250 PDFs are known in ChatGPT Library but must be transferred before Replit can extract them.
 - [Expo offline evidence](expo-offline-evidence.md) — local image bundling does not prove web-preview or native-device offline rendering.
+- [Expo project identity](expo-project-identity.md) — a stale app config project ID can make build APIs deny repository access even when the dashboard has a GitHub link.
 - [GitHub connector vs Git push](github-git-push.md) — an added GitHub connector does not necessarily authenticate Git transport from the workspace.
