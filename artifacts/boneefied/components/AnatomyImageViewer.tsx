@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { Image, PanResponder, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, PanResponder, Pressable, StyleSheet, View } from 'react-native';
+import { Text } from '@/components/ScaledText';
 import { useColors } from '@/hooks/useColors';
 import type { NormalizedHotspot, VerifiedLabel } from '@/content/model';
 import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';

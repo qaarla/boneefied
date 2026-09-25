@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Text } from '@/components/ScaledText';
 import { Feather } from '@expo/vector-icons';
 import { useColors } from '@/hooks/useColors';
 export function EmptyState({ icon, title, message }: { icon: keyof typeof Feather.glyphMap; title: string; message: string }) {
