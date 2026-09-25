@@ -3,3 +3,4 @@
 - [Expo project identity](expo-project-identity.md) — a stale app config project ID can make build APIs deny repository access even when the dashboard has a GitHub link.
 - [Expo cloud build versions](expo-cloud-build-versions.md) — diagnose frozen-lockfile and iOS pod failures against EAS builder versions before changing app dependencies.
 - [GitHub connector vs Git push](github-git-push.md) — an added GitHub connector does not necessarily authenticate Git transport from the workspace.
+- [Boneefied site routing](boneefied-site-routing.md) — keep the standalone web page off-root until the Expo manifest route is preserved in a deliberate domain cutover.
