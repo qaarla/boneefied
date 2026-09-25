@@ -2,7 +2,7 @@
 - [Expo offline evidence](expo-offline-evidence.md) — local image bundling does not prove web-preview or native-device offline rendering.
 - [Expo project identity](expo-project-identity.md) — a stale app config project ID can make build APIs deny repository access even when the dashboard has a GitHub link.
 - [Expo cloud build versions](expo-cloud-build-versions.md) — diagnose frozen-lockfile and iOS pod failures against EAS builder versions before changing app dependencies.
-- [GitHub connector vs Git push](github-git-push.md) — an added GitHub connector does not necessarily authenticate Git transport from the workspace.
+- [GitHub connector vs Git push](github-git-push.md) — connector auth and Git transport differ; test a scoped push path before relying on either.
 - [Boneefied site routing](boneefied-site-routing.md) — keep the standalone web page off-root until the Expo manifest route is preserved in a deliberate domain cutover.
 - [Native text-row reflow](native-text-row-reflow.md) — web wrapping checks can miss iPhone collisions; give compact metadata and status independent regions.
 - [React Native Web radio state](react-native-web-radio-state.md) — native checked state alone may not expose aria-checked on web; verify both accessibility paths.
