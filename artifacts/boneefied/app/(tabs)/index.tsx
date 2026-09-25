@@ -1,8 +1,9 @@
 import React from 'react';
-import { Image, Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
+import { Image, Platform, Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
 import { Text, TextInput } from '@/components/ScaledText';
 import { useRouter } from 'expo-router';
 import * as Haptics from 'expo-haptics';
+import { Feather } from '@expo/vector-icons';
 import { Screen } from '@/components/Screen';
 import { EmptyState } from '@/components/EmptyState';
 import { content } from '@/content/canonical';
@@ -27,7 +28,21 @@ export default function StudyScreen() {
   const [query, setQuery] = React.useState('');
   const matching = content.structures.filter((item) => `${item.canonicalName} ${item.acceptedAliases.join(' ')}`.toLowerCase().includes(query.toLowerCase()));
   return <Screen>
-    <View style={[styles.brand, responsive.brand]}><Image source={require('@/assets/images/logo-rounded.png')} style={styles.logo} /><View style={[styles.cardCopy, responsive.brandCopy]}><Text style={[styles.kicker, { color: colors.primary }]}>BONEEFIED</Text><Text style={[styles.heading, responsive.brandTitle, { color: colors.foreground }]}>Study lab</Text></View><Pressable accessibilityLabel="Open settings" accessibilityRole="button" style={responsive.settingsAction} onPress={() => router.push('/settings')}><Text style={{ color: colors.primary, fontWeight: '700' }}>Settings</Text></Pressable></View>
+    <View style={[styles.brand, Platform.OS === 'web' && styles.brandWebInset]}>
+      <Image source={require('@/assets/images/logo-rounded.png')} style={styles.logo} accessibilityLabel="Boneefied skull and atom logo" />
+      <Text accessibilityRole="header" style={[styles.brandTitle, { color: colors.foreground }]}>Boneefied</Text>
+      <Pressable
+        testID="study-settings-button"
+        accessibilityLabel="Settings"
+        accessibilityHint="Opens settings"
+        accessibilityRole="button"
+        hitSlop={4}
+        onPress={() => router.push('/settings')}
+        style={({ pressed }) => [styles.settingsAction, { opacity: pressed ? 0.6 : 1 }]}
+      >
+        <Feather name="settings" size={21} color={colors.mutedForeground} />
+      </Pressable>
+    </View>
     <Text style={[styles.lede, { color: colors.mutedForeground }]}>A comprehensive anatomy library for learning locations, relationships, landmarks, and recognition cues—not just lab review.</Text>
     <TextInput accessibilityLabel="Search structures and aliases" value={query} onChangeText={setQuery} placeholder="Search structures or aliases" placeholderTextColor={colors.mutedForeground} style={[styles.search, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} />
       <View style={[styles.sectionHeader, responsive.sectionHeader]}><Text style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>Explore by system</Text><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{systems.length} systems</Text></View>
@@ -49,13 +64,9 @@ export default function StudyScreen() {
   </Screen>;
 }
 const styles = StyleSheet.create({
-  brand: { flexDirection: 'row', alignItems: 'center', gap: 12 }, logo: { width: 48, height: 48, borderRadius: 14 }, kicker: { fontSize: 11, fontWeight: '700', letterSpacing: 1.8 }, heading: { fontSize: 28, fontWeight: '700', marginTop: 1 }, lede: { fontSize: 15, lineHeight: 22, maxWidth: 560 }, search:{borderWidth:1,borderRadius:12,padding:13,fontSize:15}, sectionHeader: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', marginTop: 5 }, sectionTitle: { fontSize: 19, fontWeight: '700' }, count: { fontSize: 12 }, systems:{gap:8}, system:{borderWidth:1,borderRadius:12,padding:12,flexDirection:'row',justifyContent:'space-between',gap:10}, card: { borderWidth: 1, borderRadius: 18, padding: 16, gap: 16 }, cardTop: { flexDirection: 'row', alignItems: 'center', gap: 12 }, moduleMark: { width: 42, height: 42, borderRadius: 12, alignItems: 'center', justifyContent: 'center' }, moduleMarkText: { fontSize: 13, fontWeight: '800' }, cardCopy: { flex: 1, gap: 3 }, cardTitle: { fontSize: 17, fontWeight: '700' }, cardSub: { fontSize: 12 }, arrow: { fontSize: 30, fontWeight: '300' }, progressTrack: { height: 6, borderRadius: 6, overflow: 'hidden' }, progressFill: { height: '100%', borderRadius: 6 }, meta: { flexDirection: 'row', justifyContent: 'space-between', fontSize: 12 }, results:{borderWidth:1,borderRadius:14,padding:14,gap:12},resultRow:{flexDirection:'row',justifyContent:'space-between'}, offline: { alignSelf: 'flex-start', paddingHorizontal: 11, paddingVertical: 8, borderRadius: 99, flexDirection: 'row', alignItems: 'center', gap: 8 }, signal: { width: 7, height: 7, borderRadius: 7 }, offlineText: { fontSize: 12, fontWeight: '600' },
+  brand: { flexDirection: 'row', alignItems: 'center', gap: 12 }, brandWebInset: { marginTop: 48 }, logo: { width: 48, height: 48, borderRadius: 14 }, brandTitle: { flex: 1, minWidth: 0, fontSize: 26, fontWeight: '700' }, settingsAction: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' }, lede: { fontSize: 15, lineHeight: 22, maxWidth: 560 }, search:{borderWidth:1,borderRadius:12,padding:13,fontSize:15}, sectionHeader: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', marginTop: 5 }, sectionTitle: { fontSize: 19, fontWeight: '700' }, count: { fontSize: 12 }, systems:{gap:8}, system:{borderWidth:1,borderRadius:12,padding:12,flexDirection:'row',justifyContent:'space-between',gap:10}, card: { borderWidth: 1, borderRadius: 18, padding: 16, gap: 16 }, cardTop: { flexDirection: 'row', alignItems: 'center', gap: 12 }, moduleMark: { width: 42, height: 42, borderRadius: 12, alignItems: 'center', justifyContent: 'center' }, moduleMarkText: { fontSize: 13, fontWeight: '800' }, cardCopy: { flex: 1, gap: 3 }, cardTitle: { fontSize: 17, fontWeight: '700' }, cardSub: { fontSize: 12 }, arrow: { fontSize: 30, fontWeight: '300' }, progressTrack: { height: 6, borderRadius: 6, overflow: 'hidden' }, progressFill: { height: '100%', borderRadius: 6 }, meta: { flexDirection: 'row', justifyContent: 'space-between', fontSize: 12 }, results:{borderWidth:1,borderRadius:14,padding:14,gap:12},resultRow:{flexDirection:'row',justifyContent:'space-between'}, offline: { alignSelf: 'flex-start', paddingHorizontal: 11, paddingVertical: 8, borderRadius: 99, flexDirection: 'row', alignItems: 'center', gap: 8 }, signal: { width: 7, height: 7, borderRadius: 7 }, offlineText: { fontSize: 12, fontWeight: '600' },
 });
 const responsive = StyleSheet.create({
-  brand: { flexWrap: 'wrap', justifyContent: 'flex-end' },
-  brandCopy: { minWidth: 135 },
-  brandTitle: { fontSize: 24 },
-  settingsAction: { flexShrink: 0, minHeight: 44, justifyContent: 'center' },
   sectionHeader: { alignItems: 'flex-end', gap: 12 },
   sectionTitle: { flexGrow: 1, flexShrink: 1, minWidth: 0 },
   sectionCount: { flexShrink: 0, textAlign: 'right' },
