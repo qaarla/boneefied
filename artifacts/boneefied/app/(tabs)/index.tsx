@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Platform, Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
+import { AccessibilityInfo, Image, Platform, Pressable, ScrollView, StyleSheet, useWindowDimensions, View, type LayoutRectangle } from 'react-native';
 import { Text, TextInput } from '@/components/ScaledText';
 import { useRouter } from 'expo-router';
 import * as Haptics from 'expo-haptics';
@@ -16,6 +16,14 @@ export default function StudyScreen() {
   const { width } = useWindowDimensions();
   const stackModuleMeta = width < 480;
   const [selectedSystem, setSelectedSystem] = React.useState<string | null>(null);
+  const [reduceMotion, setReduceMotion] = React.useState(true);
+  const pageRef = React.useRef<ScrollView>(null);
+  const pageY = React.useRef(0);
+  const viewport = React.useRef({ height: 0, bottomClearance: 0 });
+  const learningHeading = React.useRef<LayoutRectangle | null>(null);
+  const firstResult = React.useRef<{ id: string; layout: LayoutRectangle } | null>(null);
+  const pendingReveal = React.useRef(false);
+  const revealFrame = React.useRef<number | null>(null);
   const systems = [
     ['Cells & tissues', 'cell'], ['Integumentary', 'skin'], ['Skeletal', 'skeletal-system'], ['Joints & ligaments', 'joints'],
     ['Muscular', 'muscular'], ['Nervous system & brain', 'nervous'], ['Cranial & peripheral nerves', 'nerves'], ['Special senses', 'senses'],
@@ -23,11 +31,47 @@ export default function StudyScreen() {
     ['Respiratory', 'respiratory'], ['Digestive', 'digestive'], ['Urinary', 'urinary'], ['Male reproductive', 'male-reproductive'], ['Female reproductive', 'female-reproductive'],
   ] as const;
    const matchesSystem = (item: (typeof content.modules)[number], system: string) => item.system === system || item.id === system || (system === 'nerves' && item.id === 'nervous-system');
-   const visibleModules = content.modules.filter((item) => item.visible && (!selectedSystem || matchesSystem(item, selectedSystem)));
+   const visibleModules = content.modules.filter((item) => item.visible && item.published && (!selectedSystem || matchesSystem(item, selectedSystem)));
+  const firstResultId = visibleModules[0]?.id ?? `empty:${selectedSystem}`;
+  React.useEffect(() => {
+    AccessibilityInfo.isReduceMotionEnabled().then(setReduceMotion);
+    const subscription = AccessibilityInfo.addEventListener('reduceMotionChanged', setReduceMotion);
+    return () => subscription.remove();
+  }, []);
+  React.useEffect(() => () => {
+    if (revealFrame.current !== null) cancelAnimationFrame(revealFrame.current);
+  }, []);
+  const revealIfNeeded = () => {
+    if (!pendingReveal.current || !selectedSystem || !learningHeading.current || firstResult.current?.id !== firstResultId) return;
+    const usableHeight = viewport.current.height - viewport.current.bottomClearance;
+    if (usableHeight <= 0) return;
+    const { y, height } = firstResult.current.layout;
+    const visibleTop = pageY.current;
+    const visibleBottom = visibleTop + usableHeight;
+    const resultVisible = y >= visibleTop && y + Math.min(height, usableHeight * 0.35) <= visibleBottom;
+    pendingReveal.current = false;
+    if (!resultVisible) pageRef.current?.scrollTo({ y: learningHeading.current.y, animated: !reduceMotion });
+  };
+  const scheduleReveal = () => {
+    if (!pendingReveal.current) return;
+    if (revealFrame.current !== null) cancelAnimationFrame(revealFrame.current);
+    revealFrame.current = requestAnimationFrame(() => {
+      revealFrame.current = null;
+      revealIfNeeded();
+    });
+  };
+  React.useEffect(() => {
+    if (selectedSystem) scheduleReveal();
+  }, [selectedSystem, firstResultId]);
+  const selectSystem = (id: string) => {
+    const next = selectedSystem === id ? null : id;
+    pendingReveal.current = next !== null;
+    setSelectedSystem(next);
+  };
   const { mastery, bookmarks, preferences, toggleBookmark } = useStudy();
   const [query, setQuery] = React.useState('');
   const matching = content.structures.filter((item) => `${item.canonicalName} ${item.acceptedAliases.join(' ')}`.toLowerCase().includes(query.toLowerCase()));
-  return <Screen>
+  return <Screen scrollRef={pageRef} onScroll={(event) => { pageY.current = event.nativeEvent.contentOffset.y; }} onViewportLayout={(height, bottomClearance) => { viewport.current = { height, bottomClearance }; scheduleReveal(); }}>
     <View style={[styles.brand, Platform.OS === 'web' && styles.brandWebInset]}>
       <Image source={require('@/assets/images/logo-rounded.png')} style={styles.logo} accessibilityLabel="Boneefied skull and atom logo" />
       <Text accessibilityRole="header" style={[styles.brandTitle, { color: colors.foreground }]}>Boneefied</Text>
@@ -48,11 +92,11 @@ export default function StudyScreen() {
       <View style={[styles.sectionHeader, responsive.sectionHeader]}><Text style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>Explore by system</Text><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{systems.length} systems</Text></View>
       <View style={[styles.systemsPanel, { height: Math.min(width - 40, 300), borderColor: colors.border, backgroundColor: colors.card }]}>
         <ScrollView testID="study-systems-scroll" accessibilityLabel="Explore by system choices" tabIndex={Platform.OS === 'web' ? 0 : undefined} nestedScrollEnabled keyboardShouldPersistTaps="handled" contentContainerStyle={[styles.systems, styles.systemsContent]} showsVerticalScrollIndicator>
-          {systems.map(([label, id]) => <Pressable key={id} accessibilityRole="button" onPress={() => setSelectedSystem(selectedSystem === id ? null : id)} style={[styles.system, { borderColor: selectedSystem === id ? colors.primary : colors.border, backgroundColor: selectedSystem === id ? colors.secondary : colors.card }]}><View style={responsive.systemName}><Text style={{ color: colors.foreground, fontWeight: '600' }}>{label}</Text></View><Text style={[responsive.trailingStatus, { color: colors.mutedForeground }]}>{content.modules.some((item) => matchesSystem(item, id)) ? 'Open' : 'Coming next'}</Text></Pressable>)}
+          {systems.map(([label, id]) => <Pressable key={id} accessibilityRole="button" onPress={() => selectSystem(id)} style={[styles.system, { borderColor: selectedSystem === id ? colors.primary : colors.border, backgroundColor: selectedSystem === id ? colors.secondary : colors.card }]}><View style={responsive.systemName}><Text style={{ color: colors.foreground, fontWeight: '600' }}>{label}</Text></View><Text style={[responsive.trailingStatus, { color: colors.mutedForeground }]}>{content.modules.some((item) => matchesSystem(item, id)) ? 'Open' : 'Coming next'}</Text></Pressable>)}
         </ScrollView>
       </View>
-      <View style={[styles.sectionHeader, responsive.sectionHeader]}><Text style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>Learning modules</Text><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{visibleModules.length} available</Text></View>
-      {visibleModules.map((module, index) => <Pressable key={module.id} testID={`module-card-${module.id}`} accessibilityRole="button" onPress={() => { if (preferences.haptics) void Haptics.selectionAsync(); router.push(`/module/${module.id}`); }} style={({ pressed }) => [styles.card, { backgroundColor: colors.card, borderColor: colors.border, transform: [{ scale: pressed ? 0.985 : 1 }] }]}>
+      <View onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={[styles.sectionHeader, responsive.sectionHeader]}><Text style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>Learning modules</Text><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{visibleModules.length} available</Text></View>
+      {visibleModules.map((module, index) => <Pressable key={module.id} onLayout={index === 0 ? (event) => { firstResult.current = { id: module.id, layout: event.nativeEvent.layout }; scheduleReveal(); } : undefined} testID={`module-card-${module.id}`} accessibilityRole="button" onPress={() => { if (preferences.haptics) void Haptics.selectionAsync(); router.push(`/module/${module.id}`); }} style={({ pressed }) => [styles.card, { backgroundColor: colors.card, borderColor: colors.border, transform: [{ scale: pressed ? 0.985 : 1 }] }]}>
         <View style={styles.cardTop}><View style={[styles.moduleMark, { backgroundColor: colors.primary }]}><Text style={[styles.moduleMarkText, { color: colors.primaryForeground }]}>{String(index + 1).padStart(2, '0')}</Text></View><View style={[styles.cardCopy, responsive.flexibleCopy]}><Text style={[styles.cardTitle, { color: colors.foreground }]}>{module.title}</Text><Text style={[styles.cardSub, { color: colors.mutedForeground }]}>{module.summary ?? (module.id === 'cytology-mitosis' ? 'Lab 2 · source-checked text lessons' : 'Open learning module')}</Text></View><Text style={[styles.arrow, responsive.trailingStatus, { color: colors.primary }]}>›</Text></View>
         <View style={[styles.meta, responsive.meta, stackModuleMeta && responsive.metaStacked]}>
           <View style={responsive.metaDetails}>
@@ -63,6 +107,7 @@ export default function StudyScreen() {
           </View>
         </View>
      </Pressable>)}
+      {selectedSystem && visibleModules.length === 0 && <View onLayout={(event) => { firstResult.current = { id: firstResultId, layout: event.nativeEvent.layout }; scheduleReveal(); }}><EmptyState icon="book-open" title="No learning modules yet" message="No published learning content is available for this system yet." /></View>}
      {query.length > 0 && <View style={[styles.results, { backgroundColor: colors.card, borderColor: colors.border }]}>{matching.slice(0, 8).map((item) => <View key={item.id} style={styles.resultRow}><Text style={{ color: colors.foreground }}>{item.canonicalName}</Text><Pressable onPress={() => { toggleBookmark(item.id); }}><Text style={{ color: colors.primary }}>{bookmarks.includes(item.id) ? '★ Saved' : '☆ Save'}</Text></Pressable></View>)}</View>}
     <View style={[styles.offline, { backgroundColor: colors.secondary }]}><View style={[styles.signal, { backgroundColor: colors.primary }]} /><Text style={[styles.offlineText, { color: colors.foreground }]}>Offline-ready · local content and progress</Text></View>
   </Screen>;
