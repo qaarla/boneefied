@@ -43,7 +43,7 @@ export default function StudyScreen() {
         <Feather name="settings" size={21} color={colors.mutedForeground} />
       </Pressable>
     </View>
-    <Text style={[styles.lede, { color: colors.mutedForeground }]}>A comprehensive anatomy library for learning locations, relationships, landmarks, and recognition cues—not just lab review.</Text>
+    <Text style={[styles.lede, { color: colors.mutedForeground }]}>Comprehensive anatomy study.</Text>
     <TextInput accessibilityLabel="Search structures and aliases" value={query} onChangeText={setQuery} placeholder="Search structures or aliases" placeholderTextColor={colors.mutedForeground} style={[styles.search, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} />
       <View style={[styles.sectionHeader, responsive.sectionHeader]}><Text style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>Explore by system</Text><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{systems.length} systems</Text></View>
      <View style={styles.systems}>{systems.map(([label, id]) => <Pressable key={id} onPress={() => setSelectedSystem(selectedSystem === id ? null : id)} style={[styles.system, { borderColor: selectedSystem === id ? colors.primary : colors.border, backgroundColor: selectedSystem === id ? colors.secondary : colors.card }]}><View style={responsive.systemName}><Text style={{ color: colors.foreground, fontWeight: '600' }}>{label}</Text></View><Text style={[responsive.trailingStatus, { color: colors.mutedForeground }]}>{content.modules.some((item) => matchesSystem(item, id)) ? 'Open' : 'Coming next'}</Text></Pressable>)}</View>
