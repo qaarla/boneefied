@@ -6,3 +6,4 @@
 - [Boneefied site routing](boneefied-site-routing.md) — browser root can lead to the site, but Expo's header-aware root manifest and QR access must remain.
 - [Native text-row reflow](native-text-row-reflow.md) — web wrapping checks can miss iPhone collisions; give compact metadata and status independent regions.
 - [React Native Web radio state](react-native-web-radio-state.md) — native checked state alone may not expose aria-checked on web; verify both accessibility paths.
+- [Web preview dev banner](web-preview-dev-banner.md) — proxied previews may report a dev-banner script error even when the site's own resources and production bundle are healthy.
