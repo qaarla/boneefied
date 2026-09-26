@@ -76,6 +76,7 @@ function App() {
           </div>
           <nav className="topnav" aria-label="Page navigation">
             <a href="#product" data-testid="link-nav-product">The app</a>
+            <a href="#support" data-testid="link-nav-support">Support</a>
             <a className="nav-access" href="#phone-access" data-testid="link-nav-phone-access">Get on your phone <ArrowUpRight aria-hidden="true" /></a>
           </nav>
         </header>
@@ -277,10 +278,36 @@ function App() {
             </section>
           </div>
         </section>
+
+        <div className="about-support">
+          <section className="about-copy" id="about" aria-labelledby="about-title">
+            <span className="section-kicker">About Boneefied</span>
+            <h2 id="about-title">A place to keep learning.</h2>
+            <p>Boneefied helps anatomy learners study structures, practice recall, and return to questions they missed. Core anatomy content is bundled with the app for offline-first study.</p>
+            <p>Bookmarks, attempts, and progress are kept locally on the device you use. If the app or its data is removed, your study history may no longer be available.</p>
+          </section>
+          <section className="support-card" id="support" aria-labelledby="support-title">
+            <span className="section-kicker">Questions or feedback?</span>
+            <h2 id="support-title">We’re here to help.</h2>
+            <p>Having trouble with the preview, or want to share something you noticed? Send us a note.</p>
+            <a className="support-email" href="mailto:help@boneefied.com" data-testid="link-support-email">help@boneefied.com <ArrowUpRight aria-hidden="true" /></a>
+          </section>
+        </div>
       </main>
       <footer className="footer">
-        <span>Boneefied · Anatomy, practiced.</span>
-        <a href="#main" data-testid="link-back-to-top">Back to top ↑</a>
+        <div>
+          <div className="footer-identity">
+            <img src={logo} alt="" width="34" height="34" />
+            <span>Boneefied</span>
+          </div>
+          <p className="footer-meta">Boneefied · Anatomy, practiced. &nbsp;© {new Date().getFullYear()} Boneefied.</p>
+        </div>
+        <nav className="footer-nav" aria-label="Footer navigation">
+          <a href="#about" data-testid="link-footer-about">About</a>
+          <a href="#support" data-testid="link-footer-support">Support</a>
+          <a href="mailto:help@boneefied.com" data-testid="link-footer-contact">Contact</a>
+          <a href="#main" data-testid="link-back-to-top">Back to top ↑</a>
+        </nav>
       </footer>
     </div>
   );

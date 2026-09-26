@@ -219,8 +219,28 @@ h1 em { font-weight: 400; color: #bd7918; }
 .copy-button:hover { background: #ded0b8; }
 .copy-button svg { width: 15px; height: 15px; }
 .access-copy-status { display: block; min-height: 18px; margin-top: 7px; color: #69583d; font-size: 12px; line-height: 1.4; }
-.footer { width: min(100% - 64px, 1140px); margin: 0 auto; padding: 25px 0 31px; border-top: 1px solid #c9c1b2; display: flex; justify-content: space-between; gap: 15px; color: #79746a; font-size: 11px; line-height: 1.5; letter-spacing: .08em; }
+
+/* BW04: a small colophon for the app and the people studying with it. */
+.about-support { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(280px, .82fr); gap: clamp(24px, 5vw, 80px); align-items: stretch; padding: 0 0 84px; }
+.about-copy { padding: 39px 0 8px; border-top: 1px solid #c9c1b2; scroll-margin-top: 24px; }
+.about-copy h2 { max-width: 520px; margin: 19px 0 17px; font-size: clamp(37px, 4.4vw, 57px); font-weight: 400; letter-spacing: -.05em; line-height: 1.06; }
+.about-copy > p { max-width: 550px; margin-bottom: 15px; color: #625e55; font-size: 17px; line-height: 1.53; }
+.about-copy > p:last-child { margin-bottom: 0; }
+.support-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; padding: 34px 35px 32px; border: 1px solid #d6bd87; border-radius: 20px; background: #ebd7aa; scroll-margin-top: 24px; }
+.support-card::before { content: ''; position: absolute; top: 35px; right: 35px; width: 31px; height: 31px; border: 1px solid #ab8240; border-radius: 50%; }
+.support-card h2 { margin: 36px 0 11px; font-size: clamp(34px, 3.6vw, 47px); font-weight: 400; letter-spacing: -.045em; line-height: 1.07; }
+.support-card p { max-width: 340px; margin: 0 0 26px; color: #514b3e; font-size: 17px; line-height: 1.47; }
+.support-email { display: inline-flex; align-items: center; gap: 12px; max-width: 100%; margin-top: auto; padding-bottom: 5px; border-bottom: 1px solid #51442e; font-size: clamp(17px, 2vw, 22px); text-decoration: none; overflow-wrap: anywhere; transition: opacity .2s ease; }
+.support-email:hover { opacity: .6; }
+.support-email svg { flex: none; width: 18px; height: 18px; stroke-width: 1.7; }
+.footer { width: min(100% - 64px, 1140px); margin: 0 auto; padding: 30px 0 36px; border-top: 1px solid #c9c1b2; display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 22px; color: #777167; font-size: 11px; line-height: 1.5; letter-spacing: .08em; }
+.footer-identity { display: flex; align-items: center; gap: 12px; color: var(--ink); font-size: 20px; letter-spacing: -.025em; text-transform: none; }
+.footer-identity img { width: 34px; height: 34px; border-radius: 9px; object-fit: cover; }
+.footer-meta { margin: 14px 0 0; font-size: 12px; font-weight: 400; letter-spacing: .015em; text-transform: none; }
+.footer-nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 12px 27px; padding-top: 9px; }
 .footer a { text-decoration: none; transition: opacity .2s ease; }
+.footer-nav a { color: #4d4c45; font-size: 13px; letter-spacing: .025em; text-transform: none; }
+.footer-nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 @media (max-width: 850px) {
   .hero { grid-template-columns: minmax(0, 1fr) minmax(280px, .8fr); min-height: 500px; }
@@ -234,6 +254,7 @@ h1 em { font-weight: 400; color: #bd7918; }
   .workflow-card { min-height: 200px; }
   .explore, .formats { gap: 34px; }
   .coverage-board { gap: 0 25px; }
+  .about-support { gap: 28px; }
 }
 @media (max-width: 680px) {
   .site-main, .footer { width: min(100% - 36px, 1140px); }
@@ -270,8 +291,17 @@ h1 em { font-weight: 400; color: #bd7918; }
   .coverage-board { grid-template-columns: 1fr; padding: 9px 22px 12px; }
   .coverage-item:last-child { grid-column: auto; }
   .coverage-item:nth-last-child(2) { border-bottom: 1px solid rgba(246, 237, 221, .17); }
+  .about-support { grid-template-columns: 1fr; gap: 30px; padding-bottom: 62px; }
+  .about-copy { padding-top: 31px; }
+  .support-card { min-height: 270px; padding: 27px; }
+  .support-card::before { top: 28px; right: 28px; }
+  .support-card h2 { margin-top: 30px; }
+  .footer { grid-template-columns: 1fr; gap: 20px; }
+  .footer-nav { justify-content: flex-start; padding-top: 0; }
 }
 @media (max-width: 450px) {
+  .topbar { height: auto; min-height: 72px; flex-wrap: wrap; padding: 16px 0; row-gap: 14px; }
+  .topnav { width: 100%; justify-content: space-between; }
   .hero-copy { padding-top: 53px; }
   h1 { font-size: clamp(56px, 14vw, 66px); }
   .hero-actions { width: 100%; }
@@ -285,7 +315,9 @@ h1 em { font-weight: 400; color: #bd7918; }
   .access-qr-caption { font-size: 10px; }
   .url-row { flex-wrap: wrap; }
   .url-field { min-height: 45px; flex-basis: 100%; }
-  .footer { flex-direction: column; gap: 5px; }
+  .topnav { gap: 11px; }
+  .topnav a { font-size: 13px; }
+  .footer-nav { gap: 12px 21px; }
   .workflow-grid { gap: 8px; }
   .workflow-card { min-height: 215px; padding: 18px 15px; border-radius: 14px; }
   .workflow-card h3 { font-size: 26px; }
@@ -298,6 +330,6 @@ h1 em { font-weight: 400; color: #bd7918; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .button, .topnav a, .footer a { transition: none; }
+  .button, .topnav a, .footer a, .support-email { transition: none; }
   .button:hover { transform: none; }
 }
