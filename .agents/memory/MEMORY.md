@@ -3,6 +3,6 @@
 - [Expo project identity](expo-project-identity.md) — a stale app config project ID can make build APIs deny repository access even when the dashboard has a GitHub link.
 - [Expo cloud build versions](expo-cloud-build-versions.md) — diagnose frozen-lockfile and iOS pod failures against EAS builder versions before changing app dependencies.
 - [GitHub connector vs Git push](github-git-push.md) — connector auth and Git transport differ; test a scoped push path before relying on either.
-- [Boneefied site routing](boneefied-site-routing.md) — keep the standalone web page off-root until the Expo manifest route is preserved in a deliberate domain cutover.
+- [Boneefied site routing](boneefied-site-routing.md) — browser root can lead to the site, but Expo's header-aware root manifest and QR access must remain.
 - [Native text-row reflow](native-text-row-reflow.md) — web wrapping checks can miss iPhone collisions; give compact metadata and status independent regions.
 - [React Native Web radio state](react-native-web-radio-state.md) — native checked state alone may not expose aria-checked on web; verify both accessibility paths.
