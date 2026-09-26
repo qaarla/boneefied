@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, ArrowUpRight, BookOpen, Bookmark, ChartNoAxesColumn, Check, Copy, Crosshair, ExternalLink, HardDrive, RotateCcw, Search, Target } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BookOpen, Bookmark, ChartNoAxesColumn, Check, Copy, Crosshair, ExternalLink, HardDrive, RotateCcw, Search, Smartphone, Target } from 'lucide-react';
 import logo from './assets/logo-rounded.png';
 
 const BUILD_URL = 'https://expo.dev/accounts/qaarla1/projects/boneefied/builds/237a2c87-8456-4d73-b3d1-c098befee194';
@@ -220,53 +220,59 @@ function App() {
           <div className="access-header">
             <div>
               <span className="section-kicker">Phone access</span>
-              <h2 id="access-title">Take it with you.</h2>
+              <h2 id="access-title">Study on your phone.</h2>
             </div>
-            <p>Already have Boneefied installed? Open it directly. For the internal iPhone preview, use the build link below.</p>
+            <p>Boneefied is available as an internal phone preview, not a public App Store or Google Play release. Choose how you’d like to get there.</p>
           </div>
-          <div className="steps">
-            <section className="step" aria-labelledby="step-one">
-              <div className="step-number" aria-hidden="true">01 /</div>
-              <div>
-                <h3 id="step-one">On your phone</h3>
-                <p>Already have Boneefied installed? Open the app. If you’re part of the internal iPhone preview, use the build link below to install it first.</p>
-                <div className="action-row">
-                  <a className="button button-primary" href={APP_URL} data-testid="link-open-app">
-                    Open app <ArrowUpRight aria-hidden="true" />
+          <div className="access-grid">
+            <section className="access-phone" aria-labelledby="step-one">
+              <div className="access-card-top"><span>01 / Phone preview</span><Smartphone aria-hidden="true" /></div>
+              <h3 id="step-one">Already installed?</h3>
+              <p>On your phone, tap below to open your installed Boneefied preview. Nothing opens automatically.</p>
+              <a className="button access-open-button" href={APP_URL} data-testid="link-open-app">
+                Open Boneefied <ArrowUpRight aria-hidden="true" />
+              </a>
+              <div className="access-fallback">
+                <span className="access-fallback-label">If nothing opens</span>
+                <p>The app may not be installed on this phone. If you have access to the internal iPhone preview, open the build page to install it. Looking for the Expo Go flow instead? Visit its separate page.</p>
+                <div className="access-fallback-links">
+                  <a href={BUILD_URL} target="_blank" rel="noopener noreferrer" data-testid="link-internal-preview">
+                    Internal iPhone build <ExternalLink aria-hidden="true" />
                   </a>
-                  <a className="button button-outline" href={BUILD_URL} target="_blank" rel="noopener noreferrer" data-testid="link-internal-preview">
-                    Internal iPhone preview <ExternalLink aria-hidden="true" />
+                  <a href="/expo" data-testid="link-expo-go">
+                    Expo Go page <ArrowUpRight aria-hidden="true" />
                   </a>
                 </div>
-                <p className="subnote">The Open app button works only if Boneefied is installed. The preview is an internal iPhone build, not an App Store release.</p>
-                <a className="expo-link" href="/expo" data-testid="link-expo-go">Looking for the Expo Go QR? Open the Expo Go page <ArrowUpRight size={13} aria-hidden="true" /></a>
               </div>
             </section>
 
-            <section className="step" aria-labelledby="step-two">
-              <div className="step-number" aria-hidden="true">02 /</div>
-              <div>
-                <div className="qr-section">
-                  <div>
-                    <h3 id="step-two">On another device?</h3>
-                    <p>Scan this code with your phone to open this page there. From your phone, you can open the installed app or visit the internal preview link above.</p>
-                  </div>
-                  <div className="qr-frame" aria-label={qrFailed ? 'QR code unavailable' : 'QR code for this page'}>
-                    {qrFailed ? (
-                      <span className="qr-failed" data-testid="status-qr-unavailable">QR unavailable.<br />Use the link below.</span>
-                    ) : (
-                      <img src={qrUrl} width="132" height="132" alt="Scan to open this page on your phone" onError={() => setQrFailed(true)} data-testid="img-landing-qr" />
-                    )}
-                  </div>
+            <section className="access-share" aria-labelledby="step-two">
+              <div className="access-card-top"><span>02 / From your desktop</span><span className="access-share-mark" aria-hidden="true">↗</span></div>
+              <h3 id="step-two">Send this page to your phone.</h3>
+              <p>Scan the QR code with your phone’s camera. It opens this website, not the app; then choose a phone action above.</p>
+              <div className="access-qr-area">
+                <div className="qr-frame" aria-label={qrFailed ? 'QR code unavailable' : 'QR code linking to this website page'}>
+                  {qrFailed ? (
+                    <span className="qr-failed" data-testid="status-qr-unavailable">QR unavailable.<br />Use the link below.</span>
+                  ) : (
+                    <img src={qrUrl} width="132" height="132" alt="Scan to open this website page on your phone" onError={() => setQrFailed(true)} data-testid="img-landing-qr" />
+                  )}
                 </div>
+                <span className="access-qr-caption">SCAN TO OPEN THIS PAGE<br />ON YOUR PHONE</span>
+              </div>
+              <div className="access-share-bottom">
+                <span className="access-share-label">Or share the page link</span>
                 <div className="url-row">
-                  <a className="url-field" href={landingUrl} data-testid="link-landing-url" title={landingUrl}><span>{landingUrl}</span></a>
-                  <button type="button" className="button copy-button" onClick={copyLink} data-testid="button-copy-link">
+                  <a className="url-field" href={landingUrl} data-testid="link-landing-url" title={landingUrl} aria-label={`Open this website page: ${landingUrl}`}><span>{landingUrl}</span></a>
+                  <button type="button" className="button copy-button" onClick={copyLink} aria-label={copyStatus === 'copied' ? 'Page link copied' : 'Copy page link'} data-testid="button-copy-link">
                     {copyStatus === 'copied' ? <Check aria-hidden="true" /> : <Copy aria-hidden="true" />}
                     {copyStatus === 'copied' ? 'Copied' : 'Copy link'}
                   </button>
                 </div>
-                {copyStatus === 'failed' && <p className="subnote" role="status" data-testid="status-copy-failed">Couldn’t copy automatically. Open or select the link above to share it.</p>}
+                <span className="access-copy-status" role="status" aria-live="polite" data-testid="status-copy-link">
+                  {copyStatus === 'copied' ? 'Page link copied to clipboard.' : copyStatus === 'failed' ? 'Couldn’t copy automatically. Right-click or long-press the link above to copy its address.' : ''}
+                </span>
+                {copyStatus === 'failed' && <span className="sr-only" data-testid="status-copy-failed">Copy failed</span>}
               </div>
             </section>
           </div>
