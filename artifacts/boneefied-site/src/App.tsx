@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, ArrowUpRight, BookOpen, ChartNoAxesColumn, Check, Copy, ExternalLink, RotateCcw, Target } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BookOpen, Bookmark, ChartNoAxesColumn, Check, Copy, Crosshair, ExternalLink, HardDrive, RotateCcw, Search, Target } from 'lucide-react';
 import logo from './assets/logo-rounded.png';
 
 const BUILD_URL = 'https://expo.dev/accounts/qaarla1/projects/boneefied/builds/237a2c87-8456-4d73-b3d1-c098befee194';
@@ -30,6 +30,23 @@ const features = [
     description: 'Keep an eye on your learning, bookmark structures, and study with offline-ready content.',
     icon: ChartNoAxesColumn,
   },
+];
+
+const tabs = [
+  { number: '01', name: 'Study', detail: 'Browse learning modules by system and look up anatomy structures.', icon: BookOpen },
+  { number: '02', name: 'Practice', detail: 'Answer questions to test recall, including visual questions where supported.', icon: Target },
+  { number: '03', name: 'Missed', detail: 'Retry incorrect answers; a later correct recall clears the review queue.', icon: RotateCcw },
+  { number: '04', name: 'Progress', detail: 'See your attempts, accuracy, and structure-level coverage on this device.', icon: ChartNoAxesColumn },
+];
+
+const coverageGroups = [
+  'Cells & tissues · Integumentary',
+  'Skeletal · Joints & ligaments · Muscular',
+  'Nervous system & brain · Cranial & peripheral nerves · Special senses',
+  'Endocrine',
+  'Blood & cardiovascular · Blood vessels · Lymphatic · Respiratory',
+  'Digestive · Urinary',
+  'Male reproductive · Female reproductive',
 ];
 
 function App() {
@@ -114,6 +131,88 @@ function App() {
               ))}
             </div>
             <p className="product-foot">From first look to the next review.</p>
+          </div>
+        </section>
+
+        <section className="workflow content-section" aria-labelledby="workflow-title">
+          <div className="content-heading">
+            <div>
+              <span className="section-kicker">The four tabs</span>
+              <h2 id="workflow-title">One learning loop. Four places to go.</h2>
+            </div>
+            <p>Start with a system, test your recall, revisit an error, then see what has changed.</p>
+          </div>
+          <div className="workflow-grid">
+            {tabs.map(({ number, name, detail, icon: Icon }) => (
+              <div className="workflow-card" key={name}>
+                <div className="workflow-top"><span>{number} / Tab</span><Icon aria-hidden="true" /></div>
+                <h3>{name}</h3>
+                <p>{detail}</p>
+              </div>
+            ))}
+          </div>
+          <p className="workflow-note"><span>→</span> The Missed queue tracks incorrect answers; Progress keeps the record of attempts.</p>
+        </section>
+
+        <section className="explore content-section" aria-labelledby="explore-title">
+          <div className="explore-copy">
+            <span className="section-kicker">Finding your place</span>
+            <h2 id="explore-title">Look up a structure. Keep it close.</h2>
+            <p>Study includes anatomy search by structure name or accepted alias, alongside browsing by system. Save a structure as a bookmark to come back to it locally.</p>
+            <ul className="explore-points">
+              <li><Search aria-hidden="true" /> Search across structure names and accepted aliases</li>
+              <li><Bookmark aria-hidden="true" /> Bookmark structures on your device</li>
+            </ul>
+          </div>
+          <div className="search-illustration" aria-label="Illustration of the Study search and bookmark flow">
+            <div className="illustration-head"><span>Study / Search</span><span>01—02</span></div>
+            <div className="search-field-demo"><Search aria-hidden="true" /><span>Search anatomy</span></div>
+            <div className="search-result-demo">
+              <div><strong>Find a structure</strong><small>By name or accepted alias</small></div>
+              <span className="bookmark-demo"><Bookmark aria-hidden="true" /></span>
+            </div>
+            <p className="illustration-foot">A simple illustration of the flow, not an app screenshot.</p>
+          </div>
+        </section>
+
+        <section className="coverage content-section" aria-labelledby="coverage-title">
+          <div className="content-heading">
+            <div>
+              <span className="section-kicker">Explore by system</span>
+              <h2 id="coverage-title">The body, in broad strokes.</h2>
+            </div>
+            <p>Seventeen system filters, grouped here into seven easy-to-scan territories.</p>
+          </div>
+          <div className="coverage-board">
+            {coverageGroups.map((group, index) => (
+              <div className="coverage-item" key={group}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <p>{group}</p>
+              </div>
+            ))}
+          </div>
+          <p className="coverage-foot">Filters are an overview of topics, not a promise of equal module or visual coverage in every system.</p>
+        </section>
+
+        <section className="formats content-section" aria-labelledby="formats-title">
+          <div className="formats-art" aria-hidden="true">
+            <div className="format-tile visual">
+              <span className="format-label">When supported</span>
+              <span className="format-symbol"><Crosshair /></span>
+              <strong>See it.<br />Identify it.</strong>
+            </div>
+            <div className="format-tile textual">
+              <span className="format-label">Always legible</span>
+              <span className="format-lines"><span /><span /><span /><span /></span>
+              <strong>Read it.<br />Recall it.</strong>
+            </div>
+          </div>
+          <div className="formats-copy">
+            <span className="section-kicker">How the material works</span>
+            <h2 id="formats-title">Visual when it helps. Text when it belongs.</h2>
+            <p>Supported modules and questions can use source-linked educational images for identification, verified hotspots, and histology examples. Visual assets are not assigned to every module; the rest stays text-first.</p>
+            <p className="format-rule">Questions and explanations connect back to source material, so practice is more than a right-or-wrong answer.</p>
+            <div className="local-note"><HardDrive aria-hidden="true" /><p><strong>Designed for local study.</strong> Content is bundled for offline-first use, and your attempts, bookmarks, and progress are kept on your device.</p></div>
           </div>
         </section>
 
