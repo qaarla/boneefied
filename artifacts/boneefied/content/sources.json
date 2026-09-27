@@ -236,6 +236,22 @@
     "unresolvedIssues": []
   },
   {
+    "id": "source-openstax-ap-2013-blood-ch18",
+    "filename": "OpenStax Anatomy and Physiology (2013), Ch. 18 blood",
+    "sha256": "openstax-ap-2013-blood-ch18-cc-by-4",
+    "pageCount": null,
+    "contentType": "open textbook chapter/section",
+    "representedLabOrSystem": "Blood tissue and formed elements",
+    "usefulPages": [],
+    "mostlyTextOrImageBased": "text",
+    "containsAnswers": false,
+    "appearsDuplicated": false,
+    "attributionLicenseVisible": true,
+    "sourceUrl": "https://openstax.org/books/anatomy-and-physiology/pages/18-1-an-overview-of-blood",
+    "license": "CC BY 4.0",
+    "unresolvedIssues": []
+  },
+  {
     "id": "source-openstax-ap-2013-cardiovascular-ch19",
     "filename": "OpenStax Anatomy and Physiology (2013), Ch. 19 heart",
     "sha256": "openstax-ap-2013-cardiovascular-ch19",

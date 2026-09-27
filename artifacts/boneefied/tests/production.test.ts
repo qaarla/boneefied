@@ -46,7 +46,7 @@ test('production catalog validates with honest published counts and source prove
     'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 13, 111], 'anatomy-foundations': [105, 15, 72],
     'joints-ligaments': [36, 6, 31], 'muscular-system': [73, 8, 129], 'nervous-system': [63, 8, 51],
     'cells-tissues': [57, 8, 28], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 33],
-    'endocrine-system': [38, 6, 17], 'cardiovascular-system': [50, 6, 27], 'blood-vessels': [45, 10, 22],
+    'endocrine-system': [38, 6, 17], 'cardiovascular-system': [70, 11, 50], 'blood-vessels': [45, 10, 22],
     'lymphatic-system': [47, 7, 19], 'respiratory-system': [64, 7, 40], 'digestive-system': [81, 10, 44],
     'urinary-system': [49, 7, 39], 'male-reproductive': [47, 7, 41], 'female-reproductive': [65, 8, 47],
   };
@@ -207,10 +207,10 @@ test('verified Gray plates are local, labeled, and lesson-scoped', () => {
 test('production questions expose supported playable task types', () => {
   const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion', 'image-identification', 'hotspot', 'histology-identification']);
   assert.ok(content.questions.every((question) => supported.has(question.taskType)));
-  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 356);
-  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 28);
+  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 375);
+  assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 30);
   assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 59);
-  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 74);
+  assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 76);
   assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 8);
   assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 119);
   assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 16);
