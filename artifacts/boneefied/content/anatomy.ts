@@ -148,9 +148,9 @@ export const foundationLessons: Lesson[] = [
   lesson('organ-map','Organ map','Use body cavities and systems to build a mental map before learning isolated details.', foundationStructures.map((s) => s.id), ['Heart and lungs occupy the thoracic cavity; most digestive and urinary organs are in the abdominopelvic cavity.', 'Glands release chemical signals or secretions that coordinate body functions.'], ['The thyroid sits in the anterior neck; the kidneys are posterior in the abdominal region; the spleen is left-sided.'], ['Organs work in systems: the pancreas contributes to both digestion and endocrine regulation; the hypothalamus links nervous and endocrine control.'], ['The spleen is lymphatic, not a digestive organ; the adrenal glands sit superior to the kidneys.']),
 ];
 export const foundationsModule: Module = {
-  id: foundationsModuleId, title: 'Anatomy Foundations: Organs & Glands', ordering: 3, sourceIds: [OPENSTAX_SOURCE_ID],
-  visible: true, published: true, contentStatus: 'available', system: 'Foundations', category: 'Organs and endocrine orientation',
-  summary: 'Build an organ-and-gland map with location, system relationships, and recognition cues.', coursePriority: false, lessons: foundationLessons,
+  id: foundationsModuleId, title: 'Anatomy Foundations', ordering: 3, sourceIds: [OPENSTAX_SOURCE_ID],
+  visible: true, published: true, contentStatus: 'available', system: 'Foundations', category: 'Anatomical orientation and organ systems',
+  summary: 'Orient the body with standard terms, planes, regions, cavities, membranes, sections, and organ-system relationships.', coursePriority: false, lessons: foundationLessons,
 };
 
 export const anatomyQuestions: Question[] = [

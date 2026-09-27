@@ -89,9 +89,11 @@ export const cytologyStructures: Structure[] = [
  ['nucleus','Nucleus'],['nuclear-envelope-cytology','Nuclear envelope'],['nucleolus','Nucleolus'],['chromatin','Chromatin'],['centrosome','Centrosome'],['cytosol','Cytosol'],['golgi-apparatus','Golgi apparatus'],
 ].map(([id,canonicalName]) => ({id,canonicalName,acceptedAliases:[],moduleId:'cytology-mitosis',category:'cell structure',sourceId:'source-user-transcribed-lab2',sourcePage:7,examPriority:true,verificationStatus:'verified'}));
 export const foundationVisualStructures: Structure[] = [
- ['sagittal-plane','Sagittal plane'],['coronal-plane','Coronal plane'],['transverse-plane','Transverse plane'],
- ['cranial-cavity','Cranial cavity'],['vertebral-cavity','Vertebral cavity'],['thoracic-cavity','Thoracic cavity'],['abdominal-cavity','Abdominal cavity'],['pelvic-cavity','Pelvic cavity'],
-].map(([id,canonicalName]) => ({id,canonicalName,acceptedAliases:[],moduleId:'anatomy-foundations',category:'orientation',sourceId:'source-openstax-ap-2013',sourcePage:null,examPriority:true,verificationStatus:'verified'}));
+  ['sagittal-plane','Sagittal plane',['sagittal section']],['coronal-plane','Coronal plane',['frontal plane','frontal section']],
+  ['transverse-plane','Transverse plane',['axial plane','horizontal plane','axial section']],
+  ['cranial-cavity','Cranial cavity',[]],['vertebral-cavity','Vertebral cavity',['spinal cavity']],
+  ['thoracic-cavity','Thoracic cavity',['chest cavity']],['abdominal-cavity','Abdominal cavity',[]],['pelvic-cavity','Pelvic cavity',[]],
+ ].map(([id,canonicalName,acceptedAliases]) => ({id: id as string,canonicalName: canonicalName as string,acceptedAliases: acceptedAliases as string[],moduleId:'anatomy-foundations',category:'orientation',sourceId:'source-openstax-ap-2013',sourcePage:null,examPriority:true,verificationStatus:'verified'}));
 const lesson = (id:string,title:string,summary:string,structureIds:string[],assetIds:string[]):Lesson => ({id,title,summary,structureIds,recognitionCues:['Use the verified diagram target and the supplied text definition.'],landmarks:[],relationships:[],commonConfusions:[],sourceIds:['source-user-transcribed-lab2'],assetIds});
 export const cytologyLessons: Lesson[] = [
  lesson('cytology-cell-boundary','Cell boundary and cytosol','Separate the plasma membrane from the cytosol/cytoplasm inside it.',['plasma-membrane','cytosol'],['asset-original-cell-overview']),

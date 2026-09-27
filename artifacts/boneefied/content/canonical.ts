@@ -8,6 +8,7 @@ import { skeletalPracticeExpansion } from './practice-skeletal-expansion.ts';
 import { muscularPracticeExpansion, nervousPracticeExpansion } from './practice-neuromuscular-expansion.ts';
 import { respiratoryPracticeExpansion, digestivePracticeExpansion, urinaryPracticeExpansion, malePracticeExpansion, femalePracticeExpansion } from './practice-organ-expansion.ts';
 import { jointsPracticeExpansion, foundationsPracticeExpansion } from './practice-joints-foundations-expansion.ts';
+import { foundationsOrientationLessons, foundationsOrientationQuestions, foundationsOrientationStructures } from './foundations-orientation.ts';
 import { visualAssets, histologyAssets, visualQuestions, visualSources, cytologyStructures, foundationVisualStructures, cytologyLessons, cytologyGapQuestions, SERVIER_SOURCE_ID, HISTOLOGY_SOURCE_ID } from './visual-content.ts';
 import { attachPracticalVisuals, practicalVisualAssets, practicalVisualQuestions, practicalVisualSources } from './practical-visual-expansion.ts';
 import { attachMuscleRegionContent, muscleKnowledgeQuestions, muscleRegionAssets, muscleRegionSources, muscleRegionStructures, muscleVisualQuestions } from './muscle-region-visual-expansion.ts';
@@ -21,7 +22,7 @@ export const CYTOLOGY_SOURCE_ID = 'source-user-transcribed-lab2';
 // multiple-choice loses the distinction needed by feedback and validation.
 const scorableNewQuestions = (items: Question[]) => items;
 const newStructures = [...cellsStructures, ...skinStructures, ...sensesStructures, ...endocrineStructures, ...cardiovascularStructures, ...vesselsStructures, ...lymphaticStructures, ...organSystemsStructures];
-const allStructures = [...skeletalStructures, ...skeletalLandmarkStructures, ...skeletalExpansionStructures, ...foundationStructures, ...foundationVisualStructures, ...jointsStructures, ...muscularStructures, ...nervousStructures, ...newStructures, ...cytologyStructures];
+const allStructures = [...skeletalStructures, ...skeletalLandmarkStructures, ...skeletalExpansionStructures, ...foundationStructures, ...foundationVisualStructures, ...foundationsOrientationStructures, ...jointsStructures, ...muscularStructures, ...nervousStructures, ...newStructures, ...cytologyStructures];
 
 export const content: ContentCatalog = {
   sources: [
@@ -113,10 +114,13 @@ export const content: ContentCatalog = {
     { id:'q-telophase', moduleId:'cytology-mitosis', structureIds:['telophase'], taskType:'select-all', prompt:'Select the source-supported telophase events.', answer:['Nuclear envelopes form','Chromosomes unfold into chromatin','Nucleoli reappear'], acceptedAliases:[], options:['Nuclear envelopes form','Chromosomes unfold into chromatin','Nucleoli reappear','DNA replicates'], explanation:'All three selected events are in the supplied p8 transcription.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:8, examPriority:true, verificationStatus:'verified' },
     { id:'q-membrane', moduleId:'cytology-mitosis', structureIds:['plasma-membrane'], taskType:'typed-recall', prompt:'What surrounds the cell as the plasma membrane?', answer:'A phospholipid bilayer', acceptedAliases:['phospholipid bilayer'], explanation:'The supplied quiz excerpt defines the plasma membrane as a phospholipid bilayer surrounding the cell.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:11, examPriority:true, verificationStatus:'verified' },
     { id:'q-organelles', moduleId:'cytology-mitosis', structureIds:['mitochondrion','smooth-er'], taskType:'select-all', prompt:'Select the source-supported organelle functions.', answer:['Mitochondrion supports cellular respiration/energy','Smooth ER supports lipid production, carbohydrate metabolism, and detoxification'], acceptedAliases:[], options:['Mitochondrion supports cellular respiration/energy','Smooth ER supports lipid production, carbohydrate metabolism, and detoxification','Smooth ER makes the cleavage furrow'], explanation:'These functions are stated in the supplied quiz excerpt.', sourceId:CYTOLOGY_SOURCE_ID, sourcePage:12, examPriority:true, verificationStatus:'verified' },
-     ...anatomyQuestions, ...skeletalExpansionQuestions, ...jointsQuestions, ...muscularQuestions, ...nervousQuestions, ...scorableNewQuestions([...cellsQuestions, ...skinQuestions, ...sensesQuestions, ...endocrineQuestions, ...cardiovascularQuestions, ...vesselsQuestions, ...lymphaticQuestions, ...organSystemsQuestions]), ...visualQuestions, ...practicalVisualQuestions, ...muscleVisualQuestions, ...muscleKnowledgeQuestions, ...advancedMuscleQuestions, ...cytologyGapQuestions, ...skeletalPracticeExpansion, ...muscularPracticeExpansion, ...nervousPracticeExpansion, ...respiratoryPracticeExpansion, ...digestivePracticeExpansion, ...urinaryPracticeExpansion, ...malePracticeExpansion, ...femalePracticeExpansion, ...jointsPracticeExpansion, ...foundationsPracticeExpansion],
+      ...anatomyQuestions, ...skeletalExpansionQuestions, ...jointsQuestions, ...muscularQuestions, ...nervousQuestions, ...scorableNewQuestions([...cellsQuestions, ...skinQuestions, ...sensesQuestions, ...endocrineQuestions, ...cardiovascularQuestions, ...vesselsQuestions, ...lymphaticQuestions, ...organSystemsQuestions]), ...visualQuestions, ...practicalVisualQuestions, ...muscleVisualQuestions, ...muscleKnowledgeQuestions, ...advancedMuscleQuestions, ...cytologyGapQuestions, ...skeletalPracticeExpansion, ...muscularPracticeExpansion, ...nervousPracticeExpansion, ...respiratoryPracticeExpansion, ...digestivePracticeExpansion, ...urinaryPracticeExpansion, ...malePracticeExpansion, ...femalePracticeExpansion, ...jointsPracticeExpansion, ...foundationsPracticeExpansion, ...foundationsOrientationQuestions],
   pathways: [],
 };
 
+content.modules = content.modules.map((module) => module.id === 'anatomy-foundations'
+  ? { ...module, lessons: [...foundationsOrientationLessons, ...(module.lessons ?? [])] }
+  : module);
 content.modules = attachPracticalVisuals(content.modules);
 const muscleRegionContent = attachMuscleRegionContent(content.modules, content.structures);
 content.modules = muscleRegionContent.modules;
