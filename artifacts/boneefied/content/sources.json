@@ -252,6 +252,22 @@
     "unresolvedIssues": []
   },
   {
+    "id": "source-openstax-ap-2013-bone-change-ch6",
+    "filename": "OpenStax Anatomy and Physiology (2013), §6.6",
+    "sha256": "source-openstax-ap-2013-bone-change-ch6",
+    "pageCount": null,
+    "contentType": "open textbook chapter/section",
+    "representedLabOrSystem": "Skeletal structural change",
+    "usefulPages": [],
+    "mostlyTextOrImageBased": "text",
+    "containsAnswers": false,
+    "appearsDuplicated": false,
+    "attributionLicenseVisible": true,
+    "sourceUrl": "https://openstax.org/books/anatomy-and-physiology/pages/6-6-exercise-nutrition-hormones-and-bone-tissue",
+    "license": "CC BY 4.0",
+    "unresolvedIssues": []
+  },
+  {
     "id": "source-openstax-ap-2013-cardiovascular-ch19",
     "filename": "OpenStax Anatomy and Physiology (2013), Ch. 19 heart",
     "sha256": "openstax-ap-2013-cardiovascular-ch19",
@@ -359,7 +375,7 @@
     "containsAnswers": false,
     "appearsDuplicated": false,
     "attributionLicenseVisible": true,
-    "sourceUrl": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-of-the-male-reproductive-system",
+    "sourceUrl": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-and-physiology-of-the-male-reproductive-system",
     "license": "CC BY 4.0",
     "unresolvedIssues": []
   },
@@ -375,7 +391,7 @@
     "containsAnswers": false,
     "appearsDuplicated": false,
     "attributionLicenseVisible": true,
-    "sourceUrl": "https://openstax.org/books/anatomy-and-physiology/pages/27-2-anatomy-of-the-female-reproductive-system",
+    "sourceUrl": "https://openstax.org/books/anatomy-and-physiology/pages/27-2-anatomy-and-physiology-of-the-female-reproductive-system",
     "license": "CC BY 4.0",
     "unresolvedIssues": []
   },

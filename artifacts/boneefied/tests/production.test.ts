@@ -40,15 +40,15 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.modules.find((module) => module.id === 'nervous-system')?.system, 'nervous');
   assert.ok(content.structures.some((structure) => structure.id === 'external-acoustic-meatus'));
   assert.ok(content.structures.some((structure) => structure.id === 'lateral-malleolus'));
-  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 111);
+  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 112);
   assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 72);
   const expectedCounts: Record<string, [number, number, number]> = {
-    'cytology-mitosis': [22, 6, 15], 'skeletal-system': [155, 13, 111], 'anatomy-foundations': [105, 15, 72],
-    'joints-ligaments': [36, 6, 31], 'muscular-system': [73, 8, 129], 'nervous-system': [63, 8, 51],
-    'cells-tissues': [57, 8, 28], 'integumentary-system': [38, 6, 20], 'special-senses': [71, 9, 33],
-    'endocrine-system': [38, 6, 17], 'cardiovascular-system': [70, 11, 50], 'blood-vessels': [45, 10, 22],
-    'lymphatic-system': [47, 7, 19], 'respiratory-system': [64, 7, 40], 'digestive-system': [81, 10, 44],
-    'urinary-system': [49, 7, 39], 'male-reproductive': [47, 7, 41], 'female-reproductive': [65, 8, 47],
+    'cytology-mitosis': [22, 6, 18], 'skeletal-system': [155, 13, 112], 'anatomy-foundations': [105, 15, 72],
+    'joints-ligaments': [36, 6, 32], 'muscular-system': [73, 8, 130], 'nervous-system': [63, 8, 52],
+    'cells-tissues': [57, 8, 31], 'integumentary-system': [38, 6, 21], 'special-senses': [71, 9, 35],
+    'endocrine-system': [38, 6, 18], 'cardiovascular-system': [70, 11, 50], 'blood-vessels': [45, 10, 25],
+    'lymphatic-system': [47, 7, 19], 'respiratory-system': [64, 7, 41], 'digestive-system': [81, 10, 45],
+    'urinary-system': [49, 7, 40], 'male-reproductive': [47, 7, 42], 'female-reproductive': [65, 8, 48],
   };
   for (const [id, [structures, lessons, questions]] of Object.entries(expectedCounts)) {
     const module = content.modules.find((item) => item.id === id);
@@ -207,7 +207,7 @@ test('verified Gray plates are local, labeled, and lesson-scoped', () => {
 test('production questions expose supported playable task types', () => {
   const supported = new Set(['multiple-choice', 'typed-recall', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion', 'image-identification', 'hotspot', 'histology-identification']);
   assert.ok(content.questions.every((question) => supported.has(question.taskType)));
-  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 375);
+  assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 397);
   assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 30);
   assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 59);
   assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 76);

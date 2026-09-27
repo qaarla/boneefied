@@ -11,8 +11,8 @@ const src = (id: string, title: string, section: string): SourceRecord => ({
 export const respiratorySources = [src('source-openstax-ap-2013-respiratory','Chapter 22 Respiratory System','22-1-organs-and-structures-of-the-respiratory-system')];
 export const digestiveSources = [src('source-openstax-ap-2013-digestive','Chapter 23 Digestive System','23-1-overview-of-the-digestive-system')];
 export const urinarySources = [src('source-openstax-ap-2013-urinary','Chapter 25 Urinary System','25-1-anatomy-of-the-urinary-system')];
-export const maleReproductiveSources = [src('source-openstax-ap-2013-male-reproductive','Chapter 27 Male Reproductive System','27-1-anatomy-of-the-male-reproductive-system')];
-export const femaleReproductiveSources = [src('source-openstax-ap-2013-female-reproductive','Chapter 27 Female Reproductive System','27-2-anatomy-of-the-female-reproductive-system')];
+export const maleReproductiveSources = [src('source-openstax-ap-2013-male-reproductive','Chapter 27 Male Reproductive System','27-1-anatomy-and-physiology-of-the-male-reproductive-system')];
+export const femaleReproductiveSources = [src('source-openstax-ap-2013-female-reproductive','Chapter 27 Female Reproductive System','27-2-anatomy-and-physiology-of-the-female-reproductive-system')];
 export const organSystemsSources = [...respiratorySources,...digestiveSources,...urinarySources,...maleReproductiveSources,...femaleReproductiveSources];
 
 const makeStructures = (moduleId: string, sourceId: string, groups: Record<string,string>): Structure[] => Object.entries(groups).flatMap(([category, list]) => list.split('|').map(name => ({
