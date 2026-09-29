@@ -10,3 +10,5 @@
 - [Anatomy catalog counts](anatomy-catalog-counts.md) — audit the assembled runtime catalog, not authored-module estimates; later expansions can make static counts stale.
 - [Hallux search mapping](hallux-search-mapping.md) — Hallux currently points to the broader foot-phalanges entry; revisit that alias if dedicated toe content is added.
 - [iOS text scaling boundary](ios-text-scaling-boundary.md) — native Text scales fonts and line heights; custom native header title sizes need separate treatment.
+- [Anatomy diagram localization](anatomy-diagram-localization.md) — translated metadata cannot remove English text baked into anatomy images; resolve visibly and rights-safely.
+- [Practice locale draft preservation](practice-locale-drafts.md) — tab navigation can lose unsubmitted selections; persist raw drafts separately from canonical scoring.

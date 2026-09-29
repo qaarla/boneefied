@@ -10,10 +10,11 @@ import { answerIsCorrect, createPracticeSession } from '@/content/study';
 import type { Question } from '@/content/model';
 import { useStudy } from '@/context/StudyContext';
 import { useColors } from '@/hooks/useColors';
-import { sourceCitation } from '@/content/sources';
 import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
 import { imageSources } from '@/content/imageSources';
 import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';
+import { useLocale } from '@/locales/useLocale';
+import { spanishResponseForScoring } from '@/locales/es';
 
 type Phase = 'setup' | 'quiz' | 'results';
 const supported = new Set(['multiple-choice', 'typed-recall', 'image-identification', 'hotspot', 'histology-identification', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
@@ -34,12 +35,9 @@ function resultHaptic(enabled: boolean, correct: boolean) {
     correct ? Haptics.NotificationFeedbackType.Success : Haptics.NotificationFeedbackType.Error,
   );
 }
-function correctAnswerText(question: Question) {
-  if (!Array.isArray(question.answer)) return question.answer;
-  return question.answer.join(question.taskType === 'ordered-sequence' ? ' → ' : ' · ');
-}
 export default function PracticeScreen() {
   const colors = useColors(); const router = useRouter(); const study = useStudy();
+  const locale = useLocale();
   const { isCompactTextLayout, isLargeText } = useTypographyLayout();
   const shouldReflow = isCompactTextLayout || isLargeText;
   const reduceMotion = useReduceMotion();
@@ -73,7 +71,21 @@ export default function PracticeScreen() {
   useEffect(() => {
     if (activeSession && phase === 'setup') {
       const resumed = activeSession.questionIds.map((id) => content.questions.find((item) => item.id === id)).filter((item): item is Question => !!item);
-      if (resumed.length) { setSessionId(activeSession.id); setQuestions(resumed); setPosition(Math.min(activeSession.position, resumed.length - 1)); setAnswers(activeSession.answers.map((item) => item.outcome === 'correct')); setCorrect(activeSession.answers.filter((item) => item.outcome === 'correct').length); setPhase('quiz'); }
+      if (resumed.length) {
+        const last = activeSession.answers.at(-1);
+        const awaitingFinish = activeSession.position >= resumed.length && last?.questionId === resumed[resumed.length - 1].id;
+        setSessionId(activeSession.id);
+        setQuestions(resumed);
+        setPosition(Math.min(activeSession.position, resumed.length - 1));
+        setAnswers(activeSession.answers.map((item) => item.outcome === 'correct'));
+        setCorrect(activeSession.answers.filter((item) => item.outcome === 'correct').length);
+        const draft = activeSession.draft;
+        setAnswer(awaitingFinish ? last?.answer ?? '' : draft?.questionId === resumed[activeSession.position]?.id ? draft.answer : '');
+        setSubmitted(awaitingFinish);
+        setCurrentCorrect(awaitingFinish && last.outcome === 'correct');
+        submissionGuard.current = awaitingFinish;
+        setPhase('quiz');
+      }
     }
   }, [activeSession?.id]);
   const start = () => {
@@ -111,91 +123,121 @@ export default function PracticeScreen() {
     }
   };
   const q = questions[position];
+  const saveDraft = (value: string | string[]) => {
+    if (!q || submitted || !sessionId) return;
+    const session = study.sessions.find((item) => item.id === sessionId);
+    if (!session || session.status === 'completed') return;
+    const empty = value === '' || Array.isArray(value) && value.length === 0;
+    study.saveSession({
+      ...session, draft: empty ? undefined : { questionId: q.id, answer: value },
+      updatedAt: new Date().toISOString(),
+    });
+  };
+  const updateAnswer = (value: string | string[]) => { setAnswer(value); saveDraft(value); };
+  const localizedQuestion = q ? locale.question(q) : undefined;
+  const selectedModule = content.modules.find((item) => item.id === selectedModuleId);
+  const citation = (sourceId: string, page: number | null) => locale.citation(sourceId, page);
+  const scoreAnswer = (candidate: string | string[], question: Question) =>
+    answerIsCorrect(spanishResponseForScoring(question, candidate), question);
+  const correctAnswerText = (question: Question) => {
+    const localized = locale.question(question).answer;
+    if (typeof localized === 'string') return localized;
+    return localized.join(question.taskType === 'ordered-sequence' ? ' → ' : ' · ');
+  };
   const submit = () => {
     if (submitted || submissionGuard.current || !q || !study.sessions.some((session) => session.id === sessionId && session.status !== 'completed')) return;
     submissionGuard.current = true;
-    const isCorrect = answerIsCorrect(answer, q); setCurrentCorrect(isCorrect); setSubmitted(true); setAnswers((items) => [...items, isCorrect]); if (isCorrect) setCorrect((n) => n + 1);
+    const isCorrect = scoreAnswer(answer, q); setCurrentCorrect(isCorrect); setSubmitted(true); setAnswers((items) => [...items, isCorrect]); if (isCorrect) setCorrect((n) => n + 1);
     resultHaptic(study.preferences.haptics, isCorrect);
     study.submitSessionAnswer(sessionId, { questionId: q.id, answer, outcome: isCorrect ? 'correct' : 'wrong', submittedAt: new Date().toISOString() }, { questionId: q.id, structureId: q.structureIds[0], correct: isCorrect, answer });
   };
   const next = () => { if (!submitted) return; if (position + 1 >= questions.length) { study.completeSession(sessionId); setPhase('results'); } else { setPosition((n) => n + 1); setAnswer(''); submissionGuard.current = false; setSubmitted(false); setCurrentCorrect(false); } };
-  if (!study.hydrated) return <Screen><Text style={{ color: colors.mutedForeground }}>Loading saved study progress…</Text></Screen>;
-  if (phase !== 'setup' && !study.sessions.some((session) => session.id === sessionId)) return <Screen><Text style={{ color: colors.mutedForeground }}>Preparing saved practice session…</Text></Screen>;
+  if (!study.hydrated) return <Screen><Text style={{ color: colors.mutedForeground }}>{locale.t('practice.loadingSavedProgress')}</Text></Screen>;
+  if (phase !== 'setup' && !study.sessions.some((session) => session.id === sessionId)) return <Screen><Text style={{ color: colors.mutedForeground }}>{locale.t('practice.preparingSavedSession')}</Text></Screen>;
   if (phase === 'setup') return <Screen>
-      <Text style={[styles.eyebrow, { color: colors.primary }]}>PRACTICE</Text><Heading style={[styles.title, shouldReflow && styles.reflowTitle, { color: colors.foreground }]}>{content.modules.find((item) => item.id === selectedModuleId)?.title ?? 'Anatomy practice'}</Heading>
-     <Text style={[styles.intro, { color: colors.mutedForeground }]}>Practice uses the same source-linked structures and explanations as Study. Image questions appear only when answer mapping is verified.</Text>
-     <AdaptiveCard style={[styles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}><Heading style={[styles.panelTitle, { color: colors.foreground }]}>Session setup</Heading>
-        {content.modules.filter((item) => item.published).length > 1 && <View style={styles.counts}>{content.modules.filter((item) => item.published).map((item) => <AdaptiveButton key={item.id} onPress={() => { setSelectedModuleId(item.id); setPhase('setup'); }} style={[styles.count, { borderColor: selectedModuleId === item.id ? colors.primary : colors.border, backgroundColor: selectedModuleId === item.id ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{item.title}</Text></AdaptiveButton>)}</View>}
-       <Text style={{ color: colors.mutedForeground }}>Eligible questions: {pool.length}. No duplicate padding.</Text>
-       <View style={styles.counts}>{[3, 5, pool.length].filter((n, i, a) => n > 0 && a.indexOf(n) === i).map((n) => <AdaptiveButton key={n} onPress={() => setCount(Math.min(n, pool.length))} style={[styles.count, { borderColor: count === Math.min(n, pool.length) ? colors.primary : colors.border, backgroundColor: count === Math.min(n, pool.length) ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{n} questions</Text></AdaptiveButton>)}</View>
-       {activeSession ? <AdaptiveButton testID="resume-practice" onPress={() => setPhase('quiz')} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Resume saved session</Text></AdaptiveButton> : <AdaptiveButton testID="start-practice" onPress={start} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Start practice</Text></AdaptiveButton>}
+      <Text style={[styles.eyebrow, { color: colors.primary }]}>{locale.t('practice.eyebrow')}</Text><Heading style={[styles.title, shouldReflow && styles.reflowTitle, { color: colors.foreground }]}>{selectedModule ? locale.module(selectedModule).title : locale.t('practice.titleFallback')}</Heading>
+      <Text style={[styles.intro, { color: colors.mutedForeground }]}>{locale.t('practice.intro')}</Text>
+      <AdaptiveCard style={[styles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}><Heading style={[styles.panelTitle, { color: colors.foreground }]}>{locale.t('practice.sessionSetup')}</Heading>
+         {content.modules.filter((item) => item.published).length > 1 && <View style={styles.counts}>{content.modules.filter((item) => item.published).map((item) => <AdaptiveButton key={item.id} onPress={() => { setSelectedModuleId(item.id); setPhase('setup'); }} style={[styles.count, { borderColor: selectedModuleId === item.id ? colors.primary : colors.border, backgroundColor: selectedModuleId === item.id ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{locale.module(item).title}</Text></AdaptiveButton>)}</View>}
+        <Text style={{ color: colors.mutedForeground }}>{locale.t('practice.eligibleQuestions', { count: locale.number(pool.length) })}</Text>
+        <View style={styles.counts}>{[3, 5, pool.length].filter((n, i, a) => n > 0 && a.indexOf(n) === i).map((n) => <AdaptiveButton key={n} onPress={() => setCount(Math.min(n, pool.length))} style={[styles.count, { borderColor: count === Math.min(n, pool.length) ? colors.primary : colors.border, backgroundColor: count === Math.min(n, pool.length) ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{locale.t(n === 1 ? 'practice.questionCount.one' : 'practice.questionCount.other', { count: locale.number(n) })}</Text></AdaptiveButton>)}</View>
+        {activeSession ? <AdaptiveButton testID="resume-practice" onPress={() => setPhase('quiz')} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{locale.t('practice.resumeSavedSession')}</Text></AdaptiveButton> : <AdaptiveButton testID="start-practice" onPress={start} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{locale.t('practice.start')}</Text></AdaptiveButton>}
      </AdaptiveCard>
        <AdaptiveCard style={[styles.focus, { borderColor: colors.border, backgroundColor: colors.card }]}>
-         <Heading style={{ color: colors.foreground, fontWeight: '700' }}>Focused practice</Heading>
-        <Text style={{ color: colors.mutedForeground }}>Lowest-attempt structures: {underpracticed.map((item) => item.canonicalName).join(' · ') || 'none yet'}</Text>
-         <AdaptiveButton testID="start-focused-practice" onPress={startFocused} disabled={!underpracticed.length} style={[styles.secondary, { borderColor: colors.primary, opacity: underpracticed.length ? 1 : 0.5 }]}><Text style={{ color: colors.primary, fontWeight: '700' }}>Start focused practice</Text></AdaptiveButton>
+          <Heading style={{ color: colors.foreground, fontWeight: '700' }}>{locale.t('practice.focusedHeading')}</Heading>
+         <Text style={{ color: colors.mutedForeground }}>{locale.t('practice.lowestAttemptStructures', { structures: underpracticed.map((item) => locale.structure(item).canonicalName).join(' · ') || locale.t('practice.noneYet') })}</Text>
+          <AdaptiveButton testID="start-focused-practice" onPress={startFocused} disabled={!underpracticed.length} style={[styles.secondary, { borderColor: colors.primary, opacity: underpracticed.length ? 1 : 0.5 }]}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('practice.startFocused')}</Text></AdaptiveButton>
        </AdaptiveCard>
-      <Text style={[styles.note, { color: colors.mutedForeground }]}>Supported here: multiple choice, image identification, hotspot recall, typed recall, select-all, ordered sequence, bone laterality, muscle action/attachments, and relationship questions.</Text>
+       <Text style={[styles.note, { color: colors.mutedForeground }]}>{locale.t('practice.supportedTypes')}</Text>
   </Screen>;
   if (phase === 'results') return <Screen>
-      <Text style={[styles.eyebrow, { color: colors.primary }]}>SESSION COMPLETE</Text><Heading style={[styles.title, shouldReflow && styles.reflowTitle, { color: colors.foreground }]}>Results</Heading>
-      <AdaptiveCard style={[styles.result, { backgroundColor: colors.card, borderColor: colors.border }]}>{shouldReflow ? <View style={styles.reflowScore}><Text style={[styles.big, { color: colors.foreground }]}>{correct}</Text><Text style={[styles.resultTotal, { color: colors.mutedForeground }]}>of {questions.length}</Text></View> : <Text style={[styles.big, { color: colors.foreground }]}>{correct}/{questions.length}</Text>}<Text style={{ color: colors.mutedForeground }}>{Math.round(correct / Math.max(questions.length, 1) * 100)}% accuracy</Text></AdaptiveCard>
-      {questions.map((item, index) => <View key={item.id} style={styles.review}><Text style={[styles.reviewText, shouldReflow && styles.reflowText, { color: colors.foreground }]}>{index + 1}. {answers[index] ? 'Correct' : 'Wrong / unanswered'} · {item.prompt}</Text><Text style={[styles.reviewDetail, shouldReflow && styles.reflowText, { color: colors.mutedForeground }]}>{item.explanation} · {sourceCitation(content, item.sourceId, item.sourcePage)}</Text></View>)}
-    <Text style={{ color: colors.mutedForeground }}>Incorrect answers remain in Missed for later review; completed attempts are saved locally.</Text>
-      <AdaptiveButton onPress={start} style={[styles.primary, shouldReflow && styles.reflowRetry, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, shouldReflow && styles.reflowRetryText]}>Retry module</Text></AdaptiveButton>
-     <AdaptiveButton onPress={() => router.replace('/(tabs)')} style={styles.link}><Text style={{ color: colors.primary, fontWeight: '700' }}>Return to Study</Text></AdaptiveButton>
+       <Text style={[styles.eyebrow, { color: colors.primary }]}>{locale.t('practice.sessionComplete')}</Text><Heading style={[styles.title, shouldReflow && styles.reflowTitle, { color: colors.foreground }]}>{locale.t('practice.results')}</Heading>
+       <AdaptiveCard style={[styles.result, { backgroundColor: colors.card, borderColor: colors.border }]}>{shouldReflow ? <View style={styles.reflowScore}><Text style={[styles.big, { color: colors.foreground }]}>{locale.number(correct)}</Text><Text style={[styles.resultTotal, { color: colors.mutedForeground }]}>{locale.t('practice.scoreOutOf', { total: locale.number(questions.length) })}</Text></View> : <Text style={[styles.big, { color: colors.foreground }]}>{locale.number(correct)}/{locale.number(questions.length)}</Text>}<Text style={{ color: colors.mutedForeground }}>{locale.t('practice.accuracy', { percent: locale.number(Math.round(correct / Math.max(questions.length, 1) * 100)) })}</Text></AdaptiveCard>
+       {questions.map((item, index) => { const display = locale.question(item); return <View key={item.id} style={styles.review}><Text style={[styles.reviewText, shouldReflow && styles.reflowText, { color: colors.foreground }]}>{locale.number(index + 1)}. {locale.t(answers[index] ? 'practice.correct' : 'practice.wrongOrUnanswered')} · {display.prompt}</Text><Text style={[styles.reviewDetail, shouldReflow && styles.reflowText, { color: colors.mutedForeground }]}>{display.explanation} · {citation(item.sourceId, item.sourcePage)}</Text></View>; })}
+     <Text style={{ color: colors.mutedForeground }}>{locale.t('practice.savedMissedNotice')}</Text>
+       <AdaptiveButton onPress={start} style={[styles.primary, shouldReflow && styles.reflowRetry, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, shouldReflow && styles.reflowRetryText]}>{locale.t('practice.retryModule')}</Text></AdaptiveButton>
+      <AdaptiveButton onPress={() => router.replace('/(tabs)')} style={styles.link}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('practice.returnToStudy')}</Text></AdaptiveButton>
   </Screen>;
+  if (!q || !localizedQuestion) return null;
   return <Screen keyboardAware>
-     <Text style={[styles.eyebrow, { color: colors.primary }]}>QUESTION {position + 1} OF {questions.length}</Text><Heading style={[styles.title, shouldReflow && styles.reflowTitle, { color: colors.foreground }]}>{q.prompt}</Heading>
-     <AdaptiveButton accessibilityLabel="Save and exit practice" onPress={() => setPhase('setup')} style={shouldReflow ? styles.reflowSaveExit : undefined}><Text style={{ color: colors.primary }}>Save & exit</Text></AdaptiveButton>
-    <QuestionInput question={q} value={answer} setValue={setAnswer} disabled={submitted} colors={colors} reduceMotion={reduceMotion} hapticsEnabled={study.preferences.haptics} />
-     {submitted && <View style={[styles.feedback, { backgroundColor: currentCorrect ? colors.secondary : colors.card, borderColor: colors.border }]}><Text style={{ color: colors.foreground, fontWeight: '700' }}>{currentCorrect ? '✓ Correct' : '✕ Review this one'}</Text>{!currentCorrect && <Text style={{ color: colors.foreground, fontWeight: '600' }}>Correct answer: {correctAnswerText(q)}</Text>}<Text style={{ color: colors.mutedForeground }}>{q.explanation}</Text><Text style={{ color: colors.mutedForeground }}>Source: {sourceCitation(content, q.sourceId, q.sourcePage)}</Text></View>}
+      <Text style={[styles.eyebrow, { color: colors.primary }]}>{locale.t('practice.questionPosition', { position: locale.number(position + 1), total: locale.number(questions.length) })}</Text><Heading style={[styles.title, shouldReflow && styles.reflowTitle, { color: colors.foreground }]}>{localizedQuestion.prompt}</Heading>
+      <AdaptiveButton accessibilityLabel={locale.t('practice.saveAndExit.accessibility')} onPress={() => { if (!submitted) saveDraft(answer); setPhase('setup'); }} style={shouldReflow ? styles.reflowSaveExit : undefined}><Text style={{ color: colors.primary }}>{locale.t('practice.saveAndExit.visible')}</Text></AdaptiveButton>
+     <QuestionInput question={q} value={answer} setValue={updateAnswer} disabled={submitted} colors={colors} reduceMotion={reduceMotion} hapticsEnabled={study.preferences.haptics} />
+      {submitted && <View style={[styles.feedback, { backgroundColor: currentCorrect ? colors.secondary : colors.card, borderColor: colors.border }]}><Text style={{ color: colors.foreground, fontWeight: '700' }}>{locale.t(currentCorrect ? 'practice.correctFeedback' : 'practice.incorrectFeedback')}</Text>{!currentCorrect && <Text style={{ color: colors.foreground, fontWeight: '600' }}>{locale.t('practice.correctAnswer', { answer: correctAnswerText(q) })}</Text>}<Text style={{ color: colors.mutedForeground }}>{localizedQuestion.explanation}</Text><Text style={{ color: colors.mutedForeground }}>{locale.t('practice.source', { citation: citation(q.sourceId, q.sourcePage) })}</Text></View>}
     <AnimatedAnswerPressable
       testID="submit-answer"
       onPress={submit}
       disabled={submitted || answer === '' || (Array.isArray(answer) && answer.length === 0)}
       feedback={submitted ? (currentCorrect ? 'correct' : 'incorrect') : undefined}
       reduceMotion={reduceMotion}
-      accessibilityLabel={submitted ? (currentCorrect ? 'Correct answer submitted' : 'Incorrect answer submitted') : 'Submit answer'}
+       accessibilityLabel={submitted ? locale.t(currentCorrect ? 'practice.answerSubmitted.correct' : 'practice.answerSubmitted.incorrect') : locale.t('practice.submitAnswer.accessibility')}
       containerStyle={styles.primary}
       contentStyle={[styles.primaryContent, { backgroundColor: submitted ? (currentCorrect ? colors.success : colors.destructive) : answer === '' || (Array.isArray(answer) && answer.length === 0) ? colors.muted : colors.primary }]}
-    ><Text style={{ color: submitted ? (currentCorrect ? colors.successForeground : colors.destructiveForeground) : colors.primaryForeground, fontWeight: '700' }}>{submitted ? (currentCorrect ? '✓ Correct' : '✕ Incorrect') : 'Submit answer'}</Text></AnimatedAnswerPressable>
-    {submitted && <AnimatedAnswerPressable testID="next-answer" onPress={next} onPressIn={() => selectionHaptic(study.preferences.haptics)} reduceMotion={reduceMotion} containerStyle={styles.primary} contentStyle={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{position + 1 === questions.length ? 'See results' : 'Next question'}</Text></AnimatedAnswerPressable>}
+     ><Text style={{ color: submitted ? (currentCorrect ? colors.successForeground : colors.destructiveForeground) : colors.primaryForeground, fontWeight: '700' }}>{submitted ? locale.t(currentCorrect ? 'practice.submission.correct' : 'practice.submission.incorrect') : locale.t('practice.submitAnswer.visible')}</Text></AnimatedAnswerPressable>
+     {submitted && <AnimatedAnswerPressable testID="next-answer" onPress={next} onPressIn={() => selectionHaptic(study.preferences.haptics)} reduceMotion={reduceMotion} containerStyle={styles.primary} contentStyle={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{locale.t(position + 1 === questions.length ? 'practice.seeResults' : 'practice.nextQuestion')}</Text></AnimatedAnswerPressable>}
   </Screen>;
 }
 
 function QuestionInput({ question, value, setValue, disabled, colors, reduceMotion, hapticsEnabled }: { question: Question; value: string | string[]; setValue: (v: string | string[]) => void; disabled: boolean; colors: any; reduceMotion: boolean; hapticsEnabled: boolean }) {
+  const locale = useLocale();
   const { isCompactTextLayout, isLargeText } = useTypographyLayout();
   const shouldReflow = isCompactTextLayout || isLargeText;
-  const asset = question.assetId ? content.assets.find((item) => item.id === question.assetId) : undefined;
-  const image = asset ? <AnatomyImageViewer source={imageSources[asset.id]} hotspots={question.taskType === 'image-identification' ? [] : question.hotspots ?? asset.hotspots} labels={(disabled || question.taskType === 'image-identification') ? asset.labels?.filter((label) => question.structureIds.includes(label.structureId)) : []} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={question.taskType === 'image-identification' ? undefined : (hotspot) => { selectionHaptic(hapticsEnabled); setValue(hotspot.structureId); }} selectedHotspotId={typeof value === 'string' ? value : undefined} correctHotspotId={question.structureIds[0]} submitted={disabled} reduceMotion={reduceMotion} /> : null;
-  if (question.taskType === 'hotspot') return <View style={{ gap: 10 }}>{image}<Text style={{ color: colors.mutedForeground }}>Tap the marked structure.</Text></View>;
-    if (question.taskType === 'typed-recall' || question.taskType === 'image-identification') return <View style={{ gap: 10 }}>{image}<TextInput testID="typed-answer" accessibilityLabel={disabled ? `${answerIsCorrect(value, question) ? 'Correct' : 'Incorrect'} typed answer` : 'Image identification answer'} value={typeof value === 'string' ? value : ''} onChangeText={setValue} editable={!disabled} onSubmitEditing={Keyboard.dismiss} placeholder="Type your answer" placeholderTextColor={colors.mutedForeground} multiline={shouldReflow} submitBehavior={shouldReflow ? 'blurAndSubmit' : undefined} style={[styles.input, shouldReflow && styles.largeInput, { color: colors.foreground, borderColor: disabled ? (answerIsCorrect(value, question) ? colors.success : colors.destructive) : colors.border, backgroundColor: colors.card }]} returnKeyType="done" /></View>;
+  const canonicalAsset = question.assetId ? content.assets.find((item) => item.id === question.assetId) : undefined;
+  const asset = canonicalAsset ? locale.asset(canonicalAsset) : undefined;
+  const localizedQuestion = locale.question(question);
   const options = question.options ?? (question.answer as string[]);
+  const localizedAnswers = Array.isArray(localizedQuestion.answer) ? localizedQuestion.answer : [localizedQuestion.answer];
+  const labels = options.map((option, index) => localizedQuestion.options?.[index] ?? localizedAnswers[index] ?? option);
+  const scoreAnswer = (candidate: string | string[]) => answerIsCorrect(spanishResponseForScoring(question, candidate), question);
+  const image = asset ? <AnatomyImageViewer source={imageSources[asset.id]} hotspots={question.taskType === 'image-identification' ? [] : question.hotspots ?? asset.hotspots} labels={(disabled || question.taskType === 'image-identification') ? asset.labels?.filter((label) => question.structureIds.includes(label.structureId)) : []} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={question.taskType === 'image-identification' ? undefined : (hotspot) => { selectionHaptic(hapticsEnabled); setValue(hotspot.structureId); }} selectedHotspotId={typeof value === 'string' ? value : undefined} correctHotspotId={question.structureIds[0]} submitted={disabled} reduceMotion={reduceMotion} /> : null;
+   if (question.taskType === 'hotspot') return <View style={{ gap: 10 }}>{image}<Text style={{ color: colors.mutedForeground }}>{locale.t('practice.hotspotInstruction')}</Text></View>;
+     if (question.taskType === 'typed-recall' || question.taskType === 'image-identification') return <View style={{ gap: 10 }}>{image}<TextInput testID="typed-answer" accessibilityLabel={disabled ? locale.t(scoreAnswer(value) ? 'practice.correctTypedAnswer' : 'practice.incorrectTypedAnswer') : locale.t('practice.imageIdentificationAnswer')} value={typeof value === 'string' ? value : ''} onChangeText={setValue} editable={!disabled} onSubmitEditing={Keyboard.dismiss} placeholder={locale.t('practice.answerPlaceholder')} placeholderTextColor={colors.mutedForeground} multiline={shouldReflow} submitBehavior={shouldReflow ? 'blurAndSubmit' : undefined} style={[styles.input, shouldReflow && styles.largeInput, { color: colors.foreground, borderColor: disabled ? (scoreAnswer(value) ? colors.success : colors.destructive) : colors.border, backgroundColor: colors.card }]} returnKeyType="done" /></View>;
   if (question.taskType === 'ordered-sequence') {
     const selected = Array.isArray(value) ? value : [];
     const move = (index: number, delta: number) => { const next = [...selected]; const target = index + delta; if (target >= 0 && target < next.length) [next[index], next[target]] = [next[target], next[index]]; setValue(next); };
-    return <View style={{ gap: 10 }}>{image}<View style={styles.options}>{options.map((option) => {
+     return <View style={{ gap: 10 }}>{image}<View style={styles.options}>{options.map((option, optionIndex) => {
       const index = selected.indexOf(option);
       const expected = question.answer as string[];
+      const label = labels[optionIndex];
       const feedback: AnswerFeedback | undefined = disabled ? (index >= 0 && expected[index] === option ? 'correct' : 'incorrect') : undefined;
         return <AdaptiveRow key={option} style={[styles.orderRow, shouldReflow && styles.largeOrderRow]}>
-         <AnimatedAnswerPressable disabled={disabled} onPressIn={() => selectionHaptic(hapticsEnabled)} onPress={() => setValue(index >= 0 ? selected.filter((x) => x !== option) : [...selected, option])} feedback={feedback} reduceMotion={reduceMotion} accessibilityLabel={`${option}${feedback === 'correct' ? ', correct position' : feedback === 'incorrect' ? `, incorrect position, correct position ${expected.indexOf(option) + 1}` : ''}`} accessibilityState={{ selected: index >= 0 }} containerStyle={shouldReflow ? { alignSelf: 'stretch' } : { flex: 1 }} contentStyle={[styles.option, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : index >= 0 ? colors.primary : colors.border, backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : index >= 0 ? colors.secondary : colors.card }]}>
-          <Text style={{ color: feedback ? (feedback === 'correct' ? colors.successForeground : colors.destructiveForeground) : colors.foreground }}>{feedback === 'correct' ? '✓ ' : feedback === 'incorrect' ? '✕ ' : ''}{index >= 0 ? `${index + 1}. ` : ''}{option}</Text>
+          <AnimatedAnswerPressable disabled={disabled} onPressIn={() => selectionHaptic(hapticsEnabled)} onPress={() => setValue(index >= 0 ? selected.filter((x) => x !== option) : [...selected, option])} feedback={feedback} reduceMotion={reduceMotion} accessibilityLabel={`${label}${feedback === 'correct' ? locale.t('practice.correctPosition') : feedback === 'incorrect' ? locale.t('practice.incorrectPosition', { position: locale.number(expected.indexOf(option) + 1) }) : ''}`} accessibilityState={{ selected: index >= 0 }} containerStyle={shouldReflow ? { alignSelf: 'stretch' } : { flex: 1 }} contentStyle={[styles.option, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : index >= 0 ? colors.primary : colors.border, backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : index >= 0 ? colors.secondary : colors.card }]}>
+           <Text style={{ color: feedback ? (feedback === 'correct' ? colors.successForeground : colors.destructiveForeground) : colors.foreground }}>{feedback === 'correct' ? '✓ ' : feedback === 'incorrect' ? '✕ ' : ''}{index >= 0 ? `${index + 1}. ` : ''}{label}</Text>
         </AnimatedAnswerPressable>
-          {index >= 0 && !disabled && <View style={shouldReflow ? styles.largeOrderActions : undefined}><Pressable accessibilityRole="button" accessibilityLabel={`Move ${option} up`} onPress={() => { selectionHaptic(hapticsEnabled); move(index, -1); }} style={shouldReflow ? styles.largeOrderArrow : undefined}><Text style={{ color: colors.primary }}>↑</Text></Pressable><Pressable accessibilityRole="button" accessibilityLabel={`Move ${option} down`} onPress={() => { selectionHaptic(hapticsEnabled); move(index, 1); }} style={shouldReflow ? styles.largeOrderArrow : undefined}><Text style={{ color: colors.primary }}>↓</Text></Pressable></View>}
+           {index >= 0 && !disabled && <View style={shouldReflow ? styles.largeOrderActions : undefined}><Pressable accessibilityRole="button" accessibilityLabel={locale.t('practice.moveOptionUp', { option: label })} onPress={() => { selectionHaptic(hapticsEnabled); move(index, -1); }} style={shouldReflow ? styles.largeOrderArrow : undefined}><Text style={{ color: colors.primary }}>↑</Text></Pressable><Pressable accessibilityRole="button" accessibilityLabel={locale.t('practice.moveOptionDown', { option: label })} onPress={() => { selectionHaptic(hapticsEnabled); move(index, 1); }} style={shouldReflow ? styles.largeOrderArrow : undefined}><Text style={{ color: colors.primary }}>↓</Text></Pressable></View>}
        </AdaptiveRow>;
     })}</View></View>;
   }
   const selected = Array.isArray(value) ? value : [];
   const expected = Array.isArray(question.answer) ? question.answer : [question.answer];
-  return <View style={{ gap: 10 }}>{image}<View style={styles.options}>{options.map((option) => {
-    const active = question.taskType === 'select-all' ? selected.includes(option) : value === option;
+   return <View style={{ gap: 10 }}>{image}<View style={styles.options}>{options.map((option, optionIndex) => {
+     const label = labels[optionIndex];
+     const active = question.taskType === 'select-all' ? selected.includes(option) : value === option;
     const feedback: AnswerFeedback | undefined = disabled
       ? expected.includes(option) ? 'correct' : active ? 'incorrect' : undefined
       : undefined;
-    return <AnimatedAnswerPressable key={option} disabled={disabled} onPressIn={() => selectionHaptic(hapticsEnabled)} onPress={() => setValue(question.taskType === 'select-all' ? (active ? selected.filter((x) => x !== option) : [...selected, option]) : option)} feedback={feedback} reduceMotion={reduceMotion} accessibilityLabel={`${option}${feedback === 'correct' ? ', correct answer' : feedback === 'incorrect' ? ', incorrect selection' : ''}`} accessibilityState={{ selected: active }} contentStyle={[styles.option, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : active ? colors.primary : colors.border, backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : active ? colors.secondary : colors.card }]}>
-      <Text style={{ color: feedback ? (feedback === 'correct' ? colors.successForeground : colors.destructiveForeground) : colors.foreground }}>{feedback === 'correct' ? '✓ ' : feedback === 'incorrect' ? '✕ ' : active ? '✓ ' : ''}{option}</Text>
+     return <AnimatedAnswerPressable key={option} disabled={disabled} onPressIn={() => selectionHaptic(hapticsEnabled)} onPress={() => setValue(question.taskType === 'select-all' ? (active ? selected.filter((x) => x !== option) : [...selected, option]) : option)} feedback={feedback} reduceMotion={reduceMotion} accessibilityLabel={`${label}${feedback === 'correct' ? locale.t('practice.correctAnswerOption') : feedback === 'incorrect' ? locale.t('practice.incorrectSelection') : ''}`} accessibilityState={{ selected: active }} contentStyle={[styles.option, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : active ? colors.primary : colors.border, backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : active ? colors.secondary : colors.card }]}>
+       <Text style={{ color: feedback ? (feedback === 'correct' ? colors.successForeground : colors.destructiveForeground) : colors.foreground }}>{feedback === 'correct' ? '✓ ' : feedback === 'incorrect' ? '✕ ' : active ? '✓ ' : ''}{label}</Text>
     </AnimatedAnswerPressable>;
   })}</View></View>;
 }

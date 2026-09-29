@@ -8,23 +8,56 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Screen } from '@/components/Screen';
 import { useColors } from '@/hooks/useColors';
 import { useStudy } from '@/context/StudyContext';
+import { useLocale } from '@/locales/useLocale';
 
 export default function SettingsScreen() {
   const colors = useColors(); const { resetLocalState, preferences, updatePreferences, saveError, retrySave } = useStudy();
+  const { language, setLanguage, hydrated, saveError: languageSaveError, retrySave: retryLanguageSave, t } = useLocale();
   const { isLargeText, isCompactTextLayout } = useTypographyLayout();
   const shouldReflow = isLargeText || isCompactTextLayout;
   const insets = useSafeAreaInsets();
   const [resetOpen, setResetOpen] = useState(false);
   const [aboutExpanded, setAboutExpanded] = useState(false);
-  return <><Stack.Screen options={{ title: 'Settings' }} /><Screen>
-    <Text style={[styles.eyebrow, { color: colors.primary }]}>PREFERENCES</Text><Heading style={[styles.title, { color: colors.foreground }]}>Settings & help</Heading>
+  return <><Stack.Screen options={{ title: t('settings.navigationTitle') }} /><Screen>
+    <Text style={[styles.eyebrow, { color: colors.primary }]}>{t('settings.eyebrow')}</Text><Heading style={[styles.title, { color: colors.foreground }]}>{t('settings.pageTitle')}</Heading>
     <AdaptiveCard style={[styles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}>
-      <Heading style={[styles.heading, { color: colors.foreground }]}>Appearance</Heading>
-      <View style={styles.choices}>{(['system', 'light', 'dark'] as const).map((theme) => <AdaptiveButton key={theme} accessibilityRole="radio" accessibilityLabel={`${theme} theme`} accessibilityState={{ checked: preferences.theme === theme }} aria-checked={preferences.theme === theme} onPress={() => updatePreferences({ theme })} style={[styles.choice, shouldReflow && styles.choiceReflow, { borderColor: preferences.theme === theme ? colors.primary : colors.border }]}><Text style={{ color: colors.foreground }}>{theme[0].toUpperCase() + theme.slice(1)}</Text></AdaptiveButton>)}</View>
-      <View style={styles.choices}>{(['small', 'default', 'large'] as const).map((textScale) => <AdaptiveButton key={textScale} accessibilityRole="radio" accessibilityLabel={`Text ${textScale}`} accessibilityState={{ checked: preferences.textScale === textScale }} aria-checked={preferences.textScale === textScale} onPress={() => updatePreferences({ textScale })} style={[styles.choice, shouldReflow && styles.choiceReflow, { borderColor: preferences.textScale === textScale ? colors.primary : colors.border }]}><Text style={{ color: colors.foreground }}>Text {textScale}</Text></AdaptiveButton>)}</View>
+      <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.appearanceHeading')}</Heading>
+      <View style={styles.choices}>{(['system', 'light', 'dark'] as const).map((theme) => {
+        const selected = preferences.theme === theme;
+        return <AdaptiveButton key={theme} accessibilityRole="radio" accessibilityLabel={t('settings.theme.accessibilityLabel', { theme: t(`settings.theme.${theme}`) })} accessibilityState={{ checked: selected }} aria-checked={selected} onPress={() => updatePreferences({ theme })} style={[styles.choice, shouldReflow && styles.choiceReflow, { borderColor: selected ? colors.primary : colors.border, backgroundColor: selected ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground, fontWeight: selected ? '700' : '400' }}>{selected ? '✓ ' : ''}{t(`settings.theme.${theme}`)}</Text></AdaptiveButton>;
+      })}</View>
+      <View style={styles.choices}>{(['small', 'default', 'large'] as const).map((textScale) => {
+        const selected = preferences.textScale === textScale;
+        return <AdaptiveButton key={textScale} accessibilityRole="radio" accessibilityLabel={t('settings.textScale.label', { scale: t(`settings.textScale.${textScale}`) })} accessibilityState={{ checked: selected }} aria-checked={selected} onPress={() => updatePreferences({ textScale })} style={[styles.choice, shouldReflow && styles.choiceReflow, { borderColor: selected ? colors.primary : colors.border, backgroundColor: selected ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground, fontWeight: selected ? '700' : '400' }}>{selected ? '✓ ' : ''}{t('settings.textScale.label', { scale: t(`settings.textScale.${textScale}`) })}</Text></AdaptiveButton>;
+      })}</View>
+      <View style={styles.language}>
+        <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.language.heading')}</Heading>
+        <Text style={{ color: colors.mutedForeground }}>{t('settings.language.description')}</Text>
+        <View style={styles.choices}>
+          {([
+            { value: 'en', label: 'English' },
+            { value: 'es', label: 'Español' },
+          ] as const).map(({ value, label }) => {
+            const selected = language === value;
+            return <AdaptiveButton
+              key={value}
+              testID={`language-${value}`}
+              disabled={!hydrated}
+              accessibilityRole="radio"
+              accessibilityLabel={label}
+              accessibilityState={{ checked: selected, disabled: !hydrated }}
+              aria-checked={selected}
+              onPress={() => setLanguage(value)}
+              style={[styles.choice, styles.languageChoice, shouldReflow && styles.choiceReflow, { borderColor: selected ? colors.primary : colors.border, backgroundColor: selected ? colors.secondary : colors.card }]}
+            >
+              <Text style={{ color: colors.foreground, fontWeight: selected ? '700' : '400' }}>{selected ? '✓ ' : ''}{label}</Text>
+            </AdaptiveButton>;
+          })}
+        </View>
+      </View>
       <View style={styles.haptics}>
-        <Heading style={[styles.heading, { color: colors.foreground }]}>Haptics</Heading>
-        <Text style={{ color: colors.mutedForeground }}>Vibration feedback for practice answers.</Text>
+        <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.haptics.heading')}</Heading>
+        <Text style={{ color: colors.mutedForeground }}>{t('settings.haptics.description')}</Text>
         <View style={styles.choices}>
           {([true, false] as const).map((enabled) => {
             const selected = preferences.haptics === enabled;
@@ -32,53 +65,54 @@ export default function SettingsScreen() {
               key={String(enabled)}
               testID={enabled ? 'haptics-on' : 'haptics-off'}
               accessibilityRole="radio"
-              accessibilityLabel={`Haptics ${enabled ? 'on' : 'off'}`}
+              accessibilityLabel={t('settings.haptics.accessibilityLabel', { state: t(`settings.haptics.${enabled ? 'on' : 'off'}`) })}
               accessibilityState={{ checked: selected }}
               aria-checked={selected}
               onPress={() => updatePreferences({ haptics: enabled })}
               style={[styles.choice, styles.hapticsChoice, shouldReflow && styles.choiceReflow, { borderColor: selected ? colors.primary : colors.border, backgroundColor: selected ? colors.secondary : colors.card }]}
             >
-              <Text style={{ color: colors.foreground, fontWeight: selected ? '700' : '400' }}>{selected ? '✓ ' : ''}{enabled ? 'On' : 'Off'}</Text>
+              <Text style={{ color: colors.foreground, fontWeight: selected ? '700' : '400' }}>{selected ? '✓ ' : ''}{t(`settings.haptics.${enabled ? 'on' : 'off'}`)}</Text>
             </AdaptiveButton>;
           })}
         </View>
       </View>
-      {saveError && <AdaptiveButton onPress={retrySave}><Text style={{ color: colors.destructive }}>{saveError} Tap to retry.</Text></AdaptiveButton>}
-      <AdaptiveButton testID="reset-local" onPress={() => setResetOpen(true)} style={[styles.reset, { borderColor: colors.destructive }]}><Text style={{ color: colors.destructive, fontWeight: '700' }}>Reset local study data</Text></AdaptiveButton>
+      {saveError && <AdaptiveButton onPress={retrySave}><Text style={{ color: colors.destructive }}>{saveError === 'Local save failed. Retry to protect your offline progress.' ? t('settings.saveError.initial') : saveError === 'Local save failed again.' ? t('settings.saveError.retryFailed') : saveError} {t('settings.saveError.retryPrompt')}</Text></AdaptiveButton>}
+      {languageSaveError && <AdaptiveButton accessibilityRole="button" onPress={retryLanguageSave} style={styles.reset}><Text style={{ color: colors.destructive }}>{t('settings.language.saveError')}</Text></AdaptiveButton>}
+      <AdaptiveButton testID="reset-local" onPress={() => setResetOpen(true)} style={[styles.reset, { borderColor: colors.destructive }]}><Text style={{ color: colors.destructive, fontWeight: '700' }}>{t('settings.resetLocalData.button')}</Text></AdaptiveButton>
     </AdaptiveCard>
     <AdaptiveCard style={[styles.aboutCard, { backgroundColor: colors.card, borderColor: colors.border }]}>
       <AdaptiveButton
         testID="settings-about-toggle"
         accessibilityRole="button"
-        accessibilityLabel="About Boneefied & how it works"
+        accessibilityLabel={t('settings.about.accessibilityLabel')}
         accessibilityState={{ expanded: aboutExpanded }}
         onPress={() => setAboutExpanded((current) => !current)}
         style={styles.aboutToggle}
       >
-        <Text style={[styles.aboutToggleTitle, { color: colors.foreground }]}>About Boneefied &amp; how it works</Text>
+        <Text style={[styles.aboutToggleTitle, { color: colors.foreground }]}>{t('settings.about.toggleTitle')}</Text>
         <Feather name={aboutExpanded ? 'chevron-up' : 'chevron-down'} size={20} color={colors.mutedForeground} />
       </AdaptiveButton>
       {aboutExpanded && <View style={styles.aboutContent}>
-        <Heading style={[styles.heading, { color: colors.foreground }]}>About Boneefied</Heading>
-        <Text style={{ color: colors.mutedForeground, lineHeight: 20 }}>Boneefied helps you study anatomy with lessons, practice, and progress tracking. Your bookmarks and study activity stay on this device, even when you&apos;re offline.</Text>
-        <Heading style={[styles.heading, { color: colors.foreground }]}>How it works</Heading>
-        <Text style={{ color: colors.mutedForeground, lineHeight: 20 }}>Learn shows helpful cues; Recall hides them so you can test yourself. Questions you answer incorrectly appear in Missed for another try. Progress shows your accuracy and what you&apos;ve covered.</Text>
-        <Heading style={[styles.heading, { color: colors.foreground }]}>Study content</Heading>
-        <Text style={{ color: colors.mutedForeground, lineHeight: 20 }}>Explore anatomy by system, learn key structures and relationships, and revisit topics through practice at your own pace.</Text>
+        <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.about.heading')}</Heading>
+        <Text style={{ color: colors.mutedForeground, lineHeight: 20 }}>{t('settings.about.description')}</Text>
+        <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.about.howItWorksHeading')}</Heading>
+        <Text style={{ color: colors.mutedForeground, lineHeight: 20 }}>{t('settings.about.howItWorksDescription')}</Text>
+        <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.about.studyContentHeading')}</Heading>
+        <Text style={{ color: colors.mutedForeground, lineHeight: 20 }}>{t('settings.about.studyContentDescription')}</Text>
       </View>}
     </AdaptiveCard>
   </Screen>
     <Modal visible={resetOpen} transparent animationType="fade" onRequestClose={() => setResetOpen(false)}>
       <ScrollView style={styles.modalOverlay} contentContainerStyle={[styles.modalBackdrop, shouldReflow && { paddingTop: Math.max(24, insets.top + 12), paddingBottom: Math.max(24, insets.bottom + 12) }]}>
         <AdaptiveCard accessibilityRole="alert" style={[styles.modalCard, { backgroundColor: colors.card, borderColor: colors.border }]}>
-          <Heading style={[styles.heading, { color: colors.foreground }]}>Reset local data?</Heading>
-          <Text style={{ color: colors.mutedForeground, lineHeight: 20 }}>This clears attempts, misses, bookmarks, and progress on this device.</Text>
+          <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.resetConfirmation.title')}</Heading>
+          <Text style={{ color: colors.mutedForeground, lineHeight: 20 }}>{t('settings.resetConfirmation.description')}</Text>
           <AdaptiveRow style={[styles.modalActions, shouldReflow && styles.modalActionsLarge]}>
             <AdaptiveButton accessibilityRole="button" onPress={() => setResetOpen(false)} style={[styles.modalButton, shouldReflow && styles.modalButtonLarge, { borderColor: colors.border }]}>
-              <Text style={{ color: colors.foreground, fontWeight: '700' }}>Cancel</Text>
+              <Text style={{ color: colors.foreground, fontWeight: '700' }}>{t('settings.resetConfirmation.cancel')}</Text>
             </AdaptiveButton>
             <AdaptiveButton accessibilityRole="button" onPress={() => { resetLocalState(); setResetOpen(false); }} style={[styles.modalButton, shouldReflow && styles.modalButtonLarge, { backgroundColor: colors.destructive, borderColor: colors.destructive }]}>
-              <Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>Reset</Text>
+              <Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{t('settings.resetConfirmation.confirm')}</Text>
             </AdaptiveButton>
           </AdaptiveRow>
         </AdaptiveCard>
@@ -95,6 +129,8 @@ const styles = StyleSheet.create({
   choice: { borderWidth: 1, borderRadius: 10, padding: 10 },
   choiceReflow: { minHeight: 44, justifyContent: 'center' },
   haptics: { gap: 8 },
+  language: { gap: 8 },
+  languageChoice: { minWidth: 112, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
   hapticsChoice: { minWidth: 96, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
   reset: { borderWidth: 1, borderRadius: 12, padding: 14, alignItems: 'center' },
   aboutCard: { borderWidth: 1, borderRadius: 16, padding: 16 },

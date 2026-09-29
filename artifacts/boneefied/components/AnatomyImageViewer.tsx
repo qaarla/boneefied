@@ -6,6 +6,8 @@ import { useColors } from '@/hooks/useColors';
 import type { NormalizedHotspot, VerifiedLabel } from '@/content/model';
 import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';
 import { useOfflineImage } from '@/hooks/useOfflineImage';
+import { useLocale } from '@/locales/useLocale';
+import { content } from '@/content/canonical';
 
 type Props = {
   source?: number;
@@ -25,6 +27,7 @@ type Props = {
 /** Source-safe image viewer. Hotspots are normalized to the contained image, not the frame. */
 export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false, caption, imageAspectRatio = 1.45, onHotspotPress, labels = [], bakedLabels = false, selectedHotspotId, correctHotspotId, submitted = false, reduceMotion = false }: Props) {
   const colors = useColors();
+  const locale = useLocale();
   const { isLargeText, isCompactTextLayout } = useTypographyLayout();
   const reflow = isCompactTextLayout || isLargeText;
   const image = useOfflineImage(source);
@@ -61,14 +64,18 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
   const reset = () => { setZoom(1); setOffset({ x: 0, y: 0 }); };
   const showAll = () => setRevealed(new Set(labels.map((label) => label.structureId)));
   const hideAll = () => setRevealed(new Set());
+  const structureName = (id: string) => {
+    const structure = content.structures.find((item) => item.id === id);
+    return structure ? locale.structure(structure).canonicalName : id;
+  };
   // Frame aspect ratio is 1.45. These percentages describe the contain box.
   const frameRatio = 1.45;
   const containedWidth = Math.min(1, imageAspectRatio / frameRatio);
   const containedHeight = Math.min(1, frameRatio / imageAspectRatio);
-  return <View style={[styles.frame, { backgroundColor: colors.card, borderColor: colors.border }]} accessibilityLabel="Anatomy image viewer">
-    <View {...responder.panHandlers} style={styles.gestureArea} accessibilityLabel="Pan or pinch to inspect image">
-      {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>No verified course image available</Text></View>}
-      {source && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ?? 'Loading anatomy image…'}</Text></View>}
+  return <View style={[styles.frame, { backgroundColor: colors.card, borderColor: colors.border }]} accessibilityLabel={locale.t('imageViewer.accessibility')}>
+    <View {...responder.panHandlers} style={styles.gestureArea} accessibilityLabel={locale.t('imageViewer.inspectGestures')}>
+      {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{locale.t('imageViewer.unavailable')}</Text></View>}
+      {source && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ? locale.t('offlineImage.unavailableOffline') : locale.t('imageViewer.loading')}</Text></View>}
       {source && image.source && <View pointerEvents="box-none" style={[styles.canvas, { transform: [{ translateX: offset.x }, { translateY: offset.y }, { scale: zoom }] }]}>
         <Image source={image.source} resizeMode="contain" style={styles.image} />
         {hotspots.map((hotspot, index) => {
@@ -82,8 +89,8 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
             onPress={() => onHotspotPress?.(hotspot)}
             feedback={feedback}
             reduceMotion={reduceMotion}
-            accessibilityLabel={feedback === 'correct' ? 'Correct structure hotspot' : feedback === 'incorrect' ? 'Incorrect selected hotspot' : revealLabels ? `${hotspot.structureId} hotspot` : `Hotspot ${index + 1}`}
-            accessibilityHint={onHotspotPress && !submitted ? 'Select this hotspot as your answer' : undefined}
+            accessibilityLabel={feedback === 'correct' ? locale.t('imageViewer.correctHotspot') : feedback === 'incorrect' ? locale.t('imageViewer.incorrectHotspot') : revealLabels ? locale.t('imageViewer.structureHotspot', { structureId: structureName(hotspot.structureId) }) : locale.t('imageViewer.hotspotNumber', { index: locale.number(index + 1) })}
+            accessibilityHint={onHotspotPress && !submitted ? locale.t('imageViewer.selectHotspotHint') : undefined}
             accessibilityState={{ selected }}
             hitSlop={reflow ? 16 : undefined}
             testID={`hotspot-${hotspot.structureId}`}
@@ -97,17 +104,17 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
         })}
         {labels.map((label, index) => {
           const visible = revealLabels || revealed.has(label.structureId);
-          return <Pressable key={`label-${label.structureId}`} onPress={() => setRevealed((current) => { const next = new Set(current); if (next.has(label.structureId)) next.delete(label.structureId); else next.add(label.structureId); return next; })} accessibilityRole="button" accessibilityState={{ selected: visible }} accessibilityLabel={visible ? `Marker ${index + 1}, ${label.displayLabel}. Hide label` : `Marker ${index + 1}. Reveal ${label.displayLabel}`} accessibilityHint="Activates this numbered image marker" hitSlop={reflow ? 7 : undefined} style={[styles.labelMarker, { left: `${(1 - containedWidth) * 50 + label.x * containedWidth * 100}%`, top: `${(1 - containedHeight) * 50 + label.y * containedHeight * 100}%`, borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card }]}>
-              <Text style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: reflow ? 14 : 11, fontWeight: '700' }}>{visible ? (reflow ? String(index + 1) : label.displayLabel) : '?'}</Text>
+          return <Pressable key={`label-${label.structureId}`} onPress={() => setRevealed((current) => { const next = new Set(current); if (next.has(label.structureId)) next.delete(label.structureId); else next.add(label.structureId); return next; })} accessibilityRole="button" accessibilityState={{ selected: visible }} accessibilityLabel={visible ? locale.t('imageViewer.hideMarker', { index: locale.number(index + 1), label: label.displayLabel }) : locale.t('imageViewer.revealMarker', { index: locale.number(index + 1), label: label.displayLabel })} accessibilityHint={locale.t('imageViewer.markerHint')} hitSlop={reflow ? 7 : undefined} style={[styles.labelMarker, { left: `${(1 - containedWidth) * 50 + label.x * containedWidth * 100}%`, top: `${(1 - containedHeight) * 50 + label.y * containedHeight * 100}%`, borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card }]}>
+              <Text style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: reflow ? 14 : 11, fontWeight: '700' }}>{visible ? (reflow ? locale.number(index + 1) : label.displayLabel) : '?'}</Text>
           </Pressable>;
         })}
       </View>}
     </View>
-      {source ? <View style={[styles.controls, reflow && styles.controlsLarge]}><Pressable onPress={reset} hitSlop={4} accessibilityRole="button" accessibilityLabel="Reset image zoom and position" testID="viewer-reset" style={[styles.reset, reflow && styles.controlActionLarge, { backgroundColor: colors.card }]}><Text style={{ color: colors.foreground }}>Reset</Text></Pressable>{labels.length > 0 && <><Pressable onPress={showAll} hitSlop={4} accessibilityRole="button" accessibilityLabel="Reveal all image labels" style={reflow && styles.controlActionLarge}><Text style={{ color: colors.primary }}>Reveal all</Text></Pressable><Pressable onPress={hideAll} hitSlop={4} accessibilityRole="button" accessibilityLabel="Hide all image labels" style={reflow && styles.controlActionLarge}><Text style={{ color: colors.primary }}>Hide all</Text></Pressable></>}</View> : null}
+      {source ? <View style={[styles.controls, reflow && styles.controlsLarge]}><Pressable onPress={reset} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.reset.accessibility')} testID="viewer-reset" style={[styles.reset, reflow && styles.controlActionLarge, { backgroundColor: colors.card }]}><Text style={{ color: colors.foreground }}>{locale.t('imageViewer.reset.visible')}</Text></Pressable>{labels.length > 0 && <><Pressable onPress={showAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.revealAll.accessibility')} style={reflow && styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.revealAll.visible')}</Text></Pressable><Pressable onPress={hideAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.hideAll.accessibility')} style={reflow && styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.hideAll.visible')}</Text></Pressable></>}</View> : null}
       {reflow && labels.some((label) => revealLabels || revealed.has(label.structureId)) && <View style={styles.labelList}>
-        {labels.map((label, index) => (revealLabels || revealed.has(label.structureId)) && <Text key={label.structureId} style={{ color: colors.foreground }}>{index + 1}. {label.displayLabel}</Text>)}
+        {labels.map((label, index) => (revealLabels || revealed.has(label.structureId)) && <Text key={label.structureId} style={{ color: colors.foreground }}>{locale.number(index + 1)}. {label.displayLabel}</Text>)}
      </View>}
-    {bakedLabels && <Text style={[styles.notice, { color: colors.mutedForeground }]}>Original labels are part of this source image and remain visible; this image is not recall-ready.</Text>}
+     {bakedLabels && <Text style={[styles.notice, { color: colors.mutedForeground }]}>{locale.t('imageViewer.bakedLabelsNotice')}</Text>}
     {caption ? <Text style={[styles.caption, { color: colors.mutedForeground }]}>{caption}</Text> : null}
   </View>;
 }

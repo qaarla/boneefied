@@ -1,6 +1,14 @@
 import type { ContentCatalog, Module, Structure } from './model';
+import { spanishModules } from '../locales/es/index.ts';
 
-type Name = { label: string; normalized: string; singular: string; canonical: boolean };
+type Name = {
+  label: string;
+  normalized: string;
+  singular: string;
+  canonical: boolean;
+  englishLabel: string;
+  spanishLabel: string;
+};
 export type AnatomySearchEntry = { structure: Structure; module: Module; names: Name[] };
 export type AnatomySearchMatch = {
   structure: Structure;
@@ -31,12 +39,31 @@ function singularize(text: string): string {
 
 export function createAnatomySearchIndex(catalog: ContentCatalog): AnatomySearchEntry[] {
   const modules = new Map(catalog.modules.filter((module) => module.visible && module.published && module.contentStatus === 'available').map((module) => [module.id, module]));
+  const indexedStructureIds = new Set<string>();
   return catalog.structures.flatMap((structure) => {
     const module = modules.get(structure.moduleId);
-    if (!module || structure.verificationStatus !== 'verified') return [];
-    const names = [structure.canonicalName, ...structure.acceptedAliases].map((label, index) => {
+    if (!module || structure.verificationStatus !== 'verified' || indexedStructureIds.has(structure.id)) return [];
+    indexedStructureIds.add(structure.id);
+    const spanishStructure = spanishModules[module.id]?.structures[structure.id];
+    const englishNames = [structure.canonicalName, ...structure.acceptedAliases];
+    const spanishNames = spanishStructure ? [spanishStructure.name, ...spanishStructure.aliases] : [];
+    const pairedNames = [
+      ...englishNames.map((englishLabel, index) => ({
+        label: englishLabel,
+        englishLabel,
+        spanishLabel: spanishNames[index] ?? spanishNames[0] ?? englishLabel,
+        canonical: index === 0,
+      })),
+      ...spanishNames.map((spanishLabel, index) => ({
+        label: spanishLabel,
+        englishLabel: englishNames[index] ?? englishNames[0],
+        spanishLabel,
+        canonical: index === 0,
+      })),
+    ];
+    const names = pairedNames.map(({ label, englishLabel, spanishLabel, canonical }) => {
       const normalized = normalizeSearchText(label);
-      return { label, normalized, singular: singularize(normalized), canonical: index === 0 };
+      return { label, normalized, singular: singularize(normalized), canonical, englishLabel, spanishLabel };
     }).filter((name) => name.normalized);
     return [{ structure, module, names }];
   });
@@ -65,7 +92,7 @@ function editDistance(a: string, b: string, max: number): number {
 
 type Scored = AnatomySearchMatch & { tier: number; detail: number };
 
-export function searchAnatomy(index: AnatomySearchEntry[], query: string, limit = 8): AnatomySearchMatch[] {
+export function searchAnatomy(index: AnatomySearchEntry[], query: string, limit = 8, language: 'en' | 'es' = 'en'): AnatomySearchMatch[] {
   const normalized = normalizeSearchText(query);
   if (!normalized || limit <= 0) return [];
   const singular = singularize(normalized);
@@ -99,7 +126,12 @@ export function searchAnatomy(index: AnatomySearchEntry[], query: string, limit 
         }
       }
       if (tier === 4) continue;
-      const match: Scored = { structure, module, matchedTerm: name.label, kind: tier === 0 ? 'exact-canonical' : tier === 1 ? 'exact-alias' : tier === 2 ? 'partial' : 'fuzzy', tier, detail };
+      const match: Scored = {
+        structure, module,
+        matchedTerm: language === 'es' ? name.spanishLabel : name.englishLabel,
+        kind: tier === 0 ? 'exact-canonical' : tier === 1 ? 'exact-alias' : tier === 2 ? 'partial' : 'fuzzy',
+        tier, detail,
+      };
       if (!best || match.tier < best.tier || (match.tier === best.tier && match.detail < best.detail)) best = match;
     }
     if (best) scored.push(best);

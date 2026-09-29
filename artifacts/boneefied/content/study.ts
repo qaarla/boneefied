@@ -114,13 +114,16 @@ export function createPracticeSession(
 export function submitSessionAnswer(state: StudyState, sessionId: string, answer: SessionAnswer, attempt?: Attempt): StudyState {
   const session = (state.sessions ?? []).find((item) => item.id === sessionId);
   if (!session || session.status === 'completed' || session.answers.some((item) => item.questionId === answer.questionId && item.outcome !== 'unanswered')) return state;
-  const next = { ...session, answers: [...session.answers, answer], position: Math.min(session.position + 1, session.questionIds.length), updatedAt: answer.submittedAt ?? new Date().toISOString() };
+  const { draft: _draft, ...withoutDraft } = session;
+  const next = { ...withoutDraft, answers: [...session.answers, answer], position: Math.min(session.position + 1, session.questionIds.length), updatedAt: answer.submittedAt ?? new Date().toISOString() };
   const withSession = upsertSession(state, next);
   return attempt ? applyAttempt(withSession, attempt) : withSession;
 }
 export function completeSession(state: StudyState, sessionId: string, completedAt = new Date().toISOString()): StudyState {
   const session = (state.sessions ?? []).find((item) => item.id === sessionId);
-  return session ? upsertSession(state, { ...session, status: 'completed', position: session.questionIds.length, completedAt, updatedAt: completedAt }) : state;
+  if (!session) return state;
+  const { draft: _draft, ...withoutDraft } = session;
+  return upsertSession(state, { ...withoutDraft, status: 'completed', position: session.questionIds.length, completedAt, updatedAt: completedAt });
 }
 
 function normalizeAnswer(value: string): string {

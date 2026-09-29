@@ -12,11 +12,13 @@ import { createAnatomySearchIndex, searchAnatomy } from '@/content/search';
 import { definitionForStructure } from '@/content/glossary';
 import { useColors } from '@/hooks/useColors';
 import { useStudy } from '@/context/StudyContext';
+import { useLocale } from '@/locales/useLocale';
 
 const anatomySearchIndex = createAnatomySearchIndex(content);
 
 export default function StudyScreen() {
   const colors = useColors();
+  const { language, t, module: localizeModule, structure: localizeStructure, definition: localizeDefinition, number } = useLocale();
   const { isLargeText, isCompactTextLayout } = useTypographyLayout();
   const reflow = isCompactTextLayout || isLargeText;
   const router = useRouter();
@@ -32,10 +34,10 @@ export default function StudyScreen() {
   const pendingReveal = React.useRef(false);
   const revealFrame = React.useRef<number | null>(null);
   const systems = [
-    ['Cells & tissues', 'cell'], ['Integumentary', 'skin'], ['Skeletal', 'skeletal-system'], ['Joints & ligaments', 'joints'],
-    ['Muscular', 'muscular'], ['Nervous system & brain', 'nervous'], ['Cranial & peripheral nerves', 'nerves'], ['Special senses', 'senses'],
-    ['Endocrine', 'endocrine'], ['Blood & cardiovascular', 'cardiovascular'], ['Blood vessels', 'vessels'], ['Lymphatic', 'lymphatic'],
-    ['Respiratory', 'respiratory'], ['Digestive', 'digestive'], ['Urinary', 'urinary'], ['Male reproductive', 'male-reproductive'], ['Female reproductive', 'female-reproductive'],
+    ['study.system.cellsAndTissues', 'cell'], ['study.system.integumentary', 'skin'], ['study.system.skeletal', 'skeletal-system'], ['study.system.jointsAndLigaments', 'joints'],
+    ['study.system.muscular', 'muscular'], ['study.system.nervousAndBrain', 'nervous'], ['study.system.cranialAndPeripheralNerves', 'nerves'], ['study.system.specialSenses', 'senses'],
+    ['study.system.endocrine', 'endocrine'], ['study.system.bloodAndCardiovascular', 'cardiovascular'], ['study.system.bloodVessels', 'vessels'], ['study.system.lymphatic', 'lymphatic'],
+    ['study.system.respiratory', 'respiratory'], ['study.system.digestive', 'digestive'], ['study.system.urinary', 'urinary'], ['study.system.maleReproductive', 'male-reproductive'], ['study.system.femaleReproductive', 'female-reproductive'],
   ] as const;
    const matchesSystem = (item: (typeof content.modules)[number], system: string) => item.system === system || item.id === system || (system === 'nerves' && item.id === 'nervous-system');
    const visibleModules = content.modules.filter((item) => item.visible && item.published && (!selectedSystem || matchesSystem(item, selectedSystem)));
@@ -77,17 +79,22 @@ export default function StudyScreen() {
   };
   const { mastery, bookmarks, preferences, toggleBookmark } = useStudy();
   const [query, setQuery] = React.useState('');
-  const matching = React.useMemo(() => searchAnatomy(anatomySearchIndex, query), [query]);
-   const systemChoices = systems.map(([label, id]) => <AdaptiveButton key={id} accessibilityRole="button" hitSlop={4} onPress={() => selectSystem(id)} style={[styles.system, reflow && responsive.systemLarge, { borderColor: selectedSystem === id ? colors.primary : colors.border, backgroundColor: selectedSystem === id ? colors.secondary : colors.card }]}><View style={[responsive.systemName, reflow && responsive.systemNameLarge]}><Text style={{ color: colors.foreground, fontWeight: '600' }}>{label}</Text></View><Text style={[responsive.trailingStatus, reflow && responsive.systemStatusLarge, { color: colors.mutedForeground }]}>{content.modules.some((item) => matchesSystem(item, id)) ? 'Open' : 'Coming next'}</Text></AdaptiveButton>);
+  const matching = React.useMemo(() => searchAnatomy(anatomySearchIndex, query, 8, language), [query, language]);
+   const systemChoices = systems.map(([key, id]) => <AdaptiveButton key={id} accessibilityRole="button" hitSlop={4} onPress={() => selectSystem(id)} style={[styles.system, reflow && responsive.systemLarge, { borderColor: selectedSystem === id ? colors.primary : colors.border, backgroundColor: selectedSystem === id ? colors.secondary : colors.card }]}><View style={[responsive.systemName, reflow && responsive.systemNameLarge]}><Text style={{ color: colors.foreground, fontWeight: '600' }}>{t(key)}</Text></View><Text style={[responsive.trailingStatus, reflow && responsive.systemStatusLarge, { color: colors.mutedForeground }]}>{t(content.modules.some((item) => matchesSystem(item, id)) ? 'study.system.openStatus' : 'study.system.comingNextStatus')}</Text></AdaptiveButton>);
   const searchResults = matching.map((match) => {
-    const name = match.structure.canonicalName;
-    const context = `${match.module.title} · ${match.structure.category}`;
-    const definition = definitionForStructure(match.structure.id);
+    const localizedStructure = localizeStructure(match.structure);
+    const localizedModule = localizeModule(match.module);
+    const name = localizedStructure.canonicalName;
+    const context = `${localizedModule.title} · ${localizedStructure.category}`;
+    const englishDefinition = definitionForStructure(match.structure.id);
+    const definition = englishDefinition ? localizeDefinition(match.structure.id, englishDefinition) : undefined;
     return <View key={match.structure.id} style={[searchStyles.row, { borderTopColor: colors.border }]}>
       <Pressable
         testID={`search-result-${match.structure.id}`}
         accessibilityRole="button"
-        accessibilityLabel={`${name}, ${definition ?? 'definition awaiting source review'}, ${context}. ${definition ? 'Open glossary entry' : 'Open study module'}`}
+        accessibilityLabel={t(definition ? 'study.searchResultGlossaryAccessibility' : 'study.searchResultModuleAccessibility', {
+          name, definition: definition ?? t('study.definitionReviewPending'), context,
+        })}
         onPress={() => {
           if (preferences.haptics) void Haptics.selectionAsync();
           if (definition) router.push({ pathname: '/glossary/[id]', params: { id: match.structure.id, q: query } });
@@ -96,31 +103,31 @@ export default function StudyScreen() {
         style={searchStyles.target}
       >
         <Text style={[searchStyles.title, { color: colors.foreground }]}>{name}</Text>
-        {match.matchedTerm !== name && <Text style={[searchStyles.context, { color: colors.mutedForeground }]}>Matched: {match.matchedTerm}</Text>}
+        {match.matchedTerm !== name && <Text style={[searchStyles.context, { color: colors.mutedForeground }]}>{t('study.matchedTerm', { matchedTerm: match.matchedTerm })}</Text>}
         {definition
           ? <Text style={[searchStyles.definition, { color: colors.foreground }]}>{definition}</Text>
-          : <Text style={[searchStyles.context, { color: colors.mutedForeground }]}>Definition awaiting source review</Text>}
+          : <Text style={[searchStyles.context, { color: colors.mutedForeground }]}>{t('study.definitionReviewPending')}</Text>}
         <Text style={[searchStyles.context, { color: colors.mutedForeground }]}>{context}</Text>
       </Pressable>
       <View style={searchStyles.actions}>
-        <Pressable accessibilityRole="button" accessibilityLabel={`Open ${name} study module`}
+        <Pressable accessibilityRole="button" accessibilityLabel={t('study.openModuleAccessibility', { name })}
           onPress={() => router.push(`/module/${match.module.id}`)} style={searchStyles.secondaryAction}>
-          <Text style={{ color: colors.primary }}>Open lesson</Text>
+          <Text style={{ color: colors.primary }}>{t('study.openLesson')}</Text>
         </Pressable>
-        <Pressable accessibilityRole="button" accessibilityLabel={`${bookmarks.includes(match.structure.id) ? 'Remove bookmark for' : 'Bookmark'} ${name}`} accessibilityState={{ selected: bookmarks.includes(match.structure.id) }} hitSlop={2} onPress={() => toggleBookmark(match.structure.id)} style={searchStyles.bookmark}>
-          <Text style={{ color: colors.primary }}>{bookmarks.includes(match.structure.id) ? '★ Saved' : '☆ Save'}</Text>
+        <Pressable accessibilityRole="button" accessibilityLabel={t(bookmarks.includes(match.structure.id) ? 'bookmark.removeAccessibility' : 'bookmark.addAccessibility', { name })} accessibilityState={{ selected: bookmarks.includes(match.structure.id) }} hitSlop={2} onPress={() => toggleBookmark(match.structure.id)} style={searchStyles.bookmark}>
+          <Text style={{ color: colors.primary }}>{t(bookmarks.includes(match.structure.id) ? 'bookmark.saved' : 'bookmark.save')}</Text>
         </Pressable>
       </View>
     </View>;
   });
   return <Screen scrollRef={pageRef} keyboardShouldPersistTaps="handled" onScroll={(event) => { pageY.current = event.nativeEvent.contentOffset.y; }} onViewportLayout={(height, bottomClearance) => { viewport.current = { height, bottomClearance }; scheduleReveal(); }}>
     <View style={[styles.brand, Platform.OS === 'web' && styles.brandWebInset, reflow && responsive.brandReflow]}>
-      <Image source={require('@/assets/images/logo-rounded.png')} style={styles.logo} accessibilityLabel="Boneefied skull and atom logo" />
+      <Image source={require('@/assets/images/logo-rounded.png')} style={styles.logo} accessibilityLabel={t('study.logoAccessibility')} />
       <Heading accessibilityLabel="Boneefied" style={[styles.brandTitle, reflow && responsive.brandTitleReflow, { color: colors.foreground }]}>Bonee{'\u00AD'}fied</Heading>
       <Pressable
         testID="study-settings-button"
-        accessibilityLabel="Settings"
-        accessibilityHint="Opens settings"
+        accessibilityLabel={t('study.settingsAccessibility')}
+        accessibilityHint={t('study.settingsHint')}
         accessibilityRole="button"
         hitSlop={4}
         onPress={() => router.push('/settings')}
@@ -129,40 +136,40 @@ export default function StudyScreen() {
         <Feather name="settings" size={21} color={colors.mutedForeground} />
       </Pressable>
     </View>
-    <Text style={[styles.lede, { color: colors.mutedForeground }]}>Comprehensive anatomy study.</Text>
+    <Text style={[styles.lede, { color: colors.mutedForeground }]}>{t('study.tagline')}</Text>
     <View style={searchStyles.container}>
-       {reflow && <Text style={{ color: colors.mutedForeground }}>Search anatomy</Text>}
-       <TextInput accessibilityLabel="Search anatomy" value={query} onChangeText={setQuery} placeholder={reflow ? 'Search' : 'Search anatomy'} placeholderTextColor={colors.mutedForeground} returnKeyType="search" style={[styles.search, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} />
-      <Pressable accessibilityRole="button" accessibilityLabel="Browse anatomy glossary" onPress={() => router.push({ pathname: '/glossary', params: { q: query } })} style={searchStyles.glossaryLink}>
-        <Text style={{ color: colors.primary, fontWeight: '600' }}>Browse glossary →</Text>
+        {reflow && <Text style={{ color: colors.mutedForeground }}>{t('study.searchAnatomy')}</Text>}
+        <TextInput accessibilityLabel={t('study.searchAnatomy')} value={query} onChangeText={setQuery} placeholder={reflow ? t('study.searchCompactPlaceholder') : t('study.searchAnatomy')} placeholderTextColor={colors.mutedForeground} returnKeyType="search" style={[styles.search, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} />
+       <Pressable accessibilityRole="button" accessibilityLabel={t('study.browseGlossaryAccessibility')} onPress={() => router.push({ pathname: '/glossary', params: { q: query } })} style={searchStyles.glossaryLink}>
+         <Text style={{ color: colors.primary, fontWeight: '600' }}>{t('study.browseGlossary')}</Text>
       </Pressable>
-      {query.trim().length > 0 && <View testID="anatomy-search-results" accessibilityLabel="Anatomy search results" style={[searchStyles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}>
-        <Text style={[searchStyles.heading, { color: colors.mutedForeground }]}>{matching.length ? 'Suggested structures' : 'No close match'}</Text>
+       {query.trim().length > 0 && <View testID="anatomy-search-results" accessibilityLabel={t('study.searchResultsAccessibility')} style={[searchStyles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}>
+         <Text style={[searchStyles.heading, { color: colors.mutedForeground }]}>{t(matching.length ? 'study.suggestedStructures' : 'study.noCloseMatch')}</Text>
         {matching.length > 0 && (reflow
           ? <View style={[searchStyles.content, searchStyles.scrollNatural]}>{searchResults}</View>
           : <ScrollView nestedScrollEnabled keyboardShouldPersistTaps="always" style={searchStyles.scroll} contentContainerStyle={searchStyles.content} showsVerticalScrollIndicator>{searchResults}</ScrollView>)}
       </View>}
     </View>
-      <AdaptiveRow style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>Explore by system</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{systems.length} systems</Text></AdaptiveRow>
+      <AdaptiveRow style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{t('study.exploreBySystem')}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(Number(systems.length) === 1 ? 'study.systemCount.one' : 'study.systemCount.other', { count: number(systems.length) })}</Text></AdaptiveRow>
       <View style={[styles.systemsPanel, !reflow && { height: Math.min(width - 40, 300) }, { borderColor: colors.border, backgroundColor: colors.card }]}>
         {reflow
-          ? <View testID="study-systems-scroll" accessibilityLabel="Explore by system choices" style={[styles.systems, styles.systemsContent]}>{systemChoices}</View>
-          : <ScrollView testID="study-systems-scroll" accessibilityLabel="Explore by system choices" tabIndex={Platform.OS === 'web' ? 0 : undefined} nestedScrollEnabled keyboardShouldPersistTaps="handled" contentContainerStyle={[styles.systems, styles.systemsContent]} showsVerticalScrollIndicator>{systemChoices}</ScrollView>}
+          ? <View testID="study-systems-scroll" accessibilityLabel={t('study.systemsAccessibility')} style={[styles.systems, styles.systemsContent]}>{systemChoices}</View>
+          : <ScrollView testID="study-systems-scroll" accessibilityLabel={t('study.systemsAccessibility')} tabIndex={Platform.OS === 'web' ? 0 : undefined} nestedScrollEnabled keyboardShouldPersistTaps="handled" contentContainerStyle={[styles.systems, styles.systemsContent]} showsVerticalScrollIndicator>{systemChoices}</ScrollView>}
       </View>
-      <AdaptiveRow onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>Learning modules</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{visibleModules.length} available</Text></AdaptiveRow>
+      <AdaptiveRow onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{t('study.learningModules')}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(visibleModules.length === 1 ? 'study.availableCount.one' : 'study.availableCount.other', { count: number(visibleModules.length) })}</Text></AdaptiveRow>
       {visibleModules.map((module, index) => <AdaptiveButton key={module.id} onLayout={index === 0 ? (event) => { firstResult.current = { id: module.id, layout: event.nativeEvent.layout }; scheduleReveal(); } : undefined} testID={`module-card-${module.id}`} accessibilityRole="button" onPress={() => { if (preferences.haptics) void Haptics.selectionAsync(); router.push(`/module/${module.id}`); }} style={({ pressed }) => [styles.card, { backgroundColor: colors.card, borderColor: colors.border, transform: [{ scale: pressed ? 0.985 : 1 }] }]}>
-        <AdaptiveRow style={[styles.cardTop, reflow && responsive.cardTopStacked]}><View style={[styles.moduleMark, { backgroundColor: colors.primary }]}>{reflow ? <Feather name="book-open" size={20} color={colors.primaryForeground} /> : <Text style={[styles.moduleMarkText, { color: colors.primaryForeground }]}>{String(index + 1).padStart(2, '0')}</Text>}</View><View style={[styles.cardCopy, responsive.flexibleCopy, reflow && responsive.cardCopyStacked]}><Text style={[styles.cardTitle, { color: colors.foreground }]}>{module.title}</Text><Text style={[styles.cardSub, { color: colors.mutedForeground }]}>{module.summary ?? (module.id === 'cytology-mitosis' ? 'Lab 2 · source-checked text lessons' : 'Open learning module')}</Text></View>{!reflow && <Text style={[styles.arrow, responsive.trailingStatus, { color: colors.primary }]}>›</Text>}</AdaptiveRow>
+        <AdaptiveRow style={[styles.cardTop, reflow && responsive.cardTopStacked]}><View style={[styles.moduleMark, { backgroundColor: colors.primary }]}>{reflow ? <Feather name="book-open" size={20} color={colors.primaryForeground} /> : <Text style={[styles.moduleMarkText, { color: colors.primaryForeground }]}>{String(index + 1).padStart(2, '0')}</Text>}</View><View style={[styles.cardCopy, responsive.flexibleCopy, reflow && responsive.cardCopyStacked]}><Text style={[styles.cardTitle, { color: colors.foreground }]}>{localizeModule(module).title}</Text><Text style={[styles.cardSub, { color: colors.mutedForeground }]}>{localizeModule(module).summary ?? t(module.id === 'cytology-mitosis' ? 'study.cytologyModuleFallback' : 'study.moduleFallback')}</Text></View>{!reflow && <Text style={[styles.arrow, responsive.trailingStatus, { color: colors.primary }]}>›</Text>}</AdaptiveRow>
           <AdaptiveRow style={[styles.meta, responsive.meta, (stackModuleMeta || reflow) && responsive.metaStacked]}>
           <View style={responsive.metaDetails}>
-            <Text style={{ color: colors.mutedForeground }}>{content.structures.filter((item) => item.moduleId === module.id).length} structures · {content.questions.filter((item) => item.moduleId === module.id).length} questions</Text>
+             <Text style={{ color: colors.mutedForeground }}>{t(content.structures.filter((item) => item.moduleId === module.id).length === 1 ? 'study.moduleStructureCount.one' : 'study.moduleStructureCount.other', { count: number(content.structures.filter((item) => item.moduleId === module.id).length) })} · {t(content.questions.filter((item) => item.moduleId === module.id).length === 1 ? 'study.moduleQuestionCount.one' : 'study.moduleQuestionCount.other', { count: number(content.questions.filter((item) => item.moduleId === module.id).length) })}</Text>
           </View>
            <View style={[responsive.metaStatus, (stackModuleMeta || reflow) && responsive.metaStatusStacked, reflow && responsive.metaStatusReflow]}>
-            <Text style={{ color: colors.mutedForeground, textAlign: reflow ? 'left' : 'right' }}>{mastery.length ? `${mastery.length} started` : 'Not started'}</Text>
+             <Text style={{ color: colors.mutedForeground, textAlign: reflow ? 'left' : 'right' }}>{mastery.length ? t('study.startedCount', { count: number(mastery.length) }) : t('study.notStarted')}</Text>
           </View>
           </AdaptiveRow>
       </AdaptiveButton>)}
-      {selectedSystem && visibleModules.length === 0 && <View onLayout={(event) => { firstResult.current = { id: firstResultId, layout: event.nativeEvent.layout }; scheduleReveal(); }}><EmptyState icon="book-open" title="No learning modules yet" message="No published learning content is available for this system yet." /></View>}
-    <View style={[styles.offline, { backgroundColor: colors.secondary }]}><View style={[styles.signal, { backgroundColor: colors.primary }]} /><Text style={[styles.offlineText, { color: colors.foreground }]}>Offline-ready · local content and progress</Text></View>
+      {selectedSystem && visibleModules.length === 0 && <View onLayout={(event) => { firstResult.current = { id: firstResultId, layout: event.nativeEvent.layout }; scheduleReveal(); }}><EmptyState icon="book-open" title={t('study.noModulesTitle')} message={t('study.noModulesMessage')} /></View>}
+    <View style={[styles.offline, { backgroundColor: colors.secondary }]}><View style={[styles.signal, { backgroundColor: colors.primary }]} /><Text style={[styles.offlineText, { color: colors.foreground }]}>{t('study.offlineReady')}</Text></View>
   </Screen>;
 }
 const styles = StyleSheet.create({

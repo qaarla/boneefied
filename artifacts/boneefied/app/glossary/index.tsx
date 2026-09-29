@@ -5,7 +5,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Heading, Text, TextInput, useTypographyLayout } from '@/components/ScaledText';
 import { content } from '@/content/canonical';
 import { createGlossaryIndex, filterGlossary, type GlossaryEntry } from '@/content/glossary';
+import { normalizeSearchText } from '@/content/search';
 import { useColors } from '@/hooks/useColors';
+import { useLocale } from '@/locales/useLocale';
 
 const glossary = createGlossaryIndex(content);
 const systems = [...new Map(glossary.map(({ module }) => [module.id, module])).values()]
@@ -13,6 +15,7 @@ const systems = [...new Map(glossary.map(({ module }) => [module.id, module])).v
 
 export default function GlossaryScreen() {
   const colors = useColors();
+  const { language, t, module: localizeModule, structure: localizeStructure, definition, number } = useLocale();
   const router = useRouter();
   const insets = useSafeAreaInsets();
   const { shouldReflow } = useTypographyLayout();
@@ -21,19 +24,44 @@ export default function GlossaryScreen() {
   const [system, setSystem] = React.useState<string | undefined>();
   const [filtersOpen, setFiltersOpen] = React.useState(false);
   const listRef = React.useRef<FlatList<GlossaryEntry>>(null);
-  const entries = React.useMemo(() => filterGlossary(glossary, query, system), [query, system]);
+  const displayEntries = React.useMemo(() => glossary.map((entry) => ({
+    ...entry,
+    structure: localizeStructure(entry.structure),
+    module: localizeModule(entry.module),
+    definition: definition(entry.structure.id, entry.definition),
+  })), [language, localizeModule, localizeStructure, definition]);
+  const entries = React.useMemo(() => {
+    const englishMatches = filterGlossary(glossary, query, system);
+    const normalizedQuery = normalizeSearchText(query);
+    const localizedMatches = normalizedQuery
+      ? displayEntries.filter((entry) => (!system || entry.module.id === system) && [
+        entry.structure.canonicalName,
+        ...entry.structure.acceptedAliases,
+        entry.structure.category,
+        entry.module.title,
+      ].some((term) => normalizeSearchText(term).includes(normalizedQuery)))
+      : [];
+    const byId = new Map<string, (typeof displayEntries)[number]>();
+    for (const entry of englishMatches) byId.set(entry.structure.id, displayEntries.find((item) => item.structure.id === entry.structure.id)!);
+    for (const entry of localizedMatches) byId.set(entry.structure.id, entry);
+    if (!normalizedQuery) {
+      return displayEntries.filter((entry) => !system || entry.module.id === system)
+        .sort((a, b) => a.structure.canonicalName.localeCompare(b.structure.canonicalName) || a.module.title.localeCompare(b.module.title));
+    }
+    return [...byId.values()];
+  }, [displayEntries, language, query, system]);
   const searching = !!query.trim();
-  const filters = [{ id: undefined, title: 'All systems' }, ...systems].map((item) => {
+  const filters = [{ id: undefined, title: t('glossary.allSystems') }, ...systems.map((item) => localizeModule(item))].map((item) => {
     const selected = system === item.id;
     return <Pressable key={item.id ?? 'all'} accessibilityRole="button" accessibilityState={{ selected }}
       onPress={() => { setSystem(item.id); setFiltersOpen(false); listRef.current?.scrollToOffset({ offset: 0, animated: false }); }}
       style={[styles.filter, { backgroundColor: selected ? colors.secondary : colors.card, borderColor: selected ? colors.primary : colors.border }]}>
-      <Text style={{ color: colors.foreground }}>{item.title}</Text>
+       <Text style={{ color: colors.foreground }}>{item.title}</Text>
     </Pressable>;
   });
 
   return <View style={[styles.screen, { backgroundColor: colors.background, paddingTop: insets.top }]}>
-    <Stack.Screen options={{ title: 'Glossary' }} />
+    <Stack.Screen options={{ title: t('glossary.navigationTitle') }} />
     <View style={[styles.container, { paddingHorizontal: shouldReflow ? 16 : 20 }]}>
       <FlatList
         ref={listRef}
@@ -42,33 +70,33 @@ export default function GlossaryScreen() {
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={{ paddingBottom: insets.bottom + 48 }}
         ListHeaderComponent={<View style={styles.header}>
-          <Heading style={[styles.title, { color: colors.foreground }]}>{shouldReflow ? 'Browse terms' : 'Anatomy glossary'}</Heading>
-          <Text style={{ color: colors.mutedForeground }}>Quick, source-checked definitions from your study catalog.</Text>
+          <Heading style={[styles.title, { color: colors.foreground }]}>{t(shouldReflow ? 'glossary.reflowTitle' : 'glossary.title')}</Heading>
+          <Text style={{ color: colors.mutedForeground }}>{t('glossary.introduction')}</Text>
           <TextInput
-            accessibilityLabel="Filter glossary terms"
+            accessibilityLabel={t('glossary.filterAccessibility')}
             value={query}
             onChangeText={(value) => { setQuery(value); listRef.current?.scrollToOffset({ offset: 0, animated: false }); }}
-            placeholder={shouldReflow ? 'Filter terms' : 'Filter by term or alias'}
+            placeholder={t(shouldReflow ? 'glossary.filterCompactPlaceholder' : 'glossary.filterPlaceholder')}
             placeholderTextColor={colors.mutedForeground}
             returnKeyType="search"
             style={[styles.input, { color: colors.foreground, backgroundColor: colors.card, borderColor: colors.border }]}
           />
           {shouldReflow
             ? <View style={styles.verticalFilters}>
-              <Pressable accessibilityRole="button" accessibilityLabel="Choose anatomy system"
+              <Pressable accessibilityRole="button" accessibilityLabel={t('glossary.chooseSystemAccessibility')}
                 accessibilityState={{ expanded: filtersOpen }} onPress={() => setFiltersOpen((open) => !open)}
                 style={[styles.filter, { borderColor: colors.border, backgroundColor: colors.card }]}>
-                <Text style={{ color: colors.foreground }}>{systems.find((item) => item.id === system)?.title ?? 'All systems'} {filtersOpen ? '▲' : '▼'}</Text>
+                <Text style={{ color: colors.foreground }}>{systems.find((item) => item.id === system) ? localizeModule(systems.find((item) => item.id === system)!).title : t('glossary.allSystems')} {filtersOpen ? '▲' : '▼'}</Text>
               </Pressable>
               {filtersOpen && <View style={styles.filterMenu}>{filters}</View>}
             </View>
             : <ScrollView horizontal showsHorizontalScrollIndicator={false} keyboardShouldPersistTaps="always"
-              accessibilityLabel="Filter glossary by system" style={styles.filters} contentContainerStyle={styles.filterContent}>
+              accessibilityLabel={t('glossary.filterBySystemAccessibility')} style={styles.filters} contentContainerStyle={styles.filterContent}>
               {filters}
             </ScrollView>}
-          <Text style={{ color: colors.mutedForeground }}>{entries.length} {entries.length === 1 ? 'entry' : 'entries'}{system ? ` · ${systems.find((item) => item.id === system)?.title}` : ''}</Text>
+          <Text style={{ color: colors.mutedForeground }}>{t(`glossary.entryCount.${entries.length === 1 ? 'one' : 'other'}`, { count: number(entries.length) })}{system ? ` · ${localizeModule(systems.find((item) => item.id === system)!).title}` : ''}</Text>
         </View>}
-        ListEmptyComponent={<Text style={{ color: colors.mutedForeground, paddingVertical: 16 }}>No source-checked definition matches this filter.</Text>}
+        ListEmptyComponent={<Text style={{ color: colors.mutedForeground, paddingVertical: 16 }}>{t('glossary.noFilterMatches')}</Text>}
         renderItem={({ item, index }) => {
           const letter = item.structure.canonicalName.charAt(0).toUpperCase();
           const previous = entries[index - 1]?.structure.canonicalName.charAt(0).toUpperCase();
@@ -76,7 +104,7 @@ export default function GlossaryScreen() {
             {!searching && letter !== previous && <Heading style={[styles.letter, { color: colors.primary }]}>{letter}</Heading>}
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={`${item.structure.canonicalName}. ${item.definition}. Open glossary entry`}
+              accessibilityLabel={t('glossary.entryAccessibility', { name: item.structure.canonicalName, definition: item.definition })}
               onPress={() => router.push({ pathname: '/glossary/[id]', params: { id: item.structure.id, q: query } })}
               style={[styles.entry, { borderColor: colors.border, backgroundColor: colors.card }]}
             >

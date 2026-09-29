@@ -8,20 +8,23 @@ import { EmptyState } from '@/components/EmptyState';
 import { useStudy } from '@/context/StudyContext';
 import { useColors } from '@/hooks/useColors';
 import { content } from '@/content/canonical';
+import { useLocale } from '@/locales/useLocale';
 
 export default function MissedScreen() {
   const colors = useColors();
+  const { t, question: localizeQuestion, number } = useLocale();
   const { isCompactTextLayout, isLargeText } = useTypographyLayout();
   const shouldReflow = isCompactTextLayout || isLargeText;
   const router = useRouter();
   const { missed, hydrated } = useStudy();
-  return <Screen><Text style={[styles.eyebrow, { color: colors.primary }]}>REVIEW QUEUE</Text><Heading accessibilityLabel="Missed" style={[styles.title, { color: colors.foreground }]}>Miss{'\u00AD'}ed</Heading><Text style={[styles.intro, { color: colors.mutedForeground }]}>Incorrect answers stay here until a later successful recall clears them. History is never deleted.</Text>
-    {!hydrated ? <Text style={{ color: colors.mutedForeground }}>Loading local review state…</Text> : missed.length === 0 ? <EmptyState icon="check-circle" title="Nothing to review" message="Your missed queue is empty. Verified questions will appear here after an incorrect answer." /> : <><EmptyState icon="rotate-ccw" title={`${missed.length} item${missed.length === 1 ? '' : 's'} to retry`} message="Your incorrect attempts remain in history even after recovery." />{missed.map((item) => {
+  return <Screen><Text style={[styles.eyebrow, { color: colors.primary }]}>{t('missed.reviewQueue')}</Text><Heading accessibilityLabel={t('missed.heading')} style={[styles.title, { color: colors.foreground }]}>{t('missed.heading')}</Heading><Text style={[styles.intro, { color: colors.mutedForeground }]}>{t('missed.intro')}</Text>
+    {!hydrated ? <Text style={{ color: colors.mutedForeground }}>{t('missed.loading')}</Text> : missed.length === 0 ? <EmptyState icon="check-circle" title={t('missed.emptyTitle')} message={t('missed.emptyMessage')} /> : <><EmptyState icon="rotate-ccw" title={t(missed.length === 1 ? 'missed.retryCount.one' : 'missed.retryCount.other', { count: number(missed.length) })} message={t('missed.historyPreserved')} />{missed.map((item) => {
       const question = content.questions.find((candidate) => candidate.id === item.questionId);
-        return question ? <AdaptiveButton key={item.questionId} accessibilityLabel={`Retry: ${question.prompt}`} onPress={() => router.push(`/(tabs)/practice?questionId=${encodeURIComponent(item.questionId)}&retryId=${Date.now()}`)} style={[styles.retry, shouldReflow && styles.largeRetry, { backgroundColor: colors.primary }]}>
-          <Text style={[shouldReflow && styles.largeRetryText, { color: colors.primaryForeground, fontWeight: '700' }]}>{question.prompt}</Text>
-        <Text style={{ color: colors.primaryForeground, fontSize: 12 }}>{item.incorrectCount} incorrect attempt{item.incorrectCount === 1 ? '' : 's'} · Retry</Text>
-       </AdaptiveButton> : <Text key={item.questionId} style={{ color: colors.mutedForeground }}>A previously missed question is no longer available; your attempt history remains saved.</Text>;
+      const localizedQuestion = question ? localizeQuestion(question) : undefined;
+      return question && localizedQuestion ? <AdaptiveButton key={item.questionId} accessibilityLabel={t('missed.retryQuestion', { question: localizedQuestion.prompt })} onPress={() => router.push(`/(tabs)/practice?questionId=${encodeURIComponent(item.questionId)}&retryId=${Date.now()}`)} style={[styles.retry, shouldReflow && styles.largeRetry, { backgroundColor: colors.primary }]}>
+        <Text style={[shouldReflow && styles.largeRetryText, { color: colors.primaryForeground, fontWeight: '700' }]}>{localizedQuestion.prompt}</Text>
+         <Text style={{ color: colors.primaryForeground, fontSize: 12 }}>{t(item.incorrectCount === 1 ? 'missed.incorrectAttempts.one' : 'missed.incorrectAttempts.other', { count: number(item.incorrectCount) })}</Text>
+      </AdaptiveButton> : <Text key={item.questionId} style={{ color: colors.mutedForeground }}>{t('missed.unavailableQuestion')}</Text>;
     })}</>}
   </Screen>;
 }

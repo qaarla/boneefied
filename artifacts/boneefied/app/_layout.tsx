@@ -12,6 +12,7 @@ import { StudyProvider, useStudy } from '@/context/StudyContext';
 import { nativeHeaderTitleSize, needsResponsiveTextLayout, typographyMetrics } from '@/context/typographyScale';
 import { devPreviewFontScale, TypographyProvider } from '@/components/ScaledText';
 import { useColors } from '@/hooks/useColors';
+import { LocaleProvider, useLocale } from '@/locales/useLocale';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -20,6 +21,7 @@ const queryClient = new QueryClient();
 
 function RootLayoutNav() {
   const { hydrated, preferences } = useStudy();
+  const { hydrated: localeHydrated, t } = useLocale();
   const colors = useColors();
   const systemScheme = useColorScheme();
   const { width, fontScale: reportedFontScale } = useWindowDimensions();
@@ -48,15 +50,15 @@ function RootLayoutNav() {
     }
   }, [hydrated, preferences.theme]);
   useEffect(() => {
-    if (hydrated) SplashScreen.hideAsync();
-  }, [hydrated]);
+    if (hydrated && localeHydrated) SplashScreen.hideAsync();
+  }, [hydrated, localeHydrated]);
 
-  if (!hydrated) return null;
+  if (!hydrated || !localeHydrated) return null;
 
   return (
     <ThemeProvider value={navigationTheme}>
       <Stack screenOptions={{
-        headerBackTitle: 'Back',
+         headerBackTitle: t('navigation.back'),
         headerBackButtonDisplayMode: Platform.OS === 'ios' && reflow ? 'minimal' : 'default',
         headerStyle: { backgroundColor: colors.background },
         headerTintColor: colors.primary,
@@ -90,7 +92,8 @@ export default function RootLayout() {
 
   return (
     <SafeAreaProvider>
-      <ErrorBoundary>
+      <LocaleProvider>
+       <ErrorBoundary>
           <QueryClientProvider client={queryClient}>
             <StudyProvider>
               <TypographyProvider>
@@ -102,7 +105,8 @@ export default function RootLayout() {
               </TypographyProvider>
             </StudyProvider>
         </QueryClientProvider>
-      </ErrorBoundary>
+       </ErrorBoundary>
+      </LocaleProvider>
     </SafeAreaProvider>
   );
 }

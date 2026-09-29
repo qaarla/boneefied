@@ -11,31 +11,33 @@ import { Tabs } from 'expo-router';
 import { NativeTabs } from 'expo-router/unstable-native-tabs';
 import { SymbolView } from 'expo-symbols';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useLocale } from '@/locales/useLocale';
 
 // IMPORTANT: iOS 26 uses NativeTabs for native tabs with liquid glass support.
 // NativeTabs intentionally does NOT use custom design tokens — liquid glass
 // is a system-level appearance provided by iOS and cannot be overridden.
 // Custom brand colors are applied only on the ClassicTabLayout path (older iOS / Android / web).
 function NativeTabLayout() {
+  const { t } = useLocale();
   return (
     <NativeTabs>
          <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Icon
           sf={{ default: 'house', selected: 'house.fill' }}
         />
-         <NativeTabs.Trigger.Label>Study</NativeTabs.Trigger.Label>
+         <NativeTabs.Trigger.Label>{t('tabs.study')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="practice">
         <NativeTabs.Trigger.Icon sf={{ default: 'checkmark.circle', selected: 'checkmark.circle.fill' }} />
-        <NativeTabs.Trigger.Label>Practice</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('tabs.practice')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="missed">
         <NativeTabs.Trigger.Icon sf={{ default: 'arrow.counterclockwise', selected: 'arrow.counterclockwise.circle.fill' }} />
-        <NativeTabs.Trigger.Label>Missed</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('tabs.missed')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="progress">
         <NativeTabs.Trigger.Icon sf={{ default: 'chart.bar', selected: 'chart.bar.fill' }} />
-        <NativeTabs.Trigger.Label>Progress</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>{t('tabs.progress')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
     </NativeTabs>
   );
@@ -78,6 +80,7 @@ function AccessibleTabBar({ state, descriptors, navigation }: TabBarProps) {
 
 function ClassicTabLayout() {
   const colors = useColors();
+  const { t } = useLocale();
   const { preferences } = useStudy();
   const { shouldReflow: reflow, isExpandedTabLayout } = useTypographyLayout();
   const insets = useSafeAreaInsets();
@@ -140,10 +143,10 @@ function ClassicTabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-           title: 'Study',
+           title: t('tabs.study'),
            headerShown: false,
-            tabBarAccessibilityLabel: 'Study',
-            tabBarLabel: reflow ? tabLabel('Study') : undefined,
+             tabBarAccessibilityLabel: t('tabs.study'),
+             tabBarLabel: reflow ? tabLabel(t('tabs.study')) : undefined,
           tabBarIcon: ({ color }) =>
             isIOS ? (
               <SymbolView name="house" tintColor={color} size={24} />
@@ -152,9 +155,9 @@ function ClassicTabLayout() {
             ),
         }}
       />
-      <Tabs.Screen name="practice" options={{ title: 'Practice', tabBarAccessibilityLabel: 'Practice', tabBarLabel: reflow ? tabLabel('Practice') : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="checkmark.circle" tintColor={color} size={24} /> : <Feather name="check-circle" size={22} color={color} /> }} />
-      <Tabs.Screen name="missed" options={{ title: 'Missed', tabBarAccessibilityLabel: 'Missed', tabBarLabel: reflow ? tabLabel('Missed') : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="arrow.counterclockwise" tintColor={color} size={24} /> : <Feather name="rotate-ccw" size={22} color={color} /> }} />
-      <Tabs.Screen name="progress" options={{ title: 'Progress', tabBarAccessibilityLabel: 'Progress', tabBarLabel: reflow ? tabLabel('Progress') : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="chart.bar" tintColor={color} size={24} /> : <Feather name="bar-chart-2" size={22} color={color} /> }} />
+      <Tabs.Screen name="practice" options={{ title: t('tabs.practice'), tabBarAccessibilityLabel: t('tabs.practice'), tabBarLabel: reflow ? tabLabel(t('tabs.practice')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="checkmark.circle" tintColor={color} size={24} /> : <Feather name="check-circle" size={22} color={color} /> }} />
+      <Tabs.Screen name="missed" options={{ title: t('tabs.missed'), tabBarAccessibilityLabel: t('tabs.missed'), tabBarLabel: reflow ? tabLabel(t('tabs.missed')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="arrow.counterclockwise" tintColor={color} size={24} /> : <Feather name="rotate-ccw" size={22} color={color} /> }} />
+      <Tabs.Screen name="progress" options={{ title: t('tabs.progress'), tabBarAccessibilityLabel: t('tabs.progress'), tabBarLabel: reflow ? tabLabel(t('tabs.progress')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="chart.bar" tintColor={color} size={24} /> : <Feather name="bar-chart-2" size={22} color={color} /> }} />
     </Tabs>
   );
 }

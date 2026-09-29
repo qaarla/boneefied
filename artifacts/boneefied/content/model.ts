@@ -158,6 +158,8 @@ export interface PracticeSession {
   questionIds: string[];
   position: number;
   answers: SessionAnswer[];
+  /** Raw unsubmitted student input; never translated or used as a scoring value. */
+  draft?: { questionId: string; answer: string | string[] };
   startedAt: string;
   updatedAt: string;
   completedAt?: string;
