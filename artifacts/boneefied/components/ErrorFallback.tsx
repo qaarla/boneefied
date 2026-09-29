@@ -5,6 +5,7 @@ import {
   Pressable,
   ScrollView,
   StyleSheet,
+  useWindowDimensions,
   View,
 } from 'react-native';
 import { Text } from '@/components/ScaledText';
@@ -21,6 +22,7 @@ export type ErrorFallbackProps = {
 export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
   const colors = useColors();
   const insets = useSafeAreaInsets();
+  const { fontScale, height } = useWindowDimensions();
 
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -48,7 +50,8 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
   });
 
   return (
-    <View style={[styles.container, { backgroundColor: colors.background }]}>
+    <ScrollView style={{ flex: 1, backgroundColor: colors.background }}
+      contentContainerStyle={[styles.container, fontScale >= 1.5 && { paddingTop: insets.top + 72, paddingBottom: insets.bottom + 24 }]}>
       {__DEV__ ? (
         <Pressable
           onPress={() => setIsModalVisible(true)}
@@ -112,7 +115,7 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
               <View
                 style={[
                   styles.modalHeader,
-                  { borderBottomColor: colors.border },
+                  { borderBottomColor: colors.border, paddingTop: Math.max(16, insets.top - height * 0.1 + 8) },
                 ]}
               >
                 <Text style={[styles.modalTitle, { color: colors.foreground }]}>
@@ -163,15 +166,14 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
           </View>
         </Modal>
       ) : null}
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     width: '100%',
-    height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
     padding: 24,
@@ -247,10 +249,13 @@ const styles = StyleSheet.create({
   modalTitle: {
     fontSize: 20,
     fontWeight: '600',
+    flex: 1,
+    minWidth: 0,
   },
   closeButton: {
     width: 44,
     height: 44,
+    flexShrink: 0,
     alignItems: 'center',
     justifyContent: 'center',
   },

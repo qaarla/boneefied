@@ -17,7 +17,9 @@ type Props = {
   feedback?: AnswerFeedback;
   reduceMotion?: boolean;
   accessibilityLabel?: string;
+  accessibilityHint?: string;
   accessibilityRole?: AccessibilityRole;
+  hitSlop?: number;
   accessibilityState?: {
     disabled?: boolean;
     selected?: boolean;
@@ -35,7 +37,9 @@ export function AnimatedAnswerPressable({
   feedback,
   reduceMotion = false,
   accessibilityLabel,
+  accessibilityHint,
   accessibilityRole = 'button',
+  hitSlop,
   accessibilityState,
   testID,
   onPress,
@@ -89,7 +93,9 @@ export function AnimatedAnswerPressable({
 
   return <Pressable
     accessibilityLabel={accessibilityLabel}
+    accessibilityHint={accessibilityHint}
     accessibilityRole={accessibilityRole}
+    hitSlop={hitSlop}
     accessibilityState={{ ...accessibilityState, disabled }}
     disabled={disabled}
     onPress={onPress}
@@ -98,7 +104,7 @@ export function AnimatedAnswerPressable({
     style={({ pressed }) => [containerStyle, pressed && !disabled && { transform: [{ scale: 0.975 }] }]}
     testID={testID}
   >
-    <Animated.View style={[{ flex: 1 }, contentStyle, { transform: [{ scale }, { translateX }, { translateY }] }]}>
+    <Animated.View style={[{ alignSelf: 'stretch', minWidth: 0 }, contentStyle, { transform: [{ scale }, { translateX }, { translateY }] }]}>
       {children}
     </Animated.View>
   </Pressable>;

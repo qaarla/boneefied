@@ -56,7 +56,7 @@ const structureRows: Array<[string, string, string, string[]]> = [
   ['pelvis','Pelvic girdle','pelvic girdle',[]], ['ilium','Ilium','pelvic girdle',[]], ['ischium','Ischium','pelvic girdle',[]], ['pubis','Pubis','pelvic girdle',[]],
   ['femur','Femur','lower limb',['thigh bone']], ['patella','Patella','lower limb',['kneecap']], ['tibia','Tibia','lower limb',['shin bone']],
   ['fibula','Fibula','lower limb',['lateral leg bone']], ['tarsals','Tarsals','foot',[]], ['talus','Talus','foot',[]], ['calcaneus','Calcaneus','foot',['heel bone']],
-  ['metatarsals','Metatarsals','foot',[]], ['phalanges-foot','Phalanges of foot','foot',['toe bones']], ['acetabulum','Acetabulum','articulations',['hip socket']],
+  ['metatarsals','Metatarsals','foot',[]], ['phalanges-foot','Phalanges of foot','foot',['toe bones','Hallux','great toe','big toe']], ['acetabulum','Acetabulum','articulations',['hip socket']],
   ['glenoid-cavity','Glenoid cavity','articulations',['shoulder socket']], ['sacroiliac-joint','Sacroiliac joint','articulations',[]],
 ];
 

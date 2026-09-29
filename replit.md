@@ -25,6 +25,14 @@ Boneefied is chiefly a comprehensive mobile human-anatomy learning app: students
 - `StudyContext` owns AsyncStorage-backed attempts, misses, mastery, bookmarks, preferences, and resumable sessions.
 - Image assets must use static `require` mappings in React Native; never construct dynamic require paths.
 
+## Mobile typography and accessibility
+
+- Supporting iOS system Larger Text and the app's text-size preference is a standing requirement. Let React Native Dynamic Type scale native text; never opt out of native font scaling or cap it to a fixed multiplier. The app preference may adjust base typography independently, but do not apply the iOS system multiplier to text styles a second time.
+- Use `ScaledText`'s `Text`, `TextInput`, and `Heading` for screen text, and use `Screen` for screen content. `Heading` and all reading content must remain complete and readable; do not truncate, clamp, or impose a fixed height on reading content.
+- Use `AdaptiveRow`, `AdaptiveCard`, and `AdaptiveButton` where appropriate so content reflows, cards grow, and controls retain reachable touch targets at larger text sizes. Keep all actions reachable and leave sufficient safe-area and bottom-tab clearance, including on narrow phone layouts.
+- At Accessibility Larger Text sizes, classic navigation rearranges its four tabs into two columns with full-size labels. Do not replace that with fixed-height tabs or shrink all labels to fit four narrow slots; keep screen-bottom clearance in sync with navigation.
+- Verify responsive behavior with the web preview/font-scale QA aid and verify native behavior on an iOS device when available. Web simulation is not proof of native Dynamic Type behavior: document verification limits honestly, and do not claim native-device verification unless it was performed.
+
 ## Gotchas
 
 - No anatomy image or hotspot may be invented, mirrored, or published without source and rights verification.
