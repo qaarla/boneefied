@@ -9,6 +9,7 @@ import { Screen } from '@/components/Screen';
 import { EmptyState } from '@/components/EmptyState';
 import { content } from '@/content/canonical';
 import { createAnatomySearchIndex, searchAnatomy } from '@/content/search';
+import { definitionForStructure } from '@/content/glossary';
 import { useColors } from '@/hooks/useColors';
 import { useStudy } from '@/context/StudyContext';
 
@@ -79,22 +80,37 @@ export default function StudyScreen() {
   const matching = React.useMemo(() => searchAnatomy(anatomySearchIndex, query), [query]);
    const systemChoices = systems.map(([label, id]) => <AdaptiveButton key={id} accessibilityRole="button" hitSlop={4} onPress={() => selectSystem(id)} style={[styles.system, reflow && responsive.systemLarge, { borderColor: selectedSystem === id ? colors.primary : colors.border, backgroundColor: selectedSystem === id ? colors.secondary : colors.card }]}><View style={[responsive.systemName, reflow && responsive.systemNameLarge]}><Text style={{ color: colors.foreground, fontWeight: '600' }}>{label}</Text></View><Text style={[responsive.trailingStatus, reflow && responsive.systemStatusLarge, { color: colors.mutedForeground }]}>{content.modules.some((item) => matchesSystem(item, id)) ? 'Open' : 'Coming next'}</Text></AdaptiveButton>);
   const searchResults = matching.map((match) => {
-    const name = match.matchedTerm === match.structure.canonicalName ? match.structure.canonicalName : match.matchedTerm;
-    const context = `${match.matchedTerm === match.structure.canonicalName ? '' : `${match.structure.canonicalName} · `}${match.module.title} · ${match.structure.category}`;
+    const name = match.structure.canonicalName;
+    const context = `${match.module.title} · ${match.structure.category}`;
+    const definition = definitionForStructure(match.structure.id);
     return <View key={match.structure.id} style={[searchStyles.row, { borderTopColor: colors.border }]}>
       <Pressable
         testID={`search-result-${match.structure.id}`}
         accessibilityRole="button"
-        accessibilityLabel={`${name}, ${context}. Open study module`}
-        onPress={() => { if (preferences.haptics) void Haptics.selectionAsync(); router.push(`/module/${match.module.id}`); }}
+        accessibilityLabel={`${name}, ${definition ?? 'definition awaiting source review'}, ${context}. ${definition ? 'Open glossary entry' : 'Open study module'}`}
+        onPress={() => {
+          if (preferences.haptics) void Haptics.selectionAsync();
+          if (definition) router.push({ pathname: '/glossary/[id]', params: { id: match.structure.id, q: query } });
+          else router.push(`/module/${match.module.id}`);
+        }}
         style={searchStyles.target}
       >
         <Text style={[searchStyles.title, { color: colors.foreground }]}>{name}</Text>
+        {match.matchedTerm !== name && <Text style={[searchStyles.context, { color: colors.mutedForeground }]}>Matched: {match.matchedTerm}</Text>}
+        {definition
+          ? <Text style={[searchStyles.definition, { color: colors.foreground }]}>{definition}</Text>
+          : <Text style={[searchStyles.context, { color: colors.mutedForeground }]}>Definition awaiting source review</Text>}
         <Text style={[searchStyles.context, { color: colors.mutedForeground }]}>{context}</Text>
       </Pressable>
-       <Pressable accessibilityRole="button" accessibilityLabel={`${bookmarks.includes(match.structure.id) ? 'Remove bookmark for' : 'Bookmark'} ${match.structure.canonicalName}`} accessibilityState={{ selected: bookmarks.includes(match.structure.id) }} hitSlop={2} onPress={() => toggleBookmark(match.structure.id)} style={[searchStyles.bookmark, reflow && searchStyles.bookmarkLarge]}>
-        <Text style={{ color: colors.primary }}>{bookmarks.includes(match.structure.id) ? '★ Saved' : '☆ Save'}</Text>
-      </Pressable>
+      <View style={searchStyles.actions}>
+        <Pressable accessibilityRole="button" accessibilityLabel={`Open ${name} study module`}
+          onPress={() => router.push(`/module/${match.module.id}`)} style={searchStyles.secondaryAction}>
+          <Text style={{ color: colors.primary }}>Open lesson</Text>
+        </Pressable>
+        <Pressable accessibilityRole="button" accessibilityLabel={`${bookmarks.includes(match.structure.id) ? 'Remove bookmark for' : 'Bookmark'} ${name}`} accessibilityState={{ selected: bookmarks.includes(match.structure.id) }} hitSlop={2} onPress={() => toggleBookmark(match.structure.id)} style={searchStyles.bookmark}>
+          <Text style={{ color: colors.primary }}>{bookmarks.includes(match.structure.id) ? '★ Saved' : '☆ Save'}</Text>
+        </Pressable>
+      </View>
     </View>;
   });
   return <Screen scrollRef={pageRef} keyboardShouldPersistTaps="handled" onScroll={(event) => { pageY.current = event.nativeEvent.contentOffset.y; }} onViewportLayout={(height, bottomClearance) => { viewport.current = { height, bottomClearance }; scheduleReveal(); }}>
@@ -117,6 +133,9 @@ export default function StudyScreen() {
     <View style={searchStyles.container}>
        {reflow && <Text style={{ color: colors.mutedForeground }}>Search anatomy</Text>}
        <TextInput accessibilityLabel="Search anatomy" value={query} onChangeText={setQuery} placeholder={reflow ? 'Search' : 'Search anatomy'} placeholderTextColor={colors.mutedForeground} returnKeyType="search" style={[styles.search, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} />
+      <Pressable accessibilityRole="button" accessibilityLabel="Browse anatomy glossary" onPress={() => router.push({ pathname: '/glossary', params: { q: query } })} style={searchStyles.glossaryLink}>
+        <Text style={{ color: colors.primary, fontWeight: '600' }}>Browse glossary →</Text>
+      </Pressable>
       {query.trim().length > 0 && <View testID="anatomy-search-results" accessibilityLabel="Anatomy search results" style={[searchStyles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}>
         <Text style={[searchStyles.heading, { color: colors.mutedForeground }]}>{matching.length ? 'Suggested structures' : 'No close match'}</Text>
         {matching.length > 0 && (reflow
@@ -153,6 +172,7 @@ const styles = StyleSheet.create({
 });
 const searchStyles = StyleSheet.create({
   container: { gap: 8 },
+  glossaryLink: { alignSelf: 'flex-start', minHeight: 44, justifyContent: 'center' },
   panel: { borderWidth: 1, borderRadius: 16, overflow: 'hidden', paddingTop: 12 },
   heading: { fontSize: 12, fontWeight: '700', paddingHorizontal: 14, paddingBottom: 12 },
   scroll: { maxHeight: 300 },
@@ -161,9 +181,11 @@ const searchStyles = StyleSheet.create({
   row: { borderTopWidth: 1, paddingHorizontal: 14, paddingVertical: 8, gap: 4 },
   target: { minHeight: 44, justifyContent: 'center', gap: 3 },
   title: { fontSize: 16, fontWeight: '700' },
+  definition: { fontSize: 14, lineHeight: 20 },
   context: { fontSize: 12 },
-   bookmark: { alignSelf: 'flex-end', minHeight: 40, justifyContent: 'center', paddingHorizontal: 8 },
-   bookmarkLarge: { minHeight: 44 },
+  actions: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', gap: 8 },
+  secondaryAction: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 8 },
+  bookmark: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 8 },
 });
 const responsive = StyleSheet.create({
   brandReflow: { flexDirection: 'column', alignItems: 'stretch', position: 'relative' },
