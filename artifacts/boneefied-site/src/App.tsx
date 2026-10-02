@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ArrowRight, ArrowUpRight, BookOpen, Bookmark, ChartNoAxesColumn, Check, Copy, Crosshair, ExternalLink, HardDrive, RotateCcw, Search, Smartphone, Target } from 'lucide-react';
 import logo from './assets/logo-rounded.png';
 
-const BUILD_URL = 'https://expo.dev/accounts/qaarla1/projects/boneefied/builds/237a2c87-8456-4d73-b3d1-c098befee194';
+const BUILD_URL = 'https://expo.dev/accounts/qaarla1/projects/boneefied/builds/8c56f105-72ac-4728-ad15-988b3cb752a7';
 const APP_URL = 'boneefied://';
 
 const features = [
