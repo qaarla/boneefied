@@ -5,6 +5,7 @@
       "node": "22.16.0",
       "pnpm": "10.26.1",
       "android": {
+        "image": "sdk-57",
         "buildType": "apk"
       },
       "ios": {
