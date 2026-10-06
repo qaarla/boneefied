@@ -12,3 +12,4 @@
 - [iOS text scaling boundary](ios-text-scaling-boundary.md) — native Text scales fonts and line heights; custom native header title sizes need separate treatment.
 - [Anatomy diagram localization](anatomy-diagram-localization.md) — translated metadata cannot remove English text baked into anatomy images; resolve visibly and rights-safely.
 - [Practice locale draft preservation](practice-locale-drafts.md) — tab navigation can lose unsubmitted selections; persist raw drafts separately from canonical scoring.
+- [Anatomical word meanings](anatomical-word-meanings.md) — define adjective forms in plain language, without treating search vocabulary as valid identification answers.

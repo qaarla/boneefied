@@ -10,6 +10,9 @@ import { EmptyState } from '@/components/EmptyState';
 import { content } from '@/content/canonical';
 import { createAnatomySearchIndex, searchAnatomy } from '@/content/search';
 import { definitionForStructure } from '@/content/glossary';
+import { wordMeaning } from '@/content/anatomical-terms';
+import { searchWordParts } from '@/content/word-parts';
+import { WordPartResults } from '@/components/WordPartResults';
 import { useColors } from '@/hooks/useColors';
 import { useStudy } from '@/context/StudyContext';
 import { useLocale } from '@/locales/useLocale';
@@ -80,14 +83,16 @@ export default function StudyScreen() {
   const { mastery, bookmarks, preferences, toggleBookmark } = useStudy();
   const [query, setQuery] = React.useState('');
   const matching = React.useMemo(() => searchAnatomy(anatomySearchIndex, query, 8, language), [query, language]);
+  const wordMatches = React.useMemo(() => searchWordParts(query, language, 6), [query, language]);
    const systemChoices = systems.map(([key, id]) => <AdaptiveButton key={id} accessibilityRole="button" hitSlop={4} onPress={() => selectSystem(id)} style={[styles.system, reflow && responsive.systemLarge, { borderColor: selectedSystem === id ? colors.primary : colors.border, backgroundColor: selectedSystem === id ? colors.secondary : colors.card }]}><View style={[responsive.systemName, reflow && responsive.systemNameLarge]}><Text style={{ color: colors.foreground, fontWeight: '600' }}>{t(key)}</Text></View><Text style={[responsive.trailingStatus, reflow && responsive.systemStatusLarge, { color: colors.mutedForeground }]}>{t(content.modules.some((item) => matchesSystem(item, id)) ? 'study.system.openStatus' : 'study.system.comingNextStatus')}</Text></AdaptiveButton>);
   const searchResults = matching.map((match) => {
     const localizedStructure = localizeStructure(match.structure);
     const localizedModule = localizeModule(match.module);
-    const name = localizedStructure.canonicalName;
+    const meaning = match.term ? wordMeaning(match.term, language) : undefined;
+    const name = meaning?.name ?? localizedStructure.canonicalName;
     const context = `${localizedModule.title} · ${localizedStructure.category}`;
     const englishDefinition = definitionForStructure(match.structure.id);
-    const definition = englishDefinition ? localizeDefinition(match.structure.id, englishDefinition) : undefined;
+    const definition = meaning?.definition ?? (englishDefinition ? localizeDefinition(match.structure.id, englishDefinition) : undefined);
     return <View key={match.structure.id} style={[searchStyles.row, { borderTopColor: colors.border }]}>
       <Pressable
         testID={`search-result-${match.structure.id}`}
@@ -144,7 +149,8 @@ export default function StudyScreen() {
          <Text style={{ color: colors.primary, fontWeight: '600' }}>{t('study.browseGlossary')}</Text>
       </Pressable>
        {query.trim().length > 0 && <View testID="anatomy-search-results" accessibilityLabel={t('study.searchResultsAccessibility')} style={[searchStyles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}>
-         <Text style={[searchStyles.heading, { color: colors.mutedForeground }]}>{t(matching.length ? 'study.suggestedStructures' : 'study.noCloseMatch')}</Text>
+          {wordMatches.length > 0 && <View style={{ paddingHorizontal: 14, paddingBottom: 12 }}><WordPartResults parts={wordMatches} query={query} /></View>}
+          {(matching.length > 0 || wordMatches.length === 0) && <Text style={[searchStyles.heading, { color: colors.mutedForeground }]}>{t(matching.length ? 'study.suggestedStructures' : 'study.noCloseMatch')}</Text>}
         {matching.length > 0 && (reflow
           ? <View style={[searchStyles.content, searchStyles.scrollNatural]}>{searchResults}</View>
           : <ScrollView nestedScrollEnabled keyboardShouldPersistTaps="always" style={searchStyles.scroll} contentContainerStyle={searchStyles.content} showsVerticalScrollIndicator>{searchResults}</ScrollView>)}

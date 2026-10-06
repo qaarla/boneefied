@@ -6,6 +6,8 @@ import { Heading, Text } from '@/components/ScaledText';
 import { Screen } from '@/components/Screen';
 import { content } from '@/content/canonical';
 import { createGlossaryIndex } from '@/content/glossary';
+import { searchAnatomy } from '@/content/search';
+import { anatomicalTerms, wordMeaning } from '@/content/anatomical-terms';
 import { useColors } from '@/hooks/useColors';
 import { useLocale } from '@/locales/useLocale';
 
@@ -15,10 +17,13 @@ export default function GlossaryEntryScreen() {
   const { id, q } = useLocalSearchParams<{ id: string; q?: string }>();
   const router = useRouter();
   const colors = useColors();
-  const { t, module: localizeModule, structure: localizeStructure, citation, definition } = useLocale();
+  const { language, t, module: localizeModule, structure: localizeStructure, citation, definition } = useLocale();
   const entry = entries.get(id);
   const localizedStructure = entry ? localizeStructure(entry.structure) : undefined;
   const localizedModule = entry ? localizeModule(entry.module) : undefined;
+  const matchedWord = entry && typeof q === 'string' ? searchAnatomy([entry], q, 1, language)[0]?.term : undefined;
+  const meaning = matchedWord ? wordMeaning(matchedWord, language) : undefined;
+  const relatedWords = entry ? anatomicalTerms.filter((term) => term.structureId === entry.structure.id) : [];
 
   return <Screen>
     <Stack.Screen options={{ title: t('glossary.entryNavigationTitle') }} />
@@ -31,11 +36,22 @@ export default function GlossaryEntryScreen() {
       </AdaptiveButton>
     </> : <>
       <Text style={[styles.eyebrow, { color: colors.primary }]}>{t('glossary.eyebrow')}</Text>
-      <Heading style={[styles.title, { color: colors.foreground }]}>{localizedStructure!.canonicalName}</Heading>
+      <Heading style={[styles.title, { color: colors.foreground }]}>{meaning?.name ?? localizedStructure!.canonicalName}</Heading>
       <AdaptiveCard style={[styles.card, { backgroundColor: colors.card, borderColor: colors.border }]}>
-        <Text style={[styles.definition, { color: colors.foreground }]}>{definition(entry.structure.id, entry.definition)}</Text>
+        <Text style={[styles.definition, { color: colors.foreground }]}>{meaning?.definition ?? definition(entry.structure.id, entry.definition)}</Text>
+        {meaning && <View style={styles.aliases}>
+          <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Estructura relacionada' : 'Related structure'}: {localizedStructure!.canonicalName}</Heading>
+          <Text style={{ color: colors.foreground }}>{definition(entry.structure.id, entry.definition)}</Text>
+        </View>}
         <Text style={{ color: colors.mutedForeground }}>{localizedModule!.title} · {localizedStructure!.category}</Text>
       </AdaptiveCard>
+      {!meaning && relatedWords.length > 0 && <View style={styles.aliases}>
+        <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Palabras relacionadas' : 'Related words'}</Heading>
+        {relatedWords.map((term) => {
+          const word = wordMeaning(term, language);
+          return <Text key={term.en} style={{ color: colors.foreground }}>{word.name}: {word.definition}</Text>;
+        })}
+      </View>}
       {localizedStructure!.acceptedAliases.length > 0 && <View style={styles.aliases}>
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{t('glossary.acceptedSearchTerms')}</Heading>
         <Text style={{ color: colors.mutedForeground }}>{localizedStructure!.acceptedAliases.join(' · ')}</Text>

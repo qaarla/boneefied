@@ -1,5 +1,6 @@
 import type { ContentCatalog, Module, Structure } from './model';
 import { spanishModules } from '../locales/es/index.ts';
+import { anatomicalTerms, type AnatomicalTerm } from './anatomical-terms.ts';
 
 type Name = {
   label: string;
@@ -8,6 +9,7 @@ type Name = {
   canonical: boolean;
   englishLabel: string;
   spanishLabel: string;
+  term?: AnatomicalTerm;
 };
 export type AnatomySearchEntry = { structure: Structure; module: Module; names: Name[] };
 export type AnatomySearchMatch = {
@@ -15,6 +17,7 @@ export type AnatomySearchMatch = {
   module: Module;
   matchedTerm: string;
   kind: 'exact-canonical' | 'exact-alias' | 'partial' | 'fuzzy';
+  term?: AnatomicalTerm;
 };
 
 export function normalizeSearchText(value: string): string {
@@ -65,7 +68,13 @@ export function createAnatomySearchIndex(catalog: ContentCatalog): AnatomySearch
       const normalized = normalizeSearchText(label);
       return { label, normalized, singular: singularize(normalized), canonical, englishLabel, spanishLabel };
     }).filter((name) => name.normalized);
-    return [{ structure, module, names }];
+    const wordNames: Name[] = anatomicalTerms.filter((term) => term.structureId === structure.id)
+      .flatMap((term) => [...new Set([term.en, term.es])].map((label) => {
+        const normalized = normalizeSearchText(label);
+        return { label, normalized, singular: singularize(normalized), canonical: false,
+          englishLabel: term.en, spanishLabel: term.es, term };
+      }));
+    return [{ structure, module, names: [...names, ...wordNames] }];
   });
 }
 
@@ -131,8 +140,10 @@ export function searchAnatomy(index: AnatomySearchEntry[], query: string, limit 
         matchedTerm: language === 'es' ? name.spanishLabel : name.englishLabel,
         kind: tier === 0 ? 'exact-canonical' : tier === 1 ? 'exact-alias' : tier === 2 ? 'partial' : 'fuzzy',
         tier, detail,
+        ...(name.term ? { term: name.term } : {}),
       };
-      if (!best || match.tier < best.tier || (match.tier === best.tier && match.detail < best.detail)) best = match;
+    if (!best || match.tier < best.tier || (match.tier === best.tier &&
+      (match.detail < best.detail || (match.detail === best.detail && match.term && !best.term)))) best = match;
     }
     if (best) scored.push(best);
   }

@@ -6,6 +6,9 @@ import { Heading, Text, TextInput, useTypographyLayout } from '@/components/Scal
 import { content } from '@/content/canonical';
 import { createGlossaryIndex, filterGlossary, type GlossaryEntry } from '@/content/glossary';
 import { normalizeSearchText } from '@/content/search';
+import { anatomicalTerms, wordMeaning } from '@/content/anatomical-terms';
+import { searchWordParts } from '@/content/word-parts';
+import { WordPartResults } from '@/components/WordPartResults';
 import { useColors } from '@/hooks/useColors';
 import { useLocale } from '@/locales/useLocale';
 
@@ -23,6 +26,7 @@ export default function GlossaryScreen() {
   const [query, setQuery] = React.useState(typeof q === 'string' ? q : '');
   const [system, setSystem] = React.useState<string | undefined>();
   const [filtersOpen, setFiltersOpen] = React.useState(false);
+  const wordMatches = React.useMemo(() => system ? [] : searchWordParts(query, language), [query, language, system]);
   const listRef = React.useRef<FlatList<GlossaryEntry>>(null);
   const displayEntries = React.useMemo(() => glossary.map((entry) => ({
     ...entry,
@@ -42,8 +46,13 @@ export default function GlossaryScreen() {
       ].some((term) => normalizeSearchText(term).includes(normalizedQuery)))
       : [];
     const byId = new Map<string, (typeof displayEntries)[number]>();
-    for (const entry of englishMatches) byId.set(entry.structure.id, displayEntries.find((item) => item.structure.id === entry.structure.id)!);
-    for (const entry of localizedMatches) byId.set(entry.structure.id, entry);
+    for (const entry of englishMatches) {
+      const localized = displayEntries.find((item) => item.structure.id === entry.structure.id)!;
+      const meaning = entry.term ? wordMeaning(entry.term, language) : undefined;
+      byId.set(entry.structure.id, { ...localized, term: entry.term,
+        ...(meaning ? { structure: { ...localized.structure, canonicalName: meaning.name }, definition: meaning.definition } : {}) });
+    }
+    for (const entry of localizedMatches) if (!byId.has(entry.structure.id)) byId.set(entry.structure.id, entry);
     if (!normalizedQuery) {
       return displayEntries.filter((entry) => !system || entry.module.id === system)
         .sort((a, b) => a.structure.canonicalName.localeCompare(b.structure.canonicalName) || a.module.title.localeCompare(b.module.title));
@@ -72,6 +81,10 @@ export default function GlossaryScreen() {
         ListHeaderComponent={<View style={styles.header}>
           <Heading style={[styles.title, { color: colors.foreground }]}>{t(shouldReflow ? 'glossary.reflowTitle' : 'glossary.title')}</Heading>
           <Text style={{ color: colors.mutedForeground }}>{t('glossary.introduction')}</Text>
+          <Pressable accessibilityRole="button" onPress={() => router.push({ pathname: '/glossary/word-parts', params: { q: query } })}
+            style={[styles.filter, { borderColor: colors.border, backgroundColor: colors.secondary }]}>
+            <Text style={{ color: colors.primary, fontWeight: '600' }}>{language === 'es' ? 'Explorar prefijos, raíces y sufijos' : 'Browse prefixes, roots & suffixes'}</Text>
+          </Pressable>
           <TextInput
             accessibilityLabel={t('glossary.filterAccessibility')}
             value={query}
@@ -94,9 +107,10 @@ export default function GlossaryScreen() {
               accessibilityLabel={t('glossary.filterBySystemAccessibility')} style={styles.filters} contentContainerStyle={styles.filterContent}>
               {filters}
             </ScrollView>}
+          <WordPartResults parts={wordMatches} query={query} />
           <Text style={{ color: colors.mutedForeground }}>{t(`glossary.entryCount.${entries.length === 1 ? 'one' : 'other'}`, { count: number(entries.length) })}{system ? ` · ${localizeModule(systems.find((item) => item.id === system)!).title}` : ''}</Text>
         </View>}
-        ListEmptyComponent={<Text style={{ color: colors.mutedForeground, paddingVertical: 16 }}>{t('glossary.noFilterMatches')}</Text>}
+        ListEmptyComponent={wordMatches.length ? null : <Text style={{ color: colors.mutedForeground, paddingVertical: 16 }}>{t('glossary.noFilterMatches')}</Text>}
         renderItem={({ item, index }) => {
           const letter = item.structure.canonicalName.charAt(0).toUpperCase();
           const previous = entries[index - 1]?.structure.canonicalName.charAt(0).toUpperCase();
@@ -110,6 +124,9 @@ export default function GlossaryScreen() {
             >
               <Text style={[styles.entryTitle, { color: colors.foreground }]}>{item.structure.canonicalName}</Text>
               <Text style={{ color: colors.foreground }}>{item.definition}</Text>
+              {!searching && anatomicalTerms.some((term) => term.structureId === item.structure.id) && <Text style={[styles.context, { color: colors.mutedForeground }]}>
+                {anatomicalTerms.filter((term) => term.structureId === item.structure.id).map((term) => wordMeaning(term, language).name).join(' · ')}
+              </Text>}
               <Text style={[styles.context, { color: colors.mutedForeground }]}>{item.module.title} · {item.structure.category}</Text>
             </Pressable>
           </View>;

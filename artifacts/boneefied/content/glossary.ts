@@ -7,6 +7,7 @@ import cellsSkinSenses from './glossary/cells-skin-senses.ts';
 import endocrineCirculation from './glossary/endocrine-circulation.ts';
 import respiratoryDigestiveUrinary from './glossary/respiratory-digestive-urinary.ts';
 import reproductive from './glossary/reproductive.ts';
+import type { AnatomicalTerm } from './anatomical-terms.ts';
 
 // Definitions are keyed only by existing structure IDs. Names, aliases,
 // categories, source provenance, and module links always come from the catalog.
@@ -16,7 +17,7 @@ const definitionGroups: ReadonlyArray<Readonly<Record<string, string>>> = [
 ];
 const definitions = Object.assign({}, ...definitionGroups) as Record<string, string>;
 
-export type GlossaryEntry = AnatomySearchEntry & { definition: string };
+export type GlossaryEntry = AnatomySearchEntry & { definition: string; term?: AnatomicalTerm };
 
 export function definitionForStructure(id: string): string | undefined {
   return definitions[id]?.trim() || undefined;
@@ -52,6 +53,6 @@ export function filterGlossary(index: GlossaryEntry[], query: string, system?: s
   const byId = new Map(available.map((entry) => [entry.structure.id, entry]));
   return searchAnatomy(available, query, available.length).flatMap((match) => {
     const entry = byId.get(match.structure.id);
-    return entry ? [entry] : [];
+    return entry ? [{ ...entry, ...(match.term ? { term: match.term } : {}) }] : [];
   });
 }
