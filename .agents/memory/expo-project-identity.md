@@ -8,3 +8,9 @@ When an Expo build API says no repository is linked for the app ID in source con
 **Why:** A build-from-GitHub screen showed a linked repository and successfully queued an internal iOS build, although calls using the source config's project ID reported no repository or no project.
 
 **How to apply:** Compare the dashboard project identity and submitted build details with source configuration. Do not silently change account owner or project ID based on an API error alone; confirm the intended project first.
+
+Before starting a requested build, check for an already-running internal build with matching mobile source, including GitHub revisions not yet present in the workspace.
+
+**Why:** A glossary build was already running from a GitHub revision ahead of the workspace; its mobile source matched except for the increased build number. Starting another would have duplicated the requested build.
+
+**How to apply:** Inspect the active build's source revision and compare the mobile tree, not just commit IDs. Use the matching build, wait for success, and only then change installation links.
