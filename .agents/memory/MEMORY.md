@@ -2,6 +2,7 @@
 - [Expo offline evidence](expo-offline-evidence.md) — local image bundling does not prove web-preview or native-device offline rendering.
 - [Expo project identity](expo-project-identity.md) — a stale app config project ID can make build APIs deny repository access even when the dashboard has a GitHub link.
 - [Mobile identifier rule](mobile-identifier-rule.md) — each app's Android package must exactly match its existing iOS bundleIdentifier; flag established mismatches.
+- [Google Play release constraints](google-play-release-constraints.md) — preserve the existing app entry, paid-download decision, and Android signing identity.
 - [Expo cloud build versions](expo-cloud-build-versions.md) — diagnose frozen-lockfile and iOS pod failures against EAS builder versions before changing app dependencies.
 - [GitHub connector vs Git push](github-git-push.md) — connector auth and Git transport differ; test a scoped push path before relying on either.
 - [Boneefied site routing](boneefied-site-routing.md) — browser root can lead to the site, but Expo's header-aware root manifest and QR access must remain.
