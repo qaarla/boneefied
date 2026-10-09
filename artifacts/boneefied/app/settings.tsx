@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, ScrollView, StyleSheet, View } from 'react-native';
+import { Alert, Linking, Modal, ScrollView, StyleSheet, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { Heading, Text, useTypographyLayout } from '@/components/ScaledText';
 import { AdaptiveButton, AdaptiveCard, AdaptiveRow } from '@/components/AdaptiveLayout';
@@ -18,6 +18,11 @@ export default function SettingsScreen() {
   const insets = useSafeAreaInsets();
   const [resetOpen, setResetOpen] = useState(false);
   const [aboutExpanded, setAboutExpanded] = useState(false);
+  const openPrivacyPolicy = () => {
+    void Linking.openURL('https://boneefied.com/site/privacy-policy').catch(() => {
+      Alert.alert(t('settings.privacyPolicy.label'), t('settings.privacyPolicy.openError'));
+    });
+  };
   return <><Stack.Screen options={{ title: t('settings.navigationTitle') }} /><Screen>
     <Text style={[styles.eyebrow, { color: colors.primary }]}>{t('settings.eyebrow')}</Text><Heading style={[styles.title, { color: colors.foreground }]}>{t('settings.pageTitle')}</Heading>
     <AdaptiveCard style={[styles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}>
@@ -91,6 +96,16 @@ export default function SettingsScreen() {
       >
         <Text style={[styles.aboutToggleTitle, { color: colors.foreground }]}>{t('settings.about.toggleTitle')}</Text>
         <Feather name={aboutExpanded ? 'chevron-up' : 'chevron-down'} size={20} color={colors.mutedForeground} />
+      </AdaptiveButton>
+      <AdaptiveButton
+        testID="settings-privacy-policy"
+        accessibilityRole="link"
+        accessibilityLabel={t('settings.privacyPolicy.accessibilityLabel')}
+        onPress={openPrivacyPolicy}
+        style={styles.aboutToggle}
+      >
+        <Text style={{ color: colors.primary }}>{t('settings.privacyPolicy.label')}</Text>
+        <Feather name="external-link" size={18} color={colors.primary} />
       </AdaptiveButton>
       {aboutExpanded && <View style={styles.aboutContent}>
         <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.about.heading')}</Heading>

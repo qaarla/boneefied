@@ -306,6 +306,7 @@ function App() {
           <a href="#about" data-testid="link-footer-about">About</a>
           <a href="#support" data-testid="link-footer-support">Support</a>
           <a href="mailto:help@boneefied.com" data-testid="link-footer-contact">Contact</a>
+          <a href={`${import.meta.env.BASE_URL}privacy-policy`} data-testid="link-footer-privacy">Privacy Policy</a>
           <a href="#main" data-testid="link-back-to-top">Back to top ↑</a>
         </nav>
       </footer>

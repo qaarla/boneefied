@@ -20,6 +20,14 @@ serve = "static"
 publicDir = "artifacts/boneefied-site/dist/public"
 
 [[services.production.rewrites]]
+from = "/privacy-policy"
+to = "/privacy-policy.html"
+
+[[services.production.rewrites]]
+from = "/privacy-policy/"
+to = "/privacy-policy.html"
+
+[[services.production.rewrites]]
 from = "/*"
 to = "/index.html"
 

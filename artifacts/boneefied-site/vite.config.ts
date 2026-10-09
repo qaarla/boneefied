@@ -27,9 +27,30 @@ if (!basePath) {
   );
 }
 
+// Match production's explicit HTML-page rewrite without navigating through the SPA.
+const privacyPolicyRewrite = () => {
+  const middleware = (req: { url?: string }, _res: unknown, next: () => void) => {
+    const pathname = req.url?.split('?')[0];
+    if (pathname === `${basePath}privacy-policy` || pathname === `${basePath}privacy-policy/`) {
+      req.url = req.url!.replace('privacy-policy', 'privacy-policy.html').replace('privacy-policy.html/', 'privacy-policy.html');
+    }
+    next();
+  };
+  return {
+    name: 'boneefied-privacy-policy',
+    configureServer(server: { middlewares: { use: (handler: typeof middleware) => void } }) {
+      server.middlewares.use(middleware);
+    },
+    configurePreviewServer(server: { middlewares: { use: (handler: typeof middleware) => void } }) {
+      server.middlewares.use(middleware);
+    },
+  };
+};
+
 export default defineConfig({
   base: basePath,
   plugins: [
+    privacyPolicyRewrite(),
     react(),
     tailwindcss(),
     runtimeErrorOverlay(),
