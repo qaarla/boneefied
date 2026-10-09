@@ -1,24 +1,26 @@
 {
   "file": "boneefied-production.aab",
-  "buildId": "8f089617-677b-4065-a180-0cd8d3613dda",
+  "buildId": "b8469a19-dbe5-4b49-bb9f-cc25c19f150b",
   "buildStatus": "FINISHED",
   "profile": "production",
   "distribution": "STORE",
-  "sourceRevision": "517765a4c4007a125d05b75a3da73e356e30309d",
-  "sourceArtifactUrl": "https://expo.dev/artifacts/eas/XBYQzXnVO1GLtIb0WIIWnaaIwQAFfbPZm1p14YNKPZY.aab",
+  "sourceRevision": "9aee657d4c23d2ffcb67efb9559821aee56ea721",
+  "sourceArtifactUrl": "https://expo.dev/artifacts/eas/Jwbz8UXOuDaCCZ0UnyEIG6UqHhZVj5vbUVMRihmhN0c.aab",
   "package": "com.qaarla.boneefied",
   "version": "1.0.0",
-  "versionCode": 2,
-  "sizeBytes": 107308300,
-  "sha256": "89fa7ab93803c0601dbe6167efc8ef81e100d74cba05c0ebb302ab2285675b0b",
+  "versionCode": 3,
+  "sizeBytes": 107310207,
+  "sha256": "7b42ea8029141a394ca1c5a272b77a3b81b03f83741732eba268f6dd86262ff8",
   "signingCertificateSha256": "915DDD6D93E8001698141C980F9D894347FA683727A4FE96B2D2B2B37A3D0859",
   "verification": {
     "androidAppBundleStructure": "PASS",
     "zipIntegrity": "PASS",
     "embeddedPackageAndVersion": "PASS",
+    "embeddedPrivacyPolicyLink": "PASS",
+    "embeddedLocalResetAccess": "PASS",
     "cryptographicSignature": "PASS",
     "signedPayloadDigests": "PASS (1491 entries)",
-    "byteForByteMatchWithPreviouslyVerifiedEasArtifact": "PASS",
+    "byteForByteMatchWithFinishedEasArtifact": "PASS",
     "existingAndroidSigningCertificateMatch": "PASS"
   }
 }
