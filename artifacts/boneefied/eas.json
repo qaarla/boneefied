@@ -1,4 +1,7 @@
 {
+  "cli": {
+    "appVersionSource": "local"
+  },
   "build": {
     "preview": {
       "distribution": "internal",
@@ -11,6 +14,16 @@
       "ios": {
         "image": "sdk-57",
         "simulator": false
+      }
+    },
+    "production": {
+      "extends": "preview",
+      "distribution": "store",
+      "developmentClient": false,
+      "credentialsSource": "remote",
+      "environment": "production",
+      "android": {
+        "buildType": "app-bundle"
       }
     }
   }
