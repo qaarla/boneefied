@@ -9,8 +9,8 @@ Boneefied's Google Play app entry already exists; do not create another. Preserv
 
 **How to apply:** Use the existing Play entry for future release work. Do not change pricing or rotate signing keys as part of build preparation or store setup.
 
-For release retrieval, the owner wants the exact existing signed AAB downloadable inside this Replit project rather than requiring navigation through Expo. Do not create a public endpoint by default or include large release binaries in Git.
+Release retrieval is workspace delivery convenience, not authorization to publish a release or deploy the website.
 
-**Why:** The owner explicitly requested project-local file staging for manual Play Console uploads.
+**Why:** The owner explicitly separated delivery of the already-finished bundle from builds, Play submission, and app publication.
 
-**How to apply:** Retrieve the already-finished artifact without rebuilding or modifying its bytes, provide Files-view download instructions, and retain a short provenance and checksum manifest.
+**How to apply:** Keep staging and download work separate from store and deployment actions. Follow the owner's current delivery preference without changing app behavior or store settings.

@@ -10,7 +10,38 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: downloads
+    description: Workspace release downloads
 paths:
+  /download/boneefied-production.aab:
+    get:
+      operationId: downloadBoneefiedProductionBundle
+      tags: [downloads]
+      summary: Download the existing signed Android production bundle
+      description: Development-only delivery of the exact staged AAB; unavailable in production.
+      responses:
+        "200":
+          description: Unmodified signed Android App Bundle
+          headers:
+            Content-Disposition:
+              schema:
+                type: string
+              description: Attachment with filename boneefied-production.aab
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+        "404":
+          description: Bundle unavailable or not running in development
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [error]
+                properties:
+                  error:
+                    type: string
   /healthz:
     get:
       operationId: healthCheck
