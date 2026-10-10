@@ -43,6 +43,17 @@ test('classic navigation expands to two columns before enlarged labels need shri
   assert.equal(needsExpandedTabLayout(2.5, 'default'), true);
 });
 
+test('narrow enlarged navigation uses the existing accessible dock without changing ordinary layouts', () => {
+  for (const width of [320, 390]) {
+    assert.equal(needsExpandedTabLayout(1, 'default', width), false);
+    assert.equal(needsExpandedTabLayout(1.3, 'default', width), false);
+    assert.equal(needsExpandedTabLayout(2.5, 'default', width), true);
+  }
+  assert.equal(needsExpandedTabLayout(1.8, 'default', 320), true);
+  assert.equal(needsExpandedTabLayout(1.8, 'default', 390), false);
+  assert.equal(needsExpandedTabLayout(1.8, 'large', 390), true);
+});
+
 test('narrow phones reflow before text gets squeezed, while default and wide layouts stay put', () => {
   assert.equal(needsCompactTextLayout(390, 1, 'default'), false);
   assert.equal(needsCompactTextLayout(320, 1, 'default'), false);

@@ -1,3 +1,5 @@
+import { isAtlasAssetId } from '@/content/atlas-index';
+import { formatAnswerForDisplay } from '@/content/answer-display';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { AccessibilityInfo, Keyboard, Platform, Pressable, StyleSheet, View } from 'react-native';
 import { Heading, Text, TextInput, useTypographyLayout } from '@/components/ScaledText';
@@ -12,9 +14,13 @@ import { useStudy } from '@/context/StudyContext';
 import { useColors } from '@/hooks/useColors';
 import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
 import { imageSources } from '@/content/imageSources';
+import { isMuscularAtlasAssetId } from '@/content/muscular-atlas-pack';
+import { isBvis04AssetId } from '@/content/bvis04-pack';
+import { isBvis06AssetId } from '@/content/bvis06-pack';
 import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';
 import { useLocale } from '@/locales/useLocale';
 import { spanishResponseForScoring } from '@/locales/es';
+import { optionsForQuestion } from '@/components/questionInputPolicy';
 
 type Phase = 'setup' | 'quiz' | 'results';
 const supported = new Set(['multiple-choice', 'typed-recall', 'image-identification', 'hotspot', 'histology-identification', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
@@ -141,8 +147,11 @@ export default function PracticeScreen() {
     answerIsCorrect(spanishResponseForScoring(question, candidate), question);
   const correctAnswerText = (question: Question) => {
     const localized = locale.question(question).answer;
-    if (typeof localized === 'string') return localized;
-    return localized.join(question.taskType === 'ordered-sequence' ? ' → ' : ' · ');
+    return formatAnswerForDisplay(question, localized, (id) => {
+      const structure = content.structures.find((s) => s.id === id);
+      // Legacy questions can already contain a localized display name, not an ID.
+      return structure ? locale.structure(structure).canonicalName : id;
+    });
   };
   const submit = () => {
     if (submitted || submissionGuard.current || !q || !study.sessions.some((session) => session.id === sessionId && session.status !== 'completed')) return;
@@ -161,12 +170,12 @@ export default function PracticeScreen() {
          {content.modules.filter((item) => item.published).length > 1 && <View style={styles.counts}>{content.modules.filter((item) => item.published).map((item) => <AdaptiveButton key={item.id} onPress={() => { setSelectedModuleId(item.id); setPhase('setup'); }} style={[styles.count, { borderColor: selectedModuleId === item.id ? colors.primary : colors.border, backgroundColor: selectedModuleId === item.id ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{locale.module(item).title}</Text></AdaptiveButton>)}</View>}
         <Text style={{ color: colors.mutedForeground }}>{locale.t('practice.eligibleQuestions', { count: locale.number(pool.length) })}</Text>
         <View style={styles.counts}>{[3, 5, pool.length].filter((n, i, a) => n > 0 && a.indexOf(n) === i).map((n) => <AdaptiveButton key={n} onPress={() => setCount(Math.min(n, pool.length))} style={[styles.count, { borderColor: count === Math.min(n, pool.length) ? colors.primary : colors.border, backgroundColor: count === Math.min(n, pool.length) ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground }}>{locale.t(n === 1 ? 'practice.questionCount.one' : 'practice.questionCount.other', { count: locale.number(n) })}</Text></AdaptiveButton>)}</View>
-        {activeSession ? <AdaptiveButton testID="resume-practice" onPress={() => setPhase('quiz')} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{locale.t('practice.resumeSavedSession')}</Text></AdaptiveButton> : <AdaptiveButton testID="start-practice" onPress={start} style={[styles.primary, { backgroundColor: colors.primary }]}><Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{locale.t('practice.start')}</Text></AdaptiveButton>}
+        {activeSession ? <AdaptiveButton testID="resume-practice" onPress={() => setPhase('quiz')} style={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, styles.reflowRetryText]}>{locale.t('practice.resumeSavedSession')}</Text></AdaptiveButton> : <AdaptiveButton testID="start-practice" onPress={start} style={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, styles.reflowRetryText]}>{locale.t('practice.start')}</Text></AdaptiveButton>}
      </AdaptiveCard>
-       <AdaptiveCard style={[styles.focus, { borderColor: colors.border, backgroundColor: colors.card }]}>
-          <Heading style={{ color: colors.foreground, fontWeight: '700' }}>{locale.t('practice.focusedHeading')}</Heading>
+       <AdaptiveCard style={[styles.panel, { borderColor: colors.border, backgroundColor: colors.card }]}>
+          <Heading style={[styles.panelTitle, { color: colors.foreground }]}>{locale.t('practice.focusedHeading')}</Heading>
          <Text style={{ color: colors.mutedForeground }}>{locale.t('practice.lowestAttemptStructures', { structures: underpracticed.map((item) => locale.structure(item).canonicalName).join(' · ') || locale.t('practice.noneYet') })}</Text>
-          <AdaptiveButton testID="start-focused-practice" onPress={startFocused} disabled={!underpracticed.length} style={[styles.secondary, { borderColor: colors.primary, opacity: underpracticed.length ? 1 : 0.5 }]}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('practice.startFocused')}</Text></AdaptiveButton>
+          <AdaptiveButton testID="start-focused-practice" onPress={startFocused} disabled={!underpracticed.length} style={[styles.primaryContent, { borderWidth: 1, borderColor: colors.primary, opacity: underpracticed.length ? 1 : 0.5 }]}><Text style={[{ color: colors.primary, fontWeight: '700' }, styles.reflowRetryText]}>{locale.t('practice.startFocused')}</Text></AdaptiveButton>
        </AdaptiveCard>
        <Text style={[styles.note, { color: colors.mutedForeground }]}>{locale.t('practice.supportedTypes')}</Text>
   </Screen>;
@@ -175,7 +184,7 @@ export default function PracticeScreen() {
        <AdaptiveCard style={[styles.result, { backgroundColor: colors.card, borderColor: colors.border }]}>{shouldReflow ? <View style={styles.reflowScore}><Text style={[styles.big, { color: colors.foreground }]}>{locale.number(correct)}</Text><Text style={[styles.resultTotal, { color: colors.mutedForeground }]}>{locale.t('practice.scoreOutOf', { total: locale.number(questions.length) })}</Text></View> : <Text style={[styles.big, { color: colors.foreground }]}>{locale.number(correct)}/{locale.number(questions.length)}</Text>}<Text style={{ color: colors.mutedForeground }}>{locale.t('practice.accuracy', { percent: locale.number(Math.round(correct / Math.max(questions.length, 1) * 100)) })}</Text></AdaptiveCard>
        {questions.map((item, index) => { const display = locale.question(item); return <View key={item.id} style={styles.review}><Text style={[styles.reviewText, shouldReflow && styles.reflowText, { color: colors.foreground }]}>{locale.number(index + 1)}. {locale.t(answers[index] ? 'practice.correct' : 'practice.wrongOrUnanswered')} · {display.prompt}</Text><Text style={[styles.reviewDetail, shouldReflow && styles.reflowText, { color: colors.mutedForeground }]}>{display.explanation} · {citation(item.sourceId, item.sourcePage)}</Text></View>; })}
      <Text style={{ color: colors.mutedForeground }}>{locale.t('practice.savedMissedNotice')}</Text>
-       <AdaptiveButton onPress={start} style={[styles.primary, shouldReflow && styles.reflowRetry, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, shouldReflow && styles.reflowRetryText]}>{locale.t('practice.retryModule')}</Text></AdaptiveButton>
+       <AdaptiveButton onPress={start} style={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, styles.reflowRetryText]}>{locale.t('practice.retryModule')}</Text></AdaptiveButton>
       <AdaptiveButton onPress={() => router.replace('/(tabs)')} style={styles.link}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('practice.returnToStudy')}</Text></AdaptiveButton>
   </Screen>;
   if (!q || !localizedQuestion) return null;
@@ -205,11 +214,24 @@ function QuestionInput({ question, value, setValue, disabled, colors, reduceMoti
   const canonicalAsset = question.assetId ? content.assets.find((item) => item.id === question.assetId) : undefined;
   const asset = canonicalAsset ? locale.asset(canonicalAsset) : undefined;
   const localizedQuestion = locale.question(question);
-  const options = question.options ?? (question.answer as string[]);
+   const options = optionsForQuestion(question);
   const localizedAnswers = Array.isArray(localizedQuestion.answer) ? localizedQuestion.answer : [localizedQuestion.answer];
-  const labels = options.map((option, index) => localizedQuestion.options?.[index] ?? localizedAnswers[index] ?? option);
+  const labels = options.map((option, index) => {
+    const structure = question.taskType === 'ordered-sequence' ? content.structures.find((s) => s.id === option) : undefined;
+    return structure ? locale.structure(structure).canonicalName : localizedQuestion.options?.[index] ?? localizedAnswers[index] ?? option;
+  });
   const scoreAnswer = (candidate: string | string[]) => answerIsCorrect(spanishResponseForScoring(question, candidate), question);
-  const image = asset ? <AnatomyImageViewer source={imageSources[asset.id]} hotspots={question.taskType === 'image-identification' ? [] : question.hotspots ?? asset.hotspots} labels={(disabled || question.taskType === 'image-identification') ? asset.labels?.filter((label) => question.structureIds.includes(label.structureId)) : []} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={question.taskType === 'image-identification' ? undefined : (hotspot) => { selectionHaptic(hapticsEnabled); setValue(hotspot.structureId); }} selectedHotspotId={typeof value === 'string' ? value : undefined} correctHotspotId={question.structureIds[0]} submitted={disabled} reduceMotion={reduceMotion} /> : null;
+  const muscularPlate = !!asset && isMuscularAtlasAssetId(asset.id);
+  const bvis04Plate = !!asset && isBvis04AssetId(asset.id);
+  const bvis06Plate = !!asset && isBvis06AssetId(asset.id);
+  const actionMarker = muscularPlate && question.taskType === 'muscle-action' && question.id.startsWith('q-muscular-atlas-');
+   const imageIdMarker = (muscularPlate || bvis04Plate || bvis06Plate) && question.taskType === 'image-identification';
+  const bvis04ChoiceMarker = bvis04Plate && (question.taskType === 'function-relationship' || question.taskType === 'multiple-choice');
+  const readOnlyMarker = actionMarker || imageIdMarker || bvis04ChoiceMarker || (bvis06Plate && question.taskType === 'ordered-sequence');
+  const numberedTargets = question.id.startsWith('q-skeletal-atlas-') || ((muscularPlate || bvis04Plate || bvis06Plate) && question.taskType === 'hotspot') || readOnlyMarker;
+  const targets = readOnlyMarker ? question.hotspots : question.taskType === 'image-identification' ? [] : question.hotspots ?? asset?.hotspots;
+  const canSelectTarget = question.taskType !== 'image-identification' && !readOnlyMarker;
+  const image = asset ? <AnatomyImageViewer source={imageSources[asset.id]} atlasLayout={isAtlasAssetId(asset.id)} questionHotspotCallouts={numberedTargets} hotspots={targets} labels={(disabled || (question.taskType === 'image-identification' && !imageIdMarker)) ? asset.labels?.filter((label) => question.structureIds.includes(label.structureId)) : []} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={canSelectTarget ? (hotspot) => { selectionHaptic(hapticsEnabled); setValue(hotspot.structureId); } : undefined} selectedHotspotId={typeof value === 'string' ? value : undefined} correctHotspotId={question.structureIds[0]} submitted={disabled && !readOnlyMarker} reduceMotion={reduceMotion} /> : null;
    if (question.taskType === 'hotspot') return <View style={{ gap: 10 }}>{image}<Text style={{ color: colors.mutedForeground }}>{locale.t('practice.hotspotInstruction')}</Text></View>;
      if (question.taskType === 'typed-recall' || question.taskType === 'image-identification') return <View style={{ gap: 10 }}>{image}<TextInput testID="typed-answer" accessibilityLabel={disabled ? locale.t(scoreAnswer(value) ? 'practice.correctTypedAnswer' : 'practice.incorrectTypedAnswer') : locale.t('practice.imageIdentificationAnswer')} value={typeof value === 'string' ? value : ''} onChangeText={setValue} editable={!disabled} onSubmitEditing={Keyboard.dismiss} placeholder={locale.t('practice.answerPlaceholder')} placeholderTextColor={colors.mutedForeground} multiline={shouldReflow} submitBehavior={shouldReflow ? 'blurAndSubmit' : undefined} style={[styles.input, shouldReflow && styles.largeInput, { color: colors.foreground, borderColor: disabled ? (scoreAnswer(value) ? colors.success : colors.destructive) : colors.border, backgroundColor: colors.card }]} returnKeyType="done" /></View>;
   if (question.taskType === 'ordered-sequence') {

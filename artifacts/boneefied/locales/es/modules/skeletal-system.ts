@@ -674,7 +674,7 @@ function translateValue(value: string): string {
 }
 
 const questions = Object.fromEntries(content.questions
-  .filter((question) => question.moduleId === 'skeletal-system')
+  .filter((question) => question.moduleId === 'skeletal-system' && !question.id.startsWith('q-atlas-') && !question.id.startsWith('q-skeletal-atlas-'))
   .map((question) => {
     const text = questionTexts[question.id] ?? practicalQuestionText[question.id];
     if (!text) throw new Error(`Falta la traducción al español de la pregunta ${question.id}.`);

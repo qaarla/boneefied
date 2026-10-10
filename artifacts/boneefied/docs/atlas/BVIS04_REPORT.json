@@ -1,0 +1,73 @@
+{
+  "command": "BVIS04",
+  "scope": [
+    "nervous-system",
+    "special-senses",
+    "integumentary-system",
+    "cells-tissues"
+  ],
+  "preservation": "All 1126 canonical structures unchanged; all 904 existing question identities, prompts and scoring preserved.",
+  "plates": 35,
+  "newAssetIds": 28,
+  "sameIdReplacements": 7,
+  "totalAssets": 125,
+  "totalQuestions": 1053,
+  "newQuestions": 149,
+  "activeImageQuestions": 159,
+  "diagramTargets": 247,
+  "modules": [
+    {
+      "id": "nervous-system",
+      "structures": 63,
+      "lessons": 8,
+      "atlasPlates": 12,
+      "activeLessonAssets": 13,
+      "diagramTargets": 90,
+      "uniqueAnnotatedStructures": 64,
+      "questions": 120,
+      "newVisualQuestions": 68,
+      "realSpecimens": 1
+    },
+    {
+      "id": "special-senses",
+      "structures": 71,
+      "lessons": 9,
+      "atlasPlates": 9,
+      "activeLessonAssets": 9,
+      "diagramTargets": 73,
+      "uniqueAnnotatedStructures": 55,
+      "questions": 71,
+      "newVisualQuestions": 36,
+      "realSpecimens": 0
+    },
+    {
+      "id": "integumentary-system",
+      "structures": 38,
+      "lessons": 6,
+      "atlasPlates": 6,
+      "activeLessonAssets": 6,
+      "diagramTargets": 55,
+      "uniqueAnnotatedStructures": 37,
+      "questions": 43,
+      "newVisualQuestions": 22,
+      "realSpecimens": 0
+    },
+    {
+      "id": "cells-tissues",
+      "structures": 57,
+      "lessons": 8,
+      "atlasPlates": 8,
+      "activeLessonAssets": 11,
+      "diagramTargets": 29,
+      "uniqueAnnotatedStructures": 29,
+      "questions": 54,
+      "newVisualQuestions": 23,
+      "realSpecimens": 3
+    }
+  ],
+  "rights": "Original vector diagrams; existing real specimens retained with exact-file CC0 (3) and CC BY 4.0 (1) evidence.",
+  "specimensEvidence": "docs/atlas/BVIS04_SPECIMEN_LICENSES.json",
+  "originalArtEvidence": "assets/images/anatomy/bvis04-atlas/provenance.json",
+  "nativeOfflineStatus": "Not physically tested. Local bundling and browser evidence are not proof of native-device offline operation.",
+  "releaseWork": "None. No release build, deployment or publication."
+}

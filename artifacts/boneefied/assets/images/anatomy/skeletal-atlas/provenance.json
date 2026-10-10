@@ -1,0 +1,4626 @@
+{
+  "pack": "boneefied-skeletal-atlas",
+  "generatedBy": "scripts/atlas/skeletal-generate.mjs",
+  "plates": [
+    {
+      "id": "asset-skull-front",
+      "plate": 1,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-skull-front",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-01-skull-anterior.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-01-skull-anterior.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "anterior skull: facial bones and anterior openings (mandible included)",
+      "orientation": "anterior view; patient right = viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "parietal-bone",
+          "x": 0.3801,
+          "y": 0.2276,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            480,
+            108,
+            625,
+            335
+          ]
+        },
+        {
+          "structureId": "frontal-bone",
+          "x": 0.5,
+          "y": 0.185,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.3)",
+          "shapeBox": [
+            552,
+            95,
+            898,
+            395
+          ]
+        },
+        {
+          "structureId": "temporal-bone",
+          "x": 0.3524,
+          "y": 0.4229,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            470,
+            335,
+            560,
+            520
+          ]
+        },
+        {
+          "structureId": "sphenoid-bone",
+          "x": 0.3891,
+          "y": 0.403,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            548,
+            340,
+            585,
+            458
+          ]
+        },
+        {
+          "structureId": "zygomatic-bone",
+          "x": 0.3945,
+          "y": 0.492,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            527,
+            453,
+            617,
+            531
+          ]
+        },
+        {
+          "structureId": "maxilla",
+          "x": 0.4441,
+          "y": 0.6716,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.2,0.7)",
+          "shapeBox": [
+            590,
+            512,
+            860,
+            740
+          ]
+        },
+        {
+          "structureId": "nasal-bone",
+          "x": 0.4906,
+          "y": 0.475,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            698,
+            420,
+            725,
+            520
+          ]
+        },
+        {
+          "structureId": "mandible",
+          "x": 0.4418,
+          "y": 0.8596,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.3,0.8)",
+          "shapeBox": [
+            514,
+            674,
+            936,
+            906
+          ]
+        },
+        {
+          "structureId": "vomer",
+          "x": 0.5,
+          "y": 0.593,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            721,
+            552,
+            729,
+            634
+          ]
+        },
+        {
+          "structureId": "inferior-nasal-concha",
+          "x": 0.4869,
+          "y": 0.61,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            696,
+            592,
+            716,
+            628
+          ]
+        },
+        {
+          "structureId": "lacrimal-bone",
+          "x": 0.4772,
+          "y": 0.458,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            685,
+            443,
+            699,
+            473
+          ]
+        },
+        {
+          "structureId": "supraorbital-foramen",
+          "x": 0.4517,
+          "y": 0.376,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            648,
+            370,
+            662,
+            382
+          ]
+        },
+        {
+          "structureId": "optic-canal",
+          "x": 0.4634,
+          "y": 0.424,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            663,
+            415,
+            681,
+            433
+          ]
+        },
+        {
+          "structureId": "superior-orbital-fissure",
+          "x": 0.4448,
+          "y": 0.464,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            621,
+            458,
+            669,
+            470
+          ]
+        },
+        {
+          "structureId": "inferior-orbital-fissure",
+          "x": 0.4138,
+          "y": 0.484,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            577,
+            475,
+            623,
+            493
+          ]
+        },
+        {
+          "structureId": "mental-foramen",
+          "x": 0.4276,
+          "y": 0.836,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            612,
+            829,
+            628,
+            843
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "e85f0eb6792da28146f283af7fbd321927d8f43049c15da95b1fed2749b392fa",
+        "png": "2df118897a9c74a487e4edbeafe7219088b961c845ce04bb11e461548ec1e94f"
+      }
+    },
+    {
+      "id": "asset-skull-lateral",
+      "plate": 2,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-skull-lateral",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-02-skull-lateral.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-02-skull-lateral.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "left lateral skull: cranial bones, zygomatic arch, process landmarks",
+      "orientation": "left lateral view; anterior toward viewer-left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "frontal-bone",
+          "x": 0.3979,
+          "y": 0.2635,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            465,
+            95,
+            690,
+            420
+          ]
+        },
+        {
+          "structureId": "parietal-bone",
+          "x": 0.5593,
+          "y": 0.206,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            650,
+            85,
+            985,
+            300
+          ]
+        },
+        {
+          "structureId": "occipital-bone",
+          "x": 0.6458,
+          "y": 0.3786,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            880,
+            290,
+            1005,
+            480
+          ]
+        },
+        {
+          "structureId": "temporal-bone",
+          "x": 0.5172,
+          "y": 0.33,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.4,0.3)",
+          "shapeBox": [
+            650,
+            270,
+            900,
+            470
+          ]
+        },
+        {
+          "structureId": "sphenoid-bone",
+          "x": 0.4463,
+          "y": 0.4257,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            600,
+            380,
+            700,
+            470
+          ]
+        },
+        {
+          "structureId": "nasal-bone",
+          "x": 0.3221,
+          "y": 0.424,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            430,
+            360,
+            500,
+            470
+          ]
+        },
+        {
+          "structureId": "maxilla",
+          "x": 0.3526,
+          "y": 0.5244,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            440,
+            440,
+            600,
+            610
+          ]
+        },
+        {
+          "structureId": "zygomatic-bone",
+          "x": 0.4207,
+          "y": 0.47,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            568,
+            436,
+            652,
+            504
+          ]
+        },
+        {
+          "structureId": "zygomatic-arch",
+          "x": 0.4931,
+          "y": 0.47,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            638,
+            450,
+            787,
+            490
+          ]
+        },
+        {
+          "structureId": "mastoid-process",
+          "x": 0.5862,
+          "y": 0.5,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            826,
+            464,
+            874,
+            536
+          ]
+        },
+        {
+          "structureId": "styloid-process",
+          "x": 0.5266,
+          "y": 0.508,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            747,
+            463,
+            780,
+            553
+          ]
+        },
+        {
+          "structureId": "external-acoustic-meatus",
+          "x": 0.5483,
+          "y": 0.425,
+          "radius": 0.013,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            780,
+            413,
+            810,
+            437
+          ]
+        },
+        {
+          "structureId": "mandible",
+          "x": 0.3625,
+          "y": 0.6775,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.2,0.5)",
+          "shapeBox": [
+            476,
+            626,
+            724,
+            729
+          ]
+        },
+        {
+          "structureId": "mandibular-condyle",
+          "x": 0.5483,
+          "y": 0.495,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            776,
+            482,
+            814,
+            508
+          ]
+        },
+        {
+          "structureId": "mandibular-coronoid",
+          "x": 0.5207,
+          "y": 0.5025,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            735,
+            470,
+            775,
+            540
+          ]
+        },
+        {
+          "structureId": "mental-foramen",
+          "x": 0.3876,
+          "y": 0.684,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            554,
+            677,
+            570,
+            691
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "f8344fb37964383acc83765fee944a2cff5a44b717cd50422d1c9ecd3006b93c",
+        "png": "dac0114b2fb1e844043e53a2c67ece476d60ce76d1afbe226ff0a86208a4a41e"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-skull-base-external",
+      "plate": 3,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-03-skull-base-external.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-03-skull-base-external.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "external (inferior) skull base: palate, foramina, canals and occipital condyles",
+      "orientation": "inferior view; anterior at top; patient right = viewer left; mandible omitted",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "maxilla",
+          "x": 0.5,
+          "y": 0.146,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.2)",
+          "shapeBox": [
+            585,
+            100,
+            865,
+            330
+          ]
+        },
+        {
+          "structureId": "palatine-bone",
+          "x": 0.5,
+          "y": 0.3505,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            650,
+            308,
+            800,
+            395
+          ]
+        },
+        {
+          "structureId": "incisive-foramen",
+          "x": 0.5,
+          "y": 0.205,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            714,
+            191,
+            736,
+            219
+          ]
+        },
+        {
+          "structureId": "greater-palatin-foramen",
+          "x": 0.4462,
+          "y": 0.335,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            638,
+            327,
+            656,
+            343
+          ]
+        },
+        {
+          "structureId": "zygomatic-arch",
+          "x": 0.3092,
+          "y": 0.3833,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            407,
+            312,
+            493,
+            458
+          ]
+        },
+        {
+          "structureId": "sphenoid-bone",
+          "x": 0.4317,
+          "y": 0.4325,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.7,0.5)",
+          "shapeBox": [
+            535,
+            395,
+            665,
+            470
+          ]
+        },
+        {
+          "structureId": "pterygoid-process",
+          "x": 0.4662,
+          "y": 0.42,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            660,
+            377,
+            692,
+            463
+          ]
+        },
+        {
+          "structureId": "temporal-bone",
+          "x": 0.35,
+          "y": 0.501,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.55,0.3)",
+          "shapeBox": [
+            425,
+            450,
+            575,
+            620
+          ]
+        },
+        {
+          "structureId": "foramen-ovale",
+          "x": 0.4207,
+          "y": 0.44,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            598,
+            431,
+            622,
+            449
+          ]
+        },
+        {
+          "structureId": "foramen-spinosum",
+          "x": 0.3966,
+          "y": 0.482,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            568,
+            475,
+            582,
+            489
+          ]
+        },
+        {
+          "structureId": "carotid-canal",
+          "x": 0.4172,
+          "y": 0.52,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            590,
+            508,
+            620,
+            532
+          ]
+        },
+        {
+          "structureId": "jugular-foramen",
+          "x": 0.3966,
+          "y": 0.56,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            557,
+            546,
+            593,
+            574
+          ]
+        },
+        {
+          "structureId": "styloid-process",
+          "x": 0.3614,
+          "y": 0.458,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            513,
+            435,
+            535,
+            481
+          ]
+        },
+        {
+          "structureId": "stylomastoid-foramen",
+          "x": 0.369,
+          "y": 0.528,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            528,
+            521,
+            542,
+            535
+          ]
+        },
+        {
+          "structureId": "mastoid-process",
+          "x": 0.331,
+          "y": 0.548,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            454,
+            512,
+            506,
+            584
+          ]
+        },
+        {
+          "structureId": "occipital-condyles",
+          "x": 0.4572,
+          "y": 0.65,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            648,
+            618,
+            678,
+            682
+          ]
+        },
+        {
+          "structureId": "hypoglossal-canal",
+          "x": 0.4345,
+          "y": 0.625,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            623,
+            618,
+            637,
+            632
+          ]
+        },
+        {
+          "structureId": "vomer",
+          "x": 0.5,
+          "y": 0.42,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            720,
+            395,
+            730,
+            445
+          ]
+        },
+        {
+          "structureId": "occipital-bone",
+          "x": 0.5,
+          "y": 0.775,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.75)",
+          "shapeBox": [
+            600,
+            700,
+            850,
+            800
+          ]
+        },
+        {
+          "structureId": "foramen-magnum",
+          "x": 0.5,
+          "y": 0.665,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            683,
+            609,
+            767,
+            721
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "4399fa06c42301441219a8b4db662013b8dfbc801f08b87459a7447ac9b75b6f",
+        "png": "9bcfb1f90691ac108278a54f7d5a1b6ca32032c92af84fb617497590e7867fe6"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-cranial-floor-internal",
+      "plate": 4,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-04-cranial-floor-internal.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-04-cranial-floor-internal.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "internal cranial floor: three fossae and their openings",
+      "orientation": "superior view; anterior at top; patient right = viewer right",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "anterior-cranial-fossa",
+          "x": 0.3986,
+          "y": 0.2475,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.2,0.55)",
+          "shapeBox": [
+            480,
+            110,
+            970,
+            360
+          ]
+        },
+        {
+          "structureId": "middle-cranial-fossa",
+          "x": 0.629,
+          "y": 0.4848,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.55,0.65)",
+          "shapeBox": [
+            835,
+            345,
+            975,
+            560
+          ]
+        },
+        {
+          "structureId": "posterior-cranial-fossa",
+          "x": 0.411,
+          "y": 0.808,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.2,0.8)",
+          "shapeBox": [
+            510,
+            520,
+            940,
+            880
+          ]
+        },
+        {
+          "structureId": "ethmoid-bone",
+          "x": 0.5,
+          "y": 0.3133,
+          "radius": 0.012,
+          "derivedFrom": "bbox-fraction(0.5,0.97)",
+          "shapeBox": [
+            645,
+            193,
+            805,
+            317
+          ]
+        },
+        {
+          "structureId": "cribriform-plate",
+          "x": 0.4766,
+          "y": 0.255,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            677,
+            215,
+            705,
+            295
+          ]
+        },
+        {
+          "structureId": "crista-galli",
+          "x": 0.5,
+          "y": 0.225,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            717,
+            192,
+            733,
+            258
+          ]
+        },
+        {
+          "structureId": "sella-turcica",
+          "x": 0.5,
+          "y": 0.405,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            689,
+            383,
+            761,
+            427
+          ]
+        },
+        {
+          "structureId": "clivus",
+          "x": 0.5,
+          "y": 0.48,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            701,
+            416,
+            749,
+            544
+          ]
+        },
+        {
+          "structureId": "optic-canal",
+          "x": 0.5428,
+          "y": 0.345,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            778,
+            336,
+            796,
+            354
+          ]
+        },
+        {
+          "structureId": "superior-orbital-fissure",
+          "x": 0.5793,
+          "y": 0.382,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            824,
+            372,
+            856,
+            392
+          ]
+        },
+        {
+          "structureId": "foramen-rotundum",
+          "x": 0.5931,
+          "y": 0.418,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            853,
+            411,
+            867,
+            425
+          ]
+        },
+        {
+          "structureId": "foramen-ovale",
+          "x": 0.6138,
+          "y": 0.455,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            879,
+            447,
+            901,
+            463
+          ]
+        },
+        {
+          "structureId": "foramen-spinosum",
+          "x": 0.631,
+          "y": 0.492,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            909,
+            486,
+            921,
+            498
+          ]
+        },
+        {
+          "structureId": "internal-acoustic-meatus",
+          "x": 0.6241,
+          "y": 0.59,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            891,
+            582,
+            919,
+            598
+          ]
+        },
+        {
+          "structureId": "jugular-foramen",
+          "x": 0.6034,
+          "y": 0.655,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            858,
+            643,
+            892,
+            667
+          ]
+        },
+        {
+          "structureId": "hypoglossal-canal",
+          "x": 0.5607,
+          "y": 0.668,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            806,
+            661,
+            820,
+            675
+          ]
+        },
+        {
+          "structureId": "foramen-magnum",
+          "x": 0.5,
+          "y": 0.705,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            681,
+            651,
+            769,
+            759
+          ]
+        },
+        {
+          "structureId": "internal-occipital-crest",
+          "x": 0.5,
+          "y": 0.805,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            720,
+            765,
+            730,
+            845
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "2cb2e3500ec8a3a0b5a24f26235546ab02e8a9a899f7c8abb2bb6afa97a5c930",
+        "png": "c47ef7b1d23f0ba35256943dd85470d82de98c16032951c8501b59351c37b4d6"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-skull-sutures",
+      "plate": 5,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-05-skull-sutures.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-05-skull-sutures.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "coronal, sagittal and lambdoid sutures: superior and posterior views",
+      "orientation": "left panel superior view, anterior at top; right panel posterior view; patient right = viewer right in both",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "frontal-bone",
+          "x": 0.269,
+          "y": 0.2295,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.3)",
+          "shapeBox": [
+            170,
+            165,
+            610,
+            380
+          ]
+        },
+        {
+          "structureId": "parietal-bone",
+          "x": 0.1759,
+          "y": 0.53,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.4,0.5)",
+          "shapeBox": [
+            165,
+            360,
+            390,
+            700
+          ]
+        },
+        {
+          "structureId": "occipital-bone",
+          "x": 0.269,
+          "y": 0.7668,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.65)",
+          "shapeBox": [
+            240,
+            640,
+            540,
+            835
+          ]
+        },
+        {
+          "structureId": "coronal-suture",
+          "x": 0.1738,
+          "y": 0.3735,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.2,0.5)",
+          "shapeBox": [
+            160,
+            350,
+            620,
+            397
+          ]
+        },
+        {
+          "structureId": "sagittal-suture",
+          "x": 0.269,
+          "y": 0.5586,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.7)",
+          "shapeBox": [
+            385,
+            357,
+            395,
+            645
+          ]
+        },
+        {
+          "structureId": "temporal-bone",
+          "x": 0.8897,
+          "y": 0.57,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.5)",
+          "shapeBox": [
+            1250,
+            480,
+            1330,
+            660
+          ]
+        },
+        {
+          "structureId": "lambdoid-suture",
+          "x": 0.8159,
+          "y": 0.4225,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.8,0.5)",
+          "shapeBox": [
+            855,
+            400,
+            1265,
+            445
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "72b098a100eeb74204feb4a4f4b37b1e8e1ae0442408f9537997bb1a0c86b43a",
+        "png": "b61dc9c7acfca92a263c27cc75a03c7c2d452cb0b34bb017ef4897dd9335c604"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-vertebra-typical",
+      "plate": 6,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-06-vertebra-typical.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-06-vertebra-typical.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "typical vertebra: superior view plus lateral inset",
+      "orientation": "main: superior view, body/anterior at top; inset: thoracic lateral detail, anterior toward viewer-left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "spinous-process",
+          "x": 0.3103,
+          "y": 0.7786,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.65)",
+          "shapeBox": [
+            428,
+            568,
+            472,
+            892
+          ]
+        },
+        {
+          "structureId": "transverse-process",
+          "x": 0.2025,
+          "y": 0.475,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.6,0.5)",
+          "shapeBox": [
+            152,
+            442,
+            388,
+            508
+          ]
+        },
+        {
+          "structureId": "vertebral-body",
+          "x": 0.3103,
+          "y": 0.247,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.35)",
+          "shapeBox": [
+            300,
+            170,
+            600,
+            390
+          ]
+        },
+        {
+          "structureId": "vertebral-foramen",
+          "x": 0.3103,
+          "y": 0.4607,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            380,
+            385,
+            520,
+            540
+          ]
+        },
+        {
+          "structureId": "superior-articular-facet",
+          "x": 0.2448,
+          "y": 0.56,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            332,
+            527,
+            378,
+            593
+          ]
+        },
+        {
+          "structureId": "inferior-articular-facet",
+          "x": 0.7766,
+          "y": 0.648,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1111,
+            628,
+            1141,
+            668
+          ]
+        },
+        {
+          "structureId": "superior-costal-facet",
+          "x": 0.7476,
+          "y": 0.452,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1072,
+            438,
+            1096,
+            466
+          ]
+        },
+        {
+          "structureId": "inferior-costal-facet",
+          "x": 0.7476,
+          "y": 0.605,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1072,
+            591,
+            1096,
+            619
+          ]
+        },
+        {
+          "structureId": "intervertebral-disc",
+          "x": 0.6931,
+          "y": 0.639,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            920,
+            624,
+            1090,
+            654
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "9e31e97dd330781c5b6264b74ce17f6ebf27b7392af03279dac6c7ffd6da6cef",
+        "png": "e6e252d6281bf758a0ab58432881e3f54a90a580a02c8b5f92702bf06dc985df"
+      }
+    },
+    {
+      "id": "asset-cervical-vertebra",
+      "plate": 7,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-cervical-vertebra",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-07-vertebrae-regional.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-07-vertebrae-regional.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "cervical, thoracic and lumbar vertebrae compared in superior view",
+      "orientation": "superior views; body/anterior at top; panels cervical, thoracic, lumbar",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "cervical-vertebrae",
+          "x": 0.1793,
+          "y": 0.2776,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.4)",
+          "shapeBox": [
+            170,
+            228,
+            350,
+            352
+          ]
+        },
+        {
+          "structureId": "uncinate-process-vertebra",
+          "x": 0.1248,
+          "y": 0.315,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            170,
+            290,
+            192,
+            340
+          ]
+        },
+        {
+          "structureId": "vertebral-foramen",
+          "x": 0.1793,
+          "y": 0.4267,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            210,
+            380,
+            310,
+            520
+          ]
+        },
+        {
+          "structureId": "transverse-foramen",
+          "x": 0.0841,
+          "y": 0.445,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            106,
+            429,
+            138,
+            461
+          ]
+        },
+        {
+          "structureId": "spinous-process",
+          "x": 0.5,
+          "y": 0.8216,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.8)",
+          "shapeBox": [
+            709,
+            564,
+            741,
+            886
+          ]
+        },
+        {
+          "structureId": "thoracic-vertebrae",
+          "x": 0.5,
+          "y": 0.259,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.3)",
+          "shapeBox": [
+            625,
+            205,
+            825,
+            385
+          ]
+        },
+        {
+          "structureId": "superior-costal-facet",
+          "x": 0.4434,
+          "y": 0.34,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            631,
+            324,
+            655,
+            356
+          ]
+        },
+        {
+          "structureId": "accessory-process",
+          "x": 0.7455,
+          "y": 0.48,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1064,
+            452,
+            1098,
+            508
+          ]
+        },
+        {
+          "structureId": "lumbar-vertebrae",
+          "x": 0.8207,
+          "y": 0.2955,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.45)",
+          "shapeBox": [
+            1050,
+            210,
+            1330,
+            400
+          ]
+        },
+        {
+          "structureId": "mammillary-process",
+          "x": 0.7517,
+          "y": 0.495,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1078,
+            483,
+            1102,
+            507
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "33aa643131169f2ceded8ca7b7c520a05f295d99e1b066bb0cbed25522cb872f",
+        "png": "34801f852807607bb5c6f49ee337ce57442d905b08ecce69cdf397e95d55ecb7"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-atlas-axis",
+      "plate": 8,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-08-atlas-axis.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-08-atlas-axis.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "C1 atlas (no body) and C2 axis (dens)",
+      "orientation": "left: C1 superior view, anterior at top; right: C2 lateral view, anterior toward viewer-left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "atlas-c1",
+          "x": 0.2621,
+          "y": 0.2744,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.3)",
+          "shapeBox": [
+            236,
+            236,
+            524,
+            364
+          ]
+        },
+        {
+          "structureId": "vertebral-foramen",
+          "x": 0.2621,
+          "y": 0.44,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            306,
+            360,
+            454,
+            520
+          ]
+        },
+        {
+          "structureId": "superior-articular-facet",
+          "x": 0.1586,
+          "y": 0.44,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            199,
+            379,
+            261,
+            501
+          ]
+        },
+        {
+          "structureId": "transverse-foramen",
+          "x": 0.1076,
+          "y": 0.43,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            142,
+            416,
+            170,
+            444
+          ]
+        },
+        {
+          "structureId": "axis-c2",
+          "x": 0.6634,
+          "y": 0.7152,
+          "radius": 0.014,
+          "derivedFrom": "bbox-fraction(0.1,0.9)",
+          "shapeBox": [
+            940,
+            312,
+            1160,
+            760
+          ]
+        },
+        {
+          "structureId": "vertebral-body",
+          "x": 0.709,
+          "y": 0.64,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.4,0.5)",
+          "shapeBox": [
+            940,
+            520,
+            1160,
+            760
+          ]
+        },
+        {
+          "structureId": "dens",
+          "x": 0.7041,
+          "y": 0.346,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.2)",
+          "shapeBox": [
+            980,
+            290,
+            1062,
+            570
+          ]
+        },
+        {
+          "structureId": "spinous-process",
+          "x": 0.8873,
+          "y": 0.64,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.7,0.5)",
+          "shapeBox": [
+            1106,
+            546,
+            1364,
+            734
+          ]
+        },
+        {
+          "structureId": "inferior-articular-facet",
+          "x": 0.7655,
+          "y": 0.8,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1076,
+            780,
+            1144,
+            820
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "f880aeaeb48f810f9f41afe2094ca08d005e5016783c935640d0cbde0c2e22a0",
+        "png": "eeceaa4857fb35b0037bce7b0912de9d1dc0dc17394842319f1be26b8e0df204"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-thoracic-cage",
+      "plate": 9,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-09-thoracic-cage.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-09-thoracic-cage.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "thoracic cage: sternum parts and rib groups",
+      "orientation": "anterior view; patient right = viewer left; clavicles omitted",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "true-ribs",
+          "x": 0.3324,
+          "y": 0.381,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            357,
+            270,
+            693,
+            498
+          ]
+        },
+        {
+          "structureId": "false-ribs",
+          "x": 0.3557,
+          "y": 0.6685,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            407,
+            560,
+            693,
+            778
+          ]
+        },
+        {
+          "structureId": "floating-ribs",
+          "x": 0.4348,
+          "y": 0.8365,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            577,
+            728,
+            693,
+            946
+          ]
+        },
+        {
+          "structureId": "sternum",
+          "x": 0.5,
+          "y": 0.4125,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.45)",
+          "shapeBox": [
+            681,
+            120,
+            769,
+            770
+          ]
+        },
+        {
+          "structureId": "manubrium",
+          "x": 0.5,
+          "y": 0.185,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            663,
+            120,
+            787,
+            250
+          ]
+        },
+        {
+          "structureId": "body-of-sternum",
+          "x": 0.5,
+          "y": 0.441,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            681,
+            262,
+            769,
+            620
+          ]
+        },
+        {
+          "structureId": "xiphoid-process",
+          "x": 0.5,
+          "y": 0.668,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            703,
+            632,
+            747,
+            740
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "6b9fd09b9d4f097282be58517f9848700871fc9efbd9a403aa10ab5a465ac800",
+        "png": "1ee009a99548d841999c86f7a34e8821878f4894b658b23a2aa53d1ed60aaef9"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-rib-detail",
+      "plate": 10,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-10-rib-detail.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-10-rib-detail.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "rib head, tubercle and costal groove with the thoracic vertebra it meets",
+      "orientation": "left: posterior view of right rib, spine at viewer-left; right: inner (visceral) surface",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "vertebral-body",
+          "x": 0.1172,
+          "y": 0.505,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.4,0.5)",
+          "shapeBox": [
+            110,
+            250,
+            260,
+            760
+          ]
+        },
+        {
+          "structureId": "superior-costal-facet",
+          "x": 0.1807,
+          "y": 0.36,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            248,
+            326,
+            276,
+            394
+          ]
+        },
+        {
+          "structureId": "transverse-process",
+          "x": 0.2253,
+          "y": 0.54,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            224,
+            494,
+            426,
+            586
+          ]
+        },
+        {
+          "structureId": "rib-head",
+          "x": 0.2069,
+          "y": 0.36,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            266,
+            326,
+            334,
+            394
+          ]
+        },
+        {
+          "structureId": "rib-tubercle",
+          "x": 0.2897,
+          "y": 0.43,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            392,
+            402,
+            448,
+            458
+          ]
+        },
+        {
+          "structureId": "costal-groove",
+          "x": 0.7503,
+          "y": 0.5875,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.5)",
+          "shapeBox": [
+            858,
+            323,
+            1318,
+            852
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "e694b470bfce4759bbcea6387c9040df1054489939a328f42596b2b9c886ea02",
+        "png": "de4014700b80debcab45984bb535f0edd279731c2a4b2875e0b6958b80d5ff47"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-scapula",
+      "plate": 11,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-11-scapula.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-11-scapula.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right scapula: anterior and posterior views",
+      "orientation": "right scapula; anterior panel: glenoid at viewer-left; posterior panel: glenoid at viewer-right",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "scapula",
+          "x": 0.3369,
+          "y": 0.5243,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.7,0.55)",
+          "shapeBox": [
+            310,
+            175,
+            565,
+            810
+          ]
+        },
+        {
+          "structureId": "coracoid-process",
+          "x": 0.1931,
+          "y": 0.2233,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            219,
+            196,
+            341,
+            256
+          ]
+        },
+        {
+          "structureId": "glenoid-cavity",
+          "x": 0.2103,
+          "y": 0.31,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            276,
+            267,
+            334,
+            353
+          ]
+        },
+        {
+          "structureId": "scapular-spine",
+          "x": 0.7121,
+          "y": 0.2613,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            882,
+            167,
+            1168,
+            343
+          ]
+        },
+        {
+          "structureId": "acromion",
+          "x": 0.8195,
+          "y": 0.179,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1139,
+            144,
+            1231,
+            211
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "0c94ad1c7db8ac49f2bc818995dbcac89e4ed07cf5063b918049318006e4f4cc",
+        "png": "b1d6d08b88779fbefad9ff2492acae523b1ce3f7e6f41efd039425e9b249c84f"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-pectoral-girdle",
+      "plate": 12,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-12-pectoral-girdle.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-12-pectoral-girdle.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "clavicle, scapula, humeral head and manubrium relationships",
+      "orientation": "anterior view; patient right = viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "scapula",
+          "x": 0.3179,
+          "y": 0.538,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.55,0.7)",
+          "shapeBox": [
+            340,
+            300,
+            560,
+            640
+          ]
+        },
+        {
+          "structureId": "glenoid-cavity",
+          "x": 0.24,
+          "y": 0.4,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            326,
+            364,
+            370,
+            436
+          ]
+        },
+        {
+          "structureId": "humeral-head",
+          "x": 0.2069,
+          "y": 0.41,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            254,
+            364,
+            346,
+            456
+          ]
+        },
+        {
+          "structureId": "manubrium",
+          "x": 0.5,
+          "y": 0.3225,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            665,
+            245,
+            785,
+            400
+          ]
+        },
+        {
+          "structureId": "clavicle",
+          "x": 0.3741,
+          "y": 0.2564,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.3)",
+          "shapeBox": [
+            381,
+            236,
+            704,
+            304
+          ]
+        },
+        {
+          "structureId": "acromion",
+          "x": 0.2379,
+          "y": 0.3,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            307,
+            280,
+            383,
+            320
+          ]
+        },
+        {
+          "structureId": "acromioclavicular-ligament",
+          "x": 0.269,
+          "y": 0.286,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            363,
+            273,
+            417,
+            299
+          ]
+        },
+        {
+          "structureId": "coracoid-process",
+          "x": 0.2851,
+          "y": 0.3563,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            370,
+            330,
+            460,
+            387
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "0c3cf433912a0c30a5c246ee355db11ad8e3af109d9678cd60de35bebfb7f7ec",
+        "png": "083089dcd9aede6baaacd813b972f5ffd4a6d19d5e0d9d1a6331a1f4d36b5f73"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-humerus",
+      "plate": 13,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-13-humerus.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-13-humerus.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right humerus: anterior and posterior views",
+      "orientation": "right humerus; anterior panel head medial = viewer-right; posterior panel head medial = viewer-left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "humerus",
+          "x": 0.2841,
+          "y": 0.537,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.55)",
+          "shapeBox": [
+            312,
+            108,
+            512,
+            888
+          ]
+        },
+        {
+          "structureId": "humeral-head",
+          "x": 0.3117,
+          "y": 0.166,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            397,
+            115,
+            507,
+            217
+          ]
+        },
+        {
+          "structureId": "greater-tubercle",
+          "x": 0.2366,
+          "y": 0.166,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            313,
+            124,
+            373,
+            208
+          ]
+        },
+        {
+          "structureId": "deltoid-tuberosity",
+          "x": 0.2566,
+          "y": 0.47,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            358,
+            440,
+            386,
+            500
+          ]
+        },
+        {
+          "structureId": "lateral-epicondyle",
+          "x": 0.2303,
+          "y": 0.788,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            312,
+            768,
+            356,
+            808
+          ]
+        },
+        {
+          "structureId": "medial-epicondyle",
+          "x": 0.3241,
+          "y": 0.788,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            444,
+            766,
+            496,
+            810
+          ]
+        },
+        {
+          "structureId": "capitulum",
+          "x": 0.2524,
+          "y": 0.848,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            336,
+            820,
+            396,
+            876
+          ]
+        },
+        {
+          "structureId": "trochlea",
+          "x": 0.2979,
+          "y": 0.852,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            400,
+            824,
+            464,
+            880
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "51acf7e1d4280e1d97064eda482791893635844463240485f9dc80c45bb6c25c",
+        "png": "648408ad8db02823d3b729910801429638d37e0fe1c4ef3d2c7b3403656d8ac6"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-forearm",
+      "plate": 14,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-14-forearm.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-14-forearm.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right radius and ulna anterior plus proximal-ulna inset",
+      "orientation": "right forearm anterior view: radius viewer-left, ulna viewer-right; inset lateral view of proximal ulna",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "interosseous-membrane",
+          "x": 0.3483,
+          "y": 0.515,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            440,
+            260,
+            570,
+            780
+          ]
+        },
+        {
+          "structureId": "radius",
+          "x": 0.2931,
+          "y": 0.576,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.6)",
+          "shapeBox": [
+            380,
+            210,
+            470,
+            820
+          ]
+        },
+        {
+          "structureId": "radial-head",
+          "x": 0.2966,
+          "y": 0.19,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            398,
+            172,
+            462,
+            208
+          ]
+        },
+        {
+          "structureId": "radial-tuberosity",
+          "x": 0.3186,
+          "y": 0.29,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            448,
+            272,
+            476,
+            308
+          ]
+        },
+        {
+          "structureId": "radial-styloid",
+          "x": 0.2603,
+          "y": 0.825,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            360,
+            790,
+            395,
+            860
+          ]
+        },
+        {
+          "structureId": "ulna",
+          "x": 0.3983,
+          "y": 0.5265,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.55)",
+          "shapeBox": [
+            535,
+            180,
+            620,
+            810
+          ]
+        },
+        {
+          "structureId": "ulnar-styloid",
+          "x": 0.4255,
+          "y": 0.815,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            604,
+            782,
+            630,
+            848
+          ]
+        },
+        {
+          "structureId": "olecranon",
+          "x": 0.7641,
+          "y": 0.188,
+          "radius": 0.016,
+          "derivedFrom": "authored-feature-point",
+          "shapeBox": [
+            1022,
+            160,
+            1155,
+            230
+          ]
+        },
+        {
+          "structureId": "trochlear-notch",
+          "x": 0.7469,
+          "y": 0.27,
+          "radius": 0.016,
+          "derivedFrom": "authored-feature-point",
+          "shapeBox": [
+            1018,
+            229,
+            1090,
+            370
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "9d898d127e095d814e1714911fbaaea16c51abc44610f29a10a6649964b3f5b7",
+        "png": "8fb7a88c58789e1292e35d1d85ef99fceed27a29ed07352e8b3852e1dace0d3e"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-hand-palmar",
+      "plate": 15,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-15-hand-palmar.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-15-hand-palmar.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right palmar hand: eight carpals, metacarpals and phalanges",
+      "orientation": "right palmar view; thumb at viewer-left; wrist at bottom",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "radial-styloid",
+          "x": 0.4259,
+          "y": 0.785,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            598,
+            758,
+            637,
+            812
+          ]
+        },
+        {
+          "structureId": "ulnar-styloid",
+          "x": 0.5638,
+          "y": 0.79,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            806,
+            766,
+            829,
+            814
+          ]
+        },
+        {
+          "structureId": "metacarpals",
+          "x": 0.4979,
+          "y": 0.5005,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            710,
+            350,
+            734,
+            607
+          ]
+        },
+        {
+          "structureId": "phalanges-hand",
+          "x": 0.4979,
+          "y": 0.309,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            713,
+            263,
+            732,
+            356
+          ]
+        },
+        {
+          "structureId": "trapezium",
+          "x": 0.4394,
+          "y": 0.6434,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            598,
+            606,
+            668,
+            676
+          ]
+        },
+        {
+          "structureId": "trapezoid",
+          "x": 0.4814,
+          "y": 0.614,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            676,
+            590,
+            718,
+            642
+          ]
+        },
+        {
+          "structureId": "capitate",
+          "x": 0.5177,
+          "y": 0.6312,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            722,
+            580,
+            778,
+            678
+          ]
+        },
+        {
+          "structureId": "hamate",
+          "x": 0.5628,
+          "y": 0.6258,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            786,
+            585,
+            846,
+            668
+          ]
+        },
+        {
+          "structureId": "hook-of-hamate",
+          "x": 0.5738,
+          "y": 0.6693,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            805,
+            639,
+            859,
+            695
+          ]
+        },
+        {
+          "structureId": "scaphoid",
+          "x": 0.4534,
+          "y": 0.7057,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            618,
+            670,
+            700,
+            744
+          ]
+        },
+        {
+          "structureId": "lunate",
+          "x": 0.5052,
+          "y": 0.6998,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            698,
+            666,
+            768,
+            730
+          ]
+        },
+        {
+          "structureId": "triquetrum",
+          "x": 0.5408,
+          "y": 0.697,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.3,0.25)",
+          "shapeBox": [
+            768,
+            680,
+            822,
+            748
+          ]
+        },
+        {
+          "structureId": "pisiform",
+          "x": 0.5545,
+          "y": 0.73,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            789,
+            715,
+            819,
+            745
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "d36cdb01494856fcbfadf951d47ef131a0880192bdc0a7bfd6f9b7c2992a1391",
+        "png": "a07a713832412e3c214a60524aaa41f103e262fa2c62d75a86f59fe61a5a9801"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-hip-bone",
+      "plate": 16,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-16-hip-bone.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-16-hip-bone.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right hip bone lateral and medial views",
+      "orientation": "right hip bone; lateral panel anterior = viewer-right; medial panel anterior = viewer-left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "ilium",
+          "x": 0.2828,
+          "y": 0.236,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.3)",
+          "shapeBox": [
+            270,
+            140,
+            550,
+            460
+          ]
+        },
+        {
+          "structureId": "iliac-crest",
+          "x": 0.2584,
+          "y": 0.1667,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.35,0.3)",
+          "shapeBox": [
+            277,
+            134,
+            556,
+            243
+          ]
+        },
+        {
+          "structureId": "asis",
+          "x": 0.3779,
+          "y": 0.21,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            532,
+            194,
+            564,
+            226
+          ]
+        },
+        {
+          "structureId": "ischium",
+          "x": 0.2214,
+          "y": 0.6223,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.6,0.35)",
+          "shapeBox": [
+            240,
+            540,
+            375,
+            775
+          ]
+        },
+        {
+          "structureId": "pubis",
+          "x": 0.371,
+          "y": 0.686,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.6,0.5)",
+          "shapeBox": [
+            463,
+            578,
+            588,
+            794
+          ]
+        },
+        {
+          "structureId": "ischial-tuberosity",
+          "x": 0.1966,
+          "y": 0.752,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            251,
+            724,
+            319,
+            780
+          ]
+        },
+        {
+          "structureId": "acetabulum",
+          "x": 0.2966,
+          "y": 0.54,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            360,
+            465,
+            500,
+            615
+          ]
+        },
+        {
+          "structureId": "obturator-foramen",
+          "x": 0.299,
+          "y": 0.6733,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            395,
+            622,
+            470,
+            726
+          ]
+        },
+        {
+          "structureId": "sacroiliac-joint",
+          "x": 0.7724,
+          "y": 0.33,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1081,
+            259,
+            1159,
+            401
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "702516ab7b244d4c5e94f6ea6f9736a7bc7ad00aab50e835da47a49683cfa33e",
+        "png": "c02ae156294be034230a8e36efdac452c639c169935d48379c2d0e6fbbde746f"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-femur",
+      "plate": 17,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-17-femur.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-17-femur.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right femur anterior and posterior views including the linea aspera",
+      "orientation": "right femur; anterior panel head = viewer-right; posterior panel head = viewer-left; patella omitted",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "femur",
+          "x": 0.2862,
+          "y": 0.305,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.25)",
+          "shapeBox": [
+            292,
+            104,
+            538,
+            908
+          ]
+        },
+        {
+          "structureId": "femoral-neck",
+          "x": 0.3069,
+          "y": 0.229,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            394,
+            174,
+            496,
+            284
+          ]
+        },
+        {
+          "structureId": "femoral-head",
+          "x": 0.3359,
+          "y": 0.165,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            435,
+            113,
+            539,
+            217
+          ]
+        },
+        {
+          "structureId": "greater-trochanter",
+          "x": 0.2331,
+          "y": 0.212,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            300,
+            158,
+            376,
+            266
+          ]
+        },
+        {
+          "structureId": "femoral-condyles",
+          "x": 0.2428,
+          "y": 0.842,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            308,
+            794,
+            396,
+            890
+          ]
+        },
+        {
+          "structureId": "femoral-linea-aspera",
+          "x": 0.73,
+          "y": 0.5624,
+          "radius": 0.014,
+          "derivedFrom": "bbox-fraction(0.5,0.65)",
+          "shapeBox": [
+            1045,
+            292,
+            1072,
+            708
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "80a3bbd113b40d8ce64c2c23febcdd83d5447731ce527dfb640dec394d9f1f73",
+        "png": "87b2da5b469bf93ceddf2148068d5c03cea05d3c4c96702c0ee5d506e4378775"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-leg-tibia-fibula",
+      "plate": 18,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-18-leg-tibia-fibula.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-18-leg-tibia-fibula.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right tibia and fibula anterior plus tibial plateau inset",
+      "orientation": "right leg anterior view: fibula viewer-left, tibia viewer-right; inset superior view of plateau, anterior at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "fibula",
+          "x": 0.2917,
+          "y": 0.5207,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.45)",
+          "shapeBox": [
+            400,
+            212,
+            446,
+            898
+          ]
+        },
+        {
+          "structureId": "tibia",
+          "x": 0.3741,
+          "y": 0.5317,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.55)",
+          "shapeBox": [
+            473,
+            128,
+            612,
+            862
+          ]
+        },
+        {
+          "structureId": "tibial-tuberosity",
+          "x": 0.3759,
+          "y": 0.32,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            525,
+            292,
+            565,
+            348
+          ]
+        },
+        {
+          "structureId": "medial-malleolus",
+          "x": 0.4121,
+          "y": 0.87,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            563,
+            818,
+            632,
+            922
+          ]
+        },
+        {
+          "structureId": "lateral-malleolus",
+          "x": 0.2897,
+          "y": 0.9,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            400,
+            868,
+            440,
+            932
+          ]
+        },
+        {
+          "structureId": "ankle-mortise",
+          "x": 0.3478,
+          "y": 0.8913,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            462,
+            860,
+            545,
+            925
+          ]
+        },
+        {
+          "structureId": "tibial-plateau",
+          "x": 0.6841,
+          "y": 0.51,
+          "radius": 0.02,
+          "derivedFrom": "bbox-fraction(0.4,0.5)",
+          "shapeBox": [
+            920,
+            380,
+            1100,
+            640
+          ]
+        },
+        {
+          "structureId": "intercondylar-eminence",
+          "x": 0.7701,
+          "y": 0.5233,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1086,
+            426,
+            1144,
+            614
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "f9f1d300e65cb585aac40d55e303578f689994a643425925ce611f4373559e97",
+        "png": "1bd19c04871b7fddb79c429fa91ee81e0c494b1a32f808dc0bf4f38309015a20"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-foot-dorsal",
+      "plate": 19,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-19-foot-dorsal.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-19-foot-dorsal.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right dorsal foot: tarsals, metatarsals and toe phalanges",
+      "orientation": "right dorsal view; hallux at viewer-left; heel at bottom",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "calcaneus",
+          "x": 0.5345,
+          "y": 0.8913,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.5,0.8)",
+          "shapeBox": [
+            711,
+            701,
+            839,
+            939
+          ]
+        },
+        {
+          "structureId": "talus",
+          "x": 0.4571,
+          "y": 0.7357,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            600,
+            660,
+            730,
+            810
+          ]
+        },
+        {
+          "structureId": "navicular",
+          "x": 0.4429,
+          "y": 0.6146,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            590,
+            584,
+            694,
+            644
+          ]
+        },
+        {
+          "structureId": "cuboid",
+          "x": 0.5572,
+          "y": 0.6064,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            755,
+            556,
+            850,
+            648
+          ]
+        },
+        {
+          "structureId": "medial-cuneiform",
+          "x": 0.4007,
+          "y": 0.5438,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            546,
+            498,
+            614,
+            580
+          ]
+        },
+        {
+          "structureId": "intermediate-cuneiform",
+          "x": 0.4441,
+          "y": 0.5285,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            620,
+            500,
+            670,
+            562
+          ]
+        },
+        {
+          "structureId": "lateral-cuneiform",
+          "x": 0.4872,
+          "y": 0.531,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            678,
+            502,
+            734,
+            562
+          ]
+        },
+        {
+          "structureId": "metatarsals",
+          "x": 0.4763,
+          "y": 0.3833,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            678,
+            268,
+            704,
+            502
+          ]
+        },
+        {
+          "structureId": "phalanges-foot",
+          "x": 0.4779,
+          "y": 0.25,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            684,
+            223,
+            702,
+            277
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "75a2420de664e8174062c81e8fc7b771bf9adda32a14aeae0d12e8057abedea2",
+        "png": "46c3c5c0d9a6e0d2899de6e3703471ba913c94bc1a555b0d660cbadda4044887"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-synovial-joint",
+      "plate": 20,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-20-synovial-joint.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-20-synovial-joint.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "generic synovial joint layers (not region-specific)",
+      "orientation": "schematic lengthwise section; proximal bone at top; no left-right meaning",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "synovial-joint",
+          "x": 0.3179,
+          "y": 0.5,
+          "radius": 0.02,
+          "derivedFrom": "bbox-fraction(0.1,0.5)",
+          "shapeBox": [
+            395,
+            280,
+            1055,
+            720
+          ]
+        },
+        {
+          "structureId": "fibrous-capsule",
+          "x": 0.3759,
+          "y": 0.4592,
+          "radius": 0.014,
+          "derivedFrom": "bbox-fraction(0.5,0.4)",
+          "shapeBox": [
+            506,
+            316,
+            584,
+            674
+          ]
+        },
+        {
+          "structureId": "synovial-membrane",
+          "x": 0.4103,
+          "y": 0.4925,
+          "radius": 0.012,
+          "derivedFrom": "bbox-fraction(0.5,0.5)",
+          "shapeBox": [
+            570,
+            340,
+            620,
+            645
+          ]
+        },
+        {
+          "structureId": "articular-cartilage",
+          "x": 0.5,
+          "y": 0.39,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            600,
+            355,
+            850,
+            455
+          ]
+        },
+        {
+          "structureId": "joint-cavity",
+          "x": 0.5,
+          "y": 0.5117,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            630,
+            470,
+            820,
+            560
+          ]
+        },
+        {
+          "structureId": "synovial-fluid",
+          "x": 0.5,
+          "y": 0.52,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            685,
+            506,
+            765,
+            534
+          ]
+        },
+        {
+          "structureId": "ligament",
+          "x": 0.3897,
+          "y": 0.3328,
+          "radius": 0.014,
+          "derivedFrom": "bbox-fraction(0.5,0.2)",
+          "shapeBox": [
+            548,
+            238,
+            582,
+            712
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "5c72617bf82ad03b67a6cd766043ee0eb4229d567136200ac46077eb8a829e71",
+        "png": "9178c935097c158b3c663991d910c0016f4795a79d8fcaf02c820c53ce73d5c1"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-shoulder-joint",
+      "plate": 21,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-21-shoulder-joint.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-21-shoulder-joint.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "shoulder (glenohumeral and acromioclavicular) relationships",
+      "orientation": "right shoulder anterior view; humerus viewer-left, scapula viewer-right",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "scapula",
+          "x": 0.5803,
+          "y": 0.6,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.65,0.6)",
+          "shapeBox": [
+            640,
+            300,
+            950,
+            800
+          ]
+        },
+        {
+          "structureId": "greater-tubercle",
+          "x": 0.331,
+          "y": 0.44,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            446,
+            400,
+            514,
+            480
+          ]
+        },
+        {
+          "structureId": "humeral-head",
+          "x": 0.3763,
+          "y": 0.48,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.4,0.5)",
+          "shapeBox": [
+            488,
+            404,
+            632,
+            556
+          ]
+        },
+        {
+          "structureId": "glenoid-cavity",
+          "x": 0.4483,
+          "y": 0.48,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            628,
+            420,
+            672,
+            540
+          ]
+        },
+        {
+          "structureId": "shoulder-joint",
+          "x": 0.4262,
+          "y": 0.48,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            611,
+            422,
+            625,
+            538
+          ]
+        },
+        {
+          "structureId": "glenohumeral-ligaments",
+          "x": 0.4161,
+          "y": 0.4183,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            550,
+            395,
+            660,
+            435
+          ]
+        },
+        {
+          "structureId": "acromion",
+          "x": 0.4362,
+          "y": 0.305,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            484,
+            269,
+            806,
+            351
+          ]
+        },
+        {
+          "structureId": "coracoid-process",
+          "x": 0.4494,
+          "y": 0.3673,
+          "radius": 0.016,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            589,
+            334,
+            716,
+            396
+          ]
+        },
+        {
+          "structureId": "clavicle",
+          "x": 0.6655,
+          "y": 0.254,
+          "radius": 0.016,
+          "derivedFrom": "bbox-fraction(0.7,0.4)",
+          "shapeBox": [
+            510,
+            220,
+            1160,
+            305
+          ]
+        },
+        {
+          "structureId": "acromioclavicular-ligament",
+          "x": 0.3741,
+          "y": 0.292,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            510,
+            278,
+            575,
+            306
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "3a70f43e637cc36113f130ea40b96ae4d1b67b00b2907dac713c0fdb2dfd8427",
+        "png": "e057f9c969974540676e25d1553d7c5f5fdc070322bb567afe69a81f1dfaa077"
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-knee-joint",
+      "plate": 22,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-22-knee-joint.svg",
+      "pngPath": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-22-knee-joint.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/skeletal-generate.mjs. No third-party illustration traced, copied or downloaded; NIH StatPearls figures are not public domain and were not used.",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834",
+          "publisher": "NCBI Bookshelf / StatPearls (skull anatomy, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535397",
+          "publisher": "NCBI Bookshelf / StatPearls (appendicular skeleton, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535382",
+          "publisher": "NCBI Bookshelf / StatPearls (carpal rows, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545260",
+          "publisher": "NCBI Bookshelf / StatPearls (forearm, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK535416",
+          "publisher": "NCBI Bookshelf / StatPearls (PCL attachments, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK559233",
+          "publisher": "NCBI Bookshelf / StatPearls (ACL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK507780",
+          "publisher": "NCBI Bookshelf / StatPearls (MCL, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535432",
+          "publisher": "NCBI Bookshelf / StatPearls (foramen spinosum posterolateral to foramen ovale, text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules (text only)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "right knee: anterior surface ligaments and deep cruciate layout",
+      "orientation": "right knee anterior view; lateral (fibula, LCL) at viewer-left; medial (MCL) at viewer-right; patella omitted in right panel",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "patella",
+          "x": 0.2759,
+          "y": 0.345,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            348,
+            283,
+            452,
+            407
+          ]
+        },
+        {
+          "structureId": "patellar-ligament",
+          "x": 0.2763,
+          "y": 0.5017,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            378,
+            383,
+            424,
+            622
+          ]
+        },
+        {
+          "structureId": "tibial-tuberosity",
+          "x": 0.2772,
+          "y": 0.64,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            374,
+            614,
+            430,
+            666
+          ]
+        },
+        {
+          "structureId": "lcl",
+          "x": 0.1908,
+          "y": 0.4483,
+          "radius": 0.012,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            267,
+            342,
+            288,
+            553
+          ]
+        },
+        {
+          "structureId": "mcl",
+          "x": 0.3598,
+          "y": 0.5,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            499,
+            349,
+            541,
+            651
+          ]
+        },
+        {
+          "structureId": "knee-joint",
+          "x": 0.2759,
+          "y": 0.48,
+          "radius": 0.02,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            280,
+            470,
+            520,
+            490
+          ]
+        },
+        {
+          "structureId": "femoral-condyles",
+          "x": 0.6634,
+          "y": 0.346,
+          "radius": 0.02,
+          "derivedFrom": "bbox-fraction(0.3,0.6)",
+          "shapeBox": [
+            920,
+            250,
+            1060,
+            410
+          ]
+        },
+        {
+          "structureId": "intercondylar-eminence",
+          "x": 0.7241,
+          "y": 0.493,
+          "radius": 0.014,
+          "derivedFrom": "shape-centroid",
+          "shapeBox": [
+            1030,
+            477,
+            1070,
+            509
+          ]
+        },
+        {
+          "structureId": "pcl",
+          "x": 0.7428,
+          "y": 0.352,
+          "radius": 0.012,
+          "derivedFrom": "authored-feature-point",
+          "shapeBox": [
+            1027,
+            343,
+            1086,
+            509
+          ]
+        },
+        {
+          "structureId": "acl",
+          "x": 0.7062,
+          "y": 0.35,
+          "radius": 0.012,
+          "derivedFrom": "authored-feature-point",
+          "shapeBox": [
+            1015,
+            341,
+            1077,
+            507
+          ]
+        }
+      ],
+      "sha256": {
+        "svg": "e35d55750e369d4ea75534944071cec02aeec1be3b287703e17081e330267214",
+        "png": "8cccb13ecea83eea07258cf408c5dbe6c97c1b889cad5780084a9e8447579641"
+      }
+    }
+  ]
+}

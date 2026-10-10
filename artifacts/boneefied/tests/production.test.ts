@@ -2,6 +2,15 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import test from 'node:test';
 import { content, CYTOLOGY_SOURCE_ID } from '../content/canonical.ts';
+import { bvis04Questions } from '../content/bvis04-questions.ts';
+import { bvis04Plates } from '../content/bvis04-plates.generated.ts';
+import { BVIS04_SOURCE, isBvis04AssetId } from '../content/bvis04-pack.ts';
+import { BVIS05_MODULES, BVIS05_SOURCE, isBvis05AssetId } from '../content/bvis05-pack.ts';
+import { bvis05Questions } from '../content/bvis05-questions.ts';
+import { bvis05Plates } from '../content/bvis05-plates.generated.ts';
+import { BVIS06_MODULES, isBvis06AssetId } from '../content/bvis06-pack.ts';
+import { bvis06Questions } from '../content/bvis06-questions.ts';
+import { bvis06Plates } from '../content/bvis06-plates.generated.ts';
 import { GRAY_SOURCE_ID, OPENSTAX_SOURCE_ID } from '../content/anatomy.ts';
 import { validateContent } from '../content/validation.ts';
 import { sourceCitation } from '../content/sources.ts';
@@ -40,11 +49,11 @@ test('production catalog validates with honest published counts and source prove
   assert.equal(content.modules.find((module) => module.id === 'nervous-system')?.system, 'nervous');
   assert.ok(content.structures.some((structure) => structure.id === 'external-acoustic-meatus'));
   assert.ok(content.structures.some((structure) => structure.id === 'lateral-malleolus'));
-  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 112);
-  assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 72);
+  assert.equal(content.questions.filter((question) => question.moduleId === 'skeletal-system').length, 136);
+  assert.equal(content.questions.filter((question) => question.moduleId === 'anatomy-foundations').length, 76);
   const expectedCounts: Record<string, [number, number, number]> = {
-    'cytology-mitosis': [22, 6, 18], 'skeletal-system': [155, 13, 112], 'anatomy-foundations': [105, 15, 72],
-    'joints-ligaments': [36, 6, 32], 'muscular-system': [73, 8, 130], 'nervous-system': [63, 8, 52],
+    'cytology-mitosis': [22, 6, 18], 'skeletal-system': [155, 13, 136], 'anatomy-foundations': [105, 15, 76],
+    'joints-ligaments': [36, 6, 34], 'muscular-system': [73, 8, 173], 'nervous-system': [63, 8, 52],
     'cells-tissues': [57, 8, 31], 'integumentary-system': [38, 6, 21], 'special-senses': [71, 9, 35],
     'endocrine-system': [38, 6, 18], 'cardiovascular-system': [70, 11, 50], 'blood-vessels': [45, 10, 25],
     'lymphatic-system': [47, 7, 19], 'respiratory-system': [64, 7, 41], 'digestive-system': [81, 10, 45],
@@ -55,9 +64,9 @@ test('production catalog validates with honest published counts and source prove
     assert.ok(module?.published, id);
     assert.equal(content.structures.filter((item) => item.moduleId === id).length, structures, id);
     assert.equal(module?.lessons?.length ?? 0, lessons, id);
-    assert.equal(content.questions.filter((item) => item.moduleId === id).length, questions, id);
+    assert.equal(content.questions.filter((item) => item.moduleId === id).length, questions + [...bvis04Questions, ...bvis05Questions, ...bvis06Questions].filter((q) => q.moduleId === id).length, id);
   }
-  assert.equal(content.assets.length, 57);
+  assert.equal(content.assets.length, 97 + bvis04Plates.filter((p) => !p.replaces).length + bvis05Plates.length + bvis06Plates.length);
   assert.ok(content.questions.filter((question) => question.assetId).length >= 23);
   assert.ok(content.questions.filter((question) => question.hotspots?.length).length >= 8);
   assert.equal(content.questions.filter((question) => question.taskType === 'histology-identification').length, 2);
@@ -72,7 +81,8 @@ test('production catalog validates with honest published counts and source prove
   assert.ok(content.sources.some((source) => source.id === OPENSTAX_SOURCE_ID && source.attributionLicenseStatus.includes('CC BY 4.0')));
   assert.ok(content.sources.some((source) => source.id === GRAY_SOURCE_ID && source.attributionLicenseStatus.includes('Public domain')));
   assert.ok(content.assets.every((asset) => asset.verificationStatus === 'verified'));
-  assert.ok(content.assets.filter((asset) => asset.sourceId !== ORIGINAL_VISUAL_SOURCE_ID).every((asset) => asset.rightsUrl));
+  const originalSources = new Set([ORIGINAL_VISUAL_SOURCE_ID, BVIS04_SOURCE, BVIS05_SOURCE, 'source-boneefied-foundational-atlas', 'source-boneefied-skeletal-atlas', 'source-boneefied-muscular-atlas']);
+  assert.ok(content.assets.filter((asset) => !originalSources.has(asset.sourceId)).every((asset) => asset.rightsUrl));
   assert.ok(content.questions.every((question) => content.modules.find((module) => module.id === question.moduleId)?.published));
   assert.equal(sourceCitation(content, OPENSTAX_SOURCE_ID, null), 'OpenStax Anatomy and Physiology (2013) · CC BY 4.0');
   assert.equal(sourceCitation(content, OPENSTAX_SOURCE_ID, 42), 'OpenStax Anatomy and Physiology (2013) · CC BY 4.0 · p.42');
@@ -123,7 +133,7 @@ test('Cytology visual course preserves old IDs and has the six ordered study les
 });
 
 test('every published asset has a local static resolver entry and honest rights metadata', () => {
-  const resolver = readFileSync(new URL('../content/imageSources.ts', import.meta.url), 'utf8');
+  const resolver = readFileSync(new URL('../content/imageSources.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis04-image-sources.generated.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis05-image-sources.generated.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis06-image-sources.generated.ts', import.meta.url), 'utf8');
   for (const asset of content.assets) {
     assert.ok(asset.localAssetPath, asset.id);
     assert.match(resolver, new RegExp(`['"]${asset.id}['"]\\s*:`), `${asset.id}: missing static resolver`);
@@ -131,6 +141,15 @@ test('every published asset has a local static resolver entry and honest rights 
     if (asset.sourceId === ORIGINAL_VISUAL_SOURCE_ID) {
       assert.equal(asset.rightsUrl, undefined, `${asset.id}: original artwork must not claim external rights`);
       assert.match(asset.attributionLicense, /Original diagram created for Boneefied/);
+    } else if ([BVIS04_SOURCE, BVIS05_SOURCE].includes(asset.sourceId)) {
+      assert.equal(asset.rightsUrl, undefined);
+      assert.match(asset.attributionLicense, /Original Boneefied project vector artwork/);
+    } else if (asset.sourceId === 'source-boneefied-skeletal-atlas' || asset.sourceId === 'source-boneefied-muscular-atlas') {
+      assert.equal(asset.rightsUrl, undefined);
+      assert.match(asset.attributionLicense, /Original Boneefied project artwork/);
+    } else if (asset.sourceId === 'source-boneefied-foundational-atlas') {
+      assert.equal(asset.rightsUrl, undefined);
+      assert.match(asset.attributionLicense, /Original Boneefied project artwork/);
     } else {
       assert.ok(asset.rightsUrl, `${asset.id}: missing rights URL`);
     }
@@ -178,6 +197,12 @@ test('verified Gray plates are local, labeled, and lesson-scoped', () => {
   assert.equal(new Set(content.assets.map((asset) => asset.id)).size, content.assets.length);
   for (const [id, [moduleId, lessonId, path, url]] of expected) {
     const asset = content.assets.find((item) => item.id === id);
+    if (isBvis04AssetId(id)) {
+      assert.equal(asset?.sourceId, BVIS04_SOURCE);
+      assert.equal(asset?.labelStatus, 'unlabeled');
+      assert.ok(asset?.localAssetPath.startsWith('assets/images/anatomy/bvis04-atlas/'));
+      continue;
+    }
     assert.ok(asset);
     assert.equal(asset?.localAssetPath, path);
     assert.equal(asset?.sourceId, 'source-gray-1918-commons');
@@ -187,13 +212,20 @@ test('verified Gray plates are local, labeled, and lesson-scoped', () => {
     assert.equal(asset?.rightsUrl, url);
     assert.match(asset?.attributionLicense ?? '', /Public domain/);
     const lesson = content.modules.find((module) => module.id === moduleId)?.lessons?.find((item) => item.id === lessonId);
-    assert.ok(lesson?.assetIds?.includes(id), `${moduleId}:${lessonId}`);
+    if (BVIS05_MODULES.includes(moduleId)) {
+      assert.ok(lesson?.assetIds?.some(isBvis05AssetId), `${moduleId}:${lessonId}: current original artwork`);
+      assert.ok(!lesson?.assetIds?.includes(id), `${id}: retired drawing remains archived, not active`);
+    } else if (BVIS06_MODULES.includes(moduleId)) {
+      assert.ok(lesson?.assetIds?.some(isBvis06AssetId), `${moduleId}:${lessonId}: current original artwork`);
+      assert.ok(!lesson?.assetIds?.includes(id), `${id}: retired drawing remains archived, not active`);
+    } else assert.ok(lesson?.assetIds?.includes(id), `${moduleId}:${lessonId}`);
     assert.ok(content.assets.some((asset) => asset.id === id), `${id}: catalog asset`);
   }
   const gray1121Lessons = content.modules.flatMap((module) => (module.lessons ?? []).filter((lesson) => lesson.assetIds?.includes('asset-gray1121-posterior-abdominal-wall')).map((lesson) => `${module.id}:${lesson.id}`));
-  assert.deepEqual(gray1121Lessons.sort(), ['blood-vessels:ves-central-branches', 'endocrine-system:endo-adrenal']);
+  assert.deepEqual(gray1121Lessons, [], 'BVIS05 retires the historic diagram from active regional vessel and adrenal lessons');
   const urinaryVisuals = content.modules.find((module) => module.id === 'urinary-system')?.lessons?.find((lesson) => lesson.id === 'urinary-kidney')?.assetIds ?? [];
-  assert.ok(urinaryVisuals.includes('asset-servier-kidney'));
+  assert.ok(urinaryVisuals.some(isBvis06AssetId));
+  assert.ok(!urinaryVisuals.includes('asset-servier-kidney'));
   assert.ok(urinaryVisuals.includes('asset-commons-kidney-cortex-human'));
   assert.equal(content.structures.some((structure) => structure.id === 'ves-carotid'), false);
   assert.equal(content.structures.filter((structure) => structure.canonicalName.toLowerCase().replace(/[^a-z0-9]/g, '') === 'commoncarotidartery').length, 1);
@@ -212,8 +244,8 @@ test('production questions expose supported playable task types', () => {
   assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 59);
   assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 76);
   assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 8);
-  assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 119);
-  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 16);
+  assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 119 + bvis04Questions.filter((q) => q.taskType === 'function-relationship').length);
+  assert.equal(content.questions.filter((question) => question.taskType === 'muscle-action').length, 24);
   assert.equal(content.questions.filter((question) => question.taskType === 'muscle-origin-insertion').length, 12);
   const multipleChoiceLike = new Set(['multiple-choice', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
   for (const question of content.questions.filter((item) => multipleChoiceLike.has(item.taskType))) {
@@ -236,7 +268,7 @@ test('production questions expose supported playable task types', () => {
     for (const structureId of lesson.structureIds) assert.equal(structureModules.get(structureId), module.id, `${lesson.id}:${structureId}`);
   }
   for (const question of content.questions.filter((item) => item.assetId)) {
-    const resolver = readFileSync(new URL('../content/imageSources.ts', import.meta.url), 'utf8');
+    const resolver = readFileSync(new URL('../content/imageSources.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis04-image-sources.generated.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis05-image-sources.generated.ts', import.meta.url), 'utf8');
     assert.match(resolver, new RegExp(`['"]${question.assetId}['"]\\s*:`), `${question.id}: resolver mapping`);
     assert.ok(content.assets.some((asset) => asset.id === question.assetId), `${question.id}: asset`);
     for (const target of question.hotspots ?? []) {

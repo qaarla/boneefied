@@ -1,0 +1,114 @@
+{
+  "verifiedOn": "2026-10-10",
+  "scope": "Existing unchanged specimen files only; no new OpenStax illustrations imported",
+  "licenses": [
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Squamous_Epithelium_(40823230315).jpg",
+      "file": "Epithelial_Tissues_Simple_Squamous_Epithelium_(40823230315).jpg",
+      "creator": "Berkshire Community College Bioscience Image Library",
+      "license": "CC0 1.0",
+      "rightsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": [
+        "| Date | 22 March 2018, 10:43 |",
+        "| Author | [Berkshire Community College Bioscience Image Library](https://www.flickr.com/people/146824358@N03) |",
+        "| ![Creative Commons](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/40px-Cc.logo.circle.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail)![CC-Zero](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Cc-zero.svg/40px-Cc-zero.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) | This file is made available under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons \"w:en:Creative Commons\") [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en \"ccorg:publicdomain/zero/1.0/deed.en\"). |",
+        "| The person who associated a work with this deed has dedicated the work to the [public domain](https://en.wikipedia.org/wiki/en:public_domain \"w:en:public domain\") by waiving all of their rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.<br>http://creativecommons.org/publicdomain/zero/1.0/deed.enCC0Creative Commons Zero, Public Domain Dedicationfalsefalse |",
+        "| ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) | This image was originally posted to **[Flickr](https://en.wikipedia.org/wiki/Flickr \"en:Flickr\")** by bccoer at [https://flickr.com/photos/146824358@N03/40823230315](https://flickr.com/photos/146824358@N03/40823230315) ( [archive](https://web.archive.org/web/20200505145117/https://flickr.com/photos/146824358@N03/40823230315)). It was reviewed on 23 June 2018 by **[FlickreviewR 2](https://commons.wikimedia.org/wiki/User:FlickreviewR_2 \"User:FlickreviewR 2\")** and was confirmed to be licensed under the terms of the cc-zero. | ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Flickr_dots.svg/60px-Flickr_dots.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) |"
+      ],
+      "assetId": "asset-commons-simple-squamous-epithelium",
+      "localPath": "assets/images/anatomy/commons-simple-squamous-epithelium.jpg",
+      "sha256": "0454a73614be06ab452013c247977dfe53f4e97339ae7b8e74b1e480e24e9968",
+      "byteSize": 494571,
+      "dimensions": [
+        1280,
+        722
+      ],
+      "kind": "real-specimen-photomicrograph",
+      "modificationsInBvis04": "None. Existing local image bytes retained.",
+      "existingAdaptation": "Existing display-sized specimen image; no new crop or tissue alteration.",
+      "stainMagnificationOrganism": "Not newly asserted; no inference from color or appearance."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+      "file": "Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+      "creator": "Berkshire Community College Bioscience Image Library",
+      "license": "CC0 1.0",
+      "rightsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": [
+        "| Date | 30 March 2018, 15:48 |",
+        "| Author | [Berkshire Community College Bioscience Image Library](https://www.flickr.com/people/146824358@N03) |",
+        "| ![Creative Commons](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/40px-Cc.logo.circle.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail)![CC-Zero](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Cc-zero.svg/40px-Cc-zero.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) | This file is made available under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons \"w:en:Creative Commons\") [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en \"ccorg:publicdomain/zero/1.0/deed.en\"). |",
+        "| The person who associated a work with this deed has dedicated the work to the [public domain](https://en.wikipedia.org/wiki/en:public_domain \"w:en:public domain\") by waiving all of their rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.<br>http://creativecommons.org/publicdomain/zero/1.0/deed.enCC0Creative Commons Zero, Public Domain Dedicationfalsefalse |",
+        "| ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) | This image was originally posted to **[Flickr](https://en.wikipedia.org/wiki/Flickr \"en:Flickr\")** by bccoer at [https://flickr.com/photos/146824358@N03/41681552782](https://flickr.com/photos/146824358@N03/41681552782) ( [archive](https://web.archive.org/web/20200505145113/https://flickr.com/photos/146824358@N03/41681552782)). It was reviewed on 23 June 2018 by **[FlickreviewR 2](https://commons.wikimedia.org/wiki/User:FlickreviewR_2 \"User:FlickreviewR 2\")** and was confirmed to be licensed under the terms of the cc-zero. | ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Flickr_dots.svg/60px-Flickr_dots.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) |"
+      ],
+      "assetId": "asset-commons-simple-cuboidal-epithelium",
+      "localPath": "assets/images/anatomy/commons-simple-cuboidal-epithelium.jpg",
+      "sha256": "2a8de1e489ac07582de0966f52482abf2e0c1dcb966c69cef055543a1469e4be",
+      "byteSize": 229574,
+      "dimensions": [
+        1280,
+        722
+      ],
+      "kind": "real-specimen-photomicrograph",
+      "modificationsInBvis04": "None. Existing local image bytes retained.",
+      "existingAdaptation": "Existing display-sized specimen image; no new crop or tissue alteration.",
+      "stainMagnificationOrganism": "Not newly asserted; no inference from color or appearance."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+      "file": "Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+      "creator": "Berkshire Community College Bioscience Image Library",
+      "license": "CC0 1.0",
+      "rightsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "evidence": [
+        "| Date | 22 March 2018, 10:43 |",
+        "| Author | [Berkshire Community College Bioscience Image Library](https://www.flickr.com/people/146824358@N03) |",
+        "| ![Creative Commons](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/40px-Cc.logo.circle.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail)![CC-Zero](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Cc-zero.svg/40px-Cc-zero.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) | This file is made available under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons \"w:en:Creative Commons\") [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en \"ccorg:publicdomain/zero/1.0/deed.en\"). |",
+        "| The person who associated a work with this deed has dedicated the work to the [public domain](https://en.wikipedia.org/wiki/en:public_domain \"w:en:public domain\") by waiving all of their rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.<br>http://creativecommons.org/publicdomain/zero/1.0/deed.enCC0Creative Commons Zero, Public Domain Dedicationfalsefalse |",
+        "| ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Checked_copyright_icon.svg/60px-Checked_copyright_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) | This image was originally posted to **[Flickr](https://en.wikipedia.org/wiki/Flickr \"en:Flickr\")** by bccoer at [https://flickr.com/photos/146824358@N03/27854452618](https://flickr.com/photos/146824358@N03/27854452618) ( [archive](http://web.archive.org/web/20190120002245/https://flickr.com/photos/146824358@N03/27854452618)). It was reviewed on 23 June 2018 by **[FlickreviewR 2](https://commons.wikimedia.org/wiki/User:FlickreviewR_2 \"User:FlickreviewR 2\")** and was confirmed to be licensed under the terms of the cc-zero. | ![](https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Flickr_dots.svg/60px-Flickr_dots.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) |"
+      ],
+      "assetId": "asset-commons-simple-columnar-epithelium",
+      "localPath": "assets/images/anatomy/commons-simple-columnar-epithelium.jpg",
+      "sha256": "8d0916a4789bd4a5613c08726e6e265265caddb5e0c508ed9f1e1f44c16bfefd",
+      "byteSize": 238318,
+      "dimensions": [
+        1280,
+        722
+      ],
+      "kind": "real-specimen-photomicrograph",
+      "modificationsInBvis04": "None. Existing local image bytes retained.",
+      "existingAdaptation": "Existing display-sized specimen image; no new crop or tissue alteration.",
+      "stainMagnificationOrganism": "Not newly asserted; no inference from color or appearance."
+    },
+    {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+      "file": "1313_Spinal_Cord_Cross_Section.jpg",
+      "creator": "OpenStax (exact 2016 Commons file)",
+      "license": "CC BY 4.0",
+      "rightsUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "evidence": [
+        "| Date | 18 May 2016 |",
+        "| Author | OpenStax |",
+        "I, the copyright holder of this work, hereby publish it under the following license:",
+        "This file is licensed under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons \"w:en:Creative Commons\") [Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.en \"creativecommons:by/4.0/deed.en\") license."
+      ],
+      "assetId": "asset-openstax-spinal-cord-specimen",
+      "localPath": "assets/images/anatomy/openstax-spinal-cord-specimen.jpg",
+      "sha256": "5f7db7a0008ba0f85d7d3847e368c951a36c38072f15d310d2149ff6c08ea681",
+      "byteSize": 972808,
+      "dimensions": [
+        1200,
+        749
+      ],
+      "kind": "real-specimen-photomicrograph",
+      "modificationsInBvis04": "None. Existing local image bytes retained.",
+      "existingAdaptation": "Existing crop to the real photomicrograph panel; source diagram portion excluded.",
+      "stainMagnificationOrganism": "Not newly asserted; no inference from color or appearance."
+    }
+  ],
+  "commercialReuseEvidence": [
+    "    medium or format for any purpose, even commercially.",
+    "    material for any purpose, even commercially.",
+    "3. The licensor cannot revoke these freedoms as long as you follow"
+  ]
+}

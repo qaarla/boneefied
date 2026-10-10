@@ -1,0 +1,21 @@
+{
+  "command": "BVIS06",
+  "newSpecimens": 0,
+  "licenses": [
+    {
+      "assetId": "asset-commons-kidney-cortex-human",
+      "localPath": "assets/images/anatomy/commons-kidney-cortex-human.jpg",
+      "byteSize": 4051334,
+      "sha256": "3a4333edc68cfc40e901ab4df0e30c1ea889134fdb62675e13411a85e1b74627",
+      "width": 3750,
+      "height": 2399,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+      "rightsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": "Doc. RNDr. Josef Reischig, CSc.",
+      "license": "CC BY-SA 3.0",
+      "licenseVerification": "Exact Wikimedia Commons file page fetched live; creator and CC BY-SA 3.0 Unported confirmed.",
+      "modifications": "None; existing bytes unchanged.",
+      "checkedAt": "2026-10-10"
+    }
+  ]
+}

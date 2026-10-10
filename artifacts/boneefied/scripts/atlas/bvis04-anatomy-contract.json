@@ -1,0 +1,1602 @@
+{
+  "modules": [
+    {
+      "id": "cells-tissues",
+      "lessons": [
+        {
+          "id": "cell-boundaries-organelles",
+          "title": "Cell boundaries and organelles",
+          "structureIds": [
+            "cell-membrane",
+            "cytoplasm",
+            "nucleus-cell",
+            "nucleolus-cell",
+            "chromatin-cell",
+            "nuclear-envelope",
+            "ribosome-cell",
+            "rough-er-cell",
+            "smooth-er-cell",
+            "golgi-apparatus-cell",
+            "mitochondrion-cell",
+            "lysosome-cell",
+            "peroxisome-cell",
+            "centrosome-cell"
+          ]
+        },
+        {
+          "id": "cell-surface-junctions",
+          "title": "Cell surfaces and junctions",
+          "structureIds": [
+            "microvillus-cell",
+            "tight-junction-cell",
+            "desmosome-cell",
+            "gap-junction-cell",
+            "hemidesmosome-cell",
+            "basement-membrane-tissue"
+          ]
+        },
+        {
+          "id": "epithelial-patterns",
+          "title": "Epithelial tissue patterns",
+          "structureIds": [
+            "simple-squamous-epithelium",
+            "simple-cuboidal-epithelium",
+            "simple-columnar-epithelium",
+            "pseudostratified-epithelium",
+            "stratified-squamous-keratinized",
+            "stratified-squamous-nonkeratinized",
+            "stratified-cuboidal-epithelium",
+            "stratified-columnar-epithelium",
+            "transitional-epithelium",
+            "basement-membrane-tissue",
+            "goblet-cell-tissue"
+          ]
+        },
+        {
+          "id": "glandular-epithelium",
+          "title": "Glandular epithelium and ducts",
+          "structureIds": [
+            "exocrine-gland-tissue",
+            "endocrine-gland-tissue",
+            "duct-gland-tissue"
+          ]
+        },
+        {
+          "id": "connective-matrices",
+          "title": "Connective tissue matrices",
+          "structureIds": [
+            "areolar-connective-tissue",
+            "adipose-connective-tissue",
+            "reticular-connective-tissue",
+            "dense-regular-connective-tissue",
+            "dense-irregular-connective-tissue",
+            "elastic-connective-tissue",
+            "hyaline-cartilage-tissue",
+            "elastic-cartilage-tissue",
+            "fibrocartilage-tissue",
+            "osteocyte-tissue",
+            "bone-tissue",
+            "blood-tissue",
+            "erythrocyte-tissue",
+            "leukocyte-tissue",
+            "platelet-tissue",
+            "collagen-fiber-tissue",
+            "elastic-fiber-tissue",
+            "lacuna-tissue"
+          ]
+        },
+        {
+          "id": "muscle-histology",
+          "title": "Muscle tissue cues",
+          "structureIds": [
+            "skeletal-muscle-tissue",
+            "cardiac-muscle-tissue",
+            "smooth-muscle-tissue",
+            "intercalated-disc-tissue"
+          ]
+        },
+        {
+          "id": "nervous-tissue-cues",
+          "title": "Nervous tissue cues",
+          "structureIds": [
+            "neuron-tissue",
+            "neuroglia-tissue"
+          ]
+        },
+        {
+          "id": "histology-recognition",
+          "title": "Integrated histology recognition",
+          "structureIds": [
+            "simple-squamous-epithelium",
+            "stratified-squamous-keratinized",
+            "hyaline-cartilage-tissue",
+            "skeletal-muscle-tissue",
+            "cardiac-muscle-tissue",
+            "neuron-tissue",
+            "collagen-fiber-tissue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nervous-system",
+      "lessons": [
+        {
+          "id": "brain-lobes",
+          "title": "Brain lobes and cortex",
+          "structureIds": [
+            "cerebrum",
+            "frontal-lobe",
+            "parietal-lobe",
+            "temporal-lobe",
+            "occipital-lobe",
+            "insula",
+            "corpus-callosum"
+          ]
+        },
+        {
+          "id": "deep-brain",
+          "title": "Diencephalon and basal nuclei",
+          "structureIds": [
+            "thalamus",
+            "hypothalamus",
+            "epithalamus",
+            "basal-nuclei",
+            "caudate-nucleus",
+            "putamen",
+            "globus-pallidus"
+          ]
+        },
+        {
+          "id": "ventricles-csf",
+          "title": "Ventricles, meninges, and CSF",
+          "structureIds": [
+            "lateral-ventricle",
+            "third-ventricle",
+            "cerebral-aqueduct",
+            "fourth-ventricle",
+            "choroid-plexus",
+            "meninges",
+            "dura-mater",
+            "arachnoid-mater",
+            "pia-mater",
+            "cerebrospinal-fluid"
+          ]
+        },
+        {
+          "id": "brainstem-cerebellum",
+          "title": "Brainstem and cerebellum",
+          "structureIds": [
+            "midbrain",
+            "pons",
+            "medulla-oblongata",
+            "cerebellum",
+            "arbor-vitae"
+          ]
+        },
+        {
+          "id": "spinal-cord",
+          "title": "Spinal cord landmarks",
+          "structureIds": [
+            "spinal-cord",
+            "central-canal",
+            "dorsal-horn",
+            "ventral-horn",
+            "dorsal-root",
+            "ventral-root",
+            "dorsal-root-ganglion",
+            "dorsal-ramus",
+            "ventral-ramus"
+          ]
+        },
+        {
+          "id": "neural-tracts",
+          "title": "Introductory neural pathways",
+          "structureIds": [
+            "corticospinal-tract",
+            "spinothalamic-tract",
+            "dorsal-column"
+          ]
+        },
+        {
+          "id": "cranial-nerves",
+          "title": "Cranial nerves I–XII",
+          "structureIds": [
+            "cranial-nerve-i",
+            "cranial-nerve-ii",
+            "cranial-nerve-iii",
+            "cranial-nerve-iv",
+            "cranial-nerve-v",
+            "cranial-nerve-vi",
+            "cranial-nerve-vii",
+            "cranial-nerve-viii",
+            "cranial-nerve-ix",
+            "cranial-nerve-x",
+            "cranial-nerve-xi",
+            "cranial-nerve-xii"
+          ]
+        },
+        {
+          "id": "plexuses-peripheral",
+          "title": "Plexuses and peripheral nerves",
+          "structureIds": [
+            "cervical-plexus",
+            "brachial-plexus",
+            "lumbar-plexus",
+            "sacral-plexus",
+            "phrenic-nerve",
+            "median-nerve",
+            "ulnar-nerve",
+            "radial-nerve",
+            "sciatic-nerve",
+            "femoral-nerve"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integumentary-system",
+      "lessons": [
+        {
+          "id": "skin-layers-strata",
+          "title": "Skin layers and epidermal strata",
+          "structureIds": [
+            "epidermis-skin",
+            "dermis-skin",
+            "hypodermis-skin",
+            "stratum-basale",
+            "stratum-spinosum",
+            "stratum-granulosum",
+            "stratum-lucidum",
+            "stratum-corneum"
+          ]
+        },
+        {
+          "id": "epidermal-cells",
+          "title": "Epidermal cell types",
+          "structureIds": [
+            "keratinocyte-skin",
+            "melanocyte-skin",
+            "merkel-cell-skin",
+            "langerhans-cell-skin"
+          ]
+        },
+        {
+          "id": "dermis-hypodermis",
+          "title": "Dermis and hypodermis",
+          "structureIds": [
+            "papillary-layer-skin",
+            "reticular-layer-skin",
+            "dermal-papilla-skin",
+            "collagen-skin",
+            "elastic-fibers-skin",
+            "cutaneous-blood-vessels-skin",
+            "hypodermis-skin"
+          ]
+        },
+        {
+          "id": "cutaneous-glands",
+          "title": "Cutaneous glands",
+          "structureIds": [
+            "eccrine-sweat-gland",
+            "apocrine-sweat-gland",
+            "sebaceous-gland-skin",
+            "ceruminous-gland-skin",
+            "sweat-pore-skin",
+            "sebaceous-duct-skin"
+          ]
+        },
+        {
+          "id": "hair-nails",
+          "title": "Hair and nails",
+          "structureIds": [
+            "hair-shaft-skin",
+            "hair-root-skin",
+            "hair-follicle-skin",
+            "hair-bulb-skin",
+            "dermal-papilla-hair",
+            "arrector-pili-skin",
+            "nail-plate-skin",
+            "nail-bed-skin",
+            "nail-root-skin",
+            "nail-matrix-skin"
+          ]
+        },
+        {
+          "id": "skin-sensation-function",
+          "title": "Skin sensation and functions",
+          "structureIds": [
+            "tactile-corpuscle-skin",
+            "lamellated-corpuscle-skin",
+            "free-nerve-ending-skin",
+            "hair-root-plexus-skin",
+            "cutaneous-blood-vessels-skin",
+            "collagen-skin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special-senses",
+      "lessons": [
+        {
+          "id": "eye-coats",
+          "title": "Eye coats and chambers",
+          "structureIds": [
+            "fibrous-tunic-eye",
+            "sclera-eye",
+            "cornea-eye",
+            "vascular-tunic-eye",
+            "choroid-eye",
+            "ciliary-body-eye",
+            "iris-eye",
+            "pupil-eye",
+            "anterior-chamber-eye",
+            "posterior-chamber-eye",
+            "aqueous-humor-eye",
+            "vitreous-chamber-eye",
+            "vitreous-humor-eye"
+          ]
+        },
+        {
+          "id": "lens-retina",
+          "title": "Lens and retina",
+          "structureIds": [
+            "lens-eye",
+            "suspensory-ligaments-eye",
+            "retina-eye",
+            "retinal-pigment-epithelium-eye",
+            "optic-disc-eye",
+            "fovea-centralis-eye",
+            "macula-lutea-eye",
+            "rods-eye",
+            "cones-eye",
+            "bipolar-cells-eye",
+            "ganglion-cells-eye"
+          ]
+        },
+        {
+          "id": "eye-accessory-structures",
+          "title": "Accessory eye structures and lacrimal drainage",
+          "structureIds": [
+            "eyelid-sense",
+            "conjunctiva-sense",
+            "lacrimal-gland-sense",
+            "lacrimal-sac-sense",
+            "nasolacrimal-duct-sense"
+          ]
+        },
+        {
+          "id": "extraocular-movement",
+          "title": "Extraocular muscles and pathways",
+          "structureIds": [
+            "medial-rectus-eye",
+            "lateral-rectus-eye",
+            "superior-rectus-eye",
+            "inferior-rectus-eye",
+            "superior-oblique-eye",
+            "inferior-oblique-eye",
+            "levator-palpebrae-eye",
+            "oculomotor-nerve-sense",
+            "trochlear-nerve-sense",
+            "abducens-nerve-sense"
+          ]
+        },
+        {
+          "id": "external-middle-ear",
+          "title": "External and middle ear",
+          "structureIds": [
+            "auricle-ear",
+            "external-acoustic-meatus-ear",
+            "tympanic-membrane-ear",
+            "malleus-ear",
+            "incus-ear",
+            "stapes-ear",
+            "auditory-tube-ear",
+            "oval-window-ear",
+            "round-window-ear"
+          ]
+        },
+        {
+          "id": "inner-ear",
+          "title": "Cochlea and vestibular structures",
+          "structureIds": [
+            "cochlea-ear",
+            "vestibule-ear",
+            "utricle-ear",
+            "saccule-ear",
+            "semicircular-canals-ear",
+            "semicircular-ducts-ear",
+            "cochlear-duct-ear",
+            "vestibular-duct-ear",
+            "tympanic-duct-ear",
+            "organ-of-corti-ear",
+            "hair-cells-ear",
+            "vestibulocochlear-nerve-ear"
+          ]
+        },
+        {
+          "id": "olfaction",
+          "title": "Olfaction",
+          "structureIds": [
+            "olfactory-epithelium-sense",
+            "olfactory-receptor-sense",
+            "olfactory-bulb-sense",
+            "olfactory-nerve-sense"
+          ]
+        },
+        {
+          "id": "taste",
+          "title": "Taste buds and taste nerves",
+          "structureIds": [
+            "taste-bud-sense",
+            "gustatory-receptor-sense",
+            "facial-nerve-taste",
+            "glossopharyngeal-nerve-taste",
+            "vagus-nerve-taste"
+          ]
+        },
+        {
+          "id": "special-senses-integration",
+          "title": "Special-sense integration",
+          "structureIds": [
+            "optic-nerve-eye",
+            "optic-chiasm-sense",
+            "vestibulocochlear-nerve-ear",
+            "olfactory-nerve-sense",
+            "facial-nerve-taste",
+            "glossopharyngeal-nerve-taste",
+            "vagus-nerve-taste"
+          ]
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "id": "cerebrum",
+      "name": "Cerebrum",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "frontal-lobe",
+      "name": "Frontal lobe",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "parietal-lobe",
+      "name": "Parietal lobe",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "temporal-lobe",
+      "name": "Temporal lobe",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "occipital-lobe",
+      "name": "Occipital lobe",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "insula",
+      "name": "Insula",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "corpus-callosum",
+      "name": "Corpus callosum",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "thalamus",
+      "name": "Thalamus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "hypothalamus",
+      "name": "Hypothalamus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "epithalamus",
+      "name": "Epithalamus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "basal-nuclei",
+      "name": "Basal nuclei",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "caudate-nucleus",
+      "name": "Caudate nucleus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "putamen",
+      "name": "Putamen",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "globus-pallidus",
+      "name": "Globus pallidus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "lateral-ventricle",
+      "name": "Lateral ventricle",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "third-ventricle",
+      "name": "Third ventricle",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cerebral-aqueduct",
+      "name": "Cerebral aqueduct",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "fourth-ventricle",
+      "name": "Fourth ventricle",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "choroid-plexus",
+      "name": "Choroid plexus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "meninges",
+      "name": "Meninges",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "dura-mater",
+      "name": "Dura mater",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "arachnoid-mater",
+      "name": "Arachnoid mater",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "pia-mater",
+      "name": "Pia mater",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cerebrospinal-fluid",
+      "name": "Cerebrospinal fluid",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "midbrain",
+      "name": "Midbrain",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "pons",
+      "name": "Pons",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "medulla-oblongata",
+      "name": "Medulla oblongata",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cerebellum",
+      "name": "Cerebellum",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "arbor-vitae",
+      "name": "Arbor vitae",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "spinal-cord",
+      "name": "Spinal cord",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "central-canal",
+      "name": "Central canal",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "dorsal-horn",
+      "name": "Dorsal horn",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "ventral-horn",
+      "name": "Ventral horn",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "dorsal-root",
+      "name": "Dorsal root",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "ventral-root",
+      "name": "Ventral root",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "dorsal-root-ganglion",
+      "name": "Dorsal root ganglion",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "dorsal-ramus",
+      "name": "Dorsal ramus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "ventral-ramus",
+      "name": "Ventral ramus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "corticospinal-tract",
+      "name": "Corticospinal tract",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "spinothalamic-tract",
+      "name": "Spinothalamic tract",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "dorsal-column",
+      "name": "Dorsal column",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-i",
+      "name": "Cranial nerve I: olfactory",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-ii",
+      "name": "Cranial nerve II: optic",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-iii",
+      "name": "Cranial nerve III: oculomotor",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-iv",
+      "name": "Cranial nerve IV: trochlear",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-v",
+      "name": "Cranial nerve V: trigeminal",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-vi",
+      "name": "Cranial nerve VI: abducens",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-vii",
+      "name": "Cranial nerve VII: facial",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-viii",
+      "name": "Cranial nerve VIII: vestibulocochlear",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-ix",
+      "name": "Cranial nerve IX: glossopharyngeal",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-x",
+      "name": "Cranial nerve X: vagus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-xi",
+      "name": "Cranial nerve XI: accessory",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cranial-nerve-xii",
+      "name": "Cranial nerve XII: hypoglossal",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cervical-plexus",
+      "name": "Cervical plexus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "brachial-plexus",
+      "name": "Brachial plexus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "lumbar-plexus",
+      "name": "Lumbar plexus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "sacral-plexus",
+      "name": "Sacral plexus",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "phrenic-nerve",
+      "name": "Phrenic nerve",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "median-nerve",
+      "name": "Median nerve",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "ulnar-nerve",
+      "name": "Ulnar nerve",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "radial-nerve",
+      "name": "Radial nerve",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "sciatic-nerve",
+      "name": "Sciatic nerve",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "femoral-nerve",
+      "name": "Femoral nerve",
+      "moduleId": "nervous-system"
+    },
+    {
+      "id": "cell-membrane",
+      "name": "Plasma membrane",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "cytoplasm",
+      "name": "Cytoplasm",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "nucleus-cell",
+      "name": "Nucleus",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "nucleolus-cell",
+      "name": "Nucleolus",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "chromatin-cell",
+      "name": "Chromatin",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "nuclear-envelope",
+      "name": "Nuclear envelope",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "ribosome-cell",
+      "name": "Ribosome",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "rough-er-cell",
+      "name": "Rough endoplasmic reticulum",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "smooth-er-cell",
+      "name": "Smooth endoplasmic reticulum",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "golgi-apparatus-cell",
+      "name": "Golgi apparatus",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "mitochondrion-cell",
+      "name": "Mitochondrion",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "lysosome-cell",
+      "name": "Lysosome",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "peroxisome-cell",
+      "name": "Peroxisome",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "centrosome-cell",
+      "name": "Centrosome",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "microvillus-cell",
+      "name": "Microvillus",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "tight-junction-cell",
+      "name": "Tight junction",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "desmosome-cell",
+      "name": "Desmosome",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "gap-junction-cell",
+      "name": "Gap junction",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "hemidesmosome-cell",
+      "name": "Hemidesmosome",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "simple-squamous-epithelium",
+      "name": "Simple squamous epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "simple-cuboidal-epithelium",
+      "name": "Simple cuboidal epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "simple-columnar-epithelium",
+      "name": "Simple columnar epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "pseudostratified-epithelium",
+      "name": "Pseudostratified columnar epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "stratified-squamous-keratinized",
+      "name": "Keratinized stratified squamous epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "stratified-squamous-nonkeratinized",
+      "name": "Nonkeratinized stratified squamous epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "stratified-cuboidal-epithelium",
+      "name": "Stratified cuboidal epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "stratified-columnar-epithelium",
+      "name": "Stratified columnar epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "transitional-epithelium",
+      "name": "Transitional epithelium",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "basement-membrane-tissue",
+      "name": "Basement membrane",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "goblet-cell-tissue",
+      "name": "Goblet cell",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "exocrine-gland-tissue",
+      "name": "Exocrine gland",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "endocrine-gland-tissue",
+      "name": "Endocrine gland",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "duct-gland-tissue",
+      "name": "Glandular duct",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "areolar-connective-tissue",
+      "name": "Areolar connective tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "adipose-connective-tissue",
+      "name": "Adipose tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "reticular-connective-tissue",
+      "name": "Reticular connective tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "dense-regular-connective-tissue",
+      "name": "Dense regular connective tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "dense-irregular-connective-tissue",
+      "name": "Dense irregular connective tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "elastic-connective-tissue",
+      "name": "Elastic connective tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "hyaline-cartilage-tissue",
+      "name": "Hyaline cartilage",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "elastic-cartilage-tissue",
+      "name": "Elastic cartilage",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "fibrocartilage-tissue",
+      "name": "Fibrocartilage",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "osteocyte-tissue",
+      "name": "Osteocyte",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "erythrocyte-tissue",
+      "name": "Erythrocyte",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "leukocyte-tissue",
+      "name": "Leukocyte",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "platelet-tissue",
+      "name": "Platelet",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "bone-tissue",
+      "name": "Bone tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "blood-tissue",
+      "name": "Blood",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "skeletal-muscle-tissue",
+      "name": "Skeletal muscle tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "cardiac-muscle-tissue",
+      "name": "Cardiac muscle tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "smooth-muscle-tissue",
+      "name": "Smooth muscle tissue",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "neuron-tissue",
+      "name": "Neuron",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "neuroglia-tissue",
+      "name": "Neuroglia",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "collagen-fiber-tissue",
+      "name": "Collagen fiber",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "elastic-fiber-tissue",
+      "name": "Elastic fiber",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "intercalated-disc-tissue",
+      "name": "Intercalated disc",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "lacuna-tissue",
+      "name": "Lacuna",
+      "moduleId": "cells-tissues"
+    },
+    {
+      "id": "epidermis-skin",
+      "name": "Epidermis",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "dermis-skin",
+      "name": "Dermis",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "hypodermis-skin",
+      "name": "Hypodermis",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "stratum-basale",
+      "name": "Stratum basale",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "stratum-spinosum",
+      "name": "Stratum spinosum",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "stratum-granulosum",
+      "name": "Stratum granulosum",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "stratum-lucidum",
+      "name": "Stratum lucidum",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "stratum-corneum",
+      "name": "Stratum corneum",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "keratinocyte-skin",
+      "name": "Keratinocyte",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "melanocyte-skin",
+      "name": "Melanocyte",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "merkel-cell-skin",
+      "name": "Merkel cell",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "langerhans-cell-skin",
+      "name": "Langerhans cell",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "papillary-layer-skin",
+      "name": "Papillary layer",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "reticular-layer-skin",
+      "name": "Reticular layer",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "dermal-papilla-skin",
+      "name": "Dermal papilla",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "collagen-skin",
+      "name": "Dermal collagen fibers",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "elastic-fibers-skin",
+      "name": "Dermal elastic fibers",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "cutaneous-blood-vessels-skin",
+      "name": "Cutaneous blood vessels",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "eccrine-sweat-gland",
+      "name": "Eccrine sweat gland",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "apocrine-sweat-gland",
+      "name": "Apocrine sweat gland",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "sebaceous-gland-skin",
+      "name": "Sebaceous gland",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "ceruminous-gland-skin",
+      "name": "Ceruminous gland",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "sweat-pore-skin",
+      "name": "Sweat pore",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "sebaceous-duct-skin",
+      "name": "Sebaceous duct",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "hair-shaft-skin",
+      "name": "Hair shaft",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "hair-root-skin",
+      "name": "Hair root",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "hair-follicle-skin",
+      "name": "Hair follicle",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "hair-bulb-skin",
+      "name": "Hair bulb",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "dermal-papilla-hair",
+      "name": "Hair dermal papilla",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "arrector-pili-skin",
+      "name": "Arrector pili muscle",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "nail-plate-skin",
+      "name": "Nail plate",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "nail-bed-skin",
+      "name": "Nail bed",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "nail-root-skin",
+      "name": "Nail root",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "nail-matrix-skin",
+      "name": "Nail matrix",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "tactile-corpuscle-skin",
+      "name": "Tactile corpuscle",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "lamellated-corpuscle-skin",
+      "name": "Lamellated corpuscle",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "free-nerve-ending-skin",
+      "name": "Free nerve ending",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "hair-root-plexus-skin",
+      "name": "Hair root plexus",
+      "moduleId": "integumentary-system"
+    },
+    {
+      "id": "fibrous-tunic-eye",
+      "name": "Fibrous tunic of eye",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "sclera-eye",
+      "name": "Sclera",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "cornea-eye",
+      "name": "Cornea",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "vascular-tunic-eye",
+      "name": "Vascular tunic",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "choroid-eye",
+      "name": "Choroid",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "ciliary-body-eye",
+      "name": "Ciliary body",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "iris-eye",
+      "name": "Iris",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "pupil-eye",
+      "name": "Pupil",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "anterior-chamber-eye",
+      "name": "Anterior chamber",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "posterior-chamber-eye",
+      "name": "Posterior chamber",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "aqueous-humor-eye",
+      "name": "Aqueous humor",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "vitreous-chamber-eye",
+      "name": "Vitreous chamber",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "vitreous-humor-eye",
+      "name": "Vitreous humor",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "lens-eye",
+      "name": "Lens",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "suspensory-ligaments-eye",
+      "name": "Suspensory ligaments of lens",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "retina-eye",
+      "name": "Retina",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "retinal-pigment-epithelium-eye",
+      "name": "Retinal pigment epithelium",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "optic-disc-eye",
+      "name": "Optic disc",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "fovea-centralis-eye",
+      "name": "Fovea centralis",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "macula-lutea-eye",
+      "name": "Macula lutea",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "rods-eye",
+      "name": "Rods",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "cones-eye",
+      "name": "Cones",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "bipolar-cells-eye",
+      "name": "Retinal bipolar cells",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "ganglion-cells-eye",
+      "name": "Retinal ganglion cells",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "eyelid-sense",
+      "name": "Eyelid",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "conjunctiva-sense",
+      "name": "Conjunctiva",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "lacrimal-gland-sense",
+      "name": "Lacrimal gland",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "lacrimal-sac-sense",
+      "name": "Lacrimal sac",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "nasolacrimal-duct-sense",
+      "name": "Nasolacrimal duct",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "optic-nerve-eye",
+      "name": "Optic nerve",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "medial-rectus-eye",
+      "name": "Medial rectus",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "lateral-rectus-eye",
+      "name": "Lateral rectus",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "superior-rectus-eye",
+      "name": "Superior rectus",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "inferior-rectus-eye",
+      "name": "Inferior rectus",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "superior-oblique-eye",
+      "name": "Superior oblique",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "inferior-oblique-eye",
+      "name": "Inferior oblique",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "levator-palpebrae-eye",
+      "name": "Levator palpebrae superioris",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "auricle-ear",
+      "name": "Auricle",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "external-acoustic-meatus-ear",
+      "name": "External acoustic meatus",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "tympanic-membrane-ear",
+      "name": "Tympanic membrane",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "malleus-ear",
+      "name": "Malleus",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "incus-ear",
+      "name": "Incus",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "stapes-ear",
+      "name": "Stapes",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "auditory-tube-ear",
+      "name": "Auditory tube",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "oval-window-ear",
+      "name": "Oval window",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "round-window-ear",
+      "name": "Round window",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "cochlea-ear",
+      "name": "Cochlea",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "vestibule-ear",
+      "name": "Vestibule",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "utricle-ear",
+      "name": "Utricle",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "saccule-ear",
+      "name": "Saccule",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "semicircular-canals-ear",
+      "name": "Semicircular canals",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "semicircular-ducts-ear",
+      "name": "Semicircular ducts",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "cochlear-duct-ear",
+      "name": "Cochlear duct",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "vestibular-duct-ear",
+      "name": "Vestibular duct",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "tympanic-duct-ear",
+      "name": "Tympanic duct",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "organ-of-corti-ear",
+      "name": "Organ of Corti",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "hair-cells-ear",
+      "name": "Inner-ear hair cells",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "vestibulocochlear-nerve-ear",
+      "name": "Vestibulocochlear nerve",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "olfactory-epithelium-sense",
+      "name": "Olfactory epithelium",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "olfactory-receptor-sense",
+      "name": "Olfactory receptor cell",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "olfactory-bulb-sense",
+      "name": "Olfactory bulb",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "olfactory-nerve-sense",
+      "name": "Olfactory nerve",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "taste-bud-sense",
+      "name": "Taste bud",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "gustatory-receptor-sense",
+      "name": "Gustatory receptor cell",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "facial-nerve-taste",
+      "name": "Facial nerve taste fibers",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "glossopharyngeal-nerve-taste",
+      "name": "Glossopharyngeal nerve taste fibers",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "vagus-nerve-taste",
+      "name": "Vagus nerve taste fibers",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "optic-chiasm-sense",
+      "name": "Optic chiasm",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "oculomotor-nerve-sense",
+      "name": "Oculomotor nerve",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "trochlear-nerve-sense",
+      "name": "Trochlear nerve",
+      "moduleId": "special-senses"
+    },
+    {
+      "id": "abducens-nerve-sense",
+      "name": "Abducens nerve",
+      "moduleId": "special-senses"
+    }
+  ]
+}

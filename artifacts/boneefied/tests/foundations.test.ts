@@ -26,13 +26,13 @@ test('Anatomy Foundations remains one reachable published module with source-lin
   const assets = new Set(module.lessons?.flatMap((lesson) => lesson.assetIds ?? []));
   assert.ok(assets.has('asset-original-anatomical-planes'));
   assert.ok(assets.has('asset-original-body-cavities'));
-  assert.equal(assets.size, 2);
+  assert.equal(assets.size, 9);
   assert.deepEqual(validateContent(content), []);
 });
 
 test('Foundations application and recall questions are available to Practice without replacing old IDs', () => {
   const questions = content.questions.filter((item) => item.moduleId === 'anatomy-foundations');
-  assert.equal(questions.length, 72);
+  assert.equal(questions.length, 76);
   assert.ok(questions.some((item) => item.id === 'q-organ-pancreas'));
   assert.ok(questions.some((item) => item.id === 'q-visual-cavity-thoracic'));
   assert.ok(questions.some((item) => item.id === 'q-bac01-axial-view'));

@@ -30,28 +30,34 @@ import assets from './assets.ts';
 import sources from './sources.ts';
 import uiNavigationStudy from './ui-navigation-study.ts';
 import uiPracticeProgress from './ui-practice-progress.ts';
+import { atlasSpanishAssets, atlasSpanishQuestions, atlasSpanishSources } from './atlas.ts';
+import { muscularSpanishAssets, muscularSpanishQuestions, muscularSpanishSources } from './muscular-atlas.ts';
+import { bvis04SpanishAssets, bvis04SpanishQuestions, bvis04SpanishSources } from './bvis04-atlas.ts';
+import { bvis05SpanishAssets, bvis05SpanishQuestions, bvis05SpanishSources } from './bvis05-atlas.ts';
+import { bvis06SpanishAssets, bvis06SpanishQuestions, bvis06SpanishSources } from './bvis06-atlas.ts';
+import { skeletalSpanishAssets, skeletalSpanishQuestions, skeletalSpanishSources } from './skeletal-atlas.ts';
 import uiSettingsShared from './ui-settings-shared.ts';
 
 /** Copy-only sidecars: the English catalog remains authoritative for IDs and scoring. */
 export const spanishModules: Readonly<Record<string, SpanishModule>> = {
-  'cells-tissues': cellsTissues,
-  'lymphatic-system': lymphaticSystem,
+  'cells-tissues': { ...cellsTissues, questions: { ...cellsTissues.questions, ...bvis04SpanishQuestions['cells-tissues'] } },
+  'lymphatic-system': { ...lymphaticSystem, questions: { ...lymphaticSystem.questions, ...bvis05SpanishQuestions['lymphatic-system'] } },
   'cytology-mitosis': cytologyMitosis,
-  'skeletal-system': skeletalSystem,
-  'anatomy-foundations': anatomyFoundations,
-  'joints-ligaments': jointsLigaments,
-  'muscular-system': muscularSystem,
-  'nervous-system': nervousSystem,
-  'integumentary-system': integumentarySystem,
-  'special-senses': specialSenses,
-  'endocrine-system': endocrineSystem,
-  'cardiovascular-system': cardiovascularSystem,
-  'blood-vessels': bloodVessels,
-  'respiratory-system': respiratorySystem,
-  'digestive-system': digestiveSystem,
-  'urinary-system': urinarySystem,
-  'male-reproductive': maleReproductive,
-  'female-reproductive': femaleReproductive,
+  'skeletal-system': { ...skeletalSystem, questions: { ...skeletalSystem.questions, ...atlasSpanishQuestions['skeletal-system'], ...skeletalSpanishQuestions['skeletal-system'] } },
+  'anatomy-foundations': { ...anatomyFoundations, questions: { ...anatomyFoundations.questions, ...atlasSpanishQuestions['anatomy-foundations'] } },
+  'joints-ligaments': { ...jointsLigaments, questions: { ...jointsLigaments.questions, ...skeletalSpanishQuestions['joints-ligaments'] } },
+  'muscular-system': { ...muscularSystem, questions: { ...muscularSystem.questions, ...muscularSpanishQuestions } },
+  'nervous-system': { ...nervousSystem, questions: { ...nervousSystem.questions, ...bvis04SpanishQuestions['nervous-system'] } },
+  'integumentary-system': { ...integumentarySystem, questions: { ...integumentarySystem.questions, ...bvis04SpanishQuestions['integumentary-system'] } },
+  'special-senses': { ...specialSenses, questions: { ...specialSenses.questions, ...bvis04SpanishQuestions['special-senses'] } },
+  'endocrine-system': { ...endocrineSystem, questions: { ...endocrineSystem.questions, ...bvis05SpanishQuestions['endocrine-system'] } },
+  'cardiovascular-system': { ...cardiovascularSystem, questions: { ...cardiovascularSystem.questions, ...bvis05SpanishQuestions['cardiovascular-system'] } },
+  'blood-vessels': { ...bloodVessels, questions: { ...bloodVessels.questions, ...bvis05SpanishQuestions['blood-vessels'] } },
+  'respiratory-system': { ...respiratorySystem, questions: { ...respiratorySystem.questions, ...bvis05SpanishQuestions['respiratory-system'] } },
+  'digestive-system': { ...digestiveSystem, questions: { ...digestiveSystem.questions, ...bvis06SpanishQuestions['digestive-system'] } },
+  'urinary-system': { ...urinarySystem, questions: { ...urinarySystem.questions, ...bvis06SpanishQuestions['urinary-system'] } },
+  'male-reproductive': { ...maleReproductive, questions: { ...maleReproductive.questions, ...bvis06SpanishQuestions['male-reproductive'] } },
+  'female-reproductive': { ...femaleReproductive, questions: { ...femaleReproductive.questions, ...bvis06SpanishQuestions['female-reproductive'] } },
 };
 
 export const spanishGlossaryGroups: ReadonlyArray<Readonly<Record<string, string>>> = [
@@ -59,8 +65,8 @@ export const spanishGlossaryGroups: ReadonlyArray<Readonly<Record<string, string
   glossaryCirculation, glossaryOrganSystems, glossaryReproductive,
 ];
 export const spanishGlossary: Readonly<Record<string, string>> = Object.assign({}, ...spanishGlossaryGroups);
-export const spanishAssets: Readonly<Record<string, SpanishAsset>> = assets;
-export const spanishSources: Readonly<Record<string, SpanishSource>> = sources;
+export const spanishAssets: Readonly<Record<string, SpanishAsset>> = { ...assets, ...atlasSpanishAssets, ...skeletalSpanishAssets, ...muscularSpanishAssets, ...bvis04SpanishAssets, ...bvis05SpanishAssets, ...bvis06SpanishAssets };
+export const spanishSources: Readonly<Record<string, SpanishSource>> = { ...sources, ...atlasSpanishSources, ...skeletalSpanishSources, ...muscularSpanishSources, ...bvis04SpanishSources, ...bvis05SpanishSources, ...bvis06SpanishSources };
 
 export const spanishUiGroups: ReadonlyArray<Readonly<Record<string, SpanishUiMessage>>> = [
   uiNavigationStudy, uiPracticeProgress, uiSettingsShared,

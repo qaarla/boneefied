@@ -1,0 +1,89 @@
+{
+  "command": "BVIS05",
+  "scope": [
+    "cardiovascular-system",
+    "blood-vessels",
+    "respiratory-system",
+    "lymphatic-system",
+    "endocrine-system"
+  ],
+  "preservation": "All 1126 canonical structures, 1053 previous question stems/scoring and 125 previous assets preserved. Unrelated modules unchanged.",
+  "addedPlates": 41,
+  "addedQuestions": 305,
+  "annotationTargets": 378,
+  "uniqueAnnotatedStructures": 264,
+  "totalAssets": 166,
+  "totalQuestions": 1358,
+  "activeImageQuestions": 317,
+  "questionTypes": {
+    "hotspot": 264,
+    "image-identification": 41
+  },
+  "modules": [
+    {
+      "id": "cardiovascular-system",
+      "structures": 70,
+      "lessons": 11,
+      "plates": 11,
+      "activeLessonAssets": 11,
+      "annotationTargets": 108,
+      "uniqueAnnotatedStructures": 70,
+      "addedQuestions": 81,
+      "questions": 131,
+      "realSpecimens": 0
+    },
+    {
+      "id": "blood-vessels",
+      "structures": 45,
+      "lessons": 10,
+      "plates": 11,
+      "activeLessonAssets": 11,
+      "annotationTargets": 93,
+      "uniqueAnnotatedStructures": 45,
+      "addedQuestions": 56,
+      "questions": 81,
+      "realSpecimens": 0
+    },
+    {
+      "id": "respiratory-system",
+      "structures": 64,
+      "lessons": 7,
+      "plates": 7,
+      "activeLessonAssets": 8,
+      "annotationTargets": 82,
+      "uniqueAnnotatedStructures": 64,
+      "addedQuestions": 71,
+      "questions": 112,
+      "realSpecimens": 1
+    },
+    {
+      "id": "lymphatic-system",
+      "structures": 47,
+      "lessons": 7,
+      "plates": 6,
+      "activeLessonAssets": 6,
+      "annotationTargets": 50,
+      "uniqueAnnotatedStructures": 47,
+      "addedQuestions": 53,
+      "questions": 72,
+      "realSpecimens": 0
+    },
+    {
+      "id": "endocrine-system",
+      "structures": 38,
+      "lessons": 6,
+      "plates": 6,
+      "activeLessonAssets": 6,
+      "annotationTargets": 45,
+      "uniqueAnnotatedStructures": 38,
+      "addedQuestions": 44,
+      "questions": 62,
+      "realSpecimens": 0
+    }
+  ],
+  "artworkProvenance": "assets/images/anatomy/bvis05-atlas/provenance.json",
+  "specimenEvidence": "docs/atlas/BVIS05_SPECIMEN_LICENSES.json",
+  "rights": "Original vectors from factual references only; no imported/traced third-party art. Existing alveolar specimen retains Jpogi CC BY-SA 4.0 exact-file attribution and license.",
+  "nativeDeviceStatus": "Not physically tested; phone-width web evidence is not native iPhone/Android evidence.",
+  "releaseWork": "None. No release build, deployment or publication."
+}

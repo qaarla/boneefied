@@ -4,6 +4,7 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Heading, Text, TextInput, useTypographyLayout } from '@/components/ScaledText';
 import { content } from '@/content/canonical';
+import { combinedAtlasAssetsForStructure } from '@/content/atlas-index';
 import { createGlossaryIndex, filterGlossary, type GlossaryEntry } from '@/content/glossary';
 import { normalizeSearchText } from '@/content/search';
 import { anatomicalTerms, wordMeaning } from '@/content/anatomical-terms';
@@ -127,6 +128,7 @@ export default function GlossaryScreen() {
               {!searching && anatomicalTerms.some((term) => term.structureId === item.structure.id) && <Text style={[styles.context, { color: colors.mutedForeground }]}>
                 {anatomicalTerms.filter((term) => term.structureId === item.structure.id).map((term) => wordMeaning(term, language).name).join(' · ')}
               </Text>}
+              {combinedAtlasAssetsForStructure(item.structure.id).length > 0 && <Text style={[styles.context, { color: colors.primary }]}>{language === 'es' ? 'Lámina de atlas disponible' : 'Atlas plate available'}</Text>}
               <Text style={[styles.context, { color: colors.mutedForeground }]}>{item.module.title} · {item.structure.category}</Text>
             </Pressable>
           </View>;

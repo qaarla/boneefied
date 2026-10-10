@@ -37,8 +37,12 @@ export function needsResponsiveTextLayout(width: number, systemFontScale: number
 
 // Four equally narrow tabs cannot display genuinely enlarged labels. Switch
 // classic tabs to a two-column layout before fitting labels would shrink them.
-export function needsExpandedTabLayout(systemFontScale: number, preference: TextScale): boolean {
-  return systemFontScale * TEXT_SCALE_FACTORS[preference] >= 2;
+// An optional width also expands when four slots (width / 4) cannot hold a
+// one-line label such as "Practice" at the effective size (about 4.4 em wide).
+export function needsExpandedTabLayout(systemFontScale: number, preference: TextScale, width?: number): boolean {
+  const effective = systemFontScale * TEXT_SCALE_FACTORS[preference];
+  if (effective >= 2) return true;
+  return width !== undefined && effective > 1 && (width / 4 - 8) < 11 * effective * 4.4;
 }
 
 export function nativeHeaderTitleSize(baseSize: number, preference: TextScale, systemFontScale: number): number {

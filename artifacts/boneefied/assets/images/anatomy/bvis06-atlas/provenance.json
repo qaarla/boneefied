@@ -1,0 +1,4700 @@
+{
+  "pack": "boneefied-bvis06-digestive-urinary-reproductive",
+  "generatedBy": "scripts/atlas/bvis06-generate.mjs",
+  "plateCount": 21,
+  "labelCount": 324,
+  "plates": [
+    {
+      "id": "asset-bvis06-oral-cavity",
+      "plate": 1,
+      "moduleId": "digestive-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-01-oral-cavity.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-01-oral-cavity.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Oral cavity in midline sagittal section, and the three paired salivary glands from the side.",
+      "orientation": "left: midline sagittal, face at viewer left; right: lateral view, face at viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-tongue",
+          "x": 0.2621,
+          "y": 0.62,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-tongue",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-hard-palate",
+          "x": 0.2276,
+          "y": 0.506,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-hard-palate",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-soft-palate",
+          "x": 0.3214,
+          "y": 0.53,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-soft-palate",
+          "ownColourInteriorPx": 13,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pharynx",
+          "x": 0.3724,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-pharynx",
+          "ownColourInteriorPx": 37,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-esophagus",
+          "x": 0.3834,
+          "y": 0.84,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-esophagus",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-sublingual-gland",
+          "x": 0.1959,
+          "y": 0.678,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-sublingual-gland",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-sublingual-duct",
+          "x": 0.2041,
+          "y": 0.662,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-sublingual-duct",
+          "ownColourInteriorPx": 4,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-submandibular-gland",
+          "x": 0.2869,
+          "y": 0.686,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-submandibular-gland",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-mouth",
+          "x": 0.2276,
+          "y": 0.538,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "mouth",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-teeth",
+          "x": 0.2455,
+          "y": 0.532,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-teeth",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-parotid-gland",
+          "x": 0.8579,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "lateral",
+          "shapeKey": "digestive-system-parotid-gland",
+          "ownColourInteriorPx": 54,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-submandibular-gland",
+          "x": 0.8,
+          "y": 0.73,
+          "radius": 0.018,
+          "panel": "lateral",
+          "shapeKey": "digestive-system-submandibular-gland",
+          "ownColourInteriorPx": 42,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-teeth",
+          "x": 0.7531,
+          "y": 0.54,
+          "radius": 0.018,
+          "panel": "lateral",
+          "shapeKey": "digestive-system-teeth",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "0c2b4d40f36b4a7c98e53200b26bc30a9419076cc9a2f77f3856fb1bc0536bd6",
+        "file": null
+      },
+      "sha256": {
+        "svg": "baa11b7ffc63c4ae6c701571deccbad2669c630f5c0f7cdfaf7c607d001c4596",
+        "png": "6aeda7dd9aa9ff2c372cbcfef711e617acefa7370701d5e31d3e7e3f383f3c9b"
+      }
+    },
+    {
+      "id": "asset-bvis06-stomach",
+      "plate": 2,
+      "moduleId": "digestive-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-02-stomach.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-02-stomach.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Stomach regions in an opened anterior view, with a schematic section of the gastric mucosa showing pits and glands.",
+      "orientation": "left: anterior view, patient right at viewer left; right: schematic mucosal section, lumen at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-stomach",
+          "x": 0.2276,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-stomach",
+          "ownColourInteriorPx": 9,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-cardia",
+          "x": 0.2566,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-cardia",
+          "ownColourInteriorPx": 33,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-fundus",
+          "x": 0.3862,
+          "y": 0.19,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-fundus",
+          "ownColourInteriorPx": 54,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-body-of-stomach",
+          "x": 0.3586,
+          "y": 0.482,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-body-of-stomach",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pyloric-antrum",
+          "x": 0.2621,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-pyloric-antrum",
+          "ownColourInteriorPx": 50,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pyloric-canal",
+          "x": 0.1807,
+          "y": 0.632,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-pyloric-canal",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pyloric-sphincter",
+          "x": 0.1434,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-pyloric-sphincter",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-rugae",
+          "x": 0.331,
+          "y": 0.364,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-rugae",
+          "ownColourInteriorPx": 4,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-esophagus",
+          "x": 0.2,
+          "y": 0.17,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-esophagus",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-duodenum",
+          "x": 0.0814,
+          "y": 0.73,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-duodenum",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pylorus",
+          "x": 0.1669,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "stomach",
+          "shapeKey": "digestive-system-pyloric-canal+digestive-system-pyloric-sphincter",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-gastric-pit",
+          "x": 0.7655,
+          "y": 0.174,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "digestive-system-gastric-pit",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-parietal-cell",
+          "x": 0.7834,
+          "y": 0.37,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "digestive-system-parietal-cell",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-chief-cell",
+          "x": 0.7752,
+          "y": 0.59,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "digestive-system-chief-cell",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "057c390ae6904fc5ab1439297aae784e0c4c1ec337dfafb8a59e059f2aa607f2",
+        "file": null
+      },
+      "sha256": {
+        "svg": "fca34160e68876f058ca8f30e079e2729eed0f005c0f0101a6114842257deccf",
+        "png": "db4497ed94d822fb1734d8efe7ae7bcf78ed3bbd53d21c86cc7391217fe71f33"
+      }
+    },
+    {
+      "id": "asset-bvis06-alimentary-canal",
+      "plate": 3,
+      "moduleId": "digestive-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-03-alimentary-canal.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-03-alimentary-canal.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "One continuous schematic lumen from mouth to anus, with accessory organs deliberately absent.",
+      "orientation": "anterior view, patient right at viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-mouth",
+          "x": 0.3103,
+          "y": 0.118,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-mouth",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pharynx",
+          "x": 0.3103,
+          "y": 0.174,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-pharynx",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-esophagus",
+          "x": 0.3117,
+          "y": 0.28,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-esophagus",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-stomach",
+          "x": 0.3724,
+          "y": 0.45,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-stomach",
+          "ownColourInteriorPx": 22,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-duodenum",
+          "x": 0.269,
+          "y": 0.526,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-duodenum",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-jejunum",
+          "x": 0.3586,
+          "y": 0.636,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-jejunum",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ileum",
+          "x": 0.3517,
+          "y": 0.756,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-ileum",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-cecum",
+          "x": 0.2345,
+          "y": 0.79,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-cecum",
+          "ownColourInteriorPx": 19,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ascending-colon",
+          "x": 0.2345,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-ascending-colon",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-transverse-colon",
+          "x": 0.3103,
+          "y": 0.556,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-transverse-colon",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-descending-colon",
+          "x": 0.3876,
+          "y": 0.66,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-descending-colon",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-sigmoid-colon",
+          "x": 0.3517,
+          "y": 0.856,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-sigmoid-colon",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-rectum",
+          "x": 0.3145,
+          "y": 0.892,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-rectum",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-anal-canal",
+          "x": 0.3103,
+          "y": 0.928,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-anal-canal",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-anus",
+          "x": 0.3103,
+          "y": 0.948,
+          "radius": 0.018,
+          "panel": "route",
+          "shapeKey": "digestive-system-anus",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ascending-colon",
+          "x": 0.8138,
+          "y": 0.26,
+          "radius": 0.018,
+          "panel": "valve",
+          "shapeKey": "digestive-system-ascending-colon",
+          "ownColourInteriorPx": 60,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-cecum",
+          "x": 0.7931,
+          "y": 0.62,
+          "radius": 0.018,
+          "panel": "valve",
+          "shapeKey": "digestive-system-cecum",
+          "ownColourInteriorPx": 74,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ileocecal-valve",
+          "x": 0.8621,
+          "y": 0.468,
+          "radius": 0.018,
+          "panel": "valve",
+          "shapeKey": "digestive-system-ileocecal-valve",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-appendix",
+          "x": 0.8938,
+          "y": 0.88,
+          "radius": 0.018,
+          "panel": "valve",
+          "shapeKey": "digestive-system-appendix",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ileum",
+          "x": 0.9062,
+          "y": 0.474,
+          "radius": 0.018,
+          "panel": "valve",
+          "shapeKey": "digestive-system-ileum",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "93f4259cab47e91189b8d04c5833ee574029ed33421e72d996286f51c030b1df",
+        "file": null
+      },
+      "sha256": {
+        "svg": "c0a81509b5ed770db8238570ecaf1fa993e74676d8211035ab8cdfefda284154",
+        "png": "da68c125b20ecb502e92c6d59d6372ea54fbdb88c45b0188a5548011734357a6"
+      }
+    },
+    {
+      "id": "asset-bvis06-liver-biliary-pancreas",
+      "plate": 4,
+      "moduleId": "digestive-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-04-liver-biliary-pancreas.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-04-liver-biliary-pancreas.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Liver, gallbladder and pancreas with the connected bile and pancreatic ducts reaching the duodenum.",
+      "orientation": "left: anterior view, patient right at viewer left; right: opened descending duodenum",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-liver",
+          "x": 0.1655,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-left-lobe-of-liver+digestive-system-right-lobe-of-liver",
+          "ownColourInteriorPx": 72,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-right-lobe-of-liver",
+          "x": 0.2069,
+          "y": 0.25,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-right-lobe-of-liver",
+          "ownColourInteriorPx": 80,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-left-lobe-of-liver",
+          "x": 0.4138,
+          "y": 0.28,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-left-lobe-of-liver",
+          "ownColourInteriorPx": 51,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-gallbladder",
+          "x": 0.2676,
+          "y": 0.51,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-gallbladder",
+          "ownColourInteriorPx": 32,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-cystic-duct",
+          "x": 0.2855,
+          "y": 0.472,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-cystic-duct",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-common-hepatic-duct",
+          "x": 0.2966,
+          "y": 0.446,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-common-hepatic-duct",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-common-bile-duct",
+          "x": 0.3034,
+          "y": 0.58,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-common-bile-duct",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pancreas",
+          "x": 0.3862,
+          "y": 0.628,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-head-of-pancreas+digestive-system-body-of-pancreas+digestive-system-tail-of-pancreas",
+          "ownColourInteriorPx": 17,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-head-of-pancreas",
+          "x": 0.2828,
+          "y": 0.71,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-head-of-pancreas",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-body-of-pancreas",
+          "x": 0.3834,
+          "y": 0.592,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-body-of-pancreas",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-tail-of-pancreas",
+          "x": 0.4841,
+          "y": 0.554,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-tail-of-pancreas",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pancreatic-duct",
+          "x": 0.4,
+          "y": 0.596,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-pancreatic-duct",
+          "ownColourInteriorPx": 7,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-hepatic-artery",
+          "x": 0.3297,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-hepatic-artery",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-hepatic-portal-vein",
+          "x": 0.3407,
+          "y": 0.562,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-hepatic-portal-vein",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-major-duodenal-papilla",
+          "x": 0.8483,
+          "y": 0.498,
+          "radius": 0.018,
+          "panel": "papilla",
+          "shapeKey": "digestive-system-major-duodenal-papilla",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-hepatopancreatic-ampulla",
+          "x": 0.8524,
+          "y": 0.52,
+          "radius": 0.018,
+          "panel": "papilla",
+          "shapeKey": "digestive-system-hepatopancreatic-ampulla",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-common-bile-duct",
+          "x": 0.9379,
+          "y": 0.28,
+          "radius": 0.018,
+          "panel": "papilla",
+          "shapeKey": "digestive-system-common-bile-duct",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pancreatic-duct",
+          "x": 0.9366,
+          "y": 0.69,
+          "radius": 0.018,
+          "panel": "papilla",
+          "shapeKey": "digestive-system-pancreatic-duct",
+          "ownColourInteriorPx": 7,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "57083dbd54ced091efef3bf143962b632bc3454fcef7d42e7392746fe667f711",
+        "file": null
+      },
+      "sha256": {
+        "svg": "fe2bcb680bc5deb65d071379a6de81b413cc8823a369ef1cc8bcfc23b234b43f",
+        "png": "6ecc95974ffc1ba8fa8a09efc55882a262577ff4824d5779c58c9885ed4a35c8"
+      }
+    },
+    {
+      "id": "asset-bvis06-liver-lobule-pancreas",
+      "plate": 5,
+      "moduleId": "digestive-system",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-05-liver-lobule-pancreas.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-05-liver-lobule-pancreas.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Classic hexagonal liver lobule with portal triads, sinusoids and central vein, and a schematic of pancreatic acini, ducts and an islet.",
+      "orientation": "left: lobule seen in transverse section; right: pancreatic tissue",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-liver-lobule",
+          "x": 0.4648,
+          "y": 0.63,
+          "radius": 0.018,
+          "panel": "lobule",
+          "shapeKey": "digestive-system-liver-lobule",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-central-vein",
+          "x": 0.331,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "lobule",
+          "shapeKey": "digestive-system-central-vein",
+          "ownColourInteriorPx": 23,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-portal-triad",
+          "x": 0.4441,
+          "y": 0.786,
+          "radius": 0.018,
+          "panel": "lobule",
+          "shapeKey": "digestive-system-portal-triad",
+          "ownColourInteriorPx": 15,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-hepatic-sinusoid",
+          "x": 0.2303,
+          "y": 0.466,
+          "radius": 0.018,
+          "panel": "lobule",
+          "shapeKey": "digestive-system-hepatic-sinusoid",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-hepatocyte",
+          "x": 0.3352,
+          "y": 0.648,
+          "radius": 0.018,
+          "panel": "lobule",
+          "shapeKey": "digestive-system-hepatocyte",
+          "ownColourInteriorPx": 5,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-hepatic-portal-vein",
+          "x": 0.2317,
+          "y": 0.768,
+          "radius": 0.018,
+          "panel": "lobule",
+          "shapeKey": "digestive-system-hepatic-portal-vein",
+          "ownColourInteriorPx": 4,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pancreatic-acinus",
+          "x": 0.7297,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "pancreas",
+          "shapeKey": "digestive-system-pancreatic-acinus",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pancreatic-islet",
+          "x": 0.9283,
+          "y": 0.86,
+          "radius": 0.018,
+          "panel": "pancreas",
+          "shapeKey": "digestive-system-pancreatic-islet",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pancreatic-duct",
+          "x": 0.8248,
+          "y": 0.62,
+          "radius": 0.018,
+          "panel": "pancreas",
+          "shapeKey": "digestive-system-pancreatic-duct",
+          "ownColourInteriorPx": 11,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "dec15882d018729441aedc0e06c9cec1c4e5540cebc1e216a5572ae3a7156968",
+        "file": null
+      },
+      "sha256": {
+        "svg": "278dd0d745540c5b79c676a3e0c9afc11e614c8e9e71c9f98b2ef767054a83c0",
+        "png": "5a6eb27a31a52c22675f6cc1e22f388034c7f3f41d29c56cc2b5cdbab25ddbfe"
+      }
+    },
+    {
+      "id": "asset-bvis06-digestive-wall-layers",
+      "plate": 6,
+      "moduleId": "digestive-system",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-06-digestive-wall-layers.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-06-digestive-wall-layers.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "The four-layer plan of the gut wall in cross-section and in longitudinal section.",
+      "orientation": "left: transverse section, lumen at centre; right: longitudinal section, lumen above",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-serosa",
+          "x": 0.5807,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "ring",
+          "shapeKey": "digestive-system-serosa",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-longitudinal-muscle-layer",
+          "x": 0.331,
+          "y": 0.164,
+          "radius": 0.018,
+          "panel": "ring",
+          "shapeKey": "digestive-system-longitudinal-muscle-layer",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-circular-muscle-layer",
+          "x": 0.1255,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "ring",
+          "shapeKey": "digestive-system-circular-muscle-layer",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-submucosa",
+          "x": 0.331,
+          "y": 0.762,
+          "radius": 0.018,
+          "panel": "ring",
+          "shapeKey": "digestive-system-submucosa",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-muscularis-mucosae",
+          "x": 0.4841,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "ring",
+          "shapeKey": "digestive-system-muscularis-mucosae",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-lamina-propria",
+          "x": 0.1903,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "ring",
+          "shapeKey": "digestive-system-lamina-propria",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-mucosa",
+          "x": 0.331,
+          "y": 0.316,
+          "radius": 0.018,
+          "panel": "ring",
+          "shapeKey": "digestive-system-mucosa",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-muscularis-externa",
+          "x": 0.331,
+          "y": 0.182,
+          "radius": 0.018,
+          "panel": "ring",
+          "shapeKey": "digestive-system-circular-muscle-layer+digestive-system-longitudinal-muscle-layer",
+          "ownColourInteriorPx": 38,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-mucosa",
+          "x": 0.8138,
+          "y": 0.202,
+          "radius": 0.018,
+          "panel": "layers",
+          "shapeKey": "B-mucosa",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-lamina-propria",
+          "x": 0.8138,
+          "y": 0.266,
+          "radius": 0.018,
+          "panel": "layers",
+          "shapeKey": "B-lamina-propria",
+          "ownColourInteriorPx": 50,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-muscularis-mucosae",
+          "x": 0.8138,
+          "y": 0.326,
+          "radius": 0.018,
+          "panel": "layers",
+          "shapeKey": "B-muscularis-mucosae",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-submucosa",
+          "x": 0.8138,
+          "y": 0.38,
+          "radius": 0.018,
+          "panel": "layers",
+          "shapeKey": "B-submucosa",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-circular-muscle-layer",
+          "x": 0.8138,
+          "y": 0.552,
+          "radius": 0.018,
+          "panel": "layers",
+          "shapeKey": "B-circular-muscle-layer",
+          "ownColourInteriorPx": 56,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-muscularis-externa",
+          "x": 0.8138,
+          "y": 0.604,
+          "radius": 0.018,
+          "panel": "layers",
+          "shapeKey": "B-circular-muscle-layer+B-longitudinal-muscle-layer",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-longitudinal-muscle-layer",
+          "x": 0.8179,
+          "y": 0.652,
+          "radius": 0.018,
+          "panel": "layers",
+          "shapeKey": "B-longitudinal-muscle-layer",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-serosa",
+          "x": 0.8138,
+          "y": 0.734,
+          "radius": 0.018,
+          "panel": "layers",
+          "shapeKey": "B-serosa",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "669dc6d5c887b6542fb1daad776ac75c5b95b4adb7a9e13d97e9652fb852c95a",
+        "file": null
+      },
+      "sha256": {
+        "svg": "c342632555841d88abcb19e0a92bfa608673b353e0f1c93b2713ca2564721e2f",
+        "png": "f0de49f101bd073817efdf8cb6ab4cdb9fdddd30c08f01c8b206971c5b5f1584"
+      }
+    },
+    {
+      "id": "asset-bvis06-small-intestine",
+      "plate": 7,
+      "moduleId": "digestive-system",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-07-small-intestine.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-07-small-intestine.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "The three small-intestinal regions in order, and a schematic villus, crypt and duodenal submucosal gland.",
+      "orientation": "left: anterior view, patient right at viewer left; right: mucosal section, lumen above",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-duodenum",
+          "x": 0.251,
+          "y": 0.24,
+          "radius": 0.018,
+          "panel": "regions",
+          "shapeKey": "digestive-system-duodenum",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-jejunum",
+          "x": 0.4828,
+          "y": 0.322,
+          "radius": 0.018,
+          "panel": "regions",
+          "shapeKey": "digestive-system-jejunum",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ileum",
+          "x": 0.2759,
+          "y": 0.594,
+          "radius": 0.018,
+          "panel": "regions",
+          "shapeKey": "digestive-system-ileum",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-villi",
+          "x": 0.7352,
+          "y": 0.27,
+          "radius": 0.018,
+          "panel": "villus",
+          "shapeKey": "digestive-system-villi",
+          "ownColourInteriorPx": 34,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-intestinal-crypt",
+          "x": 0.8083,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "villus",
+          "shapeKey": "digestive-system-intestinal-crypt",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-enterocyte",
+          "x": 0.7076,
+          "y": 0.26,
+          "radius": 0.018,
+          "panel": "villus",
+          "shapeKey": "digestive-system-enterocyte",
+          "ownColourInteriorPx": 7,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-microvilli",
+          "x": 0.6952,
+          "y": 0.26,
+          "radius": 0.018,
+          "panel": "villus",
+          "shapeKey": "digestive-system-microvilli",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-goblet-cell",
+          "x": 0.7586,
+          "y": 0.22,
+          "radius": 0.018,
+          "panel": "villus",
+          "shapeKey": "digestive-system-goblet-cell",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-paneth-cell",
+          "x": 0.7903,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "villus",
+          "shapeKey": "digestive-system-paneth-cell",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-brunner-gland",
+          "x": 0.7862,
+          "y": 0.75,
+          "radius": 0.018,
+          "panel": "villus",
+          "shapeKey": "digestive-system-brunner-gland",
+          "ownColourInteriorPx": 22,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "ce7150132bb2abc91bc6e4401d06f3d413e6f2e75b5aacac184c54fb3dce4149",
+        "file": null
+      },
+      "sha256": {
+        "svg": "af24972a119f92d232fda2506a2b0fdaaab69b80d50edb222f678c6066b72e18",
+        "png": "5023614a4cfa30931d51e98b20595cac1d4b7f7b6158a12b9167fa3e50166206"
+      }
+    },
+    {
+      "id": "asset-bvis06-large-intestine",
+      "plate": 8,
+      "moduleId": "digestive-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-08-large-intestine.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-08-large-intestine.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Large intestine regions with haustra and taeniae coli, and the anal canal with its two sphincters.",
+      "orientation": "left: anterior view, patient right at viewer left; right: coronal section, anus below",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-cecum",
+          "x": 0.1476,
+          "y": 0.85,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-cecum",
+          "ownColourInteriorPx": 24,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-appendix",
+          "x": 0.2,
+          "y": 0.926,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-appendix",
+          "ownColourInteriorPx": 4,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ascending-colon",
+          "x": 0.1462,
+          "y": 0.52,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-ascending-colon",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-transverse-colon",
+          "x": 0.3034,
+          "y": 0.258,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-transverse-colon",
+          "ownColourInteriorPx": 38,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-descending-colon",
+          "x": 0.48,
+          "y": 0.44,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-descending-colon",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-sigmoid-colon",
+          "x": 0.4138,
+          "y": 0.826,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-sigmoid-colon",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-rectum",
+          "x": 0.331,
+          "y": 0.888,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-rectum",
+          "ownColourInteriorPx": 32,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-haustra",
+          "x": 0.2483,
+          "y": 0.236,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-haustra",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-taeniae-coli",
+          "x": 0.16,
+          "y": 0.42,
+          "radius": 0.018,
+          "panel": "colon",
+          "shapeKey": "digestive-system-taeniae-coli",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-rectum",
+          "x": 0.7586,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "anal",
+          "shapeKey": "digestive-system-rectum",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-anal-canal",
+          "x": 0.8097,
+          "y": 0.7,
+          "radius": 0.018,
+          "panel": "anal",
+          "shapeKey": "digestive-system-anal-canal",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-internal-anal-sphincter",
+          "x": 0.7752,
+          "y": 0.68,
+          "radius": 0.018,
+          "panel": "anal",
+          "shapeKey": "digestive-system-internal-anal-sphincter",
+          "ownColourInteriorPx": 22,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-external-anal-sphincter",
+          "x": 0.7476,
+          "y": 0.7,
+          "radius": 0.018,
+          "panel": "anal",
+          "shapeKey": "digestive-system-external-anal-sphincter",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-anus",
+          "x": 0.8097,
+          "y": 0.842,
+          "radius": 0.018,
+          "panel": "anal",
+          "shapeKey": "digestive-system-anus",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "2b1f3ce89bd69966585fb751734a51806e4e8d44edff9455b65a255301b924d0",
+        "file": null
+      },
+      "sha256": {
+        "svg": "ff02a6314304d0df3f14c94d9ee2c3142a5690f9a8c71791006a83f868863e2a",
+        "png": "ef06a403b770b4ee583e64289f981e53dee01dde3f166bc5828c16f43967e283"
+      }
+    },
+    {
+      "id": "asset-bvis06-peritoneal-folds",
+      "plate": 9,
+      "moduleId": "digestive-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-09-peritoneal-folds.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-09-peritoneal-folds.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Introductory view of the mesentery and the greater and lesser omenta as peritoneal folds.",
+      "orientation": "left: sagittal, front at viewer left; right: anterior view, patient right at viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-lesser-omentum",
+          "x": 0.3269,
+          "y": 0.29,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-lesser-omentum",
+          "ownColourInteriorPx": 32,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-greater-omentum",
+          "x": 0.2317,
+          "y": 0.72,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-greater-omentum",
+          "ownColourInteriorPx": 24,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-mesentery",
+          "x": 0.469,
+          "y": 0.58,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "digestive-system-mesentery",
+          "ownColourInteriorPx": 51,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-lesser-omentum",
+          "x": 0.8,
+          "y": 0.352,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "digestive-system-lesser-omentum",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-greater-omentum",
+          "x": 0.8207,
+          "y": 0.78,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "digestive-system-greater-omentum",
+          "ownColourInteriorPx": 140,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "13d47d349ce2f5347253a8c7826c43fd016fc33cd1ae72d63b63057e2010cf8f",
+        "file": null
+      },
+      "sha256": {
+        "svg": "1ac34a759ddd6f0f77bc63ac32522c4f4826bd7a12922aaaef8825d2e33f2c92",
+        "png": "5e2fa74b535a95b6a95121be9926417e03776f1548dbecf1e38c9350fab50827"
+      }
+    },
+    {
+      "id": "asset-bvis06-urinary-tract",
+      "plate": 10,
+      "moduleId": "urinary-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-10-urinary-tract.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-10-urinary-tract.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-3-gross-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 12728,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-4-microscopic-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 29606,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Placement of kidneys, ureters, bladder and urethra against liver, aorta and inferior vena cava, plus an opened bladder.",
+      "orientation": "left: anterior view, patient right at viewer left; right: bladder opened from the front",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "urinary-system-kidney",
+          "x": 0.2248,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "urinary-system-kidney",
+          "ownColourInteriorPx": 42,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-ureter",
+          "x": 0.2717,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "urinary-system-ureter",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-urinary-bladder",
+          "x": 0.3131,
+          "y": 0.85,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "urinary-system-urinary-bladder",
+          "ownColourInteriorPx": 52,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-urethra",
+          "x": 0.3131,
+          "y": 0.938,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "urinary-system-urethra",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-artery",
+          "x": 0.3628,
+          "y": 0.352,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "urinary-system-renal-artery",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-vein",
+          "x": 0.3241,
+          "y": 0.39,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "urinary-system-renal-vein",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "ves-aorta",
+          "x": 0.331,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "ves-aorta",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "cv-ivc",
+          "x": 0.2897,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "cv-ivc",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-liver",
+          "x": 0.1793,
+          "y": 0.24,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "liver",
+          "ownColourInteriorPx": 98,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "respiratory-system-diaphragm",
+          "x": 0.3103,
+          "y": 0.08,
+          "radius": 0.018,
+          "panel": "placement",
+          "shapeKey": "diaphragm",
+          "ownColourInteriorPx": 24,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-urinary-bladder",
+          "x": 0.8097,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "bladder",
+          "shapeKey": "lumen",
+          "ownColourInteriorPx": 134,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-detrusor-muscle",
+          "x": 0.7007,
+          "y": 0.43,
+          "radius": 0.018,
+          "panel": "bladder",
+          "shapeKey": "detrusor",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-trigone",
+          "x": 0.8097,
+          "y": 0.604,
+          "radius": 0.018,
+          "panel": "bladder",
+          "shapeKey": "trigone",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-ureter",
+          "x": 0.6841,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "bladder",
+          "shapeKey": "ureter",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-internal-urethral-sphincter",
+          "x": 0.7848,
+          "y": 0.69,
+          "radius": 0.018,
+          "panel": "bladder",
+          "shapeKey": "isph",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-urethra",
+          "x": 0.8097,
+          "y": 0.85,
+          "radius": 0.018,
+          "panel": "bladder",
+          "shapeKey": "urethra",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-external-urethral-sphincter",
+          "x": 0.7862,
+          "y": 0.826,
+          "radius": 0.018,
+          "panel": "bladder",
+          "shapeKey": "esph",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "b10cf99d2ffac694a99c84d898de103891a36c1499ba0744212d24378229f651",
+        "file": null
+      },
+      "sha256": {
+        "svg": "89cb95612057f255658bd156d5fc819c4baf292c46504dd06c58b898195ae47a",
+        "png": "2e96e44d6e8d8fded463fd355d18b6a313ae661492c821ccf7cf2b3719fffc09"
+      }
+    },
+    {
+      "id": "asset-bvis06-kidney-section",
+      "plate": 11,
+      "moduleId": "urinary-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-11-kidney-section.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-11-kidney-section.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-3-gross-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 12728,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-4-microscopic-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 29606,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Coronal kidney section with cortex, medulla, calyces, pelvis and ureter, plus one renal lobe.",
+      "orientation": "left: coronal section, hilum at viewer right; right: one renal lobe",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "urinary-system-kidney",
+          "x": 0.0979,
+          "y": 0.7,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "cortex",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-cortex",
+          "x": 0.2069,
+          "y": 0.13,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "cortex",
+          "ownColourInteriorPx": 24,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-capsule",
+          "x": 0.0759,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "capsule",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-pyramid",
+          "x": 0.291,
+          "y": 0.766,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "pyr",
+          "ownColourInteriorPx": 44,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-medulla",
+          "x": 0.291,
+          "y": 0.244,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "pyr",
+          "ownColourInteriorPx": 44,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-column",
+          "x": 0.2455,
+          "y": 0.758,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "col",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-papilla",
+          "x": 0.2855,
+          "y": 0.342,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "pap",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-minor-calyx",
+          "x": 0.3283,
+          "y": 0.42,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "urinary-system-minor-calyx",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-major-calyx",
+          "x": 0.3586,
+          "y": 0.458,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "urinary-system-major-calyx",
+          "ownColourInteriorPx": 11,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-pelvis",
+          "x": 0.3766,
+          "y": 0.504,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "urinary-system-renal-pelvis",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-hilum",
+          "x": 0.4359,
+          "y": 0.478,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "hilum",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-sinus",
+          "x": 0.2621,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "sinus",
+          "ownColourInteriorPx": 42,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-ureter",
+          "x": 0.531,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "urinary-system-ureter",
+          "ownColourInteriorPx": 13,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-cortex",
+          "x": 0.8138,
+          "y": 0.26,
+          "radius": 0.018,
+          "panel": "lobe",
+          "shapeKey": "cortex",
+          "ownColourInteriorPx": 182,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-medulla",
+          "x": 0.8097,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "lobe",
+          "shapeKey": "pyr",
+          "ownColourInteriorPx": 112,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-column",
+          "x": 0.6786,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "lobe",
+          "shapeKey": "col",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-papilla",
+          "x": 0.8097,
+          "y": 0.786,
+          "radius": 0.018,
+          "panel": "lobe",
+          "shapeKey": "pap",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-minor-calyx",
+          "x": 0.8097,
+          "y": 0.868,
+          "radius": 0.018,
+          "panel": "lobe",
+          "shapeKey": "urinary-system-minor-calyx",
+          "ownColourInteriorPx": 50,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "873199ca468d3c893e8becee54e3698819da5d1ec1697f4f5098af1c824bf385",
+        "file": null
+      },
+      "sha256": {
+        "svg": "031e8b6b9b27a5bc283f87b07e3c0e55f24dfc180aab280f8119f72759c881ec",
+        "png": "c0afd180326a247bffe8326d7fe9b855f115931b385ec0172e99e05842e0ca79"
+      }
+    },
+    {
+      "id": "asset-bvis06-renal-vessels",
+      "plate": 12,
+      "moduleId": "urinary-system",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-12-renal-vessels.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-12-renal-vessels.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-3-gross-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 12728,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-4-microscopic-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 29606,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Blood route through the kidney from renal artery to renal vein, with the glomerular capillaries between two arterioles.",
+      "orientation": "schematic lobe: cortex above, medulla centre, hilum and sinus below",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "urinary-system-renal-artery",
+          "x": 0.1034,
+          "y": 0.862,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-renal-artery",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-segmental-artery",
+          "x": 0.2248,
+          "y": 0.78,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-segmental-artery",
+          "ownColourInteriorPx": 9,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-interlobar-artery",
+          "x": 0.2345,
+          "y": 0.58,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-interlobar-artery",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-arcuate-artery",
+          "x": 0.4207,
+          "y": 0.42,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-arcuate-artery",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-cortical-radiate-artery",
+          "x": 0.3421,
+          "y": 0.24,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-cortical-radiate-artery",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-afferent-arteriole",
+          "x": 0.3655,
+          "y": 0.308,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-afferent-arteriole",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-efferent-arteriole",
+          "x": 0.4483,
+          "y": 0.242,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-efferent-arteriole",
+          "ownColourInteriorPx": 4,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-peritubular-capillary",
+          "x": 0.6207,
+          "y": 0.13,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-peritubular-capillary",
+          "ownColourInteriorPx": 5,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-vasa-recta",
+          "x": 0.5448,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-vasa-recta",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-cortical-radiate-vein",
+          "x": 0.6634,
+          "y": 0.256,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-cortical-radiate-vein",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-vein",
+          "x": 0.9172,
+          "y": 0.872,
+          "radius": 0.018,
+          "panel": "tree",
+          "shapeKey": "urinary-system-renal-vein",
+          "ownColourInteriorPx": 19,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "02e2e94e00bc4a6ba947bac25c7900fd203168321f905b73f7878c238eb422da",
+        "file": null
+      },
+      "sha256": {
+        "svg": "ad6103148f80893842cdaa0f5ad9b70172f9d3c965280566222afe11cd379c7b",
+        "png": "6cd06819c5b4751fbea71ee14b73f2619fbfa4c07ebccb0e558af518eff69c88"
+      }
+    },
+    {
+      "id": "asset-bvis06-nephron-pathway",
+      "plate": 13,
+      "moduleId": "urinary-system",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-13-nephron-pathway.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-13-nephron-pathway.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-3-gross-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 12728,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-4-microscopic-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 29606,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "One nephron in order with its filtrate route, and the onward urine pathway to the urethra.",
+      "orientation": "left: one nephron, cortex above and medulla below; right: urine pathway, top to bottom",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "urinary-system-renal-corpuscle",
+          "x": 0.1434,
+          "y": 0.17,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-renal-corpuscle",
+          "ownColourInteriorPx": 4,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-glomerulus",
+          "x": 0.1724,
+          "y": 0.2,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-glomerulus",
+          "ownColourInteriorPx": 34,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-proximal-convoluted-tubule",
+          "x": 0.1972,
+          "y": 0.322,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-proximal-convoluted-tubule",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-descending-limb",
+          "x": 0.2359,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-descending-limb",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-nephron-loop",
+          "x": 0.2703,
+          "y": 0.834,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-nephron-loop",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-ascending-limb",
+          "x": 0.3007,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-ascending-limb",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-distal-convoluted-tubule",
+          "x": 0.3407,
+          "y": 0.238,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-distal-convoluted-tubule",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-collecting-duct",
+          "x": 0.4441,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-collecting-duct",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-papillary-duct",
+          "x": 0.4552,
+          "y": 0.904,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-papillary-duct",
+          "ownColourInteriorPx": 22,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-nephron",
+          "x": 0.2359,
+          "y": 0.364,
+          "radius": 0.018,
+          "panel": "nephron",
+          "shapeKey": "urinary-system-proximal-convoluted-tubule+urinary-system-distal-convoluted-tubule+urinary-system-nephron-loop",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-collecting-duct",
+          "x": 0.8097,
+          "y": 0.22,
+          "radius": 0.018,
+          "panel": "path",
+          "shapeKey": "urinary-system-collecting-duct",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-papillary-duct",
+          "x": 0.8097,
+          "y": 0.386,
+          "radius": 0.018,
+          "panel": "path",
+          "shapeKey": "urinary-system-papillary-duct",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-minor-calyx",
+          "x": 0.8097,
+          "y": 0.446,
+          "radius": 0.018,
+          "panel": "path",
+          "shapeKey": "urinary-system-minor-calyx",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-major-calyx",
+          "x": 0.7876,
+          "y": 0.504,
+          "radius": 0.018,
+          "panel": "path",
+          "shapeKey": "urinary-system-major-calyx",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-pelvis",
+          "x": 0.8097,
+          "y": 0.598,
+          "radius": 0.018,
+          "panel": "path",
+          "shapeKey": "urinary-system-renal-pelvis",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-ureter",
+          "x": 0.811,
+          "y": 0.72,
+          "radius": 0.018,
+          "panel": "path",
+          "shapeKey": "urinary-system-ureter",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-urinary-bladder",
+          "x": 0.7655,
+          "y": 0.88,
+          "radius": 0.018,
+          "panel": "path",
+          "shapeKey": "urinary-system-urinary-bladder",
+          "ownColourInteriorPx": 15,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-urethra",
+          "x": 0.8124,
+          "y": 0.934,
+          "radius": 0.018,
+          "panel": "path",
+          "shapeKey": "urinary-system-urethra",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "1bf106ef9d2bb5f5e259b70bf443fb6a7e7a7c0804764ce0ea5bf47b71319b92",
+        "file": null
+      },
+      "sha256": {
+        "svg": "813a22faf9cf1a86e834191f408a148eb88958d7fea1c198ff370718b749cdc0",
+        "png": "c5bf4bb04706eeaec94172e973fb6ca765e0d7ef2e66bc8160dcb636ffbd614c"
+      }
+    },
+    {
+      "id": "asset-bvis06-renal-corpuscle",
+      "plate": 14,
+      "moduleId": "urinary-system",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-14-renal-corpuscle.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-14-renal-corpuscle.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-3-gross-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 12728,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-4-microscopic-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 29606,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Renal corpuscle with glomerular capsule, tuft, podocytes, arterioles and juxtaglomerular apparatus, plus the filtration barrier magnified.",
+      "orientation": "left: corpuscle, vascular pole upper left, urinary pole below; right: filtration barrier, blood above and capsular space below",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "urinary-system-renal-corpuscle",
+          "x": 0.331,
+          "y": 0.71,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-glomerular-capsule+urinary-system-glomerulus",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-glomerular-capsule",
+          "x": 0.331,
+          "y": 0.14,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-glomerular-capsule",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-glomerulus",
+          "x": 0.331,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-glomerulus",
+          "ownColourInteriorPx": 219,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-podocyte",
+          "x": 0.4979,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-podocyte",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-juxtaglomerular-apparatus",
+          "x": 0.1379,
+          "y": 0.13,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-juxtaglomerular-apparatus",
+          "ownColourInteriorPx": 36,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-macula-densa",
+          "x": 0.2276,
+          "y": 0.118,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-macula-densa",
+          "ownColourInteriorPx": 7,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-juxtaglomerular-cell",
+          "x": 0.1366,
+          "y": 0.21,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-juxtaglomerular-cell",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-afferent-arteriole",
+          "x": 0.0828,
+          "y": 0.15,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-afferent-arteriole",
+          "ownColourInteriorPx": 22,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-efferent-arteriole",
+          "x": 0.0717,
+          "y": 0.4,
+          "radius": 0.018,
+          "panel": "corpuscle",
+          "shapeKey": "urinary-system-efferent-arteriole",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-filtration-membrane",
+          "x": 0.8138,
+          "y": 0.332,
+          "radius": 0.018,
+          "panel": "membrane",
+          "shapeKey": "urinary-system-filtration-membrane",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-podocyte",
+          "x": 0.7669,
+          "y": 0.388,
+          "radius": 0.018,
+          "panel": "membrane",
+          "shapeKey": "urinary-system-podocyte",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "3afb0a179af1d4d6072b072983b451488a62038caa868de0a5cf0c026ea5f158",
+        "file": null
+      },
+      "sha256": {
+        "svg": "3e4de96dcf0fe3b4a5e7aa3a2853c69eb740b944bc1638f2bf3822c862fd1de7",
+        "png": "abfdc49eda0346475490535cc642c0342a0a42f105c80ad7937494ca1a265a6b"
+      }
+    },
+    {
+      "id": "asset-bvis06-male-system",
+      "plate": 15,
+      "moduleId": "male-reproductive",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-15-male-system.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-15-male-system.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-and-physiology-of-the-male-reproductive-system",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Male reproductive tract in anterior view with accessory glands, urethral segments and external parts, plus a transverse section of the penile shaft.",
+      "orientation": "left: anterior view, patient right at viewer left; right: transverse section of the penile shaft, dorsal side above",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "urinary-system-urinary-bladder",
+          "x": 0.3241,
+          "y": 0.19,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "urinary-system-urinary-bladder",
+          "ownColourInteriorPx": 72,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-prostate-gland",
+          "x": 0.2897,
+          "y": 0.44,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-prostate-gland",
+          "ownColourInteriorPx": 13,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-seminal-vesicle",
+          "x": 0.2566,
+          "y": 0.384,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-seminal-vesicle",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-ampulla-of-ductus-deferens",
+          "x": 0.2966,
+          "y": 0.358,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-ampulla-of-ductus-deferens",
+          "ownColourInteriorPx": 13,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-ejaculatory-duct",
+          "x": 0.3117,
+          "y": 0.41,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-ejaculatory-duct",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-prostatic-urethra",
+          "x": 0.3241,
+          "y": 0.35,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-prostatic-urethra",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-urethra",
+          "x": 0.3241,
+          "y": 0.492,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-urethra",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-spongy-urethra",
+          "x": 0.3241,
+          "y": 0.76,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-spongy-urethra",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-bulbourethral-gland",
+          "x": 0.2952,
+          "y": 0.524,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-bulbourethral-gland",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-root-of-penis",
+          "x": 0.2883,
+          "y": 0.548,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-root-of-penis",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-body-of-penis",
+          "x": 0.3034,
+          "y": 0.78,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-body-of-penis",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-glans-penis",
+          "x": 0.3338,
+          "y": 0.912,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-glans-penis",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-prepuce",
+          "x": 0.3572,
+          "y": 0.926,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-prepuce",
+          "ownColourInteriorPx": 7,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-scrotum",
+          "x": 0.3862,
+          "y": 0.8,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-scrotum",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-ductus-deferens",
+          "x": 0.2593,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-ductus-deferens",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-epididymis",
+          "x": 0.2055,
+          "y": 0.74,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-epididymis",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-testis",
+          "x": 0.229,
+          "y": 0.722,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-testis",
+          "ownColourInteriorPx": 24,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-penis",
+          "x": 0.3434,
+          "y": 0.76,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "male-reproductive-root-of-penis+male-reproductive-body-of-penis+male-reproductive-glans-penis",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-corpus-cavernosum",
+          "x": 0.7614,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "shaft",
+          "shapeKey": "cav",
+          "ownColourInteriorPx": 48,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-corpus-spongiosum",
+          "x": 0.8097,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "shaft",
+          "shapeKey": "spo",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-spongy-urethra",
+          "x": 0.8097,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "shaft",
+          "shapeKey": "male-reproductive-spongy-urethra",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "89f0df5233529fff4296f2b5307e46d299115267911afc8536b641ceb4e76e86",
+        "file": null
+      },
+      "sha256": {
+        "svg": "dd4450892fab2c39188bc36aab8f771f340aaa01ce0a93f8f0ac1137cf1c0fac",
+        "png": "19c5f5f541c8f9d68f07a2396bbb95632d1a934e6f15733683bc4936e8fa0bdf"
+      }
+    },
+    {
+      "id": "asset-bvis06-testis-ducts",
+      "plate": 16,
+      "moduleId": "male-reproductive",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-16-testis-ducts.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-16-testis-ducts.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-and-physiology-of-the-male-reproductive-system",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Testis in section with the connected pathway to the ductus deferens, and a seminiferous tubule in cross-section.",
+      "orientation": "left: sagittal section of the testis, epididymis on the right (posterior) side; right: seminiferous tubule in cross-section, lumen at centre",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "male-reproductive-testis",
+          "x": 0.1683,
+          "y": 0.638,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "ti",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-interstitial-tissue",
+          "x": 0.1959,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "ti",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-tunica-vaginalis",
+          "x": 0.2759,
+          "y": 0.204,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-tunica-vaginalis",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-tunica-albuginea",
+          "x": 0.2759,
+          "y": 0.224,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-tunica-albuginea",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-testicular-lobule",
+          "x": 0.2621,
+          "y": 0.32,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-testicular-lobule",
+          "ownColourInteriorPx": 25,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-testicular-mediastinum",
+          "x": 0.3848,
+          "y": 0.52,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-testicular-mediastinum",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-seminiferous-tubule",
+          "x": 0.2152,
+          "y": 0.404,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-seminiferous-tubule",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-rete-testis",
+          "x": 0.3959,
+          "y": 0.584,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-rete-testis",
+          "ownColourInteriorPx": 5,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-efferent-ductule",
+          "x": 0.4,
+          "y": 0.392,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-efferent-ductule",
+          "ownColourInteriorPx": 9,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-head-of-epididymis",
+          "x": 0.4483,
+          "y": 0.224,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-head-of-epididymis",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-body-of-epididymis",
+          "x": 0.4855,
+          "y": 0.52,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-body-of-epididymis",
+          "ownColourInteriorPx": 15,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-tail-of-epididymis",
+          "x": 0.469,
+          "y": 0.768,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-tail-of-epididymis",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-ductus-deferens",
+          "x": 0.5476,
+          "y": 0.44,
+          "radius": 0.018,
+          "panel": "testis",
+          "shapeKey": "male-reproductive-ductus-deferens",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-peritubular-myoid-cell",
+          "x": 0.8166,
+          "y": 0.256,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-peritubular-myoid-cell",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-sertoli-cell",
+          "x": 0.9172,
+          "y": 0.482,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-sertoli-cell",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-spermatogonium",
+          "x": 0.9421,
+          "y": 0.518,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-spermatogonium",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-primary-spermatocyte",
+          "x": 0.9172,
+          "y": 0.508,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-primary-spermatocyte",
+          "ownColourInteriorPx": 15,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-spermatid",
+          "x": 0.8372,
+          "y": 0.578,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-spermatid",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-blood-testis-barrier",
+          "x": 0.6993,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-blood-testis-barrier",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-spermatozoon",
+          "x": 0.8069,
+          "y": 0.496,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-spermatozoon",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-leydig-cell",
+          "x": 0.6897,
+          "y": 0.17,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-leydig-cell",
+          "ownColourInteriorPx": 15,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-interstitial-tissue",
+          "x": 0.8138,
+          "y": 0.8,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-interstitial-tissue",
+          "ownColourInteriorPx": 110,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "male-reproductive-seminiferous-tubule",
+          "x": 0.8731,
+          "y": 0.57,
+          "radius": 0.018,
+          "panel": "tubule",
+          "shapeKey": "male-reproductive-seminiferous-tubule",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "44261c02a45a04e4ac0a8481722028cb4f08b4019ea771ac946261f767440835",
+        "file": null
+      },
+      "sha256": {
+        "svg": "13a0116103a3c8b5328c547aacb7ee94ae8815d0282b27814da67267576f9ca1",
+        "png": "488afc78525868053436156a49571f5a9adaccdf0d9bf1d25c39aa09c555603d"
+      }
+    },
+    {
+      "id": "asset-bvis06-female-gross",
+      "plate": 17,
+      "moduleId": "female-reproductive",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-17-female-gross.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-17-female-gross.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-2-anatomy-and-physiology-of-the-female-reproductive-system",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Female internal organs in anterior view (ovary, uterine tube regions, uterus, cervix, vagina, ligaments) with an enlarged uterine cavity, cervical canal and vagina detail.",
+      "orientation": "left: anterior view, patient right at viewer left; right: enlarged opened uterus, cervix and vagina",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "female-reproductive-uterus",
+          "x": 0.2538,
+          "y": 0.444,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-fundus-of-uterus+female-reproductive-body-of-uterus+female-reproductive-cervix",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-fundus-of-uterus",
+          "x": 0.3241,
+          "y": 0.286,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-fundus-of-uterus",
+          "ownColourInteriorPx": 24,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-body-of-uterus",
+          "x": 0.2552,
+          "y": 0.478,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-body-of-uterus",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-cervix",
+          "x": 0.3117,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-cervix",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-cervical-canal",
+          "x": 0.3241,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-cervical-canal",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-vagina",
+          "x": 0.2703,
+          "y": 0.798,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-vagina",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-vaginal-fornix",
+          "x": 0.2883,
+          "y": 0.704,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-vaginal-fornix",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-isthmus-of-uterine-tube",
+          "x": 0.2428,
+          "y": 0.326,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-isthmus-of-uterine-tube",
+          "ownColourInteriorPx": 9,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-ampulla-of-uterine-tube",
+          "x": 0.1159,
+          "y": 0.34,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-ampulla-of-uterine-tube",
+          "ownColourInteriorPx": 13,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-infundibulum",
+          "x": 0.0966,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-infundibulum",
+          "ownColourInteriorPx": 16,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-fimbriae",
+          "x": 0.0869,
+          "y": 0.516,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-fimbriae",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-ovary",
+          "x": 0.1324,
+          "y": 0.604,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-ovary",
+          "ownColourInteriorPx": 36,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-ovarian-ligament",
+          "x": 0.2207,
+          "y": 0.518,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-ovarian-ligament",
+          "ownColourInteriorPx": 5,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-suspensory-ligament-of-ovary",
+          "x": 0.0883,
+          "y": 0.616,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-suspensory-ligament-of-ovary",
+          "ownColourInteriorPx": 5,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-broad-ligament",
+          "x": 0.1724,
+          "y": 0.67,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-broad-ligament",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-uterine-tube",
+          "x": 0.1972,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "gross",
+          "shapeKey": "female-reproductive-isthmus-of-uterine-tube+female-reproductive-ampulla-of-uterine-tube+female-reproductive-infundibulum",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-uterus",
+          "x": 0.749,
+          "y": 0.398,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-fundus+D-body+D-cervix",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-fundus-of-uterus",
+          "x": 0.8097,
+          "y": 0.12,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-fundus",
+          "ownColourInteriorPx": 40,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-body-of-uterus",
+          "x": 0.7407,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-body",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-cervix",
+          "x": 0.7779,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-cervix",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-cervical-canal",
+          "x": 0.8097,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-canal",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-internal-os",
+          "x": 0.8097,
+          "y": 0.542,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-ios",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-external-os",
+          "x": 0.8097,
+          "y": 0.73,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-eos",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-vagina",
+          "x": 0.7324,
+          "y": 0.83,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-vagina",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-vaginal-fornix",
+          "x": 0.7586,
+          "y": 0.74,
+          "radius": 0.018,
+          "panel": "detail",
+          "shapeKey": "D-fornix",
+          "ownColourInteriorPx": 22,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "252063d026fe6145821542755f2b20c77ed1d72ac5504e933e000ccccd8e4beb",
+        "file": null
+      },
+      "sha256": {
+        "svg": "b06a889971f6dae79cdccaa01e60ea38167e179d7e1a6fc6e9cbc9c87a727405",
+        "png": "b6035ddce5cc1cfbf168250f841a8ad6f37721ffab760aeae583d38cb6e91d94"
+      }
+    },
+    {
+      "id": "asset-bvis06-ovary-follicle",
+      "plate": 18,
+      "moduleId": "female-reproductive",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-18-ovary-follicle.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-18-ovary-follicle.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-2-anatomy-and-physiology-of-the-female-reproductive-system",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Ovary in section with follicle stages arranged around the cortex through corpus luteum and corpus albicans, and the layers of a mature follicle.",
+      "orientation": "left: sectioned ovary, hilum at viewer right; right: mature follicle in section",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "female-reproductive-ovary",
+          "x": 0.2303,
+          "y": 0.63,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-ovarian-cortex+female-reproductive-ovarian-medulla",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-ovarian-cortex",
+          "x": 0.131,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-ovarian-cortex",
+          "ownColourInteriorPx": 59,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-ovarian-medulla",
+          "x": 0.2897,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-ovarian-medulla",
+          "ownColourInteriorPx": 47,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-ovarian-hilum",
+          "x": 0.4855,
+          "y": 0.478,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-ovarian-hilum",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-primordial-follicle",
+          "x": 0.0979,
+          "y": 0.408,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-primordial-follicle",
+          "ownColourInteriorPx": 4,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-primary-follicle",
+          "x": 0.2331,
+          "y": 0.278,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-primary-follicle",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-secondary-follicle",
+          "x": 0.3352,
+          "y": 0.292,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-secondary-follicle",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-antral-follicle",
+          "x": 0.429,
+          "y": 0.38,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-antral-follicle",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-mature-follicle",
+          "x": 0.4014,
+          "y": 0.722,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-mature-follicle",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-corpus-luteum",
+          "x": 0.2234,
+          "y": 0.734,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-corpus-luteum",
+          "ownColourInteriorPx": 10,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-corpus-albicans",
+          "x": 0.1186,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-corpus-albicans",
+          "ownColourInteriorPx": 25,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-ovarian-follicle",
+          "x": 0.3352,
+          "y": 0.23,
+          "radius": 0.018,
+          "panel": "ovary",
+          "shapeKey": "female-reproductive-primary-follicle+female-reproductive-secondary-follicle+female-reproductive-antral-follicle",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-theca-externa",
+          "x": 0.8097,
+          "y": 0.25,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "female-reproductive-theca-externa",
+          "ownColourInteriorPx": 12,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-theca-interna",
+          "x": 0.8097,
+          "y": 0.274,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "female-reproductive-theca-interna",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-granulosa-cell",
+          "x": 0.8097,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "female-reproductive-granulosa-cell",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-follicular-fluid",
+          "x": 0.8441,
+          "y": 0.4,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "female-reproductive-follicular-fluid",
+          "ownColourInteriorPx": 61,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-corona-radiata",
+          "x": 0.7352,
+          "y": 0.49,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "female-reproductive-corona-radiata",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-zona-pellucida",
+          "x": 0.7917,
+          "y": 0.51,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "female-reproductive-zona-pellucida",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-oocyte",
+          "x": 0.7669,
+          "y": 0.51,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "female-reproductive-oocyte",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-theca-cell",
+          "x": 0.9062,
+          "y": 0.54,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "female-reproductive-theca-interna+female-reproductive-theca-externa",
+          "ownColourInteriorPx": 21,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "512aa30ff33fabb5e592d57be51e0cc6335d6a057f26e00fbae7fc11707fba8f",
+        "file": null
+      },
+      "sha256": {
+        "svg": "11b42a2e3dc9f11cc250bc168ea5c7e9b658fae3aaffafe7fa911bdae81821fd",
+        "png": "7a9e620ae82b64678d2c38a91653a0ee0a02ba170a190c84dd34c8116331fe19"
+      }
+    },
+    {
+      "id": "asset-bvis06-uterine-wall",
+      "plate": 19,
+      "moduleId": "female-reproductive",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-19-uterine-wall.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-19-uterine-wall.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-2-anatomy-and-physiology-of-the-female-reproductive-system",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Layers of the uterine wall with endometrial glands, and a simple proliferative versus secretory endometrium comparison.",
+      "orientation": "left: wall section, cavity at top; right: two endometrial states, cavity at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "female-reproductive-stratum-functionale",
+          "x": 0.131,
+          "y": 0.25,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "female-reproductive-stratum-functionale",
+          "ownColourInteriorPx": 50,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-stratum-basale",
+          "x": 0.131,
+          "y": 0.39,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "female-reproductive-stratum-basale",
+          "ownColourInteriorPx": 50,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-myometrium",
+          "x": 0.069,
+          "y": 0.636,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "female-reproductive-myometrium",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-perimetrium",
+          "x": 0.2069,
+          "y": 0.818,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "female-reproductive-perimetrium",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-uterine-gland",
+          "x": 0.171,
+          "y": 0.29,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "female-reproductive-uterine-gland",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-smooth-muscle-of-uterus",
+          "x": 0.1228,
+          "y": 0.524,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "female-reproductive-smooth-muscle-of-uterus",
+          "ownColourInteriorPx": 6,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-endometrium",
+          "x": 0.2138,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "wall",
+          "shapeKey": "female-reproductive-stratum-functionale+female-reproductive-stratum-basale",
+          "ownColourInteriorPx": 50,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-proliferative-endometrium",
+          "x": 0.7269,
+          "y": 0.26,
+          "radius": 0.018,
+          "panel": "phases",
+          "shapeKey": "female-reproductive-proliferative-endometrium",
+          "ownColourInteriorPx": 38,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "female-reproductive-secretory-endometrium",
+          "x": 0.7269,
+          "y": 0.72,
+          "radius": 0.018,
+          "panel": "phases",
+          "shapeKey": "female-reproductive-secretory-endometrium",
+          "ownColourInteriorPx": 31,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "4a97291d3a8f1bc7c75a467819be4ff5fd4afef5a6d0f0d1843e1e39e5b7be4b",
+        "file": null
+      },
+      "sha256": {
+        "svg": "e29e220e653ac2364cc33dab2f96b43ad9ff0244a3bbfdcbd0f42ccc974ab6e0",
+        "png": "e3ae571a996621f7e298784b247e4f825f500bac20c76ea7078600bb8ece3690"
+      }
+    },
+    {
+      "id": "asset-bvis06-abdominal-placement",
+      "plate": 20,
+      "moduleId": "digestive-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-20-abdominal-placement.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-20-abdominal-placement.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 34546,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 35927,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 50013,
+          "truncated": true,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 20639,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Where the digestive organs sit in the abdomen: liver on the patient's right, stomach on the left, gallbladder under the liver, duodenum and pancreas, and the small and large intestine in context.",
+      "orientation": "left: anterior view, patient right at viewer left; right: transverse section seen from below",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "digestive-system-liver",
+          "x": 0.2069,
+          "y": 0.28,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-left-lobe-of-liver+digestive-system-right-lobe-of-liver",
+          "ownColourInteriorPx": 113,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-gallbladder",
+          "x": 0.2814,
+          "y": 0.44,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-gallbladder",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-stomach",
+          "x": 0.4414,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-stomach",
+          "ownColourInteriorPx": 51,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pancreas",
+          "x": 0.4483,
+          "y": 0.52,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "pancreas-p",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-duodenum",
+          "x": 0.2648,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-duodenum",
+          "ownColourInteriorPx": 11,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-jejunum",
+          "x": 0.4138,
+          "y": 0.7,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-jejunum",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ileum",
+          "x": 0.3034,
+          "y": 0.806,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-ileum",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-cecum",
+          "x": 0.1724,
+          "y": 0.896,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-cecum",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-ascending-colon",
+          "x": 0.1724,
+          "y": 0.7,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-ascending-colon",
+          "ownColourInteriorPx": 26,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-transverse-colon",
+          "x": 0.3241,
+          "y": 0.656,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-transverse-colon",
+          "ownColourInteriorPx": 30,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-descending-colon",
+          "x": 0.4855,
+          "y": 0.7,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-descending-colon",
+          "ownColourInteriorPx": 28,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-sigmoid-colon",
+          "x": 0.4138,
+          "y": 0.9,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-sigmoid-colon",
+          "ownColourInteriorPx": 27,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-esophagus",
+          "x": 0.3752,
+          "y": 0.18,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "digestive-system-esophagus",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "respiratory-system-diaphragm",
+          "x": 0.2276,
+          "y": 0.122,
+          "radius": 0.018,
+          "panel": "abdomen",
+          "shapeKey": "respiratory-system-diaphragm",
+          "ownColourInteriorPx": 24,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-liver",
+          "x": 0.7172,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "digestive-system-liver",
+          "ownColourInteriorPx": 54,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-stomach",
+          "x": 0.8966,
+          "y": 0.32,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "digestive-system-stomach",
+          "ownColourInteriorPx": 46,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-pancreas",
+          "x": 0.8138,
+          "y": 0.41,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "digestive-system-pancreas",
+          "ownColourInteriorPx": 22,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-duodenum",
+          "x": 0.7407,
+          "y": 0.424,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "digestive-system-duodenum",
+          "ownColourInteriorPx": 20,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "cv-ivc",
+          "x": 0.7903,
+          "y": 0.468,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "cv-ivc",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "ves-aorta",
+          "x": 0.8248,
+          "y": 0.474,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "ves-aorta",
+          "ownColourInteriorPx": 15,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "2dd282a820f47ccb8529f6fc44f486323d4e87b0b9f52478f11933b2f0a966f7",
+        "file": null
+      },
+      "sha256": {
+        "svg": "dcfb44c52174beffaf08f996fc9fc652fa9a6da26c4527f69af70902fabd645c",
+        "png": "8eb5f905ffd1814706bdfd0df3abba6360be97c85f2e14651b684e7bf25a6d6c"
+      }
+    },
+    {
+      "id": "asset-bvis06-kidney-placement",
+      "plate": 21,
+      "moduleId": "urinary-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis06-atlas/bvis06-21-kidney-placement.svg",
+      "pngPath": "assets/images/anatomy/bvis06-atlas/bvis06-21-kidney-placement.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis06-*.mjs. Anatomical facts follow the live-fetched text pages listed under factCheckedReferences (fetched by the integration step, text only); the items under bibliographyNotAccessed were not accessed. No images imported.",
+      "factCheckedReferences": [
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-3-gross-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 12728,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        },
+        {
+          "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-4-microscopic-anatomy-of-the-kidney",
+          "access": "Live text-only fetch",
+          "receivedCharacters": 29606,
+          "truncated": false,
+          "use": "Factual text only; no illustration imported, traced or reproduced",
+          "source": "docs/atlas/BVIS06_FACT_CHECKS.json"
+        }
+      ],
+      "bibliographyNotAccessed": [
+        {
+          "source": "Bibliography only, not accessed during authoring: https://training.seer.cancer.gov/anatomy/",
+          "use": "NCI SEER Training anatomy modules; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed.",
+          "use": "Textbook anatomy; factual background only, no images imported, traced or reproduced"
+        },
+        {
+          "source": "Bibliography only, not accessed during authoring: Mescher AL. Junqueira's Basic Histology, 16th ed.",
+          "use": "Textbook histology; factual background only, no images imported, traced or reproduced"
+        }
+      ],
+      "purpose": "Where the kidneys sit: behind the peritoneum on the posterior abdominal wall, the right lower than the left, beside the liver, aorta and inferior vena cava.",
+      "orientation": "left: anterior view drawn transparent, patient right at viewer left; right: transverse section seen from below",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "urinary-system-kidney",
+          "x": 0.2248,
+          "y": 0.54,
+          "radius": 0.018,
+          "panel": "front",
+          "shapeKey": "urinary-system-kidney",
+          "ownColourInteriorPx": 48,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-ureter",
+          "x": 0.2676,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "front",
+          "shapeKey": "urinary-system-ureter",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-artery",
+          "x": 0.3683,
+          "y": 0.404,
+          "radius": 0.018,
+          "panel": "front",
+          "shapeKey": "urinary-system-renal-artery",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-renal-vein",
+          "x": 0.3379,
+          "y": 0.422,
+          "radius": 0.018,
+          "panel": "front",
+          "shapeKey": "urinary-system-renal-vein",
+          "ownColourInteriorPx": 8,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-liver",
+          "x": 0.1862,
+          "y": 0.26,
+          "radius": 0.018,
+          "panel": "front",
+          "shapeKey": "liver",
+          "ownColourInteriorPx": 83,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "respiratory-system-diaphragm",
+          "x": 0.2276,
+          "y": 0.122,
+          "radius": 0.018,
+          "panel": "front",
+          "shapeKey": "respiratory-system-diaphragm",
+          "ownColourInteriorPx": 24,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "ves-aorta",
+          "x": 0.3448,
+          "y": 0.62,
+          "radius": 0.018,
+          "panel": "front",
+          "shapeKey": "ves-aorta",
+          "ownColourInteriorPx": 14,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "cv-ivc",
+          "x": 0.309,
+          "y": 0.62,
+          "radius": 0.018,
+          "panel": "front",
+          "shapeKey": "cv-ivc",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "urinary-system-kidney",
+          "x": 0.7462,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "urinary-system-kidney",
+          "ownColourInteriorPx": 36,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "digestive-system-liver",
+          "x": 0.7241,
+          "y": 0.34,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "liver",
+          "ownColourInteriorPx": 47,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "cv-ivc",
+          "x": 0.7903,
+          "y": 0.468,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "cv-ivc",
+          "ownColourInteriorPx": 18,
+          "ownMaskValidated": true
+        },
+        {
+          "structureId": "ves-aorta",
+          "x": 0.8248,
+          "y": 0.474,
+          "radius": 0.018,
+          "panel": "level",
+          "shapeKey": "ves-aorta",
+          "ownColourInteriorPx": 15,
+          "ownMaskValidated": true
+        }
+      ],
+      "featureMask": {
+        "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
+        "sha256": "f7e820c7b7ec5348191a00589eb2b5c6d93b2e9fd9d65285c720e1c7b55fe925",
+        "file": null
+      },
+      "sha256": {
+        "svg": "54647fff27a82d027c9172521b19e2b20921c4d0fc08f5ed5ae0eef6df3746ed",
+        "png": "2fc56318a17f0849d621559879e4298a07b9fbf82f3a2f3bf00d53d55b32acdb"
+      }
+    }
+  ]
+}

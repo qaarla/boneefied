@@ -1,0 +1,4140 @@
+{
+  "pack": "boneefied-bvis04-neuro-senses-skin-tissue",
+  "generatedBy": "scripts/atlas/bvis04-generate.mjs",
+  "plates": [
+    {
+      "id": "asset-servier-brain-lateral",
+      "plate": 1,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-servier-brain-lateral",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-01-brain-lateral.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-01-brain-lateral.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Lobes of the cerebrum on the lateral surface, with the deep insula in a labelled inset.",
+      "orientation": "left lateral view; frontal pole at viewer left; right inset is the lateral sulcus opened (opercula retracted)",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "cerebrum",
+          "x": 0.2276,
+          "y": 0.274,
+          "radius": 0.018,
+          "panel": "lateral",
+          "shapeKey": "frontal+parietal+temporal+occipital",
+          "ownColourInteriorPx": 79,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "frontal-lobe",
+          "x": 0.1476,
+          "y": 0.37,
+          "radius": 0.018,
+          "panel": "lateral",
+          "shapeKey": "frontal",
+          "ownColourInteriorPx": 95,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "parietal-lobe",
+          "x": 0.4138,
+          "y": 0.27,
+          "radius": 0.018,
+          "panel": "lateral",
+          "shapeKey": "parietal",
+          "ownColourInteriorPx": 88,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "temporal-lobe",
+          "x": 0.3103,
+          "y": 0.54,
+          "radius": 0.018,
+          "panel": "lateral",
+          "shapeKey": "temporal",
+          "ownColourInteriorPx": 58,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "occipital-lobe",
+          "x": 0.5517,
+          "y": 0.41,
+          "radius": 0.018,
+          "panel": "lateral",
+          "shapeKey": "occipital",
+          "ownColourInteriorPx": 52,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "insula",
+          "x": 0.8345,
+          "y": 0.31,
+          "radius": 0.018,
+          "panel": "insula-inset",
+          "shapeKey": "insula",
+          "ownColourInteriorPx": 60,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "9264977dc3850720ee2a2fbab65132f85bba7875dc4e758eddda1e447746302d",
+        "png": "30ed93797f13441d4f4f9d27e92ae64baba53391639a10e84127c4a886393e72"
+      }
+    },
+    {
+      "id": "asset-servier-brain-sagittal",
+      "plate": 2,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-servier-brain-sagittal",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-02-brain-medial.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-02-brain-medial.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Midsagittal brain: corpus callosum, diencephalon, ventricular chain and brainstem.",
+      "orientation": "midsagittal cut, medial surface; frontal pole at viewer left; septum pellucidum cut away to show the lateral ventricle",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "cerebrum",
+          "x": 0.2897,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "cerebrum",
+          "ownColourInteriorPx": 64,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "corpus-callosum",
+          "x": 0.4759,
+          "y": 0.312,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "corpus-callosum",
+          "ownColourInteriorPx": 20,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "lateral-ventricle",
+          "x": 0.5793,
+          "y": 0.378,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "lateral-ventricle",
+          "ownColourInteriorPx": 14,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "thalamus",
+          "x": 0.5448,
+          "y": 0.45,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "thalamus",
+          "ownColourInteriorPx": 58,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "third-ventricle",
+          "x": 0.4731,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "third-ventricle",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hypothalamus",
+          "x": 0.4924,
+          "y": 0.59,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "hypothalamus",
+          "ownColourInteriorPx": 24,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "epithalamus",
+          "x": 0.6083,
+          "y": 0.496,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "epithalamus",
+          "ownColourInteriorPx": 15,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cerebral-aqueduct",
+          "x": 0.5531,
+          "y": 0.616,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "cerebral-aqueduct",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "fourth-ventricle",
+          "x": 0.6234,
+          "y": 0.724,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "fourth-ventricle",
+          "ownColourInteriorPx": 26,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "midbrain",
+          "x": 0.5641,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "midbrain",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "pons",
+          "x": 0.5655,
+          "y": 0.73,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "pons",
+          "ownColourInteriorPx": 48,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "medulla-oblongata",
+          "x": 0.5862,
+          "y": 0.87,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "medulla-oblongata",
+          "ownColourInteriorPx": 24,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cerebellum",
+          "x": 0.7517,
+          "y": 0.78,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "cerebellum",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "bc88302836f0e9ab4dfd1a85e10d26b55d9bfcf5ec354dcc4614905f8316c122",
+        "png": "3a2fd23613e7f5875dfa46dd71d72655fc229eebe3ecdbbad4c2041461f7e1b8"
+      }
+    },
+    {
+      "id": "asset-bvis04-deep-nuclei",
+      "plate": 3,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-03-deep-nuclei.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-03-deep-nuclei.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Coronal slice showing the basal nuclei, thalamus and hypothalamus relative to the ventricles.",
+      "orientation": "coronal slice viewed from the front; patient right is at viewer left; labelled structures are on the viewer-left side",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "thalamus",
+          "x": 0.4386,
+          "y": 0.45,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "thalamus",
+          "ownColourInteriorPx": 48,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hypothalamus",
+          "x": 0.4662,
+          "y": 0.548,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "hypothalamus",
+          "ownColourInteriorPx": 38,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "lateral-ventricle",
+          "x": 0.451,
+          "y": 0.334,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "lateral-ventricle",
+          "ownColourInteriorPx": 30,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "caudate-nucleus",
+          "x": 0.4152,
+          "y": 0.34,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "caudate-nucleus",
+          "ownColourInteriorPx": 22,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "globus-pallidus",
+          "x": 0.3669,
+          "y": 0.424,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "globus-pallidus",
+          "ownColourInteriorPx": 12,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "putamen",
+          "x": 0.331,
+          "y": 0.43,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "putamen",
+          "ownColourInteriorPx": 34,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "basal-nuclei",
+          "x": 0.36,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "caudate-nucleus+globus-pallidus+putamen",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "corpus-callosum",
+          "x": 0.4552,
+          "y": 0.268,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "corpus-callosum",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "third-ventricle",
+          "x": 0.4993,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "third-ventricle",
+          "ownColourInteriorPx": 12,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "insula",
+          "x": 0.2469,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "coronal",
+          "shapeKey": "insula",
+          "ownColourInteriorPx": 26,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "91b049e9667f137e023bdb763e125e097b18f04a6c17fa96cb38075cee7d5cf3",
+        "png": "d1062996d9abc4c5fa57aaf5894593c94c0e7fe17fb22dd29c09d33066f8e6c0"
+      }
+    },
+    {
+      "id": "asset-bvis04-brainstem-cerebellum",
+      "plate": 4,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-04-brainstem-cerebellum.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-04-brainstem-cerebellum.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Brainstem levels, cerebellar white-matter tree and continuity with the spinal cord.",
+      "orientation": "midsagittal view; anterior at viewer left; cerebrum removed; bone at the foramen magnum is unlabelled context",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "midbrain",
+          "x": 0.4262,
+          "y": 0.188,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "midbrain",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "pons",
+          "x": 0.4262,
+          "y": 0.332,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "pons",
+          "ownColourInteriorPx": 76,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "medulla-oblongata",
+          "x": 0.4593,
+          "y": 0.556,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "medulla-oblongata",
+          "ownColourInteriorPx": 38,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cerebellum",
+          "x": 0.7241,
+          "y": 0.412,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "cerebellum",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "arbor-vitae",
+          "x": 0.669,
+          "y": 0.308,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "arbor-vitae",
+          "ownColourInteriorPx": 12,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "fourth-ventricle",
+          "x": 0.52,
+          "y": 0.324,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "fourth-ventricle",
+          "ownColourInteriorPx": 39,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "spinal-cord",
+          "x": 0.4676,
+          "y": 0.86,
+          "radius": 0.018,
+          "panel": "sagittal",
+          "shapeKey": "spinal-cord",
+          "ownColourInteriorPx": 40,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "6793204f922d3bcbc84e2c9630b9985858c35f9aa6c81d3471854425f809190c",
+        "png": "180fba30f2722ef34b6bc2d545d38daf352357a54407797bb4dbb0f7c448e0b2"
+      }
+    },
+    {
+      "id": "asset-bvis04-csf-meninges",
+      "plate": 5,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-05-csf-meninges.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-05-csf-meninges.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Ventricular chain with choroid plexus, and the three meningeal layers around the brain.",
+      "orientation": "left panel: left lateral view, frontal at viewer left; right panel: coronal slice of the vertex, scalp at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "lateral-ventricle",
+          "x": 0.2069,
+          "y": 0.392,
+          "radius": 0.018,
+          "panel": "ventricles",
+          "shapeKey": "lateral-ventricle",
+          "ownColourInteriorPx": 11,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "third-ventricle",
+          "x": 0.2524,
+          "y": 0.504,
+          "radius": 0.018,
+          "panel": "ventricles",
+          "shapeKey": "third-ventricle",
+          "ownColourInteriorPx": 21,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cerebral-aqueduct",
+          "x": 0.2897,
+          "y": 0.572,
+          "radius": 0.018,
+          "panel": "ventricles",
+          "shapeKey": "cerebral-aqueduct",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "fourth-ventricle",
+          "x": 0.3393,
+          "y": 0.658,
+          "radius": 0.018,
+          "panel": "ventricles",
+          "shapeKey": "fourth-ventricle",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "choroid-plexus",
+          "x": 0.3848,
+          "y": 0.428,
+          "radius": 0.018,
+          "panel": "ventricles",
+          "shapeKey": "choroid-plexus",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dura-mater",
+          "x": 0.6069,
+          "y": 0.438,
+          "radius": 0.018,
+          "panel": "meninges",
+          "shapeKey": "dura-mater",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "arachnoid-mater",
+          "x": 0.68,
+          "y": 0.382,
+          "radius": 0.018,
+          "panel": "meninges",
+          "shapeKey": "arachnoid-mater",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "pia-mater",
+          "x": 0.8676,
+          "y": 0.462,
+          "radius": 0.018,
+          "panel": "meninges",
+          "shapeKey": "pia-mater",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cerebrospinal-fluid",
+          "x": 0.8179,
+          "y": 0.398,
+          "radius": 0.018,
+          "panel": "meninges",
+          "shapeKey": "subarachnoid",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "meninges",
+          "x": 0.9145,
+          "y": 0.498,
+          "radius": 0.018,
+          "panel": "meninges",
+          "shapeKey": "dura-mater+arachnoid-mater+pia-mater",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "44053fa0c87c6bc897825501bcc56c10a5966f9889e91cb62834797d96b4ee30",
+        "png": "baed2ad8acf8353656ba0e0bffdc054b718fd643c67d45a0cd6d5577a2c71344"
+      }
+    },
+    {
+      "id": "asset-bvis04-spinal-cross-section",
+      "plate": 6,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-06-spinal-cross-section.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-06-spinal-cross-section.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Spinal cord cross-section: gray butterfly, white columns, taught tracts, roots and ganglion.",
+      "orientation": "transverse section; posterior at top, anterior at bottom; tracts and roots drawn on the viewer-left half only",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "spinal-cord",
+          "x": 0.6372,
+          "y": 0.65,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "cord-white",
+          "ownColourInteriorPx": 30,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dorsal-horn",
+          "x": 0.4276,
+          "y": 0.39,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "dorsal-horn",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "ventral-horn",
+          "x": 0.4303,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "ventral-horn",
+          "ownColourInteriorPx": 66,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "central-canal",
+          "x": 0.4993,
+          "y": 0.496,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "central-canal",
+          "ownColourInteriorPx": 11,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dorsal-column",
+          "x": 0.4648,
+          "y": 0.324,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "dorsal-column",
+          "ownColourInteriorPx": 40,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "corticospinal-tract",
+          "x": 0.3379,
+          "y": 0.43,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "corticospinal-tract",
+          "ownColourInteriorPx": 42,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "spinothalamic-tract",
+          "x": 0.3448,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "spinothalamic-tract",
+          "ownColourInteriorPx": 32,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dorsal-root",
+          "x": 0.3517,
+          "y": 0.254,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "dorsal-root",
+          "ownColourInteriorPx": 7,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dorsal-root-ganglion",
+          "x": 0.291,
+          "y": 0.238,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "dorsal-root-ganglion",
+          "ownColourInteriorPx": 28,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "ventral-root",
+          "x": 0.291,
+          "y": 0.722,
+          "radius": 0.018,
+          "panel": "cross-section",
+          "shapeKey": "ventral-root",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "04439957588d635d3f7bc6b9973ab5983c3eda1fb48e8e3d87e4d83faee54ee7",
+        "png": "4151fc915d272ebb583202b730e060e354b877956c066ad33dd95ba7575d458a"
+      }
+    },
+    {
+      "id": "asset-bvis04-spinal-roots-rami",
+      "plate": 7,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-07-spinal-roots-rami.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-07-spinal-roots-rami.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "How a spinal nerve forms from roots and splits into dorsal and ventral rami.",
+      "orientation": "axial view from above; posterior at top; labels on viewer-left side",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "spinal-cord",
+          "x": 0.4993,
+          "y": 0.384,
+          "radius": 0.018,
+          "panel": "axial",
+          "shapeKey": "spinal-cord",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dorsal-root",
+          "x": 0.4441,
+          "y": 0.35,
+          "radius": 0.018,
+          "panel": "axial",
+          "shapeKey": "dorsal-root",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "ventral-root",
+          "x": 0.4372,
+          "y": 0.434,
+          "radius": 0.018,
+          "panel": "axial",
+          "shapeKey": "ventral-root",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dorsal-root-ganglion",
+          "x": 0.3862,
+          "y": 0.388,
+          "radius": 0.018,
+          "panel": "axial",
+          "shapeKey": "dorsal-root-ganglion",
+          "ownColourInteriorPx": 23,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dorsal-ramus",
+          "x": 0.2731,
+          "y": 0.298,
+          "radius": 0.018,
+          "panel": "axial",
+          "shapeKey": "dorsal-ramus",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "ventral-ramus",
+          "x": 0.2717,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "axial",
+          "shapeKey": "ventral-ramus",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "76acbb241008877c4f2086397834759ff14bee6bcc87b6a4f23631a76512b06c",
+        "png": "bd34f3000628bcee94408ff71ec2cb59ef1d25ede7c958f3b1e9b6f5156ae6b7"
+      }
+    },
+    {
+      "id": "asset-bvis04-plexus-overview",
+      "plate": 8,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-08-plexus-overview.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-08-plexus-overview.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Where the four major plexuses sit on the cord and which region each serves; phrenic nerve to the diaphragm.",
+      "orientation": "anterior-style body schematic; patient right at viewer left; plexuses drawn on patient right only; cord shown in the midline",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "spinal-cord",
+          "x": 0.4993,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "spinal-cord",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cervical-plexus",
+          "x": 0.4331,
+          "y": 0.182,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "cervical-plexus",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "brachial-plexus",
+          "x": 0.3986,
+          "y": 0.266,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "brachial-plexus",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "phrenic-nerve",
+          "x": 0.451,
+          "y": 0.38,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "phrenic-nerve",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "lumbar-plexus",
+          "x": 0.4276,
+          "y": 0.596,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "lumbar-plexus",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sacral-plexus",
+          "x": 0.4469,
+          "y": 0.708,
+          "radius": 0.018,
+          "panel": "overview",
+          "shapeKey": "sacral-plexus",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "038dcb8a12b05a687e8935f4d2c5b2ff6acf1474b5793811d76b83f9f972e2f7",
+        "png": "d51e250f81733504c9669f357cff4e876b85228a28612e2dd6f2c479637eb7f2"
+      }
+    },
+    {
+      "id": "asset-bvis04-upper-limb-nerves",
+      "plate": 9,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-09-upper-limb-nerves.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-09-upper-limb-nerves.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Course of the median, ulnar and radial nerves from the brachial plexus into the right arm and forearm.",
+      "orientation": "right upper limb; anterior panel (patient right = viewer left, lateral at left) and posterior panel (lateral at left in this drawing)",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "brachial-plexus",
+          "x": 0.2924,
+          "y": 0.134,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "brachial-plexus",
+          "ownColourInteriorPx": 36,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "median-nerve",
+          "x": 0.2759,
+          "y": 0.43,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "median-nerve",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "ulnar-nerve",
+          "x": 0.3145,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "ulnar-nerve",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "radial-nerve",
+          "x": 0.2331,
+          "y": 0.4,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "radial-nerve",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "radial-nerve",
+          "x": 0.7448,
+          "y": 0.32,
+          "radius": 0.018,
+          "panel": "posterior",
+          "shapeKey": "radial-nerve-p",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "292c7d923edf907161aaf726b29f1db659afe58e54441785219d54f54da29bea",
+        "png": "ceda066b6ed7e7b6cf7504556495e38e6ee614a5eb02472bb7000a1a584600aa"
+      }
+    },
+    {
+      "id": "asset-bvis04-lower-limb-nerves",
+      "plate": 10,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-10-lower-limb-nerves.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-10-lower-limb-nerves.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Femoral nerve to the front of the thigh and sciatic nerve down the back of the thigh.",
+      "orientation": "right lower limb; anterior panel then posterior panel; bones faint",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "lumbar-plexus",
+          "x": 0.2966,
+          "y": 0.092,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "lumbar-plexus",
+          "ownColourInteriorPx": 30,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "femoral-nerve",
+          "x": 0.2855,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "femoral-nerve",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sacral-plexus",
+          "x": 0.7931,
+          "y": 0.092,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "sacral-plexus",
+          "ownColourInteriorPx": 29,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sciatic-nerve",
+          "x": 0.7917,
+          "y": 0.32,
+          "radius": 0.018,
+          "panel": "anterior",
+          "shapeKey": "sciatic-nerve",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "18436ba91da2023d06bca0a8abda107126ee4f2463e674a964ad0a88dcd00848",
+        "png": "f84f3c86af36cb9abb89a38d4772adb947500e97933e5fe04972dfeae852ef78"
+      }
+    },
+    {
+      "id": "asset-bvis04-cranial-nerves-i-vi",
+      "plate": 11,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-11-cranial-nerves-i-vi.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-11-cranial-nerves-i-vi.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Cranial nerves I to VI on the base of the brain.",
+      "orientation": "inferior view of the brain; frontal at top; labels on viewer-left nerves; selected origin cues, nerves end at skull-base ring cues",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "cranial-nerve-i",
+          "x": 0.4524,
+          "y": 0.106,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-i",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-ii",
+          "x": 0.3986,
+          "y": 0.316,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-ii",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-iii",
+          "x": 0.4179,
+          "y": 0.412,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-iii",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-iv",
+          "x": 0.3614,
+          "y": 0.45,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-iv",
+          "ownColourInteriorPx": 3,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-v",
+          "x": 0.4179,
+          "y": 0.588,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-v",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-vi",
+          "x": 0.48,
+          "y": 0.598,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-vi",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "optic-chiasm-sense",
+          "x": 0.4993,
+          "y": 0.372,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "optic-chiasm-sense",
+          "ownColourInteriorPx": 14,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "cf4c31a937955e72e36ae6dcb4a65e3ba54277f7786fab4150c4f6b62509b346",
+        "png": "b7b166b6f05f55ac56b115cf0d5a79395a2a228e934e885ca370f21c5d07a4cd"
+      }
+    },
+    {
+      "id": "asset-bvis04-cranial-nerves-vii-xii",
+      "plate": 12,
+      "moduleId": "nervous-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-12-cranial-nerves-vii-xii.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-12-cranial-nerves-vii-xii.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Cranial nerves VII to XII at the pontomedullary junction and medulla.",
+      "orientation": "inferior view of the brain; frontal at top; labels on viewer-left nerves; selected origin cues, nerves end at skull-base ring cues",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "cranial-nerve-vii",
+          "x": 0.3338,
+          "y": 0.582,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-vii",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-viii",
+          "x": 0.3324,
+          "y": 0.63,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-viii",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-ix",
+          "x": 0.3324,
+          "y": 0.718,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-ix",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-x",
+          "x": 0.3324,
+          "y": 0.768,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-x",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-xi",
+          "x": 0.3559,
+          "y": 0.804,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-xi",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cranial-nerve-xii",
+          "x": 0.4097,
+          "y": 0.85,
+          "radius": 0.018,
+          "panel": "inferior",
+          "shapeKey": "cranial-nerve-xii",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "8b88c7c3b44969119e49e1f42e7a2d6996cb70de635c150edf3e86854e5362e8",
+        "png": "73d1dfe486def051151d370fbd63f04c344f0a203e987ad1833480d8cd596c78"
+      }
+    },
+    {
+      "id": "asset-servier-eye-section",
+      "plate": 13,
+      "moduleId": "special-senses",
+      "teachingKind": "gross-diagram",
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-servier-eye-section",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-13-eye-section.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-13-eye-section.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Eyeball in horizontal section: the three tunics, lens, vitreous chamber and optic nerve.",
+      "orientation": "horizontal section of the right eye from above; anterior at viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "sclera-eye",
+          "x": 0.611,
+          "y": 0.246,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "sclera",
+          "ownColourInteriorPx": 7,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cornea-eye",
+          "x": 0.3669,
+          "y": 0.45,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "cornea",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "choroid-eye",
+          "x": 0.7076,
+          "y": 0.614,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "choroid",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "retina-eye",
+          "x": 0.7007,
+          "y": 0.392,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "retina",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "ciliary-body-eye",
+          "x": 0.451,
+          "y": 0.318,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "ciliary",
+          "ownColourInteriorPx": 25,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "iris-eye",
+          "x": 0.4276,
+          "y": 0.394,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "iris",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "lens-eye",
+          "x": 0.4634,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "lens",
+          "ownColourInteriorPx": 32,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "vitreous-chamber-eye",
+          "x": 0.6207,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "vitreous",
+          "ownColourInteriorPx": 136,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "vitreous-humor-eye",
+          "x": 0.5517,
+          "y": 0.44,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "vitreous",
+          "ownColourInteriorPx": 110,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "optic-nerve-eye",
+          "x": 0.8,
+          "y": 0.562,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "optic-nerve",
+          "ownColourInteriorPx": 30,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "fovea-centralis-eye",
+          "x": 0.7172,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "fovea",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "fibrous-tunic-eye",
+          "x": 0.4869,
+          "y": 0.24,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "sclera+cornea",
+          "ownColourInteriorPx": 7,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "vascular-tunic-eye",
+          "x": 0.6593,
+          "y": 0.702,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "choroid+ciliary+iris",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "1dae4a6a3aa3ce5637b5937ec643f969ac9f9af1762dce671cb9fda899543066",
+        "png": "be96ccfde77b7cf6af4b92935735f1ebd6cf95e1a4f598bc694c05d20d6fefd2"
+      }
+    },
+    {
+      "id": "asset-bvis04-eye-anterior-segment",
+      "plate": 14,
+      "moduleId": "special-senses",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-14-eye-anterior-segment.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-14-eye-anterior-segment.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Enlarged front of the eye: anterior and posterior chambers, aqueous humor, iris, pupil, zonules and lens.",
+      "orientation": "enlarged horizontal section of the anterior right eye; cornea at viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "cornea-eye",
+          "x": 0.4028,
+          "y": 0.324,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "cornea",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "anterior-chamber-eye",
+          "x": 0.4538,
+          "y": 0.456,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "ac",
+          "ownColourInteriorPx": 77,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "aqueous-humor-eye",
+          "x": 0.4566,
+          "y": 0.248,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "ac+pc",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "pupil-eye",
+          "x": 0.5338,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "pupil",
+          "ownColourInteriorPx": 18,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "iris-eye",
+          "x": 0.5324,
+          "y": 0.27,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "iris",
+          "ownColourInteriorPx": 14,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "posterior-chamber-eye",
+          "x": 0.5724,
+          "y": 0.284,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "pc",
+          "ownColourInteriorPx": 20,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "suspensory-ligaments-eye",
+          "x": 0.6069,
+          "y": 0.292,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "zonules",
+          "ownColourInteriorPx": 12,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "lens-eye",
+          "x": 0.6152,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "lens",
+          "ownColourInteriorPx": 62,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "ciliary-body-eye",
+          "x": 0.5766,
+          "y": 0.126,
+          "radius": 0.018,
+          "panel": "anterior-segment",
+          "shapeKey": "ciliary",
+          "ownColourInteriorPx": 68,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "523da37e168384606c397cc6ce26c076c0e8a116e694eb924dd9b82199def3bb",
+        "png": "2bb172b5b762235e061e7bdd6958fad7002d3ba1742e03157181c4bfe2a68b5e"
+      }
+    },
+    {
+      "id": "asset-bvis04-retina-layers",
+      "plate": 15,
+      "moduleId": "special-senses",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-15-retina-layers.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-15-retina-layers.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Retinal cell chain from light to ganglion cells, and pigment epithelium behind the photoreceptors.",
+      "orientation": "schematic cross-section; vitreous and incoming light at top, choroid and sclera at bottom",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "ganglion-cells-eye",
+          "x": 0.3103,
+          "y": 0.23,
+          "radius": 0.018,
+          "panel": "schematic",
+          "shapeKey": "ganglion-cells",
+          "ownColourInteriorPx": 24,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "bipolar-cells-eye",
+          "x": 0.4138,
+          "y": 0.334,
+          "radius": 0.018,
+          "panel": "schematic",
+          "shapeKey": "bipolar-cells",
+          "ownColourInteriorPx": 18,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "rods-eye",
+          "x": 0.3876,
+          "y": 0.6,
+          "radius": 0.018,
+          "panel": "schematic",
+          "shapeKey": "rods",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cones-eye",
+          "x": 0.2069,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "schematic",
+          "shapeKey": "cones",
+          "ownColourInteriorPx": 11,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "retinal-pigment-epithelium-eye",
+          "x": 0.5172,
+          "y": 0.73,
+          "radius": 0.018,
+          "panel": "schematic",
+          "shapeKey": "rpe",
+          "ownColourInteriorPx": 28,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "retina-eye",
+          "x": 0.6897,
+          "y": 0.4,
+          "radius": 0.018,
+          "panel": "schematic",
+          "shapeKey": "retina",
+          "ownColourInteriorPx": 22,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "75806e01ea6cbbb542cb90ed5270d71d7cbfe3b57c11e40608cf5a3464b8f0e2",
+        "png": "acc1e7e52b73d2940f71a8a8dcb6c4fa6ac4fc7a693bb1499f829a23074909b4"
+      }
+    },
+    {
+      "id": "asset-gray880-optic-nerve-head",
+      "plate": 16,
+      "moduleId": "special-senses",
+      "teachingKind": "gross-diagram",
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-gray880-optic-nerve-head",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-16-optic-disc.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-16-optic-disc.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Optic disc, macula and fovea from the front, and the nerve head in section.",
+      "orientation": "left panel: fundus of right eye, nasal side at viewer right; right panel: longitudinal section of the nerve head, vitreous at left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "optic-disc-eye",
+          "x": 0.36,
+          "y": 0.51,
+          "radius": 0.018,
+          "panel": "fundus",
+          "shapeKey": "disc",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "macula-lutea-eye",
+          "x": 0.1407,
+          "y": 0.53,
+          "radius": 0.018,
+          "panel": "fundus",
+          "shapeKey": "macula",
+          "ownColourInteriorPx": 25,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "fovea-centralis-eye",
+          "x": 0.1724,
+          "y": 0.504,
+          "radius": 0.018,
+          "panel": "fundus",
+          "shapeKey": "fovea",
+          "ownColourInteriorPx": 11,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "optic-nerve-eye",
+          "x": 0.8483,
+          "y": 0.504,
+          "radius": 0.018,
+          "panel": "nerve-head",
+          "shapeKey": "nerve",
+          "ownColourInteriorPx": 56,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "retina-eye",
+          "x": 0.6234,
+          "y": 0.25,
+          "radius": 0.018,
+          "panel": "nerve-head",
+          "shapeKey": "retina",
+          "ownColourInteriorPx": 26,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "optic-disc-eye",
+          "x": 0.6483,
+          "y": 0.512,
+          "radius": 0.018,
+          "panel": "nerve-head",
+          "shapeKey": "optic-disc",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "0fbc1f445f7e253181467f6b65b3d81ed24b6d672bdddb33a8a8522eab427599",
+        "png": "06c7147a99b6520aa34015a6e05fda2e7a56b4d7d61f01dfd88ff33042320b66"
+      }
+    },
+    {
+      "id": "asset-servier-ear-section",
+      "plate": 17,
+      "moduleId": "special-senses",
+      "teachingKind": "gross-diagram",
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-servier-ear-section",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-17-ear-section.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-17-ear-section.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Outer, middle and inner ear in one coronal section of the temporal bone.",
+      "orientation": "coronal section of the right ear; lateral (outside) at viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "auricle-ear",
+          "x": 0.1034,
+          "y": 0.45,
+          "radius": 0.018,
+          "panel": "coronal-section",
+          "shapeKey": "auricle",
+          "ownColourInteriorPx": 52,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "external-acoustic-meatus-ear",
+          "x": 0.2386,
+          "y": 0.494,
+          "radius": 0.018,
+          "panel": "coronal-section",
+          "shapeKey": "meatus",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "tympanic-membrane-ear",
+          "x": 0.3379,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "coronal-section",
+          "shapeKey": "tm",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "auditory-tube-ear",
+          "x": 0.5103,
+          "y": 0.712,
+          "radius": 0.018,
+          "panel": "coronal-section",
+          "shapeKey": "auditory-tube",
+          "ownColourInteriorPx": 14,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "vestibule-ear",
+          "x": 0.4924,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "coronal-section",
+          "shapeKey": "vestibule",
+          "ownColourInteriorPx": 62,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "semicircular-canals-ear",
+          "x": 0.571,
+          "y": 0.322,
+          "radius": 0.018,
+          "panel": "coronal-section",
+          "shapeKey": "semicircular-canals",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cochlea-ear",
+          "x": 0.6207,
+          "y": 0.66,
+          "radius": 0.018,
+          "panel": "coronal-section",
+          "shapeKey": "cochlea",
+          "ownColourInteriorPx": 40,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "vestibulocochlear-nerve-ear",
+          "x": 0.6897,
+          "y": 0.494,
+          "radius": 0.018,
+          "panel": "coronal-section",
+          "shapeKey": "vcn",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "f3e2328be441049cdaa34838376f4c1ba8422219f148c491227388e884bfa560",
+        "png": "d9728e6deca7e901984d4df3ff6f1daee97631b2dba80619367f3b07d1596727"
+      }
+    },
+    {
+      "id": "asset-bvis04-middle-ear",
+      "plate": 18,
+      "moduleId": "special-senses",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-18-middle-ear.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-18-middle-ear.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Ossicle chain from tympanic membrane to the oval window, and the two cochlear windows.",
+      "orientation": "enlarged coronal view of the right middle ear; lateral at viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "tympanic-membrane-ear",
+          "x": 0.3917,
+          "y": 0.584,
+          "radius": 0.018,
+          "panel": "middle-ear",
+          "shapeKey": "tm",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "malleus-ear",
+          "x": 0.4483,
+          "y": 0.554,
+          "radius": 0.018,
+          "panel": "middle-ear",
+          "shapeKey": "malleus",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "incus-ear",
+          "x": 0.5462,
+          "y": 0.526,
+          "radius": 0.018,
+          "panel": "middle-ear",
+          "shapeKey": "incus",
+          "ownColourInteriorPx": 34,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stapes-ear",
+          "x": 0.6221,
+          "y": 0.69,
+          "radius": 0.018,
+          "panel": "middle-ear",
+          "shapeKey": "stapes",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "oval-window-ear",
+          "x": 0.6414,
+          "y": 0.662,
+          "radius": 0.018,
+          "panel": "middle-ear",
+          "shapeKey": "oval",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "round-window-ear",
+          "x": 0.6538,
+          "y": 0.912,
+          "radius": 0.018,
+          "panel": "middle-ear",
+          "shapeKey": "round",
+          "ownColourInteriorPx": 22,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "auditory-tube-ear",
+          "x": 0.6414,
+          "y": 0.96,
+          "radius": 0.018,
+          "panel": "middle-ear",
+          "shapeKey": "auditory-tube",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "737dafdf14583eca328ff69a0464b202d4e18d055f6a926942e98452a68cc0f5",
+        "png": "76a77fb2529b9df83866d002f72a13460e60ef3727c3e62192765a9fc2f9c815"
+      }
+    },
+    {
+      "id": "asset-bvis04-inner-ear-vestibular",
+      "plate": 19,
+      "moduleId": "special-senses",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-19-inner-ear-vestibular.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-19-inner-ear-vestibular.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Bony labyrinth with membranous utricle, saccule and canal ducts, and where the cochlea attaches.",
+      "orientation": "flattened schematic of the right labyrinth; lateral at viewer left, cochlea at the bottom",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "vestibule-ear",
+          "x": 0.5697,
+          "y": 0.596,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "vestibule",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "utricle-ear",
+          "x": 0.5103,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "utricle",
+          "ownColourInteriorPx": 38,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "saccule-ear",
+          "x": 0.4924,
+          "y": 0.59,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "saccule",
+          "ownColourInteriorPx": 28,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "semicircular-canals-ear",
+          "x": 0.4966,
+          "y": 0.214,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "semicircular-canals",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "semicircular-ducts-ear",
+          "x": 0.6069,
+          "y": 0.41,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "semicircular-ducts",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cochlea-ear",
+          "x": 0.6207,
+          "y": 0.84,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "cochlea",
+          "ownColourInteriorPx": 76,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "vestibulocochlear-nerve-ear",
+          "x": 0.7338,
+          "y": 0.56,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "vcn",
+          "ownColourInteriorPx": 14,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "oval-window-ear",
+          "x": 0.4138,
+          "y": 0.574,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "oval",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "round-window-ear",
+          "x": 0.4759,
+          "y": 0.758,
+          "radius": 0.018,
+          "panel": "labyrinth",
+          "shapeKey": "round",
+          "ownColourInteriorPx": 12,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "d0d5078dce31c42e6e1687234e28ddbea44f1a799c060b1bddb0b66431b13af5",
+        "png": "366f5803bb6a3ae706c83095ecad863f842f86580a3bde740701447ec5f550ae"
+      }
+    },
+    {
+      "id": "asset-bvis04-cochlea-corti",
+      "plate": 20,
+      "moduleId": "special-senses",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-20-cochlea-corti.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-20-cochlea-corti.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Three cochlear ducts in cross-section and a schematic of the organ of Corti.",
+      "orientation": "left: cross-section of one cochlear turn, modiolus at left; right: enlargement of the organ of Corti",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "vestibular-duct-ear",
+          "x": 0.2759,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "cochlear-section",
+          "shapeKey": "vestibular-duct",
+          "ownColourInteriorPx": 42,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cochlear-duct-ear",
+          "x": 0.331,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "cochlear-section",
+          "shapeKey": "cochlear-duct",
+          "ownColourInteriorPx": 40,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "tympanic-duct-ear",
+          "x": 0.2828,
+          "y": 0.64,
+          "radius": 0.018,
+          "panel": "cochlear-section",
+          "shapeKey": "tympanic-duct",
+          "ownColourInteriorPx": 60,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cochlea-ear",
+          "x": 0.1862,
+          "y": 0.76,
+          "radius": 0.018,
+          "panel": "cochlear-section",
+          "shapeKey": "cochlea",
+          "ownColourInteriorPx": 20,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hair-cells-ear",
+          "x": 0.6483,
+          "y": 0.66,
+          "radius": 0.018,
+          "panel": "organ-of-corti",
+          "shapeKey": "hair",
+          "ownColourInteriorPx": 28,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "organ-of-corti-ear",
+          "x": 0.7062,
+          "y": 0.664,
+          "radius": 0.018,
+          "panel": "organ-of-corti",
+          "shapeKey": "corti",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "78328f1df83d89fe0dc352e00e480c891be61a8e12cd52d820402ea9e43aed92",
+        "png": "a54af41d6c5acf2b4d2cbb493b863d0dd483f5e17ab0b36f65c1f6032e8f5aa2"
+      }
+    },
+    {
+      "id": "asset-bvis04-smell-taste",
+      "plate": 21,
+      "moduleId": "special-senses",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-21-smell-taste.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-21-smell-taste.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Compact overview of olfactory pathway and taste innervation.",
+      "orientation": "left: sagittal nose, anterior at viewer left; middle: epithelium, lumen at top; right: tongue dorsal view, tip at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "olfactory-epithelium-sense",
+          "x": 0.2317,
+          "y": 0.432,
+          "radius": 0.018,
+          "panel": "olfaction",
+          "shapeKey": "olfactory-epithelium",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "olfactory-bulb-sense",
+          "x": 0.2207,
+          "y": 0.27,
+          "radius": 0.018,
+          "panel": "olfaction",
+          "shapeKey": "olfactory-bulb",
+          "ownColourInteriorPx": 36,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "olfactory-nerve-sense",
+          "x": 0.2193,
+          "y": 0.378,
+          "radius": 0.018,
+          "panel": "olfaction",
+          "shapeKey": "olfactory-nerve",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "olfactory-receptor-sense",
+          "x": 0.5103,
+          "y": 0.404,
+          "radius": 0.018,
+          "panel": "olfactory-epithelium",
+          "shapeKey": "olfactory-receptor",
+          "ownColourInteriorPx": 14,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "facial-nerve-taste",
+          "x": 0.8345,
+          "y": 0.214,
+          "radius": 0.018,
+          "panel": "taste",
+          "shapeKey": "facial-nerve-taste",
+          "ownColourInteriorPx": 69,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "glossopharyngeal-nerve-taste",
+          "x": 0.8345,
+          "y": 0.344,
+          "radius": 0.018,
+          "panel": "taste",
+          "shapeKey": "glossopharyngeal-nerve-taste",
+          "ownColourInteriorPx": 26,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "vagus-nerve-taste",
+          "x": 0.8345,
+          "y": 0.436,
+          "radius": 0.018,
+          "panel": "taste",
+          "shapeKey": "vagus-nerve-taste",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "taste-bud-sense",
+          "x": 0.8138,
+          "y": 0.768,
+          "radius": 0.018,
+          "panel": "taste",
+          "shapeKey": "taste-bud",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "gustatory-receptor-sense",
+          "x": 0.8441,
+          "y": 0.7,
+          "radius": 0.018,
+          "panel": "taste",
+          "shapeKey": "gustatory-receptor",
+          "ownColourInteriorPx": 12,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "9904fbd8b9999aadc8d8588d52548da7fe272d96dc42421e59bfe9bb93ef3248",
+        "png": "4ae6dc74303b941bb28a0b3ef7ffd9ba3f81d6364016836fa3bad171551c3269"
+      }
+    },
+    {
+      "id": "asset-openstax-historical-skin-structure",
+      "plate": 22,
+      "moduleId": "integumentary-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-historical-skin-structure",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-22-skin-overview.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-22-skin-overview.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Skin in section: three layers and the appendages and receptors found in each.",
+      "orientation": "vertical section of thin hairy skin; surface at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "epidermis-skin",
+          "x": 0.2069,
+          "y": 0.174,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "epidermis",
+          "ownColourInteriorPx": 24,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dermis-skin",
+          "x": 0.1379,
+          "y": 0.4,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "dermis",
+          "ownColourInteriorPx": 56,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hypodermis-skin",
+          "x": 0.6207,
+          "y": 0.898,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "hypodermis",
+          "ownColourInteriorPx": 18,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hair-follicle-skin",
+          "x": 0.3931,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "hair-follicle",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hair-shaft-skin",
+          "x": 0.3862,
+          "y": 0.1,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "hair-shaft",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sebaceous-gland-skin",
+          "x": 0.4552,
+          "y": 0.36,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "sebaceous-gland",
+          "ownColourInteriorPx": 13,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "arrector-pili-skin",
+          "x": 0.3379,
+          "y": 0.32,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "arrector-pili",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hair-root-plexus-skin",
+          "x": 0.4028,
+          "y": 0.57,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "hair-root-plexus",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "eccrine-sweat-gland",
+          "x": 0.6069,
+          "y": 0.69,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "eccrine",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sweat-pore-skin",
+          "x": 0.6207,
+          "y": 0.134,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "pore",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "apocrine-sweat-gland",
+          "x": 0.9007,
+          "y": 0.714,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "apocrine",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "tactile-corpuscle-skin",
+          "x": 0.2772,
+          "y": 0.242,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "tactile",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "free-nerve-ending-skin",
+          "x": 0.4814,
+          "y": 0.2,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "free-nerve",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "lamellated-corpuscle-skin",
+          "x": 0.1959,
+          "y": 0.77,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "lamellated",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cutaneous-blood-vessels-skin",
+          "x": 0.2069,
+          "y": 0.456,
+          "radius": 0.018,
+          "panel": "section",
+          "shapeKey": "vessels",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "051449a97efa0847137c29c523833f341e8db0a1c9d793a0239e2ebd97335704",
+        "png": "999591413157322117cf8547d508ba92e530c86ca81c69112675e08516cc4c0d"
+      }
+    },
+    {
+      "id": "asset-bvis04-epidermis-strata",
+      "plate": 23,
+      "moduleId": "integumentary-system",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-23-epidermis-strata.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-23-epidermis-strata.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Epidermal strata in thick skin with the four cell types, compared with thin skin that lacks a lucidum.",
+      "orientation": "vertical sections; surface at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "stratum-corneum",
+          "x": 0.1379,
+          "y": 0.238,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "stratum-corneum",
+          "ownColourInteriorPx": 82,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratum-lucidum",
+          "x": 0.1379,
+          "y": 0.45,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "stratum-lucidum",
+          "ownColourInteriorPx": 24,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratum-granulosum",
+          "x": 0.2069,
+          "y": 0.506,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "stratum-granulosum",
+          "ownColourInteriorPx": 34,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratum-spinosum",
+          "x": 0.1228,
+          "y": 0.61,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "stratum-spinosum",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratum-basale",
+          "x": 0.0828,
+          "y": 0.76,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "stratum-basale",
+          "ownColourInteriorPx": 30,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "keratinocyte-skin",
+          "x": 0.3614,
+          "y": 0.626,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "keratinocyte",
+          "ownColourInteriorPx": 5,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "melanocyte-skin",
+          "x": 0.2069,
+          "y": 0.768,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "melanocyte",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "merkel-cell-skin",
+          "x": 0.3241,
+          "y": 0.762,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "merkel",
+          "ownColourInteriorPx": 17,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "langerhans-cell-skin",
+          "x": 0.4414,
+          "y": 0.61,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "langerhans",
+          "ownColourInteriorPx": 11,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "tactile-corpuscle-skin",
+          "x": 0.4207,
+          "y": 0.856,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "tactile",
+          "ownColourInteriorPx": 20,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dermal-papilla-skin",
+          "x": 0.389,
+          "y": 0.87,
+          "radius": 0.018,
+          "panel": "thick-skin",
+          "shapeKey": "dermal-papilla",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratum-corneum",
+          "x": 0.7586,
+          "y": 0.588,
+          "radius": 0.018,
+          "panel": "thin-skin",
+          "shapeKey": "stratum-corneum",
+          "ownColourInteriorPx": 26,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratum-granulosum",
+          "x": 0.7586,
+          "y": 0.628,
+          "radius": 0.018,
+          "panel": "thin-skin",
+          "shapeKey": "stratum-granulosum",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratum-spinosum",
+          "x": 0.7103,
+          "y": 0.688,
+          "radius": 0.018,
+          "panel": "thin-skin",
+          "shapeKey": "stratum-spinosum",
+          "ownColourInteriorPx": 13,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratum-basale",
+          "x": 0.6759,
+          "y": 0.758,
+          "radius": 0.018,
+          "panel": "thin-skin",
+          "shapeKey": "stratum-basale",
+          "ownColourInteriorPx": 24,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "4478554e7ff14b324b28ae2984124ca0b504a05b618e9d28377d8b184e8bac88",
+        "png": "808204d06221e5869cf1dff4c3569dc2aab87b4b800a2d77d515d1d48e4c7a70"
+      }
+    },
+    {
+      "id": "asset-bvis04-dermis-hypodermis",
+      "plate": 24,
+      "moduleId": "integumentary-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-24-dermis-hypodermis.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-24-dermis-hypodermis.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Papillary versus reticular dermis, their fibres and vessels, and the fatty hypodermis.",
+      "orientation": "vertical section; surface at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "papillary-layer-skin",
+          "x": 0.1021,
+          "y": 0.284,
+          "radius": 0.018,
+          "panel": "dermis",
+          "shapeKey": "papillary",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "reticular-layer-skin",
+          "x": 0.6207,
+          "y": 0.508,
+          "radius": 0.018,
+          "panel": "dermis",
+          "shapeKey": "reticular",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dermis-skin",
+          "x": 0.5241,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "dermis",
+          "shapeKey": "papillary+reticular",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dermal-papilla-skin",
+          "x": 0.2207,
+          "y": 0.224,
+          "radius": 0.018,
+          "panel": "dermis",
+          "shapeKey": "papillary",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "collagen-skin",
+          "x": 0.4138,
+          "y": 0.394,
+          "radius": 0.018,
+          "panel": "dermis",
+          "shapeKey": "collagen",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "elastic-fibers-skin",
+          "x": 0.6897,
+          "y": 0.592,
+          "radius": 0.018,
+          "panel": "dermis",
+          "shapeKey": "elastic",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cutaneous-blood-vessels-skin",
+          "x": 0.1724,
+          "y": 0.624,
+          "radius": 0.018,
+          "panel": "dermis",
+          "shapeKey": "vessels",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hypodermis-skin",
+          "x": 0.1379,
+          "y": 0.82,
+          "radius": 0.018,
+          "panel": "dermis",
+          "shapeKey": "hypodermis",
+          "ownColourInteriorPx": 110,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "bfcecd21e076fa8d76f369ee20d9d24bb9c34180030dc9a4a03894ea56812c32",
+        "png": "75c1abff647549640ed3401022531f7d2dcbbf2dd803c9d6a1f952d63ceb544a"
+      }
+    },
+    {
+      "id": "asset-bvis04-hair-follicle",
+      "plate": 25,
+      "moduleId": "integumentary-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-25-hair-follicle.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-25-hair-follicle.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Hair follicle in longitudinal section with root, bulb, papilla, sebaceous gland and arrector pili.",
+      "orientation": "longitudinal section of one hair follicle; skin surface at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "hair-shaft-skin",
+          "x": 0.4993,
+          "y": 0.1,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "hair-shaft",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hair-root-skin",
+          "x": 0.4993,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "hair-root",
+          "ownColourInteriorPx": 20,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hair-follicle-skin",
+          "x": 0.4621,
+          "y": 0.33,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "hair-follicle",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "hair-bulb-skin",
+          "x": 0.4759,
+          "y": 0.754,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "bulb",
+          "ownColourInteriorPx": 17,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dermal-papilla-hair",
+          "x": 0.4993,
+          "y": 0.792,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "papilla",
+          "ownColourInteriorPx": 30,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sebaceous-gland-skin",
+          "x": 0.6124,
+          "y": 0.44,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "sebaceous",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sebaceous-duct-skin",
+          "x": 0.5476,
+          "y": 0.364,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "sebduct",
+          "ownColourInteriorPx": 10,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "arrector-pili-skin",
+          "x": 0.4069,
+          "y": 0.364,
+          "radius": 0.018,
+          "panel": "follicle",
+          "shapeKey": "arrector",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "49e89cdeac929e24b2a879dc7348a7a22ef6d63806ed589f1f28a246efa6177e",
+        "png": "0df756a550650cf416bc67a1c71c3d5497a9548cb255bf43c7e59c9a2230f09b"
+      }
+    },
+    {
+      "id": "asset-gray946-sweat-gland",
+      "plate": 26,
+      "moduleId": "integumentary-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-gray946-sweat-gland",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-26-sweat-glands.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-26-sweat-glands.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Eccrine versus apocrine sweat gland, with the sebaceous gland and duct on a hair follicle.",
+      "orientation": "vertical sections; skin surface at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "sweat-pore-skin",
+          "x": 0.2579,
+          "y": 0.114,
+          "radius": 0.018,
+          "panel": "eccrine",
+          "shapeKey": "pore",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "eccrine-sweat-gland",
+          "x": 0.2372,
+          "y": 0.25,
+          "radius": 0.018,
+          "panel": "eccrine",
+          "shapeKey": "eccrine",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "apocrine-sweat-gland",
+          "x": 0.8524,
+          "y": 0.784,
+          "radius": 0.018,
+          "panel": "apocrine",
+          "shapeKey": "apocrine",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sebaceous-gland-skin",
+          "x": 0.7793,
+          "y": 0.42,
+          "radius": 0.018,
+          "panel": "apocrine",
+          "shapeKey": "sebaceous",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "sebaceous-duct-skin",
+          "x": 0.7462,
+          "y": 0.39,
+          "radius": 0.018,
+          "panel": "apocrine",
+          "shapeKey": "sebduct",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "faa7773c38a5dda43eccd1e93eb04a67ff369b56787b09a8ed212c7cd4ddd3bc",
+        "png": "6f94674ecf23765ef12cc6cb3bcd723eb3c00859dfc2c047b0d89d9af8facaf5"
+      }
+    },
+    {
+      "id": "asset-bvis04-epithelia-simple",
+      "plate": 27,
+      "moduleId": "cells-tissues",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-27-epithelia-simple.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-27-epithelia-simple.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Simple squamous, cuboidal and columnar epithelium with the basement membrane.",
+      "orientation": "schematic sections; apical surface at top, connective tissue below",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "simple-squamous-epithelium",
+          "x": 0.1628,
+          "y": 0.624,
+          "radius": 0.018,
+          "panel": "squamous",
+          "shapeKey": "simple-squamous-epithelium",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "simple-cuboidal-epithelium",
+          "x": 0.4786,
+          "y": 0.584,
+          "radius": 0.018,
+          "panel": "cuboidal",
+          "shapeKey": "simple-cuboidal-epithelium",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "simple-columnar-epithelium",
+          "x": 0.7586,
+          "y": 0.54,
+          "radius": 0.018,
+          "panel": "columnar",
+          "shapeKey": "simple-columnar-epithelium",
+          "ownColourInteriorPx": 20,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "basement-membrane-tissue",
+          "x": 0.8207,
+          "y": 0.642,
+          "radius": 0.018,
+          "panel": "columnar",
+          "shapeKey": "basement-membrane-tissue",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "72deb41e67b5d23ebf8f8f5fb0167f8ec005e8de78b2b0afb7937d308dbf5af0",
+        "png": "ce7b793b4a9eed51a39f41a3a09a1ec2ca5b149e8f1a6115063f53af356d6852"
+      }
+    },
+    {
+      "id": "asset-bvis04-epithelia-stratified",
+      "plate": 28,
+      "moduleId": "cells-tissues",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-28-epithelia-stratified.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-28-epithelia-stratified.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Pseudostratified, stratified squamous keratinized and non-keratinized epithelium.",
+      "orientation": "schematic sections; apical surface at top, connective tissue below",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "pseudostratified-epithelium",
+          "x": 0.08,
+          "y": 0.536,
+          "radius": 0.018,
+          "panel": "pseudostratified",
+          "shapeKey": "pseudostratified-epithelium",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "goblet-cell-tissue",
+          "x": 0.1586,
+          "y": 0.52,
+          "radius": 0.018,
+          "panel": "pseudostratified",
+          "shapeKey": "goblet-cell-tissue",
+          "ownColourInteriorPx": 32,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratified-squamous-keratinized",
+          "x": 0.4828,
+          "y": 0.37,
+          "radius": 0.018,
+          "panel": "keratinized",
+          "shapeKey": "stratified-squamous-keratinized",
+          "ownColourInteriorPx": 30,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratified-squamous-nonkeratinized",
+          "x": 0.7752,
+          "y": 0.59,
+          "radius": 0.018,
+          "panel": "nonkeratinized",
+          "shapeKey": "stratified-squamous-nonkeratinized",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "2f19428f5b4feb0b0a8074719a8aaea1591878cf9e4df7404c50bf368bc7af2c",
+        "png": "e3eb6c9e4fe47a8d5f93f7814e5cdbbc4c3367cdf31e961f4a6d5cb0d84bf096"
+      }
+    },
+    {
+      "id": "asset-bvis04-epithelia-other-stratified",
+      "plate": 29,
+      "moduleId": "cells-tissues",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-29-epithelia-other-stratified.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-29-epithelia-other-stratified.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Stratified cuboidal, stratified columnar and transitional epithelium.",
+      "orientation": "schematic sections; lumen at top, connective tissue below",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "stratified-cuboidal-epithelium",
+          "x": 0.1779,
+          "y": 0.554,
+          "radius": 0.018,
+          "panel": "stratified-cuboidal",
+          "shapeKey": "stratified-cuboidal-epithelium",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "stratified-columnar-epithelium",
+          "x": 0.4828,
+          "y": 0.51,
+          "radius": 0.018,
+          "panel": "stratified-columnar",
+          "shapeKey": "stratified-columnar-epithelium",
+          "ownColourInteriorPx": 11,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "transitional-epithelium",
+          "x": 0.7338,
+          "y": 0.53,
+          "radius": 0.018,
+          "panel": "transitional",
+          "shapeKey": "transitional-epithelium",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "74113c937bed983562ef05e9a86bb3c75c59a08aa5f68621c4781e0174db6bf9",
+        "png": "d53e3ef53cb062a78847d8d24bf65f374932840f7152973d3c2d666f1e17ad4d"
+      }
+    },
+    {
+      "id": "asset-bvis04-connective-loose",
+      "plate": 30,
+      "moduleId": "cells-tissues",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-30-connective-loose.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-30-connective-loose.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Areolar, adipose and reticular connective tissue.",
+      "orientation": "schematic fields; no polarity",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "areolar-connective-tissue",
+          "x": 0.1034,
+          "y": 0.82,
+          "radius": 0.018,
+          "panel": "areolar",
+          "shapeKey": "areolar-connective-tissue",
+          "ownColourInteriorPx": 60,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "collagen-fiber-tissue",
+          "x": 0.1338,
+          "y": 0.324,
+          "radius": 0.018,
+          "panel": "areolar",
+          "shapeKey": "collagen-fiber-tissue",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "elastic-fiber-tissue",
+          "x": 0.0897,
+          "y": 0.48,
+          "radius": 0.018,
+          "panel": "areolar",
+          "shapeKey": "elastic-fiber-tissue",
+          "ownColourInteriorPx": 6,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "adipose-connective-tissue",
+          "x": 0.4717,
+          "y": 0.4,
+          "radius": 0.018,
+          "panel": "adipose",
+          "shapeKey": "adipose-connective-tissue",
+          "ownColourInteriorPx": 20,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "reticular-connective-tissue",
+          "x": 0.8,
+          "y": 0.4,
+          "radius": 0.018,
+          "panel": "reticular",
+          "shapeKey": "reticular-connective-tissue",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "601adb9b79742796df68c4e3e6b50e2dfe1921f478e7c7f6410b294fb24ce8fb",
+        "png": "bfadf62a0259aa2e36c606e8a33440daeaf54a7fd65901b607eabc8ccdd623ba"
+      }
+    },
+    {
+      "id": "asset-bvis04-connective-dense",
+      "plate": 31,
+      "moduleId": "cells-tissues",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-31-connective-dense.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-31-connective-dense.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Dense regular, dense irregular and elastic connective tissue.",
+      "orientation": "schematic fields; regular tissue shown along the fibre axis",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "dense-regular-connective-tissue",
+          "x": 0.1034,
+          "y": 0.23,
+          "radius": 0.018,
+          "panel": "regular",
+          "shapeKey": "dense-regular-connective-tissue",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "dense-irregular-connective-tissue",
+          "x": 0.5131,
+          "y": 0.43,
+          "radius": 0.018,
+          "panel": "irregular",
+          "shapeKey": "dense-irregular-connective-tissue",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "elastic-connective-tissue",
+          "x": 0.8345,
+          "y": 0.436,
+          "radius": 0.018,
+          "panel": "elastic",
+          "shapeKey": "elastic-connective-tissue",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "db43ac91e11907dd2e42439e38ae2950dae01baca3d29aefd64f3953cfe931b6",
+        "png": "b9b81bcd01ed6de603cde299024cdb805ffaee42c7b70a4d5b97ed2a8d2e783e"
+      }
+    },
+    {
+      "id": "asset-bvis04-cartilage",
+      "plate": 32,
+      "moduleId": "cells-tissues",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-32-cartilage.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-32-cartilage.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Hyaline, elastic and fibrocartilage.",
+      "orientation": "schematic fields; no polarity",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "hyaline-cartilage-tissue",
+          "x": 0.2483,
+          "y": 0.4,
+          "radius": 0.018,
+          "panel": "hyaline",
+          "shapeKey": "hyaline-cartilage-tissue",
+          "ownColourInteriorPx": 87,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "lacuna-tissue",
+          "x": 0.1131,
+          "y": 0.3,
+          "radius": 0.018,
+          "panel": "hyaline",
+          "shapeKey": "lacuna",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "elastic-cartilage-tissue",
+          "x": 0.4993,
+          "y": 0.36,
+          "radius": 0.018,
+          "panel": "elastic",
+          "shapeKey": "elastic-cartilage-tissue",
+          "ownColourInteriorPx": 36,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "fibrocartilage-tissue",
+          "x": 0.8,
+          "y": 0.474,
+          "radius": 0.018,
+          "panel": "fibro",
+          "shapeKey": "fibrocartilage-tissue",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "ee12f4a7746cfd5f21a0c374c9e34b834d101508d2944e298b0e74168fd71e7e",
+        "png": "382c845027c66caea7565746ea732ae47eb7323270660b9264700d8b3c1a2864"
+      }
+    },
+    {
+      "id": "asset-bvis04-muscle-tissue",
+      "plate": 33,
+      "moduleId": "cells-tissues",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-33-muscle-tissue.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-33-muscle-tissue.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Skeletal, cardiac and smooth muscle with the intercalated disc.",
+      "orientation": "schematic longitudinal fields; no polarity",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "skeletal-muscle-tissue",
+          "x": 0.1724,
+          "y": 0.19,
+          "radius": 0.018,
+          "panel": "skeletal",
+          "shapeKey": "skeletal-muscle-tissue",
+          "ownColourInteriorPx": 50,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "cardiac-muscle-tissue",
+          "x": 0.3959,
+          "y": 0.21,
+          "radius": 0.018,
+          "panel": "cardiac",
+          "shapeKey": "cardiac-muscle-tissue",
+          "ownColourInteriorPx": 36,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "intercalated-disc-tissue",
+          "x": 0.4924,
+          "y": 0.21,
+          "radius": 0.018,
+          "panel": "cardiac",
+          "shapeKey": "intercalated-disc-tissue",
+          "ownColourInteriorPx": 4,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "smooth-muscle-tissue",
+          "x": 0.8428,
+          "y": 0.328,
+          "radius": 0.018,
+          "panel": "smooth",
+          "shapeKey": "smooth-muscle-tissue",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "b6073e4648d534ed579a3ae91be543f7a7372e69cd0a51652ed1f492a197f166",
+        "png": "1bf504cc534fbf58d2fd40dc71ecb89af1e420725e6df0f84f3b6575020f7608"
+      }
+    },
+    {
+      "id": "asset-bvis04-nervous-tissue",
+      "plate": 34,
+      "moduleId": "cells-tissues",
+      "teachingKind": "tissue-schematic",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-34-nervous-tissue.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-34-nervous-tissue.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Neuron structure and the supporting neuroglia.",
+      "orientation": "schematic cells; no polarity",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "histologyNotice": "Explicit schematic drawing; not a photomicrograph and not traced from one.",
+      "featureAnchorMapping": [
+        {
+          "structureId": "neuron-tissue",
+          "x": 0.1655,
+          "y": 0.508,
+          "radius": 0.018,
+          "panel": "neuron",
+          "shapeKey": "neuron-tissue",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "neuroglia-tissue",
+          "x": 0.7103,
+          "y": 0.25,
+          "radius": 0.018,
+          "panel": "neuroglia",
+          "shapeKey": "neuroglia-tissue",
+          "ownColourInteriorPx": 8,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "101b9a5041c699e8476881ca0f922aedd82e7aa81e8f53b662d32c92536b945c",
+        "png": "8a1683b1d2d29bc654c5a6b1fc69ec3c89e000f3fcfe70321cd7359134eeef8f"
+      }
+    },
+    {
+      "id": "asset-bvis04-nail-section",
+      "plate": 35,
+      "moduleId": "integumentary-system",
+      "teachingKind": "gross-diagram",
+      "disposition": "addition",
+      "creator": "Boneefied",
+      "rights": "Original work by Boneefied, all rights retained; no third-party illustration imported, traced or reproduced.",
+      "svgPath": "assets/images/anatomy/bvis04-atlas/bvis04-35-nail-section.svg",
+      "pngPath": "assets/images/anatomy/bvis04-atlas/bvis04-35-nail-section.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/bvis04-*.mjs. References consulted for textbook anatomical facts only.",
+      "references": [
+        {
+          "source": "https://openstax.org/books/anatomy-and-physiology-2e (text-only factual cross-check; no OpenStax illustration used)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK10799/ (Neuroscience, 2nd ed., NCBI Bookshelf - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "https://www.ncbi.nlm.nih.gov/books/NBK546599/ (StatPearls anatomy chapters - text-only)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Standring S, ed. Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd ed. (textbook facts only; no figures reproduced)",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "source": "Mescher AL. Junqueira's Basic Histology, 16th ed. (textbook facts for tissue morphology; schematics are original)",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Nail in longitudinal section: plate, bed, root and matrix.",
+      "orientation": "longitudinal section of a fingertip; distal end at right, dorsal at top",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "nail-plate-skin",
+          "x": 0.6097,
+          "y": 0.312,
+          "radius": 0.018,
+          "panel": "fingertip",
+          "shapeKey": "nail-plate-skin",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "nail-bed-skin",
+          "x": 0.6097,
+          "y": 0.352,
+          "radius": 0.018,
+          "panel": "fingertip",
+          "shapeKey": "nail-bed-skin",
+          "ownColourInteriorPx": 16,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "nail-root-skin",
+          "x": 0.3614,
+          "y": 0.328,
+          "radius": 0.018,
+          "panel": "fingertip",
+          "shapeKey": "nail-root-skin",
+          "ownColourInteriorPx": 18,
+          "verifiedOnIdMap": true
+        },
+        {
+          "structureId": "nail-matrix-skin",
+          "x": 0.3531,
+          "y": 0.382,
+          "radius": 0.018,
+          "panel": "fingertip",
+          "shapeKey": "nail-matrix-skin",
+          "ownColourInteriorPx": 38,
+          "verifiedOnIdMap": true
+        }
+      ],
+      "sha256": {
+        "svg": "64bee1257dab28497ff4f3a852ab57fdc053b1df09dd87eff59e878b284bd490",
+        "png": "950c95bdc77d45fbe1b87be42f2999155be4e743dbcff3fb69baaac50b285103"
+      }
+    }
+  ]
+}

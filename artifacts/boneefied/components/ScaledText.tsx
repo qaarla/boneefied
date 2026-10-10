@@ -45,7 +45,7 @@ export function useTypographyLayout() {
     systemFontScale,
     isLargeText: needsLargeTextLayout(systemFontScale, preference),
     isCompactTextLayout: needsCompactTextLayout(width, systemFontScale, preference),
-    isExpandedTabLayout: needsExpandedTabLayout(systemFontScale, preference),
+    isExpandedTabLayout: needsExpandedTabLayout(systemFontScale, preference, width),
     shouldReflow: needsResponsiveTextLayout(width, systemFontScale, preference),
   };
 }

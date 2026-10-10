@@ -1,0 +1,64 @@
+{
+  "command": "BVIS06",
+  "checkedAt": "2026-10-10",
+  "policy": "Only factual text accessed; no external illustration pixels imported, traced or reproduced.",
+  "pages": [
+    {
+      "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+      "access": "Live text-only fetch",
+      "receivedCharacters": 34546,
+      "truncated": false
+    },
+    {
+      "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-4-the-stomach",
+      "access": "Live text-only fetch",
+      "receivedCharacters": 35927,
+      "truncated": false
+    },
+    {
+      "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-5-the-small-and-large-intestines",
+      "access": "Live text-only fetch",
+      "receivedCharacters": 50013,
+      "truncated": true
+    },
+    {
+      "url": "https://openstax.org/books/anatomy-and-physiology/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+      "access": "Live text-only fetch",
+      "receivedCharacters": 20639,
+      "truncated": false
+    },
+    {
+      "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-3-gross-anatomy-of-the-kidney",
+      "access": "Live text-only fetch",
+      "receivedCharacters": 12728,
+      "truncated": false
+    },
+    {
+      "url": "https://openstax.org/books/anatomy-and-physiology/pages/25-4-microscopic-anatomy-of-the-kidney",
+      "access": "Live text-only fetch",
+      "receivedCharacters": 29606,
+      "truncated": false
+    },
+    {
+      "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-1-anatomy-and-physiology-of-the-male-reproductive-system",
+      "access": "Live text-only fetch",
+      "receivedCharacters": 50013,
+      "truncated": true
+    },
+    {
+      "url": "https://openstax.org/books/anatomy-and-physiology/pages/27-2-anatomy-and-physiology-of-the-female-reproductive-system",
+      "access": "Live text-only fetch",
+      "receivedCharacters": 50013,
+      "truncated": true
+    }
+  ],
+  "checks": [
+    "Right kidney inferior to left because of liver; both retroperitoneal.",
+    "Duodenum surrounds pancreas head; bile and main pancreatic duct enter via ampulla and major papilla.",
+    "Jejunum and ileum tethered to posterior wall by mesentery.",
+    "Renal pyramids drain papillae into minor then major calyces and pelvis.",
+    "Testicular drainage joins epididymis then ductus, ejaculatory duct and urethra.",
+    "Uterine tube adjacent to, not sealed directly to, ovary; infundibulum lateral and isthmus medial.",
+    "Corpus luteum follows ovulation and regresses to corpus albicans without pregnancy."
+  ]
+}

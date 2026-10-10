@@ -8,7 +8,7 @@ const practiceProgressUi = {
     es: 'La práctica utiliza las mismas estructuras y explicaciones con fuentes citadas que Estudio. Las preguntas con imágenes solo aparecen cuando se verifica la correspondencia entre respuestas y etiquetas.',
   },
   'practice.sessionSetup': { en: 'Session setup', es: 'Configuración de la sesión' },
-  'practice.eligibleQuestions': { en: 'Eligible questions: {count}. No duplicate padding.', es: 'Preguntas aptas: {count}. No se añaden preguntas duplicadas para completar la sesión.' },
+  'practice.eligibleQuestions': { en: 'Questions available: {count}.', es: 'Preguntas disponibles: {count}.' },
   'practice.questionCount.one': { en: '{count} question', es: '{count} pregunta' },
   'practice.questionCount.other': { en: '{count} questions', es: '{count} preguntas' },
   'practice.resumeSavedSession': { en: 'Resume saved session', es: 'Continuar la sesión guardada' },

@@ -8,6 +8,9 @@ import { content } from '@/content/canonical';
 import { createGlossaryIndex } from '@/content/glossary';
 import { searchAnatomy } from '@/content/search';
 import { anatomicalTerms, wordMeaning } from '@/content/anatomical-terms';
+import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
+import { combinedAtlasAssetsForStructure, withSynthesizedLabels } from '@/content/atlas-index';
+import { imageSources } from '@/content/imageSources';
 import { useColors } from '@/hooks/useColors';
 import { useLocale } from '@/locales/useLocale';
 
@@ -17,13 +20,15 @@ export default function GlossaryEntryScreen() {
   const { id, q } = useLocalSearchParams<{ id: string; q?: string }>();
   const router = useRouter();
   const colors = useColors();
-  const { language, t, module: localizeModule, structure: localizeStructure, citation, definition } = useLocale();
+  const { language, t, asset: localizeAsset, module: localizeModule, structure: localizeStructure, citation, definition } = useLocale();
   const entry = entries.get(id);
   const localizedStructure = entry ? localizeStructure(entry.structure) : undefined;
   const localizedModule = entry ? localizeModule(entry.module) : undefined;
   const matchedWord = entry && typeof q === 'string' ? searchAnatomy([entry], q, 1, language)[0]?.term : undefined;
   const meaning = matchedWord ? wordMeaning(matchedWord, language) : undefined;
   const relatedWords = entry ? anatomicalTerms.filter((term) => term.structureId === entry.structure.id) : [];
+
+  const plates = entry ? combinedAtlasAssetsForStructure(entry.structure.id).map((a) => { const t0 = localizeAsset(a); return a.labels?.length ? t0 : withSynthesizedLabels(t0, (id) => { const st = content.structures.find((x) => x.id === id); return st ? localizeStructure(st).canonicalName : id; }); }) : [];
 
   return <Screen>
     <Stack.Screen options={{ title: t('glossary.entryNavigationTitle') }} />
@@ -44,7 +49,15 @@ export default function GlossaryEntryScreen() {
           <Text style={{ color: colors.foreground }}>{definition(entry.structure.id, entry.definition)}</Text>
         </View>}
         <Text style={{ color: colors.mutedForeground }}>{localizedModule!.title} · {localizedStructure!.category}</Text>
+        <Text style={{ color: colors.mutedForeground }}>{language === 'es' ? 'Fuente de la definición' : 'Definition source'}: {citation(entry.structure.sourceId)}</Text>
       </AdaptiveCard>
+      {plates.length > 0 && <View style={styles.aliases}>
+        <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Lámina de atlas' : 'Atlas plate'}</Heading>
+        {plates.map((plate) => <View key={plate.id} style={styles.aliases}>
+          <AnatomyImageViewer source={imageSources[plate.id]} atlasLayout labels={plate.labels?.filter((l) => l.structureId === entry.structure.id)} revealLabels imageAspectRatio={plate.imageAspectRatio} caption={plate.title} />
+          <Text style={{ color: colors.mutedForeground }}>{language === 'es' ? 'Fuente de la ilustración' : 'Artwork source'}: {citation(plate.sourceId)}</Text>
+        </View>)}
+      </View>}
       {!meaning && relatedWords.length > 0 && <View style={styles.aliases}>
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Palabras relacionadas' : 'Related words'}</Heading>
         {relatedWords.map((term) => {
@@ -56,7 +69,6 @@ export default function GlossaryEntryScreen() {
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{t('glossary.acceptedSearchTerms')}</Heading>
         <Text style={{ color: colors.mutedForeground }}>{localizedStructure!.acceptedAliases.join(' · ')}</Text>
       </View>}
-      <Text style={{ color: colors.mutedForeground }}>{t('glossary.source', { source: citation(entry.structure.sourceId) })}</Text>
       <AdaptiveButton accessibilityRole="button"
         onPress={() => router.push(`/module/${entry.module.id}`)}
         style={[styles.action, { backgroundColor: colors.primary }]}>

@@ -1,0 +1,33 @@
+{
+  "verifiedOn": "2026-10-10",
+  "scope": "Existing unchanged alveolar specimen only; no new third-party image imports.",
+  "licenses": [
+    {
+      "assetId": "asset-commons-alveolar-sac",
+      "file": "Alveolar_sac.JPG",
+      "creator": "Jpogi",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+      "rightsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0",
+      "evidence": [
+        "| Date | 29 November 2006, 15:18:27 |",
+        "| Source | Own work |",
+        "| Author | [Jpogi](https://commons.wikimedia.org/wiki/User:Jpogi \"User:Jpogi\") |",
+        "This file is licensed under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons \"w:en:Creative Commons\") [Attribution-Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en \"creativecommons:by-sa/4.0/deed.en\") license.",
+        "- **attribution** – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.",
+        "- **share alike** – If you remix, transform, or build upon the material, you must distribute your contributions under the [same or compatible license](https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses \"ccorg:share-your-work/licensing-considerations/compatible-licenses\") as the original."
+      ],
+      "localPath": "assets/images/anatomy/commons-alveolar-sac.jpg",
+      "byteSize": 2224819,
+      "sha256": "35f8a56951bf2a6747c45388fc970c22652efd9f7de2b1482d830abd7f799a84",
+      "dimensions": [
+        2816,
+        2112
+      ],
+      "kind": "real-specimen-photomicrograph",
+      "modificationsInBvis05": "None. Existing local image bytes retained.",
+      "existingAdaptation": "Existing display-sized copy, no new tissue alteration. Share-alike terms retained for this specimen file, separately from original diagrams.",
+      "stainMagnificationOrganism": "Not newly asserted; no inference from color or appearance."
+    }
+  ]
+}

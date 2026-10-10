@@ -1,0 +1,1878 @@
+{
+  "pack": "boneefied-muscular-atlas",
+  "generatedBy": "scripts/atlas/muscular-generate.mjs",
+  "plates": [
+    {
+      "id": "asset-openstax-muscle-labeled-overview",
+      "plate": 1,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-muscle-labeled-overview",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-01-overview.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-01-overview.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Whole-body superficial orientation: anterior and posterior muscles.",
+      "orientation": "left figure anterior, right figure posterior; superficial layer only",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "adductor-longus",
+          "x": 0.2429,
+          "y": 0.5915,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gracilis",
+          "x": 0.2482,
+          "y": 0.6242,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "vastus-lateralis",
+          "x": 0.2097,
+          "y": 0.676,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "vastus-medialis",
+          "x": 0.2262,
+          "y": 0.696,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "tensor-fasciae-latae",
+          "x": 0.1982,
+          "y": 0.5286,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "rectus-femoris",
+          "x": 0.2166,
+          "y": 0.6002,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "sartorius",
+          "x": 0.2298,
+          "y": 0.616,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "fibularis-longus",
+          "x": 0.2072,
+          "y": 0.7788,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "tibialis-anterior",
+          "x": 0.2276,
+          "y": 0.7854,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "serratus-anterior",
+          "x": 0.2069,
+          "y": 0.32,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "rectus-abdominis",
+          "x": 0.249,
+          "y": 0.4034,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "external-oblique",
+          "x": 0.2044,
+          "y": 0.4168,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "sternocleidomastoid",
+          "x": 0.2462,
+          "y": 0.1727,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "pectoralis-major",
+          "x": 0.2306,
+          "y": 0.26,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "biceps-brachii",
+          "x": 0.1766,
+          "y": 0.3337,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "deltoid",
+          "x": 0.18,
+          "y": 0.2454,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "infraspinatus",
+          "x": 0.793,
+          "y": 0.2799,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "teres-minor",
+          "x": 0.8152,
+          "y": 0.278,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "teres-major",
+          "x": 0.7945,
+          "y": 0.32,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "triceps-brachii",
+          "x": 0.8285,
+          "y": 0.3401,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "latissimus-dorsi",
+          "x": 0.7772,
+          "y": 0.3978,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "trapezius",
+          "x": 0.7576,
+          "y": 0.2552,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "semitendinosus",
+          "x": 0.7669,
+          "y": 0.666,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "biceps-femoris",
+          "x": 0.7809,
+          "y": 0.6524,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gluteus-medius",
+          "x": 0.8021,
+          "y": 0.4813,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gluteus-maximus",
+          "x": 0.7772,
+          "y": 0.546,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gastrocnemius",
+          "x": 0.77,
+          "y": 0.7554,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "c37c283f3bbeeed06b379ab18992ad9b47c2d46f108298333acdfe298a1eda34",
+        "png": "250f32f648836e863510d888a3aaa76273be9fc0cd840cd30cf765c3bbb81fff"
+      }
+    },
+    {
+      "id": "asset-openstax-muscle-face-neck",
+      "plate": 2,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-muscle-face-neck",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-02-face-neck.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-02-face-neck.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Muscles of facial expression, mastication and the lateral neck.",
+      "orientation": "right lateral view; face toward viewer right; platysma drawn over only the anterior half of the neck",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "temporalis",
+          "x": 0.5094,
+          "y": 0.257,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "scalenes",
+          "x": 0.4703,
+          "y": 0.7309,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "sternocleidomastoid",
+          "x": 0.5224,
+          "y": 0.6296,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "buccinator",
+          "x": 0.6248,
+          "y": 0.4892,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "masseter",
+          "x": 0.5522,
+          "y": 0.446,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "platysma",
+          "x": 0.6062,
+          "y": 0.7565,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "frontalis",
+          "x": 0.6025,
+          "y": 0.1679,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "orbicularis-oculi",
+          "x": 0.611,
+          "y": 0.264,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "orbicularis-oris",
+          "x": 0.6745,
+          "y": 0.498,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "b6d7a73cc197df8a42d81191e4b38ecad44523fbc8f25c9be4480251f1ec2592",
+        "png": "0e446da6638cdc196a87524a23dd3e8fd01bcd4431d70e1f8c82ff83623fa955"
+      }
+    },
+    {
+      "id": "asset-openstax-muscle-anterior-trunk",
+      "plate": 3,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-muscle-anterior-trunk",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-03-anterior-chest.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-03-anterior-chest.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Anterior chest wall: superficial layer on patient right, pectoralis major removed on patient left.",
+      "orientation": "anterior view; patient right = viewer left (superficial); patient left = viewer right (pectoralis major and deltoid removed)",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "intercostals",
+          "x": 0.5608,
+          "y": 0.3206,
+          "radius": 0.018,
+          "panel": "patient-left-deep",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "pectoralis-minor",
+          "x": 0.5981,
+          "y": 0.2994,
+          "radius": 0.018,
+          "panel": "patient-left-deep",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "serratus-anterior",
+          "x": 0.3908,
+          "y": 0.429,
+          "radius": 0.018,
+          "panel": "patient-right-superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "rectus-abdominis",
+          "x": 0.4752,
+          "y": 0.5478,
+          "radius": 0.018,
+          "panel": "patient-right-superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "external-oblique",
+          "x": 0.3908,
+          "y": 0.573,
+          "radius": 0.018,
+          "panel": "patient-right-superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "sternocleidomastoid",
+          "x": 0.47,
+          "y": 0.1106,
+          "radius": 0.018,
+          "panel": "patient-right-superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "pectoralis-major",
+          "x": 0.4404,
+          "y": 0.276,
+          "radius": 0.018,
+          "panel": "patient-right-superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "biceps-brachii",
+          "x": 0.3381,
+          "y": 0.4156,
+          "radius": 0.018,
+          "panel": "patient-right-superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "deltoid",
+          "x": 0.3446,
+          "y": 0.2483,
+          "radius": 0.018,
+          "panel": "patient-right-superficial",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "0bdbc21a9e2c574fbb1cff297f22f8b174d6585535afc60548538a6770d5b5e7",
+        "png": "99b2ec62de855464c3315226030bcbc62228c8b6c5a28d5fbc0269dfce15dafa"
+      }
+    },
+    {
+      "id": "asset-openstax-muscle-posterior-back",
+      "plate": 4,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-muscle-posterior-back",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-04-superficial-back.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-04-superficial-back.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Superficial posterior shoulder girdle and back layer.",
+      "orientation": "posterior view; patient right = viewer right; superficial layer only",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "infraspinatus",
+          "x": 0.5869,
+          "y": 0.364,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "teres-minor",
+          "x": 0.6221,
+          "y": 0.361,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "teres-major",
+          "x": 0.6039,
+          "y": 0.414,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "triceps-brachii",
+          "x": 0.643,
+          "y": 0.459,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "latissimus-dorsi",
+          "x": 0.5621,
+          "y": 0.55,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "trapezius",
+          "x": 0.531,
+          "y": 0.325,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "deltoid",
+          "x": 0.6448,
+          "y": 0.358,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "2b7a152f024f2ee88f042ffde6e825f68de9c3b6f8cc10777eb466f4550b4dc8",
+        "png": "f1511950d1a98f50bbccc4c0b72fb3f8d101f166b968626429287d5423158806"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-deep-back",
+      "plate": 5,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-05-deep-back.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-05-deep-back.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Deep back layer: trapezius, latissimus dorsi and deltoid removed; erector spinae removed on patient left.",
+      "orientation": "posterior view, deep dissection; patient right = viewer right",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "multifidus",
+          "x": 0.491,
+          "y": 0.5,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "quadratus-lumborum",
+          "x": 0.4669,
+          "y": 0.619,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "erector-spinae",
+          "x": 0.5176,
+          "y": 0.5028,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "supraspinatus",
+          "x": 0.5683,
+          "y": 0.307,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "rhomboid-minor",
+          "x": 0.5145,
+          "y": 0.319,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "rhomboid-major",
+          "x": 0.5166,
+          "y": 0.394,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "levator-scapulae",
+          "x": 0.5339,
+          "y": 0.2368,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "642aee0d1545b8372ce37fe0aef951a8e0edb93e237b1dc77d8694fe667a988b",
+        "png": "0f46aebc2c4b507100ef6db6ff70b80e52c7fcf76c7f944ddba67d11e42d58b8"
+      }
+    },
+    {
+      "id": "asset-openstax-muscle-anterior-arm",
+      "plate": 6,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-muscle-anterior-arm",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-06-anterior-arm.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-06-anterior-arm.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Anterior arm: superficial biceps compartment and the deeper layer beneath it.",
+      "orientation": "right arm, anterior view; patient right = viewer left; left panel superficial, right panel deep",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "biceps-brachii",
+          "x": 0.289,
+          "y": 0.3788,
+          "radius": 0.018,
+          "panel": "superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "deltoid",
+          "x": 0.2979,
+          "y": 0.1465,
+          "radius": 0.018,
+          "panel": "superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "pronator-teres",
+          "x": 0.2276,
+          "y": 0.656,
+          "radius": 0.018,
+          "panel": "superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "flexor-carpi-radialis",
+          "x": 0.2317,
+          "y": 0.704,
+          "radius": 0.018,
+          "panel": "superficial",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "coracobrachialis",
+          "x": 0.7979,
+          "y": 0.2555,
+          "radius": 0.018,
+          "panel": "deep",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "brachialis",
+          "x": 0.7603,
+          "y": 0.435,
+          "radius": 0.018,
+          "panel": "deep",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "ad7163d627222ef328abfe00431ba9a3241c24a06fcb352cdfa71f0d250d6e2c",
+        "png": "40cf10c0eed25144d50a03e1be4f143d81b2fdc5b7816172bfe08b2aba837ad7"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-posterior-arm",
+      "plate": 7,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-07-posterior-arm.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-07-posterior-arm.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Posterior arm and elbow: triceps brachii and anconeus.",
+      "orientation": "right arm, posterior view; patient right = viewer right; right panel is an enlarged elbow inset",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "teres-major",
+          "x": 0.2215,
+          "y": 0.3083,
+          "radius": 0.018,
+          "panel": "arm",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "triceps-brachii",
+          "x": 0.2867,
+          "y": 0.3833,
+          "radius": 0.018,
+          "panel": "arm",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "deltoid",
+          "x": 0.2897,
+          "y": 0.215,
+          "radius": 0.018,
+          "panel": "arm",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "anconeus",
+          "x": 0.7238,
+          "y": 0.2595,
+          "radius": 0.018,
+          "panel": "elbow",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "8b49e7cb52ef30073f9855efd8a82318f95b41982f8b93acfdf59cef2d2c58e6",
+        "png": "f0e4e6fd90d1f1929b41cf92691f675613ff8b9907221efb0009907ccb770cbe"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-forearm",
+      "plate": 8,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-08-forearm.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-08-forearm.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Forearm flexor/anterior and extensor/posterior orientation plus the deep supinator.",
+      "orientation": "right forearm; left panel anterior (patient right = viewer left); right panel posterior (patient right = viewer right) with extensors cut proximally to show supinator",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "pronator-teres",
+          "x": 0.2566,
+          "y": 0.286,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "flexor-carpi-radialis",
+          "x": 0.2579,
+          "y": 0.398,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "extensor-carpi-radialis",
+          "x": 0.7633,
+          "y": 0.4458,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "anconeus",
+          "x": 0.709,
+          "y": 0.2276,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "supinator",
+          "x": 0.7727,
+          "y": 0.3332,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "e09d0e3b9b37dda9640bee5f314d2868aa2079869442ab96a4bd9e948fea838e",
+        "png": "7023594d1a7b044c5bb0425201b130487fe332dea4770bb1da5262df6a42c03b"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-abdominal-wall",
+      "plate": 9,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-09-abdominal-wall.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-09-abdominal-wall.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Anterolateral abdominal wall in three progressive layers.",
+      "orientation": "anterior view; patient right = viewer left; panels run superficial (left) to deep (right)",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "rectus-abdominis",
+          "x": 0.1455,
+          "y": 0.3462,
+          "radius": 0.018,
+          "panel": "external",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "external-oblique",
+          "x": 0.0541,
+          "y": 0.3735,
+          "radius": 0.018,
+          "panel": "external",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "internal-oblique",
+          "x": 0.4005,
+          "y": 0.4125,
+          "radius": 0.018,
+          "panel": "internal",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "transversus-abdominis",
+          "x": 0.7388,
+          "y": 0.432,
+          "radius": 0.018,
+          "panel": "transversus",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "92e0354401b793c598d8fd7072d183aff1f3a18c3800f0fd801a37ac090c335f",
+        "png": "9e9458223768dca7b17679f139c2f29ad18182899af74f955833283ae07d3596"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-gluteal",
+      "plate": 10,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-10-gluteal.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-10-gluteal.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Gluteal region: surface layer and gluteus maximus removed.",
+      "orientation": "posterior view of right buttock; midline at panel left edge; patient right = viewer right; right panel is a cutaway",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "gluteus-maximus",
+          "x": 0.2083,
+          "y": 0.3932,
+          "radius": 0.018,
+          "panel": "surface",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gluteus-medius",
+          "x": 0.768,
+          "y": 0.1756,
+          "radius": 0.018,
+          "panel": "cutaway",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "b558338b4ed09826bf532a6b5a02caeb9f4d338b257107a85a02e82d2974ed30",
+        "png": "20eb18b4c281cec14deba7ccfb3b0b39954651015b2b75c09bc2337a69aac4f5"
+      }
+    },
+    {
+      "id": "asset-openstax-muscle-anterior-leg",
+      "plate": 11,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-muscle-anterior-leg",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-11-anterior-thigh.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-11-anterior-thigh.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Superficial anterior and medial thigh, including all quadriceps members visible on the surface.",
+      "orientation": "anterior view; patient right = viewer left; superficial layer",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "iliopsoas",
+          "x": 0.4,
+          "y": 0.195,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "adductor-longus",
+          "x": 0.4416,
+          "y": 0.3806,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gracilis",
+          "x": 0.4576,
+          "y": 0.4804,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "vastus-lateralis",
+          "x": 0.3324,
+          "y": 0.532,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "vastus-medialis",
+          "x": 0.3945,
+          "y": 0.636,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "tensor-fasciae-latae",
+          "x": 0.3051,
+          "y": 0.1884,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "rectus-femoris",
+          "x": 0.3611,
+          "y": 0.4069,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "sartorius",
+          "x": 0.4014,
+          "y": 0.4552,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "e5a387041458c0b6c2ff99e82306cd9083c171ba0eb8d5b63ae21c5b1fdb2886",
+        "png": "37b9b8a2dfdd15d02d6bce153eb1bae9435b2e1b99bb3e60ea4125514559996a"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-deep-thigh",
+      "plate": 12,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-12-deep-thigh.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-12-deep-thigh.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Deep thigh: vastus intermedius, articularis genus, and semimembranosus.",
+      "orientation": "left panel anterior (patient right = viewer left), right panel posterior (patient right = viewer right); both are deep cutaways",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "vastus-intermedius",
+          "x": 0.2402,
+          "y": 0.4867,
+          "radius": 0.018,
+          "panel": "anterior-deep",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "articularis-genus",
+          "x": 0.2654,
+          "y": 0.6562,
+          "radius": 0.018,
+          "panel": "anterior-deep",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "semimembranosus",
+          "x": 0.7283,
+          "y": 0.67,
+          "radius": 0.018,
+          "panel": "posterior-deep",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "3e582a5717b1bac7c24072de37e901b675b9ea2b920667715b58a540d2ce71d3",
+        "png": "1495177458d9786a9643b0bcdfdcc14bd494de3763ca9b873bc664aa4a1ef598"
+      }
+    },
+    {
+      "id": "asset-openstax-muscle-posterior-leg",
+      "plate": 13,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-muscle-posterior-leg",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-13-posterior-leg-overview.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-13-posterior-leg-overview.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Contextual posterior lower-limb overview from gluteal region to heel.",
+      "orientation": "posterior view; patient right = viewer right; superficial layer only",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "semitendinosus",
+          "x": 0.5587,
+          "y": 0.4115,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "biceps-femoris",
+          "x": 0.5837,
+          "y": 0.4063,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gluteus-medius",
+          "x": 0.625,
+          "y": 0.0733,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gluteus-maximus",
+          "x": 0.5766,
+          "y": 0.1991,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "gastrocnemius",
+          "x": 0.5624,
+          "y": 0.607,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "51f26ddb1803150ae559448d0d811c92a4ed59154ed555bbabd0c99fc3a561d8",
+        "png": "18ef8de995d19aa6893c56edb7bc3a3a8f61261c57248d513ec395a4239a4fc9"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-anterior-leg",
+      "plate": 14,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-14-anterior-lateral-leg.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-14-anterior-lateral-leg.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Anterior and lateral leg compartments.",
+      "orientation": "right leg, anterior view; patient right = viewer left; lateral = viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "fibularis-longus",
+          "x": 0.4481,
+          "y": 0.2843,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "tibialis-anterior",
+          "x": 0.5342,
+          "y": 0.312,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "8ed6cc5b5e90c509be372d5ae04f121a99e7a12324a3dcd4f50d4277b9da1b3b",
+        "png": "bab698df3d7f4259b34e3868b966acdc66aef20529e9eb0adcd5dee693df3ec9"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-calf",
+      "plate": 15,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-15-calf.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-15-calf.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Calf surface and cutaway: gastrocnemius over soleus, with deep popliteus and tibialis posterior.",
+      "orientation": "right calf, posterior view; patient right = viewer right; right panel is a cutaway",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "gastrocnemius",
+          "x": 0.2528,
+          "y": 0.2077,
+          "radius": 0.018,
+          "panel": "surface",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "soleus",
+          "x": 0.7833,
+          "y": 0.3534,
+          "radius": 0.018,
+          "panel": "cutaway",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "popliteus",
+          "x": 0.7494,
+          "y": 0.1566,
+          "radius": 0.018,
+          "panel": "cutaway",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "tibialis-posterior",
+          "x": 0.673,
+          "y": 0.3944,
+          "radius": 0.018,
+          "panel": "cutaway",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "e6b71689546468a9fb1240422af66473340741dff6ccd99a03992c963e889092",
+        "png": "8846613c9965cbeb306991c2ef4fda5012a6cb44d015c3e22260ec8d0f73bc52"
+      }
+    },
+    {
+      "id": "asset-injurymap-rotator-cuff-labeled",
+      "plate": 16,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-injurymap-rotator-cuff-labeled",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-16-rotator-cuff.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-16-rotator-cuff.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Rotator cuff (SITS) with teres major shown as a non-cuff neighbour.",
+      "orientation": "right shoulder; left panel anterior (patient right = viewer left); right panel posterior (patient right = viewer right); deltoid removed",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "subscapularis",
+          "x": 0.2414,
+          "y": 0.45,
+          "radius": 0.018,
+          "panel": "anterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "teres-major",
+          "x": 0.7546,
+          "y": 0.6315,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "infraspinatus",
+          "x": 0.7034,
+          "y": 0.47,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "teres-minor",
+          "x": 0.806,
+          "y": 0.509,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "supraspinatus",
+          "x": 0.6724,
+          "y": 0.318,
+          "radius": 0.018,
+          "panel": "posterior",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "bdd60c7a2f0f7c4c2b5e751183e297ed03f1b1207a86c60c5bd620d86da4b0b4",
+        "png": "6f63a5d1467dd546f2e5d4309d474b8cf6807979ec1f9e3faa4977d12b033d14"
+      }
+    },
+    {
+      "id": "asset-openstax-diaphragm-labeled",
+      "plate": 17,
+      "disposition": "replacement",
+      "preservesReplacedId": "asset-openstax-diaphragm-labeled",
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-17-diaphragm.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-17-diaphragm.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Diaphragm as a domed thoracoabdominal boundary.",
+      "orientation": "left panel anterior coronal cutaway, patient right = viewer left; right panel inferior view (tendon pale, muscle periphery darker)",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "diaphragm",
+          "x": 0.0759,
+          "y": 0.5812,
+          "radius": 0.018,
+          "panel": "coronal",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "f5855e6e28a9b3ac78a0829ac00f7eb5512b2a6a48f73edc6534928beb5fbcd3",
+        "png": "ea94eec0098fbebf21a6a6de3d70874d4de61088a45c400089f3e5c56b31082b"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-hand",
+      "plate": 18,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-18-hand-intrinsics.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-18-hand-intrinsics.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Intrinsic muscles of the palm: thenar, hypothenar and lumbricals.",
+      "orientation": "right hand, palmar view; thumb at viewer left (patient right = viewer left)",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "lumbricals-hand",
+          "x": 0.4538,
+          "y": 0.6245,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "flexor-pollicis-brevis",
+          "x": 0.4538,
+          "y": 0.744,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "abductor-pollicis-brevis",
+          "x": 0.426,
+          "y": 0.7258,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "abductor-digiti-minimi-hand",
+          "x": 0.5745,
+          "y": 0.745,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "7a0d53854c8b18181fb8ed317e8e4b66632a56c7af49fa19380bd636e7401bc2",
+        "png": "52af368a50ba0b04fc245f214acc268253a2d4766a49990c14903f041555395f"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-foot",
+      "plate": 19,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-19-foot-intrinsics.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-19-foot-intrinsics.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Intrinsic muscles of the sole (first layer) and the dorsal extensor digitorum brevis.",
+      "orientation": "left panel plantar view (big toe at viewer right); right panel dorsal view (big toe at viewer left); right foot",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "flexor-digitorum-brevis-foot",
+          "x": 0.3145,
+          "y": 0.663,
+          "radius": 0.018,
+          "panel": "plantar",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "abductor-digiti-minimi-foot",
+          "x": 0.2786,
+          "y": 0.685,
+          "radius": 0.018,
+          "panel": "plantar",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "abductor-hallucis",
+          "x": 0.3608,
+          "y": 0.6731,
+          "radius": 0.018,
+          "panel": "plantar",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "extensor-digitorum-brevis-foot",
+          "x": 0.7483,
+          "y": 0.6172,
+          "radius": 0.018,
+          "panel": "dorsal",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "3ea1c8679247bf4df7367be1147bb9c2b51620a0acf1da8d8161f095288488d8",
+        "png": "8946d15afcd1e3e0d2d891242d7bef082a19042eca1d5d8595d3343a65de82b1"
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-pelvic-floor",
+      "plate": 20,
+      "disposition": "addition",
+      "preservesReplacedId": null,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-20-pelvic-floor.svg",
+      "pngPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-20-pelvic-floor.png",
+      "notice": "Original authorship: drawn from scratch by scripts/atlas/muscular-generate.mjs. No third-party illustration traced, copied or downloaded; references were consulted for text facts only (origins, insertions, relations).",
+      "references": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK537012",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK470334",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK534836",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "Levator ani group of the pelvic floor.",
+      "orientation": "superior view; anterior (pubis) up; patient right = viewer right",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "featureAnchorMapping": [
+        {
+          "structureId": "levator-ani",
+          "x": 0.5,
+          "y": 0.612,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "iliococcygeus",
+          "x": 0.5986,
+          "y": 0.52,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        },
+        {
+          "structureId": "pubococcygeus",
+          "x": 0.4512,
+          "y": 0.4602,
+          "radius": 0.018,
+          "panel": "",
+          "verifiedOnVisibleTissue": true
+        }
+      ],
+      "sha256": {
+        "svg": "e6b55f40327c0afe91ef7989869be3105cec1ef9b84cc86fa02264a16051b5ef",
+        "png": "1a8eb9d40eec1cc7494d561c0d96846ab541bc335175e4656777c36c96d37cad"
+      }
+    }
+  ]
+}

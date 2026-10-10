@@ -22,7 +22,7 @@ test('BAC03 joins the existing Blood & cardiovascular selector without changing 
   assert.deepEqual(validateContent(content), []);
 });
 
-test('Blood tissue, all five leukocytes, marrow, and text-only smear recognition are source-linked and playable', () => {
+test('Blood tissue, all five leukocytes and marrow keep original text questions alongside explicit BVIS05 schematics', () => {
   const module = resolvePublishedModule(content, 'cardiovascular-system');
   assert.ok(module);
   const lessons = module.lessons?.filter((lesson) => lesson.id.startsWith('cv-blood-')) ?? [];
@@ -31,7 +31,10 @@ test('Blood tissue, all five leukocytes, marrow, and text-only smear recognition
   assert.equal(lessons.length, 5);
   assert.equal(structures.length, 20);
   assert.equal(questions.length, 23);
-  assert.ok(lessons.every((lesson) => lesson.sourceIds.includes('source-openstax-ap-2013-blood-ch18') && !lesson.assetIds?.length));
+  assert.ok(lessons.every((lesson) => lesson.sourceIds.includes('source-openstax-ap-2013-blood-ch18') &&
+    !!lesson.assetIds?.length && lesson.assetIds.every((id) =>
+      content.assets.some((a) => a.id === id && a.sourceId === 'source-boneefied-bvis05-atlas' &&
+        a.assetType === 'diagram' && a.specimenNote?.includes('not a specimen')))));
   assert.ok(structures.every((item) => item.moduleId === module.id && item.sourceId === 'source-openstax-ap-2013-blood-ch18'));
   assert.ok(questions.every((item) => item.moduleId === module.id && item.sourceId === 'source-openstax-ap-2013-blood-ch18' && !item.assetId && isQuestionScorable(item, content)));
   for (const kind of ['neutrophil','lymphocyte','monocyte','eosinophil','basophil']) {

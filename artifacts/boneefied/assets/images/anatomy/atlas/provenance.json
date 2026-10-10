@@ -1,0 +1,1146 @@
+{
+  "pack": "boneefied-foundational-atlas",
+  "generatedBy": "scripts/atlas/generate.mjs",
+  "plates": [
+    {
+      "id": "asset-atlas-anterior-position",
+      "plate": 1,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-01-anterior-position.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-01-anterior-position.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "anterior anatomical position: regional terms",
+      "orientation": "anterior view; patient right = viewer left; palms forward; thumbs lateral",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "cephalic-region",
+          "x": 0.5,
+          "y": 0.1,
+          "radius": 0.022
+        },
+        {
+          "structureId": "cervical-region",
+          "x": 0.5,
+          "y": 0.186,
+          "radius": 0.022
+        },
+        {
+          "structureId": "thoracic-region",
+          "x": 0.4793,
+          "y": 0.265,
+          "radius": 0.022
+        },
+        {
+          "structureId": "axillary-region",
+          "x": 0.4338,
+          "y": 0.226,
+          "radius": 0.022
+        },
+        {
+          "structureId": "brachial-region",
+          "x": 0.4159,
+          "y": 0.31,
+          "radius": 0.022
+        },
+        {
+          "structureId": "antebrachial-region",
+          "x": 0.391,
+          "y": 0.448,
+          "radius": 0.022
+        },
+        {
+          "structureId": "abdominal-region",
+          "x": 0.5193,
+          "y": 0.39,
+          "radius": 0.022
+        },
+        {
+          "structureId": "femoral-region",
+          "x": 0.4641,
+          "y": 0.58,
+          "radius": 0.022
+        },
+        {
+          "structureId": "patellar-region",
+          "x": 0.4697,
+          "y": 0.678,
+          "radius": 0.022
+        },
+        {
+          "structureId": "crural-region",
+          "x": 0.4683,
+          "y": 0.78,
+          "radius": 0.022
+        }
+      ],
+      "sha256": {
+        "svg": "8c447b29997f44036c8a2456eb5aa72379544a16dc4f46a43f354310fd080e50",
+        "png": "3c206ce3b3eda646e6b30f7195713d2de61be0328cb6c1f1fc919db5d78bf062"
+      }
+    },
+    {
+      "id": "asset-atlas-posterior-position",
+      "plate": 2,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-02-posterior-position.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-02-posterior-position.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "posterior anatomical position: regional terms",
+      "orientation": "posterior view; patient right = viewer right; palms forward; thumbs lateral",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "cephalic-region",
+          "x": 0.5,
+          "y": 0.09,
+          "radius": 0.022
+        },
+        {
+          "structureId": "cervical-region",
+          "x": 0.5,
+          "y": 0.186,
+          "radius": 0.022
+        },
+        {
+          "structureId": "posterior",
+          "x": 0.5,
+          "y": 0.295,
+          "radius": 0.022
+        },
+        {
+          "structureId": "brachial-region",
+          "x": 0.5841,
+          "y": 0.31,
+          "radius": 0.022
+        },
+        {
+          "structureId": "antebrachial-region",
+          "x": 0.609,
+          "y": 0.448,
+          "radius": 0.022
+        },
+        {
+          "structureId": "femoral-region",
+          "x": 0.5359,
+          "y": 0.58,
+          "radius": 0.022
+        },
+        {
+          "structureId": "popliteal-region",
+          "x": 0.529,
+          "y": 0.658,
+          "radius": 0.022
+        },
+        {
+          "structureId": "crural-region",
+          "x": 0.5317,
+          "y": 0.78,
+          "radius": 0.022
+        }
+      ],
+      "sha256": {
+        "svg": "90ff424662d54fada968f7be893289802b67ca1a5327349e0add5bdfc8d33e0e",
+        "png": "49f21418edb076be7695f1e085fe7da8c0f39a65518e2c8a0a5e351ad90274ed"
+      }
+    },
+    {
+      "id": "asset-atlas-body-planes",
+      "plate": 3,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-03-body-planes.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-03-body-planes.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "compare sagittal, coronal and transverse planes",
+      "orientation": "anterior views; panels ordered sagittal, coronal, transverse",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "sagittal-plane",
+          "x": 0.2138,
+          "y": 0.1485,
+          "radius": 0.03
+        },
+        {
+          "structureId": "coronal-plane",
+          "x": 0.6046,
+          "y": 0.2388,
+          "radius": 0.035
+        },
+        {
+          "structureId": "transverse-plane",
+          "x": 0.9016,
+          "y": 0.3912,
+          "radius": 0.03
+        }
+      ],
+      "sha256": {
+        "svg": "f71accd8ab82afc92395c055bb4a78a5494128d20e5cd2f685fe281eca11a9f0",
+        "png": "1b8b1f9d051848d9978af2fc342ced57b5132e3a23fc890a1f1453bb5576ef7f"
+      }
+    },
+    {
+      "id": "asset-atlas-body-cavities",
+      "plate": 4,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-04-body-cavities.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-04-body-cavities.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "major body cavities and the thin serous pleural space",
+      "orientation": "lateral section; anterior toward viewer-left; inset shows lung at left and chest wall at right",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "cranial-cavity",
+          "x": 0.3241,
+          "y": 0.104,
+          "radius": 0.022
+        },
+        {
+          "structureId": "thoracic-cavity",
+          "x": 0.2883,
+          "y": 0.336,
+          "radius": 0.022
+        },
+        {
+          "structureId": "diaphragm",
+          "x": 0.331,
+          "y": 0.47,
+          "radius": 0.022
+        },
+        {
+          "structureId": "abdominal-cavity",
+          "x": 0.2855,
+          "y": 0.59,
+          "radius": 0.022
+        },
+        {
+          "structureId": "pelvic-cavity",
+          "x": 0.3407,
+          "y": 0.776,
+          "radius": 0.022
+        },
+        {
+          "structureId": "kidneys",
+          "x": 0.3655,
+          "y": 0.566,
+          "radius": 0.016
+        },
+        {
+          "structureId": "vertebral-cavity",
+          "x": 0.3966,
+          "y": 0.48,
+          "radius": 0.012
+        },
+        {
+          "structureId": "visceral-pleura",
+          "x": 0.6993,
+          "y": 0.41,
+          "radius": 0.012
+        },
+        {
+          "structureId": "pleural-cavity",
+          "x": 0.7117,
+          "y": 0.5,
+          "radius": 0.012
+        },
+        {
+          "structureId": "parietal-pleura",
+          "x": 0.7241,
+          "y": 0.59,
+          "radius": 0.012
+        }
+      ],
+      "sha256": {
+        "svg": "4e07efb8af53ad85841f298a5f4c114156cbb9b956c016f9af6424ee293abca7",
+        "png": "f65762ebd33667f2399a609c03f247d2719f5c64437b2d11e2ede076392c474b"
+      }
+    },
+    {
+      "id": "asset-atlas-abdominal-quadrants",
+      "plate": 5,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-05-abdominal-quadrants.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-05-abdominal-quadrants.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "four clinical abdominal quadrants",
+      "orientation": "anterior torso; patient right = viewer left; split at the navel",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "right-upper-quadrant",
+          "x": 0.4241,
+          "y": 0.4936,
+          "radius": 0.06
+        },
+        {
+          "structureId": "left-upper-quadrant",
+          "x": 0.5759,
+          "y": 0.4936,
+          "radius": 0.06
+        },
+        {
+          "structureId": "right-lower-quadrant",
+          "x": 0.4241,
+          "y": 0.7312,
+          "radius": 0.06
+        },
+        {
+          "structureId": "left-lower-quadrant",
+          "x": 0.5759,
+          "y": 0.7312,
+          "radius": 0.06
+        }
+      ],
+      "sha256": {
+        "svg": "d0d4126aacf9825175f97c087d9d581c6062c9f6319284071de4f0454bfc702f",
+        "png": "48c20124d27fa4b0825775d78c6f4aaada45e912146de48b9829f5eca913f93e"
+      }
+    },
+    {
+      "id": "asset-atlas-abdominal-regions",
+      "plate": 6,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-06-abdominal-regions.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-06-abdominal-regions.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "nine abdominopelvic regions",
+      "orientation": "anterior torso; patient right = viewer left; 3 x 3 grid",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "right-hypochondriac-region",
+          "x": 0.4029,
+          "y": 0.4408,
+          "radius": 0.04
+        },
+        {
+          "structureId": "epigastric-region",
+          "x": 0.5,
+          "y": 0.4408,
+          "radius": 0.04
+        },
+        {
+          "structureId": "left-hypochondriac-region",
+          "x": 0.5971,
+          "y": 0.4408,
+          "radius": 0.04
+        },
+        {
+          "structureId": "right-lumbar-region",
+          "x": 0.4029,
+          "y": 0.597,
+          "radius": 0.04
+        },
+        {
+          "structureId": "umbilical-region",
+          "x": 0.5,
+          "y": 0.6476,
+          "radius": 0.04
+        },
+        {
+          "structureId": "left-lumbar-region",
+          "x": 0.5971,
+          "y": 0.597,
+          "radius": 0.04
+        },
+        {
+          "structureId": "right-iliac-region",
+          "x": 0.4029,
+          "y": 0.7928,
+          "radius": 0.04
+        },
+        {
+          "structureId": "hypogastric-region",
+          "x": 0.5,
+          "y": 0.7928,
+          "radius": 0.04
+        },
+        {
+          "structureId": "left-iliac-region",
+          "x": 0.5971,
+          "y": 0.7928,
+          "radius": 0.04
+        }
+      ],
+      "sha256": {
+        "svg": "606838b1f31678ef60fbe66f76bfcf32089c8845de3a2d6f2004c669a1caa3c6",
+        "png": "60828b7400834d57dd310d41b863f877dad0d81b5e102763be44ed4c27f09030"
+      }
+    },
+    {
+      "id": "asset-atlas-organ-locations",
+      "plate": 7,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-07-organ-locations.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-07-organ-locations.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "whole-body organ locations",
+      "orientation": "anterior view; patient right = viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "brain",
+          "x": 0.5,
+          "y": 0.1,
+          "radius": 0.025
+        },
+        {
+          "structureId": "lungs",
+          "x": 0.4669,
+          "y": 0.29,
+          "radius": 0.03
+        },
+        {
+          "structureId": "heart",
+          "x": 0.5152,
+          "y": 0.3,
+          "radius": 0.022
+        },
+        {
+          "structureId": "liver",
+          "x": 0.4641,
+          "y": 0.378,
+          "radius": 0.026
+        },
+        {
+          "structureId": "stomach",
+          "x": 0.5248,
+          "y": 0.4,
+          "radius": 0.016
+        },
+        {
+          "structureId": "spleen",
+          "x": 0.5497,
+          "y": 0.378,
+          "radius": 0.012
+        },
+        {
+          "structureId": "pancreas",
+          "x": 0.5138,
+          "y": 0.43,
+          "radius": 0.012
+        },
+        {
+          "structureId": "kidneys",
+          "x": 0.4766,
+          "y": 0.42,
+          "radius": 0.012
+        },
+        {
+          "structureId": "urinary-system-urinary-bladder",
+          "x": 0.5,
+          "y": 0.5,
+          "radius": 0.016
+        }
+      ],
+      "sha256": {
+        "svg": "1ff87ec0ce45eeea96c52d3149aeeedfe5cbdc1939addcc4afa38850e1f18dd4",
+        "png": "488c862083a01e58c86ed7e05789fd40082e72a1a8143a36614bcf2c5615fea0"
+      }
+    },
+    {
+      "id": "asset-atlas-skeleton-anterior",
+      "plate": 8,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-08-skeleton-anterior.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-08-skeleton-anterior.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "anterior skeleton",
+      "orientation": "anterior view; patient right = viewer left",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "skull",
+          "x": 0.5,
+          "y": 0.086,
+          "radius": 0.02
+        },
+        {
+          "structureId": "mandible",
+          "x": 0.5,
+          "y": 0.172,
+          "radius": 0.012
+        },
+        {
+          "structureId": "clavicle",
+          "x": 0.5428,
+          "y": 0.197,
+          "radius": 0.014
+        },
+        {
+          "structureId": "sternum",
+          "x": 0.5,
+          "y": 0.265,
+          "radius": 0.014
+        },
+        {
+          "structureId": "true-ribs",
+          "x": 0.5566,
+          "y": 0.256,
+          "radius": 0.016
+        },
+        {
+          "structureId": "false-ribs",
+          "x": 0.5538,
+          "y": 0.342,
+          "radius": 0.014
+        },
+        {
+          "structureId": "floating-ribs",
+          "x": 0.5262,
+          "y": 0.37,
+          "radius": 0.012
+        },
+        {
+          "structureId": "humerus",
+          "x": 0.5855,
+          "y": 0.305,
+          "radius": 0.014
+        },
+        {
+          "structureId": "radius",
+          "x": 0.6145,
+          "y": 0.444,
+          "radius": 0.012
+        },
+        {
+          "structureId": "pelvis",
+          "x": 0.54,
+          "y": 0.412,
+          "radius": 0.02
+        },
+        {
+          "structureId": "femur",
+          "x": 0.5483,
+          "y": 0.58,
+          "radius": 0.014
+        },
+        {
+          "structureId": "patella",
+          "x": 0.5338,
+          "y": 0.68,
+          "radius": 0.012
+        },
+        {
+          "structureId": "tibia",
+          "x": 0.5297,
+          "y": 0.75,
+          "radius": 0.01
+        },
+        {
+          "structureId": "fibula",
+          "x": 0.5414,
+          "y": 0.8,
+          "radius": 0.01
+        }
+      ],
+      "sha256": {
+        "svg": "69a6ee73ce0c305a67c0877bd59040d3fafe78d8f831f1fa55824c66623de688",
+        "png": "274c9c14cab1913e7234aba3b22753430a6be0024a971e2902d7c42d06d55e80"
+      }
+    },
+    {
+      "id": "asset-atlas-skeleton-posterior",
+      "plate": 9,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-09-skeleton-posterior.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-09-skeleton-posterior.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "posterior skeleton",
+      "orientation": "posterior view; patient right = viewer right",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "skull",
+          "x": 0.5,
+          "y": 0.1,
+          "radius": 0.02
+        },
+        {
+          "structureId": "cervical-vertebrae",
+          "x": 0.5,
+          "y": 0.193,
+          "radius": 0.01
+        },
+        {
+          "structureId": "clavicle",
+          "x": 0.551,
+          "y": 0.199,
+          "radius": 0.012
+        },
+        {
+          "structureId": "scapula",
+          "x": 0.54,
+          "y": 0.278,
+          "radius": 0.022
+        },
+        {
+          "structureId": "thoracic-vertebrae",
+          "x": 0.5,
+          "y": 0.285,
+          "radius": 0.01
+        },
+        {
+          "structureId": "lumbar-vertebrae",
+          "x": 0.5,
+          "y": 0.392,
+          "radius": 0.012
+        },
+        {
+          "structureId": "sacrum",
+          "x": 0.5,
+          "y": 0.468,
+          "radius": 0.012
+        },
+        {
+          "structureId": "coccyx",
+          "x": 0.5,
+          "y": 0.509,
+          "radius": 0.008
+        },
+        {
+          "structureId": "pelvis",
+          "x": 0.5428,
+          "y": 0.412,
+          "radius": 0.016
+        },
+        {
+          "structureId": "humerus",
+          "x": 0.5855,
+          "y": 0.305,
+          "radius": 0.012
+        },
+        {
+          "structureId": "femur",
+          "x": 0.5483,
+          "y": 0.58,
+          "radius": 0.012
+        },
+        {
+          "structureId": "tibia",
+          "x": 0.5297,
+          "y": 0.76,
+          "radius": 0.01
+        },
+        {
+          "structureId": "fibula",
+          "x": 0.5414,
+          "y": 0.805,
+          "radius": 0.01
+        }
+      ],
+      "sha256": {
+        "svg": "1776c4a2f5b554866a90d39afb0849e2a82e007e876a68c9357e32d79b377ac1",
+        "png": "7aa4ff23c2eb034f1dc0932f790ceba95dc244be9df33e93f05bba68e2c7c613"
+      }
+    },
+    {
+      "id": "asset-atlas-skeleton-axial-appendicular",
+      "plate": 10,
+      "creator": "Boneefied",
+      "rights": "Original Boneefied project artwork; all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+      "svgPath": "assets/images/anatomy/atlas/atlas-10-skeleton-axial-appendicular.svg",
+      "pngPath": "assets/images/anatomy/atlas/atlas-10-skeleton-axial-appendicular.png",
+      "notice": "Original authorship: drawn from scratch by the Boneefied vector generator (scripts/atlas). No third-party illustration was traced, copied, downloaded or adapted. Modified versions must keep this notice.",
+      "references": [
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/body/terminology.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/axial.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/skeletal/divisions/appendicular.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/membranes.html",
+          "publisher": "NCI SEER Training Modules",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://medlineplus.gov/ency/imagepages/19578.htm",
+          "publisher": "MedlinePlus (NLM)",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        },
+        {
+          "url": "https://seer.cancer.gov/seertools/glossary/view/55116b6be4b0c48f31dbe7f7",
+          "publisher": "NCI SEER Glossary",
+          "checked": "2026-10-10",
+          "use": "text-only factual reference; no images imported"
+        }
+      ],
+      "purpose": "axial versus appendicular skeleton",
+      "orientation": "anterior view; patient right = viewer left; blue-gray = axial, sand = appendicular",
+      "dimensions": {
+        "width": 1450,
+        "height": 1000,
+        "aspectRatio": 1.45
+      },
+      "labelMapping": [
+        {
+          "structureId": "skull",
+          "x": 0.5,
+          "y": 0.086,
+          "radius": 0.02
+        },
+        {
+          "structureId": "sternum",
+          "x": 0.5,
+          "y": 0.265,
+          "radius": 0.014
+        },
+        {
+          "structureId": "true-ribs",
+          "x": 0.5566,
+          "y": 0.256,
+          "radius": 0.016
+        },
+        {
+          "structureId": "lumbar-vertebrae",
+          "x": 0.5,
+          "y": 0.39,
+          "radius": 0.012
+        },
+        {
+          "structureId": "sacrum",
+          "x": 0.5,
+          "y": 0.464,
+          "radius": 0.012
+        },
+        {
+          "structureId": "coccyx",
+          "x": 0.5,
+          "y": 0.507,
+          "radius": 0.008
+        },
+        {
+          "structureId": "clavicle",
+          "x": 0.5428,
+          "y": 0.197,
+          "radius": 0.014
+        },
+        {
+          "structureId": "humerus",
+          "x": 0.5855,
+          "y": 0.305,
+          "radius": 0.014
+        },
+        {
+          "structureId": "pelvis",
+          "x": 0.54,
+          "y": 0.412,
+          "radius": 0.02
+        },
+        {
+          "structureId": "femur",
+          "x": 0.5483,
+          "y": 0.58,
+          "radius": 0.014
+        }
+      ],
+      "sha256": {
+        "svg": "1800bb5091f7f943fd97ebdf7ae29461aaad8ca343a3f800fb3904aa251296f3",
+        "png": "1f80269d464b6f0e089269e9f9a9c16ee3ca23890e235ae39b7c738fd2027ba3"
+      }
+    }
+  ]
+}
