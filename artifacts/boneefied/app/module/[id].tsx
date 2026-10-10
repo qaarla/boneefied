@@ -1,9 +1,9 @@
 import { isAtlasAssetId } from '@/content/atlas-index';
 import { skeletalGalleryByModule } from '@/content/skeletal-atlas-pack';
-import { muscularGalleryByModule, isMuscularAtlasAssetId } from '@/content/muscular-atlas-pack';
-import { BVIS04_MODULES, bvis04Gallery, isBvis04AssetId } from '@/content/bvis04-pack';
-import { BVIS05_MODULES, bvis05Gallery, isBvis05AssetId } from '@/content/bvis05-pack';
-import { BVIS06_MODULES, bvis06Gallery, isBvis06AssetId } from '@/content/bvis06-pack';
+import { muscularGalleryByModule } from '@/content/muscular-atlas-pack';
+import { BVIS04_MODULES, bvis04Gallery } from '@/content/bvis04-pack';
+import { BVIS05_MODULES, bvis05Gallery } from '@/content/bvis05-pack';
+import { BVIS06_MODULES, bvis06Gallery } from '@/content/bvis06-pack';
 import React, { useState } from 'react';
 import { Image, Linking, Pressable, StyleSheet, View } from 'react-native';
 import { Heading, Text, useTypographyLayout } from '@/components/ScaledText';
@@ -12,10 +12,8 @@ import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { Screen } from '@/components/Screen';
 import { EmptyState } from '@/components/EmptyState';
 import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
-import { MuscularPlateContext } from '@/components/MuscularPlateContext';
-import { Bvis04PlateContext } from '@/components/Bvis04PlateContext';
-import { Bvis05PlateContext } from '@/components/Bvis05PlateContext';
-import { Bvis06PlateContext } from '@/components/Bvis06PlateContext';
+import { VisualStudyContext } from '@/components/VisualStudyContext';
+import { readableAttribution } from '@/content/visual-disclosure';
 import { content } from '@/content/canonical';
 import { resolvePublishedModule } from '@/content/study';
 import type { Lesson, Structure } from '@/content/model';
@@ -35,7 +33,7 @@ export default function ModuleDetailScreen() {
   const [mode, setMode] = useState<'learn' | 'recall'>('learn');
   const [expanded, setExpanded] = useState<string | null>(null);
   const resolvedModule = resolvePublishedModule(content, id);
-  const activeAtlasAssetIds = resolvedModule && [...BVIS04_MODULES, ...BVIS05_MODULES, 'muscular-system'].includes(resolvedModule.id)
+  const activeAtlasAssetIds = resolvedModule && [...BVIS04_MODULES, ...BVIS05_MODULES, ...BVIS06_MODULES, 'muscular-system'].includes(resolvedModule.id)
     ? new Set([...(resolvedModule.lessons ?? []).flatMap((l) => l.assetIds ?? []),
       ...content.questions.filter((q) => q.moduleId === resolvedModule.id && q.assetId).map((q) => q.assetId!)]) : undefined;
   const activeSourceIds = activeAtlasAssetIds ? new Set([
@@ -66,29 +64,36 @@ export default function ModuleDetailScreen() {
         <Heading style={[styles.title, { color: colors.foreground }]}>{localizedModule.title}</Heading>
        <Text style={[styles.intro, { color: colors.mutedForeground }]}>{localizedModule.summary ?? t('module.fallbackSummary')}</Text>
        <Text style={[styles.meta, { color: colors.mutedForeground }]}>{t(`module.structureCount.${structures.length === 1 ? 'one' : 'other'}`, { count: number(structures.length) })} · {t(`module.lessonCount.${lessons.length === 1 ? 'one' : 'other'}`, { count: number(lessons.length) })}</Text>
-         <AdaptiveCard style={[styles.sources, { borderColor: colors.border, backgroundColor: colors.card }]}><Heading style={[styles.sourceHead, { color: colors.foreground }]}>{t('module.sourcesAndRights')}</Heading>{module.sourceIds.map((sourceId) => { const source = content.sources.find((item) => item.id === sourceId); const translatedSource = source && localizeSource(source); return source && translatedSource ? <View key={source.id} style={styles.sourceRow}><Text style={{ color: colors.mutedForeground }}>{translatedSource.title} · {translatedSource.attributionLicenseStatus.split(';')[0]}</Text><AdaptiveRow style={styles.sourceLinks}>{source.sourceUrl && <Pressable accessibilityRole="link" hitSlop={4} style={reflow && styles.sourceLinkLarge} onPress={() => Linking.openURL(source.sourceUrl!)}><Text style={{ color: colors.primary, fontSize: 12 }}>{t('module.sourceLink')}</Text></Pressable>}{source.licenseUrl && <Pressable accessibilityRole="link" hitSlop={4} style={reflow && styles.sourceLinkLarge} onPress={() => Linking.openURL(source.licenseUrl!)}><Text style={{ color: colors.primary, fontSize: 12 }}>{t('module.rightsLink')}</Text></Pressable>}</AdaptiveRow></View> : null; })}</AdaptiveCard>
+         <AdaptiveCard style={[styles.sources, { borderColor: colors.border, backgroundColor: colors.card }]}>
+          <Heading style={[styles.sourceHead, { color: colors.foreground }]}>{t('module.sourcesAndRights')}</Heading>
+          {module.sourceIds.map((sourceId) => {
+            const source = content.sources.find((item) => item.id === sourceId);
+            const translatedSource = source && localizeSource(source);
+            return source && translatedSource ? <View key={source.id} style={styles.sourceRow}>
+              <Text style={{ color: colors.mutedForeground }}>{translatedSource.title} · {readableAttribution(translatedSource.attributionLicenseStatus.split(';')[0])}</Text>
+              <AdaptiveRow style={styles.sourceLinks}>
+                {source.sourceUrl && <Pressable accessibilityRole="link" hitSlop={4} style={styles.sourceLinkLarge} onPress={() => Linking.openURL(source.sourceUrl!)}><Text style={{ color: colors.primary, fontSize: 12 }}>{t('module.sourceLink')}</Text></Pressable>}
+                {source.licenseUrl && <Pressable accessibilityRole="link" hitSlop={4} style={styles.sourceLinkLarge} onPress={() => Linking.openURL(source.licenseUrl!)}><Text style={{ color: colors.primary, fontSize: 12 }}>{t('module.rightsLink')}</Text></Pressable>}
+              </AdaptiveRow>
+            </View> : null;
+          })}
+         </AdaptiveCard>
     </View>
          <AdaptiveRow style={[styles.switcher, reflow && styles.switcherLarge, { backgroundColor: colors.secondary }]}>{(['learn', 'recall'] as const).map((item) => <AdaptiveButton key={item} accessibilityRole="tab" accessibilityState={{ selected: mode === item }} hitSlop={4} onPress={() => setMode(item)} style={[styles.switch, reflow && styles.switchLarge, mode === item && { backgroundColor: colors.card }]}><Text style={{ color: mode === item ? colors.foreground : colors.mutedForeground, fontWeight: '700' }}>{t(item === 'learn' ? 'module.learnMode' : 'module.recallMode')}</Text></AdaptiveButton>)}</AdaptiveRow>
        {galleryIds.length > 0 && <View style={styles.images}>
         <Heading style={[styles.detailHead, { color: colors.foreground }]}>{language === 'es' ? 'Láminas seleccionadas del atlas' : 'Selected atlas plates'}</Heading>
         {galleryIds.flatMap((id) => { const a = content.assets.find((item) => item.id === id); return a ? [localizeAsset(a)] : []; }).map((asset) => <View key={asset.id} style={styles.imageCard}>
           <AnatomyImageViewer source={imageSources[asset.id]} atlasLayout labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
-          {isMuscularAtlasAssetId(asset.id) && <MuscularPlateContext asset={asset} learn={mode === 'learn'} />}
-          {isBvis04AssetId(asset.id) && <Bvis04PlateContext asset={asset} learn={mode === 'learn'} />}
-          {isBvis05AssetId(asset.id) && <Bvis05PlateContext asset={asset} learn={mode === 'learn'} />}
-          {isBvis06AssetId(asset.id) && <Bvis06PlateContext asset={asset} learn={mode === 'learn'} />}
+          <VisualStudyContext asset={asset} learn={mode === 'learn'} />
         </View>)}
       </View>}
-        {[...BVIS04_MODULES, ...BVIS05_MODULES].includes(module.id) && moduleAssets.some((a) => a.assetType === 'histology') && <Heading style={[styles.detailHead, { color: colors.foreground }]}>{language === 'es' ? 'Muestras reales — separadas de los esquemas' : 'Real specimens — separate from schematics'}</Heading>}
+        {moduleAssets.some((a) => a.assetType === 'histology') && <Heading style={[styles.detailHead, { color: colors.foreground }]}>{language === 'es' ? 'Muestras reales — separadas de los esquemas' : 'Real specimens — separate from schematics'}</Heading>}
         {moduleAssets.length > 0 && <View style={styles.images}>
           {moduleAssets.filter((asset) => mode === 'learn' || asset.labelStatus === 'unlabeled').map((asset) => {
             const translatedAsset = localizeAsset(asset);
             return <View key={asset.id} style={styles.imageCard}>
-              <AnatomyImageViewer source={imageSources[asset.id]} atlasLayout={isAtlasAssetId(asset.id)} labels={translatedAsset.labels} revealLabels={mode === 'learn'} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? `${translatedAsset.title ?? t('module.verifiedCourseImage')} · ${translatedAsset.attributionLicense}` : undefined} />
-              {BVIS04_MODULES.includes(module.id) && asset.assetType === 'histology' && <Bvis04PlateContext asset={translatedAsset} learn={mode === 'learn'} />}
-              {BVIS05_MODULES.includes(module.id) && asset.assetType === 'histology' && <Bvis05PlateContext asset={translatedAsset} learn={mode === 'learn'} />}
-              {BVIS06_MODULES.includes(module.id) && asset.assetType === 'histology' && <Bvis06PlateContext asset={translatedAsset} learn={mode === 'learn'} />}
-              {asset.rightsUrl && <Pressable accessibilityRole="link" hitSlop={4} style={reflow && styles.sourceLinkLarge} onPress={() => Linking.openURL(asset.rightsUrl!)}><Text style={{ color: colors.primary, fontSize: 12 }}>{t('module.openSourceAndRightsPage')}</Text></Pressable>}
+              <AnatomyImageViewer source={imageSources[asset.id]} atlasLayout={isAtlasAssetId(asset.id)} labels={translatedAsset.labels} revealLabels={mode === 'learn'} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? translatedAsset.title ?? t('module.verifiedCourseImage') : undefined} />
+              <VisualStudyContext asset={translatedAsset} learn={mode === 'learn'} />
             </View>;
           })}
           {mode === 'recall' && !moduleAssets.some((asset) => asset.labelStatus === 'unlabeled') && <Text style={{ color: colors.mutedForeground }}>{t('module.noUnlabeledPlate')}</Text>}
@@ -111,11 +116,8 @@ function LessonCard({ lesson, mode, reflow, expanded, onToggle, colors, bookmark
        <View style={styles.chips}>{lesson.structureIds.slice(0, 6).map((id) => { const canonicalStructure = content.structures.find((item) => item.id === id); const structure = canonicalStructure && localizeStructure(canonicalStructure); return structure ? <AdaptiveButton key={id} accessibilityRole="button" accessibilityLabel={t(bookmarks.includes(id) ? 'bookmark.removeAccessibility' : 'bookmark.addAccessibility', { name: structure.canonicalName })} accessibilityState={{ selected: bookmarks.includes(id) }} hitSlop={4} style={reflow && styles.chipTargetLarge} onPress={() => onBookmark(id)}><Text style={[styles.chip, { color: colors.primary }]}>{bookmarks.includes(id) ? '★ ' : ''}{structure.canonicalName}</Text></AdaptiveButton> : null; })}</View>
     {expanded && <View style={styles.details}>
        {plates.map((asset) => <View key={asset.id} style={styles.imageCard}>
-         <AnatomyImageViewer source={imageSources[asset.id]} atlasLayout labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? isMuscularAtlasAssetId(asset.id) ? asset.title : `${asset.title} · ${asset.attributionLicense}` : undefined} />
-         {isMuscularAtlasAssetId(asset.id) && <MuscularPlateContext asset={asset} learn={mode === 'learn'} />}
-         {isBvis04AssetId(asset.id) && <Bvis04PlateContext asset={asset} learn={mode === 'learn'} />}
-         {isBvis05AssetId(asset.id) && <Bvis05PlateContext asset={asset} learn={mode === 'learn'} />}
-         {isBvis06AssetId(asset.id) && <Bvis06PlateContext asset={asset} learn={mode === 'learn'} />}
+          <AnatomyImageViewer source={imageSources[asset.id]} atlasLayout labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
+         <VisualStudyContext asset={asset} learn={mode === 'learn'} />
        </View>)}
         <Heading style={[styles.detailHead, { color: colors.foreground }]}>{t('lesson.structuresInLesson')}</Heading>
        <Text style={{ color: colors.mutedForeground }}>{lesson.structureIds.map((id) => { const structure = content.structures.find((item) => item.id === id); return structure ? localizeStructure(structure).canonicalName : undefined; }).filter(Boolean).join(' · ')}</Text>

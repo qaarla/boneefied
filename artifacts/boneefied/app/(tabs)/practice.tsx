@@ -13,6 +13,7 @@ import type { Question } from '@/content/model';
 import { useStudy } from '@/context/StudyContext';
 import { useColors } from '@/hooks/useColors';
 import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
+import { VisualStudyContext } from '@/components/VisualStudyContext';
 import { imageSources } from '@/content/imageSources';
 import { isMuscularAtlasAssetId } from '@/content/muscular-atlas-pack';
 import { isBvis04AssetId } from '@/content/bvis04-pack';
@@ -151,7 +152,7 @@ export default function PracticeScreen() {
       const structure = content.structures.find((s) => s.id === id);
       // Legacy questions can already contain a localized display name, not an ID.
       return structure ? locale.structure(structure).canonicalName : id;
-    });
+    }, isBvis06AssetId(question.assetId));
   };
   const submit = () => {
     if (submitted || submissionGuard.current || !q || !study.sessions.some((session) => session.id === sessionId && session.status !== 'completed')) return;
@@ -231,7 +232,10 @@ function QuestionInput({ question, value, setValue, disabled, colors, reduceMoti
   const numberedTargets = question.id.startsWith('q-skeletal-atlas-') || ((muscularPlate || bvis04Plate || bvis06Plate) && question.taskType === 'hotspot') || readOnlyMarker;
   const targets = readOnlyMarker ? question.hotspots : question.taskType === 'image-identification' ? [] : question.hotspots ?? asset?.hotspots;
   const canSelectTarget = question.taskType !== 'image-identification' && !readOnlyMarker;
-  const image = asset ? <AnatomyImageViewer source={imageSources[asset.id]} atlasLayout={isAtlasAssetId(asset.id)} questionHotspotCallouts={numberedTargets} hotspots={targets} labels={(disabled || (question.taskType === 'image-identification' && !imageIdMarker)) ? asset.labels?.filter((label) => question.structureIds.includes(label.structureId)) : []} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={canSelectTarget ? (hotspot) => { selectionHaptic(hapticsEnabled); setValue(hotspot.structureId); } : undefined} selectedHotspotId={typeof value === 'string' ? value : undefined} correctHotspotId={question.structureIds[0]} submitted={disabled && !readOnlyMarker} reduceMotion={reduceMotion} /> : null;
+  const image = asset ? <View style={{ gap: 8 }}>
+    <AnatomyImageViewer source={imageSources[asset.id]} atlasLayout={isAtlasAssetId(asset.id)} questionHotspotCallouts={numberedTargets} hotspots={targets} labels={(disabled || (question.taskType === 'image-identification' && !imageIdMarker)) ? asset.labels?.filter((label) => question.structureIds.includes(label.structureId)) : []} revealLabels={disabled} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={disabled ? asset.title : undefined} onHotspotPress={canSelectTarget ? (hotspot) => { selectionHaptic(hapticsEnabled); setValue(hotspot.structureId); } : undefined} selectedHotspotId={typeof value === 'string' ? value : undefined} correctHotspotId={question.structureIds[0]} submitted={disabled && !readOnlyMarker} reduceMotion={reduceMotion} />
+    {disabled && <VisualStudyContext asset={asset} learn />}
+  </View> : null;
    if (question.taskType === 'hotspot') return <View style={{ gap: 10 }}>{image}<Text style={{ color: colors.mutedForeground }}>{locale.t('practice.hotspotInstruction')}</Text></View>;
      if (question.taskType === 'typed-recall' || question.taskType === 'image-identification') return <View style={{ gap: 10 }}>{image}<TextInput testID="typed-answer" accessibilityLabel={disabled ? locale.t(scoreAnswer(value) ? 'practice.correctTypedAnswer' : 'practice.incorrectTypedAnswer') : locale.t('practice.imageIdentificationAnswer')} value={typeof value === 'string' ? value : ''} onChangeText={setValue} editable={!disabled} onSubmitEditing={Keyboard.dismiss} placeholder={locale.t('practice.answerPlaceholder')} placeholderTextColor={colors.mutedForeground} multiline={shouldReflow} submitBehavior={shouldReflow ? 'blurAndSubmit' : undefined} style={[styles.input, shouldReflow && styles.largeInput, { color: colors.foreground, borderColor: disabled ? (scoreAnswer(value) ? colors.success : colors.destructive) : colors.border, backgroundColor: colors.card }]} returnKeyType="done" /></View>;
   if (question.taskType === 'ordered-sequence') {

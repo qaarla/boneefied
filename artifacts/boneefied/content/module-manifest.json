@@ -1,5 +1,5 @@
 {
-  "generatedAt": "BVIS05 assembled-catalog audit",
+  "generatedAt": "BVIS07 assembled-catalog visual audit",
   "modules": [
     {
       "id": "cytology-mitosis",
@@ -162,8 +162,8 @@
       "contentStatus": "available",
       "structures": 81,
       "lessons": 10,
-      "assets": 2,
-      "questions": 45,
+      "assets": 10,
+      "questions": 137,
       "reason": "Digestive anatomy with a concise liver-tissue scarring comparison."
     },
     {
@@ -173,8 +173,8 @@
       "contentStatus": "available",
       "structures": 49,
       "lessons": 7,
-      "assets": 3,
-      "questions": 40,
+      "assets": 7,
+      "questions": 94,
       "reason": "Urinary anatomy and histology with a prostatic-urethra relationship."
     },
     {
@@ -184,8 +184,8 @@
       "contentStatus": "available",
       "structures": 47,
       "lessons": 7,
-      "assets": 1,
-      "questions": 42,
+      "assets": 2,
+      "questions": 83,
       "reason": "Male reproductive anatomy with a gland-enlargement structural comparison."
     },
     {
@@ -195,8 +195,8 @@
       "contentStatus": "available",
       "structures": 65,
       "lessons": 8,
-      "assets": 2,
-      "questions": 48,
+      "assets": 3,
+      "questions": 98,
       "reason": "Female reproductive anatomy and histology with uterine-wall structural context."
     }
   ]

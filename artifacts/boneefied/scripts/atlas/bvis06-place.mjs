@@ -19,7 +19,7 @@ function transverse(S, mode) {
     S.sh(null, E(cx - 92, 480, 54, 66), { fill: '#EADFC8', line: '#A59A82', sw: 1.2 }); S.sh(null, E(cx + 92, 480, 54, 66), { fill: '#EADFC8', line: '#A59A82', sw: 1.2 });
     S.sh(U('kidney'), E(cx - 92, 480, 36, 50, 8), { ...T.kidney, sw: 1.7 }); S.sh('T-kidneyL', E(cx + 92, 480, 36, 50, -8), { ...T.kidney, sw: 1.7 });
     S.sh(U('kidney'), E(cx - 92, 480, 36, 50, 8), { ...T.kidney, sw: 1.7 });
-    S.ln(null, `M${cx - 190} 420Q${cx} 440 ${cx + 190} 420`, { color: '#8A7A5A', w: 2 });
+    S.out.push(`<path d="M${cx - 190} 420Q${cx} 440 ${cx + 190} 420" fill="none" stroke="#8A7A5A" stroke-width="2" stroke-dasharray="8 6"/>`);
     S.sh('liver', sm([[cx - 190, 380], [cx - 150, 300], [cx - 80, 270], [cx - 40, 330], [cx - 50, 400], [cx - 100, 420], [cx - 160, 420]], true, 5), { ...T.liver, sw: 1.7 });
     S.sh(null, E(cx + 100, 330, 56, 34), { ...T.gut, sw: 1.2 }); S.sh(null, E(cx + 20, 300, 44, 28), { ...T.gut, sw: 1.2 });
   } else {
@@ -89,8 +89,8 @@ function kidneyPlace(S) {
   S.sh(U('kidney'), sm([[345, 380], [390, 400], [404, 460], [388, 490], [404, 520], [380, 590], [330, 610], [284, 560], [280, 450]], true, 6), { ...T.kidney, sw: 1.8 });
   S.sh(U('kidney'), sm([[610, 320], [566, 342], [558, 402], [572, 432], [558, 462], [578, 510], [630, 530], [672, 490], [680, 390]], true, 6), { ...T.kidney, sw: 1.8 });
   net(S, [
-    { id: U('ureter'), pts: [[396, 500], [388, 640], [412, 780]], w: 12, fill: UR.fill, line: UR.line, lum: LUM, lw: 5 },
-    { id: U('ureter'), pts: [[566, 450], [572, 560], [548, 700], [522, 790]], w: 12, fill: UR.fill, line: UR.line, lum: LUM, lw: 5 },
+    { id: U('ureter'), pts: [[396, 500], [388, 640], [412, 780], [420, 835], [435, 850]], w: 12, fill: UR.fill, line: UR.line, lum: LUM, lw: 5 },
+    { id: U('ureter'), pts: [[566, 450], [572, 560], [548, 700], [522, 790], [520, 835], [505, 850]], w: 12, fill: UR.fill, line: UR.line, lum: LUM, lw: 5 },
     { id: 'ves-aorta', pts: [[500, 170], [500, 780]], w: 26, fill: A.fill, line: A.line },
     { id: 'cv-ivc', pts: [[448, 200], [448, 780]], w: 34, fill: V.fill, line: V.line },
   ]);
@@ -100,7 +100,12 @@ function kidneyPlace(S) {
   ]);
   S.sh(U('urinary-bladder'), E(470, 880, 100, 56), { ...T.bladder, sw: 1.7 });
   S.sh(U('urinary-bladder'), E(470, 880, 78, 38), { fill: LUM, line: '#B49C92', sw: 1.2 });
-  patch(S, circ(414, 826, 7), LUM); patch(S, circ(524, 826, 7), LUM);
+  // The enlarged/transparent placement view must not leave floating ureter ends.
+  net(S, [
+    { id: U('ureter'), pts: [[412, 780], [420, 835], [435, 850]], w: 12, fill: UR.fill, line: UR.line, lum: LUM, lw: 5 },
+    { id: U('ureter'), pts: [[522, 790], [520, 835], [505, 850]], w: 12, fill: UR.fill, line: UR.line, lum: LUM, lw: 5 },
+  ]);
+  S.sh(U('urinary-bladder'), E(470, 880, 78, 38), { fill: LUM, line: LUM, sw: 0.5 });
   [['kidney', [326, 540]], ['ureter', [388, 640]], ['renal-artery', [534, 405]], ['renal-vein', [490, 422]]].forEach(([id, h]) => S.pin(U(id), U(id), h));
   S.pin('digestive-system-liver', 'liver', [270, 260]); S.pin('respiratory-system-diaphragm', 'respiratory-system-diaphragm', [330, 122]); S.pin('ves-aorta', 'ves-aorta', [500, 620]); S.pin('cv-ivc', 'cv-ivc', [448, 620]);
   S.at('level'); transverse(S, 'kidney');

@@ -8,7 +8,7 @@ import { BVIS04_SOURCE, isBvis04AssetId } from '../content/bvis04-pack.ts';
 import { BVIS05_MODULES, BVIS05_SOURCE, isBvis05AssetId } from '../content/bvis05-pack.ts';
 import { bvis05Questions } from '../content/bvis05-questions.ts';
 import { bvis05Plates } from '../content/bvis05-plates.generated.ts';
-import { BVIS06_MODULES, isBvis06AssetId } from '../content/bvis06-pack.ts';
+import { BVIS06_MODULES, BVIS06_SOURCE, isBvis06AssetId } from '../content/bvis06-pack.ts';
 import { bvis06Questions } from '../content/bvis06-questions.ts';
 import { bvis06Plates } from '../content/bvis06-plates.generated.ts';
 import { GRAY_SOURCE_ID, OPENSTAX_SOURCE_ID } from '../content/anatomy.ts';
@@ -81,7 +81,7 @@ test('production catalog validates with honest published counts and source prove
   assert.ok(content.sources.some((source) => source.id === OPENSTAX_SOURCE_ID && source.attributionLicenseStatus.includes('CC BY 4.0')));
   assert.ok(content.sources.some((source) => source.id === GRAY_SOURCE_ID && source.attributionLicenseStatus.includes('Public domain')));
   assert.ok(content.assets.every((asset) => asset.verificationStatus === 'verified'));
-  const originalSources = new Set([ORIGINAL_VISUAL_SOURCE_ID, BVIS04_SOURCE, BVIS05_SOURCE, 'source-boneefied-foundational-atlas', 'source-boneefied-skeletal-atlas', 'source-boneefied-muscular-atlas']);
+  const originalSources = new Set([ORIGINAL_VISUAL_SOURCE_ID, BVIS04_SOURCE, BVIS05_SOURCE, BVIS06_SOURCE, 'source-boneefied-foundational-atlas', 'source-boneefied-skeletal-atlas', 'source-boneefied-muscular-atlas']);
   assert.ok(content.assets.filter((asset) => !originalSources.has(asset.sourceId)).every((asset) => asset.rightsUrl));
   assert.ok(content.questions.every((question) => content.modules.find((module) => module.id === question.moduleId)?.published));
   assert.equal(sourceCitation(content, OPENSTAX_SOURCE_ID, null), 'OpenStax Anatomy and Physiology (2013) · CC BY 4.0');
@@ -141,7 +141,7 @@ test('every published asset has a local static resolver entry and honest rights 
     if (asset.sourceId === ORIGINAL_VISUAL_SOURCE_ID) {
       assert.equal(asset.rightsUrl, undefined, `${asset.id}: original artwork must not claim external rights`);
       assert.match(asset.attributionLicense, /Original diagram created for Boneefied/);
-    } else if ([BVIS04_SOURCE, BVIS05_SOURCE].includes(asset.sourceId)) {
+    } else if ([BVIS04_SOURCE, BVIS05_SOURCE, BVIS06_SOURCE].includes(asset.sourceId)) {
       assert.equal(asset.rightsUrl, undefined);
       assert.match(asset.attributionLicense, /Original Boneefied project vector artwork/);
     } else if (asset.sourceId === 'source-boneefied-skeletal-atlas' || asset.sourceId === 'source-boneefied-muscular-atlas') {
@@ -241,7 +241,7 @@ test('production questions expose supported playable task types', () => {
   assert.ok(content.questions.every((question) => supported.has(question.taskType)));
   assert.equal(content.questions.filter((question) => question.taskType === 'multiple-choice').length, 397);
   assert.equal(content.questions.filter((question) => question.taskType === 'typed-recall').length, 30);
-  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 59);
+  assert.equal(content.questions.filter((question) => question.taskType === 'ordered-sequence').length, 59 + bvis06Questions.filter((q) => q.taskType === 'ordered-sequence').length);
   assert.equal(content.questions.filter((question) => question.taskType === 'select-all').length, 76);
   assert.equal(content.questions.filter((question) => question.taskType === 'bone-laterality').length, 8);
   assert.equal(content.questions.filter((question) => question.taskType === 'function-relationship').length, 119 + bvis04Questions.filter((q) => q.taskType === 'function-relationship').length);
@@ -268,7 +268,7 @@ test('production questions expose supported playable task types', () => {
     for (const structureId of lesson.structureIds) assert.equal(structureModules.get(structureId), module.id, `${lesson.id}:${structureId}`);
   }
   for (const question of content.questions.filter((item) => item.assetId)) {
-    const resolver = readFileSync(new URL('../content/imageSources.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis04-image-sources.generated.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis05-image-sources.generated.ts', import.meta.url), 'utf8');
+    const resolver = readFileSync(new URL('../content/imageSources.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis04-image-sources.generated.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis05-image-sources.generated.ts', import.meta.url), 'utf8') + readFileSync(new URL('../content/bvis06-image-sources.generated.ts', import.meta.url), 'utf8');
     assert.match(resolver, new RegExp(`['"]${question.assetId}['"]\\s*:`), `${question.id}: resolver mapping`);
     assert.ok(content.assets.some((asset) => asset.id === question.assetId), `${question.id}: asset`);
     for (const target of question.hotspots ?? []) {

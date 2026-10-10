@@ -5,6 +5,8 @@ import { content } from '../content/canonical.ts';
 import { bvis04Questions } from '../content/bvis04-questions.ts';
 import { bvis04Plates } from '../content/bvis04-plates.generated.ts';
 import { bvis05Questions } from '../content/bvis05-questions.ts';
+import { bvis06Questions } from '../content/bvis06-questions.ts';
+import { bvis06Plates } from '../content/bvis06-plates.generated.ts';
 import { bvis05Plates } from '../content/bvis05-plates.generated.ts';
 import { isQuestionScorable, resolvePublishedModule } from '../content/study.ts';
 import { validateContent } from '../content/validation.ts';
@@ -39,8 +41,8 @@ test('the assembled catalog matches its manifest and every lesson has related pr
   assert.equal(content.modules.length, 18);
   assert.equal(content.structures.length, 1126);
   assert.equal(content.modules.reduce((sum, module) => sum + (module.lessons?.length ?? 0), 0), 152);
-  assert.equal(content.questions.length, 904 + bvis04Questions.length + bvis05Questions.length);
-  assert.equal(content.assets.length, 97 + bvis04Plates.filter((p) => !p.replaces).length + bvis05Plates.length);
+  assert.equal(content.questions.length, 904 + bvis04Questions.length + bvis05Questions.length + bvis06Questions.length);
+  assert.equal(content.assets.length, 97 + bvis04Plates.filter((p) => !p.replaces).length + bvis05Plates.length + bvis06Plates.length);
   for (const module of content.modules) {
     const record = manifest.modules.find((entry) => entry.id === module.id);
     assert.ok(record, module.id);

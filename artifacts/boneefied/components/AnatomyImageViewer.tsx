@@ -83,6 +83,12 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
    setZoom(1);
    setOffset({ x: 0, y: 0 });
  };
+ const changeZoom = (amount: number) => {
+   const nextZoom = Math.max(1, Math.min(4, view.current.zoom + amount));
+   if (nextZoom === 1) { reset(); return; }
+   view.current = { ...view.current, zoom: nextZoom };
+   setZoom(nextZoom);
+ };
  // Let the page scroll at rest; once zoomed, touch drags belong to the image.
  const webGestureStyle = Platform.OS === 'web'
    ? { width: '100%' as const, touchAction: zoom > 1 ? 'none' : 'pan-y' } : undefined;
@@ -113,6 +119,14 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
  // RN Web's responder gesture deltas can remain zero during a touch drag.
  // Use touch centroids directly on web; retain native PanResponder behavior.
  const webHandlers = {
+   onMouseDown: (e: React.MouseEvent) => {
+     if (e.button === 0 && view.current.zoom > 1) beginWebGesture([{ pageX: e.pageX, pageY: e.pageY }]);
+   },
+   onMouseMove: (e: React.MouseEvent) => {
+     if (webDragging.current && e.buttons === 1) moveWebGesture([{ pageX: e.pageX, pageY: e.pageY }]);
+   },
+   onMouseUp: endWebGesture,
+   onMouseLeave: endWebGesture,
    onTouchStart: (e: GestureResponderEvent) => beginWebGesture(e.nativeEvent.touches),
    onTouchMove: (e: GestureResponderEvent) => moveWebGesture(e.nativeEvent.touches),
    onTouchEnd: (e: GestureResponderEvent) => e.nativeEvent.touches.length ? beginWebGesture(e.nativeEvent.touches) : endWebGesture(),
@@ -120,10 +134,6 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
    onMoveShouldSetResponderCapture: () => webDragging.current && webMoved.current,
    onResponderTerminationRequest: () => !webDragging.current,
    onResponderTerminate: endWebGesture,
-   onMouseDown: (e: React.MouseEvent) => beginWebGesture([{ pageX: e.pageX, pageY: e.pageY }]),
-   onMouseMove: (e: React.MouseEvent) => moveWebGesture([{ pageX: e.pageX, pageY: e.pageY }]),
-   onMouseUp: endWebGesture,
-   onMouseLeave: endWebGesture,
  };
   const showAll = () => setRevealed(new Set(labels.map((label) => label.structureId)));
   const hideAll = () => setRevealed(new Set());
@@ -222,7 +232,15 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
         })}
       </View>}
     </View>
-      {source ? <View style={[styles.controls, reflow && styles.controlsLarge]}><Pressable onPress={reset} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.reset.accessibility')} testID="viewer-reset" style={[styles.reset, reflow && styles.controlActionLarge, { backgroundColor: colors.card }]}><Text style={{ color: colors.foreground }}>{locale.t('imageViewer.reset.visible')}</Text></Pressable>{labels.length > 0 && !revealLabels && <><Pressable onPress={showAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.revealAll.accessibility')} style={reflow && styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.revealAll.visible')}</Text></Pressable><Pressable onPress={hideAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.hideAll.accessibility')} style={reflow && styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.hideAll.visible')}</Text></Pressable></>}</View> : null}
+      {source ? <View style={[styles.controls, styles.controlsLarge]}>
+        <Pressable onPress={() => changeZoom(0.5)} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.zoomIn')} testID="viewer-zoom-in" style={styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.zoomIn')}</Text></Pressable>
+        <Pressable onPress={() => changeZoom(-0.5)} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.zoomOut')} testID="viewer-zoom-out" style={styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.zoomOut')}</Text></Pressable>
+        <Pressable onPress={reset} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.reset.accessibility')} testID="viewer-reset" style={[styles.reset, styles.controlActionLarge, { backgroundColor: colors.card }]}><Text style={{ color: colors.foreground }}>{locale.t('imageViewer.reset.visible')}</Text></Pressable>
+        {labels.length > 0 && !revealLabels && <>
+          <Pressable onPress={showAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.revealAll.accessibility')} style={styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.revealAll.visible')}</Text></Pressable>
+          <Pressable onPress={hideAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.hideAll.accessibility')} style={styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.hideAll.visible')}</Text></Pressable>
+        </>}
+      </View> : null}
       {reflow && labels.some((label) => revealLabels || revealed.has(label.structureId)) && <View style={styles.labelList}>
          {labels.map((label, index) => (revealLabels || revealed.has(label.structureId)) && <Text key={annotationKey(label)} style={{ color: colors.foreground }}>{locale.number(questionHotspotCallouts ? annotationIndex(hotspots, label) + 1 : index + 1)}. {label.displayLabel}</Text>)}
      </View>}

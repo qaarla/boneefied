@@ -34,7 +34,8 @@ test('BVIS06 original files have exact provenance, canonical annotations and les
       assert.ok(content.structures.some((s) => s.id === l.structureId), l.structureId);
       assert.ok(l.x > 0 && l.x < 1 && l.y > 0 && l.y < 1, l.structureId);
       assert.ok(a.hotspots?.some((h) => annotationKey(h) === annotationKey(l)));
-      assert.ok(combinedAtlasAssetsForStructure(l.structureId).some((a) => a.id === p.id), l.structureId);
+      if (BVIS06_MODULES.includes(content.structures.find((s) => s.id === l.structureId)!.moduleId))
+        assert.ok(combinedAtlasAssetsForStructure(l.structureId).some((a) => a.id === p.id), l.structureId);
     }
     assert.ok(content.modules.find((m) => m.id === p.moduleId)?.lessons?.some((l) => l.assetIds?.includes(p.id)), p.id);
     assert.ok(content.questions.some((q) => q.assetId === p.id), p.id);

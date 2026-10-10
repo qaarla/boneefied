@@ -5,6 +5,12 @@ description: User requirements for the reusable anatomy visual language and righ
 
 Boneefied should look like a coherent college anatomy atlas, not a collage of unrelated internet images. Use flat/matte, restrained, clean medical illustrations with simple anatomical forms, consistent line weight, low-saturation system colors, orientation cues, margins, labels, hotspots, backgrounds, and captions. Each instructional plate has one uncluttered learning purpose. Reuse one base illustration for Learn, Recall, and image questions whenever practical.
 
+Keep the teaching scope at introductory college anatomy: “minimum stuff, and a little extra,” with visuals “inside the questions.” “Let’s just keep it 2D.”
+
+**Why:** The user explicitly chose this scope rather than an exhaustive visual expansion or 3D.
+
+**How to apply:** Prioritize meaningful image questions and small gaps in core anatomy coverage; do not expand into 3D or decorative illustration collections.
+
 Prefer original in-project vector/SVG diagrams from anatomical facts cross-checked against reliable references, without tracing or closely reproducing copyrighted modern illustrations.
 
 NIH NIAID BioArt Source is the approved primary external visual source when an exact entry is suitable: verify that entry's license and record creator/source/URL. Public-domain entries may be adapted. Servier Medical Art is the approved secondary source: verify the exact source and retain CC BY 4.0 attribution and a modification notice when adapted. Verified Gray's Anatomy 1918 public-domain plates may support checks or remain when unusually useful, but their antique style must not define the pack.

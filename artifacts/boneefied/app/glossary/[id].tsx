@@ -9,6 +9,7 @@ import { createGlossaryIndex } from '@/content/glossary';
 import { searchAnatomy } from '@/content/search';
 import { anatomicalTerms, wordMeaning } from '@/content/anatomical-terms';
 import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
+import { VisualStudyContext } from '@/components/VisualStudyContext';
 import { combinedAtlasAssetsForStructure, withSynthesizedLabels } from '@/content/atlas-index';
 import { imageSources } from '@/content/imageSources';
 import { useColors } from '@/hooks/useColors';
@@ -55,7 +56,7 @@ export default function GlossaryEntryScreen() {
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Lámina de atlas' : 'Atlas plate'}</Heading>
         {plates.map((plate) => <View key={plate.id} style={styles.aliases}>
           <AnatomyImageViewer source={imageSources[plate.id]} atlasLayout labels={plate.labels?.filter((l) => l.structureId === entry.structure.id)} revealLabels imageAspectRatio={plate.imageAspectRatio} caption={plate.title} />
-          <Text style={{ color: colors.mutedForeground }}>{language === 'es' ? 'Fuente de la ilustración' : 'Artwork source'}: {citation(plate.sourceId)}</Text>
+          <VisualStudyContext asset={plate} learn />
         </View>)}
       </View>}
       {!meaning && relatedWords.length > 0 && <View style={styles.aliases}>

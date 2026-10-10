@@ -3,6 +3,7 @@ import test from 'node:test';
 import { content } from '../content/canonical.ts';
 import { bvis04Questions } from '../content/bvis04-questions.ts';
 import { bvis05Questions } from '../content/bvis05-questions.ts';
+import { bvis06Questions } from '../content/bvis06-questions.ts';
 import { createGlossaryIndex } from '../content/glossary.ts';
 import { answerIsCorrect } from '../content/study.ts';
 import {
@@ -38,7 +39,7 @@ test('Spanish learning catalog matches every assembled English entity, field and
   assert.equal(content.modules.length, 18);
   assert.equal(content.modules.flatMap((module) => module.lessons ?? []).length, 152);
   assert.equal(content.structures.length, 1126);
-  assert.equal(content.questions.length, 904 + bvis04Questions.length + bvis05Questions.length);
+  assert.equal(content.questions.length, 904 + bvis04Questions.length + bvis05Questions.length + bvis06Questions.length);
 
   for (const module of content.modules) {
     const es = spanishModules[module.id];

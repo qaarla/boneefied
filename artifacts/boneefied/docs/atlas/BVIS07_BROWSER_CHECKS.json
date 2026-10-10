@@ -1,0 +1,48 @@
+{
+  "scope": "One focused web pass, followed only by verification of two corrected viewer issues. No native-device/offline claims.",
+  "initial": {
+    "verdict": "failure",
+    "text": "Completed one focused web pass in a new isolated context at 390×844; no login, file edits, package installs, release/publish actions, data reset, or website changes. The context’s settings were changed to Español and Texto Grande for testing only. No local screenshot files were written; observation screenshots are attached below.\n\n**Startup/render diagnosis:** The app does render after waiting. The first practice view became populated after 2.5 s; several route changes initially produced blank screenshots/loading viewers, then painted after about 1.2–1.5 s. No page errors or fatal runtime errors were observed. Console warnings were limited to deprecated `shadow*` and `props.pointerEvents` styles, plus React DevTools/startup messages.\n\n**Verified:**\n- Urinary sequence: before grading, the image showed neutral numbered markers and the choices were named organs, not canonical IDs. Kidney → Ureter → Urinary bladder → Urethra graded correct in English and in Spanish (Riñón → Uréter → Vejiga urinaria → Uretra). Both result views provided anatomical-name feedback; Spanish feedback was localized.\n- Urinary module: the local 2D urinary diagram rendered when scrolled fully into view. Learn exposed structure labels, and captions distinguished 2D diagrams from real specimens and included source/rights information. In Recall, marker faces visibly changed to `?`.\n- Other question views: axial skull, frontalis, cerebellum, right atrium (marker 4), first BVIS05 respiratory hotspot (nose; located from the catalog), digestive tongue, prostate, and uterus all rendered after any brief initial wait. Their named target buttons accepted a tap and enabled submission; controls were visible above the bottom dock at 390×844. These quick checks were not graded, except for the required sequences and histology.\n- Kidney histology rendered as stained tissue. Selecting Corteza renal graded correct; the result identified renal cortex/glomeruli and exposed the Wikimedia Commons/Josef Reischig attribution, license, and Fuente/Derechos links.\n- At 320×844 with Texto Grande selected, settings typography wrapped into a vertically scrollable layout; no horizontal overflow or overlap was apparent in the visible section. Lower controls continued below the viewport.\n\n**Issues / gaps:**\n1. **Recall leaks answers to assistive technology:** although labels are visually hidden and markers show `?`, the Recall accessibility names still expose targets (for example, “Marker 1. Reveal Kidney”). This undermines Recall concealment for screen-reader users.\n2. **Enlarged gallery/zoom/pan was not verifiable:** tapping the rendered urinary atlas artwork did not open an enlarged gallery or modal, and no separate open/close affordance was exposed. On a rendered inline viewer, mouse drag, double-click, and wheel did not visibly change image scale/position. The Reset control was present and clickable, but there was no visible transform to reset; no gallery was open to close. Physical multi-touch pinch/native behavior was not tested.\n3. Automatic browser observations supplied screenshot evidence, but the browser tooling did not provide a supported way to save separate image files outside the code tree without calling a prohibited manual screenshot API. No screenshot files or code changes were made.\n\nScreenshots: urinary diagram rendered (`ul2vwh`); Recall mode (`ae0q7g`); English sequence graded (`5ewskp`); Spanish sequence graded (`qz6oex`); histology attribution after grading (`ur2hml`); 320px enlarged-text settings (`awji7b`); inline respiratory viewer after mouse gestures with no enlarged gallery (`tgfjai`). This was web-only testing; no native-device or offline success is claimed.",
+    "screenshots": [
+      {
+        "description": "Rendered local urinary-system 2D atlas image with numbered markers and inline Reset; supports image-render and diagram presentation verification.",
+        "id": "ul2vwh"
+      },
+      {
+        "description": "Recall mode visibly selected; marker faces are question marks. Accessibility snapshot still exposed target names, as reported.",
+        "id": "ae0q7g"
+      },
+      {
+        "description": "English urinary-route sequence graded correct with anatomical-name result feedback.",
+        "id": "5ewskp"
+      },
+      {
+        "description": "Spanish urinary-route sequence graded correct; screenshot supports the localized question state, with complete feedback in the layout snapshot.",
+        "id": "qz6oex"
+      },
+      {
+        "description": "Kidney histology specimen after correct grading, with attribution and source/rights links visible.",
+        "id": "ur2hml"
+      },
+      {
+        "description": "Settings at 320×844 with Texto Grande selected; shows wrapped, vertically flowing layout.",
+        "id": "awji7b"
+      },
+      {
+        "description": "Inline respiratory viewer after mouse gestures; no enlarged gallery/modal or visible zoom is present.",
+        "id": "tgfjai"
+      }
+    ]
+  },
+  "correctedFlows": {
+    "verdict": "success",
+    "text": "Verified only the two requested fixes on `/module/urinary-system` in the isolated web context:\n\n- **Recall accessibility and reveal/hide:** With Recall active, hidden markers use generic names such as “Marcador 1. Mostrar etiqueta” (and `?` visually), with no anatomical answer. Revealing marker 1 changes its name to “Marcador 1, Riñón. Ocultar etiqueta” and displays “1. Riñón”; hiding it returns the generic name and removes the label.\n- **Inline zoom, pan, and reset:** The viewer controls are below the gesture canvas. Zoom in changed the canvas transform to `matrix(1.5, 0, 0, 1.5, 0, 0)`. Dragging changed the offset to `matrix(1.5, 0, 0, 1.5, 40, 30)`. Reset returned the image ancestor to `matrix(1, 0, 0, 1, 0, 0)` (scale 1, offset 0). The controls remained below the image/markers; no modal/gallery was used.\n- **320px with enlarged text:** The control buttons wrap into two rows, remain within the card, and the document/body widths are both 320px—no horizontal overflow observed.\n\nNo other routes or sequence tests were repeated. Screenshot attached: 320px control-row layout.",
+    "screenshots": [
+      {
+        "description": "At 320px with enlarged text, shows the urinary viewer controls wrapping into two rows below the canvas, contained within the card without visible horizontal clipping.",
+        "id": "as581q"
+      }
+    ]
+  },
+  "finalVerdict": "Focused flows passed after Recall accessibility and inline zoom-control corrections."
+}
