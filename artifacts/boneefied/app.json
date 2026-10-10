@@ -11,12 +11,12 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.qaarla.boneefied",
-      "buildNumber": "3",
+      "buildNumber": "4",
       "icon": "./assets/images/icon.png"
     },
     "android": {
       "package": "com.qaarla.boneefied",
-      "versionCode": 3,
+      "versionCode": 4,
       "icon": "./assets/images/icon.png",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
