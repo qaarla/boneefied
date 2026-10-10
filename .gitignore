@@ -51,5 +51,6 @@ Thumbs.db
 # Locally staged Google Play bundles; keep large release binaries out of Git.
 /releases/google-play/*.aab
 /releases/google-play/*.part
+/generated-artifacts/
 /artifacts/boneefied/scripts/atlas/bvis04-review/
 /artifacts/boneefied/scripts/atlas/bvis05-review/

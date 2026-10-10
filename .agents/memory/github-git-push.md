@@ -8,3 +8,15 @@ An authorized GitHub connector can work for API operations while Git pushes from
 **Why:** An unauthenticated dry-run failed despite a working connector and correct remote; a later dry-run using a workspace-managed secret through a scoped helper succeeded. Neither a connector nor a remote URL alone proves that Git transport will work.
 
 **How to apply:** Verify the actual push path non-interactively with a dry-run before promising a push. Check only whether the workspace-managed secret exists; never print it or persist it in Git config. After pushing, compare the remote branch SHA to the local source SHA. If authentication is unavailable, report the transport blocker rather than asking the user to recreate the connector.
+
+A Git push can update GitHub successfully and then fail when Replit blocks the local remote-tracking ref write. Verify the remote ref before retrying.
+
+**Why:** The remote accepted a fresh build branch, but the workspace guard rejected the subsequent local tracking-ref lock. The nonzero exit did not mean the remote push failed.
+
+**How to apply:** Read the remote branch with `git ls-remote` or the authenticated GitHub API and compare its full SHA with the intended source before another write or build request.
+
+Unset Git HTTP tracing variables rather than setting `GIT_CURL_VERBOSE=0`.
+
+**Why:** A defined `GIT_CURL_VERBOSE`, including the string `0`, can enable verbose HTTP logging.
+
+**How to apply:** Remove `GIT_CURL_VERBOSE`, `GIT_TRACE_CURL`, and `GIT_TRACE` from credential-bearing Git command environments; never log credentials.

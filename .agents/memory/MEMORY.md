@@ -18,3 +18,4 @@
 - [Marker overlap evidence](marker-overlap-evidence.md) — circular marker bounding boxes can intersect without a visible collision; inspect pixels before moving anatomy markers.
 - [Boneefied atlas standard](boneefied-atlas-standard.md) — uniform original 2D anatomy pack; approved source hierarchy and commercial-reuse boundaries.
 - [Web touch collections](react-native-web-touchlists.md) — Expo web can expose DOM TouchList despite native array typings; verify actual touch geometry.
+- [Android APK integrity](android-apk-integrity.md) — generic unzip extra-field warnings can differ from full entry CRC checks; never modify a signed APK to silence them.

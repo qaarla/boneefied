@@ -3,5 +3,6 @@
 
 # No need to store the pnpm store twice.
 .local
+/generated-artifacts/
 /artifacts/boneefied/scripts/atlas/bvis04-review/
 /artifacts/boneefied/scripts/atlas/bvis05-review/

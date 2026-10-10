@@ -1,0 +1,43 @@
+{
+  "app": "Boneefied",
+  "expoProjectId": "1555c01d-944e-41cb-b923-d4691756ab33",
+  "sourceSha": "8c852f5ec42700bf436328314375309bc4292abc",
+  "verifiedGitHubRef": "boneefied-internal-build-4-20261010",
+  "repository": "qaarla/boneefied",
+  "baseDirectory": "artifacts/boneefied",
+  "profile": "preview",
+  "distribution": "INTERNAL",
+  "appVersion": "1.0.0",
+  "buildNumber": "4",
+  "mobileIdentifier": "com.qaarla.boneefied",
+  "autoSubmit": false,
+  "ios": {
+    "buildId": "d6fcd332-4483-4469-96d7-b15c490b4eb0",
+    "status": "FINISHED",
+    "artifactUrl": "https://expo.dev/artifacts/eas/_FityS387Ru29M9V7cvhCWispn-HaEQrnWSZbW1CJ-k.ipa",
+    "artifactHttpStatus": 200,
+    "artifactContentLength": 59310888
+  },
+  "android": {
+    "buildId": "26cdd68c-5681-47bb-9119-642dfeedac15",
+    "status": "FINISHED",
+    "format": "APK",
+    "artifactUrl": "https://expo.dev/artifacts/eas/ENHAY0gQLolpmMaI0cLkF9VTy_MoyKdQ6itMbCYlbDI.apk",
+    "stagedPath": "generated-artifacts/boneefied-builds/boneefied-build-4-8c852f5.apk",
+    "verifiedDownloadUrl": "https://198e4559-f7a5-4cab-95b5-2eae02bdc149-00-3dp8avzr8qq2.picard.replit.dev/api/download/boneefied-build-4-8c852f5.apk",
+    "httpStatus": 200,
+    "contentDisposition": "attachment; filename=\"boneefied-build-4-8c852f5.apk\"",
+    "bytes": 160356217,
+    "sha256": "2520b241a7d86cbb3b5b18f3cbd828d73e4e7aaf5335d27a78fea9b34db7fd16",
+    "publicDownloadMatchesStagedFile": true,
+    "integrity": "PASS: Python zipfile read and CRC-checked all 1566 entries in the staged APK and the public download. AndroidManifest.xml present.",
+    "genericUnzipWarning": "Info-ZIP rejected zero-length extra-field entries; the signed APK was not modified or resigned."
+  },
+  "limits": [
+    "No Google Play or App Store submission.",
+    "Android APK is an internal installation build, not a Google Play AAB.",
+    "Internal iOS build uses the existing device provisioning.",
+    "Physical-device installation and offline operation were not tested.",
+    "API download routing and build evidence were added after the pinned mobile source revision."
+  ]
+}

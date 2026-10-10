@@ -5,9 +5,12 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const router: IRouter = Router();
-const filename = "boneefied-production.aab";
+const downloads = [
+  { filename: "boneefied-production.aab", directory: ["releases", "google-play"], contentType: "application/octet-stream" },
+  { filename: "boneefied-build-4-8c852f5.apk", directory: ["generated-artifacts", "boneefied-builds"], contentType: "application/vnd.android.package-archive" },
+];
 
-function getBundlePath(): string {
+function getBundlePath(filename: string, subdirectory: string[]): string {
   let directory = dirname(fileURLToPath(import.meta.url));
   while (!existsSync(join(directory, "pnpm-workspace.yaml"))) {
     const parent = dirname(directory);
@@ -16,9 +19,10 @@ function getBundlePath(): string {
     }
     directory = parent;
   }
-  return join(directory, "releases", "google-play", filename);
+  return join(directory, ...subdirectory, filename);
 }
 
+for (const { filename, directory, contentType } of downloads) {
 router.get(`/download/${filename}`, async (req, res, next) => {
   // The staged, Git-ignored bundle is workspace-only delivery, not a public
   // production storefront or a directory of arbitrary downloadable files.
@@ -28,7 +32,7 @@ router.get(`/download/${filename}`, async (req, res, next) => {
   }
 
   try {
-    const bundlePath = getBundlePath();
+    const bundlePath = getBundlePath(filename, directory);
     const file = await stat(bundlePath);
     if (!file.isFile() || file.size === 0) {
       res.status(404).json({ error: "Staged release bundle is unavailable" });
@@ -36,7 +40,7 @@ router.get(`/download/${filename}`, async (req, res, next) => {
     }
 
     res.set({
-      "Content-Type": "application/octet-stream",
+      "Content-Type": contentType,
       "Content-Disposition": `attachment; filename="${filename}"`,
       "Cache-Control": "private, no-store",
       "X-Content-Type-Options": "nosniff",
@@ -59,5 +63,6 @@ router.get(`/download/${filename}`, async (req, res, next) => {
     next(error);
   }
 });
+}
 
 export default router;
