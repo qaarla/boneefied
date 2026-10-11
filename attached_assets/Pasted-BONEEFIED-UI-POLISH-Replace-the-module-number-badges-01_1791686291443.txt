@@ -1,0 +1,46 @@
+BONEEFIED UI POLISH — Replace the module number badges (01–18) with small semantic illustrated icons.
+
+On the Study / Learning modules cards, remove the orange numeric badges at the left of each card and replace them with simple, clean, uniform module icons. I want small matte anatomy-style icons, visually consistent with Boneefied and with the icon style used in my other apps. Keep them simple, legible, and understated — not busy, not cartoonish, not glossy.
+
+Requirements:
+- Replace the numbered badge for every module card with a module-specific icon.
+- Keep the same left-slot footprint so card spacing/alignment remains clean.
+- Use a consistent icon system:
+  - rounded-square or softly rounded tile
+  - Boneefied palette
+  - simple matte illustration style
+  - consistent stroke/weight
+  - centered composition
+- Preserve current Tinos typography and the rest of the card layout.
+- Do not enlarge the cards.
+- Keep the right chevron and all text content intact.
+- Icons must read clearly at small size on iPhone.
+
+Proposed semantic icon mapping:
+- Cells & Tissues → cell cluster / epithelial cells
+- Lymphatic System → lymph node / droplet-vessel icon
+- Cytology / Mitosis → dividing cell / chromosomes
+- Skeletal System → skull or long bone
+- Joints & Ligaments → hinge joint / ligament band
+- Muscular System → biceps / muscle fiber
+- Nervous System & Brain → brain
+- Cranial & Peripheral Nerves → branching nerve
+- Special Senses → eye / ear combination or eye
+- Endocrine → gland / hormone droplet
+- Blood & Cardiovascular → heart
+- Blood Vessels → artery/vein
+- Respiratory → lungs
+- Digestive → stomach / GI tract
+- Urinary → kidney
+- Male Reproductive → simple male reproductive symbol/anatomy cue
+- Female Reproductive → uterus
+- Integumentary or Skin-related module → skin layers / hair follicle
+
+Implementation notes:
+- Create or source a uniform in-app icon set with matching style.
+- Prefer local app assets or vector icons/composed SVG-style illustrations over inconsistent mixed artwork.
+- If one shared reusable component controls these badges, refactor it so cards consume an icon key instead of a display number.
+- Preserve accessibility labels so each icon announces the module name.
+- Run a UI pass on all module cards and make sure no card looks misaligned after the swap.
+
+Do not redesign the whole screen. Only replace the number badges with module illustrations and polish spacing if needed. Stop after this change and report the modules updated.
