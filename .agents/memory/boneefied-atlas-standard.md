@@ -49,3 +49,9 @@ Retain real microscopy by asset identity/type, not the question task type.
 **Why:** A real spinal-cord specimen uses a multiple-choice question; filtering only histology-identification tasks would incorrectly substitute a schematic.
 
 **How to apply:** Preserve specimen endpoints across all question types when replacing gross diagrams.
+
+Keep marker paint smaller than its interaction area, and adapt painted size to image width and annotation density rather than enlarging the artwork's numbered circles to satisfy touch targets.
+
+**Why:** Physical/rendered feedback said the new 2D diagrams were fundamentally good but “the numbers are a bit gigantic” and “The bubbles are a bit enormous,” especially on dense phone-width diagrams. The requested repair concerned the controls, not the anatomy.
+
+**How to apply:** Preserve anatomy coordinates and answer mappings when repairing marker presentation. Keep generous invisible hit areas, readable contrast, and full accessible names/legends. Per-diagram tuning requires a separate request; optional override support is not authorization to apply overrides.

@@ -55,7 +55,7 @@ export default function GlossaryEntryScreen() {
       {plates.length > 0 && <View style={styles.aliases}>
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Lámina de atlas' : 'Atlas plate'}</Heading>
         {plates.map((plate) => <View key={plate.id} style={styles.aliases}>
-          <AnatomyImageViewer source={imageSources[plate.id]} atlasLayout labels={plate.labels?.filter((l) => l.structureId === entry.structure.id)} revealLabels imageAspectRatio={plate.imageAspectRatio} caption={plate.title} />
+          <AnatomyImageViewer source={imageSources[plate.id]} diagramAssetId={plate.id} markerSizeOverride={plate.hotspotSizeOverride} diagramMarkerCount={plate.labels?.length} atlasLayout labels={plate.labels?.filter((l) => l.structureId === entry.structure.id)} revealLabels imageAspectRatio={plate.imageAspectRatio} caption={plate.title} />
           <VisualStudyContext asset={plate} learn />
         </View>)}
       </View>}

@@ -22,7 +22,7 @@ export function VisualStudyContext({ asset, learn }: { asset: Asset; learn: bool
       : kind === 'model'
         ? es ? 'Imagen de un modelo didáctico — no una muestra humana.' : 'Teaching-model image — not a human specimen.'
         : es ? 'Diagrama de estudio 2D — no una muestra ni fotomicrografía.' : '2D study diagram — not a specimen or photomicrograph.';
-  return <View style={{ gap: 7, paddingHorizontal: 6 }}>
+  return <View style={{ gap: 8, paddingHorizontal: 12 }}>
     <Text style={{ color: colors.mutedForeground }}>{label}</Text>
     {learn && asset.description && <Text style={{ color: colors.foreground }}>{asset.description}</Text>}
     {learn && asset.specimenNote && <Text style={{ color: colors.mutedForeground }}>{asset.specimenNote}</Text>}

@@ -1,0 +1,72 @@
+{
+  "scope": "Global visible marker sizing only; no per-diagram overrides applied. Browser-rendered phone checks, not physical-device testing.",
+  "normalAndInteractionCheck": {
+    "text": "Focused marker-sizing pass only; no code edits, builds, publishing, progress reset, native-device, or offline claims. I used the app’s supported web preview `qaFontScale=2` with Settings **Text Large** at 320px (the app does not expose `window.__fontScale`; it reads `qaFontScale`). Normal comparison used 390px with Text Default.\n\n**Plate sizing:**\n- 390px normal: the sparse renal-vessel plate has 11 `marker-paint-*` nodes on a 348×312px image; painted circles are 25.39px with 44×44px outer buttons. The kidney-section plate has 18 markers at 23.64px circles; the urinary-tract plate has 17 at 23.89px. The densest actual skeletal viewer is **Skull base, external (inferior) view** (20 markers; the axial/appendicular overview plates have fewer), with a 348×520px image, 23.14px circles, and 44×44px outer buttons. The denser plate’s circles are smaller than the sparse renal-vessel circles at comparable image width.\n- 320px + Large + scale 2: urinary images are 271px wide; the 11-marker renal-vessel plate has 22.67px circles, the 18-marker kidney-section plate 20.72px, and the 17-marker urinary-tract plate 21px. The 20-marker skeletal skull-base plate is 271×520px with 20.16px circles. All are within the requested circle ranges/cap, and dense markers are smaller than sparse markers. Module outer buttons measured 44×44px (meeting the module minimum). Numerals were white on orange `rgb(201, 86, 24)`; measured glyph sizes included 10.43px sparse / 10px dense enlarged and 10.65px dense normal. The `marker-paint` computed font style was 13.33px; I did not separately read the inner glyph font for the 390px sparse plate. Screenshots show numerals fitting and strong contrast.\n- Recall: on the sparse plate I clicked at (25,422), inside Marker 1’s 44×44 target but outside its 22.67px painted circle. It revealed exactly **Renal artery**; clicking the same outer-only point hid it again, returning to `?` and generic `Marker 1. Reveal label` accessibility text. No other marker was revealed.\n- Viewer gestures: on the same image, Zoom in reached scale 1.5; drag changed the offset to (30,25); Reset returned the canvas to identity (scale 1, offset 0). Controls stayed below the canvas.\n\n**Blocking sizing issue:** In Practice at 320px + Large + scale 2, the numbered tongue hotspot’s outer button measured **44×44px**, not the requested at least 60×60px. Its painted circle was 22.42px. A tap at (24,387), inside the target but outside the painted circle, selected Hotspot 1 and enabled Submit; I did **not** submit. The outer-area interaction works, but the hit target misses the specified large-text Practice minimum by 16px in each dimension.\n\nEvidence: 390px sparse renal plate, dense skeletal plate, 320px enlarged sparse and dense plates, Recall reveal/hide, and the unsubmitted Practice outer-area selection.",
+    "screenshots": [
+      {
+        "description": "Normal 390px sparse renal-vessel viewer with its 11 numbered markers.",
+        "id": "7j8z3o"
+      },
+      {
+        "description": "Normal 390px dense skeletal skull-base viewer with 20 numbered markers.",
+        "id": "wcw8qu"
+      },
+      {
+        "description": "320px, Large + scale 2 sparse renal-vessel plate with marker circles and controls.",
+        "id": "n42466"
+      },
+      {
+        "description": "320px, Large + scale 2 dense 20-marker skeletal plate fully visible.",
+        "id": "0z7uxf"
+      },
+      {
+        "description": "Recall marker 1 revealed as Renal artery; other markers remain hidden.",
+        "id": "yw8xiw"
+      },
+      {
+        "description": "Recall marker 1 hidden again, showing generic question-mark markers.",
+        "id": "17lrsb"
+      },
+      {
+        "description": "Practice tongue marker selected by tapping outside the painted circle but inside its measured outer target; answer left unsubmitted.",
+        "id": "2q5iv3"
+      }
+    ],
+    "note": "Unsupported qaFontScale=2 observations are NOT enlarged-system-text evidence; the reported Practice issue was corrected by using a supported test scale, not a code change."
+  },
+  "correctEnlargedCheck": {
+    "text": "Corrected enlarged-only recheck passed in a **fresh 320×844 browser context**. The first app load was `/module/urinary-system?qaFontScale=2.5`; I selected **Text Large** in Settings and retained `qaFontScale=2.5` in the same tab through Urinary, Skeletal, and Practice.\n\nThe rendered title confirms the preview was active—not just present in the URL: under Text Default it computed to **72.5px**, and after selecting Large it computed to **81.2px** (72.5×1.12). The skeletal module title also computed to 81.2px after same-tab navigation.\n\n- **Sparse renal-vessel plate:** 11 markers; image 271×312px; painted circles **30.38px**; numeral glyph **13.97px**, white on orange; module hit buttons 44×44px.\n- **Dense skeletal plate:** the highest-count actual plate was “Skull base, external (inferior) view,” with 20 markers (the axial/appendicular overview plates have fewer); image 271×520px; painted circles **27px**; glyph **12.42px**, white on orange; module hit buttons 44×44px. This is smaller than the sparse renal circles, as expected.\n- **Practice target:** tongue marker’s outer hit area measured **60×60px**; the painted numbered circle was **29.63px** (<40px), with a **13.63px** glyph. A click at (92,422)—inside the outer target and outside the painted circle—selected Hotspot 1. Submit answer remained enabled and was left untouched; no result or grading feedback appeared.\n\nThe earlier 44px Practice observation was from the unsupported scale-2 preview and does not reproduce under the supported 2.5 preview. No files were changed. The synthetic 2.5× setting makes headings and legends wrap heavily at 320px, but the enlarged sparse/dense diagrams and their markers were captured; no marker-sizing defect appeared in this corrected pass.",
+    "screenshots": [
+      {
+        "description": "Fresh-context Settings at 320px with Text Large checked while retaining qaFontScale=2.5.",
+        "id": "jpyxpm"
+      },
+      {
+        "description": "Same fresh context and qaFontScale=2.5 before Large: urinary title baseline rendered at computed 72.5px.",
+        "id": "4h4s34"
+      },
+      {
+        "description": "After selecting Large in that context: Urinary System title visibly enlarged; computed size measured 81.2px.",
+        "id": "9p54kn"
+      },
+      {
+        "description": "Correct 2.5× + Large enlarged sparse renal-vessel plate with 11 numbered markers.",
+        "id": "udwz0p"
+      },
+      {
+        "description": "Correct 2.5× + Large enlarged dense skeletal skull-base plate showing all 20 markers.",
+        "id": "l7e3kf"
+      },
+      {
+        "description": "Practice after clicking outside the painted circle but inside the 60×60 target; Hotspot 1 is active and answer remains unsubmitted.",
+        "id": "b7xu3e"
+      }
+    ],
+    "verdict": "success"
+  },
+  "typecheck": "pass",
+  "tests": {
+    "passed": 128,
+    "failed": 0
+  }
+}

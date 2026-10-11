@@ -1,0 +1,642 @@
+{
+  "scope": "BVR04 only; current published catalog reviewed, not production-deployment verification; no builds/deploy/publish",
+  "totalVisualsChecked": 164,
+  "markedVisuals": 157,
+  "unmarkedVisuals": 7,
+  "smallerEnlargedMarkers": 107,
+  "sharedPresentationPolish": "viewer legend/caption spacing, control width cap and aligned disclosures across current visual consumers; anatomy lesson bookmark width/wrapping only",
+  "perDiagramSizeOverrides": [
+    {
+      "id": "asset-openstax-muscle-labeled-overview",
+      "title": "Superficial muscles, anterior and posterior views",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-female-gross",
+      "title": "Female internal organs: ovary, tube, uterus and vagina",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-testis-ducts",
+      "title": "Testis, epididymis and seminiferous tubule",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis05-heart-anterior",
+      "title": "Heart from the front: chambers, apex and great vessels",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis05-body-artery-vein-maps",
+      "title": "Major arteries and major veins of the body",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-male-system",
+      "title": "Male reproductive tract, glands and penis",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-skull-base-external",
+      "title": "Skull base, external (inferior) view",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-alimentary-canal",
+      "title": "Alimentary canal: mouth to anus",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-ovary-follicle",
+      "title": "Ovary: follicle stages and follicle wall",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-abdominal-placement",
+      "title": "Abdominal placement of the digestive organs",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis05-upper-airway",
+      "title": "Upper airway: nasal cavity, sinuses and pharynx",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-cranial-floor-internal",
+      "title": "Cranial floor, internal (superior) view",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-liver-biliary-pancreas",
+      "title": "Liver, gallbladder, pancreas and their ducts",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-kidney-section",
+      "title": "Kidney in section: cortex, medulla and collecting system",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-nephron-pathway",
+      "title": "Nephron segments and the urine pathway",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis05-larynx-glottis",
+      "title": "Larynx and glottis",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-urinary-tract",
+      "title": "Urinary tract and the opened bladder",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-skull-front",
+      "title": "Anterior skull: facial bones and openings",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-skull-lateral",
+      "title": "Left lateral skull",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-digestive-wall-layers",
+      "title": "Layers of the digestive wall",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-openstax-historical-skin-structure",
+      "title": "Skin in section: layers, appendages and receptors",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-epidermis-strata",
+      "title": "Epidermis: strata and cell types (schematic)",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-commons-appendicular-skeleton-blank",
+      "title": "Appendicular skeleton, anterior view",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis05-heart-chambers-valves",
+      "title": "Opened heart: chambers, valves and flow",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis05-lymph-overview",
+      "title": "Lymphatic drainage routes and node groups",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-stomach",
+      "title": "Stomach: regions, rugae and gastric glands",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-large-intestine",
+      "title": "Large intestine and anal canal",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-hand-palmar",
+      "title": "Right hand, palmar view: carpals, metacarpals, phalanges",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-servier-brain-sagittal",
+      "title": "Brain, midsagittal view: callosum, diencephalon, ventricles",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-servier-eye-section",
+      "title": "Eye in section: tunics, lens and vitreous chamber",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-oral-cavity",
+      "title": "Oral cavity, pharynx and salivary glands",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-renal-corpuscle",
+      "title": "Renal corpuscle and filtration barrier",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-deep-nuclei",
+      "title": "Deep brain nuclei, coronal slice",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-spinal-cross-section",
+      "title": "Spinal cord in cross-section: gray matter, tracts and roots",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-foot-dorsal",
+      "title": "Right foot, dorsal view: tarsals, metatarsals, phalanges",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-eye-anterior-segment",
+      "title": "Anterior eye: chambers, aqueous humor and zonules",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-inner-ear-vestibular",
+      "title": "Inner ear: vestibule, canals and cochlea",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis06-uterine-wall",
+      "title": "Uterine wall and endometrium",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-skeletal-atlas-skull-sutures",
+      "title": "Cranial sutures: superior and posterior views",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-cranial-nerves-i-vi",
+      "title": "Cranial nerves I-VI, inferior surface of the brain",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-middle-ear",
+      "title": "Middle ear: ossicles and windows",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-gray880-optic-nerve-head",
+      "title": "Optic disc, macula and optic nerve head",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-spinal-roots-rami",
+      "title": "Spinal nerve: roots, ganglion and rami",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-plexus-overview",
+      "title": "The four major plexuses and the phrenic nerve",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-cranial-nerves-vii-xii",
+      "title": "Cranial nerves VII-XII, brainstem and cerebellopontine angle",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-retina-layers",
+      "title": "Retina: cell chain (schematic)",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis04-cochlea-corti",
+      "title": "Cochlear ducts and the organ of Corti (schematic)",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-bvis05-ovary-testis",
+      "title": "Gonads: ovary and testis",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-hand",
+      "title": "Hand: intrinsic muscles, palmar view",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    },
+    {
+      "id": "asset-muscular-atlas-foot",
+      "title": "Foot: plantar first layer and dorsal inset",
+      "override": {
+        "diameter": 18,
+        "numeralSize": 10,
+        "maxDiameter": 21
+      }
+    }
+  ],
+  "perDiagramProtectedRegions": 153,
+  "sourceImageHashesUnchanged": true,
+  "labelNumberTargetMappingsUnchanged": true,
+  "questionMappingsUnchanged": true,
+  "uniqueQuestionTargetConfigurations": 723,
+  "paintOverlaps": 0,
+  "anatomicalAnchorCovers": 0,
+  "coloredInkScreeningFlags": 0,
+  "evidence": {
+    "normalImageWidth": 348,
+    "enlargedImageWidth": 271,
+    "enlargedScale": 2.8,
+    "markedRasterCount": 314,
+    "markedContactSheets": 18,
+    "unmarkedContactSheets": 1,
+    "fullSuitePassed": 143,
+    "finalFocusedWrapChecksPassed": 10,
+    "typecheck": "passed",
+    "browser": {
+      "assignmentId": "d966bedc-e1e5-4dc9-adf2-f3d2cc3d5810",
+      "jobId": "boneefied-bvr03-gestures:352",
+      "kind": "testing",
+      "name": "boneefied-bvr03-gestures",
+      "screenshots": [
+        {
+          "description": "At 320px with Text Large plus qaFontScale=2.5, the final skeletal lesson’s Intercondylar eminence bookmark chip extends past the viewport and is clipped, while Practice and Return controls remain visible.",
+          "id": "eb1ko1"
+        },
+        {
+          "description": "The 320px enlarged Practice question shows the disabled Submit button above the fixed two-row bottom dock; the measured gap is about 110px.",
+          "id": "l1tfkw"
+        },
+        {
+          "description": "At 390px, after zooming and panning, the skull Practice target is visibly selected and Submit is enabled; the question remains unsubmitted.",
+          "id": "ndxxkv"
+        }
+      ],
+      "status": "completed",
+      "text": "**BVR04 final readiness pass: one blocking 320px enlarged-text clipping defect.** I made no code changes, builds, deploys, or publishes, did not traverse the 164-asset set, and did not submit an answer. Text Default was restored after the enlarged pass.\n\n**Blocking finding — 320×844, `qaFontScale=2.5` + Text Large (effective scale 2.8):** At the end of `/module/skeletal-system`, the “Bookmark Intercondylar eminence” chip measures 394px wide at x=32 (right edge 426) inside a 256px-wide content row (x=32–288). Its label is clipped at the viewport edge (visible text ends around “Intercondylar emi…”). Document width remains 320px because the overflow is clipped rather than scrollable; nested content reports `scrollWidth=631px`. The final lesson and module actions are reachable, but this bookmark label is not fully visible. At normal 390px/Text Default, the same chip fits (152.4×44px inside its 350px card), and the final lesson, Practice, and Return controls are reachable.\n\n**Other presentation checks passed:**\n- At 320px enlarged, a skeletal Recall tap revealed **1. Parietal bone**, matching the legend **1. Parietal bone**. The hit target measured 44×44px with 21×21px paint. The image and toolbar were separate; the legend container measured 12px padding/8px gap. Typography and controls reflowed into tall/stacked layouts, but I observed no image/toolbar overlap.\n- At 390px/Text Default/no preview query, the low-density diaphragm plate used 27.1px paint inside a 44px target. Dense female (25 markers), heart (22), and skull (16) plates used 18px paint inside 44px targets; measured hit boxes did not overlap. Toolbars stayed below the artwork. Legends, captions, and rights/disclosure text remained separate and within the 390px document width; toolbars wrapped where needed without colliding with artwork or text. One female reveal exposed matching **1. Uterus** and **17. Uterus** legend entries.\n- At 320px enlarged, the actual Practice Submit button ended at y=572.2 and the floating dock began at y=682, leaving **109.8px clearance**. The final Practice setup text was also reachable above the dock with about 110px clearance.\n- At 390px, I zoomed the unanswered skull Practice question to 1.5× and panned it down 60px. The parent scroll remained at 0; after panning the target was still unselected and Submit disabled. A deliberate tap then gave the skull target an orange selection outline and enabled Submit. The question remained open; I did not submit.\n\nNo answer was submitted and no files were changed. The app is not fully ready at the requested 320px effective 2.8 text scale until the oversized bookmark chip fits or wraps instead of clipping.",
+      "verdict": "failure"
+    },
+    "finalWrapBrowser": {
+      "assignmentId": "a3a0d428-2720-4453-ab62-c6f8911e0731",
+      "jobId": "boneefied-bvr03-gestures:360",
+      "kind": "testing",
+      "name": "boneefied-bvr03-gestures",
+      "screenshots": [
+        {
+          "description": "At 320px and effective scale2.8, the full “Intercondylar eminence” bookmark label wraps inside its chip; the final Practice and Return controls remain visible below.",
+          "id": "v1twmf"
+        }
+      ],
+      "status": "completed",
+      "text": "The focused 320px end-card fix verification passed at the requested **effective 2.8** scale (Text Large factor 1.12 × `qaFontScale=2.5`) on `/module/skeletal-system?qaFontScale=2.5` at 320×844.\n\nAt the actual module end, the “Intercondylar eminence” target is **256×104px** at x=32 within its **256px** parent. The complete label wraps onto two lines; its width stays within the parent. No horizontal overflow was detected in the target, final lesson descendants, or document (html/body widths are both 320px). The end scroll position was at maximum, and both enabled **Practice this module · 136 questions** and **Return to library** controls remained visible and reachable.\n\nText Default is restored and confirmed checked in Settings. No answers were submitted, and no code, build, deployment, or publication actions were performed. The app briefly showed a blank Settings page with Metro disconnected; one reload recovered it before testing. Attached is the single requested end-of-module screenshot.",
+      "verdict": "success"
+    },
+    "physicalNativeDeviceTest": false
+  },
+  "manualRedrawingRequired": [],
+  "sourceAssetsAdded": 0,
+  "changedDiagramIds": [
+    "asset-atlas-skeleton-anterior",
+    "asset-atlas-skeleton-posterior",
+    "asset-bvis05-marrow-hematopoiesis",
+    "asset-bvis05-vessel-wall-types",
+    "asset-bvis06-kidney-placement",
+    "asset-bvis05-respiratory-membrane-histology",
+    "asset-bvis05-lymph-node-structure",
+    "asset-bvis06-renal-vessels",
+    "asset-skeletal-atlas-shoulder-joint",
+    "asset-skeletal-atlas-knee-joint",
+    "asset-atlas-anterior-position",
+    "asset-atlas-body-cavities",
+    "asset-atlas-skeleton-axial-appendicular",
+    "asset-cervical-vertebra",
+    "asset-bvis04-csf-meninges",
+    "asset-bvis05-heart-wall-pericardium",
+    "asset-bvis05-coronary-posterior",
+    "asset-bvis05-trachea-bronchial-tree",
+    "asset-bvis05-lung-lobes",
+    "asset-bvis06-small-intestine",
+    "asset-skeletal-atlas-vertebra-typical",
+    "asset-skeletal-atlas-atlas-axis",
+    "asset-skeletal-atlas-forearm",
+    "asset-skeletal-atlas-hip-bone",
+    "asset-atlas-abdominal-regions",
+    "asset-atlas-organ-locations",
+    "asset-commons-axial-skeleton-blank",
+    "asset-openstax-muscle-face-neck",
+    "asset-openstax-muscle-anterior-trunk",
+    "asset-bvis04-smell-taste",
+    "asset-bvis05-blood-smear-schematic",
+    "asset-bvis05-upper-limb-arteries",
+    "asset-bvis05-upper-limb-veins",
+    "asset-bvis05-pleura-diaphragm",
+    "asset-bvis05-endocrine-body-map",
+    "asset-bvis05-thyroid-parathyroid",
+    "asset-bvis06-liver-lobule-pancreas",
+    "asset-skeletal-atlas-pectoral-girdle",
+    "asset-skeletal-atlas-humerus",
+    "asset-skeletal-atlas-leg-tibia-fibula",
+    "asset-atlas-posterior-position",
+    "asset-original-cell-overview",
+    "asset-servier-ear-section",
+    "asset-openstax-muscle-anterior-leg",
+    "asset-bvis04-dermis-hypodermis",
+    "asset-bvis04-hair-follicle",
+    "asset-bvis05-leukocyte-types",
+    "asset-bvis05-spleen-pulp",
+    "asset-bvis05-hypothalamus-pituitary-axis",
+    "asset-muscular-atlas-deep-back",
+    "asset-skeletal-atlas-thoracic-cage",
+    "asset-skeletal-atlas-synovial-joint",
+    "asset-servier-pelvis",
+    "asset-openstax-muscle-posterior-back",
+    "asset-bvis04-brainstem-cerebellum",
+    "asset-bvis05-blood-composition",
+    "asset-bvis05-head-neck-vessels",
+    "asset-bvis05-hepatic-portal-system",
+    "asset-bvis05-tonsil-map-structure",
+    "asset-bvis05-adrenal-zones",
+    "asset-bvis05-pancreas-islet",
+    "asset-skeletal-atlas-rib-detail",
+    "asset-skeletal-atlas-femur",
+    "asset-servier-brain-lateral",
+    "asset-openstax-muscle-anterior-arm",
+    "asset-bvis05-heart-valves-superior",
+    "asset-bvis05-coronary-anterior",
+    "asset-bvis05-vessel-flow-chain",
+    "asset-bvis05-capillary-types",
+    "asset-bvis05-lower-limb-arteries",
+    "asset-bvis05-alveolar-unit",
+    "asset-muscular-atlas-forearm",
+    "asset-skeletal-atlas-scapula",
+    "asset-gray946-sweat-gland",
+    "asset-original-mitosis-stages",
+    "asset-original-body-cavities",
+    "asset-openstax-muscle-posterior-leg",
+    "asset-injurymap-rotator-cuff-labeled",
+    "asset-bvis04-upper-limb-nerves",
+    "asset-bvis04-connective-loose",
+    "asset-bvis05-great-saphenous-route",
+    "asset-bvis05-thymus-lobule",
+    "asset-bvis05-gut-lymphoid-lacteal",
+    "asset-bvis06-peritoneal-folds",
+    "asset-muscular-atlas-posterior-arm",
+    "asset-muscular-atlas-abdominal-wall",
+    "asset-muscular-atlas-calf",
+    "asset-atlas-abdominal-quadrants",
+    "asset-servier-elbow-joint",
+    "asset-bvis04-lower-limb-nerves",
+    "asset-bvis04-epithelia-simple",
+    "asset-bvis04-epithelia-stratified",
+    "asset-bvis04-cartilage",
+    "asset-bvis04-muscle-tissue",
+    "asset-bvis04-nail-section",
+    "asset-bvis05-conduction-system",
+    "asset-bvis05-celiac-renal-context",
+    "asset-muscular-atlas-deep-thigh",
+    "asset-muscular-atlas-pelvic-floor",
+    "asset-atlas-body-planes",
+    "asset-original-anatomical-planes",
+    "asset-bvis04-epithelia-other-stratified",
+    "asset-bvis04-connective-dense",
+    "asset-muscular-atlas-gluteal",
+    "asset-muscular-atlas-anterior-leg",
+    "asset-bvis04-nervous-tissue",
+    "asset-openstax-diaphragm-labeled"
+  ],
+  "unmarkedIds": [
+    "asset-vertebral-column",
+    "asset-commons-kidney-cortex-human",
+    "asset-commons-alveolar-sac",
+    "asset-openstax-spinal-cord-specimen",
+    "asset-commons-simple-squamous-epithelium",
+    "asset-commons-simple-cuboidal-epithelium",
+    "asset-commons-simple-columnar-epithelium"
+  ],
+  "diagramEvidencePath": "generated-artifacts/bvr02/bvr04-after/inventory.json",
+  "sourceHashCount": 164,
+  "unmarkedSourceHashesUnchanged": true,
+  "readyForCleanInternalTestBuild": true
+}

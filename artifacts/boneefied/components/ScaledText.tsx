@@ -43,6 +43,7 @@ export function useTypographyLayout() {
   const { preference, systemFontScale, width } = useContext(TypographyContext);
   return {
     systemFontScale,
+    effectiveFontScale: TEXT_SCALE_FACTORS[preference] * systemFontScale,
     isLargeText: needsLargeTextLayout(systemFontScale, preference),
     isCompactTextLayout: needsCompactTextLayout(width, systemFontScale, preference),
     isExpandedTabLayout: needsExpandedTabLayout(systemFontScale, preference, width),
@@ -69,6 +70,17 @@ export const Text = forwardRef<NativeText, TextProps>(function Text({ style, ...
     numberOfLines={needsResponsiveTextLayout(width, systemFontScale, preference) ? undefined : props.numberOfLines}
     style={[{ flexShrink: 1, minWidth: 0 }, ...scaledStyle(style, preference, previewFontScale)]}
   />;
+});
+
+/** Numeric image controls only: supplied size includes responsive typography.
+ * Compensate for the native multiplier rather than scaling it twice; keep
+ * native Dynamic Type enabled. Full reading/legend text still uses normal Text. */
+export const MarkerText = forwardRef<NativeText, TextProps>(function MarkerText({ style, ...props }, ref) {
+  const { systemFontScale } = useContext(TypographyContext);
+  const size = StyleSheet.flatten(style)?.fontSize ?? 14;
+  return <NativeText ref={ref} {...props} allowFontScaling maxFontSizeMultiplier={0}
+    dynamicTypeRamp={Platform.OS === 'ios' ? 'body' : undefined}
+    style={[style, Platform.OS !== 'web' && { fontSize: size / Math.max(1, systemFontScale) }]} />;
 });
 
 export const TextInput = forwardRef<NativeTextInput, TextInputProps>(function TextInput({ style, ...props }, ref) {

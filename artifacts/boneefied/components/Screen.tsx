@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { Platform, ScrollView, StyleSheet, View, type ScrollViewProps } from 'react-native';
 import { useSegments } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useColors } from '@/hooks/useColors';
 import { useTypographyLayout } from '@/components/ScaledText';
 import { KeyboardAwareScrollViewCompat } from '@/components/KeyboardAwareScrollViewCompat';
+import { ViewerScrollOwnership } from '@/components/ViewerScrollOwnership';
 
 export function Screen({ children, scroll = true, keyboardAware = false, scrollRef, onScroll, onViewportLayout, keyboardShouldPersistTaps }: {
   children: React.ReactNode;
@@ -16,6 +17,24 @@ export function Screen({ children, scroll = true, keyboardAware = false, scrollR
   keyboardShouldPersistTaps?: ScrollViewProps['keyboardShouldPersistTaps'];
 }) {
   const colors = useColors();
+  const scrollNode = useRef<ScrollView | null>(null);
+  const owners = useRef(new Set<symbol>());
+  const scrollY = useRef(0);
+  const [viewerOwnsGesture, setViewerOwnsGesture] = useState(false);
+  const setOwnership = useCallback((owner: symbol, active: boolean) => {
+    if (active === owners.current.has(owner)) return;
+    if (active) owners.current.add(owner); else owners.current.delete(owner);
+    const locked = owners.current.size > 0;
+    // Stop native scroll interception before the next render commits.
+    if (Platform.OS !== 'web') scrollNode.current?.setNativeProps({ scrollEnabled: !locked });
+    setViewerOwnsGesture(locked);
+  }, []);
+  const ownership = useMemo(() => ({ setOwnership, getScrollY: () => scrollY.current }), [setOwnership]);
+  const attachScroll = useCallback((node: ScrollView | null) => {
+    scrollNode.current = node;
+    if (typeof scrollRef === 'function') scrollRef(node);
+    else if (scrollRef) scrollRef.current = node;
+  }, [scrollRef]);
   const { shouldReflow, isExpandedTabLayout, systemFontScale } = useTypographyLayout();
   const insets = useSafeAreaInsets();
   const segments = useSegments();
@@ -27,7 +46,11 @@ export function Screen({ children, scroll = true, keyboardAware = false, scrollR
   // The top inset belongs outside the scroll view so it cannot scroll under the status bar.
   // Bottom clearance belongs to the scrollable container so the final child can clear the fixed tabs.
   const scrollProps = {
-    onScroll,
+    scrollEnabled: !viewerOwnsGesture,
+    onScroll: ((event) => {
+      scrollY.current = event.nativeEvent.contentOffset.y;
+      onScroll?.(event);
+    }) as NonNullable<ScrollViewProps['onScroll']>,
     keyboardShouldPersistTaps,
     scrollEventThrottle: 16,
     onLayout: ((event) => onViewportLayout?.(event.nativeEvent.layout.height, bottomPadding)) as NonNullable<ScrollViewProps['onLayout']>,
@@ -35,9 +58,9 @@ export function Screen({ children, scroll = true, keyboardAware = false, scrollR
     showsVerticalScrollIndicator: shouldReflow,
   };
   const scroller = keyboardAware
-    ? <KeyboardAwareScrollViewCompat {...scrollProps} bottomOffset={64}>{content}</KeyboardAwareScrollViewCompat>
-    : <ScrollView ref={scrollRef} {...scrollProps}>{content}</ScrollView>;
-  return <View style={[styles.screen, { backgroundColor: colors.background, paddingTop: insets.top }]}>{scroll ? scroller : content}</View>;
+    ? <KeyboardAwareScrollViewCompat viewerScrollRef={attachScroll} {...scrollProps} bottomOffset={64}>{content}</KeyboardAwareScrollViewCompat>
+    : <ScrollView ref={attachScroll} {...scrollProps}>{content}</ScrollView>;
+  return <ViewerScrollOwnership.Provider value={ownership}><View style={[styles.screen, { backgroundColor: colors.background, paddingTop: insets.top }]}>{scroll ? scroller : content}</View></ViewerScrollOwnership.Provider>;
 }
 const styles = StyleSheet.create({
   screen: { flex: 1 },

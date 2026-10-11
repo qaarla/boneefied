@@ -58,6 +58,11 @@ export interface Structure {
   examPriority: boolean;
   verificationStatus: VerificationStatus;
 }
+/** Optional per-diagram paint tuning; unset diagrams retain the global rule. */
+export type HotspotSizeOverride = { diameter?: number; numeralSize?: number; maxDiameter?: number };
+/** Presentation-only protected anatomy, normalized to the source image. */
+export type OverlayAvoidRect = { x: number; y: number; width: number; height: number };
+
 export interface Asset {
   id: string;
   sourceId: string;
@@ -68,6 +73,8 @@ export interface Asset {
   attributionLicense: string;
   verificationStatus: VerificationStatus;
   title?: string;
+  hotspotSizeOverride?: HotspotSizeOverride;
+  hotspotOverlayAvoidRects?: OverlayAvoidRect[];
   description?: string;
   sourceUrl?: string;
   rightsUrl?: string;

@@ -24,6 +24,7 @@ import { applyBvis04Questions } from './bvis04-questions.ts';
 import { attachBvis05, bvis05Assets, bvis05Sources } from './bvis05-pack.ts';
 import { applyBvis05Questions } from './bvis05-questions.ts';
 import { attachBvis06, bvis06Assets, bvis06Sources } from './bvis06-pack.ts';
+import { applyBvr02Overlay } from './bvr02-overlay-overrides.ts';
 import { applyBvis06Questions } from './bvis06-questions.ts';
 import { applySkeletalAtlasAssets, attachSkeletalAtlas, skeletalAtlasQuestions, skeletalAtlasSources } from './skeletal-atlas-pack.ts';
 
@@ -174,6 +175,8 @@ content.modules = content.modules.map((module) => ({
     assetIds: lesson.assetIds?.filter((id) => id !== 'asset-servier-muscle-overview' && id !== 'asset-servier-adrenal-vessels'),
   })),
 }));
+
+content.assets = content.assets.map(applyBvr02Overlay);
 
 export function getSource(id: string): SourceRecord | undefined {
   return content.sources.find((source) => source.id === id);

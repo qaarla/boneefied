@@ -1,0 +1,52 @@
+{
+  "scope": "BVR02 only; browser pass and measurement clarification; no submission, builds or publication",
+  "browser": {
+    "assignmentId": "5310974a-2cd1-46ca-a001-24b1003f6cbd",
+    "jobId": "boneefied-bvis07-browser:302",
+    "kind": "testing",
+    "name": "boneefied-bvis07-browser",
+    "screenshots": [
+      {
+        "description": "Large320 Practice screenshot after the outer-area tap: Hotspot 1 is visibly active; Submit was left untouched.",
+        "id": "akcevr"
+      },
+      {
+        "description": "Normal390 anterior-heart22 plate showing numbered callouts and leader lines; supports the visual and label-mapping check.",
+        "id": "luwgmp"
+      },
+      {
+        "description": "Normal390 seven-marker cranial-nerves plate used for the protected-region and endpoint check.",
+        "id": "bzf72s"
+      },
+      {
+        "description": "Large320 skull-base20 study plate with callouts visible around the skull-base silhouette.",
+        "id": "mqh8cg"
+      },
+      {
+        "description": "Large320 dorsal-foot9 study image with all nine numbered callouts visible.",
+        "id": "7ijf57"
+      },
+      {
+        "description": "Large320 sparse thoracic-cage7 control with its larger, unmodified markers.",
+        "id": "5rxzsq"
+      },
+      {
+        "description": "Median nerve glossary detail and associated two-panel atlas plate.",
+        "id": "u0xsfz"
+      }
+    ],
+    "status": "completed",
+    "text": "Completed the requested BVR02 browser check in the existing normal390 and Large320/Text Large (`qaFontScale=2.5`) contexts. No code was edited; I did not build, publish, submit a score, or assess native/offline behavior.\n\n- **Recall and viewer controls (normal390):** On the female reproductive plate, a tap inside the 44×44 hit area but outside the 18px paint circle revealed “Uterus”; the duplicate marker for the same structure also revealed it. Repeating the tap hid the reveal and restored the generic states. Zoom in reached scale 1.5; a marker-free drag moved the image by (+25,+25); Reset returned to zero translation and scale 1.\n- **Tuned Study plates:** Normal-context female reproductive25, male reproductive23, cranial-nerves7, and anterior-heart22 showed 18px paint / 10px glyph / 44×44 hit targets. In Large320, skull-base20, hand13, and dorsal-foot9 showed 21px paint / 11.76px glyph / 44×44 Study hits. Their visible numbered markers and accessible legend entries matched. The unmodified sparse Thoracic cage7 control stayed larger at 31.9px paint / 14.6625px glyph / 44×44 hit.\n- **Leader endpoints and protected anatomy:** The cranial-nerves plate had no paint circles intersecting its stated protected rectangle; endpoint residuals were at most 1.01px. On the skull-base and heart plates, the broad rectangular protected regions intersected eight paint circles each; the screenshots show the callouts in surrounding margins rather than visibly covering the depicted skull/heart silhouette, but I cannot claim zero geometric box overlap. Heart connector residuals were at most 1.01px; skull-base residuals at most 1.02px.\n- **Enlarged Practice, left unsubmitted:** Opened the exact one-item skull-base hotspot question. At Large320 the foramen-ovale Practice hit target measured 60×60px and its painted circle 21×21px. Clicking (26,397)—inside the hit box `[21,367,60,60]` but outside the paint circle `[40.5,386.5,21,21]`—selected `hotspot-foramen-ovale` (the prompt’s requested target). Submit became available but was not clicked; no answer or score was submitted.\n- **Glossary:** Filtering for “median nerve” returned exactly one entry. Opening it showed the expected definition and nervous-system category, plus the “Median, ulnar and radial nerves of the right upper limb” atlas plate with its Median nerve marker.\n\n**Minor layout note:** At 320px with Text Large and scale2.5, headings and the Practice prompt wrap into narrow, sometimes mid-word fragments and require vertical scrolling; measured document width remained 320px with no horizontal overflow. A “Return to library” attempt after direct URL entry displayed a React Navigation `GO_BACK` warning because this test entry had no navigator stack; the ordinary in-app return path was not evaluated.",
+    "verdict": "success"
+  },
+  "clarification": {
+    "assignmentId": "67f60300-5819-4279-a279-3398a5c06c69",
+    "jobId": "boneefied-bvis07-browser:318",
+    "kind": "testing",
+    "name": "boneefied-bvis07-browser",
+    "screenshots": [],
+    "status": "completed",
+    "text": "The “8 overlaps” were **not** computed from the whole image rectangle or from a merged bounding box. But they were a coarse test, not the exact per-region helper result, so I should not have presented them as actual protected-anatomy intersections.\n\n- **Heart:** I tested the two individual normalized `avoid` rectangles: `[x=.1225, y=.043, w=.4412, h=.869]` and `[x=.7328, y=.273, w=.2137, h=.549]`. The recorded image box was `[x=21, y=272, w=348, h=572]` px, `object-fit: fill` (source 1450×1000), so the corresponding displayed rectangles were approximately `[63.63, 296.60, 153.54, 497.07]` and `[276.01, 428.16, 74.37, 314.03]` px. The count of eight came from intersecting each marker’s **axis-aligned paint bounding box** with either individual rectangle. It was not a circle-to-rectangle test, did not model the anatomy silhouette, and was not the exact per-region helper.\n- **Skull base:** The recorded authored normalized rectangle was `[x=.257, y=.063, w=.4826, h=.869]` for the skull-base plate. The retained measurements do not include its image-box fit/transform dimensions, so I cannot provide a defensible transformed pixel rectangle or certify that the prior coarse count used the exact contain-box transform. That eight-count should likewise be treated as a preliminary rectangle/AABB flag, not actual protected-area overlap.\n\nAccordingly, I retract the implication that the eight circles on either plate actually covered protected anatomy. Your exact per-region helper/all-plate result of zero intersections is consistent with the screenshots showing paint in PNG whitespace; I did not rerun or independently verify that matrix.\n\nRecorded viewer dimensions: **normal390 heart module canvas: 348×572 px**. **Large320 foot module canvas: 239×260 px**. I did not retain the Large320 skull-base Study module viewer’s outer dimensions. Separately, the skull-base **Practice** viewer was recorded as 273×465.9 px, with an image element of 271×254.9 px; that is not the Study module viewer.",
+    "verdict": "general"
+  }
+}

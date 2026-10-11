@@ -15,7 +15,8 @@
 - [Anatomy diagram localization](anatomy-diagram-localization.md) — translated metadata cannot remove English text baked into anatomy images; resolve visibly and rights-safely.
 - [Practice locale draft preservation](practice-locale-drafts.md) — tab navigation can lose unsubmitted selections; persist raw drafts separately from canonical scoring.
 - [Anatomical word meanings](anatomical-word-meanings.md) — define adjective forms in plain language, without treating search vocabulary as valid identification answers.
-- [Marker overlap evidence](marker-overlap-evidence.md) — circular marker bounding boxes can intersect without a visible collision; inspect pixels before moving anatomy markers.
+- [Marker overlap evidence](marker-overlap-evidence.md) — verify painted circles and actual image contain geometry, not broad DOM rectangles, before moving anatomy markers.
 - [Boneefied atlas standard](boneefied-atlas-standard.md) — uniform original 2D anatomy pack; approved source hierarchy and commercial-reuse boundaries.
 - [Web touch collections](react-native-web-touchlists.md) — Expo web can expose DOM TouchList despite native array typings; verify actual touch geometry.
+- [Anatomy gesture ownership](anatomy-gesture-ownership.md) — pinch/zoomed pan owns the active gesture; retain page scrolling at 1× and do not equate browser with native proof.
 - [Android APK integrity](android-apk-integrity.md) — generic unzip extra-field warnings can differ from full entry CRC checks; never modify a signed APK to silence them.
