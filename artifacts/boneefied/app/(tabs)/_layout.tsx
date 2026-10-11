@@ -4,6 +4,7 @@ import { useColors } from '@/hooks/useColors';
 import { useStudy } from '@/context/StudyContext';
 import { devPreviewFontScale, Text, useTypographyLayout } from '@/components/ScaledText';
 import { typographyMetrics } from '@/context/typographyScale';
+import { APP_FONTS } from '@/context/typeface';
 import { Feather } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
@@ -20,7 +21,7 @@ import { useLocale } from '@/locales/useLocale';
 function NativeTabLayout() {
   const { t } = useLocale();
   return (
-    <NativeTabs>
+    <NativeTabs labelStyle={{ fontFamily: APP_FONTS.bold, fontWeight: 'normal' }}>
          <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Icon
           sf={{ default: 'house', selected: 'house.fill' }}
@@ -72,7 +73,7 @@ function AccessibleTabBar({ state, descriptors, navigation }: TabBarProps) {
         style={styles.expandedTab}
       >
         {options.tabBarIcon?.({ focused, color, size: 24 })}
-        <Text style={{ color, fontSize: 11, textAlign: 'center' }}>{label}</Text>
+        <Text style={{ color, fontSize: 11, fontWeight: '700', textAlign: 'center' }}>{label}</Text>
       </Pressable>;
     })}
   </View>;
@@ -98,7 +99,7 @@ function ClassicTabLayout() {
       numberOfLines={1}
       adjustsFontSizeToFit
       minimumFontScale={0.8}
-      style={{ width: '100%', textAlign: 'center', color, fontSize: typographyMetrics(11, undefined, preferences.textScale).fontSize * (isWeb ? devPreviewFontScale() ?? 1 : 1) }}
+      style={{ width: '100%', textAlign: 'center', color, fontFamily: APP_FONTS.bold, fontWeight: 'normal', fontSize: typographyMetrics(11, undefined, preferences.textScale).fontSize * (isWeb ? devPreviewFontScale() ?? 1 : 1) }}
     >{title}</NativeText>
   );
 
@@ -111,7 +112,8 @@ function ClassicTabLayout() {
         // These screens already have full-width in-content titles; at Larger Text
         // the one-line navigation title would compete for space without adding context.
         headerShown: !reflow,
-        headerTitleStyle: { fontSize: typographyMetrics(18, undefined, preferences.textScale).fontSize },
+        headerTitleStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal', fontSize: typographyMetrics(18, undefined, preferences.textScale).fontSize },
+        tabBarLabelStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal' },
         tabBarLabelPosition: reflow ? 'below-icon' : undefined,
         tabBarHideOnKeyboard: isIOS && reflow,
         tabBarStyle: {

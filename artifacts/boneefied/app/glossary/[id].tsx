@@ -38,7 +38,7 @@ export default function GlossaryEntryScreen() {
       <Text style={{ color: colors.mutedForeground }}>{t('glossary.definitionUnavailableMessage')}</Text>
       <AdaptiveButton accessibilityRole="button" onPress={() => router.replace('/glossary')}
         style={[styles.action, { backgroundColor: colors.secondary }]}>
-        <Text style={{ color: colors.foreground }}>{t('glossary.browseGlossary')}</Text>
+        <Text style={{ color: colors.foreground, fontWeight: '700' }}>{t('glossary.browseGlossary')}</Text>
       </AdaptiveButton>
     </> : <>
       <Text style={[styles.eyebrow, { color: colors.primary }]}>{t('glossary.eyebrow')}</Text>
@@ -77,7 +77,7 @@ export default function GlossaryEntryScreen() {
       </AdaptiveButton>
       {typeof q === 'string' && q.length > 0 && <Pressable accessibilityRole="button"
         onPress={() => router.canGoBack() ? router.back() : router.replace({ pathname: '/glossary', params: { q } })}
-        style={styles.back}><Text style={{ color: colors.primary }}>{t('glossary.backToResults', { query: q })}</Text></Pressable>}
+        style={styles.back}><Text style={{ color: colors.primary, fontWeight: '700' }}>{t('glossary.backToResults', { query: q })}</Text></Pressable>}
     </>}
   </Screen>;
 }

@@ -21,3 +21,4 @@
 - [Anatomy gesture ownership](anatomy-gesture-ownership.md) — pinch/zoomed pan owns the active gesture; retain page scrolling at 1× and do not equate browser with native proof.
 - [Android APK integrity](android-apk-integrity.md) — generic unzip extra-field warnings can differ from full entry CRC checks; never modify a signed APK to silence them.
 - [Rights presentation intent](rights-presentation.md) — module provenance belongs in a collapsed bottom disclosure; preserve required image credits and study descriptions.
+- [Native typeface intent](native-typeface-intent.md) — Tinos is the user's chosen native UI typeface; compact anatomy readability and icon fonts take priority over uniformity.

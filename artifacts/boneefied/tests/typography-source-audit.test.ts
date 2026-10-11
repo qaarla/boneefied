@@ -133,7 +133,7 @@ test('shared typography and layout primitives preserve responsive content contra
   assert.match(tabs, /tabBar=\{isExpandedTabLayout \?/);
   assert.match(tabs, /flexWrap: 'wrap'/);
   assert.match(tabs, /width: '50%'/);
-  assert.match(tabs, /<Text style=\{\{ color, fontSize: 11, textAlign: 'center' \}\}>\{label\}<\/Text>/);
+  assert.match(tabs, /<Text style=\{\{ color, fontSize: 11, fontWeight: '700', textAlign: 'center' \}\}>\{label\}<\/Text>/);
   assert.match(tabs, /aria-selected=\{Platform\.OS === 'web' \? focused : undefined\}/);
   assert.doesNotMatch(tabs, /expandedBar:\s*\{[^}]*\bheight\s*:/);
 });

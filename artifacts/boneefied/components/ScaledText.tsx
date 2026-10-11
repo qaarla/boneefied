@@ -11,6 +11,7 @@ import {
   type StyleProp,
 } from 'react-native';
 import { useStudy } from '@/context/StudyContext';
+import { appTypeface } from '@/context/typeface';
 import { dynamicTypeRampForSize, needsCompactTextLayout, needsExpandedTabLayout, needsLargeTextLayout, needsResponsiveTextLayout, TEXT_SCALE_FACTORS, type TextScale } from '@/context/typographyScale';
 
 type TypographySettings = { preference: TextScale; systemFontScale: number; previewFontScale: number; width: number };
@@ -55,6 +56,7 @@ function scaledStyle(style: StyleProp<TextStyle>, scale: TextScale, previewFontS
   const flattened = StyleSheet.flatten(style);
   const factor = TEXT_SCALE_FACTORS[scale] * previewFontScale;
   return [style, {
+    ...appTypeface(flattened),
     fontSize: (flattened?.fontSize ?? 14) * factor,
     ...(flattened?.lineHeight === undefined ? {} : { lineHeight: flattened.lineHeight * factor }),
   }];
@@ -97,5 +99,8 @@ export const TextInput = forwardRef<NativeTextInput, TextInputProps>(function Te
 
 // A heading is reading content, not a single-line control. Never truncate it.
 export const Heading = forwardRef<NativeText, TextProps>(function Heading({ style, ...props }, ref) {
-  return <Text ref={ref} {...props} accessibilityRole="header" numberOfLines={undefined} style={style} />;
+  return <Text ref={ref} {...props} accessibilityRole="header" numberOfLines={undefined} style={[{ fontWeight: '700' }, style]} />;
 });
+
+// Deliberately preserve the established sans-serif tiny floating label treatment.
+export const compactOverlayFont = Platform.OS === 'android' ? 'sans-serif' : 'System';

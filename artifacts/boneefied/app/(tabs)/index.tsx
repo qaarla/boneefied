@@ -117,10 +117,10 @@ export default function StudyScreen() {
       <View style={searchStyles.actions}>
         <Pressable accessibilityRole="button" accessibilityLabel={t('study.openModuleAccessibility', { name })}
           onPress={() => router.push(`/module/${match.module.id}`)} style={searchStyles.secondaryAction}>
-          <Text style={{ color: colors.primary }}>{t('study.openLesson')}</Text>
+          <Text style={{ color: colors.primary, fontWeight: '700' }}>{t('study.openLesson')}</Text>
         </Pressable>
         <Pressable accessibilityRole="button" accessibilityLabel={t(bookmarks.includes(match.structure.id) ? 'bookmark.removeAccessibility' : 'bookmark.addAccessibility', { name })} accessibilityState={{ selected: bookmarks.includes(match.structure.id) }} hitSlop={2} onPress={() => toggleBookmark(match.structure.id)} style={searchStyles.bookmark}>
-          <Text style={{ color: colors.primary }}>{t(bookmarks.includes(match.structure.id) ? 'bookmark.saved' : 'bookmark.save')}</Text>
+          <Text style={{ color: colors.primary, fontWeight: '700' }}>{t(bookmarks.includes(match.structure.id) ? 'bookmark.saved' : 'bookmark.save')}</Text>
         </Pressable>
       </View>
     </View>;

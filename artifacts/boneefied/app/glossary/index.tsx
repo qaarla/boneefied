@@ -66,7 +66,7 @@ export default function GlossaryScreen() {
     return <Pressable key={item.id ?? 'all'} accessibilityRole="button" accessibilityState={{ selected }}
       onPress={() => { setSystem(item.id); setFiltersOpen(false); listRef.current?.scrollToOffset({ offset: 0, animated: false }); }}
       style={[styles.filter, { backgroundColor: selected ? colors.secondary : colors.card, borderColor: selected ? colors.primary : colors.border }]}>
-       <Text style={{ color: colors.foreground }}>{item.title}</Text>
+       <Text style={{ color: colors.foreground, fontWeight: '700' }}>{item.title}</Text>
     </Pressable>;
   });
 
@@ -100,7 +100,7 @@ export default function GlossaryScreen() {
               <Pressable accessibilityRole="button" accessibilityLabel={t('glossary.chooseSystemAccessibility')}
                 accessibilityState={{ expanded: filtersOpen }} onPress={() => setFiltersOpen((open) => !open)}
                 style={[styles.filter, { borderColor: colors.border, backgroundColor: colors.card }]}>
-                <Text style={{ color: colors.foreground }}>{systems.find((item) => item.id === system) ? localizeModule(systems.find((item) => item.id === system)!).title : t('glossary.allSystems')} {filtersOpen ? '▲' : '▼'}</Text>
+                <Text style={{ color: colors.foreground, fontWeight: '700' }}>{systems.find((item) => item.id === system) ? localizeModule(systems.find((item) => item.id === system)!).title : t('glossary.allSystems')} {filtersOpen ? '▲' : '▼'}</Text>
               </Pressable>
               {filtersOpen && <View style={styles.filterMenu}>{filters}</View>}
             </View>

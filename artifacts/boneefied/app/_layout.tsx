@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from 'react';
-import { Appearance, Platform, Text, TextInput, useColorScheme, useWindowDimensions } from 'react-native';
+import { Appearance, Platform, useColorScheme, useWindowDimensions } from 'react-native';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
@@ -12,6 +12,7 @@ import { StudyProvider, useStudy } from '@/context/StudyContext';
 import { nativeHeaderTitleSize, needsResponsiveTextLayout, typographyMetrics } from '@/context/typographyScale';
 import { devPreviewFontScale, TypographyProvider } from '@/components/ScaledText';
 import { useColors } from '@/hooks/useColors';
+import { APP_FONTS } from '@/context/typeface';
 import { LocaleProvider, useLocale } from '@/locales/useLocale';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -32,6 +33,12 @@ function RootLayoutNav() {
     const base = isDark ? DarkTheme : DefaultTheme;
     return {
       ...base,
+      fonts: {
+        regular: { fontFamily: APP_FONTS.regular, fontWeight: 'normal' as const },
+        medium: { fontFamily: APP_FONTS.bold, fontWeight: 'normal' as const },
+        bold: { fontFamily: APP_FONTS.bold, fontWeight: 'normal' as const },
+        heavy: { fontFamily: APP_FONTS.bold, fontWeight: 'normal' as const },
+      },
       colors: {
         ...base.colors,
         primary: colors.primary,
@@ -62,7 +69,8 @@ function RootLayoutNav() {
         headerBackButtonDisplayMode: Platform.OS === 'ios' && reflow ? 'minimal' : 'default',
         headerStyle: { backgroundColor: colors.background },
         headerTintColor: colors.primary,
-        headerTitleStyle: { color: colors.foreground, fontSize: Platform.OS === 'ios' || (Platform.OS === 'web' && devPreviewFontScale() !== undefined)
+        headerBackTitleStyle: { fontFamily: APP_FONTS.bold },
+        headerTitleStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal', color: colors.foreground, fontSize: Platform.OS === 'ios' || (Platform.OS === 'web' && devPreviewFontScale() !== undefined)
           ? nativeHeaderTitleSize(18, preferences.textScale, fontScale)
           : typographyMetrics(18, undefined, preferences.textScale).fontSize },
         headerShadowVisible: false,
@@ -80,13 +88,6 @@ export default function RootLayout() {
     Tinos_400Regular,
     Tinos_700Bold,
   });
-
-  useEffect(() => {
-    if (fontsLoaded) {
-      (Text as any).defaultProps = { ...(Text as any).defaultProps, style: [{ fontFamily: 'Tinos_400Regular' }, (Text as any).defaultProps?.style] };
-      (TextInput as any).defaultProps = { ...(TextInput as any).defaultProps, style: [{ fontFamily: 'Tinos_400Regular' }, (TextInput as any).defaultProps?.style] };
-    }
-  }, [fontsLoaded]);
 
   if (!fontsLoaded && !fontError) return null;
 

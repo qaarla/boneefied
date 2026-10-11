@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Image, Pressable, StyleSheet, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import { Text, MarkerText, useTypographyLayout } from '@/components/ScaledText';
+import { Text, MarkerText, compactOverlayFont, useTypographyLayout } from '@/components/ScaledText';
 import { useColors } from '@/hooks/useColors';
 import type { HotspotSizeOverride, NormalizedHotspot, VerifiedLabel } from '@/content/model';
 import { markerSizing } from '@/components/viewerMarkerSizing';
@@ -172,18 +172,18 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
                  {/* Numerals scale explicitly with typography settings, capped to fit;
                      full accessible names and the label legend retain normal Dynamic Type. */}
                  <MarkerText style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: paint.numeralSize, fontWeight: '700', textAlign: 'center' }}>{visible ? locale.number(index + 1) : '?'}</MarkerText>
-               </View> : <Text style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: 11, fontWeight: '700' }}>{visible ? label.displayLabel : '?'}</Text>}
+               </View> : <Text style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: 11, fontWeight: '700', fontFamily: compactOverlayFont }}>{visible ? label.displayLabel : '?'}</Text>}
           </Pressable></React.Fragment>;
         })}
       </View>}
     </View>
       {source ? <View style={[styles.controls, styles.controlsLarge]}>
-        <Pressable onPress={() => changeZoom(0.5)} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.zoomIn')} testID="viewer-zoom-in" style={styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.zoomIn')}</Text></Pressable>
-        <Pressable onPress={() => changeZoom(-0.5)} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.zoomOut')} testID="viewer-zoom-out" style={styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.zoomOut')}</Text></Pressable>
-        <Pressable onPress={reset} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.reset.accessibility')} testID="viewer-reset" style={[styles.reset, styles.controlActionLarge, { backgroundColor: colors.card }]}><Text style={{ color: colors.foreground }}>{locale.t('imageViewer.reset.visible')}</Text></Pressable>
+        <Pressable onPress={() => changeZoom(0.5)} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.zoomIn')} testID="viewer-zoom-in" style={styles.controlActionLarge}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('imageViewer.zoomIn')}</Text></Pressable>
+        <Pressable onPress={() => changeZoom(-0.5)} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.zoomOut')} testID="viewer-zoom-out" style={styles.controlActionLarge}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('imageViewer.zoomOut')}</Text></Pressable>
+        <Pressable onPress={reset} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.reset.accessibility')} testID="viewer-reset" style={[styles.reset, styles.controlActionLarge, { backgroundColor: colors.card }]}><Text style={{ color: colors.foreground, fontWeight: '700' }}>{locale.t('imageViewer.reset.visible')}</Text></Pressable>
         {labels.length > 0 && !revealLabels && <>
-          <Pressable onPress={showAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.revealAll.accessibility')} style={styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.revealAll.visible')}</Text></Pressable>
-          <Pressable onPress={hideAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.hideAll.accessibility')} style={styles.controlActionLarge}><Text style={{ color: colors.primary }}>{locale.t('imageViewer.hideAll.visible')}</Text></Pressable>
+          <Pressable onPress={showAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.revealAll.accessibility')} style={styles.controlActionLarge}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('imageViewer.revealAll.visible')}</Text></Pressable>
+          <Pressable onPress={hideAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.hideAll.accessibility')} style={styles.controlActionLarge}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('imageViewer.hideAll.visible')}</Text></Pressable>
         </>}
       </View> : null}
       {reflow && labels.some((label) => revealLabels || revealed.has(label.structureId)) && <View style={styles.labelList}>
