@@ -133,7 +133,7 @@ const spanishUiNavigationStudy: Record<string, { en: string; es: string }> = {
   'module.structureCount.other': { en: '{count} structures', es: '{count} estructuras' },
   'module.lessonCount.one': { en: '{count} learning lesson', es: '{count} lección de aprendizaje' },
   'module.lessonCount.other': { en: '{count} learning lessons', es: '{count} lecciones de aprendizaje' },
-  'module.sourcesAndRights': { en: 'Sources and rights', es: 'Fuentes y derechos' },
+  'module.sourcesAndRights': { en: 'Sources & rights', es: 'Fuentes y derechos' },
   'module.sourceLink': { en: 'Source', es: 'Fuente' },
   'module.rightsLink': { en: 'Rights', es: 'Derechos' },
   'module.learnMode': { en: 'Learn', es: 'Aprender' },
