@@ -7,7 +7,7 @@ import { content } from '../../content/canonical.ts';
 import { buildVisualAudit } from './bvis07-audit.ts';
 import { annotationKey, spreadAtlasCallouts } from '../../components/viewerMarkerLayout.ts';
 import { markerSizing } from '../../components/viewerMarkerSizing.ts';
-import { protectedOverlayHeight } from '../../components/viewerOverlayProtection.ts';
+import { containedOverlayBox, protectedOverlayHeight } from '../../components/viewerOverlayProtection.ts';
 
 const root = path.resolve(import.meta.dirname, '../..');
 const output = path.resolve(root, '../../generated-artifacts/bvr02');
@@ -16,11 +16,9 @@ const escape = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;')
 export function overlayFrame(asset, annotations, width, textScale, practice = false) {
   const cell = practice && textScale >= 1.3 ? 60 : 44;
   const columns = Math.max(1, Math.floor(width / (cell + 8)));
-  const baseHeight = Math.max(width / 1.45, Math.ceil(annotations.length / Math.min(columns, 2)) * (cell + 8));
-  const height = protectedOverlayHeight(annotations, width, baseHeight, cell, cell, asset.imageAspectRatio ?? 1.45, asset.hotspotOverlayAvoidRects ?? [], (asset.hotspotSizeOverride?.maxDiameter ?? 40) / 2);
-  const frameRatio = width / height, ratio = asset.imageAspectRatio ?? 1.45;
-  const containedWidth = Math.min(1, ratio / frameRatio), containedHeight = Math.min(1, frameRatio / ratio);
-  const box = { x: (1 - containedWidth) * width / 2, y: (1 - containedHeight) * height / 2, width: containedWidth * width, height: containedHeight * height };
+  const baseHeight = Math.max(width / 1.45, Math.ceil(annotations.length / columns) * (cell + 8) + 8);
+  const height = protectedOverlayHeight(annotations, width, baseHeight, cell, cell, asset.imageAspectRatio ?? 1.45, asset.hotspotOverlayAvoidRects ?? [], (asset.hotspotSizeOverride?.maxDiameter ?? 40) / 2, 12);
+  const box = containedOverlayBox(width, height, asset.imageAspectRatio ?? 1.45, 12);
   const anchors = annotations.map((a) => ({ x: box.x + a.x * box.width, y: box.y + a.y * box.height }));
   const paint = markerSizing(box.width, Math.max(asset.labels?.length ?? 0, annotations.length), textScale, asset.hotspotSizeOverride);
   const avoid = (asset.hotspotOverlayAvoidRects ?? []).map((r) => ({ left: box.x + r.x * box.width, top: box.y + r.y * box.height, width: r.width * box.width, height: r.height * box.height }));

@@ -1,21 +1,16 @@
 import React from 'react';
-import { Linking, Pressable, View } from 'react-native';
+import { View } from 'react-native';
 import { Text } from './ScaledText';
 import type { Asset } from '@/content/model';
-import { content } from '@/content/canonical';
-import { readableAttribution, visualKind } from '@/content/visual-disclosure';
+import { visualKind } from '@/content/visual-disclosure';
 import { conciseVisualCredit } from '@/content/module-rights';
 import { useLocale } from '@/locales/useLocale';
 import { useColors } from '@/hooks/useColors';
 
-/** One disclosure treatment for gallery, lesson, glossary and graded question images. */
-export function VisualStudyContext({ asset, learn, compactRights = false }: { asset: Asset; learn: boolean; compactRights?: boolean }) {
-  const { language, source: localizeSource, t } = useLocale();
+/** Study descriptions are unchanged; detailed provenance belongs in the bottom disclosure. */
+export function VisualStudyContext({ asset, learn }: { asset: Asset; learn: boolean }) {
+  const { language } = useLocale();
   const colors = useColors(), es = language === 'es', kind = visualKind(asset);
-  const record = content.sources.find((s) => s.id === asset.sourceId);
-  const source = record && localizeSource(record);
-  const sourceUrl = asset.sourceUrl ?? record?.sourceUrl;
-  const rightsUrl = asset.rightsUrl ?? record?.licenseUrl;
   const label = kind === 'histology'
     ? es ? 'Fotomicrografía real — no un esquema.' : 'Genuine photomicrograph — not a schematic.'
     : kind === 'specimen'
@@ -27,10 +22,12 @@ export function VisualStudyContext({ asset, learn, compactRights = false }: { as
     <Text style={{ color: colors.mutedForeground }}>{label}</Text>
     {learn && asset.description && <Text style={{ color: colors.foreground }}>{asset.description}</Text>}
     {learn && asset.specimenNote && <Text style={{ color: colors.mutedForeground }}>{asset.specimenNote}</Text>}
-    <Text style={{ color: colors.mutedForeground, ...(compactRights && { fontSize: 11 }) }}>{compactRights ? conciseVisualCredit(asset.attributionLicense) : `${source?.title ? `${source.title} · ` : ''}${readableAttribution(asset.attributionLicense)}`}</Text>
-    {!compactRights && (sourceUrl || rightsUrl) && <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 14 }}>
-      {sourceUrl && <Pressable accessibilityRole="link" onPress={() => Linking.openURL(sourceUrl)} style={{ minHeight: 44, justifyContent: 'center' }}><Text style={{ color: colors.primary }}>{t('module.sourceLink')}</Text></Pressable>}
-      {rightsUrl && <Pressable accessibilityRole="link" onPress={() => Linking.openURL(rightsUrl)} style={{ minHeight: 44, justifyContent: 'center' }}><Text style={{ color: colors.primary }}>{t('module.rightsLink')}</Text></Pressable>}
-    </View>}
+    <VisualCredit asset={asset} />
   </View>;
+}
+
+/** Keep creator/license/modification credit visible alongside the image. */
+export function VisualCredit({ asset }: { asset: Asset }) {
+  const colors = useColors();
+  return <Text testID={`visual-credit-${asset.id}`} style={{ color: colors.mutedForeground, fontSize: 11 }}>{conciseVisualCredit(asset.attributionLicense)}</Text>;
 }

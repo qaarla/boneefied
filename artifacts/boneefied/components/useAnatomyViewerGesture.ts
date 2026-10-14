@@ -7,6 +7,7 @@ import { useViewerScrollOwnership } from './ViewerScrollOwnership';
 export function useAnatomyViewerGesture(source?: number) {
   const controller = useRef(new ViewerGestureController()).current;
   const [transform, setTransform] = useState(controller.transform);
+  const [ownsGesture, setOwnsGesture] = useState(false);
   const areaRef = useRef<View>(null);
   const scene = useRef<ViewerScene>({ width: 0, height: 0, image: { x: 0, y: 0, width: 0, height: 0 } });
   const frameOrigin = useRef({ x: 0, y: 0 });
@@ -18,7 +19,11 @@ export function useAnatomyViewerGesture(source?: number) {
   live.current = { source, setOwnership, getScrollY };
   const ignoreMouseUntil = useRef(0);
   const mouseActive = useRef(false);
-  const syncOwnership = () => live.current.setOwnership(owner, controller.active && controller.owns);
+  const syncOwnership = () => {
+    const owns = controller.active && controller.owns;
+    live.current.setOwnership(owner, owns);
+    setOwnsGesture(owns);
+  };
   const currentOrigin = () => Platform.OS === 'web' ? frameOrigin.current : {
     x: frameOrigin.current.x,
     y: frameOrigin.current.y + measuredAtScrollY.current - live.current.getScrollY(),
@@ -57,7 +62,12 @@ export function useAnatomyViewerGesture(source?: number) {
   };
   const responder = useRef(PanResponder.create({
     onStartShouldSetPanResponder: () => false,
-    onStartShouldSetPanResponderCapture: (e) => !!live.current.source && e.nativeEvent.touches.length > 1,
+    onStartShouldSetPanResponderCapture: (e) => {
+      // Lock native page scrolling before it can intercept a zoomed touch,
+      // but leave single-finger taps with their label/answer Pressable.
+      measure(); begin(e.nativeEvent.touches);
+      return controller.owns && e.nativeEvent.touches.length > 1;
+    },
     onMoveShouldSetPanResponderCapture: (e) => {
       begin(e.nativeEvent.touches); move(e.nativeEvent.touches);
       return controller.owns && controller.moved;
@@ -101,7 +111,7 @@ export function useAnatomyViewerGesture(source?: number) {
     };
     const touchMove = (e: TouchEvent) => {
       move(e.touches);
-      if (controller.owns && controller.moved && e.cancelable) e.preventDefault();
+      if (controller.owns && e.cancelable) e.preventDefault();
     };
     const touchEnd = (e: TouchEvent) => {
       if (!controller.active) return;
@@ -169,6 +179,6 @@ export function useAnatomyViewerGesture(source?: number) {
     canPress: () => controller.canPress(),
     changeZoom: (amount: number) => { controller.changeZoom(amount, scene.current); commit(); },
     handlers: Platform.OS === 'web' ? webHandlers : nativeHandlers,
-    webStyle: Platform.OS === 'web' ? { touchAction: transform.zoom > 1 ? 'none' : 'pan-y', userSelect: 'none' as const } : undefined,
+    webStyle: Platform.OS === 'web' ? { touchAction: ownsGesture || transform.zoom > 1 ? 'none' : 'pan-y', userSelect: 'none' as const } : undefined,
   };
 }

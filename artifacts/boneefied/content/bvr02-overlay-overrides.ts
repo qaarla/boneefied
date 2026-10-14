@@ -158,6 +158,35 @@ export const bvr02OverlayOverrides: Record<string, DiagramOverlayTuning> = {
   "asset-bvis04-nervous-tissue": {"avoid":[{"x":0.0156,"y":0.113,"width":0.9171,"height":0.739}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
 };
 
+/** Repair 5: explicit dense-plate paint reductions, not a global density change. */
+export const repair5CompactMarkerIds = [
+  'asset-openstax-muscle-labeled-overview',
+  'asset-bvis06-female-gross', 'asset-bvis06-testis-ducts', 'asset-bvis06-male-system',
+  'asset-bvis05-heart-anterior', 'asset-bvis05-body-artery-vein-maps',
+  'asset-skeletal-atlas-skull-base-external', 'asset-skeletal-atlas-cranial-floor-internal',
+  'asset-bvis06-alimentary-canal', 'asset-bvis06-ovary-follicle', 'asset-bvis06-abdominal-placement',
+  'asset-bvis05-upper-airway', 'asset-bvis06-liver-biliary-pancreas',
+  'asset-bvis06-kidney-section', 'asset-bvis06-nephron-pathway', 'asset-bvis06-urinary-tract',
+  'asset-skull-front', 'asset-skull-lateral', 'asset-bvis06-digestive-wall-layers',
+  'asset-openstax-historical-skin-structure', 'asset-bvis04-epidermis-strata',
+  'asset-commons-appendicular-skeleton-blank', 'asset-bvis05-heart-chambers-valves',
+  'asset-bvis05-lymph-overview', 'asset-bvis06-stomach', 'asset-bvis06-large-intestine',
+  'asset-skeletal-atlas-hand-palmar', 'asset-servier-brain-sagittal', 'asset-servier-eye-section',
+  'asset-bvis06-oral-cavity', 'asset-bvis06-renal-corpuscle', 'asset-bvis04-deep-nuclei',
+  'asset-bvis04-spinal-cross-section', 'asset-skeletal-atlas-foot-dorsal',
+  'asset-bvis04-eye-anterior-segment', 'asset-bvis04-inner-ear-vestibular',
+  'asset-bvis06-uterine-wall', 'asset-skeletal-atlas-skull-sutures',
+  'asset-bvis04-cranial-nerves-i-vi', 'asset-bvis04-middle-ear',
+  'asset-gray880-optic-nerve-head', 'asset-bvis04-spinal-roots-rami',
+  'asset-bvis04-plexus-overview', 'asset-bvis04-cranial-nerves-vii-xii',
+  'asset-bvis04-retina-layers', 'asset-bvis04-cochlea-corti',
+] as const;
+for (const id of repair5CompactMarkerIds) {
+  const tuning = bvr02OverlayOverrides[id];
+  if (!tuning) throw new Error(`Missing reviewed overlay tuning: ${id}`);
+  tuning.size = { diameter: 16, numeralSize: 10, maxDiameter: 17 };
+}
+
 export function applyBvr02Overlay(asset: Asset): Asset {
   const tuning = bvr02OverlayOverrides[asset.id];
   return tuning ? { ...asset, ...(tuning.size ? { hotspotSizeOverride: tuning.size } : {}), hotspotOverlayAvoidRects: tuning.avoid } : asset;

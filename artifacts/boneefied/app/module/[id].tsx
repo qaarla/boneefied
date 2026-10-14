@@ -8,8 +8,8 @@ import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Heading, Text, useTypographyLayout } from '@/components/ScaledText';
 import { AdaptiveButton, AdaptiveCard, AdaptiveRow } from '@/components/AdaptiveLayout';
-import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { Screen } from '@/components/Screen';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { ModuleScreen } from '@/components/ModuleScreen';
 import { EmptyState } from '@/components/EmptyState';
 import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
 import { VisualStudyContext } from '@/components/VisualStudyContext';
@@ -46,19 +46,19 @@ export default function ModuleDetailScreen() {
   const module = resolvedModule && activeSourceIds
     ? { ...resolvedModule, sourceIds: resolvedModule.sourceIds.filter((sourceId) => activeSourceIds.has(sourceId)) }
     : resolvedModule;
-  if (!module) return <><Stack.Screen options={{ title: t('module.unavailableTitle'), headerBackTitle: t('tabs.study') }} /><Screen>
+  if (!module) return <ModuleScreen title={t('module.unavailableTitle')}>
     <EmptyState icon="alert-circle" title={t('module.unavailableTitle')} message={t('module.unavailableMessage')} />
         <AdaptiveButton onPress={() => router.replace('/(tabs)')} hitSlop={4} style={[styles.practice, { backgroundColor: colors.primary }]}>
       <Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{t('module.returnToStudy')}</Text>
      </AdaptiveButton>
-  </Screen></>;
+  </ModuleScreen>;
   const localizedModule = localizeModule(module);
   const lessons = (module.lessons ?? []).map(localizeLesson);
   const structures = content.structures.filter((item) => item.moduleId === module.id);
   const assignedAssetIds = new Set((module.lessons ?? []).flatMap((lesson) => lesson.assetIds ?? []));
   const moduleAssets = content.assets.filter((asset) => assignedAssetIds.has(asset.id) && !isAtlasAssetId(asset.id));
   const galleryIds = BVIS06_MODULES.includes(module.id) ? bvis06Gallery(module.id) : BVIS05_MODULES.includes(module.id) ? bvis05Gallery(module.id) : BVIS04_MODULES.includes(module.id) ? bvis04Gallery(module.id) : muscularGalleryByModule[module.id] ?? skeletalGalleryByModule[module.id] ?? [];
-  return <><Stack.Screen options={{ title: reflow ? t('module.responsiveNavigationTitle') : localizedModule.title, headerBackTitle: t('tabs.study') }} /><Screen>
+  return <ModuleScreen title={localizedModule.title}>
     <View style={styles.heading}>
        <Text style={[styles.eyebrow, { color: colors.primary }]}>{localizedModule.system?.toUpperCase() ?? t('module.eyebrow')}</Text>
         <Heading style={[styles.title, { color: colors.foreground }]}>{localizedModule.title}</Heading>
@@ -70,7 +70,7 @@ export default function ModuleDetailScreen() {
         <Heading style={[styles.detailHead, { color: colors.foreground }]}>{language === 'es' ? 'Láminas seleccionadas del atlas' : 'Selected atlas plates'}</Heading>
         {galleryIds.flatMap((id) => { const a = content.assets.find((item) => item.id === id); return a ? [localizeAsset(a)] : []; }).map((asset) => <View key={asset.id} style={styles.imageCard}>
           <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
-           <VisualStudyContext asset={asset} learn={mode === 'learn'} compactRights />
+            <VisualStudyContext asset={asset} learn={mode === 'learn'} />
         </View>)}
       </View>}
         {moduleAssets.some((a) => a.assetType === 'histology') && <Heading style={[styles.detailHead, { color: colors.foreground }]}>{language === 'es' ? 'Muestras reales — separadas de los esquemas' : 'Real specimens — separate from schematics'}</Heading>}
@@ -79,7 +79,7 @@ export default function ModuleDetailScreen() {
             const translatedAsset = localizeAsset(asset);
             return <View key={asset.id} style={styles.imageCard}>
               <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout={isAtlasAssetId(asset.id)} labels={translatedAsset.labels} revealLabels={mode === 'learn'} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? translatedAsset.title ?? t('module.verifiedCourseImage') : undefined} />
-              <VisualStudyContext asset={translatedAsset} learn={mode === 'learn'} compactRights />
+               <VisualStudyContext asset={translatedAsset} learn={mode === 'learn'} />
             </View>;
           })}
           {mode === 'recall' && !moduleAssets.some((asset) => asset.labelStatus === 'unlabeled') && <Text style={{ color: colors.mutedForeground }}>{t('module.noUnlabeledPlate')}</Text>}
@@ -88,7 +88,7 @@ export default function ModuleDetailScreen() {
        <ModuleSourcesDisclosure key={module.id} module={module} galleryIds={galleryIds} />
         <AdaptiveButton onPress={() => router.push(`/(tabs)/practice?moduleId=${module.id}`)} style={[styles.practice, reflow && styles.practiceLarge, { backgroundColor: colors.primary }]}><Text style={[reflow && styles.practiceTextLarge, { color: colors.primaryForeground, fontWeight: '700' }]}>{t(`module.practiceCount.${content.questions.filter((item) => item.moduleId === module.id).length === 1 ? 'one' : 'other'}`, { count: number(content.questions.filter((item) => item.moduleId === module.id).length) })}</Text></AdaptiveButton>
        <AdaptiveButton onPress={() => router.back()} hitSlop={4} style={styles.back}><Text style={{ color: colors.primary, fontWeight: '700' }}>{t('module.returnToLibrary')}</Text></AdaptiveButton>
-  </Screen></>;
+  </ModuleScreen>;
 }
 
 function LessonCard({ lesson, mode, reflow, expanded, onToggle, colors, bookmarks, onBookmark, t, localizeStructure }: { lesson: Lesson; mode: 'learn' | 'recall'; reflow: boolean; expanded: boolean; onToggle: () => void; colors: any; bookmarks: string[]; onBookmark: (id: string) => void; t: (key: string, values?: Record<string, string | number>) => string; localizeStructure: (item: Structure) => Structure }) {
@@ -100,11 +100,11 @@ function LessonCard({ lesson, mode, reflow, expanded, onToggle, colors, bookmark
   const first = lesson.structureIds[0];
    return <AdaptiveCard style={[styles.lesson, { backgroundColor: colors.card, borderColor: colors.border }]}>
        <AdaptiveButton onPress={onToggle} hitSlop={4} accessibilityRole="button" accessibilityState={{ expanded }} style={styles.lessonToggle}><Text style={[styles.lessonTitle, { color: colors.foreground }]}>{lesson.title}</Text><Text style={[styles.lessonSummary, { color: colors.mutedForeground }]}>{lesson.summary}</Text></AdaptiveButton>
-       <View style={styles.chips}>{lesson.structureIds.slice(0, 6).map((id) => { const canonicalStructure = content.structures.find((item) => item.id === id); const structure = canonicalStructure && localizeStructure(canonicalStructure); return structure ? <AdaptiveButton key={id} accessibilityRole="button" accessibilityLabel={t(bookmarks.includes(id) ? 'bookmark.removeAccessibility' : 'bookmark.addAccessibility', { name: structure.canonicalName })} accessibilityState={{ selected: bookmarks.includes(id) }} hitSlop={4} style={[reflow && styles.chipTargetLarge, { maxWidth: '100%' }]} onPress={() => onBookmark(id)}><Text style={[styles.chip, { color: colors.primary, maxWidth: '100%', flexShrink: 1 }]}>{bookmarks.includes(id) ? '★ ' : ''}{structure.canonicalName}</Text></AdaptiveButton> : null; })}</View>
+        <View style={styles.chips}>{lesson.structureIds.slice(0, 6).map((id) => { const canonicalStructure = content.structures.find((item) => item.id === id); const structure = canonicalStructure && localizeStructure(canonicalStructure); return structure ? <AdaptiveButton key={id} accessibilityRole="button" accessibilityLabel={t(bookmarks.includes(id) ? 'bookmark.removeAccessibility' : 'bookmark.addAccessibility', { name: structure.canonicalName })} accessibilityState={{ selected: bookmarks.includes(id) }} hitSlop={4} style={[reflow && styles.chipTargetLarge, { maxWidth: '100%' }]} onPress={() => onBookmark(id)}><Text wholeWords style={[styles.chip, { color: colors.primary, maxWidth: '100%', flexShrink: 1 }]}>{bookmarks.includes(id) ? '★ ' : ''}{structure.canonicalName}</Text></AdaptiveButton> : null; })}</View>
     {expanded && <View style={styles.details}>
        {plates.map((asset) => <View key={asset.id} style={styles.imageCard}>
           <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
-         <VisualStudyContext asset={asset} learn={mode === 'learn'} compactRights />
+          <VisualStudyContext asset={asset} learn={mode === 'learn'} />
        </View>)}
         <Heading style={[styles.detailHead, { color: colors.foreground }]}>{t('lesson.structuresInLesson')}</Heading>
        <Text style={{ color: colors.mutedForeground }}>{lesson.structureIds.map((id) => { const structure = content.structures.find((item) => item.id === id); return structure ? localizeStructure(structure).canonicalName : undefined; }).filter(Boolean).join(' · ')}</Text>

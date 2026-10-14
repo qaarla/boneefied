@@ -12,10 +12,14 @@ export function constrainViewer(transform: ViewerTransform, scene: ViewerScene):
   const axis = (offset: number, frame: number, start: number, size: number) => {
     if (frame <= 0 || size <= 0) return 0;
     const frameLimit = frame * (zoom - 1) / 2;
-    const visible = Math.min(frame, size * zoom) / 4;
-    const min = Math.max(-frameLimit, visible - (frame / 2 + (start + size - frame / 2) * zoom));
-    const max = Math.min(frameLimit, frame - visible - (frame / 2 + (start - frame / 2) * zoom));
-    return clamp(offset, Math.min(min, 0), Math.max(max, 0));
+    const firstEdge = frame / 2 + (start - frame / 2) * zoom;
+    const lastEdge = firstEdge + size * zoom;
+    // An oversized image covers the viewport at either pan limit. A smaller
+    // letterboxed axis may move inside the frame, but never disappear past it.
+    const lower = size * zoom >= frame ? frame - lastEdge : -firstEdge;
+    const upper = size * zoom >= frame ? -firstEdge : frame - lastEdge;
+    const min = Math.max(-frameLimit, lower), max = Math.min(frameLimit, upper);
+    return clamp(offset, Math.min(min, max), Math.max(min, max));
   };
   return { zoom, offset: {
     x: axis(transform.offset.x, scene.width, scene.image.x, scene.image.width),

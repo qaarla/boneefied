@@ -1,18 +1,24 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Image, Pressable, StyleSheet, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+import { Asset } from 'expo-asset';
 import { Text, MarkerText, compactOverlayFont, useTypographyLayout } from '@/components/ScaledText';
 import { useColors } from '@/hooks/useColors';
 import type { HotspotSizeOverride, NormalizedHotspot, VerifiedLabel } from '@/content/model';
 import { markerSizing } from '@/components/viewerMarkerSizing';
 import { bvr02OverlayOverrides } from '@/content/bvr02-overlay-overrides';
-import { protectedOverlayHeight, protectedOverlayRects } from '@/components/viewerOverlayProtection';
+import { repairDiagramTargets } from '@/content/repair5-targets';
+import { AtlasViewerControls } from '@/components/AtlasViewerControls';
+import { AtlasLegend } from '@/components/AtlasLegend';
+import { containedOverlayBox, protectedOverlayHeight, protectedOverlayRects } from '@/components/viewerOverlayProtection';
 import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';
 import { useOfflineImage } from '@/hooks/useOfflineImage';
 import { useLocale } from '@/locales/useLocale';
 import { content } from '@/content/canonical';
 import { annotationIndex, annotationKey, clampMarkerCenter, hasMarkerOverlap, spreadAtlasCallouts } from '@/components/viewerMarkerLayout';
 import { useAnatomyViewerGesture } from '@/components/useAnatomyViewerGesture';
+
+const IMAGE_INSET = 12;
 
 type Props = {
   source?: number;
@@ -37,7 +43,9 @@ type Props = {
 };
 
 /** Source-safe image viewer. Hotspots are normalized to the contained image, not the frame. */
-export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false, caption, imageAspectRatio = 1.45, onHotspotPress, labels = [], bakedLabels = false, selectedHotspotId, correctHotspotId, submitted = false, reduceMotion = false, atlasLayout = false, questionHotspotCallouts = false, markerSizeOverride, diagramMarkerCount, diagramAssetId }: Props) {
+export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], revealLabels = false, caption, imageAspectRatio: suppliedAspectRatio = 1.45, onHotspotPress, labels: suppliedLabels = [], bakedLabels = false, selectedHotspotId, correctHotspotId, submitted = false, reduceMotion = false, atlasLayout = false, questionHotspotCallouts = false, markerSizeOverride, diagramMarkerCount, diagramAssetId }: Props) {
+  const hotspots = useMemo(() => repairDiagramTargets(diagramAssetId, suppliedHotspots), [diagramAssetId, suppliedHotspots]);
+  const labels = useMemo(() => repairDiagramTargets(diagramAssetId, suppliedLabels), [diagramAssetId, suppliedLabels]);
   const colors = useColors();
   const locale = useLocale();
   const { isLargeText, isCompactTextLayout, effectiveFontScale } = useTypographyLayout();
@@ -48,6 +56,10 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
   const avoidRects = tuning?.avoid ?? [];
   const labelCalloutLayout = atlasLayout || (labels.length > 0 && avoidRects.length > 0);
   const image = useOfflineImage(source);
+  const imageAspectRatio = useMemo(() => {
+    const asset = source ? Asset.fromModule(source) : undefined;
+    return asset?.width && asset?.height ? asset.width / asset.height : suppliedAspectRatio;
+  }, [source, suppliedAspectRatio]);
   const gesture = useAnatomyViewerGesture(source);
   const { zoom, offset, reset, changeZoom } = gesture;
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
@@ -72,26 +84,26 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
    const cellWidth = questionHotspotCallouts ? questionControlSize : Math.max(44, ...labels.map((l) => markerSizes[l.structureId]?.width ?? 44));
    const cellHeight = questionHotspotCallouts ? questionControlSize : Math.max(44, ...labels.map((l) => markerSizes[l.structureId]?.height ?? 44));
    const columns = Math.max(1, Math.floor(canvasSize.width / (cellWidth + 8)));
-   const baseHeight = Math.max(canvasSize.width / 1.45, Math.ceil((questionHotspotCallouts ? hotspots.length : labels.length) / Math.min(columns, 2)) * (cellHeight + 8));
+   const baseHeight = Math.max(canvasSize.width / 1.45, Math.ceil((questionHotspotCallouts ? hotspots.length : labels.length) / columns) * (cellHeight + 8) + 8);
    const overlayTargets = questionHotspotCallouts ? hotspots : labels;
-   const atlasHeight = useMemo(() => protectedOverlayHeight(overlayTargets, canvasSize.width, baseHeight, cellWidth, cellHeight, imageAspectRatio, avoidRects, (sizeOverride?.maxDiameter ?? 40) / 2), [overlayTargets, canvasSize.width, baseHeight, cellWidth, cellHeight, imageAspectRatio, avoidRects, sizeOverride?.maxDiameter]);
+   const atlasHeight = useMemo(() => protectedOverlayHeight(overlayTargets, canvasSize.width, baseHeight, cellWidth, cellHeight, imageAspectRatio, avoidRects, (sizeOverride?.maxDiameter ?? 40) / 2, IMAGE_INSET), [overlayTargets, canvasSize.width, baseHeight, cellWidth, cellHeight, imageAspectRatio, avoidRects, sizeOverride?.maxDiameter]);
    // Use the planned frame immediately; never place endpoints using a stale
    // onLayout height while a plate-specific gutter is being applied.
    const layoutHeight = (labelCalloutLayout || questionHotspotCallouts) && canvasSize.width > 0 ? atlasHeight : canvasSize.height;
-   const frameRatio = layoutHeight > 0 ? canvasSize.width / layoutHeight : 1.45;
-  const containedWidth = Math.min(1, imageAspectRatio / frameRatio);
-  const containedHeight = Math.min(1, frameRatio / imageAspectRatio);
+   const imageBox = containedOverlayBox(canvasSize.width, layoutHeight, imageAspectRatio, IMAGE_INSET);
+   const containedWidth = canvasSize.width > 0 ? imageBox.width / canvasSize.width : 1;
+   const containedHeight = layoutHeight > 0 ? imageBox.height / layoutHeight : 1;
    const paint = markerSizing(canvasSize.width * containedWidth, Math.max(diagramMarkerCount ?? 0, hotspots.length, labels.length), effectiveFontScale, sizeOverride);
   const labelBounds = labels.filter((label) => revealLabels || revealed.has(label.structureId)).map((label) => {
     const size = fullMarkerSizes[label.structureId] ?? { width: 30, height: 30 };
     const x = ((1 - containedWidth) / 2 + label.x * containedWidth) * canvasSize.width;
      const y = ((1 - containedHeight) / 2 + label.y * containedHeight) * layoutHeight;
-     return { left: clampMarkerCenter(x, canvasSize.width, size.width) - size.width / 2, top: clampMarkerCenter(y, layoutHeight, size.height) - size.height / 2, ...size };
+     return { left: clampMarkerCenter(x, canvasSize.width, size.width, IMAGE_INSET) - size.width / 2, top: clampMarkerCenter(y, layoutHeight, size.height, IMAGE_INSET) - size.height / 2, ...size };
   });
   // Reuse the existing accessible numbered markers and legend only when the
   // measured full labels collide; keep readable uncrowded overlays unchanged.
    const reflow = questionHotspotCallouts || labelCalloutLayout || isCompactTextLayout || isLargeText || (canvasSize.width > 0 && hasMarkerOverlap(labelBounds));
-   const protectedRects = useMemo(() => protectedOverlayRects(canvasSize.width, layoutHeight, imageAspectRatio, avoidRects), [canvasSize.width, layoutHeight, imageAspectRatio, avoidRects]);
+    const protectedRects = useMemo(() => protectedOverlayRects(canvasSize.width, layoutHeight, imageAspectRatio, avoidRects, IMAGE_INSET), [canvasSize.width, layoutHeight, imageAspectRatio, avoidRects]);
    const callouts = useMemo(() => labelCalloutLayout && canvasSize.width > 0 ? spreadAtlasCallouts(labels.map((l) => ({
     x: ((1 - containedWidth) / 2 + l.x * containedWidth) * canvasSize.width,
      y: ((1 - containedHeight) / 2 + l.y * containedHeight) * layoutHeight,
@@ -103,7 +115,7 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
    useEffect(() => {
      gesture.updateScene({
        width: canvasSize.width, height: layoutHeight,
-       image: { x: (1 - containedWidth) * canvasSize.width / 2, y: (1 - containedHeight) * layoutHeight / 2, width: containedWidth * canvasSize.width, height: containedHeight * layoutHeight },
+        image: imageBox,
      });
      gesture.measure();
      // Scene geometry, not zoom, determines the clamp limits.
@@ -119,7 +131,7 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
       {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{locale.t('imageViewer.unavailable')}</Text></View>}
       {source && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ? locale.t('offlineImage.unavailableOffline') : locale.t('imageViewer.loading')}</Text></View>}
       {source && image.source && <View testID="viewer-canvas" pointerEvents="box-none" style={[styles.canvas, { transform: [{ translateX: offset.x }, { translateY: offset.y }, { scale: zoom }] }]}>
-        <Image source={image.source} resizeMode="contain" style={styles.image} />
+        <Image testID="viewer-base-diagram" source={image.source} resizeMode="contain" style={[styles.image, { left: imageBox.x, top: imageBox.y, width: imageBox.width, height: imageBox.height }]} />
         {hotspots.map((hotspot, index) => {
           const selected = selectedHotspotId === hotspot.structureId;
           const feedback: AnswerFeedback | undefined = submitted
@@ -159,7 +171,7 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
           const y = (1 - containedHeight) / 2 + label.y * containedHeight;
           const callout = callouts[index];
            const position = callout ? { left: callout.x, top: callout.y } : canvasSize.width > 0 && layoutHeight > 0
-             ? { left: clampMarkerCenter(x * canvasSize.width, canvasSize.width, markerSize.width), top: clampMarkerCenter(y * layoutHeight, layoutHeight, markerSize.height), maxWidth: Math.max(0, canvasSize.width - 4) }
+             ? { left: clampMarkerCenter(x * canvasSize.width, canvasSize.width, markerSize.width, IMAGE_INSET), top: clampMarkerCenter(y * layoutHeight, layoutHeight, markerSize.height, IMAGE_INSET), maxWidth: Math.max(0, canvasSize.width - IMAGE_INSET * 2) }
             : { left: `${x * 100}%` as `${number}%`, top: `${y * 100}%` as `${number}%` };
           const dx = callout ? callout.x - x * canvasSize.width : 0;
            const dy = callout ? callout.y - y * layoutHeight : 0;
@@ -170,25 +182,19 @@ export function AnatomyImageViewer({ source, hotspots = [], revealLabels = false
               <Pressable onLayout={({ nativeEvent: { layout } }) => recordMarkerSize(label.structureId, { width: layout.width, height: layout.height })} disabled={revealLabels} onPress={() => toggleLabel(label.structureId)} accessibilityRole="button" accessibilityState={{ selected: visible, disabled: revealLabels }} accessibilityLabel={revealLabels ? locale.t('imageViewer.structureHotspot', { structureId: label.displayLabel }) : visible ? locale.t('imageViewer.hideMarker', { index: locale.number(index + 1), label: label.displayLabel }) : locale.t('imageViewer.revealMarker', { index: locale.number(index + 1), label: label.displayLabel })} accessibilityHint={revealLabels ? undefined : locale.t('imageViewer.markerHint')} hitSlop={labelCalloutLayout ? undefined : reflow ? 7 : undefined} style={[styles.labelMarker, labelCalloutLayout && { minWidth: 44, minHeight: 44 }, position, { borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card }, reflow && { minWidth: 44, minHeight: 44, paddingHorizontal: 0, borderWidth: 0, backgroundColor: 'transparent' }]}>
                {reflow ? <View pointerEvents="none" testID={`marker-paint-${index + 1}`} style={{ width: paint.diameter, height: paint.diameter, borderRadius: paint.diameter / 2, borderWidth: paint.borderWidth, borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card, alignItems: 'center', justifyContent: 'center' }}>
                  {/* Numerals scale explicitly with typography settings, capped to fit;
-                     full accessible names and the label legend retain normal Dynamic Type. */}
+                     accessible names remain complete; the dense legend has its own bounded scaling. */}
                  <MarkerText style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: paint.numeralSize, fontWeight: '700', textAlign: 'center' }}>{visible ? locale.number(index + 1) : '?'}</MarkerText>
                </View> : <Text style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: 11, fontWeight: '700', fontFamily: compactOverlayFont }}>{visible ? label.displayLabel : '?'}</Text>}
           </Pressable></React.Fragment>;
         })}
       </View>}
     </View>
-      {source ? <View style={[styles.controls, styles.controlsLarge]}>
-        <Pressable onPress={() => changeZoom(0.5)} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.zoomIn')} testID="viewer-zoom-in" style={styles.controlActionLarge}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('imageViewer.zoomIn')}</Text></Pressable>
-        <Pressable onPress={() => changeZoom(-0.5)} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.zoomOut')} testID="viewer-zoom-out" style={styles.controlActionLarge}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('imageViewer.zoomOut')}</Text></Pressable>
-        <Pressable onPress={reset} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.reset.accessibility')} testID="viewer-reset" style={[styles.reset, styles.controlActionLarge, { backgroundColor: colors.card }]}><Text style={{ color: colors.foreground, fontWeight: '700' }}>{locale.t('imageViewer.reset.visible')}</Text></Pressable>
-        {labels.length > 0 && !revealLabels && <>
-          <Pressable onPress={showAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.revealAll.accessibility')} style={styles.controlActionLarge}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('imageViewer.revealAll.visible')}</Text></Pressable>
-          <Pressable onPress={hideAll} hitSlop={4} accessibilityRole="button" accessibilityLabel={locale.t('imageViewer.hideAll.accessibility')} style={styles.controlActionLarge}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('imageViewer.hideAll.visible')}</Text></Pressable>
-        </>}
-      </View> : null}
-      {reflow && labels.some((label) => revealLabels || revealed.has(label.structureId)) && <View style={styles.labelList}>
-         {labels.map((label, index) => (revealLabels || revealed.has(label.structureId)) && <Text key={annotationKey(label)} style={{ color: colors.foreground }}>{locale.number(questionHotspotCallouts ? annotationIndex(hotspots, label) + 1 : index + 1)}. {label.displayLabel}</Text>)}
-     </View>}
+      {source ? <AtlasViewerControls onZoomIn={() => changeZoom(0.5)} onZoomOut={() => changeZoom(-0.5)}
+        onReset={reset} onRevealAll={showAll} onHideAll={hideAll} showLabelActions={labels.length > 0 && !revealLabels} /> : null}
+      {reflow && <AtlasLegend entries={labels.flatMap((label, index) => (revealLabels || revealed.has(label.structureId)) ? [{
+        key: annotationKey(label), number: questionHotspotCallouts ? annotationIndex(hotspots, label) + 1 : index + 1,
+        name: label.displayLabel,
+      }] : [])} />}
      {bakedLabels && <Text style={[styles.notice, { color: colors.mutedForeground }]}>{locale.t('imageViewer.bakedLabelsNotice')}</Text>}
     {caption ? <Text style={[styles.caption, { color: colors.mutedForeground }]}>{caption}</Text> : null}
   </View>;
@@ -198,17 +204,12 @@ const styles = StyleSheet.create({
   frame: { width: '100%', borderRadius: 16, borderWidth: 1, overflow: 'hidden', position: 'relative' },
   gestureArea: { aspectRatio: 1.45, overflow: 'hidden' },
   canvas: { position: 'absolute', left: 0, right: 0, top: 0, bottom: 0 },
-  image: { width: '100%', height: '100%' },
+   image: { position: 'absolute' },
   empty: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24 },
   blocked: { fontSize: 14, textAlign: 'center' },
   hotspot: { position: 'absolute', transform: [{ translateX: '-50%' }, { translateY: '-50%' }] },
   hotspotContent: { width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderRadius: 999 },
   labelMarker: { position: 'absolute', transform: [{ translateX: '-50%' }, { translateY: '-50%' }], minWidth: 30, minHeight: 30, paddingHorizontal: 6, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderRadius: 999 },
-  controls: { position: 'absolute', right: 10, top: 10, flexDirection: 'row', gap: 8, alignItems: 'center' },
-  controlsLarge: { position: 'relative', right: 0, top: 0, width: '100%', alignSelf: 'stretch', justifyContent: 'flex-start', flexWrap: 'wrap', padding: 10 },
-  controlActionLarge: { minHeight: 44, maxWidth: '100%', justifyContent: 'center', paddingHorizontal: 8 },
-  labelList: { paddingHorizontal: 12, paddingVertical: 12, gap: 8 },
-  reset: { paddingHorizontal: 10, paddingVertical: 7, borderRadius: 8, opacity: 0.94 },
   notice: { paddingHorizontal: 12, paddingVertical: 7, fontSize: 11 },
   caption: { paddingHorizontal: 12, paddingVertical: 12, fontSize: 11 },
 });

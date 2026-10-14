@@ -20,3 +20,21 @@ Generated QA files are evidence only after successful decoding; a matching file 
 **Why:** An interrupted contact-sheet job left a partial PNG despite the expected files existing. Separately, inherited blank font metadata broke a montage of valid images while the application itself remained healthy.
 
 **How to apply:** When resuming visual QA, validate cached images before reuse, and isolate rendering-tool errors before changing product code or drawing conclusions about anatomy presentation.
+
+Keep any viewer framing inset in the shared contain geometry, not only in the Image style. Image painting, normalized anchors, protected anatomy, and gesture bounds must refer to the same padded box.
+
+**Why:** Framing/gesture work must not move anatomical targets. Separately requested anatomical endpoint repairs require an independent source-level review rather than moving targets to improve layout.
+
+**How to apply:** Prefer actual bundled image dimensions when available; keep metadata as the fallback. Check sparse and dense plates at narrow and normal widths using painted bubbles and source-image geometry.
+
+Treat anatomical correctness and overlay geometry as separate evidence. A point inside a semantic mask or a shape's bounding box is not proof that it identifies the intended structure. Conversely, lumina, plasma and named potential spaces can legitimately look blank.
+
+**Why:** The user identified pins that pointed to nothing even though collision/layout audits passed. Thin anatomy can also be obscured by the QA dot itself.
+
+**How to apply:** Enlarge the actual source raster and inspect the endpoint against the depicted anatomy. Preserve valid targets; correct confirmed errors consistently across Study, Practice and pre-catalog glossary views. Explicitly flag art that cannot distinguish the requested structure instead of claiming geometry repaired it.
+
+A mounted legend does not establish that its diagram's painted markers are ready, especially for later/offscreen plates.
+
+**Why:** Browser QA initially compared a valid five-entry legend against an empty marker collection. Scrolling its viewer into view and waiting for painted-marker readiness resolved the mismatch without an application change.
+
+**How to apply:** Before reporting a numbering mismatch, bring each relevant viewer into view and wait for its image/callout layout to settle. Verify visible marker text against the corresponding legend, not only initial DOM presence.

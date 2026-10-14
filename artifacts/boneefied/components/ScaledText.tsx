@@ -1,4 +1,4 @@
-import React, { createContext, forwardRef, useContext, useMemo } from 'react';
+import React, { createContext, forwardRef, useContext, useMemo, useState } from 'react';
 import {
   Platform,
   StyleSheet,
@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import { useStudy } from '@/context/StudyContext';
 import { appTypeface } from '@/context/typeface';
+import { wholeWordFontFactor } from '@/context/wholeWordFit';
 import { dynamicTypeRampForSize, needsCompactTextLayout, needsExpandedTabLayout, needsLargeTextLayout, needsResponsiveTextLayout, TEXT_SCALE_FACTORS, type TextScale } from '@/context/typographyScale';
 
 type TypographySettings = { preference: TextScale; systemFontScale: number; previewFontScale: number; width: number };
@@ -62,21 +63,54 @@ function scaledStyle(style: StyleProp<TextStyle>, scale: TextScale, previewFontS
   }];
 }
 
-export const Text = forwardRef<NativeText, TextProps>(function Text({ style, ...props }, ref) {
+type ReadingTextProps = TextProps & { wholeWords?: boolean };
+function readingCopy(children: React.ReactNode): string {
+  if (typeof children === 'string' || typeof children === 'number') return String(children);
+  if (Array.isArray(children)) return children.map(readingCopy).join('');
+  if (React.isValidElement<{ children?: React.ReactNode }>(children)) return readingCopy(children.props.children);
+  return '';
+}
+
+export const Text = forwardRef<NativeText, ReadingTextProps>(function Text({ style, wholeWords = true, ...props }, ref) {
   const { preference, systemFontScale, previewFontScale, width } = useContext(TypographyContext);
-  const size = StyleSheet.flatten(style)?.fontSize ?? 14;
+  const flat = StyleSheet.flatten(style);
+  const size = flat?.fontSize ?? 14;
+  const copy = wholeWords ? readingCopy(props.children) : '';
+  const fitEnabled = wholeWords && needsLargeTextLayout(systemFontScale, preference);
+  const layoutKey = `${width}/${systemFontScale}/${preference}/${copy}`;
+  const [measured, setMeasured] = useState<{ key: string; width: number }>();
+  const padding = (value: unknown) => typeof value === 'number' ? value : 0;
+  const horizontalInset = padding(flat?.paddingLeft ?? flat?.paddingHorizontal ?? flat?.padding)
+    + padding(flat?.paddingRight ?? flat?.paddingHorizontal ?? flat?.padding)
+    + padding(flat?.borderLeftWidth ?? flat?.borderWidth) + padding(flat?.borderRightWidth ?? flat?.borderWidth);
+  const factor = fitEnabled && measured?.key === layoutKey
+    ? wholeWordFontFactor(copy, measured.width - horizontalInset, size * TEXT_SCALE_FACTORS[preference] * systemFontScale, Number(flat?.fontWeight) >= 600 || flat?.fontWeight === 'bold')
+    : 1;
+  const adjusted = factor < 1 ? {
+    fontSize: size * TEXT_SCALE_FACTORS[preference] * previewFontScale * factor,
+    ...(flat?.lineHeight && { lineHeight: flat.lineHeight * TEXT_SCALE_FACTORS[preference] * previewFontScale * factor }),
+  } : undefined;
   return <NativeText ref={ref} {...props}
+    onLayout={fitEnabled ? event => {
+      props.onLayout?.(event);
+      const available = event.nativeEvent.layout.width;
+      // Keep the original available width while a shrink-to-fit chip reflows;
+      // reset when content, viewport or scaling changes, so it can grow again.
+      setMeasured(previous => previous?.key === layoutKey && previous.width >= available - 0.5
+        ? previous : { key: layoutKey, width: available });
+    } : props.onLayout}
     allowFontScaling={Platform.OS === 'web' ? props.allowFontScaling : true}
     maxFontSizeMultiplier={Platform.OS === 'web' ? props.maxFontSizeMultiplier : 0}
     dynamicTypeRamp={Platform.OS === 'ios' ? props.dynamicTypeRamp ?? dynamicTypeRampForSize(size) : props.dynamicTypeRamp}
     numberOfLines={needsResponsiveTextLayout(width, systemFontScale, preference) ? undefined : props.numberOfLines}
-    style={[{ flexShrink: 1, minWidth: 0 }, ...scaledStyle(style, preference, previewFontScale)]}
+    style={[{ flexShrink: 1, minWidth: 0 }, ...scaledStyle(style, preference, previewFontScale), adjusted]}
   />;
 });
 
 /** Numeric image controls only: supplied size includes responsive typography.
  * Compensate for the native multiplier rather than scaling it twice; keep
- * native Dynamic Type enabled. Full reading/legend text still uses normal Text. */
+ * native Dynamic Type enabled. Reading text uses normal Text; dense atlas
+ * annotations use the separately bounded AtlasLegend treatment. */
 export const MarkerText = forwardRef<NativeText, TextProps>(function MarkerText({ style, ...props }, ref) {
   const { systemFontScale } = useContext(TypographyContext);
   const size = StyleSheet.flatten(style)?.fontSize ?? 14;
@@ -98,8 +132,8 @@ export const TextInput = forwardRef<NativeTextInput, TextInputProps>(function Te
 });
 
 // A heading is reading content, not a single-line control. Never truncate it.
-export const Heading = forwardRef<NativeText, TextProps>(function Heading({ style, ...props }, ref) {
-  return <Text ref={ref} {...props} accessibilityRole="header" numberOfLines={undefined} style={[{ fontWeight: '700' }, style]} />;
+export const Heading = forwardRef<NativeText, ReadingTextProps>(function Heading({ style, ...props }, ref) {
+  return <Text ref={ref} wholeWords {...props} accessibilityRole="header" numberOfLines={undefined} style={[{ fontWeight: '700' }, style]} />;
 });
 
 // Deliberately preserve the established sans-serif tiny floating label treatment.

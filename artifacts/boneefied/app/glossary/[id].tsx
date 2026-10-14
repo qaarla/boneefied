@@ -10,6 +10,7 @@ import { searchAnatomy } from '@/content/search';
 import { anatomicalTerms, wordMeaning } from '@/content/anatomical-terms';
 import { AnatomyImageViewer } from '@/components/AnatomyImageViewer';
 import { VisualStudyContext } from '@/components/VisualStudyContext';
+import { AssetSourcesDisclosure } from '@/components/ModuleSourcesDisclosure';
 import { combinedAtlasAssetsForStructure, withSynthesizedLabels } from '@/content/atlas-index';
 import { imageSources } from '@/content/imageSources';
 import { useColors } from '@/hooks/useColors';
@@ -50,7 +51,6 @@ export default function GlossaryEntryScreen() {
           <Text style={{ color: colors.foreground }}>{definition(entry.structure.id, entry.definition)}</Text>
         </View>}
         <Text style={{ color: colors.mutedForeground }}>{localizedModule!.title} · {localizedStructure!.category}</Text>
-        <Text style={{ color: colors.mutedForeground }}>{language === 'es' ? 'Fuente de la definición' : 'Definition source'}: {citation(entry.structure.sourceId)}</Text>
       </AdaptiveCard>
       {plates.length > 0 && <View style={styles.aliases}>
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Lámina de atlas' : 'Atlas plate'}</Heading>
@@ -70,7 +70,10 @@ export default function GlossaryEntryScreen() {
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{t('glossary.acceptedSearchTerms')}</Heading>
         <Text style={{ color: colors.mutedForeground }}>{localizedStructure!.acceptedAliases.join(' · ')}</Text>
       </View>}
-      <AdaptiveButton accessibilityRole="button"
+       <AssetSourcesDisclosure key={entry.structure.id} assets={plates} sourceIds={[entry.structure.sourceId]}>
+         <Text style={{ color: colors.mutedForeground }}>{language === 'es' ? 'Fuente de la definición' : 'Definition source'}: {citation(entry.structure.sourceId)}</Text>
+       </AssetSourcesDisclosure>
+       <AdaptiveButton accessibilityRole="button"
         onPress={() => router.push(`/module/${entry.module.id}`)}
         style={[styles.action, { backgroundColor: colors.primary }]}>
         <Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{t('glossary.openModuleLesson', { module: localizedModule!.title })}</Text>

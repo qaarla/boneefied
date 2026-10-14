@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { content } from '../content/canonical.ts';
+import { repairDiagramTargets } from '../content/repair5-targets.ts';
 import { bvis04Plates } from '../content/bvis04-plates.generated.ts';
 import { bvis04Assets, BVIS04_MODULES, BVIS04_SOURCE, isBvis04AssetId } from '../content/bvis04-pack.ts';
 import { bvis04QuestionCopy } from '../content/bvis04-questions.ts';
@@ -34,7 +35,9 @@ test('BVIS04 diagrams use canonical IDs, local originals, unbaked labels and val
     assert.equal(createHash('sha256').update(png).digest('hex'), provenance.sha256.png, `${p.id}: PNG provenance`);
     assert.equal(createHash('sha256').update(fs.readFileSync(path.join(root, p.svgPath))).digest('hex'), provenance.sha256.svg, `${p.id}: SVG provenance`);
     assert.equal(new Set(p.labels.map((l) => `${l.structureId}:${l.panel}`)).size, p.labels.length, 'a structure may be labelled in different comparison panels');
-    for (const l of p.labels) {
+    // Runtime targets incorporate the individually reviewed coordinate repairs;
+    // authored source coordinates remain unchanged alongside the original art.
+    for (const l of repairDiagramTargets(p.id, p.labels)) {
       assert.ok(ids.has(l.structureId), l.structureId);
       assert.ok(l.x > 0 && l.x < 1 && l.y > 0 && l.y < 1);
       assert.ok(a.hotspots?.some((h) => h.structureId === l.structureId && h.x === l.x && h.y === l.y));

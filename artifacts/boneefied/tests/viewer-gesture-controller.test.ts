@@ -93,6 +93,55 @@ test('clamp retains at least a quarter of contained image/viewport intersection 
     }
   }
 });
+test('extreme drags retain the full image/viewport intersection, including padded portrait and landscape frames', () => {
+  for (const width of [239, 301, 348]) for (const height of [220, 396, 572]) for (const aspect of [0.5, 1.45, 2.8]) {
+    const imageHeight = Math.min(height - 24, (width - 24) / aspect);
+    const imageWidth = imageHeight * aspect;
+    const s = { width, height, image: { x: (width - imageWidth) / 2, y: (height - imageHeight) / 2, width: imageWidth, height: imageHeight } };
+    for (const zoom of [1.01, 1.5, 2, 4]) for (const direction of [-1, 1]) {
+      const t = constrainViewer({ zoom, offset: { x: direction * 1e6, y: -direction * 1e6 } }, s);
+      for (const [frame, start, size, offset] of [
+        [width, s.image.x, imageWidth, t.offset.x],
+        [height, s.image.y, imageHeight, t.offset.y],
+      ]) {
+        const first = frame / 2 + (start - frame / 2) * zoom + offset;
+        const last = first + size * zoom;
+        const overlap = Math.min(frame, last) - Math.max(0, first);
+        assert.ok(overlap >= Math.min(frame, size * zoom) - 1e-7);
+      }
+    }
+  }
+});
+
+test('pinch translated through each edge stays owned until final lift and cannot release an answer', () => {
+  const g = new ViewerGestureController();
+  g.start(pinch(100), scene, origin, 0);
+  for (const [distance, x, y] of [[250, 250, 420], [500, 900, -500], [25, 100, 340]]) {
+    g.move(pinch(distance, x, y), scene, origin, 1);
+    assert.equal(g.owns, true);
+    assert.ok(g.transform.zoom >= 1 && g.transform.zoom <= 4);
+  }
+  g.start(touch(100, 340), scene, origin, 2);
+  g.move(touch(140, 390), scene, origin, 3);
+  assert.equal(g.owns, true);
+  g.end(4);
+  assert.equal(g.owns, false);
+  assert.equal(g.canPress(5), false);
+  g.reset();
+  assert.deepEqual(g.transform, { zoom: 1, offset: { x: 0, y: 0 } });
+});
+
+test('native capture locks before interception, web ownership survives a return to 1×, and page momentum is frozen', () => {
+  const hook = readFileSync(new URL('../components/useAnatomyViewerGesture.ts', import.meta.url), 'utf8');
+  const screen = readFileSync(new URL('../components/Screen.tsx', import.meta.url), 'utf8');
+  assert.match(hook, /onStartShouldSetPanResponderCapture:[\s\S]*?measure\(\); begin\(e\.nativeEvent\.touches\);/);
+  assert.match(hook, /return controller\.owns && e\.nativeEvent\.touches\.length > 1/);
+  assert.match(hook, /touchAction: ownsGesture \|\| transform\.zoom > 1 \? 'none' : 'pan-y'/);
+  assert.match(hook, /setOwnsGesture\(owns\)/);
+  assert.match(screen, /lockedScrollY\.current = scrollY\.current/);
+  assert.match(screen, /scrollTo\(\{ y: lockedScrollY\.current, animated: false \}\)/);
+  assert.match(screen, /owners\.current\.size > 0 && lockedScrollY\.current !== null/);
+});
 test('zoom buttons re-clamp and reset clears transform and any active ownership', () => {
   const g = new ViewerGestureController();
   g.changeZoom(3, scene);

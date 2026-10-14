@@ -13,7 +13,9 @@ test('multi-panel annotations retain distinct React identities and correct quest
   }
   const viewer = fs.readFileSync(new URL('../components/AnatomyImageViewer.tsx', import.meta.url), 'utf8');
   assert.match(viewer, /key=\{`label-\$\{annotationKey\(label\)\}`\}/);
-  assert.match(viewer, /key=\{annotationKey\(label\)\}/);
+  assert.match(viewer, /key: annotationKey\(label\)/);
+  const legend = fs.readFileSync(new URL('../components/AtlasLegend.tsx', import.meta.url), 'utf8');
+  assert.match(legend, /key=\{entry\.key\}/);
   assert.doesNotMatch(viewer, /key=\{label\.structureId\}|key=\{`label-\$\{label\.structureId\}`\}/);
 });
 

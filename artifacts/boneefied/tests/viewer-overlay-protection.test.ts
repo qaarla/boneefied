@@ -38,7 +38,7 @@ test('all published marker plates fit normal and enlarged phone layouts without 
     const points = asset.labels?.length ? asset.labels : asset.hotspots ?? content.questions.find(q => q.assetId === asset.id && q.hotspots?.length)?.hotspots ?? [];
     for (const width of [239, 271, 301, 348]) for (const scale of [1, 2.8]) for (const practice of [false, true]) {
       const frame = overlayFrame(asset, points, width, scale, practice);
-      const avoid = protectedOverlayRects(width, frame.height, asset.imageAspectRatio ?? 1.45, asset.hotspotOverlayAvoidRects ?? []);
+      const avoid = protectedOverlayRects(width, frame.height, asset.imageAspectRatio ?? 1.45, asset.hotspotOverlayAvoidRects ?? [], 12);
       assert.equal(frame.callouts.length, points.length, asset.id);
       frame.callouts.forEach((point, i) => {
         assert.ok(point.x >= frame.cell / 2 && point.x <= width - frame.cell / 2, asset.id);
@@ -57,8 +57,8 @@ test('local paint caps keep both default and enlarged numerals readable', () => 
   for (const tuning of Object.values(bvr02OverlayOverrides).filter(t => t.size)) {
     for (const width of [200, 271, 348]) for (const scale of [1, 1.35, 2.8]) {
       const paint = markerSizing(width, 25, scale, tuning.size);
-      assert.ok(paint.diameter >= 18 && paint.diameter <= 21);
-      assert.ok(paint.numeralSize >= 10 && paint.numeralSize <= paint.diameter * .56);
+      assert.ok(paint.diameter >= (tuning.size!.diameter! < 18 ? 16 : 18) && paint.diameter <= tuning.size!.maxDiameter!);
+      assert.ok(paint.numeralSize >= 10 && paint.numeralSize <= paint.diameter * (paint.diameter < 18 ? .625 : .56));
     }
   }
 });

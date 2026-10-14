@@ -25,6 +25,7 @@ import { attachBvis05, bvis05Assets, bvis05Sources } from './bvis05-pack.ts';
 import { applyBvis05Questions } from './bvis05-questions.ts';
 import { attachBvis06, bvis06Assets, bvis06Sources } from './bvis06-pack.ts';
 import { applyBvr02Overlay } from './bvr02-overlay-overrides.ts';
+import { applyRepair5Targets, repairDiagramTargets } from './repair5-targets.ts';
 import { applyBvis06Questions } from './bvis06-questions.ts';
 import { applySkeletalAtlasAssets, attachSkeletalAtlas, skeletalAtlasQuestions, skeletalAtlasSources } from './skeletal-atlas-pack.ts';
 
@@ -176,7 +177,10 @@ content.modules = content.modules.map((module) => ({
   })),
 }));
 
-content.assets = content.assets.map(applyBvr02Overlay);
+content.assets = content.assets.map(applyRepair5Targets).map(applyBvr02Overlay);
+content.questions = content.questions.map(question => question.hotspots ? {
+  ...question, hotspots: repairDiagramTargets(question.assetId, question.hotspots),
+} : question);
 
 export function getSource(id: string): SourceRecord | undefined {
   return content.sources.find((source) => source.id === id);

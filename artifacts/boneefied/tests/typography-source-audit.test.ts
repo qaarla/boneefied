@@ -55,6 +55,14 @@ test('screens and components use shared scaled text and do not truncate reading 
     const isFontSetup = relative === 'app/_layout.tsx';
     const isTabLayout = file === tabLayout;
     const isSharedText = file === sharedText;
+    const isBoundedLegend = relative === 'components/AtlasLegend.tsx';
+    if (isBoundedLegend) {
+      // Dense atlas copy deliberately uses its separately tested bounded scale,
+      // rather than reapplying the reading-text preference/system multiplier.
+      assert.match(source, /useTypographyLayout/);
+      assert.match(source, /maxFontSizeMultiplier=\{ATLAS_LEGEND_MAX_SCALE\}/);
+      assert.match(source, /allowFontScaling/);
+    }
 
     const parsed = ts.createSourceFile(file, source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
     for (const statement of parsed.statements) {
@@ -66,6 +74,7 @@ test('screens and components use shared scaled text and do not truncate reading 
         .filter((element) => ['Text', 'TextInput'].includes((element.propertyName ?? element.name).text))
         .map((element) => `${(element.propertyName ?? element.name).text} as ${element.name.text}`);
       if (directTextImports.length && !isFontSetup && !isSharedText
+        && !(isBoundedLegend && directTextImports.length === 1 && directTextImports[0] === 'Text as NativeText')
         && !(isTabLayout && directTextImports.length === 1 && directTextImports[0] === 'Text as NativeText')) {
         violations.push(`${relative} imports React Native ${directTextImports.join(', ')} directly`);
       }

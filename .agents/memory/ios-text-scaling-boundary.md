@@ -14,3 +14,9 @@ For web-renderer regression checks that emulate Dynamic Type, use a fresh browse
 **Why:** The browser can retain test-only scale state across route changes even when the current URL does not reveal it.
 
 **How to apply:** Separate default, intermediate, and accessibility-sized captures; treat native tab bars, keyboard avoidance, and iOS line breaking as unverified until checked on-device.
+
+Module headers must keep the actual localized title at enlarged text, wrapping and growing instead of substituting “Module” or clipping a long title. A content-height header should use shared scaled text, not also multiply it with native-header font scaling.
+
+**Why:** The user reported generic titles and excessive empty space on physical devices; a fixed-height header also clipped long titles during enlarged-text verification.
+
+**How to apply:** Assign top status-bar/safe-area clearance to the header exactly once. Content below an opaque header keeps the ordinary reading gap but must not add the same top inset or automatic scroll inset again. Keep safe-area handling unchanged for headerless screens.

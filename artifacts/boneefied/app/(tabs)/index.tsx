@@ -27,7 +27,9 @@ export default function StudyScreen() {
   const { isLargeText, isCompactTextLayout } = useTypographyLayout();
   const reflow = isCompactTextLayout || isLargeText;
   const router = useRouter();
-  const { width } = useWindowDimensions();
+   const { width, height } = useWindowDimensions();
+   // Keep the explorer bounded even when rows reflow for larger text.
+   const systemsHeight = Math.max(160, Math.min(width - (reflow ? 32 : 40), 280, height * 0.32));
   const stackModuleMeta = width < 480;
   const [selectedSystem, setSelectedSystem] = React.useState<string | null>(null);
   const [reduceMotion, setReduceMotion] = React.useState(true);
@@ -159,14 +161,12 @@ export default function StudyScreen() {
       </View>}
     </View>
       <AdaptiveRow style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{t('study.exploreBySystem')}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(Number(systems.length) === 1 ? 'study.systemCount.one' : 'study.systemCount.other', { count: number(systems.length) })}</Text></AdaptiveRow>
-      <View style={[styles.systemsPanel, !reflow && { height: Math.min(width - 40, 300) }, { borderColor: colors.border, backgroundColor: colors.card }]}>
-        {reflow
-          ? <View testID="study-systems-scroll" accessibilityLabel={t('study.systemsAccessibility')} style={[styles.systems, styles.systemsContent]}>{systemChoices}</View>
-          : <ScrollView testID="study-systems-scroll" accessibilityLabel={t('study.systemsAccessibility')} tabIndex={Platform.OS === 'web' ? 0 : undefined} nestedScrollEnabled keyboardShouldPersistTaps="handled" contentContainerStyle={[styles.systems, styles.systemsContent]} showsVerticalScrollIndicator>{systemChoices}</ScrollView>}
+      <View style={[styles.systemsPanel, { height: systemsHeight, borderColor: colors.border, backgroundColor: colors.card }]}>
+        <ScrollView testID="study-systems-scroll" accessibilityLabel={t('study.systemsAccessibility')} tabIndex={Platform.OS === 'web' ? 0 : undefined} nestedScrollEnabled keyboardShouldPersistTaps="handled" style={{ flex: 1, ...(Platform.OS === 'web' ? { overscrollBehaviorY: 'contain' } : {}) }} contentContainerStyle={[styles.systems, styles.systemsContent]} showsVerticalScrollIndicator>{systemChoices}</ScrollView>
       </View>
       <AdaptiveRow onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{t('study.learningModules')}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(visibleModules.length === 1 ? 'study.availableCount.one' : 'study.availableCount.other', { count: number(visibleModules.length) })}</Text></AdaptiveRow>
       {visibleModules.map((module, index) => <AdaptiveButton key={module.id} onLayout={index === 0 ? (event) => { firstResult.current = { id: module.id, layout: event.nativeEvent.layout }; scheduleReveal(); } : undefined} testID={`module-card-${module.id}`} accessibilityRole="button" onPress={() => { if (preferences.haptics) void Haptics.selectionAsync(); router.push(`/module/${module.id}`); }} style={({ pressed }) => [styles.card, { backgroundColor: colors.card, borderColor: colors.border, transform: [{ scale: pressed ? 0.985 : 1 }] }]}>
-        <AdaptiveRow style={[styles.cardTop, reflow && responsive.cardTopStacked]}><ModuleIcon iconKey={moduleIconKeyById[module.id]} label={localizeModule(module).title} /><View style={[styles.cardCopy, responsive.flexibleCopy, reflow && responsive.cardCopyStacked]}><Text style={[styles.cardTitle, { color: colors.foreground }]}>{localizeModule(module).title}</Text><Text style={[styles.cardSub, { color: colors.mutedForeground }]}>{localizeModule(module).summary ?? t(module.id === 'cytology-mitosis' ? 'study.cytologyModuleFallback' : 'study.moduleFallback')}</Text></View>{!reflow && <Text style={[styles.arrow, responsive.trailingStatus, { color: colors.primary }]}>›</Text>}</AdaptiveRow>
+        <AdaptiveRow style={[styles.cardTop, reflow && responsive.cardTopStacked]}><ModuleIcon iconKey={moduleIconKeyById[module.id]} label={localizeModule(module).title} /><View style={[styles.cardCopy, responsive.flexibleCopy, reflow && responsive.cardCopyStacked]}><Text wholeWords style={[styles.cardTitle, { color: colors.foreground }]}>{localizeModule(module).title}</Text><Text style={[styles.cardSub, { color: colors.mutedForeground }]}>{localizeModule(module).summary ?? t(module.id === 'cytology-mitosis' ? 'study.cytologyModuleFallback' : 'study.moduleFallback')}</Text></View>{!reflow && <Text style={[styles.arrow, responsive.trailingStatus, { color: colors.primary }]}>›</Text>}</AdaptiveRow>
           <AdaptiveRow style={[styles.meta, responsive.meta, (stackModuleMeta || reflow) && responsive.metaStacked]}>
           <View style={responsive.metaDetails}>
              <Text style={{ color: colors.mutedForeground }}>{t(content.structures.filter((item) => item.moduleId === module.id).length === 1 ? 'study.moduleStructureCount.one' : 'study.moduleStructureCount.other', { count: number(content.structures.filter((item) => item.moduleId === module.id).length) })} · {t(content.questions.filter((item) => item.moduleId === module.id).length === 1 ? 'study.moduleQuestionCount.one' : 'study.moduleQuestionCount.other', { count: number(content.questions.filter((item) => item.moduleId === module.id).length) })}</Text>

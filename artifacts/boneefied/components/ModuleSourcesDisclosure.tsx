@@ -5,18 +5,31 @@ import { Text } from './ScaledText';
 import { useColors } from '@/hooks/useColors';
 import { useLocale } from '@/locales/useLocale';
 import { content } from '@/content/canonical';
-import { collectModuleRights } from '@/content/module-rights';
-import type { Module } from '@/content/model';
+import { collectModuleRights, collectAssetRights } from '@/content/module-rights';
+import type { Asset, Module, SourceRecord } from '@/content/model';
 
 export function ModuleSourcesDisclosure({ module, galleryIds }: { module: Module; galleryIds: readonly string[] }) {
+  return <SourcesRightsDisclosure rights={collectModuleRights(content, module, galleryIds)} scope="module" />;
+}
+
+export function AssetSourcesDisclosure({ assets, sourceIds = [], children }: { assets: readonly Asset[]; sourceIds?: readonly string[]; children?: React.ReactNode }) {
+  return <SourcesRightsDisclosure rights={collectAssetRights(content, assets, sourceIds)} scope="plate">{children}</SourcesRightsDisclosure>;
+}
+
+/** Shared closed-by-default inline disclosure for modules and standalone plates. */
+function SourcesRightsDisclosure({ rights, scope, children }: {
+  rights: { assets: Asset[]; sources: SourceRecord[] };
+  scope: 'module' | 'plate';
+  children?: React.ReactNode;
+}) {
   const [expanded, setExpanded] = useState(false);
   const [focused, setFocused] = useState(false);
   const colors = useColors();
   const { t, language, source: localizeSource, asset: localizeAsset } = useLocale();
-  const rights = collectModuleRights(content, module, galleryIds);
   const title = t('module.sourcesAndRights');
-  return <View testID="module-sources-disclosure" style={[styles.card, { backgroundColor: colors.card, borderColor: focused ? colors.primary : colors.border }]}>
-    <Pressable testID="module-sources-toggle" accessibilityRole="button" accessibilityLabel={title}
+  if (!rights.assets.length && !rights.sources.length && !children) return null;
+  return <View testID={scope === 'module' ? 'module-sources-disclosure' : 'plate-sources-disclosure'} style={[styles.card, { backgroundColor: colors.card, borderColor: focused ? colors.primary : colors.border }]}>
+    <Pressable testID={scope === 'module' ? 'module-sources-toggle' : 'plate-sources-toggle'} accessibilityRole="button" accessibilityLabel={title}
       accessibilityHint={language === 'es' ? 'Mostrar u ocultar las fuentes, los créditos y las licencias.' : 'Show or hide sources, credits and licenses.'}
       accessibilityState={{ expanded }} {...(Platform.OS === 'web' ? { 'aria-expanded': expanded } : {})}
       onPress={() => setExpanded((value) => !value)}
@@ -24,7 +37,8 @@ export function ModuleSourcesDisclosure({ module, galleryIds }: { module: Module
       <Text style={[styles.title, { color: colors.foreground }]}>{title}</Text>
       <Feather accessible={false} accessibilityElementsHidden importantForAccessibility="no" name={expanded ? 'chevron-up' : 'chevron-down'} size={20} color={colors.primary} />
     </Pressable>
-    {expanded && <View testID="module-sources-details" style={[styles.details, { borderTopColor: colors.border }]}>
+    {expanded && <View testID={scope === 'module' ? 'module-sources-details' : 'plate-sources-details'} style={[styles.details, { borderTopColor: colors.border }]}>
+      {children}
       {rights.sources.map((canonical) => {
         const source = localizeSource(canonical);
         return <View key={source.id} testID={`rights-source-${source.id}`} style={styles.entry}>

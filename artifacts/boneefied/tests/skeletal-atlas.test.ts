@@ -100,7 +100,7 @@ test('retained artwork uses its actual contain ratio and physically reviewed tar
   const elbow = content.assets.find((a) => a.id === 'asset-servier-elbow-joint')!;
   assert.deepEqual(elbow.hotspots!.find((h) => h.structureId === 'humerus'), { structureId: 'humerus', x: 0.18, y: 0.18, radius: 0.08 });
   const pelvis = content.assets.find((a) => a.id === 'asset-servier-pelvis')!;
-  assert.deepEqual(pelvis.hotspots!.find((h) => h.structureId === 'pubis'), { structureId: 'pubis', x: 0.40, y: 0.61, radius: 0.08 });
+  assert.deepEqual(pelvis.hotspots!.find((h) => h.structureId === 'pubis'), { structureId: 'pubis', x: 0.45, y: 0.61, radius: 0.08 });
 });
 
 test('24 questions: scorable, separated hotspots, ids unique, old questions kept', () => {

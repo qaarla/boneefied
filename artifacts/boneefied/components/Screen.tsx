@@ -7,10 +7,11 @@ import { useTypographyLayout } from '@/components/ScaledText';
 import { KeyboardAwareScrollViewCompat } from '@/components/KeyboardAwareScrollViewCompat';
 import { ViewerScrollOwnership } from '@/components/ViewerScrollOwnership';
 
-export function Screen({ children, scroll = true, keyboardAware = false, scrollRef, onScroll, onViewportLayout, keyboardShouldPersistTaps }: {
+export function Screen({ children, scroll = true, keyboardAware = false, belowHeader = false, scrollRef, onScroll, onViewportLayout, keyboardShouldPersistTaps }: {
   children: React.ReactNode;
   scroll?: boolean;
   keyboardAware?: boolean;
+  belowHeader?: boolean;
   scrollRef?: React.Ref<ScrollView>;
   onScroll?: ScrollViewProps['onScroll'];
   onViewportLayout?: (height: number, bottomClearance: number) => void;
@@ -20,6 +21,7 @@ export function Screen({ children, scroll = true, keyboardAware = false, scrollR
   const scrollNode = useRef<ScrollView | null>(null);
   const owners = useRef(new Set<symbol>());
   const scrollY = useRef(0);
+  const lockedScrollY = useRef<number | null>(null);
   const [viewerOwnsGesture, setViewerOwnsGesture] = useState(false);
   const setOwnership = useCallback((owner: symbol, active: boolean) => {
     if (active === owners.current.has(owner)) return;
@@ -27,6 +29,13 @@ export function Screen({ children, scroll = true, keyboardAware = false, scrollR
     const locked = owners.current.size > 0;
     // Stop native scroll interception before the next render commits.
     if (Platform.OS !== 'web') scrollNode.current?.setNativeProps({ scrollEnabled: !locked });
+    if (locked && lockedScrollY.current === null) {
+      lockedScrollY.current = scrollY.current;
+      // Stop page momentum as well as future interception, before React commits.
+      scrollNode.current?.scrollTo({ y: lockedScrollY.current, animated: false });
+    } else if (!locked) {
+      lockedScrollY.current = null;
+    }
     setViewerOwnsGesture(locked);
   }, []);
   const ownership = useMemo(() => ({ setOwnership, getScrollY: () => scrollY.current }), [setOwnership]);
@@ -46,8 +55,16 @@ export function Screen({ children, scroll = true, keyboardAware = false, scrollR
   // The top inset belongs outside the scroll view so it cannot scroll under the status bar.
   // Bottom clearance belongs to the scrollable container so the final child can clear the fixed tabs.
   const scrollProps = {
+    // A non-transparent stack header already lays content below the safe area.
+    ...(belowHeader && { contentInsetAdjustmentBehavior: 'never' as const, automaticallyAdjustContentInsets: false }),
     scrollEnabled: !viewerOwnsGesture,
     onScroll: ((event) => {
+      if (owners.current.size > 0 && lockedScrollY.current !== null) {
+        if (Math.abs(event.nativeEvent.contentOffset.y - lockedScrollY.current) > 0.5) {
+          scrollNode.current?.scrollTo({ y: lockedScrollY.current, animated: false });
+        }
+        return;
+      }
       scrollY.current = event.nativeEvent.contentOffset.y;
       onScroll?.(event);
     }) as NonNullable<ScrollViewProps['onScroll']>,
@@ -60,7 +77,7 @@ export function Screen({ children, scroll = true, keyboardAware = false, scrollR
   const scroller = keyboardAware
     ? <KeyboardAwareScrollViewCompat viewerScrollRef={attachScroll} {...scrollProps} bottomOffset={64}>{content}</KeyboardAwareScrollViewCompat>
     : <ScrollView ref={attachScroll} {...scrollProps}>{content}</ScrollView>;
-  return <ViewerScrollOwnership.Provider value={ownership}><View style={[styles.screen, { backgroundColor: colors.background, paddingTop: insets.top }]}>{scroll ? scroller : content}</View></ViewerScrollOwnership.Provider>;
+  return <ViewerScrollOwnership.Provider value={ownership}><View style={[styles.screen, { backgroundColor: colors.background, paddingTop: belowHeader ? 0 : insets.top }]}>{scroll ? scroller : content}</View></ViewerScrollOwnership.Provider>;
 }
 const styles = StyleSheet.create({
   screen: { flex: 1 },
