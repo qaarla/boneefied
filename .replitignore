@@ -4,5 +4,7 @@
 # No need to store the pnpm store twice.
 .local
 /generated-artifacts/
+/releases/google-play/*.aab
+/releases/google-play/*.part
 /artifacts/boneefied/scripts/atlas/bvis04-review/
 /artifacts/boneefied/scripts/atlas/bvis05-review/
