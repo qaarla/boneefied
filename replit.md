@@ -2,6 +2,8 @@
 
 Boneefied is chiefly a comprehensive mobile human-anatomy learning app: students study systems, structures, relationships, landmarks, and recognition cues, then practice and track mastery offline.
 
+Cross-surface project continuity and dated build/catalog caveats: [BONEEFIED_HANDOFF.md](BONEEFIED_HANDOFF.md). The detailed final visual QA remains [Repair 9](artifacts/boneefied/docs/repair9-review.md).
+
 ## Run & Operate
 
 - `pnpm --dir artifacts/boneefied run typecheck`
