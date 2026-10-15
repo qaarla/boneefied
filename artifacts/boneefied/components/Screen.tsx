@@ -6,6 +6,7 @@ import { useColors } from '@/hooks/useColors';
 import { useTypographyLayout } from '@/components/ScaledText';
 import { KeyboardAwareScrollViewCompat } from '@/components/KeyboardAwareScrollViewCompat';
 import { ViewerScrollOwnership } from '@/components/ViewerScrollOwnership';
+import { OrganicBackground } from '@/components/OrganicBackground';
 
 export function Screen({ children, scroll = true, keyboardAware = false, belowHeader = false, scrollRef, onScroll, onViewportLayout, keyboardShouldPersistTaps }: {
   children: React.ReactNode;
@@ -77,7 +78,7 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
   const scroller = keyboardAware
     ? <KeyboardAwareScrollViewCompat viewerScrollRef={attachScroll} {...scrollProps} bottomOffset={64}>{content}</KeyboardAwareScrollViewCompat>
     : <ScrollView ref={attachScroll} {...scrollProps}>{content}</ScrollView>;
-  return <ViewerScrollOwnership.Provider value={ownership}><View style={[styles.screen, { backgroundColor: colors.background, paddingTop: belowHeader ? 0 : insets.top }]}>{scroll ? scroller : content}</View></ViewerScrollOwnership.Provider>;
+  return <ViewerScrollOwnership.Provider value={ownership}><View style={[styles.screen, { backgroundColor: colors.background, paddingTop: belowHeader ? 0 : insets.top }]}><OrganicBackground />{scroll ? scroller : content}</View></ViewerScrollOwnership.Provider>;
 }
 const styles = StyleSheet.create({
   screen: { flex: 1 },
