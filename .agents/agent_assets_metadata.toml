@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "IBbEFXvibm8STbpcwEPi1"
+uri = "file://generated-artifacts/website-embroidery/desktop-full-page.jpg"
+type = "image"
+title = "Boneefied — full website preview"
+description = "Running desktop preview from header through every scrolling section and footer. Development preview evidence, not a published release."
+logical_id = "a8893fed-9a1e-47c2-ac14-63012f731a59"
+content_hash = "sha256:ff66a633a4339c8361f6ddb604071e53de44b5fc3b7e6246f2944d84f8b572f7"
+size = 493621
+mtime_ms = 1792092248446
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/a8893fed-9a1e-47c2-ac14-63012f731a59/4610ecea-6664-4d04-8c79-d779a5b8c68a"
+storage_version_token = "1792092798191254"
+content_type = "image/jpeg"

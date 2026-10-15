@@ -52,9 +52,18 @@ a { color: inherit; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; border-radius: 3px; }
 ::selection { background: #efcc77; color: var(--ink); }
 .site-shell { min-height: 100dvh; display: flex; flex-direction: column; position: relative; isolation: isolate; }
-/* One stationary, noninteractive underlay. Existing opaque illustrations,
-   QR codes, cards and controls continue to mask it; never texture their pixels. */
-.organic-background { position: fixed; inset: 0; z-index: -1; pointer-events: none; user-select: none; background-position: center; background-size: 100% 100%; background-repeat: no-repeat; }
+/* One continuous, document-bound underlay from header through footer.
+   It scrolls 1:1 with the site: no viewport attachment, parallax or tiling.
+   Existing opaque illustrations, QR codes, cards and controls remain untouched. */
+.organic-background { position: absolute; inset: 0; z-index: -1; pointer-events: none; user-select: none; opacity: .025; }
+@supports ((mask-image: linear-gradient(#fff, #fff)) or (-webkit-mask-image: linear-gradient(#fff, #fff))) {
+  .organic-background {
+    background-color: var(--ink);
+    mask-size: 100% 100%; -webkit-mask-size: 100% 100%;
+    mask-position: center; -webkit-mask-position: center;
+    mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+  }
+}
 .site-main { width: min(calc(100% - 64px), 1140px); min-width: 0; margin-inline: auto; flex: 1; }
 .topbar { height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid #c9c1b2; }
 .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-size: 26px; font-weight: 700; letter-spacing: -.035em; line-height: 1; }

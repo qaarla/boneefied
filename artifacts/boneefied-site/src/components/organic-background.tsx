@@ -1,11 +1,13 @@
 import type { CSSProperties } from 'react';
-import { organicFiberSvg, ORGANIC_STRENGTH } from '../../../boneefied/components/organicFibers';
+import { organicFiberSvg } from '../../../boneefied/components/organicFibers';
 
-// Same original curves as native. Self-contained: no request, load handler,
-// animation, or interactive/accessible descendants. CSS failure leaves paper.
+// Reuse the original family, not an additional decoration. An alpha mask lets
+// the existing website ink follow its light/dark palette without recoloring art.
+// Unsupported masks leave the original plain paper (no solid-color overlay).
+const mask = `url("data:image/svg+xml,${encodeURIComponent(organicFiberSvg('#ffffff'))}")`;
 const style = {
-  backgroundImage: `url("data:image/svg+xml,${encodeURIComponent(organicFiberSvg('#25282a'))}")`,
-  opacity: ORGANIC_STRENGTH * 0.75,
+  maskImage: mask,
+  WebkitMaskImage: mask,
 } satisfies CSSProperties;
 
 export function OrganicBackground() {
