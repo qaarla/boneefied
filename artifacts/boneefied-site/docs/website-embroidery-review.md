@@ -1,5 +1,36 @@
 # Boneefied website-only UI embroidery
 
+## Visibility correction after owner review — October 15, 2026
+
+The earlier 2.5% implementation below is historical. The owner found it
+effectively invisible despite correct deployment. The source now uses **9%**
+for the same single original ornament on home and privacy, in both themes.
+No paths, masking geometry, stacking, responsive layout, native runtime,
+content, links, integrations, fonts or approved colors changed.
+
+The gold italic hero word now has the existing paper color behind it. This
+does not change line metrics or spacing and preserves its approximately
+3.13:1 large-text contrast where a stronger fiber would otherwise pass behind
+it. Representative main heading/body contrast remains above the applicable
+thresholds even over a fully covered 9% fiber. Existing muted small-copy
+colors were not redesigned; this is not a complete accessibility certification.
+
+Verification: website TypeScript check and all six website/cross-surface
+regressions pass (the cross-surface test's website-only opacity expectation
+was updated; native runtime is unchanged). Browser screenshots compare the
+previous 2.5% appearance with the revised source at 390px and 1440px, 100%
+zoom, light/dark, hero/middle/footer/privacy. Every combination shows a
+visible pixel change. Document dimensions, section coordinates, text and
+hrefs are identical; no horizontal overflow; one normally scrolling underlay.
+The opaque interiors of six illustration/preview/QR surfaces are pixel-identical.
+Keyboard links retain solid focus outlines. Evidence and machine-readable
+results are under ignored `generated-artifacts/embroidery-intensity/`.
+
+This correction is **source/development-preview only**, ready for review and
+republishing. No production build, distribution build or publication was
+performed for this correction. The published site's previously verified 2.5%
+appearance must not be represented as the corrected 9% appearance.
+
 ## Accepted scope
 
 October 15, 2026: refine the **existing public website**, through its entire

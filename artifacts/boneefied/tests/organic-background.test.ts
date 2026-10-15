@@ -46,6 +46,6 @@ test('existing website and legal surface use the same original paths without dri
   assert.match(web, /aria-hidden="true"/);
   assert.match(css, /\.organic-background \{[^}]*pointer-events: none/);
   for (const d of [...organicFibers, ...organicBranches]) assert.ok(privacy.includes(`d="${d}"`));
-  assert.match(privacy, /opacity: \.025/);
+  assert.match(privacy, /opacity: \.09/);
   assert.match(privacy, /class="organic-background" aria-hidden="true" focusable="false"/);
 });

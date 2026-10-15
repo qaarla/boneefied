@@ -13,7 +13,7 @@ test('exactly one website underlay covers the existing main content and footer',
   assert.ok(app.indexOf('<OrganicBackground />') < app.indexOf('<main'));
   assert.ok(app.indexOf('<footer') > app.indexOf('</main>'));
   assert.match(css, /\.site-shell \{[^}]*position: relative; isolation: isolate/);
-  assert.match(css, /\.organic-background \{ position: absolute; inset: 0;[^}]*opacity: \.025/);
+  assert.match(css, /\.organic-background \{ position: absolute; inset: 0;[^}]*opacity: \.09/);
   assert.doesNotMatch(css.match(/\.organic-background \{[^}]*\}/g).join(''), /fixed|sticky|animation|transition|transform|min-height|padding/);
 });
 
@@ -28,6 +28,7 @@ test('the shared original artwork follows approved ink in both themes and fails 
   assert.match(css, /mask-repeat: no-repeat/);
   assert.match(css, /--ink: #25282a/);
   assert.match(css, /--ink: #f2eadb/);
+  assert.match(css, /h1 em \{[^}]*color: #bd7918; background-color: var\(--paper\)/);
   assert.match(css, /\.organic-background \{[^}]*pointer-events: none; user-select: none/);
 });
 
@@ -37,7 +38,7 @@ test('privacy uses the same sparse paths and strength with normal document scrol
   assert.equal(paths.length, 18);
   for (const d of paths) assert.ok(privacy.includes(`d="${d}"`), `Missing original curve: ${d}`);
   assert.match(privacy, /class="organic-background" aria-hidden="true" focusable="false"/);
-  assert.match(privacy, /\.organic-background \{ position: absolute;[^}]*opacity: \.025/);
+  assert.match(privacy, /\.organic-background \{ position: absolute;[^}]*opacity: \.09/);
   assert.match(privacy, /body \{ position: relative; isolation: isolate/);
   assert.doesNotMatch(privacy.match(/\.organic-background \{[^}]*\}/)[0], /fixed|animation|transform/);
 });

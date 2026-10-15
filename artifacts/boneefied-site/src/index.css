@@ -55,7 +55,7 @@ a { color: inherit; }
 /* One continuous, document-bound underlay from header through footer.
    It scrolls 1:1 with the site: no viewport attachment, parallax or tiling.
    Existing opaque illustrations, QR codes, cards and controls remain untouched. */
-.organic-background { position: absolute; inset: 0; z-index: -1; pointer-events: none; user-select: none; opacity: .025; }
+.organic-background { position: absolute; inset: 0; z-index: -1; pointer-events: none; user-select: none; opacity: .09; }
 @supports ((mask-image: linear-gradient(#fff, #fff)) or (-webkit-mask-image: linear-gradient(#fff, #fff))) {
   .organic-background {
     background-color: var(--ink);
@@ -82,7 +82,8 @@ a { color: inherit; }
 .eyebrow::before { content: ''; width: 24px; height: 1px; background: #a36d20; }
 h1, h2, h3, p { margin-top: 0; }
 h1 { max-width: 660px; margin: 28px 0 26px; font-size: clamp(58px, 6.35vw, 92px); line-height: .99; letter-spacing: -.058em; font-weight: 400; overflow-wrap: break-word; }
-h1 em { font-weight: 400; color: #bd7918; }
+/* Keep the approved gold's large-text contrast independent of the underlay. */
+h1 em { font-weight: 400; color: #bd7918; background-color: var(--paper); }
 .lead { max-width: 465px; margin-bottom: 35px; font-size: 20px; line-height: 1.44; color: #55544e; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
 .button { min-height: 49px; display: inline-flex; justify-content: center; align-items: center; gap: 16px; padding: 9px 19px; border: 1px solid transparent; border-radius: 6px; font-family: 'Tinos', Georgia, serif; font-size: 16px; font-weight: 700; line-height: 1.2; text-decoration: none; text-align: center; cursor: pointer; transition: transform .22s ease, background-color .22s ease, border-color .22s ease, opacity .22s ease; }

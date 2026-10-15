@@ -14,3 +14,31 @@ mtime_ms = 1792092248446
 storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/a8893fed-9a1e-47c2-ac14-63012f731a59/4610ecea-6664-4d04-8c79-d779a5b8c68a"
 storage_version_token = "1792092798191254"
 content_type = "image/jpeg"
+
+[[outputs]]
+id = "_EbFYPjpX_3LP5N8O5r3x"
+uri = "file://generated-artifacts/embroidery-intensity/comparison-1440-light.jpg"
+type = "image"
+title = "Desktop light: before and after"
+description = "Real preview screenshots at 100% browser zoom: previous 2.5% versus revised 9%, covering hero, middle, footer and privacy."
+logical_id = "52bbd39f-7583-4ed3-a09e-c544c9b267e2"
+content_hash = "sha256:f273566f75476061456b0f1c1ebcbc1d000879d12e1e7262ded8d8ec984b6df6"
+size = 359929
+mtime_ms = 1792103292106
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/52bbd39f-7583-4ed3-a09e-c544c9b267e2/20eac859-c904-41bc-b0b1-7080642842e8"
+storage_version_token = "1792103333973168"
+content_type = "image/jpeg"
+
+[[outputs]]
+id = "8LpGXgdAfE3sbmilgT_vP"
+uri = "file://generated-artifacts/embroidery-intensity/comparison-390-dark.jpg"
+type = "image"
+title = "Mobile dark: before and after"
+description = "Real 390px preview screenshots at 100% browser zoom: previous 2.5% versus revised 9%, covering hero, middle, footer and privacy."
+logical_id = "71669196-bab7-4e76-88a3-d032e4681e73"
+content_hash = "sha256:51105790379e4428ac195b2618a187500d65054ddc6e7381337b681fec84fa47"
+size = 441398
+mtime_ms = 1792103280678
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/71669196-bab7-4e76-88a3-d032e4681e73/e227ef5b-a71d-4bc4-8d23-d5fbd58e695e"
+storage_version_token = "1792103334560357"
+content_type = "image/jpeg"

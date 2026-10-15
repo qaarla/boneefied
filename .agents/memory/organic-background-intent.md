@@ -29,3 +29,13 @@ cross-surface request.
 **How to apply:** Reconcile the existing ornament instead of stacking another
 treatment, never add page length to display it, and preserve the native app's
 background work when refining the website alone.
+
+The owner found the website's original 2.5% treatment effectively invisible and
+requested recognizable fine threads at normal desktop/mobile zoom, still
+“distinct, dignified, but not the main event.” Treat visibility as part of
+acceptance, not just proof that the component exists.
+
+**Why:** A deployed, correctly mounted ornament still looked plain to the owner.
+
+**How to apply:** Compare actual before/after screenshots in both themes and
+protect the approved gold heading's contrast when increasing decoration strength.
