@@ -42,3 +42,45 @@ mtime_ms = 1792103280678
 storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/71669196-bab7-4e76-88a3-d032e4681e73/e227ef5b-a71d-4bc4-8d23-d5fbd58e695e"
 storage_version_token = "1792103334560357"
 content_type = "image/jpeg"
+
+[[outputs]]
+id = "h4vXGTcQMxE8SjsOiVzUE"
+uri = "file://generated-artifacts/embroidery-production/1440-light-top.png"
+type = "image"
+title = "Production build — desktop, light"
+description = "Unenhanced 1440px browser capture at 100% zoom from the actual publishing build. Not the live deployment."
+logical_id = "12423f33-f36a-4bd8-8ed8-652919d3dc52"
+content_hash = "sha256:ca572e07147e1a6aaf0fad1ca9c3ac51a67d05bf70dfbe859f3f2946a80af39a"
+size = 173353
+mtime_ms = 1792103781978
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/12423f33-f36a-4bd8-8ed8-652919d3dc52/e2c15392-6110-4ab1-b80a-754dd623d890"
+storage_version_token = "1792103885737454"
+content_type = "image/png"
+
+[[outputs]]
+id = "okPADhzdUT5O6CJZIRSCN"
+uri = "file://generated-artifacts/embroidery-production/390-dark-top.png"
+type = "image"
+title = "Production build — phone, dark"
+description = "Unenhanced 390px browser capture at 100% zoom from the actual publishing build. Not the live deployment."
+logical_id = "b7f0ece0-f22f-44a9-91a8-49324f4b7092"
+content_hash = "sha256:b25f8522c47a166468a67b85d347b2a5cb551a7bc9d36b49a8a0c2d5cc7aba51"
+size = 74964
+mtime_ms = 1792103774406
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/b7f0ece0-f22f-44a9-91a8-49324f4b7092/94504006-ad08-4e6c-a5c6-3f7fdf0b44e7"
+storage_version_token = "1792103886269231"
+content_type = "image/png"
+
+[[outputs]]
+id = "pYEuMtdAu2Uk9mWgbX651"
+uri = "file://generated-artifacts/embroidery-production/sheet-1440-dark.jpg"
+type = "image"
+title = "Production evidence — home and privacy"
+description = "Review sheet of unenhanced desktop dark screenshots: top, middle and footer. Original full-size PNGs are saved alongside all phone/light-mode captures."
+logical_id = "90f828a7-763b-4f71-99e0-221736c438db"
+content_hash = "sha256:c144e2f638068c3665ba40f889c11327a2f7c3d2c909cd4c3059daac7724088e"
+size = 304189
+mtime_ms = 1792103831378
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/90f828a7-763b-4f71-99e0-221736c438db/e0c58867-06f6-49d2-b267-8b83d7c2635d"
+storage_version_token = "1792103886828777"
+content_type = "image/jpeg"

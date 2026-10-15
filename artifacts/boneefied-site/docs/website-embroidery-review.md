@@ -1,5 +1,49 @@
 # Boneefied website-only UI embroidery
 
+## Production-output acceptance — October 15, 2026
+
+Ready runtime revision: `25557bbc89a456e0bf2298333cebd40ab3bd93e3`.
+This pass did not alter runtime code or generate new artwork: the approved
+9% correction was already in the main website used by publishing.
+
+- The real public browser entry `https://boneefied.com/` returned 200 after
+  redirecting to `/site/`, rendered the expected heading and raised no page
+  exceptions. Home and both linked privacy URL forms returned 200.
+  The unspecified failure-to-open was not reproduced. The unlinked root
+  `/privacy-policy` returns 404; the site's actual links use `/site/privacy-policy`.
+- The live browser still computed **0.025**, confirming the deployed treatment
+  is not the current 9% source. A successful previous publishing badge does
+  not establish that the corrected release is live.
+- Built the actual website with the service's configured `PORT=20970` and
+  `BASE_PATH=/site/`. The first manual build omitted PORT and was rejected by
+  the existing config; using both manifest-provided values passed. This was
+  a manual invocation issue, not a reproduced production startup defect.
+- Loaded `dist/public` with a temporary local static test server using the
+  website's base path and privacy rewrite. This checks the actual minified
+  publishing output, not Vite development rendering; it does not reproduce
+  the production proxy. The real public entry was checked separately above.
+- All eight home/privacy × 390/1440px × light/dark combinations loaded without
+  page exceptions, failed requests, broken images or horizontal overflow.
+  Checked local links/fragment targets, keyboard focus, normally attached
+  document scrolling, phone-access anchor navigation and successful Copy link.
+  There are no real public forms; the search field is an existing illustration.
+  No Ask Naama link exists on these website pages; none was removed or added.
+- Saved and visually reviewed **24 unenhanced PNG captures** at 100% browser
+  zoom: top/middle/footer on each page/width/theme. Review sheets and
+  machine-readable results are in `generated-artifacts/embroidery-production/`.
+  The same original ornament is discernible at the margins; section backgrounds
+  do not suppress it wholesale. Existing opaque illustrations remain unobstructed.
+  Actual device brightness cannot be certified by browser screenshots.
+- Build CSS: `assets/index-sPYzT2eM.css`, SHA-256
+  `26f45c09f4b2c8a7269b5481785755b27266c9bc33a902b2452dac02b927a0d5`.
+  This is an evidence identifier, not a promise that another build must retain
+  the same filename.
+
+**READY TO PUBLISH:** caller-controlled single republish on the existing domain
+is the remaining release step, followed by fresh live visual verification.
+No independent publication, native/distribution build, data clearing, new
+setting, framework change or deployment configuration edit was performed.
+
 ## Visibility correction after owner review — October 15, 2026
 
 The earlier 2.5% implementation below is historical. The owner found it
