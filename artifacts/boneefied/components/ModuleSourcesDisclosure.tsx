@@ -1,3 +1,4 @@
+import { OrganicSurface } from '@/components/OrganicBackground';
 import React, { useState } from 'react';
 import { Linking, Platform, Pressable, StyleSheet, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
@@ -28,7 +29,7 @@ function SourcesRightsDisclosure({ rights, scope, children }: {
   const { t, language, source: localizeSource, asset: localizeAsset } = useLocale();
   const title = t('module.sourcesAndRights');
   if (!rights.assets.length && !rights.sources.length && !children) return null;
-  return <View testID={scope === 'module' ? 'module-sources-disclosure' : 'plate-sources-disclosure'} style={[styles.card, { backgroundColor: colors.card, borderColor: focused ? colors.primary : colors.border }]}>
+  return <View testID={scope === 'module' ? 'module-sources-disclosure' : 'plate-sources-disclosure'} style={[styles.card, { backgroundColor: colors.card, borderColor: focused ? colors.primary : colors.border }]}><OrganicSurface />
     <Pressable testID={scope === 'module' ? 'module-sources-toggle' : 'plate-sources-toggle'} accessibilityRole="button" accessibilityLabel={title}
       accessibilityHint={language === 'es' ? 'Mostrar u ocultar las fuentes, los créditos y las licencias.' : 'Show or hide sources, credits and licenses.'}
       accessibilityState={{ expanded }} {...(Platform.OS === 'web' ? { 'aria-expanded': expanded } : {})}

@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo } from 'react';
-import { Appearance, Platform, useColorScheme, useWindowDimensions } from 'react-native';
+import { Appearance, Platform, StyleSheet, View, useColorScheme, useWindowDimensions } from 'react-native';
+import { OrganicSurface } from '@/components/OrganicBackground';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
@@ -68,6 +69,7 @@ function RootLayoutNav() {
          headerBackTitle: t('navigation.back'),
         headerBackButtonDisplayMode: Platform.OS === 'ios' && reflow ? 'minimal' : 'default',
         headerStyle: { backgroundColor: colors.background },
+        headerBackground: () => <View pointerEvents="none" style={[StyleSheet.absoluteFill, { backgroundColor: colors.background }]}><OrganicSurface /></View>,
         headerTintColor: colors.primary,
         headerBackTitleStyle: { fontFamily: APP_FONTS.bold },
         headerTitleStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal', color: colors.foreground, fontSize: Platform.OS === 'ios' || (Platform.OS === 'web' && devPreviewFontScale() !== undefined)

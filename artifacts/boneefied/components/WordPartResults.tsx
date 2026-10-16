@@ -1,3 +1,4 @@
+import { OrganicSurface } from '@/components/OrganicBackground';
 import React from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -19,7 +20,7 @@ export function WordPartResults({ parts, query, heading = true }: { parts: reado
         accessibilityLabel={`${part.form}. ${copy.kind}. ${copy.meaning}`}
         testID={`word-part-${part.id}`}
         onPress={() => router.push({ pathname: '/glossary/word-part/[id]', params: { id: part.id, q: query } })}
-        style={[styles.card, { borderColor: colors.border, backgroundColor: colors.card }]}>
+        style={[styles.card, { borderColor: colors.border, backgroundColor: colors.card }]}><OrganicSurface />
         <Text style={[styles.form, { color: colors.foreground }]}>{part.form}</Text>
         <Text style={{ color: colors.mutedForeground }}>{copy.kind}</Text>
         <Text style={{ color: colors.foreground }}>{copy.meaning}</Text>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowRight, ArrowUpRight, BookOpen, Bookmark, ChartNoAxesColumn, Check, Copy, Crosshair, ExternalLink, HardDrive, RotateCcw, Search, Smartphone, Target } from 'lucide-react';
 import logo from './assets/logo-rounded.png';
-import { OrganicBackground } from './components/organic-background';
+import { OrganicBackground, organicShellStyle } from './components/organic-background';
 
 const BUILD_URL = 'https://expo.dev/accounts/qaarla1/projects/boneefied/builds/28cb24df-2529-4138-82f5-84fe25959cab';
 const APP_URL = 'boneefied://';
@@ -68,7 +68,7 @@ function App() {
   }
 
   return (
-    <div className="site-shell">
+    <div className="site-shell" style={organicShellStyle}>
       <OrganicBackground />
       <main className="site-main" id="main">
         <header className="topbar">

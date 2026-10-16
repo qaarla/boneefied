@@ -1,3 +1,4 @@
+import { OrganicSurface } from '@/components/OrganicBackground';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Stack, type NativeStackHeaderProps } from 'expo-router';
@@ -30,6 +31,7 @@ function ModuleHeader({ title, navigation, back, options }: NativeStackHeaderPro
   const colors = useColors();
   const { shouldReflow } = useTypographyLayout();
   return <View style={{ backgroundColor: colors.background, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right }}>
+    <OrganicSurface />
     <View style={styles.headerRow}>
       <View style={styles.back}>
         {back && <HeaderBackButton

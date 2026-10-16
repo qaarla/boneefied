@@ -1,3 +1,4 @@
+import { OrganicSurface } from '@/components/OrganicBackground';
 import React from 'react';
 import { Platform, Pressable, StyleSheet, Text as NativeText, useColorScheme, View, type ColorValue } from 'react-native';
 import { useColors } from '@/hooks/useColors';
@@ -54,6 +55,7 @@ function AccessibleTabBar({ state, descriptors, navigation }: TabBarProps) {
   const isDark = useColorScheme() === 'dark';
   return <View style={[styles.expandedBar, { paddingBottom: insets.bottom, backgroundColor: Platform.OS === 'ios' ? 'transparent' : colors.background, borderTopColor: colors.border }]}>
     {Platform.OS === 'ios' && <BlurView intensity={100} tint={isDark ? 'dark' : 'light'} style={StyleSheet.absoluteFill} />}
+    {Platform.OS !== "ios" && <OrganicSurface />}
     {state.routes.map((route, index) => {
       const options = descriptors[route.key].options;
       const focused = state.index === index;
@@ -138,7 +140,7 @@ function ClassicTabLayout() {
                 StyleSheet.absoluteFill,
                 { backgroundColor: colors.background },
               ]}
-            />
+            ><OrganicSurface /></View>
           ) : null,
       }}
     >

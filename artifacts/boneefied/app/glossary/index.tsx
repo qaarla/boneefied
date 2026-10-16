@@ -1,3 +1,4 @@
+import { OrganicBackground, OrganicSurface } from '@/components/OrganicBackground';
 import React from 'react';
 import { FlatList, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
@@ -66,11 +67,13 @@ export default function GlossaryScreen() {
     return <Pressable key={item.id ?? 'all'} accessibilityRole="button" accessibilityState={{ selected }}
       onPress={() => { setSystem(item.id); setFiltersOpen(false); listRef.current?.scrollToOffset({ offset: 0, animated: false }); }}
       style={[styles.filter, { backgroundColor: selected ? colors.secondary : colors.card, borderColor: selected ? colors.primary : colors.border }]}>
+      <OrganicSurface radius={12} shift={120} />
        <Text style={{ color: colors.foreground, fontWeight: '700' }}>{item.title}</Text>
     </Pressable>;
   });
 
   return <View style={[styles.screen, { backgroundColor: colors.background, paddingTop: insets.top }]}>
+    <OrganicBackground />
     <Stack.Screen options={{ title: t('glossary.navigationTitle') }} />
     <View style={[styles.container, { paddingHorizontal: shouldReflow ? 16 : 20 }]}>
       <FlatList
@@ -84,6 +87,7 @@ export default function GlossaryScreen() {
           <Text style={{ color: colors.mutedForeground }}>{t('glossary.introduction')}</Text>
           <Pressable accessibilityRole="button" onPress={() => router.push({ pathname: '/glossary/word-parts', params: { q: query } })}
             style={[styles.filter, { borderColor: colors.border, backgroundColor: colors.secondary }]}>
+            <OrganicSurface radius={12} shift={60} />
             <Text style={{ color: colors.primary, fontWeight: '600' }}>{language === 'es' ? 'Explorar prefijos, raíces y sufijos' : 'Browse prefixes, roots & suffixes'}</Text>
           </Pressable>
           <TextInput
@@ -100,6 +104,7 @@ export default function GlossaryScreen() {
               <Pressable accessibilityRole="button" accessibilityLabel={t('glossary.chooseSystemAccessibility')}
                 accessibilityState={{ expanded: filtersOpen }} onPress={() => setFiltersOpen((open) => !open)}
                 style={[styles.filter, { borderColor: colors.border, backgroundColor: colors.card }]}>
+                <OrganicSurface radius={12} shift={180} />
                 <Text style={{ color: colors.foreground, fontWeight: '700' }}>{systems.find((item) => item.id === system) ? localizeModule(systems.find((item) => item.id === system)!).title : t('glossary.allSystems')} {filtersOpen ? '▲' : '▼'}</Text>
               </Pressable>
               {filtersOpen && <View style={styles.filterMenu}>{filters}</View>}
@@ -123,6 +128,7 @@ export default function GlossaryScreen() {
               onPress={() => router.push({ pathname: '/glossary/[id]', params: { id: item.structure.id, q: query } })}
               style={[styles.entry, { borderColor: colors.border, backgroundColor: colors.card }]}
             >
+              <OrganicSurface radius={12} shift={(index * 97) % 400} />
               <Text style={[styles.entryTitle, { color: colors.foreground }]}>{item.structure.canonicalName}</Text>
               <Text style={{ color: colors.foreground }}>{item.definition}</Text>
               {!searching && anatomicalTerms.some((term) => term.structureId === item.structure.id) && <Text style={[styles.context, { color: colors.mutedForeground }]}>

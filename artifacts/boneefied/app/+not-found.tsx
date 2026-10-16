@@ -1,5 +1,6 @@
 import { Link, Stack } from 'expo-router';
-import { ScrollView, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
+import { OrganicBackground } from '@/components/OrganicBackground';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Text, useTypographyLayout } from '@/components/ScaledText';
 import { useColors } from '@/hooks/useColors';
@@ -13,9 +14,10 @@ export default function NotFoundScreen() {
   const reflow = isLargeText || isCompactTextLayout;
 
   return (
-    <>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
       <Stack.Screen options={{ title: t('notFound.title') }} />
-      <ScrollView style={[styles.container, { backgroundColor: colors.background }]} contentContainerStyle={[styles.content, reflow && { paddingTop: 20 + insets.top, paddingBottom: 20 + insets.bottom }]}>
+      <OrganicBackground />
+      <ScrollView style={styles.container} contentContainerStyle={[styles.content, reflow && { paddingTop: 20 + insets.top, paddingBottom: 20 + insets.bottom }]}>
         <Text style={[styles.title, { color: colors.foreground }]}>
           {t('notFound.message')}
         </Text>
@@ -26,7 +28,7 @@ export default function NotFoundScreen() {
           </Text>
         </Link>
       </ScrollView>
-    </>
+    </View>
   );
 }
 

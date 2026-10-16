@@ -1,3 +1,4 @@
+import { OrganicSurface } from '@/components/OrganicBackground';
 import React from 'react';
 import { AccessibilityInfo, Image, Platform, Pressable, ScrollView, StyleSheet, useWindowDimensions, View, type LayoutRectangle } from 'react-native';
 import { Heading, Text, TextInput, useTypographyLayout } from '@/components/ScaledText';
@@ -152,7 +153,7 @@ export default function StudyScreen() {
        <Pressable accessibilityRole="button" accessibilityLabel={t('study.browseGlossaryAccessibility')} onPress={() => router.push({ pathname: '/glossary', params: { q: query } })} style={searchStyles.glossaryLink}>
          <Text style={{ color: colors.primary, fontWeight: '600' }}>{t('study.browseGlossary')}</Text>
       </Pressable>
-       {query.trim().length > 0 && <View testID="anatomy-search-results" accessibilityLabel={t('study.searchResultsAccessibility')} style={[searchStyles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}>
+       {query.trim().length > 0 && <View testID="anatomy-search-results" accessibilityLabel={t('study.searchResultsAccessibility')} style={[searchStyles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}><OrganicSurface radius={12} />
           {wordMatches.length > 0 && <View style={{ paddingHorizontal: 14, paddingBottom: 12 }}><WordPartResults parts={wordMatches} query={query} /></View>}
           {(matching.length > 0 || wordMatches.length === 0) && <Text style={[searchStyles.heading, { color: colors.mutedForeground }]}>{t(matching.length ? 'study.suggestedStructures' : 'study.noCloseMatch')}</Text>}
         {matching.length > 0 && (reflow
@@ -161,7 +162,7 @@ export default function StudyScreen() {
       </View>}
     </View>
       <AdaptiveRow style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{t('study.exploreBySystem')}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(Number(systems.length) === 1 ? 'study.systemCount.one' : 'study.systemCount.other', { count: number(systems.length) })}</Text></AdaptiveRow>
-      <View style={[styles.systemsPanel, { height: systemsHeight, borderColor: colors.border, backgroundColor: colors.card }]}>
+      <View style={[styles.systemsPanel, { height: systemsHeight, borderColor: colors.border, backgroundColor: colors.card }]}><OrganicSurface radius={12} />
         <ScrollView testID="study-systems-scroll" accessibilityLabel={t('study.systemsAccessibility')} tabIndex={Platform.OS === 'web' ? 0 : undefined} nestedScrollEnabled keyboardShouldPersistTaps="handled" style={{ flex: 1, ...(Platform.OS === 'web' ? { overscrollBehaviorY: 'contain' } : {}) }} contentContainerStyle={[styles.systems, styles.systemsContent]} showsVerticalScrollIndicator>{systemChoices}</ScrollView>
       </View>
       <AdaptiveRow onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{t('study.learningModules')}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(visibleModules.length === 1 ? 'study.availableCount.one' : 'study.availableCount.other', { count: number(visibleModules.length) })}</Text></AdaptiveRow>

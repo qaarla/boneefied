@@ -1,3 +1,4 @@
+import { OrganicSurface } from '@/components/OrganicBackground';
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 import { Text, useTypographyLayout } from '@/components/ScaledText';
@@ -36,7 +37,7 @@ export function AtlasViewerControls({ onZoomIn, onZoomOut, onReset, onRevealAll,
   const rows = viewerControlRows(width, textWidths, showLabelActions);
 
   return <View testID="viewer-controls" onLayout={({ nativeEvent }) => setWidth(nativeEvent.layout.width)}
-    style={[styles.block, { borderTopColor: colors.border, backgroundColor: colors.card }]}>
+    style={[styles.block, { borderTopColor: colors.border, backgroundColor: colors.card }]}><OrganicSurface />
     {width > 0 && <View key={key} pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants" aria-hidden
       style={styles.measurements}>
       {actions.map(action => <Text key={action.name} style={[styles.label, styles.measureLabel]} onLayout={({ nativeEvent }) => {

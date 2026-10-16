@@ -1,3 +1,4 @@
+import { OrganicBackground, OrganicSurface } from '@/components/OrganicBackground';
 import React from 'react';
 import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { Stack, useLocalSearchParams } from 'expo-router';
@@ -26,6 +27,7 @@ export default function WordPartsScreen() {
     { kind: 'suffix', label: es ? 'Sufijos' : 'Suffixes' },
   ];
   return <View style={[styles.screen, { backgroundColor: colors.background, paddingTop: insets.top }]}>
+    <OrganicBackground />
     <Stack.Screen options={{ title: es ? 'Partes de palabras' : 'Word parts' }} />
     <FlatList data={entries} keyExtractor={(part) => part.id} keyboardShouldPersistTaps="handled"
       contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + 48 }]}
@@ -42,6 +44,7 @@ export default function WordPartsScreen() {
         <View style={styles.filters}>{filters.map((filter) => <Pressable key={filter.kind ?? 'all'}
           accessibilityRole="button" accessibilityState={{ selected: kind === filter.kind }} onPress={() => setKind(filter.kind)}
           style={[styles.filter, { borderColor: colors.border, backgroundColor: kind === filter.kind ? colors.secondary : colors.card }]}>
+          <OrganicSurface radius={12} shift={filter.label.length * 40} />
           <Text style={{ color: colors.foreground }}>{filter.label}</Text>
         </Pressable>)}</View>
         <Text style={{ color: colors.mutedForeground }}>{entries.length} {es ? 'partes de palabras' : 'word parts'}</Text>

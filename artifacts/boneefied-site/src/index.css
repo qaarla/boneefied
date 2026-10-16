@@ -42,6 +42,7 @@
   --quiet: #69675f;
   --rule: #c9c1b2;
   --focus: #92550a;
+  --organic-ink: #936012;
 }
 
 * { box-sizing: border-box; }
@@ -55,14 +56,39 @@ a { color: inherit; }
 /* One continuous, document-bound underlay from header through footer.
    It scrolls 1:1 with the site: no viewport attachment, parallax or tiling.
    Existing opaque illustrations, QR codes, cards and controls remain untouched. */
-.organic-background { position: absolute; inset: 0; z-index: -1; pointer-events: none; user-select: none; opacity: .09; }
+.organic-background { position: absolute; inset: 0; z-index: -1; pointer-events: none; user-select: none; opacity: .22; }
 @supports ((mask-image: linear-gradient(#fff, #fff)) or (-webkit-mask-image: linear-gradient(#fff, #fff))) {
   .organic-background {
-    background-color: var(--ink);
-    mask-size: 100% 100%; -webkit-mask-size: 100% 100%;
-    mask-position: center; -webkit-mask-position: center;
-    mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+    background-color: var(--organic-ink);
+    mask-size: max(1000px, 100vw) max(1000px, 100vw); -webkit-mask-size: max(1000px, 100vw) max(1000px, 100vw);
+    mask-position: top center; -webkit-mask-position: top center;
+    mask-repeat: repeat-y; -webkit-mask-repeat: repeat-y;
   }
+}
+/* Opaque surfaces keep their own colour and carry a locally toned expression of
+   the same material. The layer sits under content; protected QR codes, logos and
+   illustrations are never overlaid. */
+.workflow-card, .search-illustration, .access-phone, .access-share, .support-card, .coverage-board, .format-tile, .local-note, .hero-art, .footer { position: relative; isolation: isolate; --art-ink: var(--organic-ink); }
+.hero-art, .format-tile.visual, .workflow-card:nth-child(4) { --art-ink: #292920; }
+.coverage-board { --art-ink: #f6eddd; }
+.workflow-card::after, .search-illustration::after, .access-phone::after, .access-share::after, .support-card::after, .coverage-board::after, .format-tile::after, .local-note::after, .hero-art::after, .footer::after { content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; opacity: .2; background-color: var(--art-ink); }
+.coverage-board::after { opacity: .16; }
+.footer::after { opacity: .16; border-radius: 0; }
+/* These are existing explanatory illustrations, not blank interface panels.
+   Preserve their complete artwork pixels, including their original backdrops. */
+.hero-art::after, .search-illustration::after, .format-tile::after { display: none; }
+@supports not ((mask-image: linear-gradient(#fff, #fff)) or (-webkit-mask-image: linear-gradient(#fff, #fff))) {
+  .workflow-card::after, .search-illustration::after, .access-phone::after, .access-share::after, .support-card::after, .coverage-board::after, .format-tile::after, .local-note::after, .hero-art::after, .footer::after { display: none; }
+}
+@supports ((mask-image: linear-gradient(#fff, #fff)) or (-webkit-mask-image: linear-gradient(#fff, #fff))) {
+  .workflow-card::after, .search-illustration::after, .access-phone::after, .access-share::after, .support-card::after, .coverage-board::after, .format-tile::after, .local-note::after, .hero-art::after, .footer::after {
+    mask-image: var(--organic-mask); -webkit-mask-image: var(--organic-mask);
+    mask-size: 1000px 1000px; -webkit-mask-size: 1000px 1000px; mask-position: 30% 40%; -webkit-mask-position: 30% 40%; mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
+  }
+  .access-share::after { mask-position: 80% 10%; -webkit-mask-position: 80% 10%; }
+  .support-card::after { mask-position: 10% 70%; -webkit-mask-position: 10% 70%; }
+  .workflow-card:nth-child(2)::after { mask-position: 70% 20%; -webkit-mask-position: 70% 20%; }
+  .workflow-card:nth-child(3)::after { mask-position: 10% 90%; -webkit-mask-position: 10% 90%; }
 }
 .site-main { width: min(calc(100% - 64px), 1140px); min-width: 0; margin-inline: auto; flex: 1; }
 .topbar { height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid #c9c1b2; }
@@ -392,6 +418,7 @@ h1 em { font-weight: 400; color: #bd7918; background-color: var(--paper); }
     --quiet: #c1b8a7;
     --rule: #59564e;
     --focus: #f2c878;
+    --organic-ink: #ecc176;
   }
   ::selection { background: #a66e22; color: #fff5e4; }
   .topbar, .hero, .product, .content-section, .about-copy, .footer { border-color: var(--rule); }

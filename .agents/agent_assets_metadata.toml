@@ -126,3 +126,45 @@ mtime_ms = 1792104909634
 storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/c5cdc6d4-9d85-4ad3-a5df-cd35f7cbb5a5/8e15cfc5-b849-4844-943d-a1e3b6d315f9"
 storage_version_token = "1792104924776246"
 content_type = "image/jpeg"
+
+[[outputs]]
+id = "SbOONMvgN05TcF2Hqxcne"
+uri = "file://generated-artifacts/full-surface-material/app-390-dark-home-CENTER.png"
+type = "image"
+title = "App center-only crop — dark"
+description = "Running Expo web preview at 390px and 100% zoom. Outer 25% removed on both sides; the material remains visible."
+logical_id = "e28f6fb9-e129-4f83-a9ed-6db98645509c"
+content_hash = "sha256:11eaf904a5ad62bda0fb4cef8a070f804158f938db684e09bdee6d6d83b1d760"
+size = 41592
+mtime_ms = 1792120924567
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/e28f6fb9-e129-4f83-a9ed-6db98645509c/67e407c2-3eb9-48f2-a98b-4978ca2462d6"
+storage_version_token = "1792121279091916"
+content_type = "image/png"
+
+[[outputs]]
+id = "IILy8ZYZ5XXfWbUKz0Ipq"
+uri = "file://generated-artifacts/full-surface-material/site-1440-light-middle-CENTER.png"
+type = "image"
+title = "Website center-only crop — light"
+description = "Running website preview at 1440px and 100% zoom. Central background and existing interface surfaces retain fine material."
+logical_id = "bd5bf47b-6651-46fa-866d-8c0c1615f601"
+content_hash = "sha256:7e4af3b2c68c5d055dbad806a400f213f6cb0ad0ad2bcd2de7ad76e584f28bb2"
+size = 172312
+mtime_ms = 1792121049055
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/bd5bf47b-6651-46fa-866d-8c0c1615f601/38667299-9a1d-4f52-9f29-7f3bef8cdf6f"
+storage_version_token = "1792121279620646"
+content_type = "image/png"
+
+[[outputs]]
+id = "LgtWmsutNa0TIrMweREqc"
+uri = "file://generated-artifacts/full-surface-material/app-390-dark-diagram.png"
+type = "image"
+title = "Real atlas diagram — dark preview"
+description = "Actual running skeletal atlas: diagram, markers and instructional labels remain on their protected surface, with the material around the viewer."
+logical_id = "54f226ee-175e-43e3-8a1c-4622aeb239ab"
+content_hash = "sha256:44c1b09dfb3999f797b9cffdf32b576fe06aebafdf9db776fdf612b70f313fa1"
+size = 94832
+mtime_ms = 1792120935759
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/54f226ee-175e-43e3-8a1c-4622aeb239ab/bd1580f8-21f2-44ad-9531-bc82257fff6e"
+storage_version_token = "1792121280157397"
+content_type = "image/png"

@@ -3,14 +3,16 @@ name: Organic background intent
 description: User's decorative-background direction and strict study-content boundaries.
 ---
 
-Use one extremely understated, static, original pattern family of gently tapered
-flowing fibers and a few smooth branches. The user's words were “dendritic
+Use ONE static detailed original material family of interwoven softly tapered
+fiber bundles, fine internal strands and graceful secondary branching, with
+coherent larger flow and close-up detail. The user's words were “dendritic
 organic-looking” and “an artistic rendition of smooth muscle”; this is nonliteral
-decorative art, not interchangeable tissue anatomy. Use Boneefied's existing
-palette, never Naama burgundy, with broad quiet centers and sparse outer margins.
+decorative art, not scientific histology. Use Boneefied's actual existing local
+palette/gradients/translucency in each theme, never Naama burgundy.
 
-**Why:** The user requested this direction for the existing Boneefied app and
-responsive website, while explicitly preserving all completed visual work.
+**Why:** The user explicitly rejected sparse long lines and untextured centers,
+superseding prior margin-only, blank-center, extremely simple geometry and
+opacity-only directions.
 
 **How to apply:** Keep study diagrams, images, hotspots, answers and instructional
 documents plain and unobstructed. Decoration may be attenuated or suppressed for
@@ -18,17 +20,18 @@ clarity. Never introduce motion, new frames, or embedded Ask Naama chat; preserv
 the existing simple label/link behavior wherever it exists. Do not redesign the
 app or substitute Contract B.
 
-For the website the user specified “just keep it the one uniform embroidery”
-through the entire public scrolling page, including middle sections, footer and
-existing public secondary pages. Most reading/action areas should be almost
-plain; “UI embroidery” is a design term, not public-facing copy.
+The entire native app and public responsive website share the material,
+including central backgrounds and existing opaque cards, sheets, panels and
+navigation. Reading areas may soften it, but must not simply become blank.
+Do not add new panels, frames, spacing, settings or motion.
 
-**Why:** The user explicitly clarified whole-website coverage after the original
-cross-surface request.
+**Why:** The user specified “the whole background, the entire UI, to be embroidered.”
 
-**How to apply:** Reconcile the existing ornament instead of stacking another
-treatment, never add page length to display it, and preserve the native app's
-background work when refining the website alone.
+**How to apply:** Replace the inadequate ornament rather than stack collections.
+Center-only normal-zoom crops excluding side borders must show recognizable
+fine organic material. Verify app home, real diagram, question, glossary,
+progress, an existing panel and website top/middle/footer in both themes.
+Keep installed-device evidence separate from web/native previews.
 
 The owner found the website's original 2.5% treatment effectively invisible and
 requested recognizable fine threads at normal desktop/mobile zoom, still
@@ -39,3 +42,14 @@ acceptance, not just proof that the component exists.
 
 **How to apply:** Compare actual before/after screenshots in both themes and
 protect the approved gold heading's contrast when increasing decoration strength.
+
+Preserve a consistent fine physical detail scale on small panels and large
+backgrounds. Explicitly specify both dimensions of web mask tiles rather than
+relying on an automatic height for SVGs with non-preserving aspect behavior.
+
+**Why:** In visual verification, valid short original motifs became page-height
+wires when the browser stretched the mask to the document height. Geometry
+coverage tests alone did not reveal the rendered distortion.
+
+**How to apply:** Inspect running center-only crops as well as source paths;
+do not accept a material based only on mask presence or path counts.
