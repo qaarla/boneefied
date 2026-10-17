@@ -3,6 +3,10 @@ name: Organic background intent
 description: User's decorative-background direction and strict study-content boundaries.
 ---
 
+For the website, the newer [generated artwork direction](website-generated-artwork-intent.md)
+supersedes this note's shared-renderer and SVG-specific expectations. Native-app
+scope remains separate.
+
 Use ONE static detailed original material family of interwoven softly tapered
 fiber bundles, fine internal strands and graceful secondary branching, with
 coherent larger flow and close-up detail. The user's words were “dendritic

@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 import { ArrowRight, ArrowUpRight, BookOpen, Bookmark, ChartNoAxesColumn, Check, Copy, Crosshair, ExternalLink, HardDrive, RotateCcw, Search, Smartphone, Target } from 'lucide-react';
 import logo from './assets/logo-rounded.png';
-import { OrganicBackground, organicShellStyle } from './components/organic-background';
 
 const BUILD_URL = 'https://expo.dev/accounts/qaarla1/projects/boneefied/builds/28cb24df-2529-4138-82f5-84fe25959cab';
+const shellStyle = { '--material': `url("${import.meta.env.BASE_URL}assets/boneefied-dark-anatomical-seamless.webp")` } as CSSProperties;
 const APP_URL = 'boneefied://';
 
 const features = [
@@ -68,8 +68,7 @@ function App() {
   }
 
   return (
-    <div className="site-shell" style={organicShellStyle}>
-      <OrganicBackground />
+    <div className="site-shell" style={shellStyle}>
       <main className="site-main" id="main">
         <header className="topbar">
           <div className="brand" aria-label="Boneefied">

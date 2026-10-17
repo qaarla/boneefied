@@ -27,3 +27,4 @@
 - [Study explorer intent](study-explorer-intent.md) — Explore by system stays a compact internal scroller even with enlarged text; never replace it with a full-page stack.
 - [Atlas control intent](atlas-control-intent.md) — compact, subordinate controls with all five actions, centered Tinos labels and comfortable tap targets.
 - [Organic background intent](organic-background-intent.md) — static nonliteral fibers in Boneefied colors; study pixels stay plain and Ask Naama remains link-only.
+- [Website generated artwork](website-generated-artwork-intent.md) — website-only dark generated anatomical material supersedes SVG/traced ornament; verify preview and public separately.
