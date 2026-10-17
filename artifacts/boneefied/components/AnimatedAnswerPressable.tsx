@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react';
+import { OrganicSurface } from '@/components/OrganicBackground';
+import { useColors } from '@/hooks/useColors';
 import {
   Animated,
+  StyleSheet,
   Pressable,
   type AccessibilityRole,
   type StyleProp,
@@ -13,6 +16,7 @@ type Props = {
   children: React.ReactNode;
   containerStyle?: StyleProp<ViewStyle>;
   contentStyle?: StyleProp<ViewStyle>;
+  decorate?: boolean;
   disabled?: boolean;
   feedback?: AnswerFeedback;
   reduceMotion?: boolean;
@@ -33,6 +37,7 @@ export function AnimatedAnswerPressable({
   children,
   containerStyle,
   contentStyle,
+  decorate = true,
   disabled = false,
   feedback,
   reduceMotion = false,
@@ -45,6 +50,7 @@ export function AnimatedAnswerPressable({
   onPress,
   onPressIn,
 }: Props) {
+  const colors = useColors();
   const scale = useRef(new Animated.Value(1)).current;
   const translateX = useRef(new Animated.Value(0)).current;
   const translateY = useRef(new Animated.Value(0)).current;
@@ -91,6 +97,16 @@ export function AnimatedAnswerPressable({
     }).start();
   };
 
+  const flatC = StyleSheet.flatten(contentStyle) ?? {};
+  const flatO = StyleSheet.flatten(containerStyle) ?? {};
+  const opaque = (f: ViewStyle) => !!f.backgroundColor && f.backgroundColor !== 'transparent';
+  const contentOpaque = opaque(flatC);
+  const surface = decorate ? (contentOpaque ? flatC : opaque(flatO) ? flatO : null) : null;
+  const material = surface ? <OrganicSurface
+    radius={typeof surface.borderRadius === 'number' ? surface.borderRadius : 0}
+    ink={surface.backgroundColor === colors.primary ? colors.primaryForeground
+      : surface.backgroundColor === colors.destructive ? colors.destructiveForeground : colors.primary}
+  /> : null;
   return <Pressable
     accessibilityLabel={accessibilityLabel}
     accessibilityHint={accessibilityHint}
@@ -104,7 +120,9 @@ export function AnimatedAnswerPressable({
     style={({ pressed }) => [containerStyle, pressed && !disabled && { transform: [{ scale: 0.975 }] }]}
     testID={testID}
   >
+    {!contentOpaque && material}
     <Animated.View style={[{ alignSelf: 'stretch', minWidth: 0 }, contentStyle, { transform: [{ scale }, { translateX }, { translateY }] }]}>
+      {contentOpaque && material}
       {children}
     </Animated.View>
   </Pressable>;

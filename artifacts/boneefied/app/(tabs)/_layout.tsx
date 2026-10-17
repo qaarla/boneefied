@@ -55,7 +55,7 @@ function AccessibleTabBar({ state, descriptors, navigation }: TabBarProps) {
   const isDark = useColorScheme() === 'dark';
   return <View style={[styles.expandedBar, { paddingBottom: insets.bottom, backgroundColor: Platform.OS === 'ios' ? 'transparent' : colors.background, borderTopColor: colors.border }]}>
     {Platform.OS === 'ios' && <BlurView intensity={100} tint={isDark ? 'dark' : 'light'} style={StyleSheet.absoluteFill} />}
-    {Platform.OS !== "ios" && <OrganicSurface />}
+    <OrganicSurface />
     {state.routes.map((route, index) => {
       const options = descriptors[route.key].options;
       const focused = state.index === index;
@@ -133,7 +133,7 @@ function ClassicTabLayout() {
               intensity={100}
               tint={isDark ? 'dark' : 'light'}
               style={StyleSheet.absoluteFill}
-            />
+            ><OrganicSurface /></BlurView>
           ) : isWeb ? (
             <View
               style={[
@@ -141,7 +141,8 @@ function ClassicTabLayout() {
                 { backgroundColor: colors.background },
               ]}
             ><OrganicSurface /></View>
-          ) : null,
+          ) : <View style={StyleSheet.absoluteFill}><OrganicSurface /></View>,
+        headerBackground: () => <View style={[StyleSheet.absoluteFill, { backgroundColor: colors.background }]}><OrganicSurface /></View>,
       }}
     >
       <Tabs.Screen
@@ -161,7 +162,7 @@ function ClassicTabLayout() {
       />
       <Tabs.Screen name="practice" options={{ title: t('tabs.practice'), tabBarAccessibilityLabel: t('tabs.practice'), tabBarLabel: reflow ? tabLabel(t('tabs.practice')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="checkmark.circle" tintColor={color} size={24} /> : <Feather name="check-circle" size={22} color={color} /> }} />
       <Tabs.Screen name="missed" options={{ title: t('tabs.missed'), tabBarAccessibilityLabel: t('tabs.missed'), tabBarLabel: reflow ? tabLabel(t('tabs.missed')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="arrow.counterclockwise" tintColor={color} size={24} /> : <Feather name="rotate-ccw" size={22} color={color} /> }} />
-      <Tabs.Screen name="progress" options={{ title: t('tabs.progress'), tabBarAccessibilityLabel: t('tabs.progress'), tabBarLabel: reflow ? tabLabel(t('tabs.progress')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="chart.bar" tintColor={color} size={24} /> : <Feather name="bar-chart-2" size={22} color={color} /> }} />
+      <Tabs.Screen name="progress" options={{ title: t('tabs.progress'), headerShown: false, tabBarAccessibilityLabel: t('tabs.progress'), tabBarLabel: reflow ? tabLabel(t('tabs.progress')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="chart.bar" tintColor={color} size={24} /> : <Feather name="bar-chart-2" size={22} color={color} /> }} />
     </Tabs>
   );
 }

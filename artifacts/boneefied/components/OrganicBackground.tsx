@@ -1,10 +1,14 @@
 import React, { memo, useState } from 'react';
-import { Platform, StyleSheet, View, type LayoutChangeEvent } from 'react-native';
-import Svg, { Path } from 'react-native-svg';
+import { StyleSheet, View, type LayoutChangeEvent } from 'react-native';
+import { Image } from 'expo-image';
 import { useColors } from '@/hooks/useColors';
-import {
-  organicBundles, ORGANIC_BRANCH_WIDTH, ORGANIC_STRAND_WIDTH, ORGANIC_STRENGTH, ORGANIC_SURFACE_STRENGTH, ORGANIC_UNIT_PX,
-} from './organicFibers';
+import palettes from '@/constants/colors';
+
+const DARK_ART = require('../assets/images/materials/boneefied-muscle-fibers-dark.webp');
+const LIGHT_ART = require('../assets/images/materials/boneefied-muscle-fibers-light.webp');
+const MATERIAL_PX = 768; // fixed material scale; cards are crops of the same-size material
+const BG_OPACITY = { dark: 0.38, light: 0.5 };
+const SURFACE_OPACITY = { dark: 0.24, light: 0.34 };
 
 // A decorative renderer failure must leave the existing plain screen usable.
 class DecorationFallback extends React.Component<React.PropsWithChildren, { failed: boolean }> {
@@ -13,40 +17,20 @@ class DecorationFallback extends React.Component<React.PropsWithChildren, { fail
   render() { return this.state.failed ? null : this.props.children; }
 }
 
-// Joined once per bundle so each surface only renders the bundles it can show.
-const JOINED = organicBundles.map(b => ({ minX: b.minX, maxX: b.maxX, key: b.x, fibers: b.fibers.join(' '), strands: b.strands.join(' '), branches: b.branches.join(' ') }));
+// Use the app preference-resolved palette, not just the operating-system theme.
+function useIsDark() { return useColors().background === palettes.dark.background; }
 const clamp = (v: number, lo: number, hi: number) => Math.min(Math.max(v, lo), hi);
 
-/**
- * Draws a window of the shared tile at a FIXED fiber scale (about 1.3px per unit),
- * so a small card shows the same fine detail as a full screen, just less of it.
- */
-function Material({ ink, strength, w, h, shiftX, shiftY }: { ink: string; strength: number; w: number; h: number; shiftX: number; shiftY: number }) {
-  const k = Math.max(ORGANIC_UNIT_PX, w / 1000, h / 1000);
-  const vw = w / k, vh = h / k;
-  const x0 = clamp(500 + shiftX - vw / 2, 0, 1000 - vw), y0 = clamp(500 + shiftY - vh / 2, 0, 1000 - vh);
-  const shown = JOINED.filter(b => b.maxX > x0 && b.minX < x0 + vw);
-  return (
-    <Svg
-      width={w} height={h} viewBox={`${x0} ${y0} ${vw} ${vh}`} preserveAspectRatio="none" opacity={strength}
-      {...(Platform.OS === 'web' ? { 'aria-hidden': true as const } : { accessible: false })}
-      focusable={false}
-    >
-      {shown.map(b => <React.Fragment key={b.key}>
-        <Path d={b.fibers} fill={ink} />
-        <Path d={b.strands} fill="none" stroke={ink} strokeWidth={ORGANIC_STRAND_WIDTH} strokeLinecap="round" />
-        <Path d={b.branches} fill="none" stroke={ink} strokeWidth={ORGANIC_BRANCH_WIDTH} strokeLinecap="round" />
-      </React.Fragment>)}
-    </Svg>
-  );
-}
-
-function Layer({ testID, ink, strength, radius = 0, shiftX = 0, shiftY = 0 }: { testID: string; ink: string; strength: number; radius?: number; shiftX?: number; shiftY?: number }) {
+function Layer({ testID, dark, strength, radius = 0, shiftX = 0, shiftY = 0 }: { testID: string; dark: boolean; strength: number; radius?: number; shiftX?: number; shiftY?: number }) {
   const [size, setSize] = useState({ w: 0, h: 0 });
+  const [failed, setFailed] = useState(false);
   const onLayout = (e: LayoutChangeEvent) => {
     const { width, height } = e.nativeEvent.layout;
     setSize(prev => (Math.abs(prev.w - width) < 1 && Math.abs(prev.h - height) < 1 ? prev : { w: Math.round(width), h: Math.round(height) }));
   };
+  const S = Math.max(MATERIAL_PX, size.w, size.h);
+  const left = clamp((size.w - S) / 2 - shiftX, size.w - S, 0);
+  const top = clamp((size.h - S) / 2 - shiftY, size.h - S, 0);
   return (
     <View
       testID={testID}
@@ -58,7 +42,18 @@ function Layer({ testID, ink, strength, radius = 0, shiftX = 0, shiftY = 0 }: { 
       style={[styles.decoration, { borderRadius: radius }]}
     >
       <DecorationFallback>
-        {size.w > 0 && size.h > 0 && <Material ink={ink} strength={strength} w={size.w} h={size.h} shiftX={shiftX} shiftY={shiftY} />}
+        {size.w > 0 && size.h > 0 && !failed && <Image
+          source={dark ? DARK_ART : LIGHT_ART}
+          contentFit="cover"
+          cachePolicy="memory-disk"
+          priority={testID === 'organic-background' ? 'high' : 'normal'}
+          loading={testID === 'organic-background' ? 'eager' : 'lazy'}
+          accessible={false}
+          focusable={false}
+          pointerEvents="none"
+          onError={() => setFailed(true)}
+          style={{ position: 'absolute', width: S, height: S, left, top, opacity: strength }}
+        />}
       </DecorationFallback>
     </View>
   );
@@ -66,8 +61,8 @@ function Layer({ testID, ink, strength, radius = 0, shiftX = 0, shiftY = 0 }: { 
 
 /** Screen-wide material, edge to edge including the centre. */
 export const OrganicBackground = memo(function OrganicBackground() {
-  const colors = useColors();
-  return <Layer testID="organic-background" ink={colors.primary} strength={ORGANIC_STRENGTH} />;
+  const dark = useIsDark();
+  return <Layer testID="organic-background" dark={dark} strength={dark ? BG_OPACITY.dark : BG_OPACITY.light} />;
 });
 
 /**
@@ -77,7 +72,9 @@ export const OrganicBackground = memo(function OrganicBackground() {
  */
 export const OrganicSurface = memo(function OrganicSurface({ radius = 0, shift = 0, ink }: { radius?: number; shift?: number; ink?: string }) {
   const colors = useColors();
-  return <Layer testID="organic-surface" ink={ink ?? colors.primary} strength={ORGANIC_SURFACE_STRENGTH} radius={radius}
+  const dark = useIsDark();
+  const filled = !!ink && ink !== colors.primary;
+  return <Layer testID="organic-surface" dark={dark} strength={filled ? 0.12 : dark ? SURFACE_OPACITY.dark : SURFACE_OPACITY.light} radius={radius}
     shiftX={((shift * 53) % 600) - 300} shiftY={((shift * 29) % 600) - 300} />;
 });
 

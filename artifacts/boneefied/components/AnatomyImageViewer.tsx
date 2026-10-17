@@ -155,6 +155,7 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
             accessibilityHint={onHotspotPress && !submitted ? locale.t('imageViewer.selectHotspotHint') : undefined}
             accessibilityState={{ selected }}
             hitSlop={questionHotspotCallouts ? undefined : reflow ? 16 : undefined}
+            decorate={false}
             testID={`hotspot-${hotspot.structureId}`}
             containerStyle={[styles.hotspot, questionHotspotCallouts && { alignItems: 'center', justifyContent: 'center' }, callout ? { left: callout.x, top: callout.y, width: cellWidth, height: cellHeight } : { left: `${(1 - containedWidth) * 50 + hotspot.x * containedWidth * 100}%`, top: `${(1 - containedHeight) * 50 + hotspot.y * containedHeight * 100}%`, width: questionHotspotCallouts ? cellWidth : `${hotspot.radius * containedWidth * 200}%`, height: questionHotspotCallouts ? cellHeight : `${hotspot.radius * containedHeight * 200}%` }]}
              contentStyle={[styles.hotspotContent, questionHotspotCallouts && { width: paint.diameter, height: paint.diameter, alignSelf: 'center', borderWidth: paint.borderWidth }, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected || revealLabels ? colors.primary : questionHotspotCallouts ? colors.foreground : 'transparent', backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected ? colors.secondary : questionHotspotCallouts ? colors.card : 'transparent' }]}
