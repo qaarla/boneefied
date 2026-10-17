@@ -6,6 +6,7 @@
 - [Expo cloud build versions](expo-cloud-build-versions.md) — diagnose frozen-lockfile and iOS pod failures against EAS builder versions before changing app dependencies.
 - [GitHub connector vs Git push](github-git-push.md) — connector auth and Git transport differ; test a scoped push path before relying on either.
 - [EAS build runbook](eas-build-runbook.md) — user requires the existing “EAS Build Commands” document before choosing a mobile build workflow; avoid duplicate requests.
+- [EAS log retrieval](eas-log-retrieval.md) — if the logs action times out, download the finished build's returned log files without resubmitting the build.
 - [Boneefied site routing](boneefied-site-routing.md) — browser root can lead to the site, but Expo's header-aware root manifest and QR access must remain.
 - [Native text-row reflow](native-text-row-reflow.md) — web wrapping checks can miss iPhone collisions; give compact metadata and status independent regions.
 - [React Native Web selection state](react-native-web-radio-state.md) — native checked/selected state may not expose web ARIA state; verify both paths.

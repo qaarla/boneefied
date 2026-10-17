@@ -7,7 +7,7 @@ An authorized GitHub connector can work for API operations while Git pushes from
 
 **Why:** An unauthenticated dry-run failed despite a working connector and correct remote; a later dry-run using a workspace-managed secret through a scoped helper succeeded. Neither a connector nor a remote URL alone proves that Git transport will work.
 
-**How to apply:** Verify the actual push path non-interactively with a dry-run before promising a push. Check only whether the workspace-managed secret exists; never print it or persist it in Git config. After pushing, compare the remote branch SHA to the local source SHA. If authentication is unavailable, report the transport blocker rather than asking the user to recreate the connector.
+**How to apply:** Verify the actual push path non-interactively with a dry-run before promising a push. Check only whether the workspace-managed secret exists; never print it or persist it in Git config. After pushing, compare the remote branch SHA to the local source SHA. If Git transport authentication is unavailable, follow the required build runbook's authenticated Git Database API transfer through the existing GitHub integration. Verify every blob, tree and commit SHA, then independently read the fresh remote ref. Report a source-transfer blocker only if neither route can publish the exact commit; do not ask the user to recreate a working connector.
 
 A Git push can update GitHub successfully and then fail when Replit blocks the local remote-tracking ref write. Verify the remote ref before retrying.
 
