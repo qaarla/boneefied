@@ -20,5 +20,8 @@ export function useColors() {
   const preference = study?.preferences.theme ?? 'system';
   const scheme = preference === 'system' ? systemScheme : preference;
   const palette = scheme === 'dark' ? colors.dark : colors.light;
-  return { ...palette, radius: colors.radius };
+  // Opt-in ordinary reading copy only; existing UI/semantic tokens stay intact.
+  // Dark copy retains its exact established foreground. Light charcoal is
+  // checked against the darkest pixels of the existing anatomical material.
+  return { ...palette, readingForeground: scheme === 'dark' ? palette.foreground : '#353535', radius: colors.radius };
 }

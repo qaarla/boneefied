@@ -20,7 +20,7 @@ export function VisualStudyContext({ asset, learn }: { asset: Asset; learn: bool
         : es ? 'Diagrama de estudio 2D — no una muestra ni fotomicrografía.' : '2D study diagram — not a specimen or photomicrograph.';
   return <View style={{ gap: 8, paddingHorizontal: 12 }}>
     <Text style={{ color: colors.mutedForeground }}>{label}</Text>
-    {learn && asset.description && <Text style={{ color: colors.foreground }}>{asset.description}</Text>}
+    {learn && asset.description && <Text style={{ color: colors.readingForeground }}>{asset.description}</Text>}
     {learn && asset.specimenNote && <Text style={{ color: colors.mutedForeground }}>{asset.specimenNote}</Text>}
     <VisualCredit asset={asset} />
   </View>;

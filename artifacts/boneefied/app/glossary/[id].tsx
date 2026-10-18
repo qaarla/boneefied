@@ -45,10 +45,10 @@ export default function GlossaryEntryScreen() {
       <Text style={[styles.eyebrow, { color: colors.primary }]}>{t('glossary.eyebrow')}</Text>
       <Heading style={[styles.title, { color: colors.foreground }]}>{meaning?.name ?? localizedStructure!.canonicalName}</Heading>
       <AdaptiveCard style={[styles.card, { backgroundColor: colors.card, borderColor: colors.border }]}>
-        <Text style={[styles.definition, { color: colors.foreground }]}>{meaning?.definition ?? definition(entry.structure.id, entry.definition)}</Text>
+        <Text style={[styles.definition, { color: colors.readingForeground }]}>{meaning?.definition ?? definition(entry.structure.id, entry.definition)}</Text>
         {meaning && <View style={styles.aliases}>
           <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Estructura relacionada' : 'Related structure'}: {localizedStructure!.canonicalName}</Heading>
-          <Text style={{ color: colors.foreground }}>{definition(entry.structure.id, entry.definition)}</Text>
+          <Text style={{ color: colors.readingForeground }}>{definition(entry.structure.id, entry.definition)}</Text>
         </View>}
         <Text style={{ color: colors.mutedForeground }}>{localizedModule!.title} · {localizedStructure!.category}</Text>
       </AdaptiveCard>
@@ -63,7 +63,7 @@ export default function GlossaryEntryScreen() {
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{language === 'es' ? 'Palabras relacionadas' : 'Related words'}</Heading>
         {relatedWords.map((term) => {
           const word = wordMeaning(term, language);
-          return <Text key={term.en} style={{ color: colors.foreground }}>{word.name}: {word.definition}</Text>;
+          return <Text key={term.en} style={{ color: colors.readingForeground }}>{word.name}: {word.definition}</Text>;
         })}
       </View>}
       {localizedStructure!.acceptedAliases.length > 0 && <View style={styles.aliases}>

@@ -22,9 +22,9 @@ export default function WordPartScreen() {
       <Text style={{ color: colors.primary }}>{copy.kind}</Text>
       <Heading style={[styles.title, { color: colors.foreground }]}>{part.form}</Heading>
       <AdaptiveCard style={[styles.card, { borderColor: colors.border, backgroundColor: colors.card }]}>
-        <Text style={[styles.meaning, { color: colors.foreground }]}>{copy.meaning}</Text>
+        <Text style={[styles.meaning, { color: colors.readingForeground }]}>{copy.meaning}</Text>
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{es ? 'Ejemplo' : 'Example'}</Heading>
-        <Text style={{ color: colors.foreground }}>{copy.example}</Text>
+        <Text style={{ color: colors.readingForeground }}>{copy.example}</Text>
       </AdaptiveCard>
       {part.aliases.length > 0 && <View style={styles.aliases}>
         <Heading style={[styles.subheading, { color: colors.foreground }]}>{es ? 'Otras formas' : 'Other forms'}</Heading>
