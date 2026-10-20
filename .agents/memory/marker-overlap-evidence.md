@@ -21,6 +21,17 @@ Generated QA files are evidence only after successful decoding; a matching file 
 
 **How to apply:** When resuming visual QA, validate cached images before reuse, and isolate rendering-tool errors before changing product code or drawing conclusions about anatomy presentation.
 
+Semantic ID masks can deliberately widen narrow strokes. Matching the expected
+mask color does not establish that a pointer ends on visible anatomy.
+
+**Why:** A stapes pointer passed its padded ID mask while the actual raster pixel
+was middle-ear chamber fluid, outside the thin bony limb.
+
+**How to apply:** For narrow nerves, zonules, ossicles or similar targets, inspect
+the actual source pixel or analytically test the painted curve/stroke as well as
+the semantic region. Keep the target on the actual tissue, not merely its padded
+sampling area.
+
 Keep any viewer framing inset in the shared contain geometry, not only in the Image style. Image painting, normalized anchors, protected anatomy, and gesture bounds must refer to the same padded box.
 
 **Why:** Framing/gesture work must not move anatomical targets. Separately requested anatomical endpoint repairs require an independent source-level review rather than moving targets to improve layout.
@@ -38,3 +49,16 @@ A mounted legend does not establish that its diagram's painted markers are ready
 **Why:** Browser QA initially compared a valid five-entry legend against an empty marker collection. Scrolling its viewer into view and waiting for painted-marker readiness resolved the mismatch without an application change.
 
 **How to apply:** Before reporting a numbering mismatch, bring each relevant viewer into view and wait for its image/callout layout to settle. Verify visible marker text against the corresponding legend, not only initial DOM presence.
+
+Do not assume every diagram must pan substantially on both axes at the same
+zoom, or that a fixed number of swipes reaches both clamps.
+
+**Why:** A dense enlarged-text diagram still fit horizontally at a zoom where
+other diagrams overflowed. At a higher zoom, its valid annotation envelope also
+required more travel than a fixed swipe count allowed. Both produced false
+browser-test failures without an application defect.
+
+**How to apply:** Exercise each axis at a zoom where its content actually
+overflows, then continue dragging until the measured transform stabilizes.
+Keep parent-scroll offsets separate. Do not widen correct bounds to satisfy a
+test's arbitrary movement threshold.

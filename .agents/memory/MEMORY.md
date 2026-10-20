@@ -1,5 +1,6 @@
 - [Course source access](course-source-access.md) — BIOL 250 PDFs are known in ChatGPT Library but must be transferred before Replit can extract them.
 - [Expo offline evidence](expo-offline-evidence.md) — local image bundling does not prove web-preview or native-device offline rendering.
+- [Warm Expo runtime](expo-warm-browser-runtime.md) — a persistent test tab can retain old Metro factories after restart; verify the executed bundle before re-fixing code.
 - [Expo project identity](expo-project-identity.md) — a stale app config project ID can make build APIs deny repository access even when the dashboard has a GitHub link.
 - [Mobile identifier rule](mobile-identifier-rule.md) — each app's Android package must exactly match its existing iOS bundleIdentifier; flag established mismatches.
 - [Google Play release constraints](google-play-release-constraints.md) — preserve the existing app entry, paid-download decision, and Android signing identity.
@@ -20,7 +21,7 @@
 - [Marker overlap evidence](marker-overlap-evidence.md) — verify painted circles and actual image contain geometry, not broad DOM rectangles, before moving anatomy markers.
 - [Boneefied atlas standard](boneefied-atlas-standard.md) — uniform original 2D anatomy pack; approved source hierarchy and commercial-reuse boundaries.
 - [Web touch collections](react-native-web-touchlists.md) — Expo web can expose DOM TouchList despite native array typings; verify actual touch geometry.
-- [Anatomy gesture ownership](anatomy-gesture-ownership.md) — pinch/zoomed pan owns the active gesture; retain page scrolling at 1× and do not equate browser with native proof.
+- [Anatomy gesture ownership](anatomy-gesture-ownership.md) — scroll ownership, actual parent offsets and external-callout reachability; distinguish browser from native proof.
 - [Android APK integrity](android-apk-integrity.md) — generic unzip extra-field warnings can differ from full entry CRC checks; never modify a signed APK to silence them.
 - [Rights presentation intent](rights-presentation.md) — module provenance belongs in a collapsed bottom disclosure; preserve required image credits and study descriptions.
 - [Native typeface intent](native-typeface-intent.md) — Tinos is the user's chosen native UI typeface; compact anatomy readability and icon fonts take priority over uniformity.
