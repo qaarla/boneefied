@@ -2003,8 +2003,8 @@
         }
       ],
       "sha256": {
-        "svg": "f880aeaeb48f810f9f41afe2094ca08d005e5016783c935640d0cbde0c2e22a0",
-        "png": "eeceaa4857fb35b0037bce7b0912de9d1dc0dc17394842319f1be26b8e0df204"
+        "svg": "75873b668dd3fb8da5dbbb8b2736f5e67b04bf120edf2f6906f1e20848d5ee71",
+        "png": "d194dacbdca151a469b79ea023806ad9db9f492211e6cc10ab15e9e57d474bef"
       }
     },
     {
@@ -2280,15 +2280,15 @@
         },
         {
           "structureId": "transverse-process",
-          "x": 0.2253,
-          "y": 0.54,
+          "x": 0.2276,
+          "y": 0.5,
           "radius": 0.016,
-          "derivedFrom": "shape-centroid",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
             224,
-            494,
+            454,
             426,
-            586
+            546
           ]
         },
         {
@@ -2332,8 +2332,8 @@
         }
       ],
       "sha256": {
-        "svg": "e694b470bfce4759bbcea6387c9040df1054489939a328f42596b2b9c886ea02",
-        "png": "de4014700b80debcab45984bb535f0edd279731c2a4b2875e0b6958b80d5ff47"
+        "svg": "361afce56c02def8b7bf5ebe8bc60ac6fa51809f4f4eb59ca992141eabf89250",
+        "png": "fc89508d30db74cc51421351589d998fe2530415e234ee951c1ff7dd7b7baef6"
       }
     },
     {
@@ -2661,8 +2661,8 @@
         }
       ],
       "sha256": {
-        "svg": "0c3cf433912a0c30a5c246ee355db11ad8e3af109d9678cd60de35bebfb7f7ec",
-        "png": "083089dcd9aede6baaacd813b972f5ffd4a6d19d5e0d9d1a6331a1f4d36b5f73"
+        "svg": "b3a80b13d35597dbae0e7108ce92ed1617a39510760bc8922222ac91036f00f4",
+        "png": "222edfdc29287aeeae0f3066593a18b52d69a96abcebe1d16b92b77bfeab458f"
       }
     },
     {
@@ -3791,15 +3791,15 @@
         },
         {
           "structureId": "ankle-mortise",
-          "x": 0.3478,
-          "y": 0.8913,
+          "x": 0.3476,
+          "y": 0.855,
           "radius": 0.014,
-          "derivedFrom": "shape-centroid",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            462,
-            860,
-            545,
-            925
+            456,
+            851,
+            556,
+            859
           ]
         },
         {
@@ -3830,8 +3830,8 @@
         }
       ],
       "sha256": {
-        "svg": "f9f1d300e65cb585aac40d55e303578f689994a643425925ce611f4373559e97",
-        "png": "1bd19c04871b7fddb79c429fa91ee81e0c494b1a32f808dc0bf4f38309015a20"
+        "svg": "3e2a90f04eed06ec07c26e49110a233eda8a9f9da489d787022967d625192127",
+        "png": "04cb67196cb37c9992f71278d102cc33d1e672752c491709218c6fa8ea32cfc8"
       }
     },
     {
@@ -4107,99 +4107,99 @@
       "featureAnchorMapping": [
         {
           "structureId": "synovial-joint",
-          "x": 0.3179,
-          "y": 0.5,
+          "x": 0.5,
+          "y": 0.49,
           "radius": 0.02,
-          "derivedFrom": "bbox-fraction(0.1,0.5)",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            395,
-            280,
-            1055,
-            720
+            550,
+            350,
+            900,
+            650
           ]
         },
         {
           "structureId": "fibrous-capsule",
-          "x": 0.3759,
-          "y": 0.4592,
+          "x": 0.3655,
+          "y": 0.5,
           "radius": 0.014,
-          "derivedFrom": "bbox-fraction(0.5,0.4)",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            506,
-            316,
-            584,
-            674
+            514,
+            314,
+            626,
+            676
           ]
         },
         {
           "structureId": "synovial-membrane",
-          "x": 0.4103,
-          "y": 0.4925,
+          "x": 0.38,
+          "y": 0.5,
           "radius": 0.012,
-          "derivedFrom": "bbox-fraction(0.5,0.5)",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            570,
-            340,
-            620,
+            546,
+            345,
+            626,
             645
           ]
         },
         {
           "structureId": "articular-cartilage",
           "x": 0.5,
-          "y": 0.39,
+          "y": 0.437,
           "radius": 0.014,
-          "derivedFrom": "shape-centroid",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            600,
-            355,
-            850,
-            455
+            590,
+            360,
+            860,
+            450
           ]
         },
         {
           "structureId": "joint-cavity",
-          "x": 0.5,
-          "y": 0.5117,
+          "x": 0.4724,
+          "y": 0.52,
           "radius": 0.016,
-          "derivedFrom": "shape-centroid",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            630,
-            470,
-            820,
-            560
+            645,
+            495,
+            725,
+            545
           ]
         },
         {
           "structureId": "synovial-fluid",
-          "x": 0.5,
-          "y": 0.52,
+          "x": 0.5241,
+          "y": 0.535,
           "radius": 0.012,
-          "derivedFrom": "shape-centroid",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            685,
-            506,
-            765,
-            534
+            738,
+            525,
+            782,
+            545
           ]
         },
         {
           "structureId": "ligament",
-          "x": 0.3897,
-          "y": 0.3328,
+          "x": 0.3414,
+          "y": 0.47,
           "radius": 0.014,
-          "derivedFrom": "bbox-fraction(0.5,0.2)",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            548,
-            238,
-            582,
-            712
+            479,
+            254,
+            666,
+            736
           ]
         }
       ],
       "sha256": {
-        "svg": "5c72617bf82ad03b67a6cd766043ee0eb4229d567136200ac46077eb8a829e71",
-        "png": "9178c935097c158b3c663991d910c0016f4795a79d8fcaf02c820c53ce73d5c1"
+        "svg": "9b995b577b5a7c7f659f90cf23bfbaae0f41f5e6cb09af79b85544ebb3a8c5e3",
+        "png": "cd109a0d3f69b5eb299f8519935a942c60cef3cfaee1742e70e132e5a3fb275f"
       }
     },
     {
@@ -4304,14 +4304,14 @@
         },
         {
           "structureId": "humeral-head",
-          "x": 0.3763,
+          "x": 0.3625,
           "y": 0.48,
           "radius": 0.016,
           "derivedFrom": "bbox-fraction(0.4,0.5)",
           "shapeBox": [
-            488,
+            468,
             404,
-            632,
+            612,
             556
           ]
         },
@@ -4382,10 +4382,10 @@
         },
         {
           "structureId": "clavicle",
-          "x": 0.6655,
-          "y": 0.254,
+          "x": 0.6069,
+          "y": 0.23,
           "radius": 0.016,
-          "derivedFrom": "bbox-fraction(0.7,0.4)",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
             510,
             220,
@@ -4408,8 +4408,8 @@
         }
       ],
       "sha256": {
-        "svg": "3a70f43e637cc36113f130ea40b96ae4d1b67b00b2907dac713c0fdb2dfd8427",
-        "png": "e057f9c969974540676e25d1553d7c5f5fdc070322bb567afe69a81f1dfaa077"
+        "svg": "65e669d19d3a4f655b260d2919a30ef2bbcfe71e2516c4d56765c7d3f3cd59e3",
+        "png": "0145c38b3e788466ee1b1500ec6d53c3d9092afb79851b56ec3f404fdf17f770"
       }
     },
     {
@@ -4540,23 +4540,23 @@
         },
         {
           "structureId": "mcl",
-          "x": 0.3598,
-          "y": 0.5,
+          "x": 0.3586,
+          "y": 0.48,
           "radius": 0.014,
-          "derivedFrom": "shape-centroid",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
-            499,
-            349,
-            541,
-            651
+            443,
+            348,
+            537,
+            632
           ]
         },
         {
           "structureId": "knee-joint",
-          "x": 0.2759,
+          "x": 0.3379,
           "y": 0.48,
           "radius": 0.02,
-          "derivedFrom": "shape-centroid",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
             280,
             470,
@@ -4569,12 +4569,12 @@
           "x": 0.6634,
           "y": 0.346,
           "radius": 0.02,
-          "derivedFrom": "bbox-fraction(0.3,0.6)",
+          "derivedFrom": "authored-feature-point",
           "shapeBox": [
             920,
-            250,
+            310,
             1060,
-            410
+            470
           ]
         },
         {
@@ -4618,8 +4618,8 @@
         }
       ],
       "sha256": {
-        "svg": "e35d55750e369d4ea75534944071cec02aeec1be3b287703e17081e330267214",
-        "png": "8cccb13ecea83eea07258cf408c5dbe6c97c1b889cad5780084a9e8447579641"
+        "svg": "2a0afe5fe28f34a01e1c420b0d4605c0d820a61069a85b18fde77581ee1e1668",
+        "png": "a0e3baa6b0491b15837a9694cac4ef896d2f5b880773557fe21e8e22e6cbfd8d"
       }
     }
   ]

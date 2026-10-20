@@ -20,7 +20,7 @@ test('phone widths and enlarged labels preserve every action and comfortable non
         assert.ok(row.every(cell => cell.width >= 44));
         const occupied = row.reduce((sum, cell) => sum + cell.width, 0) + (row.length - 1) * VIEWER_CONTROL_GAP;
         assert.ok(Math.abs(occupied - (width - VIEWER_CONTROL_PADDING * 2)) < .001, `${width}/${scale}`);
-        for (const cell of row) assert.ok(cell.width >= Math.min(width - 12, Math.ceil(widths[cell.name]) + 12));
+        for (const cell of row) assert.ok(cell.width >= Math.min(width - 12, Math.ceil(widths[cell.name]) + 14));
       }
     }
   }
@@ -33,4 +33,12 @@ test('overflow splits only when needed, grouping zoom and reveal actions rather 
 
 test('unlabelled or already-revealed diagrams retain their existing three-action mode', () => {
   assert.deepEqual(viewerControlRows(301, {}, false).flat().map(cell => cell.name), names.slice(0, 3));
+});
+
+test('a tight Large-text row budgets both button borders so Reset cannot split inside a word', () => {
+  const widths = { 'zoom-in': 52, 'zoom-out': 59, reset: 34, 'reveal-all': 63, 'hide-all': 52 };
+  const rows = viewerControlRows(348, widths, true);
+  assert.equal(rows.length, 2);
+  const reset = rows.flat().find(cell => cell.name === 'reset')!;
+  assert.ok(reset.width - 12 - 2 >= widths.reset);
 });

@@ -27,6 +27,8 @@ function drawAnt(S, o = {}) {
   vs(S, q ? null : 'cv-left-subclavian', [[838, 163], [870, 110], [900, 66]], 30, 28, A);
   vs(S, q ? null : 'cv-left-pulmonary-artery', [[805, 335], [860, 348], [930, 352], [995, 368]], 38, 32, V);
   vs(S, q ? null : 'cv-svc', [[565, 62], [565, 220], [568, 330], [570, 410]], 52, 52, V);
+  // Coronary origins arise from the aortic root, behind the pulmonary trunk.
+  if (o.coronaryRoots) o.coronaryRoots(S);
   const tr = tube([[772, 445], [788, 390], [800, 340], [805, 322]], 74, 68);
   S.sh(q ? null : 'cv-pulmonary-trunk', tr, { fill: V.fill, line: V.line, sw: 1.2 });
   S.sh(q ? null : 'cv-pulmonary-trunk', E(805, 322, 34, 20), { fill: V.fill, line: V.line, sw: 1.2 });
@@ -73,8 +75,8 @@ function antHeart(S) {
 plates.push({
   key: 'heart-anterior', moduleId: MOD, kind: 'gross-diagram', lessons: ['cv-orientation', 'cv-chambers', 'cv-great-vessels'], purpose: 'Anterior surface of the heart: orientation, apex and base, chambers seen from the front and the great vessels.',
   title: ['Heart from the front: chambers, apex and great vessels', 'Corazón visto de frente: cámaras, vértice y grandes vasos'],
-  desc: ['Anterior view, patient right at viewer left. The right atrium forms the right border and the right ventricle most of the front; the left ventricle forms the left border and apex, which points down and to the left. Only the auricles of the atria show in front; the coronary sulcus (fat-filled groove) separates atria from ventricles. The superior vena cava and inferior vena cava enter the right atrium; the pulmonary trunk leaves the right ventricle and splits into right and left pulmonary arteries. Colour follows oxygenation: pulmonary arteries carry deoxygenated blood and are blue; pulmonary veins carry oxygenated blood and are red. The ascending aorta rises behind the pulmonary trunk, arches to the left and gives the brachiocephalic, left common carotid and left subclavian arteries; the descending aorta runs behind the heart. Right panel: heart axis, base (broad upper surface, mostly left atrium, facing back) and apex. ' + REFS_NOTE,
-    'Vista anterior, derecha del paciente a la izquierda del observador. La aurícula derecha forma el borde derecho y el ventrículo derecho la mayor parte de la cara anterior; el ventrículo izquierdo forma el borde izquierdo y el vértice, que apunta hacia abajo y a la izquierda. Solo se ven las orejuelas de las aurículas; el surco coronario (surco con grasa) separa aurículas y ventrículos. Las venas cavas superior e inferior entran en la aurícula derecha; el tronco pulmonar sale del ventrículo derecho y se divide en arterias pulmonares derecha e izquierda. El color sigue la oxigenación: las arterias pulmonares llevan sangre desoxigenada y son azules; las venas pulmonares llevan sangre oxigenada y son rojas. La aorta ascendente sube detrás del tronco pulmonar, forma el arco hacia la izquierda y da el tronco braquiocefálico, la carótida común izquierda y la subclavia izquierda; la aorta descendente discurre detrás del corazón. Panel derecho: eje del corazón, base (superficie superior ancha, sobre todo aurícula izquierda, dirigida hacia atrás) y vértice. Diagrama macroscópico simplificado.'],
+  desc: ['Anterior view, patient right at viewer left. The right atrium forms the right border and the right ventricle most of the front; the left ventricle forms the left border and apex, which points down and to the left. Most of the left atrium is posterior; its left auricle projects into the anterior view. The coronary sulcus (fat-filled groove) separates atria from ventricles. The superior vena cava and inferior vena cava enter the right atrium; the pulmonary trunk leaves the right ventricle and splits into right and left pulmonary arteries. Colour follows oxygenation: pulmonary arteries carry deoxygenated blood and are blue; pulmonary veins carry oxygenated blood and are red. The ascending aorta rises behind the pulmonary trunk, arches to the left and gives the brachiocephalic, left common carotid and left subclavian arteries; the descending aorta runs behind the heart. Right panel: heart axis, base (broad upper surface, mostly left atrium, facing back) and apex. ' + REFS_NOTE,
+    'Vista anterior, derecha del paciente a la izquierda del observador. La aurícula derecha forma el borde derecho y el ventrículo derecho la mayor parte de la cara anterior; el ventrículo izquierdo forma el borde izquierdo y el vértice, que apunta hacia abajo y a la izquierda. La mayor parte de la aurícula izquierda es posterior; su orejuela se proyecta en la vista anterior. El surco coronario (surco con grasa) separa aurículas y ventrículos. Las venas cavas superior e inferior entran en la aurícula derecha; el tronco pulmonar sale del ventrículo derecho y se divide en arterias pulmonares derecha e izquierda. El color sigue la oxigenación: las arterias pulmonares llevan sangre desoxigenada y son azules; las venas pulmonares llevan sangre oxigenada y son rojas. La aorta ascendente sube detrás del tronco pulmonar, forma el arco hacia la izquierda y da el tronco braquiocefálico, la carótida común izquierda y la subclavia izquierda; la aorta descendente discurre detrás del corazón. Panel derecho: eje del corazón, base (superficie superior ancha, sobre todo aurícula izquierda, dirigida hacia atrás) y vértice. Diagrama macroscópico simplificado.'],
   orientation: ['anterior view; patient right at viewer left; right panel shows the long axis from base to apex', 'vista anterior; derecha del paciente a la izquierda; el panel derecho muestra el eje de base a vértice'], draw: antHeart,
 });
 
@@ -150,7 +152,16 @@ function valvesTop(S) {
   // tricuspid (3 leaflets) and mitral (2 leaflets)
   S.sh('tri', E(480, 560, 98, 84, -10), { fill: FB, line: '#8B8168', sw: 1.8 });
   S.sh('tri', E(480, 560, 78, 64, -10), { fill: '#C6B49A', line: '#8B8168', sw: 1.2 });
-  for (const a of [210, 330, 90]) { const p = (rr) => [480 + rr * Math.cos((a * Math.PI) / 180), 560 + rr * 0.85 * Math.sin((a * Math.PI) / 180)]; S.sh('tri', poly([[480, 560], p(76), p(81)].concat([[480 + 70 * Math.cos(((a + 60) * Math.PI) / 180), 560 + 60 * Math.sin(((a + 60) * Math.PI) / 180)]])), { fill: '#EBDDCB', line: '#8B8168', sw: 1.4 }); }
+  // Three complete leaflets, not three isolated 60° wedges that suggest six.
+  const triPoint = (a) => {
+    const t = a * Math.PI / 180, rot = -10 * Math.PI / 180;
+    const x = 76 * Math.cos(t), y = 62 * Math.sin(t);
+    return [480 + x * Math.cos(rot) - y * Math.sin(rot), 560 + x * Math.sin(rot) + y * Math.cos(rot)];
+  };
+  for (const a of [210, 330, 450]) {
+    const p = triPoint(a), next = triPoint(a + 120);
+    S.sh('tri', `M480 560L${p}A76 62 -10 0 1 ${next}Z`, { fill: '#EBDDCB', line: '#8B8168', sw: 1.4 });
+  }
   S.sh('mit', E(880, 650, 110, 78, 12), { fill: FB, line: '#8B8168', sw: 1.8 });
   S.sh('mit', E(880, 650, 90, 58, 12), { fill: '#C6B49A', line: '#8B8168', sw: 1.2 });
   S.sh('mit', poly([[800, 636], [870, 600], [930, 618], [960, 650], [900, 650], [810, 660]]), { fill: '#EBDDCB', line: '#8B8168', sw: 1.4 });
@@ -227,9 +238,10 @@ function corAnt(S) {
     vs(S2, 'cv-right-marginal', [[614, 654], [586, 704], [602, 768], [660, 818], [738, 846]], 10, 8, A);
     vs(S2, 'cv-circumflex', [[792, 462], [850, 460], [902, 486], [930, 536]], 11, 9, A);
     vs(S2, 'cv-lad', [[792, 462], [794, 520], [796, 600], [798, 700], [800, 800], [796, 850]], 12, 9, A);
-    vs(S2, 'cv-left-coronary', [[762, 430], [776, 446], [792, 464]], 14, 14, A);
+    vs(S2, 'cv-left-coronary', [[776, 446], [784, 457], [792, 464]], 14, 14, A);
   };
-  drawAnt(S, { quiet: true, noSulcus: true, coronary: cor });
+  drawAnt(S, { quiet: true, noSulcus: true, coronary: cor,
+    coronaryRoots: S2 => vs(S2, 'cv-left-coronary', [[735, 430], [755, 435], [776, 446]], 14, 14, A) });
   S.pin('cv-right-coronary', 'cv-right-coronary', [645, 530]);
   S.pin('cv-right-marginal', 'cv-right-marginal', [596, 750]);
   S.pin('cv-left-coronary', 'cv-left-coronary', [776, 446]);
@@ -251,6 +263,12 @@ function corPost(S) {
   const sx = -60; // slight centering
   S.beginT(sx, 0, 1);
   const T = ([x, y]) => [x + sx, y];
+  // Continuous external myocardium under the AV groove: no white separation
+  // between the atrial base and ventricular mass.
+  S.sh(null, sm([[520, 300], [640, 270], [790, 285], [880, 330], [905, 450],
+    [960, 430], [1020, 455], [1035, 520], [1010, 610], [960, 650],
+    [925, 745], [850, 815], [740, 868], [690, 885], [620, 870],
+    [560, 800], [490, 700], [470, 560], [495, 380]]), { fill: MY.fill, line: MY.line, sw: 2.2 });
   vs(S, 'cv-svc', [[985, 440], [990, 300], [995, 60]], 52, 52, V);
   vs(S, 'cv-ivc', [[1000, 610], [1004, 700], [1006, 800]], 50, 50, V);
   for (const p of [[[880, 345], [960, 335], [1050, 320], [1130, 300]], [[890, 410], [960, 405], [1050, 412], [1130, 420]], [[510, 335], [440, 310], [370, 290]], [[505, 430], [430, 440], [360, 445]]]) vs(S, 'cv-pulmonary-veins', p, 34, 32, A);
@@ -264,7 +282,7 @@ function corPost(S) {
   vs(S, 'cv-great-cardiac-vein', [[398, 604], [440, 572], [486, 549]], 14, 18, V);
   vs(S, 'cv-coronary-sinus', [[486, 548], [560, 549], [660, 560], [760, 570], [850, 588], [930, 606]], 32, 34, V);
   vs(S, 'cv-circumflex', [[410, 650], [460, 612], [520, 582], [610, 584], [690, 590]], 11, 9, A);
-  vs(S, 'cv-right-coronary', [[950, 702], [900, 670], [840, 646], [790, 628], [742, 606]], 12, 11, A);
+  vs(S, 'cv-right-coronary', [[945, 640], [900, 630], [850, 616], [790, 608], [742, 606]], 12, 11, A);
   vs(S, 'cv-small-cardiac-vein', [[958, 660], [945, 635], [930, 608]], 9, 9, V);
   S.endT();
   S.pin('cv-coronary-sinus', 'cv-coronary-sinus', T([700, 565]));
@@ -273,7 +291,7 @@ function corPost(S) {
   S.pin('cv-small-cardiac-vein', 'cv-small-cardiac-vein', T([950, 640]));
   S.pin('cv-great-cardiac-vein', 'cv-great-cardiac-vein', T([430, 580]));
   S.pin('cv-circumflex', 'cv-circumflex', T([540, 584]));
-  S.pin('cv-right-coronary', 'cv-right-coronary', T([845, 646]));
+  S.pin('cv-right-coronary', 'cv-right-coronary', T([845, 616]));
   S.pin('cv-pulmonary-veins', 'cv-pulmonary-veins', T([1060, 318]));
   S.pin('cv-ivc', 'cv-ivc', T([1004, 740]));
   S.pin('cv-svc', 'cv-svc', T([990, 200]));

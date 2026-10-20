@@ -226,11 +226,12 @@ function QuestionInput({ question, value, setValue, disabled, colors, reduceMoti
   const muscularPlate = !!asset && isMuscularAtlasAssetId(asset.id);
   const bvis04Plate = !!asset && isBvis04AssetId(asset.id);
   const bvis06Plate = !!asset && isBvis06AssetId(asset.id);
+   const reviewedBvis05Plate = !!asset && ['endocrine-system', 'cardiovascular-system', 'blood-vessels', 'lymphatic-system', 'respiratory-system'].includes(question.moduleId) && asset.id.startsWith('asset-bvis05-');
   const actionMarker = muscularPlate && question.taskType === 'muscle-action' && question.id.startsWith('q-muscular-atlas-');
-   const imageIdMarker = (muscularPlate || bvis04Plate || bvis06Plate) && question.taskType === 'image-identification';
-  const bvis04ChoiceMarker = bvis04Plate && (question.taskType === 'function-relationship' || question.taskType === 'multiple-choice');
-  const readOnlyMarker = actionMarker || imageIdMarker || bvis04ChoiceMarker || (bvis06Plate && question.taskType === 'ordered-sequence');
-  const numberedTargets = question.id.startsWith('q-skeletal-atlas-') || ((muscularPlate || bvis04Plate || bvis06Plate) && question.taskType === 'hotspot') || readOnlyMarker;
+    const imageIdMarker = (muscularPlate || bvis04Plate || bvis06Plate || reviewedBvis05Plate) && question.taskType === 'image-identification';
+   const choiceMarker = (bvis04Plate || (reviewedBvis05Plate && ['cardiovascular-system', 'blood-vessels'].includes(question.moduleId))) && (question.taskType === 'function-relationship' || question.taskType === 'multiple-choice');
+   const readOnlyMarker = actionMarker || imageIdMarker || choiceMarker || (bvis06Plate && question.taskType === 'ordered-sequence');
+   const numberedTargets = question.id.startsWith('q-skeletal-atlas-') || ((muscularPlate || bvis04Plate || bvis06Plate || reviewedBvis05Plate) && question.taskType === 'hotspot') || readOnlyMarker;
   const targets = readOnlyMarker ? question.hotspots : question.taskType === 'image-identification' ? [] : question.hotspots ?? asset?.hotspots;
   const canSelectTarget = question.taskType !== 'image-identification' && !readOnlyMarker;
   const image = asset ? <View style={{ gap: 8 }}>

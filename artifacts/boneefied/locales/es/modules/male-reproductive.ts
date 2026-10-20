@@ -314,7 +314,7 @@ export default {
       prompt: 'Toca el testículo.',
       explanation: 'El testículo es la gónada de la región escrotal.',
       answer: 'Testículo',
-      acceptedAliases: [],
+      acceptedAliases: ['male-reproductive-testis'],
     },
     'q-practical-male-prostate': {
       prompt: 'Toca la glándula prostática.',

@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
-import { AppState, PanResponder, Platform, type GestureResponderEvent, type View } from 'react-native';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Animated, AppState, Platform, type View } from 'react-native';
+import { Gesture } from 'react-native-gesture-handler';
 import { ViewerGestureController, constrainViewer, type ViewerScene } from './viewerGestureController';
 import type { TouchPoint } from './viewerGestureGeometry';
 import { useViewerScrollOwnership } from './ViewerScrollOwnership';
@@ -7,6 +8,7 @@ import { useViewerScrollOwnership } from './ViewerScrollOwnership';
 export function useAnatomyViewerGesture(source?: number) {
   const controller = useRef(new ViewerGestureController()).current;
   const [transform, setTransform] = useState(controller.transform);
+  const animated = useRef({ x: new Animated.Value(0), y: new Animated.Value(0), zoom: new Animated.Value(1) }).current;
   const [ownsGesture, setOwnsGesture] = useState(false);
   const areaRef = useRef<View>(null);
   const scene = useRef<ViewerScene>({ width: 0, height: 0, image: { x: 0, y: 0, width: 0, height: 0 } });
@@ -28,11 +30,22 @@ export function useAnatomyViewerGesture(source?: number) {
     x: frameOrigin.current.x,
     y: frameOrigin.current.y + measuredAtScrollY.current - live.current.getScrollY(),
   };
-  const commit = () => {
+  const commit = (immediate = false) => {
+    // Native painting must not wait for a lesson/marker React render. All
+    // educational layers use these same values, including button-driven zoom.
+    animated.x.setValue(controller.transform.offset.x);
+    animated.y.setValue(controller.transform.offset.y);
+    animated.zoom.setValue(controller.transform.zoom);
+    if (immediate) {
+      if (frame.current !== undefined) cancelAnimationFrame(frame.current);
+      frame.current = undefined;
+      setTransform({ ...controller.transform });
+      return;
+    }
     if (frame.current !== undefined) return;
     frame.current = requestAnimationFrame(() => {
       frame.current = undefined;
-      setTransform(controller.transform);
+      setTransform({ ...controller.transform });
     });
   };
   const finish = () => { controller.end(); mouseActive.current = false; syncOwnership(); commit(); };
@@ -58,33 +71,39 @@ export function useAnatomyViewerGesture(source?: number) {
     controller.reset();
     mouseActive.current = false;
     syncOwnership();
-    setTransform(controller.transform);
+    commit(true);
   };
-  const responder = useRef(PanResponder.create({
-    onStartShouldSetPanResponder: () => false,
-    onStartShouldSetPanResponderCapture: (e) => {
-      // Lock native page scrolling before it can intercept a zoomed touch,
-      // but leave single-finger taps with their label/answer Pressable.
-      measure(); begin(e.nativeEvent.touches);
-      return controller.owns && e.nativeEvent.touches.length > 1;
-    },
-    onMoveShouldSetPanResponderCapture: (e) => {
-      begin(e.nativeEvent.touches); move(e.nativeEvent.touches);
-      return controller.owns && controller.moved;
-    },
-    onPanResponderGrant: (e) => begin(e.nativeEvent.touches),
-    onPanResponderMove: (e) => move(e.nativeEvent.touches),
-    onPanResponderRelease: finish,
-    onPanResponderTerminationRequest: () => !controller.owns,
-    onPanResponderTerminate: finish,
-    onShouldBlockNativeResponder: () => controller.owns,
-  })).current;
-  const nativeHandlers = {
-    ...responder.panHandlers,
-    onTouchStart: (e: GestureResponderEvent) => { measure(); begin(e.nativeEvent.touches); },
-    onTouchEnd: (e: GestureResponderEvent) => e.nativeEvent.touches.length ? begin(e.nativeEvent.touches) : finish(),
-    onTouchCancel: finish,
-  };
+  // Observe native touches before JS Pressable/ScrollView responder arbitration.
+  // Activate only after a drag threshold (or a second finger), so genuine marker
+  // taps still reach Pressable. Keep the recognizer alive outside the frame.
+  const nativeGesture = useMemo(() => {
+    const points = (touches: { absoluteX: number; absoluteY: number }[]) =>
+      touches.map(t => ({ pageX: t.absoluteX, pageY: t.absoluteY }));
+    return Gesture.Manual().runOnJS(true).shouldCancelWhenOutside(false)
+      .onTouchesDown((event, manager) => {
+        measure();
+        begin(points(event.allTouches));
+        if (controller.owns && event.numberOfTouches > 1) manager.activate();
+      })
+      .onTouchesMove((event, manager) => {
+        move(points(event.allTouches));
+        if (controller.owns && controller.moved) manager.activate();
+        else if (controller.moved) manager.fail(); // ordinary 1× lesson scroll
+      })
+      .onTouchesUp((event, manager) => {
+        const lifted = new Set(event.changedTouches.map(t => t.id));
+        const remaining = event.allTouches.filter(t => !lifted.has(t.id));
+        if (remaining.length) begin(points(remaining));
+        else {
+          if (controller.owns && controller.moved) manager.end(); else manager.fail();
+          finish();
+        }
+      })
+      .onTouchesCancelled((_event, manager) => { manager.fail(); finish(); })
+      .onFinalize(finish);
+    // Stable recognizer; callbacks read scene, source and page ownership via refs.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [controller]);
 
   useEffect(() => {
     reset();
@@ -175,10 +194,11 @@ export function useAnatomyViewerGesture(source?: number) {
       controller.transform = bounded; commit();
     }
   };
-  return { ...transform, areaRef, updateScene, reset, measure,
+  return { ...transform, areaRef, updateScene, reset, measure, nativeGesture,
+    canvasStyle: { transform: [{ translateX: animated.x }, { translateY: animated.y }, { scale: animated.zoom }] },
     canPress: () => controller.canPress(),
-    changeZoom: (amount: number) => { controller.changeZoom(amount, scene.current); commit(); },
-    handlers: Platform.OS === 'web' ? webHandlers : nativeHandlers,
+    changeZoom: (amount: number) => { controller.changeZoom(amount, scene.current); commit(true); },
+    handlers: Platform.OS === 'web' ? webHandlers : {},
     webStyle: Platform.OS === 'web' ? { touchAction: ownsGesture || transform.zoom > 1 ? 'none' : 'pan-y', userSelect: 'none' as const } : undefined,
   };
 }

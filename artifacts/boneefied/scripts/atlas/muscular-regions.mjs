@@ -29,8 +29,8 @@ export function antBones(S) {
 }
 
 export function antTrunk(S) {
-  if (ok(S, 'ta')) S.m('transversus-abdominis', pol([[38, 350], [92, 372], [96, 494], [40, 492]], { fib: [[44, 410], [90, 420], [44, 450], [92, 460]], anchor: [66, 450] }), 'mdd');
-  if (ok(S, 'io')) S.m('internal-oblique', pol([[40, 380], [92, 400], [102, 470], [66, 500], [40, 468]], { fib: [[48, 460], [80, 420], [96, 400]], anchor: [74, 440] }), 'md');
+  if (ok(S, 'ta')) S.m('transversus-abdominis', pol([[38, 350], [92, 372], [96, 494], [40, 492]], { fib: [[[44, 410], [90, 410]], [[44, 440], [92, 440]], [[44, 470], [92, 470]]], anchor: [66, 450] }), 'mdd');
+  if (ok(S, 'io')) S.m('internal-oblique', pol([[40, 380], [92, 400], [102, 470], [66, 500], [40, 468]], { fib: [[[88, 462], [48, 412]], [[82, 482], [46, 437]], [[92, 436], [64, 401]]], anchor: [74, 440] }), 'md');
   if (ok(S, 'ic')) for (let k = 0; k < 6; k++) S.m('intercostals', bel([10, 246 + k * 30], [98, 296 + k * 30], 12, { fibers: 1, e: 0.3, min: 0.8, bend: 0.1 }), 'md', { anchor: undefined });
   if (ok(S, 'pmin')) S.m('pectoralis-minor', bel([54, 300], [104, 236], 26, { bu: 0.5, e: 0.6, fibers: 2 }), 'md');
   if (ok(S, 'ser')) S.m('serratus-anterior', pol([[78, 284], [100, 300], [104, 330], [98, 366], [92, 396], [84, 388], [80, 372], [72, 372], [68, 352], [62, 344], [64, 318], [64, 298]], { sm: false, fib: [[96, 308], [76, 318]], anchor: [88, 340] }), 'm2');
@@ -50,9 +50,11 @@ export function antArm(S) {
   if (ok(S, 'del')) S.m('deltoid', bel([108, 208], [146, 298], 54, { bu: 0.35, e: 0.55, bend: -0.04 }), 'm3');
   if (ok(S, 'fx')) {
     S.m(null, bel([160, 406], [186, 520], 18, { bu: 0.35 }), 'm3');
-    S.m('pronator-teres', bel([142, 410], [170, 468], 20, { bu: 0.4, e: 0.6 }), 'm1');
     S.m('flexor-carpi-radialis', bel([148, 412], [172, 520], 17, { bu: 0.3 }), 'm2'); S.t(tn([172, 516], [178, 568], 7));
     S.m(null, bel([144, 416], [168, 535], 15, { bu: 0.3 }), 'm3');
+    // Superficial oblique course from the medial elbow toward the lateral
+    // radius, not a long, mostly occluded strip parallel to wrist flexors.
+    S.m('pronator-teres', bel([138, 412], [174, 454], 18, { bu: 0.45, e: 0.6, fibers: 2 }), 'm1', { anchor: [154, 431] });
   }
 }
 
@@ -62,9 +64,9 @@ export function antThigh(S) {
   if (ok(S, 'ip')) S.m('iliopsoas', bel([52, 488], [68, 604], 32, { bu: 0.35 }), 'md', { anchor: [50, 540] });
   if (ok(S, 'al')) S.m('adductor-longus', bel([14, 564], [52, 664], 28, { bu: 0.4 }), 'md');
   if (ok(S, 'gr')) S.m('gracilis', bel([10, 568], [38, 744], 14, { bu: 0.4, e: 0.4, min: 0.55 }), 'm2');
-  if (ok(S, 'vl')) S.m('vastus-lateralis', bel([92, 572], [72, 728], 36, { bu: 0.45, e: 0.55 }), 'm1');
+  if (ok(S, 'vl')) S.m('vastus-lateralis', bel([98, 572], [78, 728], 44, { bu: 0.45, e: 0.55 }), 'm1', { anchor: [94, 650] });
   if (ok(S, 'vm')) S.m('vastus-medialis', bel([52, 612], [46, 734], 32, { bu: 0.7, e: 0.5 }), 'm1');
-  if (ok(S, 'tfl')) { S.m('tensor-fasciae-latae', bel([96, 504], [100, 596], 26, { bu: 0.35 }), 'm3'); S.t(tn([100, 592], [84, 738], 9)); }
+  if (ok(S, 'tfl')) { S.m('tensor-fasciae-latae', bel([96, 504], [100, 596], 26, { bu: 0.35 }), 'm3'); S.t(tn([107, 588], [104, 738], 9)); }
   if (ok(S, 'rf')) { S.m('rectus-femoris', bel([76, 516], [62, 724], 30, { bu: 0.45, e: 0.6 }), 'm3'); S.t(tn([62, 720], [57, 738], 12)); }
   if (ok(S, 'sar')) S.m('sartorius', bel([90, 510], [43, 756], 17, { bu: 0.5, e: 0.45, min: 0.55, bend: 0.07, fibers: 2 }), 'm2');
 }

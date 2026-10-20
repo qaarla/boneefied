@@ -34,7 +34,10 @@ export function bel(a, b, w, o = {}) {
 export const tn = (a, b, w, o = {}) => bel(a, b, w, { e: 0.3, min: 0.55, fibers: 0, ...o });
 export function pol(pts, o = {}) {
   const c = o.anchor ?? [pts.reduce((s, p) => s + p[0], 0) / pts.length, pts.reduce((s, p) => s + p[1], 0) / pts.length];
-  return { pts, sm: o.sm ?? true, fib: o.fib ?? [], c, bb: box(pts) };
+  // Authored polygons use both a single polyline and an array of polylines.
+  // Treating individual [x,y] points as polylines emitted NaN SVG coordinates.
+  const fib = o.fib?.length && typeof o.fib[0][0] === 'number' ? [o.fib] : o.fib ?? [];
+  return { pts, sm: o.sm ?? true, fib, c, bb: box(pts) };
 }
 export const ell = (cx, cy, rx, ry, o = {}) => pol(Array.from({ length: 28 }, (_, i) => [cx + rx * Math.cos((i / 28) * 6.2832), cy + ry * Math.sin((i / 28) * 6.2832)]), { sm: false, ...o, anchor: o.anchor ?? [cx, cy] });
 
@@ -60,10 +63,11 @@ export class Scene {
     }
     this.out.push(`<path d="${d}" fill="${fill}" stroke="${line}" stroke-width="${o.w ?? 1.4}" stroke-linejoin="round"${attrs}/>`);
     this.idm.push(`<path d="${d}" fill="${hex}" stroke="none"/>`);
+    if (g.fib?.length) this.out.push(`<defs><clipPath id="fiber-${id}"><path d="${d}"/></clipPath></defs>`);
     for (const fl of g.fib ?? []) {
       if (fl.length < 2) continue;
       const q = fl.map((p) => this.P(p));
-      this.out.push(`<path d="${smooth(q)}" fill="none" stroke="${LINE.fib}" stroke-width="0.8" stroke-opacity="0.55" stroke-linecap="round"/>`);
+      this.out.push(`<path d="${smooth(q)}" fill="none" stroke="${LINE.fib}" stroke-width="0.8" stroke-opacity="0.55" stroke-linecap="round" clip-path="url(#fiber-${id})"/>`);
     }
   }
   m(sid, g, tone = 'm1', o = {}) { this.draw(sid, g, T[tone], LINE.m, o); }

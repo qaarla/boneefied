@@ -15,14 +15,14 @@ export function protectedOverlayRects(width: number, height: number, aspect: num
 }
 
 /** Add only the gutter space needed by this plate's protected anatomy. */
-export function protectedOverlayHeight(anchors: { x: number; y: number }[], width: number, baseHeight: number, cellWidth: number, cellHeight: number, aspect: number, rects: OverlayAvoidRect[], radius: number, inset = 0) {
+export function protectedOverlayHeight(anchors: { x: number; y: number }[], width: number, baseHeight: number, cellWidth: number, cellHeight: number, aspect: number, rects: OverlayAvoidRect[], radius: number, inset = 0, gap = 8) {
   if (!rects.length || !anchors.length || width <= 0) return baseHeight;
   for (let extraRows = 0; extraRows < 60; extraRows++) {
-    const height = baseHeight + extraRows * (cellHeight + 8);
+    const height = baseHeight + extraRows * (cellHeight + gap);
     const box = containedOverlayBox(width, height, aspect, inset);
     const targets = anchors.map((a) => ({ x: box.x + a.x * box.width, y: box.y + a.y * box.height }));
     const protectedRects = protectedOverlayRects(width, height, aspect, rects, inset);
-    const safe = atlasCalloutCells(width, height, cellWidth, cellHeight).filter((p) =>
+    const safe = atlasCalloutCells(width, height, cellWidth, cellHeight, gap).filter((p) =>
       !protectedRects.some((r) => circleIntersectsRect(p, radius, r))
       && !targets.some((a) => Math.hypot(p.x - a.x, p.y - a.y) < radius + 3));
     if (safe.length >= anchors.length) return height;

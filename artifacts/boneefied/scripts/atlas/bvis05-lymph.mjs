@@ -1,5 +1,5 @@
 // BVIS05 lymphatic plates: overview and drainage, lymph node, spleen, thymus, tonsils, intestinal lymphoid tissue.
-import { sm, poly, E, RR, tube, vs, mirX, rng, LY, V, A, MY } from './bvis05-lib.mjs';
+import { sm, cr, poly, E, RR, tube, vs, mirX, rng, LY, V, A, MY } from './bvis05-lib.mjs';
 import { skin, heartGhost, VEIN, drawVessels } from './bvis05-body.mjs';
 
 const MOD = 'lymphatic-system';
@@ -20,6 +20,13 @@ function overview(S) {
   skin(S); heartGhost(S);
   drawVessels(S, VEIN, V, (d) => ['ves-internal-jugular', 'ves-subclavian-vein', 'ves-brachiocephalic-vein', 'cv-svc'].includes(d.id));
   const t = (id, pts, w0, w1) => vs(S, id, pts, w0, w1 ?? w0, LY);
+  // Peripheral collectors actually join the nodal groups and central trunks.
+  for (const side of [-1, 1]) {
+    t(null, [[side * 52, 830], [side * 55, 700], [side * 46, 580], [side * 34, 505]], 5);
+    t(null, [[side * 180, 430], [side * 145, 300], [side * 106, 176], [side * 92, 158], [side * 80, 146]], 5);
+    S.arrow(side * 54, 700, -90, 9, LY.line);
+    S.arrow(side * 145, 300, side < 0 ? -70 : -110, 9, LY.line);
+  }
   t(L('tduct'), [[2, 412], [4, 340], [8, 260], [16, 200], [24, 160], [30, 130]], 9, 10);
   t(L('rduct'), [[-42, 124], [-36, 127], [-30, 129]], 9, 9);
   t(L('jtrunk'), [[-14, 64], [-22, 100], [-40, 122]], 7); t(L('jtrunk'), [[14, 64], [22, 100], [30, 124]], 7);
@@ -27,6 +34,7 @@ function overview(S) {
   t(L('itrunk'), [[8, 366], [4, 396], [2, 412]], 8);
   t(L('lumbar'), [[-34, 505], [-20, 470], [-5, 438]], 8); t(L('lumbar'), [[34, 505], [20, 470], [5, 438]], 8);
   S.sh(L('cist'), E(2, 424, 13, 20), { fill: LY.fill, line: LY.line, sw: 1.3 });
+  S.arrow(6, 300, -90, 8, LY.line);
   const nodes = (id, arr) => arr.forEach(([x, y]) => { S.sh(L(id), E(x, y, 9, 7), { fill: LIL.fill, line: LIL.line, sw: 1.2 }); });
   nodes('cerv', [[-27, 74], [-29, 90], [-25, 104], [27, 74], [29, 90], [25, 104]]);
   nodes('axil', [[-106, 176], [-112, 192], [-100, 206], [106, 176], [112, 192], [100, 206]]);
@@ -42,10 +50,14 @@ function overview(S) {
   [[830, 440], [880, 420], [930, 450], [850, 570], [910, 590]].forEach(([x, y]) => S.sh(null, E(x, y, 6, 6), { fill: '#BFD3D1', line: '#8AA3AB', sw: 1 }));
   vs(S, L('cap'), [[800, 510], [900, 510], [1010, 510]], 46, 46, LY);
   vs(S, L('coll'), [[1010, 510], [1120, 510], [1230, 510]], 58, 58, LY);
-  [1075, 1140, 1205].forEach((x) => S.sh(null, poly([[x - 10, 482], [x + 12, 510], [x - 10, 538]]), { fill: '#7E9A6F', line: '#5F7A4F', sw: 1.2 }));
+  [1075, 1140, 1205].forEach((x) => {
+    S.sh(null, poly([[x - 10, 482], [x + 10, 502], [x - 4, 492]]), { fill: '#7E9A6F', line: '#5F7A4F', sw: 1.2 });
+    S.sh(null, poly([[x - 10, 538], [x + 10, 518], [x - 4, 528]]), { fill: '#7E9A6F', line: '#5F7A4F', sw: 1.2 });
+  });
   vs(S, L('trunk'), [[1230, 510], [1310, 510], [1385, 510]], 78, 78, LY);
-  [[860, 700, 0], [1110, 700, 0], [1310, 700, 0]].forEach(([x, y]) => S.arrow(x, y, 0, 16, '#8A949B'));
-  S.pin(L('fluid'), L('fluid'), [880, 500]);
+  [860, 1105, 1355].forEach(x => S.arrow(x, 510, 0, 12, LY.line));
+  S.arrow(900, 480, 90, 10, '#8AA3AB');
+  S.pin(L('fluid'), L('fluid'), [880, 450]);
   S.pin(L('capillary'), L('cap'), [960, 510]);
   S.pin(L('collecting-vessel'), L('coll'), [1160, 510]);
   S.pin(L('trunk'), L('trunk'), [1330, 510]);
@@ -75,25 +87,35 @@ function node(S) {
   [[540, 590, 620, 640, 700, 690], [650, 520, 700, 590, 730, 680], [790, 510, 780, 590, 760, 680], [900, 540, 850, 610, 790, 690]].forEach(([x0, y0, x1, y1, x2, y2]) => {
     S.ln('mcord', `M${x0} ${y0}Q${x1} ${y1} ${x2} ${y2}`, { color: LILD.fill, w: 22 });
   });
-  [[600, 520, 680, 600, 730, 690], [730, 480, 750, 580, 744, 690], [860, 500, 820, 600, 770, 690]].forEach(([x0, y0, x1, y1, x2, y2]) => S.ln('msin', `M${x0} ${y0}Q${x1} ${y1} ${x2} ${y2}`, { color: '#C9DABB', w: 14 }));
+  [[600, 520, 680, 600, 730, 690], [740, 470, 750, 580, 744, 690], [860, 500, 820, 600, 770, 690]].forEach(([x0, y0, x1, y1, x2, y2]) => S.ln('msin', `M${x0} ${y0}Q${x1} ${y1} ${x2} ${y2}`, { color: '#C9DABB', w: 14 }));
   S.clipBothEnd();
   // sinuses: subcapsular band, then cortical sinuses crossing the cortex into the medulla
-  S.ln('ssin', sm([[330, 500], [362, 370], [490, 262], [700, 222], [910, 250], [1050, 350], [1110, 500]], false, 8), { color: '#C9DABB', w: 16 });
-  [[420, 330, 470, 430, 560, 490], [560, 260, 590, 380, 640, 470], [700, 232, 720, 340, 740, 470], [860, 245, 830, 360, 830, 470], [1000, 300, 960, 400, 920, 480]].forEach(([x0, y0, x1, y1, x2, y2]) => S.ln('csin', `M${x0} ${y0}Q${x1} ${y1} ${x2} ${y2}`, { color: '#C9DABB', w: 11 }));
+  const band = [[330, 500], [362, 370], [490, 262], [700, 222], [910, 250], [1050, 350], [1110, 500]];
+  S.ln('ssin', sm(band, false, 8), { color: '#C9DABB', w: 16 });
+  const sampledBand = cr(band, false, 8);
+  const onBand = x => sampledBand.reduce((a, p) => Math.abs(p[0] - x) < Math.abs(a[0] - x) ? p : a);
+  [[420, 470, 430, 560, 490], [560, 590, 380, 640, 470], [700, 720, 340, 740, 470], [860, 830, 360, 830, 470], [1000, 960, 400, 920, 480]].forEach(([x, x1, y1, x2, y2]) => {
+    const [x0, y0] = onBand(x);
+    S.ln('csin', `M${x0} ${y0}Q${x1} ${y1} ${x2} ${y2}`, { color: '#C9DABB', w: 11 });
+  });
+  [[[560, 490], [580, 505], [600, 520]], [[640, 470], [620, 490], [600, 520]], [[830, 470], [845, 485], [860, 500]], [[920, 480], [890, 490], [860, 500]]].forEach(p => S.ln('csin', sm(p, false), { color: '#C9DABB', w: 11 }));
   S.ln('capsule', o, { color: '#7A6A86', w: 12 });
   S.ln(null, o, { color: '#CBBBD2', w: 6 });
   S.sh('hilum', E(740, 715, 62, 30), { fill: '#EFE6EA', line: LIL.line, sw: 1.4 });
+  [[730, 690], [744, 690], [770, 690]].forEach(p => S.ln('msin', sm([p, [740, 700], [740, 718]], false), { color: '#C9DABB', w: 14 }));
   // afferents (continuous with the subcapsular sinus) and efferent from the hilum
   [[590, 240], [700, 222], [860, 238]].forEach(([x, y]) => {
-    vs(S, L('aff'), [[x, 80], [x, (80 + y) / 2], [x, y]], 30, 22, LY);
-    S.sh(null, poly([[x - 16, 130], [x + 4, 150], [x + 16, 130]]), { fill: '#7E9A6F', line: LY.line, sw: 1.2 });
+    const end = sampledBand.reduce((a, p) => Math.abs(p[0] - x) < Math.abs(a[0] - x) ? p : a);
+    vs(S, L('aff'), [[x, 80], [x, (80 + y) / 2], end], 30, 22, LY);
+    S.sh(null, poly([[x - 14, 130], [x - 4, 150], [x - 12, 142]]), { fill: '#7E9A6F', line: LY.line, sw: 1.2 });
+    S.sh(null, poly([[x + 14, 130], [x + 4, 150], [x + 12, 142]]), { fill: '#7E9A6F', line: LY.line, sw: 1.2 });
     S.arrow(x, 108, 90, 13, '#F2EFE8');
   });
   vs(S, L('eff'), [[740, 712], [742, 820], [742, 930]], 36, 46, LY);
   vs(S, null, [[716, 712], [700, 800], [690, 900]], 14, 18, A); vs(S, null, [[766, 712], [790, 800], [800, 900]], 16, 20, V);
   S.arrow(742, 860, 90, 14, '#F2EFE8');
   [['node', 'cortex', [400, 640]], ['afferent', 'aff', [700, 110]], ['efferent', 'eff', [742, 860]], ['capsule', 'capsule', [330, 590]], ['subcapsular-sinus', 'ssin', [700, 222]], ['cortical-sinus', 'csin', [734, 400]],
-    ['cortex', 'cortex', [1090, 540]], ['medulla', 'medulla', [940, 560]], ['medullary-sinus', 'msin', [746, 600]], ['medullary-cord', 'mcord', [640, 580]], ['hilum', 'hilum', [742, 716]]].forEach(([id, k, h]) => S.pin(L(id), ['aff', 'eff'].includes(k) ? L(k) : k, h));
+    ['cortex', 'cortex', [1090, 540]], ['medulla', 'medulla', [940, 560]], ['medullary-sinus', 'msin', [746, 600]], ['medullary-cord', 'mcord', [640, 580]], ['hilum', 'hilum', [790, 715]]].forEach(([id, k, h]) => S.pin(L(id), ['aff', 'eff'].includes(k) ? L(k) : k, h));
 }
 plates.push({
   key: 'lymph-node-structure', moduleId: MOD, kind: 'tissue-schematic', lessons: ['lymph-node', 'lymph-vessels'], purpose: 'Lymph node in section: afferent vessels entering the convex side, subcapsular, cortical and medullary sinuses, and the efferent vessel leaving at the hilum.',
@@ -127,7 +149,7 @@ function spleen(S) {
   S.pin(L('marginal-zone'), 'mz', [880, 308]);
   S.pin(L('central-arteriole'), 'ca', [850, 470]);
   S.pin(L('splenic-sinusoids'), L('sins'), [1130, 520]);
-  S.pin(L('splenic-cords'), 'cords', [720, 380]);
+  S.pin(L('splenic-cords'), 'cords', [680, 370]);
   S.pin(L('red-pulp'), 'cords+'+L('sins'), [1250, 560]);
 }
 plates.push({
@@ -150,6 +172,8 @@ function thymus(S) {
   S.sh('thymus', sm([[210, 220], [290, 210], [305, 340], [280, 450], [230, 420], [196, 320]], true, 5), { fill: LIL.fill, line: LILD.line, sw: 1.8 });
   S.sh('thymus', sm([[410, 220], [330, 210], [315, 340], [340, 450], [390, 420], [424, 320]], true, 5), { fill: LIL.fill, line: LILD.line, sw: 1.8 });
   S.ln(null, 'M308 215L308 440', { color: LILD.line, w: 1.4, dash: '5 4' });
+  // Project the anterior sternum over (not behind) the thymus/great vessels.
+  S.sh(null, RR(312, 190, 36, 420, 14), { fill: '#E4D6BC', line: '#8B8168', sw: 1.4, op: .65 });
   S.pin(L('thymus'), 'thymus', [240, 340]);
   S.at('lobule');
   const o = sm([[700, 330], [800, 160], [1050, 90], [1270, 170], [1350, 380], [1300, 700], [1120, 860], [880, 850], [720, 700]], true, 6);
@@ -189,7 +213,7 @@ function tonsils(S) {
   S.sh(null, sm([[446, 396], [520, 380], [562, 398], [564, 500], [494, 506], [456, 470]], true, 4), { fill: '#DCE8EA', line: '#7E9AA3', sw: 1.8 });
   S.sh(null, sm([[494, 506], [564, 500], [566, 590], [488, 592], [482, 540]], true, 4), { fill: '#E3EDEE', line: '#7E9AA3', sw: 1.8 });
   S.sh(null, sm([[488, 592], [566, 590], [564, 706], [506, 706], [490, 650]], true, 4), { fill: '#D5E4E6', line: '#7E9AA3', sw: 1.8 });
-  S.sh('adenoid', sm([[540, 388], [514, 396], [506, 430], [524, 462], [556, 440], [560, 405]], true, 4), { fill: LIL.fill, line: LILD.line, sw: 1.8 });
+  S.sh('adenoid', sm([[540, 388], [514, 396], [506, 430], [524, 462], [564, 444], [564, 400]], true, 4), { fill: LIL.fill, line: LILD.line, sw: 1.8 });
   S.sh('lingual', sm([[432, 596], [452, 588], [472, 606], [468, 640], [440, 650], [428, 622]], true, 4), { fill: LIL.fill, line: LILD.line, sw: 1.8 });
   S.endT();
   S.pin(L('pharyngeal-tonsil'), 'adenoid', f([534, 428]));
@@ -203,10 +227,12 @@ function tonsils(S) {
   S.sh(null, sm([[764, 320], [796, 320], [802, 400], [780, 430], [758, 400]]), { fill: '#E0B7B0', line: '#9A6A66', sw: 1.4 });
   S.pin(L('palatine-tonsil'), 'pt', [680, 500]);
   S.at('structure');
-  S.sh('epi', rect(1030, 120, 370, 60), { fill: '#EBD6D0', line: '#9A6A66', sw: 1.4 });
-  [1100, 1215, 1320].forEach((x) => S.sh('epi', sm([[x - 24, 150], [x - 14, 300], [x - 4, 360], [x + 4, 360], [x + 14, 300], [x + 24, 150]], true, 4), { fill: '#EBD6D0', line: '#9A6A66', sw: 1.4 }));
   S.sh('tis', rect(1030, 170, 370, 700), { fill: LIL.fill, line: LILD.line, sw: 1.2 });
-  [1100, 1215, 1320].forEach((x) => S.sh('epi', sm([[x - 14, 150], [x - 6, 290], [x, 340], [x + 6, 290], [x + 14, 150]], true, 4), { fill: '#EAF0F1', line: '#9A6A66', sw: 1 }));
+  S.sh('epi', rect(1030, 120, 370, 60), { fill: '#EBD6D0', line: '#9A6A66', sw: 1.4 });
+  [1100, 1215, 1320].forEach((x) => {
+    S.sh('epi', sm([[x - 24, 150], [x - 14, 300], [x - 4, 360], [x + 4, 360], [x + 14, 300], [x + 24, 150]], false, 4), { fill: '#EBD6D0', line: '#9A6A66', sw: 1.4 });
+    S.sh(null, sm([[x - 14, 118], [x - 6, 290], [x, 340], [x + 6, 290], [x + 14, 118]], false, 4), { fill: '#EAF0F1', line: '#9A6A66', sw: 1 });
+  });
   [[1100, 520], [1230, 460], [1330, 600], [1160, 690], [1290, 770]].forEach(([x, y]) => { S.sh('fol', circ(x, y, 56), { fill: LILD.fill, line: LILD.line, sw: 1.6 }); S.sh('gc', circ(x, y, 30), { fill: LILL.fill, line: LILD.line, sw: 1.2 }); });
   S.sh(null, RR(1030, 850, 370, 30, 6), { fill: CRM.fill, line: CRM.line, sw: 1.4 });
   S.pin(L('tonsil'), 'epi', [1070, 165]);
@@ -231,7 +257,7 @@ function gut(S) {
   vs(S, L('itrunk'), [[330, 480], [250, 400], [190, 300], [170, 120]], 24, 22, LY);
   [[300, 440, 220, 380], [380, 470, 280, 420], [250, 420, 200, 330]].forEach(([x0, y0, x1, y1]) => S.ln(null, `M${x0} ${y0}L${x1} ${y1}`, { color: LY.line, w: 4 }));
   S.arrow(172, 220, -90, 14, '#F2EFE8');
-  const ile = [[100, 300], [300, 260], [500, 300], [600, 430]];
+  const ile = [[100, 300], [300, 260], [500, 300], [605, 500]];
   S.sh(null, tube(ile, 74, 74), { fill: '#E8D6C8', line: '#A8917C', sw: 1.8 });
   S.sh('cecum', sm([[540, 470], [680, 480], [720, 620], [660, 770], [560, 770], [520, 620]], true, 6), { fill: '#E8D6C8', line: '#A8917C', sw: 1.8 });
   S.sh(null, tube([[700, 560], [740, 400], [740, 130]], 66, 66), { fill: '#E8D6C8', line: '#A8917C', sw: 1.8 });
@@ -242,13 +268,25 @@ function gut(S) {
   S.pin(L('intestinal-trunk'), L('itrunk'), [178, 220]);
   S.at('villus');
   S.sh(null, RR(890, 60, 510, 880, 16), { fill: '#EFE9E0', line: '#DCD3C6', sw: 1.2 });
+  // Fit the whole villus above a separate regional wall/Peyer-patch detail.
+  // The lacteal drains to a basal collector, not into a lymphoid aggregate.
+  const scale = 59 / 75;
+  S.beginT(1155 * (1 - scale), 100 - 130 * scale, scale);
   S.sh(null, sm([[1010, 880], [1010, 380], [1040, 190], [1155, 130], [1270, 190], [1300, 380], [1300, 880]]), { fill: '#EFD9C7', line: '#B8957C', sw: 2.2 });
   S.sh(null, sm([[1040, 880], [1040, 390], [1066, 224], [1155, 168], [1244, 224], [1270, 390], [1270, 880]]), { fill: '#EBD3CC', line: '#A8817C', sw: 1.4 });
   S.sh(null, sm([[1112, 880], [1108, 430], [1130, 260], [1155, 230], [1180, 260], [1202, 430], [1198, 880]]), { fill: LY.fill, line: LY.line, sw: 1.8 });
   S.sh('lacteal', sm([[1124, 880], [1122, 430], [1140, 272], [1155, 250], [1170, 272], [1188, 430], [1186, 880]]), { fill: '#CFE0C0', line: LY.line, sw: 1.8 });
   [-1, 1].forEach((s) => vs(S, null, [[1155 + s * 82, 880], [1155 + s * 90, 560], [1155 + s * 80, 340], [1155 + s * 40, 230]], 14, 12, CAP));
-  S.arrow(1155, 640, -90, 14, '#8A949B');
+  S.arrow(1155, 640, 90, 14, '#8A949B');
+  S.endT();
+  vs(S, null, [[1155, 690], [1155, 720], [1250, 720], [1380, 720]], 16, 16, LY);
+  S.arrow(1320, 720, 0, 10, LY.line);
+  S.sh(null, RR(910, 756, 490, 184, 8), { fill: '#EFD9C7', line: '#B8957C', sw: 1.2 });
   S.sh('pey2', sm([[930, 930], [960, 800], [1090, 770], [1220, 790], [1380, 780], [1400, 930]]), { fill: LIL.fill, line: LILD.line, sw: 1.6 });
+  [1020, 1120, 1280, 1360].forEach(x => {
+    S.sh('pey2', circ(x, 865, 32), { fill: LILD.fill, line: LILD.line, sw: 1.1 });
+    S.sh('pey2', circ(x, 865, 17), { fill: LILL.fill, line: LILD.line, sw: .8 });
+  });
   S.pin(L('lacteal'), 'lacteal', [1155, 520]);
   S.pin(L('peyers'), 'pey2', [1200, 880]);
 }
@@ -259,3 +297,22 @@ plates.push({
     'Izquierda: intestino delgado terminal (íleon) uniéndose al ciego del intestino grueso, vista anterior, derecha del paciente a la izquierda; el contexto está en crema. Las placas de Peyer son placas ovales de tejido linfoide en la pared del íleon que muestrean el contenido intestinal. El apéndice cuelga del ciego y también tiene una pared rica en tejido linfoide. La linfa de la pared intestinal recorre el mesenterio hasta el tronco intestinal (verde salvia), que la lleva hasta la cisterna del quilo. Derecha: una vellosidad (pliegue digitiforme de la mucosa del intestino delgado) en corte: el capilar linfático central de extremo ciego, el quilífero, recoge las grasas absorbidas; la red de capilares sanguíneos (malva) a su lado capta casi todos los demás nutrientes. El tejido linfoide de Peyer queda debajo, en la base de la pared. Esquemático; la vellosidad está muy ampliada.'],
   orientation: ['left: anterior view, patient right at viewer left; right: villus section, tip at top', 'izquierda: vista anterior, derecha del paciente a la izquierda; derecha: corte de vellosidad, punta arriba'], draw: gut,
 });
+
+const correctionNotes = {
+  'lymph-overview': [
+    'Peripheral collecting routes are projected schematically through the limb node groups toward the trunks. Arrows lie on the depicted routes; the collecting-vessel valve leaflets leave an open central flow path.',
+    'Las rutas colectoras periféricas se proyectan esquemáticamente por los grupos ganglionares de las extremidades hacia los troncos. Las flechas están en las rutas dibujadas; las valvas dejan abierto un paso central.'],
+  'spleen-pulp': [
+    'The left panel is a schematic cut face exposing pulp, not the intact external surface. Neither panel is a real specimen image.',
+    'El panel izquierdo es un corte esquemático que expone la pulpa, no la superficie externa intacta. Ningún panel es una imagen de una muestra real.'],
+  'thymus-lobule': [
+    'The translucent anterior sternum is projected over the thymus; the thymus remains posterior to it and anterior to the great vessels.',
+    'El esternón anterior translúcido se proyecta sobre el timo; este permanece detrás del esternón y delante de los grandes vasos.'],
+  'tonsil-map-structure': [
+    'The crypt cavities open at the surface and retain a distinct epithelial lining within the underlying lymphoid tissue.',
+    'Las cavidades de las criptas se abren en la superficie y conservan un revestimiento epitelial distinto dentro del tejido linfoide subyacente.'],
+  'gut-lymphoid-lacteal': [
+    'Lacteal lymph flows down from the blind villus tip to the basal collecting route, then toward larger intestinal trunks. The separate lower wall detail shows an aggregate of lymphoid follicles (a Peyer patch), not a structure inside the villus or a termination of its lacteal.',
+    'La linfa del vaso quilífero desciende desde el extremo ciego de la vellosidad hasta el colector basal y luego hacia los troncos intestinales. El detalle inferior separado muestra un agregado de folículos linfoides (placa de Peyer), no una estructura dentro de la vellosidad ni la terminación de su vaso quilífero.'],
+};
+for (const p of plates) if (correctionNotes[p.key]) p.desc = p.desc.map((text, i) => `${text} ${correctionNotes[p.key][i]}`);

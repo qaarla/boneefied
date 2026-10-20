@@ -1,0 +1,24 @@
+{
+  "rights": "Original Boneefied project vector artwork; all rights reserved. Schematics, not photomicrographs.",
+  "origin": "Mitosis: original vectors from anatomical facts, not traced. Cavities: isolated existing Boneefied foundational original sagittal vector; no imported art.",
+  "factualReferences": [
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/3-5-cell-growth-and-division",
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology"
+  ],
+  "records": [
+    {
+      "id": "asset-original-mitosis-stages",
+      "svgPath": "assets/images/anatomy/foundations-corrections/original-mitosis-stages.svg",
+      "pngPath": "assets/images/anatomy/original-mitosis-stages.png",
+      "svgSha256": "4a81756c300ef063bc891b9ecad45e57c432f0da8f1b7c55f4f50688fc89164f",
+      "pngSha256": "6d36af3f24d010dde5f70aa3f413e0a9653116fed578517853b53edf49f7d42a"
+    },
+    {
+      "id": "asset-original-body-cavities",
+      "svgPath": "assets/images/anatomy/foundations-corrections/original-body-cavities.svg",
+      "pngPath": "assets/images/anatomy/original-body-cavities.png",
+      "svgSha256": "a5414bc9cdff9b7b63dc59578fb75ea0d4156419947150737196ba081e314e70",
+      "pngSha256": "b423fe932bf91d77f0f5f4f982bda8a4581864c6a64eb3b9216a1deeca5df0bb"
+    }
+  ]
+}

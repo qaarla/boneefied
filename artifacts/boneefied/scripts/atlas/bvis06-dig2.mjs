@@ -111,12 +111,17 @@ function wall(S) {
   const cx = 480, cy = 500, lay = (id, r, f, l, sw = 1.4) => S.sh(id, circ(cx, cy, r), { fill: f, line: l, sw });
   lay(D('serosa'), 372, '#EAD9B6', '#A59A82'); lay(D('longitudinal-muscle-layer'), 354, '#C9958B', '#8A524D'); lay(D('circular-muscle-layer'), 318, '#D6A59B', '#8A524D'); lay(D('submucosa'), 280, '#EADFC8', '#A59A82');
   lay(D('muscularis-mucosae'), 228, '#C4857E', '#8A524D', 1); lay(D('lamina-propria'), 217, '#F0DCD2', '#B58E82', 1); lay(D('mucosa'), 190, '#E3B4AA', '#9A6A66', 1.4); lay(null, 178, LUM, '#B49C92', 1.4);
-  for (let i = 0; i < 36; i++) { const a = (i * 10 * Math.PI) / 180; S.ln(null, `M${cx + 322 * Math.cos(a)} ${cy + 322 * Math.sin(a)}L${cx + 340 * Math.cos(a + 0.1)} ${cy + 340 * Math.sin(a + 0.1)}`, { color: '#A8736C', w: 2 }); }
+  // Transverse gut section: longitudinal fibres are cut across; circular fibres lie in-plane.
+  for (let i = 0; i < 36; i++) {
+    const a = (i * 10 * Math.PI) / 180;
+    S.sh(D('longitudinal-muscle-layer'), E(cx + 336 * Math.cos(a), cy + 336 * Math.sin(a), 6, 5), { fill: '#BF8479', line: '#8A524D', sw: 1 });
+    S.ln(D('circular-muscle-layer'), `M${cx + 300 * Math.cos(a - .055)} ${cy + 300 * Math.sin(a - .055)}A300 300 0 0 1 ${cx + 300 * Math.cos(a + .055)} ${cy + 300 * Math.sin(a + .055)}`, { color: '#A8736C', w: 2 });
+  }
   [30, 130, 220, 300].forEach((d) => { const a = (d * Math.PI) / 180; S.sh(null, E(cx + 250 * Math.cos(a), cy + 250 * Math.sin(a), 11, 11), { fill: A.fill, line: A.line, sw: 1.2 }); });
   S.pin(D('serosa'), D('serosa'), [cx + 363, cy]); S.pin(D('longitudinal-muscle-layer'), D('longitudinal-muscle-layer'), [cx, cy - 336]); S.pin(D('circular-muscle-layer'), D('circular-muscle-layer'), [cx - 298, cy]);
   S.pin(D('submucosa'), D('submucosa'), [cx, cy + 262]); S.pin(D('muscularis-mucosae'), D('muscularis-mucosae'), [cx + 223, cy - 20]); S.pin(D('lamina-propria'), D('lamina-propria'), [cx - 204, cy - 20]); S.pin(D('mucosa'), D('mucosa'), [cx, cy - 184]);
   S.pin(D('muscularis-externa'), D('circular-muscle-layer') + '+' + D('longitudinal-muscle-layer'), [cx, cy - 336 + 18]);
-  // longitudinal block: circular fibres run along the cut, longitudinal fibres are cut across
+  // Longitudinal gut section: circular fibres are cut across; longitudinal fibres lie in-plane.
   S.at('layers');
   const x0 = 980, w = 410;
   S.sh('B-mucosa', rect(x0, 190, w, 26), { fill: '#E3B4AA', line: '#9A6A66', sw: 1.2 });
@@ -126,8 +131,8 @@ function wall(S) {
   S.sh('B-circular-muscle-layer', rect(x0, 498, w, 110), { fill: '#D6A59B', line: '#8A524D', sw: 1.2 });
   S.sh('B-longitudinal-muscle-layer', rect(x0, 608, w, 110), { fill: '#C9958B', line: '#8A524D', sw: 1.2 });
   S.sh('B-serosa', rect(x0, 718, w, 34), { fill: '#EAD9B6', line: '#A59A82', sw: 1.2 });
-  for (let y = 520; y < 600; y += 16) S.ln(null, `M${x0 + 10} ${y}Q${x0 + 200} ${y - 6} ${x0 + w - 10} ${y}`, { color: '#A8736C', w: 2 });
-  for (let x = x0 + 24; x < x0 + w - 10; x += 34) for (let y = 636; y < 704; y += 26) S.sh(null, E(x, y, 11, 8), { fill: '#BF8479', line: '#8A524D', sw: 1 });
+  for (let x = x0 + 24; x < x0 + w - 10; x += 34) for (let y = 524; y < 600; y += 28) S.sh('B-circular-muscle-layer', E(x, y, 11, 8), { fill: '#BF8479', line: '#8A524D', sw: 1 });
+  for (let y = 630; y < 710; y += 16) S.ln('B-longitudinal-muscle-layer', `M${x0 + 10} ${y}Q${x0 + 200} ${y - 6} ${x0 + w - 10} ${y}`, { color: '#A8736C', w: 2 });
   S.sh(null, E(1180, 420, 26, 14), { fill: A.fill, line: A.line, sw: 1.2 }); S.sh(null, E(1300, 440, 22, 12), { fill: V.fill, line: V.line, sw: 1.2 });
   S.pin(D('mucosa'), 'B-mucosa', [1180, 203]); S.pin(D('lamina-propria'), 'B-lamina-propria', [1180, 266]); S.pin(D('muscularis-mucosae'), 'B-muscularis-mucosae', [1180, 327]); S.pin(D('submucosa'), 'B-submucosa', [1180, 380]);
   S.pin(D('circular-muscle-layer'), 'B-circular-muscle-layer', [1180, 552]); S.pin(D('muscularis-externa'), 'B-circular-muscle-layer+B-longitudinal-muscle-layer', [1180, 604]); S.pin(D('longitudinal-muscle-layer'), 'B-longitudinal-muscle-layer', [1180, 660]); S.pin(D('serosa'), 'B-serosa', [1180, 735]);
@@ -135,8 +140,8 @@ function wall(S) {
 plates.push({
   key: 'digestive-wall-layers', moduleId: MOD, kind: 'tissue-schematic', lessons: ['digestive-wall'], purpose: 'The four-layer plan of the gut wall in cross-section and in longitudinal section.',
   title: ['Layers of the digestive wall', 'Capas de la pared digestiva'],
-  desc: ['Left: schematic transverse section of a generic gut tube, lumen at the centre. From the lumen outward: mucosa (epithelium, lamina propria and a thin muscularis mucosae), submucosa with larger vessels, muscularis externa (the combined inner circular and outer longitudinal muscle layers) and the serosa, where the tube is covered by peritoneum. Right: the same layers in a longitudinal section: circular fibres are cut lengthwise in the circular layer, whereas longitudinal fibres are cut across. Simplified: villi, glands and nerve plexuses are omitted; layer thickness varies by organ. Schematic, not a photomicrograph.',
-    'Izquierda: corte transversal esquemático de un tubo digestivo genérico, luz en el centro. De la luz hacia fuera: mucosa (epitelio, lámina propia y una delgada muscular de la mucosa), submucosa con vasos mayores, muscular externa (capa circular interna y longitudinal externa) y serosa, donde el tubo está cubierto por peritoneo. Derecha: las mismas capas en corte longitudinal: las fibras de la capa circular se cortan a lo largo y las longitudinales se cortan transversalmente. Simplificado: se omiten vellosidades, glándulas y plexos nerviosos; el grosor varía según el órgano. Esquema, no fotomicrografía.'],
+  desc: ['Left: schematic transverse section of a generic gut tube, lumen at the centre. From the lumen outward: mucosa (epithelium, lamina propria and a thin muscularis mucosae), submucosa with larger vessels, muscularis externa (the combined inner circular and outer longitudinal muscle layers) and the serosa, where the tube is covered by peritoneum. In this transverse section, longitudinal muscle fibres are cut across and circular fibres follow the circumference. Right: the same layers in a longitudinal section: circular fibres are cut across (small profiles), whereas longitudinal fibres are cut lengthwise (parallel lines). Simplified: villi, glands and nerve plexuses are omitted; layer thickness varies by organ. Schematic, not a photomicrograph.',
+    'Izquierda: corte transversal esquemático de un tubo digestivo genérico, luz en el centro. De la luz hacia fuera: mucosa (epitelio, lámina propia y una delgada muscular de la mucosa), submucosa con vasos mayores, muscular externa (capa circular interna y longitudinal externa) y serosa, donde el tubo está cubierto por peritoneo. En este corte transversal, las fibras longitudinales se cortan transversalmente y las circulares siguen la circunferencia. Derecha: las mismas capas en corte longitudinal: las fibras circulares se cortan transversalmente (perfiles pequeños), mientras que las longitudinales se cortan a lo largo (líneas paralelas). Simplificado: se omiten vellosidades, glándulas y plexos nerviosos; el grosor varía según el órgano. Esquema, no fotomicrografía.'],
   orientation: ['left: transverse section, lumen at centre; right: longitudinal section, lumen above', 'izquierda: corte transversal, luz en el centro; derecha: corte longitudinal, luz arriba'], draw: wall,
 });
 

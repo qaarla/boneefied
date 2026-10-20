@@ -242,6 +242,10 @@ add({ key: 'atlas-axis', file: 'skeletal-atlas-08-atlas-axis', purpose: 'C1 atla
       P.s('superior-articular-facet', ell(c + s * 150, 440, 30, 62, s * 10), 'art', i ? { pin: false } : {});
       P.s('transverse-foramen', ell(c + s * 224, 430, 14, 14), 'hole', i ? { pin: false } : { r: 0.012 });
       P.u(lm([[c + s * 200, 400, 18], [c + s * 260, 410, 12]]), 'ax');
+      // The opening is enclosed by the transverse process, not suspended
+      // below its border. Repaint the opening above the continuous bony boss.
+      P.u(ell(c + s * 224, 430, 28, 27), 'ax');
+      P.u(ell(c + s * 224, 430, 14, 14), 'hole');
     });
     const a = 1060;
     P.s('axis-c2', pg([[a - 60, 330], [a - 38, 312], [a - 18, 330], [a - 14, 480], [a + 90, 520], [a + 100, 700], [a + 70, 760], [a - 100, 760], [a - 120, 640], [a - 90, 520], [a - 62, 480]]), 'ax', { at: [0.1, 0.9], r: 0.014 });
@@ -250,6 +254,8 @@ add({ key: 'atlas-axis', file: 'skeletal-atlas-08-atlas-axis', purpose: 'C1 atla
     P.s('spinous-process', lm([[a + 80, 580, 34], [a + 190, 660, 22], [a + 270, 700, 14]]), 'ap', { at: [0.7, 0.5] });
     P.u(pg([[a + 30, 480], [a + 130, 480], [a + 140, 540], [a + 40, 560]]), 'art');
     P.s('superior-articular-facet', ell(a + 60, 505, 36, 16, 0), 'art', { pin: false });
+    // Inferior facet belongs to a continuous articular process of C2.
+    P.u(lm([[a + 50, 742, 25], [a + 50, 786, 24]]), 'ax');
     P.s('inferior-articular-facet', ell(a + 50, 800, 34, 20), 'art', { r: 0.014 });
   } });
 
@@ -286,12 +292,15 @@ add({ key: 'rib-detail', file: 'skeletal-atlas-10-rib-detail', purpose: 'rib hea
     P.panel(60, 90, 700, 820); P.panel(790, 90, 600, 820);
     P.s('vertebral-body', pg([[110, 250], [260, 250], [250, 760], [110, 760]], false), 'ax', { at: [0.4, 0.5] });
     P.s('superior-costal-facet', ell(262, 360, 14, 34), 'art', { r: 0.012 });
-    P.s('transverse-process', lm([[250, 520, 26], [330, 540, 22], [400, 560, 16]]), 'ap');
+    P.s('transverse-process', lm([[250, 520, 26], [330, 500, 22], [400, 480, 16]]), 'ap', { anchor: [330, 500] });
     P.u(lm([[300, 360, 18], [420, 380, 20], [560, 470, 22], [650, 640, 20], [700, 830, 16]]), 'bone');
     P.s('rib-head', ell(300, 360, 34, 34), 'bones', { r: 0.016 });
     P.u(lm([[330, 368, 16], [390, 385, 18]]), 'bone');
+    P.u(lm([[395, 390, 19], [420, 420, 20]]), 'bone');
     P.s('rib-tubercle', ell(420, 430, 28, 28), 'bones', { r: 0.016 });
-    P.u(ell(412, 540, 22, 20), 'art');
+    // The tubercle meets the transverse-process facet; it is not a floating
+    // landmark separated from both the rib neck and its vertebral partner.
+    P.u(ell(412, 462, 22, 12), 'art');
     P.u(lm([[860, 300, 40], [1000, 330, 44], [1160, 450, 46], [1260, 650, 44], [1310, 840, 40]]), 'bone');
     P.s('costal-groove', lm([[870, 335, 11], [1010, 365, 12], [1170, 485, 12], [1262, 680, 12], [1306, 840, 10]]), 'aps', { r: 0.016, at: [0.5, 0.5] });
   } });
@@ -326,7 +335,6 @@ add({ key: 'pectoral-girdle', file: 'skeletal-atlas-12-pectoral-girdle', purpose
     P.s('manubrium', pg([[665, 245], [785, 245], [765, 400], [685, 400]]), 'ax');
     P.u(lm(mp([[690, 262, 14], [600, 250, 11], [520, 262, 10], [440, 284, 9], [395, 290, 10]]).map((p) => p)), 'ap');
     P.s('clavicle', lm([[690, 262, 14], [600, 250, 11], [520, 262, 10], [440, 284, 9], [395, 290, 10]]), 'ap', { at: [0.5, 0.3] });
-    P.u(lm([[1010, 262, 10], [1065, 250, 10], [1180, 262, 9], [1260, 284, 9]]), 'ap');
     P.s('acromion', ell(345, 300, 38, 20), 'aps');
     P.s('acromioclavicular-ligament', lm([[410, 280, 7], [370, 292, 7]]), 'lig', { r: 0.014 });
     P.s('coracoid-process', lm([[445, 352, 15], [410, 345, 13], [385, 372, 12]]), 'aps');
@@ -456,11 +464,23 @@ add({ key: 'leg-tibia-fibula', file: 'skeletal-atlas-18-leg-tibia-fibula', purpo
     P.u(ell(430, 200, 24, 30), 'bones');
     P.s('fibula', lm([[428, 230, 12], [425, 500, 11], [420, 760, 13], [418, 880, 18]]), 'ap', { at: [0.5, 0.45] });
     P.s('tibia', lm([[535, 190, 62], [542, 330, 34], [545, 600, 26], [550, 800, 34]]), 'ap', { at: [0.5, 0.55] });
+    // Distal tibial plafond and medial malleolus form a continuous socket.
+    P.u(pg([[516, 760], [584, 760], [589, 808], [604, 835],
+      [626, 900], [604, 910], [580, 850], [456, 850],
+      [453, 835], [513, 820]], false), 'ap');
     P.s('tibial-tuberosity', ell(545, 320, 20, 28), 'aps', { r: 0.014 });
     P.s('medial-malleolus', lm([[585, 840, 22], [610, 900, 16]]), 'aps', { r: 0.014 });
     P.s('lateral-malleolus', ell(420, 900, 20, 32), 'aps', { r: 0.014 });
-    P.s('ankle-mortise', pg([[462, 860], [540, 860], [545, 920], [470, 925]]), 'art', { r: 0.014 });
+    // The blue support below is the talar articular surface, not the mortise.
+    // Target the narrow socket space immediately under the tibial plafond.
+    P.s('ankle-mortise', pg([[456, 851], [556, 851], [556, 859], [456, 859]], false), 'fluid', { r: 0.014, anchor: [504, 855] });
+    P.u(pg([[462, 860], [540, 860], [545, 920], [470, 925]]), 'art');
     const x = 1120;
+    // Superior-view articular surfaces rest on one proximal tibia. The small
+    // anterior tuberosity is continuous with that bone, not a floating patella.
+    P.u(pg([[x - 200, 420], [x - 60, 380], [x - 28, 330],
+      [x + 28, 330], [x + 60, 380], [x + 200, 420],
+      [x + 210, 630], [x + 60, 660], [x - 200, 630]]), 'ap');
     P.s('tibial-plateau', pg([[x - 200, 420], [x - 40, 380], [x - 20, 520], [x - 70, 640], [x - 200, 620]]), 'art', { at: [0.4, 0.5], r: 0.02 });
     P.u(pg([[x + 40, 380], [x + 200, 420], [x + 190, 620], [x + 70, 640], [x + 20, 520]]), 'art');
     P.s('intercondylar-eminence', lm([[x - 20, 440, 14], [x, 530, 14], [x + 10, 600, 12]]), 'aps', { r: 0.014 });
@@ -490,20 +510,32 @@ add({ key: 'synovial-joint', file: 'skeletal-atlas-20-synovial-joint', purpose: 
   desc: ['A diagrammatic synovial joint cut lengthwise, not tied to any one region. Cartilage-capped bone ends bound a joint cavity holding synovial fluid; the synovial membrane lines the fibrous capsule; an external ligament crosses the joint.', 'Una articulación sinovial esquemática cortada a lo largo, sin relación con una región concreta. Los extremos óseos cubiertos de cartílago delimitan una cavidad articular con líquido sinovial; la membrana sinovial reviste la cápsula fibrosa; un ligamento externo cruza la articulación.'],
   orientation: 'schematic lengthwise section; proximal bone at top; no left-right meaning',
   draw(P) {
-    P.u(lm([[725, 60, 120], [725, 330, 110]]), 'ap');
-    P.u(pg([[560, 330], [640, 400], [725, 420], [810, 400], [890, 330], [850, 300], [600, 300]]), 'ap');
-    P.u(lm([[725, 940, 110], [725, 650, 110]]), 'ap');
-    P.u(pg([[600, 650], [690, 585], [760, 585], [850, 650]]), 'ap');
-    P.s('synovial-joint', ell(725, 500, 330, 220), 'fluid', { fill: 'none', line: 'none', pin: true, at: [0.1, 0.5], r: 0.02 });
-    P.s('fibrous-capsule', lm([[560, 330, 14], [520, 420, 14], [530, 500, 14], [520, 580, 14], [570, 660, 14]]), 'cap', { at: [0.5, 0.4], r: 0.014 });
-    P.u(lm([[890, 330, 14], [930, 420, 14], [920, 500, 14], [930, 580, 14], [880, 660, 14]]), 'cap');
-    P.s('synovial-membrane', lm([[600, 345, 5], [575, 420, 5], [582, 500, 5], [575, 580, 5], [615, 640, 5]]), 'lig', { at: [0.5, 0.5], r: 0.012 });
-    P.u(lm([[850, 345, 5], [875, 420, 5], [868, 500, 5], [875, 580, 5], [835, 640, 5]]), 'lig');
-    P.s('articular-cartilage', pg([[610, 355], [725, 435], [840, 355], [850, 370], [725, 455], [600, 370]]), 'art', { r: 0.014 });
-    P.u(pg([[620, 650], [700, 598], [750, 598], [830, 650], [830, 635], [750, 580], [700, 580], [620, 635]]), 'art');
-    P.s('joint-cavity', pg([[640, 470], [725, 490], [810, 470], [820, 540], [725, 560], [630, 540]]), 'hole', { fill: '#C6D6DC', r: 0.016 });
-    P.s('synovial-fluid', ell(725, 520, 40, 14), 'fluid', { r: 0.012 });
-    P.s('ligament', lm([[570, 250, 12], [560, 400, 10], [570, 700, 12]]), 'lig', { at: [0.5, 0.2], r: 0.014 });
+    // One continuous enclosed fluid space, not a detached central "puddle".
+    P.s('synovial-joint', pg([[590, 350], [860, 350], [900, 420], [900, 580],
+      [835, 650], [615, 650], [550, 580], [550, 420]]), 'fluid', { anchor: [725, 490], r: 0.02 });
+    P.u(pg([[650, 80], [800, 80], [800, 300], [870, 335], [850, 360],
+      [800, 410], [725, 435], [650, 410], [600, 360], [580, 335], [650, 300]]), 'ap');
+    P.u(pg([[600, 650], [650, 610], [725, 585], [800, 610], [850, 650],
+      [800, 690], [800, 920], [650, 920], [650, 690]]), 'ap');
+    P.s('fibrous-capsule', lm([[590, 330, 16], [535, 410, 16], [530, 500, 16],
+      [540, 585, 16], [610, 660, 16]]), 'cap', { anchor: [530, 500], r: 0.014 });
+    P.u(lm([[860, 330, 16], [915, 410, 16], [920, 500, 16],
+      [910, 585, 16], [840, 660, 16]]), 'cap');
+    // The membrane touches the inner capsule face; it does not float away.
+    P.s('synovial-membrane', lm([[607, 350, 5], [556, 415, 5], [551, 500, 5],
+      [561, 580, 5], [621, 640, 5]]), 'lig', { anchor: [551, 500], r: 0.012 });
+    P.u(lm([[843, 350, 5], [894, 415, 5], [899, 500, 5],
+      [889, 580, 5], [829, 640, 5]]), 'lig');
+    // Shared bone/cartilage contour, with no white gap between their surfaces.
+    P.s('articular-cartilage', pg([[600, 360], [650, 410], [725, 435], [800, 410], [850, 360],
+      [860, 375], [800, 425], [725, 450], [650, 425], [590, 375]]), 'art', { anchor: [725, 437], r: 0.014 });
+    P.u(pg([[590, 635], [650, 595], [725, 570], [800, 595], [860, 635],
+      [850, 650], [800, 610], [725, 585], [650, 610], [600, 650]]), 'art');
+    // These targets identify the space and its contents, not separate organs.
+    P.s('joint-cavity', ell(685, 520, 40, 25), 'fluid', { fill: 'none', line: 'none', anchor: [685, 520], r: 0.016 });
+    P.s('synovial-fluid', ell(760, 535, 22, 10), 'fluid', { fill: 'none', line: 'none', anchor: [760, 535], r: 0.012 });
+    P.s('ligament', lm([[645, 270, 16], [515, 360, 13], [495, 470, 12],
+      [520, 590, 13], [650, 720, 16]]), 'lig', { anchor: [495, 470], r: 0.014 });
   } });
 
 /* 21 shoulder */
@@ -515,25 +547,26 @@ add({ key: 'shoulder-joint', file: 'skeletal-atlas-21-shoulder-joint', purpose: 
     P.s('scapula', pg([[640, 380], [700, 330], [900, 300], [950, 520], [880, 800], [760, 700], [670, 590]]), 'aps', { at: [0.65, 0.6] });
     P.u(lm([[470, 520, 40], [430, 700, 30], [410, 900, 28]]), 'ap');
     P.s('greater-tubercle', ell(480, 440, 34, 40), 'aps');
-    P.s('humeral-head', ell(560, 480, 72, 76), 'ap', { at: [0.4, 0.5] });
+    P.s('humeral-head', ell(540, 480, 72, 76), 'ap', { at: [0.4, 0.5] });
     P.s('glenoid-cavity', ell(650, 480, 22, 60), 'art');
     P.s('shoulder-joint', ell(618, 480, 7, 58), 'hole', { r: 0.014 });
     P.s('glenohumeral-ligaments', lm([[650, 425, 10], [600, 405, 10], [560, 425, 10]]), 'lig', { r: 0.014 });
     P.u(lm([[650, 540, 10], [600, 552, 10], [560, 532, 10]]), 'lig');
     P.s('acromion', lm([[790, 310, 16], [680, 285, 14], [560, 290, 13], [500, 335, 12]]), 'aps');
     P.s('coracoid-process', lm([[700, 380, 16], [650, 350, 14], [605, 372, 12]]), 'aps');
-    P.s('clavicle', lm([[520, 292, 10], [700, 250, 9], [880, 230, 9], [1050, 250, 9], [1150, 295, 9]]), 'ap', { at: [0.7, 0.4] });
+    P.s('clavicle', lm([[520, 292, 10], [700, 250, 9], [880, 230, 9], [1050, 250, 9], [1150, 295, 9]]), 'ap', { anchor: [880, 230] });
     P.s('acromioclavicular-ligament', lm([[520, 296, 10], [565, 288, 10]]), 'lig', { r: 0.014 });
   } });
 
 /* 22 knee */
 const kneeLeg = (P, dx, withPatella) => {
   const X = (x) => x + dx;
-  P.u(lm([[X(1050), 60, 70], [X(1050), 250, 75]]), 'ap');
+  P.u(lm([[X(1050), 120, 60], [X(1050), 280, 65], [X(1050), 370, 80]]), 'ap');
   P.u(lm([[X(930), 600, 16], [X(930), 900, 14]]), 'ap');
   P.u(lm([[X(1050), 560, 60], [X(1050), 900, 45]]), 'ap');
   P.u(ell(X(930), 560, 28, 38), 'bones');
   P.u(pg([[X(930), 500], [X(1170), 500], [X(1190), 545], [X(920), 545]]), 'ap');
+  P.u(ell(X(1050), 500, 120, 12), 'art');
 };
 add({ key: 'knee-joint', file: 'skeletal-atlas-22-knee-joint', purpose: 'right knee: anterior surface ligaments and deep cruciate layout',
   title: ['Right knee: anterior layer (left) and deep cruciates, patella omitted (right)', 'Rodilla derecha: capa anterior (izquierda) y cruzados profundos, sin rótula (derecha)'],
@@ -544,21 +577,28 @@ add({ key: 'knee-joint', file: 'skeletal-atlas-22-knee-joint', purpose: 'right k
     const A = -650;
     // panel A
     kneeLeg(P, A, true);
-    P.u(ell(A + 990, 330, 70, 80), 'art'); P.u(ell(A + 1110, 330, 70, 80), 'art');
+    P.u(ell(A + 990, 390, 70, 80), 'ap'); P.u(ell(A + 1110, 390, 70, 80), 'ap');
+    P.u(ell(A + 990, 445, 58, 25), 'art'); P.u(ell(A + 1110, 445, 58, 25), 'art');
+    // Joint space is behind, not painted across the anterior patellar ligament.
+    P.u(ell(400, 480, 120, 10), 'hole');
     P.s('patella', ell(400, 345, 52, 62), 'bones', { r: 0.02 });
     P.s('patellar-ligament', lm([[400, 405, 20], [400, 500, 17], [402, 600, 22]]), 'lig', { r: 0.014 });
     P.s('tibial-tuberosity', ell(402, 640, 28, 26), 'aps', { r: 0.014 });
     P.s('lcl', lm([[A + 925, 350, 8], [A + 925, 450, 8], [A + 930, 545, 8]]), 'lig', { r: 0.012 });
-    P.s('mcl', lm([[A + 1175, 360, 11], [A + 1180, 500, 11], [A + 1160, 640, 11]]), 'lig', { r: 0.014 });
-    P.s('knee-joint', ell(400, 480, 120, 10), 'hole', { r: 0.02 });
+    P.s('mcl', lm([[A + 1175, 360, 11], [A + 1170, 480, 11], [A + 1105, 620, 12]]), 'lig', { anchor: [A + 1170, 480], r: 0.014 });
+    P.s('knee-joint', ell(400, 480, 120, 10), 'hole', { fill: 'none', line: 'none', anchor: [490, 480], r: 0.02 });
     // panel B
     kneeLeg(P, 0, false);
-    P.s('femoral-condyles', ell(990, 330, 70, 80), 'art', { at: [0.3, 0.6], r: 0.02 }); P.u(ell(1110, 330, 70, 80), 'art');
+    P.s('femoral-condyles', ell(990, 390, 70, 80), 'ap', { anchor: [962, 346], r: 0.02 }); P.u(ell(1110, 390, 70, 80), 'ap');
+    P.u(ell(990, 445, 58, 25), 'art'); P.u(ell(1110, 445, 58, 25), 'art');
+    // Patella removed: expose the intercondylar notch and its bony walls.
+    P.u(pg([[1040, 345], [1060, 345], [1080, 430], [1075, 470],
+      [1025, 470], [1020, 430]]), 'orb', { fill: '#F3F1EA' });
     P.s('intercondylar-eminence', ell(1050, 493, 20, 16), 'aps', { r: 0.014 });
     P.u(lm([[1075, 360, 9], [1055, 440, 10], [1035, 505, 9]]), 'lig'); // PCL behind
     P.s('pcl', lm([[1077, 352, 8], [1062, 430, 9], [1036, 500, 8]]), 'lig', { r: 0.012, anchor: [1077, 352] });
     P.s('acl', lm([[1024, 350, 8], [1042, 430, 9], [1068, 498, 8]]), 'lig', { r: 0.012, anchor: [1024, 350] });
-    P.u(lm([[925, 350, 8], [925, 450, 8], [930, 545, 8]]), 'lig'); P.u(lm([[1175, 360, 11], [1180, 500, 11], [1160, 640, 11]]), 'lig');
+    P.u(lm([[925, 350, 8], [925, 450, 8], [930, 545, 8]]), 'lig'); P.u(lm([[1175, 360, 11], [1170, 480, 11], [1105, 620, 12]]), 'lig');
   } });
 
 /* ---- write ---- */
@@ -576,9 +616,15 @@ const refs = [
 ];
 const rights = 'Original Boneefied project artwork (skeletal atlas, BVIS02); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.';
 const prov = [], generated = [];
+// A bounded correction must not regenerate other plates or their published
+// annotation metadata. Full generation remains available without this flag.
+const artOnlyArg = process.argv.find(arg => arg.startsWith('--art-only='));
+const artOnly = new Set(artOnlyArg?.slice('--art-only='.length).split(',').filter(Boolean) ?? []);
+for (const key of artOnly) if (!plates.some(p => p.key === key)) throw new Error(`Unknown skeletal plate: ${key}`);
 const fixes = { 'vertebra-typical': FX.drawVertebraTypical, 'vertebrae-regional': FX.drawVertebraeRegional, humerus: FX.drawHumerus, femur: FX.drawFemur, 'hip-bone': FX.drawHip, 'hand-palmar': FX.drawHand, 'foot-dorsal': FX.drawFoot };
 for (const p of plates) if (fixes[p.key]) { const orig = p.draw; p.draw = (P) => { void orig; fixes[p.key](P); }; }
 plates.forEach((p, i) => {
+  if (artOnly.size && !artOnly.has(p.key)) return;
   const P = new Plate();
   P.raw(`<rect id="background" width="${W}" height="${H}" fill="${C.paper}"/>`);
   p.draw(P);
@@ -598,6 +644,13 @@ plates.forEach((p, i) => {
   });
   generated.push({ id, key: p.key, replaces: p.replaces ?? null, svgPath: svgRel, pngPath: pngRel, title: p.title, description: p.desc, orientation: p.orientation, labels: labels.map(({ structureId, x, y, radius }) => ({ structureId, x, y, radius })) });
 });
-writeFileSync(join(outDir, 'provenance.json'), JSON.stringify({ pack: 'boneefied-skeletal-atlas', generatedBy: 'scripts/atlas/skeletal-generate.mjs', plates: prov }, null, 2) + '\n');
+const provenancePath = join(outDir, 'provenance.json');
+if (artOnly.size) {
+  const existing = JSON.parse(readFileSync(provenancePath, 'utf8'));
+  existing.plates = existing.plates.map(p => prov.find(next => next.id === p.id) ?? p);
+  writeFileSync(provenancePath, JSON.stringify(existing, null, 2) + '\n');
+} else {
+writeFileSync(provenancePath, JSON.stringify({ pack: 'boneefied-skeletal-atlas', generatedBy: 'scripts/atlas/skeletal-generate.mjs', plates: prov }, null, 2) + '\n');
 writeFileSync(join(root, 'content/skeletal-atlas-plates.generated.ts'), `// GENERATED by scripts/atlas/skeletal-generate.mjs - do not edit by hand.\nexport interface SkeletalPlateLabel { structureId: string; x: number; y: number; radius: number }\nexport interface SkeletalPlate { id: string; key: string; replaces: string | null; svgPath: string; pngPath: string; title: [string, string]; description: [string, string]; orientation: string; labels: SkeletalPlateLabel[] }\nexport const skeletalPlates: SkeletalPlate[] = ${JSON.stringify(generated, null, 2)} as SkeletalPlate[];\n`);
-console.log(`wrote ${plates.length} plates`);
+}
+console.log(`wrote ${artOnly.size || plates.length} plates${artOnly.size ? ' (art only; published metadata preserved)' : ''}`);

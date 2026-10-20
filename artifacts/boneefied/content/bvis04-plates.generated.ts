@@ -82,8 +82,8 @@ export const bvis04Plates: Bvis04Plate[] = [
       "Encéfalo, corte sagital medio: cuerpo calloso, diencéfalo y ventrículos"
     ],
     "description": [
-      "Medial face of the brain, frontal lobe to the left. The corpus callosum arches over the diencephalon: thalamus above, hypothalamus below, with the pineal body (epithalamus) behind. The third ventricle lies between the two halves of the diencephalon; the cerebral aqueduct crosses the midbrain to the fourth ventricle between pons and cerebellum. The thin septum pellucidum is cut away so the left lateral ventricle can be seen. Gross diagram, simplified.",
-      "Cara medial del encéfalo, con el lóbulo frontal a la izquierda. El cuerpo calloso se arquea sobre el diencéfalo: tálamo arriba, hipotálamo abajo y cuerpo pineal (epitálamo) detrás. El tercer ventrículo queda entre las dos mitades del diencéfalo; el acueducto cerebral cruza el mesencéfalo hasta el cuarto ventrículo, entre la protuberancia y el cerebelo. Se retira el delgado tabique pelúcido para ver el ventrículo lateral izquierdo. Diagrama macroscópico simplificado."
+      "Medial face of the brain, frontal lobe to the left. The corpus callosum arches over the diencephalon: thalamus above, hypothalamus below, with the pineal body (epithalamus) behind. The third ventricle lies between the two halves of the diencephalon; the cerebral aqueduct crosses the midbrain to the fourth ventricle between pons and cerebellum. The thin septum pellucidum is cut away so the left lateral ventricle can be seen. Gross diagram, simplified. The lateral ventricle is projected onto this midsagittal schematic; its short connection to the third ventricle represents the interventricular foramen, not a lateral ventricle cut in the midline.",
+      "Cara medial del encéfalo, con el lóbulo frontal a la izquierda. El cuerpo calloso se arquea sobre el diencéfalo: tálamo arriba, hipotálamo abajo y cuerpo pineal (epitálamo) detrás. El tercer ventrículo queda entre las dos mitades del diencéfalo; el acueducto cerebral cruza el mesencéfalo hasta el cuarto ventrículo, entre la protuberancia y el cerebelo. Se retira el delgado tabique pelúcido para ver el ventrículo lateral izquierdo. Diagrama macroscópico simplificado. El ventrículo lateral se proyecta sobre este esquema sagital medio; su corta conexión con el tercer ventrículo representa el agujero interventricular, no un ventrículo lateral cortado en la línea media."
     ],
     "orientation": "midsagittal cut, medial surface; frontal pole at viewer left; septum pellucidum cut away to show the lateral ventricle",
     "orientationEs": "corte sagital medio, superficie medial; polo frontal a la izquierda; tabique pelúcido retirado para mostrar el ventrículo lateral",
@@ -371,8 +371,8 @@ export const bvis04Plates: Bvis04Plate[] = [
       "Ventrículos, LCR y meninges"
     ],
     "description": [
-      "Left panel: lateral view of the ventricular system inside a faint brain outline; choroid plexus tufts line the lateral, third and fourth ventricles, and arrows show CSF flow from lateral to third ventricle, through the aqueduct, to the fourth and down the central canal. Right panel: coronal slice through the top of the head, outside to inside: scalp, skull, dura mater (with the superior sagittal sinus and a falx fold), thin arachnoid mater, CSF-filled subarachnoid space, and pia mater on the brain surface. Meninges is the group name for the three layers. Gross diagram, simplified.",
-      "Panel izquierdo: vista lateral del sistema ventricular dentro de un contorno tenue del encéfalo; los penachos del plexo coroideo recubren los ventrículos lateral, tercero y cuarto, y las flechas muestran el flujo del LCR del ventrículo lateral al tercero, por el acueducto, al cuarto y hacia abajo por el conducto central. Panel derecho: corte coronal de la parte superior de la cabeza, de fuera adentro: cuero cabelludo, cráneo, duramadre (con el seno sagital superior y un pliegue de la hoz), aracnoides delgada, espacio subaracnoideo con LCR y piamadre sobre la superficie cerebral. Meninges es el nombre del grupo de las tres capas. Diagrama macroscópico simplificado."
+      "Left panel: lateral view of the ventricular system inside a faint brain outline; choroid plexus tufts line the lateral, third and fourth ventricles, and arrows follow connected CSF passages from the lateral ventricle through the interventricular foramen to the third, through the aqueduct to the fourth, and outward to subarachnoid CSF. The thin downward continuation is the central canal, not the main drainage route. Right panel: coronal slice through the top of the head, outside to inside: scalp, skull, dura mater (with the superior sagittal sinus and a falx fold), thin arachnoid mater, CSF-filled subarachnoid space, and pia mater on the brain surface. Meninges is the group name for the three layers. Gross diagram, simplified.",
+      "Panel izquierdo: vista lateral del sistema ventricular dentro de un contorno tenue del encéfalo; los penachos del plexo coroideo recubren los ventrículos lateral, tercero y cuarto, y las flechas siguen pasos continuos del LCR desde el ventrículo lateral por el agujero interventricular al tercero, por el acueducto al cuarto y hacia el LCR subaracnoideo. La fina continuación inferior es el conducto central, no la vía principal de drenaje. Panel derecho: corte coronal de la parte superior de la cabeza, de fuera adentro: cuero cabelludo, cráneo, duramadre (con el seno sagital superior y un pliegue de la hoz), aracnoides delgada, espacio subaracnoideo con LCR y piamadre sobre la superficie cerebral. Meninges es el nombre del grupo de las tres capas. Diagrama macroscópico simplificado."
     ],
     "orientation": "left panel: left lateral view, frontal at viewer left; right panel: coronal slice of the vertex, scalp at top",
     "orientationEs": "panel izquierdo: vista lateral izquierda, frontal a la izquierda; panel derecho: corte coronal del vértice, cuero cabelludo arriba",
@@ -629,8 +629,8 @@ export const bvis04Plates: Bvis04Plate[] = [
       "Los cuatro plexos principales y el nervio frénico"
     ],
     "description": [
-      "Schematic body with the spinal cord down the midline. Ventral rami from neighbouring segments reshuffle into plexuses: cervical (neck, C1-C4), brachial (upper limb, C5-T1), lumbar (front of the thigh, L1-L4) and sacral (back of the thigh, leg and foot, L4-S4). The phrenic nerve arises mainly from C3-C5 in the cervical plexus and runs down the thorax to the diaphragm. Plexuses are drawn on the patient right (viewer left) only; roots and branches are simplified, not exact fascicles. Schematic, not to scale.",
-      "Cuerpo esquemático con la médula espinal en la línea media. Los ramos ventrales de segmentos vecinos se reorganizan en plexos: cervical (cuello, C1-C4), braquial (miembro superior, C5-T1), lumbar (cara anterior del muslo, L1-L4) y sacro (cara posterior del muslo, pierna y pie, L4-S4). El nervio frénico nace sobre todo de C3-C5 en el plexo cervical y desciende por el tórax hasta el diafragma. Los plexos se dibujan solo en el lado derecho del paciente (izquierda del observador); raíces y ramos simplificados, no son fascículos exactos. Esquema sin escala."
+      "Schematic body with the spinal cord down the midline. Ventral rami from neighbouring segments reshuffle into plexuses: cervical (neck, C1-C4), brachial (upper limb, C5-T1), lumbar (front of the thigh, L1-L4) and sacral (back of the thigh, leg and foot, L4-S4). The phrenic nerve arises mainly from C3-C5 in the cervical plexus and runs down the thorax to the diaphragm. Plexuses are drawn on the patient right (viewer left) only; roots and branches are simplified, not exact fascicles. Schematic, not to scale. The cord ends in the upper lumbar region; the thin ochre bundle below represents descending cauda-equina roots, not spinal cord continuing into the sacrum.",
+      "Cuerpo esquemático con la médula espinal en la línea media. Los ramos ventrales de segmentos vecinos se reorganizan en plexos: cervical (cuello, C1-C4), braquial (miembro superior, C5-T1), lumbar (cara anterior del muslo, L1-L4) y sacro (cara posterior del muslo, pierna y pie, L4-S4). El nervio frénico nace sobre todo de C3-C5 en el plexo cervical y desciende por el tórax hasta el diafragma. Los plexos se dibujan solo en el lado derecho del paciente (izquierda del observador); raíces y ramos simplificados, no son fascículos exactos. Esquema sin escala. La médula termina en la región lumbar superior; el fino haz ocre inferior representa las raíces descendentes de la cola de caballo, no médula que continúa hasta el sacro."
     ],
     "orientation": "anterior-style body schematic; patient right at viewer left; plexuses drawn on patient right only; cord shown in the midline",
     "orientationEs": "esquema corporal tipo vista anterior; derecha del paciente a la izquierda del observador; plexos solo en el lado derecho del paciente",
@@ -699,8 +699,8 @@ export const bvis04Plates: Bvis04Plate[] = [
       "Right arm in two panels with the bones faintly shown. Anterior panel: the median nerve runs down the middle of the arm and forearm to the hand; the ulnar nerve runs along the medial side and passes behind the medial epicondyle (elbow); the radial nerve, which spends the upper arm behind the humerus, emerges on the lateral side near the elbow (dashed = behind the bone). Posterior panel: the radial nerve winds from medial to lateral behind the humerus and continues in the posterior forearm. Courses are simplified. Gross diagram.",
       "Brazo derecho en dos paneles con los huesos tenuemente visibles. Panel anterior: el nervio mediano desciende por el centro del brazo y antebrazo hasta la mano; el nervio cubital recorre el lado medial y pasa por detrás del epicóndilo medial (codo); el nervio radial, que en el brazo queda detrás del húmero, emerge por el lado lateral cerca del codo (discontinuo = detrás del hueso). Panel posterior: el nervio radial rodea el húmero de medial a lateral por detrás y continúa en el antebrazo posterior. Trayectos simplificados. Diagrama macroscópico."
     ],
-    "orientation": "right upper limb; anterior panel (patient right = viewer left, lateral at left) and posterior panel (lateral at left in this drawing)",
-    "orientationEs": "miembro superior derecho; panel anterior (lateral a la izquierda) y panel posterior",
+    "orientation": "right upper limb; anterior panel: lateral at viewer left; posterior panel: lateral at viewer right",
+    "orientationEs": "miembro superior derecho; panel anterior: lateral a la izquierda del observador; panel posterior: lateral a la derecha",
     "purpose": "Course of the median, ulnar and radial nerves from the brachial plexus into the right arm and forearm.",
     "lessons": [
       "plexuses-peripheral"
@@ -759,8 +759,8 @@ export const bvis04Plates: Bvis04Plate[] = [
       "Right lower limb in two panels. Anterior panel: the femoral nerve leaves the lumbar plexus, runs down the front of the thigh giving branches to the quadriceps and continues below the knee as a thin medial cutaneous branch. Posterior panel: the sciatic nerve, the thickest nerve in the body, leaves the sacral plexus, runs down the back of the thigh and divides near the knee into its tibial and common fibular parts (unlabelled). Courses simplified. Gross diagram.",
       "Miembro inferior derecho en dos paneles. Panel anterior: el nervio femoral sale del plexo lumbar, desciende por la cara anterior del muslo dando ramos al cuádriceps y continúa bajo la rodilla como fino ramo cutáneo medial. Panel posterior: el nervio isquiático, el más grueso del cuerpo, sale del plexo sacro, desciende por la cara posterior del muslo y se divide cerca de la rodilla en sus partes tibial y fibular común (sin marcador). Trayectos simplificados. Diagrama macroscópico."
     ],
-    "orientation": "right lower limb; anterior panel then posterior panel; bones faint",
-    "orientationEs": "miembro inferior derecho; panel anterior y panel posterior; huesos tenues",
+    "orientation": "right lower limb; anterior panel: lateral at viewer left; posterior panel: lateral at viewer right; bones faint",
+    "orientationEs": "miembro inferior derecho; panel anterior: lateral a la izquierda del observador; panel posterior: lateral a la derecha; huesos tenues",
     "purpose": "Femoral nerve to the front of the thigh and sciatic nerve down the back of the thigh.",
     "lessons": [
       "plexuses-peripheral"
@@ -785,14 +785,14 @@ export const bvis04Plates: Bvis04Plate[] = [
         "x": 0.7931,
         "y": 0.092,
         "radius": 0.018,
-        "panel": "anterior"
+        "panel": "posterior"
       },
       {
         "structureId": "sciatic-nerve",
         "x": 0.7917,
         "y": 0.32,
         "radius": 0.018,
-        "panel": "anterior"
+        "panel": "posterior"
       }
     ]
   },
@@ -1081,64 +1081,64 @@ export const bvis04Plates: Bvis04Plate[] = [
     "labels": [
       {
         "structureId": "cornea-eye",
-        "x": 0.4028,
-        "y": 0.324,
+        "x": 0.35006896551724137,
+        "y": 0.372,
         "radius": 0.018,
         "panel": "anterior-segment"
       },
       {
         "structureId": "anterior-chamber-eye",
-        "x": 0.4538,
-        "y": 0.456,
+        "x": 0.3875862068965517,
+        "y": 0.468,
         "radius": 0.018,
         "panel": "anterior-segment"
       },
       {
         "structureId": "aqueous-humor-eye",
-        "x": 0.4566,
-        "y": 0.248,
+        "x": 0.38868965517241383,
+        "y": 0.316,
         "radius": 0.018,
         "panel": "anterior-segment"
       },
       {
         "structureId": "pupil-eye",
-        "x": 0.5338,
+        "x": 0.44496551724137934,
         "y": 0.5,
         "radius": 0.018,
         "panel": "anterior-segment"
       },
       {
         "structureId": "iris-eye",
-        "x": 0.5324,
-        "y": 0.27,
+        "x": 0.4438620689655173,
+        "y": 0.332,
         "radius": 0.018,
         "panel": "anterior-segment"
       },
       {
         "structureId": "posterior-chamber-eye",
-        "x": 0.5724,
-        "y": 0.284,
+        "x": 0.47365517241379307,
+        "y": 0.34320000000000006,
         "radius": 0.018,
         "panel": "anterior-segment"
       },
       {
         "structureId": "suspensory-ligaments-eye",
-        "x": 0.6069,
-        "y": 0.292,
+        "x": 0.4979310344827586,
+        "y": 0.348,
         "radius": 0.018,
         "panel": "anterior-segment"
       },
       {
         "structureId": "lens-eye",
-        "x": 0.6152,
+        "x": 0.5045517241379311,
         "y": 0.5,
         "radius": 0.018,
         "panel": "anterior-segment"
       },
       {
         "structureId": "ciliary-body-eye",
-        "x": 0.5766,
-        "y": 0.126,
+        "x": 0.47586206896551725,
+        "y": 0.228,
         "radius": 0.018,
         "panel": "anterior-segment"
       }
@@ -1386,50 +1386,50 @@ export const bvis04Plates: Bvis04Plate[] = [
     "labels": [
       {
         "structureId": "tympanic-membrane-ear",
-        "x": 0.3917,
-        "y": 0.584,
+        "x": 0.2684137931034482,
+        "y": 0.196,
         "radius": 0.018,
         "panel": "middle-ear"
       },
       {
         "structureId": "malleus-ear",
-        "x": 0.4483,
-        "y": 0.554,
+        "x": 0.3103448275862069,
+        "y": 0.177,
         "radius": 0.018,
         "panel": "middle-ear"
       },
       {
         "structureId": "incus-ear",
-        "x": 0.5462,
-        "y": 0.526,
+        "x": 0.381103448275862,
+        "y": 0.15419999999999992,
         "radius": 0.018,
         "panel": "middle-ear"
       },
       {
         "structureId": "stapes-ear",
-        "x": 0.6221,
-        "y": 0.69,
+        "x": 0.42041379310344823,
+        "y": 0.2966999999999999,
         "radius": 0.018,
         "panel": "middle-ear"
       },
       {
         "structureId": "oval-window-ear",
-        "x": 0.6414,
-        "y": 0.662,
+        "x": 0.450551724137931,
+        "y": 0.253,
         "radius": 0.018,
         "panel": "middle-ear"
       },
       {
         "structureId": "round-window-ear",
-        "x": 0.6538,
-        "y": 0.912,
+        "x": 0.4597241379310344,
+        "y": 0.43539999999999984,
         "radius": 0.018,
         "panel": "middle-ear"
       },
       {
         "structureId": "auditory-tube-ear",
-        "x": 0.6414,
-        "y": 0.96,
+        "x": 0.52,
+        "y": 0.595,
         "radius": 0.018,
         "panel": "middle-ear"
       }

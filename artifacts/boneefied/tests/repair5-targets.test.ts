@@ -4,6 +4,7 @@ import { content } from '../content/canonical.ts';
 import { repair5Targets, repairDiagramTargets, applyRepair5Targets, repair5ArtworkLimitations } from '../content/repair5-targets.ts';
 import { repair5CompactMarkerIds } from '../content/bvr02-overlay-overrides.ts';
 import { markerSizing } from '../components/viewerMarkerSizing.ts';
+import { foundationsAtlasTargets, repairFoundationsTargets } from '../content/foundations-atlas-corrections.ts';
 
 test('every reviewed repair reaches a published label or Practice hotspot without changing its identity', () => {
   for (const [id, repairs] of Object.entries(repair5Targets)) {
@@ -12,7 +13,8 @@ test('every reviewed repair reaches a published label or Practice hotspot withou
     const points = [...asset.labels ?? [], ...asset.hotspots ?? [],
       ...content.questions.filter(q => q.assetId === id).flatMap(q => q.hotspots ?? [])];
     for (const r of repairs) {
-      assert.ok(points.some(p => p.structureId === r.structureId && p.x === r.to[0] && p.y === r.to[1]), `${id}: ${r.structureId}`);
+      const [x, y] = foundationsAtlasTargets[id]?.[r.structureId] ?? r.to;
+      assert.ok(points.some(p => p.structureId === r.structureId && p.x === x && p.y === y), `${id}: ${r.structureId}`);
       for (const coordinate of r.to) assert.ok(coordinate >= 0 && coordinate <= 1);
       assert.ok(r.reason.length > 25);
     }
@@ -26,10 +28,11 @@ test('raw glossary/viewer points and canonical Study/Practice points share the s
       const before = structuredClone(original);
       const fixed = repairDiagramTargets(id, original);
       assert.deepEqual(original, before);
-      assert.deepEqual(fixed[0], { ...before[0], x: r.to[0], y: r.to[1] });
+      assert.deepEqual(fixed, repairFoundationsTargets(id, [{ ...before[0], x: r.to[0], y: r.to[1] }]));
       assert.equal(repairDiagramTargets(id, fixed), fixed, 'Corrections are idempotent');
       const unrelatedView = [{ ...before[0], x: .98765, y: .12345 }];
-      assert.equal(repairDiagramTargets(id, unrelatedView), unrelatedView, 'Repeated structure IDs in other views remain unchanged');
+      if (!foundationsAtlasTargets[id]) assert.equal(repairDiagramTargets(id, unrelatedView), unrelatedView, 'Repeated structure IDs in other views remain unchanged');
+      else assert.deepEqual(repairDiagramTargets(id, unrelatedView), repairFoundationsTargets(id, unrelatedView), 'Replaced single-view art cannot retain stale raw coordinates');
     }
     const published = content.assets.find(a => a.id === id)!;
     assert.equal(applyRepair5Targets(published), published);
@@ -66,7 +69,8 @@ test('only named dense diagrams opt into 16–17px paint, keeping readable doubl
 });
 
 test('artwork limitations are explicit and retained rather than misrepresented as target repairs', () => {
-  assert.equal(repair5ArtworkLimitations.length, 2);
+  assert.equal(repair5ArtworkLimitations.length, 1);
+  assert.ok(!repair5ArtworkLimitations.some(item => item.assetId === 'asset-original-mitosis-stages'), 'Actual SVG correction resolves the mitosis drawing limitation');
   for (const item of repair5ArtworkLimitations) {
     assert.ok(content.assets.some(a => a.id === item.assetId));
     assert.ok(item.issue.length > 100);

@@ -20,7 +20,7 @@ function body(S) {
   skin(S); heartGhost(S);
   [[-30, 372, 6, 'k'], [30, 360, -6, 'k']].forEach(([x, y, r]) => S.sh(null, E(x, y, 18, 36, r), { fill: KID.fill, line: KID.line, sw: 1.4 }));
   S.sh(D('uterus'), sm([[-12, 440], [12, 440], [20, 468], [0, 484], [-20, 468]]), { fill: '#E2CFC8', line: '#C3AFA6', sw: 1.2 });
-  S.sh(D('pancreas'), tube([[-30, 303], [-5, 298], [22, 292], [44, 286]], 18, 11), { fill: GL.fill, line: GL.line, sw: 1.3 });
+  S.sh(D('pancreas'), tube([[-30, 359], [-5, 354], [22, 348], [44, 342]], 18, 11), { fill: GL.fill, line: GL.line, sw: 1.3 });
   S.sh(D('adr'), E(-28, 330, 13, 8, 12), { fill: GL.fill, line: GL.line, sw: 1.3 }); S.sh(D('adr'), E(30, 318, 13, 8, -12), { fill: GL.fill, line: GL.line, sw: 1.3 });
   S.sh(D('thymus'), sm([[-18, 142], [-2, 138], [-2, 184], [-14, 192], [-24, 170]], true, 4), { fill: GL.fill, line: GL.line, sw: 1.3 });
   S.sh(D('thymus'), sm([[18, 142], [2, 138], [2, 184], [14, 192], [24, 170]], true, 4), { fill: GL.fill, line: GL.line, sw: 1.3 });
@@ -28,7 +28,7 @@ function body(S) {
   S.sh(D('thyroid'), rect(-6, 108, 12, 8), { fill: GL.fill, line: GL.line, sw: 1.3 });
   S.sh(D('ovary'), E(-28, 452, 12, 8, 10), { fill: GL.fill, line: GL.line, sw: 1.3 }); S.sh(D('ovary'), E(28, 452, 12, 8, -10), { fill: GL.fill, line: GL.line, sw: 1.3 });
   S.endT();
-  [['thyroid', [-13, 108]], ['thymus', [-12, 168]], ['adrenal', [-28, 330]], ['pancreas', [-8, 298]], ['ovary', [-28, 452]]].forEach(([id, h]) => S.pin(D(id), D(id === 'adrenal' ? 'adr' : id), P(h)));
+  [['thyroid', [-13, 108]], ['thymus', [-12, 168]], ['adrenal', [-28, 330]], ['pancreas', [-8, 354]], ['ovary', [-28, 452]]].forEach(([id, h]) => S.pin(D(id), D(id === 'adrenal' ? 'adr' : id), P(h)));
   S.at('head');
   S.sh(null, sm([[900, 300], [920, 190], [1010, 110], [1140, 90], [1260, 150], [1310, 260], [1270, 370], [1180, 420], [1060, 420], [960, 400]], true, 6), { fill: '#EADFD0', line: '#B7A593', sw: 2 });
   S.sh(null, sm([[930, 310], [945, 210], [1020, 135], [1140, 115], [1240, 170], [1280, 260], [1245, 350], [1170, 392], [1060, 392], [980, 372]], true, 6), { fill: '#D2BEC4', line: '#7E6670', sw: 1.8 });
@@ -76,7 +76,14 @@ function hypo(S) {
   [[656, 306, 690, 304], [652, 322, 696, 316]].forEach(([a, b, c, d]) => S.ln(null, `M${a} ${b}L${c} ${d}`, { color: CAP.line, w: 3 }));
   vs(S, D('portal'), [[672, 336], [668, 400], [650, 470], [630, 540]], 14, 14, V);
   vs(S, D('portal'), [[690, 336], [694, 400], [680, 470], [660, 540]], 12, 12, V);
-  [[560, 560], [610, 620], [650, 680], [580, 660]].forEach(([x, y]) => S.sh(D('portal'), circ(x, y, 18), { fill: '#E2C9D3', line: CAP.line, sw: 1.6 }));
+  // Continuous secondary capillary plexus: both portal veins enter it and it
+  // drains into the depicted efferent vein, rather than ending beside dots.
+  for (const d of [
+    'M630 540L560 560L610 620L650 680L620 700',
+    'M660 540L610 620L580 660L650 680',
+    'M560 560Q590 600 580 660',
+  ]) S.ln(D('portal'), d, { color: CAP.line, w: 4 });
+  [[560, 560], [610, 620], [650, 680], [580, 660]].forEach(([x, y]) => S.ln(D('portal'), circ(x, y, 18), { color: CAP.line, w: 4 }));
   vs(S, null, [[620, 700], [650, 790], [700, 880]], 16, 20, V);
   // parvocellular neurosecretory cell: short axon to the primary plexus
   S.sh('nsc', E(570, 180, 28, 34), { fill: '#E6C7A0', line: NV.line, sw: 1.6 }); S.sh(null, circ(570, 180, 10), { fill: '#A8855A', line: NV.line, sw: 1 });
@@ -84,6 +91,10 @@ function hypo(S) {
   // magnocellular neurosecretory cell: long axon down the stalk to the posterior lobe
   S.sh('nsc', E(850, 180, 34, 40), { fill: '#E6C7A0', line: NV.line, sw: 1.6 }); S.sh(null, circ(850, 180, 12), { fill: '#A8855A', line: NV.line, sw: 1 });
   S.ln('axon', sm([[836, 218], [790, 290], [752, 380], [772, 480], [800, 580], [820, 640]], false, 8), { color: NV.line, w: 8 });
+  for (const d of ['M800 580Q780 594 780 620', 'M800 580Q836 574 850 600', 'M820 640L820 660'])
+    S.ln('axon', d, { color: NV.line, w: 5 });
+  // Neurohaemal capillaries lie beside the nerve terminals and join the outflow.
+  S.ln(null, 'M800 700L780 684Q762 680 762 650L762 610Q762 596 780 596L840 580Q868 578 868 600L868 664Q868 684 840 684L800 700', { color: CAP.line, w: 4 });
   [[780, 620], [820, 660], [850, 600]].forEach(([x, y]) => S.sh(null, circ(x, y, 12), { fill: NV.fill, line: NV.line, sw: 1.4 }));
   vs(S, null, [[800, 700], [840, 790], [840, 880]], 14, 16, V);
   S.pin(D('hypothalamus'), 'hyp', [720, 230]);
@@ -131,7 +142,9 @@ function thy(S) {
   S.sh('colloid', circ(1185, 290, 70), { fill: '#E8D9A8', line: '#B7A453', sw: 1.4 });
   S.sh('pf', sm([[1275, 372], [1316, 352], [1346, 384], [1330, 424], [1290, 424]], true, 4), { fill: '#EAD3C9', line: '#8A5C54', sw: 1.6 }); S.sh(null, circ(1318, 390, 10), { fill: '#A8855A', line: '#8A5C54', sw: 1 });
   [[1020, 160], [1360, 170], [1040, 470]].forEach(([x, y]) => S.sh(null, circ(x, y, 22), { fill: '#EFD6D0', line: '#9A6A66', sw: 1.2 }));
-  S.pin(D('thyroid-follicle'), 'fol', [1185, 168]);
+  // The whole follicle includes its epithelial wall and colloid, not the
+  // surrounding pale stromal halo. Keep its target on the actual cell ring.
+  S.pin(D('thyroid-follicle'), 'fol+fc+colloid', [1125, 215]);
   S.pin(D('thyroid-colloid'), 'colloid', [1185, 300]);
   S.pin(D('follicular-cell'), 'fc', [1185, 214]);
   S.pin(D('parafollicular-cell'), 'pf', [1310, 400]);
@@ -202,8 +215,17 @@ function panc(S) {
   // exocrine acini around, with a duct
   const ac = [[780, 150], [900, 120], [1040, 130], [1180, 140], [1320, 170], [770, 300], [790, 480], [770, 640], [800, 800], [940, 860], [1100, 860], [1260, 840], [1340, 700], [1330, 300], [1340, 480], [1360, 580]];
   ac.forEach(([x, y]) => { for (let k = 0; k < 7; k++) { const a = (k * Math.PI * 2) / 7; S.sh('acini', E(x + 38 * Math.cos(a), y + 38 * Math.sin(a), 24, 24), { fill: '#E9DAD0', line: '#A8817C', sw: 1.3 }); } S.sh(null, circ(x, y, 12), { fill: '#F4EDE5', line: '#A8817C', sw: 1 }); });
-  vs(S, null, [[780, 910], [1000, 910], [1200, 900]], 18, 18, { fill: '#F4EDE5', line: '#A8817C' });
-  S.arrow(1250, 910, 0, 14, '#8A949B');
+  // Selected acini open into a collecting duct; the remaining clusters are
+  // surrounding field context. Paint all walls, then all lumina, so junctions
+  // are open rather than closed by separately drawn tube end caps.
+  const ducts = [
+    'M770 300L728 300L728 910L1320 910',
+    'M800 800L800 910', 'M940 860L940 910',
+    'M1100 860L1100 910', 'M1260 840L1260 910',
+  ];
+  for (const d of ducts) S.ln(null, d, { color: '#A8817C', w: 10 });
+  for (const d of ducts) S.ln(null, d, { color: '#F4EDE5', w: 7 });
+  S.arrow(1336, 910, 0, 14, '#8A949B');
   S.sh('isl', sm([[900, 380], [1010, 320], [1150, 340], [1230, 440], [1210, 600], [1100, 690], [960, 660], [890, 540]], true, 6), { fill: '#EADFE4', line: '#8A6070', sw: 2 });
   vs(S, null, [[920, 640], [1020, 560], [1100, 480], [1220, 400]], 12, 12, CAP);
   vs(S, null, [[900, 450], [1000, 480], [1120, 560], [1200, 620]], 10, 10, CAP);
@@ -228,8 +250,8 @@ function panc(S) {
 plates.push({
   key: 'pancreas-islet', moduleId: MOD, kind: 'tissue-schematic', lessons: ['endo-pancreas-gonads', 'endo-gland-types'], purpose: 'Pancreas as one organ with two jobs: exocrine acini with a duct, and an endocrine islet with alpha, beta and delta cells.',
   title: ['Pancreas: exocrine acini and the endocrine islet', 'Páncreas: acinos exocrinos e islote endocrino'],
-  desc: ['Left: the pancreas lies across the back of the upper abdomen, with its head tucked in the curve of the duodenum and its tail reaching the spleen (plum). Right: a microscopic schematic of the two parts of this one gland. Exocrine glands release their product through a duct onto a surface or into a cavity: the clusters of acinar cells around the edge make digestive enzymes that travel by the duct (bottom, arrow) to the duodenum. Endocrine glands have no duct and release hormones straight into blood: in the pale pancreatic islet (islet of Langerhans) alpha cells (rose) make glucagon, beta cells (blue; the most numerous) make insulin and delta cells (lilac; the fewest) make somatostatin, beside capillaries. The three cell types are mixed through the islet rather than in strict layers. Schematic; cell numbers and sizes simplified.',
-    'Izquierda: el páncreas cruza la parte posterior del abdomen superior, con la cabeza en la curva del duodeno y la cola hacia el bazo (ciruela). Derecha: esquema microscópico de las dos partes de esta única glándula. Las glándulas exocrinas liberan su producto por un conducto a una superficie o cavidad: los grupos de células acinares del borde producen enzimas digestivas que viajan por el conducto (abajo, flecha) hasta el duodeno. Las glándulas endocrinas no tienen conducto y liberan hormonas directamente a la sangre: en el pálido islote pancreático (de Langerhans) las células alfa (rosa) producen glucagón, las beta (azul; las más numerosas) insulina y las delta (lila; las menos) somatostatina, junto a capilares. Los tres tipos celulares están mezclados por el islote, no en capas estrictas. Esquemático; número y tamaño de células simplificados.'],
+  desc: ['Left: the pancreas lies across the back of the upper abdomen, with its head tucked in the curve of the duodenum and its tail reaching the spleen (plum). Right: a microscopic schematic of the two parts of this one gland. Exocrine glands release their product through a duct onto a surface or into a cavity: selected acinar clusters are shown opening into the collecting duct (bottom, arrow); the other clusters provide surrounding tissue context. Their digestive enzymes travel to the duodenum. Endocrine glands have no duct and release hormones straight into blood: in the pale pancreatic islet (islet of Langerhans) alpha cells (rose) make glucagon, beta cells (blue; the most numerous) make insulin and delta cells (lilac; the fewest) make somatostatin, beside capillaries. The three cell types are mixed through the islet rather than in strict layers. Schematic; cell numbers and sizes simplified.',
+    'Izquierda: el páncreas cruza la parte posterior del abdomen superior, con la cabeza en la curva del duodeno y la cola hacia el bazo (ciruela). Derecha: esquema microscópico de las dos partes de esta única glándula. Las glándulas exocrinas liberan su producto por un conducto a una superficie o cavidad: se muestran algunos acinos abriéndose al conducto colector (abajo, flecha); los demás aportan contexto del tejido circundante. Sus enzimas digestivas viajan al duodeno. Las glándulas endocrinas no tienen conducto y liberan hormonas directamente a la sangre: en el pálido islote pancreático (de Langerhans) las células alfa (rosa) producen glucagón, las beta (azul; las más numerosas) insulina y las delta (lila; las menos) somatostatina, junto a capilares. Los tres tipos celulares están mezclados por el islote, no en capas estrictas. Esquemático; número y tamaño de células simplificados.'],
   orientation: ['left: anterior view, head of pancreas at viewer left; right: microscopic schematic', 'izquierda: vista anterior, cabeza del páncreas a la izquierda; derecha: esquema microscópico'], draw: panc,
 });
 

@@ -1,4 +1,5 @@
 import { bvis04Plates } from '../../content/bvis04-plates.generated.ts';
+import { peripheralRegionLabel, peripheralRegionNote } from '../../content/peripheral-atlas-corrections.ts';
 import { bvis04QuestionCopy } from '../../content/bvis04-questions.ts';
 import { bvis04FunctionCopy } from '../../content/bvis04-functions.ts';
 import { BVIS04_SOURCE } from '../../content/bvis04-pack.ts';
@@ -17,11 +18,11 @@ export const bvis04SpanishName = (id: string) => {
 };
 const rights = 'Arte vectorial original del proyecto Boneefied (BVIS04); todos los derechos reservados. Los esquemas de tejidos no son fotomicrografías.';
 export const bvis04SpanishAssets: Record<string, SpanishAsset> = Object.fromEntries(bvis04Plates.map((p) => [p.id, {
-  title: p.title[1], description: `${p.description[1]} Orientación: ${p.orientationEs}.`,
+  title: p.title[1], description: `${p.description[1]}${peripheralRegionNote(p.id, 'es') ? ` ${peripheralRegionNote(p.id, 'es')}` : ''} Orientación: ${p.orientationEs}.`,
   attributionLicense: rights,
   adaptationNote: 'Vectores originales dibujados a partir de hechos anatómicos; no se trazaron ni importaron ilustraciones. No hay texto incrustado.',
   specimenNote: p.teachingKind === 'tissue-schematic' ? 'Esquema didáctico, no una muestra ni fotomicrografía.' : undefined,
-  labels: p.labels.map((l) => bvis04SpanishName(l.structureId)),
+  labels: p.labels.map((l) => peripheralRegionLabel(p.id, l.structureId, 'es') ?? bvis04SpanishName(l.structureId)),
 }]));
 export const bvis04SpanishSources: Record<string, SpanishSource> = {
   [BVIS04_SOURCE]: { title: 'Atlas Boneefied de sistema nervioso, sentidos, piel y tejidos',

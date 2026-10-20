@@ -33,9 +33,14 @@ function upper(S) {
   S.sh('naso', sm([[446, 396], [520, 380], [562, 398], [564, 500], [494, 506], [456, 470]], true, 4), { fill: AIR, line: AIRL, sw: 1.6 });
   S.sh('oro', sm([[494, 506], [564, 500], [566, 590], [488, 592], [482, 540]], true, 4), { fill: '#E3EDEE', line: AIRL, sw: 1.6 });
   S.sh('laryngo', sm([[488, 592], [566, 590], [564, 706], [506, 706], [490, 650]], true, 4), { fill: '#D5E4E6', line: AIRL, sw: 1.6 });
+  // A patent choanal connection and shared pharyngeal lumen, not isolated bubbles.
+  S.sh('choana', rect(430, 404, 22, 60), { fill: AIR, line: AIR, sw: .4 });
+  S.sh('naso', rect(500, 490, 40, 16), { fill: AIR, line: AIR, sw: .4 });
+  S.sh('oro', rect(500, 506, 40, 86), { fill: AIR, line: AIR, sw: .4 });
+  S.sh('laryngo', rect(500, 592, 40, 18), { fill: AIR, line: AIR, sw: .4 });
   S.sh(null, sm([[476, 590], [496, 588], [498, 640], [482, 640]], true, 3), { fill: CART.fill, line: CART.line, sw: 1.2 });
-  S.sh(null, tube([[506, 712], [506, 920]], 46), { fill: TEAL.fill, line: TEAL.line, sw: 1.4 });
-  S.sh(null, tube([[560, 712], [560, 920]], 30), { fill: '#D9B9B3', line: '#8A6060', sw: 1.2 });
+  S.sh(null, tube([[506, 690], [506, 920]], 46), { fill: TEAL.fill, line: TEAL.line, sw: 1.4 });
+  S.sh(null, tube([[560, 690], [560, 920]], 30), { fill: '#D9B9B3', line: '#8A6060', sw: 1.2 });
   S.at('sagittal');
   [['nose', 'nose', [212, 440]], ['nasal-cavity', 'nasalcav', [350, 470]], ['nasal-vestibule', 'vest', [250, 452]], ['nasal-concha', 'conch', [352, 427]], ['choanae', 'choana', [438, 440]], ['hard-palate', 'palate', [320, 504]],
     ['soft-palate', 'soft', [452, 514]], ['frontal-sinus', 'frontal', [305, 262]], ['sphenoidal-sinus', 'sphen', [452, 348]], ['ethmoidal-sinus', 'ethm', [376, 314]], ['nasopharynx', 'naso', [520, 440]], ['oropharynx', 'oro', [526, 548]], ['laryngopharynx', 'laryngo', [535, 660]]]
@@ -78,7 +83,12 @@ function larynx(S) {
   S.sh('cric', sm(mir([[262, 586], [310, 574], [304, 700], [268, 716]], cx), true, 4), { fill: CART.fill, line: CART.line, sw: 1.8 });
   // laryngeal cavity (half profile then mirrored)
   const half = [[296, 196], [300, 300], [346, 306], [346, 332], [302, 338], [300, 352], [358, 372], [358, 400], [296, 424], [300, 520], [310, 590]];
-  S.sh('cavity', sm(full(half, cx), true, 3), { fill: AIR, line: AIRL, sw: 1.4 });
+  const cavity = sm(full(half, cx), true, 3);
+  const trachea = tube([[380, 570], [380, 920]], 150, 150);
+  S.sh('trach', trachea, { fill: AIR, line: TEAL.line, sw: 1.8 });
+  S.sh('cavity', cavity, { fill: AIR, line: AIRL, sw: 1.4 });
+  S.sh('trach', trachea, { fill: AIR, line: AIR, sw: .4 });
+  S.sh('cavity', cavity, { fill: AIR, line: AIR, sw: .4 });
   S.sh('vest', poly([[300, 200], [460, 200], [460, 298], [300, 298]]), { fill: '#E6EFF0', line: AIRL, sw: 1.2 });
   S.sh('vfold', sm([[296, 352], [358, 372], [358, 400], [296, 424]], true, 3), { fill: '#D9908A', line: '#8A5C54', sw: 1.4 });
   S.sh('vfold', sm(mir([[296, 352], [358, 372], [358, 400], [296, 424]], cx), true, 3), { fill: '#D9908A', line: '#8A5C54', sw: 1.4 });
@@ -87,7 +97,6 @@ function larynx(S) {
   S.sh('fold', sm(mir([[300, 300], [346, 306], [346, 332], [302, 338]], cx), true, 3), { fill: MUC, line: MUCL, sw: 1.4 });
   S.sh('epi', sm([[346, 70], [414, 70], [440, 130], [430, 196], [380, 240], [334, 196], [322, 130]], true, 5), { fill: CART.fill, line: CART.line, sw: 1.8 });
   S.sh('inlet', E(380, 214, 82, 14), { fill: '#EEF4F5', line: AIRL, sw: 1.3, dash: '5 3' });
-  S.sh('trach', tube([[380, 720], [380, 920]], 150, 150), { fill: AIR, line: TEAL.line, sw: 1.8 });
   [[300, 596], [340, 596]].forEach(([x]) => void x);
   S.arrow(380, 880, 90, 16, '#8AA3AB');
   S.pin(R('epiglottis'), 'epi', [380, 140]);
@@ -109,9 +118,9 @@ function larynx(S) {
   S.sh('lum', sm([[1080, 232], [1150, 330], [1170, 480], [1150, 620], [1080, 660], [1010, 620], [990, 480], [1010, 330]], true, 6), { fill: MUC, line: MUCL, sw: 1.6 });
   S.sh('fold2', sm([[1060, 330], [1040, 420], [1018, 540], [1000, 520], [1010, 400], [1040, 320]], true, 4), { fill: '#E5B7B1', line: MUCL, sw: 1.2 });
   S.sh('fold2', sm([[1100, 330], [1120, 420], [1142, 540], [1160, 520], [1150, 400], [1120, 320]], true, 4), { fill: '#E5B7B1', line: MUCL, sw: 1.2 });
-  S.sh('vfold2', sm([[1078, 270], [1054, 380], [1040, 530], [1068, 536], [1076, 400]], true, 4), { fill: '#F0D9D4', line: '#8A5C54', sw: 1.4 });
-  S.sh('vfold2', sm([[1082, 270], [1106, 380], [1120, 530], [1092, 536], [1084, 400]], true, 4), { fill: '#F0D9D4', line: '#8A5C54', sw: 1.4 });
-  S.sh('rima2', poly([[1080, 280], [1090, 400], [1094, 530], [1066, 530], [1070, 400]]), { fill: '#5C6A72', line: '#3F4A52', sw: 1 });
+  S.sh('vfold2', sm([[1078, 270], [1054, 380], [1026, 562], [1046, 580], [1062, 400]], true, 4), { fill: '#F0D9D4', line: '#8A5C54', sw: 1.4 });
+  S.sh('vfold2', sm([[1082, 270], [1106, 380], [1134, 562], [1114, 580], [1098, 400]], true, 4), { fill: '#F0D9D4', line: '#8A5C54', sw: 1.4 });
+  S.sh('rima2', poly([[1080, 280], [1094, 400], [1114, 580], [1046, 580], [1066, 400]]), { fill: '#5C6A72', line: '#3F4A52', sw: 1 });
   S.sh('ary', E(1036, 586, 22, 30, -10), { fill: CART.fill, line: CART.line, sw: 1.6 });
   S.sh('ary', E(1124, 586, 22, 30, 10), { fill: CART.fill, line: CART.line, sw: 1.6 });
   S.sh('epi2', sm([[1020, 170], [1080, 140], [1140, 170], [1130, 235], [1080, 262], [1030, 235]], true, 5), { fill: CART.fill, line: CART.line, sw: 1.6 });
@@ -149,13 +158,13 @@ function bronchi(S) {
   S.beginT(tx, 0, 1);
   vs(S, R('trachea'), [[360, 90], [360, 335]], 56, 56, TEAL);
   for (let y = 112; y < 330; y += 22) S.sh(R('trachea'), RR(334, y, 52, 11, 4), { fill: CART.fill, line: CART.line, sw: 1 });
-  S.sh(R('carina'), poly([[346, 322], [374, 322], [360, 352]]), { fill: '#7FA39E', line: '#3E625D', sw: 1.4 });
   vs(S, R('rmain'), [[360, 335], [340, 390], [297, 470]], 40, 34, TEAL);
   vs(S, R('lmain'), [[360, 335], [440, 415], [516, 491]], 36, 30, TEAL);
   const lob = (id, pts, w0, w1) => vs(S, R('lobar'), pts, w0, w1, TEAL);
   lob(0, [[303, 440], [250, 420], [190, 380]], 26, 20); lob(0, [[297, 470], [240, 500], [185, 540]], 26, 20); lob(0, [[297, 470], [280, 560], [250, 650]], 28, 22);
   lob(0, [[516, 491], [560, 430], [600, 380]], 26, 20); lob(0, [[516, 491], [558, 580], [585, 650]], 28, 22);
   const m1 = seg(S, [190, 380], 215, 1); seg(S, [185, 540], 160, 2); seg(S, [250, 650], 100, 3); seg(S, [600, 380], -45, 4); seg(S, [585, 650], 75, 5);
+  S.sh(R('carina'), poly([[347, 350], [360, 322], [373, 350]]), { fill: '#7FA39E', line: '#3E625D', sw: 1.4 });
   S.endT();
   S.pin(R('trachea'), R('trachea'), T([360, 200]));
   S.pin(R('carina'), R('carina'), T([360, 334]));
@@ -273,13 +282,13 @@ function pleura(S) {
   // mechanics panel (sagittal side, relaxed dashed vs contracted)
   S.at('mech');
   S.sh(null, sm([[1100, 120], [1250, 90], [1340, 220], [1360, 520], [1330, 760], [1210, 840], [1090, 780], [1060, 520], [1070, 240]], true, 7), { fill: BONE, line: BONEL, sw: 2 });
-  const mlungPts = [[1120, 190], [1250, 160], [1310, 270], [1320, 500], [1290, 700], [1200, 700], [1110, 640], [1090, 460], [1100, 270]];
+  const mlungPts = [[1120, 190], [1250, 160], [1310, 270], [1320, 500], [1314, 742], [1200, 730], [1100, 742], [1090, 460], [1100, 270]];
   const sacPts = mlungPts.map(([x, y]) => [1205 + (x - 1205) * 1.12, 430 + (y - 430) * 1.12]);
   S.sh('mcav', sm(sacPts, true, 7), { fill: '#F3E8EB', line: '#9A6A66', sw: 2 });
   S.sh('mlung3', sm(mlungPts, true, 7), { fill: LUNG[0], line: LUNGL, sw: 2 });
   S.out.push(`<path d="${sm([[1090, 700], [1200, 640], [1300, 700]], false, 8)}" fill="none" stroke="#8A524D" stroke-width="3" stroke-dasharray="9 6"/>`);
   S.sh('diaph2', sm([[1086, 760], [1200, 744], [1318, 760], [1318, 790], [1200, 776], [1086, 792]], true, 5), { fill: '#C7867C', line: '#8A524D', sw: 1.8 });
-  S.arrow(1200, 826, 90, 20, '#8A524D'); S.arrow(1130, 300, -90, 16, '#8A949B'); S.arrow(1290, 300, -90, 16, '#8A949B');
+  S.arrow(1200, 826, 90, 20, '#8A524D'); S.arrow(1130, 300, 180, 16, '#8A949B'); S.arrow(1290, 300, 0, 16, '#8A949B');
   S.pin(R('diaphragm'), 'diaph2', [1200, 760]);
   S.pin(R('pleural-cavity'), 'mcav', [1083, 460]);
   S.pin(R('right-lung'), 'mlung3', [1200, 420]);
@@ -354,17 +363,18 @@ function membrane(S) {
   S.panel(30, 30, 880, 940, 'membrane'); S.panel(930, 30, 490, 940, 'wall');
   S.at('membrane');
   S.sh(null, rect(60, 60, 820, 300), { fill: '#E8F0F1', line: '#E8F0F1', sw: 0.5 });
-  S.sh('surf', RR(60, 356, 820, 14, 3), { fill: '#E6D9A0', line: '#B7A453', sw: 1 });
   S.sh('tissue', rect(60, 404, 820, 420), { fill: '#E4CFC0', line: '#A8917C', sw: 1.2 });
   // capillary cut into the septum on the right
-  S.sh('endo', RR(420, 424, 440, 130, 40), { fill: '#C2A0AB', line: '#76566A', sw: 1.6 });
-  S.sh('cap', RR(432, 436, 416, 106, 32), { fill: '#EBD0CC', line: '#A8817C', sw: 1.2 });
+  S.sh('endo', RR(420, 414, 440, 140, 40), { fill: '#C2A0AB', line: '#76566A', sw: 1.6 });
+  S.sh('cap', RR(432, 432, 416, 110, 32), { fill: '#EBD0CC', line: '#A8817C', sw: 1.2 });
   [[520, 490], [640, 484], [760, 492]].forEach(([x, y], i) => { S.sh(null, E(x, y, 42, 34, i * 20), { fill: '#CC8F88', line: '#8A524D', sw: 1.2 }); S.sh(null, E(x, y, 16, 12, i * 20), { fill: '#E3B5AE', line: '#CC8F88', sw: 0.8 }); });
-  S.sh('bm', RR(410, 410, 460, 12, 5), { fill: '#C9B18A', line: '#8A6E3C', sw: 1 });
+  S.sh('bm', RR(410, 404, 460, 10, 3), { fill: '#C9B18A', line: '#8A6E3C', sw: 1 });
   // epithelium: thin type I over capillary, type II bump at left, thin type I between
-  S.sh('t1', sm([[60, 388], [300, 394], [300, 404], [60, 404]], true, 3), { fill: '#F0E2DC', line: '#A8817C', sw: 1.2 });
-  S.sh('t1', sm([[380, 394], [880, 388], [880, 404], [380, 404]], true, 3), { fill: '#F0E2DC', line: '#A8817C', sw: 1.2 });
-  S.sh('t2', sm([[250, 404], [250, 372], [292, 360], [340, 366], [356, 392], [346, 404]], true, 4), { fill: '#EBC9BF', line: '#8A524D', sw: 1.6 });
+  // Explicit bounds avoid spline overshoot into the neighbouring panel.
+  S.sh('t1', poly([[60, 388], [248, 392], [248, 404], [60, 404]]), { fill: '#F0E2DC', line: '#A8817C', sw: 1.2 });
+  S.sh('t1', poly([[356, 392], [880, 388], [880, 404], [356, 404]]), { fill: '#F0E2DC', line: '#A8817C', sw: 1.2 });
+  S.sh('t2', 'M248 404L248 378Q248 360 292 360Q340 358 350 376L358 404Z', { fill: '#EBC9BF', line: '#8A524D', sw: 1.6 });
+  S.sh('surf', 'M60 380L240 384L240 378Q240 352 292 352Q346 350 358 372L366 384L880 380L880 388L358 392L350 376Q340 358 292 360Q248 360 248 378L248 392L60 388Z', { fill: '#E6D9A0', line: '#B7A453', sw: 1 });
   S.sh(null, E(300, 384, 12, 10), { fill: '#C7867C', line: '#8A524D', sw: 1 });
   [[270, 392], [300, 396], [326, 390]].forEach(([x, y]) => S.sh(null, E(x, y, 6, 5), { fill: '#E6D9A0', line: '#B7A453', sw: 0.8 }));
   // macrophage in the air space
@@ -373,18 +383,19 @@ function membrane(S) {
   [[580, 290], [680, 300], [670, 232]].forEach(([x, y]) => S.sh(null, E(x, y, 8, 8), { fill: '#6C6A62', line: '#4C5760', sw: 1 }));
   // elastic fibres in the septum
   [[110, 600, 420, 560], [90, 680, 360, 650], [150, 520, 380, 520]].forEach(([x0, y0, x1, y1]) => S.ln('elast', `M${x0} ${y0}Q${(x0 + x1) / 2} ${y0 + 40} ${x1} ${y1 - 8}`, { color: '#8A6060', w: 3 }));
-  S.arrow(500, 330, 90, 14, '#8AA3AB'); S.arrow(800, 600, -90, 14, '#8A949B');
-  S.pin(R('surfactant'), 'surf', [180, 363]);
+  S.ln(null, 'M500 338L500 450', { color: '#8AA3AB', w: 2 }); S.arrow(500, 450, 90, 10, '#8AA3AB');
+  S.ln(null, 'M800 480L800 338', { color: '#8A949B', w: 2 }); S.arrow(800, 338, -90, 10, '#8A949B');
+  S.pin(R('surfactant'), 'surf', [180, 384]);
   S.pin(R('type-i-pneumocyte'), 't1', [150, 396]);
   S.pin(R('type-ii-pneumocyte'), 't2', [300, 380]);
   S.pin(R('alveolar-macrophage'), 'mac', [640, 300]);
-  S.pin(R('respiratory-membrane'), 'bm', [640, 416]);
+  S.pin(R('respiratory-membrane'), 'bm', [640, 409]);
   S.pin(R('pulmonary-capillary'), 'cap', [800, 520]);
   S.pin(R('elastic-fiber'), 'elast', [250, 595]);
   // airway wall histology
   S.at('wall');
   const g = rng(5);
-  S.sh(null, rect(960, 60, 430, 160), { fill: '#E8F0F1', line: '#E8F0F1', sw: 0.5 });
+  S.sh(null, rect(960, 60, 430, 200), { fill: '#E8F0F1', line: '#E8F0F1', sw: 0.5 });
   S.sh('lam', rect(960, 400, 430, 190), { fill: '#EAD7CB', line: '#A8917C', sw: 1.2 });
   S.sh('epi', rect(960, 260, 430, 140), { fill: '#E7C9C3', line: '#9A6A66', sw: 1.4 });
   for (let i = 0; i < 9; i++) {
@@ -394,6 +405,10 @@ function membrane(S) {
     S.sh(null, E(x + 15, 340 + (i % 3) * 14, 8, 14), { fill: '#A08AA6', line: '#6F6381', sw: 1 });
     for (let k = 0; k < 4; k++) S.ln(null, `M${x + 6 + k * 6} 262l${(k - 1.5) * 1.5} -26`, { color: '#9A6A66', w: 1.4 });
   }
+  [1040, 1260].forEach(x => {
+    S.sh('epi', E(x, 386, 9, 14), { fill: '#C9A8B4', line: '#9A6A66', sw: 1 });
+    S.sh(null, E(x, 389, 4, 6), { fill: '#A08AA6', line: '#6F6381', sw: .6 });
+  });
   S.sh('smus', RR(960, 600, 430, 70, 20), { fill: '#C7867C', line: '#8A524D', sw: 1.6 });
   for (let i = 0; i < 10; i++) S.sh(null, E(985 + i * 42, 635, 16, 6, 0), { fill: '#8E524C', line: '#8E524C', sw: 0.5 });
   S.sh(null, rect(960, 670, 430, 250), { fill: '#EAD7CB', line: '#A8917C', sw: 1.2 });

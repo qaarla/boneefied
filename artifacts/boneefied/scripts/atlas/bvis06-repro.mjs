@@ -34,6 +34,9 @@ function male(S) {
     { id: M('urethra'), pts: [[470, 462], [470, 520]], w: 20, ...g, lw: 8 },
     { id: M('spongy-urethra'), pts: [[470, 520], [470, 600], [470, 880], [470, 912]], w: 14, ...g, lw: 5 },
     { id: M('ampulla-of-ductus-deferens'), pts: [[420, 338], [440, 378]], w: 22, ...g, lw: 9 }, { id: M('ampulla-of-ductus-deferens'), pts: [[520, 338], [500, 378]], w: 22, ...g, lw: 9 },
+    // Each seminal-vesicle duct joins its ipsilateral ampulla at the ejaculatory-duct origin.
+    { pts: [[402, 400], [420, 390], [440, 378]], w: 7, ...g, lw: 3 },
+    { pts: [[538, 400], [520, 390], [500, 378]], w: 7, ...g, lw: 3 },
     { id: M('ejaculatory-duct'), pts: [[440, 378], [458, 420], [470, 446]], w: 9, ...g, lw: 3 }, { id: M('ejaculatory-duct'), pts: [[500, 378], [482, 420], [470, 446]], w: 9, ...g, lw: 3 },
     { pts: [[438, 530], [470, 546]], w: 5, ...g, lw: 2 }, { pts: [[502, 530], [470, 546]], w: 5, ...g, lw: 2 },
   ]);
@@ -44,7 +47,7 @@ function male(S) {
   S.at('shaft');
   S.sh(null, E(1175, 410, 205, 178), { fill: '#EAD3C4', line: '#8A6E5E', sw: 1.8 });
   S.sh(null, E(1175, 410, 180, 154), { fill: '#EFE0C8', line: '#A59A82', sw: 1.4 });
-  [[1105, 370], [1245, 370]].forEach(([x, y]) => { S.sh('cav', E(x, y, 78, 86), { fill: '#D9A0A0', line: '#8A524D', sw: 1.6 }); for (let i = 0; i < 14; i++) S.sh('cav', circ(x + Math.cos(i * 2.4) * (8 + (i % 4) * 14), y + Math.sin(i * 2.4) * (10 + (i % 5) * 12), 9), { fill: '#C98583', line: '#8A524D', sw: 1 }); });
+  [[1105, 370], [1245, 370]].forEach(([x, y]) => { S.sh('cav', E(x, y, 68, 86), { fill: '#D9A0A0', line: '#8A524D', sw: 1.6 }); for (let i = 0; i < 14; i++) S.sh('cav', circ(x + Math.cos(i * 2.4) * (8 + (i % 4) * 14), y + Math.sin(i * 2.4) * (10 + (i % 5) * 12), 9), { fill: '#C98583', line: '#8A524D', sw: 1 }); });
   S.sh('spo', E(1175, 500, 56, 52), { fill: '#DCA58E', line: '#8A524D', sw: 1.6 });
   net(S, [{ id: M('spongy-urethra'), pts: [[1160, 500], [1190, 500]], w: 16, ...g, lw: 7 }]);
   S.sh(null, circ(1175, 288, 13), { fill: V.fill, line: V.line, sw: 1.3 });
@@ -54,8 +57,8 @@ function male(S) {
 plates.push({
   key: 'male-system', moduleId: 'male-reproductive', kind: 'gross-diagram', lessons: ['male-glands', 'male-external', 'male-relationships'], purpose: 'Male reproductive tract in anterior view with accessory glands, urethral segments and external parts, plus a transverse section of the penile shaft.',
   title: ['Male reproductive tract, glands and penis', 'Aparato reproductor masculino, glándulas y pene'],
-  desc: ['Left: schematic anterior view, patient right at viewer left; the penis and scrotum are drawn in front of the pelvic structures. Each testis lies in the scrotum with its epididymis; the ductus deferens climbs in the spermatic cord, passes behind the bladder and widens into an ampulla. The duct of the seminal vesicle joins it to form the ejaculatory duct, which runs through the prostate to open into the prostatic urethra. The urethra continues as the short membranous segment, where the bulbourethral glands add their secretion, and then as the spongy urethra inside the penis (root, body and glans, covered at the tip by the prepuce). The ductus is shown on one path per side and its course behind the bladder is simplified. Right: transverse section of the penile shaft: two corpora cavernosa above and the corpus spongiosum below, which surrounds the spongy urethra. Muscles of the scrotum and perineum and the penile vessels are omitted.',
-    'Izquierda: vista anterior esquemática, derecha del paciente a la izquierda; el pene y el escroto se dibujan delante de las estructuras pélvicas. Cada testículo está en el escroto con su epidídimo; el conducto deferente asciende en el cordón espermático, pasa detrás de la vejiga y se ensancha en una ampolla. El conducto de la vesícula seminal se une a él para formar el conducto eyaculador, que atraviesa la próstata y desemboca en la uretra prostática. La uretra continúa como el corto segmento membranoso, donde las glándulas bulbouretrales añaden su secreción, y luego como uretra esponjosa dentro del pene (raíz, cuerpo y glande, cubierto en la punta por el prepucio). El conducto se muestra con un trayecto por lado y su recorrido tras la vejiga está simplificado. Derecha: corte transversal del cuerpo del pene: dos cuerpos cavernosos arriba y el cuerpo esponjoso abajo, que rodea la uretra esponjosa. Se omiten los músculos del escroto y del periné y los vasos del pene.'],
+  desc: ['Left: schematic anterior projection, patient right at viewer left. Posterior ducts and glands are exposed and organs separated to show connections, not a literal intact surface view or a scale section. Each testis lies in the scrotum with its epididymis; the ductus deferens climbs in the spermatic cord, passes behind the bladder and widens into an ampulla. The duct of each seminal vesicle joins its ampulla to form an ejaculatory duct, which runs through the prostate to open into the prostatic urethra. The urethra continues as the short membranous segment and then as the spongy urethra inside the penis (root, body and glans, covered at the tip by the prepuce). The bulbourethral glands lie below the prostate; their ducts open into the proximal spongy urethra, not the membranous segment. The ductus is shown on one path per side and its course behind the bladder is simplified. Right: transverse section of the penile shaft: two separate corpora cavernosa dorsally and the corpus spongiosum ventrally, surrounding the spongy urethra. One dorsal vessel is indicated; other vascular details and muscles of the scrotum and perineum are omitted.',
+    'Izquierda: proyección anterior esquemática, derecha del paciente a la izquierda. Los conductos y glándulas posteriores están expuestos y los órganos separados para mostrar conexiones; no es una vista superficial intacta ni un corte a escala. Cada testículo está en el escroto con su epidídimo; el conducto deferente asciende en el cordón espermático, pasa detrás de la vejiga y se ensancha en una ampolla. El conducto de cada vesícula seminal se une a su ampolla para formar un conducto eyaculador, que atraviesa la próstata y desemboca en la uretra prostática. La uretra continúa como el corto segmento membranoso y luego como uretra esponjosa dentro del pene (raíz, cuerpo y glande, cubierto en la punta por el prepucio). Las glándulas bulbouretrales están bajo la próstata; sus conductos desembocan en la uretra esponjosa proximal, no en el segmento membranoso. El conducto se muestra con un trayecto por lado y su recorrido tras la vejiga está simplificado. Derecha: corte transversal del cuerpo del pene: dos cuerpos cavernosos separados dorsalmente y el cuerpo esponjoso ventralmente, que rodea la uretra esponjosa. Se indica un vaso dorsal; se omiten otros detalles vasculares y los músculos del escroto y del periné.'],
   orientation: ['left: anterior view, patient right at viewer left; right: transverse section of the penile shaft, dorsal side above', 'izquierda: vista anterior, derecha del paciente a la izquierda; derecha: corte transversal del cuerpo del pene, cara dorsal arriba'], draw: male,
 });
 
@@ -92,16 +95,25 @@ function testis(S) {
   [[1000, 170], [1020, 196], [990, 204], [1385, 180], [1368, 210], [1000, 760], [1022, 786], [1380, 770], [1360, 800]].forEach(([x, y]) => S.sh(M('leydig-cell'), circ(x, y, 15), { fill: '#D9A08C', line: '#8A5A4A', sw: 1.3 }));
   S.sh(M('peritubular-myoid-cell'), circ(cx, cy, 222), { fill: '#C8B89A', line: '#7A6A4A', sw: 1.6 });
   S.sh(M('seminiferous-tubule'), circ(cx, cy, 204), { fill: '#EDE0C8', line: '#8A7A5A', sw: 1.2 });
-  for (let i = 0; i < 12; i++) { const a = i * 30, a1 = rad(a - 10), a2 = rad(a + 10), p = (r, aa) => [cx + r * Math.cos(aa), cy + r * Math.sin(aa)];
-    S.sh(M('sertoli-cell'), poly([p(200, a1), p(200, a2), p(98, rad(a + 3)), p(98, rad(a - 3))]), { fill: '#E1C7A0', line: '#8A6E3C', sw: 1.2 });
-    S.sh(null, E(...p(184, rad(a)), 13, 8, a), { fill: '#B79A7A', line: '#6A5A3A', sw: 1 }); }
+  // Supporting cytoplasm spans the basal lamina to the lumen and encloses germ cells.
+  for (let i = 0; i < 12; i++) { const a = i * 30 + 15, a1 = rad(a - 15), a2 = rad(a + 15), p = (r, aa) => [cx + r * Math.cos(aa), cy + r * Math.sin(aa)];
+    const sector = `M${p(204, a1).join(' ')}A204 204 0 0 1 ${p(204, a2).join(' ')}L${p(84, a2).join(' ')}A84 84 0 0 0 ${p(84, a1).join(' ')}Z`;
+    S.sh(M('sertoli-cell'), sector, { fill: '#E1C7A0', line: '#8A6E3C', sw: 1.2 });
+    S.sh(null, E(...p(184, rad(a - 10)), 13, 8, a - 10), { fill: '#B79A7A', line: '#6A5A3A', sw: 1 }); }
   for (let i = 0; i < 12; i++) { const a = rad(i * 30 + 15); S.sh(M('spermatogonium'), circ(cx + 188 * Math.cos(a), cy + 188 * Math.sin(a), 12), { fill: '#C9A9C4', line: '#76566A', sw: 1.2 }); }
   for (let i = 0; i < 12; i++) { const a = rad(i * 30 + 15); S.sh(M('primary-spermatocyte'), circ(cx + 150 * Math.cos(a), cy + 150 * Math.sin(a), 18), { fill: '#B792B4', line: '#6A4A68', sw: 1.2 }); }
   for (let i = 0; i < 12; i++) { const a = rad(i * 30 + 15); S.sh(M('spermatid'), circ(cx + 112 * Math.cos(a), cy + 112 * Math.sin(a), 9), { fill: '#D2BBD0', line: '#76566A', sw: 1.1 }); }
-  S.ln(M('blood-testis-barrier'), `M${cx + 170} ${cy}A170 170 0 1 1 ${cx - 170} ${cy}A170 170 0 1 1 ${cx + 170} ${cy}`, { color: '#6A5A3A', w: 4 });
+  // Short junctions cross adjacent Sertoli boundaries, not a separate continuous wall.
+  for (let i = 0; i < 12; i++) {
+    const p = a => [cx + 170 * Math.cos(rad(a)), cy + 170 * Math.sin(rad(a))];
+    S.ln(M('blood-testis-barrier'), `M${p(i * 30 - 6).join(' ')}A170 170 0 0 1 ${p(i * 30 + 6).join(' ')}`, { color: '#6A5A3A', w: 4 });
+  }
   S.sh(null, circ(cx, cy, 84), { fill: LUM, line: '#B49C92', sw: 1.2 });
   [[-30, -20, 20], [24, -34, -30], [-14, 26, 70], [36, 22, 140], [-44, 10, 200]].forEach(([dx, dy, r]) => { const x = cx + dx, y = cy + dy, a = rad(r); S.ln(M('spermatozoon'), `M${x} ${y}L${x + 30 * Math.cos(a)} ${y + 30 * Math.sin(a)}`, { color: '#8A5A58', w: 2 }); S.sh(M('spermatozoon'), E(x, y, 8, 5, r), { fill: '#C27E7A', line: '#7E4A49', sw: 1 }); });
   [['peritubular-myoid-cell', [cx, cy - 213]], ['sertoli-cell', null], ['spermatogonium', null], ['primary-spermatocyte', null], ['spermatid', null], ['blood-testis-barrier', null], ['spermatozoon', null], ['leydig-cell', [1000, 170]], ['interstitial-tissue', [1180, 800]], ['seminiferous-tubule', null]].forEach(([id, h]) => S.pin(M(id), M(id), h ?? undefined));
+  // The whole tubule includes its supporting and germinal epithelium.
+  S.pins.find(p => p.panel === 'tubule' && p.structureId === M('seminiferous-tubule')).key =
+    ['seminiferous-tubule', 'sertoli-cell', 'spermatogonium', 'primary-spermatocyte', 'spermatid', 'blood-testis-barrier', 'spermatozoon'].map(M).join('+');
   const hints = { 'sertoli-cell': [cx + 143, cy + 20], spermatogonium: [cx + 188 * Math.cos(rad(15)), cy + 188 * Math.sin(rad(15))], 'primary-spermatocyte': [cx + 150 * Math.cos(rad(15)), cy + 150 * Math.sin(rad(15))], spermatid: [cx + 112 * Math.cos(rad(75)), cy + 112 * Math.sin(rad(75))], 'blood-testis-barrier': [cx - 170, cy], spermatozoon: [cx - 14, cy + 26], 'seminiferous-tubule': [cx + 120, cy + 200 * 0.7] };
   S.pins.forEach((p) => { if (p.panel === 'tubule' && hints[p.structureId.slice(18)]) p.hint = hints[p.structureId.slice(18)]; });
 }
@@ -122,12 +134,14 @@ function femGross(S) {
   const wallD = sm([...Lh, ...mx(Lh).slice(0, -1).reverse(), ], true, 6);
   S.sh(null, wallD, { ...T.uterus, sw: 1.8 });
   S.clipBoth(wallD);
-  S.sh(F('fundus-of-uterus'), poly([[300, 200], [640, 200], [640, 346], [300, 346]]), { fill: '#D8A9A6', line: '#D8A9A6', sw: 0.5 });
-  S.sh(F('body-of-uterus'), poly([[300, 346], [640, 346], [640, 620], [300, 620]]), { fill: '#CF9E9B', line: '#CF9E9B', sw: 0.5 });
+  S.sh(F('fundus-of-uterus'), poly([[300, 200], [640, 200], [640, 326], [300, 326]]), { fill: '#D8A9A6', line: '#D8A9A6', sw: 0.5 });
+  S.sh(F('body-of-uterus'), poly([[300, 326], [640, 326], [640, 620], [300, 620]]), { fill: '#CF9E9B', line: '#CF9E9B', sw: 0.5 });
   S.clipBothEnd();
   S.out.push(`<path d="${wallD}" fill="none" stroke="${T.uterus.line}" stroke-width="1.8"/>`);
   S.sh(F('vagina'), sm([[392, 676], [548, 676], [562, 800], [554, 930], [386, 930], [378, 800]], true, 5), { fill: '#D9A6A0', line: '#8A5A58', sw: 1.8 });
-  S.sh(F('vaginal-fornix'), poly([[406, 690], [534, 690], [542, 810], [536, 924], [404, 924], [398, 810]]), { fill: LUM, line: '#B49C92', sw: 1.2 });
+  S.sh(null, poly([[406, 690], [534, 690], [542, 810], [536, 924], [404, 924], [398, 810]]), { fill: LUM, line: '#B49C92', sw: 1.2 });
+  // Fornices are recesses beside the projecting cervix, not the whole vaginal lumen.
+  [406, 510].forEach(x => S.sh(F('vaginal-fornix'), rect(x, 690, 24, 30), { fill: LUM, line: LUM, sw: 0.5 }));
   const tube = { fill: '#E4B6AE', line: '#8A524D', lum: LUM };
   const isth = [[412, 326], [352, 326], [318, 310], [286, 300]], amp = [[286, 300], [238, 288], [188, 308], [150, 380], [142, 452]], inf = [[142, 452], [134, 482]];
   net(S, [
@@ -140,28 +154,31 @@ function femGross(S) {
   S.sh(F('cervical-canal'), RR(459, 560, 22, 146, 8), { fill: LUM, line: '#B49C92', sw: 1.2 });
   S.sh(F('internal-os'), E(470, 566, 11, 7), { fill: '#B87972', line: '#7E4A49', sw: 1 }); S.sh(F('external-os'), E(470, 704, 11, 6), { fill: '#B87972', line: '#7E4A49', sw: 1 });
   [false, true].forEach((r) => { const m = (p) => (r ? mx([p])[0] : p);
+    // Attach supporting bands behind the ovary and the free fimbrial fringe.
+    S.ln(F('ovarian-ligament'), `M${m([246, 590])[0]} 590Q${m([310, 500])[0]} 500 ${m([352, 350])[0]} 350`, { color: '#B58E82', w: 9 });
+    S.ln(F('suspensory-ligament-of-ovary'), `M${m([160, 566])[0]} 566Q${m([100, 500])[0]} 500 ${m([100, 390])[0]} 390`, { color: '#B58E82', w: 9 });
     const fim = [[[134, 486], [100, 536]], [[134, 486], [118, 546]], [[134, 486], [140, 552]], [[134, 486], [162, 546]]];
     fim.forEach(([a, b]) => { const A1 = m(a), B1 = m(b); S.sh(F('fimbriae'), poly([[A1[0] - 14, A1[1]], [A1[0] + 14, A1[1]], B1]), { fill: '#E4B6AE', line: '#8A524D', sw: 1.3 }); });
-    S.sh(F('ovary'), E(r ? 940 - 192 : 192, 600, 58, 38, r ? -20 : 20), { ...T.ovary, sw: 1.6 });
-    S.ln(F('ovarian-ligament'), `M${m([246, 590])[0]} 590Q${m([320, 520])[0]} 520 ${m([388, 440])[0]} 440`, { color: '#B58E82', w: 9 });
-    S.ln(F('suspensory-ligament-of-ovary'), `M${m([160, 566])[0]} 566Q${m([124, 600])[0]} 610 ${m([108, 660])[0]} 664`, { color: '#B58E82', w: 9 }); });
+    S.sh(F('ovary'), E(r ? 940 - 192 : 192, 600, 58, 38, r ? -20 : 20), { ...T.ovary, sw: 1.6 }); });
   [['uterus', F('fundus-of-uterus') + '+' + F('body-of-uterus') + '+' + F('cervix'), [372, 450]], ['fundus-of-uterus', null, [470, 286]], ['body-of-uterus', null, [356, 470]], ['cervix', null, [470, 640]], ['cervical-canal', null, [470, 640]], ['vagina', null, [400, 800]], ['vaginal-fornix', null, [418, 704]],
-    ['isthmus-of-uterine-tube', null, [352, 326]], ['ampulla-of-uterine-tube', null, [168, 340]], ['infundibulum', null, [140, 470]], ['fimbriae', null, [118, 530]], ['ovary', null, [192, 604]], ['ovarian-ligament', null, [320, 520]], ['suspensory-ligament-of-ovary', null, [128, 616]], ['broad-ligament', null, [250, 670]]]
+    ['isthmus-of-uterine-tube', null, [352, 326]], ['ampulla-of-uterine-tube', null, [168, 340]], ['infundibulum', null, [140, 470]], ['fimbriae', null, [118, 530]], ['ovary', null, [192, 604]], ['ovarian-ligament', null, [305, 485]], ['suspensory-ligament-of-ovary', null, [115, 489]], ['broad-ligament', null, [250, 670]]]
     .forEach(([id, k, h]) => S.pin(F(id), k ?? F(id), h));
   S.pin(F('uterine-tube'), F('isthmus-of-uterine-tube') + '+' + F('ampulla-of-uterine-tube') + '+' + F('infundibulum'), [286, 300]);
   void uw;
   S.at('detail');
   const dc = 1175, H2 = [[1175, 80], [1090, 100], [1050, 200], [1070, 360], [1110, 500], [1130, 560]];
   const dwall = sm([...H2, ...mx(H2, dc).slice(0, -1).reverse()], true, 6);
-  net(S, [{ pts: [[1100, 190], [1040, 160], [980, 150]], w: 16, fill: '#E4B6AE', line: '#8A524D', lum: LUM, lw: 6 }, { pts: mx([[1100, 190], [1040, 160], [980, 150]], dc), w: 16, fill: '#E4B6AE', line: '#8A524D', lum: LUM, lw: 6 }]);
   S.sh(null, dwall, { ...T.uterus, sw: 1.8 });
   S.clipBoth(dwall);
-  S.sh('D-fundus', poly([[960, 40], [1390, 40], [1390, 240], [960, 240]]), { fill: '#D8A9A6', line: '#D8A9A6', sw: 0.5 });
-  S.sh('D-body', poly([[960, 240], [1390, 240], [1390, 640], [960, 640]]), { fill: '#CF9E9B', line: '#CF9E9B', sw: 0.5 });
+  S.sh('D-fundus', poly([[960, 40], [1390, 40], [1390, 176], [960, 176]]), { fill: '#D8A9A6', line: '#D8A9A6', sw: 0.5 });
+  S.sh('D-body', poly([[960, 176], [1390, 176], [1390, 640], [960, 640]]), { fill: '#CF9E9B', line: '#CF9E9B', sw: 0.5 });
   S.clipBothEnd();
   S.out.push(`<path d="${dwall}" fill="none" stroke="${T.uterus.line}" stroke-width="1.8"/>`);
+  // Draw the intramural tube lumina over the wall so they reach the cavity.
+  net(S, [{ pts: [[1085, 176], [1040, 160], [980, 150]], w: 16, fill: '#E4B6AE', line: '#8A524D', lum: LUM, lw: 6 }, { pts: mx([[1085, 176], [1040, 160], [980, 150]], dc), w: 16, fill: '#E4B6AE', line: '#8A524D', lum: LUM, lw: 6 }]);
   S.sh('D-vagina', sm([[1060, 700], [1290, 700], [1306, 820], [1296, 940], [1054, 940], [1044, 820]], true, 5), { fill: '#D9A6A0', line: '#8A5A58', sw: 1.8 });
-  S.sh('D-fornix', poly([[1080, 716], [1270, 716], [1282, 820], [1274, 930], [1076, 930], [1068, 820]]), { fill: LUM, line: '#B49C92', sw: 1.2 });
+  S.sh(null, poly([[1080, 716], [1270, 716], [1282, 820], [1274, 930], [1076, 930], [1068, 820]]), { fill: LUM, line: '#B49C92', sw: 1.2 });
+  [1080, 1238].forEach(x => S.sh('D-fornix', rect(x, 716, 32, 30), { fill: LUM, line: LUM, sw: 0.5 }));
   S.sh('D-cervix', RR(1112, 548, 126, 190, 30), { fill: '#C58E8A', line: '#8A5A58', sw: 1.8 });
   S.sh(null, poly([[1085, 176], [1265, 176], [1198, 548], [1152, 548]]), { fill: LUM, line: '#B49C92', sw: 1.2 });
   S.sh('D-canal', RR(1157, 536, 36, 196, 10), { fill: LUM, line: '#B49C92', sw: 1.2 });
@@ -235,7 +252,7 @@ function wall(S) {
   const gx = [130, 250, 370, 490, 610, 730], gl = gx.map((x, i) => ({ id: F('uterine-gland'), pts: [[x, 150], [x + 6, 220], [x - 6, 290], [x + 8, 360], [x + (i % 2 ? 24 : -24), 420]], w: 18, fill: '#E3B4AC', line: '#9A6A66', lum: LUM, lw: 9 }));
   net(S, gl); gx.forEach((x) => patch(S, rect(x - 7, 128, 14, 40), LUM));
   S.pin(F('stratum-functionale'), F('stratum-functionale'), [190, 250]); S.pin(F('stratum-basale'), F('stratum-basale'), [190, 390]); S.pin(F('myometrium'), F('myometrium'), [100, 640]); S.pin(F('perimetrium'), F('perimetrium'), [300, 818]);
-  S.pin(F('uterine-gland'), F('uterine-gland'), [250, 290]); S.pin(F('smooth-muscle-of-uterus'), F('smooth-muscle-of-uterus'), [166, 516]);
+  S.pin(F('uterine-gland'), F('uterine-gland'), [250, 290]); S.pin(F('smooth-muscle-of-uterus'), F('smooth-muscle-of-uterus'), [196, 516]);
   S.pin(F('endometrium'), F('stratum-functionale') + '+' + F('stratum-basale'), [310, 330]);
   // phases
   S.at('phases');
@@ -244,7 +261,7 @@ function wall(S) {
   S.sh(null, rect(960, 80, 430, 36), { fill: LUM, line: LUM, sw: 0.5 }); S.sh(null, rect(960, 520, 430, 36), { fill: LUM, line: LUM, sw: 0.5 });
   const px = [1010, 1100, 1190, 1280, 1360];
   net(S, px.map((x) => ({ id: 'pg', pts: [[x, 126], [x, 300], [x + 4, 450]], w: 12, fill: '#E3B4AC', line: '#9A6A66', lum: LUM, lw: 5 })));
-  net(S, px.map((x) => ({ id: 'sg', pts: wav([x, 568], [x + 4, 900], 14, 18), w: 22, fill: '#E3B4AC', line: '#9A6A66', lum: LUM, lw: 10 })));
+  net(S, px.map((x) => ({ id: 'sg', pts: Array.from({ length: 37 }, (_, i) => { const t = i / 36; return [x + 4 * t + Math.sin(t * Math.PI * 6) * 12, 568 + 332 * t]; }), w: 26, fill: '#E3B4AC', line: '#9A6A66', lum: LUM, lw: 12 })));
   px.forEach((x) => { patch(S, rect(x - 3, 112, 6, 30), LUM); patch(S, rect(x - 5, 552, 10, 30), LUM); });
   S.pin(F('proliferative-endometrium'), F('proliferative-endometrium'), [1055, 260]); S.pin(F('secretory-endometrium'), F('secretory-endometrium'), [1055, 720]);
 }

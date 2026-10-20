@@ -23,9 +23,9 @@ function rootsRami(S) {
   for (const s of [-1, 1]) {
     const m = mirror(s), L = s > 0;
     const root = (id, pts, w, st) => (L ? S.tb(id, pts.map(m), w, w, st) : S.tb(null, pts.map(m), w, w, st));
-    root('dorsal-root', [[cx - 34, 350], [cx - 80, 350], [cx - 128, 372]], 11, NV);
+    root('dorsal-root', [[cx - 34, 350], [cx - 80, 350], [cx - 138, 379]], 11, NV);
     (L ? S.sh.bind(S, 'dorsal-root-ganglion') : S.sh.bind(S, null))(E(cx + s * -165, 388, 36, 22, 40 * -s), { fill: '#E3C46E', line: C.nerveLn, sw: 2 });
-    root('ventral-root', [[cx - 36, 420], [cx - 90, 435], [cx - 130, 420]], 11, { fill: C.nerve2, line: C.nerveLn });
+    root('ventral-root', [[cx - 36, 420], [cx - 90, 435], [cx - 130, 435], [cx - 170, 438], [cx - 212, 417]], 11, { fill: C.nerve2, line: C.nerveLn });
     S.tb(null, [[cx + s * -196, 400], [cx + s * -225, 430], [cx + s * -250, 462]], 16, 18, NV);
     S.tb(L ? 'dorsal-ramus' : null, [[cx + s * -250, 462], [cx + s * -285, 400], [cx + s * -320, 330], [cx + s * -335, 240], [cx + s * -330, 170]], 12, 9, NV);
     S.tb(L ? 'ventral-ramus' : null, [[cx + s * -250, 462], [cx + s * -300, 520], [cx + s * -330, 610], [cx + s * -320, 740], [cx + s * -270, 830]], 15, 11, { fill: C.nerve2, line: C.nerveLn });
@@ -59,11 +59,16 @@ function plexusOverview(S) {
     S.sh(null, tube([[cx + s * 100, 740], [cx + s * 118, 860], [cx + s * 115, 985]], 135, 80), skin);
   });
   S.sh(null, E(cx, 482, 150, 44), { fill: '#D7B7B2', line: '#8A6060', sw: 1.6 });
-  S.sh('spinal-cord', tube([[cx, 135], [cx, 560], [cx, 770], [cx, 795]], 34, 14), { fill: C.white, line: C.whiteLn, sw: 1.6 });
-  S.sh(null, E(cx, 800, 11, 8), { fill: C.white, line: C.whiteLn, sw: 1.2 });
+  // Lower lumbar/sacral roots descend beyond the conus, not inside a cord
+  // falsely continuing to the sacrum. This is context, not a new labelled item.
+  S.sh(null, tube([[cx, 565], [cx, 680], [cx, 795]], 15, 12), { fill: '#E3D5A8', line: C.nerveLn, sw: 1 });
+  for (const dx of [-4, 0, 4]) S.ln(null, `M${cx + dx} 565V790`, { color: C.nerveLn, w: .7 });
+  for (const y of [580, 594, 608, 640, 656, 672, 688])
+    S.tb(null, [[cx, 568], [cx - 3, y - 12], [cx - 14, y]], 3, 3, NV);
+  S.sh('spinal-cord', tube([[cx, 135], [cx, 480], [cx, 540], [cx, 575]], 34, 14), { fill: C.white, line: C.whiteLn, sw: 1.6 });
   const web = (id, color, starts, hub, ends, rw = 9) => {
     const o = { fill: color, line: C.nerveLn, sw: 1.2 };
-    starts.forEach((p) => S.tb(id, [[cx - 14, p], [(cx + hub[0]) / 2, (p + hub[1]) / 2 + 6], hub], rw, rw + 2, o));
+    starts.forEach((p) => S.tb(id, [[cx - (p <= 575 ? 6 : 14), p], [(cx + hub[0]) / 2, (p + hub[1]) / 2 + 6], hub], rw, rw + 2, o));
     ends.forEach((e) => S.tb(id, [hub, ...e], rw + 4, rw + 1, o));
   };
   const hubC = [636, 188], hubB = [585, 262], hubL = [612, 596], hubS = [640, 712];
@@ -94,36 +99,40 @@ function limbBase(S, ox, post) {
   S.sh(null, tube([[ox + 375, 470], [ox + 365, 620], [ox + 358, 760]], 108, 66), sk);
   S.sh(null, sm([[ox + 322, 760], [ox + 395, 758], [ox + 405, 860], [ox + 385, 930], [ox + 335, 930], [ox + 318, 860]]), sk);
   S.sh(null, tube([[ox + 405, 130], [ox + 392, 330], [ox + 385, 462]], 30, 36), { fill: '#EFE8D6', line: '#B9AF98', sw: 1.2, op: 0.9 });
-  S.sh(null, tube([[ox + 380, 470], [ox + 360, 620], [ox + 352, 745]], 20, 16), { fill: '#EFE8D6', line: '#B9AF98', sw: 1.2 });
-  S.sh(null, tube([[ox + 366, 470], [ox + 342, 620], [ox + 332, 745]], 16, 14), { fill: '#EFE8D6', line: '#B9AF98', sw: 1.2 });
+  S.sh(null, tube([[ox + 380, 470], [ox + 360, 620], [ox + 352, 745]], 20, 12), { fill: '#EFE8D6', line: '#B9AF98', sw: 1.2 });
+  S.sh(null, tube([[ox + 366, 470], [ox + 342, 620], [ox + 332, 745]], 16, 20), { fill: '#EFE8D6', line: '#B9AF98', sw: 1.2 });
   void post;
 }
 function upperLimb(S) {
   S.panel(30, 30, 690, 940, 'anterior');
   S.panel(740, 30, 680, 940, 'posterior');
   limbBase(S, 0, false);
+  S.out.push('<g transform="translate(2160 0) scale(-1 1)">');
+  S.idm.push('<g transform="translate(2160 0) scale(-1 1)">');
   limbBase(S, 720, true);
+  S.endT();
   const MED = { fill: '#E3C46E', line: C.nerveLn };
   // anterior panel (right arm anterior: lateral at viewer left)
   S.sh('brachial-plexus', sm([[372, 100], [440, 92], [480, 128], [452, 176], [400, 168], [366, 140]]), { fill: '#E2C66E', line: C.nerveLn, sw: 1.6 });
   S.tb('median-nerve', [[420, 170], [410, 300], [400, 430], [392, 500], [383, 640], [372, 760], [366, 840]], 11, 8, MED);
   S.tb('ulnar-nerve', [[452, 170], [458, 300], [455, 400], [448, 452], [430, 560], [408, 690], [398, 780], [398, 850]], 10, 7, { fill: '#E0B879', line: C.nerveLn });
-  S.tb(null, [[352, 215], [330, 320]], 10, 10, { fill: '#E3C46E', line: C.nerveLn });
-  S.ln(null, 'M350 210 Q330 260 334 330', { color: C.nerveLn, w: 2.4, dash: '5 4' });
+  S.ln(null, 'M400 166 Q365 190 350 240 Q328 286 334 330', { color: C.nerveLn, w: 7, dash: '8 5' });
   S.tb('radial-nerve', [[334, 330], [338, 400], [335, 470], [326, 560], [322, 680], [325, 745]], 10, 7, { fill: '#D6A25A', line: C.nerveLn });
   // posterior panel
   const o = 720;
+  S.out.push('<g transform="translate(2160 0) scale(-1 1)">');
+  S.idm.push('<g transform="translate(2160 0) scale(-1 1)">');
   S.sh(null, sm([[o + 372, 100], [o + 440, 92], [o + 480, 128], [o + 452, 176], [o + 400, 168], [o + 366, 140]]), { fill: '#E2C66E', line: C.nerveLn, sw: 1.6 });
   S.tb('radial-nerve-p', [[o + 430, 180], [o + 408, 240], [o + 372, 300], [o + 340, 360], [o + 332, 420], [o + 336, 470]], 12, 9, { fill: '#D6A25A', line: C.nerveLn });
   S.tb('radial-nerve-p', [[o + 336, 470], [o + 343, 560], [o + 346, 650], [o + 348, 740]], 9, 6, { fill: '#D6A25A', line: C.nerveLn });
-  S.ln(null, `M${o + 430} 178 Q${o + 400} 200 ${o + 380} 250`, { color: C.nerveLn, w: 2, dash: '5 4', op: 0.0 });
   S.sh(null, E(o + 442, 470, 14, 12), { fill: '#E3D5C6', line: '#B7A593', sw: 1.2 });
+  S.endT();
   S.at('anterior');
   S.pin('brachial-plexus', 'brachial-plexus', [425, 135]);
   S.pin('median-nerve', 'median-nerve', [400, 430]);
   S.pin('ulnar-nerve', 'ulnar-nerve', [455, 330]);
   S.pin('radial-nerve', 'radial-nerve', [338, 400]);
-  S.at('posterior'); S.pin('radial-nerve', 'radial-nerve-p', [o + 360, 320]);
+  S.at('posterior'); S.pin('radial-nerve', 'radial-nerve-p', [2160 - (o + 360), 320]);
 }
 plates.push({
   key: 'upper-limb-nerves', moduleId: MOD, kind: 'gross-diagram', lessons: ['plexuses-peripheral'], purpose: 'Course of the median, ulnar and radial nerves from the brachial plexus into the right arm and forearm.',
@@ -145,21 +154,30 @@ function legBase(S, ox) {
 function lowerLimb(S) {
   S.panel(30, 30, 690, 940, 'anterior');
   S.panel(740, 30, 680, 940, 'posterior');
-  legBase(S, 0); legBase(S, 720);
+  legBase(S, 0);
+  S.out.push('<g transform="translate(2160 0) scale(-1 1)">');
+  S.idm.push('<g transform="translate(2160 0) scale(-1 1)">');
+  legBase(S, 720);
+  S.endT();
   const o = 720, F = { fill: '#A9C6A0', line: '#4F7A4F' }, Sc = { fill: '#E0B2AA', line: '#8A5A52' };
   S.sh('lumbar-plexus', sm([[355, 62], [440, 55], [490, 90], [460, 130], [390, 125]]), { fill: '#A9C6A0', line: '#4F7A4F', sw: 1.6 });
   S.tb('femoral-nerve', [[440, 120], [432, 210], [415, 330], [400, 430], [390, 480]], 14, 9, F);
   [[[425, 250], [380, 310]], [[418, 300], [440, 360]], [[408, 360], [372, 410]]].forEach((b) => S.tb('femoral-nerve', [[b[0][0], b[0][1]], b[1]], 6, 4, F));
-  S.tb('femoral-nerve', [[390, 480], [372, 590], [366, 720], [362, 860]], 8, 5, F);
+  S.tb('femoral-nerve', [[390, 480], [422, 590], [413, 720], [400, 860]], 8, 5, F);
+  S.out.push('<g transform="translate(2160 0) scale(-1 1)">');
+  S.idm.push('<g transform="translate(2160 0) scale(-1 1)">');
   S.sh('sacral-plexus', sm([[o + 355, 62], [o + 440, 55], [o + 490, 90], [o + 460, 130], [o + 390, 125]]), { fill: '#E0B2AA', line: '#8A5A52', sw: 1.6 });
   S.tb('sciatic-nerve', [[o + 440, 120], [o + 436, 250], [o + 420, 390], [o + 405, 470]], 18, 14, Sc);
   S.tb(null, [[o + 405, 470], [o + 392, 600], [o + 385, 780], [o + 380, 880]], 9, 6, Sc);
   S.tb(null, [[o + 405, 470], [o + 360, 520], [o + 330, 600], [o + 345, 680]], 8, 5, Sc);
+  S.endT();
   S.at('anterior');
   S.pin('lumbar-plexus', 'lumbar-plexus', [430, 92]);
   S.pin('femoral-nerve', 'femoral-nerve', [415, 330]);
-  S.pin('sacral-plexus', 'sacral-plexus', [o + 430, 92]);
-  S.pin('sciatic-nerve', 'sciatic-nerve', [o + 428, 320]);
+  S.at('posterior');
+  S.at('posterior');
+  S.pin('sacral-plexus', 'sacral-plexus', [2160 - (o + 430), 92]);
+  S.pin('sciatic-nerve', 'sciatic-nerve', [2160 - (o + 428), 320]);
 }
 plates.push({
   key: 'lower-limb-nerves', moduleId: MOD, kind: 'gross-diagram', lessons: ['plexuses-peripheral'], purpose: 'Femoral nerve to the front of the thigh and sciatic nerve down the back of the thigh.',
@@ -186,6 +204,13 @@ const CN = [
   { n: 'xii', w: 7, p: [[26, 750], [50, 800], [110, 842], [200, 872], [262, 888]], t: 0.55, ring: true },
 ];
 const V_BR = [[[205, 556], [290, 500], [360, 455], [405, 430]], [[205, 566], [300, 536], [370, 512], [420, 500]]];
+// V1 joins III/IV/VI at the SOF; V2 and V3 retain their separate exit cues.
+V_BR.push([[205, 550], [250, 455], [290, 390], [324, 350]]);
+export const cranialExitCues = {
+  ii: [240, 286], iii: [324, 350], iv: [324, 350], vi: [324, 350],
+  vii: [380, 570], viii: [380, 570],
+  ix: [400, 770], x: [400, 770], xi: [400, 770], xii: [262, 888],
+};
 const ROMAN = { i: 'cranial-nerve-i', ii: 'cranial-nerve-ii', iii: 'cranial-nerve-iii', iv: 'cranial-nerve-iv', v: 'cranial-nerve-v', vi: 'cranial-nerve-vi', vii: 'cranial-nerve-vii', viii: 'cranial-nerve-viii', ix: 'cranial-nerve-ix', x: 'cranial-nerve-x', xi: 'cranial-nerve-xi', xii: 'cranial-nerve-xii' };
 function cnBase(S, group) {
   S.panel(30, 30, 1390, 940, 'inferior');
@@ -219,10 +244,13 @@ function cnBase(S, group) {
   S.tb(group.includes('xi') ? 'cranial-nerve-xi' : null, spinal.map(X(-1)), 6, 6, group.includes('xi') ? NV : MUTE);
   for (const s of [-1, 1]) {
     for (const nv of CN) {
-      const on = group.includes(nv.n) && s < 0, pts = nv.p.map(X(s));
+      const on = group.includes(nv.n) && s < 0;
+      const exit = cranialExitCues[nv.n], last = nv.p.at(-1);
+      const tail = exit && (exit[0] !== last[0] || exit[1] !== last[1]) ? [exit] : [];
+      const pts = [...nv.p, ...tail].map(X(s));
       const st = on ? { fill: nv.n === 'viii' ? '#D9B060' : C.nerve, line: C.nerveLn } : MUTE;
       const id = on ? ROMAN[nv.n] : null;
-      if (nv.n === 'v') { nerve(id, pts, nv.w, st); S.sh(id, E(cx + s * 192, 560, 26, 20, -25 * s), st); V_BR.forEach((b, k) => nerve(id, b.map(X(s)), 8 - k, st, true)); }
+      if (nv.n === 'v') { nerve(id, pts, nv.w, st); S.sh(id, E(cx + s * 192, 560, 26, 20, -25 * s), st); V_BR.forEach((b, k) => nerve(id, b.map(X(s)), k === 2 ? 7 : 8 - k, st, k < 2)); }
       else if (nv.n === 'i') {
         // olfactory bulb and tract are CNS (unlabelled); CN I itself is the fila olfactoria entering the bulb through the cribriform cue
         const bst = s < 0 ? { fill: '#DDD7C6', line: '#ABA494' } : MUTE;
@@ -230,8 +258,11 @@ function cnBase(S, group) {
         S.sh(null, RR(cx + s * 70 - 40, 70, 80, 10, 4), { fill: C.bone, line: C.boneLn, sw: 1.2, dash: '3 3' });
         for (let k = -3; k <= 3; k++) S.tb(id, [[70 + k * 4, 112 - Math.abs(k)], [70 + k * 8, 92], [70 + k * 11, 72]].map(X(s)), 4, 3, st);
       }
-      else nerve(id, pts, nv.w, st, true);
+      else nerve(id, pts, nv.w, st, false);
     }
+    // One ring per shared anatomical exit, never a separate hole per nerve.
+    for (const point of new Map(Object.values(cranialExitCues).map(p => [p.join(','), p])).values())
+      cue(...X(s)(point));
   }
 }
 const pinsA = ['i', 'ii', 'iii', 'iv', 'v', 'vi'], pinsB = ['vii', 'viii', 'ix', 'x', 'xi', 'xii'];
@@ -252,4 +283,17 @@ plates.push({
   orientation: ['inferior view of the brain; frontal at top; labels on viewer-left nerves; selected origin cues, nerves end at skull-base ring cues', 'vista inferior del encéfalo; frontal arriba; marcadores en los nervios del lado izquierdo; señales de origen seleccionadas, los nervios terminan en anillos de salida de la base craneal'],
   draw: (S) => { cnBase(S, ['vii', 'viii', 'ix', 'x', 'xi', 'xii']); cnPins(S, pinsB); },
 });
+const plexusCaption = plates.find(p => p.key === 'plexus-overview');
+plexusCaption.desc[0] += ' The cord ends in the upper lumbar region; the thin ochre bundle below represents descending cauda-equina roots, not spinal cord continuing into the sacrum.';
+plexusCaption.desc[1] += ' La médula termina en la región lumbar superior; el fino haz ocre inferior representa las raíces descendentes de la cola de caballo, no médula que continúa hasta el sacro.';
+const upperOrientation = plates.find(p => p.key === 'upper-limb-nerves');
+upperOrientation.orientation = [
+  'right upper limb; anterior panel: lateral at viewer left; posterior panel: lateral at viewer right',
+  'miembro superior derecho; panel anterior: lateral a la izquierda del observador; panel posterior: lateral a la derecha',
+];
+const lowerOrientation = plates.find(p => p.key === 'lower-limb-nerves');
+lowerOrientation.orientation = [
+  'right lower limb; anterior panel: lateral at viewer left; posterior panel: lateral at viewer right; bones faint',
+  'miembro inferior derecho; panel anterior: lateral a la izquierda del observador; panel posterior: lateral a la derecha; huesos tenues',
+];
 void RR; void poly;

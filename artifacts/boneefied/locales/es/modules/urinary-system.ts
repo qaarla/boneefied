@@ -333,7 +333,7 @@ const urinarySystemSpanish = {
       prompt: 'Toca la corteza renal.',
       explanation: 'La corteza forma la región externa del riñón.',
       answer: 'Corteza renal',
-      acceptedAliases: [],
+      acceptedAliases: ['urinary-system-renal-cortex'],
     },
     'q-visual-kidney-histology': {
       prompt: 'Identifica el tipo general de tejido que se muestra.',

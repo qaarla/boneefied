@@ -16,7 +16,7 @@ const crop = (S, x, y, w, h) => S.clipBoth(rect(x, y, w, h));
 // ------------------------------------------------------------ upper arterial
 function upperArt(S) {
   S.panel(30, 30, 1390, 940, 'upper');
-  const T = grp(S, 725, 40, 1.9, 1.9); skin(S, { legs: false });
+  const T = grp(S, 725, 50, 1.7, 1.7); skin(S, { legs: false });
   drawVessels(S, ART, A, (d) => d.g !== 'leg'); gEnd(S);
   [['ves-aorta', [26, 300]], ['ves-common-carotid', [-17, 112]], ['ves-subclavian', [-55, 134]], ['ves-axillary', [-112, 168]], ['ves-brachial', [-142, 260]], ['ves-radial', [-176, 408]], ['ves-ulnar', [-154, 410]], ['ves-internal-carotid', [-19, 72]], ['ves-external-carotid', [-8, 70]]]
     .forEach(([id, h]) => S.pin(id, id, T(h)));
@@ -34,7 +34,7 @@ function upperVein(S) {
   S.panel(30, 30, 900, 940, 'route'); S.panel(950, 30, 470, 940, 'elbow');
   S.at('route');
   crop(S, 30, 30, 900, 940);
-  const T = grp(S, 480, 40, 1.9, 1.9); skin(S, { legs: false }); drawVessels(S, VEIN, V, (d) => d.g !== 'leg'); gEnd(S); S.clipBothEnd();
+  const T = grp(S, 480, 50, 1.7, 1.7); skin(S, { legs: false }); drawVessels(S, VEIN, V, (d) => d.g !== 'leg'); gEnd(S); S.clipBothEnd();
   [['ves-brachiocephalic-vein', [-18, 134]], ['ves-subclavian-vein', [-60, 132]], ['ves-axillary-vein', [-112, 168]], ['ves-internal-jugular', [-24, 90]], ['ves-jugular', [-36, 100]], ['ves-cephalic', [-160, 268]], ['ves-median-cubital', [-158, 312]]]
     .forEach(([id, h]) => S.pin(id, id, T(h)));
   S.at('elbow');
@@ -88,7 +88,7 @@ function saph(S) {
   vs(S, 'ves-great-saphenous@g', [[1340, 900], [1330, 720], [1296, 570], [1240, 478], [1175, 432]], 54, 74, V);
   vs(S, 'ves-great-saphenous@g', [[1330, 560], [1296, 520], [1250, 490]], 22, 26, V);
   vs(S, 'ves-great-saphenous@g', [[1240, 660], [1260, 580], [1262, 515]], 20, 24, V);
-  [[1010, 700, 90], [1170, 700, 90], [1320, 700, 90]].forEach(([x, y, a], i) => S.arrow(x, y, i === 0 ? a * -1 : -90, 18, '#F2EFE8'));
+  [[1010, 700], [1170, 700], [1320, 700]].forEach(([x, y], i) => S.arrow(x, y, i === 0 ? 90 : -90, 18, '#F2EFE8'));
   S.pin('ves-femoral', 'ves-femoral@g', [1005, 640]);
   S.pin('ves-vein', 'ves-vein@g', [1168, 300]);
   S.pin('ves-great-saphenous', 'ves-great-saphenous@g', [1333, 780]);
@@ -123,16 +123,20 @@ function portal(S) {
   [[610, 720], [650, 770], [740, 720]].forEach(([x, y]) => vs(S, 'ves-mesenteric', [[x, y], [(x + 692) / 2, y - 30], [692, y - 55]], 8, 10, V));
   vs(S, 'ves-hepatic-portal', [[700, 470], [640, 440], [580, 420], [520, 410]], 24, 22, V);
   [[[520, 410], [450, 380], [380, 350]], [[520, 410], [470, 455], [400, 490]], [[520, 410], [440, 425], [300, 430]]].forEach((p) => vs(S, 'ves-hepatic-portal', p, 12, 7, V));
-  vs(S, 'ves-hepatic-vein', [[330, 390], [450, 320], [596, 255]], 16, 18, V);
-  vs(S, 'ves-hepatic-vein', [[450, 460], [520, 360], [596, 262]], 14, 18, V);
+  // Separate venous drainage from the portal inflow branches: no painted
+  // blue-on-blue crossing that implies a portal-to-caval shunt.
+  vs(S, 'ves-hepatic-vein', [[270, 360], [320, 320], [420, 285], [596, 255]], 16, 18, V);
+  vs(S, 'ves-hepatic-vein', [[465, 350], [480, 315], [515, 285], [596, 262]], 14, 18, V);
+  S.arrow(640, 440, -158, 7, '#F2EFE8');
+  S.arrow(540, 278, -18, 6, '#F2EFE8');
   S.arrow(596, 140, -90, 16, '#F2EFE8');
   S.pin('ves-hepatic-portal', 'ves-hepatic-portal', [585, 424]);
   S.pin('ves-splenic', 'ves-splenic', [770, 460]);
   S.pin('ves-mesenteric', 'ves-mesenteric', [692, 600]);
-  S.pin('ves-hepatic-vein', 'ves-hepatic-vein', [500, 336]);
+  S.pin('ves-hepatic-vein', 'ves-hepatic-vein', [492, 302]);
   // lobule
   S.at('lobule');
-  const hx = 1185, hy = 500, R = 270, hex = [0, 1, 2, 3, 4, 5].map((i) => [hx + R * Math.cos((i * Math.PI) / 3 + Math.PI / 6), hy + R * Math.sin((i * Math.PI) / 3 + Math.PI / 6)]);
+  const hx = 1185, hy = 500, R = 250, hex = [0, 1, 2, 3, 4, 5].map((i) => [hx + R * Math.cos((i * Math.PI) / 3 + Math.PI / 6), hy + R * Math.sin((i * Math.PI) / 3 + Math.PI / 6)]);
   S.sh(null, poly(hex), { fill: LIV.fill, line: LIV.line, sw: 2 });
   hex.forEach(([x, y]) => {
     S.ln('ves-sinusoids', `M${x} ${y}Q${(x + hx) / 2 + (y - hy) * 0.12} ${(y + hy) / 2 - (x - hx) * 0.12} ${hx} ${hy}`, { color: CAP.line, w: 11 });
@@ -141,8 +145,13 @@ function portal(S) {
   hex.forEach(([x, y], i) => { const [x2, y2] = hex[(i + 1) % 6]; S.ln(null, `M${(x * 2 + hx) / 3} ${(y * 2 + hy) / 3}Q${(x + x2) / 2 * 0.62 + hx * 0.38} ${(y + y2) / 2 * 0.62 + hy * 0.38} ${(x2 * 2 + hx) / 3} ${(y2 * 2 + hy) / 3}`, { color: CAP.fill, w: 5 }); });
   hex.forEach(([x, y]) => { S.sh('triad', E(x, y, 30, 30), { fill: '#EFE3D6', line: LIV.line, sw: 1.4 }); S.sh('ves-hepatic-portal', E(x - 6, y + 4, 12, 12), { fill: V.fill, line: V.line, sw: 1.2 }); S.sh(null, E(x + 10, y - 8, 7, 7), { fill: A.fill, line: A.line, sw: 1 }); });
   S.sh('ves-hepatic-vein', E(hx, hy, 40, 40), { fill: V.fill, line: V.line, sw: 1.6 });
+  // Project the central vein's downstream hepatic venous outflow out of the
+  // lobule plane. Its marker belongs on that actual outlet, not the central vein.
+  vs(S, 'ves-hepatic-vein', [[1185, 500], [1110, 340], [1040, 200], [1025, 170]], 22, 26, V);
+  S.arrow(1040, 200, -116, 9, '#F2EFE8');
+  S.arrow(1194, 550, -94, 5, '#F2EFE8');
   S.pin('ves-sinusoids', 'ves-sinusoids', [(hex[1][0] + hx) / 2, (hex[1][1] + hy) / 2]);
-  S.pin('ves-hepatic-vein', 'ves-hepatic-vein', [hx, hy]);
+  S.pin('ves-hepatic-vein', 'ves-hepatic-vein', [1060, 240]);
   S.pin('ves-hepatic-portal', 'ves-hepatic-portal', [hex[4][0] - 6, hex[4][1] + 4]);
 }
 plates.push({
@@ -154,6 +163,8 @@ plates.push({
 });
 
 // ------------------------------------------------------------ renal / celiac
+plates.at(-1).desc[0] += ' In the lobule inset, the blue outlet projecting toward the upper left represents downstream hepatic venous outflow out of the lobule plane; the unlabelled blue central circle is the central vein, not a portal-to-caval connection.';
+plates.at(-1).desc[1] += ' En el lobulillo, la salida azul proyectada hacia arriba a la izquierda representa el drenaje venoso hepático fuera del plano del lobulillo; el círculo azul central sin marcador es la vena central, no una conexión portocava.';
 function renal(S) {
   S.panel(30, 30, 1390, 940, 'abdomen');
   S.ln(null, 'M280 190Q500 90 720 80Q940 90 1160 190', { color: '#8A949B', w: 3, dash: '8 6' });
@@ -166,10 +177,10 @@ function renal(S) {
   S.sh(null, poly([[535, 440], [590, 446], [575, 480], [525, 472]]), { fill: GLD.fill, line: GLD.line, sw: 1.4 });
   S.sh(null, poly([[870, 380], [830, 396], [842, 428], [884, 412]]), { fill: GLD.fill, line: GLD.line, sw: 1.4 });
   vs(S, 'ves-aorta', [[742, 120], [742, 300], [742, 500], [742, 640], [742, 860]], 42, 38, A);
-  vs(S, null, [[742, 300], [700, 282], [620, 272], [560, 305]], 12, 9, A);
-  vs(S, null, [[742, 300], [760, 262], [790, 238]], 10, 8, A);
-  vs(S, null, [[742, 300], [820, 285], [920, 300], [1010, 322]], 12, 9, A);
-  vs(S, 'ves-celiac-trunk', [[742, 352], [742, 296]], 20, 18, A);
+  vs(S, 'ves-celiac-trunk', [[742, 352], [795, 330], [805, 300]], 20, 18, A);
+  vs(S, null, [[805, 300], [700, 282], [620, 272], [560, 305]], 12, 9, A);
+  vs(S, null, [[805, 300], [798, 262], [790, 238]], 10, 8, A);
+  vs(S, null, [[805, 300], [850, 285], [920, 300], [1010, 322]], 12, 9, A);
   vs(S, null, [[742, 440], [762, 520], [790, 660]], 14, 10, A);
   vs(S, 'ves-renal-artery', [[742, 490], [690, 505], [620, 530], [582, 548]], 12, 10, A);
   vs(S, 'ves-renal-artery', [[742, 490], [800, 486], [850, 490], [872, 494]], 12, 10, A);
@@ -177,7 +188,7 @@ function renal(S) {
   vs(S, null, [[592, 582], [630, 570], [668, 556]], 18, 20, V);
   vs(S, 'ves-vein', [[868, 535], [820, 542], [742, 546], [692, 550], [668, 552]], 18, 20, V);
   S.pin('ves-aorta', 'ves-aorta', [742, 740]);
-  S.pin('ves-celiac-trunk', 'ves-celiac-trunk', [742, 326]);
+  S.pin('ves-celiac-trunk', 'ves-celiac-trunk', [785, 335]);
   S.pin('ves-renal-artery', 'ves-renal-artery', [815, 487]);
   S.pin('ves-vein', 'ves-vein', [800, 543]);
 }

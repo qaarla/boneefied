@@ -82,8 +82,8 @@ export function stem(S, o = {}) {
   S.clipEnd();
   const trunk = [[935, 735], [990, 725], [1030, 715]];
   const branches = [[trunk[2], [1075, 690], [1105, 700]], [trunk[2], [1085, 735], [1110, 745]], [trunk[1], [1030, 770], [1050, 795]], [trunk[1], [1000, 680], [1010, 650]], [trunk[0], [950, 775], [965, 795]], [trunk[2], [1060, 665], [1070, 650]]];
-  S.tb('arbor-vitae', trunk, 26, 18, { fill: C.white, line: C.whiteLn });
-  branches.forEach((b) => S.tb('arbor-vitae', b, 15, 5, { fill: C.white, line: C.whiteLn }));
+  S.union('arbor-vitae', [tube(trunk, 26, 18), ...branches.map(b => tube(b, 15, 5))],
+    { fill: C.white, line: C.whiteLn, sw: 1.3 });
   if (o.cord) S.sh('spinal-cord', tube([[858, 925], [858, 1010], [860, 1100]], 54, 50), { fill: C.white, line: C.whiteLn, sw: 2 });
   const mid = sm([[760, 590], [850, 575], [885, 625], [870, 680], [800, 690], [765, 640]]);
   const pons = sm([[770, 690], [810, 680], [880, 685], [895, 745], [870, 785], [800, 785], [758, 745]]);
@@ -102,6 +102,8 @@ function brainMedial(S) {
   S.sh('cerebrum', cx, { fill: '#DCC9CF', line: C.brainLn, sw: 2.4 });
   S.squig(cx, 300, 200, 1100, 540, 11, 9, { seed: 5 });
   stem(S);
+  // Projected lateral ventricle communicates with the midline third ventricle.
+  S.tb(null, [[690, 365], [675, 385], [665, 420]], 12, 12, { fill: C.csf, line: C.csfLn });
   S.sh('thalamus', E(775, 450, 92, 60, -6), { fill: '#C3AEBC', line: C.brainLn, sw: 2 });
   S.sh('hypothalamus', sm([[648, 540], [690, 565], [765, 570], [772, 598], [730, 618], [680, 612], [650, 582]]), { fill: '#D2A9A9', line: C.brainLn, sw: 2 });
   S.sh('third-ventricle', sm([[648, 420], [676, 412], [692, 460], [700, 520], [712, 555], [690, 565], [660, 540], [645, 490]]), { fill: C.csf, line: C.csfLn, sw: 1.6 });
@@ -212,17 +214,28 @@ function csfMeninges(S) {
   S.panel(740, 30, 680, 940, 'meninges');
   const cx = sm([[110, 520], [130, 380], [220, 260], [360, 210], [500, 215], [620, 280], [680, 400], [660, 520], [610, 600], [520, 640], [420, 650], [330, 610], [230, 590], [150, 570]]);
   S.sh(null, cx, { fill: '#E3D7DB', line: C.brainLn, sw: 2 });
-  S.sh(null, E(500, 640, 150, 90, 0), { fill: '#D2BEC4', line: C.brainLn, sw: 2 });
+  // Leave the fourth-ventricular/caudal cisternal interval outside the
+  // cerebellar contour; an outlet must not tunnel through cerebellar tissue.
+  S.sh(null, sm([[500, 580], [570, 568], [633, 603], [650, 649], [622, 696],
+    [563, 722], [513, 714], [512, 681], [525, 640], [500, 610]]),
+    { fill: '#D2BEC4', line: C.brainLn, sw: 2 });
   S.sh(null, tube([[400, 620], [430, 760], [480, 900], [490, 960]], 80, 50), { fill: C.white, line: C.whiteLn, sw: 2 });
   S.sh('lateral-ventricle', tube([[240, 430], [300, 385], [400, 360], [500, 375], [570, 425], [585, 480], [540, 545], [480, 575], [430, 560]], 34, 34), { fill: C.csf, line: C.csfLn, sw: 1.8 });
   S.sh('lateral-ventricle', tube([[570, 430], [640, 455]], 26, 14), { fill: C.csf, line: C.csfLn, sw: 1.8 });
+  S.tb(null, [[365, 367], [350, 385], [352, 411]], 13, 13, { fill: C.csf, line: C.csfLn });
   S.sh('third-ventricle', sm([[335, 400], [370, 400], [380, 470], [392, 540], [360, 548], [342, 480]]), { fill: C.csf, line: C.csfLn, sw: 1.6 });
   S.tb('cerebral-aqueduct', [[378, 535], [420, 572], [465, 610]], 11, 11, { fill: C.csf, line: C.csfLn });
   S.sh('fourth-ventricle', sm([[460, 600], [510, 640], [498, 695], [470, 670]]), { fill: C.csf, line: C.csfLn, sw: 1.6 });
   S.sh(null, tube([[484, 690], [490, 790], [494, 940]], 8, 8), { fill: C.csf, line: C.csfLn, sw: 1 });
   const tufts = [[405, 375], [435, 368], [470, 369], [505, 378], [535, 398], [558, 425], [570, 465], [556, 510], [532, 548], [500, 566], [465, 568], [352, 405], [358, 440], [490, 625], [478, 650]];
   tufts.forEach(([x, y], i) => S.sh('choroid-plexus', E(x, y, 11, 10), { fill: '#C98C8E', line: '#7E4A49', sw: 1.2 }));
-  [[355, 440, 90], [420, 556, 40], [540, 410, 60], [440, 580, 35]].forEach(([x, y, a]) => S.arrow(x, y, a, 11));
+  // The main fourth-ventricular outlet leads to subarachnoid CSF, not just
+  // the small central-canal continuation. No additional curricular target.
+  S.tb(null, [[485, 680], [486, 723], [520, 748], [553, 752]], 10, 10, { fill: C.csf, line: C.csfLn });
+  S.sh(null, sm([[536, 740], [577, 734], [607, 755], [593, 786], [551, 787], [533, 766]]),
+    { fill: C.csf, line: C.csfLn, sw: 1 });
+  [[350, 389, 90], [364, 470, 80], [442, 590, 40], [487, 646, 80], [514, 744, 35]]
+    .forEach(([x, y, a]) => S.arrow(x, y, a, 6));
   S.at('ventricles');
   S.pin('lateral-ventricle', 'lateral-ventricle', [300, 392]);
   S.pin('third-ventricle', 'third-ventricle', [366, 505]);
@@ -281,10 +294,10 @@ function spinalCross(S) {
   S.sh('ventral-horn', vh(-1), { fill: '#D1A3A3', line: C.brainLn, sw: 1.4 });
   S.sh(null, E(cx, cy, 52, 26), { fill: C.gray, line: C.gray, sw: 0.5 });
   S.sh('central-canal', E(cx, cy - 4, 11, 11), { fill: C.csf, line: C.csfLn, sw: 1.6 });
-  S.tb('dorsal-root', [[cx - 168, cy - 216], [cx - 215, cy - 245], [cx - 258, cy - 262]], 13, 13, { fill: C.nerve, line: C.nerveLn });
+  S.tb('dorsal-root', [[cx - 156, cy - 205], [cx - 215, cy - 245], [cx - 274, cy - 262]], 13, 13, { fill: C.nerve, line: C.nerveLn });
   S.sh('dorsal-root-ganglion', E(cx - 302, cy - 262, 46, 28, 28), { fill: '#E3C46E', line: C.nerveLn, sw: 2 });
-  S.tb(null, [[cx - 340, cy - 245], [cx - 380, cy - 180], [cx - 392, cy - 60]], 13, 13, { fill: C.nerve, line: C.nerveLn });
-  S.tb('ventral-root', [[cx - 128, cy + 234], [cx - 220, cy + 270], [cx - 330, cy + 190], [cx - 390, cy - 40]], 13, 13, { fill: C.nerve2, line: C.nerveLn });
+  S.tb(null, [[cx - 328, cy - 253], [cx - 380, cy - 180], [cx - 392, cy - 55]], 13, 13, { fill: C.nerve, line: C.nerveLn });
+  S.tb('ventral-root', [[cx - 128, cy + 214], [cx - 220, cy + 270], [cx - 330, cy + 190], [cx - 392, cy - 55]], 13, 13, { fill: C.nerve2, line: C.nerveLn });
   S.tb(null, [[cx - 392, cy - 55], [cx - 470, cy - 40], [cx - 560, cy - 20]], 22, 22, { fill: C.nerve, line: C.nerveLn });
   S.ln(null, `M${cx + 168} ${cy - 216}l50 -40M${cx + 128} ${cy + 234}l60 50`, { color: C.nerveLn, w: 3 });
   S.pin('spinal-cord', 'cord-white', [cx + 200, cy + 150]);
@@ -305,4 +318,12 @@ plates.push({
     'Corte transversal de la médula, con la parte posterior arriba. La sustancia gris central tiene forma de H: astas dorsales (posteriores) estrechas que reciben la información sensitiva y astas ventrales (anteriores) anchas con las motoneuronas, alrededor del conducto central. La sustancia blanca la rodea. Tres haces estudiados se tiñen solo en la mitad izquierda de la imagen (los haces son bilaterales): columna dorsal en el funículo posterior, haz corticoespinal lateral a nivel posterior y haz espinotalámico en la sustancia blanca anterolateral. La raíz dorsal lleva el ganglio de la raíz dorsal; la raíz ventral sale del asta ventral. Posiciones esquemáticas; no se dibujan todos los haces.'],
   orientation: ['transverse section; posterior at top, anterior at bottom; tracts and roots drawn on the viewer-left half only', 'corte transversal; posterior arriba, anterior abajo; haces y raíces dibujados solo en la mitad izquierda de la imagen'], draw: spinalCross,
 });
+const medialCaption = plates.find(p => p.key === 'brain-medial');
+medialCaption.desc[0] += ' The lateral ventricle is projected onto this midsagittal schematic; its short connection to the third ventricle represents the interventricular foramen, not a lateral ventricle cut in the midline.';
+medialCaption.desc[1] += ' El ventrículo lateral se proyecta sobre este esquema sagital medio; su corta conexión con el tercer ventrículo representa el agujero interventricular, no un ventrículo lateral cortado en la línea media.';
+const csfCaption = plates.find(p => p.key === 'csf-meninges');
+csfCaption.desc[0] = csfCaption.desc[0].replace('and arrows show CSF flow from lateral to third ventricle, through the aqueduct, to the fourth and down the central canal.',
+  'and arrows follow connected CSF passages from the lateral ventricle through the interventricular foramen to the third, through the aqueduct to the fourth, and outward to subarachnoid CSF. The thin downward continuation is the central canal, not the main drainage route.');
+csfCaption.desc[1] = csfCaption.desc[1].replace('y las flechas muestran el flujo del LCR del ventrículo lateral al tercero, por el acueducto, al cuarto y hacia abajo por el conducto central.',
+  'y las flechas siguen pasos continuos del LCR desde el ventrículo lateral por el agujero interventricular al tercero, por el acueducto al cuarto y hacia el LCR subaracnoideo. La fina continuación inferior es el conducto central, no la vía principal de drenaje.');
 void W; void H; void along; void mkTxt;

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Platform, type ImageSourcePropType } from 'react-native';
 import { Asset } from 'expo-asset';
+import { anatomyImageCacheKey } from '@/components/anatomyImageCacheKey';
 
 const CACHE_NAME = 'boneefied-anatomy-v1';
 
@@ -25,12 +26,13 @@ export function useOfflineImage(source?: number): ImageState {
         if (!uri) throw new Error('Image URL is missing');
         if (!('caches' in globalThis)) throw new Error('Browser image storage is unavailable');
         const cache = await caches.open(CACHE_NAME);
-        let response = await cache.match(uri);
+        const cacheKey = anatomyImageCacheKey(uri);
+        let response = await cache.match(cacheKey);
         if (!response) {
-          const fetched = await fetch(uri);
+          const fetched = await fetch(cacheKey);
           if (!fetched.ok) throw new Error(`Image request failed (${fetched.status})`);
           // Await the write so the image is available before reporting it ready.
-          await cache.put(uri, fetched.clone());
+          await cache.put(cacheKey, fetched.clone());
           response = fetched;
         }
         const blob = await response.blob();

@@ -1,10 +1,11 @@
 import type { Asset, HotspotSizeOverride, OverlayAvoidRect } from './model';
+import { foundationsAtlasAvoidRects } from './foundations-atlas-corrections.ts';
 
 export type DiagramOverlayTuning = { avoid: OverlayAvoidRect[]; size?: HotspotSizeOverride; review: string };
 /** BVR02: individually inspected source-image protection; never target coordinates. */
 export const bvr02OverlayOverrides: Record<string, DiagramOverlayTuning> = {
   "asset-openstax-muscle-labeled-overview": {"avoid":[{"x":0.1259,"y":0.058,"width":0.2688,"height":0.874},{"x":0.5983,"y":0.053,"width":0.2757,"height":0.879}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
-  "asset-bvis06-female-gross": {"avoid":[{"x":0.0432,"y":0.243,"width":0.5585,"height":0.714},{"x":0.657,"y":0.063,"width":0.3033,"height":0.899}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
+  "asset-bvis06-female-gross": {"avoid":[{"x":0.23,"y":0.25,"width":0.19,"height":0.35},{"x":0.26,"y":0.56,"width":0.13,"height":0.38},{"x":0.72,"y":0.06,"width":0.18,"height":0.88},{"x":0.67,"y":0.14,"width":0.28,"height":0.06},{"x":0.09,"y":0.27,"width":0.43,"height":0.09},{"x":0.06,"y":0.35,"width":0.065,"height":0.21},{"x":0.52,"y":0.35,"width":0.065,"height":0.21},{"x":0.09,"y":0.55,"width":0.085,"height":0.09},{"x":0.47,"y":0.55,"width":0.085,"height":0.09}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Female correction: protect the actual organs and ducts rather than the entire pale ligament sheet; keep callouts near anatomy with disjoint touch cells."},
   "asset-bvis06-testis-ducts": {"avoid":[{"x":0.088,"y":0.088,"width":0.4826,"height":0.764},{"x":0.6432,"y":0.048,"width":0.3378,"height":0.899}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
   "asset-bvis05-heart-anterior": {"avoid":[{"x":0.1225,"y":0.043,"width":0.4412,"height":0.869},{"x":0.7328,"y":0.273,"width":0.2137,"height":0.549}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
   "asset-bvis05-body-artery-vein-maps": {"avoid":[{"x":0.1018,"y":0.058,"width":0.3102,"height":0.894},{"x":0.588,"y":0.058,"width":0.3102,"height":0.894}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
@@ -65,7 +66,7 @@ export const bvr02OverlayOverrides: Record<string, DiagramOverlayTuning> = {
   "asset-commons-axial-skeleton-blank": {"avoid":[{"x":0.0983,"y":0.008,"width":0.893,"height":0.909}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
   "asset-openstax-muscle-face-neck": {"avoid":[{"x":0.2949,"y":0.023,"width":0.4274,"height":0.964}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
   "asset-openstax-muscle-anterior-trunk": {"avoid":[{"x":0.2535,"y":0,"width":0.4895,"height":1}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
-  "asset-bvis04-eye-anterior-segment": {"avoid":[{"x":0.3501,"y":0.018,"width":0.6378,"height":0.959}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
+  "asset-bvis04-eye-anterior-segment": {"avoid":[{"x":0.317,"y":0.032,"width":0.671,"height":0.936}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Reframed anterior detail: protect the complete cornea, lens, ciliary bodies and anterior coat context."},
   "asset-bvis04-inner-ear-vestibular": {"avoid":[{"x":0.2983,"y":0.178,"width":0.4688,"height":0.754}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
   "asset-bvis04-smell-taste": {"avoid":[{"x":0.0328,"y":0.218,"width":0.324,"height":0.574},{"x":0.3777,"y":0.168,"width":0.2964,"height":0.509},{"x":0.7156,"y":0.103,"width":0.2343,"height":0.824}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
   "asset-bvis05-blood-smear-schematic": {"avoid":[{"x":0.0363,"y":0.058,"width":0.9137,"height":0.879}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
@@ -96,7 +97,7 @@ export const bvr02OverlayOverrides: Record<string, DiagramOverlayTuning> = {
   "asset-openstax-muscle-posterior-back": {"avoid":[{"x":0.2949,"y":0.018,"width":0.4068,"height":0.982}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
   "asset-bvis04-brainstem-cerebellum": {"avoid":[{"x":0.257,"y":0.038,"width":0.5826,"height":0.899}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
   "asset-bvis04-cranial-nerves-i-vi": {"avoid":[{"x":0.188,"y":0.058,"width":0.6171,"height":0.939}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
-  "asset-bvis04-middle-ear": {"avoid":[{"x":0.0087,"y":0.018,"width":0.9792,"height":0.959}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Dense or locally clustered targets: compact paint and protected anatomy; retain original numbered endpoints."},
+  "asset-bvis04-middle-ear": {"avoid":[{"x":0.24,"y":0.055,"width":0.51,"height":0.89}],"size":{"diameter":18,"numeralSize":10,"maxDiameter":21},"review":"Complete middle-ear detail: protect membrane, ossicles, windows, chamber and the entire auditory tube."},
   "asset-bvis05-blood-composition": {"avoid":[{"x":0.1087,"y":0.063,"width":0.124,"height":0.859},{"x":0.288,"y":0.063,"width":0.1516,"height":0.859},{"x":0.5708,"y":0.163,"width":0.355,"height":0.579}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
   "asset-bvis05-head-neck-vessels": {"avoid":[{"x":0.057,"y":0.018,"width":0.8826,"height":0.959}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
   "asset-bvis05-hepatic-portal-system": {"avoid":[{"x":0.057,"y":0.073,"width":0.943,"height":0.854}],"review":"Overlay covered or crossed visible anatomy: relocate paint only, with original sizing and endpoints."},
@@ -185,6 +186,12 @@ for (const id of repair5CompactMarkerIds) {
   const tuning = bvr02OverlayOverrides[id];
   if (!tuning) throw new Error(`Missing reviewed overlay tuning: ${id}`);
   tuning.size = { diameter: 16, numeralSize: 10, maxDiameter: 17 };
+}
+
+// Full-art corrections supersede the historical protected regions in every
+// caller, including viewers whose glossary objects predate catalog assembly.
+for (const [id, avoid] of Object.entries(foundationsAtlasAvoidRects)) {
+  bvr02OverlayOverrides[id] = { ...bvr02OverlayOverrides[id], avoid };
 }
 
 export function applyBvr02Overlay(asset: Asset): Asset {

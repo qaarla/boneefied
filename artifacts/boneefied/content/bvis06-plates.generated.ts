@@ -661,8 +661,8 @@ export const bvis06Plates: Bvis06Plate[] = [
       "Capas de la pared digestiva"
     ],
     "description": [
-      "Left: schematic transverse section of a generic gut tube, lumen at the centre. From the lumen outward: mucosa (epithelium, lamina propria and a thin muscularis mucosae), submucosa with larger vessels, muscularis externa (the combined inner circular and outer longitudinal muscle layers) and the serosa, where the tube is covered by peritoneum. Right: the same layers in a longitudinal section: circular fibres are cut lengthwise in the circular layer, whereas longitudinal fibres are cut across. Simplified: villi, glands and nerve plexuses are omitted; layer thickness varies by organ. Schematic, not a photomicrograph.",
-      "Izquierda: corte transversal esquemático de un tubo digestivo genérico, luz en el centro. De la luz hacia fuera: mucosa (epitelio, lámina propia y una delgada muscular de la mucosa), submucosa con vasos mayores, muscular externa (capa circular interna y longitudinal externa) y serosa, donde el tubo está cubierto por peritoneo. Derecha: las mismas capas en corte longitudinal: las fibras de la capa circular se cortan a lo largo y las longitudinales se cortan transversalmente. Simplificado: se omiten vellosidades, glándulas y plexos nerviosos; el grosor varía según el órgano. Esquema, no fotomicrografía."
+      "Left: schematic transverse section of a generic gut tube, lumen at the centre. From the lumen outward: mucosa (epithelium, lamina propria and a thin muscularis mucosae), submucosa with larger vessels, muscularis externa (the combined inner circular and outer longitudinal muscle layers) and the serosa, where the tube is covered by peritoneum. In this transverse section, longitudinal muscle fibres are cut across and circular fibres follow the circumference. Right: the same layers in a longitudinal section: circular fibres are cut across (small profiles), whereas longitudinal fibres are cut lengthwise (parallel lines). Simplified: villi, glands and nerve plexuses are omitted; layer thickness varies by organ. Schematic, not a photomicrograph.",
+      "Izquierda: corte transversal esquemático de un tubo digestivo genérico, luz en el centro. De la luz hacia fuera: mucosa (epitelio, lámina propia y una delgada muscular de la mucosa), submucosa con vasos mayores, muscular externa (capa circular interna y longitudinal externa) y serosa, donde el tubo está cubierto por peritoneo. En este corte transversal, las fibras longitudinales se cortan transversalmente y las circulares siguen la circunferencia. Derecha: las mismas capas en corte longitudinal: las fibras circulares se cortan transversalmente (perfiles pequeños), mientras que las longitudinales se cortan a lo largo (líneas paralelas). Simplificado: se omiten vellosidades, glándulas y plexos nerviosos; el grosor varía según el órgano. Esquema, no fotomicrografía."
     ],
     "orientation": "left: transverse section, lumen at centre; right: longitudinal section, lumen above",
     "orientationEs": "izquierda: corte transversal, luz en el centro; derecha: corte longitudinal, luz arriba",
@@ -1669,21 +1669,21 @@ export const bvis06Plates: Bvis06Plate[] = [
       },
       {
         "structureId": "urinary-system-juxtaglomerular-apparatus",
-        "x": 0.1379,
-        "y": 0.13,
+        "x": 0.1903,
+        "y": 0.182,
         "radius": 0.018,
         "panel": "corpuscle"
       },
       {
         "structureId": "urinary-system-macula-densa",
-        "x": 0.2276,
-        "y": 0.118,
+        "x": 0.1572,
+        "y": 0.2,
         "radius": 0.018,
         "panel": "corpuscle"
       },
       {
         "structureId": "urinary-system-juxtaglomerular-cell",
-        "x": 0.1366,
+        "x": 0.1517,
         "y": 0.21,
         "radius": 0.018,
         "panel": "corpuscle"
@@ -1731,8 +1731,8 @@ export const bvis06Plates: Bvis06Plate[] = [
       "Aparato reproductor masculino, glándulas y pene"
     ],
     "description": [
-      "Left: schematic anterior view, patient right at viewer left; the penis and scrotum are drawn in front of the pelvic structures. Each testis lies in the scrotum with its epididymis; the ductus deferens climbs in the spermatic cord, passes behind the bladder and widens into an ampulla. The duct of the seminal vesicle joins it to form the ejaculatory duct, which runs through the prostate to open into the prostatic urethra. The urethra continues as the short membranous segment, where the bulbourethral glands add their secretion, and then as the spongy urethra inside the penis (root, body and glans, covered at the tip by the prepuce). The ductus is shown on one path per side and its course behind the bladder is simplified. Right: transverse section of the penile shaft: two corpora cavernosa above and the corpus spongiosum below, which surrounds the spongy urethra. Muscles of the scrotum and perineum and the penile vessels are omitted.",
-      "Izquierda: vista anterior esquemática, derecha del paciente a la izquierda; el pene y el escroto se dibujan delante de las estructuras pélvicas. Cada testículo está en el escroto con su epidídimo; el conducto deferente asciende en el cordón espermático, pasa detrás de la vejiga y se ensancha en una ampolla. El conducto de la vesícula seminal se une a él para formar el conducto eyaculador, que atraviesa la próstata y desemboca en la uretra prostática. La uretra continúa como el corto segmento membranoso, donde las glándulas bulbouretrales añaden su secreción, y luego como uretra esponjosa dentro del pene (raíz, cuerpo y glande, cubierto en la punta por el prepucio). El conducto se muestra con un trayecto por lado y su recorrido tras la vejiga está simplificado. Derecha: corte transversal del cuerpo del pene: dos cuerpos cavernosos arriba y el cuerpo esponjoso abajo, que rodea la uretra esponjosa. Se omiten los músculos del escroto y del periné y los vasos del pene."
+      "Left: schematic anterior projection, patient right at viewer left. Posterior ducts and glands are exposed and organs separated to show connections, not a literal intact surface view or a scale section. Each testis lies in the scrotum with its epididymis; the ductus deferens climbs in the spermatic cord, passes behind the bladder and widens into an ampulla. The duct of each seminal vesicle joins its ampulla to form an ejaculatory duct, which runs through the prostate to open into the prostatic urethra. The urethra continues as the short membranous segment and then as the spongy urethra inside the penis (root, body and glans, covered at the tip by the prepuce). The bulbourethral glands lie below the prostate; their ducts open into the proximal spongy urethra, not the membranous segment. The ductus is shown on one path per side and its course behind the bladder is simplified. Right: transverse section of the penile shaft: two separate corpora cavernosa dorsally and the corpus spongiosum ventrally, surrounding the spongy urethra. One dorsal vessel is indicated; other vascular details and muscles of the scrotum and perineum are omitted.",
+      "Izquierda: proyección anterior esquemática, derecha del paciente a la izquierda. Los conductos y glándulas posteriores están expuestos y los órganos separados para mostrar conexiones; no es una vista superficial intacta ni un corte a escala. Cada testículo está en el escroto con su epidídimo; el conducto deferente asciende en el cordón espermático, pasa detrás de la vejiga y se ensancha en una ampolla. El conducto de cada vesícula seminal se une a su ampolla para formar un conducto eyaculador, que atraviesa la próstata y desemboca en la uretra prostática. La uretra continúa como el corto segmento membranoso y luego como uretra esponjosa dentro del pene (raíz, cuerpo y glande, cubierto en la punta por el prepucio). Las glándulas bulbouretrales están bajo la próstata; sus conductos desembocan en la uretra esponjosa proximal, no en el segmento membranoso. El conducto se muestra con un trayecto por lado y su recorrido tras la vejiga está simplificado. Derecha: corte transversal del cuerpo del pene: dos cuerpos cavernosos separados dorsalmente y el cuerpo esponjoso ventralmente, que rodea la uretra esponjosa. Se indica un vaso dorsal; se omiten otros detalles vasculares y los músculos del escroto y del periné."
     ],
     "orientation": "left: anterior view, patient right at viewer left; right: transverse section of the penile shaft, dorsal side above",
     "orientationEs": "izquierda: vista anterior, derecha del paciente a la izquierda; derecha: corte transversal del cuerpo del pene, cara dorsal arriba",
@@ -2192,15 +2192,15 @@ export const bvis06Plates: Bvis06Plate[] = [
       },
       {
         "structureId": "female-reproductive-ovarian-ligament",
-        "x": 0.2207,
-        "y": 0.518,
+        "x": 0.2097,
+        "y": 0.484,
         "radius": 0.018,
         "panel": "gross"
       },
       {
         "structureId": "female-reproductive-suspensory-ligament-of-ovary",
-        "x": 0.0883,
-        "y": 0.616,
+        "x": 0.0786,
+        "y": 0.488,
         "radius": 0.018,
         "panel": "gross"
       },
@@ -2509,8 +2509,8 @@ export const bvis06Plates: Bvis06Plate[] = [
       },
       {
         "structureId": "female-reproductive-smooth-muscle-of-uterus",
-        "x": 0.1228,
-        "y": 0.524,
+        "x": 0.1352,
+        "y": 0.516,
         "radius": 0.018,
         "panel": "wall"
       },

@@ -60,8 +60,8 @@
         },
         {
           "structureId": "vastus-lateralis",
-          "x": 0.2097,
-          "y": 0.676,
+          "x": 0.2005,
+          "y": 0.6353,
           "radius": 0.018,
           "panel": "anterior",
           "verifiedOnVisibleTissue": true
@@ -260,8 +260,8 @@
         }
       ],
       "sha256": {
-        "svg": "c37c283f3bbeeed06b379ab18992ad9b47c2d46f108298333acdfe298a1eda34",
-        "png": "250f32f648836e863510d888a3aaa76273be9fc0cd840cd30cf765c3bbb81fff"
+        "svg": "d91476574459d57f8ed35db30f9d971f875ef0faebb961840742b4b87780a184",
+        "png": "f94752ed732cbc2bb25db3a9b2c0253c8fef23cc43c7da3c136d064fb8023843"
       }
     },
     {
@@ -306,80 +306,80 @@
       "featureAnchorMapping": [
         {
           "structureId": "temporalis",
-          "x": 0.5094,
-          "y": 0.257,
+          "x": 0.4911,
+          "y": 0.2484,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         },
         {
           "structureId": "scalenes",
-          "x": 0.4703,
-          "y": 0.7309,
+          "x": 0.4328,
+          "y": 0.7585,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         },
         {
           "structureId": "sternocleidomastoid",
-          "x": 0.5224,
-          "y": 0.6296,
+          "x": 0.4858,
+          "y": 0.6068,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         },
         {
           "structureId": "buccinator",
-          "x": 0.6248,
-          "y": 0.4892,
+          "x": 0.6006,
+          "y": 0.4686,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         },
         {
           "structureId": "masseter",
-          "x": 0.5522,
-          "y": 0.446,
+          "x": 0.5317,
+          "y": 0.4276,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         },
         {
           "structureId": "platysma",
-          "x": 0.6062,
-          "y": 0.7565,
+          "x": 0.597,
+          "y": 0.722,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         },
         {
           "structureId": "frontalis",
-          "x": 0.6025,
-          "y": 0.1679,
+          "x": 0.5794,
+          "y": 0.1639,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         },
         {
           "structureId": "orbicularis-oculi",
-          "x": 0.611,
-          "y": 0.264,
+          "x": 0.5876,
+          "y": 0.308,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         },
         {
           "structureId": "orbicularis-oris",
-          "x": 0.6745,
-          "y": 0.498,
+          "x": 0.6441,
+          "y": 0.478,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
         }
       ],
       "sha256": {
-        "svg": "b6d7a73cc197df8a42d81191e4b38ecad44523fbc8f25c9be4480251f1ec2592",
-        "png": "0e446da6638cdc196a87524a23dd3e8fd01bcd4431d70e1f8c82ff83623fa955"
+        "svg": "510fefd8046ed1689e4ce666adaa7f679c5b57896da98cd6a247fd74e425da07",
+        "png": "a4d223a66daa2938aaf8dc1694e89b056c727f80b6ac6042c5da0a6ad2ebacb5"
       }
     },
     {
@@ -496,8 +496,8 @@
         }
       ],
       "sha256": {
-        "svg": "0bdbc21a9e2c574fbb1cff297f22f8b174d6585535afc60548538a6770d5b5e7",
-        "png": "99b2ec62de855464c3315226030bcbc62228c8b6c5a28d5fbc0269dfce15dafa"
+        "svg": "15f5a9e01caf9100d626566efe68ea2ebd16d685328d2b39b5e55d40728848a8",
+        "png": "53c84211e7c8a40d71d082125b0095d91a72e8318a882060e4a1deb0c70da076"
       }
     },
     {
@@ -598,8 +598,8 @@
         }
       ],
       "sha256": {
-        "svg": "2b7a152f024f2ee88f042ffde6e825f68de9c3b6f8cc10777eb466f4550b4dc8",
-        "png": "f1511950d1a98f50bbccc4c0b72fb3f8d101f166b968626429287d5423158806"
+        "svg": "231301214fea648283865ad806920f173ffbc2a8e247bace3ff3f02e571642ad",
+        "png": "abe0da832d3841cf05590fd96e0080113cede181ee9f738292b25ceaea52dcc7"
       }
     },
     {
@@ -700,8 +700,8 @@
         }
       ],
       "sha256": {
-        "svg": "642aee0d1545b8372ce37fe0aef951a8e0edb93e237b1dc77d8694fe667a988b",
-        "png": "0f46aebc2c4b507100ef6db6ff70b80e52c7fcf76c7f944ddba67d11e42d58b8"
+        "svg": "46ad77d2599be3ee80118d33a303770d8a92dd2a74b3769ef1e7529257d87399",
+        "png": "ff57c51ff32043f1a3c71cc58b9a90bffa81c9cb2a97c15588c4e14679700a10"
       }
     },
     {
@@ -761,17 +761,17 @@
           "verifiedOnVisibleTissue": true
         },
         {
-          "structureId": "pronator-teres",
-          "x": 0.2276,
-          "y": 0.656,
+          "structureId": "flexor-carpi-radialis",
+          "x": 0.2262,
+          "y": 0.748,
           "radius": 0.018,
           "panel": "superficial",
           "verifiedOnVisibleTissue": true
         },
         {
-          "structureId": "flexor-carpi-radialis",
-          "x": 0.2317,
-          "y": 0.704,
+          "structureId": "pronator-teres",
+          "x": 0.2483,
+          "y": 0.625,
           "radius": 0.018,
           "panel": "superficial",
           "verifiedOnVisibleTissue": true
@@ -794,8 +794,8 @@
         }
       ],
       "sha256": {
-        "svg": "ad7163d627222ef328abfe00431ba9a3241c24a06fcb352cdfa71f0d250d6e2c",
-        "png": "40cf10c0eed25144d50a03e1be4f143d81b2fdc5b7816172bfe08b2aba837ad7"
+        "svg": "d599b3890127742204560eeaa1832ad7fed034fc9412bd2eb3ad11148889becb",
+        "png": "babd1d3398ddca715685ed639d33621f5586576771bf2d570c3bc27cd657ab2e"
       }
     },
     {
@@ -872,8 +872,8 @@
         }
       ],
       "sha256": {
-        "svg": "8b49e7cb52ef30073f9855efd8a82318f95b41982f8b93acfdf59cef2d2c58e6",
-        "png": "f0e4e6fd90d1f1929b41cf92691f675613ff8b9907221efb0009907ccb770cbe"
+        "svg": "4a2bfe91caec77e2e72b9d1e22f38e2a406700bc722dd9aacebffe499de66f24",
+        "png": "a361e27ad9b23929f556c323f4b4e7b7510ec5f7d22f173943c2abdffcaec7df"
       }
     },
     {
@@ -917,17 +917,17 @@
       },
       "featureAnchorMapping": [
         {
-          "structureId": "pronator-teres",
-          "x": 0.2566,
-          "y": 0.286,
+          "structureId": "flexor-carpi-radialis",
+          "x": 0.2469,
+          "y": 0.474,
           "radius": 0.018,
           "panel": "anterior",
           "verifiedOnVisibleTissue": true
         },
         {
-          "structureId": "flexor-carpi-radialis",
-          "x": 0.2579,
-          "y": 0.398,
+          "structureId": "pronator-teres",
+          "x": 0.2851,
+          "y": 0.2584,
           "radius": 0.018,
           "panel": "anterior",
           "verifiedOnVisibleTissue": true
@@ -958,8 +958,8 @@
         }
       ],
       "sha256": {
-        "svg": "e09d0e3b9b37dda9640bee5f314d2868aa2079869442ab96a4bd9e948fea838e",
-        "png": "7023594d1a7b044c5bb0425201b130487fe332dea4770bb1da5262df6a42c03b"
+        "svg": "b3f57992680a0c2cecfdf86c9e234885876617dda8b50f467ffa74a1fcdb87c8",
+        "png": "043fa47ddddfd594a45bffbe0f2ca02fb334c366511359e2708593901af2b90a"
       }
     },
     {
@@ -1036,8 +1036,8 @@
         }
       ],
       "sha256": {
-        "svg": "92e0354401b793c598d8fd7072d183aff1f3a18c3800f0fd801a37ac090c335f",
-        "png": "9e9458223768dca7b17679f139c2f29ad18182899af74f955833283ae07d3596"
+        "svg": "b51cce8fbbc0b1bf3271ede82185f3f9a368dad8748d512b3a20ef26a6a07275",
+        "png": "8762dcddf8cd67bb0f1b8474ae34b19d0b5090b13c2c73e5ad248eb277c2ffb7"
       }
     },
     {
@@ -1098,8 +1098,8 @@
         }
       ],
       "sha256": {
-        "svg": "b558338b4ed09826bf532a6b5a02caeb9f4d338b257107a85a02e82d2974ed30",
-        "png": "20eb18b4c281cec14deba7ccfb3b0b39954651015b2b75c09bc2337a69aac4f5"
+        "svg": "b9bbfafb5af31538fd2008624411d1cc2d15c15798ed8c0c8368652d2eb25f9d",
+        "png": "75df744b2543594535b837965382f07fdb50971556da5d2cc6585ce92ad9b24f"
       }
     },
     {
@@ -1168,8 +1168,8 @@
         },
         {
           "structureId": "vastus-lateralis",
-          "x": 0.3324,
-          "y": 0.532,
+          "x": 0.312,
+          "y": 0.514,
           "radius": 0.018,
           "panel": "",
           "verifiedOnVisibleTissue": true
@@ -1208,8 +1208,8 @@
         }
       ],
       "sha256": {
-        "svg": "e5a387041458c0b6c2ff99e82306cd9083c171ba0eb8d5b63ae21c5b1fdb2886",
-        "png": "37b9b8a2dfdd15d02d6bce153eb1bae9435b2e1b99bb3e60ea4125514559996a"
+        "svg": "dc924e403697b683ffcf777bfc2b522b8ad8602d989c6949ba60ea39ddd745f1",
+        "png": "d59ea9d6e9842d64fe4b4d1bd3a7c3a5e0f0e27332e735340251143320e7e357"
       }
     },
     {
@@ -1278,7 +1278,7 @@
         }
       ],
       "sha256": {
-        "svg": "3e582a5717b1bac7c24072de37e901b675b9ea2b920667715b58a540d2ce71d3",
+        "svg": "17840a308e574dd3da768ccf67359efce0a05e72df98dbc8aa11a201d9d7d4b2",
         "png": "1495177458d9786a9643b0bcdfdcc14bd494de3763ca9b873bc664aa4a1ef598"
       }
     },
@@ -1364,8 +1364,8 @@
         }
       ],
       "sha256": {
-        "svg": "51f26ddb1803150ae559448d0d811c92a4ed59154ed555bbabd0c99fc3a561d8",
-        "png": "18ef8de995d19aa6893c56edb7bc3a3a8f61261c57248d513ec395a4239a4fc9"
+        "svg": "8807e67b09a0169c761be044aa44732cddcd141170e790c2e0655733ade2f1e0",
+        "png": "d2db7c86ed72c644efe766a5c1138c59809b1d0a95b28c7ffbfde694c180ad17"
       }
     },
     {
@@ -1426,7 +1426,7 @@
         }
       ],
       "sha256": {
-        "svg": "8ed6cc5b5e90c509be372d5ae04f121a99e7a12324a3dcd4f50d4277b9da1b3b",
+        "svg": "8b36e665824e3ac4cec00c4f94efedf5a1de08efbe10a65c4ec41861b4496ed4",
         "png": "bab698df3d7f4259b34e3868b966acdc66aef20529e9eb0adcd5dee693df3ec9"
       }
     },
@@ -1504,8 +1504,8 @@
         }
       ],
       "sha256": {
-        "svg": "e6b71689546468a9fb1240422af66473340741dff6ccd99a03992c963e889092",
-        "png": "8846613c9965cbeb306991c2ef4fda5012a6cb44d015c3e22260ec8d0f73bc52"
+        "svg": "4627463b187f085d0825fe4260c416b3b47816bb1765762388e22ec452f6dfef",
+        "png": "7cba3e847d085530a3f307f3382dd060b0ec614d7452cdacb2c88c5319102ef7"
       }
     },
     {
@@ -1590,8 +1590,8 @@
         }
       ],
       "sha256": {
-        "svg": "bdd60c7a2f0f7c4c2b5e751183e297ed03f1b1207a86c60c5bd620d86da4b0b4",
-        "png": "6f63a5d1467dd546f2e5d4309d474b8cf6807979ec1f9e3faa4977d12b033d14"
+        "svg": "5cb0ce891ee5ea8f4826f9faf3c29086c76a9a80de9343e18440703328d4a73d",
+        "png": "a403417abc7720d3509ecbcf7db5b3dccf106bb2bca3186bb01e92d4602091e5"
       }
     },
     {
@@ -1644,7 +1644,7 @@
         }
       ],
       "sha256": {
-        "svg": "f5855e6e28a9b3ac78a0829ac00f7eb5512b2a6a48f73edc6534928beb5fbcd3",
+        "svg": "3eef9f96e3cc975100c49e16fd15410b66e5683f62ab57d5c916563b4423be3d",
         "png": "ea94eec0098fbebf21a6a6de3d70874d4de61088a45c400089f3e5c56b31082b"
       }
     },
@@ -1722,7 +1722,7 @@
         }
       ],
       "sha256": {
-        "svg": "7a0d53854c8b18181fb8ed317e8e4b66632a56c7af49fa19380bd636e7401bc2",
+        "svg": "fe95c5985bb9b3c4236c7ff067e8a311050b649efb53281a014d358212bfa32d",
         "png": "52af368a50ba0b04fc245f214acc268253a2d4766a49990c14903f041555395f"
       }
     },
@@ -1800,7 +1800,7 @@
         }
       ],
       "sha256": {
-        "svg": "3ea1c8679247bf4df7367be1147bb9c2b51620a0acf1da8d8161f095288488d8",
+        "svg": "5bf0f3bf3fead1c685f3845ba041c831b972fe44c1827caadaf71c3e0c0ade7e",
         "png": "8946d15afcd1e3e0d2d891242d7bef082a19042eca1d5d8595d3343a65de82b1"
       }
     },
@@ -1870,7 +1870,7 @@
         }
       ],
       "sha256": {
-        "svg": "e6b55f40327c0afe91ef7989869be3105cec1ef9b84cc86fa02264a16051b5ef",
+        "svg": "3f2752279fd23aac15d969a884ff3071251f55641089ecd2bc21f69468cf4cd8",
         "png": "1a8eb9d40eec1cc7494d561c0d96846ab541bc335175e4656777c36c96d37cad"
       }
     }

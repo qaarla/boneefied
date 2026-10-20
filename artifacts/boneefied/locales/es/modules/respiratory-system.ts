@@ -329,7 +329,7 @@ export default {
       prompt: 'Toque la tráquea.',
       explanation: 'La tráquea es el conducto conductor central situado por encima de los bronquios principales.',
       answer: 'Tráquea',
-      acceptedAliases: [],
+      acceptedAliases: ['respiratory-system-trachea'],
     },
     'q-visual-alveolar-histology': {
       prompt: 'Identifique la preparación general mostrada.',

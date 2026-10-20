@@ -27,6 +27,9 @@ export const ART = [
   D('ves-common-carotid', [[-22, 133], [-17, 112], [-13, 98]], [9, 8], 'head', [[24, 155], [14, 120], [12, 98]]),
   D('ves-internal-carotid', [[-13, 98], [-19, 72], [-21, 46]], [6, 5], 'head', [[12, 98], [18, 72], [20, 46]]),
   D('ves-external-carotid', [[-13, 98], [-8, 70], [-5, 40]], [6, 4], 'head', [[12, 98], [8, 70], [5, 40]]),
+  // Only the external carotid has cervical/facial branches; keep the ICA unbranched.
+  D('ves-external-carotid', [[-8, 70], [-5, 65], [-2, 63]], [3, 2], 'head'),
+  D('ves-external-carotid', [[-6, 54], [-3, 50], [-1.7, 48]], [2.5, 1.8], 'head'),
   D(null, [[0, 452], [-16, 478], [-30, 510]], [13, 12], 'leg'),
   D('ves-femoral', [[-30, 510], [-36, 580], [-40, 660]], [12, 11], 'leg'),
   D('ves-popliteal', [[-40, 660], [-42, 700], [-42, 725]], [10, 9], 'leg'),

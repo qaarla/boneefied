@@ -93,7 +93,8 @@ export default function ModuleDetailScreen() {
 
 function LessonCard({ lesson, mode, reflow, expanded, onToggle, colors, bookmarks, onBookmark, t, localizeStructure }: { lesson: Lesson; mode: 'learn' | 'recall'; reflow: boolean; expanded: boolean; onToggle: () => void; colors: any; bookmarks: string[]; onBookmark: (id: string) => void; t: (key: string, values?: Record<string, string | number>) => string; localizeStructure: (item: Structure) => Structure }) {
   const { asset: localizeAsset } = useLocale();
-  const plates = (lesson.assetIds ?? []).filter((id) => isAtlasAssetId(id)).flatMap((id) => {
+  const plates = (lesson.assetIds ?? []).filter((id) => isAtlasAssetId(id) ||
+    (lesson.id.startsWith('urinary-') && content.assets.some(a => a.id === id && a.assetType === 'histology'))).flatMap((id) => {
     const asset = content.assets.find((item) => item.id === id);
     return asset ? [localizeAsset(asset)] : [];
   });
@@ -103,7 +104,7 @@ function LessonCard({ lesson, mode, reflow, expanded, onToggle, colors, bookmark
         <View style={styles.chips}>{lesson.structureIds.slice(0, 6).map((id) => { const canonicalStructure = content.structures.find((item) => item.id === id); const structure = canonicalStructure && localizeStructure(canonicalStructure); return structure ? <AdaptiveButton key={id} accessibilityRole="button" accessibilityLabel={t(bookmarks.includes(id) ? 'bookmark.removeAccessibility' : 'bookmark.addAccessibility', { name: structure.canonicalName })} accessibilityState={{ selected: bookmarks.includes(id) }} hitSlop={4} style={[reflow && styles.chipTargetLarge, { maxWidth: '100%' }]} onPress={() => onBookmark(id)}><Text wholeWords style={[styles.chip, { color: colors.primary, maxWidth: '100%', flexShrink: 1 }]}>{bookmarks.includes(id) ? '★ ' : ''}{structure.canonicalName}</Text></AdaptiveButton> : null; })}</View>
     {expanded && <View style={styles.details}>
        {plates.map((asset) => <View key={asset.id} style={styles.imageCard}>
-          <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
+          <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout={isAtlasAssetId(asset.id)} labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
           <VisualStudyContext asset={asset} learn={mode === 'learn'} />
        </View>)}
         <Heading style={[styles.detailHead, { color: colors.foreground }]}>{t('lesson.structuresInLesson')}</Heading>

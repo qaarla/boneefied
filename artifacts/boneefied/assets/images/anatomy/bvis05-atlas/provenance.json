@@ -287,7 +287,7 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "6ecd607d201c4e9b09a005217b6060e3a2c39b9de8212f57d18f38d204820c97",
+        "sha256": "edcb6eb17dcb6e22da11e1b4ecfdae97f492799a512d4b45eb9399d450011f26",
         "file": null
       },
       "sha256": {
@@ -633,12 +633,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "4a1b4c36583106f36129ca919850b0476caaa1ec73cbf1332cbab4d2deb75f42",
+        "sha256": "b24425dcb0b666f00e1a1996710617504c020a31002fd528e82056c3622e30ab",
         "file": null
       },
       "sha256": {
-        "svg": "25a9abc5dc5a728e8af679882caabe039d40a26b1e09279bc3f6df58f3e17f8a",
-        "png": "058e380636f158e8a50d45b9649eb9b9ad5c390789992d5f7cf5d5edf4a150b6"
+        "svg": "e179c5eb3462333f72e306f01b322382b838566cb79985516f0717834660b741",
+        "png": "f05600f44ff514c42c27744d8c3feb65a7c157e91ee08cade55a26b478d297db"
       }
     },
     {
@@ -939,12 +939,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "4981c3e0b5989760e48aaec22854c9d18c61366f37d612a2fedfc3c836b892d1",
+        "sha256": "907222c54444356f3cb6210f56740ee4252cadba262aa7932136fd6d08bafd05",
         "file": null
       },
       "sha256": {
-        "svg": "7077a12adaad340d442fbd2e1cc260b69c1221df2119f5aad05e8fd20f5b1ef3",
-        "png": "6c2d5593c077b22a2775dcc808ad4fd492fde8b668e7a471b2e9c210a056296c"
+        "svg": "bbf016df715aa3e846ea27a4ddb4af020a2b71e6238a65b85f5c69150bfe5642",
+        "png": "0be66116cd42ccf83baf00ccb1cb07964ade3546711a01d3cdaa66b2c2f843b0"
       }
     },
     {
@@ -1072,7 +1072,7 @@
         {
           "structureId": "cv-right-coronary",
           "x": 0.5407,
-          "y": 0.646,
+          "y": 0.616,
           "radius": 0.018,
           "panel": "posterior",
           "shapeKey": "cv-right-coronary",
@@ -1112,12 +1112,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "b53804d6295dbf7ee8f91a5d52e14ffd5a7108e3b707f99cabd5ae31b1a6d283",
+        "sha256": "7dd00e45d6140080f7237de0b3155a23347f0ead06581010c163faa4e186e1fc",
         "file": null
       },
       "sha256": {
-        "svg": "ebcbe6dbab32f7d4ff57891626a2d1e9292247c25443f69dc190b9a4f5a72e4e",
-        "png": "a5f1b680d8e15ea87fec51f05f114327c87feb767227f5f3a7f27f22ce55caf4"
+        "svg": "3a36fc28fa2e3ba4d32aadfe374c2f8e9e4d3226759c950491a15a1091724079",
+        "png": "386192e163e90e124f86c86acc3d182c68c5e0d78285274ec48cc392b84889c4"
       }
     },
     {
@@ -1338,8 +1338,8 @@
         },
         {
           "structureId": "cv-blood-erythrocyte",
-          "x": 0.6207,
-          "y": 0.33,
+          "x": 0.6344827586206897,
+          "y": 0.315,
           "radius": 0.018,
           "panel": "cells",
           "shapeKey": "rbc",
@@ -1369,12 +1369,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "9c423c09de905235585f0f70c98d70120ceecdd17e6358730922e4b6869dde15",
+        "sha256": "2e70806400ff0d356b9cf2c82b21c211578b700a393b5fe189ebaca5fcdfd7f4",
         "file": null
       },
       "sha256": {
-        "svg": "428bc3309a82a4a20051f5d145a7797cb76f8c0f6a8e711bf9886376099b0aee",
-        "png": "e6d33fe507633a0e08518c130892aef753a4897e7e593d5ad3ab1b81a580d73a"
+        "svg": "f937a5f8bb426a80b14f4d5e0352f29f625261e188bb23ed24957207906e3103",
+        "png": "dbc5128c0c1ac620bd8cc5f738f67b58fde3263e92edb3dfa60cbf94b1d58c55"
       }
     },
     {
@@ -1881,12 +1881,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "905a27459122b3169ed65a57e1d685b9e748b010cf0715872899089516c509d4",
+        "sha256": "4f4d10440d3cacb17f4ec862a2ce5fdfba35962c15a167422ac61cb052a5d3b5",
         "file": null
       },
       "sha256": {
-        "svg": "d3f51fc21c11e740fd795fd94873577eaed5a363ca33165554451937d1a774a7",
-        "png": "7c5ea48261e858f29698400e0855048a08380a6c8ce5dbaafd7dc228b9859fb1"
+        "svg": "c072aab8958146f7d14d9427b81ee7a84d524726cb78ebf4ddc0b03f247bef5f",
+        "png": "7e1b77a552fac24e0f13ff64b7379d43920d8a55ab521437b7fe1dfc92f2ce0f"
       }
     },
     {
@@ -2075,12 +2075,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "1ccd9040c17e9bb62c11897a02bbf34da40fbe5a1af7ccb1122c744d2c7d28cb",
+        "sha256": "bf8c8880e3dd91060f5019b10c684a77ecf19a6b45eab29e0f4767ad18df70be",
         "file": null
       },
       "sha256": {
-        "svg": "e2587024470616530c5b2e594be740ae07f76a7e06c5d963e13bc93d7f1a029c",
-        "png": "f598c2913cc20d32259ab8874e2f8717463376c16265bf0d357348e346bdac3f"
+        "svg": "ea4fa7f6afdbf06279e1b1f1c445d92f81abbf785d12342d9d105e6dc0a292f6",
+        "png": "84a60cb2f75f67f77e3bd6b6faad1ff573093576bc0b24bbb72f47752cc6af96"
       }
     },
     {
@@ -2208,12 +2208,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "2a58d60ae8192a49b243b4a2cdec56e47838648ad0241f1ff2c63e59b9b9f69b",
+        "sha256": "60f31ce2e8bf7f9bdea5f5b5002560d4a915715b3115f020bf974d6bee3ee8f8",
         "file": null
       },
       "sha256": {
-        "svg": "af2ee509a76ec4092b5a37efe385e675ca7a9b944182edc349067418a52207ce",
-        "png": "f90f77dc08d5c6b3b3a21c4525f9a5ca4e253f7bf1a7e8da7e176e04c023837c"
+        "svg": "2fbdd994456a770d7136e39d2f50e1242521b17a2674a47b325d96713a566eb3",
+        "png": "7b7b33b1577a2910138125ca2a17b6a6bc8b735c34f2bd242409f9a272ccf7fc"
       }
     },
     {
@@ -2635,12 +2635,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "4751fe33a6bab6fac2018990007a631c6a6905868733e64f891fa56708b44abb",
+        "sha256": "68ec866a2f6a102878f0159476ae6cfeb816975781cbfd64649b6451fde760a8",
         "file": null
       },
       "sha256": {
-        "svg": "8c42f7c457d2638ae9043a0d9454e2b6b634e0b3816a7cc9a8bef33e3cde74a5",
-        "png": "e322c254b3c7e9e9784f2f1db073839a1a815d212f3de4b1ef67498282764748"
+        "svg": "33582168bbeb3de83ae7be643d1146565c23dbfb14c45ab6da89f3b13290d366",
+        "png": "bd272faa393e3ec18b12e4a1210c194eea01721064c59e48b30b2a2c124cc2b5"
       }
     },
     {
@@ -2778,12 +2778,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "e563c2852b8e07f3a65474e0745112acf8fbf52b5828f006e9c0c7e7ecd66e09",
+        "sha256": "14068c973064f41b1ab620d4101e9e10d6dfc5acd8e85b88b1b58027273df180",
         "file": null
       },
       "sha256": {
-        "svg": "ccf4e6b8f53e5f0e871639ed60540d9d295ec18a1d3d485a315561b09eca616d",
-        "png": "8215fdb7a42a547020a908fdc63b2cc1d82ca1886382d47a05e4f79013819670"
+        "svg": "a8a045924c92c5805382e01bb85118a02b994827e2b6f3b1a402b8230d0f1f0f",
+        "png": "8ae12aee746e393ce40375f2ed0915602273f3164871eec74e3e23ea93ede8bd"
       }
     },
     {
@@ -2850,8 +2850,8 @@
       "featureAnchorMapping": [
         {
           "structureId": "ves-aorta",
-          "x": 0.5338,
-          "y": 0.61,
+          "x": 0.530242105263158,
+          "y": 0.56,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-aorta",
@@ -2860,8 +2860,8 @@
         },
         {
           "structureId": "ves-common-carotid",
-          "x": 0.4772,
-          "y": 0.252,
+          "x": 0.4796,
+          "y": 0.23968421052631578,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-common-carotid",
@@ -2870,8 +2870,8 @@
         },
         {
           "structureId": "ves-subclavian",
-          "x": 0.4276,
-          "y": 0.294,
+          "x": 0.43522105263157895,
+          "y": 0.2772631578947369,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-subclavian",
@@ -2880,8 +2880,8 @@
         },
         {
           "structureId": "ves-axillary",
-          "x": 0.3531,
-          "y": 0.36,
+          "x": 0.3685631578947368,
+          "y": 0.33631578947368423,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-axillary",
@@ -2890,8 +2890,8 @@
         },
         {
           "structureId": "ves-brachial",
-          "x": 0.3145,
-          "y": 0.534,
+          "x": 0.33402631578947367,
+          "y": 0.492,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-brachial",
@@ -2900,8 +2900,8 @@
         },
         {
           "structureId": "ves-radial",
-          "x": 0.269,
-          "y": 0.816,
+          "x": 0.2933157894736842,
+          "y": 0.7443157894736842,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-radial",
@@ -2910,8 +2910,8 @@
         },
         {
           "structureId": "ves-ulnar",
-          "x": 0.2993,
-          "y": 0.818,
+          "x": 0.32042631578947367,
+          "y": 0.7461052631578947,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-ulnar",
@@ -2920,8 +2920,8 @@
         },
         {
           "structureId": "ves-internal-carotid",
-          "x": 0.4745,
-          "y": 0.176,
+          "x": 0.47718421052631577,
+          "y": 0.17168421052631577,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-internal-carotid",
@@ -2930,8 +2930,8 @@
         },
         {
           "structureId": "ves-external-carotid",
-          "x": 0.4897,
-          "y": 0.172,
+          "x": 0.4907842105263159,
+          "y": 0.16810526315789473,
           "radius": 0.018,
           "panel": "upper",
           "shapeKey": "ves-external-carotid",
@@ -2941,12 +2941,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "1413dd6872f4641d06868b1130ea89fe91bf1e19ce73f78a2f2dfb477311b4af",
+        "sha256": "9d8085eab78f5e86578ab5a1370bb8363525e81b1cf428fe7dddb3073c46d4a3",
         "file": null
       },
       "sha256": {
-        "svg": "2fea3724aee985dd62cc0b3d75c14aa1db17b8d6d565f213bd153cab55143530",
-        "png": "d96ab2f70ad97f67ad1bcd26d6f04d506e4fa6a23b9f266e57b1ff4bb4aac073"
+        "svg": "37bcf24d53a6a0a8f4af96d2684c58ff60604b10abb301a66c19174b4e61a574",
+        "png": "0b7e23bed23cdf338f1f2311e6ebc4b9377ea8f3b01a3316a0314dfb4572beb3"
       }
     },
     {
@@ -3013,8 +3013,8 @@
       "featureAnchorMapping": [
         {
           "structureId": "ves-brachiocephalic-vein",
-          "x": 0.3076,
-          "y": 0.294,
+          "x": 0.3100667876588022,
+          "y": 0.2772631578947369,
           "radius": 0.018,
           "panel": "route",
           "shapeKey": "ves-brachiocephalic-vein",
@@ -3023,8 +3023,8 @@
         },
         {
           "structureId": "ves-subclavian-vein",
-          "x": 0.2524,
-          "y": 0.29,
+          "x": 0.26067731397459165,
+          "y": 0.2736842105263158,
           "radius": 0.018,
           "panel": "route",
           "shapeKey": "ves-subclavian-vein",
@@ -3033,8 +3033,8 @@
         },
         {
           "structureId": "ves-axillary-vein",
-          "x": 0.1862,
-          "y": 0.354,
+          "x": 0.20144573502722324,
+          "y": 0.33094736842105266,
           "radius": 0.018,
           "panel": "route",
           "shapeKey": "ves-axillary-vein",
@@ -3043,8 +3043,8 @@
         },
         {
           "structureId": "ves-internal-jugular",
-          "x": 0.2993,
-          "y": 0.21,
+          "x": 0.3026404718693285,
+          "y": 0.20210526315789473,
           "radius": 0.018,
           "panel": "route",
           "shapeKey": "ves-internal-jugular",
@@ -3053,8 +3053,8 @@
         },
         {
           "structureId": "ves-jugular",
-          "x": 0.2841,
-          "y": 0.23,
+          "x": 0.2890404718693285,
+          "y": 0.22,
           "radius": 0.018,
           "panel": "route",
           "shapeKey": "ves-jugular",
@@ -3063,8 +3063,8 @@
         },
         {
           "structureId": "ves-cephalic",
-          "x": 0.1214,
-          "y": 0.55,
+          "x": 0.14346678765880216,
+          "y": 0.5063157894736843,
           "radius": 0.018,
           "panel": "route",
           "shapeKey": "ves-cephalic",
@@ -3073,8 +3073,8 @@
         },
         {
           "structureId": "ves-median-cubital",
-          "x": 0.1241,
-          "y": 0.632,
+          "x": 0.14588257713248637,
+          "y": 0.5796842105263158,
           "radius": 0.018,
           "panel": "route",
           "shapeKey": "ves-median-cubital",
@@ -3104,12 +3104,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "9bbcfcc4210fc4c4f8030ec322dc97592c9f4f1654f053aa7c0de73772e1ab39",
+        "sha256": "59e93d8849942c0685a409088f7f61eb8642050c46a9cad1eefd9afb84b8a001",
         "file": null
       },
       "sha256": {
-        "svg": "d304671fab7db349543362343ad4509b2b0bd0c6290214632b421b0da6fe00b8",
-        "png": "4fca99bbaadb53c079ffb21b37a05299c280b7854dd17525e057c9c31e5ec1ba"
+        "svg": "96daae24a8244f5c9f72981baf041703e8a0317d09edb05d809190f56a346a25",
+        "png": "69f78eb0c2b97d1f67c0f33c9a90e5804a275acdd8c7ae41bcfafbea83d89e4c"
       }
     },
     {
@@ -3360,12 +3360,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "637cc2ad01690719906c81f79f4ef436198f77b93de3f9c13fa473de96697cc8",
+        "sha256": "eee39b92d310262bcd641822ea12fca3c48dd19c27056d4732bf2c91dfbe9b9b",
         "file": null
       },
       "sha256": {
-        "svg": "42fbc42ba626b97e1d62c67d44d04f0f22c0f4a7b3370b37564676c34bb241a1",
-        "png": "3f2b728099ab7d0bdfa7dbf2bec07b31f4780ddc4bb8ca637f1b62a636144bbd"
+        "svg": "e9f11621ec617567ebef9c40a2277ed0da752c00ca1daec0a2a291a4aa019bf2",
+        "png": "f95f4420611512b453aff88ad8ac02df99d0142d00b2ae57dd32ccba1bd4cb41"
       }
     },
     {
@@ -3462,8 +3462,8 @@
         },
         {
           "structureId": "ves-hepatic-vein",
-          "x": 0.3586,
-          "y": 0.356,
+          "x": 0.3393103448275862,
+          "y": 0.302,
           "radius": 0.018,
           "panel": "portal",
           "shapeKey": "ves-hepatic-vein",
@@ -3472,8 +3472,8 @@
         },
         {
           "structureId": "ves-sinusoids",
-          "x": 0.8276,
-          "y": 0.634,
+          "x": 0.8268326947637292,
+          "y": 0.6240740740740741,
           "radius": 0.018,
           "panel": "lobule",
           "shapeKey": "ves-sinusoids",
@@ -3482,8 +3482,8 @@
         },
         {
           "structureId": "ves-hepatic-vein",
-          "x": 0.8166,
-          "y": 0.5,
+          "x": 0.7310344827586207,
+          "y": 0.24,
           "radius": 0.018,
           "panel": "lobule",
           "shapeKey": "ves-hepatic-vein",
@@ -3492,8 +3492,8 @@
         },
         {
           "structureId": "ves-hepatic-portal",
-          "x": 0.8124,
-          "y": 0.234,
+          "x": 0.8131034482758621,
+          "y": 0.254,
           "radius": 0.018,
           "panel": "lobule",
           "shapeKey": "ves-hepatic-portal",
@@ -3503,12 +3503,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "e2e4c8dec5a8bd7fb059c768557e1770b748f9bcaebb3077dcc7ccb8ff66bca4",
+        "sha256": "d870fc277dd05f13f5c1e94483b418054e483f7dca8b407943102d1c115a31e6",
         "file": null
       },
       "sha256": {
-        "svg": "a92b51f02a7a9de783d5d22d69912744f2fc518d6fbd6db0bb2efa41dba10478",
-        "png": "d8807a6cdc6b52ee7f2591c634dc94953cec9b8a8a44af6d2a9ffaa2fff5ee80"
+        "svg": "92e462b56d70bba27f151ce56de28f9e7cfad81a61f3dbe81a5d8bb9935fd6e1",
+        "png": "00b296f8ae8f216d5899de064735f34198d4e78c7b8deaffebf9025506ee06ca"
       }
     },
     {
@@ -3585,8 +3585,8 @@
         },
         {
           "structureId": "ves-celiac-trunk",
-          "x": 0.5117,
-          "y": 0.326,
+          "x": 0.5413793103448276,
+          "y": 0.335,
           "radius": 0.018,
           "panel": "abdomen",
           "shapeKey": "ves-celiac-trunk",
@@ -3616,12 +3616,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "cde3c69bf510919a2f13c69a99cc86bb74573d392f364d1e3f0fd642ebe5a70b",
+        "sha256": "0329430e75a019f950898e4b36a18bf65a6360d12a67bc9a3b8051d81db76d59",
         "file": null
       },
       "sha256": {
-        "svg": "4b87c4c90689b1fee062b6bec83893eaec8a10a27709c24d19d7a145a376c825",
-        "png": "d0a5a30b6759880df26c1bb7f49e517f1057b67363690c451dc492abb8ee0687"
+        "svg": "49463cf30e53de517d5b69bf8aebe4755b41acf73e5552746ce3341e0bf9b6d8",
+        "png": "e51f167ce8873cb63178569ad067ba34ea018c55b3d41e20fb41c1a33c9b75d1"
       }
     },
     {
@@ -3879,12 +3879,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "ff926d03539e2c9422442ebbcde72401ce2e9b594f0cb40000aa60c52b2e170f",
+        "sha256": "ab46f480e528e3a3b07ee0d195f510bb961d67e01b69e50ccd3f5c1f34917da4",
         "file": null
       },
       "sha256": {
-        "svg": "5dab6e986e9f1e4640386f600c172a6e790051cb285088bd6c54e3dfc1cad989",
-        "png": "60f28586272aefc00c622ab1c5365bd62cfc3a298bfb28e59f13e8c56c3e2538"
+        "svg": "e357a4992c3f0d4dd681f6a8787d79b36e572a987bec93af36d699e469c7ea77",
+        "png": "9e5f2ab3c03e41a9852a6b7fdf702ccba69082cf71ef16f90baaaa28fc2b3638"
       }
     },
     {
@@ -4122,12 +4122,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "e6b99710847924125cee9dc1dbaeae26c8cafb47241139f50da4db02980ba574",
+        "sha256": "e503440a04fe3cfa858cd0281748afd98bbddb59eaf6ce9226392c82e0952257",
         "file": null
       },
       "sha256": {
-        "svg": "eeb7ef03387e49c48d96c553a4abf1b12f77b771acd7f887fe99f57f7e92a990",
-        "png": "860d0a433c88c27c73533e1a2cd949ff610cc4010006f1c613c9f81d9a1968e5"
+        "svg": "050094d97a7a0d2a0b9dcaf228509094a205fee21b0baff9f41637b1981b3d13",
+        "png": "e73fa25a0156d835b85e1f39d3344e911d827f5e5eff5dc9be2b2a78824f66d5"
       }
     },
     {
@@ -4295,12 +4295,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "fa818ef082fa6a48f19bafc3f1d58a5b8bf1035f5bc6c82260ed0fd52b4955a6",
+        "sha256": "434501c7d46efd70ac041fb0dda6888eae324658005ebc68ec8e5c1e9380a677",
         "file": null
       },
       "sha256": {
-        "svg": "347fa50db17e2026c8f347947f10426a036915c31bdbd9e716ca6e3108298b89",
-        "png": "2146943b2cc21dacfdef6c927e9623d9a423fa205639936cee860388dcccc06b"
+        "svg": "6fd5070517063209a0269fccb8a91bb5e4d04e127d8b1383410d8481901875d4",
+        "png": "e9120f7d5b96aa4424423d9efb47cde69ec6849754caa53508ef7bce99fbf3ce"
       }
     },
     {
@@ -4631,12 +4631,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "07d36f6e0a4e413816fae17bb77fcbed27f4c6453a778e31526ea7e42e4ca931",
+        "sha256": "ce7e7a841b0c0369aae69e983b6ca8defb075aa865cd7bc201022f7ccb26f4dd",
         "file": null
       },
       "sha256": {
-        "svg": "d1810f2112dc411651fa8700fa2bfd7461903f95a68a15786d1fd5af7d8ba0a2",
-        "png": "b7fd8d665d5ef29c24ff3cb5e6810fdf32d52724d5e63fae7298d218e9988b3b"
+        "svg": "73a281896b56188eed3e367c65d37f7219b8782119aed7a1590cf112b846ba44",
+        "png": "f0518c68d65f37829d42b10690faa03786f01b49385c6e6bea0709309f17a703"
       }
     },
     {
@@ -4839,7 +4839,7 @@
         {
           "structureId": "respiratory-system-surfactant",
           "x": 0.1241,
-          "y": 0.362,
+          "y": 0.384,
           "radius": 0.018,
           "panel": "membrane",
           "shapeKey": "surf",
@@ -4879,7 +4879,7 @@
         {
           "structureId": "respiratory-system-respiratory-membrane",
           "x": 0.4414,
-          "y": 0.416,
+          "y": 0.409,
           "radius": 0.018,
           "panel": "membrane",
           "shapeKey": "bm",
@@ -4949,12 +4949,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "f45550f39a0b394f1043a94f8ad2e49f739274fccae51aa1abd82321452a453b",
+        "sha256": "c10210f7969fd5d4d255c974b5b9554055f563b0512990dd16d1b8b4b40e0fa9",
         "file": null
       },
       "sha256": {
-        "svg": "6f573bb9643207485c1e5b96f59d14af2c051b708ef0b537d42f261485c2961b",
-        "png": "86faea8e48d5499cf0030a16a687967c2532de3eb1dbd9c2f70cc8f241e231f4"
+        "svg": "bb42d556557806ca688952cc80749754ac5e3d9f0b8850065ed2c12cf96d1fdf",
+        "png": "b701a7b20233a99a92917d42fcfb21ddb89bf42866fa7596e0d82bfa16ff6781"
       }
     },
     {
@@ -5121,8 +5121,8 @@
         },
         {
           "structureId": "lymph-fluid",
-          "x": 0.6069,
-          "y": 0.48,
+          "x": 0.6068965517241379,
+          "y": 0.45,
           "radius": 0.018,
           "panel": "flow",
           "shapeKey": "lymph-fluid",
@@ -5162,12 +5162,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "9b59c7b1373a34879119f514f4c023a736e0993349d114e9f36ecee524e8b886",
+        "sha256": "74d1866b018737fd211ae66d519d331aa4bf0b419770b81c6abbad9da2fb3eb8",
         "file": null
       },
       "sha256": {
-        "svg": "04a57aa85e7a74c9947ce24580cea276dd320907883a3c8dfe144ee9242ccfed",
-        "png": "b78cccf3ea3a427251c7784afb8c3b60acaea7c9bbc3d9857de0d80bb2c82000"
+        "svg": "f9e9d6ab3969389b8d7dcd6cfbf864a5d30bc6c5876310c23502e19db95211c6",
+        "png": "dc4641e5e9f0ed17c76880babb2347c1d45be855f14a449c2b4302bf86a22259"
       }
     },
     {
@@ -5335,8 +5335,8 @@
         },
         {
           "structureId": "lymph-hilum",
-          "x": 0.5117,
-          "y": 0.704,
+          "x": 0.5448275862068965,
+          "y": 0.714,
           "radius": 0.018,
           "panel": "node",
           "shapeKey": "hilum",
@@ -5346,12 +5346,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "6760dc1be86a94f8535cc7787f95ff0b69749e2d66020627f2630a33930ef7e0",
+        "sha256": "fd7b5d5f274bfa8bd407f3c8e7a54c17d963a34b7605131928a7973df09e25ac",
         "file": null
       },
       "sha256": {
-        "svg": "64069308ca8b793478a0f40678b6a2b96afe130ac97229b92958e22dc1531a32",
-        "png": "f66858b10ffec75368746fc13f78c0355cfaeb56269fc85c2a87dc00a8c2e0b9"
+        "svg": "c747e98eab7e3cdd2bfc8962f4f88657cb4971fe546a366c32d782fbcdaff92a",
+        "png": "2a8236ccd3916b1883865a162dd2184fdd4bc5230d54f150d740f9020a7770ca"
       }
     },
     {
@@ -5479,8 +5479,8 @@
         },
         {
           "structureId": "lymph-splenic-cords",
-          "x": 0.4938,
-          "y": 0.38,
+          "x": 0.4689655172413793,
+          "y": 0.37,
           "radius": 0.018,
           "panel": "micro",
           "shapeKey": "cords",
@@ -5500,7 +5500,7 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "a9889299bad98d5d1fd8efd4fe1402bc86087e83739601a8bf07b1069e1275bc",
+        "sha256": "ef9a634ff520ed77df8e72225b9d3196f0da0218e264338f9279ae2a4020e088",
         "file": null
       },
       "sha256": {
@@ -5624,12 +5624,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "374484d2e3c0c6dfa11e980ed9366a61497f7e88adf492510a9a0162015657be",
+        "sha256": "e6fa57f5113ab7d439715362af636b444de8b01474b91ff45978c7ca3240f8ab",
         "file": null
       },
       "sha256": {
-        "svg": "aaf414808238c1e0943e988ab5ed5c5b50bb6c66d0c4c1d771aec21fb10c6b8a",
-        "png": "8c2c2d46ae61f0871712f776ad6bd2b648830ac62ddf0d05f88200acbb52b5aa"
+        "svg": "5222ae09de008ba15dde3fe9e29031eb8301ece10c2ab1a2eef39224f9328c2d",
+        "png": "a206a9ed008962557f40d126b7d57097ceefd4b8f6d169232a4884a7a6a390f5"
       }
     },
     {
@@ -5767,12 +5767,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "eccab37c0626e75661822868aa2d754f3dd5ca7d87399abf3bcbfb90c7d7bc3f",
+        "sha256": "b6c13eef7bd4bb57f1bd159dc4154f37f3eb2653bb135299fcec3420213f632d",
         "file": null
       },
       "sha256": {
-        "svg": "86c0e3a3781077e9e77055e5e181cffe79c30229f5e40c28172d45e2e48d081b",
-        "png": "7d45e49e1c321f1e9b9940bfd14ddb1d9ac04f7eb1e8ccd32e789bab71fda698"
+        "svg": "d2d7b2ebc18544f87f6f893aeaf535c72bad066dfb7332867dc8f624f33337eb",
+        "png": "b2384785eb862a174d3b709636207cc765342607846fde89dd7564261e6f7e21"
       }
     },
     {
@@ -5890,12 +5890,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "0fd27b1836a46a8e140ebb1ff5e9dfc91a67811488cb24adb3732ecf8d97b20a",
+        "sha256": "dd4ad6fd37cde843feb6c9b1c5e3edf50380d01ca4395f06e78ccc2895fa137b",
         "file": null
       },
       "sha256": {
-        "svg": "dfe04e13f00538664e75fd6ec6256153b0bd3581f5f91385274f4a779d3679af",
-        "png": "e434536faf46157cd472a5d6af076776c77a4ef578e02557b7f6b5ef9c5d8363"
+        "svg": "39dbb5ffaab843be8dc0dea2692d49fddc321b8ae4b103b5d3e0cfc819a95902",
+        "png": "a36779b44e3a74706129e1fcfca401fe80992a1d3ee570b52a0be1ee90fbbab8"
       }
     },
     {
@@ -5993,7 +5993,7 @@
         {
           "structureId": "endo-pancreas",
           "x": 0.2524,
-          "y": 0.358,
+          "y": 0.414,
           "radius": 0.018,
           "panel": "body",
           "shapeKey": "endo-pancreas",
@@ -6053,12 +6053,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "c18f833b862da73b3e21d2c8e9a27cf3b4da5bd57d46eec5c5760418a87eaa31",
+        "sha256": "0d63537c0f5e0b1027666e69e786ee6249211e1d9d59dede949626bca3016f27",
         "file": null
       },
       "sha256": {
-        "svg": "215a1ce8282ea6ad0e0db2b519a49f142e16aa789e13d8f5050be772d4343b93",
-        "png": "49cbbc57b1c0e97354f31f90b6adc890e3794dbba4c643d8dc82ba4948af48fa"
+        "svg": "b230ab6e2f9e63d4721fa9368526c57b3f28be0fe7c1397d6710904d1a4c4cb3",
+        "png": "3c5b53d1f95b7f5f2b0010d6b82ccbbf66014ee1a25a492fe44f830082e5cca3"
       }
     },
     {
@@ -6207,12 +6207,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "c49a69a10349482e18f522fec329196ba28935582443dc0b8e72e388c2a85e1f",
+        "sha256": "f7c67404e03326b2acec65233f6ed36b3ee15588507ab750e389b00ae52bf7af",
         "file": null
       },
       "sha256": {
-        "svg": "dd250c575e823df594879283cc4a520c40aa894584c7853db61bcf1284a1f494",
-        "png": "e3da8f56bd087375adb149018f79fb09401d841a106f0c88f33beb6856faeb64"
+        "svg": "0378d3d3c7445495bafaddc16408bf51eb944a76f1c5a7c87c24d39f8e577662",
+        "png": "4b3a6a91533d06146ce8c25c9d8d2c16e4bd6161d68105f2ff8237aa3f07bff7"
       }
     },
     {
@@ -6319,11 +6319,11 @@
         },
         {
           "structureId": "endo-thyroid-follicle",
-          "x": 0.8166,
-          "y": 0.168,
+          "x": 0.7758620689655172,
+          "y": 0.215,
           "radius": 0.018,
           "panel": "hist",
-          "shapeKey": "fol",
+          "shapeKey": "fol+fc+colloid",
           "ownColourInteriorPx": 18,
           "verifiedOnIdMap": true
         },
@@ -6370,7 +6370,7 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "3d19f69f9e19fde713236d5a530cf48b272df3e3f35b97584baa38f201e13ad1",
+        "sha256": "4fc1d8125fea79d942c29d1a87b3f0dea26c9d1bdb86bb7e436dc8883158d309",
         "file": null
       },
       "sha256": {
@@ -6658,12 +6658,12 @@
       ],
       "featureMask": {
         "method": "semantic id-map rendered from the same shape geometry; one unique flat colour per structure key",
-        "sha256": "f1c0a1642d26122d98a83d79ae3120c8e12bdc92e6be5074521a686c13980c19",
+        "sha256": "e13e3471f11e42417078794f8edf09db560dc527be16d8247cf440097e6b3061",
         "file": null
       },
       "sha256": {
-        "svg": "aca41d787e065a29a5de5aa148154d7d07e57496121fbde05b7507850a61592f",
-        "png": "398ee5bdb0a59aa25c6450a8fb43ebc0732a835d1ecabbf83c5e6f6cbaba7c26"
+        "svg": "f7680f8791738d0a5eb984824088498df3733164ee352d209593ecf55304ea45",
+        "png": "99c509a7d9e493beb71020d4cd146330066d0f8ea7e37fee58f52ddd5a1e9c9f"
       }
     },
     {

@@ -75,9 +75,13 @@ function kidney(S) {
   S.union('sinus', [E(420, 505, 160, 175), poly([[520, 470], [660, 462], [660, 550], [520, 540]])], { fill: '#EAD9AE', line: K.line, sw: 1.8 });
   S.sh('hilum', poly([[560, 468], [655, 464], [655, 548], [560, 542]]), { fill: '#EAD9AE', line: '#EAD9AE', sw: 0.5 });
   const cup = (a) => pt(0.31, a), items = [], g = { fill: UR.fill, line: UR.line, lum: LUM };
-  items.push({ id: U('major-calyx'), pts: [[560, 500], ...[-45, -85, -125].map(cup)], w: 24, ...g, lw: 12 });
-  items.push({ id: U('major-calyx'), pts: [[560, 510], ...[45, 85, 125].map(cup)], w: 24, ...g, lw: 12 });
-  items.push({ id: U('minor-calyx'), pts: [cup(180), [470, 505]], w: 16, ...g, lw: 7 });
+  // Minor calyces branch independently into major calyces; they are not linked in series.
+  items.push({ id: U('major-calyx'), pts: [[560, 500], [520, 458], [480, 436], [445, 447]], w: 24, ...g, lw: 12 });
+  items.push({ id: U('major-calyx'), pts: [[560, 510], [520, 552], [480, 574], [445, 563]], w: 24, ...g, lw: 12 });
+  [-45, -85, -125].forEach(a => items.push({ id: U('minor-calyx'), pts: [cup(a), [445, 447]], w: 16, ...g, lw: 7 }));
+  [45, 85, 125].forEach(a => items.push({ id: U('minor-calyx'), pts: [cup(a), [445, 563]], w: 16, ...g, lw: 7 }));
+  items.push({ id: U('minor-calyx'), pts: [cup(180), [430, 505]], w: 16, ...g, lw: 7 });
+  items.push({ id: U('major-calyx'), pts: [[430, 505], [500, 505]], w: 24, ...g, lw: 12 });
   angs.forEach((a) => { const q = cup(a); items.push({ id: U('minor-calyx'), pts: [q, [q[0] + 0.5, q[1]]], w: 30, ...g, lw: 12 }); });
   items.push({ id: U('renal-pelvis'), pts: [[500, 505], [590, 505]], w: 46, ...g, lw: 26 });
   items.push({ id: U('ureter'), pts: [[590, 505], [660, 506], [740, 540], [780, 700], [790, 930]], w: 22, ...g, lw: 9 });
@@ -116,7 +120,7 @@ function vessels(S) {
   S.sh(null, rect(60, 770, 1330, 180), { fill: '#EAD9AE', line: '#9A8A4A', sw: 1.4 });
   const AR = { fill: A.fill, line: A.line }, VN = { fill: V.fill, line: V.line }, PC = { fill: '#B58AA6', line: '#6F4C66' };
   // glomerulus (capillary tuft)
-  const gl = [[560, 300], [720, 410]];
+  const gl = [[560, 300], [720, 398]];
   gl.forEach(([x, y]) => { S.sh(null, circ(x, y, 34), { fill: '#E8C0BC', line: '#7E4A49', sw: 1.4 }); for (let i = 0; i < 5; i++) S.sh(null, circ(x + 16 * Math.cos(i * 1.26), y + 16 * Math.sin(i * 1.26), 10), { fill: A.fill, line: A.line, sw: 1.1 }); });
   net(S, [
     { id: U('renal-artery'), pts: [[80, 880], [180, 850], [280, 820]], w: 36, ...AR },
@@ -125,7 +129,7 @@ function vessels(S) {
     { id: U('arcuate-artery'), pts: [[340, 470], [372, 424], [500, 418], [660, 424], [760, 430]], w: 14, ...AR },
     { id: U('cortical-radiate-artery'), pts: [[500, 420], [498, 320], [492, 170]], w: 12, ...AR },
     { id: U('afferent-arteriole'), pts: [[498, 320], [530, 308], [556, 302]], w: 9, ...AR },
-    { id: U('afferent-arteriole'), pts: [[660, 424], [690, 414], [716, 410]], w: 9, ...AR },
+    { id: U('afferent-arteriole'), pts: [[660, 424], [690, 414], [716, 398]], w: 9, ...AR },
     { id: U('cortical-radiate-vein'), pts: [[960, 120], [962, 300], [964, 424]], w: 14, ...VN },
     { id: 'v', pts: [[964, 440], [1100, 450], [1230, 470], [1244, 640], [1244, 780]], w: 20, ...VN },
     { id: U('renal-vein'), pts: [[1244, 780], [1290, 850], [1380, 890]], w: 34, ...VN },
@@ -135,7 +139,7 @@ function vessels(S) {
     { id: U('peritubular-capillary'), pts: [[770, 176], [790, 140], [850, 126], [900, 130], [958, 140]], w: 6, ...PC },
     { id: U('peritubular-capillary'), pts: [[830, 190], [880, 200], [920, 190], [962, 200]], w: 6, ...PC },
     { id: U('peritubular-capillary'), pts: [[860, 214], [900, 250], [940, 270], [962, 266]], w: 6, ...PC },
-    { id: U('efferent-arteriole'), pts: [[722, 444], [730, 540], [726, 640], [736, 700], [770, 700]], w: 8, ...AR },
+    { id: U('efferent-arteriole'), pts: [[722, 402], [722, 434], [730, 540], [726, 640], [736, 700], [770, 700]], w: 8, ...AR },
     { id: U('vasa-recta'), pts: [[736, 700], [770, 700], [786, 640], [800, 540], [840, 470], [900, 452], [964, 444]], w: 8, fill: '#A9879E', line: PC.line },
   ]);
   [['renal-artery', [150, 862]], ['segmental-artery', [326, 780]], ['interlobar-artery', [340, 580]], ['arcuate-artery', [610, 420]], ['cortical-radiate-artery', [497, 240]], ['afferent-arteriole', [530, 308]], ['efferent-arteriole', [650, 244]], ['peritubular-capillary', [900, 130]], ['vasa-recta', [790, 600]], ['cortical-radiate-vein', [962, 260]], ['renal-vein', [1330, 872]]].forEach(([id, h]) => S.pin(U(id), U(id), h));
@@ -209,7 +213,7 @@ function corpuscle(S) {
   const cx = 480, cy = 480;
   S.sh(U('glomerular-capsule'), circ(cx, cy, 360), { fill: '#E5D4C0', line: '#8A7A60', sw: 1.8 });
   S.sh(null, circ(cx, cy, 322), { fill: LUM, line: '#B49C92', sw: 1.2 });
-  S.sh(U('juxtaglomerular-apparatus'), sm([[150, 120], [230, 90], [300, 110], [310, 160], [250, 190], [160, 170]], true, 5), { fill: '#E6C9D2', line: '#9A6A7A', sw: 1.4 });
+  S.sh(U('juxtaglomerular-apparatus'), E(231, 202, 57, 61), { fill: '#E6C9D2', line: '#9A6A7A', sw: 1.4 });
   S.sh(U('glomerulus'), circ(cx, cy, 238), { fill: '#EBD0CA', line: '#C9A9A0', sw: 1 });
   for (let i = 0; i < 18; i++) { const a = (i * 20 * Math.PI) / 180; S.sh(U('podocyte'), circ(cx + 246 * Math.cos(a), cy + 246 * Math.sin(a), 18), { fill: '#C9A9C4', line: '#76566A', sw: 1.3 }); }
   const AR = { fill: A.fill, line: A.line }, Ep = [318, 322], Xp = [328, 352], Pc = (r, a) => [cx + r * Math.cos(rad(a)), cy + r * Math.sin(rad(a))];
@@ -218,15 +222,19 @@ function corpuscle(S) {
     { id: U('afferent-arteriole'), pts: [[70, 110], [170, 190], [250, 250], Ep], w: 38, ...AR, lum: '#D9A3A0', lw: 18 },
     { id: U('efferent-arteriole'), pts: [Xp, [250, 292], [190, 262], [110, 330], [90, 520]], w: 26, ...AR, lum: '#D9A3A0', lw: 10 },
     ...loops,
-    { id: U('distal-convoluted-tubule'), pts: [[880, 60], [700, 70], [520, 80], [420, 100], [326, 122]], w: 40, fill: '#D8B79E', line: '#7A4A46', lum: LUM, lw: 22 },
+    { id: U('distal-convoluted-tubule'), pts: [[880, 60], [700, 70], [520, 80], [420, 100], [350, 150], [310, 208], [270, 210], [238, 186], [202, 159], [170, 135]], w: 40, fill: '#D8B79E', line: '#7A4A46', lum: LUM, lw: 22 },
     { id: U('proximal-convoluted-tubule'), pts: [[cx, 860], [cx, 940]], w: 70, fill: '#E3B4AC', line: '#7A4A46', lum: LUM, lw: 36 },
   ]);
   patch(S, rect(462, 795, 36, 80), LUM);
-  [[326, 112], [334, 128], [318, 130], [338, 114]].forEach(([x, y]) => S.sh(U('macula-densa'), E(x, y, 7, 11, -35), { fill: '#7A5A82', line: '#4A3652', sw: 1 }));
-  [[196, 208], [212, 222], [226, 236]].forEach(([x, y]) => S.sh(U('juxtaglomerular-cell'), circ(x, y, 8), { fill: '#C47E8A', line: '#7E4A5A', sw: 1.2 }));
+  // Facing epithelial and modified smooth-muscle walls; never place these cells in either lumen.
+  [[219, 192], [229, 200], [239, 208]].forEach(([x, y]) => S.sh(U('macula-densa'), E(x, y, 5, 8, 37), { fill: '#7A5A82', line: '#4A3652', sw: 1 }));
+  [[204, 197], [220, 211], [234, 225]].forEach(([x, y]) => S.sh(U('juxtaglomerular-cell'), circ(x, y, 6), { fill: '#C47E8A', line: '#7E4A5A', sw: 1.2 }));
   [['renal-corpuscle', U('glomerular-capsule') + '+' + U('glomerulus'), [480, 760]], ['glomerular-capsule', null, [480, 130]], ['glomerulus', null, [480, 480]], ['podocyte', null, [722, 480]], ['juxtaglomerular-apparatus', null, [200, 130]], ['macula-densa', null, [326, 120]], ['juxtaglomerular-cell', null, [204, 214]], ['afferent-arteriole', null, [120, 150]], ['efferent-arteriole', null, [110, 400]]]
     .forEach(([id, k, h]) => S.pin(U(id), k ?? U(id), h));
   S.pins.find((p) => p.structureId === U('glomerular-capsule')).hint = [480, 140];
+  S.pins.find(p => p.structureId === U('juxtaglomerular-apparatus')).hint = [251, 226];
+  S.pins.find(p => p.structureId === U('macula-densa')).hint = [229, 200];
+  S.pins.find(p => p.structureId === U('juxtaglomerular-cell')).hint = [220, 211];
   // filtration barrier, magnified
   S.at('membrane');
   S.sh(null, rect(980, 120, 410, 160), { fill: '#C7D6E4', line: '#4F6C86', sw: 1.4 });

@@ -131,11 +131,15 @@ test('pinch translated through each edge stays owned until final lift and cannot
   assert.deepEqual(g.transform, { zoom: 1, offset: { x: 0, y: 0 } });
 });
 
-test('native capture locks before interception, web ownership survives a return to 1×, and page momentum is frozen', () => {
+test('native recognizer observes before responder arbitration; web ownership and page momentum remain locked', () => {
   const hook = readFileSync(new URL('../components/useAnatomyViewerGesture.ts', import.meta.url), 'utf8');
   const screen = readFileSync(new URL('../components/Screen.tsx', import.meta.url), 'utf8');
-  assert.match(hook, /onStartShouldSetPanResponderCapture:[\s\S]*?measure\(\); begin\(e\.nativeEvent\.touches\);/);
-  assert.match(hook, /return controller\.owns && e\.nativeEvent\.touches\.length > 1/);
+  assert.match(hook, /Gesture\.Manual\(\)\.runOnJS\(true\)/);
+  assert.match(hook, /onTouchesDown[\s\S]*?measure\(\);[\s\S]*?begin\(points\(event\.allTouches\)\)/);
+  assert.match(hook, /controller\.owns && controller\.moved\) manager\.activate\(\)/);
+  assert.match(hook, /shouldCancelWhenOutside\(false\)/);
+  assert.doesNotMatch(hook, /PanResponder\.create/);
+  assert.match(hook, /controller\.owns && event\.numberOfTouches > 1\) manager\.activate\(\)/);
   assert.match(hook, /touchAction: ownsGesture \|\| transform\.zoom > 1 \? 'none' : 'pan-y'/);
   assert.match(hook, /setOwnsGesture\(owns\)/);
   assert.match(screen, /lockedScrollY\.current = scrollY\.current/);

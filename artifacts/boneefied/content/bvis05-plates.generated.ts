@@ -15,8 +15,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       "Corazón visto de frente: cámaras, vértice y grandes vasos"
     ],
     "description": [
-      "Anterior view, patient right at viewer left. The right atrium forms the right border and the right ventricle most of the front; the left ventricle forms the left border and apex, which points down and to the left. Only the auricles of the atria show in front; the coronary sulcus (fat-filled groove) separates atria from ventricles. The superior vena cava and inferior vena cava enter the right atrium; the pulmonary trunk leaves the right ventricle and splits into right and left pulmonary arteries. Colour follows oxygenation: pulmonary arteries carry deoxygenated blood and are blue; pulmonary veins carry oxygenated blood and are red. The ascending aorta rises behind the pulmonary trunk, arches to the left and gives the brachiocephalic, left common carotid and left subclavian arteries; the descending aorta runs behind the heart. Right panel: heart axis, base (broad upper surface, mostly left atrium, facing back) and apex. Gross diagram, simplified.",
-      "Vista anterior, derecha del paciente a la izquierda del observador. La aurícula derecha forma el borde derecho y el ventrículo derecho la mayor parte de la cara anterior; el ventrículo izquierdo forma el borde izquierdo y el vértice, que apunta hacia abajo y a la izquierda. Solo se ven las orejuelas de las aurículas; el surco coronario (surco con grasa) separa aurículas y ventrículos. Las venas cavas superior e inferior entran en la aurícula derecha; el tronco pulmonar sale del ventrículo derecho y se divide en arterias pulmonares derecha e izquierda. El color sigue la oxigenación: las arterias pulmonares llevan sangre desoxigenada y son azules; las venas pulmonares llevan sangre oxigenada y son rojas. La aorta ascendente sube detrás del tronco pulmonar, forma el arco hacia la izquierda y da el tronco braquiocefálico, la carótida común izquierda y la subclavia izquierda; la aorta descendente discurre detrás del corazón. Panel derecho: eje del corazón, base (superficie superior ancha, sobre todo aurícula izquierda, dirigida hacia atrás) y vértice. Diagrama macroscópico simplificado."
+      "Anterior view, patient right at viewer left. The right atrium forms the right border and the right ventricle most of the front; the left ventricle forms the left border and apex, which points down and to the left. Most of the left atrium is posterior; its left auricle projects into the anterior view. The coronary sulcus (fat-filled groove) separates atria from ventricles. The superior vena cava and inferior vena cava enter the right atrium; the pulmonary trunk leaves the right ventricle and splits into right and left pulmonary arteries. Colour follows oxygenation: pulmonary arteries carry deoxygenated blood and are blue; pulmonary veins carry oxygenated blood and are red. The ascending aorta rises behind the pulmonary trunk, arches to the left and gives the brachiocephalic, left common carotid and left subclavian arteries; the descending aorta runs behind the heart. Right panel: heart axis, base (broad upper surface, mostly left atrium, facing back) and apex. Gross diagram, simplified.",
+      "Vista anterior, derecha del paciente a la izquierda del observador. La aurícula derecha forma el borde derecho y el ventrículo derecho la mayor parte de la cara anterior; el ventrículo izquierdo forma el borde izquierdo y el vértice, que apunta hacia abajo y a la izquierda. La mayor parte de la aurícula izquierda es posterior; su orejuela se proyecta en la vista anterior. El surco coronario (surco con grasa) separa aurículas y ventrículos. Las venas cavas superior e inferior entran en la aurícula derecha; el tronco pulmonar sale del ventrículo derecho y se divide en arterias pulmonares derecha e izquierda. El color sigue la oxigenación: las arterias pulmonares llevan sangre desoxigenada y son azules; las venas pulmonares llevan sangre oxigenada y son rojas. La aorta ascendente sube detrás del tronco pulmonar, forma el arco hacia la izquierda y da el tronco braquiocefálico, la carótida común izquierda y la subclavia izquierda; la aorta descendente discurre detrás del corazón. Panel derecho: eje del corazón, base (superficie superior ancha, sobre todo aurícula izquierda, dirigida hacia atrás) y vértice. Diagrama macroscópico simplificado."
     ],
     "orientation": "anterior view; patient right at viewer left; right panel shows the long axis from base to apex",
     "orientationEs": "vista anterior; derecha del paciente a la izquierda; el panel derecho muestra el eje de base a vértice",
@@ -607,7 +607,7 @@ export const bvis05Plates: Bvis05Plate[] = [
       {
         "structureId": "cv-right-coronary",
         "x": 0.5407,
-        "y": 0.646,
+        "y": 0.616,
         "radius": 0.018,
         "panel": "posterior"
       },
@@ -740,8 +740,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       },
       {
         "structureId": "cv-blood-erythrocyte",
-        "x": 0.6207,
-        "y": 0.33,
+        "x": 0.6344827586206897,
+        "y": 0.315,
         "radius": 0.018,
         "panel": "cells"
       },
@@ -1572,64 +1572,64 @@ export const bvis05Plates: Bvis05Plate[] = [
     "labels": [
       {
         "structureId": "ves-aorta",
-        "x": 0.5338,
-        "y": 0.61,
+        "x": 0.530242105263158,
+        "y": 0.56,
         "radius": 0.018,
         "panel": "upper"
       },
       {
         "structureId": "ves-common-carotid",
-        "x": 0.4772,
-        "y": 0.252,
+        "x": 0.4796,
+        "y": 0.23968421052631578,
         "radius": 0.018,
         "panel": "upper"
       },
       {
         "structureId": "ves-subclavian",
-        "x": 0.4276,
-        "y": 0.294,
+        "x": 0.43522105263157895,
+        "y": 0.2772631578947369,
         "radius": 0.018,
         "panel": "upper"
       },
       {
         "structureId": "ves-axillary",
-        "x": 0.3531,
-        "y": 0.36,
+        "x": 0.3685631578947368,
+        "y": 0.33631578947368423,
         "radius": 0.018,
         "panel": "upper"
       },
       {
         "structureId": "ves-brachial",
-        "x": 0.3145,
-        "y": 0.534,
+        "x": 0.33402631578947367,
+        "y": 0.492,
         "radius": 0.018,
         "panel": "upper"
       },
       {
         "structureId": "ves-radial",
-        "x": 0.269,
-        "y": 0.816,
+        "x": 0.2933157894736842,
+        "y": 0.7443157894736842,
         "radius": 0.018,
         "panel": "upper"
       },
       {
         "structureId": "ves-ulnar",
-        "x": 0.2993,
-        "y": 0.818,
+        "x": 0.32042631578947367,
+        "y": 0.7461052631578947,
         "radius": 0.018,
         "panel": "upper"
       },
       {
         "structureId": "ves-internal-carotid",
-        "x": 0.4745,
-        "y": 0.176,
+        "x": 0.47718421052631577,
+        "y": 0.17168421052631577,
         "radius": 0.018,
         "panel": "upper"
       },
       {
         "structureId": "ves-external-carotid",
-        "x": 0.4897,
-        "y": 0.172,
+        "x": 0.4907842105263159,
+        "y": 0.16810526315789473,
         "radius": 0.018,
         "panel": "upper"
       }
@@ -1661,50 +1661,50 @@ export const bvis05Plates: Bvis05Plate[] = [
     "labels": [
       {
         "structureId": "ves-brachiocephalic-vein",
-        "x": 0.3076,
-        "y": 0.294,
+        "x": 0.3100667876588022,
+        "y": 0.2772631578947369,
         "radius": 0.018,
         "panel": "route"
       },
       {
         "structureId": "ves-subclavian-vein",
-        "x": 0.2524,
-        "y": 0.29,
+        "x": 0.26067731397459165,
+        "y": 0.2736842105263158,
         "radius": 0.018,
         "panel": "route"
       },
       {
         "structureId": "ves-axillary-vein",
-        "x": 0.1862,
-        "y": 0.354,
+        "x": 0.20144573502722324,
+        "y": 0.33094736842105266,
         "radius": 0.018,
         "panel": "route"
       },
       {
         "structureId": "ves-internal-jugular",
-        "x": 0.2993,
-        "y": 0.21,
+        "x": 0.3026404718693285,
+        "y": 0.20210526315789473,
         "radius": 0.018,
         "panel": "route"
       },
       {
         "structureId": "ves-jugular",
-        "x": 0.2841,
-        "y": 0.23,
+        "x": 0.2890404718693285,
+        "y": 0.22,
         "radius": 0.018,
         "panel": "route"
       },
       {
         "structureId": "ves-cephalic",
-        "x": 0.1214,
-        "y": 0.55,
+        "x": 0.14346678765880216,
+        "y": 0.5063157894736843,
         "radius": 0.018,
         "panel": "route"
       },
       {
         "structureId": "ves-median-cubital",
-        "x": 0.1241,
-        "y": 0.632,
+        "x": 0.14588257713248637,
+        "y": 0.5796842105263158,
         "radius": 0.018,
         "panel": "route"
       },
@@ -1866,8 +1866,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       "Sistema porta hepático"
     ],
     "description": [
-      "Anterior view, patient right at viewer left. Left panel: veins draining the gut and spleen do not go straight to the heart. The splenic vein (from the spleen, at viewer right) runs behind the pancreas and the superior mesenteric vein (from the small intestine) joins it behind the neck of the pancreas to form the hepatic portal vein; the inferior mesenteric vein is drawn joining the splenic vein. The portal vein enters the liver, which lies under the right dome of the diaphragm, at viewer left, and branches inside it. Blood leaves the liver by the hepatic veins into the inferior vena cava just below the diaphragm (dashed line). Right panel: one liver lobule, schematic. Blood from the portal vein and hepatic artery at each corner (portal triad) flows through sinusoids toward the central vein, which feeds a hepatic vein. Stomach, pancreas, spleen and bowel are unlabelled context.",
-      "Vista anterior, derecha del paciente a la izquierda. Panel izquierdo: las venas que drenan el intestino y el bazo no van directas al corazón. La vena esplénica (desde el bazo, a la derecha del observador) pasa por detrás del páncreas y la vena mesentérica superior (del intestino delgado) se une a ella tras el cuello del páncreas para formar la vena porta hepática; se dibuja la mesentérica inferior uniéndose a la esplénica. La porta entra en el hígado, que queda bajo la cúpula diafragmática derecha, a la izquierda del observador, y se ramifica dentro. La sangre sale del hígado por las venas hepáticas hacia la vena cava inferior justo bajo el diafragma (línea discontinua). Panel derecho: un lobulillo hepático, esquemático. La sangre de la vena porta y la arteria hepática en cada vértice (tríada portal) fluye por sinusoides hacia la vena central, que alimenta una vena hepática. Estómago, páncreas, bazo e intestino son contexto sin marcador."
+      "Anterior view, patient right at viewer left. Left panel: veins draining the gut and spleen do not go straight to the heart. The splenic vein (from the spleen, at viewer right) runs behind the pancreas and the superior mesenteric vein (from the small intestine) joins it behind the neck of the pancreas to form the hepatic portal vein; the inferior mesenteric vein is drawn joining the splenic vein. The portal vein enters the liver, which lies under the right dome of the diaphragm, at viewer left, and branches inside it. Blood leaves the liver by the hepatic veins into the inferior vena cava just below the diaphragm (dashed line). Right panel: one liver lobule, schematic. Blood from the portal vein and hepatic artery at each corner (portal triad) flows through sinusoids toward the central vein, which feeds a hepatic vein. Stomach, pancreas, spleen and bowel are unlabelled context. In the lobule inset, the blue outlet projecting toward the upper left represents downstream hepatic venous outflow out of the lobule plane; the unlabelled blue central circle is the central vein, not a portal-to-caval connection.",
+      "Vista anterior, derecha del paciente a la izquierda. Panel izquierdo: las venas que drenan el intestino y el bazo no van directas al corazón. La vena esplénica (desde el bazo, a la derecha del observador) pasa por detrás del páncreas y la vena mesentérica superior (del intestino delgado) se une a ella tras el cuello del páncreas para formar la vena porta hepática; se dibuja la mesentérica inferior uniéndose a la esplénica. La porta entra en el hígado, que queda bajo la cúpula diafragmática derecha, a la izquierda del observador, y se ramifica dentro. La sangre sale del hígado por las venas hepáticas hacia la vena cava inferior justo bajo el diafragma (línea discontinua). Panel derecho: un lobulillo hepático, esquemático. La sangre de la vena porta y la arteria hepática en cada vértice (tríada portal) fluye por sinusoides hacia la vena central, que alimenta una vena hepática. Estómago, páncreas, bazo e intestino son contexto sin marcador. En el lobulillo, la salida azul proyectada hacia arriba a la izquierda representa el drenaje venoso hepático fuera del plano del lobulillo; el círculo azul central sin marcador es la vena central, no una conexión portocava."
     ],
     "orientation": "anterior view; liver at viewer left (patient right), spleen at viewer right; right panel is a liver lobule",
     "orientationEs": "vista anterior; hígado a la izquierda del observador (derecha del paciente), bazo a la derecha; el panel derecho es un lobulillo hepático",
@@ -1899,29 +1899,29 @@ export const bvis05Plates: Bvis05Plate[] = [
       },
       {
         "structureId": "ves-hepatic-vein",
-        "x": 0.3586,
-        "y": 0.356,
+        "x": 0.3393103448275862,
+        "y": 0.302,
         "radius": 0.018,
         "panel": "portal"
       },
       {
         "structureId": "ves-sinusoids",
-        "x": 0.8276,
-        "y": 0.634,
+        "x": 0.8268326947637292,
+        "y": 0.6240740740740741,
         "radius": 0.018,
         "panel": "lobule"
       },
       {
         "structureId": "ves-hepatic-vein",
-        "x": 0.8166,
-        "y": 0.5,
+        "x": 0.7310344827586207,
+        "y": 0.24,
         "radius": 0.018,
         "panel": "lobule"
       },
       {
         "structureId": "ves-hepatic-portal",
-        "x": 0.8124,
-        "y": 0.234,
+        "x": 0.8131034482758621,
+        "y": 0.254,
         "radius": 0.018,
         "panel": "lobule"
       }
@@ -1960,8 +1960,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       },
       {
         "structureId": "ves-celiac-trunk",
-        "x": 0.5117,
-        "y": 0.326,
+        "x": 0.5413793103448276,
+        "y": 0.335,
         "radius": 0.018,
         "panel": "abdomen"
       },
@@ -2659,7 +2659,7 @@ export const bvis05Plates: Bvis05Plate[] = [
       {
         "structureId": "respiratory-system-surfactant",
         "x": 0.1241,
-        "y": 0.362,
+        "y": 0.384,
         "radius": 0.018,
         "panel": "membrane"
       },
@@ -2687,7 +2687,7 @@ export const bvis05Plates: Bvis05Plate[] = [
       {
         "structureId": "respiratory-system-respiratory-membrane",
         "x": 0.4414,
-        "y": 0.416,
+        "y": 0.409,
         "radius": 0.018,
         "panel": "membrane"
       },
@@ -2748,8 +2748,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       "Rutas de drenaje linfático y grupos ganglionares"
     ],
     "description": [
-      "Left, anterior view, patient right at viewer left: lymph (sage green) drains toward the neck veins (blue). Lymph from the legs and gut collects in the lumbar and intestinal trunks, which empty into the cisterna chyli, the sac at the start of the thoracic duct. The thoracic duct climbs the chest and enters the venous angle on the LEFT, where the left internal jugular and left subclavian veins meet; it drains most of the body (everything below the diaphragm plus the left head, neck, arm and chest). The short right lymphatic duct enters the venous angle on the RIGHT and drains only the right head, neck, arm and chest. The jugular and subclavian trunks feed the ducts. Node groups (purple-grey ovals) sit in neck, armpit and groin. Right: how lymph forms: excess tissue fluid is taken up by a blind-ended lymph capillary, then flows through collecting vessels, with one-way valves, into a larger trunk. Simplified; bronchomediastinal trunks and many nodes omitted.",
-      "Izquierda, vista anterior, derecha del paciente a la izquierda: la linfa (verde salvia) drena hacia las venas del cuello (azul). La linfa de las piernas y el intestino se reúne en los troncos lumbares e intestinal, que desembocan en la cisterna del quilo, el saco que inicia el conducto torácico. El conducto torácico asciende por el tórax y entra en el ángulo venoso IZQUIERDO, donde se unen la yugular interna y la subclavia izquierdas; drena la mayor parte del cuerpo (todo lo que está bajo el diafragma más cabeza, cuello, brazo y tórax izquierdos). El corto conducto linfático derecho entra en el ángulo venoso DERECHO y drena solo cabeza, cuello, brazo y tórax derechos. Los troncos yugular y subclavio alimentan los conductos. Los grupos de ganglios (óvalos gris púrpura) están en cuello, axila e ingle. Derecha: cómo se forma la linfa: el exceso de líquido tisular lo recoge un capilar linfático de extremo ciego y fluye por vasos colectores, con válvulas unidireccionales, hasta un tronco mayor. Simplificado; se omiten los troncos broncomediastínicos y muchos ganglios."
+      "Left, anterior view, patient right at viewer left: lymph (sage green) drains toward the neck veins (blue). Lymph from the legs and gut collects in the lumbar and intestinal trunks, which empty into the cisterna chyli, the sac at the start of the thoracic duct. The thoracic duct climbs the chest and enters the venous angle on the LEFT, where the left internal jugular and left subclavian veins meet; it drains most of the body (everything below the diaphragm plus the left head, neck, arm and chest). The short right lymphatic duct enters the venous angle on the RIGHT and drains only the right head, neck, arm and chest. The jugular and subclavian trunks feed the ducts. Node groups (purple-grey ovals) sit in neck, armpit and groin. Right: how lymph forms: excess tissue fluid is taken up by a blind-ended lymph capillary, then flows through collecting vessels, with one-way valves, into a larger trunk. Simplified; bronchomediastinal trunks and many nodes omitted. Peripheral collecting routes are projected schematically through the limb node groups toward the trunks. Arrows lie on the depicted routes; the collecting-vessel valve leaflets leave an open central flow path.",
+      "Izquierda, vista anterior, derecha del paciente a la izquierda: la linfa (verde salvia) drena hacia las venas del cuello (azul). La linfa de las piernas y el intestino se reúne en los troncos lumbares e intestinal, que desembocan en la cisterna del quilo, el saco que inicia el conducto torácico. El conducto torácico asciende por el tórax y entra en el ángulo venoso IZQUIERDO, donde se unen la yugular interna y la subclavia izquierdas; drena la mayor parte del cuerpo (todo lo que está bajo el diafragma más cabeza, cuello, brazo y tórax izquierdos). El corto conducto linfático derecho entra en el ángulo venoso DERECHO y drena solo cabeza, cuello, brazo y tórax derechos. Los troncos yugular y subclavio alimentan los conductos. Los grupos de ganglios (óvalos gris púrpura) están en cuello, axila e ingle. Derecha: cómo se forma la linfa: el exceso de líquido tisular lo recoge un capilar linfático de extremo ciego y fluye por vasos colectores, con válvulas unidireccionales, hasta un tronco mayor. Simplificado; se omiten los troncos broncomediastínicos y muchos ganglios. Las rutas colectoras periféricas se proyectan esquemáticamente por los grupos ganglionares de las extremidades hacia los troncos. Las flechas están en las rutas dibujadas; las valvas dejan abierto un paso central."
     ],
     "orientation": "left: anterior body view, patient right at viewer left; right: flow from tissue fluid to trunk, left to right",
     "orientationEs": "izquierda: vista anterior, derecha del paciente a la izquierda; derecha: flujo del líquido tisular al tronco, de izquierda a derecha",
@@ -2832,8 +2832,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       },
       {
         "structureId": "lymph-fluid",
-        "x": 0.6069,
-        "y": 0.48,
+        "x": 0.6068965517241379,
+        "y": 0.45,
         "radius": 0.018,
         "panel": "flow"
       },
@@ -2956,8 +2956,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       },
       {
         "structureId": "lymph-hilum",
-        "x": 0.5117,
-        "y": 0.704,
+        "x": 0.5448275862068965,
+        "y": 0.714,
         "radius": 0.018,
         "panel": "node"
       }
@@ -2976,8 +2976,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       "Bazo: pulpa roja y pulpa blanca"
     ],
     "description": [
-      "Left: the spleen as an organ, with small pale spots of white pulp scattered through the dark red pulp. Right: a microscopic schematic. White pulp is lymphoid tissue (lymphocytes) wrapped around a branch of the splenic artery, the central arteriole, which sits off-centre; around the white pulp lies the paler marginal zone, where blood-borne antigens are first screened. Red pulp is everything else: splenic sinusoids (mauve channels full of red cells) separated by splenic cords (the dark tissue between them, with macrophages that remove old red cells). Schematic; the arrangement of sinusoids is simplified.",
-      "Izquierda: el bazo como órgano, con pequeñas manchas claras de pulpa blanca repartidas por la pulpa roja oscura. Derecha: esquema microscópico. La pulpa blanca es tejido linfoide (linfocitos) que rodea una rama de la arteria esplénica, la arteriola central, situada excéntrica; alrededor de la pulpa blanca está la zona marginal, más pálida, donde se revisan por primera vez los antígenos de la sangre. La pulpa roja es todo lo demás: sinusoides esplénicos (canales malva llenos de eritrocitos) separados por cordones esplénicos (el tejido oscuro entre ellos, con macrófagos que retiran eritrocitos viejos). Esquemático; la disposición de los sinusoides está simplificada."
+      "Left: the spleen as an organ, with small pale spots of white pulp scattered through the dark red pulp. Right: a microscopic schematic. White pulp is lymphoid tissue (lymphocytes) wrapped around a branch of the splenic artery, the central arteriole, which sits off-centre; around the white pulp lies the paler marginal zone, where blood-borne antigens are first screened. Red pulp is everything else: splenic sinusoids (mauve channels full of red cells) separated by splenic cords (the dark tissue between them, with macrophages that remove old red cells). Schematic; the arrangement of sinusoids is simplified. The left panel is a schematic cut face exposing pulp, not the intact external surface. Neither panel is a real specimen image.",
+      "Izquierda: el bazo como órgano, con pequeñas manchas claras de pulpa blanca repartidas por la pulpa roja oscura. Derecha: esquema microscópico. La pulpa blanca es tejido linfoide (linfocitos) que rodea una rama de la arteria esplénica, la arteriola central, situada excéntrica; alrededor de la pulpa blanca está la zona marginal, más pálida, donde se revisan por primera vez los antígenos de la sangre. La pulpa roja es todo lo demás: sinusoides esplénicos (canales malva llenos de eritrocitos) separados por cordones esplénicos (el tejido oscuro entre ellos, con macrófagos que retiran eritrocitos viejos). Esquemático; la disposición de los sinusoides está simplificada. El panel izquierdo es un corte esquemático que expone la pulpa, no la superficie externa intacta. Ningún panel es una imagen de una muestra real."
     ],
     "orientation": "left: whole organ; right: microscopic field",
     "orientationEs": "izquierda: órgano entero; derecha: campo microscópico",
@@ -3030,8 +3030,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       },
       {
         "structureId": "lymph-splenic-cords",
-        "x": 0.4938,
-        "y": 0.38,
+        "x": 0.4689655172413793,
+        "y": 0.37,
         "radius": 0.018,
         "panel": "micro"
       },
@@ -3057,8 +3057,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       "Timo y lobulillo tímico"
     ],
     "description": [
-      "Left: the thymus, a two-lobed organ behind the breastbone (pale vertical bar) in the upper chest, in front of the great vessels and the heart (it is large in children and shrinks with age). Right: one lobule, schematic. The dense, dark outer cortex is packed with developing T lymphocytes; the paler inner medulla has fewer lymphocytes and contains Hassall’s corpuscles, whorls of flattened epithelial cells whose exact role is still debated. Thin pale connective septa (the rim) divide the gland into lobules. Simplified.",
-      "Izquierda: el timo, un órgano bilobulado detrás del esternón (barra vertical pálida) en la parte alta del tórax, delante de los grandes vasos y del corazón (es grande en niños y se reduce con la edad). Derecha: un lobulillo, esquemático. La corteza externa, densa y oscura, está llena de linfocitos T en desarrollo; la médula interna, más pálida, tiene menos linfocitos y contiene corpúsculos de Hassall, remolinos de células epiteliales aplanadas cuya función exacta aún se discute. Finos tabiques conectivos pálidos (el borde) dividen la glándula en lobulillos. Simplificado."
+      "Left: the thymus, a two-lobed organ behind the breastbone (pale vertical bar) in the upper chest, in front of the great vessels and the heart (it is large in children and shrinks with age). Right: one lobule, schematic. The dense, dark outer cortex is packed with developing T lymphocytes; the paler inner medulla has fewer lymphocytes and contains Hassall’s corpuscles, whorls of flattened epithelial cells whose exact role is still debated. Thin pale connective septa (the rim) divide the gland into lobules. Simplified. The translucent anterior sternum is projected over the thymus; the thymus remains posterior to it and anterior to the great vessels.",
+      "Izquierda: el timo, un órgano bilobulado detrás del esternón (barra vertical pálida) en la parte alta del tórax, delante de los grandes vasos y del corazón (es grande en niños y se reduce con la edad). Derecha: un lobulillo, esquemático. La corteza externa, densa y oscura, está llena de linfocitos T en desarrollo; la médula interna, más pálida, tiene menos linfocitos y contiene corpúsculos de Hassall, remolinos de células epiteliales aplanadas cuya función exacta aún se discute. Finos tabiques conectivos pálidos (el borde) dividen la glándula en lobulillos. Simplificado. El esternón anterior translúcido se proyecta sobre el timo; este permanece detrás del esternón y delante de los grandes vasos."
     ],
     "orientation": "left: anterior chest view, patient right at viewer left; right: one lobule",
     "orientationEs": "izquierda: tórax en vista anterior, derecha del paciente a la izquierda; derecha: un lobulillo",
@@ -3118,8 +3118,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       "Amígdalas: dónde están y cómo se organizan"
     ],
     "description": [
-      "Left: midline sagittal head, face at viewer left. The pharyngeal tonsil (adenoid) lies on the roof and back wall of the nasopharynx; the lingual tonsil lies on the back of the tongue. Middle: open-mouth view from the front: the palatine tonsils are the pair between the arches at the sides of the throat, with the uvula in the middle. Together these and neighbouring patches form a ring of lymphoid tissue at the entrance of the throat. Right: structure of a tonsil, schematic: surface epithelium dips into deep crypts that trap material; beneath it lies lymphoid tissue (MALT, mucosa-associated lymphoid tissue) with round lymphoid follicles, each with a paler germinal centre where B cells multiply; a thin capsule lies at the base. Simplified.",
-      "Izquierda: cabeza en corte sagital medio, cara a la izquierda. La amígdala faríngea (adenoides) está en el techo y la pared posterior de la nasofaringe; la amígdala lingual, en la base de la lengua. Centro: vista de la boca abierta desde delante: las amígdalas palatinas son el par entre los pilares a los lados de la garganta, con la úvula en el centro. Junto con otros acúmulos vecinos forman un anillo de tejido linfoide a la entrada de la faringe. Derecha: estructura de una amígdala, esquemática: el epitelio de superficie se hunde en criptas profundas que atrapan material; debajo hay tejido linfoide (MALT, tejido linfoide asociado a mucosas) con folículos linfoides redondos, cada uno con un centro germinal más pálido donde se multiplican los linfocitos B; una cápsula fina queda en la base. Simplificado."
+      "Left: midline sagittal head, face at viewer left. The pharyngeal tonsil (adenoid) lies on the roof and back wall of the nasopharynx; the lingual tonsil lies on the back of the tongue. Middle: open-mouth view from the front: the palatine tonsils are the pair between the arches at the sides of the throat, with the uvula in the middle. Together these and neighbouring patches form a ring of lymphoid tissue at the entrance of the throat. Right: structure of a tonsil, schematic: surface epithelium dips into deep crypts that trap material; beneath it lies lymphoid tissue (MALT, mucosa-associated lymphoid tissue) with round lymphoid follicles, each with a paler germinal centre where B cells multiply; a thin capsule lies at the base. Simplified. The crypt cavities open at the surface and retain a distinct epithelial lining within the underlying lymphoid tissue.",
+      "Izquierda: cabeza en corte sagital medio, cara a la izquierda. La amígdala faríngea (adenoides) está en el techo y la pared posterior de la nasofaringe; la amígdala lingual, en la base de la lengua. Centro: vista de la boca abierta desde delante: las amígdalas palatinas son el par entre los pilares a los lados de la garganta, con la úvula en el centro. Junto con otros acúmulos vecinos forman un anillo de tejido linfoide a la entrada de la faringe. Derecha: estructura de una amígdala, esquemática: el epitelio de superficie se hunde en criptas profundas que atrapan material; debajo hay tejido linfoide (MALT, tejido linfoide asociado a mucosas) con folículos linfoides redondos, cada uno con un centro germinal más pálido donde se multiplican los linfocitos B; una cápsula fina queda en la base. Simplificado. Las cavidades de las criptas se abren en la superficie y conservan un revestimiento epitelial distinto dentro del tejido linfoide subyacente."
     ],
     "orientation": "left: sagittal head, face at viewer left; middle: open-mouth view; right: tonsil section, surface at top",
     "orientationEs": "izquierda: cabeza sagital, cara a la izquierda; centro: boca abierta; derecha: corte de amígdala, superficie arriba",
@@ -3192,8 +3192,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       "Tejido linfoide intestinal y quilífero"
     ],
     "description": [
-      "Left: terminal small bowel (ileum) joining the cecum of the large intestine, anterior view, patient right at viewer left; context drawn in cream. Peyer’s patches are oval plaques of lymphoid tissue in the wall of the ileum that sample what is in the gut. The appendix hangs from the cecum and also has a lymphoid-rich wall. Lymph from the gut wall runs through the mesentery to the intestinal trunk (sage green), which carries it up to the cisterna chyli. Right: a villus (fingerlike fold of the small-bowel lining) in section: the central blind-ended lymph capillary, the lacteal, picks up absorbed fats; the blood capillary network (mauve) beside it takes up most other nutrients. Peyer’s lymphoid tissue lies below, in the base of the wall. Schematic; the villus is much enlarged.",
-      "Izquierda: intestino delgado terminal (íleon) uniéndose al ciego del intestino grueso, vista anterior, derecha del paciente a la izquierda; el contexto está en crema. Las placas de Peyer son placas ovales de tejido linfoide en la pared del íleon que muestrean el contenido intestinal. El apéndice cuelga del ciego y también tiene una pared rica en tejido linfoide. La linfa de la pared intestinal recorre el mesenterio hasta el tronco intestinal (verde salvia), que la lleva hasta la cisterna del quilo. Derecha: una vellosidad (pliegue digitiforme de la mucosa del intestino delgado) en corte: el capilar linfático central de extremo ciego, el quilífero, recoge las grasas absorbidas; la red de capilares sanguíneos (malva) a su lado capta casi todos los demás nutrientes. El tejido linfoide de Peyer queda debajo, en la base de la pared. Esquemático; la vellosidad está muy ampliada."
+      "Left: terminal small bowel (ileum) joining the cecum of the large intestine, anterior view, patient right at viewer left; context drawn in cream. Peyer’s patches are oval plaques of lymphoid tissue in the wall of the ileum that sample what is in the gut. The appendix hangs from the cecum and also has a lymphoid-rich wall. Lymph from the gut wall runs through the mesentery to the intestinal trunk (sage green), which carries it up to the cisterna chyli. Right: a villus (fingerlike fold of the small-bowel lining) in section: the central blind-ended lymph capillary, the lacteal, picks up absorbed fats; the blood capillary network (mauve) beside it takes up most other nutrients. Peyer’s lymphoid tissue lies below, in the base of the wall. Schematic; the villus is much enlarged. Lacteal lymph flows down from the blind villus tip to the basal collecting route, then toward larger intestinal trunks. The separate lower wall detail shows an aggregate of lymphoid follicles (a Peyer patch), not a structure inside the villus or a termination of its lacteal.",
+      "Izquierda: intestino delgado terminal (íleon) uniéndose al ciego del intestino grueso, vista anterior, derecha del paciente a la izquierda; el contexto está en crema. Las placas de Peyer son placas ovales de tejido linfoide en la pared del íleon que muestrean el contenido intestinal. El apéndice cuelga del ciego y también tiene una pared rica en tejido linfoide. La linfa de la pared intestinal recorre el mesenterio hasta el tronco intestinal (verde salvia), que la lleva hasta la cisterna del quilo. Derecha: una vellosidad (pliegue digitiforme de la mucosa del intestino delgado) en corte: el capilar linfático central de extremo ciego, el quilífero, recoge las grasas absorbidas; la red de capilares sanguíneos (malva) a su lado capta casi todos los demás nutrientes. El tejido linfoide de Peyer queda debajo, en la base de la pared. Esquemático; la vellosidad está muy ampliada. La linfa del vaso quilífero desciende desde el extremo ciego de la vellosidad hasta el colector basal y luego hacia los troncos intestinales. El detalle inferior separado muestra un agregado de folículos linfoides (placa de Peyer), no una estructura dentro de la vellosidad ni la terminación de su vaso quilífero."
     ],
     "orientation": "left: anterior view, patient right at viewer left; right: villus section, tip at top",
     "orientationEs": "izquierda: vista anterior, derecha del paciente a la izquierda; derecha: corte de vellosidad, punta arriba",
@@ -3291,7 +3291,7 @@ export const bvis05Plates: Bvis05Plate[] = [
       {
         "structureId": "endo-pancreas",
         "x": 0.2524,
-        "y": 0.358,
+        "y": 0.414,
         "radius": 0.018,
         "panel": "body"
       },
@@ -3466,8 +3466,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       },
       {
         "structureId": "endo-thyroid-follicle",
-        "x": 0.8166,
-        "y": 0.168,
+        "x": 0.7758620689655172,
+        "y": 0.215,
         "radius": 0.018,
         "panel": "hist"
       },
@@ -3588,8 +3588,8 @@ export const bvis05Plates: Bvis05Plate[] = [
       "Páncreas: acinos exocrinos e islote endocrino"
     ],
     "description": [
-      "Left: the pancreas lies across the back of the upper abdomen, with its head tucked in the curve of the duodenum and its tail reaching the spleen (plum). Right: a microscopic schematic of the two parts of this one gland. Exocrine glands release their product through a duct onto a surface or into a cavity: the clusters of acinar cells around the edge make digestive enzymes that travel by the duct (bottom, arrow) to the duodenum. Endocrine glands have no duct and release hormones straight into blood: in the pale pancreatic islet (islet of Langerhans) alpha cells (rose) make glucagon, beta cells (blue; the most numerous) make insulin and delta cells (lilac; the fewest) make somatostatin, beside capillaries. The three cell types are mixed through the islet rather than in strict layers. Schematic; cell numbers and sizes simplified.",
-      "Izquierda: el páncreas cruza la parte posterior del abdomen superior, con la cabeza en la curva del duodeno y la cola hacia el bazo (ciruela). Derecha: esquema microscópico de las dos partes de esta única glándula. Las glándulas exocrinas liberan su producto por un conducto a una superficie o cavidad: los grupos de células acinares del borde producen enzimas digestivas que viajan por el conducto (abajo, flecha) hasta el duodeno. Las glándulas endocrinas no tienen conducto y liberan hormonas directamente a la sangre: en el pálido islote pancreático (de Langerhans) las células alfa (rosa) producen glucagón, las beta (azul; las más numerosas) insulina y las delta (lila; las menos) somatostatina, junto a capilares. Los tres tipos celulares están mezclados por el islote, no en capas estrictas. Esquemático; número y tamaño de células simplificados."
+      "Left: the pancreas lies across the back of the upper abdomen, with its head tucked in the curve of the duodenum and its tail reaching the spleen (plum). Right: a microscopic schematic of the two parts of this one gland. Exocrine glands release their product through a duct onto a surface or into a cavity: selected acinar clusters are shown opening into the collecting duct (bottom, arrow); the other clusters provide surrounding tissue context. Their digestive enzymes travel to the duodenum. Endocrine glands have no duct and release hormones straight into blood: in the pale pancreatic islet (islet of Langerhans) alpha cells (rose) make glucagon, beta cells (blue; the most numerous) make insulin and delta cells (lilac; the fewest) make somatostatin, beside capillaries. The three cell types are mixed through the islet rather than in strict layers. Schematic; cell numbers and sizes simplified.",
+      "Izquierda: el páncreas cruza la parte posterior del abdomen superior, con la cabeza en la curva del duodeno y la cola hacia el bazo (ciruela). Derecha: esquema microscópico de las dos partes de esta única glándula. Las glándulas exocrinas liberan su producto por un conducto a una superficie o cavidad: se muestran algunos acinos abriéndose al conducto colector (abajo, flecha); los demás aportan contexto del tejido circundante. Sus enzimas digestivas viajan al duodeno. Las glándulas endocrinas no tienen conducto y liberan hormonas directamente a la sangre: en el pálido islote pancreático (de Langerhans) las células alfa (rosa) producen glucagón, las beta (azul; las más numerosas) insulina y las delta (lila; las menos) somatostatina, junto a capilares. Los tres tipos celulares están mezclados por el islote, no en capas estrictas. Esquemático; número y tamaño de células simplificados."
     ],
     "orientation": "left: anterior view, head of pancreas at viewer left; right: microscopic schematic",
     "orientationEs": "izquierda: vista anterior, cabeza del páncreas a la izquierda; derecha: esquema microscópico",

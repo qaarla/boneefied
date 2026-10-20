@@ -1346,7 +1346,7 @@
           "radius": 0.018,
           "panel": "layers",
           "shapeKey": "B-circular-muscle-layer+B-longitudinal-muscle-layer",
-          "ownColourInteriorPx": 26,
+          "ownColourInteriorPx": 108,
           "ownMaskValidated": true
         },
         {
@@ -1356,7 +1356,7 @@
           "radius": 0.018,
           "panel": "layers",
           "shapeKey": "B-longitudinal-muscle-layer",
-          "ownColourInteriorPx": 8,
+          "ownColourInteriorPx": 46,
           "ownMaskValidated": true
         },
         {
@@ -1372,12 +1372,12 @@
       ],
       "featureMask": {
         "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
-        "sha256": "86ef466431a8d5e88ef61dd25262390951bf1a860b8d1324f9aafee8f76c3299",
+        "sha256": "320f9398a3540b5433b55d7bf4c51ef50b94418632e02ebfa4fd1baff21593a5",
         "file": null
       },
       "sha256": {
-        "svg": "c342632555841d88abcb19e0a92bfa608673b353e0f1c93b2713ca2564721e2f",
-        "png": "b27c0d2f2a004c03248f7912fed287c381707a1135c7e73f3ccf496bfb987a4b"
+        "svg": "f792015217832642c7a8d85eec0cd612a5f063ffe324e4e55c63f922fa448ebf",
+        "png": "39f564427a912c07209017d20c373fa9066c6b8f3903861432eb1d71808e03b2"
       }
     },
     {
@@ -2280,7 +2280,7 @@
           "radius": 0.018,
           "panel": "section",
           "shapeKey": "urinary-system-major-calyx",
-          "ownColourInteriorPx": 11,
+          "ownColourInteriorPx": 14,
           "ownMaskValidated": true
         },
         {
@@ -2310,7 +2310,7 @@
           "radius": 0.018,
           "panel": "section",
           "shapeKey": "sinus",
-          "ownColourInteriorPx": 42,
+          "ownColourInteriorPx": 24,
           "ownMaskValidated": true
         },
         {
@@ -2376,12 +2376,12 @@
       ],
       "featureMask": {
         "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
-        "sha256": "91bcc53cfdae9abb212268577b7905566dc10d23db83205cfe921e0c979db58f",
+        "sha256": "6aae6a73311396eeeb6d99da1449195e87a01528214eeafc725e3ea9136e53cf",
         "file": null
       },
       "sha256": {
-        "svg": "031e8b6b9b27a5bc283f87b07e3c0e55f24dfc180aab280f8119f72759c881ec",
-        "png": "dd00a31e76ceb39d6656fa0197df0daccb67c788a8ec336d90ddb8b42a29c46a"
+        "svg": "77ac0e3d125e5bd0c4916cbfa891b1ca632f589380aa1d13a77d4b67eebe6d2a",
+        "png": "5414aea0acf9ec5a28150c1eba87d3a68f1e5d23fb6ab94681536361b3376fbf"
       }
     },
     {
@@ -2550,12 +2550,12 @@
       ],
       "featureMask": {
         "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
-        "sha256": "7516c6f4f715db459b3fdf2216e5654bed92613c39b106f929fa155bcec16747",
+        "sha256": "9c56eaeb669a1f3604b1e6bfaf8ee52093feec8c258e34eba8e8f9aaeca19585",
         "file": null
       },
       "sha256": {
-        "svg": "ad6103148f80893842cdaa0f5ad9b70172f9d3c965280566222afe11cd379c7b",
-        "png": "3cb78a54b4af9738c8b9c694a486bb82abd7095b528d5c5a3a8f54b016606ebd"
+        "svg": "4dc7757177db2463f5af446011b86c8729c70bddda206ef6a5b60754a290021e",
+        "png": "d74c932d61e3092ce1e0da7ed98e45eebb3a3f50e7a4ed8a64b1cfe08aae7999"
       }
     },
     {
@@ -2897,27 +2897,27 @@
         },
         {
           "structureId": "urinary-system-juxtaglomerular-apparatus",
-          "x": 0.1379,
-          "y": 0.13,
+          "x": 0.1903,
+          "y": 0.182,
           "radius": 0.018,
           "panel": "corpuscle",
           "shapeKey": "urinary-system-juxtaglomerular-apparatus",
-          "ownColourInteriorPx": 36,
+          "ownColourInteriorPx": 8,
           "ownMaskValidated": true
         },
         {
           "structureId": "urinary-system-macula-densa",
-          "x": 0.2276,
-          "y": 0.118,
+          "x": 0.1572,
+          "y": 0.2,
           "radius": 0.018,
           "panel": "corpuscle",
           "shapeKey": "urinary-system-macula-densa",
-          "ownColourInteriorPx": 7,
+          "ownColourInteriorPx": 6,
           "ownMaskValidated": true
         },
         {
           "structureId": "urinary-system-juxtaglomerular-cell",
-          "x": 0.1366,
+          "x": 0.1517,
           "y": 0.21,
           "radius": 0.018,
           "panel": "corpuscle",
@@ -2968,12 +2968,12 @@
       ],
       "featureMask": {
         "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
-        "sha256": "96e7ac979e81bbbb20ffaf4bbc0e3207ac34d8982bfd2758151d4a51f3b3c6f8",
+        "sha256": "172343633bf9b7bc55bbcf41450f6974aac1414953bd049cc82c3a5a3338921f",
         "file": null
       },
       "sha256": {
-        "svg": "3e4de96dcf0fe3b4a5e7aa3a2853c69eb740b944bc1638f2bf3822c862fd1de7",
-        "png": "af448ac28bfb6c2afcb89a06a4e4c0a598b06f5093a3ff22245a80923b76c8bd"
+        "svg": "9ae8b9392a5b516070800b477d95bd5ae0ee964882860e01e7b92d5a31a0c62f",
+        "png": "ece6c24d29b0be3f46e0c2db6385216f74a92546b9d3a97b7f3b1683c8a1fdae"
       }
     },
     {
@@ -3233,12 +3233,12 @@
       ],
       "featureMask": {
         "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
-        "sha256": "101599f228d630ff3b085a75798839bf5c63daa037cee511bc98df053edb7196",
+        "sha256": "dc35232b124ae332963ce76fc9bfdd0e09978ec53149cebfdd846976691f4714",
         "file": null
       },
       "sha256": {
-        "svg": "dd4450892fab2c39188bc36aab8f771f340aaa01ce0a93f8f0ac1137cf1c0fac",
-        "png": "848030d093ba2e0a9f6c4b591035146c63798efc0028eb7db7b23340b9e3d498"
+        "svg": "9beb714c0f1d1f37753eff6dc6e1356feafae7e925431a23dc14ac0edabfe367",
+        "png": "f746ad295ee83b754f52a32cb9709c5b1c213d0ff1713d24b0757c7182ac3d76"
       }
     },
     {
@@ -3433,7 +3433,7 @@
           "radius": 0.018,
           "panel": "tubule",
           "shapeKey": "male-reproductive-sertoli-cell",
-          "ownColourInteriorPx": 8,
+          "ownColourInteriorPx": 10,
           "ownMaskValidated": true
         },
         {
@@ -3453,7 +3453,7 @@
           "radius": 0.018,
           "panel": "tubule",
           "shapeKey": "male-reproductive-primary-spermatocyte",
-          "ownColourInteriorPx": 15,
+          "ownColourInteriorPx": 18,
           "ownMaskValidated": true
         },
         {
@@ -3512,19 +3512,19 @@
           "y": 0.57,
           "radius": 0.018,
           "panel": "tubule",
-          "shapeKey": "male-reproductive-seminiferous-tubule",
-          "ownColourInteriorPx": 8,
+          "shapeKey": "male-reproductive-seminiferous-tubule+male-reproductive-sertoli-cell+male-reproductive-spermatogonium+male-reproductive-primary-spermatocyte+male-reproductive-spermatid+male-reproductive-blood-testis-barrier+male-reproductive-spermatozoon",
+          "ownColourInteriorPx": 47,
           "ownMaskValidated": true
         }
       ],
       "featureMask": {
         "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
-        "sha256": "4799f0c36c069d2708381c24599aa40740af2d6fb84c5c78c68d7d3a5564d2a1",
+        "sha256": "2772f2837668413ed2b0e71c2ed100389f750014bd8a577b8335cf53c8a53500",
         "file": null
       },
       "sha256": {
-        "svg": "13a0116103a3c8b5328c547aacb7ee94ae8815d0282b27814da67267576f9ca1",
-        "png": "bc9d827e86cd12e480e2f0bbccbedfb19753094193957037ffb9fba672d7255b"
+        "svg": "f5d7b132ca62fd63fcb840b5ea2e3cde0bb42f9c70302bbd2d2be3e6b9a521cf",
+        "png": "e680121658c81df98fb3023c54400b862aa93f422deaf9dd00ec711052810e11"
       }
     },
     {
@@ -3578,7 +3578,7 @@
           "radius": 0.018,
           "panel": "gross",
           "shapeKey": "female-reproductive-fundus-of-uterus+female-reproductive-body-of-uterus+female-reproductive-cervix",
-          "ownColourInteriorPx": 8,
+          "ownColourInteriorPx": 16,
           "ownMaskValidated": true
         },
         {
@@ -3638,7 +3638,7 @@
           "radius": 0.018,
           "panel": "gross",
           "shapeKey": "female-reproductive-vaginal-fornix",
-          "ownColourInteriorPx": 14,
+          "ownColourInteriorPx": 12,
           "ownMaskValidated": true
         },
         {
@@ -3693,18 +3693,18 @@
         },
         {
           "structureId": "female-reproductive-ovarian-ligament",
-          "x": 0.2207,
-          "y": 0.518,
+          "x": 0.2097,
+          "y": 0.484,
           "radius": 0.018,
           "panel": "gross",
           "shapeKey": "female-reproductive-ovarian-ligament",
-          "ownColourInteriorPx": 5,
+          "ownColourInteriorPx": 6,
           "ownMaskValidated": true
         },
         {
           "structureId": "female-reproductive-suspensory-ligament-of-ovary",
-          "x": 0.0883,
-          "y": 0.616,
+          "x": 0.0786,
+          "y": 0.488,
           "radius": 0.018,
           "panel": "gross",
           "shapeKey": "female-reproductive-suspensory-ligament-of-ovary",
@@ -3818,18 +3818,18 @@
           "radius": 0.018,
           "panel": "detail",
           "shapeKey": "D-fornix",
-          "ownColourInteriorPx": 22,
+          "ownColourInteriorPx": 6,
           "ownMaskValidated": true
         }
       ],
       "featureMask": {
         "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
-        "sha256": "7febe37559afa759a6f1040f4a1c15f66efecf66551f18b6fbf210121e966204",
+        "sha256": "9e7ba629614ca67f107f020bc6e5c1cc355ec33040db823f5899eeee3c7c9460",
         "file": null
       },
       "sha256": {
-        "svg": "b06a889971f6dae79cdccaa01e60ea38167e179d7e1a6fc6e9cbc9c87a727405",
-        "png": "cbe508fe8948fd77642785e51b63cd067352755a7991a782ddf1a5c4f2cf64d0"
+        "svg": "054c4dc3c3d43f6d893cca159234b428dc7f0553bec6ba42fba53e84739f457d",
+        "png": "123d11aa7e0dc5436352e8be0d31e4b6bf208ef765925b1291497f64fe62a249"
       }
     },
     {
@@ -4185,12 +4185,12 @@
         },
         {
           "structureId": "female-reproductive-smooth-muscle-of-uterus",
-          "x": 0.1228,
-          "y": 0.524,
+          "x": 0.1352,
+          "y": 0.516,
           "radius": 0.018,
           "panel": "wall",
           "shapeKey": "female-reproductive-smooth-muscle-of-uterus",
-          "ownColourInteriorPx": 6,
+          "ownColourInteriorPx": 10,
           "ownMaskValidated": true
         },
         {
@@ -4220,18 +4220,18 @@
           "radius": 0.018,
           "panel": "phases",
           "shapeKey": "female-reproductive-secretory-endometrium",
-          "ownColourInteriorPx": 31,
+          "ownColourInteriorPx": 20,
           "ownMaskValidated": true
         }
       ],
       "featureMask": {
         "method": "own semantic id-map rendered from the same shape geometry (geometry self-check, not anatomical proof)",
-        "sha256": "ca9c77cc14f94819cc8cf2908481f24845be1800fca2203f8b6574452187fbe5",
+        "sha256": "d813b23dcdb8f9b4b1f1f26547ad808eaf7c117e04757f3d7a87d6d330ca3750",
         "file": null
       },
       "sha256": {
-        "svg": "e29e220e653ac2364cc33dab2f96b43ad9ff0244a3bbfdcbd0f42ccc974ab6e0",
-        "png": "029220165f9814a88458616ca7b5ae7baa973775fead61506344678ae1eec987"
+        "svg": "e617e96b7c0967f4e632a4dd69dd29356988bb326b54716064f3d51250477706",
+        "png": "15de7c5cc6d1b70a7743475d09d09ea38095e47561f2e8529ec188abbf65ea9d"
       }
     },
     {

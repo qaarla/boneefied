@@ -26,7 +26,7 @@ function wallTypes(S) {
   S.panel(30, 30, 690, 940, 'wall'); S.panel(740, 30, 680, 940, 'types');
   S.at('wall');
   cross(S, { ext: 'ves-externa', med: 'ves-media', int: 'ves-intima', endo: 'ves-endothelium', lum: 'ves-artery' }, 375, 300, 205, { ext: 0.18, med: 0.34, intima: 0.12, elastic: 3 });
-  cross(S, { ext: 'vext', med: 'vmed', int: 'vint', endo: 'vendo', lum: 'ves-vein' }, 375, 760, 140, { ext: 0.3, med: 0.14, intima: 0.1, vein: true, oval: 0.8 });
+  cross(S, { ext: 'vext', med: 'vmed', int: 'vint', endo: 'vendo', lum: 'ves-vein' }, 375, 760, 205, { ext: 0.2, med: 0.1, intima: 0.06, vein: true, oval: 0.7 });
   S.pin('ves-externa', 'ves-externa', [375, 112]);
   S.pin('ves-media', 'ves-media', [375, 160]);
   S.pin('ves-intima', 'ves-intima', [375, 195]);
@@ -69,7 +69,7 @@ function flow(S) {
   [[660, 300, 400], [820, 400, 500], [700, 500, 600], [860, 600, 700]].forEach(([x, a, b]) => vs(S, 'ves-capillary', [[x, a], [x, b]], 8, 8, CAP));
   ys.forEach((y) => { vs(S, 'ves-venule', [[900, y], [960, y], [1030, (500 + y) / 2], [1090, 500]], 14, 24, V); });
   vs(S, 'ves-vein', [[1090, 500], [1200, 500], [1340, 500]], 64, 84, V);
-  [[140, 500], [310, 500], [460, 420], [760, 400], [1000, 500], [1200, 500]].forEach(([x, y], i) => S.arrow(x, y, i < 4 ? (i === 2 ? -14 : 0) : 0, 12, '#F2EFE8'));
+  [[140, 500], [310, 500], [550, 300], [760, 400], [1000, 500], [1200, 500]].forEach(([x, y]) => S.arrow(x, y, 0, x === 760 ? 6 : 10, '#F2EFE8'));
   rbcP(S, null, 760, 300, 7); rbcP(S, null, 760, 500, 7); rbcP(S, null, 780, 700, 7);
   S.pin('ves-aorta', 'ves-aorta', [170, 500]);
   S.pin('ves-artery', 'ves-artery', [320, 500]);

@@ -1,5 +1,6 @@
 import type { Asset, Module, SourceRecord } from './model';
 import { bvis04Plates } from './bvis04-plates.generated.ts';
+import { peripheralRegionLabel, peripheralRegionNote } from './peripheral-atlas-corrections.ts';
 import { nervousStructures } from './systems.ts';
 import { cellsStructures, skinStructures, sensesStructures } from './sensory-systems.ts';
 
@@ -24,8 +25,8 @@ export const bvis04Assets: Asset[] = bvis04Plates.map((p) => ({
   id: p.id, sourceId: BVIS04_SOURCE, sourcePage: null, localAssetPath: p.pngPath,
   assetType: 'diagram', labelStatus: 'unlabeled', attributionLicense: BVIS04_RIGHTS,
   verificationStatus: 'verified',
-  title: p.title[0], description: `${p.description[0]} Orientation: ${p.orientation}.`,
-  labels: p.labels.map((l) => ({ ...l, displayLabel: bvis04Name(l.structureId) })),
+  title: p.title[0], description: `${p.description[0]}${peripheralRegionNote(p.id, 'en') ? ` ${peripheralRegionNote(p.id, 'en')}` : ''} Orientation: ${p.orientation}.`,
+  labels: p.labels.map((l) => ({ ...l, displayLabel: peripheralRegionLabel(p.id, l.structureId, 'en') ?? bvis04Name(l.structureId) })),
   hotspots: p.labels.map(({ structureId, x, y, radius }) => ({ structureId, x, y, radius })),
   imageAspectRatio: 1.45, imageOrientation: 'landscape',
   specimenNote: p.teachingKind === 'tissue-schematic' ? 'Schematic teaching diagram, not a specimen or photomicrograph.' : undefined,

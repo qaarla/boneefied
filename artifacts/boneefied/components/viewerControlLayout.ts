@@ -12,7 +12,9 @@ export function viewerControlRows(width: number, textWidths: Partial<Record<View
   const zoom: ViewerControlName[] = ['zoom-in', 'zoom-out', 'reset'];
   const labels: ViewerControlName[] = showLabelActions ? ['reveal-all', 'hide-all'] : [];
   const all = [...zoom, ...labels];
-  const needed = (name: ViewerControlName) => Math.min(available, Math.max(VIEWER_CONTROL_TAP_SIZE, Math.ceil(textWidths[name] ?? 70) + 12));
+  // The label's content box excludes both 6px paddings AND the two borders.
+  // Omitting the borders can split a single word such as Reset at Large text.
+  const needed = (name: ViewerControlName) => Math.min(available, Math.max(VIEWER_CONTROL_TAP_SIZE, Math.ceil(textWidths[name] ?? 70) + 14));
   const fits = (names: ViewerControlName[]) => names.reduce((sum, name) => sum + needed(name), 0) + Math.max(0, names.length - 1) * VIEWER_CONTROL_GAP <= available;
   const groups = fits(all) ? [all] : [zoom, labels].filter(group => group.length);
   const rows: ViewerControlName[][] = [];

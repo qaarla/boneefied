@@ -1,11 +1,75 @@
 import type { Asset } from './model';
+import { repairFoundationsTargets } from './foundations-atlas-corrections.ts';
+import { repairJointsAtlasTargets } from './joints-atlas-corrections.ts';
+import { repairMuscularAtlasTargets } from './muscular-atlas-corrections.ts';
+import { repairSensesAtlasTargets } from './senses-atlas-corrections.ts';
 
 type Point = { structureId: string; x: number; y: number };
 export type TargetRepair = { structureId: string; from: [number, number]; to: [number, number]; reason: string };
 const repair = (structureId: string, from: [number, number], to: [number, number], reason: string): TargetRepair => ({ structureId, from, to, reason });
+const fitUpperRoute = (cx: number, points: [string, number, number][]): TargetRepair[] =>
+  points.map(([id, x, y]) => repair(id, [x, y],
+    [(cx + (x * 1450 - cx) * 17 / 19) / 1450, (50 + (y * 1000 - 40) * 17 / 19) / 1000],
+    'Follow the uniformly refitted upper-body source (1.9 to 1.7 scale) so complete hands fit; preserve the same actual vessel point.'));
 
 /** Individually inspected source-normalized targets. Never reorder labels or change IDs/radii. */
 export const repair5Targets: Record<string, TargetRepair[]> = {
+  'asset-bvis05-respiratory-membrane-histology': [
+    repair('respiratory-system-surfactant', [.1241, .362], [.1241, .384], 'Film follows the actual apical epithelial surface, not a detached stripe in alveolar air.'),
+    repair('respiratory-system-respiratory-membrane', [.4414, .416], [.4414, .409], 'Fused basal layer now directly joins the type I epithelial cell to capillary endothelium.'),
+  ],
+  'asset-bvis05-lymph-overview': [
+    repair('lymph-fluid', [.6069, .48], [880 / 1450, .45], 'Unambiguous interstitial lymph/tissue fluid, away from the green capillary wall and flow arrow.'),
+  ],
+  'asset-bvis05-lymph-node-structure': [
+    repair('lymph-hilum', [.5117, .704], [790 / 1450, .714], 'Visible hilar region beside the now-continuous sinus/efferent route, not its green lumen.'),
+  ],
+  'asset-bvis05-spleen-pulp': [
+    repair('lymph-splenic-cords', [.4938, .38], [680 / 1450, .37], 'Clear red-pulp cord tissue between sinusoids, away from white pulp and marginal-zone border.'),
+  ],
+  'asset-bvis05-upper-limb-arteries': fitUpperRoute(725, [
+    ['ves-aorta', .5338, .61], ['ves-common-carotid', .4772, .252], ['ves-subclavian', .4276, .294],
+    ['ves-axillary', .3531, .36], ['ves-brachial', .3145, .534], ['ves-radial', .269, .816],
+    ['ves-ulnar', .2993, .818], ['ves-internal-carotid', .4745, .176], ['ves-external-carotid', .4897, .172],
+  ]),
+  'asset-bvis05-upper-limb-veins': fitUpperRoute(480, [
+    ['ves-brachiocephalic-vein', .3076, .294], ['ves-subclavian-vein', .2524, .29],
+    ['ves-axillary-vein', .1862, .354], ['ves-internal-jugular', .2993, .21], ['ves-jugular', .2841, .23],
+    ['ves-cephalic', .1214, .55], ['ves-median-cubital', .1241, .632],
+  ]),
+  'asset-bvis05-celiac-renal-context': [
+    repair('ves-celiac-trunk', [.5117, .326], [785 / 1450, .335], 'Distinct projecting celiac trunk between aortic origin and three-way branch point, not overprinted abdominal aorta.'),
+  ],
+  'asset-bvis05-hepatic-portal-system': [
+    repair('ves-hepatic-vein', [.3586, .356], [492 / 1450, .302], 'Follow corrected hepatic drainage separated from portal inflow; no false portal-caval junction.'),
+    repair('ves-hepatic-vein', [.8166, .5], [1060 / 1450, .24], 'Actual projected hepatic venous outlet beyond the lobule, not its central vein.'),
+    repair('ves-sinusoids', [.8276, .634], [(1185 + (.8276 * 1450 - 1185) * 25 / 27) / 1450, .5 + (.634 - .5) * 25 / 27], 'Follow the same sinusoidal point when the lobule is uniformly inset to keep peripheral triads clear of the raster edge.'),
+    repair('ves-hepatic-portal', [.8124, .234], [1179 / 1450, .254], 'Portal venule in the superior triad of the refitted lobule.'),
+  ],
+  'asset-bvis05-blood-composition': [
+    repair('cv-blood-erythrocyte', [.6207, .33], [920 / 1450, .315], 'Cytoplasmic rim of the corrected 70px-radius erythrocyte, smaller than the neutrophil; not the old enlarged cell extent.'),
+  ],
+  'asset-bvis05-coronary-posterior': [
+    repair('cv-right-coronary', [.5407, .646], [.5407, .616], 'Follow the corrected posterior AV-groove course on the heart toward the posterior interventricular artery, not the old inferior off-margin course.'),
+  ],
+  'asset-bvis05-endocrine-body-map': [
+    repair('endo-pancreas', [.2524, .358], [.2524, .414], 'Pancreas crosses the upper kidneys anteriorly and below the suprarenal glands, not above the adrenals.'),
+  ],
+  'asset-bvis05-thyroid-parathyroid': [
+    repair('endo-thyroid-follicle', [.8166, .168], [1125 / 1450, .215], 'Actual follicular epithelial ring, not the surrounding stromal halo.'),
+  ],
+  'asset-bvis04-lower-limb-nerves': [
+    repair('sacral-plexus', [.7931, .092], [.6966, .092], 'Posterior right limb now has lateral at viewer right; mirror the plexus endpoint with its own panel.'),
+    repair('sciatic-nerve', [.7917, .32], [.698, .32], 'Mirror the endpoint with the posterior right-limb sciatic course, not the anterior femoral nerve.'),
+  ],
+  'asset-commons-axial-skeleton-blank': [
+    repair('thoracic-vertebrae', [.5, .43], [450 / 960, 590 / 1377], 'Thoracic vertebral body, not the transparent gap at its lateral edge.'),
+    repair('sacrum', [.5, .7], [450 / 960, 900 / 1377], 'Midline sacral bone above the coccyx, not the adjacent transparent pelvic space.'),
+    repair('coccyx', [.5, .75], [450 / 960, 966 / 1377], 'Small highlighted caudal tip, not the inferior pubic ramus.'),
+  ],
+  'asset-skeletal-atlas-leg-tibia-fibula': [
+    repair('ankle-mortise', [.3478, .8913], [504 / 1450, .855], 'Socket space just under the continuous distal tibial plafond, not the center of the talar surface below.'),
+  ],
   'asset-skeletal-atlas-atlas-axis': [
     repair('spinous-process', [.8873, .64], [1250 / 1450, .66], 'Center of the visible spinous-process shaft, not the background above it.'),
   ],
@@ -14,11 +78,12 @@ export const repair5Targets: Record<string, TargetRepair[]> = {
     repair('floating-ribs', [.4348, .8365], [627 / 1450, .796], 'Centerline of rib 12 rather than the gap below it.'),
   ],
   'asset-skeletal-atlas-rib-detail': [
+    repair('transverse-process', [.2253, .54], [330 / 1450, .5], 'Continuous transverse-process shaft that now reaches its costotransverse facet against the rib tubercle.'),
     repair('costal-groove', [.7503, .5875], [1170 / 1450, .485], 'Visible darker groove along the inner rib border.'),
   ],
   'asset-skeletal-atlas-synovial-joint': [
-    repair('synovial-joint', [.3179, .5], [710 / 1450, .48], 'Inside the joint between its cartilage-capped ends, not outside the capsule.'),
-    repair('articular-cartilage', [.5, .39], [.5, .445], 'Center of the blue-gray cartilage cap, not the bone above it.'),
+    repair('synovial-joint', [.3179, .5], [.5, .49], 'Inside the continuous capsule-enclosed joint space between the cartilage-capped ends.'),
+    repair('articular-cartilage', [.5, .39], [.5, .437], 'Center of the attached blue-gray cartilage cap.'),
   ],
   'asset-skeletal-atlas-shoulder-joint': [
     repair('acromion', [.4362, .305], [680 / 1450, .285], 'Visible acromial arch, not the empty space beneath it.'),
@@ -75,7 +140,8 @@ export const repair5Targets: Record<string, TargetRepair[]> = {
     repair('ischium', [.3, .69], [.35, .70], 'Solid inferior ischial body rather than the outside edge.'),
     repair('ischium', [.3, .7], [.35, .70], 'Same inferior ischial body for the separate Practice coordinate.'),
     repair('pubis', [.4, .61], [.45, .61], 'Superior pubic ramus rather than its lower outline against the obturator opening.'),
-    repair('acetabulum', [.3, .5], [.225, .58], 'Align the old Practice location with Study; socket/head distinction remains an explicitly flagged artwork limitation.'),
+    repair('acetabulum', [.3, .5], [73 / 256, 171 / 294], 'Visible acetabular rim rather than the central femoral-head surface; deeper socket remains occluded.'),
+    repair('acetabulum', [.225, .58], [73 / 256, 171 / 294], 'Same visible bony rim for Study and pre-catalog objects; the low-resolution assembled image cannot expose the deeper socket.'),
   ],
   'asset-commons-appendicular-skeleton-blank': [
     repair('clavicle', [.43, .205], [413 / 960, 333 / 1774], 'Teal clavicular shaft above the coracoid/scapular region.'),
@@ -94,6 +160,9 @@ export const repair5Targets: Record<string, TargetRepair[]> = {
   'asset-bvis04-epidermis-strata': [
     repair('dermal-papilla-skin', [.389, .87], [584 / 1450, .865], 'Dermal papilla interior, separate from the adjacent tactile corpuscle and papilla edge.'),
   ],
+  'asset-bvis04-dermis-hypodermis': [
+    repair('elastic-fibers-skin', [.6897, .592], [1000 / 1450, .594], 'Centerline of the thin dark elastic fiber; the former endpoint landed on the pale collagen bundle immediately above it.'),
+  ],
   'asset-bvis04-muscle-tissue': [
     repair('smooth-muscle-tissue', [.8428, .328], [1195 / 1450, .334], 'Cytoplasm of the middle-row spindle cell rather than its ambiguous tapered tip.'),
   ],
@@ -102,7 +171,7 @@ export const repair5Targets: Record<string, TargetRepair[]> = {
 /** Exact coordinate matching also handles pre-catalog glossary objects without relocating other views of a repeated ID. */
 export function repairDiagramTargets<T extends Point>(assetId: string | undefined, points: T[]): T[] {
   const repairs = assetId ? repair5Targets[assetId] : undefined;
-  if (!repairs) return points;
+  if (!repairs) return repairSensesAtlasTargets(assetId, repairMuscularAtlasTargets(assetId, repairJointsAtlasTargets(assetId, repairFoundationsTargets(assetId, points))));
   let changed = false;
   const result = points.map(point => {
     const fix = repairs.find(r => r.structureId === point.structureId &&
@@ -111,7 +180,7 @@ export function repairDiagramTargets<T extends Point>(assetId: string | undefine
     changed = true;
     return { ...point, x: fix.to[0], y: fix.to[1] };
   });
-  return changed ? result : points;
+  return repairSensesAtlasTargets(assetId, repairMuscularAtlasTargets(assetId, repairJointsAtlasTargets(assetId, repairFoundationsTargets(assetId, changed ? result : points))));
 }
 
 export function applyRepair5Targets(asset: Asset): Asset {
@@ -122,6 +191,5 @@ export function applyRepair5Targets(asset: Asset): Asset {
 
 /** Geometry cannot supply missing anatomical drawing detail. These are not certified as repaired artwork. */
 export const repair5ArtworkLimitations = [
-  { assetId: 'asset-original-mitosis-stages', issue: 'The interphase cell depicts a condensed X chromosome, and the upper fifth cell has only one nucleus. Correct endpoints do not fix these phase-drawing limitations. Telophase now targets the lower two-nuclei cell. The fourth cell does show opposed purple chromatids, so the initial anaphase suspicion was dismissed on enlargement.' },
   { assetId: 'asset-servier-pelvis', issue: 'The low-resolution blue hip-joint region does not clearly distinguish the acetabular socket from the femoral head/cartilage. Its acetabulum target cannot be anatomically certified through a coordinate-only repair.' },
 ];

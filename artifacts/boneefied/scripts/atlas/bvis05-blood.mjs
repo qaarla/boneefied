@@ -64,14 +64,14 @@ function composition(S) {
   S.arrow(440, 330, 0, 12, C.soft);
   // right panel: three elements, drawn at comparable scale
   S.at('cells');
-  rbcCell(S, 'rbc', 'pal', 960, 280, 110);
+  rbcCell(S, 'rbc', 'pal', 960, 280, 70);
   wbc(S, 'neu', 1230, 280, 100, { cell: 'leuk', nuc: 'leuk' });
-  plt(S, 'plt', 960, 640, 56); plt(S, 'plt', 1060, 700, 40); plt(S, 'plt', 1130, 610, 48); plt(S, 'plt', 1020, 560, 32);
+  plt(S, 'plt', 960, 640, 22); plt(S, 'plt', 1060, 700, 18); plt(S, 'plt', 1130, 610, 21); plt(S, 'plt', 1020, 560, 15);
   S.pin('cv-blood-plasma', 'plasma', [250, 330]);
   S.pin('cv-blood-serum', 'serum', [550, 330]);
   S.pin('cv-blood-buffy-coat', 'buffy', [250, 560]);
   S.pin('cv-blood-formed-elements', 'rbcl+buffy', [250, 700]);
-  S.pin('cv-blood-erythrocyte', 'rbc', [900, 330]);
+  S.pin('cv-blood-erythrocyte', 'rbc', [920, 315]);
   S.pin('cv-blood-leukocyte', 'leuk', [1210, 330]);
   S.pin('cv-blood-platelet', 'plt', [960, 640]);
 }
@@ -159,6 +159,8 @@ function marrow(S) {
   wbc(S, 'neu', 540, 690, 26, { cell: 'leu', nuc: 'leu' });
   // megakaryocyte against the sinusoid
   S.sh('mk', sm([[430, 480], [470, 440], [540, 440], [590, 480], [585, 560], [530, 600], [460, 590], [425, 540]], true, 5), { fill: '#C4B4D2', line: '#6F6381', sw: 1.8 });
+  // One multilobulated megakaryocyte nucleus, not four separate nuclei.
+  S.sh('mk', poly([[500, 490], [540, 520], [500, 550], [470, 520]]), { fill: PURP, line: PURP, sw: 8 });
   [[500, 490], [540, 520], [500, 550], [470, 520]].forEach(([x, y]) => S.sh('mk', E(x, y, 20, 17), { fill: '#8E83A6', line: PURPL, sw: 1.2 }));
   S.sh('mk', sm([[505, 596], [515, 626], [490, 650]], false, 4), { fill: 'none', line: '#6F6381', sw: 2 });
   plt(S, 'plt', 510, 622, 8);
@@ -177,16 +179,20 @@ function marrow(S) {
   S.at('lineage');
   const br = (d, w = 4) => S.ln('tree', d, { color: '#8E83A6', w });
   S.sh('hsc2', E(1085, 130, 56, 56), { fill: '#CDBFD8', line: '#6F6381', sw: 2 }); S.sh('hsc2', E(1085, 130, 30, 30), { fill: '#8E83A6', line: PURPL, sw: 1 });
-  br('M1085 190V250M1085 250H900V330M1085 250H1270V330');
+  br('M1085 186V250M1085 250H900V330M1085 250H1270V330');
   br('M900 330V420M900 420H820V500M900 420H1000V500');
-  br('M1270 330V440M1270 440H1190V520M1270 440H1350V520');
+  // Granulocyte precursor belongs to the myeloid branch at x900.
+  br('M900 360H1190V520');
+  br('M1270 330V440H1350V520');
   [[820, 520], [1000, 520]].forEach(([x, y]) => S.sh(null, E(x, y, 28, 28), { fill: '#E3D2CF', line: '#A8817C', sw: 1.4 }));
-  br('M820 548V640M1000 548V640M1000 640H1080M1000 640H920');
+  br('M820 548V646M1000 548V640M1000 640H1080M1000 640H920');
   S.sh('rbc2', E(820, 690, 48, 44), { fill: '#CC8F88', line: '#8A524D', sw: 1.6 }); S.sh('rbc2', E(820, 690, 20, 18), { fill: '#E3B5AE', line: '#CC8F88', sw: 1 });
   S.sh('mk2', sm([[900, 640], [940, 610], [1000, 620], [1020, 660], [990, 700], [930, 700]], true, 5), { fill: '#C4B4D2', line: '#6F6381', sw: 1.6 });
+  S.sh('mk2', poly([[947, 650], [972, 647], [971, 671]]), { fill: PURP, line: PURP, sw: 4 });
+  [[947, 650], [972, 647], [971, 671]].forEach(([x, y]) => S.sh('mk2', E(x, y, 13, 11), { fill: PURP, line: PURPL, sw: 1 }));
   S.sh('plt2', E(1090, 640, 24, 18), { fill: '#BDAAD0', line: '#6F6381', sw: 1.4 });
   S.sh(null, E(1190, 540, 28, 28), { fill: '#E3D2CF', line: '#A8817C', sw: 1.4 }); S.sh(null, E(1350, 540, 28, 28), { fill: '#E3D2CF', line: '#A8817C', sw: 1.4 });
-  br('M1190 568V820M1350 568V820');
+  br('M1190 568V840M1350 568V846');
   wbc(S, 'neu', 1190, 880, 40, { cell: 'leu2', nuc: 'leu2' }); wbc(S, 'lym', 1350, 880, 34, { cell: 'leu2', nuc: 'leu2' });
   S.pin('cv-blood-hematopoietic-stem-cell', 'hsc2', [1085, 130]);
   S.pin('cv-blood-hematopoiesis', 'tree', [1270, 330]);

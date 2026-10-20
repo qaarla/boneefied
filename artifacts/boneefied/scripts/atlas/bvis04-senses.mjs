@@ -1,5 +1,6 @@
 // BVIS04 special senses plates: eye (gross, anterior detail, retina, disc), ear (gross, middle, inner, cochlea), smell/taste.
 import { C, sm, poly, E, RR, tube, cr } from './bvis04-lib.mjs';
+import { sensesDetailTransforms } from '../../content/senses-atlas-corrections.ts';
 
 const MOD = 'special-senses';
 export const plates = [];
@@ -62,14 +63,15 @@ plates.push({
 function eyeFront(S) {
   S.panel(30, 30, 1390, 940, 'anterior-segment');
   S.clipBoth(RR(32, 32, 1386, 936, 14));
-  S.beginT(-595, -600, 2.2);
+  const { x, y, scale } = sensesDetailTransforms['asset-bvis04-eye-anterior-segment'];
+  S.beginT(x, y, scale);
   eye(S);
   S.endT();
   S.clipBothEnd();
-  const T = (x, y) => [x * 2.2 - 595, y * 2.2 - 600];
+  const T = (px, py) => [px * scale + x, py * scale + y];
   S.pin('cornea-eye', 'cornea', T(536, 420), { radius: 0.018 });
   S.pin('anterior-chamber-eye', 'ac', T(570, 480));
-  S.pin('aqueous-humor-eye', 'ac+pc', T(552, 372));
+  S.pin('aqueous-humor-eye', 'ac+pc', T(571, 385));
   S.pin('pupil-eye', 'pupil', T(622, 500));
   S.pin('iris-eye', 'iris', T(621, 395));
   S.pin('posterior-chamber-eye', 'pc', T(648, 402));
@@ -183,9 +185,7 @@ function ear(S) {
   S.sh('auricle', sm([[250, 330], [200, 260], [140, 280], [95, 380], [100, 520], [150, 610], [215, 640], [260, 580], [225, 520], [200, 440], [215, 390]]), { fill: '#E8D6C6', line: C.skinLn, sw: 2 });
   S.sh('meatus', tube([[225, 485], [330, 478], [420, 470], [482, 475]], 58, 50), { fill: '#E3D2C0', line: C.skinLn, sw: 1.6 });
   S.sh(null, tube([[225, 485], [330, 478], [420, 470], [482, 475]], 30, 24), { fill: '#CBB8A6', line: '#CBB8A6', sw: 0.5 });
-  // middle ear cavity, auditory tube
-  S.sh(null, sm([[492, 400], [540, 380], [600, 392], [628, 440], [628, 585], [590, 600], [520, 590], [492, 560]], true, 4), { fill: '#DDE7EA', line: '#7F98A2', sw: 1.4 });
-  S.tb('auditory-tube', [[600, 575], [680, 650], [770, 740], [830, 810]], 26, 36, { fill: '#C9DCE0', line: '#6F8D9A' });
+  middleCavity(S);
   // inner ear
   S.pipe('semicircular-canals', [[702, 440], [706, 290], [722, 235], [760, 235], [776, 290], [766, 440]], 20, '#DCE3E9', '#6F8D9A', false);
   S.pipe('semicircular-canals', [[650, 440], [640, 330], [690, 290], [740, 330], [745, 440]], 20, '#E4EAEF', '#6F8D9A', false);
@@ -193,6 +193,15 @@ function ear(S) {
   S.sh('vestibule', E(715, 470, 82, 62), { fill: '#C8DDE4', line: '#4F6C86', sw: 2 });
   S.sh('cochlea', sm([[760, 560], [850, 540], [925, 580], [945, 650], [900, 720], [820, 740], [750, 700], [740, 630]], true, 5), { fill: '#C8DDE4', line: '#4F6C86', sw: 2 });
   S.ln(null, sm([[790, 640], [830, 595], [890, 610], [895, 670], [840, 700], [800, 670], [830, 635], [855, 650]], false, 6), { color: '#4F6C86', w: 2.2 });
+  middleOssicles(S);
+  S.tb('vcn', [[850, 540], [900, 520], [960, 500], [1040, 480]], 20, 24, { fill: '#E6DFC8', line: '#9A8F6A' });
+  S.tb('vcn', [[775, 515], [840, 520], [905, 520]], 12, 12, { fill: '#E6DFC8', line: '#9A8F6A' });
+}
+function middleCavity(S) {
+  S.sh(null, sm([[492, 400], [540, 380], [600, 392], [628, 440], [628, 585], [590, 600], [520, 590], [492, 560]], true, 4), { fill: '#DDE7EA', line: '#7F98A2', sw: 1.4 });
+  S.tb('auditory-tube', [[600, 575], [680, 650], [770, 740], [830, 810]], 26, 36, { fill: '#C9DCE0', line: '#6F8D9A' });
+}
+function middleOssicles(S) {
   S.sh('tm', tube([[486, 425], [492, 470], [486, 520]], 9, 9), { fill: '#EAD7C2', line: C.skinLn, sw: 1.4 });
   S.sh('malleus', tube([[540, 410], [508, 440], [492, 505]], 10, 7), { fill: C.bone, line: C.boneLn, sw: 1.4 });
   S.sh('malleus', E(546, 410, 14, 11), { fill: C.bone, line: C.boneLn, sw: 1.4 });
@@ -203,8 +212,6 @@ function ear(S) {
   S.sh('stapes', E(586, 484, 5, 5), { fill: C.bone, line: C.boneLn, sw: 1.4 });
   S.sh('stapes', RR(619, 458, 5, 28, 2), { fill: C.bone, line: C.boneLn, sw: 1.4 });
   S.sh('round', E(634, 566, 8, 11), { fill: '#F2E3AE', line: '#9A8A4A', sw: 1.4 });
-  S.tb('vcn', [[850, 540], [900, 520], [960, 500], [1040, 480]], 20, 24, { fill: '#E6DFC8', line: '#9A8F6A' });
-  S.tb('vcn', [[775, 515], [840, 520], [905, 520]], 12, 12, { fill: '#E6DFC8', line: '#9A8F6A' });
 }
 function earSection(S) {
   S.panel(30, 30, 1390, 940, 'coronal-section');
@@ -229,18 +236,22 @@ plates.push({
 function middleEar(S) {
   S.panel(30, 30, 1390, 940, 'middle-ear');
   S.clipBoth(RR(32, 32, 1386, 936, 14));
-  S.beginT(-700, -560, 2.6);
-  ear(S);
+  const { x, y, scale } = sensesDetailTransforms['asset-bvis04-middle-ear'];
+  S.beginT(x, y, scale);
+  // Isolate this existing middle-ear detail instead of cropping the entire ear:
+  // all named structures, including the auditory tube, fit within the panel.
+  middleCavity(S);
+  middleOssicles(S);
   S.endT();
   S.clipBothEnd();
-  const T = (x, y) => [x * 2.6 - 700, y * 2.6 - 560];
+  const T = (px, py) => [px * scale + x, py * scale + y];
   S.pin('tympanic-membrane-ear', 'tm', T(488, 440));
   S.pin('malleus-ear', 'malleus', T(520, 430));
   S.pin('incus-ear', 'incus', T(574, 418));
-  S.pin('stapes-ear', 'stapes', T(610, 475));
+  S.pin('stapes-ear', 'stapes', T(604, 493));
   S.pin('oval-window-ear', 'oval', T(627, 470));
   S.pin('round-window-ear', 'round', T(634, 566));
-  S.pin('auditory-tube-ear', 'auditory-tube', T(660, 640));
+  S.pin('auditory-tube-ear', 'auditory-tube', T(680, 650));
 }
 plates.push({
   key: 'middle-ear', moduleId: MOD, kind: 'gross-diagram', lessons: ['external-middle-ear'], purpose: 'Ossicle chain from tympanic membrane to the oval window, and the two cochlear windows.',

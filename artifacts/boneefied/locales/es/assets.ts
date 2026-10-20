@@ -26,6 +26,7 @@ export default {
   'asset-original-mitosis-stages': {
     title: 'Etapas originales de la mitosis',
     description: 'Diagrama original de Boneefied que compara las etapas.',
+    specimenNote: 'Esquema didáctico, no una muestra ni fotomicrografía.',
     attributionLicense: originalSource, adaptationNote: 'Ilustración original de Boneefied con etiquetas y objetivos estructurados.',
     labels: ['Interfase', 'Profase', 'Metafase', 'Anafase', 'Telofase'],
   },
@@ -36,6 +37,7 @@ export default {
   },
   'asset-original-body-cavities': {
     title: 'Cavidades corporales originales', description: 'Diagrama original de Boneefied de las cavidades corporales.',
+    specimenNote: 'Esquema didáctico, no una muestra ni fotomicrografía.',
     attributionLicense: originalSource, adaptationNote: 'Ilustración original de Boneefied con etiquetas y objetivos estructurados.',
     labels: ['Cavidad craneal', 'Cavidad vertebral', 'Cavidad torácica', 'Cavidad abdominal', 'Cavidad pélvica'],
   },
