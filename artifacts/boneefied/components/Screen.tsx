@@ -1,18 +1,19 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { Platform, ScrollView, StyleSheet, View, type ScrollViewProps } from 'react-native';
 import { useDockClearance } from '@/hooks/useDockClearance';
-import { PAGE_CONTENT_TOP_GAP, usePageInsets } from '@/context/PageInsets';
+import { PAGE_CONTENT_TOP_GAP, SYSTEM_HEADING_TOP_GAP, usePageInsets } from '@/context/PageInsets';
 import { useColors } from '@/hooks/useColors';
 import { useTypographyLayout } from '@/components/ScaledText';
 import { KeyboardAwareScrollViewCompat } from '@/components/KeyboardAwareScrollViewCompat';
 import { ViewerScrollOwnership } from '@/components/ViewerScrollOwnership';
 import { OrganicBackground } from '@/components/OrganicBackground';
 
-export function Screen({ children, scroll = true, keyboardAware = false, belowHeader = false, scrollRef, onScroll, onViewportLayout, keyboardShouldPersistTaps }: {
+export function Screen({ children, scroll = true, keyboardAware = false, belowHeader = false, systemHeading = false, scrollRef, onScroll, onViewportLayout, keyboardShouldPersistTaps }: {
   children: React.ReactNode;
   scroll?: boolean;
   keyboardAware?: boolean;
   belowHeader?: boolean;
+  systemHeading?: boolean;
   scrollRef?: React.Ref<ScrollView>;
   onScroll?: ScrollViewProps['onScroll'];
   onViewportLayout?: (height: number, bottomClearance: number) => void;
@@ -46,9 +47,9 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
     else if (scrollRef) scrollRef.current = node;
   }, [scrollRef]);
   const { shouldReflow } = useTypographyLayout();
-  const insets = usePageInsets();
+  const insets = usePageInsets({ simulatePhonePreview: systemHeading });
   const bottomPadding = useDockClearance();
-  const content = <View style={[styles.content, { paddingTop: PAGE_CONTENT_TOP_GAP, paddingHorizontal: shouldReflow ? 16 : 20, ...(!scroll && { paddingBottom: bottomPadding }) }]}>{children}</View>;
+  const content = <View style={[styles.content, { paddingTop: systemHeading ? SYSTEM_HEADING_TOP_GAP : PAGE_CONTENT_TOP_GAP, paddingHorizontal: shouldReflow ? 16 : 20, ...(!scroll && { paddingBottom: bottomPadding }) }]}>{children}</View>;
   // The top inset belongs outside the scroll view so it cannot scroll under the status bar.
   // Bottom clearance belongs to the scrollable container so the final child can clear the fixed tabs.
   const scrollProps = {

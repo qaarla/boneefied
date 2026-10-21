@@ -1,14 +1,26 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { IPHONE_PREVIEW_SAFE_TOP, PAGE_CONTENT_TOP_GAP, resolvePageTopInset } from '../context/pageInsetsPolicy.ts';
+import { IPHONE_PREVIEW_SAFE_TOP, PAGE_CONTENT_TOP_GAP, SYSTEM_HEADING_TOP_GAP, resolvePageTopInset } from '../context/pageInsetsPolicy.ts';
 
-const zeroInsetWeb = { platform: 'web', development: true, localTop: 0, windowTop: 0 };
+const zeroInsetWeb = { platform: 'web', development: true, localTop: 0, windowTop: 0, simulatePhonePreview: true };
 
 test('phone-sized framed web previews reserve space for the Dynamic Island', () => {
   for (const width of [320, 390, 430, 600]) {
     assert.equal(resolvePageTopInset({ ...zeroInsetWeb, width }), IPHONE_PREVIEW_SAFE_TOP);
   }
-  assert.equal(resolvePageTopInset({ ...zeroInsetWeb, width: 390 }) + PAGE_CONTENT_TOP_GAP, 99);
+  assert.equal(resolvePageTopInset({ ...zeroInsetWeb, width: 390 }) + SYSTEM_HEADING_TOP_GAP, 99);
+});
+
+test('home and other default screens retain approved spacing without a simulated notch', () => {
+  assert.equal(PAGE_CONTENT_TOP_GAP, 32);
+  for (const width of [320, 390, 430, 600]) {
+    assert.equal(resolvePageTopInset({
+      platform: 'web', development: true, localTop: 0, windowTop: 0, width,
+    }), 0);
+  }
+  assert.equal(resolvePageTopInset({
+    ...zeroInsetWeb, width: 390, simulatePhonePreview: false, windowTop: 47,
+  }), 47);
 });
 
 test('native iPhones retain actual insets, including nested navigators reporting zero', () => {
@@ -36,5 +48,5 @@ test('real browser safe-area measurements are never added twice or reduced', () 
   assert.equal(resolvePageTopInset({ ...zeroInsetWeb, width: 390, windowTop: 70 }), 70);
   assert.equal(resolvePageTopInset({
     platform: 'ios', development: false, width: 430, localTop: 59,
-  }) + PAGE_CONTENT_TOP_GAP, 99);
+  }) + SYSTEM_HEADING_TOP_GAP, 99);
 });

@@ -3,7 +3,7 @@ import { Platform, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets, type EdgeInsets } from 'react-native-safe-area-context';
 import { resolvePageTopInset } from './pageInsetsPolicy';
 
-export { PAGE_CONTENT_TOP_GAP } from './pageInsetsPolicy';
+export { PAGE_CONTENT_TOP_GAP, SYSTEM_HEADING_TOP_GAP } from './pageInsetsPolicy';
 
 const PageInsetsContext = createContext<EdgeInsets | null>(null);
 
@@ -14,7 +14,7 @@ export function PageInsetsProvider({ children }: { children: React.ReactNode }) 
 }
 
 /** All page stacks are headerless; their content must clear the window's notch. */
-export function usePageInsets() {
+export function usePageInsets({ simulatePhonePreview = false }: { simulatePhonePreview?: boolean } = {}) {
   const windowInsets = useContext(PageInsetsContext);
   const localInsets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
@@ -26,6 +26,7 @@ export function usePageInsets() {
       platform: Platform.OS,
       development: __DEV__,
       width,
+      simulatePhonePreview,
     }),
   };
 }

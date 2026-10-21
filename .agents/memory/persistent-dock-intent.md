@@ -17,6 +17,6 @@ For cold deep links, resolve navigation against the hydrated root state rather t
 
 Permission to change tab navigation behavior is not permission to redesign the dock.
 
-**Why:** When asked which unauthorized appearance change they meant, the owner explicitly answered “both” the home header and the bottom dock.
+**Why:** The owner identified “both” the home header and bottom dock as unauthorized appearance changes, then chose the prior downloaded appearance while explicitly keeping the new tab navigation.
 
 **How to apply:** Preserve the approved dock appearance while implementing navigation or heading fixes. If the expected appearance is unclear, compare against the prior build and ask for the approved reference instead of guessing a new design.

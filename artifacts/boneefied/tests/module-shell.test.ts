@@ -19,12 +19,14 @@ test('the dock replaces module headers and Screen owns safe area and reading gap
   assert.doesNotMatch(shell, /HeaderBackButton|ModuleHeader/);
   assert.doesNotMatch(shell, /module-navigation-title/);
   assert.doesNotMatch(shell, /numberOfLines|ellipsizeMode/);
-  assert.match(shell, /<Screen>/);
+  assert.match(shell, /<Screen systemHeading>/);
   assert.match(screen, /belowHeader = false/);
   assert.match(screen, /paddingTop: belowHeader \? 0 : insets\.top/);
   assert.match(screen, /contentInsetAdjustmentBehavior: 'never'/);
   assert.match(screen, /automaticallyAdjustContentInsets: false/);
-  assert.match(screen, /paddingTop: PAGE_CONTENT_TOP_GAP/);
+  assert.match(screen, /paddingTop: systemHeading \? SYSTEM_HEADING_TOP_GAP : PAGE_CONTENT_TOP_GAP/);
+  assert.match(screen, /systemHeading = false/);
+  assert.doesNotMatch(read('app/(tabs)/(study)/index.tsx'), /<Screen[^>]*systemHeading/);
   assert.match(screen, /usePageInsets/);
 });
 
@@ -63,10 +65,12 @@ test('headerless pages retain window safe-area clearance and a shared reading ga
   assert.match(insets, /top: resolvePageTopInset\(/);
   assert.match(insets, /windowTop: windowInsets\?\.top/);
   assert.match(insets, /localTop: localInsets\.top/);
-  assert.match(read('context/pageInsetsPolicy.ts'), /PAGE_CONTENT_TOP_GAP = 40/);
+  assert.match(read('context/pageInsetsPolicy.ts'), /PAGE_CONTENT_TOP_GAP = 32/);
+  assert.match(read('context/pageInsetsPolicy.ts'), /SYSTEM_HEADING_TOP_GAP = 40/);
+  assert.match(read('components/ModuleScreen.tsx'), /<Screen systemHeading>/);
   for (const path of ['components/Screen.tsx', 'app/(tabs)/(study)/glossary/index.tsx', 'app/(tabs)/(study)/glossary/word-parts.tsx']) {
     assert.match(read(path), /usePageInsets/);
-    assert.match(read(path), /paddingTop: PAGE_CONTENT_TOP_GAP/);
+    assert.match(read(path), /paddingTop: (?:systemHeading \? SYSTEM_HEADING_TOP_GAP : )?PAGE_CONTENT_TOP_GAP/);
   }
 });
 

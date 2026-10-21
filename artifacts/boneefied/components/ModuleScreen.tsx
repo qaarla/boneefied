@@ -6,6 +6,6 @@ import { Screen } from '@/components/Screen';
 export function ModuleScreen({ title, children }: { title: string; children: React.ReactNode }) {
   return <>
     <Stack.Screen options={{ title, headerShown: false }} />
-    <Screen>{children}</Screen>
+    <Screen systemHeading>{children}</Screen>
   </>;
 }

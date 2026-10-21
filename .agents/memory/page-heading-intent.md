@@ -19,4 +19,4 @@ Do not reposition the home/brand header as a side effect of fixing a system head
 
 **Why:** The owner identified the lowered home header as an unauthorized change after a shared spacing adjustment affected it.
 
-**How to apply:** Scope system-heading clearance adjustments to the relevant pages. Confirm the approved appearance before changing the home header or applying another app-wide spacing rule.
+**How to apply:** Scope system-heading clearance adjustments to the relevant pages. The owner confirmed retaining the prior downloaded appearance for the home header and dock, while keeping the new tab navigation. Do not apply another app-wide spacing rule.
