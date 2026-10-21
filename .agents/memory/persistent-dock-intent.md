@@ -17,7 +17,7 @@ For cold deep links, resolve navigation against the hydrated root state rather t
 
 Permission to change tab navigation behavior is not permission to redesign the dock.
 
-**Why:** The owner rejected unsolicited home-header and dock changes, then explicitly authorized a dock-only restyle with “COPY THIS STYLE WITH YOUR COLOR SCHEME.” That later approval supersedes the dock appearance freeze, not the home-header protection.
+**Why:** The owner rejected unsolicited home-header and dock changes, then explicitly authorized a dock-only restyle with “COPY THIS STYLE WITH YOUR COLOR SCHEME.” The owner approved the reference-based result before requesting a new iPhone build. That later approval supersedes the dock appearance freeze, not the home-header protection.
 
 **How to apply:** Follow the supplied dock reference: substantial icons above clear centered serif labels, a restrained translucent base, Boneefied orange for the active item, and theme-appropriate neutral inactive items. Retain Study, Practice, Missed and Progress and their approved one-level navigation. Keep the home header, system headings, and atlas layout untouched by dock styling.
 
