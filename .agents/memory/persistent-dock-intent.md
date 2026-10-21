@@ -17,6 +17,8 @@ For cold deep links, resolve navigation against the hydrated root state rather t
 
 Permission to change tab navigation behavior is not permission to redesign the dock.
 
-**Why:** The owner identified “both” the home header and bottom dock as unauthorized appearance changes, then chose the prior downloaded appearance while explicitly keeping the new tab navigation.
+**Why:** The owner rejected unsolicited home-header and dock changes, then explicitly authorized a dock-only restyle with “COPY THIS STYLE WITH YOUR COLOR SCHEME.” That later approval supersedes the dock appearance freeze, not the home-header protection.
 
-**How to apply:** Preserve the approved dock appearance while implementing navigation or heading fixes. If the expected appearance is unclear, compare against the prior build and ask for the approved reference instead of guessing a new design.
+**How to apply:** Follow the supplied dock reference: substantial icons above clear centered serif labels, a restrained translucent base, Boneefied orange for the active item, and theme-appropriate neutral inactive items. Retain Study, Practice, Missed and Progress and their approved one-level navigation. Keep the home header, system headings, and atlas layout untouched by dock styling.
+
+Approved visual reference: `attached_assets/Screenshot_2026-10-20_at_8.50.48_PM_1792554651680.png`. Its yellow highlight is a style reference, not a request to replace Boneefied's orange palette.

@@ -35,7 +35,7 @@ test('all reading wrappers and native navigation use authoritative font faces, n
   assert.match(root, /headerTitleStyle: \{ fontFamily: APP_FONTS.bold/);
   assert.match(root, /headerBackTitleStyle: \{ fontFamily: APP_FONTS.bold/);
   const tabs = read('app/(tabs)/_layout.tsx');
-  assert.match(tabs, /<NativeTabs labelStyle=\{\{ fontFamily: APP_FONTS.bold/);
+  assert.match(tabs, /labelStyle=\{\{\s+default: \{ fontFamily: APP_FONTS.bold/);
   assert.match(tabs, /tabBarLabelStyle: \{ fontFamily: APP_FONTS.bold/);
   assert.match(tabs, /headerTitleStyle: \{ fontFamily: APP_FONTS.bold/);
   const nativeLabel = tabs.match(/<NativeText\b[\s\S]*?<\/NativeText>/)?.[0];

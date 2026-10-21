@@ -6,7 +6,7 @@ import { useStudy } from '@/context/StudyContext';
 import { devPreviewFontScale, Text, useTypographyLayout } from '@/components/ScaledText';
 import { typographyMetrics } from '@/context/typographyScale';
 import { APP_FONTS } from '@/context/typeface';
-import { Feather } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Tabs } from 'expo-router';
@@ -17,16 +17,24 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useLocale } from '@/locales/useLocale';
 
 // IMPORTANT: iOS 26 uses NativeTabs for native tabs with liquid glass support.
-// NativeTabs intentionally does NOT use custom design tokens — liquid glass
-// is a system-level appearance provided by iOS and cannot be overridden.
-// Custom brand colors are applied only on the ClassicTabLayout path (older iOS / Android / web).
+// iOS owns the liquid glass material. Supported icon and label options follow
+// the same Boneefied-colored dock reference as the classic fallback.
 export const unstable_settings = { initialRouteName: '(study)' };
 
 function NativeTabLayout() {
   const { t } = useLocale();
   const { up } = useTabHierarchy();
+  const colors = useColors();
   return (
-    <NativeTabs labelStyle={{ fontFamily: APP_FONTS.bold, fontWeight: 'normal' }}>
+    <NativeTabs
+      tintColor={colors.primary}
+      iconColor={{ default: colors.foreground, selected: colors.primary }}
+      backgroundColor={colors.background + 'D9'}
+      labelStyle={{
+        default: { fontFamily: APP_FONTS.bold, fontSize: 13, fontWeight: 'normal', color: colors.foreground },
+        selected: { fontFamily: APP_FONTS.bold, fontSize: 13, fontWeight: 'normal', color: colors.primary },
+      }}
+    >
          <NativeTabs.Trigger name="(study)" disablePopToTop disableScrollToTop listeners={({ navigation }) => ({
            tabPress: () => { if (navigation.isFocused()) up('study'); },
          })}>
@@ -38,7 +46,7 @@ function NativeTabLayout() {
       <NativeTabs.Trigger name="practice" disablePopToTop disableScrollToTop listeners={({ navigation }) => ({
         tabPress: () => { if (navigation.isFocused()) up('practice'); },
       })}>
-        <NativeTabs.Trigger.Icon sf={{ default: 'checkmark.circle', selected: 'checkmark.circle.fill' }} />
+        <NativeTabs.Trigger.Icon sf={{ default: 'clipboard', selected: 'clipboard.fill' }} />
         <NativeTabs.Trigger.Label>{t('tabs.practice')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="missed" disablePopToTop disableScrollToTop listeners={({ navigation }) => ({
@@ -65,13 +73,13 @@ function AccessibleTabBar({ state, descriptors, navigation }: TabBarProps) {
   const colors = useColors();
   const insets = useSafeAreaInsets();
   const isDark = useColorScheme() === 'dark';
-  return <View style={[styles.expandedBar, { paddingBottom: insets.bottom, backgroundColor: Platform.OS === 'ios' ? 'transparent' : colors.background, borderTopColor: colors.border }]}>
-    {Platform.OS === 'ios' && <BlurView intensity={100} tint={isDark ? 'dark' : 'light'} style={StyleSheet.absoluteFill} />}
+  return <View style={[styles.expandedBar, { paddingBottom: insets.bottom, backgroundColor: Platform.OS === 'ios' ? 'transparent' : colors.background + 'E6', borderTopColor: 'transparent' }]}>
+    {Platform.OS === 'ios' && <BlurView intensity={60} tint={isDark ? 'dark' : 'light'} style={StyleSheet.absoluteFill} />}
     <OrganicSurface />
     {state.routes.map((route, index) => {
       const options = descriptors[route.key].options;
       const focused = state.index === index;
-      const color = focused ? colors.primary : colors.mutedForeground;
+      const color = focused ? colors.primary : colors.foreground;
       const label = options.tabBarAccessibilityLabel ?? options.title ?? route.name;
       return <Pressable
         key={route.key}
@@ -86,8 +94,8 @@ function AccessibleTabBar({ state, descriptors, navigation }: TabBarProps) {
         onLongPress={() => navigation.emit({ type: 'tabLongPress', target: route.key })}
         style={styles.expandedTab}
       >
-        {options.tabBarIcon?.({ focused, color, size: 24 })}
-        <Text style={{ color, fontSize: 11, fontWeight: '700', textAlign: 'center' }}>{label}</Text>
+        {options.tabBarIcon?.({ focused, color, size: 28 })}
+        <Text style={{ color, fontSize: 13, fontFamily: APP_FONTS.bold, textAlign: 'center' }}>{label}</Text>
       </Pressable>;
     })}
   </View>;
@@ -114,7 +122,7 @@ function ClassicTabLayout() {
       numberOfLines={1}
       adjustsFontSizeToFit
       minimumFontScale={0.8}
-      style={{ width: '100%', textAlign: 'center', color, fontFamily: APP_FONTS.bold, fontWeight: 'normal', fontSize: typographyMetrics(11, undefined, preferences.textScale).fontSize * (isWeb ? devPreviewFontScale() ?? 1 : 1) }}
+      style={{ width: '100%', textAlign: 'center', color, fontFamily: APP_FONTS.bold, fontWeight: 'normal', fontSize: typographyMetrics(13, undefined, preferences.textScale).fontSize * (isWeb ? devPreviewFontScale() ?? 1 : 1) }}
     >{title}</NativeText>
   );
 
@@ -130,27 +138,30 @@ function ClassicTabLayout() {
       tabBar={isExpandedTabLayout ? (props) => <AccessibleTabBar {...props} /> : undefined}
       screenOptions={{
         tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.mutedForeground,
+        tabBarInactiveTintColor: colors.foreground,
         // These screens already have full-width in-content titles; at Larger Text
         // the one-line navigation title would compete for space without adding context.
         headerShown: false,
         headerTitleStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal', fontSize: typographyMetrics(18, undefined, preferences.textScale).fontSize },
-        tabBarLabelStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal' },
+        tabBarLabelStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal', fontSize: 13 },
+        tabBarIconStyle: { width: 32, height: 32 },
         tabBarLabelPosition: reflow ? 'below-icon' : undefined,
         tabBarHideOnKeyboard: isIOS && reflow,
         tabBarStyle: {
           position: 'absolute',
-          backgroundColor: isIOS ? 'transparent' : colors.background,
-          borderTopWidth: isWeb ? 1 : 0,
-          borderTopColor: colors.border,
+          backgroundColor: isIOS || isWeb ? 'transparent' : colors.background + 'E6',
+          borderTopWidth: 0,
           elevation: 0,
-          ...(isIOS && reflow ? { height: 64 + insets.bottom, paddingTop: 4, paddingBottom: insets.bottom } : {}),
-          ...(isWeb && !isExpandedTabLayout ? { height: 84 } : {}),
+          height: 72 + insets.bottom,
+          paddingTop: 6,
+          paddingBottom: Math.max(insets.bottom, 8),
+          ...(isIOS && reflow ? { height: 72 + insets.bottom, paddingTop: 6, paddingBottom: insets.bottom } : {}),
+          ...(isWeb && !isExpandedTabLayout ? { height: 92, paddingTop: 6 } : {}),
         },
         tabBarBackground: () =>
           isIOS ? (
             <BlurView
-              intensity={100}
+              intensity={60}
               tint={isDark ? 'dark' : 'light'}
               style={StyleSheet.absoluteFill}
             ><OrganicSurface /></BlurView>
@@ -158,7 +169,7 @@ function ClassicTabLayout() {
             <View
               style={[
                 StyleSheet.absoluteFill,
-                { backgroundColor: colors.background },
+                { backgroundColor: colors.background + 'E6' },
               ]}
             ><OrganicSurface /></View>
           ) : <View style={StyleSheet.absoluteFill}><OrganicSurface /></View>,
@@ -172,17 +183,17 @@ function ClassicTabLayout() {
            headerShown: false,
              tabBarAccessibilityLabel: t('tabs.study'),
              tabBarLabel: reflow ? tabLabel(t('tabs.study')) : undefined,
-          tabBarIcon: ({ color }) =>
+          tabBarIcon: ({ color, focused }) =>
             isIOS ? (
-              <SymbolView name="house" tintColor={color} size={24} />
+              <SymbolView name={focused ? "house.fill" : "house"} tintColor={color} size={28} />
             ) : (
-              <Feather name="home" size={22} color={color} />
+              <Ionicons name={focused ? "home" : "home-outline"} size={28} color={color} />
             ),
         }}
       />
-      <Tabs.Screen name="practice" options={{ title: t('tabs.practice'), tabBarAccessibilityLabel: t('tabs.practice'), tabBarLabel: reflow ? tabLabel(t('tabs.practice')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="checkmark.circle" tintColor={color} size={24} /> : <Feather name="check-circle" size={22} color={color} /> }} />
-      <Tabs.Screen name="missed" options={{ title: t('tabs.missed'), tabBarAccessibilityLabel: t('tabs.missed'), tabBarLabel: reflow ? tabLabel(t('tabs.missed')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="arrow.counterclockwise" tintColor={color} size={24} /> : <Feather name="rotate-ccw" size={22} color={color} /> }} />
-      <Tabs.Screen name="progress" options={{ title: t('tabs.progress'), headerShown: false, tabBarAccessibilityLabel: t('tabs.progress'), tabBarLabel: reflow ? tabLabel(t('tabs.progress')) : undefined, tabBarIcon: ({ color }) => isIOS ? <SymbolView name="chart.bar" tintColor={color} size={24} /> : <Feather name="bar-chart-2" size={22} color={color} /> }} />
+      <Tabs.Screen name="practice" options={{ title: t('tabs.practice'), tabBarAccessibilityLabel: t('tabs.practice'), tabBarLabel: reflow ? tabLabel(t('tabs.practice')) : undefined, tabBarIcon: ({ color, focused }) => isIOS ? <SymbolView name={focused ? "clipboard.fill" : "clipboard"} tintColor={color} size={28} /> : <Ionicons name={focused ? "clipboard" : "clipboard-outline"} size={28} color={color} /> }} />
+      <Tabs.Screen name="missed" options={{ title: t('tabs.missed'), tabBarAccessibilityLabel: t('tabs.missed'), tabBarLabel: reflow ? tabLabel(t('tabs.missed')) : undefined, tabBarIcon: ({ color, focused }) => isIOS ? <SymbolView name={focused ? "arrow.counterclockwise.circle.fill" : "arrow.counterclockwise"} tintColor={color} size={28} /> : <Ionicons name={focused ? "refresh-circle" : "refresh-outline"} size={28} color={color} /> }} />
+      <Tabs.Screen name="progress" options={{ title: t('tabs.progress'), headerShown: false, tabBarAccessibilityLabel: t('tabs.progress'), tabBarLabel: reflow ? tabLabel(t('tabs.progress')) : undefined, tabBarIcon: ({ color, focused }) => isIOS ? <SymbolView name={focused ? "chart.bar.fill" : "chart.bar"} tintColor={color} size={28} /> : <Ionicons name={focused ? "stats-chart" : "stats-chart-outline"} size={28} color={color} /> }} />
     </Tabs>
   );
 }
@@ -201,7 +212,7 @@ const styles = StyleSheet.create({
     right: 0,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    borderTopWidth: 1,
+    borderTopWidth: 0,
     zIndex: 1,
   },
   expandedTab: {

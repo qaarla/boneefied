@@ -130,7 +130,7 @@ test('shared typography and layout primitives preserve responsive content contra
   assert.match(screen, /useDockClearance/);
   assert.match(clearance, /insets\.bottom/);
   assert.match(screen, /paddingBottom: bottomPadding/);
-  assert.match(clearance, /insets\.bottom \+ 96 \* \(shouldReflow \? Math\.max\(1, systemFontScale\) : 1\)/);
+  assert.match(clearance, /insets\.bottom \+ 104 \* \(shouldReflow \? Math\.max\(1, systemFontScale\) : 1\)/);
 
   const adaptiveLayout = readSource(path.join(componentRoot, 'AdaptiveLayout.tsx'));
   assert.match(adaptiveLayout, /export function AdaptiveRow/);
@@ -144,7 +144,7 @@ test('shared typography and layout primitives preserve responsive content contra
   assert.match(tabs, /tabBar=\{isExpandedTabLayout \?/);
   assert.match(tabs, /flexWrap: 'wrap'/);
   assert.match(tabs, /width: '50%'/);
-  assert.match(tabs, /<Text style=\{\{ color, fontSize: 11, fontWeight: '700', textAlign: 'center' \}\}>\{label\}<\/Text>/);
+  assert.match(tabs, /<Text style=\{\{ color, fontSize: 13, fontFamily: APP_FONTS\.bold, textAlign: 'center' \}\}>\{label\}<\/Text>/);
   assert.match(tabs, /aria-selected=\{Platform\.OS === 'web' \? focused : undefined\}/);
   assert.doesNotMatch(tabs, /expandedBar:\s*\{[^}]*\bheight\s*:/);
 });
