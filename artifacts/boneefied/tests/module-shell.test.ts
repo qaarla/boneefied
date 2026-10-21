@@ -21,7 +21,7 @@ test('the module stack owns top safe area while content keeps its ordinary readi
   assert.match(shell, /paddingTop: insets\.top/);
   assert.match(shell, /<HeaderBackButton/);
   assert.match(shell, /onPress=\{\(\) => navigation\.goBack\(\)\}/);
-  assert.match(shell, /testID="module-navigation-title"/);
+  assert.doesNotMatch(shell, /module-navigation-title/);
   assert.doesNotMatch(shell, /numberOfLines|ellipsizeMode/);
   assert.match(shell, /<Screen belowHeader>/);
   assert.match(screen, /belowHeader = false/);
@@ -29,4 +29,14 @@ test('the module stack owns top safe area while content keeps its ordinary readi
   assert.match(screen, /contentInsetAdjustmentBehavior: 'never'/);
   assert.match(screen, /automaticallyAdjustContentInsets: false/);
   assert.match(screen, /paddingTop: 18/);
+});
+
+test('redundant navigation titles are removed app-wide without removing back navigation', () => {
+  const root = read('app/_layout.tsx');
+  const tabs = read('app/(tabs)/_layout.tsx');
+  const page = read('app/module/[id].tsx');
+  assert.match(root, /headerTitle: \(\) => null/);
+  assert.match(tabs, /headerShown: false/);
+  assert.doesNotMatch(tabs, /headerShown: !reflow/);
+  assert.match(page, /<Heading[\s\S]*?localizedModule\.title/);
 });

@@ -113,7 +113,7 @@ function ClassicTabLayout() {
         tabBarInactiveTintColor: colors.mutedForeground,
         // These screens already have full-width in-content titles; at Larger Text
         // the one-line navigation title would compete for space without adding context.
-        headerShown: !reflow,
+        headerShown: false,
         headerTitleStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal', fontSize: typographyMetrics(18, undefined, preferences.textScale).fontSize },
         tabBarLabelStyle: { fontFamily: APP_FONTS.bold, fontWeight: 'normal' },
         tabBarLabelPosition: reflow ? 'below-icon' : undefined,

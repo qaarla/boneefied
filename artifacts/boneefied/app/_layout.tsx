@@ -66,6 +66,9 @@ function RootLayoutNav() {
   return (
     <ThemeProvider value={navigationTheme}>
       <Stack screenOptions={{
+        // The full, accessible heading lives in the page content. Keep only
+        // navigation controls here, never a second title under the camera.
+        headerTitle: () => null,
          headerBackTitle: t('navigation.back'),
         headerBackButtonDisplayMode: Platform.OS === 'ios' && reflow ? 'minimal' : 'default',
         headerStyle: { backgroundColor: colors.background },

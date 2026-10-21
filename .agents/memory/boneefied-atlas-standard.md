@@ -127,6 +127,18 @@ and canonical-answer self-checks alone did not catch this.
 including locale normalization. Preserve the canonical answer; add only the
 required machine-ID alias when repairing a legacy mismatch.
 
+## Illustration limitations notice
+
+Keep a single educational limitations note in Settings/About: illustrations are
+simplified and may be imperfect; encourage comparison with course materials,
+trusted anatomy texts and reputable educational websites.
+
+**Why:** The owner asked that the limitations be mentioned at least once,
+suggesting Settings or About rather than repeated interruptions while studying.
+
+**How to apply:** Preserve this advisory in both app languages without presenting
+it as a substitute for correcting known factual errors.
+
 ## Source-only texture corrections
 
 Retain correct existing endpoints and numbered order when correcting a tissue

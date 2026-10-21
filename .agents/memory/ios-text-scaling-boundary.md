@@ -15,8 +15,8 @@ For web-renderer regression checks that emulate Dynamic Type, use a fresh browse
 
 **How to apply:** Separate default, intermediate, and accessibility-sized captures; treat native tab bars, keyboard avoidance, and iOS line breaking as unverified until checked on-device.
 
-Module headers must keep the actual localized title at enlarged text, wrapping and growing instead of substituting “Module” or clipping a long title. A content-height header should use shared scaled text, not also multiply it with native-header font scaling.
+Keep the full localized title in page content, not duplicated in the top navigation header. Remove redundant top titles app-wide while retaining back navigation and safe-area clearance.
 
-**Why:** The user reported generic titles and excessive empty space on physical devices; a fixed-height header also clipped long titles during enlarged-text verification.
+**Why:** The owner supplied an iPhone screenshot with a duplicate white module title cut off behind the Dynamic Island and explicitly asked to remove all those unnecessary extra headers. This supersedes the earlier request to wrap module navigation titles.
 
-**How to apply:** Assign top status-bar/safe-area clearance to the header exactly once. Content below an opaque header keeps the ordinary reading gap but must not add the same top inset or automatic scroll inset again. Keep safe-area handling unchanged for headerless screens.
+**How to apply:** Keep only back controls in module navigation, suppress root-stack title rendering, and omit tab-screen header bars. Assign top status-bar/safe-area clearance exactly once; do not remove the readable in-content heading.
