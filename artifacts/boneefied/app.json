@@ -11,7 +11,7 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.qaarla.boneefied",
-      "buildNumber": "5",
+      "buildNumber": "6",
       "icon": "./assets/images/icon.png"
     },
     "android": {
