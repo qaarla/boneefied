@@ -3,7 +3,9 @@ import React from 'react';
 import { AccessibilityInfo, Image, Platform, Pressable, ScrollView, StyleSheet, useWindowDimensions, View, type LayoutRectangle } from 'react-native';
 import { Heading, Text, TextInput, useTypographyLayout } from '@/components/ScaledText';
 import { AdaptiveButton, AdaptiveRow } from '@/components/AdaptiveLayout';
-import { useRouter } from 'expo-router';
+import { useFocusEffect, useLocalSearchParams, useRouter } from 'expo-router';
+import { useTabUpAction } from '@/context/TabHierarchy';
+import { moduleCategory, moduleMatchesCategory } from '@/navigation/tabHierarchy';
 import * as Haptics from 'expo-haptics';
 import { Feather } from '@expo/vector-icons';
 import { Screen } from '@/components/Screen';
@@ -32,7 +34,8 @@ export default function StudyScreen() {
    // Keep the explorer bounded even when rows reflow for larger text.
    const systemsHeight = Math.max(160, Math.min(width - (reflow ? 32 : 40), 280, height * 0.32));
   const stackModuleMeta = width < 480;
-  const [selectedSystem, setSelectedSystem] = React.useState<string | null>(null);
+  const { system: requestedSystem } = useLocalSearchParams<{ system?: string }>();
+  const [selectedSystem, setSelectedSystem] = React.useState<string | null>(requestedSystem ?? null);
   const [reduceMotion, setReduceMotion] = React.useState(true);
   const pageRef = React.useRef<ScrollView>(null);
   const pageY = React.useRef(0);
@@ -47,7 +50,10 @@ export default function StudyScreen() {
     ['study.system.endocrine', 'endocrine'], ['study.system.bloodAndCardiovascular', 'cardiovascular'], ['study.system.bloodVessels', 'vessels'], ['study.system.lymphatic', 'lymphatic'],
     ['study.system.respiratory', 'respiratory'], ['study.system.digestive', 'digestive'], ['study.system.urinary', 'urinary'], ['study.system.maleReproductive', 'male-reproductive'], ['study.system.femaleReproductive', 'female-reproductive'],
   ] as const;
-   const matchesSystem = (item: (typeof content.modules)[number], system: string) => item.system === system || item.id === system || (system === 'nerves' && item.id === 'nervous-system');
+   const matchesSystem = moduleMatchesCategory;
+   const categoryLabel = systems.find(([, id]) => id === selectedSystem)?.[0];
+   const standaloneCategory = content.modules.find(item => item.id === selectedSystem);
+   const categoryTitle = categoryLabel ? t(categoryLabel) : standaloneCategory ? localizeModule(standaloneCategory).title : t('study.learningModules');
    const visibleModules = content.modules.filter((item) => item.visible && item.published && (!selectedSystem || matchesSystem(item, selectedSystem)));
   const firstResultId = visibleModules[0]?.id ?? `empty:${selectedSystem}`;
   React.useEffect(() => {
@@ -80,10 +86,25 @@ export default function StudyScreen() {
   React.useEffect(() => {
     if (selectedSystem) scheduleReveal();
   }, [selectedSystem, firstResultId]);
+  React.useEffect(() => {
+    pendingReveal.current = !!requestedSystem;
+    setSelectedSystem(requestedSystem ?? null);
+  }, [requestedSystem]);
+  useFocusEffect(React.useCallback(() => {
+    if (selectedSystem) { pendingReveal.current = true; scheduleReveal(); }
+  }, [selectedSystem, firstResultId]));
+  useTabUpAction('study', () => {
+    if (!selectedSystem) return;
+    pendingReveal.current = false;
+    setSelectedSystem(null);
+    router.setParams({ system: undefined });
+    pageRef.current?.scrollTo({ y: 0, animated: true });
+  });
   const selectSystem = (id: string) => {
     const next = selectedSystem === id ? null : id;
     pendingReveal.current = next !== null;
     setSelectedSystem(next);
+    router.setParams({ system: next ?? undefined });
   };
   const { mastery, bookmarks, preferences, toggleBookmark } = useStudy();
   const [query, setQuery] = React.useState('');
@@ -165,8 +186,8 @@ export default function StudyScreen() {
       <View style={[styles.systemsPanel, { height: systemsHeight, borderColor: colors.border, backgroundColor: colors.card }]}><OrganicSurface radius={12} />
         <ScrollView testID="study-systems-scroll" accessibilityLabel={t('study.systemsAccessibility')} tabIndex={Platform.OS === 'web' ? 0 : undefined} nestedScrollEnabled keyboardShouldPersistTaps="handled" style={{ flex: 1, ...(Platform.OS === 'web' ? { overscrollBehaviorY: 'contain' } : {}) }} contentContainerStyle={[styles.systems, styles.systemsContent]} showsVerticalScrollIndicator>{systemChoices}</ScrollView>
       </View>
-      <AdaptiveRow onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{t('study.learningModules')}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(visibleModules.length === 1 ? 'study.availableCount.one' : 'study.availableCount.other', { count: number(visibleModules.length) })}</Text></AdaptiveRow>
-      {visibleModules.map((module, index) => <AdaptiveButton key={module.id} onLayout={index === 0 ? (event) => { firstResult.current = { id: module.id, layout: event.nativeEvent.layout }; scheduleReveal(); } : undefined} testID={`module-card-${module.id}`} accessibilityRole="button" onPress={() => { if (preferences.haptics) void Haptics.selectionAsync(); router.push(`/module/${module.id}`); }} style={({ pressed }) => [styles.card, { backgroundColor: colors.card, borderColor: colors.border, transform: [{ scale: pressed ? 0.985 : 1 }] }]}>
+      <AdaptiveRow onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading testID={selectedSystem ? 'study-category' : 'study-root'} style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{categoryTitle}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(visibleModules.length === 1 ? 'study.availableCount.one' : 'study.availableCount.other', { count: number(visibleModules.length) })}</Text></AdaptiveRow>
+      {visibleModules.map((module, index) => <AdaptiveButton key={module.id} onLayout={index === 0 ? (event) => { firstResult.current = { id: module.id, layout: event.nativeEvent.layout }; scheduleReveal(); } : undefined} testID={`module-card-${module.id}`} accessibilityRole="button" onPress={() => { if (preferences.haptics) void Haptics.selectionAsync(); router.push({ pathname: '/module/[id]', params: { id: module.id, system: selectedSystem ?? moduleCategory(module) } }); }} style={({ pressed }) => [styles.card, { backgroundColor: colors.card, borderColor: colors.border, transform: [{ scale: pressed ? 0.985 : 1 }] }]}>
         <AdaptiveRow style={[styles.cardTop, reflow && responsive.cardTopStacked]}><ModuleIcon iconKey={moduleIconKeyById[module.id]} label={localizeModule(module).title} /><View style={[styles.cardCopy, responsive.flexibleCopy, reflow && responsive.cardCopyStacked]}><Text wholeWords style={[styles.cardTitle, { color: colors.foreground }]}>{localizeModule(module).title}</Text><Text style={[styles.cardSub, { color: colors.mutedForeground }]}>{localizeModule(module).summary ?? t(module.id === 'cytology-mitosis' ? 'study.cytologyModuleFallback' : 'study.moduleFallback')}</Text></View>{!reflow && <Text style={[styles.arrow, responsive.trailingStatus, { color: colors.primary }]}>›</Text>}</AdaptiveRow>
           <AdaptiveRow style={[styles.meta, responsive.meta, (stackModuleMeta || reflow) && responsive.metaStacked]}>
           <View style={responsive.metaDetails}>

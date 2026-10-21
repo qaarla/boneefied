@@ -9,7 +9,8 @@ import { APP_FONTS } from '@/context/typeface';
 import { Feather } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
-import { router, Tabs } from 'expo-router';
+import { Tabs } from 'expo-router';
+import { TabHierarchyProvider, useTabHierarchy } from '@/context/TabHierarchy';
 import { NativeTabs } from 'expo-router/unstable-native-tabs';
 import { SymbolView } from 'expo-symbols';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -21,36 +22,34 @@ import { useLocale } from '@/locales/useLocale';
 // Custom brand colors are applied only on the ClassicTabLayout path (older iOS / Android / web).
 export const unstable_settings = { initialRouteName: '(study)' };
 
-// Reset only the Study stack. Other tabs, including an unfinished Practice
-// session, must keep their navigation and component state.
-function resetStudyStack(focused: boolean) {
-  // Resolve against the hydrated root state. The tab's own getState() can
-  // retain partial, keyless child state after a cold direct link.
-  if (focused) router.dismissTo('/(tabs)/(study)');
-  else router.navigate('/(tabs)/(study)');
-}
-
 function NativeTabLayout() {
   const { t } = useLocale();
+  const { up } = useTabHierarchy();
   return (
     <NativeTabs labelStyle={{ fontFamily: APP_FONTS.bold, fontWeight: 'normal' }}>
-         <NativeTabs.Trigger name="(study)" listeners={({ navigation }) => ({
-           tabPress: () => resetStudyStack(navigation.isFocused()),
+         <NativeTabs.Trigger name="(study)" disablePopToTop disableScrollToTop listeners={({ navigation }) => ({
+           tabPress: () => { if (navigation.isFocused()) up('study'); },
          })}>
         <NativeTabs.Trigger.Icon
           sf={{ default: 'house', selected: 'house.fill' }}
         />
          <NativeTabs.Trigger.Label>{t('tabs.study')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="practice">
+      <NativeTabs.Trigger name="practice" disablePopToTop disableScrollToTop listeners={({ navigation }) => ({
+        tabPress: () => { if (navigation.isFocused()) up('practice'); },
+      })}>
         <NativeTabs.Trigger.Icon sf={{ default: 'checkmark.circle', selected: 'checkmark.circle.fill' }} />
         <NativeTabs.Trigger.Label>{t('tabs.practice')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="missed">
+      <NativeTabs.Trigger name="missed" disablePopToTop disableScrollToTop listeners={({ navigation }) => ({
+        tabPress: () => { if (navigation.isFocused()) up('missed'); },
+      })}>
         <NativeTabs.Trigger.Icon sf={{ default: 'arrow.counterclockwise', selected: 'arrow.counterclockwise.circle.fill' }} />
         <NativeTabs.Trigger.Label>{t('tabs.missed')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="progress">
+      <NativeTabs.Trigger name="progress" disablePopToTop disableScrollToTop listeners={({ navigation }) => ({
+        tabPress: () => { if (navigation.isFocused()) up('progress'); },
+      })}>
         <NativeTabs.Trigger.Icon sf={{ default: 'chart.bar', selected: 'chart.bar.fill' }} />
         <NativeTabs.Trigger.Label>{t('tabs.progress')}</NativeTabs.Trigger.Label>
       </NativeTabs.Trigger>
@@ -96,6 +95,7 @@ function AccessibleTabBar({ state, descriptors, navigation }: TabBarProps) {
 
 function ClassicTabLayout() {
   const colors = useColors();
+  const { up } = useTabHierarchy();
   const { t } = useLocale();
   const { preferences } = useStudy();
   const { shouldReflow: reflow, isExpandedTabLayout } = useTypographyLayout();
@@ -120,6 +120,13 @@ function ClassicTabLayout() {
 
   return (
     <Tabs
+      screenListeners={({ navigation, route }) => ({
+        tabPress: (event) => {
+          if (!navigation.isFocused()) return; // Normal section switch; never reset it.
+          event.preventDefault(); // Prevent React Navigation's automatic pop-to-root.
+          up(route.name === '(study)' ? 'study' : route.name as 'practice' | 'missed' | 'progress');
+        },
+      })}
       tabBar={isExpandedTabLayout ? (props) => <AccessibleTabBar {...props} /> : undefined}
       screenOptions={{
         tabBarActiveTintColor: colors.primary,
@@ -160,12 +167,6 @@ function ClassicTabLayout() {
     >
       <Tabs.Screen
         name="(study)"
-        listeners={({ navigation }) => ({
-          tabPress: (event) => {
-            event.preventDefault();
-            resetStudyStack(navigation.isFocused());
-          },
-        })}
         options={{
            title: t('tabs.study'),
            headerShown: false,
@@ -187,10 +188,9 @@ function ClassicTabLayout() {
 }
 
 export default function TabLayout() {
-  if (isLiquidGlassAvailable()) {
-    return <NativeTabLayout />;
-  }
-  return <ClassicTabLayout />;
+  return <TabHierarchyProvider>
+    {isLiquidGlassAvailable() ? <NativeTabLayout /> : <ClassicTabLayout />}
+  </TabHierarchyProvider>;
 }
 
 const styles = StyleSheet.create({

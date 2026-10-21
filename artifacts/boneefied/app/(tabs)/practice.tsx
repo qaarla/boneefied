@@ -23,8 +23,10 @@ import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/Anima
 import { useLocale } from '@/locales/useLocale';
 import { spanishResponseForScoring } from '@/locales/es';
 import { optionsForQuestion } from '@/components/questionInputPolicy';
+import { useTabUpAction } from '@/context/TabHierarchy';
+import { practiceParent, type PracticeStage } from '@/navigation/tabHierarchy';
 
-type Phase = 'setup' | 'quiz' | 'results';
+type Phase = PracticeStage;
 const supported = new Set(['multiple-choice', 'typed-recall', 'image-identification', 'hotspot', 'histology-identification', 'ordered-sequence', 'select-all', 'bone-laterality', 'function-relationship', 'muscle-action', 'muscle-origin-insertion']);
 function useReduceMotion() {
   const [reduceMotion, setReduceMotion] = useState(false);
@@ -51,6 +53,7 @@ export default function PracticeScreen() {
   const reduceMotion = useReduceMotion();
   const { moduleId: requestedModuleId, questionId: requestedQuestionId, retryId } = useLocalSearchParams<{ moduleId?: string; questionId?: string; retryId?: string }>();
   const [selectedModuleId, setSelectedModuleId] = useState(requestedModuleId ?? (requestedQuestionId ? content.questions.find((item) => item.id === requestedQuestionId)?.moduleId : undefined) ?? 'cytology-mitosis');
+  const [categoryOpen, setCategoryOpen] = useState(!!(requestedModuleId || requestedQuestionId));
   const pool = useMemo(() => content.questions.filter((q) => q.moduleId === selectedModuleId && supported.has(q.taskType) && (!requestedQuestionId || q.id === requestedQuestionId)), [selectedModuleId, requestedQuestionId]);
   const [phase, setPhase] = useState<Phase>('setup'); const [count, setCount] = useState(Math.min(5, pool.length));
   const [questions, setQuestions] = useState<Question[]>([]); const [position, setPosition] = useState(0);
@@ -58,6 +61,12 @@ export default function PracticeScreen() {
   const [correct, setCorrect] = useState(0); const [answers, setAnswers] = useState<boolean[]>([]); const [currentCorrect, setCurrentCorrect] = useState(false); const [sessionId, setSessionId] = useState('');
   const submissionGuard = useRef(false);
   const activeSession = requestedQuestionId ? undefined : study.sessions.find((session) => session.status !== 'completed' && session.moduleId === selectedModuleId);
+  useEffect(() => {
+    if (!requestedModuleId || requestedQuestionId) return;
+    setSelectedModuleId(requestedModuleId);
+    setCategoryOpen(true);
+    setPhase('setup');
+  }, [requestedModuleId, requestedQuestionId]);
   useEffect(() => {
     if (!requestedQuestionId || !study.hydrated) return;
     const requested = content.questions.find((item) => item.id === requestedQuestionId && supported.has(item.taskType));
@@ -74,6 +83,7 @@ export default function PracticeScreen() {
     setCurrentCorrect(false);
     setCorrect(0);
     setAnswers([]);
+    setCategoryOpen(true);
     setPhase('quiz');
   }, [requestedQuestionId, retryId, study.hydrated]);
   useEffect(() => {
@@ -92,7 +102,6 @@ export default function PracticeScreen() {
         setSubmitted(awaitingFinish);
         setCurrentCorrect(awaitingFinish && last.outcome === 'correct');
         submissionGuard.current = awaitingFinish;
-        setPhase('quiz');
       }
     }
   }, [activeSession?.id]);
@@ -142,6 +151,19 @@ export default function PracticeScreen() {
     });
   };
   const updateAnswer = (value: string | string[]) => { setAnswer(value); saveDraft(value); };
+  useTabUpAction('practice', () => {
+    const parent = practiceParent(phase, categoryOpen);
+    if (parent === 'category') {
+      if (phase === 'quiz' && !submitted) saveDraft(answer);
+      setCategoryOpen(true);
+      setPhase('setup');
+      return;
+    }
+    if (parent === 'root') {
+      setCategoryOpen(false);
+      router.setParams({ moduleId: undefined, questionId: undefined, retryId: undefined });
+    }
+  });
   const localizedQuestion = q ? locale.question(q) : undefined;
   const selectedModule = content.modules.find((item) => item.id === selectedModuleId);
   const citation = (sourceId: string, page: number | null) => locale.citation(sourceId, page);
@@ -165,11 +187,28 @@ export default function PracticeScreen() {
   const next = () => { if (!submitted) return; if (position + 1 >= questions.length) { study.completeSession(sessionId); setPhase('results'); } else { setPosition((n) => n + 1); setAnswer(''); submissionGuard.current = false; setSubmitted(false); setCurrentCorrect(false); } };
   if (!study.hydrated) return <Screen><Text style={{ color: colors.mutedForeground }}>{locale.t('practice.loadingSavedProgress')}</Text></Screen>;
   if (phase !== 'setup' && !study.sessions.some((session) => session.id === sessionId)) return <Screen><Text style={{ color: colors.mutedForeground }}>{locale.t('practice.preparingSavedSession')}</Text></Screen>;
+  if (phase === 'setup' && !categoryOpen) return <Screen>
+    <Heading testID="practice-root" style={[styles.title, { color: colors.foreground }]}>{locale.t('tabs.practice')}</Heading>
+    <Text style={[styles.intro, { color: colors.mutedForeground }]}>{locale.t('practice.chooseSystem')}</Text>
+    {content.modules.filter(item => item.published).map(item => <AdaptiveButton
+      key={item.id}
+      testID={`practice-module-${item.id}`}
+      onPress={() => {
+        setSelectedModuleId(item.id);
+        setCategoryOpen(true);
+        router.setParams({ moduleId: item.id, questionId: undefined, retryId: undefined });
+      }}
+      style={[styles.focus, { backgroundColor: colors.card, borderColor: colors.border }]}
+    >
+      <Heading style={[styles.panelTitle, { color: colors.foreground }]}>{locale.module(item).title}</Heading>
+      {study.sessions.some(session => session.moduleId === item.id && session.status !== 'completed') &&
+        <Text style={{ color: colors.primary, textAlign: 'center' }}>{locale.t('practice.unfinishedSession')}</Text>}
+    </AdaptiveButton>)}
+  </Screen>;
   if (phase === 'setup') return <Screen>
-      <Text style={[styles.eyebrow, { color: colors.primary }]}>{locale.t('practice.eyebrow')}</Text><Heading style={[styles.title, shouldReflow && styles.reflowTitle, { color: colors.foreground }]}>{selectedModule ? locale.module(selectedModule).title : locale.t('practice.titleFallback')}</Heading>
+      <Text style={[styles.eyebrow, { color: colors.primary }]}>{locale.t('practice.eyebrow')}</Text><Heading testID="practice-category" style={[styles.title, shouldReflow && styles.reflowTitle, { color: colors.foreground }]}>{selectedModule ? locale.module(selectedModule).title : locale.t('practice.titleFallback')}</Heading>
       <Text style={[styles.intro, { color: colors.mutedForeground }]}>{locale.t('practice.intro')}</Text>
       <AdaptiveCard style={[styles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}><Heading style={[styles.panelTitle, { color: colors.foreground }]}>{locale.t('practice.sessionSetup')}</Heading>
-         {content.modules.filter((item) => item.published).length > 1 && <View style={styles.counts}>{content.modules.filter((item) => item.published).map((item) => <AdaptiveButton key={item.id} onPress={() => { setSelectedModuleId(item.id); setPhase('setup'); }} style={[styles.count, { borderColor: selectedModuleId === item.id ? colors.primary : colors.border, backgroundColor: selectedModuleId === item.id ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground, fontWeight: '700' }}>{locale.module(item).title}</Text></AdaptiveButton>)}</View>}
         <Text style={{ color: colors.mutedForeground }}>{locale.t('practice.eligibleQuestions', { count: locale.number(pool.length) })}</Text>
         <View style={styles.counts}>{[3, 5, pool.length].filter((n, i, a) => n > 0 && a.indexOf(n) === i).map((n) => <AdaptiveButton key={n} onPress={() => setCount(Math.min(n, pool.length))} style={[styles.count, { borderColor: count === Math.min(n, pool.length) ? colors.primary : colors.border, backgroundColor: count === Math.min(n, pool.length) ? colors.secondary : colors.card }]}><Text style={{ color: colors.foreground, fontWeight: '700' }}>{locale.t(n === 1 ? 'practice.questionCount.one' : 'practice.questionCount.other', { count: locale.number(n) })}</Text></AdaptiveButton>)}</View>
         {activeSession ? <AdaptiveButton testID="resume-practice" onPress={() => setPhase('quiz')} style={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, styles.reflowRetryText]}>{locale.t('practice.resumeSavedSession')}</Text></AdaptiveButton> : <AdaptiveButton testID="start-practice" onPress={start} style={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, styles.reflowRetryText]}>{locale.t('practice.start')}</Text></AdaptiveButton>}

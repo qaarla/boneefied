@@ -44,8 +44,8 @@ test('all study routes are nested inside the persistent four-option dock', () =>
   assert.match(nested, /initialRouteName="index"/);
   assert.match(nested, /headerShown: false/);
   assert.match(tabs, /NativeTabs\.Trigger name="\(study\)"/);
-  assert.match(tabs, /name="\(study\)"\s+listeners=/);
-  assert.match(tabs, /router\.dismissTo\('\/\(tabs\)\/\(study\)'\)/);
+  assert.match(tabs, /name="\(study\)" disablePopToTop disableScrollToTop listeners=/);
+  assert.match(read('context/TabHierarchy.tsx'), /router\.dismissTo\(parent\)/);
   assert.doesNotMatch(tabs, /navigation\.getState\(\)/);
   for (const path of ['index.tsx', 'module/[id].tsx', 'glossary/index.tsx', 'glossary/[id].tsx', 'glossary/word-parts.tsx', 'glossary/word-part/[id].tsx', 'settings.tsx']) {
     assert.ok(read(`app/(tabs)/(study)/${path}`).length > 0, path);

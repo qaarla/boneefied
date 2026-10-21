@@ -1,4 +1,6 @@
 const practiceProgressUi = {
+  'practice.chooseSystem': { en: 'Choose a system to set up practice or resume an unfinished session.', es: 'Elige un sistema para preparar la práctica o reanudar una sesión pendiente.' },
+  'practice.unfinishedSession': { en: 'Unfinished session saved', es: 'Sesión pendiente guardada' },
   'practice.loadingSavedProgress': { en: 'Loading saved study progress…', es: 'Cargando el progreso de estudio guardado…' },
   'practice.preparingSavedSession': { en: 'Preparing saved practice session…', es: 'Preparando la sesión de práctica guardada…' },
   'practice.eyebrow': { en: 'PRACTICE', es: 'PRÁCTICA' },
