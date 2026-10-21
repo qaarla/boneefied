@@ -60,8 +60,10 @@ test('headerless pages retain window safe-area clearance and a shared reading ga
   const insets = read('context/PageInsets.tsx');
   assert.match(root, /SafeAreaProvider initialMetrics=\{initialWindowMetrics\}/);
   assert.match(root, /<PageInsetsProvider>/);
-  assert.match(insets, /top: Math\.max\(windowInsets\?\.top \?\? 0, localInsets\.top\)/);
-  assert.match(insets, /PAGE_CONTENT_TOP_GAP = 32/);
+  assert.match(insets, /top: resolvePageTopInset\(/);
+  assert.match(insets, /windowTop: windowInsets\?\.top/);
+  assert.match(insets, /localTop: localInsets\.top/);
+  assert.match(read('context/pageInsetsPolicy.ts'), /PAGE_CONTENT_TOP_GAP = 40/);
   for (const path of ['components/Screen.tsx', 'app/(tabs)/(study)/glossary/index.tsx', 'app/(tabs)/(study)/glossary/word-parts.tsx']) {
     assert.match(read(path), /usePageInsets/);
     assert.match(read(path), /paddingTop: PAGE_CONTENT_TOP_GAP/);

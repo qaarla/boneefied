@@ -1,5 +1,9 @@
 import React, { createContext, useContext } from 'react';
+import { Platform, useWindowDimensions } from 'react-native';
 import { useSafeAreaInsets, type EdgeInsets } from 'react-native-safe-area-context';
+import { resolvePageTopInset } from './pageInsetsPolicy';
+
+export { PAGE_CONTENT_TOP_GAP } from './pageInsetsPolicy';
 
 const PageInsetsContext = createContext<EdgeInsets | null>(null);
 
@@ -13,8 +17,15 @@ export function PageInsetsProvider({ children }: { children: React.ReactNode }) 
 export function usePageInsets() {
   const windowInsets = useContext(PageInsetsContext);
   const localInsets = useSafeAreaInsets();
-  return { ...localInsets, top: Math.max(windowInsets?.top ?? 0, localInsets.top) };
+  const { width } = useWindowDimensions();
+  return {
+    ...localInsets,
+    top: resolvePageTopInset({
+      windowTop: windowInsets?.top,
+      localTop: localInsets.top,
+      platform: Platform.OS,
+      development: __DEV__,
+      width,
+    }),
+  };
 }
-
-// A comfortable reading gap after the actual, device-specific safe area.
-export const PAGE_CONTENT_TOP_GAP = 32;
