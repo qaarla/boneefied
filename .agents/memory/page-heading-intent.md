@@ -14,3 +14,9 @@ Centering alone does not satisfy the placement requirement: headings and subtitl
 **Why:** The owner supplied another framed preview showing Muscular System still overlapped by the island after centering, and specifically asked whether the downloaded app would look cramped too. A desktop browser inside a phone frame can report zero hardware safe-area inset even while the surrounding frame draws an island.
 
 **How to apply:** Verify that framed phone previews reserve notch space separately from the reading gap. Keep simulated preview measurements distinct from real native insets, and never claim physical-device verification from a web screenshot.
+
+Do not reposition the home/brand header as a side effect of fixing a system heading.
+
+**Why:** The owner identified the lowered home header as an unauthorized change after a shared spacing adjustment affected it.
+
+**How to apply:** Scope system-heading clearance adjustments to the relevant pages. Confirm the approved appearance before changing the home header or applying another app-wide spacing rule.

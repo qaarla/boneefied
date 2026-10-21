@@ -14,3 +14,9 @@ For cold deep links, resolve navigation against the hydrated root state rather t
 **Why:** In the installed Expo Router, the parent tab's child state can remain stale and keyless even while the nested module renders. Scoped pop/reset actions then silently do nothing. A stack dismissal is also not a valid tab-switch action.
 
 **How to apply:** Include cold direct-link reselection, one-step category-to-root transitions, ordinary cross-tab restoration, and unfinished Practice responses in verification. Do not infer success from in-app module navigation alone.
+
+Permission to change tab navigation behavior is not permission to redesign the dock.
+
+**Why:** When asked which unauthorized appearance change they meant, the owner explicitly answered “both” the home header and the bottom dock.
+
+**How to apply:** Preserve the approved dock appearance while implementing navigation or heading fixes. If the expected appearance is unclear, compare against the prior build and ask for the approved reference instead of guessing a new design.
