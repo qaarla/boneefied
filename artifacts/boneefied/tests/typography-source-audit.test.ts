@@ -56,6 +56,7 @@ test('screens and components use shared scaled text and do not truncate reading 
     const isTabLayout = file === tabLayout;
     const isSharedText = file === sharedText;
     const isBoundedLegend = relative === 'components/AtlasLegend.tsx';
+    const isBrandTitle = relative === 'components/HomeBrandTitle.tsx';
     if (isBoundedLegend) {
       // Dense atlas copy deliberately uses its separately tested bounded scale,
       // rather than reapplying the reading-text preference/system multiplier.
@@ -74,15 +75,15 @@ test('screens and components use shared scaled text and do not truncate reading 
         .filter((element) => ['Text', 'TextInput'].includes((element.propertyName ?? element.name).text))
         .map((element) => `${(element.propertyName ?? element.name).text} as ${element.name.text}`);
       if (directTextImports.length && !isFontSetup && !isSharedText
-        && !(isBoundedLegend && directTextImports.length === 1 && directTextImports[0] === 'Text as NativeText')
+        && !((isBoundedLegend || isBrandTitle) && directTextImports.length === 1 && directTextImports[0] === 'Text as NativeText')
         && !(isTabLayout && directTextImports.length === 1 && directTextImports[0] === 'Text as NativeText')) {
         violations.push(`${relative} imports React Native ${directTextImports.join(', ')} directly`);
       }
     }
 
-    if (isTabLayout) {
+    if (isTabLayout || isBrandTitle) {
       const nativeLabel = source.match(/<NativeText\b[\s\S]*?<\/NativeText>/)?.[0];
-      assert.ok(nativeLabel, 'the classic tab label should remain a native, single-line control');
+      assert.ok(nativeLabel, 'tab labels and the compact brand title remain native, single-line controls');
       assert.match(nativeLabel, /allowFontScaling\b/);
       assert.match(nativeLabel, /maxFontSizeMultiplier=\{0\}/);
       assert.match(nativeLabel, /numberOfLines=\{1\}/);

@@ -17,6 +17,7 @@ import { wordMeaning } from '@/content/anatomical-terms';
 import { searchWordParts } from '@/content/word-parts';
 import { WordPartResults } from '@/components/WordPartResults';
 import { ModuleIcon } from '@/components/ModuleIcon';
+import { HomeBrandTitle } from '@/components/HomeBrandTitle';
 import { moduleIconKeyById } from '@/components/moduleIconCatalog';
 import { useColors } from '@/hooks/useColors';
 import { useStudy } from '@/context/StudyContext';
@@ -152,9 +153,10 @@ export default function StudyScreen() {
     </View>;
   });
   return <Screen scrollRef={pageRef} keyboardShouldPersistTaps="handled" onScroll={(event) => { pageY.current = event.nativeEvent.contentOffset.y; }} onViewportLayout={(height, bottomClearance) => { viewport.current = { height, bottomClearance }; scheduleReveal(); }}>
-    <View style={[styles.brand, Platform.OS === 'web' && styles.brandWebInset, reflow && responsive.brandReflow]}>
-      <Image source={require('@/assets/images/logo-rounded.png')} style={styles.logo} accessibilityLabel={t('study.logoAccessibility')} />
-      <Heading accessibilityLabel="Boneefied" style={[styles.brandTitle, reflow && responsive.brandTitleReflow, { color: colors.foreground }]}>Bonee{'\u00AD'}fied</Heading>
+    <View testID="study-brand-row" style={[styles.brand, headerStyles.row, Platform.OS === 'web' && styles.brandWebInset]}>
+      <Image source={require('@/assets/images/logo-rounded.png')} style={[styles.logo, headerStyles.side]} accessibilityLabel={t('study.logoAccessibility')} />
+      <HomeBrandTitle color={colors.foreground} />
+      <View style={headerStyles.settingsSlot}>
       <Pressable
         testID="study-settings-button"
         accessibilityLabel={t('study.settingsAccessibility')}
@@ -162,18 +164,16 @@ export default function StudyScreen() {
         accessibilityRole="button"
         hitSlop={4}
         onPress={() => router.push('/settings')}
-        style={({ pressed }) => [styles.settingsAction, reflow && responsive.settingsActionReflow, { opacity: pressed ? 0.6 : 1 }]}
+        style={({ pressed }) => [styles.settingsAction, { opacity: pressed ? 0.6 : 1 }]}
       >
         <Feather name="settings" size={21} color={colors.mutedForeground} />
       </Pressable>
+      </View>
     </View>
     <Text style={[styles.lede, { textAlign: 'center', alignSelf: 'center', color: colors.mutedForeground }]}>{t('study.tagline')}</Text>
     <View style={searchStyles.container}>
         {reflow && <Text style={{ color: colors.mutedForeground }}>{t('study.searchAnatomy')}</Text>}
         <TextInput accessibilityLabel={t('study.searchAnatomy')} value={query} onChangeText={setQuery} placeholder={reflow ? t('study.searchCompactPlaceholder') : t('study.searchAnatomy')} placeholderTextColor={colors.mutedForeground} returnKeyType="search" style={[styles.search, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} />
-       <Pressable accessibilityRole="button" accessibilityLabel={t('study.browseGlossaryAccessibility')} onPress={() => router.push({ pathname: '/glossary', params: { q: query } })} style={searchStyles.glossaryLink}>
-         <Text style={{ color: colors.primary, fontWeight: '600' }}>{t('study.browseGlossary')}</Text>
-      </Pressable>
        {query.trim().length > 0 && <View testID="anatomy-search-results" accessibilityLabel={t('study.searchResultsAccessibility')} style={[searchStyles.panel, { backgroundColor: colors.card, borderColor: colors.border }]}><OrganicSurface radius={12} />
           {wordMatches.length > 0 && <View style={{ paddingHorizontal: 14, paddingBottom: 12 }}><WordPartResults parts={wordMatches} query={query} /></View>}
           {(matching.length > 0 || wordMatches.length === 0) && <Text style={[searchStyles.heading, { color: colors.mutedForeground }]}>{t(matching.length ? 'study.suggestedStructures' : 'study.noCloseMatch')}</Text>}
@@ -182,11 +182,11 @@ export default function StudyScreen() {
           : <ScrollView nestedScrollEnabled keyboardShouldPersistTaps="always" style={searchStyles.scroll} contentContainerStyle={searchStyles.content} showsVerticalScrollIndicator>{searchResults}</ScrollView>)}
       </View>}
     </View>
-      <AdaptiveRow style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{t('study.exploreBySystem')}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(Number(systems.length) === 1 ? 'study.systemCount.one' : 'study.systemCount.other', { count: number(systems.length) })}</Text></AdaptiveRow>
+      <Heading testID="study-explore-heading" style={[styles.sectionTitle, { alignSelf: 'stretch', marginTop: 5, textAlign: 'center', color: colors.foreground }]}>{t('study.exploreBySystem')}</Heading>
       <View style={[styles.systemsPanel, { height: systemsHeight, borderColor: colors.border, backgroundColor: colors.card }]}><OrganicSurface radius={12} />
         <ScrollView testID="study-systems-scroll" accessibilityLabel={t('study.systemsAccessibility')} tabIndex={Platform.OS === 'web' ? 0 : undefined} nestedScrollEnabled keyboardShouldPersistTaps="handled" style={{ flex: 1, ...(Platform.OS === 'web' ? { overscrollBehaviorY: 'contain' } : {}) }} contentContainerStyle={[styles.systems, styles.systemsContent]} showsVerticalScrollIndicator>{systemChoices}</ScrollView>
       </View>
-      <AdaptiveRow onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={[styles.sectionHeader, responsive.sectionHeader, reflow && responsive.sectionHeaderStacked]}><Heading testID={selectedSystem ? 'study-category' : 'study-root'} style={[styles.sectionTitle, responsive.sectionTitle, { color: colors.foreground }]}>{categoryTitle}</Heading><Text style={[styles.count, responsive.sectionCount, { color: colors.mutedForeground }]}>{t(visibleModules.length === 1 ? 'study.availableCount.one' : 'study.availableCount.other', { count: number(visibleModules.length) })}</Text></AdaptiveRow>
+      <View onLayout={(event) => { learningHeading.current = event.nativeEvent.layout; scheduleReveal(); }} style={{ alignSelf: 'stretch', marginTop: 5 }}><Heading testID={selectedSystem ? 'study-category' : 'study-root'} style={[styles.sectionTitle, { alignSelf: 'stretch', textAlign: 'center', color: colors.foreground }]}>{categoryTitle}</Heading></View>
       {visibleModules.map((module, index) => <AdaptiveButton key={module.id} onLayout={index === 0 ? (event) => { firstResult.current = { id: module.id, layout: event.nativeEvent.layout }; scheduleReveal(); } : undefined} testID={`module-card-${module.id}`} accessibilityRole="button" onPress={() => { if (preferences.haptics) void Haptics.selectionAsync(); router.push({ pathname: '/module/[id]', params: { id: module.id, system: selectedSystem ?? moduleCategory(module) } }); }} style={({ pressed }) => [styles.card, { backgroundColor: colors.card, borderColor: colors.border, transform: [{ scale: pressed ? 0.985 : 1 }] }]}>
         <AdaptiveRow style={[styles.cardTop, reflow && responsive.cardTopStacked]}><ModuleIcon iconKey={moduleIconKeyById[module.id]} label={localizeModule(module).title} /><View style={[styles.cardCopy, responsive.flexibleCopy, reflow && responsive.cardCopyStacked]}><Text wholeWords style={[styles.cardTitle, { color: colors.foreground }]}>{localizeModule(module).title}</Text><Text style={[styles.cardSub, { color: colors.mutedForeground }]}>{localizeModule(module).summary ?? t(module.id === 'cytology-mitosis' ? 'study.cytologyModuleFallback' : 'study.moduleFallback')}</Text></View>{!reflow && <Text style={[styles.arrow, responsive.trailingStatus, { color: colors.primary }]}>›</Text>}</AdaptiveRow>
           <AdaptiveRow style={[styles.meta, responsive.meta, (stackModuleMeta || reflow) && responsive.metaStacked]}>
@@ -209,7 +209,6 @@ const styles = StyleSheet.create({
 });
 const searchStyles = StyleSheet.create({
   container: { gap: 8 },
-  glossaryLink: { alignSelf: 'flex-start', minHeight: 44, justifyContent: 'center' },
   panel: { borderWidth: 1, borderRadius: 16, overflow: 'hidden', paddingTop: 12 },
   heading: { fontSize: 12, fontWeight: '700', paddingHorizontal: 14, paddingBottom: 12 },
   scroll: { maxHeight: 300 },
@@ -224,10 +223,12 @@ const searchStyles = StyleSheet.create({
   secondaryAction: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 8 },
   bookmark: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 8 },
 });
+const headerStyles = StyleSheet.create({
+  row: { flexDirection: 'row', flexWrap: 'nowrap', alignItems: 'center' },
+  side: { width: 48, height: 48, flexShrink: 0 },
+  settingsSlot: { width: 48, height: 48, flexShrink: 0, alignItems: 'center', justifyContent: 'center' },
+});
 const responsive = StyleSheet.create({
-  brandReflow: { flexDirection: 'column', alignItems: 'stretch', position: 'relative' },
-  brandTitleReflow: { flex: 0, alignSelf: 'stretch' },
-  settingsActionReflow: { position: 'absolute', top: 2, right: 0 },
    systemLarge: { flexDirection: 'column', alignItems: 'stretch', minHeight: 44 },
   systemNameLarge: { flex: 0, alignSelf: 'stretch' },
   systemStatusLarge: { flexShrink: 1, alignSelf: 'stretch', textAlign: 'left' },
