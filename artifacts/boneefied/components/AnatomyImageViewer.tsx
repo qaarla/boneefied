@@ -213,7 +213,11 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
       {source && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ? locale.t('offlineImage.unavailableOffline') : locale.t('imageViewer.loading')}</Text></View>}
        {source && image.source && <Animated.View testID="viewer-canvas" pointerEvents="box-none" style={[styles.canvas, gesture.canvasStyle]}>
         <View testID="viewer-plate" pointerEvents="box-none" style={{ position: 'absolute', left: framing.left, top: framing.top, width: canvasSize.width, height: layoutHeight, transform: [{ scale: framing.scale }] }}>
-        <Image testID="viewer-base-diagram" source={image.source} resizeMode="contain" style={[styles.image, { left: imageBox.x, top: imageBox.y, width: imageBox.width, height: imageBox.height }]} />
+        {/* Round the fitted raster (including its paper background), not the
+            annotation scene. Keep every callout/leader outside this mask. */}
+        <View testID="viewer-image-surface" pointerEvents="none" style={[styles.imageSurface, { left: imageBox.x, top: imageBox.y, width: imageBox.width, height: imageBox.height, borderRadius: colors.radius }]}>
+          <Image testID="viewer-base-diagram" source={image.source} resizeMode="contain" style={styles.image} />
+        </View>
         {hotspots.map((hotspot, index) => {
           const selected = selectedHotspotId === hotspot.structureId;
           const feedback: AnswerFeedback | undefined = submitted
@@ -297,7 +301,8 @@ const styles = StyleSheet.create({
   frame: { width: '100%', borderRadius: 16, borderWidth: 1, overflow: 'hidden', position: 'relative' },
    gestureArea: { aspectRatio: 1, overflow: 'hidden' },
   canvas: { position: 'absolute', left: 0, right: 0, top: 0, bottom: 0 },
-   image: { position: 'absolute' },
+   imageSurface: { position: 'absolute', overflow: 'hidden' },
+   image: { width: '100%', height: '100%' },
   empty: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24 },
   blocked: { fontSize: 14, textAlign: 'center' },
    hotspot: { position: 'absolute' },

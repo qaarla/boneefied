@@ -33,3 +33,4 @@
 - [Native generated artwork](native-generated-artwork-intent.md) — generated anatomical material belongs on persistent app screens, not just launch; preserve study imagery and the approved website.
 - [Protected image comparisons](protected-image-comparisons.md) — compare atlas interiors separately from rounded antialiased frame corners when isolating background changes.
 - [Reading comfort scope](reading-comfort-intent.md) — foreground-only light reading calibration; dark/night, existing UI and already comfortable text remain untouched.
+- [Atlas image corners](atlas-image-corner-intent.md) — gently round the actual raster surface, not only its outer card; keep annotations outside the mask.
