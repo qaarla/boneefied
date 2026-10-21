@@ -66,8 +66,9 @@ function RootLayoutNav() {
   return (
     <ThemeProvider value={navigationTheme}>
       <Stack screenOptions={{
-        // The full, accessible heading lives in the page content. Keep only
-        // navigation controls here, never a second title under the camera.
+        headerShown: false,
+        // Study navigation stays in the persistent dock; the full accessible
+        // heading and safe-area clearance belong to the page content.
         headerTitle: () => null,
          headerBackTitle: t('navigation.back'),
         headerBackButtonDisplayMode: Platform.OS === 'ios' && reflow ? 'minimal' : 'default',

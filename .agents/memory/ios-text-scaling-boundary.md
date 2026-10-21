@@ -15,8 +15,8 @@ For web-renderer regression checks that emulate Dynamic Type, use a fresh browse
 
 **How to apply:** Separate default, intermediate, and accessibility-sized captures; treat native tab bars, keyboard avoidance, and iOS line breaking as unverified until checked on-device.
 
-Keep the full localized title in page content, not duplicated in the top navigation header. Remove redundant top titles app-wide while retaining back navigation and safe-area clearance.
+Keep the full localized title in page content, not duplicated in the top navigation header. Remove redundant top titles app-wide while retaining safe-area clearance.
 
 **Why:** The owner supplied an iPhone screenshot with a duplicate white module title cut off behind the Dynamic Island and explicitly asked to remove all those unnecessary extra headers. This supersedes the earlier request to wrap module navigation titles.
 
-**How to apply:** Keep only back controls in module navigation, suppress root-stack title rendering, and omit tab-screen header bars. Assign top status-bar/safe-area clearance exactly once; do not remove the readable in-content heading.
+**How to apply:** Suppress top navigation headers and retain readable in-content headings. Assign top status-bar/safe-area clearance exactly once. The owner subsequently replaced the floating Study back control with the persistent dock; see persistent-dock-intent.md.

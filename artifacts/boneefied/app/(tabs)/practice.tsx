@@ -187,7 +187,7 @@ export default function PracticeScreen() {
        {questions.map((item, index) => { const display = locale.question(item); return <View key={item.id} style={styles.review}><Text style={[styles.reviewText, shouldReflow && styles.reflowText, { color: colors.foreground }]}>{locale.number(index + 1)}. {locale.t(answers[index] ? 'practice.correct' : 'practice.wrongOrUnanswered')} · {display.prompt}</Text><Text style={[styles.reviewDetail, shouldReflow && styles.reflowText, { color: colors.mutedForeground }]}>{display.explanation} · {citation(item.sourceId, item.sourcePage)}</Text></View>; })}
      <Text style={{ color: colors.mutedForeground }}>{locale.t('practice.savedMissedNotice')}</Text>
        <AdaptiveButton onPress={start} style={[styles.primaryContent, { backgroundColor: colors.primary }]}><Text style={[{ color: colors.primaryForeground, fontWeight: '700' }, styles.reflowRetryText]}>{locale.t('practice.retryModule')}</Text></AdaptiveButton>
-      <AdaptiveButton onPress={() => router.replace('/(tabs)')} style={styles.link}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('practice.returnToStudy')}</Text></AdaptiveButton>
+      <AdaptiveButton onPress={() => router.replace('/(tabs)/(study)')} style={styles.link}><Text style={{ color: colors.primary, fontWeight: '700' }}>{locale.t('practice.returnToStudy')}</Text></AdaptiveButton>
   </Screen>;
   if (!q || !localizedQuestion) return null;
   return <Screen keyboardAware>

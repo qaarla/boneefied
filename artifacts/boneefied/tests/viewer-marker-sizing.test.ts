@@ -49,7 +49,7 @@ test('enlarged phone bubbles remain compact with density-sensitive caps and read
 });
 
 test('all diagram consumers forward optional size and full plate density', () => {
-  for (const path of ['app/module/[id].tsx', 'app/glossary/[id].tsx', 'app/(tabs)/practice.tsx']) {
+  for (const path of ['app/(tabs)/(study)/module/[id].tsx', 'app/(tabs)/(study)/glossary/[id].tsx', 'app/(tabs)/practice.tsx']) {
     const source = readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
     const viewers = source.match(/<AnatomyImageViewer[\s\S]*?\/>/g)!;
     assert.ok(viewers.length);
@@ -58,7 +58,7 @@ test('all diagram consumers forward optional size and full plate density', () =>
 });
 
 test('anatomy lesson bookmark target and label both cap width rather than clipping enlarged names', () => {
-  const source = readFileSync(new URL('../app/module/[id].tsx', import.meta.url), 'utf8');
+  const source = readFileSync(new URL('../app/(tabs)/(study)/module/[id].tsx', import.meta.url), 'utf8');
   const chips = source.match(/<View style=\{styles.chips\}>[\s\S]*?<\/View>/)?.[0] ?? '';
   assert.equal((chips.match(/maxWidth: '100%'/g) ?? []).length, 2);
   assert.ok(chips.includes('flexShrink: 1'));

@@ -42,7 +42,7 @@ test('concise credits keep named creators, licenses and modification indications
 });
 
 test('disclosure is collapsed, accessible and between lessons and final actions on the shared module route', () => {
-  const module = readFileSync(new URL('../app/module/[id].tsx', import.meta.url), 'utf8');
+  const module = readFileSync(new URL('../app/(tabs)/(study)/module/[id].tsx', import.meta.url), 'utf8');
   const disclosure = readFileSync(new URL('../components/ModuleSourcesDisclosure.tsx', import.meta.url), 'utf8');
   assert.ok(module.indexOf('<ModuleSourcesDisclosure') > module.indexOf('{lessons.map'));
   assert.ok(module.indexOf('<ModuleSourcesDisclosure') < module.indexOf('router.push(`/(tabs)/practice?'));
@@ -75,7 +75,7 @@ test('standalone plate disclosures preserve every supplied rights record and def
 });
 
 test('module, glossary and Practice use one bottom disclosure treatment while visible image credits stay concise', () => {
-  const glossary = readFileSync(new URL('../app/glossary/[id].tsx', import.meta.url), 'utf8');
+  const glossary = readFileSync(new URL('../app/(tabs)/(study)/glossary/[id].tsx', import.meta.url), 'utf8');
   const practice = readFileSync(new URL('../app/(tabs)/practice.tsx', import.meta.url), 'utf8');
   const visual = readFileSync(new URL('../components/VisualStudyContext.tsx', import.meta.url), 'utf8');
   const disclosure = readFileSync(new URL('../components/ModuleSourcesDisclosure.tsx', import.meta.url), 'utf8');

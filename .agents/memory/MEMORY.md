@@ -34,3 +34,4 @@
 - [Protected image comparisons](protected-image-comparisons.md) — compare atlas interiors separately from rounded antialiased frame corners when isolating background changes.
 - [Reading comfort scope](reading-comfort-intent.md) — foreground-only light reading calibration; dark/night, existing UI and already comfortable text remain untouched.
 - [Atlas image corners](atlas-image-corner-intent.md) — gently round the actual raster surface, not only its outer card; keep annotations outside the mask.
+- [Persistent study dock](persistent-dock-intent.md) — all systems and nested study windows retain the four-tab dock; Study returns to the library instead of a floating back control.

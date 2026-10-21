@@ -64,7 +64,7 @@ test('local paint caps keep both default and enlarged numerals readable', () => 
 });
 
 test('module, glossary and practice all resolve overlay tuning by published identity', () => {
-  for (const file of ['app/module/[id].tsx', 'app/glossary/[id].tsx', 'app/(tabs)/practice.tsx']) {
+  for (const file of ['app/(tabs)/(study)/module/[id].tsx', 'app/(tabs)/(study)/glossary/[id].tsx', 'app/(tabs)/practice.tsx']) {
     const source = readFileSync(new URL(`../${file}`, import.meta.url), 'utf8');
     for (const viewer of source.match(/<AnatomyImageViewer[\s\S]*?\/>/g) ?? []) assert.ok(viewer.includes('diagramAssetId='), file);
   }

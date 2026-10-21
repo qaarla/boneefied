@@ -3,6 +3,7 @@ import React from 'react';
 import { FlatList, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useDockClearance } from '@/hooks/useDockClearance';
 import { Heading, Text, TextInput, useTypographyLayout } from '@/components/ScaledText';
 import { content } from '@/content/canonical';
 import { combinedAtlasAssetsForStructure } from '@/content/atlas-index';
@@ -23,6 +24,7 @@ export default function GlossaryScreen() {
   const { language, t, module: localizeModule, structure: localizeStructure, definition, number } = useLocale();
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const bottomPadding = useDockClearance();
   const { shouldReflow } = useTypographyLayout();
   const { q } = useLocalSearchParams<{ q?: string }>();
   const [query, setQuery] = React.useState(typeof q === 'string' ? q : '');
@@ -81,7 +83,7 @@ export default function GlossaryScreen() {
         keyExtractor={(entry) => entry.structure.id}
         data={entries}
         keyboardShouldPersistTaps="handled"
-        contentContainerStyle={{ paddingBottom: insets.bottom + 48 }}
+        contentContainerStyle={{ paddingBottom: bottomPadding }}
         ListHeaderComponent={<View style={styles.header}>
           <Heading style={[styles.title, { color: colors.foreground }]}>{t(shouldReflow ? 'glossary.reflowTitle' : 'glossary.title')}</Heading>
           <Text style={{ color: colors.mutedForeground }}>{t('glossary.introduction')}</Text>

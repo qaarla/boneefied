@@ -28,7 +28,7 @@ test('urinary publication union preserves six primary diagrams, one real microgr
   assert.equal(photo.attributionLicense, 'Josef Reischig, CC BY-SA 3.0');
   assert.equal(photo.labels?.length ?? 0, 0);
   assert.match(photo.description!, /Stain and magnification are not asserted/);
-  const lessonView = readFileSync(new URL('app/module/[id].tsx', root), 'utf8');
+  const lessonView = readFileSync(new URL('app/(tabs)/(study)/module/[id].tsx', root), 'utf8');
   assert.match(lessonView, /lesson\.id\.startsWith\('urinary-'\).*assetType === 'histology'/);
 });
 

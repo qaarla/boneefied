@@ -126,9 +126,11 @@ test('shared typography and layout primitives preserve responsive content contra
   assert.match(scaledText, /multiline=\{props\.multiline \?\? shouldReflow\}/);
 
   const screen = readSource(path.join(componentRoot, 'Screen.tsx'));
-  assert.match(screen, /insets\.bottom/);
+  const clearance = readSource(path.join(projectRoot, 'hooks/useDockClearance.ts'));
+  assert.match(screen, /useDockClearance/);
+  assert.match(clearance, /insets\.bottom/);
   assert.match(screen, /paddingBottom: bottomPadding/);
-  assert.match(screen, /insets\.bottom \+ 96 \* \(shouldReflow \? Math\.max\(1, systemFontScale\) : 1\)/);
+  assert.match(clearance, /insets\.bottom \+ 96 \* \(shouldReflow \? Math\.max\(1, systemFontScale\) : 1\)/);
 
   const adaptiveLayout = readSource(path.join(componentRoot, 'AdaptiveLayout.tsx'));
   assert.match(adaptiveLayout, /export function AdaptiveRow/);

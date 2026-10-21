@@ -3,6 +3,7 @@ import React from 'react';
 import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { Stack, useLocalSearchParams } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useDockClearance } from '@/hooks/useDockClearance';
 import { Heading, Text, TextInput } from '@/components/ScaledText';
 import { WordPartResults } from '@/components/WordPartResults';
 import { wordParts, searchWordParts, type WordPartKind } from '@/content/word-parts';
@@ -14,6 +15,7 @@ export default function WordPartsScreen() {
   const { language } = useLocale();
   const es = language === 'es';
   const insets = useSafeAreaInsets();
+  const bottomPadding = useDockClearance();
   const { q } = useLocalSearchParams<{ q?: string }>();
   const [query, setQuery] = React.useState(typeof q === 'string' ? q : '');
   const [kind, setKind] = React.useState<WordPartKind | undefined>();
@@ -30,7 +32,7 @@ export default function WordPartsScreen() {
     <OrganicBackground />
     <Stack.Screen options={{ title: es ? 'Partes de palabras' : 'Word parts' }} />
     <FlatList data={entries} keyExtractor={(part) => part.id} keyboardShouldPersistTaps="handled"
-      contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + 48 }]}
+      contentContainerStyle={[styles.content, { paddingBottom: bottomPadding }]}
       ListHeaderComponent={<View style={styles.header}>
         <Heading style={[styles.title, { color: colors.foreground }]}>{es ? 'Prefijos, raíces y sufijos' : 'Prefixes, roots & suffixes'}</Heading>
         <Text style={{ color: colors.mutedForeground }}>{es

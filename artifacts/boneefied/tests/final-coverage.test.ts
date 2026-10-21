@@ -63,7 +63,7 @@ test('the assembled catalog matches its manifest and every lesson has related pr
 });
 
 test('every displayed Study selector opens a nonempty module with Search terms and Practice questions', () => {
-  const page = readFileSync(new URL('../app/(tabs)/index.tsx', import.meta.url), 'utf8');
+  const page = readFileSync(new URL('../app/(tabs)/(study)/index.tsx', import.meta.url), 'utf8');
   const selectorSource = page.match(/const systems = \[([\s\S]*?)\] as const;/)?.[1];
   assert.ok(selectorSource);
   const selectors = [...selectorSource.matchAll(/\['[^']+', '([^']+)'\]/g)].map((match) => match[1]);

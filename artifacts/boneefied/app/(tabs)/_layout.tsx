@@ -9,7 +9,7 @@ import { APP_FONTS } from '@/context/typeface';
 import { Feather } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
-import { Tabs } from 'expo-router';
+import { router, Tabs } from 'expo-router';
 import { NativeTabs } from 'expo-router/unstable-native-tabs';
 import { SymbolView } from 'expo-symbols';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -19,11 +19,24 @@ import { useLocale } from '@/locales/useLocale';
 // NativeTabs intentionally does NOT use custom design tokens — liquid glass
 // is a system-level appearance provided by iOS and cannot be overridden.
 // Custom brand colors are applied only on the ClassicTabLayout path (older iOS / Android / web).
+export const unstable_settings = { initialRouteName: '(study)' };
+
+// Reset only the Study stack. Other tabs, including an unfinished Practice
+// session, must keep their navigation and component state.
+function resetStudyStack(focused: boolean) {
+  // Resolve against the hydrated root state. The tab's own getState() can
+  // retain partial, keyless child state after a cold direct link.
+  if (focused) router.dismissTo('/(tabs)/(study)');
+  else router.navigate('/(tabs)/(study)');
+}
+
 function NativeTabLayout() {
   const { t } = useLocale();
   return (
     <NativeTabs labelStyle={{ fontFamily: APP_FONTS.bold, fontWeight: 'normal' }}>
-         <NativeTabs.Trigger name="index">
+         <NativeTabs.Trigger name="(study)" listeners={({ navigation }) => ({
+           tabPress: () => resetStudyStack(navigation.isFocused()),
+         })}>
         <NativeTabs.Trigger.Icon
           sf={{ default: 'house', selected: 'house.fill' }}
         />
@@ -146,7 +159,13 @@ function ClassicTabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="(study)"
+        listeners={({ navigation }) => ({
+          tabPress: (event) => {
+            event.preventDefault();
+            resetStudyStack(navigation.isFocused());
+          },
+        })}
         options={{
            title: t('tabs.study'),
            headerShown: false,

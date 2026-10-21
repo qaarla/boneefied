@@ -48,7 +48,7 @@ export default function ModuleDetailScreen() {
     : resolvedModule;
   if (!module) return <ModuleScreen title={t('module.unavailableTitle')}>
     <EmptyState icon="alert-circle" title={t('module.unavailableTitle')} message={t('module.unavailableMessage')} />
-        <AdaptiveButton onPress={() => router.replace('/(tabs)')} hitSlop={4} style={[styles.practice, { backgroundColor: colors.primary }]}>
+        <AdaptiveButton onPress={() => router.replace('/(tabs)/(study)')} hitSlop={4} style={[styles.practice, { backgroundColor: colors.primary }]}>
       <Text style={{ color: colors.primaryForeground, fontWeight: '700' }}>{t('module.returnToStudy')}</Text>
      </AdaptiveButton>
   </ModuleScreen>;
@@ -87,7 +87,6 @@ export default function ModuleDetailScreen() {
        {lessons.map((item) => <LessonCard key={item.id} lesson={item} mode={mode} reflow={reflow} expanded={expanded === item.id} onToggle={() => setExpanded(expanded === item.id ? null : item.id)} colors={colors} bookmarks={bookmarks} onBookmark={toggleBookmark} t={t} localizeStructure={localizeStructure} />)}
        <ModuleSourcesDisclosure key={module.id} module={module} galleryIds={galleryIds} />
         <AdaptiveButton onPress={() => router.push(`/(tabs)/practice?moduleId=${module.id}`)} style={[styles.practice, reflow && styles.practiceLarge, { backgroundColor: colors.primary }]}><Text style={[reflow && styles.practiceTextLarge, { color: colors.primaryForeground, fontWeight: '700' }]}>{t(`module.practiceCount.${content.questions.filter((item) => item.moduleId === module.id).length === 1 ? 'one' : 'other'}`, { count: number(content.questions.filter((item) => item.moduleId === module.id).length) })}</Text></AdaptiveButton>
-       <AdaptiveButton onPress={() => router.back()} hitSlop={4} style={styles.back}><Text style={{ color: colors.primary, fontWeight: '700' }}>{t('module.returnToLibrary')}</Text></AdaptiveButton>
   </ModuleScreen>;
 }
 

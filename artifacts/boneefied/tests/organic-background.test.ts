@@ -50,11 +50,10 @@ test('cards, menus, bars and opaque actions use material, but educational canvas
     '../components/AdaptiveLayout.tsx',
     '../components/AtlasViewerControls.tsx',
     '../components/AnimatedAnswerPressable.tsx',
-    '../components/ModuleScreen.tsx',
     '../app/(tabs)/_layout.tsx',
-    '../app/(tabs)/index.tsx',
-    '../app/glossary/index.tsx',
-    '../app/glossary/word-parts.tsx',
+    '../app/(tabs)/(study)/index.tsx',
+    '../app/(tabs)/(study)/glossary/index.tsx',
+    '../app/(tabs)/(study)/glossary/word-parts.tsx',
   ]) assert.match(read(path), /<OrganicSurface/, path);
   assert.match(read('../app/(tabs)/_layout.tsx'), /headerBackground:/);
   assert.match(read('../components/AnimatedAnswerPressable.tsx'), /!contentOpaque && material/);
@@ -62,7 +61,7 @@ test('cards, menus, bars and opaque actions use material, but educational canvas
   assert.doesNotMatch(read('../components/AnatomyImageViewer.tsx'), /OrganicBackground|OrganicSurface/);
   assert.match(read('../components/AnatomyImageViewer.tsx'), /decorate=\{false\}/);
   assert.match(read('../components/AnatomyImageViewer.tsx'), /styles\.frame, \{ backgroundColor: colors\.card/);
-  for (const path of ['../app/glossary/index.tsx', '../app/glossary/word-parts.tsx']) {
+  for (const path of ['../app/(tabs)/(study)/glossary/index.tsx', '../app/(tabs)/(study)/glossary/word-parts.tsx']) {
     assert.match(read(path), /<OrganicBackground \/>/);
     assert.doesNotMatch(read(path), /<TextInput[^>]*>\s*<OrganicSurface/);
   }
