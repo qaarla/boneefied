@@ -270,4 +270,34 @@ function QuestionInput({ question, value, setValue, disabled, colors, reduceMoti
     </AnimatedAnswerPressable>;
   })}</View></View>;
 }
-const styles = StyleSheet.create({ eyebrow:{fontSize:11,letterSpacing:1.5,fontWeight:'700'},title:{fontSize:27,fontWeight:'700'},reflowTitle:{width:'100%',flexShrink:1},intro:{fontSize:15,lineHeight:22},panel:{borderWidth:1,borderRadius:16,padding:16,gap:16},focus:{borderWidth:1,borderRadius:14,padding:14,gap:9},panelTitle:{fontSize:17,fontWeight:'700'},counts:{gap:8},count:{borderWidth:1,borderRadius:10,padding:13},primary:{minHeight:48,borderRadius:12},primaryContent:{minHeight:48,borderRadius:12,alignItems:'center',justifyContent:'center',paddingHorizontal:16},reflowRetry:{alignItems:'center',justifyContent:'center',paddingHorizontal:16},reflowRetryText:{paddingVertical:12,textAlign:'center',flexShrink:1},secondary:{minHeight:40,borderWidth:1,borderRadius:10,alignItems:'center',justifyContent:'center',paddingHorizontal:12},reflowSaveExit:{minHeight:44,justifyContent:'center',alignSelf:'flex-start'},note:{fontSize:13,lineHeight:20},options:{gap:10},orderRow:{flexDirection:'row',alignItems:'center',gap:8},largeOrderRow:{flexDirection:'column',alignItems:'stretch',gap:4},largeOrderActions:{flexDirection:'row',alignSelf:'flex-end',gap:8},largeOrderArrow:{minWidth:44,minHeight:44,alignItems:'center',justifyContent:'center'},option:{borderWidth:1,borderRadius:12,padding:15,minHeight:48,justifyContent:'center'},input:{borderWidth:2,borderRadius:12,padding:14,fontSize:16,minHeight:50},largeInput:{minHeight:96,textAlignVertical:'top'},feedback:{borderWidth:1,borderRadius:14,padding:15,gap:8},result:{borderWidth:1,borderRadius:16,padding:22,alignItems:'center',gap:8},reflowScore:{alignItems:'center'},resultTotal:{fontSize:20,fontWeight:'600'},review:{borderBottomWidth:1,paddingVertical:10,gap:4},reviewText:{width:'100%',flexShrink:1},reviewDetail:{width:'100%',flexShrink:1},reflowText:{alignSelf:'stretch'},big:{fontSize:40,fontWeight:'700'},link:{alignItems:'center',padding:12} });
+const styles = StyleSheet.create({
+  eyebrow: { fontSize: 11, letterSpacing: 1.5, fontWeight: '700', textAlign: 'center' },
+  title: { fontSize: 27, fontWeight: '700' },
+  reflowTitle: { width: '100%', flexShrink: 1 },
+  intro: { fontSize: 15, lineHeight: 22, textAlign: 'center' },
+  panel: { borderWidth: 1, borderRadius: 16, padding: 16, gap: 16 },
+  focus: { borderWidth: 1, borderRadius: 14, padding: 14, gap: 9 },
+  panelTitle: { fontSize: 17, fontWeight: '700' }, counts: { gap: 8 },
+  count: { borderWidth: 1, borderRadius: 10, padding: 13 },
+  primary: { minHeight: 48, borderRadius: 12 },
+  primaryContent: { minHeight: 48, borderRadius: 12, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 16 },
+  reflowRetry: { alignItems: 'center', justifyContent: 'center', paddingHorizontal: 16 },
+  reflowRetryText: { paddingVertical: 12, textAlign: 'center', flexShrink: 1 },
+  secondary: { minHeight: 40, borderWidth: 1, borderRadius: 10, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 12 },
+  reflowSaveExit: { minHeight: 44, justifyContent: 'center', alignSelf: 'flex-start' },
+  note: { fontSize: 13, lineHeight: 20 }, options: { gap: 10 },
+  orderRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  largeOrderRow: { flexDirection: 'column', alignItems: 'stretch', gap: 4 },
+  largeOrderActions: { flexDirection: 'row', alignSelf: 'flex-end', gap: 8 },
+  largeOrderArrow: { minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
+  option: { borderWidth: 1, borderRadius: 12, padding: 15, minHeight: 48, justifyContent: 'center' },
+  input: { borderWidth: 2, borderRadius: 12, padding: 14, fontSize: 16, minHeight: 50 },
+  largeInput: { minHeight: 96, textAlignVertical: 'top' },
+  feedback: { borderWidth: 1, borderRadius: 14, padding: 15, gap: 8 },
+  result: { borderWidth: 1, borderRadius: 16, padding: 22, alignItems: 'center', gap: 8 },
+  reflowScore: { alignItems: 'center' }, resultTotal: { fontSize: 20, fontWeight: '600' },
+  review: { borderBottomWidth: 1, paddingVertical: 10, gap: 4 },
+  reviewText: { width: '100%', flexShrink: 1 }, reviewDetail: { width: '100%', flexShrink: 1 },
+  reflowText: { alignSelf: 'stretch' }, big: { fontSize: 40, fontWeight: '700' },
+  link: { alignItems: 'center', padding: 12 },
+});

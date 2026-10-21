@@ -136,7 +136,7 @@ export default function SettingsScreen() {
   </>;
 }
 const styles = StyleSheet.create({
-  eyebrow: { fontSize: 11, letterSpacing: 1.5, fontWeight: '700' },
+  eyebrow: { fontSize: 11, letterSpacing: 1.5, fontWeight: '700', textAlign: 'center' },
   title: { fontSize: 28, fontWeight: '700' },
   panel: { borderWidth: 1, borderRadius: 16, padding: 16, gap: 16 },
   heading: { fontSize: 17, fontWeight: '700' },

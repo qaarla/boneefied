@@ -29,7 +29,7 @@ test('all reading wrappers and native navigation use authoritative font faces, n
   const text = read('components/ScaledText.tsx');
   assert.match(text, /\.\.\.appTypeface\(flattened\)/);
   assert.ok(text.indexOf('...appTypeface(flattened)') > text.indexOf('return [style'));
-  assert.match(text, /style=\{\[\{ fontWeight: '700' \}, style\]\}/);
+  assert.match(text, /style=\{\[\{ fontWeight: '700', textAlign: 'center' \}, style\]\}/);
   const root = read('app/_layout.tsx');
   assert.doesNotMatch(root, /defaultProps/);
   assert.match(root, /headerTitleStyle: \{ fontFamily: APP_FONTS.bold/);

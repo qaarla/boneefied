@@ -52,7 +52,21 @@ export default function ProgressScreen() {
     <Text style={[styles.note, { color: colors.mutedForeground }]}>{t('progress.coverageNote')}</Text>
   </Screen>;
 }
-const styles = StyleSheet.create({ eyebrow: { fontSize: 11, letterSpacing: 1.6, fontWeight: '700' }, title: { fontSize: 32, fontWeight: '700', marginTop: -10 }, intro: { fontSize: 15, lineHeight: 22, marginTop: -10 }, metrics: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 }, metric: { flexGrow: 1, flexShrink: 0, borderWidth: 1, borderRadius: 14, padding: 14, gap: 5 }, value: { fontSize: 22, fontWeight: '700' }, label: { fontSize: 11 }, section: { fontSize: 17, fontWeight: '700', marginTop: 5 }, record: { borderWidth: 1, borderRadius: 12, padding: 14, flexDirection: 'row', justifyContent: 'space-between' }, recordTitle: { flex: 1, fontWeight: '600' }, lessonRecord: { paddingVertical: 9, paddingLeft: 14, borderBottomWidth: StyleSheet.hairlineWidth, gap: 3 }, lessonTitle: { fontSize: 13, fontWeight: '500' }, note: { fontSize: 12, lineHeight: 18 } });
+const styles = StyleSheet.create({
+  eyebrow: { fontSize: 11, letterSpacing: 1.6, fontWeight: '700', textAlign: 'center' },
+  title: { fontSize: 32, fontWeight: '700', marginTop: -10 },
+  intro: { fontSize: 15, lineHeight: 22, marginTop: -10, textAlign: 'center' },
+  metrics: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  metric: { flexGrow: 1, flexShrink: 0, borderWidth: 1, borderRadius: 14, padding: 14, gap: 5 },
+  value: { fontSize: 22, fontWeight: '700' },
+  label: { fontSize: 11 },
+  section: { fontSize: 17, fontWeight: '700', marginTop: 5 },
+  record: { borderWidth: 1, borderRadius: 12, padding: 14, flexDirection: 'row', justifyContent: 'space-between' },
+  recordTitle: { flex: 1, fontWeight: '600' },
+  lessonRecord: { paddingVertical: 9, paddingLeft: 14, borderBottomWidth: StyleSheet.hairlineWidth, gap: 3 },
+  lessonTitle: { fontSize: 13, fontWeight: '500' },
+  note: { fontSize: 12, lineHeight: 18 },
+});
 const responsive = StyleSheet.create({
   record: { flexWrap: 'wrap', alignItems: 'flex-start', gap: 8 },
   recordStatus: { flexShrink: 1, minWidth: 0, alignSelf: 'flex-end', textAlign: 'right' },

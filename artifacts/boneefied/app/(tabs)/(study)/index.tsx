@@ -146,7 +146,7 @@ export default function StudyScreen() {
         <Feather name="settings" size={21} color={colors.mutedForeground} />
       </Pressable>
     </View>
-    <Text style={[styles.lede, { color: colors.mutedForeground }]}>{t('study.tagline')}</Text>
+    <Text style={[styles.lede, { textAlign: 'center', alignSelf: 'center', color: colors.mutedForeground }]}>{t('study.tagline')}</Text>
     <View style={searchStyles.container}>
         {reflow && <Text style={{ color: colors.mutedForeground }}>{t('study.searchAnatomy')}</Text>}
         <TextInput accessibilityLabel={t('study.searchAnatomy')} value={query} onChangeText={setQuery} placeholder={reflow ? t('study.searchCompactPlaceholder') : t('study.searchAnatomy')} placeholderTextColor={colors.mutedForeground} returnKeyType="search" style={[styles.search, { color: colors.foreground, borderColor: colors.border, backgroundColor: colors.card }]} />

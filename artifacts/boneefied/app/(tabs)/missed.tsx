@@ -28,4 +28,11 @@ export default function MissedScreen() {
     })}</>}
   </Screen>;
 }
-const styles = StyleSheet.create({ eyebrow: { fontSize: 11, letterSpacing: 1.6, fontWeight: '700' }, title: { fontSize: 32, fontWeight: '700', marginTop: -10 }, intro: { fontSize: 15, lineHeight: 22, marginTop: -10 }, retry:{minHeight:48,borderRadius:12,paddingHorizontal:14,paddingVertical:10,alignItems:'flex-start',justifyContent:'center',gap:3}, largeRetry:{alignItems:'stretch'}, largeRetryText:{alignSelf:'stretch',minWidth:0} });
+const styles = StyleSheet.create({
+  eyebrow: { fontSize: 11, letterSpacing: 1.6, fontWeight: '700', textAlign: 'center' },
+  title: { fontSize: 32, fontWeight: '700', marginTop: -10 },
+  intro: { fontSize: 15, lineHeight: 22, marginTop: -10, textAlign: 'center' },
+  retry: { minHeight: 48, borderRadius: 12, paddingHorizontal: 14, paddingVertical: 10, alignItems: 'flex-start', justifyContent: 'center', gap: 3 },
+  largeRetry: { alignItems: 'stretch' },
+  largeRetryText: { alignSelf: 'stretch', minWidth: 0 },
+});

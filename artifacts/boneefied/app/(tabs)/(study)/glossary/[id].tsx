@@ -86,7 +86,7 @@ export default function GlossaryEntryScreen() {
 }
 
 const styles = StyleSheet.create({
-  eyebrow: { fontSize: 12, fontWeight: '700', letterSpacing: 2 },
+  eyebrow: { fontSize: 12, fontWeight: '700', letterSpacing: 2, textAlign: 'center' },
   title: { fontSize: 28, fontWeight: '700' },
   card: { borderWidth: 1, borderRadius: 16, padding: 18, gap: 14 },
   definition: { fontSize: 18, lineHeight: 27 },

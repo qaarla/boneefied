@@ -2,7 +2,7 @@ import { OrganicBackground, OrganicSurface } from '@/components/OrganicBackgroun
 import React from 'react';
 import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { Stack, useLocalSearchParams } from 'expo-router';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { PAGE_CONTENT_TOP_GAP, usePageInsets } from '@/context/PageInsets';
 import { useDockClearance } from '@/hooks/useDockClearance';
 import { Heading, Text, TextInput } from '@/components/ScaledText';
 import { WordPartResults } from '@/components/WordPartResults';
@@ -14,7 +14,7 @@ export default function WordPartsScreen() {
   const colors = useColors();
   const { language } = useLocale();
   const es = language === 'es';
-  const insets = useSafeAreaInsets();
+  const insets = usePageInsets();
   const bottomPadding = useDockClearance();
   const { q } = useLocalSearchParams<{ q?: string }>();
   const [query, setQuery] = React.useState(typeof q === 'string' ? q : '');
@@ -35,7 +35,7 @@ export default function WordPartsScreen() {
       contentContainerStyle={[styles.content, { paddingBottom: bottomPadding }]}
       ListHeaderComponent={<View style={styles.header}>
         <Heading style={[styles.title, { color: colors.foreground }]}>{es ? 'Prefijos, raíces y sufijos' : 'Prefixes, roots & suffixes'}</Heading>
-        <Text style={{ color: colors.mutedForeground }}>{es
+        <Text style={{ textAlign: 'center', color: colors.mutedForeground }}>{es
           ? 'Busca una parte o su significado. peri- = alrededor; cardi/o = corazón; -itis = inflamación. /o indica la vocal de enlace.'
           : 'Search a word part or its meaning. peri- = around; cardi/o = heart; -itis = inflammation. /o marks a combining vowel.'}</Text>
         <TextInput value={query} onChangeText={setQuery} autoCapitalize="none" autoCorrect={false}
@@ -59,7 +59,7 @@ export default function WordPartsScreen() {
 
 const styles = StyleSheet.create({
   screen: { flex: 1 }, content: { width: '100%', maxWidth: 720, alignSelf: 'center', paddingHorizontal: 20 },
-  header: { gap: 12, paddingTop: 18, paddingBottom: 16 }, title: { fontSize: 26, fontWeight: '700' },
+  header: { gap: 12, paddingTop: PAGE_CONTENT_TOP_GAP, paddingBottom: 16 }, title: { fontSize: 26, fontWeight: '700' },
   input: { borderWidth: 1, borderRadius: 12, padding: 12, minHeight: 44, fontSize: 16 },
   filters: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   filter: { borderWidth: 1, borderRadius: 12, minHeight: 44, padding: 12, justifyContent: 'center' },

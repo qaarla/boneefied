@@ -24,7 +24,8 @@ test('the dock replaces module headers and Screen owns safe area and reading gap
   assert.match(screen, /paddingTop: belowHeader \? 0 : insets\.top/);
   assert.match(screen, /contentInsetAdjustmentBehavior: 'never'/);
   assert.match(screen, /automaticallyAdjustContentInsets: false/);
-  assert.match(screen, /paddingTop: 18/);
+  assert.match(screen, /paddingTop: PAGE_CONTENT_TOP_GAP/);
+  assert.match(screen, /usePageInsets/);
 });
 
 test('redundant navigation titles are removed app-wide while preserving page headings', () => {
@@ -52,4 +53,28 @@ test('all study routes are nested inside the persistent four-option dock', () =>
   for (const path of ['glossary/index.tsx', 'glossary/word-parts.tsx']) {
     assert.match(read(`app/(tabs)/(study)/${path}`), /paddingBottom: bottomPadding/);
   }
+});
+
+test('headerless pages retain window safe-area clearance and a shared reading gap', () => {
+  const root = read('app/_layout.tsx');
+  const insets = read('context/PageInsets.tsx');
+  assert.match(root, /SafeAreaProvider initialMetrics=\{initialWindowMetrics\}/);
+  assert.match(root, /<PageInsetsProvider>/);
+  assert.match(insets, /top: Math\.max\(windowInsets\?\.top \?\? 0, localInsets\.top\)/);
+  assert.match(insets, /PAGE_CONTENT_TOP_GAP = 32/);
+  for (const path of ['components/Screen.tsx', 'app/(tabs)/(study)/glossary/index.tsx', 'app/(tabs)/(study)/glossary/word-parts.tsx']) {
+    assert.match(read(path), /usePageInsets/);
+    assert.match(read(path), /paddingTop: PAGE_CONTENT_TOP_GAP/);
+  }
+});
+
+test('headings are centered and module headers no longer show system-code eyebrows', () => {
+  const text = read('components/ScaledText.tsx');
+  const page = read('app/(tabs)/(study)/module/[id].tsx');
+  assert.match(text, /fontWeight: '700', textAlign: 'center'/);
+  assert.doesNotMatch(page, /localizedModule\.system\?\.toUpperCase/);
+  assert.match(page, /styles\.intro, \{ textAlign: 'center'/);
+  assert.match(page, /styles\.meta, \{ textAlign: 'center'/);
+  assert.match(page, /styles\.lessonTitle, \{ textAlign: 'center'/);
+  assert.match(page, /styles\.lessonSummary, \{ textAlign: 'center'/);
 });

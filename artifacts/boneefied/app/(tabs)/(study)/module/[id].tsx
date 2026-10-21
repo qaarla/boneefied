@@ -60,10 +60,9 @@ export default function ModuleDetailScreen() {
   const galleryIds = BVIS06_MODULES.includes(module.id) ? bvis06Gallery(module.id) : BVIS05_MODULES.includes(module.id) ? bvis05Gallery(module.id) : BVIS04_MODULES.includes(module.id) ? bvis04Gallery(module.id) : muscularGalleryByModule[module.id] ?? skeletalGalleryByModule[module.id] ?? [];
   return <ModuleScreen title={localizedModule.title}>
     <View style={styles.heading}>
-       <Text style={[styles.eyebrow, { color: colors.primary }]}>{localizedModule.system?.toUpperCase() ?? t('module.eyebrow')}</Text>
         <Heading style={[styles.title, { color: colors.foreground }]}>{localizedModule.title}</Heading>
-       <Text style={[styles.intro, { color: colors.mutedForeground }]}>{localizedModule.summary ?? t('module.fallbackSummary')}</Text>
-       <Text style={[styles.meta, { color: colors.mutedForeground }]}>{t(`module.structureCount.${structures.length === 1 ? 'one' : 'other'}`, { count: number(structures.length) })} · {t(`module.lessonCount.${lessons.length === 1 ? 'one' : 'other'}`, { count: number(lessons.length) })}</Text>
+       <Text style={[styles.intro, { textAlign: 'center', color: colors.mutedForeground }]}>{localizedModule.summary ?? t('module.fallbackSummary')}</Text>
+       <Text style={[styles.meta, { textAlign: 'center', color: colors.mutedForeground }]}>{t(`module.structureCount.${structures.length === 1 ? 'one' : 'other'}`, { count: number(structures.length) })} · {t(`module.lessonCount.${lessons.length === 1 ? 'one' : 'other'}`, { count: number(lessons.length) })}</Text>
     </View>
          <AdaptiveRow style={[styles.switcher, reflow && styles.switcherLarge, { backgroundColor: colors.secondary }]}>{(['learn', 'recall'] as const).map((item) => <AdaptiveButton key={item} accessibilityRole="tab" accessibilityState={{ selected: mode === item }} hitSlop={4} onPress={() => setMode(item)} style={[styles.switch, reflow && styles.switchLarge, mode === item && { backgroundColor: colors.card }]}><Text style={{ color: mode === item ? colors.foreground : colors.mutedForeground, fontWeight: '700' }}>{t(item === 'learn' ? 'module.learnMode' : 'module.recallMode')}</Text></AdaptiveButton>)}</AdaptiveRow>
        {galleryIds.length > 0 && <View style={styles.images}>
@@ -99,7 +98,7 @@ function LessonCard({ lesson, mode, reflow, expanded, onToggle, colors, bookmark
   });
   const first = lesson.structureIds[0];
    return <AdaptiveCard style={[styles.lesson, { backgroundColor: colors.card, borderColor: colors.border }]}>
-       <AdaptiveButton onPress={onToggle} hitSlop={4} accessibilityRole="button" accessibilityState={{ expanded }} style={styles.lessonToggle}><Text style={[styles.lessonTitle, { color: colors.foreground }]}>{lesson.title}</Text><Text style={[styles.lessonSummary, { color: colors.mutedForeground }]}>{lesson.summary}</Text></AdaptiveButton>
+       <AdaptiveButton onPress={onToggle} hitSlop={4} accessibilityRole="button" accessibilityState={{ expanded }} style={styles.lessonToggle}><Text style={[styles.lessonTitle, { textAlign: 'center', color: colors.foreground }]}>{lesson.title}</Text><Text style={[styles.lessonSummary, { textAlign: 'center', color: colors.mutedForeground }]}>{lesson.summary}</Text></AdaptiveButton>
         <View style={styles.chips}>{lesson.structureIds.slice(0, 6).map((id) => { const canonicalStructure = content.structures.find((item) => item.id === id); const structure = canonicalStructure && localizeStructure(canonicalStructure); return structure ? <AdaptiveButton key={id} accessibilityRole="button" accessibilityLabel={t(bookmarks.includes(id) ? 'bookmark.removeAccessibility' : 'bookmark.addAccessibility', { name: structure.canonicalName })} accessibilityState={{ selected: bookmarks.includes(id) }} hitSlop={4} style={[reflow && styles.chipTargetLarge, { maxWidth: '100%' }]} onPress={() => onBookmark(id)}><Text wholeWords style={[styles.chip, { color: colors.primary, maxWidth: '100%', flexShrink: 1 }]}>{bookmarks.includes(id) ? '★ ' : ''}{structure.canonicalName}</Text></AdaptiveButton> : null; })}</View>
     {expanded && <View style={styles.details}>
        {plates.map((asset) => <View key={asset.id} style={styles.imageCard}>

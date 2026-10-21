@@ -4,7 +4,8 @@ import { OrganicSurface } from '@/components/OrganicBackground';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
+import { PageInsetsProvider } from '@/context/PageInsets';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { Tinos_400Regular, Tinos_700Bold, useFonts } from '@expo-google-fonts/tinos';
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
@@ -98,7 +99,8 @@ export default function RootLayout() {
   if (!fontsLoaded && !fontError) return null;
 
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+      <PageInsetsProvider>
       <LocaleProvider>
        <ErrorBoundary>
           <QueryClientProvider client={queryClient}>
@@ -114,6 +116,7 @@ export default function RootLayout() {
         </QueryClientProvider>
        </ErrorBoundary>
       </LocaleProvider>
+      </PageInsetsProvider>
     </SafeAreaProvider>
   );
 }

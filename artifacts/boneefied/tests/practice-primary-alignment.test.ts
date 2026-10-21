@@ -14,8 +14,9 @@ test('Start, Resume, and Retry share centered, inset primary styling at every te
     assert.doesNotMatch(button, /shouldReflow/);
     assert.match(button, /color: colors\.primaryForeground, fontWeight: '700'/);
   }
-  assert.match(screen, /primaryContent:\{minHeight:48,borderRadius:12,alignItems:'center',justifyContent:'center',paddingHorizontal:16\}/);
-  assert.match(screen, /reflowRetryText:\{paddingVertical:12,textAlign:'center',flexShrink:1\}/);
+  const compact = screen.replace(/\s/g, '');
+  assert.match(compact, /primaryContent:\{minHeight:48,borderRadius:12,alignItems:'center',justifyContent:'center',paddingHorizontal:16\}/);
+  assert.match(compact, /reflowRetryText:\{paddingVertical:12,textAlign:'center',flexShrink:1\}/);
 });
 
 test('setup and focused practice share card, heading, and CTA dimensions', () => {

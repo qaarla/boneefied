@@ -19,7 +19,7 @@ export default function WordPartScreen() {
   return <Screen>
     <Stack.Screen options={{ title: es ? 'Parte de palabra' : 'Word part' }} />
     {!part || !copy ? <Heading style={{ color: colors.foreground }}>{es ? 'Parte no encontrada' : 'Word part not found'}</Heading> : <>
-      <Text style={{ color: colors.primary }}>{copy.kind}</Text>
+      <Text style={{ textAlign: 'center', color: colors.primary }}>{copy.kind}</Text>
       <Heading style={[styles.title, { color: colors.foreground }]}>{part.form}</Heading>
       <AdaptiveCard style={[styles.card, { borderColor: colors.border, backgroundColor: colors.card }]}>
         <Text style={[styles.meaning, { color: colors.readingForeground }]}>{copy.meaning}</Text>

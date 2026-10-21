@@ -2,7 +2,7 @@ import { OrganicBackground, OrganicSurface } from '@/components/OrganicBackgroun
 import React from 'react';
 import { FlatList, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { PAGE_CONTENT_TOP_GAP, usePageInsets } from '@/context/PageInsets';
 import { useDockClearance } from '@/hooks/useDockClearance';
 import { Heading, Text, TextInput, useTypographyLayout } from '@/components/ScaledText';
 import { content } from '@/content/canonical';
@@ -23,7 +23,7 @@ export default function GlossaryScreen() {
   const colors = useColors();
   const { language, t, module: localizeModule, structure: localizeStructure, definition, number } = useLocale();
   const router = useRouter();
-  const insets = useSafeAreaInsets();
+  const insets = usePageInsets();
   const bottomPadding = useDockClearance();
   const { shouldReflow } = useTypographyLayout();
   const { q } = useLocalSearchParams<{ q?: string }>();
@@ -86,7 +86,7 @@ export default function GlossaryScreen() {
         contentContainerStyle={{ paddingBottom: bottomPadding }}
         ListHeaderComponent={<View style={styles.header}>
           <Heading style={[styles.title, { color: colors.foreground }]}>{t(shouldReflow ? 'glossary.reflowTitle' : 'glossary.title')}</Heading>
-          <Text style={{ color: colors.mutedForeground }}>{t('glossary.introduction')}</Text>
+          <Text style={{ textAlign: 'center', color: colors.mutedForeground }}>{t('glossary.introduction')}</Text>
           <Pressable accessibilityRole="button" onPress={() => router.push({ pathname: '/glossary/word-parts', params: { q: query } })}
             style={[styles.filter, { borderColor: colors.border, backgroundColor: colors.secondary }]}>
             <OrganicSurface radius={12} shift={60} />
@@ -149,7 +149,7 @@ export default function GlossaryScreen() {
 const styles = StyleSheet.create({
   screen: { flex: 1 },
   container: { flex: 1, width: '100%', maxWidth: 720, alignSelf: 'center' },
-  header: { gap: 10, paddingTop: 18, paddingBottom: 8 },
+  header: { gap: 10, paddingTop: PAGE_CONTENT_TOP_GAP, paddingBottom: 8 },
   title: { fontSize: 26, fontWeight: '700' },
   input: { borderWidth: 1, borderRadius: 12, padding: 12, fontSize: 16, minHeight: 44, flexShrink: 0 },
   filters: { flexGrow: 0, flexShrink: 0, minHeight: 44 },

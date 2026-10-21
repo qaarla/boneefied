@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { Platform, ScrollView, StyleSheet, View, type ScrollViewProps } from 'react-native';
 import { useDockClearance } from '@/hooks/useDockClearance';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { PAGE_CONTENT_TOP_GAP, usePageInsets } from '@/context/PageInsets';
 import { useColors } from '@/hooks/useColors';
 import { useTypographyLayout } from '@/components/ScaledText';
 import { KeyboardAwareScrollViewCompat } from '@/components/KeyboardAwareScrollViewCompat';
@@ -46,9 +46,9 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
     else if (scrollRef) scrollRef.current = node;
   }, [scrollRef]);
   const { shouldReflow } = useTypographyLayout();
-  const insets = useSafeAreaInsets();
+  const insets = usePageInsets();
   const bottomPadding = useDockClearance();
-  const content = <View style={[styles.content, { paddingTop: 18, paddingHorizontal: shouldReflow ? 16 : 20, ...(!scroll && { paddingBottom: bottomPadding }) }]}>{children}</View>;
+  const content = <View style={[styles.content, { paddingTop: PAGE_CONTENT_TOP_GAP, paddingHorizontal: shouldReflow ? 16 : 20, ...(!scroll && { paddingBottom: bottomPadding }) }]}>{children}</View>;
   // The top inset belongs outside the scroll view so it cannot scroll under the status bar.
   // Bottom clearance belongs to the scrollable container so the final child can clear the fixed tabs.
   const scrollProps = {

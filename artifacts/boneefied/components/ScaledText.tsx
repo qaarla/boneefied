@@ -133,7 +133,7 @@ export const TextInput = forwardRef<NativeTextInput, TextInputProps>(function Te
 
 // A heading is reading content, not a single-line control. Never truncate it.
 export const Heading = forwardRef<NativeText, ReadingTextProps>(function Heading({ style, ...props }, ref) {
-  return <Text ref={ref} wholeWords {...props} accessibilityRole="header" numberOfLines={undefined} style={[{ fontWeight: '700' }, style]} />;
+  return <Text ref={ref} wholeWords {...props} accessibilityRole="header" numberOfLines={undefined} style={[{ fontWeight: '700', textAlign: 'center' }, style]} />;
 });
 
 // Deliberately preserve the established sans-serif tiny floating label treatment.
