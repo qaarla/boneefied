@@ -1,13 +1,14 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import React, { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
-import type { Attempt, MasteryRecord, MissedItem, PracticeSession, SessionAnswer } from '@/content/model';
-import { applyAttempt, clearMissed as clearMissedState, emptyStudyState, hydrateStudyState, upsertSession, submitSessionAnswer, completeSession } from '@/content/study';
+import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import type { Attempt, PracticeSession, SessionAnswer } from '@/content/model';
+import { applyAttempt, clearMissed as clearMissedState, emptyStudyState, upsertSession, submitSessionAnswer, completeSession } from '@/content/study';
+import { createStudyStorage, initialStoredState, StudyLoadError, type Preferences, type StoredState } from './studyStorage';
 
-const STORAGE_KEY = '@boneefied/study-state-v1';
-export type Preferences = { theme: 'system' | 'light' | 'dark'; textScale: 'small' | 'default' | 'large'; haptics: boolean; defaultCount: number };
-type StoredState = { attempts: Attempt[]; missed: MissedItem[]; mastery: MasteryRecord[]; bookmarks: string[]; sessions: PracticeSession[]; preferences: Preferences };
+export type { Preferences } from './studyStorage';
 type StudyContextValue = StoredState & {
   hydrated: boolean;
+  loadError: StudyLoadError['kind'] | null;
+  retryLoad: () => void;
   recordAnswer: (attempt: Omit<Attempt, 'id' | 'createdAt'>) => void;
   clearMissed: (questionId: string) => void;
   bookmarks: string[];
@@ -25,39 +26,41 @@ type StudyContextValue = StoredState & {
 const StudyContext = createContext<StudyContextValue | null>(null);
 
 export function StudyProvider({ children }: { children: React.ReactNode }) {
-  const [state, setState] = useState<StoredState>({ ...emptyStudyState, bookmarks: [], sessions: [], preferences: { theme: 'system', textScale: 'default', haptics: true, defaultCount: 5 } });
-  const [hydrated, setHydrated] = useState(false);
+  const [state, setState] = useState<StoredState>(initialStoredState);
+  const [loading, setLoading] = useState<{ status: 'loading' | 'ready' | 'error'; error: StudyLoadError['kind'] | null }>({ status: 'loading', error: null });
+  const hydrated = loading.status === 'ready';
   const [saveError, setSaveError] = useState<string | null>(null);
-  const writeQueue = useRef<Promise<void>>(Promise.resolve());
+  const [storage] = useState(() => createStudyStorage(AsyncStorage));
 
-  useEffect(() => {
-    AsyncStorage.getItem(STORAGE_KEY).then((raw) => {
-      if (raw) {
-        try { const parsed = JSON.parse(raw) as Partial<StoredState>; setState({ ...hydrateStudyState(raw), bookmarks: Array.isArray(parsed.bookmarks) ? parsed.bookmarks : [], sessions: Array.isArray(parsed.sessions) ? parsed.sessions : [], preferences: { theme: 'system', textScale: 'default', haptics: true, defaultCount: 5, ...(parsed.preferences ?? {}) } }); } catch { /* hydration helper handles malformed study state */ }
-      }
-      setHydrated(true);
-    }).catch(() => setHydrated(true));
-  }, []);
+  const retryLoad = useCallback(() => {
+    setLoading({ status: 'loading', error: null });
+    void storage.load().then(loaded => {
+      setState(loaded);
+      setLoading({ status: 'ready', error: null });
+    }).catch(error => {
+      setLoading({ status: 'error', error: error instanceof StudyLoadError ? error.kind : 'read' });
+    });
+  }, [storage]);
+  useEffect(() => { retryLoad(); }, [retryLoad]);
   useEffect(() => {
     if (hydrated) {
-      const snapshot = JSON.stringify(state);
-      writeQueue.current = writeQueue.current.catch(() => undefined)
-        .then(() => AsyncStorage.setItem(STORAGE_KEY, snapshot))
-        .then(() => setSaveError(null))
+      void storage.save(state)
+        .then(saved => { if (saved) setSaveError(null); })
         .catch(() => setSaveError('Local save failed. Retry to protect your offline progress.'));
     }
-  }, [hydrated, state]);
+  }, [hydrated, state, storage]);
   const retrySave = () => {
-    const snapshot = JSON.stringify(state);
-    writeQueue.current = writeQueue.current.catch(() => undefined)
-      .then(() => AsyncStorage.setItem(STORAGE_KEY, snapshot))
-      .then(() => setSaveError(null))
+    if (!hydrated) return;
+    void storage.save(state)
+      .then(saved => { if (saved) setSaveError(null); })
       .catch(() => setSaveError('Local save failed again.'));
   };
 
   const value = useMemo<StudyContextValue>(() => ({
     ...state,
     hydrated,
+    loadError: loading.error,
+    retryLoad,
     recordAnswer: (input) => setState((current) => {
       const now = new Date().toISOString();
       const attempt: Attempt = { ...input, id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, createdAt: now };
@@ -78,7 +81,7 @@ export function StudyProvider({ children }: { children: React.ReactNode }) {
     updatePreferences: (patch) => setState((current) => ({ ...current, preferences: { ...current.preferences, ...patch } })),
     saveError,
     retrySave,
-  }), [hydrated, state, saveError]);
+  }), [hydrated, state, saveError, loading.error, retryLoad]);
   return <StudyContext.Provider value={value}>{children}</StudyContext.Provider>;
 }
 

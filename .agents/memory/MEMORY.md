@@ -17,6 +17,7 @@
 - [iOS text scaling boundary](ios-text-scaling-boundary.md) — native Text scales fonts and line heights; custom native header title sizes need separate treatment.
 - [Anatomy diagram localization](anatomy-diagram-localization.md) — translated metadata cannot remove English text baked into anatomy images; resolve visibly and rights-safely.
 - [Practice locale draft preservation](practice-locale-drafts.md) — tab navigation can lose unsubmitted selections; persist raw drafts separately from canonical scoring.
+- [Study storage recovery](study-storage-recovery.md) — unreadable is not missing; preserve legacy records and distinguish retry-load from retry-save.
 - [Anatomical word meanings](anatomical-word-meanings.md) — define adjective forms in plain language, without treating search vocabulary as valid identification answers.
 - [Marker overlap evidence](marker-overlap-evidence.md) — verify painted circles and actual image contain geometry, not broad DOM rectangles, before moving anatomy markers.
 - [Boneefied atlas standard](boneefied-atlas-standard.md) — uniform original 2D anatomy pack; approved source hierarchy and commercial-reuse boundaries.

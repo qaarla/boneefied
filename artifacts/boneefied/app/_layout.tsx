@@ -16,6 +16,7 @@ import { devPreviewFontScale, TypographyProvider } from '@/components/ScaledText
 import { useColors } from '@/hooks/useColors';
 import { APP_FONTS } from '@/context/typeface';
 import { LocaleProvider, useLocale } from '@/locales/useLocale';
+import { StudyStorageRecovery } from '@/components/StudyStorageRecovery';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -23,7 +24,7 @@ SplashScreen.preventAutoHideAsync();
 const queryClient = new QueryClient();
 
 function RootLayoutNav() {
-  const { hydrated, preferences } = useStudy();
+  const { hydrated, preferences, loadError, retryLoad } = useStudy();
   const { hydrated: localeHydrated, t } = useLocale();
   const colors = useColors();
   const systemScheme = useColorScheme();
@@ -59,10 +60,11 @@ function RootLayoutNav() {
     }
   }, [hydrated, preferences.theme]);
   useEffect(() => {
-    if (hydrated && localeHydrated) SplashScreen.hideAsync();
-  }, [hydrated, localeHydrated]);
+    if ((hydrated || loadError) && localeHydrated) SplashScreen.hideAsync();
+  }, [hydrated, loadError, localeHydrated]);
 
-  if (!hydrated || !localeHydrated) return null;
+  if (!localeHydrated) return null;
+  if (!hydrated) return <StudyStorageRecovery error={loadError} onRetry={retryLoad} />;
 
   return (
     <ThemeProvider value={navigationTheme}>
