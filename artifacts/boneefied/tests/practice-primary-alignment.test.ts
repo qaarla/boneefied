@@ -4,6 +4,16 @@ import test from 'node:test';
 
 const screen = readFileSync(new URL('../app/(tabs)/practice.tsx', import.meta.url), 'utf8');
 
+test('typed recall and image identification have distinct bilingual accessible names while graded feedback stays unchanged', () => {
+  const input = screen.match(/<TextInput testID="typed-answer"[\s\S]*?returnKeyType="done" \/>/)?.[0];
+  assert.ok(input);
+  assert.match(input, /locale\.t\(question\.taskType === 'typed-recall' \? 'practice\.typedRecallAnswer' : 'practice\.imageIdentificationAnswer'\)/);
+  assert.match(input, /disabled \? locale\.t\(scoreAnswer\(value\) \? 'practice\.correctTypedAnswer' : 'practice\.incorrectTypedAnswer'\)/);
+  const messages = readFileSync(new URL('../locales/es/ui-practice-progress.ts', import.meta.url), 'utf8');
+  assert.match(messages, /'practice\.typedRecallAnswer': \{ en: 'Typed recall answer', es: 'Respuesta escrita de memoria' \}/);
+  assert.match(messages, /'practice\.imageIdentificationAnswer': \{ en: 'Image identification answer', es: 'Respuesta de identificación por imagen' \}/);
+});
+
 test('Start, Resume, and Retry share centered, inset primary styling at every text size', () => {
   const buttons = [...screen.matchAll(/<AdaptiveButton\b[\s\S]*?<\/AdaptiveButton>/g)].map((match) => match[0]);
   for (const label of ['practice.start', 'practice.resumeSavedSession', 'practice.retryModule']) {

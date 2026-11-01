@@ -54,6 +54,7 @@ const practiceProgressUi = {
   'practice.hotspotInstruction': { en: 'Tap the marked structure.', es: 'Toca la estructura señalada.' },
   'practice.correctTypedAnswer': { en: 'Correct typed answer', es: 'Respuesta escrita correcta' },
   'practice.incorrectTypedAnswer': { en: 'Incorrect typed answer', es: 'Respuesta escrita incorrecta' },
+  'practice.typedRecallAnswer': { en: 'Typed recall answer', es: 'Respuesta escrita de memoria' },
   'practice.imageIdentificationAnswer': { en: 'Image identification answer', es: 'Respuesta de identificación por imagen' },
   'practice.answerPlaceholder': { en: 'Type your answer', es: 'Escribe tu respuesta' },
   'practice.correctPosition': { en: ', correct position', es: ', posición correcta' },
