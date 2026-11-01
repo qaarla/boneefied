@@ -14,7 +14,9 @@ The existing development API also serves the exact file at
 This route is disabled in production and works only while the development API
 is running; anyone with the development URL may be able to download the bundle.
 
-The October 13 production release is version 1.0.0, Android version code 4.
+The current staged release is version 1.0.0, Android version code 6.
+The previous version-code-4 bundle is preserved as
+`boneefied-production-previous-f3eef36812a4.aab`.
 The previous October 9 bundle is preserved as
 `boneefied-production-oct09-b8469a19.aab`.
 It has not been submitted to Google Play.

@@ -1,26 +1,25 @@
 {
   "file": "boneefied-production.aab",
-  "buildId": "504db4f4-c3ed-4b64-bfcc-9b829ff858f8",
+  "buildId": "16ddb923-5576-47fc-b2e0-86b74136245b",
   "buildStatus": "FINISHED",
   "profile": "production",
   "distribution": "STORE",
-  "sourceRevision": "7484bc88a3992d3ebe117c197ca9bb00623de9e5",
-  "sourceArtifactUrl": "https://expo.dev/artifacts/eas/PdmZG6oq46LTW1Cgveuaz4or-EIMahLtJUR_Aj-mhIQ.aab",
+  "sourceRevision": "ce78a8871b75ffcb24ee7ae1b61fd596ccbfbd16",
+  "sourceArtifactUrl": "https://expo.dev/artifacts/eas/7ZtM_FmPLuYSLAXiRc9nlgY3-sTHWkkTS5mOAAz3bG0.aab",
   "package": "com.qaarla.boneefied",
   "version": "1.0.0",
-  "versionCode": 4,
-  "sizeBytes": 120439290,
-  "sha256": "f3eef36812a4f73292d801acbbd8f1110d8342735f5c9bea1d2a4f990e587f71",
-  "signingCertificateSha256": "915DDD6D93E8001698141C980F9D894347FA683727A4FE96B2D2B2B37A3D0859",
+  "versionCode": 6,
+  "sizeBytes": 121212550,
+  "sha256": "d3484d472ef3da4a2586c53855d7db92014c895ff1791adba824b62e76d1d403",
   "verification": {
     "androidAppBundleStructure": "PASS",
     "zipIntegrity": "PASS",
-    "embeddedPackageAndVersion": "PASS",
-    "cryptographicSignature": "PASS (jarsigner: jar verified; self-signed certificate and missing timestamp warnings)",
+    "embeddedPackageAndVersion": "NOT RECHECKED locally; version confirmed by EAS",
+    "cryptographicSignature": "NOT RECHECKED locally; artifact preserved byte-for-byte",
     "byteForByteMatchWithFinishedEasArtifact": "PASS",
-    "existingAndroidSigningCertificateMatch": "PASS",
+    "existingAndroidSigningCertificateMatch": "NOT RECHECKED locally; existing EAS signing configuration retained",
     "publicApiDownload": "PASS (HTTP 200, no redirects, attachment, application/octet-stream)",
     "publicDownloadSizeAndSha256Match": "PASS",
-    "publicDownloadZipIntegrity": "PASS (1631 archive entries)"
+    "publicDownloadZipIntegrity": "PASS (all entries CRC-checked)"
   }
 }
