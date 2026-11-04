@@ -37,3 +37,4 @@
 - [Atlas image corners](atlas-image-corner-intent.md) — gently round the actual raster surface, not only its outer card; keep annotations outside the mask.
 - [Persistent study dock](persistent-dock-intent.md) — four tabs, one-level active-tab Up, preserved section state; dock-only reference styling in Boneefied colors.
 - [Page heading placement](page-heading-intent.md) — centered headings/subtitles, no module-code eyebrow, and window-safe clearance below the Dynamic Island.
+- [Support email scope](support-email-intent.md) — help@ branding is for manual support replies, not account-email or autoresponder expansion.
