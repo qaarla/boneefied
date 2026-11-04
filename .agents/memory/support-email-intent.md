@@ -19,7 +19,9 @@ desktop, mobile landscape, and mobile portrait, using the app's anatomical
 pattern rather than a plain outer background.
 
 **Why:** The owner explicitly requested all three layouts and the app's own
-pattern. They identified the reference example as belonging to Naama.
+pattern. They identified the first reference as Naama, then confirmed the
+pattern-behind-content approach with Saliee desktop and portrait examples:
+Boneefied's own anatomical fibers should carry over into its correspondence.
 
 **How to apply:** The Naama screenshot clarified that the pattern belongs behind
 the email content itself, not only around an opaque cream card. Reuse Boneefied's
