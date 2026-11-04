@@ -168,3 +168,45 @@ mtime_ms = 1792120935759
 storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/54f226ee-175e-43e3-8a1c-4622aeb239ab/bd1580f8-21f2-44ad-9531-bc82257fff6e"
 storage_version_token = "1792121280157397"
 content_type = "image/png"
+
+[[outputs]]
+id = "uuQDXW6WVkVne_ncfoHyH"
+uri = "file://generated-artifacts/email-branding/support-reply-desktop.jpg"
+type = "image"
+title = "Boneefied support email — Desktop"
+description = "Desktop layout with Boneefied’s anatomical-fiber background behind the sample reply, warm light text, and gold accents."
+logical_id = "fa03cf86-4996-4406-b66c-796b8abaca32"
+content_hash = "sha256:4492621d89ded8ee8ec2e7444f8d5d07dc056c7a604bb1df7de9509066d913e8"
+size = 125515
+mtime_ms = 1793773181290
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/fa03cf86-4996-4406-b66c-796b8abaca32/7d13ad13-e437-4ecb-b508-ee3e8cd4b39b"
+storage_version_token = "1793773451119688"
+content_type = "image/jpeg"
+
+[[outputs]]
+id = "qF95bS0ZTqxJL-AKruFP7"
+uri = "file://generated-artifacts/email-branding/support-reply-phone.jpg"
+type = "image"
+title = "Boneefied support email — Mobile portrait"
+description = "Portrait phone preview of the same branded support reply. Sample wording only; no email was sent."
+logical_id = "0c28a66d-089b-4f4a-9e58-611629022f76"
+content_hash = "sha256:6f7ebf119e83f926e21ed25bf4924baa740ab3876cac0e1f5205f9c004a66127"
+size = 58331
+mtime_ms = 1793773178066
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/0c28a66d-089b-4f4a-9e58-611629022f76/21ebc9eb-7de7-4165-b47b-6c769bb7ba07"
+storage_version_token = "1793773451640268"
+content_type = "image/jpeg"
+
+[[outputs]]
+id = "JGWi0KuqzQoT8EEUdvNM8"
+uri = "file://generated-artifacts/email-branding/support-reply-landscape.jpg"
+type = "image"
+title = "Boneefied support email — Mobile landscape"
+description = "Landscape phone viewport showing the top of the email. The remaining reply continues below and scrolls normally."
+logical_id = "4e7b161e-267e-46dd-87d3-5cfc73848b32"
+content_hash = "sha256:1fdc0f3c8f708a0d26f2c6977d01ce8e70c8306857bb7a754c97418103c8ef8d"
+size = 52943
+mtime_ms = 1793773179682
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/4e7b161e-267e-46dd-87d3-5cfc73848b32/5f7e49e1-8b2e-4fb4-a571-269b1c6ad662"
+storage_version_token = "1793773452155083"
+content_type = "image/jpeg"
