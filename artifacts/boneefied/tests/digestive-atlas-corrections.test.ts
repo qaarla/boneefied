@@ -26,7 +26,7 @@ test('digestive publication union is ten digestive and two shared context diagra
     assert.match(a.attributionLicense, /Original Boneefied/);
     assert.equal(a.imageAspectRatio, 1.45);
     const bytes = readFileSync(new URL(a.localAssetPath!, root));
-    assert.deepEqual([bytes.readUInt32BE(16), bytes.readUInt32BE(20)], [1450, 1000]);
+    assert.deepEqual([bytes.readUInt32BE(16), bytes.readUInt32BE(20)], [2900, 2000]);
   }
 });
 

@@ -44,7 +44,7 @@ all.forEach((p, i) => {
   const base = `bvis06-${String(i + 1).padStart(2, '0')}-${p.key}`;
   const svgRel = `${outRel}/${base}.svg`, pngRel = `${outRel}/${base}.png`;
   writeFileSync(join(root, svgRel), S.svg());
-  execFileSync('convert', ['-density', '96', '-background', '#ECEAE2', join(root, svgRel), '-resize', `${W}x${H}!`, join(root, pngRel)], { stdio: 'ignore' });
+  execFileSync('convert', ['-density', '192', '-background', '#ECEAE2', join(root, svgRel), '-resize', `${W * 2}x${H * 2}!`, '-strip', join(root, pngRel)], { stdio: 'ignore' });
   const idp = `${tmpdir()}/b6-id-${p.key}`;
   writeFileSync(`${idp}.svg`, S.idsvg());
   execFileSync('convert', ['-density', '96', `${idp}.svg`, '-filter', 'point', '-resize', `${W}x${H}!`, `${idp}.png`]);

@@ -1,0 +1,229 @@
+{
+  "method": "Exact publisher thumbnail pixel match, then editable vector group recovery and registered high-resolution export. No tracing or anatomical redraw.",
+  "records": [
+    {
+      "path": "assets/images/anatomy/servier-elbow-joint.png",
+      "page": "https://smart.servier.com/smart_image/joint-overview/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/articulation_02.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Bones.pptx",
+      "comparisonMse": 0.0014718044341919775,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 438,
+        "height": 465,
+        "sha256": "de06a548827c0023ab991c899914bb6a3db726fffd45c327af208f98bb05f715"
+      },
+      "result": "upgraded-exact-vector-source",
+      "sourceGroup": "slide18-group0.svg",
+      "registration": {
+        "contentBox": [
+          438,
+          465,
+          0,
+          0
+        ],
+        "scale": 6
+      },
+      "after": {
+        "width": 2628,
+        "height": 2790,
+        "sha256": "fd7563ca5dc5139386231ff713a0d6e22978330467c320cfefd056f396b6e1d3"
+      }
+    },
+    {
+      "path": "assets/images/anatomy/servier-heart-anterior.png",
+      "page": "https://smart.servier.com/smart_image/heart/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/coeur.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Heart-physiology.pptx",
+      "comparisonMse": 0.0013700756119441242,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 389,
+        "height": 510,
+        "sha256": "81dd8bf54c02b3d160de0db89a7e52de44238265d158225f7b95e524634c7622"
+      },
+      "result": "upgraded-exact-vector-source",
+      "sourceGroup": "slide4-group1.svg",
+      "registration": {
+        "contentBox": [
+          389,
+          510,
+          0,
+          0
+        ],
+        "scale": 5
+      },
+      "after": {
+        "width": 1945,
+        "height": 2550,
+        "sha256": "75497cb12f1c33f373131ab7de57c15bf7c76d4900eaa6e4132b0d5c57bc0ca3"
+      }
+    },
+    {
+      "path": "assets/images/anatomy/servier-stomach-section.png",
+      "page": "https://smart.servier.com/smart_image/stomach/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/coupe_estomac.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Digestive-system.pptx",
+      "comparisonMse": 0.011610888119953864,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 307,
+        "height": 274,
+        "sha256": "bb93ca38de8c60681abb93a79b422f412ff45522b086395bbc5dcc0a3dec6fb2"
+      },
+      "result": "no-faithful-vector-match"
+    },
+    {
+      "path": "assets/images/anatomy/servier-kidney.png",
+      "page": "https://smart.servier.com/smart_image/kidney/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/rein_01.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Urinary-system.pptx",
+      "comparisonMse": 0.0007345777265154428,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 256,
+        "height": 389,
+        "sha256": "c6be1fdfddb42c279bd71e5b0e3a2e267c3691c58cf9aa716cd9683b33549200"
+      },
+      "result": "upgraded-exact-vector-source",
+      "sourceGroup": "slide5-group0.svg",
+      "registration": {
+        "contentBox": [
+          256,
+          389,
+          0,
+          0
+        ],
+        "scale": 7
+      },
+      "after": {
+        "width": 1792,
+        "height": 2723,
+        "sha256": "8ddd4a97fcddc8bdbf9d8d41b828e9b49ec1b877dfb8d1fe11dd42e8434ead87"
+      }
+    },
+    {
+      "path": "assets/images/anatomy/servier-thyroid-anterior.png",
+      "page": "https://smart.servier.com/smart_image/thyroid/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/thyroide_face.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Endocrinology.pptx",
+      "comparisonMse": 0.0005098635140330642,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 286,
+        "height": 270,
+        "sha256": "5898d9297c7d9b0517341d26bb3a9c4edafc54304da4237379c4ebb7f3d0463d"
+      },
+      "result": "upgraded-exact-vector-source",
+      "sourceGroup": "slide5-group0.svg",
+      "registration": {
+        "contentBox": [
+          286,
+          270,
+          0,
+          0
+        ],
+        "scale": 9
+      },
+      "after": {
+        "width": 2574,
+        "height": 2430,
+        "sha256": "6fc3daa8851a9e262ad5462f3301693db7e5462825d6c6065008b71ec987c498"
+      }
+    },
+    {
+      "path": "assets/images/anatomy/servier-ovary.png",
+      "page": "https://smart.servier.com/smart_image/ovary/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/ovaire_1.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Reproduction.pptx",
+      "comparisonMse": 0.0005256907599641164,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 952,
+        "height": 527,
+        "sha256": "00d5c0c46e338c219aa5c7eceb93c1abe6d3480a4475c9f58efdeba06785e7ef"
+      },
+      "result": "upgraded-exact-vector-source",
+      "sourceGroup": "slide6-group0.svg",
+      "registration": {
+        "contentBox": [
+          952,
+          527,
+          0,
+          0
+        ],
+        "scale": 3
+      },
+      "after": {
+        "width": 2856,
+        "height": 1581,
+        "sha256": "abdd58ffd593839a4509fd4db5ef742ba66f261f677a2f02faea9dca33d04c1f"
+      }
+    },
+    {
+      "path": "assets/images/anatomy/servier-uterus.png",
+      "page": "https://smart.servier.com/smart_image/uterus/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/uterus_1.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Reproduction.pptx",
+      "comparisonMse": 0.0006095809304113802,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 601,
+        "height": 449,
+        "sha256": "12bb9954434ec5e233fcc90fa8fe2b9181fbcc1224f2ce9a9a36b0be4352ca9a"
+      },
+      "result": "upgraded-exact-vector-source",
+      "sourceGroup": "slide4-group0.svg",
+      "registration": {
+        "contentBox": [
+          601,
+          449,
+          0,
+          0
+        ],
+        "scale": 4
+      },
+      "after": {
+        "width": 2404,
+        "height": 1796,
+        "sha256": "694301f8aca9f32b0541dc117733c18a0a14a645544cb003e067c1c80733faf5"
+      }
+    },
+    {
+      "path": "assets/images/anatomy/servier-male-reproductive.png",
+      "result": "no-exact-publisher-source-located"
+    },
+    {
+      "path": "assets/images/anatomy/servier-lymph-node-section.png",
+      "page": "https://smart.servier.com/smart_image/smart-lymph-node/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/Ganglion_lympha_2.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Lymphatic-system.pptx",
+      "comparisonMse": 0.06548316416762782,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 573,
+        "height": 470,
+        "sha256": "3bbb446c2f32ef06510dadf02f0c0f5635d6157e6399d43ec07b50c95f4cfed8"
+      },
+      "result": "no-faithful-vector-match"
+    },
+    {
+      "path": "assets/images/anatomy/servier-respiratory-system.png",
+      "result": "already-high-resolution"
+    },
+    {
+      "path": "assets/images/anatomy/servier-pelvis.png",
+      "page": "https://smart.servier.com/smart_image/pelvis-overview/",
+      "thumbnail": "https://smart.servier.com/wp-content/uploads/2016/10/bassin_05.png",
+      "deck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Bone-fractures.pptx",
+      "comparisonMse": 0.013300434448289121,
+      "license": "Servier Medical Art, CC BY 4.0; existing attribution retained.",
+      "before": {
+        "width": 256,
+        "height": 294,
+        "sha256": "56b526821c7eb4e0f3422ce525bab00a910e3b05a363e21382510f594df29a8b"
+      },
+      "result": "no-faithful-vector-match"
+    }
+  ]
+}

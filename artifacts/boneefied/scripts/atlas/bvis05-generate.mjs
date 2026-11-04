@@ -51,7 +51,7 @@ all.forEach((p, i) => {
   const svgRel = `${outRel}/${base}.svg`, pngRel = `${outRel}/${base}.png`;
   if (!metadataOnly) {
     writeFileSync(join(root, svgRel), S.svg());
-    execFileSync('convert', ['-density', '96', '-background', '#ECEAE2', join(root, svgRel), '-resize', `${W}x${H}!`, join(root, pngRel)], { stdio: 'ignore' });
+    execFileSync('convert', ['-density', '192', '-background', '#ECEAE2', join(root, svgRel), '-resize', `${W * 2}x${H * 2}!`, '-strip', join(root, pngRel)], { stdio: 'ignore' });
   }
   const idp = `${tmpdir()}/b5-id-${p.key}`;
   writeFileSync(`${idp}.svg`, S.idsvg());

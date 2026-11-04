@@ -17,13 +17,13 @@ const prov = JSON.parse(readFileSync(`${dir}assets/images/anatomy/muscular-atlas
 const pngSize = (p: string) => { const b = readFileSync(p); return [b.readUInt32BE(16), b.readUInt32BE(20)]; };
 const atlasQs = () => content.questions.filter((q) => q.id.startsWith('q-muscular-atlas-'));
 
-test('20 plates: 9 replacements keep IDs, 11 additions; PNG is 1450x1000 and hashes match', () => {
+test('20 plates: 9 replacements keep IDs, 11 additions; PNG is 2900x2000 and hashes match', () => {
   assert.equal(muscularPlates.length, 20);
   assert.equal(MUSCULAR_REPLACED_IDS.length, 9);
   assert.equal(prov.length, 20);
   for (const p of prov) {
     const [w, h] = pngSize(`${dir}${p.pngPath}`);
-    assert.deepEqual([w, h], [1450, 1000], p.id);
+    assert.deepEqual([w, h], [2900, 2000], p.id);
     assert.equal(createHash('sha256').update(readFileSync(`${dir}${p.pngPath}`)).digest('hex'), p.sha256.png);
     assert.equal(createHash('sha256').update(readFileSync(`${dir}${p.svgPath}`)).digest('hex'), p.sha256.svg);
     assert.ok(p.featureAnchorMapping.length > 0);

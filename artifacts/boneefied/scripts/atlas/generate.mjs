@@ -225,7 +225,7 @@ plates.forEach((p, i) => {
   const svgText = header(p.title[0], p.desc[0], p.svg());
   const svgRel = `assets/images/anatomy/atlas/${p.file}.svg`, pngRel = `assets/images/anatomy/atlas/${p.file}.png`;
   writeFileSync(join(root, svgRel), svgText);
-  execFileSync('convert', ['-density', '96', '-background', C.paper, join(root, svgRel), '-resize', `${W}x${H}!`, join(root, pngRel)], { stdio: 'ignore' });
+  execFileSync('convert', ['-density', '192', '-background', C.paper, join(root, svgRel), '-resize', `${W * 2}x${H * 2}!`, '-strip', join(root, pngRel)], { stdio: 'ignore' });
   const id = `asset-atlas-${p.key}`;
   const labels = p.labels.map((l) => ({ ...l, en: NAMES[l.structureId][0], es: NAMES[l.structureId][1] }));
   prov.push({

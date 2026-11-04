@@ -3,6 +3,20 @@ name: Boneefied atlas standard
 description: User requirements for the reusable anatomy visual language and rights-safe extensions.
 ---
 
+## Two-press zoom quality
+
+The user wants all anatomy pictures to stay reasonably sharp after pressing
+Zoom in twice (the existing 2× zoom), with only slight image updates rather
+than an atlas redesign.
+
+**Why:** An iPhone user reported visibly pixelated illustrations after a single
+press; the owner explicitly asked to improve all pictures for two presses.
+
+**How to apply:** Use genuine vector masters or authentic higher-resolution
+originals while preserving depicted anatomy and marker registration. Be explicit
+about legacy images that remain source-limited; do not present enlarged
+thumbnails as recovered detail or browser checks as physical-iPhone proof.
+
 Boneefied should look like a coherent college anatomy atlas, not a collage of unrelated internet images. Use flat/matte, restrained, clean medical illustrations with simple anatomical forms, consistent line weight, low-saturation system colors, orientation cues, margins, labels, hotspots, backgrounds, and captions. Each instructional plate has one uncluttered learning purpose. Reuse one base illustration for Learn, Recall, and image questions whenever practical.
 
 Keep the teaching scope at introductory college anatomy: “minimum stuff, and a little extra,” with visuals “inside the questions.” “Let’s just keep it 2D.”

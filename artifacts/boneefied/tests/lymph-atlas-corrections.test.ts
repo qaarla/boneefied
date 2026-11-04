@@ -26,7 +26,7 @@ test('published lymphatic lesson, glossary and question union is six plates and 
     assert.equal(a.imageAspectRatio, 1.45);
     assert.match(a.attributionLicense, /Original Boneefied/);
     const png = readFileSync(new URL(a.localAssetPath!, root));
-    assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20)], [1450, 1000]);
+    assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20)], [2900, 2000]);
   }
 });
 test('only three justified anchor repairs preserve canonical identities, radii and idempotency', () => {

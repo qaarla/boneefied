@@ -11,14 +11,18 @@
       "svgPath": "assets/images/anatomy/foundations-corrections/original-mitosis-stages.svg",
       "pngPath": "assets/images/anatomy/original-mitosis-stages.png",
       "svgSha256": "4a81756c300ef063bc891b9ecad45e57c432f0da8f1b7c55f4f50688fc89164f",
-      "pngSha256": "6d36af3f24d010dde5f70aa3f413e0a9653116fed578517853b53edf49f7d42a"
+      "pngSha256": "1725559acbfb5a966a85eacab2c6a21b49f583d407f07674a2320bd58181a7ec"
     },
     {
       "id": "asset-original-body-cavities",
       "svgPath": "assets/images/anatomy/foundations-corrections/original-body-cavities.svg",
       "pngPath": "assets/images/anatomy/original-body-cavities.png",
       "svgSha256": "a5414bc9cdff9b7b63dc59578fb75ea0d4156419947150737196ba081e314e70",
-      "pngSha256": "b423fe932bf91d77f0f5f4f982bda8a4581864c6a64eb3b9216a1deeca5df0bb"
+      "pngSha256": "5b4afeb3983544439c96c82d6502ffb86dad3daf3415c13def57e07dd7959eb8"
     }
-  ]
+  ],
+  "rasterExport": {
+    "scale": 2,
+    "method": "Rendered directly from unchanged SVG masters; no raster upscaling."
+  }
 }

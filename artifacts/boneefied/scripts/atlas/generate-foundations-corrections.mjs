@@ -73,7 +73,7 @@ for (const [id, stem, master] of [
   const svgPath = path.join(out, stem + '.svg');
   const pngPath = path.join(root, 'assets/images/anatomy', stem + '.png');
   writeFileSync(svgPath, master + '\n');
-  execFileSync('convert', ['-background', C.bg, svgPath, '-strip', pngPath], { stdio: 'pipe' });
+  execFileSync('convert', ['-density', '192', '-background', C.bg, svgPath, '-strip', pngPath], { stdio: 'pipe' });
   records.push({ id, svgPath: path.relative(root, svgPath), pngPath: path.relative(root, pngPath),
     svgSha256: createHash('sha256').update(readFileSync(svgPath)).digest('hex'),
     pngSha256: createHash('sha256').update(readFileSync(pngPath)).digest('hex') });

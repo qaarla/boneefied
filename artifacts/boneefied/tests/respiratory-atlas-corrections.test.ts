@@ -25,7 +25,7 @@ test('respiratory union retains seven original diagrams, real histology and all 
     assert.equal(a.imageAspectRatio, 1.45);
     assert.match(a.attributionLicense, /Original Boneefied/);
     const bytes = readFileSync(new URL(a.localAssetPath!, root));
-    assert.deepEqual([bytes.readUInt32BE(16), bytes.readUInt32BE(20)], [1450, 1000]);
+    assert.deepEqual([bytes.readUInt32BE(16), bytes.readUInt32BE(20)], [2900, 2000]);
   }
   const specimen = assets.find(a => a.id === 'asset-commons-alveolar-sac')!;
   assert.equal(specimen.assetType, 'histology');

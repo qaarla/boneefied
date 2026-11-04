@@ -25,8 +25,8 @@ test('BVIS05 local originals have honest provenance, canonical targets and usefu
     const svg = fs.readFileSync(path.join(root, p.svgPath));
     assert.ok(!/<text\b|<image\b|<filter\b|gradient/i.test(svg.toString()), p.id);
     const png = fs.readFileSync(path.join(root, p.pngPath));
-    assert.equal(png.readUInt32BE(16), 1450);
-    assert.equal(png.readUInt32BE(20), 1000);
+    assert.equal(png.readUInt32BE(16), 2900);
+    assert.equal(png.readUInt32BE(20), 2000);
     const r = proof.plates.find((r: { id: string }) => r.id === p.id)!;
     assert.equal(createHash('sha256').update(png).digest('hex'), r.sha256.png, p.id);
     assert.equal(createHash('sha256').update(svg).digest('hex'), r.sha256.svg, p.id);

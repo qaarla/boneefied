@@ -1,0 +1,511 @@
+{
+  "policy": "Exact existing source images only; retain crops and attribution. No photographic synthesis or raster upscaling.",
+  "records": [
+    {
+      "id": "asset-vertebral-column",
+      "path": "assets/images/anatomy/gray111-vertebral-column.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gray_111_-_Vertebral_column.png",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gray_111_-_Vertebral_column.png",
+      "license": "Public domain",
+      "before": {
+        "width": 233,
+        "height": 800,
+        "sha256": "422a58679d55bae60111c145469dcccc9cfdf536035b93e5d0c8c727a2eeacbc"
+      },
+      "upstream": {
+        "width": 233,
+        "height": 800
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 233,
+        "height": 800,
+        "sha256": "422a58679d55bae60111c145469dcccc9cfdf536035b93e5d0c8c727a2eeacbc"
+      }
+    },
+    {
+      "id": "asset-gray491-heart-posterior",
+      "path": "assets/images/anatomy/gray491-heart-posterior.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gray491.png",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Gray491.png",
+      "license": "Public domain",
+      "before": {
+        "width": 500,
+        "height": 438,
+        "sha256": "ac2056904a62eeca013567d2712156addee246c5e15d3a9236753af559dfda45"
+      },
+      "upstream": {
+        "width": 500,
+        "height": 438
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 500,
+        "height": 438,
+        "sha256": "ac2056904a62eeca013567d2712156addee246c5e15d3a9236753af559dfda45"
+      }
+    },
+    {
+      "id": "asset-gray1121-posterior-abdominal-wall",
+      "path": "assets/images/anatomy/gray1121-posterior-abdominal-wall.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gray1121.png",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Gray1121.png",
+      "license": "Public domain",
+      "before": {
+        "width": 538,
+        "height": 600,
+        "sha256": "adef5c91ba1662ebe4a6a66c8a942f0d1d888599444eee8644bfeed8cdd4ad40"
+      },
+      "upstream": {
+        "width": 538,
+        "height": 600
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 538,
+        "height": 600,
+        "sha256": "adef5c91ba1662ebe4a6a66c8a942f0d1d888599444eee8644bfeed8cdd4ad40"
+      }
+    },
+    {
+      "id": "asset-commons-kidney-cortex-human",
+      "path": "assets/images/anatomy/commons-kidney-cortex-human.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Kidney_cortex_%28947_21%29_Human.jpg",
+      "license": "CC BY-SA 3.0",
+      "before": {
+        "width": 3750,
+        "height": 2399,
+        "sha256": "3a4333edc68cfc40e901ab4df0e30c1ea889134fdb62675e13411a85e1b74627"
+      },
+      "upstream": {
+        "width": 3750,
+        "height": 2399
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 3750,
+        "height": 2399,
+        "sha256": "3a4333edc68cfc40e901ab4df0e30c1ea889134fdb62675e13411a85e1b74627"
+      }
+    },
+    {
+      "id": "asset-commons-alveolar-sac",
+      "path": "assets/images/anatomy/commons-alveolar-sac.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Alveolar_sac.JPG",
+      "license": "CC BY-SA 4.0",
+      "before": {
+        "width": 2816,
+        "height": 2112,
+        "sha256": "35f8a56951bf2a6747c45388fc970c22652efd9f7de2b1482d830abd7f799a84"
+      },
+      "upstream": {
+        "width": 2816,
+        "height": 2112
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 2816,
+        "height": 2112,
+        "sha256": "35f8a56951bf2a6747c45388fc970c22652efd9f7de2b1482d830abd7f799a84"
+      }
+    },
+    {
+      "id": "asset-commons-axial-skeleton-blank",
+      "path": "assets/images/anatomy/commons-axial-skeleton-blank.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Axial_skeleton_diagram_blank.svg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Axial_skeleton_diagram_blank.svg",
+      "license": "Public domain",
+      "before": {
+        "width": 960,
+        "height": 1377,
+        "sha256": "da4d90eb6dba3b37a1b6559b84b4d13bf6d8cb8a5717d1cbd16eaf9da70df9fc"
+      },
+      "upstream": {
+        "width": 429,
+        "height": 615
+      },
+      "result": "upgraded-exact-source",
+      "after": {
+        "width": 2880,
+        "height": 4131,
+        "sha256": "c92f2706531a48761312e2447564704f859ceecee3d6defd8bcf1174615051cb"
+      }
+    },
+    {
+      "id": "asset-commons-appendicular-skeleton-blank",
+      "path": "assets/images/anatomy/commons-appendicular-skeleton-blank.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Appendicular_skeleton_diagram_blank.svg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Appendicular_skeleton_diagram_blank.svg",
+      "license": "Public domain",
+      "before": {
+        "width": 960,
+        "height": 1774,
+        "sha256": "06877ef23c292e37cae67fb89b27509eb815c485da61e7ca8ffd20b91b0b1780"
+      },
+      "upstream": {
+        "width": 437,
+        "height": 808
+      },
+      "result": "upgraded-exact-source",
+      "after": {
+        "width": 2880,
+        "height": 5322,
+        "sha256": "2172ae6ee8054dfa916607c031cfa584344e741284d2559b7040d23e50d02fc9"
+      }
+    },
+    {
+      "id": "asset-openstax-spinal-cord-specimen",
+      "path": "assets/images/anatomy/openstax-spinal-cord-specimen.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/1313_Spinal_Cord_Cross_Section.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 1200,
+        "height": 749,
+        "sha256": "5f7db7a0008ba0f85d7d3847e368c951a36c38072f15d310d2149ff6c08ea681"
+      },
+      "upstream": {
+        "width": 1642,
+        "height": 1883
+      },
+      "result": "retained-existing-crop",
+      "after": {
+        "width": 1200,
+        "height": 749,
+        "sha256": "5f7db7a0008ba0f85d7d3847e368c951a36c38072f15d310d2149ff6c08ea681"
+      }
+    },
+    {
+      "id": "asset-commons-simple-squamous-epithelium",
+      "path": "assets/images/anatomy/commons-simple-squamous-epithelium.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Squamous_Epithelium_(40823230315).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Epithelial_Tissues_Simple_Squamous_Epithelium_%2840823230315%29.jpg",
+      "license": "CC0",
+      "before": {
+        "width": 1280,
+        "height": 722,
+        "sha256": "0454a73614be06ab452013c247977dfe53f4e97339ae7b8e74b1e480e24e9968"
+      },
+      "upstream": {
+        "width": 3264,
+        "height": 1840
+      },
+      "result": "upgraded-exact-source",
+      "after": {
+        "width": 3264,
+        "height": 1840,
+        "sha256": "d9bb1a9fa3889baff3df974f64c19ff3b57c886e4f259c74cb21b0aebf81298c"
+      }
+    },
+    {
+      "id": "asset-commons-simple-cuboidal-epithelium",
+      "path": "assets/images/anatomy/commons-simple-cuboidal-epithelium.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Epithelial_Tissues_Simple_Cuboidal_Epithelium_%2841681552782%29.jpg",
+      "license": "CC0",
+      "before": {
+        "width": 1280,
+        "height": 722,
+        "sha256": "2a8de1e489ac07582de0966f52482abf2e0c1dcb966c69cef055543a1469e4be"
+      },
+      "upstream": {
+        "width": 3264,
+        "height": 1840
+      },
+      "result": "upgraded-exact-source",
+      "after": {
+        "width": 3264,
+        "height": 1840,
+        "sha256": "b4ba208e7ec00099622fa689f6c27857a323b67c6c00a0c4cc5dac6488b6a5c2"
+      }
+    },
+    {
+      "id": "asset-commons-simple-columnar-epithelium",
+      "path": "assets/images/anatomy/commons-simple-columnar-epithelium.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Epithelial_Tissues_Simple_Columnar_Epithelium_%2827854452618%29.jpg",
+      "license": "CC0",
+      "before": {
+        "width": 1280,
+        "height": 722,
+        "sha256": "8d0916a4789bd4a5613c08726e6e265265caddb5e0c508ed9f1e1f44c16bfefd"
+      },
+      "upstream": {
+        "width": 3264,
+        "height": 1840
+      },
+      "result": "upgraded-exact-source",
+      "after": {
+        "width": 3264,
+        "height": 1840,
+        "sha256": "696fbdfed21d16dfc8f3d9dd659a428398e42d563a05e63647c8290c17dc36e1"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-humerus",
+      "path": "assets/images/anatomy/openstax-2016-humerus-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1119_Muscles_that_Move_the_Humerus.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/1119_Muscles_that_Move_the_Humerus.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 2229,
+        "height": 2371,
+        "sha256": "22f8d9e34a35c2819f3cf9fe7244f81136c5d8b20c6f6210248a1209b0d8318d"
+      },
+      "upstream": {
+        "width": 2229,
+        "height": 2371
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 2229,
+        "height": 2371,
+        "sha256": "22f8d9e34a35c2819f3cf9fe7244f81136c5d8b20c6f6210248a1209b0d8318d"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-hand",
+      "path": "assets/images/anatomy/openstax-2016-hand-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1121_Intrinsic_Muscles_of_the_Hand.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/1121_Intrinsic_Muscles_of_the_Hand.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 2083,
+        "height": 2033,
+        "sha256": "b02203c22b3f29b9dcd0ee26b5638607df35e37120433403e01d66d87f58f05b"
+      },
+      "upstream": {
+        "width": 2083,
+        "height": 2033
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 2083,
+        "height": 2033,
+        "sha256": "b02203c22b3f29b9dcd0ee26b5638607df35e37120433403e01d66d87f58f05b"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-leg",
+      "path": "assets/images/anatomy/openstax-2016-leg-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1123_Muscles_of_the_Leg_that_Move_the_Foot_and_Toes.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/1123_Muscles_of_the_Leg_that_Move_the_Foot_and_Toes.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 2279,
+        "height": 1358,
+        "sha256": "861ed5951aa6beaa991a06e08a9b4859fb2ecfaa57e600ea86dd8c7b3c91bfe1"
+      },
+      "upstream": {
+        "width": 2279,
+        "height": 1358
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 2279,
+        "height": 1358,
+        "sha256": "861ed5951aa6beaa991a06e08a9b4859fb2ecfaa57e600ea86dd8c7b3c91bfe1"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-foot",
+      "path": "assets/images/anatomy/openstax-2016-foot-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1124_Intrinsic_Muscles_of_the_Foot.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/1124_Intrinsic_Muscles_of_the_Foot.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 2083,
+        "height": 1592,
+        "sha256": "3ff14d4e30792dc53f5728765d8939b280c6f4a9319c9a4c32993d6ec1270d75"
+      },
+      "upstream": {
+        "width": 2083,
+        "height": 1592
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 2083,
+        "height": 1592,
+        "sha256": "3ff14d4e30792dc53f5728765d8939b280c6f4a9319c9a4c32993d6ec1270d75"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-floor",
+      "path": "assets/images/anatomy/openstax-2016-floor-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1115_Muscles_of_the_Pelvic_Floor.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/1115_Muscles_of_the_Pelvic_Floor.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 1917,
+        "height": 1396,
+        "sha256": "20ab5c2dcb4ab10c233467d3567039a2e4d90105ec29bb7c6756892e99c5a5fc"
+      },
+      "upstream": {
+        "width": 1917,
+        "height": 1396
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 1917,
+        "height": 1396,
+        "sha256": "20ab5c2dcb4ab10c233467d3567039a2e4d90105ec29bb7c6756892e99c5a5fc"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-perineum",
+      "path": "assets/images/anatomy/openstax-2016-perineum-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1116_Muscle_of_the_Perineum.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/1116_Muscle_of_the_Perineum.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 2118,
+        "height": 1305,
+        "sha256": "9c8fc4d73430a4be1fdb0f23b45bab55564aebc2b4b246031928dee71202fb74"
+      },
+      "upstream": {
+        "width": 2118,
+        "height": 1305
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 2118,
+        "height": 1305,
+        "sha256": "9c8fc4d73430a4be1fdb0f23b45bab55564aebc2b4b246031928dee71202fb74"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-hand-palmar",
+      "path": "assets/images/anatomy/openstax-2016-hand-palmar-unlabeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1121_Intrinsic_Muscles_of_the_Hand.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/1121_Intrinsic_Muscles_of_the_Hand.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 545,
+        "height": 900,
+        "sha256": "5ed95e6c79c9cb2d9e538b7c147a9a788b5c83c5dcd6f47d43587f36d5f59f13"
+      },
+      "upstream": {
+        "width": 2083,
+        "height": 2033
+      },
+      "result": "retained-existing-crop",
+      "after": {
+        "width": 545,
+        "height": 900,
+        "sha256": "5ed95e6c79c9cb2d9e538b7c147a9a788b5c83c5dcd6f47d43587f36d5f59f13"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-foot-plantar",
+      "path": "assets/images/anatomy/openstax-2016-foot-plantar-unlabeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1124_Intrinsic_Muscles_of_the_Foot.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/1124_Intrinsic_Muscles_of_the_Foot.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 282,
+        "height": 680,
+        "sha256": "817fdc25b2775f4a2381ec782588e16c3599e372c4b4ac82d3eaae50e8fcb9dd"
+      },
+      "upstream": {
+        "width": 2083,
+        "height": 1592
+      },
+      "result": "retained-existing-crop",
+      "after": {
+        "width": 282,
+        "height": 680,
+        "sha256": "817fdc25b2775f4a2381ec782588e16c3599e372c4b4ac82d3eaae50e8fcb9dd"
+      }
+    },
+    {
+      "id": "asset-openstax-2016-foot-dorsal",
+      "path": "assets/images/anatomy/openstax-2016-foot-dorsal-unlabeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1124_Intrinsic_Muscles_of_the_Foot.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/1124_Intrinsic_Muscles_of_the_Foot.jpg",
+      "license": "CC BY 4.0",
+      "before": {
+        "width": 630,
+        "height": 520,
+        "sha256": "bddaa4dd8052d493967dc4f39c53d2eddf4bfa63f3f37e7d8a1d3067f7e72659"
+      },
+      "upstream": {
+        "width": 2083,
+        "height": 1592
+      },
+      "result": "retained-existing-crop",
+      "after": {
+        "width": 630,
+        "height": 520,
+        "sha256": "bddaa4dd8052d493967dc4f39c53d2eddf4bfa63f3f37e7d8a1d3067f7e72659"
+      }
+    },
+    {
+      "id": "asset-openstax-historical-heart-valves",
+      "path": "assets/images/anatomy/openstax-historical-heart-valves-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2011_Heart_Valves.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/2011_Heart_Valves.jpg",
+      "license": "CC BY 3.0",
+      "before": {
+        "width": 1525,
+        "height": 1217,
+        "sha256": "a47a1417bca0a29b588af0e2c330bf112537d92289d7e3027400066a9244f177"
+      },
+      "upstream": {
+        "width": 1525,
+        "height": 1217
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 1525,
+        "height": 1217,
+        "sha256": "a47a1417bca0a29b588af0e2c330bf112537d92289d7e3027400066a9244f177"
+      }
+    },
+    {
+      "id": "asset-openstax-historical-nephron",
+      "path": "assets/images/anatomy/openstax-historical-nephron-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2611_Blood_Flow_in_the_Nephron.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/2611_Blood_Flow_in_the_Nephron.jpg",
+      "license": "CC BY 3.0",
+      "before": {
+        "width": 1379,
+        "height": 1946,
+        "sha256": "dfe4dc0262e76f42826ede3f77737630568e2e1074bced3eb61b8268a8e27d97"
+      },
+      "upstream": {
+        "width": 1379,
+        "height": 1946
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 1379,
+        "height": 1946,
+        "sha256": "dfe4dc0262e76f42826ede3f77737630568e2e1074bced3eb61b8268a8e27d97"
+      }
+    },
+    {
+      "id": "asset-openstax-historical-peritoneum",
+      "path": "assets/images/anatomy/openstax-historical-peritoneum-labeled.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2403_The_PeritoneumN.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/2403_The_PeritoneumN.jpg",
+      "license": "CC BY 3.0",
+      "before": {
+        "width": 826,
+        "height": 589,
+        "sha256": "465731f09d40e2bf5ad8db4cdd1fbd47a95f70a41811152d907194b9bcba1d22"
+      },
+      "upstream": {
+        "width": 826,
+        "height": 589
+      },
+      "result": "already-at-original-resolution",
+      "after": {
+        "width": 826,
+        "height": 589,
+        "sha256": "465731f09d40e2bf5ad8db4cdd1fbd47a95f70a41811152d907194b9bcba1d22"
+      }
+    }
+  ]
+}

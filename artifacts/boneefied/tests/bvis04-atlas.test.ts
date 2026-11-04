@@ -28,8 +28,8 @@ test('BVIS04 diagrams use canonical IDs, local originals, unbaked labels and val
     assert.ok(!a.sourceUrl && !a.rightsUrl, 'original art must not inherit third-party license URLs');
     assert.ok(!/<text\b|<image\b|<filter\b|gradient/i.test(fs.readFileSync(path.join(root, p.svgPath), 'utf8')));
     const png = fs.readFileSync(path.join(root, p.pngPath));
-    assert.equal(png.readUInt32BE(16), 1450);
-    assert.equal(png.readUInt32BE(20), 1000);
+    assert.equal(png.readUInt32BE(16), 2900);
+    assert.equal(png.readUInt32BE(20), 2000);
     const provenance = proof.plates.find((r: { id: string }) => r.id === p.id);
     assert.ok(provenance, p.id);
     assert.equal(createHash('sha256').update(png).digest('hex'), provenance.sha256.png, `${p.id}: PNG provenance`);
@@ -102,8 +102,17 @@ test('real histology remains specimen-only; schematic questions are not disguise
     assert.ok(a.sourceUrl && a.rightsUrl && fs.existsSync(path.join(root, a.localAssetPath!)));
     const record = evidence.licenses.find((e: { assetId: string }) => e.assetId === id);
     const bytes = fs.readFileSync(path.join(root, a.localAssetPath!));
-    assert.equal(bytes.length, record.byteSize, `${id}: unchanged specimen bytes`);
-    assert.equal(createHash('sha256').update(bytes).digest('hex'), record.sha256, `${id}: unchanged specimen hash`);
+    const upgrades = JSON.parse(fs.readFileSync(path.join(root, 'assets/images/anatomy/source-resolution.json'), 'utf8'));
+    const upgrade = upgrades.records.find((r: { id: string }) => r.id === id);
+    if (upgrade?.result === 'upgraded-exact-source') {
+      assert.equal(upgrade.before.sha256, record.sha256, `${id}: original audited specimen`);
+      assert.equal(upgrade.after.sha256, createHash('sha256').update(bytes).digest('hex'), `${id}: authentic higher-resolution specimen`);
+      assert.equal(upgrade.license, 'CC0');
+      assert.equal(decodeURIComponent(upgrade.originalUrl.split('/').at(-1)), decodeURIComponent(new URL(a.sourceUrl!).pathname.split('/').at(-1)!).replace(/^File:/, ''), `${id}: same original source file`);
+    } else {
+      assert.equal(bytes.length, record.byteSize, `${id}: unchanged specimen bytes`);
+      assert.equal(createHash('sha256').update(bytes).digest('hex'), record.sha256, `${id}: unchanged specimen hash`);
+    }
     assert.ok(content.questions.filter((q) => q.id.startsWith('q-bvis04-')).every((q) => q.assetId !== id), 'new schematic questions do not masquerade as specimen questions');
   }
   assert.equal(content.questions.find((q) => q.id === 'q-practical-spinal-cord-specimen')?.assetId, 'asset-openstax-spinal-cord-specimen');

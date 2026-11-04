@@ -344,7 +344,7 @@ plates.forEach((p, i) => {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">\n<title>${p.title[0]}</title>\n<desc>${p.desc[0]}</desc>\n${S.svg()}\n</svg>\n`;
   const svgRel = `assets/images/anatomy/muscular-atlas/${p.file}.svg`, pngRel = `assets/images/anatomy/muscular-atlas/${p.file}.png`;
   writeFileSync(join(root, svgRel), svg);
-  execFileSync('convert', ['-density', '96', '-background', T.paper, join(root, svgRel), '-resize', `${W}x${H}!`, join(root, pngRel)], { stdio: 'ignore' });
+  execFileSync('convert', ['-density', '192', '-background', T.paper, join(root, svgRel), '-resize', `${W * 2}x${H * 2}!`, '-strip', join(root, pngRel)], { stdio: 'ignore' });
   // occlusion check: every pin must land on its own visible shape
   const idp = `/tmp/mus-id-${p.key}`;
   writeFileSync(`${idp}.svg`, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="#fff"/>${S.idsvg()}</svg>`);

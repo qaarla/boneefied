@@ -24,8 +24,8 @@ test('BVIS06 original files have exact provenance, canonical annotations and les
     assert.equal(a.labelStatus, 'unlabeled');
     const svg = fs.readFileSync(path.join(root, p.svgPath)), png = fs.readFileSync(path.join(root, p.pngPath));
     assert.ok(!/<text\b|<image\b|<filter\b|gradient/i.test(svg.toString()), p.id);
-    assert.equal(png.readUInt32BE(16), 1450);
-    assert.equal(png.readUInt32BE(20), 1000);
+    assert.equal(png.readUInt32BE(16), 2900);
+    assert.equal(png.readUInt32BE(20), 2000);
     const record = proof.plates.find((r: { id: string }) => r.id === p.id)!;
     assert.equal(createHash('sha256').update(svg).digest('hex'), record.sha256.svg, p.id);
     assert.equal(createHash('sha256').update(png).digest('hex'), record.sha256.png, p.id);

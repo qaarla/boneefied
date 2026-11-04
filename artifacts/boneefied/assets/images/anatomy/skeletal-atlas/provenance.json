@@ -287,7 +287,7 @@
       ],
       "sha256": {
         "svg": "e85f0eb6792da28146f283af7fbd321927d8f43049c15da95b1fed2749b392fa",
-        "png": "2df118897a9c74a487e4edbeafe7219088b961c845ce04bb11e461548ec1e94f"
+        "png": "1fae35c0877f81e1d07fd7602f8d586f37ef9c2897aa4de3a3eb64553766667b"
       }
     },
     {
@@ -575,7 +575,7 @@
       ],
       "sha256": {
         "svg": "f8344fb37964383acc83765fee944a2cff5a44b717cd50422d1c9ecd3006b93c",
-        "png": "dac0114b2fb1e844043e53a2c67ece476d60ce76d1afbe226ff0a86208a4a41e"
+        "png": "414dc8c711e8f10c12a3d32516acc16c3f2e7826af142e7d69c6ddd54663ad69"
       }
     },
     {
@@ -915,7 +915,7 @@
       ],
       "sha256": {
         "svg": "4399fa06c42301441219a8b4db662013b8dfbc801f08b87459a7447ac9b75b6f",
-        "png": "9bcfb1f90691ac108278a54f7d5a1b6ca32032c92af84fb617497590e7867fe6"
+        "png": "a438853145eee8dd033cada12707cc2b7cfe3dc16373bb4fb50fc7788ccabdcf"
       }
     },
     {
@@ -1229,7 +1229,7 @@
       ],
       "sha256": {
         "svg": "2cb2e3500ec8a3a0b5a24f26235546ab02e8a9a899f7c8abb2bb6afa97a5c930",
-        "png": "c47ef7b1d23f0ba35256943dd85470d82de98c16032951c8501b59351c37b4d6"
+        "png": "6ad300359d1c0f42c66874c7ac6cca3a151723a41848ab966655f01292f25c35"
       }
     },
     {
@@ -1400,7 +1400,7 @@
       ],
       "sha256": {
         "svg": "72b098a100eeb74204feb4a4f4b37b1e8e1ae0442408f9537997bb1a0c86b43a",
-        "png": "b61dc9c7acfca92a263c27cc75a03c7c2d452cb0b34bb017ef4897dd9335c604"
+        "png": "da8ae728415c91273b7917ce1e0459fa6a6c3caee314f9f8dd643a5afe347653"
       }
     },
     {
@@ -1597,7 +1597,7 @@
       ],
       "sha256": {
         "svg": "9e31e97dd330781c5b6264b74ce17f6ebf27b7392af03279dac6c7ffd6da6cef",
-        "png": "e6e252d6281bf758a0ab58432881e3f54a90a580a02c8b5f92702bf06dc985df"
+        "png": "e33bdb6ce959ef87fd6d4bc5e2efcfaf3023537c74cefbc1aed40a3e29827147"
       }
     },
     {
@@ -1807,7 +1807,7 @@
       ],
       "sha256": {
         "svg": "33aa643131169f2ceded8ca7b7c520a05f295d99e1b066bb0cbed25522cb872f",
-        "png": "34801f852807607bb5c6f49ee337ce57442d905b08ecce69cdf397e95d55ecb7"
+        "png": "c806dcc1e8a88a6d5eb54f9c9ad89442fdbf652a8458c6dfd32a6d9b408420e8"
       }
     },
     {
@@ -2004,7 +2004,7 @@
       ],
       "sha256": {
         "svg": "75873b668dd3fb8da5dbbb8b2736f5e67b04bf120edf2f6906f1e20848d5ee71",
-        "png": "d194dacbdca151a469b79ea023806ad9db9f492211e6cc10ab15e9e57d474bef"
+        "png": "802a0a59a7ddc670777ab71da1949ae251f38b837772905f9b593b873973636e"
       }
     },
     {
@@ -2175,7 +2175,7 @@
       ],
       "sha256": {
         "svg": "6b9fd09b9d4f097282be58517f9848700871fc9efbd9a403aa10ab5a465ac800",
-        "png": "1ee009a99548d841999c86f7a34e8821878f4894b658b23a2aa53d1ed60aaef9"
+        "png": "5089f3853d965e23b57eb0c87c68f9eb8df7a51a90419e1964f65299e741fec8"
       }
     },
     {
@@ -2333,7 +2333,7 @@
       ],
       "sha256": {
         "svg": "361afce56c02def8b7bf5ebe8bc60ac6fa51809f4f4eb59ca992141eabf89250",
-        "png": "fc89508d30db74cc51421351589d998fe2530415e234ee951c1ff7dd7b7baef6"
+        "png": "28f4129d772ccad57a0ccf061d6ae49bedd3285ecad8c8dd3aef865894c1f4e0"
       }
     },
     {
@@ -2478,7 +2478,7 @@
       ],
       "sha256": {
         "svg": "0c94ad1c7db8ac49f2bc818995dbcac89e4ed07cf5063b918049318006e4f4cc",
-        "png": "b1d6d08b88779fbefad9ff2492acae523b1ce3f7e6f41efd039425e9b249c84f"
+        "png": "e215eac93e4877c7d02c1c0080e4d5e2bcf0207705a08bf0ea12d780a0abb903"
       }
     },
     {
@@ -2662,7 +2662,7 @@
       ],
       "sha256": {
         "svg": "b3a80b13d35597dbae0e7108ce92ed1617a39510760bc8922222ac91036f00f4",
-        "png": "222edfdc29287aeeae0f3066593a18b52d69a96abcebe1d16b92b77bfeab458f"
+        "png": "7bf473512c3cbc7c246ddfe5e367e36494537c0653f51a3268a01b54f0572a71"
       }
     },
     {
@@ -2846,7 +2846,7 @@
       ],
       "sha256": {
         "svg": "51acf7e1d4280e1d97064eda482791893635844463240485f9dc80c45bb6c25c",
-        "png": "648408ad8db02823d3b729910801429638d37e0fe1c4ef3d2c7b3403656d8ac6"
+        "png": "6d64f25978efb9660e3249bc67c83a3e44941c5441e8c2b54141025ec73c7a26"
       }
     },
     {
@@ -3043,7 +3043,7 @@
       ],
       "sha256": {
         "svg": "9d898d127e095d814e1714911fbaaea16c51abc44610f29a10a6649964b3f5b7",
-        "png": "8fb7a88c58789e1292e35d1d85ef99fceed27a29ed07352e8b3852e1dace0d3e"
+        "png": "8b0e108677d9df7c68290972f61d1414edc0d6824a5d0e1bdcdf14ffc1b72d17"
       }
     },
     {
@@ -3292,7 +3292,7 @@
       ],
       "sha256": {
         "svg": "d36cdb01494856fcbfadf951d47ef131a0880192bdc0a7bfd6f9b7c2992a1391",
-        "png": "a07a713832412e3c214a60524aaa41f103e262fa2c62d75a86f59fe61a5a9801"
+        "png": "7db7e650f3189fb6e455a82c7e1c91be72c7704b04db07b79d60e2d7df8ea71d"
       }
     },
     {
@@ -3489,7 +3489,7 @@
       ],
       "sha256": {
         "svg": "702516ab7b244d4c5e94f6ea6f9736a7bc7ad00aab50e835da47a49683cfa33e",
-        "png": "c02ae156294be034230a8e36efdac452c639c169935d48379c2d0e6fbbde746f"
+        "png": "593507da21dd38037ba6d17a47753731139c439f172652b452c2b827af9abb58"
       }
     },
     {
@@ -3647,7 +3647,7 @@
       ],
       "sha256": {
         "svg": "80a3bbd113b40d8ce64c2c23febcdd83d5447731ce527dfb640dec394d9f1f73",
-        "png": "87b2da5b469bf93ceddf2148068d5c03cea05d3c4c96702c0ee5d506e4378775"
+        "png": "716fc178a3e10f60b5b65f522527e9cc05f5307278e10e13d679a75414fe0500"
       }
     },
     {
@@ -3831,7 +3831,7 @@
       ],
       "sha256": {
         "svg": "3e2a90f04eed06ec07c26e49110a233eda8a9f9da489d787022967d625192127",
-        "png": "04cb67196cb37c9992f71278d102cc33d1e672752c491709218c6fa8ea32cfc8"
+        "png": "f3444f70e561118462dc48091bb5e962502630126c24df5c3a6c8d38a5b636da"
       }
     },
     {
@@ -4028,7 +4028,7 @@
       ],
       "sha256": {
         "svg": "75a2420de664e8174062c81e8fc7b771bf9adda32a14aeae0d12e8057abedea2",
-        "png": "46c3c5c0d9a6e0d2899de6e3703471ba913c94bc1a555b0d660cbadda4044887"
+        "png": "b7ffeb6cbe7e3cc940c5fdd56eec5052756a3fe85d7aac537ccccdd8c7088965"
       }
     },
     {
@@ -4199,7 +4199,7 @@
       ],
       "sha256": {
         "svg": "9b995b577b5a7c7f659f90cf23bfbaae0f41f5e6cb09af79b85544ebb3a8c5e3",
-        "png": "cd109a0d3f69b5eb299f8519935a942c60cef3cfaee1742e70e132e5a3fb275f"
+        "png": "90298a0cf7436193d35d04737b18a8c605dc34bac7dee6f0d4a5fcf375c70f64"
       }
     },
     {
@@ -4409,7 +4409,7 @@
       ],
       "sha256": {
         "svg": "65e669d19d3a4f655b260d2919a30ef2bbcfe71e2516c4d56765c7d3f3cd59e3",
-        "png": "0145c38b3e788466ee1b1500ec6d53c3d9092afb79851b56ec3f404fdf17f770"
+        "png": "96d5f7ff3c2ae9067298b1780553c68deec7d2dd9b88616d178f235c693bd15b"
       }
     },
     {
@@ -4619,8 +4619,12 @@
       ],
       "sha256": {
         "svg": "2a0afe5fe28f34a01e1c420b0d4605c0d820a61069a85b18fde77581ee1e1668",
-        "png": "a0e3baa6b0491b15837a9694cac4ef896d2f5b880773557fe21e8e22e6cbfd8d"
+        "png": "7319024c60b16167f29d53e7795fd6ea4b178e669d971176bdcd4a6583cf268c"
       }
     }
-  ]
+  ],
+  "rasterExport": {
+    "scale": 2,
+    "method": "Rendered directly from unchanged SVG masters; no raster upscaling."
+  }
 }

@@ -22,11 +22,12 @@ export function useOfflineImage(source?: number): ImageState {
 
     async function load() {
       try {
-        const uri = Asset.fromModule(source!).uri;
+        const asset = Asset.fromModule(source!);
+        const uri = asset.uri;
         if (!uri) throw new Error('Image URL is missing');
         if (!('caches' in globalThis)) throw new Error('Browser image storage is unavailable');
         const cache = await caches.open(CACHE_NAME);
-        const cacheKey = anatomyImageCacheKey(uri);
+        const cacheKey = anatomyImageCacheKey(uri, asset.hash ?? null);
         let response = await cache.match(cacheKey);
         if (!response) {
           const fetched = await fetch(cacheKey);

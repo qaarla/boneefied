@@ -21,7 +21,22 @@ const revisedNervousRasters = [
   'bvis04-09-upper-limb-nerves.png', 'bvis04-10-lower-limb-nerves.png',
 ];
 
-export function anatomyImageCacheKey(uri: string): string {
+function hasResolutionUpgrade(uri: string): boolean {
+  const atlas = /(?:atlas-\d|skeletal-atlas-\d|muscular-atlas-\d|bvis0[456]-\d)/.test(uri);
+  return atlas || [
+    'original-mitosis-stages', 'original-body-cavities',
+    'commons-axial-skeleton-blank', 'commons-appendicular-skeleton-blank',
+    'commons-simple-squamous-epithelium', 'commons-simple-cuboidal-epithelium', 'commons-simple-columnar-epithelium',
+    'servier-elbow-joint', 'servier-heart-anterior', 'servier-kidney',
+    'servier-thyroid-anterior', 'servier-ovary', 'servier-uterus',
+  ].some((name) => uri.includes(name));
+}
+
+export function anatomyImageCacheKey(uri: string, contentHash?: string | null): string {
+  // Preserve the saved keys for unchanged legacy images. Only upgraded files
+  // opt into content hashes; null means the caller has no hash available.
+  const resolutionRevision = contentHash !== undefined && hasResolutionUpgrade(uri)
+    ? contentHash ?? 'retina-two-press-1' : undefined;
   const revision = /bvis06-(17-female-gross|19-uterine-wall)\.png/.test(uri) ? 'female-relations-1'
     : /bvis06-(15-male-system|16-testis-ducts)\.png/.test(uri) ? 'male-relations-1'
     : /bvis06-(11-kidney-section|12-renal-vessels|14-renal-corpuscle)\.png/.test(uri) ? 'urinary-relations-1'
@@ -39,9 +54,9 @@ export function anatomyImageCacheKey(uri: string): string {
     : revisedMuscularRasters.some(n => uri.includes(`muscular-atlas-${String(n).padStart(2, '0')}-`)) ? 'muscle-contours-1'
     : revisedJointRasters.some(name => uri.includes(name)) ? 'joint-continuity-1'
     : revisedSkeletalRasters.some(name => uri.includes(name)) ? 'skeletal-continuity-1' : undefined;
-  if (!revision) return uri;
+  if (!revision && !resolutionRevision) return uri;
   const hashAt = uri.indexOf('#');
   const resource = hashAt === -1 ? uri : uri.slice(0, hashAt);
   const fragment = hashAt === -1 ? '' : uri.slice(hashAt);
-  return `${resource}${resource.includes('?') ? '&' : '?'}boneefiedArt=${revision}${fragment}`;
+  return `${resource}${resource.includes('?') ? '&' : '?'}boneefiedArt=${encodeURIComponent(resolutionRevision ?? revision!)}${fragment}`;
 }

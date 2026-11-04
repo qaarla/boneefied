@@ -631,7 +631,7 @@ plates.forEach((p, i) => {
   const svgText = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">\n<title>${p.title[0]}</title>\n<desc>${p.desc[0]}</desc>\n${P.svg()}\n</svg>\n`;
   const svgRel = `assets/images/anatomy/skeletal-atlas/${p.file}.svg`, pngRel = `assets/images/anatomy/skeletal-atlas/${p.file}.png`;
   writeFileSync(join(root, svgRel), svgText);
-  execFileSync('convert', ['-density', '96', '-background', C.paper, join(root, svgRel), '-resize', `${W}x${H}!`, join(root, pngRel)], { stdio: 'ignore' });
+  execFileSync('convert', ['-density', '192', '-background', C.paper, join(root, svgRel), '-resize', `${W * 2}x${H * 2}!`, '-strip', join(root, pngRel)], { stdio: 'ignore' });
   const id = p.replaces ?? `asset-skeletal-atlas-${p.key}`;
   const labels = P.labels;
   prov.push({
