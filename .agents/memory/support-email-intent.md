@@ -13,3 +13,16 @@ Boneefied email branding is for manual support replies from
 website and existing logo. Do not broaden this into signup emails, marketing,
 automatic support replies, or a new support application without a new request.
 Only send a particular reply after the owner authorizes that send.
+
+The support email's background should cover the available message area in
+desktop, mobile landscape, and mobile portrait, using the app's anatomical
+pattern rather than a plain outer background.
+
+**Why:** The owner explicitly requested all three layouts and the app's own
+pattern. They identified the reference example as belonging to Naama.
+
+**How to apply:** The Naama screenshot clarified that the pattern belongs behind
+the email content itself, not only around an opaque cream card. Reuse Boneefied's
+anatomical material with readable light text over the pattern, and distinguish
+the email canvas from mail-client interface areas the template cannot control.
+Do not copy Naama branding into Boneefied support replies.

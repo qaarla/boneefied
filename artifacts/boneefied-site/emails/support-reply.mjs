@@ -30,7 +30,7 @@ function renderLine(line) {
     rendered += escapeHtml(line.slice(offset, match.index));
     // Keep sentence punctuation visible without making it part of the link.
     const url = match[0].replace(/[.,;!?]+$/, '');
-    rendered += `<a href="${escapeHtml(url)}" style="color:#8a570b;text-decoration:underline;overflow-wrap:anywhere;word-break:break-word;">${escapeHtml(url)}</a>`;
+    rendered += `<a href="${escapeHtml(url)}" style="color:#e9b95d;text-decoration:underline;overflow-wrap:anywhere;word-break:break-word;">${escapeHtml(url)}</a>`;
     rendered += escapeHtml(match[0].slice(url.length));
     offset = match.index + match[0].length;
   }
@@ -41,7 +41,7 @@ export function renderReply(replyText) {
   if (typeof replyText !== 'string' || !replyText.trim()) throw new Error('A non-empty support reply is required.');
   // Preserve the original plain text; normalize line endings only in HTML.
   const replyHtml = replyText.replace(/\r\n?/g, '\n').split(/\n\n+/)
-    .map(paragraph => `<p style="margin:0 0 14px;font-size:17px;line-height:26px;">${paragraph.split('\n').map(renderLine).join('<br>')}</p>`)
+    .map(paragraph => `<p style="margin:0 0 14px;color:#f2eadb;font-size:17px;line-height:26px;">${paragraph.split('\n').map(renderLine).join('<br>')}</p>`)
     .join('\n');
   return {
     html: html.replace('{{{REPLY_HTML}}}', () => replyHtml),

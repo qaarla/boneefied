@@ -28,6 +28,27 @@ test('plain text, codes, links and multiline replies survive rendering', () => {
   assert.ok(!rendered.html.includes('{{{'));
 });
 
+test('app-family artwork fills the email canvas in both orientations and desktop', () => {
+  assert.match(html, /html, body \{[^}]*height:100% !important/);
+  assert.match(html, /min-height:100vh/);
+  assert.match(html, /background-size:cover/);
+  assert.match(html, /background-position:center top/);
+  assert.match(html, /width="100%" height="100%" background="https:\/\/boneefied.com\/site\/assets\/boneefied-dark-anatomical-material.jpg"/);
+  assert.match(html, /<v:background fill="t">/);
+  assert.match(html, /valign="top"/);
+  assert.doesNotMatch(html, /#fffdf8|#f5f0e6/); // No cream panel hides the pattern.
+  assert.match(html, /linear-gradient\(rgba\(17,20,19,0.68\)/);
+  assert.match(html, /class="content" style="[^"]*color:#f2eadb/);
+  assert.doesNotMatch(html, /class="(?:header|content|footer)"[^>]*background-color/);
+});
+
+test('reply text and links use the light-on-dark palette over the pattern', () => {
+  const reply = renderReply(input.replyText);
+  assert.match(reply.replyHtml, /color:#f2eadb/);
+  assert.match(reply.replyHtml, /<a [^>]*color:#e9b95d/);
+  assert.doesNotMatch(reply.html, /#8a570b|#25282a/);
+});
+
 test('text cannot inject HTML; literal variable-looking text is retained', () => {
   const rendered = renderReply('<script>alert("no")</script>\n{{{REPLY_TEXT}}} $&');
   assert.match(rendered.html, /&lt;script&gt;/);

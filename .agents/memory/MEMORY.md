@@ -38,3 +38,4 @@
 - [Persistent study dock](persistent-dock-intent.md) — four tabs, one-level active-tab Up, preserved section state; dock-only reference styling in Boneefied colors.
 - [Page heading placement](page-heading-intent.md) — centered headings/subtitles, no module-code eyebrow, and window-safe clearance below the Dynamic Island.
 - [Support email scope](support-email-intent.md) — help@ branding is for manual support replies, not account-email or autoresponder expansion.
+- [Resend template updates](resend-template-updates.md) — HTML-only PATCH regenerates plain text; always send both bodies and verify the published result.

@@ -16,9 +16,21 @@ marketing automation, account-email system, or new support application.
 - The existing approved logo is served from the already-published site, using
   its small 180px PNG rather than the 1MB original. No website publish is needed.
 - Tinos is used where clients support the web font; Georgia/Times are fallbacks.
+- The full email canvas uses the existing hosted dark anatomical-fiber artwork
+  shared with the app's material family. It covers desktop, mobile portrait,
+  and mobile landscape layouts. The reference's pattern-behind-text treatment
+  is used: no cream card or opaque header/footer hides the artwork. Warm light
+  text and gold links sit over a darkened pattern for readability.
+  A legacy background attribute and Outlook VML provide image fallbacks, with
+  charcoal when remote images are blocked. Email clients control their own
+  surrounding interface and may ignore viewport-height CSS; this cannot paint
+  outside the email's message area or guarantee full-screen client rendering.
 
 The template must be published **inside Resend** to be usable. Publishing a
 Resend template does not send an email or publish the website/mobile app.
+When updating HTML through Resend, include the explicit plain-text source in
+the same PATCH: an HTML-only update regenerates text from HTML and replaces
+the intended `REPLY_TEXT` alternative. Read back both fields after enabling.
 
 ## Sending a manual reply later
 
