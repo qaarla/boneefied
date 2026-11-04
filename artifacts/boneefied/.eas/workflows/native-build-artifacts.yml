@@ -1,0 +1,16 @@
+name: Boneefied native build artifacts
+
+# Manual runs only. These jobs build artifacts; neither submits to a store.
+jobs:
+  ios_preview:
+    name: Internal iPhone IPA
+    type: build
+    params:
+      platform: ios
+      profile: preview
+  android_bundle:
+    name: Android AAB
+    type: build
+    params:
+      platform: android
+      profile: production
