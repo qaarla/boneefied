@@ -33,13 +33,22 @@ test('app-family artwork fills the email canvas in both orientations and desktop
   assert.match(html, /min-height:100vh/);
   assert.match(html, /background-size:cover/);
   assert.match(html, /background-position:center top/);
-  assert.match(html, /width="100%" height="100%" background="https:\/\/boneefied.com\/site\/assets\/boneefied-dark-anatomical-material.jpg"/);
+  assert.match(html, /<body[^>]*background-image:url\('https:\/\/boneefied.com\/site\/assets\/boneefied-dark-anatomical-material.jpg'\)/);
+  assert.match(html, /<table[^>]*width="100%" height="100%"[^>]*background-color:transparent/);
   assert.match(html, /<v:background fill="t">/);
   assert.match(html, /valign="top"/);
   assert.doesNotMatch(html, /#fffdf8|#f5f0e6/); // No cream panel hides the pattern.
   assert.match(html, /linear-gradient\(rgba\(17,20,19,0.68\)/);
   assert.match(html, /class="content" style="[^"]*color:#f2eadb/);
   assert.doesNotMatch(html, /class="(?:header|content|footer)"[^>]*background-color/);
+});
+
+test('content wrapper cannot mask the body pattern when table backgrounds are stripped', () => {
+  const wrapper = html.match(/<table[^>]*height="100%"[^>]*>/)?.[0];
+  assert.ok(wrapper);
+  assert.match(wrapper, /background-color:transparent/);
+  assert.doesNotMatch(wrapper, /background-image:| background="/);
+  assert.match(html, /<body[^>]*background-image:linear-gradient/);
 });
 
 test('reply text and links use the light-on-dark palette over the pattern', () => {

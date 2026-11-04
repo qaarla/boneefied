@@ -21,7 +21,9 @@ marketing automation, account-email system, or new support application.
   and mobile landscape layouts. The reference's pattern-behind-text treatment
   is used: no cream card or opaque header/footer hides the artwork. Warm light
   text and gold links sit over a darkened pattern for readability.
-  A legacy background attribute and Outlook VML provide image fallbacks, with
+  The email body owns the background; its full-height content table remains
+  transparent so a stripped table background cannot mask the pattern.
+  A plain URL declaration and Outlook VML provide image fallbacks, with
   charcoal when remote images are blocked. Email clients control their own
   surrounding interface and may ignore viewport-height CSS; this cannot paint
   outside the email's message area or guarantee full-screen client rendering.

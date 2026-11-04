@@ -21,8 +21,11 @@ stored HTML alone.
 
 **Why:** The owner identified a mismatch between the approved browser sample
 and the Resend template thumbnail after the template had been called ready.
+They objected to being asked for samples the agent had already created.
 
 **How to apply:** Separate browser-layout verification, saved-template
 verification, dashboard-preview rendering, and delivered-email rendering.
-If the authenticated dashboard preview is unavailable, request its screenshot
-instead of dismissing the difference as a thumbnail issue or claiming a fix.
+Use existing workspace samples and the saved Resend HTML first; do not ask the
+owner to resubmit samples already available. If the authenticated dashboard
+preview remains unavailable, state that verification boundary rather than
+dismissing the difference as a thumbnail issue or claiming it is resolved.
