@@ -1,0 +1,2032 @@
+[
+  {
+    "assetId": "asset-bvis05-heart-anterior",
+    "title": "Heart from the front: chambers, apex and great vessels",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_heart_with_coronary_arteries.png",
+        "title": "File:Human heart with coronary arteries.png - Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "creator": "Patrick J. Lynch (modified by Christian2003)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source-page metadata describes a human heart with coronary arteries; useful only as a broad heart/coronary candidate, with aspect and exact vessel coverage unconfirmed.",
+        "viewLimitations": "Orientation, dissection state, and which coronary branches are visible have not been visually checked.",
+        "termsUrl": "https://creativecommons.org/licenses/by/2.5/",
+        "linkingTerms": "An ordinary outbound link to the public file page is appropriate; credit the named creator and link the stated license. Linking is distinct from copying the photograph.",
+        "reproductionRights": "CC BY 2.5 is stated on the file page; any reproduction must follow that license and attribution requirements.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Screenshot attempt returned HTTP 429; fetched page metadata/caption identifies the subject, but image itself was not inspected.",
+          "checkedAt": "2026-11-06T21:12:28.686Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-01-heart-coronaries.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-heart-chambers-valves",
+    "title": "Opened heart: chambers, valves and flow",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-1",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption identifies dissection of pericardium and heart in situ at the interatrial cleavage plane; a narrow heart/pericardium example, not a complete heart or valve plate.",
+        "viewLimitations": "Captioned plane is an interatrial cleavage view; not a full anterior heart or complete layer specimen. Photograph was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms an exposed heart and surrounding pericardial dissection; the exact cleavage plane comes from the page caption, not independent visual labels.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-02-heart-dissection.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-2",
+        "title": "Conduction system of heart, image 118-2",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page identifies a dissected heart with AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus; a relevant real specimen for chamber/conduction structures.",
+        "viewLimitations": "Does not show all tiny conduction elements as a grossly distinguishable separate route, and is not a superior four-valve view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Page identifies a dissected heart with AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus; a relevant real specimen for chamber/conduction structures.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-11-heart-conduction.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-heart-valves-superior",
+    "title": "Valves of the heart from above",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-2",
+        "title": "Conduction system of heart, image 118-2",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page identifies a dissected heart with AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus; a relevant real specimen for chamber/conduction structures.",
+        "viewLimitations": "Does not show all tiny conduction elements as a grossly distinguishable separate route, and is not a superior four-valve view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Page identifies a dissected heart with AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus; a relevant real specimen for chamber/conduction structures.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-11-heart-conduction.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-heart-wall-pericardium",
+    "title": "Pericardium and layers of the heart wall",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-1",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption identifies dissection of pericardium and heart in situ at the interatrial cleavage plane; a narrow heart/pericardium example, not a complete heart or valve plate.",
+        "viewLimitations": "Captioned plane is an interatrial cleavage view; not a full anterior heart or complete layer specimen. Photograph was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms an exposed heart and surrounding pericardial dissection; the exact cleavage plane comes from the page caption, not independent visual labels.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-02-heart-dissection.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-coronary-anterior",
+    "title": "Coronary vessels, anterior surface",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_heart_with_coronary_arteries.png",
+        "title": "File:Human heart with coronary arteries.png - Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "creator": "Patrick J. Lynch (modified by Christian2003)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source-page metadata describes a human heart with coronary arteries; useful only as a broad heart/coronary candidate, with aspect and exact vessel coverage unconfirmed.",
+        "viewLimitations": "Orientation, dissection state, and which coronary branches are visible have not been visually checked.",
+        "termsUrl": "https://creativecommons.org/licenses/by/2.5/",
+        "linkingTerms": "An ordinary outbound link to the public file page is appropriate; credit the named creator and link the stated license. Linking is distinct from copying the photograph.",
+        "reproductionRights": "CC BY 2.5 is stated on the file page; any reproduction must follow that license and attribution requirements.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Screenshot attempt returned HTTP 429; fetched page metadata/caption identifies the subject, but image itself was not inspected.",
+          "checkedAt": "2026-11-06T21:12:28.686Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-01-heart-coronaries.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-coronary-posterior",
+    "title": "Coronary sinus and posterior coronary vessels",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_heart_with_coronary_arteries.png",
+        "title": "File:Human heart with coronary arteries.png - Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "creator": "Patrick J. Lynch (modified by Christian2003)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source-page metadata describes a human heart with coronary arteries; useful only as a broad heart/coronary candidate, with aspect and exact vessel coverage unconfirmed.",
+        "viewLimitations": "Orientation, dissection state, and which coronary branches are visible have not been visually checked.",
+        "termsUrl": "https://creativecommons.org/licenses/by/2.5/",
+        "linkingTerms": "An ordinary outbound link to the public file page is appropriate; credit the named creator and link the stated license. Linking is distinct from copying the photograph.",
+        "reproductionRights": "CC BY 2.5 is stated on the file page; any reproduction must follow that license and attribution requirements.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Screenshot attempt returned HTTP 429; fetched page metadata/caption identifies the subject, but image itself was not inspected.",
+          "checkedAt": "2026-11-06T21:12:28.686Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-01-heart-coronaries.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-2",
+        "title": "Conduction system of heart, image 118-2",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page identifies a dissected heart with AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus; a relevant real specimen for chamber/conduction structures.",
+        "viewLimitations": "Does not show all tiny conduction elements as a grossly distinguishable separate route, and is not a superior four-valve view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Page identifies a dissected heart with AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus; a relevant real specimen for chamber/conduction structures.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-11-heart-conduction.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-conduction-system",
+    "title": "Conduction system of the heart",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-2",
+        "title": "Conduction system of heart, image 118-2",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page identifies a dissected heart with AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus; a relevant real specimen for chamber/conduction structures.",
+        "viewLimitations": "Does not show all tiny conduction elements as a grossly distinguishable separate route, and is not a superior four-valve view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Page identifies a dissected heart with AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus; a relevant real specimen for chamber/conduction structures.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-11-heart-conduction.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-body-artery-vein-maps",
+    "title": "Major arteries and major veins of the body",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=117-2",
+        "title": "Ascending aorta, aortic arch and branches, image 117-2",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page and specimen show ascending aorta/arch and named brachiocephalic, carotid and subclavian branches.",
+        "viewLimitations": "Only the aortic arch/upper thoracic branches; no full body map, peripheral limbs or venous return.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Page and specimen show ascending aorta/arch and named brachiocephalic, carotid and subclavian branches.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-12-aorta-branches.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=192-4",
+        "title": "Vessels of anterior leg, image 192-4",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows a dissected anterior lower leg and the source identifies the anterior tibial recurrent artery.",
+        "viewLimitations": "Local recurrent branch; no full femoral-popliteal-tibial route.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows a dissected anterior lower leg and the source identifies the anterior tibial recurrent artery.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-41-lower-leg-vessels.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=186-7",
+        "title": "Femoral artery branches in thigh, image 186-7",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows an anterior/medial thigh dissection with named deep and circumflex femoral artery branches.",
+        "viewLimitations": "Branch-focused thigh view; not the complete lower limb arterial path.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows an anterior/medial thigh dissection with named deep and circumflex femoral artery branches.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-43-femoral.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6",
+        "title": "Lymphatic ducts, innominate vessels and neck vessels, image 76-6",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source caption/key and visually checked photo show right lymphatic duct, subclavian trunk, jugular/subclavian and brachiocephalic vessels, and axillary vessels in a neck/upper-chest dissection.",
+        "viewLimitations": "Only the neck/upper thorax and right lymphatic duct are shown; not the full body-wide lymphatic or venous route.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; credit the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for Bassett images; attribution/share-alike applies to any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source caption/key and linked specimen photograph were checked; the temporary image shows neck/upper-thorax dissection with vessels and lymphatic structures.",
+          "checkedAt": "2026-11-06T21:25:51.089Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-28-neck-lymphatics.md"
+        }
+      }
+    ],
+    "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+  },
+  {
+    "assetId": "asset-bvis05-head-neck-vessels",
+    "title": "Carotid arteries and jugular veins of the head and neck",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=117-2",
+        "title": "Ascending aorta, aortic arch and branches, image 117-2",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page and specimen show ascending aorta/arch and named brachiocephalic, carotid and subclavian branches.",
+        "viewLimitations": "Only the aortic arch/upper thoracic branches; no full body map, peripheral limbs or venous return.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Page and specimen show ascending aorta/arch and named brachiocephalic, carotid and subclavian branches.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-12-aorta-branches.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6",
+        "title": "Lymphatic ducts, innominate vessels and neck vessels, image 76-6",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source caption/key and visually checked photo show right lymphatic duct, subclavian trunk, jugular/subclavian and brachiocephalic vessels, and axillary vessels in a neck/upper-chest dissection.",
+        "viewLimitations": "Only the neck/upper thorax and right lymphatic duct are shown; not the full body-wide lymphatic or venous route.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; credit the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for Bassett images; attribution/share-alike applies to any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source caption/key and linked specimen photograph were checked; the temporary image shows neck/upper-thorax dissection with vessels and lymphatic structures.",
+          "checkedAt": "2026-11-06T21:25:51.089Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-28-neck-lymphatics.md"
+        }
+      }
+    ],
+    "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+  },
+  {
+    "assetId": "asset-bvis05-upper-limb-arteries",
+    "title": "Arterial route to the arm and hand",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=117-2",
+        "title": "Ascending aorta, aortic arch and branches, image 117-2",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page and specimen show ascending aorta/arch and named brachiocephalic, carotid and subclavian branches.",
+        "viewLimitations": "Only the aortic arch/upper thoracic branches; no full body map, peripheral limbs or venous return.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Page and specimen show ascending aorta/arch and named brachiocephalic, carotid and subclavian branches.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-12-aorta-branches.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6",
+        "title": "Lymphatic ducts, innominate vessels and neck vessels, image 76-6",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source caption/key and visually checked photo show right lymphatic duct, subclavian trunk, jugular/subclavian and brachiocephalic vessels, and axillary vessels in a neck/upper-chest dissection.",
+        "viewLimitations": "Only the neck/upper thorax and right lymphatic duct are shown; not the full body-wide lymphatic or venous route.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; credit the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for Bassett images; attribution/share-alike applies to any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source caption/key and linked specimen photograph were checked; the temporary image shows neck/upper-thorax dissection with vessels and lymphatic structures.",
+          "checkedAt": "2026-11-06T21:25:51.089Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-28-neck-lymphatics.md"
+        }
+      }
+    ],
+    "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+  },
+  {
+    "assetId": "asset-bvis05-upper-limb-veins",
+    "title": "Venous return from the arm and the median cubital vein",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6",
+        "title": "Lymphatic ducts, innominate vessels and neck vessels, image 76-6",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source caption/key and visually checked photo show right lymphatic duct, subclavian trunk, jugular/subclavian and brachiocephalic vessels, and axillary vessels in a neck/upper-chest dissection.",
+        "viewLimitations": "Only the neck/upper thorax and right lymphatic duct are shown; not the full body-wide lymphatic or venous route.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; credit the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for Bassett images; attribution/share-alike applies to any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source caption/key and linked specimen photograph were checked; the temporary image shows neck/upper-thorax dissection with vessels and lymphatic structures.",
+          "checkedAt": "2026-11-06T21:25:51.089Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-28-neck-lymphatics.md"
+        }
+      }
+    ],
+    "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+  },
+  {
+    "assetId": "asset-bvis05-lower-limb-arteries",
+    "title": "Arterial route to the leg and foot",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=192-4",
+        "title": "Vessels of anterior leg, image 192-4",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows a dissected anterior lower leg and the source identifies the anterior tibial recurrent artery.",
+        "viewLimitations": "Local recurrent branch; no full femoral-popliteal-tibial route.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows a dissected anterior lower leg and the source identifies the anterior tibial recurrent artery.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-41-lower-leg-vessels.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=196-7",
+        "title": "Superficial vessels of foot and ankle, image 196-7",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Photo shows superficial vessels of the dorsolateral foot/ankle in dissection.",
+        "viewLimitations": "The page does not identify the great saphenous vein or its proximal course.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows superficial vessels of the dorsolateral foot/ankle in dissection.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-42-foot-vessels.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=186-7",
+        "title": "Femoral artery branches in thigh, image 186-7",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows an anterior/medial thigh dissection with named deep and circumflex femoral artery branches.",
+        "viewLimitations": "Branch-focused thigh view; not the complete lower limb arterial path.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows an anterior/medial thigh dissection with named deep and circumflex femoral artery branches.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-43-femoral.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-great-saphenous-route",
+    "title": "Great saphenous vein: foot to groin",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317783",
+        "title": "Cadaveric Analysis of Valvular Anatomy in the Great Saphenous Vein: Implications for Surgical Planning",
+        "source": "Cureus article via PubMed Central",
+        "creator": "Schafer Paladichuk, Alexander Downs, Zachary Brennan, Tianfu Shang, David Dommermuth, Steve Zeka, Dan Murphy, Ronald Walser and Tyler J. Wallen",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source figure and caption identify a human cadaveric right great saphenous vein in full extension from the medial malleolus to the saphenofemoral junction; a second photo marks valve locations.",
+        "viewLimitations": "The isolated vein view does not show surrounding limb anatomy or femoral artery/vein relations; proximal context is provided separately by Bassett image 185-4.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public PMC article is appropriate; CC BY 4.0 applies to article content/figures with attribution. Linking is not image copying.",
+        "reproductionRights": "The article states CC BY 4.0; reproduce figures only with required attribution and license terms.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Figures 1 and 2 were viewed temporarily from page-linked image URLs; one shows the isolated full-length vein and the other valve markers.",
+          "checkedAt": "2026-11-06T21:28:12.745Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-44-saphenous-study.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=185-4",
+        "title": "Superficial structures overlying left femoral triangle, image 185-4",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page caption identifies greater saphenous vein and accessory saphenous vein in a superficial femoral-triangle dissection; the visually checked specimen shows the proximal thigh region.",
+        "viewLimitations": "Shows the proximal superficial thigh only, not the full ankle-to-groin course or deep femoral vessel relations.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; credit the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for Bassett images; attribution/share-alike applies to any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source caption and linked image checked; photo shows a dissected superficial femoral-triangle/thigh specimen with the source-identified saphenous vein region.",
+          "checkedAt": "2026-11-06T21:28:12.745Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-46-femoral-triangle.md"
+        }
+      }
+    ],
+    "reason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification."
+  },
+  {
+    "assetId": "asset-bvis05-hepatic-portal-system",
+    "title": "Hepatic portal system",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+        "title": "Celiac plexus and pancreaticoduodenal arteries, image 148-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo/source labels celiac trunk, hepatic/splenic and mesenteric branches plus adjacent duodenum/pancreatic ducts.",
+        "viewLimitations": "Arterial/nerve dissection, not portal venous return or kidney hilum.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo/source labels celiac trunk, hepatic/splenic and mesenteric branches plus adjacent duodenum/pancreatic ducts.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-35-celiac.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Liver_with_portal_vein_dissected.jpg",
+        "title": "File:Liver with portal vein dissected.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Anatomist90",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Metadata identifies a human liver with dissected portal vein, a relevant portal-system gross specimen candidate.",
+        "viewLimitations": "Only liver/portal-vein region, not full gut-to-liver venous drainage; image was not visually checked.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the file page; attribution/share-alike apply to reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Source page metadata/caption checked; direct image request returned HTTP 429, so image is not visually confirmed.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-33-liver-portal.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-celiac-renal-context",
+    "title": "Celiac trunk and renal vessels",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7",
+        "title": "Kidneys and suprarenal glands dissected in situ, image 149-7",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+        "viewLimitations": "Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-13-kidney.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+        "title": "Celiac plexus and pancreaticoduodenal arteries, image 148-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo/source labels celiac trunk, hepatic/splenic and mesenteric branches plus adjacent duodenum/pancreatic ducts.",
+        "viewLimitations": "Arterial/nerve dissection, not portal venous return or kidney hilum.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo/source labels celiac trunk, hepatic/splenic and mesenteric branches plus adjacent duodenum/pancreatic ducts.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-35-celiac.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-upper-airway",
+    "title": "Upper airway: nasal cavity, sinuses and pharynx",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption names larynx, trachea, main bronchi and lungs in a dissection-in-situ page; candidate for broad gross respiratory structures only.",
+        "viewLimitations": "A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms larynx, trachea, main bronchi and lungs in situ; small bronchioles and lobar/hilum details are not resolved.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-03-lungs-airway.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-larynx-glottis",
+    "title": "Larynx and glottis",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption names larynx, trachea, main bronchi and lungs in a dissection-in-situ page; candidate for broad gross respiratory structures only.",
+        "viewLimitations": "A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms larynx, trachea, main bronchi and lungs in situ; small bronchioles and lobar/hilum details are not resolved.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-03-lungs-airway.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-trachea-bronchial-tree",
+    "title": "Trachea, bronchi and bronchioles",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption names larynx, trachea, main bronchi and lungs in a dissection-in-situ page; candidate for broad gross respiratory structures only.",
+        "viewLimitations": "A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms larynx, trachea, main bronchi and lungs in situ; small bronchioles and lobar/hilum details are not resolved.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-03-lungs-airway.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-lung-lobes",
+    "title": "Lungs: lobes, fissures and hilum",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption names larynx, trachea, main bronchi and lungs in a dissection-in-situ page; candidate for broad gross respiratory structures only.",
+        "viewLimitations": "A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms larynx, trachea, main bronchi and lungs in situ; small bronchioles and lobar/hilum details are not resolved.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-03-lungs-airway.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-pleura-diaphragm",
+    "title": "Pleura and diaphragm",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption names larynx, trachea, main bronchi and lungs in a dissection-in-situ page; candidate for broad gross respiratory structures only.",
+        "viewLimitations": "A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms larynx, trachea, main bronchi and lungs in situ; small bronchioles and lobar/hilum details are not resolved.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-03-lungs-airway.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6",
+        "title": "Diaphragm viewed from below, image 130-6",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows a dissected diaphragm including the central tendon and surrounding muscular parts.",
+        "viewLimitations": "One dissection aspect; does not show both pleural layers or movement through breathing.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows a dissected diaphragm including the central tendon and surrounding muscular parts.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-34-diaphragm.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis05-lymph-overview",
+    "title": "Lymphatic drainage routes and node groups",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=144-4",
+        "title": "Lymphatic structures and vessels of lower sigmoid colon, image 144-4",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows lower sigmoid colon with mesentery opened to expose lymphatic structures and vessels.",
+        "viewLimitations": "Regional sigmoid-colon view only; not a whole-body lymph route or anal sphincter view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows lower sigmoid colon with mesentery opened to expose lymphatic structures and vessels.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-27-sigmoid-colon.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6",
+        "title": "Lymphatic ducts, innominate vessels and neck vessels, image 76-6",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source caption/key and visually checked photo show right lymphatic duct, subclavian trunk, jugular/subclavian and brachiocephalic vessels, and axillary vessels in a neck/upper-chest dissection.",
+        "viewLimitations": "Only the neck/upper thorax and right lymphatic duct are shown; not the full body-wide lymphatic or venous route.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; credit the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for Bassett images; attribution/share-alike applies to any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source caption/key and linked specimen photograph were checked; the temporary image shows neck/upper-thorax dissection with vessels and lymphatic structures.",
+          "checkedAt": "2026-11-06T21:25:51.089Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-28-neck-lymphatics.md"
+        }
+      }
+    ],
+    "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+  },
+  {
+    "assetId": "asset-bvis06-oral-cavity",
+    "title": "Oral cavity, pharynx and salivary glands",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://peir.path.uab.edu/library/picture.php?/30672/categories",
+        "title": "00246802 — Prosected head showing parotid gland",
+        "source": "University of Alabama at Birmingham PEIR Digital Library",
+        "creator": "Peter Anderson",
+        "mediaType": "gross-photo",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Page and screenshot identify a prosected head with a parotid salivary gland; one real gross salivary-gland example.",
+        "viewLimitations": "The organism is not stated; it covers only parotid anatomy, not the complete oral cavity or all major glands. No reuse license was found.",
+        "termsUrl": "",
+        "linkingTerms": "No explicit link terms located; do not copy or embed the image.",
+        "reproductionRights": "No copying permission is established on the checked page. Public-page linking only; no separate linking policy was located.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed the prosected head, a marker at the parotid region, caption and credited author.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-38-salivary-gland-peir.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-stomach",
+    "title": "Stomach: regions, rugae and gastric glands",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Part_of_a_human_stomach_dissected_by_Edward_Jenner,_England,_Wellcome_L0057749.jpg",
+        "title": "File:Part of a human stomach dissected by Edward Jenner, England, Wellcome L0057749.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons (Wellcome Collection object)",
+        "creator": "Edward Jenner (dissection preparation; file uploader is not the specimen creator)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page identifies a dissected human stomach section prepared to show vessels and part of the stomach wall; a historical specimen example for general stomach gross anatomy.",
+        "viewLimitations": "A partial, flattened historical specimen rather than an opened intact stomach; does not establish gastric regions, rugae, pyloric sphincter, glands or mucosal layers. Actual photograph not visually inspected.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "An ordinary outbound link to the public Commons file page is appropriate; credit the specimen/preparation and link the license. Linking is distinct from reusing the photograph.",
+        "reproductionRights": "CC BY 4.0 is stated on the file page; any reproduction must follow attribution requirements.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Fetched Commons page identifies a dissected human stomach, but no successful screenshot confirmed the actual image.",
+          "checkedAt": "2026-11-06T21:12:55.845Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-06-stomach-wellcome.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=142-1",
+        "title": "Stomach lesser-curvature vessels and nerves, image 142-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Photo shows stomach tissue with vessels at the lesser curvature.",
+        "viewLimitations": "Vessel-focused close-up rather than a complete opened stomach or gastric mucosal histology view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows stomach tissue with vessels at the lesser curvature.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-15-stomach-gross.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Normal_gastric_mucosa_low_mag.jpg",
+        "title": "File:Normal gastric mucosa low mag.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Nephron",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Human gastric micrograph shows mucosa with surface pits and gland profiles.",
+        "viewLimitations": "Mucosal field only; not a complete stomach or all named cell types.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the file page; attribution/share-alike apply to reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary view shows gastric mucosa, surface folds/pits and gland profiles.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-18-gastric-mucosa.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-alimentary-canal",
+    "title": "Alimentary canal: mouth to anus",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=139-1",
+        "title": "Relations of liver, gallbladder, stomach and duodenum, image 139-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source and photo show upper abdominal organ relationships, lesser omentum and epiploic foramen.",
+        "viewLimitations": "Does not show all mesenteric attachments or whole-body organ placement.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Source and photo show upper abdominal organ relationships, lesser omentum and epiploic foramen.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-25-peritoneal-relations.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-1",
+        "title": "Vessels of ileum, cecum, ascending and transverse colon, image 143-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows dissected jejunum/ileum, cecum and colon with vessels; a regional digestive specimen.",
+        "viewLimitations": "Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows dissected jejunum/ileum, cecum and colon with vessels; a regional digestive specimen.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-26-intestinal-dissection.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-5",
+        "title": "Arteries, veins and nerves of colon, image 143-5",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows dissected colon and its regional mesenteric vessels.",
+        "viewLimitations": "No anal-canal sphincter section; does not represent the entire large intestine alone.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows dissected colon and its regional mesenteric vessels.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-36-colon.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-liver-biliary-pancreas",
+    "title": "Liver, gallbladder, pancreas and their ducts",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=146-6",
+        "title": "Interior of gallbladder, bile ducts and pancreatic duct, image 146-6",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source labels the gallbladder interior and biliary/pancreatic ducts in a gross dissection.",
+        "viewLimitations": "Duct-focused specimen, not a complete liver, pancreas or microscopic acinus view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Source labels the gallbladder interior and biliary/pancreatic ducts in a gross dissection.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-14-biliary-pancreas.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=139-1",
+        "title": "Relations of liver, gallbladder, stomach and duodenum, image 139-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source and photo show upper abdominal organ relationships, lesser omentum and epiploic foramen.",
+        "viewLimitations": "Does not show all mesenteric attachments or whole-body organ placement.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Source and photo show upper abdominal organ relationships, lesser omentum and epiploic foramen.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-25-peritoneal-relations.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+        "title": "Celiac plexus and pancreaticoduodenal arteries, image 148-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo/source labels celiac trunk, hepatic/splenic and mesenteric branches plus adjacent duodenum/pancreatic ducts.",
+        "viewLimitations": "Arterial/nerve dissection, not portal venous return or kidney hilum.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo/source labels celiac trunk, hepatic/splenic and mesenteric branches plus adjacent duodenum/pancreatic ducts.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-35-celiac.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-liver-lobule-pancreas",
+    "title": "Liver lobule and pancreatic acini",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=146-6",
+        "title": "Interior of gallbladder, bile ducts and pancreatic duct, image 146-6",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source labels the gallbladder interior and biliary/pancreatic ducts in a gross dissection.",
+        "viewLimitations": "Duct-focused specimen, not a complete liver, pancreas or microscopic acinus view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Source labels the gallbladder interior and biliary/pancreatic ducts in a gross dissection.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-14-biliary-pancreas.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Portal_triad.JPG",
+        "title": "File:Portal triad.JPG",
+        "source": "Wikimedia Commons (Jagiellonian University Medical College source material)",
+        "creator": "Original creator not established; uploaded by Reytan and edited by T-310",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page metadata identifies a portal triad in human liver tissue; a relevant micrograph candidate for lobular portal structures.",
+        "viewLimitations": "A portal-triad field is not a whole hepatic lobule or sinusoidal flow map; photograph not visually inspected.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Ordinary outbound link to the public Commons file page; attribution should preserve the Commons credits. Linking is distinct from copying.",
+        "reproductionRights": "Commons page states CC BY-SA 3.0 and GFDL 1.2-or-later; follow attribution/share-alike terms for reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page caption and license metadata checked; temporary image request returned HTTP 429, so visual inspection was not completed.",
+          "checkedAt": "2026-11-06T21:28:12.745Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-47-portal-triad.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Pancreatic_acinar_cells_-_TEM.jpg",
+        "title": "File:Pancreatic acinar cells - TEM.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Louisa Howard",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Page identifies a TEM of mammalian pancreatic tissue with acinar cells and organelles; a tissue-level example for pancreatic acini.",
+        "viewLimitations": "Species is not specified beyond mammal; one acinar TEM does not show a whole pancreatic acinus/islet arrangement. Photo not visually inspected.",
+        "termsUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain",
+        "linkingTerms": "Ordinary outbound link to the public Commons file page; no copying is needed for linking.",
+        "reproductionRights": "Page states public-domain status; page metadata does not establish human origin.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page caption, creator and public-domain statement checked; temporary image request returned HTTP 429, so visual inspection was not completed.",
+          "checkedAt": "2026-11-06T21:28:12.745Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-48-pancreatic-acini.md"
+        }
+      }
+    ],
+    "reason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification."
+  },
+  {
+    "assetId": "asset-bvis06-digestive-wall-layers",
+    "title": "Layers of the digestive wall",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://wellcomecollection.org/works/tjxuhj2w",
+        "title": "Villi from the small intestine",
+        "source": "Wellcome Collection",
+        "creator": "S. Schuller",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "The source image shows fluorescently labeled human small-intestinal villus mucosa; an actual microscopy example of villus surface tissue.",
+        "viewLimitations": "Does not show the complete gut wall or all named epithelial/crypt cell types.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY 4.0 is stated on the Wellcome page; attribution required for reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image view confirms fluorescent villus epithelial tissue; source page identifies human small intestinal mucosa.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-29-small-intestine-wellcome.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Normal_gastric_mucosa_low_mag.jpg",
+        "title": "File:Normal gastric mucosa low mag.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Nephron",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Human gastric micrograph shows mucosa with surface pits and gland profiles.",
+        "viewLimitations": "Mucosal field only; not a complete stomach or all named cell types.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the file page; attribution/share-alike apply to reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary view shows gastric mucosa, surface folds/pits and gland profiles.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-18-gastric-mucosa.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-small-intestine",
+    "title": "Small intestine: regions and mucosa",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-1",
+        "title": "Vessels of ileum, cecum, ascending and transverse colon, image 143-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows dissected jejunum/ileum, cecum and colon with vessels; a regional digestive specimen.",
+        "viewLimitations": "Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows dissected jejunum/ileum, cecum and colon with vessels; a regional digestive specimen.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-26-intestinal-dissection.md"
+        }
+      },
+      {
+        "url": "https://wellcomecollection.org/works/tjxuhj2w",
+        "title": "Villi from the small intestine",
+        "source": "Wellcome Collection",
+        "creator": "S. Schuller",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "The source image shows fluorescently labeled human small-intestinal villus mucosa; an actual microscopy example of villus surface tissue.",
+        "viewLimitations": "Does not show the complete gut wall or all named epithelial/crypt cell types.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY 4.0 is stated on the Wellcome page; attribution required for reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image view confirms fluorescent villus epithelial tissue; source page identifies human small intestinal mucosa.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-29-small-intestine-wellcome.md"
+        }
+      },
+      {
+        "url": "https://wellcomecollection.org/works/b5tfxwc4",
+        "title": "Intestinal villi",
+        "source": "Wellcome Collection",
+        "creator": "Liz Hirst (Medical Research Council)",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "The published image is a single enlarged intestinal villus by electron microscopy; relevant example of villus form.",
+        "viewLimitations": "Organism is not specified; image is not a whole small-intestine section or full set of epithelial cell types.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY 4.0 is stated on the Wellcome page; attribution required for reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image view shows a single villus-like structure; page supplies caption and CC BY 4.0 terms.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-30-intestinal-villi-wellcome.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-large-intestine",
+    "title": "Large intestine and anal canal",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-1",
+        "title": "Vessels of ileum, cecum, ascending and transverse colon, image 143-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows dissected jejunum/ileum, cecum and colon with vessels; a regional digestive specimen.",
+        "viewLimitations": "Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows dissected jejunum/ileum, cecum and colon with vessels; a regional digestive specimen.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-26-intestinal-dissection.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=144-4",
+        "title": "Lymphatic structures and vessels of lower sigmoid colon, image 144-4",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows lower sigmoid colon with mesentery opened to expose lymphatic structures and vessels.",
+        "viewLimitations": "Regional sigmoid-colon view only; not a whole-body lymph route or anal sphincter view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows lower sigmoid colon with mesentery opened to expose lymphatic structures and vessels.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-27-sigmoid-colon.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-5",
+        "title": "Arteries, veins and nerves of colon, image 143-5",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows dissected colon and its regional mesenteric vessels.",
+        "viewLimitations": "No anal-canal sphincter section; does not represent the entire large intestine alone.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows dissected colon and its regional mesenteric vessels.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-36-colon.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-peritoneal-folds",
+    "title": "Peritoneal folds: mesentery and omenta",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=139-1",
+        "title": "Relations of liver, gallbladder, stomach and duodenum, image 139-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source and photo show upper abdominal organ relationships, lesser omentum and epiploic foramen.",
+        "viewLimitations": "Does not show all mesenteric attachments or whole-body organ placement.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Source and photo show upper abdominal organ relationships, lesser omentum and epiploic foramen.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-25-peritoneal-relations.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-urinary-tract",
+    "title": "Urinary tract and the opened bladder",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=161-3",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption identifies median section of bladder, urethra, uterus and vagina; page structure list also names ovary and uterine tube. Relevant female pelvic specimen candidate.",
+        "viewLimitations": "Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms a median pelvic section with bladder, uterus, vagina and nearby pelvic contents; full anterior arrangement and the opened uterine inset are not shown.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-04-female-pelvis.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=169-7",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption identifies male pelvic organs in situ; structure list includes ductus deferens, bladder, ureter, prostate and urethral segments.",
+        "viewLimitations": "Lateral pelvic close-up does not establish the testis, epididymis, full duct course or penile cross-section; photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms a lateral pelvic dissection; page caption/key supplies specific bladder, prostate, ureter and urethral structures.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-05-male-pelvis.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7",
+        "title": "Kidneys and suprarenal glands dissected in situ, image 149-7",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+        "viewLimitations": "Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-13-kidney.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-kidney-section",
+    "title": "Kidney in section: cortex, medulla and collecting system",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7",
+        "title": "Kidneys and suprarenal glands dissected in situ, image 149-7",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+        "viewLimitations": "Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-13-kidney.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-renal-vessels",
+    "title": "Renal blood vessels, hilum to nephron and back",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7",
+        "title": "Kidneys and suprarenal glands dissected in situ, image 149-7",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+        "viewLimitations": "Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-13-kidney.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-nephron-pathway",
+    "title": "Nephron segments and the urine pathway",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://wellcomecollection.org/works/cvestqrm",
+        "title": "Human proximal tubule, tubular structure, SEM",
+        "source": "Wellcome Collection",
+        "creator": "David Gregory and Debbie Marshall",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source page and SEM identify a human proximal-tubule specimen, a microscopic example of one nephron segment.",
+        "viewLimitations": "Shows one tubular segment only; no complete nephron, loop, distal segment, collecting duct or downstream urine path.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the Wellcome source page is appropriate; attribution is required for reproductions under CC BY 4.0.",
+        "reproductionRights": "CC BY 4.0 is stated on the Wellcome page; attribution required for reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Page-linked SEM was viewed temporarily; it shows a textured tubular structure, consistent with the captioned human proximal tubule.",
+          "checkedAt": "2026-11-06T21:28:12.745Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-45-proximal-tubule.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Renal_corpuscle.jpg",
+        "title": "File:Renal corpuscle.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Ed Uthman",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "PAS-stained renal corpuscle micrograph visibly shows a glomerular tuft and surrounding renal tubules.",
+        "viewLimitations": "Species is not stated; filtration slit/barrier components are not resolved as in the diagram.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY-SA 2.0 is stated on the file page; attribution/share-alike apply to reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary view shows a stained glomerular tuft surrounded by renal tubules; species remains unconfirmed.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-24-renal-corpuscle.md"
+        }
+      }
+    ],
+    "reason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification."
+  },
+  {
+    "assetId": "asset-bvis06-renal-corpuscle",
+    "title": "Renal corpuscle and filtration barrier",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Renal_corpuscle.jpg",
+        "title": "File:Renal corpuscle.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Ed Uthman",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "direct-match",
+        "matches": "PAS-stained renal corpuscle micrograph visibly shows a glomerular tuft and surrounding renal tubules.",
+        "viewLimitations": "Species is not stated; filtration slit/barrier components are not resolved as in the diagram.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY-SA 2.0 is stated on the file page; attribution/share-alike apply to reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary view shows a stained glomerular tuft surrounded by renal tubules; species remains unconfirmed.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-24-renal-corpuscle.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-male-system",
+    "title": "Male reproductive tract, glands and penis",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=169-7",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption identifies male pelvic organs in situ; structure list includes ductus deferens, bladder, ureter, prostate and urethral segments.",
+        "viewLimitations": "Lateral pelvic close-up does not establish the testis, epididymis, full duct course or penile cross-section; photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms a lateral pelvic dissection; page caption/key supplies specific bladder, prostate, ureter and urethral structures.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-05-male-pelvis.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-testis-ducts",
+    "title": "Testis, epididymis and seminiferous tubule",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Histology_image_of_testis.jpg",
+        "title": "File:Histology image of testis.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Bhavya akula",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Page identifies a testis histology slide; candidate for seminiferous-tubule material.",
+        "viewLimitations": "Species is not identified; actual image was not visually checked and this is not a gross testis/epididymis tract image.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the file page; attribution/share-alike apply to reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Source page caption and license were checked, but the direct image request returned HTTP 429; photo not visually confirmed.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-37-testis-histology.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-female-gross",
+    "title": "Female internal organs: ovary, tube, uterus and vagina",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=161-3",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption identifies median section of bladder, urethra, uterus and vagina; page structure list also names ovary and uterine tube. Relevant female pelvic specimen candidate.",
+        "viewLimitations": "Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms a median pelvic section with bladder, uterus, vagina and nearby pelvic contents; full anterior arrangement and the opened uterine inset are not shown.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-04-female-pelvis.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_ovary.jpg",
+        "title": "File:Human ovary.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Ed Uthman, MD",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page/photo identify a human ovary with corpus luteum and corpus albicans; relevant gross reproductive specimen.",
+        "viewLimitations": "Shows postovulatory structures, not a full range of follicle stages or wall histology.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the file page; attribution/share-alike apply to any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary view shows a cut ovary with a prominent yellow corpus luteum and pale corpus albicans.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-31-human-ovary-gross.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-ovary-follicle",
+    "title": "Ovary: follicle stages and follicle wall",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_ovary.jpg",
+        "title": "File:Human ovary.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Ed Uthman, MD",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page/photo identify a human ovary with corpus luteum and corpus albicans; relevant gross reproductive specimen.",
+        "viewLimitations": "Shows postovulatory structures, not a full range of follicle stages or wall histology.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the file page; attribution/share-alike apply to any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary view shows a cut ovary with a prominent yellow corpus luteum and pale corpus albicans.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-31-human-ovary-gross.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Graafian_Follicle,_Human_Ovary_(3595010317).jpg",
+        "title": "File:Graafian Follicle, Human Ovary (3595010317).jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Ed Uthman",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Image is a human ovarian tissue micrograph with a large Graafian follicle; relevant to the mature follicle panel.",
+        "viewLimitations": "Does not show the full maturation sequence or all structures of the illustrated follicle wall.",
+        "termsUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC BY 2.0 is stated on the file page; attribution required for reproductions.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image view confirms ovarian tissue around a large follicular profile.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-19-human-ovary.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-uterine-wall",
+    "title": "Uterine wall and endometrium",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=161-3",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford University Lane Medical Library (Bassett Collection)",
+        "creator": "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Caption identifies median section of bladder, urethra, uterus and vagina; page structure list also names ovary and uterine tube. Relevant female pelvic specimen candidate.",
+        "viewLimitations": "Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the publicly accessible Stanford page is appropriate; credit the Bassett collection/Stanford. Linking does not itself authorize image copying.",
+        "reproductionRights": "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image inspection confirms a median pelvic section with bladder, uterus, vagina and nearby pelvic contents; full anterior arrangement and the opened uterine inset are not shown.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-04-female-pelvis.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Histology_of_normal_simple_columnar_epithelium_of_the_endometrium.jpg",
+        "title": "File:Histology of normal simple columnar epithelium of the endometrium.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Mikael Häggström, M.D.",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human endometrial epithelial photomicrograph gives a real tissue example of the uterine lining.",
+        "viewLimitations": "Does not show the full uterine wall, endometrial layers, myometrium or both cycle states.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "Ordinary outbound link to the public source page; linking is distinct from copying.",
+        "reproductionRights": "CC0 1.0 is stated on the file page; no copyright restriction asserted by the licensor.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary view confirms a histology field of endometrial epithelium.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-21-endometrium.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-abdominal-placement",
+    "title": "Abdominal placement of the digestive organs",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=139-1",
+        "title": "Relations of liver, gallbladder, stomach and duodenum, image 139-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source and photo show upper abdominal organ relationships, lesser omentum and epiploic foramen.",
+        "viewLimitations": "Does not show all mesenteric attachments or whole-body organ placement.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Source and photo show upper abdominal organ relationships, lesser omentum and epiploic foramen.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-25-peritoneal-relations.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-1",
+        "title": "Vessels of ileum, cecum, ascending and transverse colon, image 143-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows dissected jejunum/ileum, cecum and colon with vessels; a regional digestive specimen.",
+        "viewLimitations": "Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows dissected jejunum/ileum, cecum and colon with vessels; a regional digestive specimen.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-26-intestinal-dissection.md"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+        "title": "Celiac plexus and pancreaticoduodenal arteries, image 148-1",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo/source labels celiac trunk, hepatic/splenic and mesenteric branches plus adjacent duodenum/pancreatic ducts.",
+        "viewLimitations": "Arterial/nerve dissection, not portal venous return or kidney hilum.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo/source labels celiac trunk, hepatic/splenic and mesenteric branches plus adjacent duodenum/pancreatic ducts.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-35-celiac.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  },
+  {
+    "assetId": "asset-bvis06-kidney-placement",
+    "title": "Kidney placement in the abdomen",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7",
+        "title": "Kidneys and suprarenal glands dissected in situ, image 149-7",
+        "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+        "creator": "David L. Bassett (collection credit; individual photographer not established on the checked page)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+        "viewLimitations": "Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Ordinary outbound linking to the public Stanford source page is appropriate; attribute the Bassett collection/Stanford. Linking is not image copying.",
+        "reproductionRights": "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption and its linked published specimen photograph were visually checked in a temporary /tmp cache; Photo shows both kidneys in posterior abdominal context; source labels a longitudinally sectioned kidney with vessels, pelvis and calyces.",
+          "checkedAt": "2026-11-06T21:25:21.142Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/visceral-13-kidney.md"
+        }
+      }
+    ],
+    "reason": "One or more relevant public specimen/micrograph source pages are documented. This remains partial because one or more panels, orientations, structures, or microscopic details are not covered by the inspected source set; candidate-only references are marked as such."
+  }
+]

@@ -1,0 +1,3 @@
+Source-page evidence summary (checked 2026-11-06).
+
+Commons pages Hand-bones.jpg and Foot bones - tarsus, metatarsus and phalanges.jpg were opened and their captions, authors, dates, and licenses reviewed. Hand page: authentic human skeleton hand bones, credited Raul654, 2004-03-25, CC BY-SA 3.0 and GFDL. Foot page: caption names tarsus, metatarsus, phalanges; credited Anatomist90, 2011-11-21, CC BY-SA 3.0; page category identifies photographs of human foot bones but text does not independently establish specimen versus model. Screenshot requests were blocked (HTTP 429), so neither image is visually inspected. Candidate discovery only. Ordinary outbound page links; stated licenses govern reuse.

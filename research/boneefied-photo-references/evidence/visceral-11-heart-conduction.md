@@ -1,0 +1,2 @@
+Evidence note — visceral-11-heart-conduction.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 118-2 identifies a conduction-system dissection and labels the AV node, AV bundle/crura, tricuspid cusps, aortic valve and coronary sinus. The source-linked image was viewed temporarily from its published image URL; it is an actual dissected human heart specimen, though not all small conduction structures can be independently resolved in the photo. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

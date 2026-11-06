@@ -1,0 +1,2 @@
+Evidence note — visceral-02-heart-dissection.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett image 118-1 was opened and its caption checked. Its linked stereoscopic specimen image was viewed temporarily from the source page's published image URL; it shows a dissection around the heart and pericardial sac. The precise interatrial plane is identified by the source caption, but the photo is not a whole heart-wall layer plate. Image files were held only in /tmp for inspection and were not added to the project. Stanford credits its Bassett collection under CC BY-SA 4.0.

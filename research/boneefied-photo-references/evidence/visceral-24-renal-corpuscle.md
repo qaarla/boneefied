@@ -1,0 +1,2 @@
+Evidence note — visceral-24-renal-corpuscle.md
+Checked 2026-11-06T21:25:21.142Z. Wikimedia Commons page identifies a PAS-stained renal corpuscle micrograph by Ed Uthman under CC BY-SA 2.0, but does not identify species. The source image was viewed temporarily and shows a central glomerular tuft and surrounding renal tubules. Organism remains unconfirmed; the filtration barrier micro-panel is not resolved by this image. No image was retained in the workspace.

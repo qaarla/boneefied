@@ -1,0 +1,2 @@
+Evidence note — visceral-45-proximal-tubule.md
+Checked 2026-11-06T21:28:12.745Z. Evidence note — Wellcome Collection human proximal-tubule SEM. Source page: https://wellcomecollection.org/works/cvestqrm . Page identifies human proximal tubule, David Gregory and Debbie Marshall, and CC BY 4.0. The source IIIF image was viewed temporarily; it shows a textured tubular structure by SEM. It is a segment-level microscopy example, not a complete nephron/urine-flow route. No image was retained in the workspace.

@@ -1,0 +1,1071 @@
+[
+  {
+    "assetId": "asset-muscular-atlas-deep-back",
+    "title": "Deep back muscles (trapezius and latissimus dorsi removed)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=214-3",
+        "title": "Dissection of thoracic and lumbosacral back; multifidus and rotators in mid-thoracic region",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Posterior human dissection includes multifidus and deep paraspinal rotator muscles beside the vertebral column.",
+        "viewLimitations": "A single thoracic/lumbosacral source view does not cover the full assigned unilateral lumbar quadratus lumborum and scapular muscle set.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/stanford-back.jpg: real posterior cadaver dissection beside vertebral column with deep paraspinal muscle layers visible; no attempt to infer individual fibers beyond page labels.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-back-01.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=214-3",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Thoracic/lumbosacral posterior deep-back specimen",
+          "es": "Muestra posterior profunda torácica/lumbosacra"
+        }
+      },
+      {
+        "url": "https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/",
+        "title": "Natural color photograph of right shoulder superoposterior dissection with trapezius reflected",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Real human exposure includes supraspinatus, levator scapulae and rhomboid muscles.",
+        "viewLimitations": "Right shoulder superoposterior field only; it does not show the full lumbar multifidus/quadratus lumborum and erector-spinae comparison.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-back.jpg: human posterior shoulder/back dissection with reflected superficial layer and scapular muscles. Page caption and structure list cross-checked.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-back-02.md",
+          "finalUrl": "https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m1708.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Right posterior scapular dissection",
+          "es": "Disección escapular posterior derecha"
+        }
+      }
+    ],
+    "reason": "Partial: human posterior deep-back and right scapular dissection photographs verify multifidus/rotator and scapular-region examples, but they do not jointly show the assigned unilateral lumbar quadratus lumborum plus intact-versus-removed erector spinae comparison.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared the posterior Bassett lumbosacral/multifidus dissection and right superoposterior shoulder specimen against the deep plate; lumbar quadratus lumborum and bilateral layer asymmetry remain missing."
+  },
+  {
+    "assetId": "asset-muscular-atlas-posterior-arm",
+    "title": "Posterior arm and elbow",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/f69f29efd4dc08fc280798dabd35b8e7",
+        "title": "Natural color photograph of left arm lateral view with lateral triceps head retracted",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Left lateral cadaver arm shows triceps, deltoid, brachialis and anconeus-region labels.",
+        "viewLimitations": "Wrong side and lateral rather than assigned right posterior view; no separate anconeus inset or complete teres-major coverage.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-arm.jpg: human left lateral arm with labeled triceps, deltoid, brachialis and anconeus region. It is not the assigned right posterior view.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-posterior-arm-01.md",
+          "finalUrl": "https://calisphere.org/item/f69f29efd4dc08fc280798dabd35b8e7",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2296.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left lateral arm specimen",
+          "es": "Muestra lateral del brazo izquierdo"
+        }
+      },
+      {
+        "url": "https://calisphere.org/item/d54408845da87d69c0d5b04c623806dd",
+        "title": "Natural color photograph of left elbow lateral view with anconeus retracted",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Close-up real elbow dissection provides a limited anconeus/elbow comparison.",
+        "viewLimitations": "Left lateral elbow and retracted anconeus; not a right posterior elbow inset and does not establish the full triceps tendon view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-elbow.jpg: actual elbow specimen with tissue retracted and anatomy labels. Page says anconeus retracted; this is not a right posterior elbow view.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-posterior-arm-02.md",
+          "finalUrl": "https://calisphere.org/item/d54408845da87d69c0d5b04c623806dd",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2316.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left lateral elbow specimen",
+          "es": "Muestra lateral del codo izquierdo"
+        }
+      }
+    ],
+    "reason": "Partial: inspected human left lateral arm and elbow specimens show triceps, deltoid and anconeus-region structures, but the assigned right posterior view, teres major extent and matching elbow inset are not established.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared left lateral arm and left lateral elbow specimens with the right-posterior triceps/anconeus plate; side/view and full teres-major-to-olecranon panel remain unmatched."
+  },
+  {
+    "assetId": "asset-muscular-atlas-forearm",
+    "title": "Forearm: anterior and posterior views",
+    "status": "unresolved",
+    "references": [],
+    "reason": "Unresolved: the earlier Commons candidate is a biceps brachii upper-arm photograph, not a forearm photo, and is excluded. No verified human forearm photograph with the assigned anterior/posterior compartments and supinator cutaway was established in these targeted attempts.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared candidate title and source record: it is biceps brachii (upper arm), not forearm; no valid forearm photo remained after exclusion."
+  },
+  {
+    "assetId": "asset-muscular-atlas-abdominal-wall",
+    "title": "Abdominal wall layers",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+        "title": "Anterolateral abdominal-wall dissection showing transversus abdominis",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Human abdominal-wall dissection source labels transversus, the two obliques, and rectus abdominis.",
+        "viewLimitations": "One left anterolateral view, not the assigned three-step superficial-to-deep comparison panels or matching orientation.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/stanford-abdomen.jpg: human torso with anterolateral abdominal dissection and layered wall visible. Source page identifies transversus, obliques and rectus; not the assigned three sequential panels.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-abdominal-wall-01.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left anterolateral abdominal-wall dissection",
+          "es": "Disección anterolateral izquierda de la pared abdominal"
+        }
+      }
+    ],
+    "reason": "Partial: the Stanford human anterolateral abdominal dissection labels rectus, obliques and transversus, but is a single field rather than the illustrated three sequential superficial-to-deep panels.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared the Stanford caption and labeled structures with external-oblique, internal-oblique and transversus sequential layers; only one anterolateral field is shown."
+  },
+  {
+    "assetId": "asset-muscular-atlas-gluteal",
+    "title": "Gluteal region: surface and cutaway",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+        "title": "Natural color photograph of dissection of left thigh, lateral view",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human dissection labels gluteus medius, retracted gluteus maximus, and hamstring region.",
+        "viewLimitations": "Left lateral/posterolateral view, not the assigned right posterior paired surface/cutaway view; does not establish a full exposed medius cutaway.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-thighback.jpg: left lateral/posterolateral thigh with gluteus medius, retracted maximus and hamstrings labeled. It is not a posterior bilateral view.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-gluteal-01.md",
+          "finalUrl": "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2149.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left lateral gluteal/thigh dissection",
+          "es": "Disección glútea/muslo lateral izquierdo"
+        }
+      }
+    ],
+    "reason": "Partial: inspected human left lateral thigh photo shows gluteus medius and retracted gluteus maximus, but the assigned right posterior surface/cutaway pairing and fully exposed medius are not covered.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared the left lateral thigh image's gluteus medius and retracted maximus with the right posterior surface/cutaway panels; side and complete cutaway remain absent."
+  },
+  {
+    "assetId": "asset-muscular-atlas-deep-thigh",
+    "title": "Deep thigh: anterior and posterior cutaways",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64",
+        "title": "Natural color photograph of dissection of right thigh, anterior view, vastus intermedius cut/retracted",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Right anterior specimen directly shows vastus intermedius exposed beneath quadriceps layers.",
+        "viewLimitations": "Only anterior cutaway; articularis genus is not confirmed and the posterior semimembranosus cutaway is not shown.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-thigh.jpg: human right anterior thigh with vastus intermedius exposed/cut and adjacent quadriceps labeled. No posterior hamstring view in this image.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-thigh-01.md",
+          "finalUrl": "https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2145.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Right anterior thigh; deep quadriceps exposure",
+          "es": "Muslo anterior derecho; exposición profunda del cuádriceps"
+        }
+      }
+    ],
+    "reason": "Partial: the verified human right anterior thigh photo supports the vastus-intermedius region, but the source does not establish the full articularis-genus detail or the posterior semimembranosus cutaway.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared right anterior thigh photo and caption with vastus intermedius/articularis genus, then checked for posterior hamstrings; no posterior semimembranosus exposure was found."
+  },
+  {
+    "assetId": "asset-muscular-atlas-anterior-leg",
+    "title": "Anterior and lateral leg",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=192-4",
+        "title": "Anterior left-leg dissection showing tibialis anterior and extensor digitorum longus",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human anterior-leg specimen identifies tibialis anterior in an exposed leg field.",
+        "viewLimitations": "Left leg rather than assigned right; fibularis longus and its lateral course are not established.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/stanford-leg.jpg: real anterior left-leg dissection with muscles and neurovascular structures exposed. Wrong side for assigned right-leg drawing; fibularis longus is not confirmed.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-anterior-leg-01.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=192-4",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left anterior leg specimen",
+          "es": "Muestra anterior de la pierna izquierda"
+        }
+      }
+    ],
+    "reason": "Partial: Stanford's human left anterior-leg image identifies tibialis anterior; the assigned right anterior/lateral view and fibularis-longus tendon course are not verified by the retained specific page.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared the left anterior-leg caption/image and lateral-leg evidence against right tibialis anterior plus fibularis-longus course; fibularis longus and right laterality are not confirmed."
+  },
+  {
+    "assetId": "asset-muscular-atlas-calf",
+    "title": "Calf: surface and cutaway",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Medial_view_of_a_cadaver_dissection_of_the_gastrocnemius%E2%80%93soleus_junction.png",
+        "title": "Medial view of a cadaver dissection of the gastrocnemius–soleus junction",
+        "source": "Wikimedia Commons",
+        "creator": "Ryuta Kinugasa, Toshiaki Oda, Toshihiko Komatsu, V. Reggie Edgerton, and Shantanu Sinha",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Photographic human dissection depicts gastrocnemius and soleus fibers and aponeuroses.",
+        "viewLimitations": "Isolated medial specimen, not an in-situ whole right calf; popliteus and tibialis posterior are not represented.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/commons-calf.png: real human muscle dissection with gastrocnemius and soleus fascicles/aponeuroses displayed; specimen is isolated, not an in-situ whole calf.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-calf-01.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Medial_view_of_a_cadaver_dissection_of_the_gastrocnemius%E2%80%93soleus_junction.png",
+          "redirectNotes": "No redirect observed; the Commons file page is the destination (page may canonicalize filename encoding).",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Isolated medial gastrocnemius–soleus specimen",
+          "es": "Muestra medial aislada de gastrocnemio y sóleo"
+        }
+      }
+    ],
+    "reason": "Partial: the inspected human specimen photograph directly shows the gastrocnemius–soleus junction, but it is an isolated medial specimen and does not include in-situ popliteus or tibialis posterior.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared the real medial gastrocnemius–soleus specimen with the right posterior in-situ two-panel calf; popliteus and tibialis posterior are not present."
+  },
+  {
+    "assetId": "asset-muscular-atlas-hand",
+    "title": "Hand: intrinsic muscles, palmar view",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/dcf86ce51424323a7df4e5026965ad06",
+        "title": "Natural color photograph of dissection of the left wrist, posterior view, with dorsal interossei visible",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "The dorsal left wrist/hand specimen shows interosseous muscles and tendon relationships, a limited comparison for intrinsic hand anatomy.",
+        "viewLimitations": "Left posterior/dorsal view only; assigned asset is right palmar view and depicts lumbricals plus thenar/hypothenar muscles not established here.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-wrist.jpg: left dorsal wrist/hand with dorsal interosseous muscles labeled; it is not the assigned palmar intrinsic-muscle view.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-hand-01.md",
+          "finalUrl": "https://calisphere.org/item/dcf86ce51424323a7df4e5026965ad06",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2206.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left dorsal wrist/hand specimen",
+          "es": "Muestra dorsal de muñeca/mano izquierda"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=104-5",
+        "title": "Volar aspect of right hand; thenar muscles and deep volar arch",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett; copyright held by Stanford University",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "The source caption identifies a real right volar hand dissection with thenar muscles, directly matching the target's palmar side and thenar region.",
+        "viewLimitations": "A deep volar exposure, not the illustrated superficial palmar-aponeurosis-removed layer; it does not establish the lumbricals or hypothenar set.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Public Stanford educational source page may be linked; stated license applies to image reuse and is not permission to copy/embed.",
+        "reproductionRights": "CC BY-SA 4.0 stated by Stanford; any reproduction must meet its conditions; none is exercised here.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption says right volar hand and thenar muscles. The original image was viewed temporarily outside the workspace: actual dissected hand with tendons and deep palmar structures; this is not the full superficial intrinsic-muscle plate.",
+          "checkedAt": "2026-11-06T21:58:55.714Z",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=104-5",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-hand-02.md"
+        },
+        "subject": {
+          "en": "Right volar hand; deep thenar exposure",
+          "es": "Mano volar derecha; exposición profunda tenar"
+        }
+      }
+    ],
+    "reason": "Partial: the dorsal left wrist photo is a nonmatching regional example; the additional inspected right volar-hand Bassett image is a genuine deep thenar exposure, but does not show the assigned superficial palmar lumbrical and hypothenar set.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared the dorsal left wrist specimen and inspected right volar Bassett specimen to the right palmar layer; deep thenar structures are visible, but lumbricals/hypothenar first-view coverage is not."
+  },
+  {
+    "assetId": "asset-muscular-atlas-foot",
+    "title": "Foot: plantar first layer and dorsal inset",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=201-4",
+        "title": "Dissection of plantar aspect of left foot; nerve supply to quadratus plantae, flexor digiti minimi brevis and abductor digiti minimi",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett; copyright held by Stanford University",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "A real left plantar human specimen page identifies intrinsic plantar muscles and offers a genuine plantar-view comparison.",
+        "viewLimitations": "The caption/image centers deeper nerve supply and structures rather than the assigned first plantar layer; left side, not the assigned right, and no dorsal extensor-digitorum-brevis inset.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Public Stanford educational source page may be linked; stated license applies to image reuse and is not permission to copy/embed.",
+        "reproductionRights": "CC BY-SA 4.0 stated by Stanford; any reproduction must meet its conditions; none is exercised here.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption identifies left plantar foot and specific intrinsic muscles. Original image viewed temporarily outside workspace: real left plantar dissection with deeper nerve/vessel and muscle exposure; not the target superficial first layer.",
+          "checkedAt": "2026-11-06T21:58:55.714Z",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=201-4",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-foot-01.md"
+        },
+        "subject": {
+          "en": "Left plantar foot; deep nerve/muscle exposure",
+          "es": "Pie plantar izquierdo; exposición profunda de nervios/músculos"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=202-1",
+        "title": "Dissection of plantar aspect of left foot; adductor hallucis and plantar arterial arch close-up",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett; copyright held by Stanford University",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "A close-up genuine left plantar specimen labels adductor hallucis and demonstrates a real deep plantar muscle dissection.",
+        "viewLimitations": "Deep close-up rather than the first plantar layer; wrong side for the right-foot diagram and no dorsal extensor digitorum brevis inset.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Public Stanford educational source page may be linked; stated license applies to image reuse and is not permission to copy/embed.",
+        "reproductionRights": "CC BY-SA 4.0 stated by Stanford; any reproduction must meet its conditions; none is exercised here.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page caption identifies left plantar foot and adductor hallucis close-up. Original image viewed temporarily outside workspace: actual deep plantar dissection with arterial arches and muscle structures; not the superficial first layer.",
+          "checkedAt": "2026-11-06T21:58:55.714Z",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=202-1",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-foot-02.md"
+        },
+        "subject": {
+          "en": "Left plantar foot close-up; deep adductor hallucis view",
+          "es": "Primer plano plantar izquierdo; vista profunda del aductor del dedo gordo"
+        }
+      }
+    ],
+    "reason": "Partial: two inspected Stanford photos confirm left plantar human specimens and deep plantar structures, but neither shows the assigned first plantar layer (abductor hallucis/flexor digitorum brevis) and the separate dorsal extensor-digitorum-brevis inset is not covered.",
+    "coverageKind": "incomplete",
+    "finalReview": "Inspected both Bassett plantar photos and compared their captions/images with the first-layer plantar panel and dorsal inset; both are left deep plantar views, with first-layer and dorsal extensor digitorum brevis coverage absent."
+  },
+  {
+    "assetId": "asset-muscular-atlas-pelvic-floor",
+    "title": "Pelvic floor: levator ani, superior view",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=174-5",
+        "title": "Dissection of muscles of male perineum and pelvic diaphragm — Bassett image 174-5",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "The source identifies human male levator ani/pelvic diaphragm structures in a real dissection.",
+        "viewLimitations": "Male perineal specimen and inferior/perineal orientation, unlike the assigned superior pelvic-floor view; not a complete match for pubococcygeus and iliococcygeus bands.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/stanford-pelvic.jpg: human male perineum/pelvic diaphragm dissection. Orientation and isolated levator ani bands differ from the assigned superior view.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-pelvic-floor-01.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=174-5",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Male perineum/pelvic diaphragm; inferior/perineal view",
+          "es": "Periné masculino/diafragma pélvico; vista inferior/perineal"
+        }
+      }
+    ],
+    "reason": "Partial: a verified human male perineum/pelvic-diaphragm photograph names levator ani, but its perineal/superior fascia view does not match the assigned superior pelvic-floor view or establish the pubococcygeus and iliococcygeus bands.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared Stanford's male pelvic-diaphragm/perineal caption and photo against superior pelvic-floor orientation; inferior/perineal perspective and named levator-ani bands are not equivalent."
+  },
+  {
+    "assetId": "asset-openstax-muscle-face-neck",
+    "title": "Face and neck muscles, right lateral view",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/287e0f96d086919e57c58c9cb1cb8ab2",
+        "title": "Natural color photograph of dissection of the face, right anterolateral view",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Real right facial dissection is a limited reference for the face portion of the combined face/neck plate.",
+        "viewLimitations": "Page identifies face/jaw but not all named facial muscles; does not include the assigned right lateral neck and scalene field.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-face.jpg: human right facial dissection, side/anterolateral field. The page identifies face and jaw; it does not establish all labeled facial muscles.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-face-neck-01.md",
+          "finalUrl": "https://calisphere.org/item/287e0f96d086919e57c58c9cb1cb8ab2",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m1015.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Right anterolateral face dissection; specific muscles not all captioned",
+          "es": "Disección anterolateral derecha de la cara; no todos los músculos se identifican"
+        }
+      },
+      {
+        "url": "https://calisphere.org/item/a7f4387ffed8c8052efd7972dba545ed",
+        "title": "Natural color photograph of left lateral neck dissection",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Lateral neck photo and source labels include sternomastoid and anterior scalene structures.",
+        "viewLimitations": "Left neck only; no facial muscles and not the assigned right lateral combined presentation.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-neck.jpg: human lateral neck dissection with visible labels including sternomastoid and anterior scalene. This is the left side and is not the assigned right lateral combined face/neck view.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-face-neck-02.md",
+          "finalUrl": "https://calisphere.org/item/a7f4387ffed8c8052efd7972dba545ed",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2404.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left lateral neck specimen",
+          "es": "Muestra lateral del cuello izquierdo"
+        }
+      }
+    ],
+    "reason": "Partial: distinct inspected human face and left lateral-neck dissection photos offer regional examples, but named facial-muscle coverage is incomplete and the neck side/view does not match the right lateral composite.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared right anterolateral facial and left lateral neck source photos against all assigned facial and lateral-neck labels; facial labels and right-neck view are missing."
+  },
+  {
+    "assetId": "asset-openstax-muscle-anterior-trunk",
+    "title": "Anterior chest and shoulder muscles",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e",
+        "title": "Natural color photograph of anterior thorax with right pectoral muscles removed",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human anterior thorax dissection exposes ribs and intercostal region after pectoral removal.",
+        "viewLimitations": "Only the deep-side chest field; no contralateral superficial panel or complete rectus/oblique/serratus/SCM set.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-chest.jpg: real anterior thoracic specimen exposing ribs and intercostal spaces after pectoral muscles were removed; only one side/layer.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-trunk-01.md",
+          "finalUrl": "https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m1907.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Anterior thorax after right pectoral removal",
+          "es": "Tórax anterior tras retirar pectoral derecho"
+        }
+      },
+      {
+        "url": "https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918",
+        "title": "Natural color photograph of right anterior axilla showing pectoralis minor and external intercostals",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page labels include pectoralis minor and external intercostal muscles, direct examples of the deep-side structures.",
+        "viewLimitations": "Axilla-centered field only; not the full anterior chest and does not cover the superficial opposite side.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-coracobrachialis.jpg: actual right anterior axillary dissection; captioned structures include coracobrachialis. This is axilla rather than full anterior arm.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-trunk-02.md",
+          "finalUrl": "https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2084.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Right anterior axilla dissection",
+          "es": "Disección de la axila anterior derecha"
+        }
+      }
+    ],
+    "reason": "Partial: human anterior thorax and right axilla source photos verify pectoral/intercostal examples, but not the full asymmetric superficial-to-deep chest, shoulder and abdominal muscle plate.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared anterior thorax and right axilla source pages against superficial and deep trunk panels; pectoral/intercostal fields are real, but no full torso/asymmetric set."
+  },
+  {
+    "assetId": "asset-openstax-muscle-anterior-arm",
+    "title": "Anterior arm: superficial and deep layers",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918",
+        "title": "Natural color photograph of right anterior axilla showing coracobrachialis",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Right axilla dissection labels coracobrachialis, a deep anterior-arm muscle.",
+        "viewLimitations": "Axilla-only field and no complete superficial biceps/deltoid or brachialis comparison.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-coracobrachialis.jpg: actual right anterior axillary dissection; captioned structures include coracobrachialis. This is axilla rather than full anterior arm.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-arm-01.md",
+          "finalUrl": "https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2084.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Right anterior axilla; coracobrachialis-region example",
+          "es": "Axila anterior derecha; ejemplo de región coracobraquial"
+        }
+      }
+    ],
+    "reason": "Partial: a verified right anterior axilla photo names coracobrachialis and related muscles, but the failed-to-fetch elbow candidate is excluded; no single verified photo covers the full right anterior superficial and deep arm panels.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared the right anterior axilla's coracobrachialis labels with the complete anterior arm plate; biceps/deltoid surface and full brachialis/forearm layers are not documented by this verified page."
+  },
+  {
+    "assetId": "asset-openstax-muscle-anterior-leg",
+    "title": "Anterior thigh: superficial layer",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/40c0de82d1124d18bc9b7b7af62e3453",
+        "title": "Natural color photograph of superficial dissection of right anteromedial thigh",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Right superficial thigh dissection provides an example of the superficial medial/anterior region.",
+        "viewLimitations": "Restricted distal anteromedial field; it does not establish the complete superficial thigh set, especially TFL, iliopsoas and adductors.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-thighsurface.jpg: human right anteromedial distal thigh with superficial tissues and labels. It is a restricted field rather than full assigned thigh plate.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-leg-01.md",
+          "finalUrl": "https://calisphere.org/item/40c0de82d1124d18bc9b7b7af62e3453",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2067.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Right anteromedial superficial thigh; restricted field",
+          "es": "Muslo superficial anteromedial derecho; campo limitado"
+        }
+      },
+      {
+        "url": "https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64",
+        "title": "Natural color photograph of right anterior thigh dissection with vastus intermedius exposed",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Right anterior thigh cadaver photo supplies a quadriceps/rectus-femoris regional comparison.",
+        "viewLimitations": "Deep cutaway rather than the assigned superficial layer; vastus intermedius is intentionally on a separate deep plate.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-thigh.jpg: human right anterior thigh with vastus intermedius exposed/cut and adjacent quadriceps labeled. No posterior hamstring view in this image.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-leg-02.md",
+          "finalUrl": "https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2145.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Right anterior thigh deep cutaway; not superficial plate",
+          "es": "Corte profundo del muslo anterior derecho; no es la lámina superficial"
+        }
+      }
+    ],
+    "reason": "Partial: a verified right anteromedial superficial-thigh photo is a limited example; the source does not establish the complete labeled set (TFL, iliopsoas, adductors, quadriceps and sartorius). A search-discovered deep-thigh image was excluded because its source page did not establish human organism.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared limited right anteromedial superficial-thigh image to the target bilateral superficial thigh; named muscles are not sufficiently covered, and an unknown-species candidate was rejected."
+  },
+  {
+    "assetId": "asset-openstax-muscle-posterior-back",
+    "title": "Superficial back and scapular muscles",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_(Lange_et_al.)/09:_Muscular_System/9.08:_Anatomical_Atlas_-_Muscular_System",
+        "title": "Cadaver pectoral region and superficial back photo, panel 19",
+        "source": "Medicine LibreTexts / BlueLink",
+        "creator": "B. Kathleen Alsup and Glenn M. Fox (photo credit shown in image)",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Actual posterior cadaver photograph shows a broad superficial back layer and scapular region.",
+        "viewLimitations": "One photo with letter markers, not decoded here; does not establish every labeled scapular muscle in the assigned superficial plate.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/libre-back.png: actual posterior whole trunk cadaver photo with superficial back and shoulder musculature; letters are present, no unseen label key inferred.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-posterior-back-01.md",
+          "finalUrl": "https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_(Lange_et_al.)/09:_Muscular_System/9.08:_Anatomical_Atlas_-_Muscular_System",
+          "redirectNotes": "No redirect observed; the specific LibreTexts chapter loaded. This single retained page is used only for the one superficial-back photo panel, not as a broad system-wide equivalent.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Posterior superficial back photo; letter markers undecoded",
+          "es": "Foto posterior superficial de espalda; marcadores no descifrados"
+        }
+      }
+    ],
+    "reason": "Partial: the inspected LibreTexts/BlueLink page includes one actual superficial posterior cadaver-back photo, but its letter markers are not independently decoded and not all assigned scapular structures are confirmed.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared the page's one posterior-back cadaver photograph against superficial trapezius/latissimus and scapular labels; its letter key is unverified and label-by-label matches are not claimed."
+  },
+  {
+    "assetId": "asset-openstax-muscle-posterior-leg",
+    "title": "Posterior lower limb: contextual overview",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+        "title": "Natural color photograph of dissection of left thigh, lateral view",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Photo labels gluteal muscles, retracted maximus and hamstring group in a posterior-lateral lower-limb context.",
+        "viewLimitations": "Left lateral view, not a posterior view of both legs; gastrocnemius is absent from this field.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-thighback.jpg: left lateral/posterolateral thigh with gluteus medius, retracted maximus and hamstrings labeled. It is not a posterior bilateral view.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-posterior-leg-01.md",
+          "finalUrl": "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2149.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left posterolateral thigh/gluteal specimen",
+          "es": "Muestra posterolateral de muslo/glúteo izquierdo"
+        }
+      }
+    ],
+    "reason": "Partial: an inspected left posterolateral thigh photograph verifies gluteal and hamstring-region examples, but no retained source establishes the bilateral posterior overview through the calf and all depicted structures.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared left lateral/posterolateral thigh dissection to bilateral posterior gluteal/hamstring/calf overview; no calf or paired whole-limb photo coverage established."
+  },
+  {
+    "assetId": "asset-openstax-muscle-labeled-overview",
+    "title": "Superficial muscles, anterior and posterior views",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/",
+        "title": "Natural color photograph of right shoulder superoposterior dissection with trapezius reflected",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "A source-specific real human specimen photograph supplies a right superoposterior shoulder example within the body-region range of the whole-body superficial overview.",
+        "viewLimitations": "Regional view only; not a paired whole-body anterior/posterior superficial view and does not establish all pinned muscles.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-back.jpg: human posterior shoulder/back dissection with reflected superficial layer and scapular muscles. Page caption and structure list cross-checked.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-01.md",
+          "finalUrl": "https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/",
+          "redirectNotes": "No page redirect observed; the specific Calisphere item page remained the final destination. Its contributor DOI link is recorded in the evidence note.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:19.574Z"
+        },
+        "subject": {
+          "en": "Right posterior shoulder/back region; not whole-body overview",
+          "es": "Región posterior derecha de hombro/espalda; no es vista corporal completa"
+        }
+      },
+      {
+        "url": "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+        "title": "Natural color photograph of dissection of left thigh, lateral view",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "A source-specific real human specimen photograph supplies a left posterolateral thigh/gluteal example within the body-region range of the whole-body superficial overview.",
+        "viewLimitations": "Regional view only; not a paired whole-body anterior/posterior superficial view and does not establish all pinned muscles.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-thighback.jpg: left lateral/posterolateral thigh with gluteus medius, retracted maximus and hamstrings labeled. It is not a posterior bilateral view.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-02.md",
+          "finalUrl": "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+          "redirectNotes": "No page redirect observed; the specific Calisphere item page remained the final destination. Its contributor DOI link is recorded in the evidence note.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:19.574Z"
+        },
+        "subject": {
+          "en": "Left posterolateral thigh/gluteal region; not paired overview",
+          "es": "Región posterolateral izquierda de muslo/glúteo; no es vista bilateral"
+        }
+      },
+      {
+        "url": "https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e",
+        "title": "Natural color photograph of anterior thorax with right pectoral muscles removed",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "A source-specific real human specimen photograph supplies a anterior thorax example within the body-region range of the whole-body superficial overview.",
+        "viewLimitations": "Regional view only; not a paired whole-body anterior/posterior superficial view and does not establish all pinned muscles.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-chest.jpg: real anterior thoracic specimen exposing ribs and intercostal spaces after pectoral muscles were removed; only one side/layer.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-03.md",
+          "finalUrl": "https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e",
+          "redirectNotes": "No page redirect observed; the specific Calisphere item page remained the final destination. Its contributor DOI link is recorded in the evidence note.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:19.574Z"
+        },
+        "subject": {
+          "en": "Anterior thorax after pectoral removal; not superficial whole-body view",
+          "es": "Tórax anterior tras retirar pectoral; no es vista corporal superficial completa"
+        }
+      }
+    ],
+    "reason": "Partial: specific right shoulder/back, left posterior-lateral thigh/gluteal and anterior thorax source photographs provide regional examples, but no source set forms the whole-body paired superficial views or establishes all pinned muscles.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared three specific Calisphere specimen pages across shoulder/back, lower limb and anterior thorax with the full-body overview; they are separate regional examples and do not cover the complete paired body views or all labels."
+  },
+  {
+    "assetId": "asset-openstax-diaphragm-labeled",
+    "title": "Diaphragm: domes and inferior view",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-1",
+        "title": "Diaphragm viewed from above, pleura removed",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human thoracic specimen visibly shows the superior diaphragmatic dome surfaces.",
+        "viewLimitations": "Above/pleural view, not the assigned anterior coronal cutaway.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/stanford-diaphragm-top.jpg: human thoracic view from above showing both domes and central tendon region. It is not the assigned anterior coronal cutaway.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-diaphragm-labeled-01.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-1",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Human diaphragm viewed from above, pleura removed",
+          "es": "Diafragma humano visto desde arriba, pleura retirada"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6",
+        "title": "Diaphragm viewed from below",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Human specimen supplies the specifically assigned inferior diaphragm view.",
+        "viewLimitations": "Inferior view only; the source pair does not show the assigned anterior coronal cutaway in its exact orientation.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/stanford-diaphragm.jpg: human thoracoabdominal specimen viewed from below with diaphragm and central regions exposed. Source caption explicitly gives inferior aspect.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-openstax-diaphragm-labeled-02.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6",
+          "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Human diaphragm viewed from below",
+          "es": "Diafragma humano visto desde abajo"
+        }
+      }
+    ],
+    "reason": "Partial: Stanford's inspected human superior and inferior diaphragm photos verify those real views, but the assigned anterior coronal cutaway and comparative dome-height panel are missing.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared Stanford superior and inferior diaphragm captions/photos to the assigned coronal cutaway plus inferior view; only the two oblique views are supported."
+  },
+  {
+    "assetId": "asset-injurymap-rotator-cuff-labeled",
+    "title": "Rotator cuff: anterior and posterior views",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://calisphere.org/item/866e27c011a19be8e2c5b40c18ada157",
+        "title": "Natural color photograph of left posterolateral shoulder dissection exposing posterior cuff muscles",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Human dissection labels supraspinatus, infraspinatus and teres minor in a posterior view.",
+        "viewLimitations": "Left shoulder rather than assigned right; posterior side only and no anterior subscapularis coverage.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-cuffback.jpg: actual left shoulder posterior dissection exposing posterior cuff muscles; left side, not assigned right shoulder.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-injurymap-rotator-cuff-labeled-01.md",
+          "finalUrl": "https://calisphere.org/item/866e27c011a19be8e2c5b40c18ada157",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m1778.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Left posterolateral shoulder; deltoid reflected",
+          "es": "Hombro posterolateral izquierdo; deltoides reflejado"
+        }
+      },
+      {
+        "url": "https://calisphere.org/item/93b0277db664739dce9e1350c90117c7",
+        "title": "Natural color photograph of right anterior glenohumeral joint with subscapularis cut/retracted",
+        "source": "Calisphere / USC Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Right anterior dissection includes subscapularis in the opened joint field.",
+        "viewLimitations": "Subscapularis is cut/retracted and the joint is opened; not the assigned intact muscle surface, and no complete paired cuff view.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+        "reproductionRights": "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Temporary image viewed from /tmp/calisphere-cufffront.jpg: human right anterior joint specimen, subscapularis cut/retracted and joint opened; not a complete anterior cuff field.",
+          "checkedAt": "2026-11-06T21:20:06.175Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-injurymap-rotator-cuff-labeled-02.md",
+          "finalUrl": "https://calisphere.org/item/93b0277db664739dce9e1350c90117c7",
+          "redirectNotes": "No page redirect observed: the final page is the Calisphere item page. Its metadata links the contributing source record at http://doi.org/10.25549/anatomy-m2472.",
+          "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+        },
+        "subject": {
+          "en": "Right anterior open glenohumeral joint; subscapularis cut/retracted",
+          "es": "Articulación glenohumeral anterior derecha; subescapular cortado/retraído"
+        }
+      }
+    ],
+    "reason": "Partial: inspected posterior left and anterior right shoulder photos show posterior cuff muscles and a cut/retracted subscapularis, but they do not reproduce the complete right-shoulder paired cuff views with intact tendon relationships.",
+    "coverageKind": "incomplete",
+    "finalReview": "Compared left posterior cuff and right anterior joint photos to the right shoulder panels; left-side posterior photo and cut/retracted subscapularis joint field leave an incomplete direct counterpart."
+  }
+]

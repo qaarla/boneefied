@@ -1,0 +1,2 @@
+Evidence note — visceral-48-pancreatic-acini.md
+Checked 2026-11-06T21:28:12.745Z. Evidence note — Wikimedia Commons pancreatic acinar-cell TEM. Source page: https://commons.wikimedia.org/wiki/File:Pancreatic_acinar_cells_-_TEM.jpg . Page describes mammalian pancreatic tissue and acinar cells, credits Louisa Howard and states public-domain status. Temporary image request returned HTTP 429; actual image was not visually inspected. Species is unspecified beyond mammal, so organism remains unconfirmed; candidate only.

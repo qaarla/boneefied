@@ -1,0 +1,2 @@
+Evidence note — visceral-47-portal-triad.md
+Checked 2026-11-06T21:28:12.745Z. Evidence note — Wikimedia Commons human liver portal-triad micrograph. Source page: https://commons.wikimedia.org/wiki/File:Portal_triad.JPG . Page metadata identifies human liver tissue, Jagiellonian University Medical College source material, upload by Reytan, edit by T-310 and CC BY-SA 3.0/GFDL terms. The image request returned HTTP 429 during temporary inspection; the actual micrograph was not visually checked. Keep as a caption-verified candidate only.

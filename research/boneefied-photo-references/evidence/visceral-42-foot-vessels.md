@@ -1,0 +1,2 @@
+Evidence note — visceral-42-foot-vessels.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 196-7 identifies superficial nerves and vessels of the dorsolateral foot/ankle. Its source-linked image was viewed temporarily and shows dissected superficial foot vessels. The page does not identify the great saphenous course or full venous return. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

@@ -1,0 +1,2 @@
+Evidence note — visceral-13-kidney.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 149-7 names kidneys, suprarenal glands and posterior abdominal vessels. Its published source image was viewed temporarily; both kidneys are visible and a kidney is sectioned to show collecting spaces/vessels. It does not establish all nephron or microscopic structures. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

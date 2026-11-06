@@ -1,0 +1,2 @@
+Evidence note — visceral-14-biliary-pancreas.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 146-6 identifies the gallbladder interior, bile ducts and pancreatic duct. Its source-linked photo was viewed temporarily; it shows dissected upper abdominal tissues and the ductal region, but not the entire liver/pancreas or microscopic acini. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

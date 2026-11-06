@@ -1,0 +1,3279 @@
+[
+  {
+    "key": "final-photo-source-001",
+    "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+    "title": "Cranium - inferior view.jpg",
+    "source": "Wikimedia Commons; Charles University anthropological collections",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-skull-base-external",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-01-skeletal-atlas-skull-base-external.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-38-commons-axial-skeleton-blank.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-002",
+    "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+    "title": "Cranium - basis cranii interna.jpg",
+    "source": "Wikimedia Commons; Charles University anthropological collections",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-cranial-floor-internal",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-02-skeletal-atlas-cranial-floor-internal.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-38-commons-axial-skeleton-blank.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-003",
+    "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+    "title": "Cranium - neurocranium superior view 2.jpg",
+    "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on Commons file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-skull-sutures"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-03-skeletal-atlas-skull-sutures.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-004",
+    "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+    "title": "Cranium - sutura lambdoidea (lambda).jpg",
+    "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on Commons file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-skull-sutures"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-03-skeletal-atlas-skull-sutures.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-005",
+    "url": "https://commons.wikimedia.org/wiki/File:Thoracic_vertebrae.jpg",
+    "title": "Thoracic vertebrae.jpg",
+    "source": "Wikimedia Commons; author’s own work",
+    "creators": [
+      "Anatomist90"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 stated on Commons file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-vertebra-typical",
+      "asset-cervical-vertebra",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-04-skeletal-atlas-vertebra-typical.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-33-cervical-vertebra.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-38-commons-axial-skeleton-blank.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-006",
+    "url": "https://commons.wikimedia.org/wiki/File:Vertebra_-_atlas,_axis_(superior).jpg",
+    "title": "Vertebra - atlas, axis (superior).jpg",
+    "source": "Wikimedia Commons; Charles University anthropological collections",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-atlas-axis"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-05-skeletal-atlas-atlas-axis.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-007",
+    "url": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+    "title": "Anterior surface of scapula — natural human dry-bone photograph",
+    "source": "Wikimedia Commons; Anatomist90",
+    "creators": [
+      "Anatomist90"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 Unported stated on the file page; no copy or embedding into Boneefied."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-scapula",
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-main-scapula-anterior-verified.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-008",
+    "url": "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+    "title": "Scapula - posterior view.jpg",
+    "source": "Wikimedia Commons; Charles University anthropological collections",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-scapula",
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-atlas-skeleton-posterior"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-08-skeletal-atlas-scapula.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-09-skeletal-atlas-pectoral-girdle.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-28-atlas-skeleton-posterior.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-009",
+    "url": "https://calisphere.org/item/74761ef06360839b7e8bc0fcd7d84ef6/",
+    "title": "Natural color photograph of a dissection of the right glenohumeral joint, anterior view, with the joint capsule opened and retracted to expose the glenoid fossa",
+    "source": "Calisphere; University of Southern California Digital Library / Norris Medical Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 stated for this item; attribution and noncommercial/share-alike conditions apply."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-skeletal-atlas-shoulder-joint"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-09-skeletal-atlas-pectoral-girdle.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-18-skeletal-atlas-shoulder-joint.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-010",
+    "url": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+    "title": "Humerus - anterior 2.jpg",
+    "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on Commons file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-humerus"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-10-skeletal-atlas-humerus.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-011",
+    "url": "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+    "title": "Humerus - posterior 2.jpg",
+    "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on Commons file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-humerus"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-10-skeletal-atlas-humerus.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-012",
+    "url": "https://commons.wikimedia.org/wiki/File:AnteriorHumerusRadiusUlnaArticulated.jpg",
+    "title": "AnteriorHumerusRadiusUlnaArticulated.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Brian C. Goss"
+    ],
+    "reproductionRights": [
+      "Public-domain release stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/mark/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-forearm"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-11-skeletal-atlas-forearm.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-013",
+    "url": "https://commons.wikimedia.org/wiki/File:Hand-bones.jpg",
+    "title": "Hand-bones.jpg",
+    "source": "Wikimedia Commons; actual human skeleton photograph",
+    "creators": [
+      "Raul654"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 and GFDL stated on Commons file page.",
+      "CC BY-SA 3.0 and GFDL are stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-hand-palmar",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-12-skeletal-atlas-hand-palmar.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-27-atlas-skeleton-anterior.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-29-atlas-skeleton-axial-appendicular.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-39-commons-appendicular-skeleton-blank.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-014",
+    "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae_(lateral_view)_2.jpg",
+    "title": "Pelvis - os coxae (lateral view) 2.jpg",
+    "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on Commons file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-hip-bone"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-13-skeletal-atlas-hip-bone.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-015",
+    "url": "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/",
+    "title": "Natural color photograph of dissection of hip joint with the femoral head dislocated",
+    "source": "Calisphere; University of Southern California Digital Library / Norris Medical Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 stated for this item; attribution and noncommercial/share-alike conditions apply."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-hip-bone",
+      "asset-servier-pelvis"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-13-skeletal-atlas-hip-bone.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-37-servier-pelvis.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-016",
+    "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+    "title": "Femur - anterior, posterior.jpg",
+    "source": "Wikimedia Commons; Charles University anthropological collections",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-femur",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-14-skeletal-atlas-femur.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-27-atlas-skeleton-anterior.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-28-atlas-skeleton-posterior.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-29-atlas-skeleton-axial-appendicular.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-39-commons-appendicular-skeleton-blank.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-017",
+    "url": "https://commons.wikimedia.org/wiki/File:Tibia,_fibula_(anterior).jpg",
+    "title": "Tibia, fibula (anterior).jpg",
+    "source": "Wikimedia Commons; Charles University anthropological collections",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-leg-tibia-fibula",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-15-skeletal-atlas-leg-tibia-fibula.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-27-atlas-skeleton-anterior.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-29-atlas-skeleton-axial-appendicular.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-39-commons-appendicular-skeleton-blank.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-018",
+    "url": "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg",
+    "title": "Foot bones - tarsus, metatarsus and phalanges.jpg",
+    "source": "Wikimedia Commons; author’s own work",
+    "creators": [
+      "Anatomist90"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 stated on Commons file page.",
+      "CC BY-SA 3.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-foot-dorsal",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-16-skeletal-atlas-foot-dorsal.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-27-atlas-skeleton-anterior.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-29-atlas-skeleton-axial-appendicular.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-39-commons-appendicular-skeleton-blank.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-019",
+    "url": "https://calisphere.org/item/e3ac55f2986d93e7a83b199d9254ad95/",
+    "title": "Natural color photograph of dissection of the left elbow joint, showing the bones and articular surfaces",
+    "source": "Calisphere; University of Southern California Digital Library / Norris Medical Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 stated for this item; attribution and noncommercial/share-alike conditions apply."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-synovial-joint",
+      "asset-servier-elbow-joint"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-17-skeletal-atlas-synovial-joint.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-36-servier-elbow-joint.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-020",
+    "url": "https://calisphere.org/item/9a7013bf8ccee4934b4789248d2f16d7",
+    "title": "Natural color photograph of left knee, medial view, showing pes anserinus, bones, joint cartilage and ligaments",
+    "source": "Calisphere; USC Digital Library / Norris Medical Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 stated for this item."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-knee-joint"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-19-skeletal-atlas-knee-joint.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-021",
+    "url": "https://calisphere.org/item/33d419fe3c2fb6e5c76009d048df117c",
+    "title": "Natural color photograph of dissection of the popliteal fossa, showing the medial and lateral condyles of the femur and tibia, and the posterior cruciate ligament",
+    "source": "Calisphere; USC Digital Library / Norris Medical Library",
+    "creators": [
+      "Helen Barker, Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 stated for this item."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-skeletal-atlas-knee-joint"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-19-skeletal-atlas-knee-joint.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-022",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+    "title": "Human brain, sagittal section 1.jpg",
+    "source": "Wikimedia Commons; Museu didático do corpo humano, Universidade de Taubaté",
+    "creators": [
+      "Themium"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-atlas-body-planes",
+      "asset-original-anatomical-planes"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-22-atlas-body-planes.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-34-original-anatomical-planes.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-023",
+    "url": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+    "title": "Coronal cross-section of human brain.jpg",
+    "source": "Wikimedia Commons; World Journal of Surgical Oncology",
+    "creators": [
+      "Rajalakshmi L Nair et al.",
+      "Rajalakshmi L. Nair et al."
+    ],
+    "reproductionRights": [
+      "CC BY 2.0 stated on file page.",
+      "CC BY 2.0 (as stated on the Commons file page)."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/2.0/"
+    ],
+    "assetIds": [
+      "asset-atlas-body-planes",
+      "asset-original-anatomical-planes",
+      "asset-bvis04-deep-nuclei"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-22-atlas-body-planes.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-34-original-anatomical-planes.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-deep-nuclei-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-024",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_skull_1.JPG",
+    "title": "Human skull 1.JPG",
+    "source": "Wikimedia Commons; Tallinn Zoo museum",
+    "creators": [
+      "Maxim Bilovitskiy"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-skull-front",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-27-atlas-skeleton-anterior.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-29-atlas-skeleton-axial-appendicular.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-30-skull-front.md",
+      "research/boneefied-photo-references/evidence/final-skeletal-38-commons-axial-skeleton-blank.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-025",
+    "url": "https://commons.wikimedia.org/wiki/File:Vertebra_-_cervicales.jpg",
+    "title": "Vertebra - cervicales.jpg",
+    "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on Commons file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-cervical-vertebra"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-33-cervical-vertebra.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-026",
+    "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+    "title": "Pelvis - os coxae, os sacrum (frontal view).jpg",
+    "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+    "creators": [
+      "MAKY.OREL"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 dedication stated on Commons file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-servier-pelvis"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-skeletal-37-servier-pelvis.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-027",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=214-3",
+    "title": "Dissection of thoracic and lumbosacral back; multifidus and rotators in mid-thoracic region",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-deep-back"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-back-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-028",
+    "url": "https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/",
+    "title": "Natural color photograph of right shoulder superoposterior dissection with trapezius reflected",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-deep-back",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-back-02.md",
+      "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-029",
+    "url": "https://calisphere.org/item/f69f29efd4dc08fc280798dabd35b8e7",
+    "title": "Natural color photograph of left arm lateral view with lateral triceps head retracted",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-posterior-arm"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-posterior-arm-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-030",
+    "url": "https://calisphere.org/item/d54408845da87d69c0d5b04c623806dd",
+    "title": "Natural color photograph of left elbow lateral view with anconeus retracted",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-posterior-arm"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-posterior-arm-02.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-031",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+    "title": "Anterolateral abdominal-wall dissection showing transversus abdominis",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-abdominal-wall"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-abdominal-wall-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-032",
+    "url": "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+    "title": "Natural color photograph of dissection of left thigh, lateral view",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-gluteal",
+      "asset-openstax-muscle-posterior-leg",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-gluteal-01.md",
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-posterior-leg-01.md",
+      "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-02.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-033",
+    "url": "https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64",
+    "title": "Natural color photograph of dissection of right thigh, anterior view, vastus intermedius cut/retracted",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-deep-thigh",
+      "asset-openstax-muscle-anterior-leg"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-thigh-01.md",
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-leg-02.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-034",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=192-4",
+    "title": "Anterior left-leg dissection showing tibialis anterior and extensor digitorum longus",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett",
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-anterior-leg",
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-lower-limb-arteries"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-anterior-leg-01.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-body-artery-vein-maps.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lower-limb-arteries.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-035",
+    "url": "https://commons.wikimedia.org/wiki/File:Medial_view_of_a_cadaver_dissection_of_the_gastrocnemius%E2%80%93soleus_junction.png",
+    "title": "Medial view of a cadaver dissection of the gastrocnemius–soleus junction",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Ryuta Kinugasa, Toshiaki Oda, Toshihiko Komatsu, V. Reggie Edgerton, and Shantanu Sinha"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-calf"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-calf-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-036",
+    "url": "https://calisphere.org/item/dcf86ce51424323a7df4e5026965ad06",
+    "title": "Natural color photograph of dissection of the left wrist, posterior view, with dorsal interossei visible",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-hand"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-hand-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-037",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=104-5",
+    "title": "Volar aspect of right hand; thenar muscles and deep volar arch",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett; copyright held by Stanford University"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 stated by Stanford; any reproduction must meet its conditions; none is exercised here."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-hand"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-hand-02.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-038",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=201-4",
+    "title": "Dissection of plantar aspect of left foot; nerve supply to quadratus plantae, flexor digiti minimi brevis and abductor digiti minimi",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett; copyright held by Stanford University"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 stated by Stanford; any reproduction must meet its conditions; none is exercised here."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-foot"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-foot-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-039",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=202-1",
+    "title": "Dissection of plantar aspect of left foot; adductor hallucis and plantar arterial arch close-up",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett; copyright held by Stanford University"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 stated by Stanford; any reproduction must meet its conditions; none is exercised here."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-foot"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-foot-02.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-040",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=174-5",
+    "title": "Dissection of muscles of male perineum and pelvic diaphragm — Bassett image 174-5",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-muscular-atlas-pelvic-floor"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-pelvic-floor-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-041",
+    "url": "https://calisphere.org/item/287e0f96d086919e57c58c9cb1cb8ab2",
+    "title": "Natural color photograph of dissection of the face, right anterolateral view",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-openstax-muscle-face-neck"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-face-neck-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-042",
+    "url": "https://calisphere.org/item/a7f4387ffed8c8052efd7972dba545ed",
+    "title": "Natural color photograph of left lateral neck dissection",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-openstax-muscle-face-neck"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-face-neck-02.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-043",
+    "url": "https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e",
+    "title": "Natural color photograph of anterior thorax with right pectoral muscles removed",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-trunk-01.md",
+      "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-03.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-044",
+    "url": "https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918",
+    "title": "Natural color photograph of right anterior axilla showing pectoralis minor and external intercostals",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-anterior-arm"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-trunk-02.md",
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-arm-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-045",
+    "url": "https://calisphere.org/item/40c0de82d1124d18bc9b7b7af62e3453",
+    "title": "Natural color photograph of superficial dissection of right anteromedial thigh",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-openstax-muscle-anterior-leg"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-leg-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-046",
+    "url": "https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_(Lange_et_al.)/09:_Muscular_System/9.08:_Anatomical_Atlas_-_Muscular_System",
+    "title": "Cadaver pectoral region and superficial back photo, panel 19",
+    "source": "Medicine LibreTexts / BlueLink",
+    "creators": [
+      "B. Kathleen Alsup and Glenn M. Fox (photo credit shown in image)"
+    ],
+    "reproductionRights": [
+      "CC BY-NC 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc/4.0/"
+    ],
+    "assetIds": [
+      "asset-openstax-muscle-posterior-back"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-posterior-back-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-047",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-1",
+    "title": "Diaphragm viewed from above, pleura removed",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-openstax-diaphragm-labeled"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-diaphragm-labeled-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-048",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6",
+    "title": "Diaphragm viewed from below",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett",
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-openstax-diaphragm-labeled",
+      "asset-bvis05-pleura-diaphragm"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-openstax-diaphragm-labeled-02.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-pleura-diaphragm.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-049",
+    "url": "https://calisphere.org/item/866e27c011a19be8e2c5b40c18ada157",
+    "title": "Natural color photograph of left posterolateral shoulder dissection exposing posterior cuff muscles",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-injurymap-rotator-cuff-labeled"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-injurymap-rotator-cuff-labeled-01.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-050",
+    "url": "https://calisphere.org/item/93b0277db664739dce9e1350c90117c7",
+    "title": "Natural color photograph of right anterior glenohumeral joint with subscapularis cut/retracted",
+    "source": "Calisphere / USC Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-injurymap-rotator-cuff-labeled"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-muscular-injurymap-rotator-cuff-labeled-02.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-051",
+    "url": "https://commons.wikimedia.org/wiki/File:Fundus_of_eye_normal.jpg",
+    "title": "File:Fundus of eye normal.jpg - Wikimedia Commons",
+    "source": "Wikimedia Commons (photograph by ignis)",
+    "creators": [
+      "ignis"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 (one of the file's stated license options; verify preferred option and attribution on page)."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-gray880-optic-nerve-head",
+      "asset-servier-eye-section"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-gray880-optic-nerve-head-1.md",
+      "research/boneefied-photo-references/evidence/final-neuro-servier-eye-section-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-052",
+    "url": "https://www.intechopen.com/chapters/62850",
+    "title": "Anatomy of the Human Optic Nerve: Structure and Function | IntechOpen",
+    "source": "IntechOpen chapter (Optic Nerve)",
+    "creators": [
+      "Juan J. Salazar, Ana I. Ramírez, Rosa De Hoz, Elena Salobrar-Garcia, Pilar Rojas, José A. Fernández-Albarral, Inés López-Cuenca, Blanca Rojas, Alberto Triviño, and José M. Ramírez"
+    ],
+    "reproductionRights": [
+      "Chapter states CC BY 3.0; Figure 3 includes panels modified with permission from a cited source, so check figure-specific attribution/permissions before any reproduction."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "assetIds": [
+      "asset-gray880-optic-nerve-head"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-gray880-optic-nerve-head-2.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-053",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+    "title": "File:Human Brain Dissected.jpg - Wikimedia Commons",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Hikmet Gümüş"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 Unported."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-servier-brain-lateral",
+      "asset-servier-brain-sagittal",
+      "asset-bvis04-brainstem-cerebellum"
+    ],
+    "pageOpened": true,
+    "captionChecked": false,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-1.md",
+      "research/boneefied-photo-references/evidence/final-neuro-servier-brain-sagittal-1.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-brainstem-cerebellum-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-054",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_brain_right_dissected_lateral_view.JPG",
+    "title": "File:Human brain right dissected lateral view.JPG - Wikimedia Commons",
+    "source": "Wikimedia Commons; Louisiana State University Health Sciences Center creator attribution",
+    "creators": [
+      "John A. Beal, PhD, Department of Cellular Biology & Anatomy, LSU Health Sciences Center Shreveport"
+    ],
+    "reproductionRights": [
+      "CC BY 2.5 is stated on the file page; reuse is subject to its terms."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/2.5/"
+    ],
+    "assetIds": [
+      "asset-servier-brain-lateral"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-2.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-055",
+    "url": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+    "title": "Photographic illustrations of the anatomy of the human ear - NLM Digital Collections",
+    "source": "U.S. National Library of Medicine Digital Collections",
+    "creators": [
+      "Burton Alexander Randall; Henry Lee Morse (contributor)"
+    ],
+    "reproductionRights": [
+      "NLM believes the 1887 work is in the public domain; verify the selected item and its specific rights record before copying."
+    ],
+    "termsUrls": [
+      "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk"
+    ],
+    "assetIds": [
+      "asset-servier-ear-section",
+      "asset-bvis04-middle-ear"
+    ],
+    "pageOpened": true,
+    "captionChecked": false,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-servier-ear-section-1.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-middle-ear-2.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-056",
+    "url": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+    "title": "File:1313 Spinal Cord Cross Section.jpg - Wikimedia Commons",
+    "source": "Wikimedia Commons (OpenStax source image)",
+    "creators": [
+      "OpenStax"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-openstax-spinal-cord-specimen",
+      "asset-bvis04-spinal-cross-section"
+    ],
+    "pageOpened": true,
+    "captionChecked": false,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-openstax-spinal-cord-specimen-1.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-cross-section-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-057",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=23-5",
+    "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine (Image 23-5)",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 (Stanford's stated image license)."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-brainstem-cerebellum",
+      "asset-bvis04-cranial-nerves-i-vi",
+      "asset-bvis04-cranial-nerves-vii-xii"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-brainstem-cerebellum-2.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-cranial-nerves-i-vi-2.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-cranial-nerves-vii-xii-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-058",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+    "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 (Stanford's stated image license)."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-csf-meninges",
+      "asset-bvis04-spinal-cross-section",
+      "asset-bvis04-spinal-roots-rami"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-csf-meninges-1.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-cross-section-2.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-roots-rami-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-059",
+    "url": "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353",
+    "title": "Natural color photograph of dissection of the brachial plexus, showing the major branches — Calisphere",
+    "source": "Calisphere / University of Southern California Digital Library",
+    "creators": [
+      "Irving Rehman and Chadwick F. Smith"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 2.5, with attribution to Rehman, Smith and Norris Medical Library / USC as stated on the record."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    ],
+    "assetIds": [
+      "asset-bvis04-plexus-overview",
+      "asset-bvis04-upper-limb-nerves"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-plexus-overview-1.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-upper-limb-nerves-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-060",
+    "url": "https://commons.wikimedia.org/wiki/File:Sciatic_nerve.jpg",
+    "title": "File:Sciatic nerve.jpg - Wikimedia Commons",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Anatomist90"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 Unported."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-lower-limb-nerves"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-lower-limb-nerves-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-061",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=2-7",
+    "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+    "source": "Stanford Lane Medical Library, Bassett Collection",
+    "creators": [
+      "David L. Bassett"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 (Stanford's stated image license)."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-cranial-nerves-i-vi"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-cranial-nerves-i-vi-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-062",
+    "url": "https://www.cellimagelibrary.org/images/11458",
+    "title": "CIL:11458, Homo sapiens, eye photoreceptor cell",
+    "source": "Cell Image Library",
+    "creators": [
+      "Toichiro Kuwabara"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-ND (as stated by the image record; version not specified on the captured record)."
+    ],
+    "termsUrls": [
+      "https://www.cellimagelibrary.org/images/11458"
+    ],
+    "assetIds": [
+      "asset-bvis04-retina-layers"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-retina-layers-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-063",
+    "url": "https://commons.wikimedia.org/wiki/File:Stapes_human_ear.jpg",
+    "title": "File:Stapes human ear.jpg - Wikimedia Commons",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Welleschik"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 Unported."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-middle-ear"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-middle-ear-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-064",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376148",
+    "title": "Two Photon Fluorescence Microscopy of the Unstained Human Cochlea Reveals Organ of Corti Cytoarchitecture",
+    "source": "PubMed Central / Frontiers in Cellular Neuroscience",
+    "creators": [
+      "Janani S. Iyer, Richard Seist, In Seok Moon, and Konstantina M. Stankovic"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 (article license; confirm any figure-specific credit line before reuse)."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-inner-ear-vestibular",
+      "asset-bvis04-cochlea-corti"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-inner-ear-vestibular-1.md",
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-cochlea-corti-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-065",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153736",
+    "title": "Development of the Hair Cells of the Human Cochlea: A Scanning Electron Microscopic Study - PMC",
+    "source": "PubMed Central; open-access human cochlea study",
+    "creators": [
+      "Sabita Mishra, Tarasankar Roy, and Shubhi Saini"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 4.0 (article license as stated on page)."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-cochlea-corti"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-cochlea-corti-2.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-066",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176544/",
+    "title": "Anatomy and Cellular Constituents of the Human Olfactory Mucosa: A Review",
+    "source": "PubMed Central (review article)",
+    "creators": [
+      "Figure credited to Morrison EE and Costanzo RM; article by C. Russell Chen et al."
+    ],
+    "reproductionRights": [
+      "No copying permission established for the embedded figure; source article states it is reprinted with permission."
+    ],
+    "termsUrls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176544/"
+    ],
+    "assetIds": [
+      "asset-bvis04-smell-taste"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-smell-taste-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-067",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+    "title": "14.1 Sensory Perception - Anatomy and Physiology 2e | OpenStax",
+    "source": "OpenStax / University of Michigan Medical School image provider",
+    "creators": [
+      "Regents of the University of Michigan Medical School (provider); individual photographer not established"
+    ],
+    "reproductionRights": [
+      "CC BY-NC-SA 4.0 (OpenStax page license; retain its terms and figure attribution)."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-smell-taste"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-neuro-bvis04-smell-taste-2.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-068",
+    "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+    "title": "Duke Histology - Skin",
+    "source": "Duke University Medical School Histology Learning Resources",
+    "creators": [
+      "Individual slide creators not established; collection page credits Duke University Medical School"
+    ],
+    "reproductionRights": [
+      "No image-copying permission established."
+    ],
+    "termsUrls": [],
+    "assetIds": [
+      "asset-gray946-sweat-gland",
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-epidermis-strata",
+      "asset-bvis04-dermis-hypodermis",
+      "asset-bvis04-hair-follicle",
+      "asset-bvis04-epithelia-stratified",
+      "asset-bvis04-nail-section"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-16-duke-skin.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-069",
+    "url": "https://commons.wikimedia.org/wiki/File:Sweat_gland_histology_2014.jpg",
+    "title": "File:Sweat gland histology 2014.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Athikhun.suw"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated on the source page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-gray946-sweat-gland",
+      "asset-bvis04-epithelia-other-stratified"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/sources/gapfill-01-sweat-gland.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-070",
+    "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+    "title": "Human kidney cortex — original specimen photograph",
+    "source": "Wikimedia Commons; author's archive",
+    "creators": [
+      "Doc. RNDr. Josef Reischig, CSc.",
+      "Josef Reischig"
+    ],
+    "reproductionRights": [
+      "The source page declares CC BY-SA 3.0 Unported. No copying or embedding is performed by this command.",
+      "CC BY-SA 3.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-commons-kidney-cortex-human",
+      "asset-bvis05-capillary-types"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-micro-asset-commons-kidney-cortex-human-human-kidney-cortex-original-specimen-phot.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-capillary-types-file-kidney-cortex-947-21-human-jpg.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-071",
+    "url": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+    "title": "File:Alveolar sac.JPG",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Jpogi"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-commons-alveolar-sac",
+      "asset-bvis05-alveolar-unit",
+      "asset-bvis05-respiratory-membrane-histology"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-micro-asset-commons-alveolar-sac-human-alveolar-sac.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-alveolar-unit-human-alveolar-sac.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-respiratory-membrane-histology-human-alveolar-sac.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-072",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+    "title": "File:Human Simple Squamous Epithelium Tissue.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Naz Amann"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-commons-simple-squamous-epithelium",
+      "asset-bvis04-epithelia-simple"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-micro-asset-commons-simple-squamous-epithelium-file-human-simple-squamous-epithelium-tiss.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-epithelia-simple-file-human-simple-squamous-epithelium-tiss.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-073",
+    "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+    "title": "File:Epithelial Tissues Simple Cuboidal Epithelium (41681552782).jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Berkshire Community College Bioscience Image Library"
+    ],
+    "reproductionRights": [
+      "Existing project specimen record identifies CC0 1.0; no new page inspection was possible.",
+      "Existing specimen record states CC0 1.0; current page inspection was rate-limited."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-commons-simple-cuboidal-epithelium",
+      "asset-bvis04-epithelia-simple"
+    ],
+    "pageOpened": false,
+    "captionChecked": false,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-evidence.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-074",
+    "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+    "title": "File:Epithelial Tissues Simple Columnar Epithelium (27854452618).jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Berkshire Community College Bioscience Image Library"
+    ],
+    "reproductionRights": [
+      "CC0 1.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-commons-simple-columnar-epithelium",
+      "asset-bvis04-epithelia-simple"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-05-simple-columnar.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-075",
+    "url": "https://commons.wikimedia.org/wiki/File:A_classic_view_of_non-keratinized_stratified_squamous_epithelium.jpg",
+    "title": "File:A classic view of non-keratinized stratified squamous epithelium.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Photograper09"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-epithelia-stratified"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-07-stratified-squamous.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-076",
+    "url": "https://blogs.berkshirecc.edu/bccoer/mammalian-histology-connective-tissues/",
+    "title": "Mammalian Histology: Connective Tissues",
+    "source": "Berkshire Community College Bioscience Image Library",
+    "creators": [
+      "Individual image creators not established in page text; page links to the BCC image-library Flickr account"
+    ],
+    "reproductionRights": [
+      "No copying permission established for these page images."
+    ],
+    "termsUrls": [],
+    "assetIds": [
+      "asset-bvis04-connective-loose",
+      "asset-bvis04-cartilage"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-13-connective.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-077",
+    "url": "https://histologylab.ctl.columbia.edu/lab03/dense-regular-connective-tissue/",
+    "title": "Dense, Regular Connective Tissue",
+    "source": "Columbia University Histology Lab Manual",
+    "creators": [
+      "Image creator not established"
+    ],
+    "reproductionRights": [
+      "No image-copying permission established."
+    ],
+    "termsUrls": [],
+    "assetIds": [
+      "asset-bvis04-connective-dense"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-14-dense-regular.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-078",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+    "title": "File:Human skeletal muscle tissue 1 - TEM.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Louisa Howard"
+    ],
+    "reproductionRights": [
+      "Public domain is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg"
+    ],
+    "assetIds": [
+      "asset-bvis04-muscle-tissue"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-muscle-tissue-file-human-skeletal-muscle-tissue-1-tem-jp.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-079",
+    "url": "https://commons.wikimedia.org/wiki/File:Cardiac_muscle_histology_400x.jpg",
+    "title": "File:Cardiac muscle histology 400x.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Alexander G. Cheroske"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-muscle-tissue"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-08-cardiac-400x.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-080",
+    "url": "https://commons.wikimedia.org/wiki/File:Smooth_muscle_(histology_slide).jpg",
+    "title": "File:Smooth muscle (histology slide).jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Juan Carlos Fonseca Mata"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-muscle-tissue"
+    ],
+    "pageOpened": true,
+    "captionChecked": false,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-10-smooth.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-081",
+    "url": "https://commons.wikimedia.org/wiki/File:414_Skeletal_Smooth_Cardiac.jpg",
+    "title": "File:414 Skeletal Smooth Cardiac.jpg",
+    "source": "Wikimedia Commons; Regents of the University of Michigan Medical School",
+    "creators": [
+      "The Regents of the University of Michigan Medical School"
+    ],
+    "reproductionRights": [
+      "Commons page states CC BY 3.0 and CC BY 4.0 licensing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/3.0/ and https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-muscle-tissue"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/sources/gapfill-05-muscle-composite.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-082",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_cardiac_muscle.jpg",
+    "title": "File:Human cardiac muscle.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Naz Amann"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 is stated on the file page; any reuse must follow its conditions."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis04-muscle-tissue"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-muscle-tissue-human-cardiac-muscle.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-083",
+    "url": "https://histologylab.ctl.columbia.edu/lab06/smooth-muscle",
+    "title": "Smooth Muscle — Columbia University Histology Lab Manual",
+    "source": "Columbia University Histology Lab Manual",
+    "creators": [
+      "Individual slide creator not identified"
+    ],
+    "reproductionRights": [
+      "No reuse permission established."
+    ],
+    "termsUrls": [],
+    "assetIds": [
+      "asset-bvis04-muscle-tissue"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/sources/boneefied-final-micro-human-smooth-muscle-columbia.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-084",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_peripheral_blood_smear,_May-Gr%C3%BCnwald_stain.jpg",
+    "title": "File:Human peripheral blood smear, May-Grünwald stain.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Bondarev.gal"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 is stated on the file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-blood-composition",
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-leukocyte-types"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-composition-file-human-peripheral-blood-smear-may-gr-n.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-smear-schematic-file-human-peripheral-blood-smear-may-gr-n.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-leukocyte-types-file-human-peripheral-blood-smear-may-gr-n.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-085",
+    "url": "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg",
+    "title": "SEM blood cells",
+    "source": "Wikimedia Commons / National Cancer Institute",
+    "creators": [
+      "Bruce Wetzel and Harry Schaefer"
+    ],
+    "reproductionRights": [
+      "The file page states public-domain U.S. government work and requests NCI/photographer attribution; no broader legal guarantee is made."
+    ],
+    "termsUrls": [
+      "http://visualsonline.cancer.gov/about.cfm"
+    ],
+    "assetIds": [
+      "asset-bvis05-blood-composition",
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-leukocyte-types"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-composition-sem-blood-cells.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-smear-schematic-sem-blood-cells.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-leukocyte-types-sem-blood-cells.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-086",
+    "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=File%3ABone_marrow_histology_01.jpg",
+    "title": "File:Bone marrow histology 01.jpg",
+    "source": "UNSW Embryology / Blue Histology",
+    "creators": [
+      "Lutz Slomianka"
+    ],
+    "reproductionRights": [
+      "Source states non-commercial reproduction/adaptation only; no broad or commercial copying permission established."
+    ],
+    "termsUrls": [
+      "https://embryology.med.unsw.edu.au/embryology/index.php?title=File%3ABone_marrow_histology_01.jpg"
+    ],
+    "assetIds": [
+      "asset-bvis05-marrow-hematopoiesis"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-20-unsw-bone-marrow.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-087",
+    "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+    "title": "Duke Histology - Lymphatic System",
+    "source": "Duke University Medical School Histology Learning Resources",
+    "creators": [
+      "Individual slide creators not established; collection page credits Duke University Medical School"
+    ],
+    "reproductionRights": [
+      "No image-copying permission established."
+    ],
+    "termsUrls": [],
+    "assetIds": [
+      "asset-bvis05-lymph-node-structure",
+      "asset-bvis05-spleen-pulp",
+      "asset-bvis05-thymus-lobule",
+      "asset-bvis05-tonsil-map-structure",
+      "asset-bvis05-gut-lymphoid-lacteal"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-088",
+    "url": "https://histology.oit.duke.edu/NormalBody/Endocrine/Endocrine.html",
+    "title": "Duke Histology - Endocrine System",
+    "source": "Duke University Medical School Histology Learning Resources",
+    "creators": [
+      "Individual slide creators not established; collection page credits Duke University Medical School"
+    ],
+    "reproductionRights": [
+      "No image-copying permission established."
+    ],
+    "termsUrls": [],
+    "assetIds": [
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-hypothalamus-pituitary-axis",
+      "asset-bvis05-thyroid-parathyroid",
+      "asset-bvis05-adrenal-zones"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/micro-17-duke-endocrine.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-089",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg",
+    "title": "File:Human pancreatic islet.jpg",
+    "source": "Wikimedia Commons; source page reports Laboratory of nervous system development, FSBI Human Morphology SRI RAMS, Moscow",
+    "creators": [
+      "Afferent"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 is stated on the source file page."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-pancreas-islet"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-endocrine-body-map-human-pancreatic-islet.md",
+      "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-pancreas-islet-human-pancreatic-islet.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-090",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-1",
+    "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+    "source": "Stanford University Lane Medical Library (Bassett Collection)",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-heart-anterior",
+      "asset-bvis05-heart-chambers-valves",
+      "asset-bvis05-heart-wall-pericardium",
+      "asset-bvis05-coronary-anterior"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-heart-anterior.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-heart-chambers-valves.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-heart-wall-pericardium.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-coronary-anterior.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-091",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-2",
+    "title": "Conduction system of heart, image 118-2",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-heart-chambers-valves",
+      "asset-bvis05-heart-valves-superior",
+      "asset-bvis05-coronary-posterior",
+      "asset-bvis05-conduction-system"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-heart-chambers-valves.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-heart-valves-superior.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-coronary-posterior.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-conduction-system.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-092",
+    "url": "https://wwwn.cdc.gov/phil/Details.aspx?pid=848",
+    "title": "Sectioned human heart, superior view of aortic valve (PHIL 848)",
+    "source": "CDC Public Health Image Library (PHIL)",
+    "creators": [
+      "Dr. Edwin P. Ewing, Jr."
+    ],
+    "reproductionRights": [
+      "PHIL page states public-domain status and allows personal, professional and educational use with attribution; redistribution must credit CDC and the photographer when known. This record does not copy the image."
+    ],
+    "termsUrls": [
+      "https://www.cdc.gov/other/agencymaterials.html"
+    ],
+    "assetIds": [
+      "asset-bvis05-heart-valves-superior"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-heart-valves-superior.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-093",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=117-2",
+    "title": "Ascending aorta, aortic arch and branches, image 117-2",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-body-artery-vein-maps.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-head-neck-vessels.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-limb-arteries.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-094",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=186-7",
+    "title": "Femoral artery branches in thigh, image 186-7",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-lower-limb-arteries"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-body-artery-vein-maps.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lower-limb-arteries.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-095",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6",
+    "title": "Lymphatic ducts, innominate vessels and neck vessels, image 76-6",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for Bassett images; attribution/share-alike applies to any reproduction."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-arteries",
+      "asset-bvis05-upper-limb-veins",
+      "asset-bvis05-lymph-overview"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-body-artery-vein-maps.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-head-neck-vessels.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-limb-arteries.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-limb-veins.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lymph-overview.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-096",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=196-7",
+    "title": "Superficial vessels of foot and ankle, image 196-7",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-lower-limb-arteries"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lower-limb-arteries.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-097",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317783",
+    "title": "Cadaveric Analysis of Valvular Anatomy in the Great Saphenous Vein: Implications for Surgical Planning",
+    "source": "Cureus article via PubMed Central",
+    "creators": [
+      "Schafer Paladichuk, Alexander Downs, Zachary Brennan, Tianfu Shang, David Dommermuth, Steve Zeka, Dan Murphy, Ronald Walser and Tyler J. Wallen"
+    ],
+    "reproductionRights": [
+      "The article states CC BY 4.0; reproduce figures only with required attribution and license terms."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-great-saphenous-route"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-great-saphenous-route.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-098",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=185-4",
+    "title": "Superficial structures overlying left femoral triangle, image 185-4",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for Bassett images; attribution/share-alike applies to any reproduction."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-great-saphenous-route"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-great-saphenous-route.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-099",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+    "title": "Celiac plexus and pancreaticoduodenal arteries, image 148-1",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-hepatic-portal-system",
+      "asset-bvis05-celiac-renal-context",
+      "asset-bvis06-liver-biliary-pancreas",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-hepatic-portal-system.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-celiac-renal-context.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-biliary-pancreas.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-abdominal-placement.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-100",
+    "url": "https://commons.wikimedia.org/wiki/File:Liver_with_portal_vein_dissected.jpg",
+    "title": "File:Liver with portal vein dissected.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Anatomist90"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 is stated on the file page; attribution/share-alike apply to reproductions."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-hepatic-portal-system"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-hepatic-portal-system.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-101",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7",
+    "title": "Kidneys and suprarenal glands dissected in situ, image 149-7",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-celiac-renal-context",
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-kidney-section",
+      "asset-bvis06-renal-vessels",
+      "asset-bvis06-kidney-placement"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-celiac-renal-context.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-urinary-tract.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-kidney-section.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-renal-vessels.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-kidney-placement.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-102",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=72-3",
+    "title": "Dissection of nasal fossae, nasal pharynx, and palate, image 72-3",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "The source page states CC BY-SA 4.0 for the Bassett images; follow those conditions for any reuse."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-upper-airway"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-airway.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-103",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_larynx_cut_section_2.jpg",
+    "title": "Human larynx cut section 2.jpg",
+    "source": "Wikimedia Commons; Government Medical College, Kozhikode",
+    "creators": [
+      "Dr. Roshan Nasimudeen (uploaded by Netha Hussain)"
+    ],
+    "reproductionRights": [
+      "File page states CC BY-SA 3.0; observe its attribution and ShareAlike conditions for any reuse."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-larynx-glottis"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-larynx-glottis.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-104",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5",
+    "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+    "source": "Stanford University Lane Medical Library (Bassett Collection)",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-trachea-bronchial-tree"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-trachea-bronchial-tree.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-105",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-1",
+    "title": "Surface views of lungs: right lung, medial aspect, image 123-1",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection attribution; individual photographer not separately named on the page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for Bassett images; comply with attribution and ShareAlike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-lung-lobes"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-lung-stanford-123-1.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-106",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-7",
+    "title": "Dissection of lungs in situ, general vascular and bronchial distribution, image 123-7",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection attribution; individual photographer not separately named on the page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for Bassett images; comply with attribution and ShareAlike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-lung-lobes"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-lung-stanford-123-7.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-107",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=144-4",
+    "title": "Lymphatic structures and vessels of lower sigmoid colon, image 144-4",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis05-lymph-overview",
+      "asset-bvis06-large-intestine"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lymph-overview.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-large-intestine.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-108",
+    "url": "https://peir.path.uab.edu/library/picture.php?/30672/categories",
+    "title": "00246802 — Prosected head showing parotid gland",
+    "source": "University of Alabama at Birmingham PEIR Digital Library",
+    "creators": [
+      "Peter Anderson"
+    ],
+    "reproductionRights": [
+      "No copying permission is established on the checked page. Public-page linking only; no separate linking policy was located."
+    ],
+    "termsUrls": [],
+    "assetIds": [
+      "asset-bvis06-oral-cavity"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-oral-cavity.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-109",
+    "url": "https://commons.wikimedia.org/wiki/File:Part_of_a_human_stomach_dissected_by_Edward_Jenner,_England,_Wellcome_L0057749.jpg",
+    "title": "File:Part of a human stomach dissected by Edward Jenner, England, Wellcome L0057749.jpg - Wikimedia Commons",
+    "source": "Wellcome Collection / Science Museum, London (Commons file page)",
+    "creators": [
+      "Edward Jenner (specimen preparer; individual photograph creator not identified; image credit to Wellcome Images / Science Museum, London)"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 is stated on the file page; any reproduction must follow attribution requirements."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-stomach"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-stomach.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-110",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=142-1",
+    "title": "Stomach lesser-curvature vessels and nerves, image 142-1",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-stomach"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-stomach.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-111",
+    "url": "https://commons.wikimedia.org/wiki/File:Normal_gastric_mucosa_low_mag.jpg",
+    "title": "File:Normal gastric mucosa low mag.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Nephron"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 is stated on the file page; attribution/share-alike apply to reproductions."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-stomach",
+      "asset-bvis06-digestive-wall-layers"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-stomach.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-digestive-wall-layers.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-112",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=142-6",
+    "title": "Interior of stomach, anterior view, image 142-6",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection attribution; individual photographer not separately named on the page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for Bassett images; follow attribution and ShareAlike terms if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-stomach"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-stomach-stanford-142-6.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-113",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=139-1",
+    "title": "Relations of liver, gallbladder, stomach and duodenum, image 139-1",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-liver-biliary-pancreas",
+      "asset-bvis06-peritoneal-folds",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-alimentary-canal.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-biliary-pancreas.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-peritoneal-folds.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-abdominal-placement.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-114",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-1",
+    "title": "Vessels of ileum, cecum, ascending and transverse colon, image 143-1",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-small-intestine",
+      "asset-bvis06-large-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-alimentary-canal.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-small-intestine.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-large-intestine.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-abdominal-placement.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-115",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-5",
+    "title": "Arteries, veins and nerves of colon, image 143-5",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-alimentary-canal.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-large-intestine.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-116",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=146-6",
+    "title": "Interior of gallbladder, bile ducts and pancreatic duct, image 146-6",
+    "source": "Stanford University Lane Medical Library — David L. Bassett Collection",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike conditions if reproducing."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-liver-biliary-pancreas",
+      "asset-bvis06-liver-lobule-pancreas"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-biliary-pancreas.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-lobule-pancreas.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-117",
+    "url": "https://commons.wikimedia.org/wiki/File:Portal_triad.JPG",
+    "title": "File:Portal triad.JPG",
+    "source": "Wikimedia Commons (Jagiellonian University Medical College source material)",
+    "creators": [
+      "Original creator not established; uploaded by Reytan and edited by T-310"
+    ],
+    "reproductionRights": [
+      "Commons page states CC BY-SA 3.0 and GFDL 1.2-or-later; follow attribution/share-alike terms for reuse."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-liver-lobule-pancreas"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-lobule-pancreas.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-118",
+    "url": "https://commons.wikimedia.org/wiki/File:Pancreatic_acinar_cells_-_TEM.jpg",
+    "title": "File:Pancreatic acinar cells - TEM.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Louisa Howard"
+    ],
+    "reproductionRights": [
+      "Page states public-domain status; page metadata does not establish human origin."
+    ],
+    "termsUrls": [
+      "https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain"
+    ],
+    "assetIds": [
+      "asset-bvis06-liver-lobule-pancreas"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-lobule-pancreas.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-119",
+    "url": "https://wellcomecollection.org/works/tjxuhj2w",
+    "title": "Villi from the small intestine",
+    "source": "Wellcome Collection",
+    "creators": [
+      "S. Schuller"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 is stated on the Wellcome page; attribution required for reproductions."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-digestive-wall-layers",
+      "asset-bvis06-small-intestine"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-digestive-wall-layers.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-small-intestine.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-120",
+    "url": "https://wellcomecollection.org/works/b5tfxwc4",
+    "title": "Intestinal villi",
+    "source": "Wellcome Collection",
+    "creators": [
+      "Liz Hirst (Medical Research Council)"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 is stated on the Wellcome page; attribution required for reproductions."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-small-intestine"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-small-intestine.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-121",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=161-3",
+    "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+    "source": "Stanford University Lane Medical Library (Bassett Collection)",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-female-gross",
+      "asset-bvis06-uterine-wall"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-urinary-tract.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-female-gross.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-uterine-wall.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-122",
+    "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=169-7",
+    "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+    "source": "Stanford University Lane Medical Library (Bassett Collection)",
+    "creators": [
+      "David L. Bassett (collection credit; individual photographer attribution not established on the checked page)"
+    ],
+    "reproductionRights": [
+      "Stanford page states CC BY-SA 4.0 for the Bassett images; comply with attribution and share-alike terms for any reuse."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-male-system"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-urinary-tract.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-male-system.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-123",
+    "url": "https://wellcomecollection.org/works/cvestqrm",
+    "title": "Human proximal tubule, tubular structure, SEM",
+    "source": "Wellcome Collection",
+    "creators": [
+      "David Gregory and Debbie Marshall"
+    ],
+    "reproductionRights": [
+      "CC BY 4.0 is stated on the Wellcome page; attribution required for reuse."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-nephron-pathway"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-nephron-pathway.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-124",
+    "url": "https://commons.wikimedia.org/wiki/File:Renal_corpuscle.jpg",
+    "title": "File:Renal corpuscle.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Ed Uthman"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 2.0 is stated on the file page; attribution/share-alike apply to reproductions."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/2.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-nephron-pathway",
+      "asset-bvis06-renal-corpuscle"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-nephron-pathway.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-renal-corpuscle.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-125",
+    "url": "https://commons.wikimedia.org/wiki/File:Histology_image_of_testis.jpg",
+    "title": "File:Histology image of testis.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Bhavya akula"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 4.0 is stated on the file page; attribution/share-alike apply to reproductions."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-testis-ducts"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": false,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-testis-ducts.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-126",
+    "url": "https://commons.wikimedia.org/wiki/File:Human_ovary.jpg",
+    "title": "File:Human ovary.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Ed Uthman, MD"
+    ],
+    "reproductionRights": [
+      "CC BY-SA 3.0 is stated on the file page; attribution/share-alike apply to any reproduction."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by-sa/3.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-female-gross",
+      "asset-bvis06-ovary-follicle"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-female-gross.md",
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-ovary-follicle.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-127",
+    "url": "https://commons.wikimedia.org/wiki/File:Graafian_Follicle,_Human_Ovary_(3595010317).jpg",
+    "title": "File:Graafian Follicle, Human Ovary (3595010317).jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Ed Uthman"
+    ],
+    "reproductionRights": [
+      "CC BY 2.0 is stated on the file page; attribution required for reproductions."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/licenses/by/2.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-ovary-follicle"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-ovary-follicle.md"
+    ]
+  },
+  {
+    "key": "final-photo-source-128",
+    "url": "https://commons.wikimedia.org/wiki/File:Histology_of_normal_simple_columnar_epithelium_of_the_endometrium.jpg",
+    "title": "File:Histology of normal simple columnar epithelium of the endometrium.jpg",
+    "source": "Wikimedia Commons",
+    "creators": [
+      "Mikael Häggström, M.D."
+    ],
+    "reproductionRights": [
+      "CC0 1.0 is stated on the file page; no copyright restriction asserted by the licensor."
+    ],
+    "termsUrls": [
+      "https://creativecommons.org/publicdomain/zero/1.0/"
+    ],
+    "assetIds": [
+      "asset-bvis06-uterine-wall"
+    ],
+    "pageOpened": true,
+    "captionChecked": true,
+    "imageVisuallyInspected": true,
+    "evidencePaths": [
+      "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-uterine-wall.md"
+    ]
+  }
+]

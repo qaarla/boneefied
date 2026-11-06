@@ -1,0 +1,701 @@
+[
+  {
+    "id": "asset-muscular-atlas-deep-back",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-05-deep-back.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Deep back muscles (trapezius and latissimus dorsi removed)",
+    "description": "Explicit deep dissection, posterior view. Trapezius, latissimus dorsi and deltoid are removed on both sides. Patient right (viewer right): rhomboid minor and major, levator scapulae, supraspinatus and the intact erector spinae column. Patient left (viewer left): erector spinae also removed to expose multifidus beside the spinous processes and quadratus lumborum in the lumbar region. Orientation: posterior view, deep dissection; patient right = viewer right.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 7,
+      "question": 6
+    },
+    "exampleUses": [
+      "gallery:muscular-system",
+      "lesson:muscular-system:axial-muscles",
+      "glossary:rhomboid-major",
+      "question:q-muscle-visual-levator-scapulae"
+    ],
+    "depictedLabels": [
+      "Multifidus",
+      "Quadratus lumborum",
+      "Erector spinae",
+      "Supraspinatus",
+      "Rhomboid minor",
+      "Rhomboid major",
+      "Levator scapulae"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-posterior-arm",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-07-posterior-arm.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Posterior arm and elbow",
+    "description": "Right arm, posterior view. Left panel: deltoid and the long and lateral heads of triceps brachii converging on one tendon at the olecranon. Right panel: enlarged elbow showing the triceps tendon and the small triangular anconeus. Orientation: right arm, posterior view; patient right = viewer right; right panel is an enlarged elbow inset.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:muscular-system:arm-forearm",
+      "glossary:deltoid",
+      "question:q-muscular-atlas-posterior-arm-anconeus"
+    ],
+    "depictedLabels": [
+      "Teres major",
+      "Triceps brachii",
+      "Deltoid",
+      "Anconeus"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-forearm",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-08-forearm.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Forearm: anterior and posterior views",
+    "description": "Right forearm in two panels. Left: anterior (flexor) compartment with pronator teres and flexor carpi radialis. Right: posterior (extensor) compartment with extensor carpi radialis and anconeus; the superficial extensors are cut away proximally so the deeper supinator is visible beside the upper radius. Orientation: right forearm; left panel anterior (patient right = viewer left); right panel posterior (patient right = viewer right) with extensors cut proximally to show supinator.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 5,
+      "question": 2
+    },
+    "exampleUses": [
+      "lesson:muscular-system:arm-forearm",
+      "glossary:anconeus",
+      "question:q-muscular-atlas-forearm-supinator"
+    ],
+    "depictedLabels": [
+      "Pronator teres",
+      "Flexor carpi radialis",
+      "Extensor carpi radialis",
+      "Anconeus",
+      "Supinator"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-abdominal-wall",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-09-abdominal-wall.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Abdominal wall layers",
+    "description": "Anterior view in three panels, superficial to deep. Left: external oblique (fibres run inferomedially) beside rectus abdominis. Middle: external oblique removed to show internal oblique (fibres superomedial). Right: both obliques and the rectus removed to show transversus abdominis with horizontal fibres. Orientation: anterior view; patient right = viewer left; panels run superficial (left) to deep (right).",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 2
+    },
+    "exampleUses": [
+      "lesson:muscular-system:abdominal-wall",
+      "glossary:rectus-abdominis",
+      "question:q-muscular-atlas-abdominal-transversus"
+    ],
+    "depictedLabels": [
+      "Rectus abdominis",
+      "External oblique",
+      "Internal oblique",
+      "Transversus abdominis"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-gluteal",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-10-gluteal.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Gluteal region: surface and cutaway",
+    "description": "Right gluteal region, posterior view. Left panel: gluteus maximus covers most of the buttock. Right panel: gluteus maximus removed, fully exposing gluteus medius on the lateral ilium. Orientation: posterior view of right buttock; midline at panel left edge; patient right = viewer right; right panel is a cutaway.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 2,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:muscular-system:hip-thigh",
+      "glossary:gluteus-maximus",
+      "question:q-muscular-atlas-gluteal-medius"
+    ],
+    "depictedLabels": [
+      "Gluteus maximus",
+      "Gluteus medius"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-deep-thigh",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-12-deep-thigh.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Deep thigh: anterior and posterior cutaways",
+    "description": "Right thigh in two explicit cutaways. Left, anterior: sartorius and rectus femoris removed to expose vastus intermedius, with articularis genus at the knee. Right, posterior: gluteus maximus, biceps femoris and semitendinosus removed to expose semimembranosus, the deepest hamstring. Orientation: left panel anterior (patient right = viewer left), right panel posterior (patient right = viewer right); both are deep cutaways.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 3,
+      "question": 3
+    },
+    "exampleUses": [
+      "gallery:muscular-system",
+      "lesson:muscular-system:hip-thigh",
+      "glossary:vastus-intermedius",
+      "question:q-muscle-visual-semimembranosus"
+    ],
+    "depictedLabels": [
+      "Vastus intermedius",
+      "Articularis genus",
+      "Semimembranosus"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-anterior-leg",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-14-anterior-lateral-leg.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Anterior and lateral leg",
+    "description": "Right leg and dorsal foot, anterior view. Tibialis anterior lies against the lateral tibial surface and sends its tendon to the medial foot; fibularis longus occupies the lateral compartment at the viewer's left, its tendon passing behind the lateral malleolus. Orientation: right leg, anterior view; patient right = viewer left; lateral = viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 2,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:muscular-system:leg-and-ankle",
+      "glossary:tibialis-anterior",
+      "question:q-muscle-visual-tibialis-anterior"
+    ],
+    "depictedLabels": [
+      "Fibularis longus",
+      "Tibialis anterior"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-calf",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-15-calf.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Calf: surface and cutaway",
+    "description": "Right calf, posterior view. Left panel: gastrocnemius (two heads) and the calcaneal tendon. Right panel: gastrocnemius removed to show soleus lying deep to it, with popliteus behind the knee and tibialis posterior deeper still along the medial border. Orientation: right calf, posterior view; patient right = viewer right; right panel is a cutaway.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:muscular-system:leg-and-ankle",
+      "glossary:gastrocnemius",
+      "question:q-muscle-visual-soleus"
+    ],
+    "depictedLabels": [
+      "Gastrocnemius",
+      "Soleus",
+      "Popliteus",
+      "Tibialis posterior"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-hand",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-18-hand-intrinsics.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Hand: intrinsic muscles, palmar view",
+    "description": "Right hand, palmar view, palmar aponeurosis removed. Thumb side (thenar: abductor pollicis brevis lateral, flexor pollicis brevis medial) at the viewer's left; little-finger side (hypothenar: abductor digiti minimi) at the viewer's right. Lumbricals are slender bellies arising from the flexor digitorum profundus tendons. Orientation: right hand, palmar view; thumb at viewer left (patient right = viewer left).",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "hotspotSizeOverride": {
+      "diameter": 18,
+      "numeralSize": 10,
+      "maxDiameter": 21
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 8
+    },
+    "exampleUses": [
+      "lesson:muscular-system:arm-forearm",
+      "glossary:abductor-digiti-minimi-hand",
+      "question:q-advanced-muscle-name-abductor-digiti-minimi-hand"
+    ],
+    "depictedLabels": [
+      "Lumbricals (hand)",
+      "Flexor pollicis brevis",
+      "Abductor pollicis brevis",
+      "Abductor digiti minimi (hand)"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-foot",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-19-foot-intrinsics.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Foot: plantar first layer and dorsal inset",
+    "description": "Right foot. Left panel: plantar view with the plantar aponeurosis removed, showing abductor hallucis along the medial border, flexor digitorum brevis centrally and abductor digiti minimi along the lateral border (big toe at the viewer's right). Right panel: dorsal view with extensor digitorum brevis on the lateral dorsum (big toe at the viewer's left). Orientation: left panel plantar view (big toe at viewer right); right panel dorsal view (big toe at viewer left); right foot.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "hotspotSizeOverride": {
+      "diameter": 18,
+      "numeralSize": 10,
+      "maxDiameter": 21
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 8
+    },
+    "exampleUses": [
+      "lesson:muscular-system:leg-and-ankle",
+      "glossary:abductor-hallucis",
+      "question:q-advanced-muscle-name-abductor-hallucis"
+    ],
+    "depictedLabels": [
+      "Flexor digitorum brevis (foot)",
+      "Abductor digiti minimi (foot)",
+      "Abductor hallucis",
+      "Extensor digitorum brevis (foot)"
+    ]
+  },
+  {
+    "id": "asset-muscular-atlas-pelvic-floor",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-20-pelvic-floor.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Pelvic floor: levator ani, superior view",
+    "description": "Pelvic floor seen from above, anterior (pubic symphysis) at the top. Pubococcygeus forms the medial band running from the pubis back toward the coccyx beside the midline hiatus; iliococcygeus is the thinner lateral sheet. The levator ani group pin sits on the posterior sling region between the two bands. Orientation: superior view; anterior (pubis) up; patient right = viewer right.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art (SVG master with PNG sibling). No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 3,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:muscular-system:axial-muscles",
+      "glossary:levator-ani",
+      "question:q-muscular-atlas-pelvic-pubococcygeus"
+    ],
+    "depictedLabels": [
+      "Levator ani",
+      "Iliococcygeus",
+      "Pubococcygeus"
+    ]
+  },
+  {
+    "id": "asset-openstax-muscle-face-neck",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-02-face-neck.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Face and neck muscles, right lateral view",
+    "description": "Right lateral view of head and neck, face toward the viewer's right. Rings of orbicularis oculi and oris, frontalis, temporalis and masseter, buccinator, platysma over the anterior neck, sternocleidomastoid, and scalenes deep in the posterior triangle. Orientation: right lateral view; face toward viewer right; platysma drawn over only the anterior half of the neck.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-openstax-muscle-face-neck); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 9,
+      "question": 10
+    },
+    "exampleUses": [
+      "lesson:muscular-system:muscle-orientation",
+      "glossary:frontalis",
+      "question:q-muscle-visual-frontalis"
+    ],
+    "depictedLabels": [
+      "Temporalis",
+      "Scalene muscles",
+      "Sternocleidomastoid",
+      "Buccinator",
+      "Masseter",
+      "Platysma",
+      "Frontalis",
+      "Orbicularis oculi",
+      "Orbicularis oris"
+    ]
+  },
+  {
+    "id": "asset-openstax-muscle-anterior-trunk",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-03-anterior-chest.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Anterior chest and shoulder muscles",
+    "description": "Anterior view. Patient right (viewer left): superficial pectoralis major, deltoid, serratus anterior, biceps, rectus abdominis and external oblique. Patient left (viewer right): pectoralis major and deltoid removed to expose pectoralis minor and the intercostal muscles between the ribs. Orientation: anterior view; patient right = viewer left (superficial); patient left = viewer right (pectoralis major and deltoid removed).",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-openstax-muscle-anterior-trunk); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 3,
+      "glossary": 9,
+      "question": 8
+    },
+    "exampleUses": [
+      "lesson:muscular-system:axial-muscles",
+      "glossary:sternocleidomastoid",
+      "question:q-muscle-visual-deltoid"
+    ],
+    "depictedLabels": [
+      "Intercostal muscles",
+      "Pectoralis minor",
+      "Serratus anterior",
+      "Rectus abdominis",
+      "External oblique",
+      "Sternocleidomastoid",
+      "Pectoralis major",
+      "Biceps brachii",
+      "Deltoid"
+    ]
+  },
+  {
+    "id": "asset-openstax-muscle-anterior-arm",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-06-anterior-arm.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Anterior arm: superficial and deep layers",
+    "description": "Right arm, anterior view. Left panel: deltoid, biceps brachii and the superficial anterior forearm (pronator teres, flexor carpi radialis). Right panel: biceps and deltoid removed to expose coracobrachialis and brachialis, which lies deep to biceps. Orientation: right arm, anterior view; patient right = viewer left; left panel superficial, right panel deep.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-openstax-muscle-anterior-arm); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 6,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:muscular-system:arm-forearm",
+      "glossary:deltoid",
+      "question:q-muscle-visual-brachialis"
+    ],
+    "depictedLabels": [
+      "Biceps brachii",
+      "Deltoid",
+      "Pronator teres",
+      "Flexor carpi radialis",
+      "Coracobrachialis",
+      "Brachialis"
+    ]
+  },
+  {
+    "id": "asset-openstax-muscle-anterior-leg",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-11-anterior-thigh.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Anterior thigh: superficial layer",
+    "description": "Anterior view of both thighs. Sartorius runs from the ASIS (lateral) obliquely to the medial proximal tibia. Quadriceps: rectus femoris centrally, vastus lateralis laterally, vastus medialis medially; the fourth member, vastus intermedius, is deep to rectus femoris and appears on the deep-thigh plate. Tensor fasciae latae, iliopsoas, adductor longus and gracilis are labelled. Orientation: anterior view; patient right = viewer left; superficial layer.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-openstax-muscle-anterior-leg); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 8,
+      "question": 10
+    },
+    "exampleUses": [
+      "lesson:muscular-system:hip-thigh",
+      "glossary:tensor-fasciae-latae",
+      "question:q-muscle-visual-tensor-fasciae-latae"
+    ],
+    "depictedLabels": [
+      "Iliopsoas",
+      "Adductor longus",
+      "Gracilis",
+      "Vastus lateralis",
+      "Vastus medialis",
+      "Tensor fasciae latae",
+      "Rectus femoris",
+      "Sartorius"
+    ]
+  },
+  {
+    "id": "asset-openstax-muscle-posterior-back",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-04-superficial-back.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Superficial back and scapular muscles",
+    "description": "Posterior view, superficial layer only. Trapezius forms the upper diamond, latissimus dorsi the broad lower sheet; infraspinatus, teres minor and teres major lie on the scapula under the deltoid. Rhomboids, levator scapulae and erector spinae are deep and appear on the deep-back plate. Orientation: posterior view; patient right = viewer right; superficial layer only.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-openstax-muscle-posterior-back); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 3,
+      "glossary": 7,
+      "question": 6
+    },
+    "exampleUses": [
+      "lesson:muscular-system:axial-muscles",
+      "glossary:trapezius",
+      "question:q-muscle-visual-trapezius"
+    ],
+    "depictedLabels": [
+      "Infraspinatus",
+      "Teres minor",
+      "Teres major",
+      "Triceps brachii",
+      "Latissimus dorsi",
+      "Trapezius",
+      "Deltoid"
+    ]
+  },
+  {
+    "id": "asset-openstax-muscle-posterior-leg",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-13-posterior-leg-overview.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Posterior lower limb: contextual overview",
+    "description": "Posterior view of both lower limbs. Gluteus maximus overlies gluteus medius, which is only partly exposed above it; biceps femoris is lateral and semitendinosus medial in the posterior thigh; gastrocnemius forms the calf surface. Deep muscles (semimembranosus, soleus) are not shown here and have their own cutaway plates. Orientation: posterior view; patient right = viewer right; superficial layer only.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-openstax-muscle-posterior-leg); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 5,
+      "question": 6
+    },
+    "exampleUses": [
+      "lesson:muscular-system:hip-thigh",
+      "glossary:gluteus-maximus",
+      "question:q-muscle-visual-gluteus-medius"
+    ],
+    "depictedLabels": [
+      "Semitendinosus",
+      "Biceps femoris",
+      "Gluteus medius",
+      "Gluteus maximus",
+      "Gastrocnemius"
+    ]
+  },
+  {
+    "id": "asset-openstax-muscle-labeled-overview",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-01-overview.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Superficial muscles, anterior and posterior views",
+    "description": "Whole-body superficial view. Left figure is anterior (patient right is viewer left); right figure is posterior (patient right is viewer right). Only superficial muscles are drawn; deep muscles are on regional plates. Pins are on the patient right limb. Orientation: left figure anterior, right figure posterior; superficial layer only.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-openstax-muscle-labeled-overview); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 27,
+      "question": 1
+    },
+    "exampleUses": [
+      "gallery:muscular-system",
+      "lesson:muscular-system:muscle-orientation",
+      "glossary:sternocleidomastoid",
+      "question:q-muscular-atlas-overview-lats"
+    ],
+    "depictedLabels": [
+      "Adductor longus",
+      "Gracilis",
+      "Vastus lateralis",
+      "Vastus medialis",
+      "Tensor fasciae latae",
+      "Rectus femoris",
+      "Sartorius",
+      "Fibularis longus",
+      "Tibialis anterior",
+      "Serratus anterior",
+      "Rectus abdominis",
+      "External oblique",
+      "Sternocleidomastoid",
+      "Pectoralis major",
+      "Biceps brachii",
+      "Deltoid",
+      "Infraspinatus",
+      "Teres minor",
+      "Teres major",
+      "Triceps brachii",
+      "Latissimus dorsi",
+      "Trapezius",
+      "Semitendinosus",
+      "Biceps femoris",
+      "Gluteus medius",
+      "Gluteus maximus",
+      "Gastrocnemius"
+    ]
+  },
+  {
+    "id": "asset-openstax-diaphragm-labeled",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-17-diaphragm.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Diaphragm: domes and inferior view",
+    "description": "Left panel: anterior coronal cutaway of the thorax. The diaphragm is a dome-shaped muscle sheet arching up into the chest beneath the lungs, with the right dome higher than the left; its muscular periphery attaches to the lower ribs and the pale central tendon forms the apex. Right panel: inferior view showing the central tendon, caval and esophageal openings, aortic opening between the crura, and the muscular periphery. Orientation: left panel anterior coronal cutaway, patient right = viewer left; right panel inferior view (tendon pale, muscle periphery darker).",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-openstax-diaphragm-labeled); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 1,
+      "question": 1
+    },
+    "exampleUses": [
+      "gallery:muscular-system",
+      "lesson:muscular-system:axial-muscles",
+      "glossary:diaphragm",
+      "question:q-muscular-atlas-diaphragm-dome"
+    ],
+    "depictedLabels": [
+      "Diaphragm"
+    ]
+  },
+  {
+    "id": "asset-injurymap-rotator-cuff-labeled",
+    "sourceId": "source-boneefied-muscular-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/muscular-atlas/muscular-atlas-16-rotator-cuff.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project artwork (muscular atlas, BVIS03); all rights reserved by Boneefied. No CC0 or public-domain dedication is granted.",
+    "verificationStatus": "verified",
+    "title": "Rotator cuff: anterior and posterior views",
+    "description": "Right shoulder, deltoid removed. Left panel anterior: subscapularis fills the front of the scapula and inserts on the lesser tubercle. Right panel posterior: supraspinatus above the scapular spine, infraspinatus below it, teres minor along the lateral inferior border. Each cuff muscle runs into a tendon that attaches to the humerus: supraspinatus, infraspinatus and teres minor to the greater tubercle, subscapularis to the lesser tubercle. Teres major (greyer tone) runs from the inferior scapular angle to the proximal medial humeral shaft and is NOT a rotator cuff muscle. Orientation: right shoulder; left panel anterior (patient right = viewer left); right panel posterior (patient right = viewer right); deltoid removed.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original Boneefied vector art that replaces a retired third-party muscle figure under the same asset ID (asset-injurymap-rotator-cuff-labeled); the retired file stays in the repository, unused. No baked text; names come from labels metadata.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 5,
+      "question": 3
+    },
+    "exampleUses": [
+      "gallery:muscular-system",
+      "lesson:muscular-system:shoulder-rotator-cuff",
+      "glossary:supraspinatus",
+      "question:q-muscular-atlas-cuff-supraspinatus"
+    ],
+    "depictedLabels": [
+      "Subscapularis",
+      "Teres major",
+      "Infraspinatus",
+      "Teres minor",
+      "Supraspinatus"
+    ]
+  }
+]

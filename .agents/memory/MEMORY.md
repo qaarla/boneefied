@@ -39,3 +39,4 @@
 - [Page heading placement](page-heading-intent.md) — centered headings/subtitles, no module-code eyebrow, and window-safe clearance below the Dynamic Island.
 - [Support email scope](support-email-intent.md) — help@ branding is for manual support replies, not account-email or autoresponder expansion.
 - [Resend template updates](resend-template-updates.md) — HTML-only PATCH regenerates plain text; always send both bodies and verify the published result.
+- [Real-photo references](real-photo-reference-intent.md) — supplemental links only; preserve illustrations and keep partial/unverified candidates out of the approved link set.

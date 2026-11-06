@@ -68,7 +68,7 @@ export default function ModuleDetailScreen() {
        {galleryIds.length > 0 && <View style={styles.images}>
         <Heading style={[styles.detailHead, { color: colors.foreground }]}>{language === 'es' ? 'Láminas seleccionadas del atlas' : 'Selected atlas plates'}</Heading>
         {galleryIds.flatMap((id) => { const a = content.assets.find((item) => item.id === id); return a ? [localizeAsset(a)] : []; }).map((asset) => <View key={asset.id} style={styles.imageCard}>
-          <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
+          <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} photoReferenceMode={mode} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
             <VisualStudyContext asset={asset} learn={mode === 'learn'} />
         </View>)}
       </View>}
@@ -77,7 +77,7 @@ export default function ModuleDetailScreen() {
           {moduleAssets.filter((asset) => mode === 'learn' || asset.labelStatus === 'unlabeled').map((asset) => {
             const translatedAsset = localizeAsset(asset);
             return <View key={asset.id} style={styles.imageCard}>
-              <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout={isAtlasAssetId(asset.id)} labels={translatedAsset.labels} revealLabels={mode === 'learn'} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? translatedAsset.title ?? t('module.verifiedCourseImage') : undefined} />
+              <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} photoReferenceMode={mode} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout={isAtlasAssetId(asset.id)} labels={translatedAsset.labels} revealLabels={mode === 'learn'} bakedLabels={asset.labelStatus === 'labeled'} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? translatedAsset.title ?? t('module.verifiedCourseImage') : undefined} />
                <VisualStudyContext asset={translatedAsset} learn={mode === 'learn'} />
             </View>;
           })}
@@ -102,7 +102,7 @@ function LessonCard({ lesson, mode, reflow, expanded, onToggle, colors, bookmark
         <View style={styles.chips}>{lesson.structureIds.slice(0, 6).map((id) => { const canonicalStructure = content.structures.find((item) => item.id === id); const structure = canonicalStructure && localizeStructure(canonicalStructure); return structure ? <AdaptiveButton key={id} accessibilityRole="button" accessibilityLabel={t(bookmarks.includes(id) ? 'bookmark.removeAccessibility' : 'bookmark.addAccessibility', { name: structure.canonicalName })} accessibilityState={{ selected: bookmarks.includes(id) }} hitSlop={4} style={[reflow && styles.chipTargetLarge, { maxWidth: '100%' }]} onPress={() => onBookmark(id)}><Text wholeWords style={[styles.chip, { color: colors.primary, maxWidth: '100%', flexShrink: 1 }]}>{bookmarks.includes(id) ? '★ ' : ''}{structure.canonicalName}</Text></AdaptiveButton> : null; })}</View>
     {expanded && <View style={styles.details}>
        {plates.map((asset) => <View key={asset.id} style={styles.imageCard}>
-          <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout={isAtlasAssetId(asset.id)} labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
+          <AnatomyImageViewer source={imageSources[asset.id]} diagramAssetId={asset.id} photoReferenceMode={mode} markerSizeOverride={asset.hotspotSizeOverride} diagramMarkerCount={asset.labels?.length} atlasLayout={isAtlasAssetId(asset.id)} labels={asset.labels} revealLabels={mode === 'learn'} bakedLabels={false} imageAspectRatio={asset.imageAspectRatio} caption={mode === 'learn' ? asset.title : undefined} />
           <VisualStudyContext asset={asset} learn={mode === 'learn'} />
        </View>)}
         <Heading style={[styles.detailHead, { color: colors.foreground }]}>{t('lesson.structuresInLesson')}</Heading>

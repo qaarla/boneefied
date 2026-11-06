@@ -1,0 +1,2 @@
+Evidence note — visceral-21-endometrium.md
+Checked 2026-11-06T21:25:21.142Z. Wikimedia Commons page identifies a human endometrial simple-columnar-epithelium micrograph by Mikael Häggström, CC0. The published image was viewed temporarily; endometrial epithelial tissue is visible. This does not show full myometrium/perimetrium or the two cycle states in the plate. No image was retained in the workspace.

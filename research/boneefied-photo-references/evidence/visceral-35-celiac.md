@@ -1,0 +1,2 @@
+Evidence note — visceral-35-celiac.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 148-1 identifies celiac trunk, hepatic/splenic/mesenteric arterial branches, pancreaticoduodenal arteries and duodenum/pancreatic ducts. The source-linked photo was viewed temporarily and shows dissected upper abdominal arterial structures. It does not depict the portal venous pathway or kidney hilum. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

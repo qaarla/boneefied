@@ -1,0 +1,2 @@
+Evidence note — visceral-41-lower-leg-vessels.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 192-4 identifies anterior-leg nerves and vessels, including the anterior tibial recurrent artery. Its source-linked image was viewed temporarily and shows a dissected anterior lower leg with vessels. It does not show the entire femoral-to-foot arterial route. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

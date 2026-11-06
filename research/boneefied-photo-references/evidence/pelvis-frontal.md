@@ -1,0 +1,1 @@
+Checked 2026-11-06. Commons File:Pelvis - os coxae, os sacrum (frontal view).jpg was visually inspected; it shows an actual dry human pelvis with paired hip bones and sacrum in frontal aspect. Some metal fixation wires are visible. Creator MAKY.OREL; Charles University anthropological collection; 2019-05-31; CC0 1.0. No source image copied into workspace.

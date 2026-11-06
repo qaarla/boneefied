@@ -1,0 +1,1447 @@
+[
+  {
+    "id": "asset-gray946-sweat-gland",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-26-sweat-glands.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Sweat and sebaceous glands",
+    "description": "Left: eccrine sweat gland. A coiled secretory part deep in the dermis sends a straight duct up through the epidermis to a sweat pore on the surface; it is found over most of the body and cools by evaporation. Right: apocrine sweat gland, larger and deeper (hypodermis), whose duct empties into a hair follicle rather than onto the skin (armpit, groin); a sebaceous gland also opens by a short duct into the follicle, oiling the hair. Simplified original drawing; secretory cells are not shown. Orientation: vertical sections; skin surface at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 5,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:integumentary-system:cutaneous-glands",
+      "glossary:eccrine-sweat-gland",
+      "question:q-bvis04-plate-sweat-glands"
+    ],
+    "depictedLabels": [
+      "Sweat pore",
+      "Eccrine sweat gland",
+      "Apocrine sweat gland",
+      "Sebaceous gland",
+      "Sebaceous duct"
+    ]
+  },
+  {
+    "id": "asset-original-cell-overview",
+    "sourceId": "source-boneefied-original-visuals",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/original-cell-overview.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original diagram created for Boneefied.",
+    "verificationStatus": "verified",
+    "title": "Original cell overview",
+    "description": "Original Boneefied diagram of a generalized cell; targets are broad visual regions.",
+    "adaptationNote": "Boneefied original artwork with structured labels and targets.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 3,
+      "glossary": 0,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:cytology-mitosis:cytology-cell-boundary",
+      "question:q-visual-cell-nucleus"
+    ],
+    "depictedLabels": [
+      "Plasma membrane",
+      "Cytoplasm",
+      "Nucleus",
+      "Nucleolus",
+      "Mitochondrion",
+      "Smooth er",
+      "Golgi apparatus",
+      "Centrosome"
+    ]
+  },
+  {
+    "id": "asset-original-mitosis-stages",
+    "sourceId": "source-boneefied-original-visuals",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/original-mitosis-stages.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original diagram created for Boneefied.",
+    "verificationStatus": "verified",
+    "title": "Original mitosis stages",
+    "description": "Original schematic of five successive cell-cycle stages, in reading order: interphase, prophase, metaphase, anaphase, and telophase with an early cleavage furrow. Interphase is not a stage of mitosis. Diffuse chromatin, condensed duplicated chromosomes, equatorial alignment, separated daughter chromosomes, and two reforming nuclei are distinguished. Four chromosomes are used for clarity; this is not a human chromosome count.",
+    "adaptationNote": "Original Boneefied matte vector correction; SVG master and exact-file provenance in assets/images/anatomy/foundations-corrections/. No baked labels.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 3,
+      "glossary": 0,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:cytology-mitosis:cytology-cell-cycle",
+      "question:q-visual-mitosis-metaphase"
+    ],
+    "depictedLabels": [
+      "Interphase",
+      "Prophase",
+      "Metaphase",
+      "Anaphase",
+      "Telophase"
+    ]
+  },
+  {
+    "id": "asset-commons-kidney-cortex-human",
+    "sourceId": "source-commons-histology",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/commons-kidney-cortex-human.jpg",
+    "assetType": "histology",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Josef Reischig, CC BY-SA 3.0",
+    "verificationStatus": "verified",
+    "title": "Human kidney cortex specimen",
+    "description": "Human kidney cortex specimen; broad glomerular and tubular profiles are visible. Stain and magnification are not asserted.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+    "rightsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 3,
+      "glossary": 0,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:urinary-system:urinary-kidney",
+      "question:q-visual-kidney-histology"
+    ],
+    "depictedLabels": []
+  },
+  {
+    "id": "asset-commons-alveolar-sac",
+    "sourceId": "source-commons-histology",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/commons-alveolar-sac.jpg",
+    "assetType": "histology",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Jpogi, CC BY-SA 4.0",
+    "verificationStatus": "verified",
+    "title": "Alveolar sac specimen",
+    "description": "Alveolar sac specimen with broad air spaces and septa; organism, stain, and magnification are not asserted.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+    "rightsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 0,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:respiratory-system:respiratory-exchange",
+      "question:q-visual-alveolar-histology"
+    ],
+    "depictedLabels": []
+  },
+  {
+    "id": "asset-commons-simple-squamous-epithelium",
+    "sourceId": "source-commons-epithelial-histology",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/commons-simple-squamous-epithelium.jpg",
+    "assetType": "histology",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Berkshire Community College Bioscience Image Library, CC0 1.0.",
+    "verificationStatus": "verified",
+    "title": "Simple squamous epithelium specimen",
+    "description": "Unknown-style simple squamous epithelium photomicrograph.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Squamous_Epithelium_(40823230315).jpg",
+    "rightsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "imageAspectRatio": 1.7728531855955678,
+    "imageOrientation": "landscape",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 0,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:cells-tissues:epithelial-patterns",
+      "question:q-practical-histology-simple-squamous"
+    ],
+    "depictedLabels": []
+  },
+  {
+    "id": "asset-commons-simple-cuboidal-epithelium",
+    "sourceId": "source-commons-epithelial-histology",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/commons-simple-cuboidal-epithelium.jpg",
+    "assetType": "histology",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Berkshire Community College Bioscience Image Library, CC0 1.0.",
+    "verificationStatus": "verified",
+    "title": "Simple cuboidal epithelium specimen",
+    "description": "Unknown-style simple cuboidal epithelium photomicrograph.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+    "rightsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "imageAspectRatio": 1.7728531855955678,
+    "imageOrientation": "landscape",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 0,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:cells-tissues:epithelial-patterns",
+      "question:q-practical-histology-simple-cuboidal"
+    ],
+    "depictedLabels": []
+  },
+  {
+    "id": "asset-commons-simple-columnar-epithelium",
+    "sourceId": "source-commons-epithelial-histology",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/commons-simple-columnar-epithelium.jpg",
+    "assetType": "histology",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Berkshire Community College Bioscience Image Library, CC0 1.0.",
+    "verificationStatus": "verified",
+    "title": "Simple columnar epithelium specimen",
+    "description": "Unknown-style simple columnar epithelium photomicrograph.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+    "rightsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "imageAspectRatio": 1.7728531855955678,
+    "imageOrientation": "landscape",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 0,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:cells-tissues:epithelial-patterns",
+      "question:q-practical-histology-simple-columnar"
+    ],
+    "depictedLabels": []
+  },
+  {
+    "id": "asset-openstax-historical-skin-structure",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-22-skin-overview.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Skin in section: layers, appendages and receptors",
+    "description": "Block of thin, hairy skin cut vertically. Epidermis on top (the thin outer keratinized layer), dermis below it with papillae pushing up into the epidermis, then the hypodermis (fat) at the bottom. A hair follicle holds the hair shaft; a sebaceous gland opens into it and the arrector pili muscle runs from its side up to the papillary dermis; nerve fibres wrap the follicle as the hair root plexus. An eccrine sweat gland coils deep in the dermis and its duct reaches the surface at a pore; an apocrine gland, larger and deeper, opens into a follicle. Receptors: free nerve endings in the epidermis, a tactile corpuscle in a dermal papilla and a lamellated corpuscle in the deep layers. Simplified original drawing; one hair follicle is unlabelled. Orientation: vertical section of thin hairy skin; surface at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 5,
+      "glossary": 15,
+      "question": 12
+    },
+    "exampleUses": [
+      "gallery:integumentary-system",
+      "lesson:integumentary-system:skin-layers-strata",
+      "glossary:epidermis-skin",
+      "question:q-bvis04-locate-epidermis-skin"
+    ],
+    "depictedLabels": [
+      "Epidermis",
+      "Dermis",
+      "Hypodermis",
+      "Hair follicle",
+      "Hair shaft",
+      "Sebaceous gland",
+      "Arrector pili muscle",
+      "Hair root plexus",
+      "Eccrine sweat gland",
+      "Sweat pore",
+      "Apocrine sweat gland",
+      "Tactile corpuscle",
+      "Free nerve ending",
+      "Lamellated corpuscle",
+      "Cutaneous blood vessels"
+    ]
+  },
+  {
+    "id": "asset-bvis04-epidermis-strata",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-23-epidermis-strata.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Epidermis: strata and cell types (schematic)",
+    "description": "Left: schematic thick skin (palm or sole). From deep to superficial: stratum basale (one row of dividing cells on the dermis), stratum spinosum (polygonal keratinocytes joined by spiny bridges), stratum granulosum (flattened cells with dark granules), the clear stratum lucidum (present only in thick skin) and the very thick stratum corneum of dead, keratin-filled cells. Cell types: melanocyte in the basale with pigment passed to keratinocytes, Merkel cell with its nerve disc, Langerhans cell in the spinosum; a tactile corpuscle sits in the dermal papilla below. Right: thin skin has the same strata but a much thinner corneum and no lucidum. Original schematic, not a photomicrograph; cells are enlarged and spaced out. Orientation: vertical sections; surface at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 11,
+      "question": 6
+    },
+    "exampleUses": [
+      "gallery:integumentary-system",
+      "lesson:integumentary-system:skin-layers-strata",
+      "glossary:stratum-basale",
+      "question:q-bvis04-locate-stratum-basale"
+    ],
+    "depictedLabels": [
+      "Stratum corneum",
+      "Stratum lucidum",
+      "Stratum granulosum",
+      "Stratum spinosum",
+      "Stratum basale",
+      "Keratinocyte",
+      "Melanocyte",
+      "Merkel cell",
+      "Langerhans cell",
+      "Tactile corpuscle",
+      "Dermal papilla",
+      "Stratum corneum",
+      "Stratum granulosum",
+      "Stratum spinosum",
+      "Stratum basale"
+    ]
+  },
+  {
+    "id": "asset-bvis04-dermis-hypodermis",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-24-dermis-hypodermis.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Dermis and hypodermis: fibres and vessels",
+    "description": "Vertical block under a thin epidermis. The papillary layer, the upper dermis, is loose areolar tissue forming the dermal papillae, each with a capillary loop and fine fibres. The deeper reticular layer is dense irregular tissue with thick collagen bundles (pale, wide) and a mesh of thin dark elastic fibres, with larger vessels along its base. Beneath it the hypodermis is made of fat lobules. Dermis is a group marker spanning both layers. Simplified original drawing; fibre density is stylised. Orientation: vertical section; surface at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 8,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:integumentary-system:skin-layers-strata",
+      "glossary:dermis-skin",
+      "question:q-bvis04-plate-dermis-hypodermis"
+    ],
+    "depictedLabels": [
+      "Papillary layer",
+      "Reticular layer",
+      "Dermis",
+      "Dermal papilla",
+      "Dermal collagen fibers",
+      "Dermal elastic fibers",
+      "Cutaneous blood vessels",
+      "Hypodermis"
+    ]
+  },
+  {
+    "id": "asset-bvis04-hair-follicle",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-25-hair-follicle.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Hair follicle in longitudinal section",
+    "description": "One hair follicle cut lengthways and enlarged. The part of the hair above the skin is the shaft; the part inside the follicle is the root, which ends in the expanded bulb. A dermal papilla pushes into the base of the bulb and feeds the dividing matrix cells around it. A sebaceous gland empties through a short duct into the upper follicle, and the arrector pili muscle runs from the follicle wall up to the superficial dermis, standing the hair when it contracts. Simplified original drawing; the sheath layers are not separated. Orientation: longitudinal section of one hair follicle; skin surface at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 8,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:integumentary-system:hair-nails",
+      "glossary:sebaceous-gland-skin",
+      "question:q-bvis04-locate-hair-bulb-skin"
+    ],
+    "depictedLabels": [
+      "Hair shaft",
+      "Hair root",
+      "Hair follicle",
+      "Hair bulb",
+      "Hair dermal papilla",
+      "Sebaceous gland",
+      "Sebaceous duct",
+      "Arrector pili muscle"
+    ]
+  },
+  {
+    "id": "asset-bvis04-epithelia-simple",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-27-epithelia-simple.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Simple epithelia: squamous, cuboidal, columnar (schematic)",
+    "description": "Schematic, not a photomicrograph. Simple epithelia are one cell layer thick, resting on a thin basement membrane (blue band) above connective tissue. Left: flat squamous cells with flattened nuclei, thin for diffusion (air sacs, vessel lining). Middle: cuboidal cells as tall as wide with round central nuclei (kidney tubules, small ducts). Right: columnar cells taller than wide with oval basal nuclei and a brush of surface projections (gut lining). Cells and nuclei are idealised and evenly spaced. Orientation: schematic sections; apical surface at top, connective tissue below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 4,
+      "question": 3
+    },
+    "exampleUses": [
+      "gallery:cells-tissues",
+      "lesson:cells-tissues:epithelial-patterns",
+      "glossary:simple-squamous-epithelium",
+      "question:q-bvis04-identify-simple-squamous-epithelium"
+    ],
+    "depictedLabels": [
+      "Simple squamous epithelium",
+      "Simple cuboidal epithelium",
+      "Simple columnar epithelium",
+      "Basement membrane"
+    ]
+  },
+  {
+    "id": "asset-bvis04-epithelia-stratified",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-28-epithelia-stratified.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Pseudostratified and stratified squamous epithelia (schematic)",
+    "description": "Schematic, not a photomicrograph. Left: pseudostratified columnar epithelium, where every cell touches the basement membrane but only the tall ones reach the surface, so nuclei sit at several heights and it looks layered; a flask-shaped goblet cell secretes mucus and the tall cells carry cilia (airways). Middle: stratified squamous keratinized epithelium, with a cuboidal base, polygonal middle cells and flattened superficial cells ending in a dead keratin layer (skin). Right: non-keratinized stratified squamous, whose surface cells stay alive and nucleated and have no keratin layer (mouth, oesophagus, vagina). Idealised cells. Orientation: schematic sections; apical surface at top, connective tissue below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 4,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:cells-tissues:epithelial-patterns",
+      "glossary:pseudostratified-epithelium",
+      "question:q-bvis04-identify-pseudostratified-epithelium"
+    ],
+    "depictedLabels": [
+      "Pseudostratified columnar epithelium",
+      "Goblet cell",
+      "Keratinized stratified squamous epithelium",
+      "Nonkeratinized stratified squamous epithelium"
+    ]
+  },
+  {
+    "id": "asset-bvis04-epithelia-other-stratified",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-29-epithelia-other-stratified.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Stratified cuboidal, columnar and transitional epithelia (schematic)",
+    "description": "Schematic, not a photomicrograph. Left: stratified cuboidal epithelium, usually just two rows of cuboidal cells lining a larger duct (sweat or salivary ducts). Middle: stratified columnar epithelium, rare, with small basal cells and a surface row of columnar cells (parts of large ducts and the male urethra). Right: transitional epithelium of the urinary tract, with small basal cells, pear-shaped middle cells and large rounded surface (umbrella) cells that flatten as the organ stretches. Idealised cells; the duct lumen is at the top. Orientation: schematic sections; lumen at top, connective tissue below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 3,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:cells-tissues:epithelial-patterns",
+      "glossary:stratified-cuboidal-epithelium",
+      "question:q-bvis04-identify-stratified-cuboidal-epithelium"
+    ],
+    "depictedLabels": [
+      "Stratified cuboidal epithelium",
+      "Stratified columnar epithelium",
+      "Transitional epithelium"
+    ]
+  },
+  {
+    "id": "asset-bvis04-connective-loose",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-30-connective-loose.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Loose connective tissues: areolar, adipose, reticular (schematic)",
+    "description": "Schematic, not a photomicrograph. Left: areolar tissue, a loose mix of thick pale collagen fibres, thin dark elastic fibres, fibroblasts and an occasional immune cell, with open ground substance between. Middle: adipose tissue, packed with large fat cells whose single droplet pushes the nucleus and thin cytoplasm to the edge. Right: reticular tissue, a fine branching network of reticular fibres holding many round lymphoid cells (lymph node, spleen, bone marrow). Idealised fibres and cells. Orientation: schematic fields; no polarity.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 5,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:cells-tissues:connective-matrices",
+      "glossary:areolar-connective-tissue",
+      "question:q-bvis04-identify-areolar-connective-tissue"
+    ],
+    "depictedLabels": [
+      "Areolar connective tissue",
+      "Collagen fiber",
+      "Elastic fiber",
+      "Adipose tissue",
+      "Reticular connective tissue"
+    ]
+  },
+  {
+    "id": "asset-bvis04-connective-dense",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-31-connective-dense.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Dense connective tissues: regular, irregular, elastic (schematic)",
+    "description": "Schematic, not a photomicrograph. Left: dense regular connective tissue (tendon, ligament) with thick collagen bundles all running one way and rows of flattened fibroblast nuclei squeezed between them, resisting pull in one direction. Middle: dense irregular tissue (dermis, organ capsules) with bundles woven in many directions, resisting pull from any side. Right: elastic connective tissue with thick wavy elastic fibres between cells (large artery walls, some ligaments), which recoil after stretch. Idealised bundles. Orientation: schematic fields; regular tissue shown along the fibre axis.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 3,
+      "question": 3
+    },
+    "exampleUses": [
+      "gallery:cells-tissues",
+      "lesson:cells-tissues:connective-matrices",
+      "glossary:dense-regular-connective-tissue",
+      "question:q-bvis04-identify-dense-regular-connective-tissue"
+    ],
+    "depictedLabels": [
+      "Dense regular connective tissue",
+      "Dense irregular connective tissue",
+      "Elastic connective tissue"
+    ]
+  },
+  {
+    "id": "asset-bvis04-cartilage",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-32-cartilage.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Cartilages: hyaline, elastic, fibrocartilage (schematic)",
+    "description": "Schematic, not a photomicrograph. Cartilage cells (chondrocytes) sit in small spaces called lacunae inside a firm, avascular matrix. Left: hyaline cartilage, with a smooth glassy matrix and chondrocytes often in pairs; a perichondrium (pink band) covers the top. Middle: elastic cartilage, with the matrix packed with dark wavy elastic fibres (ear, epiglottis). Right: fibrocartilage, with rows of chondrocytes between thick parallel collagen bundles (intervertebral discs, pubic symphysis, menisci). Idealised. Orientation: schematic fields; no polarity.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 4,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:cells-tissues:connective-matrices",
+      "glossary:hyaline-cartilage-tissue",
+      "question:q-bvis04-identify-hyaline-cartilage-tissue"
+    ],
+    "depictedLabels": [
+      "Hyaline cartilage",
+      "Lacuna",
+      "Elastic cartilage",
+      "Fibrocartilage"
+    ]
+  },
+  {
+    "id": "asset-bvis04-muscle-tissue",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-33-muscle-tissue.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Muscle tissues: skeletal, cardiac, smooth (schematic)",
+    "description": "Schematic, not a photomicrograph. Left: skeletal muscle in long section, long cylindrical striated fibres, each with many nuclei pressed to the edge. Middle: cardiac muscle, striated but shorter, branching fibres with one central nucleus; dark intercalated discs mark the end-to-end junctions between cells. Right: smooth muscle, tapering spindle cells with one central nucleus and no striations, interlocking in sheets. Idealised cells; striations are drawn as faint lines. Orientation: schematic longitudinal fields; no polarity.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 4,
+      "question": 3
+    },
+    "exampleUses": [
+      "gallery:cells-tissues",
+      "lesson:cells-tissues:muscle-histology",
+      "glossary:skeletal-muscle-tissue",
+      "question:q-bvis04-identify-skeletal-muscle-tissue"
+    ],
+    "depictedLabels": [
+      "Skeletal muscle tissue",
+      "Cardiac muscle tissue",
+      "Intercalated disc",
+      "Smooth muscle tissue"
+    ]
+  },
+  {
+    "id": "asset-bvis04-nervous-tissue",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-34-nervous-tissue.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Nervous tissue: neuron and neuroglia (schematic)",
+    "description": "Schematic, not a photomicrograph. Left: a multipolar neuron with a cell body holding the nucleus and nucleolus, several branching dendrites that receive input, and one long axon, here wrapped in segments of pale myelin and ending in terminal branches. Right: neuroglia, the supporting cells: a star-shaped astrocyte reaching a capillary (pink), a small lilac microglial cell and a tan oligodendrocyte sending a process toward an axon (pale myelinated fibre). Group marker only: all glia share one label. Cell sizes and shapes are idealised and not to scale; only one of each is drawn. Orientation: schematic cells; no polarity.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 2,
+      "question": 2
+    },
+    "exampleUses": [
+      "gallery:cells-tissues",
+      "lesson:cells-tissues:nervous-tissue-cues",
+      "glossary:neuron-tissue",
+      "question:q-bvis04-identify-neuron-tissue"
+    ],
+    "depictedLabels": [
+      "Neuron",
+      "Neuroglia"
+    ]
+  },
+  {
+    "id": "asset-bvis04-nail-section",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-35-nail-section.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Nail in longitudinal section",
+    "description": "Fingertip cut lengthwise, fingertip to the right and the back of the finger at the top, over the distal phalanx. The hard nail plate lies on the nail bed, a thin layer of epithelium over the dermis. At the back end, the nail root is the part of the plate tucked under the proximal nail fold, and it grows from the nail matrix beneath it: the thick, living germinative epithelium whose cells keratinise to form the plate, so the plate is pushed forward as the matrix adds to it. Under the free edge the skin thickens into the hyponychium (unlabelled). Simplified original drawing. Orientation: longitudinal section of a fingertip; distal end at right, dorsal at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 1
+    },
+    "exampleUses": [
+      "gallery:integumentary-system",
+      "lesson:integumentary-system:hair-nails",
+      "glossary:nail-plate-skin",
+      "question:q-bvis04-plate-nail-section"
+    ],
+    "depictedLabels": [
+      "Nail plate",
+      "Nail bed",
+      "Nail root",
+      "Nail matrix"
+    ]
+  },
+  {
+    "id": "asset-bvis05-blood-composition",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-08-blood-composition.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Composition of blood: plasma, serum and formed elements",
+    "description": "Schematic, not a photograph. Left tube: anticoagulated blood spun in a centrifuge separates into straw-coloured plasma on top (about half or more of the volume), a thin pale buffy coat (white blood cells and platelets) and packed red cells at the bottom; the buffy coat and red cells together are the formed elements. Right tube: blood allowed to clot; the clot traps cells in a fibrin meshwork and the straw liquid left above it is serum, which is plasma without the clotting factors. Right panel, shapes at about comparable relative size: a red blood cell (erythrocyte) with a pale centre, a white blood cell (leukocyte, a neutrophil shown) with a lobed nucleus, and platelets, which are cell fragments, not whole cells. Layer proportions are illustrative. Orientation: left: two upright tubes, top = lightest layer; right: three cell types.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 7,
+      "question": 8
+    },
+    "exampleUses": [
+      "lesson:cardiovascular-system:cv-blood-tissue",
+      "glossary:cv-blood-plasma",
+      "question:q-bvis05-locate-cv-blood-plasma"
+    ],
+    "depictedLabels": [
+      "Blood plasma",
+      "Serum",
+      "Buffy coat",
+      "Formed elements",
+      "Erythrocyte",
+      "Leukocyte",
+      "Platelet"
+    ]
+  },
+  {
+    "id": "asset-bvis05-blood-smear-schematic",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-09-blood-smear-schematic.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Peripheral blood smear (schematic field)",
+    "description": "An original schematic of what a stained peripheral blood smear shows, not a photomicrograph and not a real specimen. Biconcave red cells dominate and look like discs with a pale centre (central pallor) because they are thinner in the middle and have no nucleus. Platelets are small purple fragments. One white cell of each kind is shown at a larger relative size so features are visible: neutrophil (multilobed nucleus, pale cytoplasm), lymphocyte (round nucleus filling the cell), monocyte (largest, kidney-shaped nucleus), eosinophil (bilobed nucleus, bright coarse granules) and basophil (dark granules covering the nucleus). In a real smear red cells are far more numerous than shown relative to white cells. Orientation: schematic microscope field; no orientation.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 9,
+      "question": 8
+    },
+    "exampleUses": [
+      "lesson:cardiovascular-system:cv-blood-red-cells-platelets",
+      "glossary:cv-blood-erythrocyte",
+      "question:q-bvis05-locate-cv-blood-peripheral-blood-smear"
+    ],
+    "depictedLabels": [
+      "Peripheral blood smear",
+      "Erythrocyte",
+      "Central pallor",
+      "Platelet",
+      "Neutrophil",
+      "Lymphocyte",
+      "Monocyte",
+      "Eosinophil",
+      "Basophil"
+    ]
+  },
+  {
+    "id": "asset-bvis05-leukocyte-types",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-10-leukocyte-types.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "The five leukocytes, compared",
+    "description": "Schematic comparison, not specimen images. Left group, granulocytes (visible cytoplasmic granules, lobed nucleus): neutrophil with a nucleus of several lobes and faint pale granules; eosinophil with a bilobed nucleus and bright coarse granules; basophil with large dark granules that cover the nucleus. Right group, agranulocytes (no prominent granules): lymphocyte, small, with a round nucleus filling most of the cell; monocyte, the largest, with a kidney or horseshoe-shaped nucleus. Red cells are drawn at the same scale for size comparison. Relative sizes are approximate and the group markers sit on a member cell of each group. Orientation: schematic cell comparison; granulocytes at left, agranulocytes at right.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 8,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:cardiovascular-system:cv-blood-tissue",
+      "glossary:cv-blood-leukocyte",
+      "question:q-bvis05-locate-cv-blood-granulocyte"
+    ],
+    "depictedLabels": [
+      "Leukocyte",
+      "Granulocyte",
+      "Agranulocyte",
+      "Neutrophil",
+      "Eosinophil",
+      "Basophil",
+      "Lymphocyte",
+      "Monocyte"
+    ]
+  },
+  {
+    "id": "asset-bvis05-marrow-hematopoiesis",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-11-marrow-hematopoiesis.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Red bone marrow and hematopoiesis",
+    "description": "Schematic, not a section of real marrow. Left: red bone marrow fills the spaces of spongy bone between bone trabeculae. A hematopoietic stem cell sits among clusters of developing red cells (erythroblasts) and white cell precursors; a giant multilobed megakaryocyte lies against a blood sinusoid and sheds platelets into it. Mature red cells, platelets and a white cell pass through the sinusoid wall into the blood. Right: hematopoiesis as a branching family tree. One stem cell gives myeloid and lymphoid lines; the myeloid line produces red cells, platelets (from megakaryocytes) and granulocytes and monocytes, the lymphoid line produces lymphocytes. Simplified: intermediate progenitors are collapsed. Orientation: left: marrow cavity between bone plates; right: lineage tree, stem cell at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 7,
+      "question": 5
+    },
+    "exampleUses": [
+      "lesson:cardiovascular-system:cv-blood-red-cells-platelets",
+      "glossary:cv-blood-erythrocyte",
+      "question:q-bvis05-locate-cv-blood-red-bone-marrow"
+    ],
+    "depictedLabels": [
+      "Red bone marrow",
+      "Hematopoietic stem cell",
+      "Megakaryocyte",
+      "Platelet",
+      "Erythrocyte",
+      "Leukocyte",
+      "Hematopoietic stem cell",
+      "Hematopoiesis",
+      "Erythrocyte",
+      "Megakaryocyte",
+      "Platelet",
+      "Leukocyte"
+    ]
+  },
+  {
+    "id": "asset-bvis05-vessel-wall-types",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-12-vessel-wall-types.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Vessel wall layers and vessel types",
+    "description": "Schematic cross-sections, not histology images. Left: an artery has, from outside in, the tunica externa (connective tissue), a thick tunica media (smooth muscle and elastic layers), the tunica intima (thin connective layer) and the endothelium, a single flat cell layer lining the lumen. The vein below has the same three layers but a much thinner media, a thicker externa and a wider, flatter lumen. Right, relative size and wall, top to bottom: elastic artery (many elastic layers; aorta and its big branches), muscular artery (mostly smooth muscle), arteriole (thin muscular wall), capillary (a single endothelial cell layer), venule and vein. Sizes are not to true scale (a capillary is far smaller than drawn). Orientation: cross-sections viewed along the vessel axis; lumen at centre.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 3,
+      "glossary": 11,
+      "question": 12
+    },
+    "exampleUses": [
+      "gallery:blood-vessels",
+      "lesson:blood-vessels:ves-wall",
+      "glossary:ves-artery",
+      "question:q-bvis05-locate-ves-externa"
+    ],
+    "depictedLabels": [
+      "Tunica externa",
+      "Tunica media",
+      "Tunica intima",
+      "Endothelium",
+      "Artery",
+      "Vein",
+      "Elastic artery",
+      "Muscular artery",
+      "Arteriole",
+      "Capillary",
+      "Venule",
+      "Vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-vessel-flow-chain",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-13-vessel-flow-chain.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Flow chain: aorta to vein",
+    "description": "Schematic, one continuous route, flowing left to right. The aorta (widest, elastic wall) divides into smaller arteries and then arterioles, which feed a capillary bed, the only place where exchange with tissue happens. Capillaries drain into venules, which merge into larger veins carrying blood back toward the heart. Arteries are red, capillaries a muted mauve and veins blue; here colour marks vessel type, not oxygen content (the pulmonary circuit reverses it). Vessel widths and branching are simplified and not to scale. Orientation: flow runs left to right.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 6,
+      "question": 2
+    },
+    "exampleUses": [
+      "gallery:blood-vessels",
+      "lesson:blood-vessels:ves-flow",
+      "glossary:ves-artery",
+      "question:q-bvis05-locate-ves-aorta"
+    ],
+    "depictedLabels": [
+      "Aorta",
+      "Artery",
+      "Arteriole",
+      "Capillary",
+      "Venule",
+      "Vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-capillary-types",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-14-capillary-types.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Three capillary types",
+    "description": "Schematic cross-sections, not electron micrographs. Left, continuous capillary: endothelial cells joined edge to edge with no pores, the most common type (muscle, skin, brain with extra-tight junctions). It carries red cells and platelets, and a neutrophil is drawn outside the wall, as it would be after squeezing out into tissue. Middle, fenestrated capillary: thin windows (fenestrae) through the cells for rapid exchange, in kidney glomeruli, gut lining and endocrine glands. Right, sinusoid: wide, irregular lumen with large gaps between cells and a discontinuous basement membrane, in liver, bone marrow and spleen. Sizes are exaggerated and not to scale to each other. Orientation: cross-sections along the vessel axis, lumen at centre.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 6,
+      "question": 7
+    },
+    "exampleUses": [
+      "gallery:blood-vessels",
+      "lesson:blood-vessels:ves-capillary-types",
+      "glossary:ves-continuous",
+      "question:q-bvis05-locate-ves-continuous"
+    ],
+    "depictedLabels": [
+      "Continuous capillary",
+      "Erythrocyte",
+      "Platelet",
+      "Neutrophil",
+      "Fenestrated capillary",
+      "Sinusoid capillary"
+    ]
+  },
+  {
+    "id": "asset-bvis05-alveolar-unit",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-28-alveolar-unit.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Alveolar unit: bronchiole, duct, sac and alveoli",
+    "description": "Schematic, not a lung section. Air passes from a terminal bronchiole (airway only) to a respiratory bronchiole, which has a few alveoli budding from its wall and so begins gas exchange. It continues as an alveolar duct whose wall is nearly all alveoli, ending in an alveolar sac, a cluster of alveoli sharing a common space. Each alveolus is a thin-walled air pocket; the thin shared wall between neighbouring alveoli is the alveolar septum, which carries the capillaries. The air space is one connected lumen: bronchiole, duct, common sac, and alveoli that open into it through wide necks. The mauve pulmonary capillary runs inside the septa and around the outside of the sac, joined to the blood vessels, not through the air. The pulmonary artery branch (blue, bottom, deoxygenated blood from the heart) feeds the capillary and the pulmonary vein branch (red, top, oxygenated blood) drains it: in the lungs the usual colours are reversed. Sizes are not to scale. Orientation: air flows left to right from the bronchiole to the alveolar sac.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 6,
+      "question": 7
+    },
+    "exampleUses": [
+      "lesson:respiratory-system:respiratory-exchange",
+      "glossary:respiratory-system-respiratory-bronchiole",
+      "question:q-bvis05-locate-respiratory-system-respiratory-bronchiole"
+    ],
+    "depictedLabels": [
+      "Respiratory bronchiole",
+      "Alveolar duct",
+      "Alveolar sac",
+      "Alveolus",
+      "Alveolar septum",
+      "Pulmonary capillary"
+    ]
+  },
+  {
+    "id": "asset-bvis05-respiratory-membrane-histology",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-29-respiratory-membrane-histology.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Respiratory membrane and airway wall",
+    "description": "Schematic, not a photomicrograph. Left: a thin slice of alveolar wall, air space on top. A film of surfactant (from type II pneumocytes, the cuboidal cells) lines the surface and lowers surface tension so alveoli do not collapse. Type I pneumocytes are very thin flat cells that cover most of the surface. An alveolar macrophage in the air space engulfs dust and microbes. Where a capillary lies against the wall, the respiratory membrane is thinnest: type I cell, a fused basement membrane and capillary endothelium, only a fraction of a micrometre thick, so oxygen diffuses into the red cells and carbon dioxide out. Elastic fibres in the septum let the lung recoil. Right: airway wall (bronchus): ciliated pseudostratified epithelium with mucus-secreting goblet cells, a lamina propria with elastic fibres, and a band of airway smooth muscle. Simplified; thickness exaggerated. Orientation: left: alveolar wall, air at top; right: airway wall, lumen at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 10,
+      "question": 10
+    },
+    "exampleUses": [
+      "lesson:respiratory-system:respiratory-exchange",
+      "glossary:respiratory-system-type-i-pneumocyte",
+      "question:q-bvis05-locate-respiratory-system-surfactant"
+    ],
+    "depictedLabels": [
+      "Surfactant",
+      "Type I pneumocyte",
+      "Type II pneumocyte",
+      "Alveolar macrophage",
+      "Respiratory membrane",
+      "Pulmonary capillary",
+      "Elastic fiber",
+      "Ciliated pseudostratified epithelium",
+      "Goblet cell",
+      "Smooth muscle of airway",
+      "Elastic fiber"
+    ]
+  },
+  {
+    "id": "asset-bvis05-lymph-node-structure",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-31-lymph-node-structure.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Lymph node: afferent, sinuses, efferent and hilum",
+    "description": "Schematic section, not a photomicrograph. Several afferent lymphatic vessels (valves point inward) pierce the capsule on the convex side and open into the subcapsular sinus. Lymph then filters through the cortical sinuses (lymphocyte-rich cortex with round follicles), reaches the medullary sinuses between the medullary cords, and leaves by one efferent vessel at the hilum, the dent where an artery and a vein also enter and leave. The flow is continuous: afferent to subcapsular sinus to cortical sinus to medullary sinus to efferent. Because there are several afferents and one efferent, the node slows lymph while macrophages and lymphocytes screen it. The cortex outer rim here also stands for the whole node. Simplified. Orientation: afferents enter at top (convex side), efferent leaves at bottom hilum.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 11,
+      "question": 15
+    },
+    "exampleUses": [
+      "gallery:lymphatic-system",
+      "lesson:lymphatic-system:lymph-vessels",
+      "glossary:lymph-node",
+      "question:q-visual-lymph-node-cortex"
+    ],
+    "depictedLabels": [
+      "Lymph node",
+      "Afferent lymphatic vessel",
+      "Efferent lymphatic vessel",
+      "Node capsule",
+      "Subcapsular sinus",
+      "Cortical sinus",
+      "Lymph node cortex",
+      "Lymph node medulla",
+      "Medullary sinus",
+      "Medullary cord",
+      "Node hilum"
+    ]
+  },
+  {
+    "id": "asset-bvis05-spleen-pulp",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-32-spleen-pulp.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Spleen: red pulp and white pulp",
+    "description": "Left: the spleen as an organ, with small pale spots of white pulp scattered through the dark red pulp. Right: a microscopic schematic. White pulp is lymphoid tissue (lymphocytes) wrapped around a branch of the splenic artery, the central arteriole, which sits off-centre; around the white pulp lies the paler marginal zone, where blood-borne antigens are first screened. Red pulp is everything else: splenic sinusoids (mauve channels full of red cells) separated by splenic cords (the dark tissue between them, with macrophages that remove old red cells). Schematic; the arrangement of sinusoids is simplified. The left panel is a schematic cut face exposing pulp, not the intact external surface. Neither panel is a real specimen image. Orientation: left: whole organ; right: microscopic field.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 7,
+      "question": 8
+    },
+    "exampleUses": [
+      "gallery:lymphatic-system",
+      "lesson:lymphatic-system:lymph-spleen",
+      "glossary:lymph-spleen",
+      "question:q-bvis05-locate-lymph-spleen"
+    ],
+    "depictedLabels": [
+      "Spleen",
+      "White pulp",
+      "White pulp",
+      "Splenic marginal zone",
+      "Central arteriole",
+      "Splenic sinusoids",
+      "Splenic cords",
+      "Red pulp"
+    ]
+  },
+  {
+    "id": "asset-bvis05-thymus-lobule",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-33-thymus-lobule.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Thymus and thymic lobule",
+    "description": "Left: the thymus, a two-lobed organ behind the breastbone (pale vertical bar) in the upper chest, in front of the great vessels and the heart (it is large in children and shrinks with age). Right: one lobule, schematic. The dense, dark outer cortex is packed with developing T lymphocytes; the paler inner medulla has fewer lymphocytes and contains Hassall’s corpuscles, whorls of flattened epithelial cells whose exact role is still debated. Thin pale connective septa (the rim) divide the gland into lobules. Simplified. The translucent anterior sternum is projected over the thymus; the thymus remains posterior to it and anterior to the great vessels. Orientation: left: anterior chest view, patient right at viewer left; right: one lobule.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 5,
+      "question": 6
+    },
+    "exampleUses": [
+      "lesson:lymphatic-system:lymph-thymus",
+      "glossary:lymph-thymus",
+      "question:q-bvis05-locate-lymph-thymus"
+    ],
+    "depictedLabels": [
+      "Thymus",
+      "Thymic cortex",
+      "Thymic medulla",
+      "Hassall corpuscle",
+      "Thymic lobule"
+    ]
+  },
+  {
+    "id": "asset-bvis05-tonsil-map-structure",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-34-tonsil-map-structure.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Tonsils: where they sit and how they are built",
+    "description": "Left: midline sagittal head, face at viewer left. The pharyngeal tonsil (adenoid) lies on the roof and back wall of the nasopharynx; the lingual tonsil lies on the back of the tongue. Middle: open-mouth view from the front: the palatine tonsils are the pair between the arches at the sides of the throat, with the uvula in the middle. Together these and neighbouring patches form a ring of lymphoid tissue at the entrance of the throat. Right: structure of a tonsil, schematic: surface epithelium dips into deep crypts that trap material; beneath it lies lymphoid tissue (MALT, mucosa-associated lymphoid tissue) with round lymphoid follicles, each with a paler germinal centre where B cells multiply; a thin capsule lies at the base. Simplified. The crypt cavities open at the surface and retain a distinct epithelial lining within the underlying lymphoid tissue. Orientation: left: sagittal head, face at viewer left; middle: open-mouth view; right: tonsil section, surface at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 7,
+      "question": 8
+    },
+    "exampleUses": [
+      "lesson:lymphatic-system:lymph-tonsils",
+      "glossary:lymph-palatine-tonsil",
+      "question:q-bvis05-locate-lymph-pharyngeal-tonsil"
+    ],
+    "depictedLabels": [
+      "Pharyngeal tonsil",
+      "Lingual tonsil",
+      "Palatine tonsil",
+      "Tonsil",
+      "Mucosa-associated lymphoid tissue",
+      "Lymphoid follicle",
+      "Germinal center"
+    ]
+  },
+  {
+    "id": "asset-bvis05-gut-lymphoid-lacteal",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-35-gut-lymphoid-lacteal.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Gut-associated lymphoid tissue and the lacteal",
+    "description": "Left: terminal small bowel (ileum) joining the cecum of the large intestine, anterior view, patient right at viewer left; context drawn in cream. Peyer’s patches are oval plaques of lymphoid tissue in the wall of the ileum that sample what is in the gut. The appendix hangs from the cecum and also has a lymphoid-rich wall. Lymph from the gut wall runs through the mesentery to the intestinal trunk (sage green), which carries it up to the cisterna chyli. Right: a villus (fingerlike fold of the small-bowel lining) in section: the central blind-ended lymph capillary, the lacteal, picks up absorbed fats; the blood capillary network (mauve) beside it takes up most other nutrients. Peyer’s lymphoid tissue lies below, in the base of the wall. Schematic; the villus is much enlarged. Lacteal lymph flows down from the blind villus tip to the basal collecting route, then toward larger intestinal trunks. The separate lower wall detail shows an aggregate of lymphoid follicles (a Peyer patch), not a structure inside the villus or a termination of its lacteal. Orientation: left: anterior view, patient right at viewer left; right: villus section, tip at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 4,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:lymphatic-system:lymph-intestinal",
+      "glossary:lymph-peyers",
+      "question:q-bvis05-locate-lymph-peyers"
+    ],
+    "depictedLabels": [
+      "Peyer patches",
+      "Appendix lymphoid tissue",
+      "Intestinal lymphatic trunk",
+      "Lacteal",
+      "Peyer patches"
+    ]
+  },
+  {
+    "id": "asset-bvis05-endocrine-body-map",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-36-endocrine-body-map.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Endocrine glands of the body",
+    "description": "Left, anterior view, patient right at viewer left (female pelvis shown): thyroid in the neck, thymus behind the breastbone, adrenal glands on top of the kidneys (grey-rose; retroperitoneal, left kidney slightly higher), pancreas across the upper abdomen in front of them, and the ovaries on each side of the uterus (pale shape). Glands are enlarged for visibility. Upper right: midline sagittal head, face at viewer left: the hypothalamus lies under the thalamus and is joined by the stalk to the pituitary in the bony sella, and the small pineal gland sits behind the third ventricle. Lower right: the testes hang in the scrotum, shown separately. The parathyroid glands lie on the back of the thyroid and are drawn on a separate plate. Simplified. Orientation: left: anterior body view, patient right at viewer left; upper right: sagittal head, face at viewer left; lower right: testes.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 5,
+      "glossary": 9,
+      "question": 10
+    },
+    "exampleUses": [
+      "gallery:endocrine-system",
+      "lesson:endocrine-system:endo-central-control",
+      "glossary:endo-hypothalamus",
+      "question:q-bvis05-locate-endo-thyroid"
+    ],
+    "depictedLabels": [
+      "Thyroid gland",
+      "Thymus",
+      "Adrenal gland",
+      "Pancreas",
+      "Ovary endocrine tissue",
+      "Hypothalamus",
+      "Pituitary gland",
+      "Pineal gland",
+      "Testis endocrine tissue"
+    ]
+  },
+  {
+    "id": "asset-bvis05-hypothalamus-pituitary-axis",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-37-hypothalamus-pituitary-axis.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Hypothalamus and pituitary: portal and neural links",
+    "description": "Schematic in the midline, anterior at viewer left. The hypothalamus (dusty rose, top) controls the pituitary in two different ways. Anterior pituitary: small neurosecretory cells in the hypothalamus release regulating hormones into a first capillary network at the base of the hypothalamus; short portal veins (blue) carry them down the stalk to a second capillary network in the anterior lobe, which makes its own hormones and releases them into blood. This is a blood (portal) connection, with no nerve fibres going to the anterior lobe. Posterior pituitary: large neurosecretory cells in the hypothalamus send long nerve fibres (ochre) down the stalk; the posterior lobe is nervous tissue that stores and releases the hormones those cells make (ADH and oxytocin) into capillaries. A thin pars intermedia lies between the lobes. Sizes and the number of cells are not to scale. Orientation: midline sagittal schematic, anterior at viewer left, hypothalamus at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 8,
+      "question": 7
+    },
+    "exampleUses": [
+      "gallery:endocrine-system",
+      "lesson:endocrine-system:endo-central-control",
+      "glossary:endo-hypothalamus",
+      "question:q-bvis05-locate-endo-neurosecretory-cell"
+    ],
+    "depictedLabels": [
+      "Hypothalamus",
+      "Hypothalamic neurosecretory cell",
+      "Pituitary stalk",
+      "Anterior pituitary",
+      "Posterior pituitary",
+      "Pars intermedia",
+      "Hypothalamic–hypophyseal portal system",
+      "Pituitary gland"
+    ]
+  },
+  {
+    "id": "asset-bvis05-thyroid-parathyroid",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-38-thyroid-parathyroid.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Thyroid and parathyroid glands",
+    "description": "Left, front view of the neck: the thyroid is a butterfly-shaped gland of two lobes joined across the trachea by a narrow isthmus, below the larynx. Middle, back view: the four small parathyroid glands (ochre ovals) are embedded in the back of the thyroid lobes, two on each side, but are separate glands with a different job (calcium balance). Top right: a thyroid follicle, the working unit: a ring of follicular cells around a store of colloid; a larger parafollicular (C) cell sits between follicles. Bottom right: parathyroid chief cells in a cluster beside a capillary. Cell sizes are schematic. Orientation: left: anterior view; middle: posterior view; right: microscopic schematics.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 9,
+      "question": 10
+    },
+    "exampleUses": [
+      "gallery:endocrine-system",
+      "lesson:endocrine-system:endo-thyroid-parathyroid",
+      "glossary:endo-thyroid",
+      "question:q-visual-thyroid-isthmus"
+    ],
+    "depictedLabels": [
+      "Thyroid gland",
+      "Thyroid lobe",
+      "Thyroid isthmus",
+      "Parathyroid glands",
+      "Thyroid follicle",
+      "Thyroid colloid",
+      "Thyroid follicular cell",
+      "Parafollicular cell",
+      "Parathyroid chief cell"
+    ]
+  },
+  {
+    "id": "asset-bvis05-adrenal-zones",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-39-adrenal-zones.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Adrenal gland: cortex zones and medulla",
+    "description": "Left: the adrenal gland sits on top of the kidney (the kidney is retroperitoneal; the adrenal is above it, never below), with the yellow cortex around a darker inner medulla. Right: the layers from the surface inward, schematic. Under the thin capsule come the three cortical zones: zona glomerulosa (cells in rounded clusters; makes aldosterone), zona fasciculata (cells in long straight columns; cortisol) and zona reticularis (cells in a network; sex hormone precursors). Remember them from outside in as glomerulosa, fasciculata, reticularis. The medulla in the centre is a different tissue: large chromaffin cells that release adrenaline and noradrenaline, next to a central vein. Proportions are not to scale. Orientation: left: adrenal on kidney, anterior view; right: layers, capsule at top and medulla at bottom.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 7,
+      "question": 7
+    },
+    "exampleUses": [
+      "lesson:endocrine-system:endo-adrenal",
+      "glossary:endo-adrenal",
+      "question:q-bvis05-locate-endo-adrenal-cortex"
+    ],
+    "depictedLabels": [
+      "Adrenal gland",
+      "Adrenal cortex",
+      "Zona glomerulosa",
+      "Zona fasciculata",
+      "Zona reticularis",
+      "Adrenal medulla",
+      "Chromaffin cell"
+    ]
+  },
+  {
+    "id": "asset-bvis05-pancreas-islet",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-40-pancreas-islet.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Pancreas: exocrine acini and the endocrine islet",
+    "description": "Left: the pancreas lies across the back of the upper abdomen, with its head tucked in the curve of the duodenum and its tail reaching the spleen (plum). Right: a microscopic schematic of the two parts of this one gland. Exocrine glands release their product through a duct onto a surface or into a cavity: selected acinar clusters are shown opening into the collecting duct (bottom, arrow); the other clusters provide surrounding tissue context. Their digestive enzymes travel to the duodenum. Endocrine glands have no duct and release hormones straight into blood: in the pale pancreatic islet (islet of Langerhans) alpha cells (rose) make glucagon, beta cells (blue; the most numerous) make insulin and delta cells (lilac; the fewest) make somatostatin, beside capillaries. The three cell types are mixed through the islet rather than in strict layers. Schematic; cell numbers and sizes simplified. Orientation: left: anterior view, head of pancreas at viewer left; right: microscopic schematic.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 7,
+      "question": 7
+    },
+    "exampleUses": [
+      "lesson:endocrine-system:endo-pancreas-gonads",
+      "glossary:endo-pancreas",
+      "question:q-bvis05-locate-endo-pancreatic-islet"
+    ],
+    "depictedLabels": [
+      "Pancreas",
+      "Pancreatic islet",
+      "Endocrine gland",
+      "Pancreatic alpha cell",
+      "Pancreatic beta cell",
+      "Pancreatic delta cell",
+      "Exocrine gland"
+    ]
+  },
+  {
+    "id": "asset-bvis05-ovary-testis",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-41-ovary-testis.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Gonads: ovary and testis",
+    "description": "Left: section of an ovary, schematic. Follicles at several stages sit in the stroma: small ones near the surface, then a large fluid-filled follicle. The corpus luteum (golden, folded body, lower right) forms from the follicle after ovulation and makes progesterone. Right, top: a testis in section, with coiled seminiferous tubules gathering towards the centre. Right, bottom: enlarged view of one tubule in cross-section and the tissue between tubules. The tall Sertoli cells (peach) lie inside the tubule wall among developing sperm cells and support them; the Leydig cells (ochre, in clusters) lie outside the tubules in the interstitium, beside capillaries, and make testosterone. Sizes and stages are simplified. Orientation: left: ovary section; right: testis section above, tubule and interstitium enlarged below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "hotspotSizeOverride": {
+      "diameter": 18,
+      "numeralSize": 10,
+      "maxDiameter": 21
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 5,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:endocrine-system:endo-pancreas-gonads",
+      "glossary:endo-ovary",
+      "question:q-bvis05-locate-endo-corpus-luteum"
+    ],
+    "depictedLabels": [
+      "Ovary endocrine tissue",
+      "Corpus luteum",
+      "Testis endocrine tissue",
+      "Sertoli cell",
+      "Leydig cell"
+    ]
+  }
+]

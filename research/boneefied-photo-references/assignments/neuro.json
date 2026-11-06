@@ -1,0 +1,862 @@
+[
+  {
+    "id": "asset-gray880-optic-nerve-head",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-16-optic-disc.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Optic disc, macula and optic nerve head",
+    "description": "Left: schematic fundus (the retina as seen through the pupil) of a right eye. The pale optic disc, where ganglion-cell axons gather and the retinal vessels enter and leave, lies toward the nose (viewer right); the darker macula lutea lies on the visual axis with a tiny central fovea, and the retinal vessels arc around it. The disc has no photoreceptors. Right: section through the nerve head: axons turn through a fenestrated gap in choroid and sclera into the optic nerve, wrapped in meninges continuous with the sclera; the central artery and vein run in its core. Simplified drawing, not an ophthalmoscope photograph. Orientation: left panel: fundus of right eye, nasal side at viewer right; right panel: longitudinal section of the nerve head, vitreous at left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 5,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:special-senses:eye-coats",
+      "glossary:retina-eye",
+      "question:q-bvis04-locate-optic-disc-eye"
+    ],
+    "depictedLabels": [
+      "Optic disc",
+      "Macula lutea",
+      "Fovea centralis",
+      "Optic nerve",
+      "Retina",
+      "Optic disc"
+    ]
+  },
+  {
+    "id": "asset-servier-brain-lateral",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-01-brain-lateral.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Brain, lateral surface: lobes and insula",
+    "description": "Left cerebral hemisphere seen from the side, frontal pole to the left. The central sulcus separates frontal from parietal lobe, the lateral sulcus separates temporal lobe from the two above it, and an occipital boundary closes the posterior lobe; cerebellum sits below the occipital lobe. The dashed ring marks the lateral sulcus; the inset shows it opened, with the insula buried at its floor under the frontal, parietal and temporal opercula. Gross diagram with simplified gyri. Orientation: left lateral view; frontal pole at viewer left; right inset is the lateral sulcus opened (opercula retracted).",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 6,
+      "question": 6
+    },
+    "exampleUses": [
+      "gallery:nervous-system",
+      "lesson:nervous-system:brain-lobes",
+      "glossary:cerebrum",
+      "question:q-practical-brain-cerebrum"
+    ],
+    "depictedLabels": [
+      "Cerebrum",
+      "Frontal lobe",
+      "Parietal lobe",
+      "Temporal lobe",
+      "Occipital lobe",
+      "Insula"
+    ]
+  },
+  {
+    "id": "asset-servier-brain-sagittal",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-02-brain-medial.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Brain, midsagittal view: callosum, diencephalon, ventricles",
+    "description": "Medial face of the brain, frontal lobe to the left. The corpus callosum arches over the diencephalon: thalamus above, hypothalamus below, with the pineal body (epithalamus) behind. The third ventricle lies between the two halves of the diencephalon; the cerebral aqueduct crosses the midbrain to the fourth ventricle between pons and cerebellum. The thin septum pellucidum is cut away so the left lateral ventricle can be seen. Gross diagram, simplified. The lateral ventricle is projected onto this midsagittal schematic; its short connection to the third ventricle represents the interventricular foramen, not a lateral ventricle cut in the midline. Orientation: midsagittal cut, medial surface; frontal pole at viewer left; septum pellucidum cut away to show the lateral ventricle.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 4,
+      "glossary": 13,
+      "question": 15
+    },
+    "exampleUses": [
+      "lesson:nervous-system:brain-lobes",
+      "glossary:cerebrum",
+      "question:q-visual-brain-cerebellum"
+    ],
+    "depictedLabels": [
+      "Cerebrum",
+      "Corpus callosum",
+      "Lateral ventricle",
+      "Thalamus",
+      "Third ventricle",
+      "Hypothalamus",
+      "Epithalamus",
+      "Cerebral aqueduct",
+      "Fourth ventricle",
+      "Midbrain",
+      "Pons",
+      "Medulla oblongata",
+      "Cerebellum"
+    ]
+  },
+  {
+    "id": "asset-servier-eye-section",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-13-eye-section.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Eye in section: tunics, lens and vitreous chamber",
+    "description": "Horizontal section of the right eye seen from above, front (cornea) to the left. Outer fibrous tunic: sclera, continuing in front as the transparent cornea. Middle vascular tunic: choroid, ciliary body and iris. Inner layer: retina, with the fovea at the back on the visual axis. Behind the lens the large vitreous chamber holds the vitreous humor; the optic nerve leaves the back of the globe slightly off-centre. Fibrous tunic and vascular tunic are group markers placed on member layers. Gross diagram, simplified. Orientation: horizontal section of the right eye from above; anterior at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 13,
+      "question": 12
+    },
+    "exampleUses": [
+      "gallery:special-senses",
+      "lesson:special-senses:eye-coats",
+      "glossary:fibrous-tunic-eye",
+      "question:q-visual-eye-retina"
+    ],
+    "depictedLabels": [
+      "Sclera",
+      "Cornea",
+      "Choroid",
+      "Retina",
+      "Ciliary body",
+      "Iris",
+      "Lens",
+      "Vitreous chamber",
+      "Vitreous humor",
+      "Optic nerve",
+      "Fovea centralis",
+      "Fibrous tunic of eye",
+      "Vascular tunic"
+    ]
+  },
+  {
+    "id": "asset-servier-ear-section",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-17-ear-section.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Ear in section: outer, middle and inner",
+    "description": "Coronal section of the right ear through the temporal bone, outside at the left. Outer ear: auricle and external acoustic meatus ending at the tympanic membrane. Middle ear: air-filled cavity with the three ossicles (enlarged on the next plate) and the auditory tube running toward the throat. Inner ear in the bone behind: vestibule with the semicircular canals above and the coiled cochlea in front; the vestibulocochlear nerve leaves toward the brainstem. Gross diagram with simplified canal loops. Orientation: coronal section of the right ear; lateral (outside) at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 8,
+      "question": 11
+    },
+    "exampleUses": [
+      "gallery:special-senses",
+      "lesson:special-senses:external-middle-ear",
+      "glossary:auricle-ear",
+      "question:q-visual-ear-cochlea"
+    ],
+    "depictedLabels": [
+      "Auricle",
+      "External acoustic meatus",
+      "Tympanic membrane",
+      "Auditory tube",
+      "Vestibule",
+      "Semicircular canals",
+      "Cochlea",
+      "Vestibulocochlear nerve"
+    ]
+  },
+  {
+    "id": "asset-openstax-spinal-cord-specimen",
+    "sourceId": "source-openstax-spinal-cord-visual",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/openstax-spinal-cord-specimen.jpg",
+    "assetType": "histology",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "OpenStax Anatomy and Physiology, CC BY 4.0.",
+    "verificationStatus": "verified",
+    "title": "Spinal cord cross-section specimen",
+    "description": "Unlabeled specimen crop showing the central butterfly-shaped gray matter and peripheral white matter.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+    "rightsUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "adaptationNote": "Cropped to the source photomicrograph panel; no anatomical content changed.",
+    "imageAspectRatio": 1.6021361815754338,
+    "imageOrientation": "landscape",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 0,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:nervous-system:spinal-cord",
+      "question:q-practical-spinal-cord-specimen"
+    ],
+    "depictedLabels": []
+  },
+  {
+    "id": "asset-bvis04-deep-nuclei",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-03-deep-nuclei.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Deep brain nuclei, coronal slice",
+    "description": "Frontal (coronal) slice through both hemispheres at the level of the lateral ventricles and third ventricle. On the left of the image: caudate nucleus bulging into the lateral ventricle, internal capsule (pale band), globus pallidus and putamen lateral to it, then thalamus beside the third ventricle with hypothalamus below. Basal nuclei is the group name for caudate, putamen and globus pallidus. The right half of the slice is drawn without labels. Gross diagram, simplified. Orientation: coronal slice viewed from the front; patient right is at viewer left; labelled structures are on the viewer-left side.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 10,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:nervous-system:deep-brain",
+      "glossary:insula",
+      "question:q-bvis04-locate-caudate-nucleus"
+    ],
+    "depictedLabels": [
+      "Thalamus",
+      "Hypothalamus",
+      "Lateral ventricle",
+      "Caudate nucleus",
+      "Globus pallidus",
+      "Putamen",
+      "Basal nuclei",
+      "Corpus callosum",
+      "Third ventricle",
+      "Insula"
+    ]
+  },
+  {
+    "id": "asset-bvis04-brainstem-cerebellum",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-04-brainstem-cerebellum.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Brainstem, cerebellum and spinal cord, midsagittal",
+    "description": "Midsagittal enlargement with the cerebrum removed. Midbrain, pons and medulla stack from top to bottom; the pons bulges anteriorly. The cerebellum lies behind with the fourth ventricle between; its central white matter branches like a tree (arbor vitae). The medulla continues through the foramen magnum, between the clivus in front and the occipital bone behind, as the spinal cord. Gross diagram, simplified. Orientation: midsagittal view; anterior at viewer left; cerebrum removed; bone at the foramen magnum is unlabelled context.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 7,
+      "question": 2
+    },
+    "exampleUses": [
+      "lesson:nervous-system:brainstem-cerebellum",
+      "glossary:fourth-ventricle",
+      "question:q-bvis04-locate-arbor-vitae"
+    ],
+    "depictedLabels": [
+      "Midbrain",
+      "Pons",
+      "Medulla oblongata",
+      "Cerebellum",
+      "Arbor vitae",
+      "Fourth ventricle",
+      "Spinal cord"
+    ]
+  },
+  {
+    "id": "asset-bvis04-csf-meninges",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-05-csf-meninges.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Ventricles, CSF and meninges",
+    "description": "Left panel: lateral view of the ventricular system inside a faint brain outline; choroid plexus tufts line the lateral, third and fourth ventricles, and arrows follow connected CSF passages from the lateral ventricle through the interventricular foramen to the third, through the aqueduct to the fourth, and outward to subarachnoid CSF. The thin downward continuation is the central canal, not the main drainage route. Right panel: coronal slice through the top of the head, outside to inside: scalp, skull, dura mater (with the superior sagittal sinus and a falx fold), thin arachnoid mater, CSF-filled subarachnoid space, and pia mater on the brain surface. Meninges is the group name for the three layers. Gross diagram, simplified. Orientation: left panel: left lateral view, frontal at viewer left; right panel: coronal slice of the vertex, scalp at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 10,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:nervous-system:ventricles-csf",
+      "glossary:lateral-ventricle",
+      "question:q-bvis04-locate-dura-mater"
+    ],
+    "depictedLabels": [
+      "Lateral ventricle",
+      "Third ventricle",
+      "Cerebral aqueduct",
+      "Fourth ventricle",
+      "Choroid plexus",
+      "Dura mater",
+      "Arachnoid mater",
+      "Pia mater",
+      "Cerebrospinal fluid",
+      "Meninges"
+    ]
+  },
+  {
+    "id": "asset-bvis04-spinal-cross-section",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-06-spinal-cross-section.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Spinal cord in cross-section: gray matter, tracts and roots",
+    "description": "Cross-section of the cord, posterior at the top. The central gray matter is an H: narrow dorsal (posterior) horns receive sensory input and broad ventral (anterior) horns hold motor neurons around the central canal. White matter surrounds it. Three taught tracts are tinted on the viewer-left half only (the tracts are bilateral): dorsal column in the posterior funiculus, lateral corticospinal tract behind the horn level, spinothalamic tract in the anterolateral white matter. The dorsal root carries a dorsal root ganglion; the ventral root leaves the ventral horn. Schematic positions, not every tract is drawn. Orientation: transverse section; posterior at top, anterior at bottom; tracts and roots drawn on the viewer-left half only.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 10,
+      "question": 11
+    },
+    "exampleUses": [
+      "gallery:nervous-system",
+      "lesson:nervous-system:spinal-cord",
+      "glossary:spinal-cord",
+      "question:q-bvis04-locate-dorsal-horn"
+    ],
+    "depictedLabels": [
+      "Spinal cord",
+      "Dorsal horn",
+      "Ventral horn",
+      "Central canal",
+      "Dorsal column",
+      "Corticospinal tract",
+      "Spinothalamic tract",
+      "Dorsal root",
+      "Dorsal root ganglion",
+      "Ventral root"
+    ]
+  },
+  {
+    "id": "asset-bvis04-spinal-roots-rami",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-07-spinal-roots-rami.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Spinal nerve: roots, ganglion and rami",
+    "description": "Axial view of one vertebra and its cord segment, posterior at the top. The dorsal (sensory) root swells into the dorsal root ganglion, the ventral (motor) root joins it beyond the ganglion to form the short mixed spinal nerve in the intervertebral foramen, and the nerve at once divides into a small dorsal ramus to the back and a larger ventral ramus to the body wall and limbs. Drawn on both sides; labelled on the viewer-left side. Gross diagram, simplified. Orientation: axial view from above; posterior at top; labels on viewer-left side.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 6,
+      "question": 2
+    },
+    "exampleUses": [
+      "lesson:nervous-system:spinal-cord",
+      "glossary:spinal-cord",
+      "question:q-bvis04-locate-dorsal-ramus"
+    ],
+    "depictedLabels": [
+      "Spinal cord",
+      "Dorsal root",
+      "Ventral root",
+      "Dorsal root ganglion",
+      "Dorsal ramus",
+      "Ventral ramus"
+    ]
+  },
+  {
+    "id": "asset-bvis04-plexus-overview",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-08-plexus-overview.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "The four major plexuses and the phrenic nerve",
+    "description": "Schematic body with the spinal cord down the midline. Ventral rami from neighbouring segments reshuffle into plexuses: cervical (neck, C1-C4), brachial (upper limb, C5-T1), lumbar (front of the thigh, L1-L4) and sacral (back of the thigh, leg and foot, L4-S4). The phrenic nerve arises mainly from C3-C5 in the cervical plexus and runs down the thorax to the diaphragm. Plexuses are drawn on the patient right (viewer left) only; roots and branches are simplified, not exact fascicles. Schematic, not to scale. The cord ends in the upper lumbar region; the thin ochre bundle below represents descending cauda-equina roots, not spinal cord continuing into the sacrum. Orientation: anterior-style body schematic; patient right at viewer left; plexuses drawn on patient right only; cord shown in the midline.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 6,
+      "question": 6
+    },
+    "exampleUses": [
+      "gallery:nervous-system",
+      "lesson:nervous-system:plexuses-peripheral",
+      "glossary:spinal-cord",
+      "question:q-bvis04-locate-cervical-plexus"
+    ],
+    "depictedLabels": [
+      "Spinal cord",
+      "Cervical plexus",
+      "Brachial plexus",
+      "Phrenic nerve",
+      "Lumbar plexus",
+      "Sacral plexus"
+    ]
+  },
+  {
+    "id": "asset-bvis04-upper-limb-nerves",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-09-upper-limb-nerves.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Median, ulnar and radial nerves of the right upper limb",
+    "description": "Right arm in two panels with the bones faintly shown. Anterior panel: the median nerve runs down the middle of the arm and forearm to the hand; the ulnar nerve runs along the medial side and passes behind the medial epicondyle (elbow); the radial nerve, which spends the upper arm behind the humerus, emerges on the lateral side near the elbow (dashed = behind the bone). Posterior panel: the radial nerve winds from medial to lateral behind the humerus and continues in the posterior forearm. Courses are simplified. Gross diagram. Orientation: right upper limb; anterior panel: lateral at viewer left; posterior panel: lateral at viewer right.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 6
+    },
+    "exampleUses": [
+      "gallery:nervous-system",
+      "lesson:nervous-system:plexuses-peripheral",
+      "glossary:brachial-plexus",
+      "question:q-bvis04-locate-median-nerve"
+    ],
+    "depictedLabels": [
+      "Brachial plexus",
+      "Median nerve",
+      "Ulnar nerve",
+      "Radial nerve",
+      "Radial nerve"
+    ]
+  },
+  {
+    "id": "asset-bvis04-lower-limb-nerves",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-10-lower-limb-nerves.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Femoral and sciatic nerves of the right lower limb",
+    "description": "Right lower limb in two panels. Anterior panel: the femoral nerve leaves the lumbar plexus, runs down the front of the thigh giving branches to the quadriceps and continues below the knee as a thin medial cutaneous branch. Posterior panel: the sciatic nerve, the thickest nerve in the body, leaves the sacral plexus, runs down the back of the thigh and divides near the knee into its tibial and common fibular parts (unlabelled). Courses simplified. Gross diagram. Orientation: right lower limb; anterior panel: lateral at viewer left; posterior panel: lateral at viewer right; bones faint.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:nervous-system:plexuses-peripheral",
+      "glossary:lumbar-plexus",
+      "question:q-bvis04-locate-femoral-nerve"
+    ],
+    "depictedLabels": [
+      "Lumbar plexus",
+      "Femoral nerve",
+      "Sacral plexus",
+      "Sciatic nerve"
+    ]
+  },
+  {
+    "id": "asset-bvis04-cranial-nerves-i-vi",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-11-cranial-nerves-i-vi.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Cranial nerves I-VI, inferior surface of the brain",
+    "description": "Base of the brain seen from below, frontal lobes at the top, with the first six cranial nerves marked on the viewer-left side (the right side repeats them in pale tone). I olfactory nerve, the many thin fila that pass up through the cribriform plate (dashed bar) into the olfactory bulb (the bulb and tract, drawn unlabelled in pale tone, are brain tissue, not part of the nerve); II optic nerve meeting at the optic chiasm; III from the groove between the midbrain peduncles; IV, the thin trochlear nerve, at the side of the midbrain; V trigeminal, the large root at the pons with its ganglion and three divisions; VI abducens at the pontomedullary junction. Each nerve runs continuously from its brainstem origin outward; the dashed ring at the end of a nerve is only a cue that it leaves through the skull base (III, IV, V1 and VI converge on one ring because they share the superior orbital fissure). Selected schematic origin cues, not a dissection and not a complete map of the skull foramina. Nerves VII-XII appear pale for context. Gross diagram, curricular level. Orientation: inferior view of the brain; frontal at top; labels on viewer-left nerves; selected origin cues, nerves end at skull-base ring cues.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 7,
+      "question": 7
+    },
+    "exampleUses": [
+      "lesson:nervous-system:cranial-nerves",
+      "glossary:cranial-nerve-i",
+      "question:q-bvis04-locate-cranial-nerve-i"
+    ],
+    "depictedLabels": [
+      "Cranial nerve I: olfactory",
+      "Cranial nerve II: optic",
+      "Cranial nerve III: oculomotor",
+      "Cranial nerve IV: trochlear",
+      "Cranial nerve V: trigeminal",
+      "Cranial nerve VI: abducens",
+      "Optic chiasm"
+    ]
+  },
+  {
+    "id": "asset-bvis04-cranial-nerves-vii-xii",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-12-cranial-nerves-vii-xii.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Cranial nerves VII-XII, brainstem and cerebellopontine angle",
+    "description": "Base of the brain seen from below with cranial nerves VII to XII marked on the viewer-left side. VII facial and VIII vestibulocochlear leave together at the pontomedullary angle (VIII is the thicker, lateral one); IX glossopharyngeal, X vagus and XI accessory leave in line along the side of the medulla, with the spinal root of XI rising along the cord; XII hypoglossal emerges between pyramid and olive. Each nerve runs continuously from its origin outward; the dashed ring at the end of a nerve is only a cue that it leaves through the skull base (VII and VIII share the internal acoustic meatus; IX, X and XI the jugular foramen). Selected schematic origin cues, not a dissection and not a complete map of the skull foramina. Nerves I-VI appear pale for context. Gross diagram, curricular level. Orientation: inferior view of the brain; frontal at top; labels on viewer-left nerves; selected origin cues, nerves end at skull-base ring cues.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 6,
+      "question": 7
+    },
+    "exampleUses": [
+      "lesson:nervous-system:cranial-nerves",
+      "glossary:cranial-nerve-vii",
+      "question:q-bvis04-locate-cranial-nerve-vii"
+    ],
+    "depictedLabels": [
+      "Cranial nerve VII: facial",
+      "Cranial nerve VIII: vestibulocochlear",
+      "Cranial nerve IX: glossopharyngeal",
+      "Cranial nerve X: vagus",
+      "Cranial nerve XI: accessory",
+      "Cranial nerve XII: hypoglossal"
+    ]
+  },
+  {
+    "id": "asset-bvis04-eye-anterior-segment",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-14-eye-anterior-segment.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Anterior eye: chambers, aqueous humor and zonules",
+    "description": "Enlarged horizontal section of the front of the eye, cornea to the left. The anterior chamber lies between cornea and iris; the pupil is the opening in the iris; the narrow posterior chamber lies behind the iris, in front of the lens and ciliary body. Aqueous humor, made by the ciliary processes, fills both chambers and passes through the pupil. Suspensory ligaments (zonules) run from the ciliary body to the lens equator. Aqueous humor is a group marker for the two chambers. Gross diagram, simplified. Orientation: enlarged horizontal section of the anterior right eye; cornea at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 9,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:special-senses:eye-coats",
+      "glossary:cornea-eye",
+      "question:q-bvis04-locate-pupil-eye"
+    ],
+    "depictedLabels": [
+      "Cornea",
+      "Anterior chamber",
+      "Aqueous humor",
+      "Pupil",
+      "Iris",
+      "Posterior chamber",
+      "Suspensory ligaments of lens",
+      "Lens",
+      "Ciliary body"
+    ]
+  },
+  {
+    "id": "asset-bvis04-retina-layers",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-15-retina-layers.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Retina: cell chain (schematic)",
+    "description": "Schematic of the retina in cross-section, not a photomicrograph. Light arrives from the vitreous at the top and passes through the nerve-fibre layer, ganglion cells and bipolar cells before reaching the rods (long, thin) and cones (tapered) at the back. Signals travel the other way: photoreceptor to bipolar cell to ganglion cell, whose axons run along the surface to the optic disc. The pigmented epithelium sits behind the photoreceptors, on the vascular choroid. Cells are simplified and spaced far apart. Orientation: schematic cross-section; vitreous and incoming light at top, choroid and sclera at bottom.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 6,
+      "question": 1
+    },
+    "exampleUses": [
+      "gallery:special-senses",
+      "lesson:special-senses:lens-retina",
+      "glossary:retina-eye",
+      "question:q-bvis04-plate-retina-layers"
+    ],
+    "depictedLabels": [
+      "Retinal ganglion cells",
+      "Retinal bipolar cells",
+      "Rods",
+      "Cones",
+      "Retinal pigment epithelium",
+      "Retina"
+    ]
+  },
+  {
+    "id": "asset-bvis04-middle-ear",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-18-middle-ear.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Middle ear: ossicles and windows",
+    "description": "Enlarged coronal view of the right middle ear. Sound moves the tympanic membrane; the handle of the malleus is attached to it, the malleus head articulates with the incus, and the incus passes the vibration to the stapes, whose footplate sits in the oval window of the vestibule. The round window lies below it and bulges to relieve the fluid movement. The auditory tube opens from the cavity toward the throat. Gross diagram, simplified. Orientation: enlarged coronal view of the right middle ear; lateral at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 7,
+      "question": 5
+    },
+    "exampleUses": [
+      "lesson:special-senses:external-middle-ear",
+      "glossary:tympanic-membrane-ear",
+      "question:q-bvis04-locate-malleus-ear"
+    ],
+    "depictedLabels": [
+      "Tympanic membrane",
+      "Malleus",
+      "Incus",
+      "Stapes",
+      "Oval window",
+      "Round window",
+      "Auditory tube"
+    ]
+  },
+  {
+    "id": "asset-bvis04-inner-ear-vestibular",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-19-inner-ear-vestibular.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Inner ear: vestibule, canals and cochlea",
+    "description": "Right bony labyrinth drawn flat, magnified. The vestibule holds two membranous sacs: the larger utricle above and the smaller saccule below. Three semicircular canals loop above and beside it (each bony canal contains a narrower membranous duct that ends in an ampulla near the utricle); they sense rotation, while utricle and saccule sense linear acceleration and head position. The saccule connects by a small duct to the cochlea in front; the oval window faces the vestibule and the round window lies at the base of the cochlea. The vestibulocochlear nerve sends vestibular and cochlear branches. Canal planes are flattened for clarity. Schematic gross diagram. Orientation: flattened schematic of the right labyrinth; lateral at viewer left, cochlea at the bottom.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 9,
+      "question": 2
+    },
+    "exampleUses": [
+      "lesson:special-senses:inner-ear",
+      "glossary:oval-window-ear",
+      "question:q-bvis04-locate-utricle-ear"
+    ],
+    "depictedLabels": [
+      "Vestibule",
+      "Utricle",
+      "Saccule",
+      "Semicircular canals",
+      "Semicircular ducts",
+      "Cochlea",
+      "Vestibulocochlear nerve",
+      "Oval window",
+      "Round window"
+    ]
+  },
+  {
+    "id": "asset-bvis04-cochlea-corti",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-20-cochlea-corti.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Cochlear ducts and the organ of Corti (schematic)",
+    "description": "Left: one turn of the cochlea cut across. The vestibular duct (scala vestibuli) lies above and the tympanic duct (scala tympani) below, both filled with perilymph; the cochlear duct (scala media) between them holds endolymph and sits on the basilar membrane, with the spiral ganglion at the central bony axis. Right: schematic enlargement of the organ of Corti on the basilar membrane, with one inner hair cell, three outer hair cells with stereocilia, supporting cells and the overlying tectorial membrane. Original schematic, not a photomicrograph; cell number and spacing are simplified. Orientation: left: cross-section of one cochlear turn, modiolus at left; right: enlargement of the organ of Corti.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 6,
+      "question": 4
+    },
+    "exampleUses": [
+      "gallery:special-senses",
+      "lesson:special-senses:inner-ear",
+      "glossary:cochlea-ear",
+      "question:q-bvis04-locate-cochlear-duct-ear"
+    ],
+    "depictedLabels": [
+      "Vestibular duct",
+      "Cochlear duct",
+      "Tympanic duct",
+      "Cochlea",
+      "Inner-ear hair cells",
+      "Organ of Corti"
+    ]
+  },
+  {
+    "id": "asset-bvis04-smell-taste",
+    "sourceId": "source-boneefied-bvis04-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis04-atlas/bvis04-21-smell-taste.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS04); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Smell and taste: pathways and receptor cells (schematic)",
+    "description": "Left: simplified sagittal nose. Olfactory epithelium in the roof of the nasal cavity sends olfactory nerve fibres up through the cribriform plate to the olfactory bulb above it. Middle: schematic of the epithelium, in which the olfactory receptor cells are bipolar neurons with cilia reaching the mucus and axons leaving below. Right: dorsal view of the tongue with taste territories: the facial nerve for the anterior two-thirds, the glossopharyngeal nerve for the posterior third, the vagus nerve near the epiglottis; below, a schematic taste bud with gustatory receptor cells. Original schematics, not photomicrographs; territories are simplified. The VII, IX and X markers identify colored taste territories, not drawn nerve fibres; the small inferior territory represents the epiglottic region. Orientation: left: sagittal nose, anterior at viewer left; middle: epithelium, lumen at top; right: tongue dorsal view, tip at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Schematic teaching diagram, not a specimen or photomicrograph.",
+    "adaptationNote": "Drawn from anatomical facts as original vectors. No baked lettering. Retired files/IDs remain archived where replaced.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 3,
+      "glossary": 9,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:special-senses:olfaction",
+      "glossary:olfactory-epithelium-sense",
+      "question:q-bvis04-plate-smell-taste"
+    ],
+    "depictedLabels": [
+      "Olfactory epithelium",
+      "Olfactory bulb",
+      "Olfactory nerve",
+      "Olfactory receptor cell",
+      "Facial nerve (VII): anterior tongue taste region",
+      "Glossopharyngeal nerve (IX): posterior tongue taste region",
+      "Vagus nerve (X): epiglottic taste region",
+      "Taste bud",
+      "Gustatory receptor cell"
+    ]
+  }
+]

@@ -11,6 +11,8 @@ import { bvr02OverlayOverrides } from '@/content/bvr02-overlay-overrides';
 import { repairDiagramTargets } from '@/content/repair5-targets';
 import { AtlasViewerControls } from '@/components/AtlasViewerControls';
 import { AtlasLegend } from '@/components/AtlasLegend';
+import { PhotoReferenceLinks } from '@/components/PhotoReferenceLinks';
+import { canShowPhotoReferences, type PhotoReferenceMode } from '@/content/real-photo-references';
 import { containedOverlayBox, protectedOverlayHeight, protectedOverlayRects } from '@/components/viewerOverlayProtection';
 import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';
 import { useOfflineImage } from '@/hooks/useOfflineImage';
@@ -73,10 +75,12 @@ type Props = {
   markerSizeOverride?: HotspotSizeOverride;
   diagramMarkerCount?: number;
   diagramAssetId?: string;
+  /** Default fail-closed for question callers; learning/Recall screens opt in explicitly. */
+  photoReferenceMode?: PhotoReferenceMode;
 };
 
 /** Source-safe image viewer. Hotspots are normalized to the contained image, not the frame. */
-export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], revealLabels = false, caption, imageAspectRatio: suppliedAspectRatio = 1.45, onHotspotPress, labels: suppliedLabels = [], bakedLabels = false, selectedHotspotId, correctHotspotId, submitted = false, reduceMotion = false, atlasLayout = false, questionHotspotCallouts = false, markerSizeOverride, diagramMarkerCount, diagramAssetId }: Props) {
+export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], revealLabels = false, caption, imageAspectRatio: suppliedAspectRatio = 1.45, onHotspotPress, labels: suppliedLabels = [], bakedLabels = false, selectedHotspotId, correctHotspotId, submitted = false, reduceMotion = false, atlasLayout = false, questionHotspotCallouts = false, markerSizeOverride, diagramMarkerCount, diagramAssetId, photoReferenceMode = 'practice' }: Props) {
   const hotspots = useMemo(() => repairDiagramTargets(diagramAssetId, suppliedHotspots), [diagramAssetId, suppliedHotspots]);
   const labels = useMemo(() => repairDiagramTargets(diagramAssetId, suppliedLabels), [diagramAssetId, suppliedLabels]);
   const colors = useColors();
@@ -290,6 +294,9 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
       }] : [])} />}
      {bakedLabels && <Text style={[styles.notice, { color: colors.mutedForeground }]}>{locale.t('imageViewer.bakedLabelsNotice')}</Text>}
     {caption ? <Text style={[styles.caption, { color: colors.mutedForeground }]}>{caption}</Text> : null}
+    <PhotoReferenceLinks assetId={diagramAssetId} visible={canShowPhotoReferences(
+      photoReferenceMode, revealLabels || submitted, labels.length > 0 && labels.every((label) => revealed.has(label.structureId)),
+    )} />
   </View>;
 }
 

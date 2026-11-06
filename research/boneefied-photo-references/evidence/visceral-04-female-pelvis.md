@@ -1,0 +1,2 @@
+Evidence note — visceral-04-female-pelvis.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett image 161-3 was opened and its caption checked. Its linked image was viewed temporarily from the page's published image URL; it is a median pelvic dissection with opened/sectioned pelvic contents, matching a limited female pelvic specimen view. It cannot cover every feature of the two-panel plate, including the full anterior organ arrangement and opened uterine cavity panel. No image was saved in the workspace; Stanford states CC BY-SA 4.0 for the collection.

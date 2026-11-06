@@ -1,0 +1,2 @@
+Evidence note — visceral-26-intestinal-dissection.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 143-1 identifies jejunum, ileum, cecum, ascending/transverse colon and their vessels. The published source photo was viewed temporarily and shows bowel loops with the vascular dissection. It is only a section of the alimentary canal. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

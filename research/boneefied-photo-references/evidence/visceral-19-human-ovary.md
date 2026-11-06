@@ -1,0 +1,2 @@
+Evidence note — visceral-19-human-ovary.md
+Checked 2026-11-06T21:25:21.142Z. Wikimedia Commons page identifies a human Graafian follicle micrograph by Ed Uthman and CC BY 2.0. The source image was viewed temporarily; a large follicular structure and surrounding ovarian tissue are visible. It does not show every follicle stage or all wall layers in the plate. No image was retained in the workspace.

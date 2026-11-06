@@ -1,0 +1,221 @@
+Source: https://commons.wikimedia.org/wiki/File:Vertebra_-_cervicales.jpg
+Title: File:Vertebra - cervicales.jpg - Wikimedia Commons
+Fetched: 2026-11-06T21:56:01.188Z
+
+[Jump to content](https://commons.wikimedia.org/wiki/File:Vertebra_-_cervicales.jpg#bodyContent)
+
+From Wikimedia Commons, the free media repository
+
+[![File:Vertebra - cervicales.jpg](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Vertebra_-_cervicales.jpg/960px-Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20191006124958)](https://upload.wikimedia.org/wikipedia/commons/2/2f/Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
+
+Size of this preview: [960 × 905 pixels](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Vertebra_-_cervicales.jpg/960px-Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail). Other resolutions: [330 × 311 pixels](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Vertebra_-_cervicales.jpg/330px-Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail) \| [1,280 × 1,207 pixels](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Vertebra_-_cervicales.jpg/1280px-Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail) \| [3,156 × 2,976 pixels](https://upload.wikimedia.org/wikipedia/commons/2/2f/Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled).
+
+[Original file](https://upload.wikimedia.org/wikipedia/commons/2/2f/Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original "Vertebra - cervicales.jpg")(3,156 × 2,976 pixels, file size: 2.77 MB, MIME type: image/jpeg)
+
+File information
+
+Structured data
+
+## Captions
+
+### Captions
+
+English
+
+Add a one-line explanation of what this file represents
+
+Czech
+
+Spodní krční obratel
+
+## Summary
+
+\[ [edit](https://commons.wikimedia.org/w/index.php?title=File:Vertebra_-_cervicales.jpg&action=edit&section=1 "Edit section: Summary")\]
+
+|     |     |
+| --- | --- |
+| DescriptionVertebra - cervicales.jpg | Tato položka se nachází v antropologických sbírkách Katedry biologie a environmentální výchovy Pedagogické fakulty Univerzity Karlovy. Její reprodukce je součástí projektu financovaného Studentským grantem z roku 2019.<br>This item is a part of anthropological collections of the Department of Biology and Environmental Studies of the Faculty of Education of Charles University. Its reproduction is part of a project funded by the Student Grant in 2019. |
+| Date | 30 May 2019, 11:08:09 |
+| Source | Own work |
+| Author | [MAKY.OREL](https://commons.wikimedia.org/wiki/User:MAKY.OREL "User:MAKY.OREL") |
+
+## Licensing
+
+\[ [edit](https://commons.wikimedia.org/w/index.php?title=File:Vertebra_-_cervicales.jpg&action=edit&section=2 "Edit section: Licensing")\]
+
+I, the copyright holder of this work, hereby publish it under the following license:
+
+|     |     |
+| --- | --- |
+| ![Creative Commons](https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cc.logo.circle.svg/40px-Cc.logo.circle.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail)![CC-Zero](https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Cc-zero.svg/40px-Cc-zero.svg.png?utm_source=commons.wikimedia.org&utm_campaign=parser&utm_content=thumbnail) | This file is made available under the [Creative Commons](https://en.wikipedia.org/wiki/en:Creative_Commons "w:en:Creative Commons") [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en "ccorg:publicdomain/zero/1.0/deed.en"). |
+| The person who associated a work with this deed has dedicated the work to the [public domain](https://en.wikipedia.org/wiki/en:public_domain "w:en:public domain") by waiving all of their rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.<br>http://creativecommons.org/publicdomain/zero/1.0/deed.enCC0Creative Commons Zero, Public Domain Dedicationfalsefalse |
+
+## File history
+
+Click on a date/time to view the file as it appeared at that time.
+
+|  | Date/Time | Thumbnail | Dimensions | User | Comment |
+| --- | --- | --- | --- | --- | --- |
+| current | [12:49, 6 October 2019](https://upload.wikimedia.org/wikipedia/commons/2/2f/Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original) | [![Thumbnail for version as of 12:49, 6 October 2019](https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Vertebra_-_cervicales.jpg/120px-Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20191006124958)](https://upload.wikimedia.org/wikipedia/commons/2/2f/Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original) | 3,156 × 2,976 (2.77 MB) | [MAKY.OREL](https://commons.wikimedia.org/wiki/User:MAKY.OREL "User:MAKY.OREL")( [talk](https://commons.wikimedia.org/wiki/User_talk:MAKY.OREL "User talk:MAKY.OREL") \| [contribs](https://commons.wikimedia.org/wiki/Special:Contributions/MAKY.OREL "Special:Contributions/MAKY.OREL")) | cropped |
+|  | [12:44, 6 October 2019](https://upload.wikimedia.org/wikipedia/commons/archive/2/2f/20191006124956%21Vertebra_-_cervicales.jpg) | [![Thumbnail for version as of 12:44, 6 October 2019](https://thumb.wikimedia.org/wikipedia/commons/thumb/archive/2/2f/20191006124956%21Vertebra_-_cervicales.jpg/120px-Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail)](https://upload.wikimedia.org/wikipedia/commons/archive/2/2f/20191006124956%21Vertebra_-_cervicales.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original) | 3,456 × 4,608 (3.95 MB) | [MAKY.OREL](https://commons.wikimedia.org/wiki/User:MAKY.OREL "User:MAKY.OREL")( [talk](https://commons.wikimedia.org/wiki/User_talk:MAKY.OREL "User talk:MAKY.OREL") \| [contribs](https://commons.wikimedia.org/wiki/Special:Contributions/MAKY.OREL "Special:Contributions/MAKY.OREL")) | User created page with UploadWizard |
+
+You cannot overwrite this file.
+
+## File usage on Commons
+
+There are no pages that use this file.
+
+## Metadata
+
+This file contains additional information such as Exif metadata which may have been added by the digital camera, scanner, or software program used to create or digitize it. If the file has been modified from its original state, some details such as the timestamp may not fully reflect those of the original file. The timestamp is only as accurate as the clock in the camera, and it may be completely wrong.
+
+| Camera manufacturer | [NIKON](https://en.wikipedia.org/wiki/Nikon "w:Nikon") |
+| Camera model | [COOLPIX P610](https://en.wikipedia.org/wiki/Special:Search?search=COOLPIX+P610) |
+| Exposure time | 1/50 sec (0.02) |
+| [F-number](https://en.wikipedia.org/wiki/F-number "wikipedia:F-number") | f/3.5 |
+| ISO speed rating | 100 |
+| Date and time of data generation | 11:08, 30 May 2019 |
+| Lens focal length | 5 mm |
+| Image title |  |
+| Width | 3,456 px |
+| Height | 4,608 px |
+| Bits per component | - 8<br>- 8<br>- 8 |
+| Pixel composition | RGB |
+| Orientation | Normal |
+| Number of components | 3 |
+| Horizontal resolution | 300 dpi |
+| Vertical resolution | 300 dpi |
+| Software used | [Adobe Photoshop CS6 (Windows)](https://en.wikipedia.org/wiki/Special:Search?search=Adobe+Photoshop+CS6+%28Windows%29) |
+| File change date and time | 20:04, 16 June 2019 |
+| Y and C positioning | Centered |
+| Exposure Program | Normal program |
+| Exif version | 2.3 |
+| Date and time of digitizing | 11:08, 30 May 2019 |
+| Meaning of each component | 1. Y<br>2. Cb<br>3. Cr<br>4. does not exist |
+| Image compression mode | 2 |
+| APEX shutter speed | 5.643856 |
+| APEX aperture | 3.61471 |
+| APEX exposure bias | 0 |
+| Maximum land aperture | 3.4 APEX (f/3.25) |
+| Metering mode | Pattern |
+| Light source | Unknown |
+| Flash | Flash did not fire, compulsory flash suppression |
+| Supported Flashpix version | 1 |
+| Color space | sRGB |
+| File source | Digital still camera |
+| Scene type | A directly photographed image |
+| Custom image processing | Normal process |
+| Exposure mode | Auto exposure |
+| White balance | Auto white balance |
+| Digital zoom ratio | 0 |
+| Focal length in 35 mm film | 28 mm |
+| Scene capture type | Standard |
+| Scene control | High gain down |
+| Contrast | Normal |
+| Saturation | Normal |
+| Sharpness | Normal |
+| Subject distance range | Unknown |
+| Date metadata was last modified | 22:04, 16 June 2019 |
+| Unique ID of original document | BC40AC4C4B907A1C1396E195524D7D77 |
+| [IIM](https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model "w:IPTC Information Interchange Model") version | 65,391 |
+
+## Structured data
+
+### Items portrayed in this file
+
+#### [depicts](https://www.wikidata.org/wiki/Special:EntityPage/P180 "d:Special:EntityPage/P180")
+
+#### [vertebra](https://www.wikidata.org/wiki/Special:EntityPage/Q180323 "d:Special:EntityPage/Q180323")
+
+#### [creator](https://www.wikidata.org/wiki/Special:EntityPage/P170 "d:Special:EntityPage/P170")
+
+#### some value
+
+[author name string](https://www.wikidata.org/wiki/Special:EntityPage/P2093 "d:Special:EntityPage/P2093"): MAKY.OREL
+
+[Wikimedia username](https://www.wikidata.org/wiki/Special:EntityPage/P4174 "d:Special:EntityPage/P4174"): [MAKY.OREL](https://meta.wikimedia.org/wiki/Special:CentralAuth/MAKY.OREL)
+
+[URL](https://www.wikidata.org/wiki/Special:EntityPage/P2699 "d:Special:EntityPage/P2699"): [https://commons.wikimedia.org/wiki/user:MAKY.OREL](https://commons.wikimedia.org/wiki/user:MAKY.OREL)
+
+#### [copyright status](https://www.wikidata.org/wiki/Special:EntityPage/P6216 "d:Special:EntityPage/P6216")
+
+#### [copyrighted, dedicated to the public domain by copyright holder](https://www.wikidata.org/wiki/Special:EntityPage/Q88088423 "d:Special:EntityPage/Q88088423")
+
+#### [copyright license](https://www.wikidata.org/wiki/Special:EntityPage/P275 "d:Special:EntityPage/P275")
+
+#### [Creative Commons CC0 License](https://www.wikidata.org/wiki/Special:EntityPage/Q6938433 "d:Special:EntityPage/Q6938433")
+
+#### [inception](https://www.wikidata.org/wiki/Special:EntityPage/P571 "d:Special:EntityPage/P571")
+
+#### 30 May 2019
+
+#### [source of file](https://www.wikidata.org/wiki/Special:EntityPage/P7482 "d:Special:EntityPage/P7482")
+
+#### [original creation by uploader](https://www.wikidata.org/wiki/Special:EntityPage/Q66458942 "d:Special:EntityPage/Q66458942")
+
+#### [exposure time](https://www.wikidata.org/wiki/Special:EntityPage/P6757 "d:Special:EntityPage/P6757")
+
+#### 0.02 second
+
+#### [f-number](https://www.wikidata.org/wiki/Special:EntityPage/P6790 "d:Special:EntityPage/P6790")
+
+#### 3.5
+
+#### [focal length](https://www.wikidata.org/wiki/Special:EntityPage/P2151 "d:Special:EntityPage/P2151")
+
+#### 5 millimetre
+
+#### [ISO speed](https://www.wikidata.org/wiki/Special:EntityPage/P6789 "d:Special:EntityPage/P6789")
+
+#### 100
+
+#### [media type](https://www.wikidata.org/wiki/Special:EntityPage/P1163 "d:Special:EntityPage/P1163")
+
+#### image/jpeg
+
+#### [instance of](https://www.wikidata.org/wiki/Special:EntityPage/P31 "d:Special:EntityPage/P31")
+
+#### [photograph](https://www.wikidata.org/wiki/Special:EntityPage/Q125191 "d:Special:EntityPage/Q125191")
+
+#### [data size](https://www.wikidata.org/wiki/Special:EntityPage/P3575 "d:Special:EntityPage/P3575")
+
+#### 2,901,824 byte
+
+#### [height](https://www.wikidata.org/wiki/Special:EntityPage/P2048 "d:Special:EntityPage/P2048")
+
+#### 2,976 pixel
+
+#### [width](https://www.wikidata.org/wiki/Special:EntityPage/P2049 "d:Special:EntityPage/P2049")
+
+#### 3,156 pixel
+
+#### [checksum](https://www.wikidata.org/wiki/Special:EntityPage/P4092 "d:Special:EntityPage/P4092")
+
+#### ba642c4492977fa366d5864b5a55b7cc6ef8e8d8
+
+[determination method or standard](https://www.wikidata.org/wiki/Special:EntityPage/P459 "d:Special:EntityPage/P459"): [SHA-1](https://www.wikidata.org/wiki/Special:EntityPage/Q13414952 "d:Special:EntityPage/Q13414952")
+
+#### [captured with](https://www.wikidata.org/wiki/Special:EntityPage/P4082 "d:Special:EntityPage/P4082")
+
+#### [Nikon Coolpix P610](https://www.wikidata.org/wiki/Special:EntityPage/Q19573324 "d:Special:EntityPage/Q19573324")
+
+Retrieved from " [https://commons.wikimedia.org/w/index.php?title=File:Vertebra\_-\_cervicales.jpg&oldid=1114483928](https://commons.wikimedia.org/w/index.php?title=File:Vertebra_-_cervicales.jpg&oldid=1114483928)"
+
+[Categories](https://commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Categories "Special:MyLanguage/Commons:Categories"):
+
+- [Human cervical vertebrae](https://commons.wikimedia.org/wiki/Category:Human_cervical_vertebrae "Category:Human cervical vertebrae")
+- [Human bones on black background](https://commons.wikimedia.org/wiki/Category:Human_bones_on_black_background "Category:Human bones on black background")
+- [Anthropological collections of the Department of Biology and Environmental Studies (Charles University)](https://commons.wikimedia.org/wiki/Category:Anthropological_collections_of_the_Department_of_Biology_and_Environmental_Studies_(Charles_University) "Category:Anthropological collections of the Department of Biology and Environmental Studies (Charles University)")
+
+Hidden categories:
+
+- [CC-Zero](https://commons.wikimedia.org/wiki/Category:CC-Zero "Category:CC-Zero")
+- [Self-published work](https://commons.wikimedia.org/wiki/Category:Self-published_work "Category:Self-published work")
+
+Search
+
+Search
+
+File:Vertebra - cervicales.jpg
+
+[Add topic](https://commons.wikimedia.org/wiki/File:Vertebra_-_cervicales.jpg#)

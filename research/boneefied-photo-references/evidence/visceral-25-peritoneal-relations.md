@@ -1,0 +1,2 @@
+Evidence note — visceral-25-peritoneal-relations.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 139-1 identifies relations of liver, gallbladder, stomach, duodenum, lesser omentum and epiploic foramen. The linked image was viewed temporarily and shows these upper abdominal organs and folds in dissection. It does not show the full mesentery or a complete whole-abdomen placement plate. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

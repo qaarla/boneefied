@@ -1,0 +1,2 @@
+Evidence note — visceral-12-aorta-branches.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 117-2 names ascending aorta, aortic arch and branches, including brachiocephalic trunk, common carotid and left subclavian. Its published source image was viewed temporarily; the specimen shows the great-vessel/aortic arch area. It is not a full-body artery/vein map. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

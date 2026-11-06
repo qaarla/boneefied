@@ -210,3 +210,45 @@ mtime_ms = 1793773179682
 storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/4e7b161e-267e-46dd-87d3-5cfc73848b32/5f7e49e1-8b2e-4fb4-a571-269b1c6ad662"
 storage_version_token = "1793773452155083"
 content_type = "image/jpeg"
+
+[[outputs]]
+id = "VngNmEW7wGIBlC2ZoaAs2"
+uri = "file://research/notes.md"
+type = "text"
+title = "Boneefied final photo-link verification"
+description = "Whole-inventory verification and supported gap completion; final totals and limitations will replace the preceding baseline."
+logical_id = "edb36313-c178-43f7-89ea-271ca5d871a4"
+content_hash = "sha256:fa3e89a16b7fadb90f6c5ec250d5995243ff09fc14976adaf7935af92ba0cf8a"
+size = 6281
+mtime_ms = 1794001935516
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/edb36313-c178-43f7-89ea-271ca5d871a4/c2cef289-9074-4eeb-bb69-b319a4f1b96d"
+storage_version_token = "1794001963548929"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "EKMd1HdUdW-keVtrcMzJo"
+uri = "file://research/boneefied-photo-references.md"
+type = "text"
+title = "Boneefied photo-reference assessment — coverage incomplete"
+description = "All 164 published assets assessed: 4 verified counterparts, 141 partial candidates and 19 unresolved, with source pages, creators, limitations and per-asset outcomes."
+logical_id = "b0dba200-5758-4891-8f21-213cdad1c97a"
+content_hash = "sha256:0ce21bdab068d9c1f0306ae75dbb5d0cd6383245b7ad45931aa9f0348cc6b719"
+size = 100989
+mtime_ms = 1794001218376
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/b0dba200-5758-4891-8f21-213cdad1c97a/206c7841-adeb-4d95-a733-7a4d4848f5e5"
+storage_version_token = "1794001297470161"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "z3FrDpEde5IA0T4mIVuGR"
+uri = "file://research/boneefied-photo-references/final-report.html"
+type = "html"
+title = "Boneefied: full per-illustration photo-reference audit"
+description = "All 164 outcomes, the 10 approved source links, every remaining name and reason, and browser versus physical-device verification limits. Coverage remains incomplete: 8 linked illustrations, 156 unlinked."
+logical_id = "7c41bf29-51b7-4d05-ab93-0d5e2c37c207"
+content_hash = "sha256:ad087b29f369b6bf6db3955e2e147f205d531e0fe9da8f83ff4392eac5577700"
+size = 78567
+mtime_ms = 1794003996578
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:198e4559-f7a5-4cab-95b5-2eae02bdc149/7c41bf29-51b7-4d05-ab93-0d5e2c37c207/5d97d44e-08e9-4375-978b-93c9eeeeeced"
+storage_version_token = "1794003997560171"
+content_type = "text/html"

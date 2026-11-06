@@ -1,0 +1,2 @@
+Evidence note — visceral-46-femoral-triangle.md
+Checked 2026-11-06T21:28:12.745Z. Evidence note — Stanford Bassett femoral-triangle dissection. Source page: https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=185-4 . Caption names the greater and accessory saphenous veins among superficial femoral-triangle structures and states CC BY-SA 4.0 for the collection. The published image was viewed temporarily; it shows the dissected superficial femoral-triangle/thigh region, not the full medial ankle-to-groin path. No image was retained in the workspace.

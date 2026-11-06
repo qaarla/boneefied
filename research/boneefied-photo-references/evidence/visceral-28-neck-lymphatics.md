@@ -1,0 +1,3 @@
+Evidence note — Stanford Bassett neck lymphatic and vascular dissection
+Source page: https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6
+Page/caption checked 2026-11-06T21:25:51.089Z. Caption and key identify right lymphatic duct, subclavian trunk, jugular and subclavian vessels, brachiocephalic vessels, axillary vessels and related structures. The linked specimen photo was temporarily viewed from its published URL; it visibly shows a dissected neck/upper thorax and vascular/lymphatic structures. It does not cover all routes of whole-body circulation/lymph drainage. No image retained in the workspace. Stanford states CC BY-SA 4.0.

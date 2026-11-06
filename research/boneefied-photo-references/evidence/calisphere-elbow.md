@@ -1,0 +1,3 @@
+Source-page evidence summary (checked 2026-11-06).
+
+Calisphere item e3ac55f2986d93e7a83b199d9254ad95 was opened; caption and item image, creator/date metadata, institution, and rights statement were inspected. The screenshot visibly showed a natural-color dissection of the left elbow with bones and articular surfaces. Creators Irving Rehman and Chadwick F. Smith; University of Southern California Digital Library / Norris Medical Library; dates recorded as 1946/1980 and 1990/2000. Stated license CC BY-NC-SA 2.5 with attribution instructions. Relevant example only: it does not represent the generic joint in section or establish all schematic layers. Public Calisphere item page supports ordinary outbound linking; reproductions remain subject to stated license.

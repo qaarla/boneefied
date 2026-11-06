@@ -1,0 +1,2 @@
+Evidence note — visceral-03-lungs-airway.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett image 123-5 was opened and its caption checked. The source-page image was viewed temporarily from its published image URL; it visibly shows the larynx, trachea, main bronchi and lungs in situ. It does not show nasal cavities, sinus interiors, bronchioles or a separate lobar/hilum view. Image files were held only in /tmp for inspection and were not added to the project. Stanford credits the Bassett collection under CC BY-SA 4.0.

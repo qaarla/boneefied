@@ -1,0 +1,2 @@
+Evidence note — visceral-31-human-ovary-gross.md
+Checked 2026-11-06T21:25:21.142Z. Wikimedia Commons page identifies a normal human ovary from a 46-year-old woman and credits Ed Uthman, CC BY-SA 3.0. The published image was viewed temporarily; it shows a cut ovary with a prominent corpus luteum and a small pale corpus albicans. It is not a full follicle-stage series. No image was retained in the workspace.

@@ -1,0 +1,1062 @@
+[
+  {
+    "assetId": "asset-gray880-optic-nerve-head",
+    "title": "Optic disc, macula and optic nerve head",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "diagnostic-imaging",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Commons file page is publicly accessible for linking; any reuse must follow the selected attribution/share-alike license option.",
+        "reproductionRights": "CC BY-SA 3.0 (one of the file's stated license options; verify preferred option and attribution on page).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot displayed the original color human fundus photograph; optic disc and vessels are visible and the page caption identifies the optic disc.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-gray880-optic-nerve-head-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Fundus_of_eye_normal.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Fundus_of_eye_normal.jpg",
+        "title": "File:Fundus of eye normal.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons (photograph by ignis)",
+        "creator": "ignis",
+        "matches": "Color fundus image with optic disc, retinal vessels and macular area; relevant to the fundus panel only.",
+        "viewLimitations": "Fundus photography does not show retinal histology or the optic-nerve-head section; photoreceptor and foveal fine detail are not resolved.",
+        "subject": {
+          "en": "Human fundus photograph; side not established",
+          "es": "Fotografía de fondo de ojo humano; lateralidad no establecida"
+        }
+      },
+      {
+        "url": "https://www.intechopen.com/chapters/62850",
+        "title": "Anatomy of the Human Optic Nerve: Structure and Function | IntechOpen",
+        "source": "IntechOpen chapter (Optic Nerve)",
+        "creator": "Juan J. Salazar, Ana I. Ramírez, Rosa De Hoz, Elena Salobrar-Garcia, Pilar Rojas, José A. Fernández-Albarral, Inés López-Cuenca, Blanca Rojas, Alberto Triviño, and José M. Ramírez",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Figure 3A includes a histological section of the human optic nerve head, with the superficial nerve-fiber, prelaminar, laminar and retrolaminar regions; separate panels in the same composite are drawings.",
+        "viewLimitations": "The figure is a micrograph-and-diagram composite, not a fundus photo; only the histology panels count as specimen evidence. It does not show macula/fovea. Some panels are modified with permission from a cited source.",
+        "termsUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "linkingTerms": "The public chapter page can be linked; chapter licensing does not make its permission-qualified composite panels safe to copy or embed.",
+        "reproductionRights": "Chapter states CC BY 3.0; Figure 3 includes panels modified with permission from a cited source, so check figure-specific attribution/permissions before any reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source-page caption was checked; the original linked Figure 3 was viewed temporarily. The histology panels are distinguishable from separate schematic panels and visibly show optic-nerve-head tissue.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-gray880-optic-nerve-head-2.md",
+          "finalUrl": "https://www.intechopen.com/chapters/62850",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Human fundus photograph; side not established",
+          "es": "Fotografía de fondo de ojo humano; lateralidad no establecida"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the fundus panel with a human fundus photograph and human optic-nerve-head histology. A fundus image does not show the nerve-head cutaway; macular/foveal detail and permission-qualified figure panels remain limitations.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the fundus panel with a human fundus photograph and human optic-nerve-head histology. A fundus image does not show the nerve-head cutaway; macular/foveal detail and permission-qualified figure panels remain limitations."
+  },
+  {
+    "assetId": "asset-servier-brain-lateral",
+    "title": "Brain, lateral surface: lobes and insula",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "relevant-example",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Public Commons file page may be linked; copying/reuse remains subject to the file's CC BY-SA license and attribution.",
+        "reproductionRights": "CC BY-SA 3.0 Unported.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": false,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed a real human medial section, including the callosal arch, central structures, brainstem and cerebellum; Commons caption and metadata also checked.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+        "title": "File:Human Brain Dissected.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "creator": "Hikmet Gümüş",
+        "matches": "Human brain photo is a medial sagittal specimen view, providing an authentic brain reference but not the plate's lateral lobe boundaries or exposed insula.",
+        "viewLimitations": "Medial section only; does not show lateral lobes/insula in situ or a coronal view of basal nuclei; small deep structures cannot all be confidently identified from the specimen photograph.",
+        "subject": {
+          "en": "Lateral brain dissection candidate; insula exposure not confirmed",
+          "es": "Candidato de disección lateral del cerebro; exposición de la ínsula no confirmada"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_brain_right_dissected_lateral_view.JPG",
+        "title": "File:Human brain right dissected lateral view.JPG - Wikimedia Commons",
+        "source": "Wikimedia Commons; Louisiana State University Health Sciences Center creator attribution",
+        "creator": "John A. Beal, PhD, Department of Cellular Biology & Anatomy, LSU Health Sciences Center Shreveport",
+        "mediaType": "gross-photo",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Caption identifies a lateral specimen with frontal, parietal, occipital and superior temporal portions resected; a specifically targeted lateral dissection candidate for lobe anatomy.",
+        "viewLimitations": "The source caption does not establish exposed insula; donor provenance is not stated and actual image was not visually inspected in this review. Species/provenance qualifier: human (claimed by title; donor/provenance not stated).",
+        "termsUrl": "https://creativecommons.org/licenses/by/2.5/",
+        "linkingTerms": "Public Commons file page can be linked; the displayed file license governs any reuse and is not needed for ordinary linking.",
+        "reproductionRights": "CC BY 2.5 is stated on the file page; reuse is subject to its terms.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page title/caption and creator were checked via the source page fetch; image was not visually inspected and human specimen provenance is not stated.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-2.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_brain_right_dissected_lateral_view.JPG",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Lateral brain dissection candidate; insula exposure not confirmed",
+          "es": "Candidato de disección lateral del cerebro; exposición de la ínsula no confirmada"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the lateral-lobe/insula diagram with one human lateral-dissection candidate and a verified medial-section photo. Candidate caption shows resected lateral cortex, but image inspection and exposed insula are not established.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the lateral-lobe/insula diagram with one human lateral-dissection candidate and a verified medial-section photo. Candidate caption shows resected lateral cortex, but image inspection and exposed insula are not established."
+  },
+  {
+    "assetId": "asset-servier-brain-sagittal",
+    "title": "Brain, midsagittal view: callosum, diencephalon, ventricles",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Public Commons file page may be linked; copying/reuse remains subject to the file's CC BY-SA license and attribution.",
+        "reproductionRights": "CC BY-SA 3.0 Unported.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": false,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed a real human medial section, including the callosal arch, central structures, brainstem and cerebellum; Commons caption and metadata also checked.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-servier-brain-sagittal-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+        "title": "File:Human Brain Dissected.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "creator": "Hikmet Gümüş",
+        "matches": "Photographed medial/sagittal section of a human brain; visibly includes corpus callosum, brainstem and cerebellum.",
+        "viewLimitations": "Medial section only; does not show lateral lobes/insula in situ or a coronal view of basal nuclei; small deep structures cannot all be confidently identified from the specimen photograph.",
+        "subject": {
+          "en": "Human medial brain specimen; fine ventricular detail not confirmed",
+          "es": "Muestra medial de cerebro humano; detalle ventricular fino no confirmado"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the midsagittal diagram with a real human medial specimen. Corpus-callosum/brainstem/cerebellum context is visible, but ventricles and small diencephalic structures are not verified in the photograph.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the midsagittal diagram with a real human medial specimen. Corpus-callosum/brainstem/cerebellum context is visible, but ventricles and small diencephalic structures are not verified in the photograph."
+  },
+  {
+    "assetId": "asset-servier-eye-section",
+    "title": "Eye in section: tunics, lens and vitreous chamber",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "relevant-example",
+        "mediaType": "diagnostic-imaging",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Commons file page is publicly accessible for linking; any reuse must follow the selected attribution/share-alike license option.",
+        "reproductionRights": "CC BY-SA 3.0 (one of the file's stated license options; verify preferred option and attribution on page).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot displayed the original color human fundus photograph; optic disc and vessels are visible and the page caption identifies the optic disc.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-servier-eye-section-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Fundus_of_eye_normal.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Fundus_of_eye_normal.jpg",
+        "title": "File:Fundus of eye normal.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons (photograph by ignis)",
+        "creator": "ignis",
+        "matches": "Human fundus photograph shows posterior retina, optic disc, vessels and macular area; it is only a posterior-segment example, not the illustrated globe section.",
+        "viewLimitations": "Fundus photography does not show retinal histology or the optic-nerve-head section; photoreceptor and foveal fine detail are not resolved.",
+        "subject": {
+          "en": "Human fundus photograph only; not a globe section",
+          "es": "Solo fotografía de fondo de ojo humano; no es un corte del globo"
+        }
+      }
+    ],
+    "reason": "Partial: Compared full-eye section diagram against the available human fundus example only; it does not show cornea, tunics, lens or vitreous section. Full globe photo not verified.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared full-eye section diagram against the available human fundus example only; it does not show cornea, tunics, lens or vitreous section. Full globe photo not verified."
+  },
+  {
+    "assetId": "asset-servier-ear-section",
+    "title": "Ear in section: outer, middle and inner",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "relevant-example",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+        "linkingTerms": "NLM catalog record is publicly linkable; the catalog's public-domain determination is a reuse statement for the work, not a finding for any unexamined third-party component.",
+        "reproductionRights": "NLM believes the 1887 work is in the public domain; verify the selected item and its specific rights record before copying.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": false,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-servier-ear-section-1.md",
+          "finalUrl": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+        "title": "Photographic illustrations of the anatomy of the human ear - NLM Digital Collections",
+        "source": "U.S. National Library of Medicine Digital Collections",
+        "creator": "Burton Alexander Randall; Henry Lee Morse (contributor)",
+        "matches": "NLM catalog record describes an 1887 photographic work on human-ear anatomy.",
+        "viewLimitations": "Catalog-level book record only; no specific image or caption reviewed, and individual structures are not verified. Needs page/image-level visual review before use as a reference.",
+        "subject": {
+          "en": "Historical human-ear photo catalog; individual plate unreviewed",
+          "es": "Catálogo histórico de fotos del oído humano; lámina individual no revisada"
+        }
+      }
+    ],
+    "reason": "Partial: Compared ear-section diagram against the NLM historical human-ear photographic-work catalog. Catalog-level record lacks a reviewed individual plate; outer/middle/inner coverage remains unverified.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared ear-section diagram against the NLM historical human-ear photographic-work catalog. Catalog-level record lacks a reviewed individual plate; outer/middle/inner coverage remains unverified."
+  },
+  {
+    "assetId": "asset-openstax-spinal-cord-specimen",
+    "title": "Spinal cord cross-section specimen",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Public Commons file page can be linked; the existing Boneefied specimen URL points here. Reuse must retain OpenStax attribution and license terms.",
+        "reproductionRights": "CC BY 4.0.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": false,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed the actual stained spinal-cord photomicrograph on the Commons page (separate from the diagram above it); source/organism/license metadata checked.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-openstax-spinal-cord-specimen-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+        "title": "File:1313 Spinal Cord Cross Section.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons (OpenStax source image)",
+        "creator": "OpenStax",
+        "matches": "Human spinal-cord transverse histology, with central butterfly-shaped gray matter and surrounding white matter.",
+        "viewLimitations": "Does not show tract boundaries, dorsal/ventral roots, ganglion, or a gross dissection; source page also displays an instructional diagram separately. Main review: the source description does not explicitly establish a human organism; Commons category tags alone are not treated as specimen-species confirmation.",
+        "subject": {
+          "en": "Spinal-cord cross-section; organism not confirmed",
+          "es": "Corte transversal de médula espinal; organismo no confirmado"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the published spinal-cord specimen crop with its Commons/OpenStax source page and image. Source identifies a cord cross-section and staining pattern, but organism provenance remains unconfirmed in the current registry; keep partial.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the published spinal-cord specimen crop with its Commons/OpenStax source page and image. Source identifies a cord cross-section and staining pattern, but organism provenance remains unconfirmed in the current registry; keep partial."
+  },
+  {
+    "assetId": "asset-bvis04-deep-nuclei",
+    "title": "Deep brain nuclei, coronal slice",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+        "title": "File:Coronal cross-section of human brain.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons; source article in World Journal of Surgical Oncology",
+        "creator": "Rajalakshmi L. Nair et al.",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Visually inspected gross photograph of a human coronal brain section with gray/white matter and ventricular region; source caption describes diffuse edema and narrowed ventricular lumen.",
+        "viewLimitations": "Pathological edema section, not a normal anatomy specimen; source does not label or establish caudate, putamen, globus pallidus or internal capsule individually, and cannot validate their precise relationships.",
+        "termsUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "linkingTerms": "Commons source page is publicly linkable; the stated CC BY 2.0 terms apply to any reproduction and require attribution.",
+        "reproductionRights": "CC BY 2.0 (as stated on the Commons file page).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Commons page screenshot showed a real coronal brain tissue section and the edema/ventricular caption. No MRI, CT or illustration was used.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-deep-nuclei-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Human pathological coronal brain section; basal nuclei unlabelled",
+          "es": "Corte coronal patológico de cerebro humano; núcleos basales sin identificar"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the coronal nuclei diagram with a human pathological coronal gross section. Source caption is edema, not basal nuclei; caudate, putamen and pallidum are not identified.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the coronal nuclei diagram with a human pathological coronal gross section. Source caption is edema, not basal nuclei; caudate, putamen and pallidum are not identified."
+  },
+  {
+    "assetId": "asset-bvis04-brainstem-cerebellum",
+    "title": "Brainstem, cerebellum and spinal cord, midsagittal",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Public Commons file page may be linked; copying/reuse remains subject to the file's CC BY-SA license and attribution.",
+        "reproductionRights": "CC BY-SA 3.0 Unported.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": false,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed a real human medial section, including the callosal arch, central structures, brainstem and cerebellum; Commons caption and metadata also checked.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-brainstem-cerebellum-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+        "title": "File:Human Brain Dissected.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "creator": "Hikmet Gümüş",
+        "matches": "Inspected sagittal human brain specimen visibly includes brainstem, cerebellum and the midline section; it is a relevant gross specimen counterpart.",
+        "viewLimitations": "Medial section only; does not show lateral lobes/insula in situ or a coronal view of basal nuclei; small deep structures cannot all be confidently identified from the specimen photograph.",
+        "subject": {
+          "en": "Human brainstem/cerebellum specimen; inferior rather than midsagittal view",
+          "es": "Muestra humana de tronco encefálico/cerebelo; vista inferior, no midsagital"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=23-5",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine (Image 23-5)",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Visually inspected inferior human gross specimen shows cerebellum, pons and medulla, relevant to the brainstem/cerebellum content but not the illustration's midsagittal orientation or arbor-vitae cut.",
+        "viewLimitations": "The original photograph is an unannotated gross overview; the individual cranial nerve origins are too small to claim as visually identified. The source page also includes a separate line drawing, which is not counted as photographic evidence.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Stanford source page can be linked; Stanford states CC BY-SA 4.0 for Bassett images, subject to attribution/share-alike conditions.",
+        "reproductionRights": "CC BY-SA 4.0 (Stanford's stated image license).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "The source-page caption and rights were checked and the exact left-view original photo linked from that page was opened temporarily. It visibly shows the inferior brainstem/cerebellum specimen; nerve details are not individually resolved.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-brainstem-cerebellum-2.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=23-5",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Human brainstem/cerebellum specimen; inferior rather than midsagittal view",
+          "es": "Muestra humana de tronco encefálico/cerebelo; vista inferior, no midsagital"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the midsagittal diagram with a human sagittal section and Stanford inferior brainstem specimen. The latter is a different view; exact midsagittal arbor vitae/ventricle/cord continuation is not covered.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the midsagittal diagram with a human sagittal section and Stanford inferior brainstem specimen. The latter is a different view; exact midsagittal arbor vitae/ventricle/cord continuation is not covered."
+  },
+  {
+    "assetId": "asset-bvis04-csf-meninges",
+    "title": "Ventricles, CSF and meninges",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Stanford's collection page is publicly linkable; Stanford states a CC BY-SA 4.0 license for the images, subject to attribution/share-alike terms.",
+        "reproductionRights": "CC BY-SA 4.0 (Stanford's stated image license).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-csf-meninges-1.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "matches": "Stanford caption identifies an actual cervical dissection of meninges, cord and roots; only the meninges/cervical specimen aspect is relevant.",
+        "viewLimitations": "One cervical region and one nerve level; rami and named tracts are not demonstrated. The specimen itself was below the captured viewport and remains for human visual review.",
+        "subject": {
+          "en": "Human cervical meninges and roots; no cranial CSF system",
+          "es": "Meninges cervicales y raíces humanas; sin sistema craneal de LCR"
+        }
+      }
+    ],
+    "reason": "Partial: Compared CSF/ventricular and cranial meningeal panels with a cervical spinal meninges/roots dissection. It does not depict ventricular flow or cranial choroid plexus.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared CSF/ventricular and cranial meningeal panels with a cervical spinal meninges/roots dissection. It does not depict ventricular flow or cranial choroid plexus."
+  },
+  {
+    "assetId": "asset-bvis04-spinal-cross-section",
+    "title": "Spinal cord in cross-section: gray matter, tracts and roots",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Public Commons file page can be linked; the existing Boneefied specimen URL points here. Reuse must retain OpenStax attribution and license terms.",
+        "reproductionRights": "CC BY 4.0.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": false,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed the actual stained spinal-cord photomicrograph on the Commons page (separate from the diagram above it); source/organism/license metadata checked.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-cross-section-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+        "title": "File:1313 Spinal Cord Cross Section.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons (OpenStax source image)",
+        "creator": "OpenStax",
+        "matches": "Human spinal-cord transverse histology, with central butterfly-shaped gray matter and surrounding white matter.",
+        "viewLimitations": "Does not show tract boundaries, dorsal/ventral roots, ganglion, or a gross dissection; source page also displays an instructional diagram separately. Main review: the source description does not explicitly establish a human organism; Commons category tags alone are not treated as specimen-species confirmation.",
+        "subject": {
+          "en": "Cord histology plus cervical roots; tract overlays absent",
+          "es": "Histología medular más raíces cervicales; sin tractos superpuestos"
+        }
+      },
+      {
+        "relationship": "relevant-example",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Stanford's collection page is publicly linkable; Stanford states a CC BY-SA 4.0 license for the images, subject to attribution/share-alike terms.",
+        "reproductionRights": "CC BY-SA 4.0 (Stanford's stated image license).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-cross-section-2.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "matches": "Captioned cervical spinal cord and nerve roots with meninges, useful for the gross root context only.",
+        "viewLimitations": "One cervical region and one nerve level; rami and named tracts are not demonstrated. The specimen itself was below the captured viewport and remains for human visual review.",
+        "subject": {
+          "en": "Cord histology plus cervical roots; tract overlays absent",
+          "es": "Histología medular más raíces cervicales; sin tractos superpuestos"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the cord diagram with transverse cord histology and a separate cervical root dissection. Histology does not identify colored tracts or roots; root photo is a different specimen/view.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the cord diagram with transverse cord histology and a separate cervical root dissection. Histology does not identify colored tracts or roots; root photo is a different specimen/view."
+  },
+  {
+    "assetId": "asset-bvis04-spinal-roots-rami",
+    "title": "Spinal nerve: roots, ganglion and rami",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Stanford's collection page is publicly linkable; Stanford states a CC BY-SA 4.0 license for the images, subject to attribution/share-alike terms.",
+        "reproductionRights": "CC BY-SA 4.0 (Stanford's stated image license).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-roots-rami-1.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "matches": "Catalog-captioned posterior cervical dissection of meninges, spinal cord and nerve roots, including a close view of the fifth cervical nerve.",
+        "viewLimitations": "One cervical region and one nerve level; rami and named tracts are not demonstrated. The specimen itself was below the captured viewport and remains for human visual review.",
+        "subject": {
+          "en": "Cervical roots/ganglion/dorsal ramus; photo not visually checked",
+          "es": "Raíces cervicales/ganglio/ramo dorsal; foto no inspeccionada visualmente"
+        }
+      }
+    ],
+    "reason": "Partial: Compared spinal-nerve schematic with a captioned cervical specimen: dorsal/ventral roots, ganglion and dorsal ramus are described, but source image itself was not visually inspected and ventral ramus is not established.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared spinal-nerve schematic with a captioned cervical specimen: dorsal/ventral roots, ganglion and dorsal ramus are described, but source image itself was not visually inspected and ventral ramus is not established."
+  },
+  {
+    "assetId": "asset-bvis04-plexus-overview",
+    "title": "The four major plexuses and the phrenic nerve",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "gross-photo",
+        "organism": "unconfirmed",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "Calisphere record is publicly accessible for linking; the stated license applies to reuse and requires the specified attribution and noncommercial/share-alike conditions.",
+        "reproductionRights": "CC BY-NC-SA 2.5, with attribution to Rehman, Smith and Norris Medical Library / USC as stated on the record.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed the photograph and its caption/metadata; visible dissected branch labels include median and ulnar nerves. The record did not establish human organism.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-plexus-overview-1.md",
+          "finalUrl": "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353",
+        "title": "Natural color photograph of dissection of the brachial plexus, showing the major branches — Calisphere",
+        "source": "Calisphere / University of Southern California Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "matches": "Actual photograph of brachial-plexus dissection, showing major branches including labeled median and ulnar nerves.",
+        "viewLimitations": "Human identity is not explicitly stated by the record. Shows one proximal plexus region, not the cervical/lumbar/sacral plexuses, phrenic nerve or full upper-limb nerve courses.",
+        "subject": {
+          "en": "Brachial-plexus specimen; organism unspecified in item record",
+          "es": "Muestra del plexo braquial; organismo no especificado en el registro"
+        }
+      }
+    ],
+    "reason": "Partial: Compared body-wide plexus schematic with a visually inspected brachial-plexus photograph. Organism is not explicit on Calisphere record; cervical, lumbar, sacral and phrenic coverage absent.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared body-wide plexus schematic with a visually inspected brachial-plexus photograph. Organism is not explicit on Calisphere record; cervical, lumbar, sacral and phrenic coverage absent."
+  },
+  {
+    "assetId": "asset-bvis04-upper-limb-nerves",
+    "title": "Median, ulnar and radial nerves of the right upper limb",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "gross-photo",
+        "organism": "unconfirmed",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+        "linkingTerms": "Calisphere record is publicly accessible for linking; the stated license applies to reuse and requires the specified attribution and noncommercial/share-alike conditions.",
+        "reproductionRights": "CC BY-NC-SA 2.5, with attribution to Rehman, Smith and Norris Medical Library / USC as stated on the record.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed the photograph and its caption/metadata; visible dissected branch labels include median and ulnar nerves. The record did not establish human organism.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-upper-limb-nerves-1.md",
+          "finalUrl": "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353",
+        "title": "Natural color photograph of dissection of the brachial plexus, showing the major branches — Calisphere",
+        "source": "Calisphere / University of Southern California Digital Library",
+        "creator": "Irving Rehman and Chadwick F. Smith",
+        "matches": "Inspected brachial-plexus dissection photograph has labeled proximal median and ulnar nerve branches; it is an upper-limb nerve example, not the full arm/forearm courses or radial-nerve path.",
+        "viewLimitations": "Human identity is not explicitly stated by the record. Shows one proximal plexus region, not the cervical/lumbar/sacral plexuses, phrenic nerve or full upper-limb nerve courses.",
+        "subject": {
+          "en": "Proximal brachial-plexus photo; full limb courses absent",
+          "es": "Foto proximal del plexo braquial; faltan trayectos de todo el miembro"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the limb nerve routes with one visually inspected proximal brachial-plexus photo. It does not show the full arm courses or distal median/ulnar/radial branches; organism not established by the item record.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the limb nerve routes with one visually inspected proximal brachial-plexus photo. It does not show the full arm courses or distal median/ulnar/radial branches; organism not established by the item record."
+  },
+  {
+    "assetId": "asset-bvis04-lower-limb-nerves",
+    "title": "Femoral and sciatic nerves of the right lower limb",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Public file page can be linked directly; any copying must retain attribution and share-alike under the stated license.",
+        "reproductionRights": "CC BY-SA 3.0 Unported.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-lower-limb-nerves-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Sciatic_nerve.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Sciatic_nerve.jpg",
+        "title": "File:Sciatic nerve.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "creator": "Anatomist90",
+        "matches": "Commons metadata describes a human dissection photograph of the sciatic nerve.",
+        "viewLimitations": "Only the sciatic nerve is identified; femoral nerve and full limb course are not covered. Photograph itself was not visually inspected due screenshot rate-limit failure.",
+        "subject": {
+          "en": "Sciatic-nerve dissection; femoral nerve not shown",
+          "es": "Disección del nervio ciático; no muestra el nervio femoral"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the femoral/sciatic diagram with a human sciatic-nerve file record. Sciatic photo itself was unavailable for visual inspection and no femoral nerve counterpart was confirmed.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the femoral/sciatic diagram with a human sciatic-nerve file record. Sciatic photo itself was unavailable for visual inspection and no femoral nerve counterpart was confirmed."
+  },
+  {
+    "assetId": "asset-bvis04-cranial-nerves-i-vi",
+    "title": "Cranial nerves I-VI, inferior surface of the brain",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "relevant-example",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Stanford page is publicly linkable; Stanford states CC BY-SA 4.0 for Bassett images, with attribution/share-alike conditions.",
+        "reproductionRights": "CC BY-SA 4.0 (Stanford's stated image license).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-cranial-nerves-i-vi-1.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=2-7",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=2-7",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "matches": "Catalog caption identifies optic nerve, optic chiasm, optic tract and lateral geniculate body in a dissection view.",
+        "viewLimitations": "Does not show the optic disc, macula/fovea or longitudinal nerve-head microanatomy; specimen photo not visually inspected.",
+        "subject": {
+          "en": "Optic/chiasm and inferior brainstem examples; not CN I-VI complete",
+          "es": "Ejemplos de nervio óptico/quiasma y tronco inferior; no cubren I-VI completos"
+        }
+      },
+      {
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=23-5",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine (Image 23-5)",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Inferior human brain-base specimen; page caption/key includes optic chiasm and cranial-nerve origins V, IV and VI as contextual candidates, but the unannotated photograph does not resolve individual roots.",
+        "viewLimitations": "The original photograph is an unannotated gross overview; the individual cranial nerve origins are too small to claim as visually identified. The source page also includes a separate line drawing, which is not counted as photographic evidence.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Stanford source page can be linked; Stanford states CC BY-SA 4.0 for Bassett images, subject to attribution/share-alike conditions.",
+        "reproductionRights": "CC BY-SA 4.0 (Stanford's stated image license).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "The source-page caption and rights were checked and the exact left-view original photo linked from that page was opened temporarily. It visibly shows the inferior brainstem/cerebellum specimen; nerve details are not individually resolved.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-cranial-nerves-i-vi-2.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=23-5",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Optic/chiasm and inferior brainstem examples; not CN I-VI complete",
+          "es": "Ejemplos de nervio óptico/quiasma y tronco inferior; no cubren I-VI completos"
+        }
+      }
+    ],
+    "reason": "Partial: Compared CN I-VI inferior diagram with captioned optic nerve/chiasm and inferior brainstem specimens. 2-7 image was not visually inspected; other nerves/origin cues are not comprehensively shown.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared CN I-VI inferior diagram with captioned optic nerve/chiasm and inferior brainstem specimens. 2-7 image was not visually inspected; other nerves/origin cues are not comprehensively shown."
+  },
+  {
+    "assetId": "asset-bvis04-cranial-nerves-vii-xii",
+    "title": "Cranial nerves VII-XII, brainstem and cerebellopontine angle",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "relevant-example",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Stanford page is publicly linkable; Stanford states CC BY-SA 4.0 for the collection, with attribution/share-alike conditions.",
+        "reproductionRights": "CC BY-SA 4.0 (Stanford's stated image license).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-cranial-nerves-vii-xii-1.md",
+          "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=23-5",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=23-5",
+        "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+        "source": "Stanford Lane Medical Library, Bassett Collection",
+        "creator": "David L. Bassett",
+        "matches": "Caption describes inferior cerebellum/brainstem surfaces and lists several cranial-nerve origins, including V, VII, VIII, IV, VI, IX, X and XII.",
+        "viewLimitations": "Not a complete labeled cranial-nerve map; olfactory and optic nerves are not the focus. The photo was not visually inspected in this review.",
+        "subject": {
+          "en": "Human inferior brainstem specimen; limited nerve origins",
+          "es": "Muestra humana inferior del tronco encefálico; orígenes nerviosos limitados"
+        }
+      }
+    ],
+    "reason": "Partial: Compared CN VII-XII schematic with the visually inspected inferior cerebellum/brainstem specimen. Caption identifies several nerve origins, but not every nerve course/foramen; this is a relevant, not literal, counterpart.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared CN VII-XII schematic with the visually inspected inferior cerebellum/brainstem specimen. Caption identifies several nerve origins, but not every nerve course/foramen; this is a relevant, not literal, counterpart."
+  },
+  {
+    "assetId": "asset-bvis04-eye-anterior-segment",
+    "title": "Anterior eye: chambers, aqueous humor and zonules",
+    "status": "unresolved",
+    "references": [],
+    "reason": "No source-page image was verified for a human anterior-segment specimen. A targeted NCBI eye-anatomy page fetch failed; no substitute drawing or model was accepted.",
+    "coverageKind": "incomplete",
+    "finalReview": "No source-page image was verified for a human anterior-segment specimen. A targeted NCBI eye-anatomy page fetch failed; no substitute drawing or model was accepted."
+  },
+  {
+    "assetId": "asset-bvis04-retina-layers",
+    "title": "Retina: cell chain (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "relevant-example",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "termsUrl": "https://www.cellimagelibrary.org/images/11458",
+        "linkingTerms": "The Cell Image Library dataset page is publicly linkable; its CC BY-NC-ND license governs reuse and is not needed for ordinary linking.",
+        "reproductionRights": "CC BY-NC-ND (as stated by the image record; version not specified on the captured record).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-retina-layers-1.md",
+          "finalUrl": "https://www.cellimagelibrary.org/images/11458",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://www.cellimagelibrary.org/images/11458",
+        "title": "CIL:11458, Homo sapiens, eye photoreceptor cell",
+        "source": "Cell Image Library",
+        "creator": "Toichiro Kuwabara",
+        "matches": "Metadata identifies a human retinal photoreceptor cell, a relevant cellular example for rods/cones.",
+        "viewLimitations": "One cell-level image only; does not show an intact layered retina, optic disc or fovea. Image not visually inspected in this review.",
+        "subject": {
+          "en": "Human retinal photoreceptor cell; single-cell example",
+          "es": "Fotorreceptor retinal humano; ejemplo de célula individual"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the retinal cell-chain schematic with a human photoreceptor-cell record. Image not visually inspected and one cell cannot represent layered retinal organization or ganglion/bipolar cells.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the retinal cell-chain schematic with a human photoreceptor-cell record. Image not visually inspected and one cell cannot represent layered retinal organization or ganglion/bipolar cells."
+  },
+  {
+    "assetId": "asset-bvis04-middle-ear",
+    "title": "Middle ear: ossicles and windows",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Public Commons file page may be linked; copying requires attribution/share-alike under the stated license.",
+        "reproductionRights": "CC BY-SA 3.0 Unported.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-middle-ear-1.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Stapes_human_ear.jpg",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://commons.wikimedia.org/wiki/File:Stapes_human_ear.jpg",
+        "title": "File:Stapes human ear.jpg - Wikimedia Commons",
+        "source": "Wikimedia Commons",
+        "creator": "Welleschik",
+        "matches": "File metadata identifies a human stapes specimen, one of the middle-ear ossicles.",
+        "viewLimitations": "One ossicle only; no malleus/incus articulation, tympanic membrane, oval/round window or auditory tube. Photo not visually inspected because screenshot was rate-limited.",
+        "subject": {
+          "en": "Human stapes specimen; one ossicle only",
+          "es": "Muestra humana del estribo; solo un huesecillo"
+        }
+      },
+      {
+        "relationship": "relevant-example",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "termsUrl": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+        "linkingTerms": "NLM catalog record is publicly linkable; the catalog's public-domain determination is a reuse statement for the work, not a finding for any unexamined third-party component.",
+        "reproductionRights": "NLM believes the 1887 work is in the public domain; verify the selected item and its specific rights record before copying.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": false,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-middle-ear-2.md",
+          "finalUrl": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+        "title": "Photographic illustrations of the anatomy of the human ear - NLM Digital Collections",
+        "source": "U.S. National Library of Medicine Digital Collections",
+        "creator": "Burton Alexander Randall; Henry Lee Morse (contributor)",
+        "matches": "NLM's 1887 catalog identifies a human-ear photographic work, but no individual ossicle/window image is established by this record.",
+        "viewLimitations": "Catalog-level book record only; no specific image or caption reviewed, and individual structures are not verified. Needs page/image-level visual review before use as a reference.",
+        "subject": {
+          "en": "Human stapes specimen; one ossicle only",
+          "es": "Muestra humana del estribo; solo un huesecillo"
+        }
+      }
+    ],
+    "reason": "Partial: Compared ossicles/windows schematic with a verified human stapes file and NLM ear-photo work catalog. Stapes alone omits tympanic membrane, incus, windows and auditory tube; catalog plate was not inspected.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared ossicles/windows schematic with a verified human stapes file and NLM ear-photo work catalog. Stapes alone omits tympanic membrane, incus, windows and auditory tube; catalog plate was not inspected."
+  },
+  {
+    "assetId": "asset-bvis04-inner-ear-vestibular",
+    "title": "Inner ear: vestibule, canals and cochlea",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "relevant-example",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "PMC article can be linked publicly; a link is not permission to copy/host figures. Article states CC BY for reuse with attribution.",
+        "reproductionRights": "CC BY 4.0 (article license; confirm any figure-specific credit line before reuse).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-inner-ear-vestibular-1.md",
+          "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376148",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376148",
+        "title": "Two Photon Fluorescence Microscopy of the Unstained Human Cochlea Reveals Organ of Corti Cytoarchitecture",
+        "source": "PubMed Central / Frontiers in Cellular Neuroscience",
+        "creator": "Janani S. Iyer, Richard Seist, In Seok Moon, and Konstantina M. Stankovic",
+        "matches": "Human cochlear microscopy figure captions identify the organ of Corti and sensory/nerve fibers, providing an inner-ear example but not the vestibular labyrinth.",
+        "viewLimitations": "A microscopic region, not whole cochlea, vestibule or semicircular canals; article screenshot did not display the microscopy panels, so images need visual review.",
+        "subject": {
+          "en": "Human cochlear organ-of-Corti example; labyrinth not shown",
+          "es": "Ejemplo humano de órgano de Corti; no muestra el laberinto"
+        }
+      }
+    ],
+    "reason": "Partial: Compared labyrinth schematic with human organ-of-Corti microscopy. Candidate image was not visually inspected and does not show vestibule, utricle, saccule or semicircular canals.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared labyrinth schematic with human organ-of-Corti microscopy. Candidate image was not visually inspected and does not show vestibule, utricle, saccule or semicircular canals."
+  },
+  {
+    "assetId": "asset-bvis04-cochlea-corti",
+    "title": "Cochlear ducts and the organ of Corti (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "PMC article can be linked publicly; a link is not permission to copy/host figures. Article states CC BY for reuse with attribution.",
+        "reproductionRights": "CC BY 4.0 (article license; confirm any figure-specific credit line before reuse).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-cochlea-corti-1.md",
+          "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376148",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376148",
+        "title": "Two Photon Fluorescence Microscopy of the Unstained Human Cochlea Reveals Organ of Corti Cytoarchitecture",
+        "source": "PubMed Central / Frontiers in Cellular Neuroscience",
+        "creator": "Janani S. Iyer, Richard Seist, In Seok Moon, and Konstantina M. Stankovic",
+        "matches": "Human cochlea microscopy figures caption inner hair cells, organ-of-Corti region, auditory-nerve fibers and supporting cells.",
+        "viewLimitations": "A microscopic region, not whole cochlea, vestibule or semicircular canals; article screenshot did not display the microscopy panels, so images need visual review.",
+        "subject": {
+          "en": "Human cochlear sensory-surface micrographs; not complete duct section",
+          "es": "Micrografías humanas de superficie sensorial coclear; no es corte completo del conducto"
+        }
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153736",
+        "title": "Development of the Hair Cells of the Human Cochlea: A Scanning Electron Microscopic Study - PMC",
+        "source": "PubMed Central; open-access human cochlea study",
+        "creator": "Sabita Mishra, Tarasankar Roy, and Shubhi Saini",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Figure 5 is a visually inspected scanning-electron-microscopy series of human fetal organ of Corti at 37 gestational weeks; the caption identifies tunnel/hair-cell rows and stereocilia.",
+        "viewLimitations": "Prenatal tissue, surface SEM views only; it does not show full scala vestibuli/media/tympani, their fluids, or the whole cochlea cross-section.",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "linkingTerms": "PMC article and its original figure can be linked publicly; copying must follow CC BY-NC-SA 4.0 and the image's attribution.",
+        "reproductionRights": "CC BY-NC-SA 4.0 (article license as stated on page).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "The exact Figure 5 original linked from the opened PMC page was viewed temporarily. It is a multi-panel grayscale SEM series with visible hair-cell surface structures; the page caption and species/age were checked.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-cochlea-corti-2.md",
+          "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153736",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Human cochlear sensory-surface micrographs; not complete duct section",
+          "es": "Micrografías humanas de superficie sensorial coclear; no es corte completo del conducto"
+        }
+      }
+    ],
+    "reason": "Partial: Compared the duct/cell schematic with two human cochlear microscopy articles; the SEM organ-of-Corti surface was visually inspected. It does not show the whole duct compartments or complete schematic cross-section.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared the duct/cell schematic with two human cochlear microscopy articles; the SEM organ-of-Corti surface was visually inspected. It does not show the whole duct compartments or complete schematic cross-section."
+  },
+  {
+    "assetId": "asset-bvis04-smell-taste",
+    "title": "Smell and taste: pathways and receptor cells (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "relationship": "direct-match",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "termsUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176544/",
+        "linkingTerms": "Public PMC article page can be linked; the embedded figure's permission is not a general copying license.",
+        "reproductionRights": "No copying permission established for the embedded figure; source article states it is reprinted with permission.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-smell-taste-1.md",
+          "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176544/",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176544/",
+        "title": "Anatomy and Cellular Constituents of the Human Olfactory Mucosa: A Review",
+        "source": "PubMed Central (review article)",
+        "creator": "Figure credited to Morrison EE and Costanzo RM; article by C. Russell Chen et al.",
+        "matches": "Figure caption identifies a light micrograph of human olfactory mucosa, including receptor/supporting/basal cells and axon fascicles.",
+        "viewLimitations": "Does not show the nasal cavity, bulb or whole taste pathway. Image was not visually inspected; figure is reproduced with permission from a 1992 work, not independently open-licensed.",
+        "subject": {
+          "en": "Human olfactory mucosa and species-unconfirmed taste micrograph",
+          "es": "Mucosa olfatoria humana y micrografía gustativa de especie no confirmada"
+        }
+      },
+      {
+        "relationship": "direct-match",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "linkingTerms": "OpenStax textbook page is public and linkable; reuse is noncommercial/share-alike with attribution under the stated license.",
+        "reproductionRights": "CC BY-NC-SA 4.0 (OpenStax page license; retain its terms and figure attribution).",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page text and caption/metadata were checked; the actual specimen image was not visually inspected in the source-page screenshot.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-neuro-bvis04-smell-taste-2.md",
+          "finalUrl": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+          "redirectNotes": "webFetch returned the same source-page URL; no redirect was observed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+        "title": "14.1 Sensory Perception - Anatomy and Physiology 2e | OpenStax",
+        "source": "OpenStax / University of Michigan Medical School image provider",
+        "creator": "Regents of the University of Michigan Medical School (provider); individual photographer not established",
+        "matches": "Textbook figure includes a circumvallate papilla micrograph and taste-bud structure, relevant to the taste-bud panel.",
+        "viewLimitations": "Organism not stated; figure was not visually inspected; does not show the whole tongue or cranial-nerve taste territories.",
+        "subject": {
+          "en": "Human olfactory mucosa and species-unconfirmed taste micrograph",
+          "es": "Mucosa olfatoria humana y micrografía gustativa de especie no confirmada"
+        }
+      }
+    ],
+    "reason": "Partial: Compared smell/taste panels with human olfactory mucosa micrograph metadata and OpenStax taste-bud micrograph metadata. Neither image was visually inspected; OpenStax taste tissue species is unstated and pathways/territories are absent.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Compared smell/taste panels with human olfactory mucosa micrograph metadata and OpenStax taste-bud micrograph metadata. Neither image was visually inspected; OpenStax taste tissue species is unstated and pathways/territories are absent."
+  }
+]

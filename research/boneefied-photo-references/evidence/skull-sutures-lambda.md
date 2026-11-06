@@ -1,0 +1,1 @@
+Checked 2026-11-06. Commons File:Cranium - sutura lambdoidea (lambda).jpg was visually inspected on the source page; close-up of real dry skull at the sagittal/lambdoid suture junction (lambda). Creator MAKY.OREL; Charles University anthropological collection; 2019-05-30; CC0 1.0. This is a junction detail, not a full posterior skull view. No source image copied into workspace.

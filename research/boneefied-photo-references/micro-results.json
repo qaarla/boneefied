@@ -1,0 +1,1358 @@
+[
+  {
+    "assetId": "asset-gray946-sweat-gland",
+    "title": "Sweat and sebaceous glands",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "title": "Duke Histology - Skin",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "The page describes human thin skin with cut sweat glands and sebaceous glands associated with follicles; a separate recto-anal mammal slide mentions apocrine glands.",
+        "viewLimitations": "Slide images are DigitalScope links, not displayed in the captured page; no single human image was confirmed to contain the complete gland set.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction was stated; treat as an ordinary outbound link only and do not embed.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page screenshot shows slide descriptions but not the slide photograph: research/boneefied-photo-references/micro-visual-duke-skin.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Sweat_gland_histology_2014.jpg",
+        "title": "File:Sweat gland histology 2014.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Athikhun.suw",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "direct-match",
+        "matches": "Photomicrograph shows sweat glands in a scalp section with stratified cuboidal gland epithelium.",
+        "viewLimitations": "The source does not explicitly identify the organism and shows sweat glands rather than the complete eccrine/apocrine/sebaceous combination.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons file is openly linked; the stated license requires attribution and share-alike for reuse. Ordinary linking is not reproduction permission.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the source page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Photo, embedded slide label, and Commons description checked in temporary page capture: /tmp/replit-screenshots/commons_wikimedia_org_wiki_File_Sweat_gland_histology_2014_nQ1P.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-01-sweat-gland.md"
+        }
+      }
+    ],
+    "reason": "A sweat-gland photomicrograph was visually inspected, but organism is unconfirmed and the full human gland set, including sebaceous glands, is not covered."
+  },
+  {
+    "assetId": "asset-original-cell-overview",
+    "title": "Original cell overview",
+    "status": "unresolved",
+    "references": [],
+    "reason": "No lawful human micrograph was located that provides a meaningful photo counterpart for this labeled generalized-cell schematic; actual organelles and their relationships require deeper organelle-specific sourcing."
+  },
+  {
+    "assetId": "asset-original-mitosis-stages",
+    "title": "Original mitosis stages",
+    "status": "unresolved",
+    "references": [],
+    "reason": "No exact, lawful human source-page set showing the five depicted cell-cycle appearances was found; single-stage micrographs would not cover the whole schematic."
+  },
+  {
+    "assetId": "asset-commons-kidney-cortex-human",
+    "title": "Human kidney cortex specimen",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "title": "File:Kidney cortex (947 21) Human.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Josef Reischig",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "A human kidney-cortex photomicrograph with a glomerulus and surrounding tubular profiles, matching the assigned specimen.",
+        "viewLimitations": "Cortex field only; does not establish all nephron segments or renal medulla. Stain and magnification should follow the page metadata rather than be inferred.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Commons file page gives public attribution/share-alike terms; ordinary linking to the page is distinct from reuse of its image.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Displayed micrograph and kidney-cortex caption checked: research/boneefied-photo-references/micro-visual-kidney.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-01-kidney.md"
+        }
+      }
+    ],
+    "reason": "The exact assigned human kidney-cortex specimen page was opened; caption, glomerular/tubular field, authorship and CC BY-SA 3.0 terms were checked."
+  },
+  {
+    "assetId": "asset-commons-alveolar-sac",
+    "title": "Alveolar sac specimen",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+        "title": "File:Alveolar sac.JPG",
+        "source": "Wikimedia Commons",
+        "creator": "Jpogi",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Page caption identifies a histologic slide of a human alveolar sac with alveolar spaces and septa.",
+        "viewLimitations": "Only the alveolar region is represented; this is not a whole lung or a detailed respiratory-membrane image.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons page states attribution/share-alike terms for the file; ordinary linking does not itself authorize copying or embedding.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Screenshot attempt was rate-limited; photograph remains for main-agent visual review.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-02-alveolar.md"
+        }
+      }
+    ],
+    "reason": "The exact human alveolar-sac page and reuse terms were checked, but its photograph could not be visually inspected in this run."
+  },
+  {
+    "assetId": "asset-commons-simple-squamous-epithelium",
+    "title": "Simple squamous epithelium specimen",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+        "title": "File:Human Simple Squamous Epithelium Tissue.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Naz Amann",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "The file caption identifies human simple squamous epithelium and the source page displays the tissue photomicrograph.",
+        "viewLimitations": "This specimen image illustrates a field of simple squamous epithelium, not a comprehensive comparison of epithelial types.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Commons page states attribution terms for the file; outbound linking to the source page is distinct from reproducing the image.",
+        "reproductionRights": "CC BY 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Human simple-squamous caption and displayed photomicrograph checked: research/boneefied-photo-references/micro-visual-human-simple-squamous.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-06-human-squamous.md"
+        }
+      }
+    ],
+    "reason": "A human-specific exact Commons file page was opened; its caption, visible photomicrograph, creator and CC BY 4.0 terms were checked."
+  },
+  {
+    "assetId": "asset-commons-simple-cuboidal-epithelium",
+    "title": "Simple cuboidal epithelium specimen",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+        "title": "File:Epithelial Tissues Simple Cuboidal Epithelium (41681552782).jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Berkshire Community College Bioscience Image Library",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "direct-match",
+        "matches": "Existing specimen record names the image as a simple cuboidal epithelium photomicrograph.",
+        "viewLimitations": "Current source-page request was rate-limited and no photograph or caption could be visually checked; human origin is not newly asserted.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "The existing specimen license record states CC0; a current page inspection was rate-limited. Linking to the Commons page only.",
+        "reproductionRights": "Existing project specimen record identifies CC0 1.0; no new page inspection was possible.",
+        "verification": {
+          "pageOpened": false,
+          "captionChecked": false,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Current screenshot and page-fetch attempts were rate-limited; main-agent visual review required.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-evidence.md"
+        }
+      }
+    ],
+    "reason": "An existing file and CC0 record are suitable leads, but this exact destination could not be opened or visually checked in the present research run."
+  },
+  {
+    "assetId": "asset-commons-simple-columnar-epithelium",
+    "title": "Simple columnar epithelium specimen",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+        "title": "File:Epithelial Tissues Simple Columnar Epithelium (27854452618).jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Berkshire Community College Bioscience Image Library",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "direct-match",
+        "matches": "Displayed photomicrograph and file description identify simple columnar epithelium in a mammalian gut cross-section.",
+        "viewLimitations": "Mammalian subject is not identified as human; one gut section does not illustrate other simple epithelial forms.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "Commons file page has no separate restriction noted; its CC0 terms concern the image, while this record is an ordinary source-page link.",
+        "reproductionRights": "CC0 1.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Displayed source micrograph and mammalian-gut description checked: research/boneefied-photo-references/micro-visual-simple-columnar.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-05-simple-columnar.md"
+        }
+      }
+    ],
+    "reason": "The displayed photomicrograph and tissue description match simple columnar epithelium; organism is explicitly left unconfirmed rather than assumed human."
+  },
+  {
+    "assetId": "asset-openstax-historical-skin-structure",
+    "title": "Skin in section: layers, appendages and receptors",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "title": "Duke Histology - Skin",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human thin-skin descriptions cover epidermis, dermis, hypodermis, papillae, follicles, sebaceous glands, sweat glands, vessels and skin receptors.",
+        "viewLimitations": "Page links to microscope slides rather than displaying the photomicrographs; it does not establish that all labels occur together in one field or show a complete receptor set.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction was stated; ordinary outbound link only, without embedding.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Captured page has slide descriptions but no histology photograph: research/boneefied-photo-references/micro-visual-duke-skin.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md"
+        }
+      }
+    ],
+    "reason": "The academic source describes relevant human skin structures, but no actual micrograph was displayed for visual verification and a complete counterpart was not established."
+  },
+  {
+    "assetId": "asset-bvis04-epidermis-strata",
+    "title": "Epidermis: strata and cell types (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "title": "Duke Histology - Skin",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human thin and plantar skin slide descriptions include keratinocyte strata, melanocytes, Langerhans cells and dermal papillae.",
+        "viewLimitations": "The captured page does not show the underlying slide image; thin skin lacks stratum lucidum, and the complete cell/receptor set is not verified.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction was stated; ordinary outbound link only, not image embedding.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page screenshot shows slide description only: research/boneefied-photo-references/micro-visual-duke-skin.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md"
+        }
+      }
+    ],
+    "reason": "A human skin source describes some pictured strata and cell types, but not the whole thick/thin composite and no micrograph was visually inspected."
+  },
+  {
+    "assetId": "asset-bvis04-dermis-hypodermis",
+    "title": "Dermis and hypodermis: fibres and vessels",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "title": "Duke Histology - Skin",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human thin-skin descriptions identify papillary and reticular dermis, collagen bundles, sweat glands, hypodermal fat and vessels.",
+        "viewLimitations": "Page text only was visible; it does not verify the requested fibers and vascular details in a specific photograph.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction was stated; outbound link only, with no embedding.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Captured page shows slide descriptions only: research/boneefied-photo-references/micro-visual-duke-skin.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md"
+        }
+      }
+    ],
+    "reason": "Human dermis and hypodermis are described, but no image-level inspection confirmed connective fibers, capillary loops and the full plate."
+  },
+  {
+    "assetId": "asset-bvis04-hair-follicle",
+    "title": "Hair follicle in longitudinal section",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "title": "Duke Histology - Skin",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human thin-skin and scalp slide descriptions include hair follicles, shafts and associated sebaceous glands.",
+        "viewLimitations": "No longitudinal image of one complete follicle with bulb, papilla and arrector pili was visually checked.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction was stated; outbound page link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page screenshot contains text descriptions and no specimen image: research/boneefied-photo-references/micro-visual-duke-skin.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md"
+        }
+      }
+    ],
+    "reason": "Relevant human hair-bearing skin source is identified, but the longitudinal follicle profile and all labeled structures remain visually unverified."
+  },
+  {
+    "assetId": "asset-bvis04-epithelia-simple",
+    "title": "Simple epithelia: squamous, cuboidal, columnar (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+        "title": "File:Human Simple Squamous Epithelium Tissue.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Naz Amann",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Direct human photomicrograph example of the simple squamous panel.",
+        "viewLimitations": "Only squamous epithelium; does not cover the cuboidal or columnar panels.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Commons page states attribution terms; source-page linking is distinct from image copying.",
+        "reproductionRights": "CC BY 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Caption and actual micrograph checked: research/boneefied-photo-references/micro-visual-human-simple-squamous.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-06-human-squamous.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+        "title": "File:Epithelial Tissues Simple Cuboidal Epithelium (41681552782).jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Berkshire Community College Bioscience Image Library",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Existing specimen record names a simple cuboidal epithelium example.",
+        "viewLimitations": "Current request was rate-limited; no image-level confirmation or human identification.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "The existing project record states CC0; this page was not reached in the current check. Link only.",
+        "reproductionRights": "Existing specimen record states CC0 1.0; current page inspection was rate-limited.",
+        "verification": {
+          "pageOpened": false,
+          "captionChecked": false,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "No current visual inspection; main-agent review needed.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-evidence.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+        "title": "File:Epithelial Tissues Simple Columnar Epithelium (27854452618).jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Berkshire Community College Bioscience Image Library",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Photomicrograph shows simple columnar epithelium of mammalian gut.",
+        "viewLimitations": "Mammalian gut is not explicitly human; does not cover the other simple-epithelium panels.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "Commons page provides a CC0 file record; ordinary source-page link only.",
+        "reproductionRights": "CC0 1.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Actual gut micrograph and source description checked: research/boneefied-photo-references/micro-visual-simple-columnar.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-05-simple-columnar.md"
+        }
+      }
+    ],
+    "reason": "Human squamous and mammalian cuboidal/columnar candidates do not provide three visually inspected, human-confirmed counterparts for the whole composite."
+  },
+  {
+    "assetId": "asset-bvis04-epithelia-stratified",
+    "title": "Pseudostratified and stratified squamous epithelia (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:A_classic_view_of_non-keratinized_stratified_squamous_epithelium.jpg",
+        "title": "File:A classic view of non-keratinized stratified squamous epithelium.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Photograper09",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Displayed histology image and caption identify non-keratinized stratified squamous epithelium.",
+        "viewLimitations": "One epithelial type only; it does not cover pseudostratified, goblet-cell, ciliated, or keratinized skin panels.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons file page states attribution/share-alike terms; outbound linking is not image reproduction.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Image and source caption checked: research/boneefied-photo-references/micro-visual-stratified-squamous.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-07-stratified-squamous.md"
+        }
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "title": "Duke Histology - Skin",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human skin slide descriptions include keratinized stratified squamous epidermis and skin strata.",
+        "viewLimitations": "Photomicrograph itself is behind a slide viewer and was not visually inspected; pseudostratified respiratory epithelium remains unmatched.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "The captured page shows text descriptions, not slide images: research/boneefied-photo-references/micro-visual-duke-skin.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md"
+        }
+      }
+    ],
+    "reason": "A checked non-keratinized slide and described human skin do not cover the three different pictured epithelia or prove the complete set."
+  },
+  {
+    "assetId": "asset-bvis04-epithelia-other-stratified",
+    "title": "Stratified cuboidal, columnar and transitional epithelia (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Sweat_gland_histology_2014.jpg",
+        "title": "File:Sweat gland histology 2014.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Athikhun.suw",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "The sweat-gland image shows stratified cuboidal gland epithelium, corresponding to one of the schematic's duct linings.",
+        "viewLimitations": "Does not cover stratified columnar or transitional epithelium; organism is not explicitly identified.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons file page states attribution/share-alike terms for image reuse; ordinary source-page link only.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the source page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Image and embedded gland-epithelium label checked: /tmp/replit-screenshots/commons_wikimedia_org_wiki_File_Sweat_gland_histology_2014_nQ1P.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-01-sweat-gland.md"
+        }
+      }
+    ],
+    "reason": "One of three panels now has a visually checked, relevant specimen candidate; stratified columnar and transitional human images remain unresolved."
+  },
+  {
+    "assetId": "asset-bvis04-connective-loose",
+    "title": "Loose connective tissues: areolar, adipose, reticular (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://blogs.berkshirecc.edu/bccoer/mammalian-histology-connective-tissues/",
+        "title": "Mammalian Histology: Connective Tissues",
+        "source": "Berkshire Community College Bioscience Image Library",
+        "creator": "Individual image creators not established in page text; page links to the BCC image-library Flickr account",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Page lists adipose, reticular and loose areolar mammalian connective-tissue examples.",
+        "viewLimitations": "The examples are not all identified as human, were not visually inspected, and page-level copying permissions were not established.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction was stated in the checked page; ordinary link only, no embedding.",
+        "reproductionRights": "No copying permission established for these page images.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page screenshot attempt was rate-limited; image-level visual review remains necessary.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-13-connective.md"
+        }
+      }
+    ],
+    "reason": "The academic image gallery lists relevant connective tissue types but subject identity, specific image authorship/terms and actual photographs remain unverified."
+  },
+  {
+    "assetId": "asset-bvis04-connective-dense",
+    "title": "Dense connective tissues: regular, irregular, elastic (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histologylab.ctl.columbia.edu/lab03/dense-regular-connective-tissue/",
+        "title": "Dense, Regular Connective Tissue",
+        "source": "Columbia University Histology Lab Manual",
+        "creator": "Image creator not established",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page identifies a human muscle-and-tendon histology slide, relevant to dense regular connective tissue.",
+        "viewLimitations": "Only a tendon-related example is described; dense irregular and elastic panels remain unmatched, and the slide image was not visually inspected.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking terms were found; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Screenshot attempt was rate-limited; photograph remains uninspected.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-14-dense-regular.md"
+        }
+      }
+    ],
+    "reason": "A human tendon candidate covers only dense regular tissue; no inspected sources cover dense irregular and elastic connective tissue."
+  },
+  {
+    "assetId": "asset-bvis04-cartilage",
+    "title": "Cartilages: hyaline, elastic, fibrocartilage (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://blogs.berkshirecc.edu/bccoer/mammalian-histology-connective-tissues/",
+        "title": "Mammalian Histology: Connective Tissues",
+        "source": "Berkshire Community College Bioscience Image Library",
+        "creator": "Individual image creators not established in page text; page links to the BCC image-library Flickr account",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Gallery lists elastic cartilage, fibrocartilage and hyaline cartilage mammalian specimens.",
+        "viewLimitations": "Organism is mammalian rather than specifically human; images were not visually inspected and copying permissions were not established.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction was stated; ordinary outbound link only.",
+        "reproductionRights": "No copying permission established for these page images.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page screenshot attempt was rate-limited; main-agent image review required.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-13-connective.md"
+        }
+      }
+    ],
+    "reason": "All three cartilage types are named on an academic page, but no individual image was visually checked and human identity/reuse rights are not established."
+  },
+  {
+    "assetId": "asset-bvis04-muscle-tissue",
+    "title": "Muscle tissues: skeletal, cardiac, smooth (schematic)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+        "title": "File:Human skeletal muscle tissue 1 - TEM.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Louisa Howard",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human skeletal muscle TEM with a longitudinal view of striated fibers.",
+        "viewLimitations": "Electron micrograph of skeletal muscle only; it does not show cardiac or smooth muscle.",
+        "termsUrl": "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+        "linkingTerms": "Source page identifies the image as public domain; ordinary linking is not a separate image-copy permission issue.",
+        "reproductionRights": "Public domain is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Human muscle image and caption checked: research/boneefied-photo-references/micro-visual-skeletal-tem.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-09-skeletal-tem.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Cardiac_muscle_histology_400x.jpg",
+        "title": "File:Cardiac muscle histology 400x.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Alexander G. Cheroske",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Page caption describes a 400× cardiac-muscle light micrograph.",
+        "viewLimitations": "Organism unspecified; capture showed a broken image, so the actual specimen was not visually inspected.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons page states attribution/share-alike terms for its file; outbound source-page linking only.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Screenshot shows missing image rather than a specimen: research/boneefied-photo-references/micro-visual-cardiac-400x.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-08-cardiac-400x.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Smooth_muscle_(histology_slide).jpg",
+        "title": "File:Smooth muscle (histology slide).jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Juan Carlos Fonseca Mata",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Displayed photomicrograph shows smooth-muscle tissue.",
+        "viewLimitations": "No specific tissue caption or organism identification; only the smooth-muscle panel is covered.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons file page states attribution/share-alike terms; ordinary page link does not authorize copying.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": false,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Displayed smooth-muscle photomicrograph checked: research/boneefied-photo-references/micro-visual-smooth-muscle.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-10-smooth.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:414_Skeletal_Smooth_Cardiac.jpg",
+        "title": "File:414 Skeletal Smooth Cardiac.jpg",
+        "source": "Wikimedia Commons; Regents of the University of Michigan Medical School",
+        "creator": "The Regents of the University of Michigan Medical School",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "direct-match",
+        "matches": "Three actual microscope images show skeletal, smooth and cardiac muscle, matching all three tissue subjects in this plate.",
+        "viewLimitations": "Organism is not identified in the source caption, so it cannot be asserted to be human; separate source panels, not a single continuous section.",
+        "termsUrl": "https://creativecommons.org/licenses/by/3.0/ and https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "The file page gives CC BY attribution license options; outbound linking is not image reproduction permission.",
+        "reproductionRights": "Commons page states CC BY 3.0 and CC BY 4.0 licensing.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Original multi-panel image inspected from /tmp/boneefied-gapfill/muscle-composite.jpg; three panels agree with source caption.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-05-muscle-composite.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_cardiac_muscle.jpg",
+        "title": "File:Human cardiac muscle.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Naz Amann",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "File caption specifically identifies human cardiac muscle, providing a human-specific example for the cardiac panel.",
+        "viewLimitations": "Original-file request was rate-limited, so the actual image was not visually inspected; covers cardiac muscle only.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Commons file page states attribution terms; ordinary linking to the page is distinct from copying the photo.",
+        "reproductionRights": "CC BY 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Original image request was rate-limited; candidate requires source-image review.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-04-human-cardiac.md"
+        }
+      }
+    ],
+    "reason": "A visually inspected source page covers all three muscle types in distinct micrograph panels, but the organism is not specified, so this remains a relevant unconfirmed-organism match."
+  },
+  {
+    "assetId": "asset-bvis04-nervous-tissue",
+    "title": "Nervous tissue: neuron and neuroglia (schematic)",
+    "status": "unresolved",
+    "references": [],
+    "reason": "No lawful, source-page and visually inspected human tissue image set covering both neuron morphology and the depicted glial-cell types was identified."
+  },
+  {
+    "assetId": "asset-bvis04-nail-section",
+    "title": "Nail in longitudinal section",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "title": "Duke Histology - Skin",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "The skin slide list includes a human fingertip specimen.",
+        "viewLimitations": "The page does not confirm that the nail plate, bed, root and matrix are all pictured; slide photograph was not visually inspected.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Captured page shows descriptions rather than the fingertip slide image: research/boneefied-photo-references/micro-visual-duke-skin.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md"
+        }
+      }
+    ],
+    "reason": "A human fingertip slide is described, but no image-level confirmation of the nail's labeled structures or specific image rights is available."
+  },
+  {
+    "assetId": "asset-bvis05-blood-composition",
+    "title": "Composition of blood: plasma, serum and formed elements",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_peripheral_blood_smear,_May-Gr%C3%BCnwald_stain.jpg",
+        "title": "File:Human peripheral blood smear, May-Grünwald stain.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Bondarev.gal",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human smear directly shows representative erythrocytes, leukocytes and platelets among blood formed elements.",
+        "viewLimitations": "No plasma/serum fractions, centrifuged tube, clot or buffy-coat separation is depicted.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Commons page states attribution terms for the file; outbound page linking is distinct from reproducing the image.",
+        "reproductionRights": "CC BY 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Human smear image and caption checked: research/boneefied-photo-references/micro-visual-blood-smear.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-11-blood-smear.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg",
+        "title": "File:SEM blood cells.jpg",
+        "source": "Wikimedia Commons / U.S. National Cancer Institute",
+        "creator": "Bruce Wetzel and Harry Schaefer",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source description identifies a scanning-electron micrograph of normal circulating human blood.",
+        "viewLimitations": "Image not visually inspected because original-file request and page screenshot were rate-limited; no visual claim about particular cell subclasses.",
+        "termsUrl": "",
+        "linkingTerms": "Source page describes the federal work as public domain and requests source/author credit; ordinary linking is permitted by the page's cited source terms.",
+        "reproductionRights": "Public domain as a U.S. government work is stated; NCI source/author credit is requested.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Original file returned HTTP 429 and screenshot was rate-limited; candidate only.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-03-sem-blood-cells.md"
+        }
+      }
+    ],
+    "reason": "A human smear visually covers formed elements; a human blood SEM is an additional uninspected candidate. Plasma/serum fractions and centrifugation/clot panels remain uncovered."
+  },
+  {
+    "assetId": "asset-bvis05-blood-smear-schematic",
+    "title": "Peripheral blood smear (schematic field)",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_peripheral_blood_smear,_May-Gr%C3%BCnwald_stain.jpg",
+        "title": "File:Human peripheral blood smear, May-Grünwald stain.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Bondarev.gal",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Human peripheral smear photo visibly contains red cells, platelets and multiple white cells.",
+        "viewLimitations": "The photo does not identify every leukocyte type in the schematic; no inference of specific differential-cell labels from appearance alone.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Commons page states attribution terms; linking does not grant permission to copy or embed the file.",
+        "reproductionRights": "CC BY 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Displayed blood-smear field and human caption checked: research/boneefied-photo-references/micro-visual-blood-smear.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-11-blood-smear.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg",
+        "title": "File:SEM blood cells.jpg",
+        "source": "Wikimedia Commons / U.S. National Cancer Institute",
+        "creator": "Bruce Wetzel and Harry Schaefer",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source description identifies an electron micrograph of normal circulating human blood.",
+        "viewLimitations": "Photo was not visually inspected because the original-file URL and screenshot were rate-limited; cell types and fields cannot be verified from the caption alone.",
+        "termsUrl": "",
+        "linkingTerms": "Page describes public-domain federal image and asks for NCI source/author credit; ordinary outbound linking only.",
+        "reproductionRights": "Public domain as a U.S. government work is stated; NCI source/author credit requested.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Original file returned HTTP 429 and screenshot was rate-limited; candidate remains unverified visually.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-03-sem-blood-cells.md"
+        }
+      }
+    ],
+    "reason": "A visually checked human smear and human SEM page description are useful candidates, but no source visually identifies all five leukocyte types or verifies schematic relative sizes."
+  },
+  {
+    "assetId": "asset-bvis05-leukocyte-types",
+    "title": "The five leukocytes, compared",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_peripheral_blood_smear,_May-Gr%C3%BCnwald_stain.jpg",
+        "title": "File:Human peripheral blood smear, May-Grünwald stain.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Bondarev.gal",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "The real human smear includes several white-cell profiles alongside erythrocytes.",
+        "viewLimitations": "The page does not label or establish all five leukocyte subclasses shown in the diagram.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Commons page states attribution terms for the image; this record links to the source page only.",
+        "reproductionRights": "CC BY 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source micrograph checked: research/boneefied-photo-references/micro-visual-blood-smear.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-11-blood-smear.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg",
+        "title": "File:SEM blood cells.jpg",
+        "source": "Wikimedia Commons / U.S. National Cancer Institute",
+        "creator": "Bruce Wetzel and Harry Schaefer",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source describes normal circulating human blood viewed by scanning electron microscopy.",
+        "viewLimitations": "No visual check; no evidence from caption alone that all five named leukocyte forms appear.",
+        "termsUrl": "",
+        "linkingTerms": "File is stated to be public domain as a federal work; source and creator credit are requested.",
+        "reproductionRights": "Public domain as a U.S. government work is stated, with requested source/author credit.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Original image request and screenshot failed with rate limits; candidate not visually verified.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-03-sem-blood-cells.md"
+        }
+      }
+    ],
+    "reason": "Human blood smear and SEM source descriptions are relevant, but the actual SEM image and all five differential-cell appearances remain unverified."
+  },
+  {
+    "assetId": "asset-bvis05-marrow-hematopoiesis",
+    "title": "Red bone marrow and hematopoiesis",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://embryology.med.unsw.edu.au/embryology/index.php?title=File%3ABone_marrow_histology_01.jpg",
+        "title": "File:Bone marrow histology 01.jpg",
+        "source": "UNSW Embryology / Blue Histology",
+        "creator": "Lutz Slomianka",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Displayed red-bone-marrow photomicrograph includes marrow cellularity, adipocytes and blood sinusoids.",
+        "viewLimitations": "Organism is not stated; the field does not establish every progenitor, megakaryocyte and cell-lineage stage in the diagram.",
+        "termsUrl": "https://embryology.med.unsw.edu.au/embryology/index.php?title=File%3ABone_marrow_histology_01.jpg",
+        "linkingTerms": "No separate link restrictions were stated; ordinary page link only. The page's non-commercial reproduction notice is not a general copying license.",
+        "reproductionRights": "Source states non-commercial reproduction/adaptation only; no broad or commercial copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Bone-marrow specimen and page caption checked: research/boneefied-photo-references/micro-visual-unsw-bone-marrow.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-20-unsw-bone-marrow.md"
+        }
+      }
+    ],
+    "reason": "A photographed marrow section is visible, but its species is unconfirmed, rights are non-commercial only, and it does not show the entire hematopoietic lineage diagram."
+  },
+  {
+    "assetId": "asset-bvis05-vessel-wall-types",
+    "title": "Vessel wall layers and vessel types",
+    "status": "unresolved",
+    "references": [],
+    "reason": "No suitable, visually inspected lawful human source-page set was identified for all arterial, venous, capillary and tunica-wall panels."
+  },
+  {
+    "assetId": "asset-bvis05-vessel-flow-chain",
+    "title": "Flow chain: aorta to vein",
+    "status": "unresolved",
+    "references": [],
+    "reason": "This is a continuous circulation/process illustration; no single real photograph or micrograph is an accurate counterpart for the full flow route."
+  },
+  {
+    "assetId": "asset-bvis05-capillary-types",
+    "title": "Three capillary types",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "title": "File:Kidney cortex (947 21) Human.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Josef Reischig",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human kidney cortex image shows glomerular capillary profiles, a relevant fenestrated-capillary setting.",
+        "viewLimitations": "One kidney-cortex field cannot distinguish all continuous, fenestrated and sinusoidal types or depict leukocyte migration.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Commons file page states attribution/share-alike terms; ordinary linking only.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Human kidney cortex, including glomerular field, checked: research/boneefied-photo-references/micro-visual-kidney.png.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-01-kidney.md"
+        }
+      }
+    ],
+    "reason": "A human glomerular field is relevant to fenestrated capillaries, but all other depicted capillary types remain unmatched."
+  },
+  {
+    "assetId": "asset-bvis05-alveolar-unit",
+    "title": "Alveolar unit: bronchiole, duct, sac and alveoli",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+        "title": "File:Alveolar sac.JPG",
+        "source": "Wikimedia Commons",
+        "creator": "Jpogi",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source caption identifies human alveolar-sac tissue, relevant to the alveolar region.",
+        "viewLimitations": "Does not show the transition from bronchiole to duct, nor confirm the full unit or its blood-flow connections; photograph was not visually inspected.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons page states attribution/share-alike terms; source-page link does not authorize image embedding.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Screenshot attempt was rate-limited; source photo awaits visual check.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-02-alveolar.md"
+        }
+      }
+    ],
+    "reason": "The human alveolar-sac page is relevant but cannot represent the full airway-unit schematic and its photograph was not visually checked."
+  },
+  {
+    "assetId": "asset-bvis05-respiratory-membrane-histology",
+    "title": "Respiratory membrane and airway wall",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+        "title": "File:Alveolar sac.JPG",
+        "source": "Wikimedia Commons",
+        "creator": "Jpogi",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human alveolar-sac histology is relevant to alveolar septa and air-space structures.",
+        "viewLimitations": "Ordinary light microscopy does not establish the thin respiratory membrane layers or the separate bronchial wall panel; image was not visually checked.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons page states attribution/share-alike terms; ordinary outbound link only.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Rate-limited screenshot; visual review remains outstanding.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-02-alveolar.md"
+        }
+      }
+    ],
+    "reason": "A human alveolar specimen is a relevant example but cannot verify the respiratory membrane ultrastructure and airway-wall composite."
+  },
+  {
+    "assetId": "asset-bvis05-lymph-node-structure",
+    "title": "Lymph node: afferent, sinuses, efferent and hilum",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+        "title": "Duke Histology - Lymphatic System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page lists a human lymph-node biopsy and a human H&E lymph-node slide.",
+        "viewLimitations": "Slide photos are not displayed in the captured page, and a tissue section will not show the complete afferent/efferent gross flow map.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound page link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Page screenshot contains slide descriptions but not images; source evidence: research/boneefied-photo-references/micro-18-duke-lymphoid.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
+        }
+      }
+    ],
+    "reason": "A human lymph-node slide is identified but not visually inspected; complete gross vessels and sinus-flow coverage cannot be established."
+  },
+  {
+    "assetId": "asset-bvis05-spleen-pulp",
+    "title": "Spleen: red pulp and white pulp",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+        "title": "Duke Histology - Lymphatic System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page identifies a human H&E spleen slide, relevant to splenic pulp.",
+        "viewLimitations": "No actual slide photograph was visually inspected; red/white pulp and marginal-zone detail are not confirmed in the captured image.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Duke page screenshot does not display the specimen image; source description saved in research/boneefied-photo-references/micro-18-duke-lymphoid.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
+        }
+      }
+    ],
+    "reason": "Human spleen histology is identified by source text, but the photograph and pulp details were not visually checked."
+  },
+  {
+    "assetId": "asset-bvis05-thymus-lobule",
+    "title": "Thymus and thymic lobule",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+        "title": "Duke Histology - Lymphatic System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page descriptions identify an adult human H&E thymus slide and a neonatal thymus slide.",
+        "viewLimitations": "The images were not visually inspected; page does not establish the complete gross-position and microscopic Hassall-corpuscle panels together.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Captured source page has slide text but no micrograph: research/boneefied-photo-references/micro-18-duke-lymphoid.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
+        }
+      }
+    ],
+    "reason": "Human thymus slides are identified, but actual images and the complete thymic-lobule structures were not visually confirmed."
+  },
+  {
+    "assetId": "asset-bvis05-tonsil-map-structure",
+    "title": "Tonsils: where they sit and how they are built",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+        "title": "Duke Histology - Lymphatic System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "unconfirmed",
+        "relationship": "relevant-example",
+        "matches": "Page lists a tonsil histology slide as a possible specimen example.",
+        "viewLimitations": "Organism is not identified for this slide; image is not visually displayed and this source does not cover the gross locations of three tonsil groups.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Source page screenshot shows text but not the tissue image; refer to research/boneefied-photo-references/micro-18-duke-lymphoid.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
+        }
+      }
+    ],
+    "reason": "A relevant tonsil slide is listed, but organism and actual image are unverified and no photo can replace the gross-location panels."
+  },
+  {
+    "assetId": "asset-bvis05-gut-lymphoid-lacteal",
+    "title": "Gut-associated lymphoid tissue and the lacteal",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+        "title": "Duke Histology - Lymphatic System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source lists a human ileum slide with lymph nodules, relevant to Peyer patches.",
+        "viewLimitations": "Slide image not visually inspected; source does not confirm villus lacteal or the complete lymphatic drainage map.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound page link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Duke slide descriptions only; evidence: research/boneefied-photo-references/micro-18-duke-lymphoid.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
+        }
+      }
+    ],
+    "reason": "Human ileal lymphoid histology is identified, but no image of the lacteal or lymph route was visually checked."
+  },
+  {
+    "assetId": "asset-bvis05-endocrine-body-map",
+    "title": "Endocrine glands of the body",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Endocrine/Endocrine.html",
+        "title": "Duke Histology - Endocrine System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source descriptions identify human pituitary, thyroid/parathyroid and adrenal histology examples.",
+        "viewLimitations": "No slide photograph is visually available; this does not cover the full body map, pancreas, ovary, testis or pineal/hypothalamus panels.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound source link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Text slide listings only; source evidence: research/boneefied-photo-references/micro-17-duke-endocrine.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-17-duke-endocrine.md"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg",
+        "title": "File:Human pancreatic islet.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Afferent",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page identifies a human pancreatic islet, adding a specific endocrine-organ example to the body-map reference set.",
+        "viewLimitations": "Original image was rate-limited and not visually inspected; an islet does not cover pancreas gross anatomy or the other endocrine glands.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Commons page states attribution/share-alike terms; ordinary source-page linking is distinct from image reproduction.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the source page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Original-file request was rate-limited; image remains a non-verified candidate.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-06-pancreatic-islet.md"
+        }
+      }
+    ],
+    "reason": "Page descriptions identify human pituitary, thyroid/parathyroid, adrenal and pancreatic-islet specimens, but actual images are not visually verified and gross body-map subjects including gonads remain uncovered."
+  },
+  {
+    "assetId": "asset-bvis05-hypothalamus-pituitary-axis",
+    "title": "Hypothalamus and pituitary: portal and neural links",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Endocrine/Endocrine.html",
+        "title": "Duke Histology - Endocrine System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page describes human pituitary sections, relevant to the gland portion of the axis.",
+        "viewLimitations": "A static pituitary micrograph cannot show portal blood flow and neural connections; image itself was not visually inspected.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Slide descriptions visible, not slide photograph; evidence: research/boneefied-photo-references/micro-17-duke-endocrine.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-17-duke-endocrine.md"
+        }
+      }
+    ],
+    "reason": "A human pituitary specimen is described but does not depict the hypothalamic/pituitary vascular and neural paths, and its photo was not inspected."
+  },
+  {
+    "assetId": "asset-bvis05-thyroid-parathyroid",
+    "title": "Thyroid and parathyroid glands",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Endocrine/Endocrine.html",
+        "title": "Duke Histology - Endocrine System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source describes human thyroid-parathyroid histology slides, relevant to the follicle and gland-tissue panels.",
+        "viewLimitations": "Photomicrographs not displayed in captured page; no image-level confirmation of colloid, C cells and parathyroid chief cells.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Academic slide descriptions checked; photographs unavailable in page screenshot. Evidence: research/boneefied-photo-references/micro-17-duke-endocrine.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-17-duke-endocrine.md"
+        }
+      }
+    ],
+    "reason": "Human thyroid/parathyroid examples are described, but the actual image and all labeled microstructures were not visually confirmed."
+  },
+  {
+    "assetId": "asset-bvis05-adrenal-zones",
+    "title": "Adrenal gland: cortex zones and medulla",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Endocrine/Endocrine.html",
+        "title": "Duke Histology - Endocrine System",
+        "source": "Duke University Medical School Histology Learning Resources",
+        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Page identifies a human H&E adrenal-gland slide, relevant to cortical and medullary zones.",
+        "viewLimitations": "Slide image was not visually inspected; source does not confirm each zone, chromaffin cells or the related kidney-position panel.",
+        "termsUrl": "",
+        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+        "reproductionRights": "No image-copying permission established.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Only the text slide description was captured; source evidence: research/boneefied-photo-references/micro-17-duke-endocrine.md.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/micro-17-duke-endocrine.md"
+        }
+      }
+    ],
+    "reason": "Human adrenal histology is named but its photo was not inspected and the source does not confirm the full cortical-zone detail."
+  },
+  {
+    "assetId": "asset-bvis05-pancreas-islet",
+    "title": "Pancreas: exocrine acini and the endocrine islet",
+    "status": "partial",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg",
+        "title": "File:Human pancreatic islet.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Afferent",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Source caption identifies a human pancreatic islet with glucagon and insulin immunostaining.",
+        "viewLimitations": "Original image was rate-limited and not visually inspected; islet only, with no confirmed exocrine acini, gross pancreas, or delta-cell detail.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Commons page states attribution/share-alike terms; ordinary outbound page link is distinct from image copying.",
+        "reproductionRights": "CC BY-SA 3.0 is stated on the source page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": false,
+          "visualEvidence": "Original-file request was rate-limited; image remains a candidate rather than verified photo.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/sources/gapfill-06-pancreatic-islet.md"
+        }
+      }
+    ],
+    "reason": "A human pancreatic-islet candidate is identified and CC-licensed, but not visually inspected; exocrine acini and whole-pancreas panels remain unmatched."
+  },
+  {
+    "assetId": "asset-bvis05-ovary-testis",
+    "title": "Gonads: ovary and testis",
+    "status": "unresolved",
+    "references": [],
+    "reason": "No exact source-page set with visually inspected, lawfully linkable human ovary follicles/corpus luteum and testis tubule/interstitium images was found."
+  }
+]

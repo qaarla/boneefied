@@ -1,0 +1,82 @@
+[
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+    "redirects": 0,
+    "error": null
+  },
+  {
+    "requestedUrl": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+    "httpStatus": "200",
+    "contentType": "text/html; charset=UTF-8",
+    "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+    "redirects": 0,
+    "error": null
+  }
+]

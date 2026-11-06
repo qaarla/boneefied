@@ -1,0 +1,2 @@
+Evidence note — visceral-29-small-intestine-wellcome.md
+Checked 2026-11-06T21:25:21.142Z. Wellcome Collection page identifies a human small-intestinal mucosa/villi image by S. Schuller and CC BY 4.0. The page's published IIIF image was viewed temporarily; it shows fluorescently labeled villus epithelium. This is a micrograph-level relevant example, not proof of all cell types or a full gut-wall section. No image was retained in the workspace.

@@ -1,0 +1,2 @@
+Evidence note — visceral-34-diaphragm.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 130-6 identifies a diaphragm dissection with central tendon, crura and apertures. Its published source image was viewed temporarily; it shows a real diaphragm specimen. It does not provide both pleural layers or an animated/paired breathing view. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

@@ -1,0 +1,2 @@
+Evidence note — visceral-43-femoral.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 186-7 identifies femoral-artery branches in an anterior/medial thigh dissection. Its published source photo was viewed temporarily and shows the dissected thigh arterial region. It does not show the complete femoral/popliteal/tibial course. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

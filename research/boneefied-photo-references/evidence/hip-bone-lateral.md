@@ -1,0 +1,1 @@
+Checked 2026-11-06. Commons File:Pelvis - os coxae (lateral view) 2.jpg was visually inspected; it shows one dry human os coxae from lateral aspect, including acetabulum and obturator foramen. Creator MAKY.OREL; Charles University anthropological collection; 2019-05-31; CC0 1.0. The side is not stated and no medial view is supplied. No source image copied into workspace.

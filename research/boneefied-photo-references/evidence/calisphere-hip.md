@@ -1,0 +1,3 @@
+Source-page evidence summary (checked 2026-11-06).
+
+Calisphere item 24a7f9683d12b5f4df0ab22a62243de1 was opened; caption and item image, creator/date metadata, institution, and rights statement were inspected. The screenshot visibly showed a natural-color dissection of a hip joint with the femoral head dislocated. Creators Irving Rehman and Chadwick F. Smith; University of Southern California Digital Library / Norris Medical Library; dates recorded as 1946/1980 and 1990/2000. Stated license CC BY-NC-SA 2.5 with attribution instructions. Relevant example only; it is not a dry hip-bone or standalone femur specimen view. Public Calisphere item page supports ordinary outbound linking; reproductions remain subject to stated license.

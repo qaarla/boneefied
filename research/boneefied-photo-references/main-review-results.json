@@ -1,0 +1,32 @@
+[
+  {
+    "assetId": "asset-commons-kidney-cortex-human",
+    "title": "Human kidney cortex specimen",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "title": "Human kidney cortex — original specimen photograph",
+        "source": "Wikimedia Commons; author's archive",
+        "creator": "Doc. RNDr. Josef Reischig, CSc.",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "The original page for the same human renal-cortex photomicrograph already displayed in Boneefied, including the glomerular tuft, surrounding capsular space, tubules and vessels.",
+        "viewLimitations": "A cortex microscopy field, not the whole kidney, all nephron segments or filtration-barrier ultrastructure.",
+        "termsUrl": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "linkingTerms": "Ordinary outbound source-page link; retain the named creator and consult the file-specific license. Linking does not exercise reproduction rights.",
+        "reproductionRights": "The source page declares CC BY-SA 3.0 Unported. No copying or embedding is performed by this command.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Main agent viewed the actual Commons source page and compared its image against the existing bundled kidney-cortex image; corresponding glomerulus, tubules and 0.1 mm scale bar agree.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/evidence/main-kidney.md"
+        }
+      }
+    ],
+    "reason": "Existing genuine human photomicrograph; its original source page was independently opened, visually compared and checked for creator/license metadata."
+  }
+]

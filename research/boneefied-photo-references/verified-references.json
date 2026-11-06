@@ -1,0 +1,377 @@
+[
+  {
+    "assetId": "asset-skeletal-atlas-skull-base-external",
+    "title": "Skull base, external (inferior) view",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+        "title": "Cranium - inferior view.jpg",
+        "source": "Wikimedia Commons; Charles University anthropological collections",
+        "creator": "MAKY.OREL",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "An actual unpainted dry human skull photographed from the external inferior surface; mandible and atlas are absent, matching the external skull-base orientation.",
+        "viewLimitations": "No labels; small foramina and projections are not individually named; laterality is not stated.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source page is suitable for ordinary outbound linking; link to the source record and retain the displayed creator/institution attribution.",
+        "reproductionRights": "CC BY-SA 4.0 stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed the actual unpainted cranium from below, with the external skull base and foramen magnum visible; caption and image were checked together.",
+          "checkedAt": "2026-11-06T21:25:07.121Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-01-skeletal-atlas-skull-base-external.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+        },
+        "subject": {
+          "en": "Human dry skull, inferior surface; laterality not stated",
+          "es": "Cráneo humano seco, vista inferior; lateralidad no indicada"
+        }
+      }
+    ],
+    "reason": "The unpainted dry human cranium is photographed from the inferior external base with mandible and atlas absent. Fine foramina are unlabelled; laterality is immaterial here.",
+    "coverageKind": "direct-match",
+    "finalReview": "The unpainted dry human cranium is photographed from the inferior external base with mandible and atlas absent. Fine foramina are unlabelled; laterality is immaterial here."
+  },
+  {
+    "assetId": "asset-skeletal-atlas-cranial-floor-internal",
+    "title": "Cranial floor, internal (superior) view",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+        "title": "Cranium - basis cranii interna.jpg",
+        "source": "Wikimedia Commons; Charles University anthropological collections",
+        "creator": "MAKY.OREL",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "A dry human cranium photographed from the superior/internal cranial-base aspect; the cranial floor, fossae and openings are present.",
+        "viewLimitations": "The specimen is unannotated; small named canals/foramina are less explicit than the illustration's labels and require high-resolution inspection.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source page is suitable for ordinary outbound linking; link to the source record and retain the displayed creator/institution attribution.",
+        "reproductionRights": "CC BY-SA 4.0 stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot displayed the actual dry cranial base from above with fossae and foramina; source page caption/metadata and image were checked together.",
+          "checkedAt": "2026-11-06T21:25:07.121Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-02-skeletal-atlas-cranial-floor-internal.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+        },
+        "subject": {
+          "en": "Human dry cranial floor, superior/internal view",
+          "es": "Base craneal humana seca, vista superior/interna"
+        }
+      }
+    ],
+    "reason": "A genuine dry human cranium is shown from the internal cranial-floor aspect; named openings remain unlabelled but the depicted floor and fossae are present.",
+    "coverageKind": "direct-match",
+    "finalReview": "A genuine dry human cranium is shown from the internal cranial-floor aspect; named openings remain unlabelled but the depicted floor and fossae are present."
+  },
+  {
+    "assetId": "asset-skeletal-atlas-scapula",
+    "title": "Right scapula: anterior (left) and posterior (right)",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+        "title": "Anterior surface of scapula — natural human dry-bone photograph",
+        "source": "Wikimedia Commons; Anatomist90",
+        "creator": "Anatomist90",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Photographed human scapula in anterior/costal view, showing the subscapular fossa, borders, angles, coracoid, acromion and glenoid side. Actual image inspected, including natural cortical and porous bone detail.",
+        "viewLimitations": "A separately photographed dry scapula with explanatory labels. Donor history and exact side are not established; not asserted to be the same right-sided bone as the posterior photograph.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "linkingTerms": "Ordinary outbound file-page link with image and context; creator and file-specific attribution/share-alike terms remain on the destination. Linking does not exercise reproduction rights.",
+        "reproductionRights": "CC BY-SA 3.0 Unported stated on the file page; no copy or embedding into Boneefied.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Main agent inspected linked original temporarily: natural brown dry scapula, cortical/porous bone detail, entire anterior surface and landmarks visible. Provider classifies it as human. Material not inferred solely from filename.",
+          "checkedAt": "2026-11-06",
+          "reviewedAtFinalCheck": "2026-11-06T22:17:59.750Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-main-scapula-anterior-verified.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+          "redirectNotes": "Final GET source page HTTP 200 text/html, zero HTTP redirects; original image viewed separately, not used as app destination.",
+          "termsChecked": true,
+          "termsUrlChecked": true
+        },
+        "subject": {
+          "en": "Anterior (side unstated)",
+          "es": "Anterior (lado no indicado)"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+        "title": "Scapula - posterior view.jpg",
+        "source": "Wikimedia Commons; Charles University anthropological collections",
+        "creator": "MAKY.OREL",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Actual human scapula photographed from its posterior aspect, with spine and acromion visible.",
+        "viewLimitations": "Only posterior view; laterality is not stated and it is not established as the same scapula as anterior-view candidate.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "The public source page is suitable for ordinary outbound linking; link to the source record and retain the displayed creator/institution attribution.",
+        "reproductionRights": "CC0 1.0 dedication stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed a real isolated posterior scapula specimen; image and page record were checked together.",
+          "checkedAt": "2026-11-06T21:25:07.121Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-08-skeletal-atlas-scapula.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+        },
+        "subject": {
+          "en": "Posterior (side unstated)",
+          "es": "Posterior (lado no indicado)"
+        }
+      }
+    ],
+    "reason": "Separate photographed human scapula specimens provide the anterior and posterior surfaces, with the coracoid/glenoid side and posterior spine/acromion respectively visible. Side and same-bone identity are not stated; that is a real-example limitation, not a missing view.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Separate photographed human scapula specimens provide the anterior and posterior surfaces, with the coracoid/glenoid side and posterior spine/acromion respectively visible. Side and same-bone identity are not stated; that is a real-example limitation, not a missing view."
+  },
+  {
+    "assetId": "asset-skeletal-atlas-humerus",
+    "title": "Right humerus: anterior (left) and posterior (right)",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+        "title": "Humerus - anterior 2.jpg",
+        "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+        "creator": "MAKY.OREL",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Two full-length dry human humeri photographed from anterior aspect.",
+        "viewLimitations": "Two specimens; same bone/laterality as posterior pair is not established.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "Public Wikimedia Commons source page; ordinary outbound linking permitted. Preserve page and creator attribution.",
+        "reproductionRights": "CC0 1.0 dedication stated on Commons file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source-page screenshot shows two complete dry humerus specimens in anterior aspect.",
+          "checkedAt": "2026-11-06T21:35:10.926Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-10-skeletal-atlas-humerus.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+        },
+        "subject": {
+          "en": "Anterior (side unstated)",
+          "es": "Anterior (lado no indicado)"
+        }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+        "title": "Humerus - posterior 2.jpg",
+        "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+        "creator": "MAKY.OREL",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Two full-length dry human humeri photographed from posterior aspect.",
+        "viewLimitations": "Two specimens; same bone/laterality as anterior pair is not established.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "Public Wikimedia Commons source page; ordinary outbound linking permitted. Preserve page and creator attribution.",
+        "reproductionRights": "CC0 1.0 dedication stated on Commons file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source-page screenshot shows two complete dry humerus specimens in posterior aspect.",
+          "checkedAt": "2026-11-06T21:35:10.926Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-10-skeletal-atlas-humerus.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+        },
+        "subject": {
+          "en": "Posterior (side unstated)",
+          "es": "Posterior (lado no indicado)"
+        }
+      }
+    ],
+    "reason": "Verified human dry-humerus specimen photos show complete anterior and posterior aspects. They do not establish that both views are the same right bone; laterality/pair identity is disclosed as unconfirmed.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Verified human dry-humerus specimen photos show complete anterior and posterior aspects. They do not establish that both views are the same right bone; laterality/pair identity is disclosed as unconfirmed."
+  },
+  {
+    "assetId": "asset-skeletal-atlas-femur",
+    "title": "Right femur: anterior (left) and posterior (right)",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+        "title": "Femur - anterior, posterior.jpg",
+        "source": "Wikimedia Commons; Charles University anthropological collections",
+        "creator": "MAKY.OREL",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "One actual dry human femur shown in the file's anterior and posterior views; both long-bone aspects are visibly present, including the posterior linea-aspera ridge.",
+        "viewLimitations": "No labels are overprinted and laterality is not stated; the image title gives the paired views but not individual panel labels.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "The public source page is suitable for ordinary outbound linking; link to the source record and retain the displayed creator/institution attribution.",
+        "reproductionRights": "CC0 1.0 dedication stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot of the Commons source page showed both photographs of a dry femur; the anterior and posterior bone aspects were visually distinguishable and match the illustration's paired views.",
+          "checkedAt": "2026-11-06T21:25:07.121Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-14-skeletal-atlas-femur.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+        },
+        "subject": {
+          "en": "Both views (side unstated)",
+          "es": "Ambas vistas (lado no indicado)"
+        }
+      }
+    ],
+    "reason": "The one dry human femur is shown in anterior and posterior views, including posterior linea aspera; side is not stated, so a right-sided specimen is not claimed.",
+    "coverageKind": "relevant-example",
+    "finalReview": "The one dry human femur is shown in anterior and posterior views, including posterior linea aspera; side is not stated, so a right-sided specimen is not claimed."
+  },
+  {
+    "assetId": "asset-commons-kidney-cortex-human",
+    "title": "Human kidney cortex specimen",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "title": "Human kidney cortex — original specimen photograph",
+        "source": "Wikimedia Commons; author's archive",
+        "creator": "Doc. RNDr. Josef Reischig, CSc.",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "The original page for the same human renal-cortex photomicrograph already displayed in Boneefied, including the glomerular tuft, surrounding capsular space, tubules and vessels.",
+        "viewLimitations": "A cortex microscopy field, not the whole kidney, all nephron segments or filtration-barrier ultrastructure.",
+        "termsUrl": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "linkingTerms": "Ordinary outbound source-page link; retain the named creator and consult the file-specific license. Linking does not exercise reproduction rights.",
+        "reproductionRights": "The source page declares CC BY-SA 3.0 Unported. No copying or embedding is performed by this command.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page, caption and displayed image checked against saved photographic evidence; image observed as human The original page for the same human renal-cortex photomicrograph already displayed in Boneefied, including the glomerular tuft, surrounding capsular space, tubules and vessels.. Anatomy outside this specific view is not inferred.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-micro-asset-commons-kidney-cortex-human-human-kidney-cortex-original-specimen-phot.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+        },
+        "subject": {
+          "en": "human kidney cortex photomicrograph",
+          "es": "fotomicrografía de corteza renal humana"
+        }
+      }
+    ],
+    "reason": "Final comparison: the displayed human kidney-cortex photomicrograph and file caption identify cortex with glomeruli/tubules; creator and file-specific CC BY-SA 3.0 terms are recorded. This is a direct specimen counterpart; stain/magnification are not inferred beyond the caption.",
+    "coverageKind": "direct-match",
+    "finalReview": "Final comparison: the displayed human kidney-cortex photomicrograph and file caption identify cortex with glomeruli/tubules; creator and file-specific CC BY-SA 3.0 terms are recorded. This is a direct specimen counterpart; stain/magnification are not inferred beyond the caption."
+  },
+  {
+    "assetId": "asset-commons-alveolar-sac",
+    "title": "Alveolar sac specimen",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+        "title": "File:Alveolar sac.JPG",
+        "source": "Wikimedia Commons",
+        "creator": "Jpogi",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "Source page caption identifies a human alveolar-sac histology slide; the original image was visually inspected and shows broad air spaces separated by thin septa.",
+        "viewLimitations": "Alveolar-sac field only; stain and magnification are not asserted.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "Commons file page states CC BY-SA 4.0 for image reuse; this audit uses an ordinary source-page link only.",
+        "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Direct original JPEG viewed temporarily from the linked upload URL: real photomicrograph with large air spaces and delicate septa; the file page caption identifies a human alveolar-sac histology slide and names Jpogi.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-micro-asset-commons-alveolar-sac-human-alveolar-sac.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T22:02:38.878Z",
+          "termsChecked": true,
+          "termsUrlChecked": true,
+          "reviewedRevisionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Alveolar_sac.JPG&oldid=1047336678"
+        },
+        "subject": {
+          "en": "human alveolar-sac photomicrograph",
+          "es": "fotomicrografía de saco alveolar humano"
+        }
+      }
+    ],
+    "reason": "The exact Commons source page identifies a human alveolar-sac slide; its original image URL was retrieved and visually inspected, showing broad air spaces and septa. Creator Jpogi and CC BY-SA 4.0 terms are documented. This is a direct match for the assigned alveolar-sac specimen.",
+    "coverageKind": "direct-match",
+    "finalReview": "The exact Commons source page identifies a human alveolar-sac slide; its original image URL was retrieved and visually inspected, showing broad air spaces and septa. Creator Jpogi and CC BY-SA 4.0 terms are documented. This is a direct match for the assigned alveolar-sac specimen."
+  },
+  {
+    "assetId": "asset-commons-simple-squamous-epithelium",
+    "title": "Simple squamous epithelium specimen",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+        "title": "File:Human Simple Squamous Epithelium Tissue.jpg",
+        "source": "Wikimedia Commons",
+        "creator": "Naz Amann",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "The file caption identifies human simple squamous epithelium and the source page displays the tissue photomicrograph.",
+        "viewLimitations": "This specimen image illustrates a field of simple squamous epithelium, not a comprehensive comparison of epithelial types.",
+        "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "linkingTerms": "Commons page states attribution terms for the file; outbound linking to the source page is distinct from reproducing the image.",
+        "reproductionRights": "CC BY 4.0 is stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page, caption and displayed image checked against saved photographic evidence; image observed as human The file caption identifies human simple squamous epithelium and the source page displays the tissue photomicrograph.. Anatomy outside this specific view is not inferred.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-micro-asset-commons-simple-squamous-epithelium-file-human-simple-squamous-epithelium-tiss.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+        },
+        "subject": {
+          "en": "human simple squamous epithelium",
+          "es": "epitelio plano simple humano"
+        }
+      }
+    ],
+    "reason": "Final comparison: the visible photo and caption identify human simple squamous epithelium; creator Naz Amann and CC BY 4.0 are stated on the file page. This single target is a direct match; no extra anatomy is claimed.",
+    "coverageKind": "direct-match",
+    "finalReview": "Final comparison: the visible photo and caption identify human simple squamous epithelium; creator Naz Amann and CC BY 4.0 are stated on the file page. This single target is a direct match; no extra anatomy is claimed."
+  }
+]

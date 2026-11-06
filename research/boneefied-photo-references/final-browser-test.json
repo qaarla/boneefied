@@ -1,0 +1,43 @@
+{
+  "assignmentId": "1ca91415-d922-44d7-868b-22bade312680",
+  "jobId": "boneefied-photo-link-check:2063",
+  "kind": "testing",
+  "name": "boneefied-photo-link-check",
+  "screenshots": [
+    {
+      "description": "Enlarged English scapula viewer footer with distinct, wrapped anterior and posterior links.",
+      "id": "xhqbgc"
+    },
+    {
+      "description": "Enlarged Spanish scapula footer; both “lado no indicado” labels, wrapping, and external-link icons are visible.",
+      "id": "fc8xwx"
+    },
+    {
+      "description": "Wikimedia Commons page opened by the anterior scapula link, showing the exact source file page.",
+      "id": "7balje"
+    },
+    {
+      "description": "Spanish alveolar-sac sample showing the real micrograph and the explicit “(microscopio)” link label with photomicrograph context.",
+      "id": "x9lh2n"
+    },
+    {
+      "description": "Offline state: local alveolar image and controls remain visible with the localized recoverable connection message; no popup opened.",
+      "id": "98ymws"
+    },
+    {
+      "description": "Blocked-popup simulation: same recoverable Spanish message appears while the local study image and controls remain available.",
+      "id": "obpvtl"
+    },
+    {
+      "description": "Commons alveolar-sac file page opened after restoring connectivity and retrying; confirms navigation to the exact source PAGE.",
+      "id": "gtujgn"
+    },
+    {
+      "description": "Settings restored to English, Text Default, System theme, and Haptics On.",
+      "id": "teywp4"
+    }
+  ],
+  "status": "completed",
+  "text": "Focused photo-link pass completed on the refreshed Expo browser preview. I restarted `artifacts/boneefied: expo`, reloaded the app, and waited for the initially blank/cold screenshots to settle; the app then rendered normally. No source, app, package, or configuration files were changed, and no build, simulator, or publishing action was started.\n\n**Verified**\n- At Text Large, the scapula footer rendered two distinct links under the same asset test ID: “Anterior (side unstated)” and “Posterior (side unstated)” in English; in Spanish they read “Anterior (lado no indicado)” and “Posterior (lado no indicado).” Both wrapped onto two lines without clipping at 402×874, measured 312×54 px, targeted `_blank`, and pointed to their corresponding Commons file pages. The external-link icons were at the right of the footer rows; neither link was inside the artwork’s gesture surface.\n- On the scapula viewer, Zoom in changed scale 1→1.5; a drag changed its translation; Reset returned it to zero translation and scale 1. In the enlarged Spanish view, after zooming to 1.5, opening the anterior link reached the exact page `https://commons.wikimedia.org/wiki/File:Scapula_ant.jpg`. Closing the popup left the same expanded lesson, scale 1.5, and nested scrollTop 9939 unchanged.\n- In active Spanish Recall on the eligible skull-base viewer, the link was absent initially and remained absent after revealing 1 of 20 labels. “Mostrar todas” revealed all 20 labels, after which the optional link returned.\n- The respiratory module’s verified alveolar-sac sample was labeled “Fotomicrografía real — no un esquema”; its link explicitly said “Ver foto real (microscopio) · Wikimedia Commons.” The Commons source page opened at `https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG`.\n- Offline, `navigator.onLine` was false. Tapping the alveolar link opened no popup and showed the recoverable Spanish message: “No se pudo abrir. Revisa tu conexión y toca el enlace de nuevo.” The local image and zoom controls remained available. After reconnecting, retry opened the exact source page and cleared the stale alert while preserving the study route and scroll state. With a temporary `window.open` stub returning null, the same message appeared and no popup opened; the original native `window.open` was restored and verified.\n- Initial settings were restored: English, Text Default, System theme, and Haptics On.\n\n**Verification limit / no app failure observed:** The existing 3-question skeletal Practice session’s first unsubmitted question was text-only (“¿Qué hueso del antebrazo está del lado del pulgar en posición anatómica?”); it had no eligible illustration and submission was disabled until an answer was selected. I did not answer or submit it to avoid changing progress, so this pass does not establish Practice-question gating or submitted/revealed feedback. No answer was submitted and no local-study-data reset was used. Physical-device results are unavailable (no connected device target was reported); no simulator/build was started.\n\n**Separate from app behavior:** cold navigation briefly produced blank screenshots before rendering recovered after waiting. Wikimedia Commons also logged `Error: View mediainfoview does not exist` on a source page; the requested file pages themselves opened. Neither prevented the tested link flows.",
+  "verdict": "success"
+}

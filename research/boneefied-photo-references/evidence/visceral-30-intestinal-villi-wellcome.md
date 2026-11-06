@@ -1,0 +1,2 @@
+Evidence note — visceral-30-intestinal-villi-wellcome.md
+Checked 2026-11-06T21:25:21.142Z. Wellcome Collection page identifies intestinal villi by Liz Hirst (Medical Research Council) and CC BY 4.0. The published IIIF image was viewed temporarily and visibly shows a single enlarged villus by electron microscopy. Organism is not specified on the checked page, so it is unconfirmed. No image was retained in the workspace.

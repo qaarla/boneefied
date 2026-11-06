@@ -1,0 +1,2 @@
+Evidence note — visceral-38-salivary-gland-peir.md
+Checked 2026-11-06T21:25:21.142Z. PEIR page 00246802 identifies a prosected head with parotid salivary gland and credits Peter Anderson. Its page screenshot visibly shows the prosected head and caption, so the page photograph was visually checked. The page does not state species or reuse license/terms; record organism as unconfirmed and no copying permission established. It is only a parotid example, not the entire mouth/salivary-gland plate.

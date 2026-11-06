@@ -1,0 +1,2 @@
+Evidence note — visceral-27-sigmoid-colon.md
+Checked 2026-11-06T21:25:21.142Z. Stanford Bassett page 144-4 describes sigmoid-colon mesentery opened to expose lymph nodes, lymphatic vessels and arteries. The source-linked photo was viewed temporarily and shows a pelvic colon dissection, not a whole-body lymph route or full anal canal. No image was retained in the workspace. CC BY-SA 4.0 is stated by Stanford.

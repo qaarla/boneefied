@@ -1,0 +1,1859 @@
+[
+  {
+    "id": "asset-bvis05-heart-anterior",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-01-heart-anterior.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Heart from the front: chambers, apex and great vessels",
+    "description": "Anterior view, patient right at viewer left. The right atrium forms the right border and the right ventricle most of the front; the left ventricle forms the left border and apex, which points down and to the left. Most of the left atrium is posterior; its left auricle projects into the anterior view. The coronary sulcus (fat-filled groove) separates atria from ventricles. The superior vena cava and inferior vena cava enter the right atrium; the pulmonary trunk leaves the right ventricle and splits into right and left pulmonary arteries. Colour follows oxygenation: pulmonary arteries carry deoxygenated blood and are blue; pulmonary veins carry oxygenated blood and are red. The ascending aorta rises behind the pulmonary trunk, arches to the left and gives the brachiocephalic, left common carotid and left subclavian arteries; the descending aorta runs behind the heart. Right panel: heart axis, base (broad upper surface, mostly left atrium, facing back) and apex. Gross diagram, simplified. Orientation: anterior view; patient right at viewer left; right panel shows the long axis from base to apex.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 3,
+      "glossary": 21,
+      "question": 26
+    },
+    "exampleUses": [
+      "gallery:cardiovascular-system",
+      "lesson:cardiovascular-system:cv-orientation",
+      "glossary:cv-heart",
+      "question:q-visual-heart-aorta"
+    ],
+    "depictedLabels": [
+      "Heart",
+      "Apex of heart",
+      "Coronary sulcus",
+      "Right auricle",
+      "Left auricle",
+      "Right atrium",
+      "Right ventricle",
+      "Left ventricle",
+      "Pulmonary trunk",
+      "Superior vena cava",
+      "Inferior vena cava",
+      "Ascending aorta",
+      "Aortic arch",
+      "Brachiocephalic trunk",
+      "Left common carotid artery",
+      "Left subclavian artery",
+      "Right pulmonary artery",
+      "Left pulmonary artery",
+      "Pulmonary veins",
+      "Descending aorta",
+      "Base of heart",
+      "Apex of heart"
+    ]
+  },
+  {
+    "id": "asset-bvis05-heart-chambers-valves",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-02-heart-chambers-valves.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Opened heart: chambers, valves and flow",
+    "description": "Frontal section of the heart seen from the front, patient right at viewer left. Blue-toned right atrium and right ventricle receive and pump deoxygenated blood; red-toned left atrium and left ventricle handle oxygenated blood. Blood flows atrium to ventricle through the tricuspid valve (three leaflets, right) and mitral valve (two leaflets, left); leaflet edges are tethered by chordae tendineae to papillary muscles, which stop the valves everting. The interatrial septum divides the atria, the thicker interventricular septum the ventricles. The left ventricular myocardium is much thicker than the right. Wall layers from outside in: epicardium, myocardium, endocardium (thin lining on every chamber). Arrows show forward flow. The aortic and pulmonary valves lie out of this plane (next plate). Gross diagram, simplified. Orientation: frontal section from the front; patient right at viewer left; apex down and to viewer right.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 14,
+      "question": 11
+    },
+    "exampleUses": [
+      "gallery:cardiovascular-system",
+      "lesson:cardiovascular-system:cv-chambers",
+      "glossary:cv-right-atrium",
+      "question:q-bvis05-locate-cv-left-atrium"
+    ],
+    "depictedLabels": [
+      "Right atrium",
+      "Left atrium",
+      "Right ventricle",
+      "Left ventricle",
+      "Interatrial septum",
+      "Interventricular septum",
+      "Tricuspid valve",
+      "Mitral valve",
+      "Chordae tendineae",
+      "Papillary muscles",
+      "Myocardium",
+      "Endocardium",
+      "Epicardium",
+      "Pulmonary veins"
+    ]
+  },
+  {
+    "id": "asset-bvis05-heart-valves-superior",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-03-heart-valves-superior.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Valves of the heart from above",
+    "description": "Superior view of the heart base after removal of the atria and great vessels; anterior at the top, patient right at viewer left. The pulmonary valve lies in front and to the left of the central aortic valve; the tricuspid valve lies to the right and the mitral valve behind and to the left. The pulmonary and aortic valves each have three semilunar cusps; the tricuspid valve has three leaflets and the mitral valve two. All four rings are bound by the fibrous skeleton (pale ring). The right coronary artery arises from the right aortic sinus and the left coronary artery from the left aortic sinus, just above the cusps; the third (non-coronary) sinus faces backward. Simplified, valves drawn closed in one plane for comparison. Orientation: superior view; anterior at top; patient right at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 6,
+      "question": 6
+    },
+    "exampleUses": [
+      "gallery:cardiovascular-system",
+      "lesson:cardiovascular-system:cv-valves",
+      "glossary:cv-tricuspid",
+      "question:q-practical-heart-right-coronary"
+    ],
+    "depictedLabels": [
+      "Pulmonary semilunar valve",
+      "Aortic semilunar valve",
+      "Tricuspid valve",
+      "Mitral valve",
+      "Right coronary artery",
+      "Left coronary artery"
+    ]
+  },
+  {
+    "id": "asset-bvis05-heart-wall-pericardium",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-04-heart-wall-pericardium.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Pericardium and layers of the heart wall",
+    "description": "Left: heart in its pericardial sac (coronal schematic). The tough fibrous pericardium forms the outer bag; inside it the serous pericardium has a parietal layer lining the fibrous sac and a visceral layer (the epicardium) on the heart, with the pericardial cavity between them. In life the cavity holds only a thin film of serous fluid; it is drawn as a wide gap here for clarity. Right: the wall from outside to lumen: fibrous pericardium, parietal serous layer, pericardial cavity, epicardium, thick myocardium (cardiac muscle) and the thin endocardium lining the blood-filled chamber. Schematic, layer thicknesses exaggerated. Orientation: left: coronal schematic of heart in sac; right: wall layers, outside at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 6,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:cardiovascular-system:cv-chambers",
+      "glossary:cv-myocardium",
+      "question:q-bvis05-locate-cv-fibrous-pericardium"
+    ],
+    "depictedLabels": [
+      "Fibrous pericardium",
+      "Pericardial cavity",
+      "Fibrous pericardium",
+      "Serous pericardium",
+      "Pericardial cavity",
+      "Epicardium",
+      "Myocardium",
+      "Endocardium",
+      "Myocardium",
+      "Serous pericardium"
+    ]
+  },
+  {
+    "id": "asset-bvis05-coronary-anterior",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-05-coronary-anterior.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Coronary vessels, anterior surface",
+    "description": "Anterior view, patient right at viewer left. The right coronary artery arises from the right aortic sinus, runs in the right atrioventricular groove under the right auricle and gives the right marginal artery along the lower border of the right ventricle. The short left main coronary artery arises from the left aortic sinus behind the pulmonary trunk and divides into the left anterior descending artery (LAD), in the anterior interventricular groove toward the apex, and the circumflex artery in the left atrioventricular groove. The great cardiac vein accompanies the LAD up the interventricular groove, then follows the circumflex around the left side to the back of the heart. The coronary sinus and middle cardiac vein are on the posterior plate. Arteries red, vein blue; great vessels are unlabelled context. Simplified. Orientation: anterior view; patient right at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 6,
+      "question": 5
+    },
+    "exampleUses": [
+      "lesson:cardiovascular-system:cv-coronary",
+      "glossary:cv-right-coronary",
+      "question:q-bvis05-locate-cv-right-marginal"
+    ],
+    "depictedLabels": [
+      "Right coronary artery",
+      "Right marginal artery",
+      "Left coronary artery",
+      "Anterior interventricular artery",
+      "Circumflex artery",
+      "Great cardiac vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-coronary-posterior",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-06-coronary-posterior.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Coronary sinus and posterior coronary vessels",
+    "description": "Posterior view, so patient right is at viewer right. The left atrium forms most of the base, with the pulmonary veins entering on both sides; the left ventricle lies at viewer left and the right ventricle lower right. The coronary sinus is the large vein lying in the left posterior atrioventricular groove; it is the continuation of the great cardiac vein and opens into the right atrium beside the inferior vena cava. The middle cardiac vein rises in the posterior interventricular groove beside the posterior interventricular artery and drains into the coronary sinus; the small cardiac vein runs with the right coronary artery and also joins the sinus. In most hearts (right dominance) the right coronary artery gives the posterior interventricular artery; the circumflex runs in the left groove alongside the sinus. Pulmonary veins red (oxygenated), caval veins blue. Simplified. Orientation: posterior view; patient right at viewer right.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 10,
+      "question": 5
+    },
+    "exampleUses": [
+      "lesson:cardiovascular-system:cv-coronary",
+      "glossary:cv-right-coronary",
+      "question:q-bvis05-locate-cv-coronary-sinus"
+    ],
+    "depictedLabels": [
+      "Coronary sinus",
+      "Middle cardiac vein",
+      "Posterior interventricular artery",
+      "Small cardiac vein",
+      "Great cardiac vein",
+      "Circumflex artery",
+      "Right coronary artery",
+      "Pulmonary veins",
+      "Inferior vena cava",
+      "Superior vena cava"
+    ]
+  },
+  {
+    "id": "asset-bvis05-conduction-system",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-07-conduction-system.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Conduction system of the heart",
+    "description": "Frontal section, patient right at viewer left. The sinoatrial (SA) node, the pacemaker, sits in the wall of the right atrium near the opening of the superior vena cava. The impulse spreads through the atrial muscle (dotted route) to the atrioventricular (AV) node low in the septum near the tricuspid valve, where it is briefly delayed. It passes into the atrioventricular bundle (bundle of His) through the fibrous skeleton, which divides at the top of the interventricular septum into right and left bundle branches running down each side of the septum to the apex, and then spreads through Purkinje fibres under the endocardium of both ventricles. Conduction tissue is a specialized muscle, drawn here as a thin ochre pathway; it is simplified and thicker than in life. Orientation: frontal section from the front; patient right at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 4,
+      "question": 5
+    },
+    "exampleUses": [
+      "lesson:cardiovascular-system:cv-conduction",
+      "glossary:cv-sa-node",
+      "question:q-bvis05-locate-cv-sa-node"
+    ],
+    "depictedLabels": [
+      "Sinoatrial node",
+      "Atrioventricular node",
+      "Atrioventricular bundle",
+      "Purkinje fibers"
+    ]
+  },
+  {
+    "id": "asset-bvis05-body-artery-vein-maps",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-15-body-artery-vein-maps.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Major arteries and major veins of the body",
+    "description": "Anterior view, patient right at viewer left. Left panel, arteries: the aorta arches over the heart and descends; the subclavian artery becomes the axillary then the brachial artery, which splits into radial (thumb side) and ulnar arteries; the common carotid divides into internal and external carotid arteries; the aorta ends by dividing into iliac arteries and the femoral artery continues behind the knee as the popliteal artery, dividing into anterior and posterior tibial arteries. Right panel, veins: deep veins follow the arteries (the femoral vein, generic vein here; axillary and subclavian veins; internal jugular) and superficial veins are drawn too: cephalic vein, median cubital vein at the elbow, great saphenous vein from foot to groin where it joins the femoral vein, external jugular vein. The superior and inferior venae cavae reach the right atrium. Simplified; branches omitted, left and right drawn symmetrical. Orientation: anterior view of the whole body; patient right at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 4,
+      "glossary": 22,
+      "question": 21
+    },
+    "exampleUses": [
+      "lesson:blood-vessels:ves-regional",
+      "glossary:ves-vein",
+      "question:q-bvis05-locate-ves-subclavian"
+    ],
+    "depictedLabels": [
+      "Aorta",
+      "Subclavian artery",
+      "Axillary artery",
+      "Brachial artery",
+      "Radial artery",
+      "Ulnar artery",
+      "Common carotid artery",
+      "Internal carotid artery",
+      "External carotid artery",
+      "Femoral artery",
+      "Popliteal artery",
+      "Anterior tibial artery",
+      "Posterior tibial artery",
+      "Brachiocephalic vein",
+      "Subclavian vein",
+      "Axillary vein",
+      "Internal jugular vein",
+      "Jugular vein",
+      "Cephalic vein",
+      "Median cubital vein",
+      "Vein",
+      "Great saphenous vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-head-neck-vessels",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-16-head-neck-vessels.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Carotid arteries and jugular veins of the head and neck",
+    "description": "Anterior view of the head, neck and upper chest, patient right at viewer left. The common carotid artery runs up the neck and splits at the upper border of the thyroid cartilage into the internal carotid artery (to the brain, no branches in the neck, drawn lateral) and the external carotid artery (to the face and scalp, with branches). Veins: the internal jugular vein runs beside the carotid in the deep neck and joins the subclavian vein to form the brachiocephalic vein; the external jugular vein is the superficial vein of the neck and drains into the subclavian vein. The subclavian artery (right, from the brachiocephalic trunk, unlabelled) and subclavian vein lie at the root of the neck above the first rib. Simplified; the left subclavian artery arises directly from the aortic arch. Orientation: anterior view of head and neck; patient right at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 7,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:blood-vessels:ves-regional",
+      "glossary:ves-common-carotid",
+      "question:q-bvis05-identify-head-neck-vessels"
+    ],
+    "depictedLabels": [
+      "Common carotid artery",
+      "Internal carotid artery",
+      "External carotid artery",
+      "Internal jugular vein",
+      "Jugular vein",
+      "Subclavian artery",
+      "Subclavian vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-upper-limb-arteries",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-17-upper-limb-arteries.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Arterial route to the arm and hand",
+    "description": "Anterior view, patient right at viewer left, upper body. The subclavian artery (right from the brachiocephalic trunk, left straight from the aortic arch) crosses over the first rib and becomes the axillary artery in the armpit, then the brachial artery down the arm. At the elbow the brachial artery divides into the radial artery on the thumb side and the ulnar artery on the little-finger side; both continue to the hand (the palmar arches are omitted). The common carotid artery rises in the neck and splits into internal and external carotid arteries. Simplified; smaller branches not drawn. Orientation: anterior view of the upper body; patient right at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 9,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:blood-vessels:ves-regional",
+      "glossary:ves-aorta",
+      "question:q-bvis05-identify-upper-limb-arteries"
+    ],
+    "depictedLabels": [
+      "Aorta",
+      "Common carotid artery",
+      "Subclavian artery",
+      "Axillary artery",
+      "Brachial artery",
+      "Radial artery",
+      "Ulnar artery",
+      "Internal carotid artery",
+      "External carotid artery"
+    ]
+  },
+  {
+    "id": "asset-bvis05-upper-limb-veins",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-18-upper-limb-veins.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Venous return from the arm and the median cubital vein",
+    "description": "Anterior view, patient right at viewer left. Superficial veins of the arm: the cephalic vein runs up the thumb side (lateral) and dips in under the collarbone to join the axillary vein; the basilic vein runs up the medial side (unlabelled) and joins the deep veins to form the axillary vein. At the elbow the median cubital vein links the cephalic and basilic veins obliquely, the usual site of venepuncture. The axillary vein continues as the subclavian vein, which meets the internal jugular vein to form the brachiocephalic vein; the external jugular vein (superficial) drains into the subclavian vein. Right panel: enlarged elbow region. Simplified; paired deep veins omitted. Orientation: anterior view, patient right at viewer left; right panel enlarges the right elbow.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 7,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:blood-vessels:ves-regional",
+      "glossary:ves-internal-jugular",
+      "question:q-bvis05-identify-upper-limb-veins"
+    ],
+    "depictedLabels": [
+      "Brachiocephalic vein",
+      "Subclavian vein",
+      "Axillary vein",
+      "Internal jugular vein",
+      "Jugular vein",
+      "Cephalic vein",
+      "Median cubital vein",
+      "Median cubital vein",
+      "Cephalic vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-lower-limb-arteries",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-19-lower-limb-arteries.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Arterial route to the leg and foot",
+    "description": "Left panel, front view, patient right at viewer left: the aorta divides into the iliac arteries; the external iliac continues under the inguinal ligament as the femoral artery down the front-inner thigh. The femoral artery passes behind the knee as the popliteal artery, then divides into the anterior tibial artery (which passes forward through the interosseous membrane to run down the front of the leg to the foot) and the posterior tibial artery. Right panel, back view, patient right at viewer right: the popliteal artery lies deep in the popliteal fossa behind the knee and the posterior tibial artery runs down the back of the calf behind the medial ankle. Only the main trunk is drawn; the fibular branch and foot arches are omitted. The front view shows the popliteal course schematically. Orientation: left: anterior view (patient right at viewer left); right: posterior view (patient right at viewer right).",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 5,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:blood-vessels:ves-regional",
+      "glossary:ves-aorta",
+      "question:q-bvis05-identify-lower-limb-arteries"
+    ],
+    "depictedLabels": [
+      "Aorta",
+      "Femoral artery",
+      "Anterior tibial artery",
+      "Femoral artery",
+      "Popliteal artery",
+      "Posterior tibial artery"
+    ]
+  },
+  {
+    "id": "asset-bvis05-great-saphenous-route",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-20-great-saphenous-route.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Great saphenous vein: foot to groin",
+    "description": "Left, front view of the leg, patient right at viewer left. The great saphenous vein, the longest superficial vein, starts on the inner (medial) side of the foot, passes in front of the medial ankle, runs up the medial leg, behind the medial knee and up the medial thigh, and does not stop at the knee: it ends in the groin by joining the femoral vein (the saphenofemoral junction). The deep vein it joins (femoral, then popliteal vein behind the knee) is shown as a generic vein; the femoral artery is the red vessel. Right, groin enlarged: below the inguinal ligament (pale band) the femoral artery lies lateral to the femoral vein (viewer left) and the great saphenous vein joins the femoral vein from the medial side. Flow is upward toward the heart. Simplified. Orientation: anterior view of the right leg; patient right at viewer left; right panel enlarges the right groin.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 3,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:blood-vessels:ves-regional",
+      "glossary:ves-vein",
+      "question:q-bvis05-identify-great-saphenous-route"
+    ],
+    "depictedLabels": [
+      "Great saphenous vein",
+      "Vein",
+      "Femoral artery",
+      "Vein",
+      "Great saphenous vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-hepatic-portal-system",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-21-hepatic-portal-system.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Hepatic portal system",
+    "description": "Anterior view, patient right at viewer left. Left panel: veins draining the gut and spleen do not go straight to the heart. The splenic vein (from the spleen, at viewer right) runs behind the pancreas and the superior mesenteric vein (from the small intestine) joins it behind the neck of the pancreas to form the hepatic portal vein; the inferior mesenteric vein is drawn joining the splenic vein. The portal vein enters the liver, which lies under the right dome of the diaphragm, at viewer left, and branches inside it. Blood leaves the liver by the hepatic veins into the inferior vena cava just below the diaphragm (dashed line). Right panel: one liver lobule, schematic. Blood from the portal vein and hepatic artery at each corner (portal triad) flows through sinusoids toward the central vein, which feeds a hepatic vein. Stomach, pancreas, spleen and bowel are unlabelled context. In the lobule inset, the blue outlet projecting toward the upper left represents downstream hepatic venous outflow out of the lobule plane; the unlabelled blue central circle is the central vein, not a portal-to-caval connection. Orientation: anterior view; liver at viewer left (patient right), spleen at viewer right; right panel is a liver lobule.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 5,
+      "question": 6
+    },
+    "exampleUses": [
+      "lesson:blood-vessels:ves-portal",
+      "glossary:ves-hepatic-portal",
+      "question:q-bvis05-locate-ves-hepatic-portal"
+    ],
+    "depictedLabels": [
+      "Hepatic portal vein",
+      "Splenic vein",
+      "Superior mesenteric vein",
+      "Hepatic veins",
+      "Hepatic sinusoids",
+      "Hepatic veins",
+      "Hepatic portal vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-celiac-renal-context",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-22-celiac-renal-context.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Celiac trunk and renal vessels",
+    "description": "Anterior view of the upper abdomen, patient right at viewer left; context organs unlabelled. The celiac trunk arises from the front of the abdominal aorta just below the diaphragm and divides into the hepatic artery (to the liver), left gastric artery (to the stomach) and splenic artery (to the spleen, at viewer right). The superior mesenteric artery arises just below it. The renal arteries leave the aorta lower, at the level of the kidneys; the right renal artery passes behind the inferior vena cava. The kidneys are retroperitoneal, the left slightly higher than the right (the right is pushed down by the liver); the adrenal glands sit on top of the kidneys. The renal veins drain into the inferior vena cava; the longer left renal vein crosses in front of the aorta. Simplified. Orientation: anterior view; liver at viewer left, spleen at viewer right; left kidney higher.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 4,
+      "question": 3
+    },
+    "exampleUses": [
+      "lesson:blood-vessels:ves-regional",
+      "glossary:ves-vein",
+      "question:q-bvis05-locate-ves-celiac-trunk"
+    ],
+    "depictedLabels": [
+      "Aorta",
+      "Celiac trunk",
+      "Renal artery",
+      "Vein"
+    ]
+  },
+  {
+    "id": "asset-bvis05-upper-airway",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-23-upper-airway.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Upper airway: nasal cavity, sinuses and pharynx",
+    "description": "Left: midline sagittal section of the head, face at viewer left. Air enters through the nostril into the nasal vestibule and the nasal cavity, whose lateral wall carries the nasal conchae (the nasal septum has been removed to show them, and is drawn in the coronal view). The hard palate and soft palate separate the nasal passage from the mouth. Behind the cavity the choanae open into the nasopharynx; below the soft palate the oropharynx is shared with food and the laryngopharynx lies behind the larynx, above the trachea (front tube) and oesophagus (back tube). The paranasal sinuses are air spaces drained into the nose: frontal above, sphenoidal behind and ethmoidal cells between. Right: coronal section of the face: the nasal septum divides the two nasal cavities and the large maxillary sinuses lie beside them. Simplified. Orientation: left: sagittal head, face at viewer left; right: coronal face.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 15,
+      "question": 17
+    },
+    "exampleUses": [
+      "gallery:respiratory-system",
+      "lesson:respiratory-system:respiratory-upper-airway",
+      "glossary:respiratory-system-nose",
+      "question:q-practical-respiratory-nasal-cavity"
+    ],
+    "depictedLabels": [
+      "Nose",
+      "Nasal cavity",
+      "Nasal vestibule",
+      "Nasal concha",
+      "Choanae",
+      "Hard palate",
+      "Soft palate",
+      "Frontal sinus",
+      "Sphenoidal sinus",
+      "Ethmoidal sinus",
+      "Nasopharynx",
+      "Oropharynx",
+      "Laryngopharynx",
+      "Nasal septum",
+      "Maxillary sinus",
+      "Nasal cavity",
+      "Nasal concha",
+      "Ethmoidal sinus",
+      "Frontal sinus"
+    ]
+  },
+  {
+    "id": "asset-bvis05-larynx-glottis",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-24-larynx-glottis.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Larynx and glottis",
+    "description": "Left: coronal section of the larynx. The thyroid cartilage forms the front and sides and the cricoid cartilage the ring below it, continuing into the trachea. The epiglottis (elastic cartilage) lies above the laryngeal inlet, which opens into the laryngeal vestibule. Two pairs of folds project into the lumen: the upper vestibular folds (false cords, mucosa only) and the lower vocal folds (true cords, with the vocalis muscle and ligament). The glottis is the vocal folds together with the slit between them, the rima glottidis; it is not just the opening. Below the vocal folds the airway continues into the trachea. Right: view from above, front at top: the vocal folds meet at the front and diverge backward to the arytenoid cartilages, so the rima glottidis is a V-shaped slit between them. Simplified. Orientation: left: coronal section; right: view from above, front at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "hotspotSizeOverride": {
+      "diameter": 18,
+      "numeralSize": 10,
+      "maxDiameter": 21
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 12,
+      "question": 14
+    },
+    "exampleUses": [
+      "gallery:respiratory-system",
+      "lesson:respiratory-system:respiratory-larynx",
+      "glossary:respiratory-system-larynx",
+      "question:q-visual-respiratory-trachea"
+    ],
+    "depictedLabels": [
+      "Epiglottis",
+      "Laryngeal inlet",
+      "Laryngeal vestibule",
+      "Vestibular folds",
+      "Vocal folds",
+      "Rima glottidis",
+      "Glottis",
+      "Thyroid cartilage",
+      "Cricoid cartilage",
+      "Trachea",
+      "Larynx",
+      "Arytenoid cartilage",
+      "Vestibular folds",
+      "Vocal folds",
+      "Rima glottidis",
+      "Glottis",
+      "Epiglottis"
+    ]
+  },
+  {
+    "id": "asset-bvis05-trachea-bronchial-tree",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-25-trachea-bronchial-tree.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Trachea, bronchi and bronchioles",
+    "description": "Left: anterior view of the airway tree, patient right at viewer left. The trachea, held open by C-shaped cartilage rings, divides at the carina into the main bronchi. The right main bronchus is shorter, wider and more vertical than the left, so inhaled objects tend to enter it. Each main bronchus divides into lobar bronchi (three on the right, two on the left, one per lobe), then segmental bronchi, then ever smaller bronchioles ending as terminal bronchioles, which have no cartilage. Branching is simplified: many more generations exist. Right: trachea in cross-section: the cartilage rings are open at the back, where the smooth trachealis muscle bridges the gap against the oesophagus. Orientation: left: anterior view, patient right at viewer left; right: cross-section, back at bottom.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 9,
+      "question": 9
+    },
+    "exampleUses": [
+      "gallery:respiratory-system",
+      "lesson:respiratory-system:respiratory-larynx",
+      "glossary:respiratory-system-trachea",
+      "question:q-bvis05-locate-respiratory-system-carina"
+    ],
+    "depictedLabels": [
+      "Trachea",
+      "Carina",
+      "Right main bronchus",
+      "Left main bronchus",
+      "Lobar bronchus",
+      "Segmental bronchus",
+      "Bronchiole",
+      "Terminal bronchiole",
+      "Trachea",
+      "Trachealis muscle"
+    ]
+  },
+  {
+    "id": "asset-bvis05-lung-lobes",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-26-lung-lobes.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Lungs: lobes, fissures and hilum",
+    "description": "Left: anterior view, patient right at viewer left. The right lung has three lobes: superior and middle lobes are separated by the horizontal fissure, middle and inferior by the oblique fissure. The left lung has two lobes, superior and inferior, separated by an oblique fissure, and its front edge is indented by the cardiac notch where the heart lies against the chest wall (the heart is the muscle-coloured shape behind). Right: medial surface of the right lung. The hilum is the recess where the root of the lung enters and leaves: the main bronchus (airway colour), the pulmonary artery carrying deoxygenated blood from the heart (blue) and the pulmonary veins carrying oxygenated blood to the heart (red). The relative order of the structures differs between the two lungs; the right lung is shown. Simplified. Orientation: left: anterior view, patient right at viewer left; right: medial surface of the right lung.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 10,
+      "question": 12
+    },
+    "exampleUses": [
+      "lesson:respiratory-system:respiratory-lungs",
+      "glossary:respiratory-system-right-lung",
+      "question:q-practical-respiratory-right-lung"
+    ],
+    "depictedLabels": [
+      "Right lung",
+      "Left lung",
+      "Superior lobe",
+      "Middle lobe",
+      "Inferior lobe",
+      "Cardiac notch",
+      "Oblique fissure",
+      "Horizontal fissure",
+      "Hilum of lung",
+      "Root of lung"
+    ]
+  },
+  {
+    "id": "asset-bvis05-pleura-diaphragm",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-27-pleura-diaphragm.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Pleura and diaphragm",
+    "description": "Left: coronal schematic of the chest, patient right at viewer left. Each lung is wrapped by a visceral pleura stuck to its surface; the parietal pleura lines the chest wall and diaphragm; between the two layers lies the pleural cavity. In life this is only a thin film of fluid; here it is drawn as an exaggerated gap for clarity. The diaphragm forms two domes, the right higher than the left because the liver lies beneath the right dome (viewer left); the stomach and spleen lie under the left dome. The heart sits between the lungs. Right: side-view schematic of breathing: when the diaphragm contracts its dome flattens (solid band, arrow down; dashed line shows the relaxed dome), the chest volume increases and the lungs follow because pleural layers cling together. In this side view the pleural cavity is the thin pale ring between the outer parietal outline and the lung surface (exaggerated); the lung itself is the pink area inside it. Simplified. Orientation: left: coronal view, patient right at viewer left; right: side view of breathing.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 6,
+      "question": 5
+    },
+    "exampleUses": [
+      "lesson:respiratory-system:respiratory-lungs",
+      "glossary:respiratory-system-right-lung",
+      "question:q-bvis05-locate-respiratory-system-diaphragm"
+    ],
+    "depictedLabels": [
+      "Diaphragm",
+      "Parietal pleura",
+      "Pleural cavity",
+      "Visceral pleura",
+      "Right lung",
+      "Left lung",
+      "Diaphragm",
+      "Pleural cavity",
+      "Right lung"
+    ]
+  },
+  {
+    "id": "asset-bvis05-lymph-overview",
+    "sourceId": "source-boneefied-bvis05-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis05-atlas/bvis05-30-lymph-overview.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS05); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Lymphatic drainage routes and node groups",
+    "description": "Left, anterior view, patient right at viewer left: lymph (sage green) drains toward the neck veins (blue). Lymph from the legs and gut collects in the lumbar and intestinal trunks, which empty into the cisterna chyli, the sac at the start of the thoracic duct. The thoracic duct climbs the chest and enters the venous angle on the LEFT, where the left internal jugular and left subclavian veins meet; it drains most of the body (everything below the diaphragm plus the left head, neck, arm and chest). The short right lymphatic duct enters the venous angle on the RIGHT and drains only the right head, neck, arm and chest. The jugular and subclavian trunks feed the ducts. Node groups (purple-grey ovals) sit in neck, armpit and groin. Right: how lymph forms: excess tissue fluid is taken up by a blind-ended lymph capillary, then flows through collecting vessels, with one-way valves, into a larger trunk. Simplified; bronchomediastinal trunks and many nodes omitted. Peripheral collecting routes are projected schematically through the limb node groups toward the trunks. Arrows lie on the depicted routes; the collecting-vessel valve leaflets leave an open central flow path. Orientation: left: anterior body view, patient right at viewer left; right: flow from tissue fluid to trunk, left to right.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived, not presented as the new artwork.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 3,
+      "glossary": 14,
+      "question": 15
+    },
+    "exampleUses": [
+      "gallery:lymphatic-system",
+      "lesson:lymphatic-system:lymph-vessels",
+      "glossary:lymph-fluid",
+      "question:q-bvis05-locate-lymph-thoracic-duct"
+    ],
+    "depictedLabels": [
+      "Thoracic duct",
+      "Right lymphatic duct",
+      "Cisterna chyli",
+      "Jugular lymphatic trunk",
+      "Subclavian lymphatic trunk",
+      "Intestinal lymphatic trunk",
+      "Lumbar lymphatic trunks",
+      "Cervical lymph nodes",
+      "Axillary lymph nodes",
+      "Inguinal lymph nodes",
+      "Lymph",
+      "Lymphatic capillary",
+      "Collecting lymphatic vessel",
+      "Lymphatic trunk"
+    ]
+  },
+  {
+    "id": "asset-bvis06-oral-cavity",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-01-oral-cavity.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Oral cavity, pharynx and salivary glands",
+    "description": "Left: midline sagittal section of the head, face at viewer left. The hard palate (bony, anterior) and soft palate (muscular, posterior) form the roof of the mouth; the tongue fills the floor. Teeth sit in the upper and lower arches. The mouth opens behind into the pharynx, which passes into the oesophagus; the airway (teal tube) lies in front of the oesophagus. In the floor of the mouth the sublingual gland opens by small sublingual ducts and the submandibular gland by a duct beside the lingual frenulum (both glands lie to the side of the midline and are projected here). Right: lateral view with skin and cheek removed: the parotid gland lies over the ramus of the mandible and its duct opens in the cheek near an upper molar; the submandibular gland lies below the jaw. Simplified. Orientation: left: midline sagittal, face at viewer left; right: lateral view, face at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 11,
+      "question": 12
+    },
+    "exampleUses": [
+      "gallery:digestive-system",
+      "lesson:digestive-system:digestive-oral",
+      "glossary:digestive-system-mouth",
+      "question:q-bvis06-locate-digestive-system-tongue"
+    ],
+    "depictedLabels": [
+      "Tongue",
+      "Hard palate",
+      "Soft palate",
+      "Pharynx",
+      "Esophagus",
+      "Sublingual gland",
+      "Sublingual duct",
+      "Submandibular gland",
+      "Mouth",
+      "Teeth",
+      "Parotid gland",
+      "Submandibular gland",
+      "Teeth"
+    ]
+  },
+  {
+    "id": "asset-bvis06-stomach",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-02-stomach.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Stomach: regions, rugae and gastric glands",
+    "description": "Left: anterior view of the stomach opened to show the lining, patient right at viewer left. The oesophagus enters at the cardia; the fundus rises above that level; the body is the broad central region; the pyloric antrum narrows into the pyloric canal, whose thick muscular outlet is the pyloric sphincter, together forming the pylorus, which opens into the duodenum. Rugae are lining folds that flatten when the stomach is distended. Right: schematic section of gastric mucosa: each gastric pit opens onto the surface and leads into a gland; parietal cells (large, pink) lie in the upper gland and chief cells (small, purple) at the base. Schematic, not a photomicrograph. Orientation: left: anterior view, patient right at viewer left; right: schematic mucosal section, lumen at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 14,
+      "question": 15
+    },
+    "exampleUses": [
+      "gallery:digestive-system",
+      "lesson:digestive-system:digestive-stomach",
+      "glossary:digestive-system-esophagus",
+      "question:q-visual-stomach"
+    ],
+    "depictedLabels": [
+      "Stomach",
+      "Cardia",
+      "Fundus",
+      "Body of stomach",
+      "Pyloric antrum",
+      "Pyloric canal",
+      "Pyloric sphincter",
+      "Rugae",
+      "Esophagus",
+      "Duodenum",
+      "Pylorus",
+      "Gastric pit",
+      "Parietal cell",
+      "Chief cell"
+    ]
+  },
+  {
+    "id": "asset-bvis06-alimentary-canal",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-03-alimentary-canal.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Alimentary canal: mouth to anus",
+    "description": "Anterior schematic of the whole canal, patient right at viewer left, drawn as one continuous tube: mouth, pharynx, oesophagus, stomach, duodenum, jejunum and ileum, then cecum, ascending, transverse, descending and sigmoid colon, rectum, anal canal and anus. The small intestine lies within the frame of the large intestine, entering the cecum at the patient's lower right. The duodenum runs behind the transverse colon, which is drawn in front. The mouth and pharynx are shown face-on although the pharynx lies behind the mouth. Liver, gallbladder and pancreas are accessory organs and are not part of this route; they appear in their own plate. Schematic, not to scale. Orientation: anterior view, patient right at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 17,
+      "question": 14
+    },
+    "exampleUses": [
+      "gallery:digestive-system",
+      "lesson:digestive-system:digestive-continuity",
+      "glossary:digestive-system-mouth",
+      "question:q-bvis06-locate-digestive-system-jejunum"
+    ],
+    "depictedLabels": [
+      "Mouth",
+      "Pharynx",
+      "Esophagus",
+      "Stomach",
+      "Duodenum",
+      "Jejunum",
+      "Ileum",
+      "Cecum",
+      "Ascending colon",
+      "Transverse colon",
+      "Descending colon",
+      "Sigmoid colon",
+      "Rectum",
+      "Anal canal",
+      "Anus",
+      "Ascending colon",
+      "Cecum",
+      "Ileocecal valve",
+      "Appendix",
+      "Ileum"
+    ]
+  },
+  {
+    "id": "asset-bvis06-liver-biliary-pancreas",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-04-liver-biliary-pancreas.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Liver, gallbladder, pancreas and their ducts",
+    "description": "Left: anterior view, patient right at viewer left; stomach and most intestine removed. The liver lies mainly on the patient's right, its small left lobe extending across the midline. Bile leaves the liver by hepatic ducts that join as the common hepatic duct; the cystic duct from the gallbladder joins it to form the common bile duct, which runs down behind the duodenum to the pancreatic head. The pancreatic duct runs the length of the pancreas (head in the duodenal C, body crossing the midline, tail toward the spleen) and meets the bile duct at the duodenum. At the porta hepatis the hepatic artery and portal vein enter the liver. Right: the descending duodenum opened: the common bile duct and pancreatic duct unite in the hepatopancreatic ampulla, which opens at the major duodenal papilla. Simplified. Orientation: left: anterior view, patient right at viewer left; right: opened descending duodenum.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 16,
+      "question": 17
+    },
+    "exampleUses": [
+      "lesson:digestive-system:digestive-accessory",
+      "glossary:digestive-system-liver",
+      "question:q-bvis06-locate-digestive-system-liver"
+    ],
+    "depictedLabels": [
+      "Liver",
+      "Right lobe of liver",
+      "Left lobe of liver",
+      "Gallbladder",
+      "Cystic duct",
+      "Common hepatic duct",
+      "Common bile duct",
+      "Pancreas",
+      "Head of pancreas",
+      "Body of pancreas",
+      "Tail of pancreas",
+      "Pancreatic duct",
+      "Hepatic artery",
+      "Hepatic portal vein",
+      "Major duodenal papilla",
+      "Hepatopancreatic ampulla",
+      "Common bile duct",
+      "Pancreatic duct"
+    ]
+  },
+  {
+    "id": "asset-bvis06-liver-lobule-pancreas",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-05-liver-lobule-pancreas.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Liver lobule and pancreatic acini",
+    "description": "Left: schematic hepatic lobule. A portal triad (portal vein, hepatic artery and bile duct in connective tissue) sits at each corner. Blood (blue) flows from portal vein and artery through the sinusoids between plates of hepatocytes to the central vein at the centre, which drains the lobule. Bile moves the opposite way, from hepatocytes toward the bile ducts in the triads, not through the sinusoids. Right: pancreatic acini (rings of exocrine cells around a small lumen) empty through small ducts into the pancreatic duct; a pale pancreatic islet (endocrine) lies among them and has no duct. Schematic, not a photomicrograph; cell number and size are simplified. Orientation: left: lobule seen in transverse section; right: pancreatic tissue.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 3,
+      "glossary": 9,
+      "question": 8
+    },
+    "exampleUses": [
+      "lesson:digestive-system:digestive-accessory",
+      "glossary:digestive-system-pancreatic-duct",
+      "question:q-bvis06-locate-digestive-system-liver-lobule"
+    ],
+    "depictedLabels": [
+      "Liver lobule",
+      "Central vein",
+      "Portal triad",
+      "Hepatic sinusoid",
+      "Hepatocyte",
+      "Hepatic portal vein",
+      "Pancreatic acinus",
+      "Pancreatic islet",
+      "Pancreatic duct"
+    ]
+  },
+  {
+    "id": "asset-bvis06-digestive-wall-layers",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-06-digestive-wall-layers.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Layers of the digestive wall",
+    "description": "Left: schematic transverse section of a generic gut tube, lumen at the centre. From the lumen outward: mucosa (epithelium, lamina propria and a thin muscularis mucosae), submucosa with larger vessels, muscularis externa (the combined inner circular and outer longitudinal muscle layers) and the serosa, where the tube is covered by peritoneum. In this transverse section, longitudinal muscle fibres are cut across and circular fibres follow the circumference. Right: the same layers in a longitudinal section: circular fibres are cut across (small profiles), whereas longitudinal fibres are cut lengthwise (parallel lines). Simplified: villi, glands and nerve plexuses are omitted; layer thickness varies by organ. Schematic, not a photomicrograph. Orientation: left: transverse section, lumen at centre; right: longitudinal section, lumen above.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 8,
+      "question": 9
+    },
+    "exampleUses": [
+      "lesson:digestive-system:digestive-wall",
+      "glossary:digestive-system-mucosa",
+      "question:q-bvis06-locate-digestive-system-serosa"
+    ],
+    "depictedLabels": [
+      "Serosa",
+      "Longitudinal muscle layer",
+      "Circular muscle layer",
+      "Submucosa",
+      "Muscularis mucosae",
+      "Lamina propria",
+      "Mucosa",
+      "Muscularis externa",
+      "Mucosa",
+      "Lamina propria",
+      "Muscularis mucosae",
+      "Submucosa",
+      "Circular muscle layer",
+      "Muscularis externa",
+      "Longitudinal muscle layer",
+      "Serosa"
+    ]
+  },
+  {
+    "id": "asset-bvis06-small-intestine",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-07-small-intestine.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Small intestine: regions and mucosa",
+    "description": "Left: the small intestine in order from the pylorus, patient right at viewer left: the duodenum (C-shaped, shortest), the jejunum (upper left abdomen) and the ileum (lower, ending at the cecum). Coils are simplified; the mesentery that suspends jejunum and ileum is omitted here. Right: schematic section of small-intestinal mucosa. Two villi project into the lumen; between them a crypt (intestinal gland) dips into the mucosa. Enterocytes cover the surface and carry a brush border of microvilli; goblet cells are pale mucus-secreting cells; Paneth cells sit at the crypt base. Below the muscularis mucosae, in the submucosa, lie Brunner glands, a duodenal feature whose duct opens into the crypts. Schematic, not a photomicrograph; the ileocecal valve is shown on the alimentary canal plate. Orientation: left: anterior view, patient right at viewer left; right: mucosal section, lumen above.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 10,
+      "question": 8
+    },
+    "exampleUses": [
+      "lesson:digestive-system:digestive-small",
+      "glossary:digestive-system-duodenum",
+      "question:q-bvis06-locate-digestive-system-villi"
+    ],
+    "depictedLabels": [
+      "Duodenum",
+      "Jejunum",
+      "Ileum",
+      "Villi",
+      "Intestinal crypt",
+      "Enterocyte",
+      "Microvilli",
+      "Goblet cell",
+      "Paneth cell",
+      "Brunner gland"
+    ]
+  },
+  {
+    "id": "asset-bvis06-large-intestine",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-08-large-intestine.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Large intestine and anal canal",
+    "description": "Left: the colon framing the abdomen, patient right at viewer left. The terminal ileum enters the cecum; the appendix hangs from the cecum. The colon continues as ascending, transverse, descending and sigmoid colon, then the rectum. Haustra are the sacculations of the wall; taeniae coli are three longitudinal ribbons of muscle (two are drawn) whose tone gathers the wall into haustra. Right: coronal section of the rectum and anal canal. The internal anal sphincter is a thickening of the smooth-muscle circular layer (involuntary); the external anal sphincter is skeletal muscle outside it (voluntary). The canal ends at the anus. Simplified; the anorectal mucosal folds and venous cushions are omitted. Orientation: left: anterior view, patient right at viewer left; right: coronal section, anus below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 13,
+      "question": 5
+    },
+    "exampleUses": [
+      "lesson:digestive-system:digestive-large",
+      "glossary:digestive-system-cecum",
+      "question:q-bvis06-locate-digestive-system-haustra"
+    ],
+    "depictedLabels": [
+      "Cecum",
+      "Appendix",
+      "Ascending colon",
+      "Transverse colon",
+      "Descending colon",
+      "Sigmoid colon",
+      "Rectum",
+      "Haustra",
+      "Taeniae coli",
+      "Rectum",
+      "Anal canal",
+      "Internal anal sphincter",
+      "External anal sphincter",
+      "Anus"
+    ]
+  },
+  {
+    "id": "asset-bvis06-peritoneal-folds",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-09-peritoneal-folds.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Peritoneal folds: mesentery and omenta",
+    "description": "Left: midline sagittal schematic, front at viewer left. The mesentery is a double fold of peritoneum, not an organ: it runs from the posterior abdominal wall to the small intestine and carries its vessels and nerves. The lesser omentum spans from the liver to the lesser curvature of the stomach; the greater omentum hangs from the greater curvature like an apron in front of the intestines. The pancreas lies behind the peritoneum. Right: anterior view: the greater omentum drapes over the small intestine, and the lesser omentum links liver and stomach. This is a simplified schematic of the folds, not a section through a specimen. Orientation: left: sagittal, front at viewer left; right: anterior view, patient right at viewer left.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 3,
+      "question": 4
+    },
+    "exampleUses": [
+      "lesson:digestive-system:digestive-peritoneum",
+      "glossary:digestive-system-mesentery",
+      "question:q-bvis06-locate-digestive-system-lesser-omentum"
+    ],
+    "depictedLabels": [
+      "Lesser omentum",
+      "Greater omentum",
+      "Mesentery",
+      "Lesser omentum",
+      "Greater omentum"
+    ]
+  },
+  {
+    "id": "asset-bvis06-urinary-tract",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-10-urinary-tract.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Urinary tract and the opened bladder",
+    "description": "Left: anterior view, patient right at viewer left. The liver lies on the right under the diaphragm and pushes the right kidney slightly lower than the left. The aorta (red) and inferior vena cava (blue) run vertically beside the spine; renal arteries leave the aorta and renal veins join the vena cava. Each ureter leaves the renal hilum and descends to the bladder; the urethra leaves the bladder. Right: bladder opened from the front. The thick detrusor muscle forms the wall; the trigone is the smooth triangle between the two ureteric openings and the urethral opening. The internal urethral sphincter (smooth muscle, involuntary) surrounds the bladder neck and the external urethral sphincter (skeletal muscle, voluntary) surrounds the urethra lower down. Simplified; the ureters are drawn in their path, not to scale. Orientation: left: anterior view, patient right at viewer left; right: bladder opened from the front.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 11,
+      "question": 13
+    },
+    "exampleUses": [
+      "gallery:urinary-system",
+      "lesson:urinary-system:urinary-tract",
+      "glossary:digestive-system-liver",
+      "question:q-practical-kidney-ureter"
+    ],
+    "depictedLabels": [
+      "Kidney",
+      "Ureter",
+      "Urinary bladder",
+      "Urethra",
+      "Renal artery",
+      "Renal vein",
+      "Aorta",
+      "Inferior vena cava",
+      "Liver",
+      "Diaphragm",
+      "Urinary bladder",
+      "Detrusor muscle",
+      "Trigone",
+      "Ureter",
+      "Internal urethral sphincter",
+      "Urethra",
+      "External urethral sphincter"
+    ]
+  },
+  {
+    "id": "asset-bvis06-kidney-section",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-11-kidney-section.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Kidney in section: cortex, medulla and collecting system",
+    "description": "Left: coronal section of a kidney; the hilum faces the viewer's right. The capsule covers the surface. Cortex is the outer zone and continues between the pyramids as renal columns. The medulla is made of renal pyramids whose tips, the renal papillae, project into minor calyces. Minor calyces merge into major calyces, which join the renal pelvis; the pelvis leaves through the hilum as the ureter. The central renal sinus is the fat-filled space around the calyces. Pyramid count (7) is simplified. Right: one renal lobe: a pyramid with its papilla opening into a minor calyx, flanked by columns and capped by cortex. Schematic; vessels and nephrons are shown on other plates. Orientation: left: coronal section, hilum at viewer right; right: one renal lobe.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 13,
+      "question": 15
+    },
+    "exampleUses": [
+      "gallery:urinary-system",
+      "lesson:urinary-system:urinary-kidney",
+      "glossary:urinary-system-kidney",
+      "question:q-visual-kidney-cortex"
+    ],
+    "depictedLabels": [
+      "Kidney",
+      "Renal cortex",
+      "Renal capsule",
+      "Renal pyramid",
+      "Renal medulla",
+      "Renal column",
+      "Renal papilla",
+      "Minor calyx",
+      "Major calyx",
+      "Renal pelvis",
+      "Renal hilum",
+      "Renal sinus",
+      "Ureter",
+      "Renal cortex",
+      "Renal medulla",
+      "Renal column",
+      "Renal papilla",
+      "Minor calyx"
+    ]
+  },
+  {
+    "id": "asset-bvis06-renal-vessels",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-12-renal-vessels.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Renal blood vessels, hilum to nephron and back",
+    "description": "Schematic of one renal lobe: cortex above, a pyramid (medulla) in the centre and the sinus below. Arterial blood (red) enters by the renal artery and branches into segmental, interlobar (between pyramids), arcuate (along the cortex-medulla border) and cortical radiate arteries. An afferent arteriole feeds each glomerulus; an efferent arteriole, not a vein, leaves it. The efferent arteriole of a cortical nephron supplies peritubular capillaries (purple) that drain into the cortical radiate vein; that of a juxtamedullary nephron forms the long hairpin vasa recta that run into the medulla and return. Veins (blue) run back through arcuate and interlobar veins to the renal vein, which leaves at the hilum. One glomerulus of each kind is drawn; tubules are omitted. Filtrate does not travel in these vessels. Orientation: schematic lobe: cortex above, medulla centre, hilum and sinus below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 11,
+      "question": 10
+    },
+    "exampleUses": [
+      "gallery:urinary-system",
+      "lesson:urinary-system:urinary-vessels",
+      "glossary:urinary-system-peritubular-capillary",
+      "question:q-bvis06-locate-urinary-system-segmental-artery"
+    ],
+    "depictedLabels": [
+      "Renal artery",
+      "Segmental artery",
+      "Interlobar artery",
+      "Arcuate artery",
+      "Cortical radiate artery",
+      "Afferent arteriole",
+      "Efferent arteriole",
+      "Peritubular capillary",
+      "Vasa recta",
+      "Cortical radiate vein",
+      "Renal vein"
+    ]
+  },
+  {
+    "id": "asset-bvis06-nephron-pathway",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-13-nephron-pathway.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Nephron segments and the urine pathway",
+    "description": "Left: one nephron stretched out (not to scale), cortex above and medulla below. Filtrate is formed in the renal corpuscle (glomerulus inside its capsule) and enters the proximal convoluted tubule, then the descending limb, the hairpin of the nephron loop and the ascending limb, which returns to the cortex beside its own corpuscle, then the distal convoluted tubule. Many nephrons empty into a collecting duct that runs down the medulla to a papillary duct at the papilla. The nephron proper ends at the distal tubule; the collecting duct is not part of the nephron. Right: onward flow of urine, without the nephron: papillary duct, minor calyx, major calyx, renal pelvis, ureter, bladder and urethra. Blood vessels are omitted. Schematic. Orientation: left: one nephron, cortex above and medulla below; right: urine pathway, top to bottom.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 16,
+      "question": 12
+    },
+    "exampleUses": [
+      "lesson:urinary-system:urinary-nephron",
+      "glossary:urinary-system-minor-calyx",
+      "question:q-bvis06-locate-urinary-system-renal-corpuscle"
+    ],
+    "depictedLabels": [
+      "Renal corpuscle",
+      "Glomerulus",
+      "Proximal convoluted tubule",
+      "Descending limb",
+      "Nephron loop",
+      "Ascending limb",
+      "Distal convoluted tubule",
+      "Collecting duct",
+      "Papillary duct",
+      "Nephron",
+      "Collecting duct",
+      "Papillary duct",
+      "Minor calyx",
+      "Major calyx",
+      "Renal pelvis",
+      "Ureter",
+      "Urinary bladder",
+      "Urethra"
+    ]
+  },
+  {
+    "id": "asset-bvis06-renal-corpuscle",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-14-renal-corpuscle.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Renal corpuscle and filtration barrier",
+    "description": "Left: schematic renal corpuscle. The glomerulus is a tuft of capillaries with an afferent arteriole bringing blood in and an efferent arteriole taking it away. The glomerular capsule surrounds it; the clear capsular space between capsule and tuft collects filtrate and leads to the proximal tubule at the urinary pole (below). Podocytes cover the capillaries. At the vascular pole the distal tubule touches the afferent arteriole: macula densa cells in the tubule wall and juxtaglomerular cells in the arteriole wall form the juxtaglomerular apparatus. Right: the filtration barrier magnified: blood in the capillary lumen (top) is separated from the capsular space (bottom) by fenestrated endothelium, a basement membrane and the slits between podocyte foot processes. Filtrate crosses this barrier into the capsular space, a different space from the capillary blood. Schematic, not a photomicrograph. Orientation: left: corpuscle, vascular pole upper left, urinary pole below; right: filtration barrier, blood above and capsular space below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 10,
+      "question": 7
+    },
+    "exampleUses": [
+      "lesson:urinary-system:urinary-corpuscle",
+      "glossary:urinary-system-renal-corpuscle",
+      "question:q-bvis06-locate-urinary-system-glomerular-capsule"
+    ],
+    "depictedLabels": [
+      "Renal corpuscle",
+      "Glomerular capsule",
+      "Glomerulus",
+      "Podocyte",
+      "Juxtaglomerular apparatus",
+      "Macula densa",
+      "Juxtaglomerular cell",
+      "Afferent arteriole",
+      "Efferent arteriole",
+      "Filtration membrane",
+      "Podocyte"
+    ]
+  },
+  {
+    "id": "asset-bvis06-male-system",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-15-male-system.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Male reproductive tract, glands and penis",
+    "description": "Left: schematic anterior projection, patient right at viewer left. Posterior ducts and glands are exposed and organs separated to show connections, not a literal intact surface view or a scale section. Each testis lies in the scrotum with its epididymis; the ductus deferens climbs in the spermatic cord, passes behind the bladder and widens into an ampulla. The duct of each seminal vesicle joins its ampulla to form an ejaculatory duct, which runs through the prostate to open into the prostatic urethra. The urethra continues as the short membranous segment and then as the spongy urethra inside the penis (root, body and glans, covered at the tip by the prepuce). The bulbourethral glands lie below the prostate; their ducts open into the proximal spongy urethra, not the membranous segment. The ductus is shown on one path per side and its course behind the bladder is simplified. Right: transverse section of the penile shaft: two separate corpora cavernosa dorsally and the corpus spongiosum ventrally, surrounding the spongy urethra. One dorsal vessel is indicated; other vascular details and muscles of the scrotum and perineum are omitted. Orientation: left: anterior view, patient right at viewer left; right: transverse section of the penile shaft, dorsal side above.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 3,
+      "glossary": 20,
+      "question": 23
+    },
+    "exampleUses": [
+      "gallery:male-reproductive",
+      "lesson:male-reproductive:male-glands",
+      "glossary:urinary-system-urinary-bladder",
+      "question:q-visual-male-testis"
+    ],
+    "depictedLabels": [
+      "Urinary bladder",
+      "Prostate gland",
+      "Seminal vesicle",
+      "Ampulla of ductus deferens",
+      "Ejaculatory duct",
+      "Prostatic urethra",
+      "Urethra",
+      "Spongy urethra",
+      "Bulbourethral gland",
+      "Root of penis",
+      "Body of penis",
+      "Glans penis",
+      "Prepuce",
+      "Scrotum",
+      "Ductus deferens",
+      "Epididymis",
+      "Testis",
+      "Penis",
+      "Corpus cavernosum",
+      "Corpus spongiosum",
+      "Spongy urethra"
+    ]
+  },
+  {
+    "id": "asset-bvis06-testis-ducts",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-16-testis-ducts.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Testis, epididymis and seminiferous tubule",
+    "description": "Left: schematic sagittal section of a testis. A serous tunica vaginalis surrounds the tunica albuginea. Fibrous septa divide the testis into lobules, each packed with coiled seminiferous tubules in interstitial tissue. The tubules straighten and open into the rete testis inside the testicular mediastinum. Efferent ductules leave the rete, pierce the tunica albuginea and join the head of the epididymis; sperm then pass along its body and tail into the ductus deferens. The epididymis is drawn as a single duct and the coiling inside it is not shown. Right: seminiferous tubule in cross-section: a wall of peritubular myoid cells, Sertoli cells spanning from wall to lumen, and germ cells arranged from the periphery toward the lumen (spermatogonia, primary spermatocytes, spermatids, then spermatozoa in the lumen). A blood-testis barrier between neighbouring Sertoli cells separates the inner compartment. Leydig cells lie outside the tubules in the interstitial tissue. Spermatogenesis is simplified; secondary spermatocytes, acrosome and flagellum detail are not shown. Orientation: left: sagittal section of the testis, epididymis on the right (posterior) side; right: seminiferous tubule in cross-section, lumen at centre.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 3,
+      "glossary": 21,
+      "question": 21
+    },
+    "exampleUses": [
+      "gallery:male-reproductive",
+      "lesson:male-reproductive:male-testis",
+      "glossary:male-reproductive-testis",
+      "question:q-bvis06-locate-male-reproductive-interstitial-tissue"
+    ],
+    "depictedLabels": [
+      "Testis",
+      "Interstitial tissue",
+      "Tunica vaginalis",
+      "Tunica albuginea",
+      "Testicular lobule",
+      "Testicular mediastinum",
+      "Seminiferous tubule",
+      "Rete testis",
+      "Efferent ductule",
+      "Head of epididymis",
+      "Body of epididymis",
+      "Tail of epididymis",
+      "Ductus deferens",
+      "Peritubular myoid cell",
+      "Sertoli cell",
+      "Spermatogonium",
+      "Primary spermatocyte",
+      "Spermatid",
+      "Blood-testis barrier",
+      "Spermatozoon",
+      "Leydig cell",
+      "Interstitial tissue",
+      "Seminiferous tubule"
+    ]
+  },
+  {
+    "id": "asset-bvis06-female-gross",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-17-female-gross.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Female internal organs: ovary, tube, uterus and vagina",
+    "description": "Anterior view of the female pelvic organs in a coronal plan, patient right at viewer left; the two sides are drawn alike and labelled on the left. From the ovary, an oocyte passes into the uterine tube: the fimbriae of the funnel-shaped infundibulum lie close to the ovary (not sealed to it), the long ampulla comes next, then the narrow isthmus enters the uterine wall and opens into the uterine cavity. The uterus has a fundus (above the tube openings), a body and a cervix whose canal runs from the internal os to the external os and opens into the vagina; the vaginal fornix is the recess around the cervix. The ovarian ligament joins the ovary to the uterus, the suspensory ligament of the ovary attaches it toward the pelvic wall, and the broad ligament is the peritoneal sheet draped over the tube, ovary and uterus. Right: the same uterus, cervix and vagina enlarged and opened: the cavity narrows at the internal os into the cervical canal, which reaches the vagina at the external os; the fornix is the recess around the cervix. Simplified; the round ligament, mesovarium and vessels are omitted. Orientation: left: anterior view, patient right at viewer left; right: enlarged opened uterus, cervix and vagina.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 4,
+      "glossary": 18,
+      "question": 23
+    },
+    "exampleUses": [
+      "gallery:female-reproductive",
+      "lesson:female-reproductive:female-tube",
+      "glossary:female-reproductive-ovary",
+      "question:q-visual-ovary"
+    ],
+    "depictedLabels": [
+      "Uterus",
+      "Fundus of uterus",
+      "Body of uterus",
+      "Cervix",
+      "Cervical canal",
+      "Vagina",
+      "Vaginal fornix",
+      "Isthmus of uterine tube",
+      "Ampulla of uterine tube",
+      "Infundibulum",
+      "Fimbriae",
+      "Ovary",
+      "Ovarian ligament",
+      "Suspensory ligament of ovary",
+      "Broad ligament",
+      "Uterine tube",
+      "Uterus",
+      "Fundus of uterus",
+      "Body of uterus",
+      "Cervix",
+      "Cervical canal",
+      "Internal os",
+      "External os",
+      "Vagina",
+      "Vaginal fornix"
+    ]
+  },
+  {
+    "id": "asset-bvis06-ovary-follicle",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-18-ovary-follicle.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Ovary: follicle stages and follicle wall",
+    "description": "Left: schematic section of an ovary. The cortex holds follicles and the medulla holds vessels and loose connective tissue; vessels enter at the hilum. Follicles are placed around the cortex in order of development: primordial (one oocyte in flat cells), primary, secondary (several cell layers), antral (a fluid-filled antrum appears) and a large mature follicle near the surface. After ovulation the follicle wall becomes a corpus luteum, which later shrinks to a pale scar, the corpus albicans. One follicle of each stage is drawn; in life stages overlap and sizes differ. Right: wall of a mature follicle from outside in: theca externa, theca interna, granulosa cells, then the fluid-filled antrum. The oocyte sits on a cumulus of granulosa cells, wrapped by the zona pellucida and the corona radiata. Schematic, not a photomicrograph; no cycle chart is implied. Orientation: left: sectioned ovary, hilum at viewer right; right: mature follicle in section.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 2,
+      "glossary": 20,
+      "question": 20
+    },
+    "exampleUses": [
+      "gallery:female-reproductive",
+      "lesson:female-reproductive:female-ovary",
+      "glossary:female-reproductive-ovary",
+      "question:q-bvis06-locate-female-reproductive-ovarian-cortex"
+    ],
+    "depictedLabels": [
+      "Ovary",
+      "Ovarian cortex",
+      "Ovarian medulla",
+      "Ovarian hilum",
+      "Primordial follicle",
+      "Primary follicle",
+      "Secondary follicle",
+      "Antral follicle",
+      "Mature follicle",
+      "Corpus luteum",
+      "Corpus albicans",
+      "Ovarian follicle",
+      "Theca externa",
+      "Theca interna",
+      "Granulosa cell",
+      "Follicular fluid",
+      "Corona radiata",
+      "Zona pellucida",
+      "Oocyte",
+      "Theca cell"
+    ]
+  },
+  {
+    "id": "asset-bvis06-uterine-wall",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-19-uterine-wall.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Uterine wall and endometrium",
+    "description": "Left: schematic section of the uterine wall from the cavity outward. The endometrium has a stratum functionale (the surface layer that is shed) and a deeper stratum basale that regenerates it; tubular uterine glands open onto the surface and extend down through both. The thick myometrium is smooth muscle in interlacing bundles, and the perimetrium is the outer peritoneal covering. Right: two endometrial states shown simply, with the glands as the clue: proliferative endometrium (upper) has narrow, straight glands; secretory endometrium (lower) has wider, coiled glands. This is a basic comparison, not a cycle chart. Schematic, not a photomicrograph. Orientation: left: wall section, cavity at top; right: two endometrial states, cavity at top.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "specimenNote": "Teaching schematic, not a real specimen or photomicrograph.",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 1,
+      "lesson": 1,
+      "glossary": 9,
+      "question": 10
+    },
+    "exampleUses": [
+      "gallery:female-reproductive",
+      "lesson:female-reproductive:female-wall",
+      "glossary:female-reproductive-endometrium",
+      "question:q-bvis06-locate-female-reproductive-stratum-functionale"
+    ],
+    "depictedLabels": [
+      "Stratum functionale",
+      "Stratum basale",
+      "Myometrium",
+      "Perimetrium",
+      "Uterine gland",
+      "Smooth muscle of uterus",
+      "Endometrium",
+      "Proliferative endometrium",
+      "Secretory endometrium"
+    ]
+  },
+  {
+    "id": "asset-bvis06-abdominal-placement",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-20-abdominal-placement.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Abdominal placement of the digestive organs",
+    "description": "Left: anterior view of the trunk, patient right at viewer left. The diaphragm roofs the abdomen. The large liver lies mainly on the patient's right, with a small left lobe crossing the midline, and the gallbladder sits under its lower edge. The stomach lies on the left, receiving the oesophagus under the diaphragm; its outlet leads into the C-shaped duodenum, which wraps the head of the pancreas, and the pancreas runs behind the stomach toward the left. The jejunum and ileum coil in the central and lower abdomen and enter the cecum at the lower right; the large intestine frames them as ascending, transverse, descending and sigmoid colon, ending at the rectum. Positions are schematic and organs overlap in life. Right: transverse section at the upper abdomen seen from below, patient right at viewer left: liver on the right, stomach on the left, pancreas and duodenum in front of the inferior vena cava and aorta, in front of the spine. Orientation: left: anterior view, patient right at viewer left; right: transverse section seen from below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "hotspotSizeOverride": {
+      "diameter": 16,
+      "numeralSize": 10,
+      "maxDiameter": 17
+    },
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 2,
+      "glossary": 13,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:digestive-system:digestive-accessory",
+      "glossary:digestive-system-esophagus",
+      "question:q-bvis06-identify-abdominal-placement"
+    ],
+    "depictedLabels": [
+      "Liver",
+      "Gallbladder",
+      "Stomach",
+      "Pancreas",
+      "Duodenum",
+      "Jejunum",
+      "Ileum",
+      "Cecum",
+      "Ascending colon",
+      "Transverse colon",
+      "Descending colon",
+      "Sigmoid colon",
+      "Esophagus",
+      "Diaphragm",
+      "Liver",
+      "Stomach",
+      "Pancreas",
+      "Duodenum",
+      "Inferior vena cava",
+      "Aorta"
+    ]
+  },
+  {
+    "id": "asset-bvis06-kidney-placement",
+    "sourceId": "source-boneefied-bvis06-atlas",
+    "sourcePage": null,
+    "localAssetPath": "assets/images/anatomy/bvis06-atlas/bvis06-21-kidney-placement.png",
+    "assetType": "diagram",
+    "labelStatus": "unlabeled",
+    "attributionLicense": "Original Boneefied project vector artwork (BVIS06); all rights reserved. Tissue schematics are not photomicrographs.",
+    "verificationStatus": "verified",
+    "title": "Kidney placement in the abdomen",
+    "description": "Left: anterior view of the trunk drawn as if transparent, patient right at viewer left. The kidneys lie high on the posterior abdominal wall beside the spine, on either side of the aorta (red) and inferior vena cava (blue). The right kidney sits lower than the left because the liver lies above it. Renal arteries come off the aorta, renal veins join the vena cava, and each ureter descends to the bladder. The diaphragm roofs the abdomen. Right: transverse section at the level of the kidneys, seen from below with patient right at viewer left. Both kidneys are retroperitoneal: they lie in perirenal fat against the posterior wall, behind the peritoneal cavity (dashed line), beside the psoas muscles and vertebra, with the liver on the right and the aorta and vena cava in front of the spine. Positions are schematic. Orientation: left: anterior view drawn transparent, patient right at viewer left; right: transverse section seen from below.",
+    "imageAspectRatio": 1.45,
+    "imageOrientation": "landscape",
+    "adaptationNote": "Original vectors from anatomical facts; no imported/traced illustrations or baked lettering. Prior drawings remain archived.",
+    "useCounts": {
+      "gallery": 0,
+      "lesson": 1,
+      "glossary": 5,
+      "question": 1
+    },
+    "exampleUses": [
+      "lesson:urinary-system:urinary-kidney",
+      "glossary:digestive-system-liver",
+      "question:q-bvis06-identify-kidney-placement"
+    ],
+    "depictedLabels": [
+      "Kidney",
+      "Ureter",
+      "Renal artery",
+      "Renal vein",
+      "Liver",
+      "Diaphragm",
+      "Aorta",
+      "Inferior vena cava",
+      "Kidney",
+      "Liver",
+      "Inferior vena cava",
+      "Aorta"
+    ]
+  }
+]
