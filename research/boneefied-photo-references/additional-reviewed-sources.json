@@ -1,0 +1,152 @@
+{
+  "reviewMethod": "Only the explicitly listed references are approved. Previously inspected human specimens retain their original evidence timestamps; new sources have actual source-page screenshot evidence and caption/rights review. No source images are bundled.",
+  "newSources": {
+    "axial-brain-mri": {
+      "url": "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg",
+      "title": "Normal axial T2-weighted MR image of the brain",
+      "source": "Wikimedia Commons",
+      "creator": "Novaksean; cropped version by Mikael Häggström",
+      "mediaType": "diagnostic-imaging",
+      "organism": "human",
+      "relationship": "relevant-example",
+      "matches": "Actual axial T2 brain MRI at the lateral ventricles; inspected image shows a transverse human head/brain section with both hemispheres and ventricles.",
+      "viewLimitations": "A regional transverse imaging example, not a gross section, whole-body photograph, or a matched donor for the sagittal/coronal specimens.",
+      "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "linkingTerms": "Ordinary Commons file-page link. The source identifies the author and CC BY-SA 4.0; no image reuse is performed.",
+      "reproductionRights": "CC BY-SA 4.0 stated on the file page; no reproduction or embedding in the app.",
+      "subject": {
+        "en": "Transverse plane: human brain MRI, regional example",
+        "es": "Plano transversal: RM cerebral humana, ejemplo regional"
+      },
+      "verification": {
+        "pageOpened": true,
+        "captionChecked": true,
+        "imageVisuallyInspected": true,
+        "visualEvidence": "Source screenshot showed the actual axial T2 MRI and its caption. Author, cropped-file history, human-brain categorization and CC BY-SA 4.0 were read from the same source page. Temporary screenshot: /tmp/replit-screenshots/commons_wikimedia_org_wiki_File_Normal_axial_T2-weighted_MR_image_of_the_brain_NtP7.png.",
+        "checkedAt": "2026-11-07",
+        "evidencePath": "research/boneefied-photo-references/additional-reviewed-sources.json",
+        "finalUrl": "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg",
+        "redirectNotes": "The screenshot and fetched file page resolved to the listed public source URL without login.",
+        "reviewedAtFinalCheck": "2026-11-07"
+      }
+    },
+    "human-smooth-muscle": {
+      "url": "https://histologylab.ctl.columbia.edu/slides/slide66/",
+      "title": "Uterus. Human. Progravid. H&E. — slide 66",
+      "source": "Columbia University Department of Pathology and Cell Biology",
+      "sourceName": "Columbia Histology",
+      "creator": "Columbia University Department of Pathology and Cell Biology; individual slide photographer not separately named",
+      "mediaType": "micrograph",
+      "organism": "human",
+      "relationship": "relevant-example",
+      "matches": "The human uterine section shows a broad myometrial smooth-muscle region. The linked laboratory commentary specifically describes fascicles arranged in different planes and distinguishes the myometrium from endometrium.",
+      "viewLimitations": "A real organ section requiring the slide viewer's zoom, not isolated idealized spindle cells. Different section planes cross smooth-muscle fascicles; the bottom glandular region is endometrium, not muscle.",
+      "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "linkingTerms": "Public university slide page, ordinary outbound link. Visible footer identifies content CC BY-SA 4.0 separately from GPLv3 viewer code. No image or viewer is embedded.",
+      "reproductionRights": "Page footer states content CC BY-SA 4.0. The slide itself credits Columbia University Department of Pathology and Cell Biology. No reproduction is performed.",
+      "subject": {
+        "en": "Smooth muscle: human uterine myometrium",
+        "es": "Músculo liso: miometrio uterino humano"
+      },
+      "verification": {
+        "pageOpened": true,
+        "captionChecked": true,
+        "imageVisuallyInspected": true,
+        "visualEvidence": "Actual rendered slide 66 inspected: caption explicitly reads Uterus. Human. Progravid. H&E.; large pink myometrium and adjacent glandular endometrium are visible. Copyright and content licence are visible. Temporary screenshot: /tmp/replit-screenshots/histologylab_ctl_columbia_edu_slides_slide66_iRSR.png. Commentary also opened at https://histologylab.ctl.columbia.edu/lab06/smooth-muscle.",
+        "checkedAt": "2026-11-07",
+        "evidencePath": "research/boneefied-photo-references/additional-reviewed-sources.json",
+        "finalUrl": "https://histologylab.ctl.columbia.edu/slides/slide66/",
+        "redirectNotes": "Public slide viewer rendered without login in source-inspection browser; command-line TLS validation failed and is recorded as a delivery limitation pending separate confirmation.",
+        "reviewedAtFinalCheck": "2026-11-07"
+      }
+    }
+  },
+  "mappings": [
+    {
+      "assetId": "asset-atlas-body-planes",
+      "reason": "Three named human regional examples now cover sagittal, coronal and transverse planes. These demonstrate orientation conventions, not a literal three-plane cut through one whole human body. The transverse reference is explicitly medical imaging rather than a specimen photograph.",
+      "refs": [
+        {
+          "fromAssetId": "asset-atlas-body-planes",
+          "url": "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+          "subject": {
+            "en": "Sagittal plane: regional human brain section",
+            "es": "Plano sagital: sección cerebral humana regional"
+          }
+        },
+        {
+          "fromAssetId": "asset-atlas-body-planes",
+          "url": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+          "subject": {
+            "en": "Coronal plane: regional human brain section",
+            "es": "Plano coronal: sección cerebral humana regional"
+          }
+        },
+        {"newSource": "axial-brain-mri"}
+      ]
+    },
+    {
+      "assetId": "asset-original-anatomical-planes",
+      "reason": "Sagittal and coronal human brain sections plus an axial human MRI give specifically named real examples of all three plane conventions. These are regional brain examples and different individuals, not a whole-body photographic reconstruction.",
+      "refs": [
+        {
+          "fromAssetId": "asset-atlas-body-planes",
+          "url": "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+          "subject": {
+            "en": "Sagittal plane: regional human brain section",
+            "es": "Plano sagital: sección cerebral humana regional"
+          }
+        },
+        {
+          "fromAssetId": "asset-atlas-body-planes",
+          "url": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+          "subject": {
+            "en": "Coronal plane: regional human brain section",
+            "es": "Plano coronal: sección cerebral humana regional"
+          }
+        },
+        {"newSource": "axial-brain-mri"}
+      ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-foot-dorsal",
+      "reason": "Reinspection confirms a real assembled human foot with exposed dorsal tarsal surfaces, all three cuneiforms, metatarsals and phalanges; the first toe has two phalanges. The view is oblique and the toes point down the photograph, unlike the toes-up schematic. Side is not stated by the source and is not asserted in the link.",
+      "refs": [
+        {
+          "fromAssetId": "asset-skeletal-atlas-foot-dorsal",
+          "url": "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg",
+          "subject": {
+            "en": "Foot bones, dorsal-oblique view; side unstated",
+            "es": "Huesos del pie, vista dorsoblicua; lado no indicado"
+          },
+          "matches": "Actual human foot photograph visibly shows calcaneus, talus, navicular, cuboid, three cuneiforms, metatarsals and phalanges; individual bone groups are identified on the photograph.",
+          "viewLimitations": "Dorsal-oblique assembly with toes downward and distal tibia attached. Source does not state side; not claimed to be the schematic's right foot.",
+          "reinspection": "Fresh Commons source-page screenshot inspected, including the actual bone photograph and painted labels: /tmp/replit-screenshots/commons_wikimedia_org_wiki_File_Foot_bones_-_tarsus_metatarsus_and_phalanges_yoKi.png."
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-muscle-tissue",
+      "reason": "Three individually named human references cover skeletal muscle, cardiac muscle and smooth muscle. Skeletal is electron microscopy, cardiac is light microscopy, and smooth muscle is a zoomable human uterine section; they are not matched stains, scale or section planes.",
+      "refs": [
+        {
+          "fromAssetId": "asset-bvis04-muscle-tissue",
+          "url": "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+          "subject": {
+            "en": "Skeletal muscle: human electron micrograph",
+            "es": "Músculo esquelético: micrografía electrónica humana"
+          }
+        },
+        {
+          "fromAssetId": "asset-bvis04-muscle-tissue",
+          "url": "https://commons.wikimedia.org/wiki/File:Human_cardiac_muscle.jpg",
+          "subject": {
+            "en": "Cardiac muscle: human light micrograph",
+            "es": "Músculo cardíaco: micrografía óptica humana"
+          }
+        },
+        {"newSource": "human-smooth-muscle"}
+      ]
+    }
+  ]
+}

@@ -9,7 +9,10 @@ summary = json.loads((ROOT / "summary.json").read_text())
 approved = [r for r in records if r["status"] == "verified"]
 unlinked = [r for r in records if r["status"] != "verified"]
 unresolved = [r for r in records if r["status"] == "unresolved"]
-assert (len(records), len(approved), len(unlinked), len(unresolved)) == (164, 8, 156, 19)
+assert len(records) == summary["scope"]["publishedReachableAssets"]
+counts = {status: sum(r["status"] == status for r in records) for status in ("verified", "partial", "unresolved")}
+assert counts == summary["outcomes"]
+links = sum(len(r["references"]) for r in approved)
 
 def esc(value):
     return html.escape(str(value), quote=True)
@@ -22,7 +25,7 @@ def table(headers, rows):
     body = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in row) + "</tr>" for row in rows)
     return f'<div class="table-wrap"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
 
-qa = [
+historical_qa = [
     "TypeScript check passed, all six focused photo-reference tests passed, and the complete-record/evidence validator passed for 164 unique published assets.",
     "All ten final linked source pages returned HTTP 200 HTML with zero HTTP redirects. The exact page, actual photograph, caption, creator and file-specific terms were checked; raw image URLs are not app destinations.",
     "At 402×874 with Text Large, English and Spanish anterior/posterior link rows were distinct, wrapped without clipping and measured 312×54 pixels. Link controls were below the image, outside its gesture surface.",
@@ -35,14 +38,21 @@ qa = [
     "The browser interaction used the earlier anterior-scapula candidate. The final allowlist instead uses Anatomist90's inspected natural-bone photograph; the final page was independently visited and HTTP-checked, and the final runtime-to-registry mapping passed tests. This literal URL replacement was not a second browser interaction run.",
 ]
 
+qa = [
+    "Current verification is recorded in summary.json under finalVerification. The report generator does not run checks or manufacture passing results.",
+    "The runtime allowlist is generated from the approved central records only. Partial and unresolved candidates are not linked.",
+    "Source images were inspected as temporary research evidence, not imported into the app. Named comparisons disclose view differences; image quality, numbering, questions and progress are preserved.",
+    "Prior browser interaction checks are historical, not a fresh test of every new destination. Assessment availability logic is unchanged; focused tests check its fail-closed behavior.",
+    "No physical-device opening test, native build, submission, publication or deployment was performed for this update.",
+]
 intro = [
     "Full per-image link coverage has not been achieved.",
     "The catalog contains 187 assets. The published denominator is 164 instructional images across 18 modules: 158 diagrams and 6 existing histology images. The 23 unreferenced/superseded catalog entries are excluded.",
-    "Every published image has an individual assessed record. Eight illustrations have approved links: five direct matches and three limited bone examples, comprising ten exact source-page links.",
-    "156 images remain unlinked: 137 partial and 19 unresolved. A partial candidate is not a verified counterpart. No broad-system, guessed, search-result or uninspected fallback is shown in the app.",
-    "No medical-imaging links were approved. Seven destinations are gross photographs and three are micrographs. The three bone real-example exceptions disclose unstated side in English and Spanish rather than assert a matching right-sided donor.",
-    "There are 128 distinct candidate source pages: 127 opened and 105 with documented actual-image inspection. These aggregate source counts include retained prior written evidence, not a claim every candidate photograph was freshly reloaded at the final check. Twenty-one candidate reference entries lack established terms URLs; none are linked.",
-    "This final audit supersedes the earlier four-link snapshot. Current references.json and verified-references.json are authoritative. The record validator checks completeness/evidence flags, not anatomical correctness.",
+    f"Every published image has an individual assessed record. {len(approved)} images have approved links: {summary['verifiedDirectMatches']} direct matches and {summary['verifiedLimitedRealExamples']} limited real examples, comprising {links} named source-page links.",
+    f"{len(unlinked)} images remain unlinked: {counts['partial']} partial and {len(unresolved)} unresolved. A partial candidate is not a verified counterpart. No guessed, search-result or uninspected fallback is shown in the app.",
+    "Human gross specimens, microscopy and explicitly labeled medical imaging are distinguished. Multi-subject plates use named complementary references rather than claiming one photograph covers all views. Donor identity and unstated laterality are not invented.",
+    "Michigan BlueLink donor photographs are ordinary university source-page links, not copied commercial app assets. University/creator attribution and reproduction boundaries are recorded per reference. Newly approved sources and historical inspection metrics are kept separate.",
+    "This audit supersedes the earlier eight-image snapshot. Current references.json and verified-references.json are authoritative. Historical area files are used only to classify asset IDs, never as current outcome totals. The validator checks completeness/evidence flags, not anatomical correctness.",
 ]
 
 approved_rows = []
@@ -51,7 +61,7 @@ for r in approved:
     for p in r["references"]:
         label = p.get("subject", {}).get("en", p["title"])
         source_cells.append(link(p["url"], label) + "<br>" + esc(p["creator"]) + " · " + link(p["termsUrl"], "Source terms"))
-    kind = "Direct match" if r["coverageKind"] == "direct-match" else "Limited real example — side unstated"
+    kind = "Direct match" if r["coverageKind"] == "direct-match" else "Named limited real example"
     approved_rows.append([esc(r["title"]) + f'<small>{esc(r["assetId"])}</small>', esc(kind), "<p>" + "</p><p>".join(source_cells) + "</p>"])
 
 area_rows = []
@@ -62,15 +72,16 @@ for area, name in [
     ("micro", "Microscopy / skin / blood / endocrine"),
     ("visceral", "Visceral gross anatomy"),
 ]:
-    group = json.loads((ROOT / f"final-{area}-results.json").read_text())
+    historical_ids = {r["assetId"] for r in json.loads((ROOT / f"final-{area}-results.json").read_text())}
+    group = [r for r in records if r["assetId"] in historical_ids]
     area_rows.append([esc(name), str(len(group))] + [str(sum(r["status"] == s for r in group)) for s in ["verified", "partial", "unresolved"]])
 
 representatives = [
     ("Bone", lambda r: r["assetId"] == "asset-skeletal-atlas-scapula"),
-    ("Muscle", lambda r: r["assetId"] == "asset-muscular-atlas-calf"),
-    ("Organ", lambda r: any("pid=848" in p["url"] for p in r["references"])),
-    ("Nerve", lambda r: r["assetId"] == "asset-bvis04-plexus-overview"),
-    ("Vessel", lambda r: r["title"] == "Major arteries and major veins of the body"),
+    ("Muscle", lambda r: r["assetId"] == "asset-muscular-atlas-posterior-arm"),
+    ("Organ", lambda r: r["assetId"] == "asset-bvis06-kidney-section"),
+    ("Nerve", lambda r: r["assetId"] == "asset-bvis04-upper-limb-nerves"),
+    ("Vessel", lambda r: r["assetId"] == "asset-bvis05-coronary-anterior"),
     ("Histology", lambda r: r["assetId"] == "asset-commons-alveolar-sac"),
 ]
 representative_rows = []
@@ -81,17 +92,17 @@ for kind, predicate in representatives:
 
 corrections = [
     "The upper-arm biceps candidate was removed from forearm coverage. Coronary-heart and kidney illustrations, and a BodyParts3D scapula render, were rejected as specimen photographs.",
-    "Human cardiac, pancreatic-islet and blood SEM photographs were inspected but do not cover their entire multi-subject plates. Human cuboidal/columnar images found at Genoa were excluded because its stated terms forbid deep linking. Histology Guide remained excluded as a restricted collection.",
+    "The muscle-tissue plate now has separately reviewed human skeletal, cardiac and smooth-muscle examples. A single islet or blood photograph still does not cover an entire multi-subject plate. Genoa deep links and the restricted Histology Guide collection remain excluded.",
     "Unconfirmed human species, uninspected images and missing terms remain ineligible. The OpenStax spinal-cord organism remains unconfirmed. Different donors and absent printed labels are not themselves mismatches; materially missing subjects, layers and views cannot be silently ignored.",
     "Ordinary linking is not reproduction permission. No photos, thumbnails, source quotations, frames, new photo galleries or raw-image destinations were imported into the app.",
 ]
 
 sections = [
-    '<p class="eyebrow">BONEEFIED · CHECKED 6 NOVEMBER 2026</p><h1>Real-photo references: final inventory audit</h1>',
-    '<p class="status"><strong>Full coverage has not been achieved.</strong><br>8 of 164 images have approved links. 156 remain unlinked: 137 partial and 19 unresolved.</p>',
+    '<p class="eyebrow">BONEEFIED · CURRENT REFERENCE INVENTORY</p><h1>Real-photo references: inventory audit</h1>',
+    f'<p class="status"><strong>Full coverage has not been achieved.</strong><br>{len(approved)} of {len(records)} images have approved links. {len(unlinked)} remain unlinked: {counts["partial"]} partial and {len(unresolved)} unresolved.</p>',
     "".join(f"<p>{esc(t)}</p>" for t in intro[1:]),
-    '<nav aria-label="Report sections"><a href="#approved">Approved links</a><a href="#checks">Verification limits</a><a href="#unresolved">19 unresolved</a><a href="#unlinked">All 156 unlinked</a></nav>',
-    '<h2 id="approved">Eight illustrations have approved links</h2>',
+    f'<nav aria-label="Report sections"><a href="#approved">Approved links</a><a href="#checks">Verification limits</a><a href="#unresolved">{len(unresolved)} unresolved</a><a href="#unlinked">All {len(unlinked)} unlinked</a></nav>',
+    f'<h2 id="approved">{len(approved)} instructional images have approved links</h2>',
     table(["Illustration", "Coverage", "Source page, creator and terms"], approved_rows),
     "<h2>Review-area totals</h2>",
     table(["Area", "Images", "Approved", "Partial", "Unresolved"], area_rows),
@@ -99,9 +110,9 @@ sections = [
     table(["Subject", "Illustration assessed", "Inspected scope", "Limit"], representative_rows),
     '<h2 id="checks">Browser checks and explicit verification limits</h2><ul>' + "".join(f"<li>{esc(t)}</li>" for t in qa) + "</ul>",
     "<h2>Corrections and source boundaries</h2><ul>" + "".join(f"<li>{esc(t)}</li>" for t in corrections) + "</ul>",
-    '<h2 id="unresolved">All 19 unresolved illustrations</h2>',
+    f'<h2 id="unresolved">All {len(unresolved)} unresolved illustrations</h2>',
     table(["Illustration", "Individual reason"], [[esc(r["title"]), esc(r["reason"])] for r in unresolved]),
-    '<h2 id="unlinked">All 156 unlinked illustrations, including partial cases</h2><p>Partial means useful but insufficient candidates were found. Unresolved means no qualifying candidate set was established. Neither means a suitable photograph cannot exist.</p>',
+    f'<h2 id="unlinked">All {len(unlinked)} unlinked illustrations, including partial cases</h2><p>Partial means useful but insufficient candidates were found. Unresolved means no qualifying candidate set was established. Neither means a suitable photograph cannot exist.</p>',
     table(["Illustration and asset ID", "Outcome", "Individual reason"], [[esc(r["title"]) + f'<small>{esc(r["assetId"])}</small>', esc(r["status"]), esc(r["reason"])] for r in unlinked]),
     "<footer>Static audit snapshot: tables only, with no scripts, images, remote runtime or data requests. Source links open only when selected. Authoritative assessments and written evidence are under research/boneefied-photo-references.</footer>",
 ]
@@ -113,28 +124,16 @@ assert len(document.encode()) < 5_242_880
 def mdcell(value):
     return str(value).replace("|", "/").replace("\n", " ")
 
-md = ["# Boneefied real-photo references — final audit", "", "Checked 2026-11-06.", ""] + intro
+md = ["# Boneefied real-photo references — inventory audit", "", f"Registry updated: {summary['checkedAt']}.", ""] + intro
 md += ["", "## Approved illustrations", ""]
 for r in approved:
     md += [f"### {r['title']} — {r['coverageKind']}", r["reason"]]
     md += [f"- {p['url']} — {p['creator']}; terms: {p['termsUrl']}" for p in r["references"]]
 md += ["", "## Browser checks and limits", ""] + ["- " + t for t in qa]
 md += ["", "## Corrections and source boundaries", ""] + ["- " + t for t in corrections]
-md += ["", "## All 19 unresolved illustrations", "", "| Illustration | Individual reason |", "|---|---|"]
+md += ["", f"## All {len(unresolved)} unresolved illustrations", "", "| Illustration | Individual reason |", "|---|---|"]
 md += [f"| {mdcell(r['title'])} | {mdcell(r['reason'])} |" for r in unresolved]
-md += ["", "## All 156 unlinked illustrations", "", "| Illustration / asset ID | Status | Individual reason |", "|---|---|---|"]
+md += ["", f"## All {len(unlinked)} unlinked illustrations", "", "| Illustration / asset ID | Status | Individual reason |", "|---|---|---|"]
 md += [f"| {mdcell(r['title'])} / {r['assetId']} | {r['status']} | {mdcell(r['reason'])} |" for r in unlinked]
 (ROOT / "final-report.md").write_text("\n".join(md) + "\n")
-summary["finalVerification"] = {
-    "typecheck": "passed",
-    "focusedTests": {"passed": 6, "failed": 0},
-    "completeInventoryValidator": "passed",
-    "originalImageHashesUnchanged": 164,
-    "externalPhotosRetainedInResearch": 0,
-    "browser": "passed with explicit Practice limitation",
-    "browserPracticeEligibleImageFlow": "not exercised; unit/source guards passed",
-    "physicalDevice": "not tested; no connected target",
-    "finalReport": "research/boneefied-photo-references/final-report.html",
-}
-(ROOT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
 print(json.dumps({"approved": len(approved), "unlinked": len(unlinked), "unresolved": len(unresolved), "htmlBytes": len(document.encode())}))

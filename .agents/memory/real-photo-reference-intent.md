@@ -56,3 +56,14 @@ photographic reconstructions of the artwork.
 **How to apply:** Use a minimum named set for genuine comparisons and disclose
 material limitations in both languages. Never require proof of identical donor
 identity just to show complementary specimen views.
+
+Do not infer BlueLink gallery anatomy from its URL slug. A legacy
+`deep-back-and-spinal-cord` page served anterior thorax/shoulder photographs,
+while a differently named gallery contained the actual deep-back dissections.
+
+**Why:** Legacy source routes can retain misleading names; blindly selecting a
+region from the URL would attach anatomically incorrect reference links.
+
+**How to apply:** Check the displayed photographs and embedded captions, and
+retain the selected image-page associations. Collecting a gallery is not
+evidence that every photograph in it was inspected.

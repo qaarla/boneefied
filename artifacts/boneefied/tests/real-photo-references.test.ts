@@ -19,7 +19,10 @@ test('the runtime allowlist equals every verified research mapping, including ex
     }
     assert.deepEqual(references.map(({ url, mediaType }) => ({ url, mediaType })),
       record.references.map(({ url, mediaType }: { url: string; mediaType: string }) => ({ url, mediaType })));
-    assert.ok(references.every((reference) => reference.sourceName === 'Wikimedia Commons'));
+    references.forEach((reference, index) => {
+      assert.equal(reference.sourceName, record.references[index].sourceName ?? 'Wikimedia Commons');
+      assert.ok(reference.sourceName.trim());
+    });
     if (references.length > 1) {
       assert.equal(new Set(references.map((reference) => reference.subject?.en)).size, references.length);
       assert.equal(new Set(references.map((reference) => reference.subject?.es)).size, references.length);
@@ -52,10 +55,14 @@ test('learning is available; active/partially answered Recall is hidden; full re
 test('English and Spanish distinguish photos, microscope photos and imaging, with named comparison views', () => {
   const gross = photoReferencesForAsset('asset-skeletal-atlas-skull-base-external')[0]!;
   const micro = photoReferencesForAsset('asset-commons-kidney-cortex-human')[0]!;
-  assert.equal(photoReferenceLabel(gross, 'en'), 'See real photo · Wikimedia Commons');
-  assert.equal(photoReferenceLabel(gross, 'es'), 'Ver foto real · Wikimedia Commons');
-  assert.equal(photoReferenceLabel(micro, 'en'), 'See real photo (microscope) · Wikimedia Commons');
-  assert.equal(photoReferenceLabel(micro, 'es'), 'Ver foto real (microscopio) · Wikimedia Commons');
+  assert.equal(photoReferenceLabel(gross, 'en'), `See real photo — ${gross.subject!.en} · Wikimedia Commons`);
+  assert.equal(photoReferenceLabel(gross, 'es'), `Ver foto real — ${gross.subject!.es} · Wikimedia Commons`);
+  assert.equal(photoReferenceLabel({ ...gross, subject: undefined }, 'en'), 'See real photo · Wikimedia Commons');
+  assert.equal(photoReferenceLabel({ ...gross, subject: undefined }, 'es'), 'Ver foto real · Wikimedia Commons');
+  assert.equal(photoReferenceLabel(micro, 'en'), `See real photo (microscope) — ${micro.subject!.en} · Wikimedia Commons`);
+  assert.equal(photoReferenceLabel(micro, 'es'), `Ver foto real (microscopio) — ${micro.subject!.es} · Wikimedia Commons`);
+  assert.equal(photoReferenceLabel({ ...micro, subject: undefined }, 'en'), 'See real photo (microscope) · Wikimedia Commons');
+  assert.equal(photoReferenceLabel({ ...micro, subject: undefined }, 'es'), 'Ver foto real (microscopio) · Wikimedia Commons');
   const imaging = { ...gross, mediaType: 'diagnostic-imaging' as const };
   assert.match(photoReferenceLabel(imaging, 'en'), /^See medical imaging/);
   assert.match(photoReferenceLabel(imaging, 'es'), /^Ver imagen médica/);

@@ -13,51 +13,7 @@ export type PhotoReference = {
   subject?: { en: string; es: string };
 };
 
-const references: Readonly<Record<string, readonly PhotoReference[]>> = {
-  'asset-skeletal-atlas-skull-base-external': [{
-    url: 'https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'gross-photo',
-  }],
-  'asset-skeletal-atlas-cranial-floor-internal': [{
-    url: 'https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'gross-photo',
-  }],
-  'asset-skeletal-atlas-scapula': [{
-    url: 'https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'gross-photo',
-    subject: { en: 'Anterior (side unstated)', es: 'Anterior (lado no indicado)' },
-  }, {
-    url: 'https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'gross-photo',
-    subject: { en: 'Posterior (side unstated)', es: 'Posterior (lado no indicado)' },
-  }],
-  'asset-skeletal-atlas-humerus': [{
-    url: 'https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'gross-photo',
-    subject: { en: 'Anterior (side unstated)', es: 'Anterior (lado no indicado)' },
-  }, {
-    url: 'https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'gross-photo',
-    subject: { en: 'Posterior (side unstated)', es: 'Posterior (lado no indicado)' },
-  }],
-  'asset-skeletal-atlas-femur': [{
-    url: 'https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'gross-photo',
-    subject: { en: 'Both views (side unstated)', es: 'Ambas vistas (lado no indicado)' },
-  }],
-  'asset-commons-kidney-cortex-human': [{
-    url: 'https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'micrograph',
-  }],
-  'asset-commons-alveolar-sac': [{
-    url: 'https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG',
-    sourceName: 'Wikimedia Commons', mediaType: 'micrograph',
-  }],
-  'asset-commons-simple-squamous-epithelium': [{
-    url: 'https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg',
-    sourceName: 'Wikimedia Commons', mediaType: 'micrograph',
-  }],
-};
+import { references } from './real-photo-reference-data.ts';
 
 export function photoReferencesForAsset(assetId?: string): readonly PhotoReference[] {
   return assetId && Object.hasOwn(references, assetId) ? references[assetId]! : [];

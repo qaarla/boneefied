@@ -1,0 +1,257 @@
+{
+  "sourceContext": "https://sites.google.com/a/umich.edu/bluelink/about-us",
+  "humanDonorProvenance": "https://medresearch.umich.edu/health-lab/free-online-tool-expands-anatomical-science-world",
+  "terms": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink",
+  "creator": "B. Kathleen Alsup and Glenn M. Fox, University of Michigan Medical School",
+  "reviewMethod": "The public university page and its actual linked images were opened. Temporary comparison sheets preserve the original photograph captions and copyright. Only the specifically listed image numbers were anatomically reviewed. Models, casts and dry-bone photographs without established specimen origin are not promoted on appearance alone. No photographs are shipped in Boneefied.",
+  "mappings": [
+    {
+      "assetId": "asset-bvis04-spinal-roots-rami",
+      "slug": "labeled-posterior-neck-images",
+      "photos": [32, 35, 36],
+      "en": "Cord, roots, ganglion and rami: posterior dissection",
+      "es": "Médula, raíces, ganglio y ramos: disección posterior",
+      "matches": "The posterior spinal dissection explicitly identifies dorsal root/rootlets, ventral root, dorsal root ganglion and dorsal/ventral primary rami beside the cord. Section 35 provides the transverse cord relationship.",
+      "limitations": "The root/ramus image is a posterior dissection, not the drawing's axial view; cut-away vertebral tissues expose the nerves."
+    },
+    {
+      "assetId": "asset-openstax-spinal-cord-specimen",
+      "slug": "labeled-posterior-neck-images",
+      "photos": [35],
+      "en": "Human spinal cord section, gross view, not histology",
+      "es": "Sección de médula humana, vista macroscópica, no histología",
+      "matches": "The real transverse human vertebral-column section includes the spinal cord, with central gray matter and peripheral white matter explicitly identified.",
+      "limitations": "Gross donor section rather than a stained micrograph. This establishes the linked comparison as human; it does not retrospectively establish the organism of Boneefied's existing source image."
+    },
+    {
+      "assetId": "asset-bvis04-middle-ear",
+      "slug": "labeled-nasal-cavity-sinuses-and-ear-images",
+      "photos": [22, 23, 24],
+      "en": "Left middle ear: opposing dissected walls",
+      "es": "Oído medio izquierdo: paredes opuestas disecadas",
+      "matches": "Lateral wall dissection identifies tympanic membrane, malleus, incus and auditory tube. Medial wall views identify stapes, oval window with stapes footplate and round window.",
+      "limitations": "A left middle ear in opposing wall views, not the right coronal schematic. The auditory tube is named pharyngotympanic tube at the source."
+    },
+    {
+      "assetId": "asset-bvis05-celiac-renal-context",
+      "slug": "labeled-duodenum-pancreas-and-abdominal-aorta-images",
+      "photos": [11, 13, 14],
+      "en": "Abdominal aorta, celiac trunk and renal vessels",
+      "es": "Aorta abdominal, tronco celíaco y vasos renales",
+      "matches": "Anterior retroperitoneal dissections identify celiac trunk, abdominal aorta, renal artery and bilateral renal veins entering the vena cava. The left renal pedicle is shown in a close view.",
+      "limitations": "Soft tissues are reflected and some vessels cut to expose their courses; this donor has an accessory renal artery, unlike the simplified plate."
+    },
+    {
+      "assetId": "asset-servier-brain-sagittal",
+      "slug": "labeled-cranial-cavity-venous-sinuses-and-brain-images",
+      "photos": [52, 56],
+      "en": "Medial hemisected brain and ventricles",
+      "es": "Cerebro hemiseccionado medial y ventrículos",
+      "matches": "The actual medial brain section shows corpus callosum, the diencephalic region and ventricular spaces above the midbrain, pons, medulla and sectioned cerebellum. A second ventricular view explicitly identifies lateral, third and fourth ventricles.",
+      "limitations": "The small hypothalamic/epithalamic structures and aqueduct are not individually labeled in these photographs. Fixed tissue and section plane differ from the schematic; this is a real regional comparison, not a substitute labeled answer key."
+    },
+    {
+      "assetId": "asset-bvis04-brainstem-cerebellum",
+      "slug": "labeled-cranial-cavity-venous-sinuses-and-brain-images",
+      "photos": [52, 56],
+      "en": "Midsagittal brainstem, cerebellum and fourth ventricle",
+      "es": "Tronco encefálico, cerebelo y cuarto ventrículo sagitales",
+      "matches": "Medial brain section shows the labeled midbrain, pons and medulla with the sectioned cerebellar arbor vitae and fourth ventricular space.",
+      "limitations": "The brain is separated from its cord. Use the separately named cord dissection for the spinal-cord subject of the composite drawing.",
+      "additionalSources": [{
+        "slug": "labeled-posterior-neck-images",
+        "photos": [32, 33, 34],
+        "en": "Separate spinal cord dissection",
+        "es": "Disección separada de la médula espinal",
+        "matches": "Opened posterior vertebral canal shows the human spinal cord and cervical/lumbar enlargements with spinal roots.",
+        "limitations": "Separate posterior donor dissection, not a continuous midsagittal brain-and-cord specimen."
+      }]
+    },
+    {
+      "assetId": "asset-bvis04-upper-limb-nerves",
+      "slug": "labeled-overview-of-upper-limb-images",
+      "photos": [7, 9, 16],
+      "en": "Median, ulnar and radial nerves in the dissected limb",
+      "es": "Nervios mediano, cubital y radial en el miembro disecado",
+      "matches": "Anterior arm dissection explicitly identifies median and ulnar nerves. Posterior arm identifies the radial nerve behind the humerus, and the posterior forearm shows the ulnar nerve near the elbow.",
+      "limitations": "Complementary dissections rather than one unbroken color-coded nerve map. The separately named plexus image supplies the proximal origin.",
+      "additionalSources": [{
+        "slug": "labeled-brachial-plexus-images",
+        "photos": [13, 14, 15, 17, 18],
+        "en": "Brachial plexus roots, trunks and cords",
+        "es": "Raíces, troncos y fascículos del plexo braquial",
+        "matches": "Cervical and axillary dissections show roots, superior/middle/inferior trunks, divisions and medial/lateral/posterior cords of the human brachial plexus.",
+        "limitations": "Dissected proximal plexus; the companion limb page supplies named distal nerve courses."
+      }]
+    },
+    {
+      "assetId": "asset-bvis05-heart-anterior",
+      "slug": "heart",
+      "photos": [1, 2, 4, 5, 9, 22, 23, 24, 25],
+      "en": "Heart surfaces, chambers and great-vessel entries",
+      "es": "Superficies cardíacas, cámaras y entradas de grandes vasos",
+      "matches": "Anterior, anterolateral and posteroinferior donor views show the apex, atria/auricles, ventricles, coronary sulcus, pulmonary trunk, ascending aorta and pulmonary/caval venous entries.",
+      "limitations": "The source uses several surfaces. The arch branches and descending thoracic aorta are supplied by two separately named thoracic pages.",
+      "additionalSources": [{
+        "slug": "labeled-posterior-neck-images",
+        "photos": [15, 27],
+        "en": "Aortic arch and its three major branches",
+        "es": "Arco aórtico y sus tres ramas principales",
+        "matches": "Anterior thoracic-root dissection identifies the arch of aorta, brachiocephalic trunk, left common carotid and left subclavian arteries.",
+        "limitations": "Neck and thoracic tissues are reflected; this is a complementary arch view, not an isolated-heart photograph."
+      }, {
+        "slug": "labeled-posterior-mediastinum",
+        "photos": [2, 3, 4, 6],
+        "en": "Descending aorta and posterior mediastinal context",
+        "es": "Aorta descendente y contexto mediastínico posterior",
+        "matches": "Opened thorax exposes the descending thoracic aorta and mediastinal relation of the great vessels, with caval and ascending-aortic context.",
+        "limitations": "Heart and other anterior structures have been removed to expose the posterior mediastinum."
+      }]
+    }
+    ,
+    {
+      "assetId": "asset-muscular-atlas-posterior-arm",
+      "slug": "labeled-overview-of-upper-limb-images",
+      "photos": [3, 8, 9, 15],
+      "en": "Posterior arm and elbow dissections",
+      "es": "Disecciones posteriores del brazo y codo",
+      "matches": "Posterior arm photographs show deltoid, teres major and long/lateral triceps heads; the deep arm shows medial triceps and radial nerve. Posterior forearm image 15 explicitly labels anconeus at the elbow.",
+      "limitations": "Separate dissections, not the same donor or guaranteed same side as the drawing; the anconeus detail is on the posterior-forearm photograph."
+    },
+    {
+      "assetId": "asset-muscular-atlas-forearm",
+      "slug": "labeled-overview-of-upper-limb-images",
+      "photos": [10, 12, 15, 17],
+      "en": "Anterior, posterior and deep forearm",
+      "es": "Antebrazo anterior, posterior y profundo",
+      "matches": "Anterior images identify pronator teres and flexor carpi radialis. Posterior superficial image 15 identifies extensor carpi radialis longus/brevis and anconeus; deep image 17 identifies supinator.",
+      "limitations": "Several dissected layers on one teaching page, not a single intact right forearm or matched donor."
+    },
+    {
+      "assetId": "asset-muscular-atlas-gluteal",
+      "slug": "labeled-lumbar-spine-hip-and-knee-images",
+      "photos": [9, 10, 11, 12],
+      "en": "Gluteus maximus intact and reflected",
+      "es": "Glúteo mayor intacto y reflejado",
+      "matches": "Posterior specimens show superficial gluteus maximus and gluteus medius, followed by reflected maximus exposing medius and the deeper gluteal region.",
+      "limitations": "The source reflects rather than entirely removes maximus; donor and side are not asserted to match the illustration."
+    },
+    {
+      "assetId": "asset-muscular-atlas-anterior-leg",
+      "slug": "labeled-overview-of-lower-limb-images",
+      "photos": [7, 8, 9],
+      "en": "Anterior and lateral leg dissections",
+      "es": "Disecciones anterior y lateral de la pierna",
+      "matches": "Anterolateral leg shows tibialis anterior and its tendon; the lateral leg identifies fibularis longus and brevis, with their paths toward the ankle and dorsal foot.",
+      "limitations": "The comparison uses anterior and lateral photographs, not one schematic frontal view; side and donor identity are not matched."
+    },
+    {
+      "assetId": "asset-muscular-atlas-hand",
+      "slug": "labeled-wrist-hand-and-foot-images",
+      "photos": [9, 11, 12, 14],
+      "en": "Palmar intrinsic muscles, dissected layers",
+      "es": "Músculos intrínsecos palmares, capas disecadas",
+      "matches": "Thenar dissection identifies abductor pollicis brevis and flexor pollicis brevis. Hypothenar dissection identifies abductor digiti minimi (cut), and image 12 shows lumbricals arising alongside the deep flexor tendons.",
+      "limitations": "Abductor digiti minimi is cut to expose deeper muscles; separate layers and specimens are shown rather than the intact right-hand arrangement."
+    },
+    {
+      "assetId": "asset-openstax-muscle-anterior-arm",
+      "slug": "labeled-overview-of-upper-limb-images",
+      "photos": [5, 6, 10, 12],
+      "en": "Superficial and deep anterior arm",
+      "es": "Brazo anterior superficial y profundo",
+      "matches": "Superficial anterior arm identifies deltoid and both biceps heads. A deeper dissection with biceps tendons cut exposes coracobrachialis and brachialis; forearm images identify pronator teres and flexor carpi radialis.",
+      "limitations": "Several photographs cover the two drawing panels. Biceps tendons are cut in the deep image; not a matched right-sided donor."
+    },
+    {
+      "assetId": "asset-openstax-muscle-anterior-leg",
+      "slug": "labeled-overview-of-lower-limb-images",
+      "photos": [2, 3, 4, 5, 6],
+      "en": "Anterior thigh, superficial and deeper views",
+      "es": "Muslo anterior, vistas superficiales y profundas",
+      "matches": "Anterior thigh series shows sartorius, quadriceps and tensor fasciae latae; the deeper image identifies iliopsoas, vastus medialis/lateralis and cut rectus femoris. Medial views show adductor longus and gracilis.",
+      "limitations": "This is a set of single-limb dissections, not the bilateral superficial plate; some muscles are cut or reflected to expose deeper anatomy."
+    },
+    {
+      "assetId": "asset-injurymap-rotator-cuff-labeled",
+      "slug": "labeled-shoulder-images",
+      "photos": [1, 5, 6, 13],
+      "en": "Anterior and posterior rotator-cuff dissections",
+      "es": "Disecciones anterior y posterior del manguito rotador",
+      "matches": "Posterior shoulder identifies supraspinatus, infraspinatus, teres minor and teres major. The anterior shoulder identifies subscapularis; the opened superficial tissues expose the cuff and joint capsule.",
+      "limitations": "Complementary dissected views; no claim of the same specimen or laterality as the schematic."
+    },
+    {
+      "assetId": "asset-bvis05-heart-chambers-valves",
+      "slug": "heart",
+      "photos": [8, 21, 26, 27, 28, 29, 32, 33, 34, 35],
+      "en": "Opened atria, ventricles and atrioventricular valves",
+      "es": "Aurículas, ventrículos y válvulas auriculoventriculares abiertos",
+      "matches": "Opened right atrium shows interatrial wall/fossa ovalis; opened right ventricle shows tricuspid valve, chordae and papillary muscle. Opened left atrium/ventricle show pulmonary venous openings, mitral valve, chordae, papillary muscles and ventricular wall. Images 8 and 21 distinguish epicardium, myocardium and endocardium.",
+      "limitations": "Multiple complementary dissections, not a single four-chamber section. Photographs show fixed anatomy, not the schematic flow arrows."
+    },
+    {
+      "assetId": "asset-bvis05-heart-valves-superior",
+      "slug": "heart",
+      "photos": [11, 28, 31, 34, 36],
+      "en": "Four valves, complementary opened-heart views",
+      "es": "Cuatro válvulas, vistas complementarias del corazón abierto",
+      "matches": "Superior section 31 shows pulmonary and aortic semilunar valves, with aortic sinuses in 36. Opened chambers 28 and 34 show tricuspid and mitral valves. Coronary origins are shown in the anterolateral dissection 11.",
+      "limitations": "Not all four valves are photographed from above in one plane; atrioventricular valves and coronary origins require complementary views."
+    },
+    {
+      "assetId": "asset-bvis05-coronary-anterior",
+      "slug": "heart",
+      "photos": [11, 13, 14, 16, 17, 18],
+      "en": "Anterior coronary arteries and great cardiac vein",
+      "es": "Arterias coronarias anteriores y vena cardíaca magna",
+      "matches": "Dissected coronary series identifies right coronary, right marginal, left coronary, anterior interventricular and circumflex arteries; lateral image 18 explicitly identifies the great cardiac vein.",
+      "limitations": "Multiple views reveal the vessels; vessels are not naturally red/blue as in the schematic, and fixed tissue differs from living perfused anatomy."
+    },
+    {
+      "assetId": "asset-bvis05-coronary-posterior",
+      "slug": "heart",
+      "photos": [15, 18, 19, 20, 22, 24],
+      "en": "Posterior coronary vessels and venous openings",
+      "es": "Vasos coronarios posteriores y orificios venosos",
+      "matches": "Posteroinferior and lateral heart dissections show coronary sinus, great/middle/small cardiac veins and posterior interventricular branch. Additional views show right coronary artery, circumflex continuation, pulmonary venous openings and caval entry into the right atrium.",
+      "limitations": "Several complementary views; a single posterior photograph cannot expose every named vessel. Vessel colours are not the drawing's oxygenation code."
+    },
+    {
+      "assetId": "asset-bvis05-lung-lobes",
+      "slug": "labeled-lungs-and-ventilation-pathways-images",
+      "photos": [3, 4, 5, 6, 7, 9, 10],
+      "en": "Both lungs: lobes, fissures and hilar surfaces",
+      "es": "Ambos pulmones: lóbulos, fisuras y superficies hiliares",
+      "matches": "Lateral and anterior specimens identify all right and left lobes, horizontal/oblique fissures and cardiac notch. Medial surfaces identify hila, pulmonary arteries/veins and bronchi at the roots.",
+      "limitations": "Complementary isolated-lung and thoracic views; fixed tissue and donor variation differ from the simplified anterior and right-medial panels."
+    },
+    {
+      "assetId": "asset-bvis06-kidney-section",
+      "slug": "labeled-kidneys-and-urinary-system-images",
+      "photos": [3, 4, 5, 6],
+      "en": "Sectioned kidney: cortex, pyramids and calyces",
+      "es": "Riñón seccionado: corteza, pirámides y cálices",
+      "matches": "Sectioned left kidney shows capsule, cortex, medulla/pyramids, renal columns, papillae, minor/major calyces, pelvis, ureter, hilum and renal sinus. The lobe inset's cortex-pyramid-papilla-calyx relationship is present in the section.",
+      "limitations": "The photographed left kidney has its own pyramid count and orientation; it is not the same side/orientation or seven-pyramid schematic."
+    },
+    {
+      "assetId": "asset-bvis04-cranial-nerves-i-vi",
+      "slug": "labeled-cranial-cavity-venous-sinuses-and-brain-images",
+      "photos": [58, 59, 63, 64],
+      "en": "Cranial nerves I–VI: inferior and intracranial views",
+      "es": "Nervios craneales I–VI: vistas inferior e intracraneal",
+      "matches": "Inferior brain identifies olfactory tract, optic and oculomotor nerves; superior intracranial dissections show optic, oculomotor, trochlear, trigeminal and abducens nerves at the skull base.",
+      "limitations": "I–VI are covered by complementary inferior-brain and intracranial dissections, not one intact inferior brain photograph. Cut nerve segments are preserved in the dissections."
+    },
+    {
+      "assetId": "asset-bvis04-cranial-nerves-vii-xii",
+      "slug": "labeled-cranial-cavity-venous-sinuses-and-brain-images",
+      "photos": [58, 64, 65, 66],
+      "en": "Cranial nerves VII–XII: skull-base dissections",
+      "es": "Nervios craneales VII–XII: disecciones de la base craneal",
+      "matches": "Intracranial dissection 64 identifies facial and vestibulocochlear nerves; 65 identifies glossopharyngeal, vagus and accessory nerves; 66 identifies hypoglossal nerve. Inferior-brain image 58 also shows accessory nerve.",
+      "limitations": "The source shows cut nerves within an opened skull base rather than the schematic's intact brainstem/cerebellopontine-angle view."
+    }
+  ]
+}
