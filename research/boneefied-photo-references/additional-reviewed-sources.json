@@ -185,6 +185,63 @@
           "reinspection": "The public Commons source page was opened on 2026-11-07. Its actual 600x human renal-cortex photograph visibly resolves cuboidal tubular epithelium and round nuclei around tubular lumina. Caption identifies human kidney cortex. No photograph was downloaded or retained in the project."
         }
       ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-skull-sutures",
+      "reason": "Three previously inspected human specimens cover the named anatomy together: the superior vault shows frontal/parietal bones and coronal/sagittal sutures; the posterior lambda detail shows the lambdoid junction and adjoining occipital/parietal bone; the external skull base supplies temporal-bone context. Related examples, not a matched superior/posterior pair: the posterior source is explicitly a close detail and the temporal reference is an inferior view.",
+      "refs": [
+        {
+          "fromAssetId": "asset-skeletal-atlas-skull-sutures",
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+          "subject": {
+            "en": "Skull vault: superior specimen",
+            "es": "Bóveda craneal: espécimen superior"
+          },
+          "viewLimitations": "Superior vault specimen; not a whole posterior skull view or a matched donor."
+        },
+        {
+          "fromAssetId": "asset-skeletal-atlas-skull-sutures",
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+          "subject": {
+            "en": "Posterior sutures: lambda close-up",
+            "es": "Suturas posteriores: detalle de lambda"
+          },
+          "viewLimitations": "Close detail of the sagittal/lambdoid junction, not the complete posterior contour."
+        },
+        {
+          "fromAssetId": "asset-skeletal-atlas-skull-base-external",
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+          "subject": {
+            "en": "Temporal bones: inferior skull context",
+            "es": "Huesos temporales: contexto inferior del cráneo"
+          },
+          "viewLimitations": "Inferior temporal-bone context; not a posterior temporal-bone view or the identical skull."
+        }
+      ]
+    },
+    {
+      "assetId": "asset-servier-pelvis",
+      "reason": "The previously inspected frontal human pelvis depicts the sacrum and both hip bones, including iliac, pubic, ischial and acetabular regions. The separately inspected human femur supplies the missing femoral subject. These are complementary real bone examples, not a photograph of the illustrated intact pelvis with attached femora; donor and laterality are not asserted.",
+      "refs": [
+        {
+          "fromAssetId": "asset-servier-pelvis",
+          "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+          "subject": {
+            "en": "Pelvis: frontal specimen without femora",
+            "es": "Pelvis: espécimen frontal sin fémures"
+          },
+          "viewLimitations": "Mounted frontal pelvis with fixation wires; femora absent. The second reference is a separately photographed femur, not an attached joint."
+        },
+        {
+          "fromAssetId": "asset-skeletal-atlas-femur",
+          "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+          "subject": {
+            "en": "Femur: separate anterior/posterior specimen",
+            "es": "Fémur: espécimen separado anterior y posterior"
+          },
+          "viewLimitations": "Separate femur photographed in two aspects; no claim of shared donor, established side or an intact pelvic articulation."
+        }
+      ]
     }
   ]
 }

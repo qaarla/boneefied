@@ -1,0 +1,999 @@
+{
+  "checkedAt": "2026-11-07T00:57:02.058932+00:00",
+  "complete": true,
+  "scope": "One bounded reference-only completion pass; no builds, signing, submission, publication, redesign or broad features.",
+  "before": {
+    "fully-matched": 38,
+    "partial": 82,
+    "no-literal-photo": 3,
+    "inaccessible-unverified": 26,
+    "unmatched-after-bounded-research": 15
+  },
+  "after": {
+    "fully-matched": 40,
+    "partial": 84,
+    "no-literal-photo": 3,
+    "inaccessible-unverified": 23,
+    "unmatched-after-bounded-research": 14
+  },
+  "approvedDirectMatches": 5,
+  "approvedRelatedExamples": 35,
+  "existingApprovedRecordsUnchanged": 38,
+  "originalIllustrationHashesUnchanged": 164,
+  "newlyApprovedAssetIds": [
+    "asset-skeletal-atlas-skull-sutures",
+    "asset-servier-pelvis"
+  ],
+  "newlyLinkedDistinctSourcePages": [
+    "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+    "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+    "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg"
+  ],
+  "newMappings": [
+    {
+      "assetId": "asset-skeletal-atlas-skull-sutures",
+      "reason": "Three previously inspected human specimens cover the named anatomy together: the superior vault shows frontal/parietal bones and coronal/sagittal sutures; the posterior lambda detail shows the lambdoid junction and adjoining occipital/parietal bone; the external skull base supplies temporal-bone context. Related examples, not a matched superior/posterior pair: the posterior source is explicitly a close detail and the temporal reference is an inferior view.",
+      "refs": [
+        {
+          "fromAssetId": "asset-skeletal-atlas-skull-sutures",
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+          "subject": {
+            "en": "Skull vault: superior specimen",
+            "es": "Bóveda craneal: espécimen superior"
+          },
+          "viewLimitations": "Superior vault specimen; not a whole posterior skull view or a matched donor."
+        },
+        {
+          "fromAssetId": "asset-skeletal-atlas-skull-sutures",
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+          "subject": {
+            "en": "Posterior sutures: lambda close-up",
+            "es": "Suturas posteriores: detalle de lambda"
+          },
+          "viewLimitations": "Close detail of the sagittal/lambdoid junction, not the complete posterior contour."
+        },
+        {
+          "fromAssetId": "asset-skeletal-atlas-skull-base-external",
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+          "subject": {
+            "en": "Temporal bones: inferior skull context",
+            "es": "Huesos temporales: contexto inferior del cráneo"
+          },
+          "viewLimitations": "Inferior temporal-bone context; not a posterior temporal-bone view or the identical skull."
+        }
+      ]
+    },
+    {
+      "assetId": "asset-servier-pelvis",
+      "reason": "The previously inspected frontal human pelvis depicts the sacrum and both hip bones, including iliac, pubic, ischial and acetabular regions. The separately inspected human femur supplies the missing femoral subject. These are complementary real bone examples, not a photograph of the illustrated intact pelvis with attached femora; donor and laterality are not asserted.",
+      "refs": [
+        {
+          "fromAssetId": "asset-servier-pelvis",
+          "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+          "subject": {
+            "en": "Pelvis: frontal specimen without femora",
+            "es": "Pelvis: espécimen frontal sin fémures"
+          },
+          "viewLimitations": "Mounted frontal pelvis with fixation wires; femora absent. The second reference is a separately photographed femur, not an attached joint."
+        },
+        {
+          "fromAssetId": "asset-skeletal-atlas-femur",
+          "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+          "subject": {
+            "en": "Femur: separate anterior/posterior specimen",
+            "es": "Fémur: espécimen separado anterior y posterior"
+          },
+          "viewLimitations": "Separate femur photographed in two aspects; no claim of shared donor, established side or an intact pelvic articulation."
+        }
+      ]
+    }
+  ],
+  "partialImprovements": {
+    "asset-bvis05-gut-lymphoid-lacteal": "Partial: the already inspected human ileal cross-section shows the prominent aggregated lymphoid tissue relevant to Peyer patches. Appendix lymphoid tissue, villus lacteals and the intestinal lymphatic-trunk route are not established together. A Peyer-patch example is not complete coverage of this composite.",
+    "asset-bvis05-ovary-testis": "Partial: the already inspected human ovarian sections include a corpus luteum and follicular profiles, so an ovarian example is established. No visually verified human testis set resolves both Sertoli and Leydig cells. The ovarian half must not be promoted to a complete ovary/testis endocrine counterpart.",
+    "asset-bvis06-renal-corpuscle": "Partial: the already inspected, explicitly human renal-cortex micrograph supplies a glomerular tuft and capsular space, resolving the earlier specimen-species uncertainty for this portion. Podocytes, filtration slits/membrane, macula densa, juxtaglomerular cells and the paired arteriolar arrangement remain unverified. No link is approved for the complete composite.",
+    "asset-bvis04-plexus-overview": "Partial: the already inspected Michigan human brachial-plexus dissections replace reliance on an organism-unconfirmed candidate for that region. The whole-body diagram still lacks verified cervical/lumbar/sacral plexus, phrenic-nerve and spinal-cord coverage as a combined set. No complete-plate link is approved.",
+    "asset-bvis04-epithelia-simple": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved."
+  },
+  "sharedRequiredSubjectsAmongRemainingPlates": {
+    "vertebral foramen": [
+      "asset-skeletal-atlas-vertebra-typical",
+      "asset-skeletal-atlas-atlas-axis",
+      "asset-cervical-vertebra"
+    ],
+    "vertebral body": [
+      "asset-skeletal-atlas-vertebra-typical",
+      "asset-skeletal-atlas-atlas-axis",
+      "asset-skeletal-atlas-rib-detail"
+    ],
+    "spinous process": [
+      "asset-skeletal-atlas-vertebra-typical",
+      "asset-skeletal-atlas-atlas-axis",
+      "asset-cervical-vertebra"
+    ],
+    "inferior articular facet": [
+      "asset-skeletal-atlas-vertebra-typical",
+      "asset-skeletal-atlas-atlas-axis"
+    ],
+    "transverse process": [
+      "asset-skeletal-atlas-vertebra-typical",
+      "asset-skeletal-atlas-rib-detail"
+    ],
+    "superior articular facet": [
+      "asset-skeletal-atlas-vertebra-typical",
+      "asset-skeletal-atlas-atlas-axis"
+    ],
+    "superior costal facet": [
+      "asset-skeletal-atlas-vertebra-typical",
+      "asset-skeletal-atlas-rib-detail",
+      "asset-cervical-vertebra"
+    ],
+    "transverse foramen": [
+      "asset-skeletal-atlas-atlas-axis",
+      "asset-cervical-vertebra"
+    ],
+    "sternum": [
+      "asset-skeletal-atlas-thoracic-cage",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "true ribs": [
+      "asset-skeletal-atlas-thoracic-cage",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "manubrium": [
+      "asset-skeletal-atlas-thoracic-cage",
+      "asset-skeletal-atlas-pectoral-girdle"
+    ],
+    "clavicle": [
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-skeletal-atlas-shoulder-joint",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "head of humerus": [
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-skeletal-atlas-shoulder-joint"
+    ],
+    "scapula": [
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-skeletal-atlas-shoulder-joint",
+      "asset-atlas-skeleton-posterior",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "acromion": [
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-skeletal-atlas-shoulder-joint"
+    ],
+    "coracoid process": [
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-skeletal-atlas-shoulder-joint"
+    ],
+    "glenoid cavity": [
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-skeletal-atlas-shoulder-joint"
+    ],
+    "acromioclavicular ligament": [
+      "asset-skeletal-atlas-pectoral-girdle",
+      "asset-skeletal-atlas-shoulder-joint"
+    ],
+    "ulna": [
+      "asset-skeletal-atlas-forearm",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "ulnar styloid process": [
+      "asset-skeletal-atlas-forearm",
+      "asset-skeletal-atlas-hand-palmar"
+    ],
+    "radius": [
+      "asset-skeletal-atlas-forearm",
+      "asset-atlas-skeleton-anterior",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "radial styloid process": [
+      "asset-skeletal-atlas-forearm",
+      "asset-skeletal-atlas-hand-palmar"
+    ],
+    "metacarpals": [
+      "asset-skeletal-atlas-hand-palmar",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "intercondylar eminence": [
+      "asset-skeletal-atlas-leg-tibia-fibula",
+      "asset-skeletal-atlas-knee-joint"
+    ],
+    "fibula": [
+      "asset-skeletal-atlas-leg-tibia-fibula",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-posterior",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "tibial tuberosity": [
+      "asset-skeletal-atlas-leg-tibia-fibula",
+      "asset-skeletal-atlas-knee-joint"
+    ],
+    "tibia": [
+      "asset-skeletal-atlas-leg-tibia-fibula",
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-posterior",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "joint cavity": [
+      "asset-skeletal-atlas-synovial-joint",
+      "asset-servier-elbow-joint"
+    ],
+    "articular cartilage": [
+      "asset-skeletal-atlas-synovial-joint",
+      "asset-servier-elbow-joint"
+    ],
+    "fibrous capsule": [
+      "asset-skeletal-atlas-synovial-joint",
+      "asset-servier-elbow-joint"
+    ],
+    "patella": [
+      "asset-skeletal-atlas-knee-joint",
+      "asset-atlas-skeleton-anterior",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "forearm (antebrachial) region": [
+      "asset-atlas-anterior-position",
+      "asset-atlas-posterior-position"
+    ],
+    "thigh (femoral) region": [
+      "asset-atlas-anterior-position",
+      "asset-atlas-posterior-position"
+    ],
+    "head (cephalic) region": [
+      "asset-atlas-anterior-position",
+      "asset-atlas-posterior-position"
+    ],
+    "leg (crural) region": [
+      "asset-atlas-anterior-position",
+      "asset-atlas-posterior-position"
+    ],
+    "neck (cervical) region": [
+      "asset-atlas-anterior-position",
+      "asset-atlas-posterior-position"
+    ],
+    "upper arm (brachial) region": [
+      "asset-atlas-anterior-position",
+      "asset-atlas-posterior-position"
+    ],
+    "parietal pleura": [
+      "asset-atlas-body-cavities",
+      "asset-bvis05-pleura-diaphragm"
+    ],
+    "abdominal cavity": [
+      "asset-atlas-body-cavities",
+      "asset-original-body-cavities"
+    ],
+    "kidney (retroperitoneal)": [
+      "asset-atlas-body-cavities",
+      "asset-atlas-organ-locations"
+    ],
+    "cranial cavity": [
+      "asset-atlas-body-cavities",
+      "asset-original-body-cavities"
+    ],
+    "visceral pleura": [
+      "asset-atlas-body-cavities",
+      "asset-bvis05-pleura-diaphragm"
+    ],
+    "diaphragm": [
+      "asset-atlas-body-cavities",
+      "asset-openstax-diaphragm-labeled",
+      "asset-bvis05-pleura-diaphragm",
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-abdominal-placement",
+      "asset-bvis06-kidney-placement"
+    ],
+    "pelvic cavity": [
+      "asset-atlas-body-cavities",
+      "asset-original-body-cavities"
+    ],
+    "thoracic cavity": [
+      "asset-atlas-body-cavities",
+      "asset-original-body-cavities"
+    ],
+    "vertebral cavity": [
+      "asset-atlas-body-cavities",
+      "asset-original-body-cavities"
+    ],
+    "liver": [
+      "asset-atlas-organ-locations",
+      "asset-bvis06-liver-biliary-pancreas",
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-abdominal-placement",
+      "asset-bvis06-kidney-placement"
+    ],
+    "stomach": [
+      "asset-atlas-organ-locations",
+      "asset-bvis06-stomach",
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "pancreas": [
+      "asset-atlas-organ-locations",
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-pancreas-islet",
+      "asset-bvis06-liver-biliary-pancreas",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "spleen": [
+      "asset-atlas-organ-locations",
+      "asset-bvis05-spleen-pulp"
+    ],
+    "urinary bladder": [
+      "asset-atlas-organ-locations",
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-nephron-pathway",
+      "asset-bvis06-male-system"
+    ],
+    "skull": [
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "true ribs (1-7)": [
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-axial-appendicular"
+    ],
+    "humerus": [
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-servier-elbow-joint",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "pelvis (hip bone)": [
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular"
+    ],
+    "mandible": [
+      "asset-atlas-skeleton-anterior",
+      "asset-skull-front",
+      "asset-skull-lateral",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "femur": [
+      "asset-atlas-skeleton-anterior",
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-appendicular-skeleton-blank"
+    ],
+    "lumbar vertebrae": [
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-cervical-vertebra",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "thoracic vertebrae": [
+      "asset-atlas-skeleton-posterior",
+      "asset-cervical-vertebra",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "cervical vertebrae": [
+      "asset-atlas-skeleton-posterior",
+      "asset-cervical-vertebra",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "coccyx": [
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "sacrum": [
+      "asset-atlas-skeleton-posterior",
+      "asset-atlas-skeleton-axial-appendicular",
+      "asset-commons-axial-skeleton-blank"
+    ],
+    "parietal bone": [
+      "asset-skull-front",
+      "asset-skull-lateral"
+    ],
+    "sphenoid bone": [
+      "asset-skull-front",
+      "asset-skull-lateral"
+    ],
+    "temporal bone": [
+      "asset-skull-front",
+      "asset-skull-lateral"
+    ],
+    "maxilla": [
+      "asset-skull-front",
+      "asset-skull-lateral"
+    ],
+    "frontal bone": [
+      "asset-skull-front",
+      "asset-skull-lateral"
+    ],
+    "zygomatic bone": [
+      "asset-skull-front",
+      "asset-skull-lateral"
+    ],
+    "mental foramen": [
+      "asset-skull-front",
+      "asset-skull-lateral"
+    ],
+    "nasal bone": [
+      "asset-skull-front",
+      "asset-skull-lateral"
+    ],
+    "external acoustic meatus": [
+      "asset-skull-lateral",
+      "asset-servier-ear-section"
+    ],
+    "gastrocnemius": [
+      "asset-muscular-atlas-calf",
+      "asset-openstax-muscle-posterior-leg",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "sternocleidomastoid": [
+      "asset-openstax-muscle-face-neck",
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "deltoid": [
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-posterior-back",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "serratus anterior": [
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "external oblique": [
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "pectoralis major": [
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "rectus abdominis": [
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "biceps brachii": [
+      "asset-openstax-muscle-anterior-trunk",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "latissimus dorsi": [
+      "asset-openstax-muscle-posterior-back",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "teres minor": [
+      "asset-openstax-muscle-posterior-back",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "trapezius": [
+      "asset-openstax-muscle-posterior-back",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "infraspinatus": [
+      "asset-openstax-muscle-posterior-back",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "triceps brachii": [
+      "asset-openstax-muscle-posterior-back",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "teres major": [
+      "asset-openstax-muscle-posterior-back",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "gluteus medius": [
+      "asset-openstax-muscle-posterior-leg",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "biceps femoris": [
+      "asset-openstax-muscle-posterior-leg",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "semitendinosus": [
+      "asset-openstax-muscle-posterior-leg",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "gluteus maximus": [
+      "asset-openstax-muscle-posterior-leg",
+      "asset-openstax-muscle-labeled-overview"
+    ],
+    "retina": [
+      "asset-gray880-optic-nerve-head",
+      "asset-servier-eye-section",
+      "asset-bvis04-retina-layers"
+    ],
+    "optic nerve": [
+      "asset-gray880-optic-nerve-head",
+      "asset-servier-eye-section"
+    ],
+    "fovea centralis": [
+      "asset-gray880-optic-nerve-head",
+      "asset-servier-eye-section"
+    ],
+    "insula": [
+      "asset-servier-brain-lateral",
+      "asset-bvis04-deep-nuclei"
+    ],
+    "cornea": [
+      "asset-servier-eye-section",
+      "asset-bvis04-eye-anterior-segment"
+    ],
+    "lens": [
+      "asset-servier-eye-section",
+      "asset-bvis04-eye-anterior-segment"
+    ],
+    "ciliary body": [
+      "asset-servier-eye-section",
+      "asset-bvis04-eye-anterior-segment"
+    ],
+    "iris": [
+      "asset-servier-eye-section",
+      "asset-bvis04-eye-anterior-segment"
+    ],
+    "vestibulocochlear nerve": [
+      "asset-servier-ear-section",
+      "asset-bvis04-inner-ear-vestibular"
+    ],
+    "cochlea": [
+      "asset-servier-ear-section",
+      "asset-bvis04-inner-ear-vestibular",
+      "asset-bvis04-cochlea-corti"
+    ],
+    "vestibule": [
+      "asset-servier-ear-section",
+      "asset-bvis04-inner-ear-vestibular"
+    ],
+    "semicircular canals": [
+      "asset-servier-ear-section",
+      "asset-bvis04-inner-ear-vestibular"
+    ],
+    "lateral ventricle": [
+      "asset-bvis04-deep-nuclei",
+      "asset-bvis04-csf-meninges"
+    ],
+    "third ventricle": [
+      "asset-bvis04-deep-nuclei",
+      "asset-bvis04-csf-meninges"
+    ],
+    "hypothalamus": [
+      "asset-bvis04-deep-nuclei",
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-hypothalamus-pituitary-axis"
+    ],
+    "spinal cord": [
+      "asset-bvis04-spinal-cross-section",
+      "asset-bvis04-plexus-overview"
+    ],
+    "sacral plexus": [
+      "asset-bvis04-plexus-overview",
+      "asset-bvis04-lower-limb-nerves"
+    ],
+    "lumbar plexus": [
+      "asset-bvis04-plexus-overview",
+      "asset-bvis04-lower-limb-nerves"
+    ],
+    "sweat pore": [
+      "asset-gray946-sweat-gland",
+      "asset-openstax-historical-skin-structure"
+    ],
+    "sebaceous gland": [
+      "asset-gray946-sweat-gland",
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-hair-follicle"
+    ],
+    "eccrine sweat gland": [
+      "asset-gray946-sweat-gland",
+      "asset-openstax-historical-skin-structure"
+    ],
+    "sebaceous duct": [
+      "asset-gray946-sweat-gland",
+      "asset-bvis04-hair-follicle"
+    ],
+    "apocrine sweat gland": [
+      "asset-gray946-sweat-gland",
+      "asset-openstax-historical-skin-structure"
+    ],
+    "dermis": [
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-dermis-hypodermis"
+    ],
+    "hair follicle": [
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-hair-follicle"
+    ],
+    "cutaneous blood vessels": [
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-dermis-hypodermis"
+    ],
+    "arrector pili muscle": [
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-hair-follicle"
+    ],
+    "tactile corpuscle": [
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-epidermis-strata"
+    ],
+    "hypodermis": [
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-dermis-hypodermis"
+    ],
+    "hair shaft": [
+      "asset-openstax-historical-skin-structure",
+      "asset-bvis04-hair-follicle"
+    ],
+    "dermal papilla": [
+      "asset-bvis04-epidermis-strata",
+      "asset-bvis04-dermis-hypodermis"
+    ],
+    "stratum basale": [
+      "asset-bvis04-epidermis-strata",
+      "asset-bvis06-uterine-wall"
+    ],
+    "goblet cell": [
+      "asset-bvis04-epithelia-stratified",
+      "asset-bvis05-respiratory-membrane-histology",
+      "asset-bvis06-small-intestine"
+    ],
+    "elastic fiber": [
+      "asset-bvis04-connective-loose",
+      "asset-bvis05-respiratory-membrane-histology"
+    ],
+    "platelet": [
+      "asset-bvis05-blood-composition",
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-marrow-hematopoiesis",
+      "asset-bvis05-capillary-types"
+    ],
+    "erythrocyte": [
+      "asset-bvis05-blood-composition",
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-marrow-hematopoiesis",
+      "asset-bvis05-capillary-types"
+    ],
+    "leukocyte": [
+      "asset-bvis05-blood-composition",
+      "asset-bvis05-leukocyte-types",
+      "asset-bvis05-marrow-hematopoiesis"
+    ],
+    "monocyte": [
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-leukocyte-types"
+    ],
+    "basophil": [
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-leukocyte-types"
+    ],
+    "neutrophil": [
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-leukocyte-types",
+      "asset-bvis05-capillary-types"
+    ],
+    "eosinophil": [
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-leukocyte-types"
+    ],
+    "lymphocyte": [
+      "asset-bvis05-blood-smear-schematic",
+      "asset-bvis05-leukocyte-types"
+    ],
+    "vein": [
+      "asset-bvis05-vessel-wall-types",
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-great-saphenous-route"
+    ],
+    "pulmonary capillary": [
+      "asset-bvis05-alveolar-unit",
+      "asset-bvis05-respiratory-membrane-histology"
+    ],
+    "thymus": [
+      "asset-bvis05-thymus-lobule",
+      "asset-bvis05-endocrine-body-map"
+    ],
+    "intestinal lymphatic trunk": [
+      "asset-bvis05-gut-lymphoid-lacteal",
+      "asset-bvis05-lymph-overview"
+    ],
+    "thyroid gland": [
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-thyroid-parathyroid"
+    ],
+    "adrenal gland": [
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-adrenal-zones"
+    ],
+    "testis endocrine tissue": [
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-ovary-testis"
+    ],
+    "pituitary gland": [
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-hypothalamus-pituitary-axis"
+    ],
+    "ovary endocrine tissue": [
+      "asset-bvis05-endocrine-body-map",
+      "asset-bvis05-ovary-testis"
+    ],
+    "pancreatic islet": [
+      "asset-bvis05-pancreas-islet",
+      "asset-bvis06-liver-lobule-pancreas"
+    ],
+    "corpus luteum": [
+      "asset-bvis05-ovary-testis",
+      "asset-bvis06-ovary-follicle"
+    ],
+    "sertoli cell": [
+      "asset-bvis05-ovary-testis",
+      "asset-bvis06-testis-ducts"
+    ],
+    "leydig cell": [
+      "asset-bvis05-ovary-testis",
+      "asset-bvis06-testis-ducts"
+    ],
+    "brachiocephalic vein": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-veins"
+    ],
+    "femoral artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-lower-limb-arteries",
+      "asset-bvis05-great-saphenous-route"
+    ],
+    "ulnar artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "internal carotid artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "jugular vein": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-veins"
+    ],
+    "subclavian vein": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-veins"
+    ],
+    "axillary artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "internal jugular vein": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-veins"
+    ],
+    "median cubital vein": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-veins"
+    ],
+    "external carotid artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "great saphenous vein": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-great-saphenous-route"
+    ],
+    "cephalic vein": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-veins"
+    ],
+    "subclavian artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "aorta": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-arteries",
+      "asset-bvis05-lower-limb-arteries",
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-abdominal-placement",
+      "asset-bvis06-kidney-placement"
+    ],
+    "brachial artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "axillary vein": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-veins"
+    ],
+    "posterior tibial artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-lower-limb-arteries"
+    ],
+    "radial artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "common carotid artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-head-neck-vessels",
+      "asset-bvis05-upper-limb-arteries"
+    ],
+    "anterior tibial artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-lower-limb-arteries"
+    ],
+    "popliteal artery": [
+      "asset-bvis05-body-artery-vein-maps",
+      "asset-bvis05-lower-limb-arteries"
+    ],
+    "hepatic portal vein": [
+      "asset-bvis05-hepatic-portal-system",
+      "asset-bvis06-liver-biliary-pancreas",
+      "asset-bvis06-liver-lobule-pancreas"
+    ],
+    "soft palate": [
+      "asset-bvis05-upper-airway",
+      "asset-bvis06-oral-cavity"
+    ],
+    "hard palate": [
+      "asset-bvis05-upper-airway",
+      "asset-bvis06-oral-cavity"
+    ],
+    "trachea": [
+      "asset-bvis05-larynx-glottis",
+      "asset-bvis05-trachea-bronchial-tree"
+    ],
+    "pharynx": [
+      "asset-bvis06-oral-cavity",
+      "asset-bvis06-alimentary-canal"
+    ],
+    "esophagus": [
+      "asset-bvis06-oral-cavity",
+      "asset-bvis06-stomach",
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "mouth": [
+      "asset-bvis06-oral-cavity",
+      "asset-bvis06-alimentary-canal"
+    ],
+    "duodenum": [
+      "asset-bvis06-stomach",
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-small-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "ileum": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-small-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "transverse colon": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "cecum": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "descending colon": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "appendix": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine"
+    ],
+    "sigmoid colon": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "anus": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine"
+    ],
+    "anal canal": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine"
+    ],
+    "jejunum": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-small-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "ascending colon": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "rectum": [
+      "asset-bvis06-alimentary-canal",
+      "asset-bvis06-large-intestine"
+    ],
+    "gallbladder": [
+      "asset-bvis06-liver-biliary-pancreas",
+      "asset-bvis06-abdominal-placement"
+    ],
+    "pancreatic duct": [
+      "asset-bvis06-liver-biliary-pancreas",
+      "asset-bvis06-liver-lobule-pancreas"
+    ],
+    "renal artery": [
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-renal-vessels",
+      "asset-bvis06-kidney-placement"
+    ],
+    "kidney": [
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-kidney-placement"
+    ],
+    "urethra": [
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-nephron-pathway",
+      "asset-bvis06-male-system"
+    ],
+    "inferior vena cava": [
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-abdominal-placement",
+      "asset-bvis06-kidney-placement"
+    ],
+    "ureter": [
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-nephron-pathway",
+      "asset-bvis06-kidney-placement"
+    ],
+    "renal vein": [
+      "asset-bvis06-urinary-tract",
+      "asset-bvis06-renal-vessels",
+      "asset-bvis06-kidney-placement"
+    ],
+    "afferent arteriole": [
+      "asset-bvis06-renal-vessels",
+      "asset-bvis06-renal-corpuscle"
+    ],
+    "efferent arteriole": [
+      "asset-bvis06-renal-vessels",
+      "asset-bvis06-renal-corpuscle"
+    ],
+    "renal corpuscle": [
+      "asset-bvis06-nephron-pathway",
+      "asset-bvis06-renal-corpuscle"
+    ],
+    "glomerulus": [
+      "asset-bvis06-nephron-pathway",
+      "asset-bvis06-renal-corpuscle"
+    ],
+    "testis": [
+      "asset-bvis06-male-system",
+      "asset-bvis06-testis-ducts"
+    ],
+    "ductus deferens": [
+      "asset-bvis06-male-system",
+      "asset-bvis06-testis-ducts"
+    ],
+    "ovary": [
+      "asset-bvis06-female-gross",
+      "asset-bvis06-ovary-follicle"
+    ]
+  },
+  "researchDecisions": [
+    "Reused individually inspected human specimens and existing rights/provenance, instead of restarting individual searches.",
+    "Whole-skeleton/rib collection search: unrelated fossil/illustration results rejected. Bounded Commons collection browse found the Grover Krantz/Clyde photograph; actual source screenshot showed a nonstandard pose with dog occlusion, unsuitable for replacing the full instructional views. Not approved.",
+    "Blood-cell topic: UEN human-anatomy chapter and CDC PHIL 15133/18908 metadata were accessible. The chapter cites all five cell photographs, but the initial rendered chapter viewport did not display them. Raw-image screenshot requests failed; original Flickr sources returned screenshot errors 403/429 and Commons cell-image screenshot requests returned 429. No retries and no blood-cell approval. These are research-inspection limitations, not proof that visitors cannot access the sources.",
+    "Six selected new/existing source-page text checks succeeded; named specimen descriptions, Charles University collection attribution, creator and stated terms were retained. This is not a fresh visual inspection of every image.",
+    "All other prior partial/unverified/unmatched findings were reviewed against the available inspected sources. Missing gross/microscopic views, species or anatomical detail remain explicit exceptions; no generic gallery or query URL was approved."
+  ],
+  "stopReason": "The single bounded pass is complete. Further indiscriminate searches or retries would violate the requested limit; remaining exceptions are retained rather than converted into fabricated coverage.",
+  "coverageComplete": false,
+  "allFeasibleMatchesEstablished": false,
+  "buildDisposition": "No build in this command. This reference reconciliation no longer blocks the separate already-authorized build step; remaining photo exceptions stay documented."
+}

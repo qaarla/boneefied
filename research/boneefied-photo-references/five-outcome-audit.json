@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-11-07T00:39:49.215512+00:00",
+  "checkedAt": "2026-11-07T00:57:02.058932+00:00",
   "total": 164,
   "counts": {
-    "fully-matched": 38,
-    "partial": 82,
+    "fully-matched": 40,
+    "partial": 84,
     "no-literal-photo": 3,
-    "inaccessible-unverified": 26,
-    "unmatched-after-bounded-research": 15
+    "inaccessible-unverified": 23,
+    "unmatched-after-bounded-research": 14
   },
   "definitions": {
     "fully-matched": "Fully matched or retained approved real example",
@@ -53,7 +53,8 @@
         "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-skeletal-atlas-cranial-floor-internal",
@@ -88,13 +89,14 @@
         "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-skeletal-atlas-skull-sutures",
       "title": "Cranial sutures: superior and posterior views",
-      "outcome": "partial",
-      "reason": "Superior human dry skull photo confirms the sagittal/coronal suture view and a separate human posterior lambda detail confirms the lambdoid junction. The detail is not a full posterior skull view.",
+      "outcome": "fully-matched",
+      "reason": "Three previously inspected human specimens cover the named anatomy together: the superior vault shows frontal/parietal bones and coronal/sagittal sutures; the posterior lambda detail shows the lambdoid junction and adjoining occipital/parietal bone; the external skull base supplies temporal-bone context. Related examples, not a matched superior/posterior pair: the posterior source is explicitly a close detail and the temporal reference is an inferior view.",
       "requiredAnatomy": [
         "Frontal bone",
         "Parietal bone",
@@ -104,17 +106,19 @@
         "Temporal bone",
         "Lambdoid suture"
       ],
-      "approvedCoverageKind": null,
+      "approvedCoverageKind": "relevant-example",
       "candidateSourcePages": [
         "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
-        "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg"
+        "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+        "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg"
       ],
       "actuallyInspectedHumanCandidatePages": [
         "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
         "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": true,
+      "completionDecision": "Newly approved related specimen set"
     },
     {
       "assetId": "asset-skeletal-atlas-vertebra-typical",
@@ -140,7 +144,8 @@
         "https://commons.wikimedia.org/wiki/File:Thoracic_vertebrae.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-atlas-axis",
@@ -166,7 +171,8 @@
         "https://commons.wikimedia.org/wiki/File:Vertebra_-_atlas,_axis_(superior).jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-thoracic-cage",
@@ -186,7 +192,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-rib-detail",
@@ -205,7 +212,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-scapula",
@@ -229,7 +237,8 @@
         "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-skeletal-atlas-pectoral-girdle",
@@ -258,7 +267,8 @@
         "https://calisphere.org/item/74761ef06360839b7e8bc0fcd7d84ef6/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-humerus",
@@ -285,7 +295,8 @@
         "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-skeletal-atlas-forearm",
@@ -311,7 +322,8 @@
         "https://commons.wikimedia.org/wiki/File:AnteriorHumerusRadiusUlnaArticulated.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-hand-palmar",
@@ -341,7 +353,8 @@
         "https://commons.wikimedia.org/wiki/File:Hand-bones.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-hip-bone",
@@ -369,7 +382,8 @@
         "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-femur",
@@ -392,7 +406,8 @@
         "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-skeletal-atlas-leg-tibia-fibula",
@@ -417,7 +432,8 @@
         "https://commons.wikimedia.org/wiki/File:Tibia,_fibula_(anterior).jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-foot-dorsal",
@@ -443,7 +459,8 @@
         "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-skeletal-atlas-synovial-joint",
@@ -467,7 +484,8 @@
         "https://calisphere.org/item/e3ac55f2986d93e7a83b199d9254ad95/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-shoulder-joint",
@@ -494,7 +512,8 @@
         "https://calisphere.org/item/74761ef06360839b7e8bc0fcd7d84ef6/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skeletal-atlas-knee-joint",
@@ -523,7 +542,8 @@
         "https://calisphere.org/item/33d419fe3c2fb6e5c76009d048df117c"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-anterior-position",
@@ -546,7 +566,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-posterior-position",
@@ -567,7 +588,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-body-planes",
@@ -591,7 +613,8 @@
         "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-atlas-body-cavities",
@@ -614,7 +637,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-abdominal-quadrants",
@@ -631,7 +655,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-abdominal-regions",
@@ -653,7 +678,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-organ-locations",
@@ -675,7 +701,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-skeleton-anterior",
@@ -716,7 +743,8 @@
         "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-skeleton-posterior",
@@ -748,7 +776,8 @@
         "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-atlas-skeleton-axial-appendicular",
@@ -785,7 +814,8 @@
         "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skull-front",
@@ -818,7 +848,8 @@
         "https://commons.wikimedia.org/wiki/File:Human_skull_1.JPG"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-skull-lateral",
@@ -847,7 +878,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-vertebral-column",
@@ -859,7 +891,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-cervical-vertebra",
@@ -888,7 +921,8 @@
         "https://commons.wikimedia.org/wiki/File:Thoracic_vertebrae.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-original-anatomical-planes",
@@ -912,7 +946,8 @@
         "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-original-body-cavities",
@@ -930,7 +965,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-servier-elbow-joint",
@@ -951,13 +987,14 @@
         "https://calisphere.org/item/e3ac55f2986d93e7a83b199d9254ad95/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-servier-pelvis",
       "title": "Pelvis",
-      "outcome": "partial",
-      "reason": "A frontal dry human pelvis photo shows both hip bones and sacrum; the assigned plate includes additional structures and landmarks, including attached femora, that are missing.",
+      "outcome": "fully-matched",
+      "reason": "The previously inspected frontal human pelvis depicts the sacrum and both hip bones, including iliac, pubic, ischial and acetabular regions. The separately inspected human femur supplies the missing femoral subject. These are complementary real bone examples, not a photograph of the illustrated intact pelvis with attached femora; donor and laterality are not asserted.",
       "requiredAnatomy": [
         "Pelvis",
         "Sacrum",
@@ -967,17 +1004,18 @@
         "Acetabulum",
         "Femur"
       ],
-      "approvedCoverageKind": null,
+      "approvedCoverageKind": "relevant-example",
       "candidateSourcePages": [
         "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
-        "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/"
+        "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg"
       ],
       "actuallyInspectedHumanCandidatePages": [
         "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
         "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": true,
+      "completionDecision": "Newly approved related specimen set"
     },
     {
       "assetId": "asset-commons-axial-skeleton-blank",
@@ -1009,7 +1047,8 @@
         "https://commons.wikimedia.org/wiki/File:Thoracic_vertebrae.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-commons-appendicular-skeleton-blank",
@@ -1048,7 +1087,8 @@
         "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-muscular-atlas-deep-back",
@@ -1074,7 +1114,8 @@
         "https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-muscular-atlas-posterior-arm",
@@ -1095,7 +1136,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-muscular-atlas-forearm",
@@ -1117,7 +1159,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-muscular-atlas-abdominal-wall",
@@ -1138,7 +1181,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-muscular-atlas-gluteal",
@@ -1157,7 +1201,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lumbar-spine-hip-and-knee-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-muscular-atlas-deep-thigh",
@@ -1177,7 +1222,8 @@
         "https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-muscular-atlas-anterior-leg",
@@ -1196,7 +1242,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-muscular-atlas-calf",
@@ -1217,7 +1264,8 @@
         "https://commons.wikimedia.org/wiki/File:Medial_view_of_a_cadaver_dissection_of_the_gastrocnemius%E2%80%93soleus_junction.png"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-muscular-atlas-hand",
@@ -1238,7 +1286,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-wrist-hand-and-foot-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-muscular-atlas-foot",
@@ -1261,7 +1310,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=202-1"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-muscular-atlas-pelvic-floor",
@@ -1281,7 +1331,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=174-5"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-openstax-muscle-face-neck",
@@ -1309,7 +1360,8 @@
         "https://calisphere.org/item/a7f4387ffed8c8052efd7972dba545ed"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-openstax-muscle-anterior-trunk",
@@ -1337,7 +1389,8 @@
         "https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-openstax-muscle-anterior-arm",
@@ -1360,7 +1413,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-openstax-muscle-anterior-leg",
@@ -1385,7 +1439,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-openstax-muscle-posterior-back",
@@ -1409,7 +1464,8 @@
         "https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_(Lange_et_al.)/09:_Muscular_System/9.08:_Anatomical_Atlas_-_Muscular_System"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-openstax-muscle-posterior-leg",
@@ -1431,7 +1487,8 @@
         "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-openstax-muscle-labeled-overview",
@@ -1479,7 +1536,8 @@
         "https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-openstax-diaphragm-labeled",
@@ -1499,7 +1557,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-injurymap-rotator-cuff-labeled",
@@ -1521,7 +1580,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-shoulder-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-gray880-optic-nerve-head",
@@ -1546,7 +1606,8 @@
         "https://www.intechopen.com/chapters/62850"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-servier-brain-lateral",
@@ -1568,7 +1629,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-servier-brain-sagittal",
@@ -1598,7 +1660,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-servier-eye-section",
@@ -1628,7 +1691,8 @@
         "https://commons.wikimedia.org/wiki/File:Fundus_of_eye_normal.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-servier-ear-section",
@@ -1651,7 +1715,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-openstax-spinal-cord-specimen",
@@ -1667,7 +1732,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis04-deep-nuclei",
@@ -1694,7 +1760,8 @@
         "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-brainstem-cerebellum",
@@ -1720,7 +1787,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis04-csf-meninges",
@@ -1745,7 +1813,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-spinal-cross-section",
@@ -1771,7 +1840,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-spinal-roots-rami",
@@ -1794,13 +1864,14 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis04-plexus-overview",
       "title": "The four major plexuses and the phrenic nerve",
-      "outcome": "inaccessible-unverified",
-      "reason": "Partial: Compared body-wide plexus schematic with a visually inspected brachial-plexus photograph. Organism is not explicit on Calisphere record; cervical, lumbar, sacral and phrenic coverage absent.",
+      "outcome": "partial",
+      "reason": "Partial: the already inspected Michigan human brachial-plexus dissections replace reliance on an organism-unconfirmed candidate for that region. The whole-body diagram still lacks verified cervical/lumbar/sacral plexus, phrenic-nerve and spinal-cord coverage as a combined set. No complete-plate link is approved.",
       "requiredAnatomy": [
         "Spinal cord",
         "Cervical plexus",
@@ -1811,11 +1882,13 @@
       ],
       "approvedCoverageKind": null,
       "candidateSourcePages": [
-        "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353"
+        "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images"
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Specificity improved; remains partial"
     },
     {
       "assetId": "asset-bvis04-upper-limb-nerves",
@@ -1839,7 +1912,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis04-lower-limb-nerves",
@@ -1858,7 +1932,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-cranial-nerves-i-vi",
@@ -1882,7 +1957,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis04-cranial-nerves-vii-xii",
@@ -1905,7 +1981,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis04-eye-anterior-segment",
@@ -1927,7 +2004,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-retina-layers",
@@ -1948,7 +2026,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-middle-ear",
@@ -1972,7 +2051,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-nasal-cavity-sinuses-and-ear-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis04-inner-ear-vestibular",
@@ -1996,7 +2076,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-cochlea-corti",
@@ -2020,7 +2101,8 @@
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153736"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-smell-taste",
@@ -2045,7 +2127,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-gray946-sweat-gland",
@@ -2066,7 +2149,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-original-cell-overview",
@@ -2087,7 +2171,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-original-mitosis-stages",
@@ -2105,7 +2190,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-commons-kidney-cortex-human",
@@ -2121,7 +2207,8 @@
         "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-commons-alveolar-sac",
@@ -2137,7 +2224,8 @@
         "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-commons-simple-squamous-epithelium",
@@ -2153,7 +2241,8 @@
         "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-commons-simple-cuboidal-epithelium",
@@ -2169,7 +2258,8 @@
         "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-commons-simple-columnar-epithelium",
@@ -2189,7 +2279,8 @@
           "observedAndLimitations": "Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-openstax-historical-skin-structure",
@@ -2235,7 +2326,8 @@
           "observedAndLimitations": "Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-epidermis-strata",
@@ -2276,7 +2368,8 @@
           "observedAndLimitations": "Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-dermis-hypodermis",
@@ -2315,7 +2408,8 @@
           "observedAndLimitations": "Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-hair-follicle",
@@ -2344,13 +2438,14 @@
           "observedAndLimitations": "Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-epithelia-simple",
       "title": "Simple epithelia: squamous, cuboidal, columnar (schematic)",
       "outcome": "partial",
-      "reason": "The verified human simple-squamous image supports one panel. A targeted University of Genoa simple-epithelia page contained human cuboidal kidney and columnar intestine photographs; both original images were visually checked. Its official terms state that site images/micrographs are protected and prohibit deep linking, so that page is excluded from eligible references. The human three-panel set therefore remains partial.",
+      "reason": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved.",
       "requiredAnatomy": [
         "Simple squamous epithelium",
         "Simple cuboidal epithelium",
@@ -2361,13 +2456,15 @@
       "candidateSourcePages": [
         "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
         "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
-        "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg"
+        "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+        "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg"
       ],
       "actuallyInspectedHumanCandidatePages": [
         "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Specificity improved; remains partial"
     },
     {
       "assetId": "asset-bvis04-epithelia-stratified",
@@ -2387,7 +2484,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-epithelia-other-stratified",
@@ -2405,7 +2503,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-connective-loose",
@@ -2425,7 +2524,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-connective-dense",
@@ -2443,7 +2543,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-cartilage",
@@ -2462,7 +2563,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-muscle-tissue",
@@ -2487,7 +2589,8 @@
         "https://histologylab.ctl.columbia.edu/slides/slide66/"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis04-nervous-tissue",
@@ -2502,7 +2605,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis04-nail-section",
@@ -2521,7 +2625,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-blood-composition",
@@ -2547,7 +2652,8 @@
         "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-blood-smear-schematic",
@@ -2575,7 +2681,8 @@
         "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-leukocyte-types",
@@ -2602,7 +2709,8 @@
         "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-marrow-hematopoiesis",
@@ -2629,7 +2737,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-vessel-wall-types",
@@ -2654,7 +2763,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-vessel-flow-chain",
@@ -2673,7 +2783,8 @@
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-capillary-types",
@@ -2696,7 +2807,8 @@
         "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-alveolar-unit",
@@ -2719,7 +2831,8 @@
         "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-respiratory-membrane-histology",
@@ -2747,7 +2860,8 @@
         "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-lymph-node-structure",
@@ -2773,7 +2887,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-spleen-pulp",
@@ -2802,7 +2917,8 @@
           "observedAndLimitations": "Human spleen section; red/white pulp visible. Central arteriole, marginal-zone boundary, individual sinusoids and cords were not all resolved in the overview."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-thymus-lobule",
@@ -2828,7 +2944,8 @@
           "observedAndLimitations": "Human thymus; lobules, cortex and medulla visible. Hassall corpuscles and anterior chest/retrosternal placement not established by this overview."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-tonsil-map-structure",
@@ -2850,13 +2967,14 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-gut-lymphoid-lacteal",
       "title": "Gut-associated lymphoid tissue and the lacteal",
-      "outcome": "inaccessible-unverified",
-      "reason": "Final comparison: Duke text identifies human ileal lymphoid tissue, but no photo was visually checked for Peyer patches/lacteal and no image shows the lymph route. Not enough evidence for either full panel.",
+      "outcome": "partial",
+      "reason": "Partial: the already inspected human ileal cross-section shows the prominent aggregated lymphoid tissue relevant to Peyer patches. Appendix lymphoid tissue, villus lacteals and the intestinal lymphatic-trunk route are not established together. A Peyer-patch example is not complete coverage of this composite.",
       "requiredAnatomy": [
         "Peyer patches",
         "Appendix lymphoid tissue",
@@ -2869,8 +2987,16 @@
         "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html"
       ],
       "actuallyInspectedHumanCandidatePages": [],
-      "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "newPartialInspectionEvidence": [
+        {
+          "slide": "HU_62_20x ileum",
+          "dukeSubject": "GItract",
+          "observedAndLimitations": "Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+          "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=13457083-c943-4131-93c1-13770745e0fe"
+        }
+      ],
+      "runtimeLinked": false,
+      "completionDecision": "Specificity improved; remains partial"
     },
     {
       "assetId": "asset-bvis05-endocrine-body-map",
@@ -2897,7 +3023,8 @@
         "https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-hypothalamus-pituitary-axis",
@@ -2920,7 +3047,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-thyroid-parathyroid",
@@ -2944,7 +3072,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-adrenal-zones",
@@ -2972,7 +3101,8 @@
           "observedAndLimitations": "Human adrenal section with cortex and medulla; not an in-situ adrenal-on-kidney photograph and not cell-level verification of every cortical zone/chromaffin cell."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-pancreas-islet",
@@ -2996,13 +3126,14 @@
         "https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-ovary-testis",
       "title": "Gonads: ovary and testis",
-      "outcome": "unmatched-after-bounded-research",
-      "reason": "Final comparison: reviewed candidates contain no visually inspected, terms/creator-verified human pair for ovarian follicles/corpus luteum and testis tubules/interstitium. No qualifying source set found in this audit; this is unavailable evidence, not proof of absence.",
+      "outcome": "partial",
+      "reason": "Partial: the already inspected human ovarian sections include a corpus luteum and follicular profiles, so an ovarian example is established. No visually verified human testis set resolves both Sertoli and Leydig cells. The ovarian half must not be promoted to a complete ovary/testis endocrine counterpart.",
       "requiredAnatomy": [
         "Ovary endocrine tissue",
         "Corpus luteum",
@@ -3013,8 +3144,22 @@
       "approvedCoverageKind": null,
       "candidateSourcePages": [],
       "actuallyInspectedHumanCandidatePages": [],
-      "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "newPartialInspectionEvidence": [
+        {
+          "slide": "236a ovary",
+          "dukeSubject": "FemaleRepro",
+          "observedAndLimitations": "Human ovary: a corpus luteum and several follicular profiles visible. Does not establish a complete developmental sequence or all oocyte-wall structures at cell level.",
+          "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=881b362b-0ab3-4134-b7e0-79dcd9652de8"
+        },
+        {
+          "slide": "235 ovary",
+          "dukeSubject": "FemaleRepro",
+          "observedAndLimitations": "Human ovary with cortical follicular profiles and medullary vessels. No assertion that all primordial-to-mature stages, corona radiata and zona pellucida were individually resolved.",
+          "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=a4879405-28d7-478c-9cc0-563678d0dc97"
+        }
+      ],
+      "runtimeLinked": false,
+      "completionDecision": "Specificity improved; remains partial"
     },
     {
       "assetId": "asset-bvis05-heart-anterior",
@@ -3057,7 +3202,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-mediastinum"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis05-heart-chambers-valves",
@@ -3088,7 +3234,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis05-heart-valves-superior",
@@ -3111,7 +3258,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis05-heart-wall-pericardium",
@@ -3138,7 +3286,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-1"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-coronary-anterior",
@@ -3161,7 +3310,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis05-coronary-posterior",
@@ -3188,7 +3338,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis05-conduction-system",
@@ -3209,7 +3360,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-2"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-body-artery-vein-maps",
@@ -3254,7 +3406,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-head-neck-vessels",
@@ -3280,7 +3433,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-upper-limb-arteries",
@@ -3308,7 +3462,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-upper-limb-veins",
@@ -3334,7 +3489,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-lower-limb-arteries",
@@ -3361,7 +3517,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=186-7"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-great-saphenous-route",
@@ -3385,7 +3542,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=185-4"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-hepatic-portal-system",
@@ -3410,7 +3568,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-celiac-renal-context",
@@ -3431,7 +3590,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-duodenum-pancreas-and-abdominal-aorta-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis05-upper-airway",
@@ -3465,7 +3625,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-larynx-glottis",
@@ -3499,7 +3660,8 @@
         "https://commons.wikimedia.org/wiki/File:Human_larynx_cut_section_2.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-trachea-bronchial-tree",
@@ -3526,7 +3688,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-lung-lobes",
@@ -3553,7 +3716,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lungs-and-ventilation-pathways-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis05-pleura-diaphragm",
@@ -3579,7 +3743,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis05-lymph-overview",
@@ -3612,7 +3777,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-oral-cavity",
@@ -3640,7 +3806,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-stomach",
@@ -3677,7 +3844,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=142-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-alimentary-canal",
@@ -3718,7 +3886,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-5"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-liver-biliary-pancreas",
@@ -3757,7 +3926,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-liver-lobule-pancreas",
@@ -3785,7 +3955,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=146-6"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-digestive-wall-layers",
@@ -3826,7 +3997,8 @@
           "observedAndLimitations": "Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-small-intestine",
@@ -3862,7 +4034,8 @@
           "observedAndLimitations": "Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-large-intestine",
@@ -3897,7 +4070,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-5"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-peritoneal-folds",
@@ -3919,7 +4093,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=139-1"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-urinary-tract",
@@ -3957,7 +4132,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-kidney-section",
@@ -3992,7 +4168,8 @@
         "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-kidneys-and-urinary-system-images"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": true
+      "runtimeLinked": true,
+      "completionDecision": "Retained existing approval"
     },
     {
       "assetId": "asset-bvis06-renal-vessels",
@@ -4020,7 +4197,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-nephron-pathway",
@@ -4056,13 +4234,14 @@
         "https://wellcomecollection.org/works/cvestqrm"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-renal-corpuscle",
       "title": "Renal corpuscle and filtration barrier",
-      "outcome": "inaccessible-unverified",
-      "reason": "Partial: verified/candidate source pages show limited real examples for Renal corpuscle and filtration barrier; Species is not stated; filtration slit/barrier components are not resolved as in the diagram.",
+      "outcome": "partial",
+      "reason": "Partial: the already inspected, explicitly human renal-cortex micrograph supplies a glomerular tuft and capsular space, resolving the earlier specimen-species uncertainty for this portion. Podocytes, filtration slits/membrane, macula densa, juxtaglomerular cells and the paired arteriolar arrangement remain unverified. No link is approved for the complete composite.",
       "requiredAnatomy": [
         "Renal corpuscle",
         "Glomerular capsule",
@@ -4078,11 +4257,13 @@
       ],
       "approvedCoverageKind": null,
       "candidateSourcePages": [
-        "https://commons.wikimedia.org/wiki/File:Renal_corpuscle.jpg"
+        "https://commons.wikimedia.org/wiki/File:Renal_corpuscle.jpg",
+        "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg"
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Specificity improved; remains partial"
     },
     {
       "assetId": "asset-bvis06-male-system",
@@ -4120,7 +4301,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=169-7"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-testis-ducts",
@@ -4158,7 +4340,8 @@
       ],
       "actuallyInspectedHumanCandidatePages": [],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-female-gross",
@@ -4202,7 +4385,8 @@
         "https://commons.wikimedia.org/wiki/File:Human_ovary.jpg"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-ovary-follicle",
@@ -4252,7 +4436,8 @@
           "observedAndLimitations": "Human ovary with cortical follicular profiles and medullary vessels. No assertion that all primordial-to-mature stages, corona radiata and zona pellucida were individually resolved."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-uterine-wall",
@@ -4291,7 +4476,8 @@
           "observedAndLimitations": "Human secretory uterine tissue with glandular profiles and muscle visible. Useful companion to proliferative tissue; not proof that every wall layer in the composite is covered."
         }
       ],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-abdominal-placement",
@@ -4332,7 +4518,8 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     },
     {
       "assetId": "asset-bvis06-kidney-placement",
@@ -4361,7 +4548,9 @@
         "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7"
       ],
       "newPartialInspectionEvidence": [],
-      "runtimeLinked": false
+      "runtimeLinked": false,
+      "completionDecision": "Retained documented exception after bounded review"
     }
-  ]
+  ],
+  "boundedCompletionPassComplete": true
 }

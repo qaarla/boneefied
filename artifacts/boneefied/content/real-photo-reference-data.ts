@@ -24,6 +24,35 @@ export const references: Readonly<Record<string, readonly PhotoReference[]>> = {
       }
     }
   ],
+  "asset-skeletal-atlas-skull-sutures": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+      "mediaType": "gross-photo",
+      "sourceName": "Wikimedia Commons",
+      "subject": {
+        "en": "Skull vault: superior specimen",
+        "es": "Bóveda craneal: espécimen superior"
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+      "mediaType": "gross-photo",
+      "sourceName": "Wikimedia Commons",
+      "subject": {
+        "en": "Posterior sutures: lambda close-up",
+        "es": "Suturas posteriores: detalle de lambda"
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+      "mediaType": "gross-photo",
+      "sourceName": "Wikimedia Commons",
+      "subject": {
+        "en": "Temporal bones: inferior skull context",
+        "es": "Huesos temporales: contexto inferior del cráneo"
+      }
+    }
+  ],
   "asset-skeletal-atlas-scapula": [
     {
       "url": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
@@ -141,6 +170,26 @@ export const references: Readonly<Record<string, readonly PhotoReference[]>> = {
       "subject": {
         "en": "Transverse plane: human brain MRI, regional example",
         "es": "Plano transversal: RM cerebral humana, ejemplo regional"
+      }
+    }
+  ],
+  "asset-servier-pelvis": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+      "mediaType": "gross-photo",
+      "sourceName": "Wikimedia Commons",
+      "subject": {
+        "en": "Pelvis: frontal specimen without femora",
+        "es": "Pelvis: espécimen frontal sin fémures"
+      }
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+      "mediaType": "gross-photo",
+      "sourceName": "Wikimedia Commons",
+      "subject": {
+        "en": "Femur: separate anterior/posterior specimen",
+        "es": "Fémur: espécimen separado anterior y posterior"
       }
     }
   ],

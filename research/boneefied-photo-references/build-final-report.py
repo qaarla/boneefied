@@ -16,6 +16,8 @@ links = sum(len(r["references"]) for r in approved)
 audit_path = ROOT / "five-outcome-audit.json"
 audit = json.loads(audit_path.read_text()) if audit_path.exists() else None
 audit_by_id = {r["assetId"]: r for r in audit["records"]} if audit else {}
+completion_path = ROOT / "completion-pass.json"
+completion = json.loads(completion_path.read_text()) if completion_path.exists() else None
 
 def esc(value):
     return html.escape(str(value), quote=True)
@@ -48,6 +50,14 @@ qa = [
     "Prior browser interaction checks are historical, not a fresh test of every new destination. Assessment availability logic is unchanged; focused tests check its fail-closed behavior.",
     "No physical-device opening test, native build, submission, publication or deployment was performed for this update.",
 ]
+if summary.get("boundedCompletionPassComplete") and summary.get("finalVerification"):
+    checks = summary["finalVerification"]
+    qa.insert(0, f'Current bounded-pass checks: TypeScript {checks["typecheck"]}; '
+              f'{checks["focusedTests"]["passed"]} focused tests passed, '
+              f'{checks["focusedTests"]["failed"]} failed. '
+              'All 164 original image hashes and the 38 original approved-record fingerprints are unchanged. '
+              'The 164-asset reconciliation and runtime allowlist checks passed. '
+              'Six representative source-page metadata checks succeeded; this is not a fresh all-photo inspection.')
 intro = [
     "Full per-image link coverage has not been achieved.",
     "The catalog contains 187 assets. The published denominator is 164 instructional images across 18 modules: 158 diagrams and 6 existing histology images. The 23 unreferenced/superseded catalog entries are excluded.",
@@ -107,7 +117,12 @@ sections = [
     f'<nav aria-label="Report sections"><a href="#approved">Approved links</a><a href="#checks">Verification limits</a><a href="#unresolved">{len(unresolved)} unresolved</a><a href="#unlinked">All {len(unlinked)} unlinked</a></nav>',
     ('<h2>Five reconciled outcomes</h2><p>All published images are accounted for. This is not proof that every feasible photographic match has been found. Approved real examples retain their disclosed differences; they are not all direct matches.</p>'
      + table(["Outcome", "Images"], [[esc(audit["definitions"][key]), str(value)] for key, value in audit["counts"].items()])
-     + '<p>The existing authorized iOS internal IPA and Android AAB request is retained, not started, resubmitted or completed. No signing changes, submission or publication occurred. Outstanding reference exceptions remain unsatisfied.</p>') if audit else '',
+     + '<p>' + esc(completion["buildDisposition"] if completion else "The existing authorized iOS internal IPA and Android AAB request is retained, not started, resubmitted or completed. No signing changes, submission or publication occurred. Outstanding reference exceptions remain documented.") + '</p>') if audit else '',
+    ('<h2>Bounded completion pass: before and after</h2>'
+     + table(["Outcome", "Before", "After"], [[esc(audit["definitions"][key]), str(completion["before"][key]), str(value)] for key, value in completion["after"].items()])
+     + '<p>The original 38 approved records are unchanged. Newly linked pages below reuse earlier actual-photograph inspection evidence, with a fresh source-text/identity check; they are not claimed as new exact matches.</p><ul>'
+     + ''.join('<li>' + link(url, url) + '</li>' for url in completion["newlyLinkedDistinctSourcePages"]) + '</ul>'
+     + '<p>The new blood-cell candidates could not be fully inspected after research-browser access/rate-limit errors. They remain unapproved. Tool errors do not prove that a destination is inaccessible to visitors.</p>') if completion else '',
     f'<h2 id="approved">{len(approved)} instructional images have approved links</h2>',
     table(["Illustration", "Coverage", "Source page, creator and terms"], approved_rows),
     "<h2>Review-area totals</h2>",

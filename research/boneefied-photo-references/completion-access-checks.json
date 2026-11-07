@@ -1,0 +1,41 @@
+{
+  "method": "Public source-page text fetched once; no photograph downloads. This is metadata/access evidence, not a fresh visual inspection.",
+  "checks": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+      "extracted": true,
+      "error": null,
+      "identityMetadata": "Human skull with visible cranial sutures - top view.\n| DescriptionCranium - neurocranium superior view 2.jpg | Tato položka se nachází v antropologických sbírkách Katedry biologie a environmentální výchovy Pedagogické fakulty Univerzity Karlovy. Její reprodukce je součástí projektu financovaného Studentským grantem z roku 2019.<br>This item is a part of anthropological collections of the Department of Biology and Environmental Studies of the Faculty of Education of Charles University. Its reproduction is part of a project funded by the Student Grant in 2019. |\n| Source | Own work |\n| Author | [MAKY.OREL](https://commons.wikimedia.org/wiki/User:MAKY.OREL \"User:MAKY.OREL\") |"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+      "extracted": true,
+      "error": null,
+      "identityMetadata": "| DescriptionCranium - sutura lambdoidea (lambda).jpg | Tato položka se nachází v antropologických sbírkách Katedry biologie a environmentální výchovy Pedagogické fakulty Univerzity Karlovy. Její reprodukce je součástí projektu financovaného Studentským grantem z roku 2019.<br>This item is a part of anthropological collections of the Department of Biology and Environmental Studies of the Faculty of Education of Charles University. Its reproduction is part of a project funded by the Student Grant in 2019. |\n| Source | Own work |\n| Author | [MAKY.OREL](https://commons.wikimedia.org/wiki/User:MAKY.OREL \"User:MAKY.OREL\") |"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+      "extracted": true,
+      "error": null,
+      "identityMetadata": "| DescriptionPelvis - os coxae, os sacrum (frontal view).jpg | Tato položka se nachází v antropologických sbírkách Katedry biologie a environmentální výchovy Pedagogické fakulty Univerzity Karlovy. Její reprodukce je součástí projektu financovaného Studentským grantem z roku 2019.<br>This item is a part of anthropological collections of the Department of Biology and Environmental Studies of the Faculty of Education of Charles University. Its reproduction is part of a project funded by the Student Grant in 2019. |\n| Source | Own work |\n| Author | [MAKY.OREL](https://commons.wikimedia.org/wiki/User:MAKY.OREL \"User:MAKY.OREL\") |"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+      "extracted": true,
+      "error": null,
+      "identityMetadata": "| DescriptionFemur - anterior, posterior.jpg | Tato položka se nachází v antropologických sbírkách Katedry biologie a environmentální výchovy Pedagogické fakulty Univerzity Karlovy. Její reprodukce je součástí projektu financovaného Studentským grantem z roku 2019.<br>This item is a part of anthropological collections of the Department of Biology and Environmental Studies of the Faculty of Education of Charles University. Its reproduction is part of a project funded by the Student Grant in 2019. |\n| Source | Own work |\n| Author | [MAKY.OREL](https://commons.wikimedia.org/wiki/User:MAKY.OREL \"User:MAKY.OREL\") |"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+      "extracted": true,
+      "error": null,
+      "identityMetadata": "| DescriptionKidney cortex (947 21) Human.jpg | [Kidney cortex](https://en.wikipedia.org/wiki/Renal_cortex \"en:Renal cortex\"): Human. **Optical microscopy technique:** [Bright field](https://en.wikipedia.org/wiki/Bright-field_microscopy \"en:Bright-field microscopy\"). **Magnification:** 600x (for picture width 26 cm ~ A4 format).\n| Source | Author's archive |\n| Author | [Doc. RNDr. Josef Reischig, CSc.](https://cs.wikipedia.org/wiki/Josef_Reischig \"cs:Josef Reischig\") |\n| Author | Josef Reischig |"
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
+      "extracted": true,
+      "error": null,
+      "identityMetadata": "# Labeled Brachial Plexus Images"
+    }
+  ]
+}

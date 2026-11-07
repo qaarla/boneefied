@@ -1,18 +1,23 @@
 {
-  "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+  "checkedAt": "2026-11-07T00:57:02.058932+00:00",
   "coverageComplete": false,
   "finalVerification": {
     "typecheck": "passed",
     "focusedTests": {"passed": 6, "failed": 0},
-    "completeInventoryValidator": "passed; validates record completeness and evidence flags, not anatomical correctness",
-    "fiveOutcomeReconciliation": "passed; 164 unique published images across 18 groups",
+    "completeInventoryValidator": "passed; record completeness/evidence flags, not anatomical correctness",
+    "fiveOutcomeReconciliation": "passed; 164 unique assets and before/after totals reconcile",
+    "originalApprovedRecordsPreserved": "38 canonical-JSON SHA-256 fingerprints unchanged",
     "originalImageHashesUnchanged": 164,
-    "approvedRuntimeMappings": 38,
-    "externalPhotosAddedToProject": 0,
-    "browser": "402x874 home screenshot rendered after Metro warm-up. No new interactive app pass; focused tests confirm runtime parity, assessment gates and outbound-link behavior. Public source viewers were inspected separately.",
+    "approvedRuntimeMappings": 40,
+    "directMatches": 5,
+    "disclosedRelatedExamples": 35,
+    "representativeDestinations": "Six public source-page text/identity checks succeeded; historical actual-image inspection evidence retained, not relabeled as fresh inspection",
+    "newCandidateLimit": "Blood-cell images were not approved after screenshot access/rate-limit errors; no retries",
+    "browser": "402x874 home rendered after Metro warm-up; not an interactive test of every reference link",
+    "assessmentGuards": "focused tests passed; Recall and unanswered graded contexts remain fail-closed",
     "physicalDevice": "not tested",
-    "nativeBuild": "not started; existing authorized IPA/AAB request retained, not duplicated",
-    "coverage": "incomplete; all images accounted for does not establish all feasible matches",
+    "nativeBuild": "not started in this command; separate already-authorized build step may proceed",
+    "externalPhotosAddedToProject": 0,
     "finalReport": "research/boneefied-photo-references/final-report.html"
   },
   "scope": {
@@ -24,19 +29,21 @@
     "excludedUnreferencedOrSupersededAssets": 23
   },
   "outcomes": {
-    "verified": 38,
-    "partial": 108,
-    "unresolved": 18
+    "verified": 40,
+    "partial": 107,
+    "unresolved": 17
   },
   "eligibleAssetIds": [
     "asset-skeletal-atlas-skull-base-external",
     "asset-skeletal-atlas-cranial-floor-internal",
+    "asset-skeletal-atlas-skull-sutures",
     "asset-skeletal-atlas-scapula",
     "asset-skeletal-atlas-humerus",
     "asset-skeletal-atlas-femur",
     "asset-skeletal-atlas-foot-dorsal",
     "asset-atlas-body-planes",
     "asset-original-anatomical-planes",
+    "asset-servier-pelvis",
     "asset-muscular-atlas-posterior-arm",
     "asset-muscular-atlas-forearm",
     "asset-muscular-atlas-abdominal-wall",
@@ -69,7 +76,6 @@
     "asset-bvis06-kidney-section"
   ],
   "ineligibleAssetIds": [
-    "asset-skeletal-atlas-skull-sutures",
     "asset-skeletal-atlas-vertebra-typical",
     "asset-skeletal-atlas-atlas-axis",
     "asset-skeletal-atlas-thoracic-cage",
@@ -97,7 +103,6 @@
     "asset-cervical-vertebra",
     "asset-original-body-cavities",
     "asset-servier-elbow-joint",
-    "asset-servier-pelvis",
     "asset-commons-axial-skeleton-blank",
     "asset-commons-appendicular-skeleton-blank",
     "asset-muscular-atlas-deep-back",
@@ -215,9 +220,9 @@
   "referencesWithoutEstablishedTermsUrl": 20,
   "exactFullCoverage": false,
   "verifiedDirectMatches": 5,
-  "verifiedLimitedRealExamples": 33,
+  "verifiedLimitedRealExamples": 35,
   "verifiedImagingRecords": 2,
-  "verifiedSourceLinks": 50,
+  "verifiedSourceLinks": 55,
   "physicalDeviceOpeningTested": false,
   "physicalDeviceLimitation": "Expo device automation reported no connected local device target; no EAS simulator, release/native build or publication was started.",
   "sourceInspectionNote": "Historical aggregate inspection metrics are retained separately. New approval evidence names the exact inspected photos; collecting a gallery never implies all of its photos were inspected.",
@@ -250,11 +255,11 @@
     "sourcePagesWithActualImageInspection": 105
   },
   "fiveOutcomeCounts": {
-    "fully-matched": 38,
-    "partial": 82,
+    "fully-matched": 40,
+    "partial": 84,
     "no-literal-photo": 3,
-    "inaccessible-unverified": 26,
-    "unmatched-after-bounded-research": 15
+    "inaccessible-unverified": 23,
+    "unmatched-after-bounded-research": 14
   },
   "allImagesAccountedFor": true,
   "allFeasibleMatchesEstablished": false,
@@ -262,5 +267,8 @@
     "research/boneefied-photo-references/grouped-review-ledger.json",
     "research/boneefied-photo-references/grouped-inspections.json",
     "research/boneefied-photo-references/five-outcome-audit.json"
-  ]
+  ],
+  "boundedCompletionPassComplete": true,
+  "completionPassEvidence": "research/boneefied-photo-references/completion-pass.json",
+  "nativeBuildDisposition": "No build in this command. This reference reconciliation no longer blocks the separate already-authorized build step; remaining photo exceptions stay documented."
 }

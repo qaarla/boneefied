@@ -82,3 +82,15 @@ Accounted-for is not the same as photographically covered. A slide overview
 does not verify cellular details merely because the page describes them; keep
 such composites partial. Do not copy, embed, hotlink, rehost, cache or add
 thumbnails of third-party photographs as part of this work.
+
+Distinguish a research-tool access or rate-limit failure from a destination
+failure. A successful page-text fetch verifies metadata, not that its photograph
+was newly seen. Reused inspection evidence must retain its original date.
+
+**Why:** A collection page can remain publicly readable while the screenshot
+service fails or captures only the introductory text. Treating either outcome
+as a new image inspection would invent evidence.
+
+**How to apply:** Preserve prior genuine approvals, record the inspection
+limitation separately, and do not promote newly found images from their titles,
+attribution lists or metadata alone.

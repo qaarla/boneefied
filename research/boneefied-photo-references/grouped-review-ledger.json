@@ -222,7 +222,8 @@
       "groupOutcomeCounts": {
         "partial": 11,
         "fully-matched": 9
-      }
+      },
+      "completionPassReviewed": true
     },
     "skeletal-system": {
       "assetIds": [
@@ -310,11 +311,6 @@
       ],
       "residuals": [
         {
-          "assetId": "asset-skeletal-atlas-skull-sutures",
-          "outcome": "partial",
-          "reason": "Superior human dry skull photo confirms the sagittal/coronal suture view and a separate human posterior lambda detail confirms the lambdoid junction. The detail is not a full posterior skull view."
-        },
-        {
           "assetId": "asset-skeletal-atlas-vertebra-typical",
           "outcome": "partial",
           "reason": "A dry human thoracic vertebra in superior view shows the common vertebral plan. The assigned thoracic lateral inset, disc, and separate detail are not shown."
@@ -395,11 +391,6 @@
           "reason": "Human dry cervical and thoracic vertebra examples are verified in superior-compatible views. No comparable lumbar specimen or complete three-region comparison is present."
         },
         {
-          "assetId": "asset-servier-pelvis",
-          "outcome": "partial",
-          "reason": "A frontal dry human pelvis photo shows both hip bones and sacrum; the assigned plate includes additional structures and landmarks, including attached femora, that are missing."
-        },
-        {
           "assetId": "asset-commons-axial-skeleton-blank",
           "outcome": "partial",
           "reason": "Verified photos cover anterior skull, cranial floor and a thoracic vertebra. A complete axial skeleton, ribs and full vertebral column are not covered."
@@ -459,10 +450,11 @@
         "research/boneefied-photo-references/evidence/final-skeletal-39-commons-appendicular-skeleton-blank.md"
       ],
       "groupOutcomeCounts": {
-        "fully-matched": 6,
-        "partial": 16,
+        "fully-matched": 8,
+        "partial": 14,
         "unmatched-after-bounded-research": 4
-      }
+      },
+      "completionPassReviewed": true
     },
     "joints-ligaments": {
       "assetIds": [
@@ -526,7 +518,8 @@
       ],
       "groupOutcomeCounts": {
         "partial": 4
-      }
+      },
+      "completionPassReviewed": true
     },
     "anatomy-foundations": {
       "assetIds": [
@@ -606,7 +599,8 @@
         "unmatched-after-bounded-research": 5,
         "fully-matched": 2,
         "no-literal-photo": 2
-      }
+      },
+      "completionPassReviewed": true
     },
     "integumentary-system": {
       "assetIds": [
@@ -675,7 +669,8 @@
       "groupOutcomeCounts": {
         "inaccessible-unverified": 2,
         "partial": 4
-      }
+      },
+      "completionPassReviewed": true
     },
     "special-senses": {
       "assetIds": [
@@ -791,7 +786,8 @@
         "inaccessible-unverified": 4,
         "unmatched-after-bounded-research": 1,
         "fully-matched": 1
-      }
+      },
+      "completionPassReviewed": true
     },
     "cytology-mitosis": {
       "assetIds": [
@@ -823,7 +819,8 @@
       "existingEvidence": [],
       "groupOutcomeCounts": {
         "unmatched-after-bounded-research": 2
-      }
+      },
+      "completionPassReviewed": true
     },
     "nervous-system": {
       "assetIds": [
@@ -895,8 +892,8 @@
         },
         {
           "assetId": "asset-bvis04-plexus-overview",
-          "outcome": "inaccessible-unverified",
-          "reason": "Partial: Compared body-wide plexus schematic with a visually inspected brachial-plexus photograph. Organism is not explicit on Calisphere record; cervical, lumbar, sacral and phrenic coverage absent."
+          "outcome": "partial",
+          "reason": "Partial: the already inspected Michigan human brachial-plexus dissections replace reliance on an organism-unconfirmed candidate for that region. The whole-body diagram still lacks verified cervical/lumbar/sacral plexus, phrenic-nerve and spinal-cord coverage as a combined set. No complete-plate link is approved."
         },
         {
           "assetId": "asset-bvis04-lower-limb-nerves",
@@ -929,10 +926,11 @@
         "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-2.md"
       ],
       "groupOutcomeCounts": {
-        "inaccessible-unverified": 5,
+        "inaccessible-unverified": 4,
         "fully-matched": 7,
-        "partial": 1
-      }
+        "partial": 2
+      },
+      "completionPassReviewed": true
     },
     "urinary-system": {
       "assetIds": [
@@ -987,8 +985,8 @@
         },
         {
           "assetId": "asset-bvis06-renal-corpuscle",
-          "outcome": "inaccessible-unverified",
-          "reason": "Partial: verified/candidate source pages show limited real examples for Renal corpuscle and filtration barrier; Species is not stated; filtration slit/barrier components are not resolved as in the diagram."
+          "outcome": "partial",
+          "reason": "Partial: the already inspected, explicitly human renal-cortex micrograph supplies a glomerular tuft and capsular space, resolving the earlier specimen-species uncertainty for this portion. Podocytes, filtration slits/membrane, macula densa, juxtaglomerular cells and the paired arteriolar arrangement remain unverified. No link is approved for the complete composite."
         },
         {
           "assetId": "asset-bvis06-kidney-placement",
@@ -1016,9 +1014,9 @@
       ],
       "groupOutcomeCounts": {
         "fully-matched": 2,
-        "partial": 4,
-        "inaccessible-unverified": 1
-      }
+        "partial": 5
+      },
+      "completionPassReviewed": true
     },
     "respiratory-system": {
       "assetIds": [
@@ -1110,7 +1108,8 @@
         "fully-matched": 2,
         "inaccessible-unverified": 1,
         "partial": 5
-      }
+      },
+      "completionPassReviewed": true
     },
     "cells-tissues": {
       "assetIds": [
@@ -1169,7 +1168,7 @@
         {
           "assetId": "asset-bvis04-epithelia-simple",
           "outcome": "partial",
-          "reason": "The verified human simple-squamous image supports one panel. A targeted University of Genoa simple-epithelia page contained human cuboidal kidney and columnar intestine photographs; both original images were visually checked. Its official terms state that site images/micrographs are protected and prohibit deep linking, so that page is excluded from eligible references. The human three-panel set therefore remains partial."
+          "reason": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved."
         },
         {
           "assetId": "asset-bvis04-epithelia-stratified",
@@ -1234,7 +1233,8 @@
         "partial": 2,
         "inaccessible-unverified": 5,
         "unmatched-after-bounded-research": 1
-      }
+      },
+      "completionPassReviewed": true
     },
     "cardiovascular-system": {
       "assetIds": [
@@ -1337,7 +1337,8 @@
         "fully-matched": 5,
         "partial": 5,
         "inaccessible-unverified": 1
-      }
+      },
+      "completionPassReviewed": true
     },
     "blood-vessels": {
       "assetIds": [
@@ -1465,7 +1466,8 @@
         "no-literal-photo": 1,
         "partial": 8,
         "fully-matched": 1
-      }
+      },
+      "completionPassReviewed": true
     },
     "lymphatic-system": {
       "assetIds": [
@@ -1520,8 +1522,8 @@
         },
         {
           "assetId": "asset-bvis05-gut-lymphoid-lacteal",
-          "outcome": "inaccessible-unverified",
-          "reason": "Final comparison: Duke text identifies human ileal lymphoid tissue, but no photo was visually checked for Peyer patches/lacteal and no image shows the lymph route. Not enough evidence for either full panel."
+          "outcome": "partial",
+          "reason": "Partial: the already inspected human ileal cross-section shows the prominent aggregated lymphoid tissue relevant to Peyer patches. Appendix lymphoid tissue, villus lacteals and the intestinal lymphatic-trunk route are not established together. A Peyer-patch example is not complete coverage of this composite."
         }
       ],
       "existingSources": [
@@ -1534,9 +1536,10 @@
         "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
       ],
       "groupOutcomeCounts": {
-        "partial": 3,
-        "inaccessible-unverified": 3
-      }
+        "partial": 4,
+        "inaccessible-unverified": 2
+      },
+      "completionPassReviewed": true
     },
     "endocrine-system": {
       "assetIds": [
@@ -1591,8 +1594,8 @@
         },
         {
           "assetId": "asset-bvis05-ovary-testis",
-          "outcome": "unmatched-after-bounded-research",
-          "reason": "Final comparison: reviewed candidates contain no visually inspected, terms/creator-verified human pair for ovarian follicles/corpus luteum and testis tubules/interstitium. No qualifying source set found in this audit; this is unavailable evidence, not proof of absence."
+          "outcome": "partial",
+          "reason": "Partial: the already inspected human ovarian sections include a corpus luteum and follicular profiles, so an ovarian example is established. No visually verified human testis set resolves both Sertoli and Leydig cells. The ovarian half must not be promoted to a complete ovary/testis endocrine counterpart."
         }
       ],
       "existingSources": [
@@ -1605,10 +1608,10 @@
         "research/boneefied-photo-references/micro-17-duke-endocrine.md"
       ],
       "groupOutcomeCounts": {
-        "partial": 3,
-        "inaccessible-unverified": 2,
-        "unmatched-after-bounded-research": 1
-      }
+        "partial": 4,
+        "inaccessible-unverified": 2
+      },
+      "completionPassReviewed": true
     },
     "digestive-system": {
       "assetIds": [
@@ -1745,7 +1748,8 @@
       "groupOutcomeCounts": {
         "inaccessible-unverified": 1,
         "partial": 9
-      }
+      },
+      "completionPassReviewed": true
     },
     "male-reproductive": {
       "assetIds": [
@@ -1790,7 +1794,8 @@
       "groupOutcomeCounts": {
         "partial": 1,
         "inaccessible-unverified": 1
-      }
+      },
+      "completionPassReviewed": true
     },
     "female-reproductive": {
       "assetIds": [
@@ -1846,7 +1851,8 @@
       ],
       "groupOutcomeCounts": {
         "partial": 3
-      }
+      },
+      "completionPassReviewed": true
     }
   },
   "newCollectionMetadata": {
@@ -1958,14 +1964,16 @@
   },
   "actualNewSlideInspectionEvidence": "research/boneefied-photo-references/grouped-inspections.json",
   "fiveOutcomeCounts": {
-    "fully-matched": 38,
-    "partial": 82,
+    "fully-matched": 40,
+    "partial": 84,
     "no-literal-photo": 3,
-    "inaccessible-unverified": 26,
-    "unmatched-after-bounded-research": 15
+    "inaccessible-unverified": 23,
+    "unmatched-after-bounded-research": 14
   },
   "allImagesAccountedFor": true,
   "allFeasibleMatchesEstablished": false,
   "coverageComplete": false,
-  "nativeBuildDisposition": "Existing authorized iOS internal IPA / Android AAB request retained; not started or resubmitted. Residual photo exceptions must be reported before treating references as satisfied. No signing changes, store submission or publication."
+  "nativeBuildDisposition": "No build in this command. This reference reconciliation no longer blocks the separate already-authorized build step; remaining photo exceptions stay documented.",
+  "boundedCompletionPassComplete": true,
+  "completionPassEvidence": "research/boneefied-photo-references/completion-pass.json"
 }

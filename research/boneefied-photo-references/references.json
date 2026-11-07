@@ -80,7 +80,7 @@
   {
     "assetId": "asset-skeletal-atlas-skull-sutures",
     "title": "Cranial sutures: superior and posterior views",
-    "status": "partial",
+    "status": "verified",
     "references": [
       {
         "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
@@ -89,9 +89,9 @@
         "creator": "MAKY.OREL",
         "mediaType": "gross-photo",
         "organism": "human",
-        "relationship": "direct-match",
+        "relationship": "relevant-example",
         "matches": "Real dry human skull photographed from superior aspect; visible cranial sutures including sagittal and coronal sutures.",
-        "viewLimitations": "Superior vault only; no whole posterior skull view.",
+        "viewLimitations": "Superior vault specimen; not a whole posterior skull view or a matched donor.",
         "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
         "linkingTerms": "Public Wikimedia Commons source page; ordinary outbound linking permitted. Preserve page and creator attribution.",
         "reproductionRights": "CC0 1.0 dedication stated on Commons file page.",
@@ -107,9 +107,10 @@
           "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
         },
         "subject": {
-          "en": "Human dry skull vault, superior suture view",
-          "es": "Calvaria humana seca, vista superior de suturas"
-        }
+          "en": "Skull vault: superior specimen",
+          "es": "Bóveda craneal: espécimen superior"
+        },
+        "metadataRefreshEvidence": "research/boneefied-photo-references/completion-access-checks.json"
       },
       {
         "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
@@ -118,9 +119,9 @@
         "creator": "MAKY.OREL",
         "mediaType": "gross-photo",
         "organism": "human",
-        "relationship": "direct-match",
+        "relationship": "relevant-example",
         "matches": "Real dry skull detail at the sagittal/lambdoid suture junction (lambda), an exact posterior suture landmark.",
-        "viewLimitations": "Close detail only; not a complete posterior-view skull.",
+        "viewLimitations": "Close detail of the sagittal/lambdoid junction, not the complete posterior contour.",
         "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
         "linkingTerms": "Public Wikimedia Commons source page; ordinary outbound linking permitted. Preserve page and creator attribution.",
         "reproductionRights": "CC0 1.0 dedication stated on Commons file page.",
@@ -136,14 +137,109 @@
           "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
         },
         "subject": {
-          "en": "Human dry skull, lambdoid-suture junction detail",
-          "es": "Cráneo humano seco, detalle de la sutura lambdoidea"
-        }
+          "en": "Posterior sutures: lambda close-up",
+          "es": "Suturas posteriores: detalle de lambda"
+        },
+        "metadataRefreshEvidence": "research/boneefied-photo-references/completion-access-checks.json"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+        "title": "Cranium - inferior view.jpg",
+        "source": "Wikimedia Commons; Charles University anthropological collections",
+        "creator": "MAKY.OREL",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "An actual unpainted dry human skull photographed from the external inferior surface; mandible and atlas are absent, matching the external skull-base orientation.",
+        "viewLimitations": "Inferior temporal-bone context; not a posterior temporal-bone view or the identical skull.",
+        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "linkingTerms": "The public source page is suitable for ordinary outbound linking; link to the source record and retain the displayed creator/institution attribution.",
+        "reproductionRights": "CC BY-SA 4.0 stated on the file page.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Screenshot showed the actual unpainted cranium from below, with the external skull base and foramen magnum visible; caption and image were checked together.",
+          "checkedAt": "2026-11-06T21:25:07.121Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-01-skeletal-atlas-skull-base-external.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+        },
+        "subject": {
+          "en": "Temporal bones: inferior skull context",
+          "es": "Huesos temporales: contexto inferior del cráneo"
+        },
+        "metadataRefreshEvidence": "research/boneefied-photo-references/completion-access-checks.json"
       }
     ],
-    "reason": "Superior human dry skull photo confirms the sagittal/coronal suture view and a separate human posterior lambda detail confirms the lambdoid junction. The detail is not a full posterior skull view.",
+    "reason": "Three previously inspected human specimens cover the named anatomy together: the superior vault shows frontal/parietal bones and coronal/sagittal sutures; the posterior lambda detail shows the lambdoid junction and adjoining occipital/parietal bone; the external skull base supplies temporal-bone context. Related examples, not a matched superior/posterior pair: the posterior source is explicitly a close detail and the temporal reference is an inferior view.",
     "coverageKind": "relevant-example",
-    "finalReview": "Superior human dry skull photo confirms the sagittal/coronal suture view and a separate human posterior lambda detail confirms the lambdoid junction. The detail is not a full posterior skull view."
+    "finalReview": "Three previously inspected human specimens cover the named anatomy together: the superior vault shows frontal/parietal bones and coronal/sagittal sutures; the posterior lambda detail shows the lambdoid junction and adjoining occipital/parietal bone; the external skull base supplies temporal-bone context. Related examples, not a matched superior/posterior pair: the posterior source is explicitly a close detail and the temporal reference is an inferior view.",
+    "previousAssessment": {
+      "status": "partial",
+      "reason": "Superior human dry skull photo confirms the sagittal/coronal suture view and a separate human posterior lambda detail confirms the lambdoid junction. The detail is not a full posterior skull view.",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+          "title": "Cranium - neurocranium superior view 2.jpg",
+          "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+          "creator": "MAKY.OREL",
+          "mediaType": "gross-photo",
+          "organism": "human",
+          "relationship": "direct-match",
+          "matches": "Real dry human skull photographed from superior aspect; visible cranial sutures including sagittal and coronal sutures.",
+          "viewLimitations": "Superior vault only; no whole posterior skull view.",
+          "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "linkingTerms": "Public Wikimedia Commons source page; ordinary outbound linking permitted. Preserve page and creator attribution.",
+          "reproductionRights": "CC0 1.0 dedication stated on Commons file page.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Source-page screenshot shows a dry skull from above with the sagittal and coronal sutures visible; page caption identifies a superior top view.",
+            "checkedAt": "2026-11-06T21:35:10.926Z",
+            "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-03-skeletal-atlas-skull-sutures.md",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+            "redirectNotes": "Fetched public source page resolved at the supplied URL; no redirect observed.",
+            "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+          },
+          "subject": {
+            "en": "Human dry skull vault, superior suture view",
+            "es": "Calvaria humana seca, vista superior de suturas"
+          }
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+          "title": "Cranium - sutura lambdoidea (lambda).jpg",
+          "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+          "creator": "MAKY.OREL",
+          "mediaType": "gross-photo",
+          "organism": "human",
+          "relationship": "direct-match",
+          "matches": "Real dry skull detail at the sagittal/lambdoid suture junction (lambda), an exact posterior suture landmark.",
+          "viewLimitations": "Close detail only; not a complete posterior-view skull.",
+          "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "linkingTerms": "Public Wikimedia Commons source page; ordinary outbound linking permitted. Preserve page and creator attribution.",
+          "reproductionRights": "CC0 1.0 dedication stated on Commons file page.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Source-page screenshot shows the posterior suture junction; page caption identifies the sagittal/lambdoid conjunction.",
+            "checkedAt": "2026-11-06T21:35:10.926Z",
+            "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-03-skeletal-atlas-skull-sutures.md",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+            "redirectNotes": "Fetched public source page resolved at the supplied URL; no redirect observed.",
+            "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+          },
+          "subject": {
+            "en": "Human dry skull, lambdoid-suture junction detail",
+            "es": "Cráneo humano seco, detalle de la sutura lambdoidea"
+          }
+        }
+      ]
+    }
   },
   {
     "assetId": "asset-skeletal-atlas-vertebra-typical",
@@ -1914,7 +2010,7 @@
   {
     "assetId": "asset-servier-pelvis",
     "title": "Pelvis",
-    "status": "partial",
+    "status": "verified",
     "references": [
       {
         "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
@@ -1923,9 +2019,9 @@
         "creator": "MAKY.OREL",
         "mediaType": "gross-photo",
         "organism": "human",
-        "relationship": "direct-match",
+        "relationship": "relevant-example",
         "matches": "Dry human pelvis photographed from frontal aspect; paired os coxae and sacrum visible.",
-        "viewLimitations": "No femora attached; metal fixation wires are visible.",
+        "viewLimitations": "Mounted frontal pelvis with fixation wires; femora absent. The second reference is a separately photographed femur, not an attached joint.",
         "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
         "linkingTerms": "Public Wikimedia Commons source page; ordinary outbound linking permitted. Preserve page and creator attribution.",
         "reproductionRights": "CC0 1.0 dedication stated on Commons file page.",
@@ -1941,43 +2037,109 @@
           "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
         },
         "subject": {
-          "en": "Human dry pelvis and sacrum, frontal view",
-          "es": "Pelvis y sacro humanos secos, vista frontal"
-        }
+          "en": "Pelvis: frontal specimen without femora",
+          "es": "Pelvis: espécimen frontal sin fémures"
+        },
+        "metadataRefreshEvidence": "research/boneefied-photo-references/completion-access-checks.json"
       },
       {
-        "url": "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/",
-        "title": "Natural color photograph of dissection of hip joint with the femoral head dislocated",
-        "source": "Calisphere; University of Southern California Digital Library / Norris Medical Library",
-        "creator": "Irving Rehman and Chadwick F. Smith",
+        "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+        "title": "Femur - anterior, posterior.jpg",
+        "source": "Wikimedia Commons; Charles University anthropological collections",
+        "creator": "MAKY.OREL",
         "mediaType": "gross-photo",
         "organism": "human",
         "relationship": "relevant-example",
-        "matches": "Real hip-joint dissection with femoral head dislocated; relevant to hip articulation and femoral head context.",
-        "viewLimitations": "Not a dry standalone hip bone or femur specimen; dislocation and tissue dissection do not provide medial/lateral bone views or complete labeled landmarks.",
-        "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
-        "linkingTerms": "Public Calisphere item page is available for ordinary outbound linking; creator and contributing institution are displayed.",
-        "reproductionRights": "CC BY-NC-SA 2.5 stated for this item; attribution and noncommercial/share-alike conditions apply.",
+        "matches": "One actual dry human femur shown in the file's anterior and posterior views; both long-bone aspects are visibly present, including the posterior linea-aspera ridge.",
+        "viewLimitations": "Separate femur photographed in two aspects; no claim of shared donor, established side or an intact pelvic articulation.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "linkingTerms": "The public source page is suitable for ordinary outbound linking; link to the source record and retain the displayed creator/institution attribution.",
+        "reproductionRights": "CC0 1.0 dedication stated on the file page.",
         "verification": {
           "pageOpened": true,
           "captionChecked": true,
           "imageVisuallyInspected": true,
-          "visualEvidence": "Screenshot showed the actual hip dissection and visible item caption/creator/date/rights metadata.",
-          "checkedAt": "2026-11-06T21:13:28.417Z",
-          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-37-servier-pelvis.md",
-          "finalUrl": "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/",
-          "redirectNotes": "Fetched public source page resolved at the supplied URL; no redirect observed.",
+          "visualEvidence": "Screenshot of the Commons source page showed both photographs of a dry femur; the anterior and posterior bone aspects were visually distinguishable and match the illustration's paired views.",
+          "checkedAt": "2026-11-06T21:25:07.121Z",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-14-skeletal-atlas-femur.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
           "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
         },
         "subject": {
-          "en": "Human hip-joint dissection; femoral head dislocated",
-          "es": "Disección de cadera humana; cabeza femoral luxada"
-        }
+          "en": "Femur: separate anterior/posterior specimen",
+          "es": "Fémur: espécimen separado anterior y posterior"
+        },
+        "metadataRefreshEvidence": "research/boneefied-photo-references/completion-access-checks.json"
       }
     ],
-    "reason": "A frontal dry human pelvis photo shows both hip bones and sacrum; the assigned plate includes additional structures and landmarks, including attached femora, that are missing.",
+    "reason": "The previously inspected frontal human pelvis depicts the sacrum and both hip bones, including iliac, pubic, ischial and acetabular regions. The separately inspected human femur supplies the missing femoral subject. These are complementary real bone examples, not a photograph of the illustrated intact pelvis with attached femora; donor and laterality are not asserted.",
     "coverageKind": "relevant-example",
-    "finalReview": "A frontal dry human pelvis photo shows both hip bones and sacrum; the assigned plate includes additional structures and landmarks, including attached femora, that are missing."
+    "finalReview": "The previously inspected frontal human pelvis depicts the sacrum and both hip bones, including iliac, pubic, ischial and acetabular regions. The separately inspected human femur supplies the missing femoral subject. These are complementary real bone examples, not a photograph of the illustrated intact pelvis with attached femora; donor and laterality are not asserted.",
+    "previousAssessment": {
+      "status": "partial",
+      "reason": "A frontal dry human pelvis photo shows both hip bones and sacrum; the assigned plate includes additional structures and landmarks, including attached femora, that are missing.",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+          "title": "Pelvis - os coxae, os sacrum (frontal view).jpg",
+          "source": "Wikimedia Commons; anthropological collections, Department of Biology and Environmental Studies, Faculty of Education, Charles University",
+          "creator": "MAKY.OREL",
+          "mediaType": "gross-photo",
+          "organism": "human",
+          "relationship": "direct-match",
+          "matches": "Dry human pelvis photographed from frontal aspect; paired os coxae and sacrum visible.",
+          "viewLimitations": "No femora attached; metal fixation wires are visible.",
+          "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "linkingTerms": "Public Wikimedia Commons source page; ordinary outbound linking permitted. Preserve page and creator attribution.",
+          "reproductionRights": "CC0 1.0 dedication stated on Commons file page.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Screenshot of source page displays an actual dry pelvis with paired hip bones and sacrum in frontal view.",
+            "checkedAt": "2026-11-06T21:35:10.926Z",
+            "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-37-servier-pelvis.md",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+            "redirectNotes": "Fetched public source page resolved at the supplied URL; no redirect observed.",
+            "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+          },
+          "subject": {
+            "en": "Human dry pelvis and sacrum, frontal view",
+            "es": "Pelvis y sacro humanos secos, vista frontal"
+          }
+        },
+        {
+          "url": "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/",
+          "title": "Natural color photograph of dissection of hip joint with the femoral head dislocated",
+          "source": "Calisphere; University of Southern California Digital Library / Norris Medical Library",
+          "creator": "Irving Rehman and Chadwick F. Smith",
+          "mediaType": "gross-photo",
+          "organism": "human",
+          "relationship": "relevant-example",
+          "matches": "Real hip-joint dissection with femoral head dislocated; relevant to hip articulation and femoral head context.",
+          "viewLimitations": "Not a dry standalone hip bone or femur specimen; dislocation and tissue dissection do not provide medial/lateral bone views or complete labeled landmarks.",
+          "termsUrl": "https://creativecommons.org/licenses/by-nc-sa/2.5/",
+          "linkingTerms": "Public Calisphere item page is available for ordinary outbound linking; creator and contributing institution are displayed.",
+          "reproductionRights": "CC BY-NC-SA 2.5 stated for this item; attribution and noncommercial/share-alike conditions apply.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Screenshot showed the actual hip dissection and visible item caption/creator/date/rights metadata.",
+            "checkedAt": "2026-11-06T21:13:28.417Z",
+            "evidencePath": "research/boneefied-photo-references/evidence/final-skeletal-37-servier-pelvis.md",
+            "finalUrl": "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/",
+            "redirectNotes": "Fetched public source page resolved at the supplied URL; no redirect observed.",
+            "reviewedAtFinalCheck": "2026-11-06T21:59:33.570Z"
+          },
+          "subject": {
+            "en": "Human hip-joint dissection; femoral head dislocated",
+            "es": "Disección de cadera humana; cabeza femoral luxada"
+          }
+        }
+      ]
+    }
   },
   {
     "assetId": "asset-commons-axial-skeleton-blank",
@@ -4501,11 +4663,51 @@
           "en": "Brachial-plexus specimen; organism unspecified in item record",
           "es": "Muestra del plexo braquial; organismo no especificado en el registro"
         }
+      },
+      {
+        "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
+        "title": "Brachial plexus roots, trunks and cords",
+        "source": "BlueLink, University of Michigan Medical School",
+        "sourceName": "Michigan BlueLink",
+        "creator": "B. Kathleen Alsup and Glenn M. Fox, University of Michigan Medical School",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Cervical and axillary dissections show roots, superior/middle/inferior trunks, divisions and medial/lateral/posterior cords of the human brachial plexus.",
+        "viewLimitations": "Dissected proximal plexus; the companion limb page supplies named distal nerve courses.",
+        "termsUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink",
+        "linkingTerms": "Ordinary public university source-page link only. Atlas requires maintaining Alsup/Fox copyright for use; no separate prohibition on ordinary linking was found on the checked atlas/about pages. No image reuse rights are asserted.",
+        "reproductionRights": "Copyright B. Kathleen Alsup and Glenn M. Fox. The about page describes free educational access; no commercial reproduction licence is claimed or exercised.",
+        "subject": {
+          "en": "Brachial plexus roots, trunks and cords",
+          "es": "Raíces, troncos y fascículos del plexo braquial"
+        },
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 13, 14, 15, 17, 18.",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
+          "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
+          "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
+          "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
+          "sourceMetadataPath": "research/boneefied-photo-references/source-pages/bluelink-labeled-brachial-plexus-images.json",
+          "inspectedImagePages": [
+            "https://drive.google.com/file/d/1fniWfZj8Cb9aVhEFAJyTMmADzZrSuOA1/view?usp=sharing",
+            "https://drive.google.com/file/d/1G2T9Mh0L6oGjAs976nBcSGII-tu6395T/view?usp=sharing",
+            "https://drive.google.com/file/d/1DnjlRc9QfXZKW-1pNnugYtwQ9m-Id4-R/view?usp=sharing",
+            "https://drive.google.com/file/d/178iStT--_4Au1_Zn6mn7sUk6fdOEsNEv/view?usp=sharing",
+            "https://drive.google.com/file/d/1VS59JO-d45DBU19FoO4WogCDJOM8Du5-/view?usp=sharing"
+          ],
+          "organismEvidence": "https://medresearch.umich.edu/health-lab/free-online-tool-expands-anatomical-science-world"
+        }
       }
     ],
-    "reason": "Partial: Compared body-wide plexus schematic with a visually inspected brachial-plexus photograph. Organism is not explicit on Calisphere record; cervical, lumbar, sacral and phrenic coverage absent.",
+    "reason": "Partial: the already inspected Michigan human brachial-plexus dissections replace reliance on an organism-unconfirmed candidate for that region. The whole-body diagram still lacks verified cervical/lumbar/sacral plexus, phrenic-nerve and spinal-cord coverage as a combined set. No complete-plate link is approved.",
     "coverageKind": "relevant-example",
-    "finalReview": "Compared body-wide plexus schematic with a visually inspected brachial-plexus photograph. Organism is not explicit on Calisphere record; cervical, lumbar, sacral and phrenic coverage absent."
+    "finalReview": "Partial: the already inspected Michigan human brachial-plexus dissections replace reliance on an organism-unconfirmed candidate for that region. The whole-body diagram still lacks verified cervical/lumbar/sacral plexus, phrenic-nerve and spinal-cord coverage as a combined set. No complete-plate link is approved.",
+    "completionPassEvidence": "research/boneefied-photo-references/completion-pass.json"
   },
   {
     "assetId": "asset-bvis04-upper-limb-nerves",
@@ -5747,11 +5949,41 @@
           "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
           "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
         }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "title": "Human kidney cortex — original specimen photograph",
+        "source": "Wikimedia Commons; author's archive",
+        "creator": "Doc. RNDr. Josef Reischig, CSc.",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human renal tubules lined by cuboidal epithelial cells, with rounded nuclei and lumina, visible in the actual source-page photograph.",
+        "viewLimitations": "A renal-cortex field also containing a glomerulus and vessels, not an isolated idealized epithelial strip or the identical original photograph.",
+        "termsUrl": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "linkingTerms": "Ordinary outbound source-page link; retain the named creator and consult the file-specific license. Linking does not exercise reproduction rights.",
+        "reproductionRights": "The source page declares CC BY-SA 3.0 Unported. No copying or embedding is performed by this command.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "The public Commons source page was opened on 2026-11-07. Its actual 600x human renal-cortex photograph visibly resolves cuboidal tubular epithelium and round nuclei around tubular lumina. Caption identifies human kidney cortex. No photograph was downloaded or retained in the project.",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "evidencePath": "research/boneefied-photo-references/additional-reviewed-sources.json",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00"
+        },
+        "subject": {
+          "en": "Simple cuboidal epithelium: human renal tubules",
+          "es": "Epitelio cúbico simple: túbulos renales humanos"
+        }
       }
     ],
-    "reason": "The verified human simple-squamous image supports one panel. A targeted University of Genoa simple-epithelia page contained human cuboidal kidney and columnar intestine photographs; both original images were visually checked. Its official terms state that site images/micrographs are protected and prohibit deep linking, so that page is excluded from eligible references. The human three-panel set therefore remains partial.",
+    "reason": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved.",
     "coverageKind": "relevant-example",
-    "finalReview": "The verified human simple-squamous image supports one panel. A targeted University of Genoa simple-epithelia page contained human cuboidal kidney and columnar intestine photographs; both original images were visually checked. Its official terms state that site images/micrographs are protected and prohibit deep linking, so that page is excluded from eligible references. The human three-panel set therefore remains partial."
+    "finalReview": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved.",
+    "completionPassEvidence": "research/boneefied-photo-references/completion-pass.json"
   },
   {
     "assetId": "asset-bvis04-epithelia-stratified",
@@ -6830,9 +7062,17 @@
         }
       }
     ],
-    "reason": "Final comparison: Duke text identifies human ileal lymphoid tissue, but no photo was visually checked for Peyer patches/lacteal and no image shows the lymph route. Not enough evidence for either full panel.",
+    "reason": "Partial: the already inspected human ileal cross-section shows the prominent aggregated lymphoid tissue relevant to Peyer patches. Appendix lymphoid tissue, villus lacteals and the intestinal lymphatic-trunk route are not established together. A Peyer-patch example is not complete coverage of this composite.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: Duke text identifies human ileal lymphoid tissue, but no photo was visually checked for Peyer patches/lacteal and no image shows the lymph route. Not enough evidence for either full panel."
+    "finalReview": "Partial: the already inspected human ileal cross-section shows the prominent aggregated lymphoid tissue relevant to Peyer patches. Appendix lymphoid tissue, villus lacteals and the intestinal lymphatic-trunk route are not established together. A Peyer-patch example is not complete coverage of this composite.",
+    "completionPartialObservations": [
+      {
+        "slide": "HU_62_20x ileum",
+        "dukeSubject": "GItract",
+        "observedAndLimitations": "Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+        "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=13457083-c943-4131-93c1-13770745e0fe"
+      }
+    ]
   },
   {
     "assetId": "asset-bvis05-endocrine-body-map",
@@ -7054,11 +7294,25 @@
   {
     "assetId": "asset-bvis05-ovary-testis",
     "title": "Gonads: ovary and testis",
-    "status": "unresolved",
+    "status": "partial",
     "references": [],
-    "reason": "Final comparison: reviewed candidates contain no visually inspected, terms/creator-verified human pair for ovarian follicles/corpus luteum and testis tubules/interstitium. No qualifying source set found in this audit; this is unavailable evidence, not proof of absence.",
+    "reason": "Partial: the already inspected human ovarian sections include a corpus luteum and follicular profiles, so an ovarian example is established. No visually verified human testis set resolves both Sertoli and Leydig cells. The ovarian half must not be promoted to a complete ovary/testis endocrine counterpart.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: reviewed candidates contain no visually inspected, terms/creator-verified human pair for ovarian follicles/corpus luteum and testis tubules/interstitium. No qualifying source set found in this audit; this is unavailable evidence, not proof of absence."
+    "finalReview": "Partial: the already inspected human ovarian sections include a corpus luteum and follicular profiles, so an ovarian example is established. No visually verified human testis set resolves both Sertoli and Leydig cells. The ovarian half must not be promoted to a complete ovary/testis endocrine counterpart.",
+    "completionPartialObservations": [
+      {
+        "slide": "236a ovary",
+        "dukeSubject": "FemaleRepro",
+        "observedAndLimitations": "Human ovary: a corpus luteum and several follicular profiles visible. Does not establish a complete developmental sequence or all oocyte-wall structures at cell level.",
+        "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=881b362b-0ab3-4134-b7e0-79dcd9652de8"
+      },
+      {
+        "slide": "235 ovary",
+        "dukeSubject": "FemaleRepro",
+        "observedAndLimitations": "Human ovary with cortical follicular profiles and medullary vessels. No assertion that all primordial-to-mature stages, corona radiata and zona pellucida were individually resolved.",
+        "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=a4879405-28d7-478c-9cc0-563678d0dc97"
+      }
+    ]
   },
   {
     "assetId": "asset-bvis05-heart-anterior",
@@ -9841,11 +10095,41 @@
           "en": "Renal corpuscle and filtration barrier; human micrograph example; limitation: Species is not stated; filtration slit/barrier components are not resolved as in the diagram.",
           "es": "corpúsculo renal y barrera de filtración; ejemplo humano limitado: no se confirma toda la barrera de filtración"
         }
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "title": "Human kidney cortex — original specimen photograph",
+        "source": "Wikimedia Commons; author's archive",
+        "creator": "Doc. RNDr. Josef Reischig, CSc.",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "direct-match",
+        "matches": "The original page for the same human renal-cortex photomicrograph already displayed in Boneefied, including the glomerular tuft, surrounding capsular space, tubules and vessels.",
+        "viewLimitations": "A cortex microscopy field, not the whole kidney, all nephron segments or filtration-barrier ultrastructure.",
+        "termsUrl": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "linkingTerms": "Ordinary outbound source-page link; retain the named creator and consult the file-specific license. Linking does not exercise reproduction rights.",
+        "reproductionRights": "The source page declares CC BY-SA 3.0 Unported. No copying or embedding is performed by this command.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Source page, caption and displayed image checked against saved photographic evidence; image observed as human The original page for the same human renal-cortex photomicrograph already displayed in Boneefied, including the glomerular tuft, surrounding capsular space, tubules and vessels.. Anatomy outside this specific view is not inferred.",
+          "checkedAt": "2026-11-06",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-micro-asset-commons-kidney-cortex-human-human-kidney-cortex-original-specimen-phot.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+        },
+        "subject": {
+          "en": "human kidney cortex photomicrograph",
+          "es": "fotomicrografía de corteza renal humana"
+        }
       }
     ],
-    "reason": "Partial: verified/candidate source pages show limited real examples for Renal corpuscle and filtration barrier; Species is not stated; filtration slit/barrier components are not resolved as in the diagram.",
+    "reason": "Partial: the already inspected, explicitly human renal-cortex micrograph supplies a glomerular tuft and capsular space, resolving the earlier specimen-species uncertainty for this portion. Podocytes, filtration slits/membrane, macula densa, juxtaglomerular cells and the paired arteriolar arrangement remain unverified. No link is approved for the complete composite.",
     "coverageKind": "incomplete",
-    "finalReview": "Compared the assigned plate (Renal corpuscle and filtration barrier) with Wikimedia Commons — File:Renal corpuscle.jpg. Remaining coverage limitation: Species is not stated; filtration slit/barrier components are not resolved as in the diagram. A literal full-plate match is not claimed."
+    "finalReview": "Partial: the already inspected, explicitly human renal-cortex micrograph supplies a glomerular tuft and capsular space, resolving the earlier specimen-species uncertainty for this portion. Podocytes, filtration slits/membrane, macula densa, juxtaglomerular cells and the paired arteriolar arrangement remain unverified. No link is approved for the complete composite.",
+    "completionPassEvidence": "research/boneefied-photo-references/completion-pass.json"
   },
   {
     "assetId": "asset-bvis06-male-system",
