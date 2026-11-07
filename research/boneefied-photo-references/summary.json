@@ -1,24 +1,24 @@
 {
-  "checkedAt": "2026-11-07T00:57:02.058932+00:00",
+  "checkedAt": "2026-11-07T02:01:48Z",
   "coverageComplete": false,
   "finalVerification": {
     "typecheck": "passed",
     "focusedTests": {"passed": 6, "failed": 0},
     "completeInventoryValidator": "passed; record completeness/evidence flags, not anatomical correctness",
     "fiveOutcomeReconciliation": "passed; 164 unique assets and before/after totals reconcile",
-    "originalApprovedRecordsPreserved": "38 canonical-JSON SHA-256 fingerprints unchanged",
+    "originalApprovedRecordsPreserved": "All 40 previously approved canonical records compared equal to the checkpoint before this continuation",
     "originalImageHashesUnchanged": 164,
-    "approvedRuntimeMappings": 40,
+    "approvedRuntimeMappings": 43,
     "directMatches": 5,
-    "disclosedRelatedExamples": 35,
-    "representativeDestinations": "Six public source-page text/identity checks succeeded; historical actual-image inspection evidence retained, not relabeled as fresh inspection",
-    "newCandidateLimit": "Blood-cell images were not approved after screenshot access/rate-limit errors; no retries",
-    "browser": "402x874 home rendered after Metro warm-up; not an interactive test of every reference link",
+    "disclosedRelatedExamples": 38,
+    "representativeDestinations": "See live-link-checks.json for exact destination checks and original timestamps. HTTP reachability is not photographic re-inspection.",
+    "newCandidateLimit": "Three Basel mappings approved only after actual high-power static photographs were inspected; overview tile errors are disclosed. Other candidates remain ineligible.",
+    "browser": "Actual skull-base photo control opened the intended Commons page and rendered its photograph. Recall hid the link before reveal and after one marker; enabled it after all 20 markers. Representative web journey, not all links or native-device proof.",
     "assessmentGuards": "focused tests passed; Recall and unanswered graded contexts remain fail-closed",
     "physicalDevice": "not tested",
-    "nativeBuild": "not started in this command; separate already-authorized build step may proceed",
+    "nativeBuild": "PROHIBITED: no build, release, scheduling, submission or publishing. Prior authorization is superseded. Require owner review of 164/164 verified live links, then explicit authorization in a separate later message.",
     "externalPhotosAddedToProject": 0,
-    "finalReport": "research/boneefied-photo-references/final-report.html"
+    "finalReport": "research/boneefied-photo-references/continuation-research.md"
   },
   "scope": {
     "publishedModules": 18,
@@ -29,11 +29,14 @@
     "excludedUnreferencedOrSupersededAssets": 23
   },
   "outcomes": {
-    "verified": 40,
-    "partial": 107,
+    "verified": 43,
+    "partial": 104,
     "unresolved": 17
   },
   "eligibleAssetIds": [
+    "asset-commons-simple-columnar-epithelium",
+    "asset-bvis05-blood-smear-schematic",
+    "asset-bvis05-leukocyte-types",
     "asset-skeletal-atlas-skull-base-external",
     "asset-skeletal-atlas-cranial-floor-internal",
     "asset-skeletal-atlas-skull-sutures",
@@ -133,7 +136,6 @@
     "asset-gray946-sweat-gland",
     "asset-original-cell-overview",
     "asset-original-mitosis-stages",
-    "asset-commons-simple-columnar-epithelium",
     "asset-openstax-historical-skin-structure",
     "asset-bvis04-epidermis-strata",
     "asset-bvis04-dermis-hypodermis",
@@ -147,8 +149,6 @@
     "asset-bvis04-nervous-tissue",
     "asset-bvis04-nail-section",
     "asset-bvis05-blood-composition",
-    "asset-bvis05-blood-smear-schematic",
-    "asset-bvis05-leukocyte-types",
     "asset-bvis05-marrow-hematopoiesis",
     "asset-bvis05-vessel-wall-types",
     "asset-bvis05-vessel-flow-chain",
@@ -220,9 +220,9 @@
   "referencesWithoutEstablishedTermsUrl": 20,
   "exactFullCoverage": false,
   "verifiedDirectMatches": 5,
-  "verifiedLimitedRealExamples": 35,
+  "verifiedLimitedRealExamples": 38,
   "verifiedImagingRecords": 2,
-  "verifiedSourceLinks": 55,
+  "verifiedSourceLinks": 58,
   "physicalDeviceOpeningTested": false,
   "physicalDeviceLimitation": "Expo device automation reported no connected local device target; no EAS simulator, release/native build or publication was started.",
   "sourceInspectionNote": "Historical aggregate inspection metrics are retained separately. New approval evidence names the exact inspected photos; collecting a gallery never implies all of its photos were inspected.",
@@ -254,7 +254,7 @@
     "sourcePagesOpened": 127,
     "sourcePagesWithActualImageInspection": 105
   },
-  "fiveOutcomeCounts": {
+  "previousFiveOutcomeCounts": {
     "fully-matched": 40,
     "partial": 84,
     "no-literal-photo": 3,
@@ -268,7 +268,19 @@
     "research/boneefied-photo-references/grouped-inspections.json",
     "research/boneefied-photo-references/five-outcome-audit.json"
   ],
-  "boundedCompletionPassComplete": true,
+  "historicalBoundedCompletionPassComplete": true,
   "completionPassEvidence": "research/boneefied-photo-references/completion-pass.json",
-  "nativeBuildDisposition": "No build in this command. This reference reconciliation no longer blocks the separate already-authorized build step; remaining photo exceptions stay documented."
+  "currentAcceptance": {
+    "requiredVerifiedIllustrations": 164,
+    "anatomicallyApprovedIllustrations": 43,
+    "coverageBlockers": 121,
+    "approvedAndHttpReachableIllustrations": 42,
+    "distinctApprovedDestinations": 37,
+    "httpConfirmedDestinations": 36,
+    "unconfirmedDestination": "Columbia slide 66: certificate-chain validation failure in the HTTP client; not proof of global destination failure",
+    "liveVerificationLedger": "research/boneefied-photo-references/live-link-checks.json",
+    "historicalReportsAreNotCompletionProof": true,
+    "buildAuthorized": false
+  },
+  "nativeBuildDisposition": "PROHIBITED. There is no carried-forward build authorization. First require owner review of proof of 164/164 accurate live reference sets, then explicit authorization in a separate later message. No build, release, scheduling, submission or publishing now."
 }

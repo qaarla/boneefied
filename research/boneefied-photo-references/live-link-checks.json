@@ -1,0 +1,2230 @@
+{
+  "checkedAt": "2026-11-07T02:02:58.112Z",
+  "method": "Serial HTTPS GETs of approved source HTML only; normal TLS validation; no third-party photos saved. With --reuse-current, prior checks retain their original timestamps.",
+  "limitations": "HTTP reachability is not photographic re-inspection, proof of every fine anatomical detail, interactive app navigation, or native-device verification.",
+  "expectedIllustrations": 164,
+  "accountedIllustrations": 164,
+  "anatomicallyApprovedIllustrations": 43,
+  "approvedAndHttpReachableIllustrations": 42,
+  "uniqueApprovedDestinations": 37,
+  "reachableDestinations": 36,
+  "all164CompleteAndReachable": false,
+  "buildAuthorization": "PROHIBITED. Even complete coverage requires owner review and explicit separate later authorization before any build, release, scheduling, submission, or publishing.",
+  "destinations": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+      "checkedAt": "2026-11-07T01:50:41.358Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Cranium - inferior view.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+      "checkedAt": "2026-11-07T01:50:42.520Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Cranium - basis cranii interna.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+      "checkedAt": "2026-11-07T01:50:43.496Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Cranium - neurocranium superior view 2.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+      "checkedAt": "2026-11-07T01:50:44.486Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Cranium - sutura lambdoidea (lambda).jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+      "checkedAt": "2026-11-07T01:50:45.438Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Anterior surface of scapula.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+      "checkedAt": "2026-11-07T01:50:46.389Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Scapula - posterior view.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+      "checkedAt": "2026-11-07T01:50:47.403Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Humerus - anterior 2.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+      "checkedAt": "2026-11-07T01:50:48.337Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Humerus - posterior 2.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+      "checkedAt": "2026-11-07T01:50:49.380Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Femur - anterior, posterior.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg",
+      "checkedAt": "2026-11-07T01:50:50.169Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Foot bones - tarsus, metatarsus and phalanges.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+      "checkedAt": "2026-11-07T01:50:51.104Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Human brain, sagittal section 1.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+      "checkedAt": "2026-11-07T01:50:52.051Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Coronal cross-section of human brain.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg",
+      "checkedAt": "2026-11-07T01:50:52.837Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Normal axial T2-weighted MR image of the brain.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+      "checkedAt": "2026-11-07T01:50:53.820Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Pelvis - os coxae, os sacrum (frontal view).jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+      "checkedAt": "2026-11-07T01:50:54.757Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Overview of Upper Limb Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+      "checkedAt": "2026-11-07T01:50:55.654Z",
+      "status": 200,
+      "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+      "redirected": false,
+      "contentType": "text/html;charset=UTF-8",
+      "title": "Bassett Collection - Lane Medical Library - Stanford University School of Medicine",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lumbar-spine-hip-and-knee-images",
+      "checkedAt": "2026-11-07T01:50:56.678Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lumbar-spine-hip-and-knee-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Lumbar Spine, Hip and Knee Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images",
+      "checkedAt": "2026-11-07T01:50:57.525Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Overview of Lower Limb Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-wrist-hand-and-foot-images",
+      "checkedAt": "2026-11-07T01:50:58.384Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-wrist-hand-and-foot-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Wrist, Hand and Foot Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-shoulder-images",
+      "checkedAt": "2026-11-07T01:50:59.246Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-shoulder-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Shoulder Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
+      "checkedAt": "2026-11-07T01:51:00.093Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Cranial Cavity, Venous Sinuses and Brain Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
+      "checkedAt": "2026-11-07T01:51:00.978Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Posterior Neck Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
+      "checkedAt": "2026-11-07T01:51:01.849Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Brachial Plexus Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-nasal-cavity-sinuses-and-ear-images",
+      "checkedAt": "2026-11-07T01:51:02.698Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-nasal-cavity-sinuses-and-ear-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Nasal Cavity, Sinuses and Ear Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+      "checkedAt": "2026-11-07T01:51:03.552Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Kidney cortex (947 21) Human.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+      "checkedAt": "2026-11-07T01:51:04.414Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Alveolar sac.JPG - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+      "checkedAt": "2026-11-07T01:51:05.405Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Human Simple Squamous Epithelium Tissue.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+      "checkedAt": "2026-11-07T02:02:55.504Z",
+      "status": 200,
+      "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Ileum, Human 1",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+      "checkedAt": "2026-11-07T01:51:06.357Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Human skeletal muscle tissue 1 - TEM.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Human_cardiac_muscle.jpg",
+      "checkedAt": "2026-11-07T01:51:07.331Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_cardiac_muscle.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Human cardiac muscle.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://histologylab.ctl.columbia.edu/slides/slide66/",
+      "checkedAt": "2026-11-07T01:51:08.347Z",
+      "sourcePageReachable": false,
+      "error": "TypeError: fetch failed",
+      "cause": "Error: self-signed certificate in certificate chain",
+      "reason": "Access check failed. This alone does not establish that the destination is globally broken."
+    },
+    {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+      "checkedAt": "2026-11-07T02:02:56.969Z",
+      "status": 200,
+      "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Blood smear",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+      "checkedAt": "2026-11-07T01:51:09.185Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Heart Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-mediastinum",
+      "checkedAt": "2026-11-07T01:51:10.060Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-mediastinum",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Posterior Mediastinum",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-duodenum-pancreas-and-abdominal-aorta-images",
+      "checkedAt": "2026-11-07T01:51:10.905Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-duodenum-pancreas-and-abdominal-aorta-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Duodenum, Pancreas and Abdominal Aorta Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lungs-and-ventilation-pathways-images",
+      "checkedAt": "2026-11-07T01:51:11.756Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lungs-and-ventilation-pathways-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Lungs and Ventilation Pathway Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-kidneys-and-urinary-system-images",
+      "checkedAt": "2026-11-07T01:51:12.609Z",
+      "status": 200,
+      "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-kidneys-and-urinary-system-images",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Labeled Kidneys and Urinary System Images",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    }
+  ],
+  "illustrations": [
+    {
+      "assetId": "asset-skeletal-atlas-skull-base-external",
+      "title": "Skull base, external (inferior) view",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:25:07.121Z"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-cranial-floor-internal",
+      "title": "Cranial floor, internal (superior) view",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:25:07.121Z"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-skull-sutures",
+      "title": "Cranial sutures: superior and posterior views",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:35:10.926Z"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:35:10.926Z"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:25:07.121Z"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-vertebra-typical",
+      "title": "Typical vertebra: superior view with lateral inset",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "A dry human thoracic vertebra in superior view shows the common vertebral plan. The assigned thoracic lateral inset, disc, and separate detail are not shown.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-atlas-axis",
+      "title": "Atlas (C1) from above and axis (C2) from the side",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "The human dry atlas and axis pair is photographed from above, but the assigned C2 lateral view is absent.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-thoracic-cage",
+      "title": "Thoracic cage, anterior view",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Targeted searches found no visually inspected dry human rib-cage photo with the sternum and cartilage arrangement. A Calisphere anterior human thorax dissection page surfaced and its caption was fetched, but the photograph itself was not visually inspected and the complete bone/cartilage plate cannot be confirmed; this is unavailable evidence, not proof that no suitable photo exists.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-rib-detail",
+      "title": "Rib detail: head, tubercle and costal groove",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Two targeted searches yielded no visually inspected, provenance-checked human rib specimen photo showing the head, tubercle and costal groove; candidate illustrations/renders were excluded.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-scapula",
+      "title": "Right scapula: anterior (left) and posterior (right)",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:25:07.121Z"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-pectoral-girdle",
+      "title": "Pectoral girdle relationships, anterior view (right side detailed)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Scapular surface photographs and a right anterior human glenohumeral dissection establish portions of the girdle. Clavicle, complete clavicle-scapula-humerus relationships, and ligament set are not covered.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-humerus",
+      "title": "Right humerus: anterior (left) and posterior (right)",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:35:10.926Z"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:35:10.926Z"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-forearm",
+      "title": "Right forearm, anterior view, with proximal-ulna inset",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "A real human articulated radius-ulna specimen is shown anteriorly at the elbow. It is not the complete right forearm, interosseous membrane, or proximal-ulna lateral inset.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-hand-palmar",
+      "title": "Right hand, palmar view: carpals, metacarpals, phalanges",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "An assembled human hand skeleton photo covers carpals, metacarpals and phalanges. The source does not identify palmar/dorsal orientation or side, so it is not claimed as an exact right-palmar match.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-hip-bone",
+      "title": "Right hip bone: lateral (left) and medial (right) views",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "A dry human os coxae lateral view shows acetabulum and obturator foramen; a hip-joint dissection supplies limited context. Medial surface and laterality are unverified.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-femur",
+      "title": "Right femur: anterior (left) and posterior (right)",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:25:07.121Z"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-leg-tibia-fibula",
+      "title": "Right leg, anterior view, with tibial-plateau inset",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "A dry human tibia/fibula anterior pair corresponds to the main leg bones. The superior plateau inset, ankle mortise detail, and laterality are not documented.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-foot-dorsal",
+      "title": "Right foot, dorsal view: tarsals, metatarsals, phalanges",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-skeletal-atlas-synovial-joint",
+      "title": "Generic synovial joint in section",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "A photographed human left elbow dissection is a specific synovial-joint example, not a generic section proving the full capsule, synovial lining/fluid, and external ligament layers.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-shoulder-joint",
+      "title": "Right shoulder joint relationships, anterior view",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "A right anterior glenohumeral dissection opens the capsule and exposes the glenoid fossa. It does not cover the complete shoulder bones and ligament relationships in the diagram.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skeletal-atlas-knee-joint",
+      "title": "Right knee: anterior layer (left) and deep cruciates, patella omitted (right)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Verified left medial knee and posterior popliteal-fossa dissections show joint structures and PCL. The anterior right-knee panel and full cruciate/collateral set remain incomplete; a newly surfaced right anterior Calisphere candidate was not visually inspected.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-anterior-position",
+      "title": "Anterior anatomical position",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "No actual human photograph in the standardized anterior anatomical stance, with palms forward and thumbs lateral, was visually verified. Search surfaced mostly schematic position illustrations.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-posterior-position",
+      "title": "Posterior anatomical position",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "No matching standardized posterior-view human photograph was verified; available anatomical-position results were schematic.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-body-planes",
+      "title": "Three body planes compared",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:26:56.339Z"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:26:56.339Z"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-atlas-body-cavities",
+      "title": "Major body cavities with serous-space inset",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "No single verified human photograph covers the cavities, diaphragm, retroperitoneal kidney, and pleural-space inset. Sectional candidates did not meet this composite coverage.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-abdominal-quadrants",
+      "title": "Four abdominal quadrants",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Quadrant boundaries are an abstract surface-location convention, not literal anatomy that a specimen photo can reproduce; no specifically identified real human example was verified.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-abdominal-regions",
+      "title": "Nine abdominal regions",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Nine-region boundaries are an abstract surface mapping convention; no literal specimen counterpart was verified.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-organ-locations",
+      "title": "Whole-body organ locations",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "No one verified human in-situ photograph shows the full set of labeled organs and retroperitoneal kidneys. A valid composite needs separately verified subject-specific sources.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-skeleton-anterior",
+      "title": "Anterior skeleton",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Verified human dry-bone photos give selected anterior skull, scapula, femur, tibia/fibula, hand, and foot examples. They do not form a complete articulated skeleton or include the full rib cage and other bones.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-skeleton-posterior",
+      "title": "Posterior skeleton",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Verified dry human photos show a posterior scapula and anterior/posterior femur pair. Most posterior axial and appendicular regions are absent.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-atlas-skeleton-axial-appendicular",
+      "title": "Axial and appendicular skeleton",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "The selected real specimens include skull and thoracic vertebra examples for axial bones, plus scapula, femur, tibia/fibula, hand and foot examples for appendicular bones. The hand and foot source pages were individually visually confirmed in their bone-specific records; this collection still does not form a complete skeleton or demonstrate the full division.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skull-front",
+      "title": "Anterior skull: facial bones and openings",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "A genuine anterior human skull specimen is verified. It is worn and unlabelled, so minor facial foramina and some boundaries are not clearly represented.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-skull-lateral",
+      "title": "Left lateral skull",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "No exact human dry-bone lateral skull photograph with credible specimen provenance and visual inspection was verified. The newly fetched similarly titled Commons candidate credits a medical illustrator and cannot be relied upon as a genuine dry bone specimen.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-vertebral-column",
+      "title": "Lateral vertebral column plate",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "No photographed dry human vertebral column with credible specimen provenance was verified; previously inspected display-column imagery did not establish a human dry-bone specimen.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-cervical-vertebra",
+      "title": "Regional vertebrae compared: cervical, thoracic, lumbar (superior view)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Human dry cervical and thoracic vertebra examples are verified in superior-compatible views. No comparable lumbar specimen or complete three-region comparison is present.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-original-anatomical-planes",
+      "title": "Original anatomical planes",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:26:56.339Z"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:26:56.339Z"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-original-body-cavities",
+      "title": "Original body cavities",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "No verified human section photograph meets the composite body-cavity/diaphragm coverage; a page describing the NLM dataset is not an inspected specimen image.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-servier-elbow-joint",
+      "title": "Elbow joint",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "A verified human elbow joint dissection is a relevant real example, but it does not reproduce all the original illustration labels and cross-sectional layers.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-servier-pelvis",
+      "title": "Pelvis",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:35:10.926Z"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:25:07.121Z"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-commons-axial-skeleton-blank",
+      "title": "Axial skeleton, anterior view",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Verified photos cover anterior skull, cranial floor and a thoracic vertebra. A complete axial skeleton, ribs and full vertebral column are not covered.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-commons-appendicular-skeleton-blank",
+      "title": "Appendicular skeleton, anterior view",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Verified human specimens cover selected scapula, femur, tibia/fibula, hand and foot bones. They do not form the full appendicular skeleton and hand/foot laterality/view limits remain.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-muscular-atlas-deep-back",
+      "title": "Deep back muscles (trapezius and latissimus dorsi removed)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: human posterior deep-back and right scapular dissection photographs verify multifidus/rotator and scapular-region examples, but they do not jointly show the assigned unilateral lumbar quadratus lumborum plus intact-versus-removed erector spinae comparison.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-muscular-atlas-posterior-arm",
+      "title": "Posterior arm and elbow",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-muscular-atlas-forearm",
+      "title": "Forearm: anterior and posterior views",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-muscular-atlas-abdominal-wall",
+      "title": "Abdominal wall layers",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06T21:20:06.175Z"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-muscular-atlas-gluteal",
+      "title": "Gluteal region: surface and cutaway",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lumbar-spine-hip-and-knee-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-muscular-atlas-deep-thigh",
+      "title": "Deep thigh: anterior and posterior cutaways",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the verified human right anterior thigh photo supports the vastus-intermedius region, but the source does not establish the full articularis-genus detail or the posterior semimembranosus cutaway.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-muscular-atlas-anterior-leg",
+      "title": "Anterior and lateral leg",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-muscular-atlas-calf",
+      "title": "Calf: surface and cutaway",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the inspected human specimen photograph directly shows the gastrocnemius–soleus junction, but it is an isolated medial specimen and does not include in-situ popliteus or tibialis posterior.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-muscular-atlas-hand",
+      "title": "Hand: intrinsic muscles, palmar view",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-wrist-hand-and-foot-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-muscular-atlas-foot",
+      "title": "Foot: plantar first layer and dorsal inset",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: two inspected Stanford photos confirm left plantar human specimens and deep plantar structures, but neither shows the assigned first plantar layer (abductor hallucis/flexor digitorum brevis) and the separate dorsal extensor-digitorum-brevis inset is not covered.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-muscular-atlas-pelvic-floor",
+      "title": "Pelvic floor: levator ani, superior view",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: a verified human male perineum/pelvic-diaphragm photograph names levator ani, but its perineal/superior fascia view does not match the assigned superior pelvic-floor view or establish the pubococcygeus and iliococcygeus bands.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-openstax-muscle-face-neck",
+      "title": "Face and neck muscles, right lateral view",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: distinct inspected human face and left lateral-neck dissection photos offer regional examples, but named facial-muscle coverage is incomplete and the neck side/view does not match the right lateral composite.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-openstax-muscle-anterior-trunk",
+      "title": "Anterior chest and shoulder muscles",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: human anterior thorax and right axilla source photos verify pectoral/intercostal examples, but not the full asymmetric superficial-to-deep chest, shoulder and abdominal muscle plate.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-openstax-muscle-anterior-arm",
+      "title": "Anterior arm: superficial and deep layers",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-openstax-muscle-anterior-leg",
+      "title": "Anterior thigh: superficial layer",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-openstax-muscle-posterior-back",
+      "title": "Superficial back and scapular muscles",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the inspected LibreTexts/BlueLink page includes one actual superficial posterior cadaver-back photo, but its letter markers are not independently decoded and not all assigned scapular structures are confirmed.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-openstax-muscle-posterior-leg",
+      "title": "Posterior lower limb: contextual overview",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: an inspected left posterolateral thigh photograph verifies gluteal and hamstring-region examples, but no retained source establishes the bilateral posterior overview through the calf and all depicted structures.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-openstax-muscle-labeled-overview",
+      "title": "Superficial muscles, anterior and posterior views",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: specific right shoulder/back, left posterior-lateral thigh/gluteal and anterior thorax source photographs provide regional examples, but no source set forms the whole-body paired superficial views or establishes all pinned muscles.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-openstax-diaphragm-labeled",
+      "title": "Diaphragm: domes and inferior view",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Stanford's inspected human superior and inferior diaphragm photos verify those real views, but the assigned anterior coronal cutaway and comparative dome-height panel are missing.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-injurymap-rotator-cuff-labeled",
+      "title": "Rotator cuff: anterior and posterior views",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-shoulder-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-gray880-optic-nerve-head",
+      "title": "Optic disc, macula and optic nerve head",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared the fundus panel with a human fundus photograph and human optic-nerve-head histology. A fundus image does not show the nerve-head cutaway; macular/foveal detail and permission-qualified figure panels remain limitations.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-servier-brain-lateral",
+      "title": "Brain, lateral surface: lobes and insula",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared the lateral-lobe/insula diagram with one human lateral-dissection candidate and a verified medial-section photo. Candidate caption shows resected lateral cortex, but image inspection and exposed insula are not established.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-servier-brain-sagittal",
+      "title": "Brain, midsagittal view: callosum, diencephalon, ventricles",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-servier-eye-section",
+      "title": "Eye in section: tunics, lens and vitreous chamber",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared full-eye section diagram against the available human fundus example only; it does not show cornea, tunics, lens or vitreous section. Full globe photo not verified.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-servier-ear-section",
+      "title": "Ear in section: outer, middle and inner",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared ear-section diagram against the NLM historical human-ear photographic-work catalog. Catalog-level record lacks a reviewed individual plate; outer/middle/inner coverage remains unverified.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-openstax-spinal-cord-specimen",
+      "title": "Spinal cord cross-section specimen",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-deep-nuclei",
+      "title": "Deep brain nuclei, coronal slice",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared the coronal nuclei diagram with a human pathological coronal gross section. Source caption is edema, not basal nuclei; caudate, putamen and pallidum are not identified.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-brainstem-cerebellum",
+      "title": "Brainstem, cerebellum and spinal cord, midsagittal",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        },
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-csf-meninges",
+      "title": "Ventricles, CSF and meninges",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared CSF/ventricular and cranial meningeal panels with a cervical spinal meninges/roots dissection. It does not depict ventricular flow or cranial choroid plexus.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-spinal-cross-section",
+      "title": "Spinal cord in cross-section: gray matter, tracts and roots",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared the cord diagram with transverse cord histology and a separate cervical root dissection. Histology does not identify colored tracts or roots; root photo is a different specimen/view.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-spinal-roots-rami",
+      "title": "Spinal nerve: roots, ganglion and rami",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-plexus-overview",
+      "title": "The four major plexuses and the phrenic nerve",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the already inspected Michigan human brachial-plexus dissections replace reliance on an organism-unconfirmed candidate for that region. The whole-body diagram still lacks verified cervical/lumbar/sacral plexus, phrenic-nerve and spinal-cord coverage as a combined set. No complete-plate link is approved.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-upper-limb-nerves",
+      "title": "Median, ulnar and radial nerves of the right upper limb",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        },
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-lower-limb-nerves",
+      "title": "Femoral and sciatic nerves of the right lower limb",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared the femoral/sciatic diagram with a human sciatic-nerve file record. Sciatic photo itself was unavailable for visual inspection and no femoral nerve counterpart was confirmed.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-cranial-nerves-i-vi",
+      "title": "Cranial nerves I-VI, inferior surface of the brain",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-cranial-nerves-vii-xii",
+      "title": "Cranial nerves VII-XII, brainstem and cerebellopontine angle",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-eye-anterior-segment",
+      "title": "Anterior eye: chambers, aqueous humor and zonules",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "No source-page image was verified for a human anterior-segment specimen. A targeted NCBI eye-anatomy page fetch failed; no substitute drawing or model was accepted.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-retina-layers",
+      "title": "Retina: cell chain (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared the retinal cell-chain schematic with a human photoreceptor-cell record. Image not visually inspected and one cell cannot represent layered retinal organization or ganglion/bipolar cells.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-middle-ear",
+      "title": "Middle ear: ossicles and windows",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-nasal-cavity-sinuses-and-ear-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-inner-ear-vestibular",
+      "title": "Inner ear: vestibule, canals and cochlea",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared labyrinth schematic with human organ-of-Corti microscopy. Candidate image was not visually inspected and does not show vestibule, utricle, saccule or semicircular canals.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-cochlea-corti",
+      "title": "Cochlear ducts and the organ of Corti (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared the duct/cell schematic with two human cochlear microscopy articles; the SEM organ-of-Corti surface was visually inspected. It does not show the whole duct compartments or complete schematic cross-section.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-smell-taste",
+      "title": "Smell and taste: pathways and receptor cells (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Compared smell/taste panels with human olfactory mucosa micrograph metadata and OpenStax taste-bud micrograph metadata. Neither image was visually inspected; OpenStax taste tissue species is unstated and pathways/territories are absent.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-gray946-sweat-gland",
+      "title": "Sweat and sebaceous glands",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: the inspected sweat-gland micrograph shows glandular profiles but its organism is unconfirmed and it does not show the full human eccrine/apocrine/sebaceous arrangement; Duke's human skin slide listing was not an inspected photograph. Human counterpart remains unsupported; absence is not established.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-original-cell-overview",
+      "title": "Original cell overview",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: the broad cell schematic groups membrane, cytoplasm, nucleus, nucleolus and multiple organelles, but no qualifying human source-page photo with visually checked organelle coverage and provenance is present in the reviewed candidates. Unavailable evidence, not evidence that none exists.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-original-mitosis-stages",
+      "title": "Original mitosis stages",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: the schematic spans interphase through telophase; no source-page set in the reviewed candidates visibly verifies the full sequence in human cells. A single-stage image would not cover the stages. No qualifying set verified; not a claim that none exists.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-commons-kidney-cortex-human",
+      "title": "Human kidney cortex specimen",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-commons-alveolar-sac",
+      "title": "Alveolar sac specimen",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-commons-simple-squamous-epithelium",
+      "title": "Simple squamous epithelium specimen",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-commons-simple-cuboidal-epithelium",
+      "title": "Simple cuboidal epithelium specimen",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-commons-simple-columnar-epithelium",
+      "title": "Simple columnar epithelium specimen",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-openstax-historical-skin-structure",
+      "title": "Skin in section: layers, appendages and receptors",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-epidermis-strata",
+      "title": "Epidermis: strata and cell types (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-dermis-hypodermis",
+      "title": "Dermis and hypodermis: fibres and vessels",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-hair-follicle",
+      "title": "Hair follicle in longitudinal section",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-epithelia-simple",
+      "title": "Simple epithelia: squamous, cuboidal, columnar (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-epithelia-stratified",
+      "title": "Pseudostratified and stratified squamous epithelia (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: checked nonkeratinized-stratified image has no confirmed human organism, while Duke's human skin slides were not visually inspected. Pseudostratified/ciliated and keratinized human panels remain unsupported; no complete counterpart.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-epithelia-other-stratified",
+      "title": "Stratified cuboidal, columnar and transitional epithelia (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: inspected sweat-gland image is an unconfirmed-species example for a stratified gland duct only. It does not verify human stratified columnar or transitional epithelium; those panels remain unavailable.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-connective-loose",
+      "title": "Loose connective tissues: areolar, adipose, reticular (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: the BCC page lists areolar, adipose and reticular examples but individual source photo, species, creator/terms and visual content were not verified in the audited material. All three human panels remain unsupported.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-connective-dense",
+      "title": "Dense connective tissues: regular, irregular, elastic (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: Columbia source describes a human dense-regular tendon slide, but its photo was not visually inspected; no checked human images cover dense-irregular and elastic tissue. At most a text-level tendon lead, not a verified mapping.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-cartilage",
+      "title": "Cartilages: hyaline, elastic, fibrocartilage (schematic)",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: the BCC mammalian-histology page is a candidate for cartilage types, but no individual photograph, human specimen identity, creator/terms or image content was verified. Hyaline, elastic and fibrocartilage human panels remain unsupported.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-muscle-tissue",
+      "title": "Muscle tissues: skeletal, cardiac, smooth (schematic)",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_cardiac_muscle.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06"
+        },
+        {
+          "url": "https://histologylab.ctl.columbia.edu/slides/slide66/",
+          "sourcePageReachable": false,
+          "originalImageInspectionDate": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-nervous-tissue",
+      "title": "Nervous tissue: neuron and neuroglia (schematic)",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: no reviewed candidate meets the public source-page, human provenance and image-inspection test for both neuron morphology and the represented glia. Evidence unavailable for this composite; not proof that no suitable images exist.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis04-nail-section",
+      "title": "Nail in longitudinal section",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: Duke describes a human fingertip slide, but no source photograph was visually inspected and nail plate, bed, matrix and fold structures were not confirmed. It is an index lead rather than a verified counterpart.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-blood-composition",
+      "title": "Composition of blood: plasma, serum and formed elements",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final check: original human blood SEM was visually inspected; source caption and NCI metadata identify human circulating blood, erythrocytes, leukocytes and platelets, with Wetzel/Schaefer attribution and a public-domain note. Plasma/serum separation and clot/centrifugation panels remain unmatched.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-blood-smear-schematic",
+      "title": "Peripheral blood smear (schematic field)",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-leukocyte-types",
+      "title": "The five leukocytes, compared",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-marrow-hematopoiesis",
+      "title": "Red bone marrow and hematopoiesis",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: UNSW marrow histology photo was visually seen, but source does not establish species and its reuse terms are non-commercial; hematopoietic lineage/process schematic is not shown. No verified human counterpart.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-vessel-wall-types",
+      "title": "Vessel wall layers and vessel types",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: no reviewed source set provides visually inspected, human-confirmed photos for artery, vein, capillary and all depicted wall layers. This is unavailable source evidence, not proof of no public specimen images.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-vessel-flow-chain",
+      "title": "Flow chain: aorta to vein",
+      "researchStatus": "unresolved",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: this depicts a continuous circulation route/process from aorta to vein, not a photographic specimen. No single image is a truthful literal counterpart; any future links would need to be explicitly illustrative examples, not a photo replacement.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-capillary-types",
+      "title": "Three capillary types",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: verified human kidney cortex shows glomerular capillary profiles, a relevant example for fenestrated filtration beds. It does not cover continuous or sinusoidal types, and no ultrastructural comparison was verified.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-alveolar-unit",
+      "title": "Alveolar unit: bronchiole, duct, sac and alveoli",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final check: visually inspected human alveolar-sac photo confirms alveolar air spaces/septa only. It does not show bronchiole or duct, so it remains a relevant example for the unit schematic, not a complete mapping.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-respiratory-membrane-histology",
+      "title": "Respiratory membrane and airway wall",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final check: visually inspected human alveolar-sac photo shows air spaces and septa, a relevant tissue example; it does not resolve the respiratory membrane ultrastructure or airway wall, so the composite remains partial.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-lymph-node-structure",
+      "title": "Lymph node: afferent, sinuses, efferent and hilum",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: Duke page identifies human lymph-node histology but its linked photo was not visually inspected; node compartments plus gross afferent/efferent/sinus flow are not verified together. Evidence remains unavailable.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-spleen-pulp",
+      "title": "Spleen: red pulp and white pulp",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human spleen section; red/white pulp visible. Central arteriole, marginal-zone boundary, individual sinusoids and cords were not all resolved in the overview.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-thymus-lobule",
+      "title": "Thymus and thymic lobule",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human thymus; lobules, cortex and medulla visible. Hassall corpuscles and anterior chest/retrosternal placement not established by this overview.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-tonsil-map-structure",
+      "title": "Tonsils: where they sit and how they are built",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: Duke's tonsil listing has unconfirmed organism and uninspected image; even a tissue image could not replace the gross tonsil locations. Both human tissue photo and location coverage remain unresolved.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-gut-lymphoid-lacteal",
+      "title": "Gut-associated lymphoid tissue and the lacteal",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the already inspected human ileal cross-section shows the prominent aggregated lymphoid tissue relevant to Peyer patches. Appendix lymphoid tissue, villus lacteals and the intestinal lymphatic-trunk route are not established together. A Peyer-patch example is not complete coverage of this composite.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-endocrine-body-map",
+      "title": "Endocrine glands of the body",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final check: visually inspected human pancreatic-islet micrograph supports one endocrine-tissue example; source identifies red glucagon and blue insulin staining. It does not cover the other endocrine glands, gross body map, or gonads; record remains partial.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-hypothalamus-pituitary-axis",
+      "title": "Hypothalamus and pituitary: portal and neural links",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: human pituitary slide description is relevant but photo not inspected and cannot depict portal circulation or hypothalamic nerve fibers. The process schematic has no verified photo counterpart.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-thyroid-parathyroid",
+      "title": "Thyroid and parathyroid glands",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final comparison: source text describes human thyroid/parathyroid material but no image was inspected for follicles, colloid, C cells or chief-cell clusters. Human examples remain unverified.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-adrenal-zones",
+      "title": "Adrenal gland: cortex zones and medulla",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human adrenal section with cortex and medulla; not an in-situ adrenal-on-kidney photograph and not cell-level verification of every cortical zone/chromaffin cell.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-pancreas-islet",
+      "title": "Pancreas: exocrine acini and the endocrine islet",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Final check: the original licensed human pancreatic-islet image was visually inspected; caption identifies an islet with red glucagon and blue insulin staining, creator Afferent, CC BY-SA 3.0. It is a relevant islet example only; whole-pancreas position, acinar/duct system and delta cells are not established, so record remains partial.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-ovary-testis",
+      "title": "Gonads: ovary and testis",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the already inspected human ovarian sections include a corpus luteum and follicular profiles, so an ovarian example is established. No visually verified human testis set resolves both Sertoli and Leydig cells. The ovarian half must not be promoted to a complete ovary/testis endocrine counterpart.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-heart-anterior",
+      "title": "Heart from the front: chambers, apex and great vessels",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        },
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        },
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-mediastinum",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-heart-chambers-valves",
+      "title": "Opened heart: chambers, valves and flow",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-heart-valves-superior",
+      "title": "Valves of the heart from above",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-heart-wall-pericardium",
+      "title": "Pericardium and layers of the heart wall",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Pericardium and layers of the heart wall; Captioned plane is an interatrial cleavage view; not a full anterior heart or complete layer specimen. Photograph was not visible in screenshot viewport.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-coronary-anterior",
+      "title": "Coronary vessels, anterior surface",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-coronary-posterior",
+      "title": "Coronary sinus and posterior coronary vessels",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-conduction-system",
+      "title": "Conduction system of the heart",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Conduction system of the heart; Does not show all tiny conduction elements as a grossly distinguishable separate route, and is not a superior four-valve view.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-body-artery-vein-maps",
+      "title": "Major arteries and major veins of the body",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-head-neck-vessels",
+      "title": "Carotid arteries and jugular veins of the head and neck",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-upper-limb-arteries",
+      "title": "Arterial route to the arm and hand",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-upper-limb-veins",
+      "title": "Venous return from the arm and the median cubital vein",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-lower-limb-arteries",
+      "title": "Arterial route to the leg and foot",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Arterial route to the leg and foot; Local recurrent branch; no full femoral-popliteal-tibial route.; The page does not identify the great saphenous vein or its proximal course.; Branch-focused thigh view; not the complete lower limb arterial path.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-great-saphenous-route",
+      "title": "Great saphenous vein: foot to groin",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-hepatic-portal-system",
+      "title": "Hepatic portal system",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Hepatic portal system; Arterial/nerve dissection, not portal venous return or kidney hilum.; Only liver/portal-vein region, not full gut-to-liver venous drainage; image was not visually checked.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-celiac-renal-context",
+      "title": "Celiac trunk and renal vessels",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-duodenum-pancreas-and-abdominal-aorta-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-upper-airway",
+      "title": "Upper airway: nasal cavity, sinuses and pharynx",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the Stanford item caption and legend specifically identify human nasal fossae, nasopharynx, opened sinus structures and palate, but the specimen photograph itself was not visually inspected, so visible correspondence remains unconfirmed.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-larynx-glottis",
+      "title": "Larynx and glottis",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Larynx and glottis; A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-trachea-bronchial-tree",
+      "title": "Trachea, bronchi and bronchioles",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Trachea, bronchi and bronchioles; A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-lung-lobes",
+      "title": "Lungs: lobes, fissures and hilum",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lungs-and-ventilation-pathways-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis05-pleura-diaphragm",
+      "title": "Pleura and diaphragm",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the Stanford diaphragm dissection is a genuine relevant human example, but it does not show pleural layers; broad lung/airway photo is not reused as a proxy for both pleura and diaphragm.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis05-lymph-overview",
+      "title": "Lymphatic drainage routes and node groups",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-oral-cavity",
+      "title": "Oral cavity, pharynx and salivary glands",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Oral cavity, pharynx and salivary glands; The organism is not stated; it covers only parotid anatomy, not the complete oral cavity or all major glands. No reuse license was found.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-stomach",
+      "title": "Stomach: regions, rugae and gastric glands",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: Stanford Bassett 142-6 now visually verifies the opened anterior human stomach with rugae and pyloric-region structures, and the human gastric mucosa micrograph covers pits/glands; available views do not establish the named parietal and chief cells at cell level, while Jenner’s flattened preparation is only a historical vessel/wall example.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-alimentary-canal",
+      "title": "Alimentary canal: mouth to anus",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Alimentary canal: mouth to anus; Does not show all mesenteric attachments or whole-body organ placement.; Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; No anal-canal sphincter section; does not represent the entire large intestine alone.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-liver-biliary-pancreas",
+      "title": "Liver, gallbladder, pancreas and their ducts",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Liver, gallbladder, pancreas and their ducts; Duct-focused specimen, not a complete liver, pancreas or microscopic acinus view.; Does not show all mesenteric attachments or whole-body organ placement.; Arterial/nerve dissection, not portal venous return or kidney hilum.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-liver-lobule-pancreas",
+      "title": "Liver lobule and pancreatic acini",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-digestive-wall-layers",
+      "title": "Layers of the digestive wall",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-small-intestine",
+      "title": "Small intestine: regions and mucosa",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-large-intestine",
+      "title": "Large intestine and anal canal",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Large intestine and anal canal; Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; Regional sigmoid-colon view only; not a whole-body lymph route or anal sphincter view.; No anal-canal sphincter section; does not represent the entire large intestine alone.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-peritoneal-folds",
+      "title": "Peritoneal folds: mesentery and omenta",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Peritoneal folds: mesentery and omenta; Does not show all mesenteric attachments or whole-body organ placement.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-urinary-tract",
+      "title": "Urinary tract and the opened bladder",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Urinary tract and the opened bladder; Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.; Lateral pelvic close-up does not establish the testis, epididymis, full duct course or penile cross-section; photograph itself was not visible in screenshot viewport.; Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-kidney-section",
+      "title": "Kidney in section: cortex, medulla and collecting system",
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-kidneys-and-urinary-system-images",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-bvis06-renal-vessels",
+      "title": "Renal blood vessels, hilum to nephron and back",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Renal blood vessels, hilum to nephron and back; Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-nephron-pathway",
+      "title": "Nephron segments and the urine pathway",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-renal-corpuscle",
+      "title": "Renal corpuscle and filtration barrier",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: the already inspected, explicitly human renal-cortex micrograph supplies a glomerular tuft and capsular space, resolving the earlier specimen-species uncertainty for this portion. Podocytes, filtration slits/membrane, macula densa, juxtaglomerular cells and the paired arteriolar arrangement remain unverified. No link is approved for the complete composite.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-male-system",
+      "title": "Male reproductive tract, glands and penis",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Male reproductive tract, glands and penis; Lateral pelvic close-up does not establish the testis, epididymis, full duct course or penile cross-section; photograph itself was not visible in screenshot viewport.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-testis-ducts",
+      "title": "Testis, epididymis and seminiferous tubule",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Testis, epididymis and seminiferous tubule; Species is not identified; actual image was not visually checked and this is not a gross testis/epididymis tract image.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-female-gross",
+      "title": "Female internal organs: ovary, tube, uterus and vagina",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Female internal organs: ovary, tube, uterus and vagina; Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.; Shows postovulatory structures, not a full range of follicle stages or wall histology.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-ovary-follicle",
+      "title": "Ovary: follicle stages and follicle wall",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human ovary: a corpus luteum and several follicular profiles visible. Does not establish a complete developmental sequence or all oocyte-wall structures at cell level. Human ovary with cortical follicular profiles and medullary vessels. No assertion that all primordial-to-mature stages, corona radiata and zona pellucida were individually resolved.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-uterine-wall",
+      "title": "Uterine wall and endometrium",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial, not approved: Human uterine tissue with endometrial glands and myometrium visible; a low-power section, not independent verification of the perimetrium and every endometrial sublayer. Human secretory uterine tissue with glandular profiles and muscle visible. Useful companion to proliferative tissue; not proof that every wall layer in the composite is covered.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-abdominal-placement",
+      "title": "Abdominal placement of the digestive organs",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Abdominal placement of the digestive organs; Does not show all mesenteric attachments or whole-body organ placement.; Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; Arterial/nerve dissection, not portal venous return or kidney hilum.",
+      "checks": []
+    },
+    {
+      "assetId": "asset-bvis06-kidney-placement",
+      "title": "Kidney placement in the abdomen",
+      "researchStatus": "partial",
+      "previouslyApprovedAnatomicalSet": false,
+      "currentlyApprovedAndHttpReachable": false,
+      "unresolvedCoverageReason": "Partial: verified/candidate source pages show limited real examples for Kidney placement in the abdomen; Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch.",
+      "checks": []
+    }
+  ]
+}

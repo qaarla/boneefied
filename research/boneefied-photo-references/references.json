@@ -5669,37 +5669,42 @@
   {
     "assetId": "asset-commons-simple-columnar-epithelium",
     "title": "Simple columnar epithelium specimen",
-    "status": "partial",
+    "status": "verified",
     "references": [
       {
-        "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
-        "title": "File:Epithelial Tissues Simple Columnar Epithelium (27854452618).jpg",
-        "source": "Wikimedia Commons",
-        "creator": "Berkshire Community College Bioscience Image Library",
+        "url": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+        "title": "Ileum, Human 1 — annotated high-power epithelial micrographs",
+        "source": "University of Basel Histology",
+        "sourceName": "University of Basel",
+        "creator": "University of Basel; individual photographer not separately named",
         "mediaType": "micrograph",
-        "organism": "unconfirmed",
-        "relationship": "direct-match",
-        "matches": "Displayed photomicrograph and file description identify simple columnar epithelium in a mammalian gut cross-section.",
-        "viewLimitations": "Mammalian subject is not identified as human; one gut section does not illustrate other simple epithelial forms.",
-        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "linkingTerms": "Commons file page has no separate restriction noted; its CC0 terms concern the image, while this record is an ordinary source-page link.",
-        "reproductionRights": "CC0 1.0 is stated on the file page.",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "The inspected high-power static human ileum photograph resolves tall single-layered enterocytes with dark nuclei, apical brush border and interspersed goblet cells.",
+        "viewLimitations": "Different specimen and H&E preparation, not the identical original photograph. Use the static annotated micrographs below the overview viewer; the overview had tile-loading errors. Individual microvilli are not resolved as separate ultrastructural projections.",
+        "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+        "linkingTerms": "Ordinary outbound link to the public University of Basel source page; retain its attribution. No photograph is copied, embedded or hotlinked in Boneefied.",
+        "reproductionRights": "The source License section credits University of Basel; no reproduction permission is asserted or exercised.",
         "verification": {
           "pageOpened": true,
           "captionChecked": true,
           "imageVisuallyInspected": true,
-          "visualEvidence": "Displayed source micrograph and mammalian-gut description checked: research/boneefied-photo-references/micro-visual-simple-columnar.png.",
-          "checkedAt": "2026-11-06",
-          "evidencePath": "research/boneefied-photo-references/micro-05-simple-columnar.md",
-          "finalUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
-          "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
-          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          "visualEvidence": "Main agent viewed browser screenshot 2ja2ob: actual high-power epithelium, columnar cells, nuclei, goblet cells and brush border visible. Browser verified all eight static images loaded. Rendered specimen metadata explicitly states human ileum, H&E.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/basel-human-columnar.md",
+          "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+          "redirectNotes": "Certificate-validated GET returned HTTP 200 HTML at the supplied URL. Actual browser source page and static micrographs rendered without a login wall or TLS interstitial; overview viewer tile errors are disclosed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Human columnar epithelium; static photos below viewer",
+          "es": "Epitelio cilíndrico humano; fotos estáticas bajo el visor"
         }
       }
     ],
-    "reason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
-    "coverageKind": "incomplete",
-    "finalReview": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+    "reason": "A newly inspected explicitly human high-power ileum photograph supplies the standalone simple-columnar epithelial counterpart. This asset is not the separate composite intestinal-wall plate. Static photos below the partially failing overview viewer are the verified comparison.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Actual cellular detail was inspected, not inferred from a low-power overview. The human source and differing preparation are disclosed; no claim is made about other epithelial types or every intestinal-wall subject.",
     "beforeGroupedReview": {
       "status": "partial",
       "reason": "The existing Commons simple-columnar image is visually inspected but mammalian-only, not human-confirmed. A human intestine figure on the University of Genoa simple-epithelia page was also captioned and visually inspected via its original image URL; the official terms prohibit deep linking and no eligible source-page reference is retained. No eligible human mapping is asserted."
@@ -6570,8 +6575,38 @@
   {
     "assetId": "asset-bvis05-blood-smear-schematic",
     "title": "Peripheral blood smear (schematic field)",
-    "status": "partial",
+    "status": "verified",
     "references": [
+      {
+        "url": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+        "title": "Human peripheral blood — photographed smear fields",
+        "source": "University of Basel Histology",
+        "sourceName": "University of Basel",
+        "creator": "University of Basel; individual photographer not separately named",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Actual stained human smear photographs show erythrocytes, platelets, neutrophils, eosinophils, basophils, lymphocytes and monocytes.",
+        "viewLimitations": "Several MGG-stained fields, not a single field with the schematic's artificial frequencies or enlarged leukocytes. Use static micrographs below the overview viewer, which had tile-loading errors.",
+        "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+        "linkingTerms": "Ordinary outbound link to the public institutional source page with attribution; no photograph copying, embedding or hotlinking.",
+        "reproductionRights": "Source License section credits University of Basel; no reproduction permission is asserted or exercised.",
+        "verification": {
+          "pageOpened": true, "captionChecked": true, "imageVisuallyInspected": true,
+          "visualEvidence": "Main agent inspected screenshots gh65a6, 1fzfhx, 3emksr, 68hdil and 0ylx63, confirming all five mature leukocyte types, erythrocytes and platelets in actual micrographs. The comparison table is not used as photographic proof.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/basel-human-blood.md",
+          "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+          "redirectNotes": "Original public source page and all eight static images rendered without login or TLS interstitial. Overview tile failures are disclosed, not ignored.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Human blood cells; static photos below viewer",
+          "es": "Células sanguíneas humanas; fotos estáticas bajo el visor"
+        }
+      }
+    ],
+    "historicalReferences": [
       {
         "url": "https://commons.wikimedia.org/wiki/File:Human_peripheral_blood_smear,_May-Gr%C3%BCnwald_stain.jpg",
         "title": "File:Human peripheral blood smear, May-Grünwald stain.jpg",
@@ -6633,15 +6668,45 @@
         }
       }
     ],
-    "reason": "Final check: original human blood SEM now visually inspected and caption/provenance confirmed; it is a real human circulating-blood field, not a stained light-microscope smear or schematic-size comparison. Existing human May-Grünwald smear remains a distinct relevant example; this asset stays partial.",
+    "reason": "Individually inspected human MGG smear photographs cover red cells, platelets and all five depicted leukocyte types across complementary fields. Their natural frequencies and sizes differ from the schematic. The verified static photos are below the partially failing overview viewer.",
     "coverageKind": "relevant-example",
-    "finalReview": "Final check: original human blood SEM now visually inspected and caption/provenance confirmed; it is a real human circulating-blood field, not a stained light-microscope smear or schematic-size comparison. Existing human May-Grünwald smear remains a distinct relevant example; this asset stays partial."
+    "finalReview": "All depicted blood-cell types were actually seen in the photographed fields, not inferred from the page's comparison table or prose."
   },
   {
     "assetId": "asset-bvis05-leukocyte-types",
     "title": "The five leukocytes, compared",
-    "status": "partial",
+    "status": "verified",
     "references": [
+      {
+        "url": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+        "title": "Human peripheral blood — photographed leukocyte comparison",
+        "source": "University of Basel Histology",
+        "sourceName": "University of Basel",
+        "creator": "University of Basel; individual photographer not separately named",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Actual human smear micrographs show neutrophils, eosinophils, basophils, lymphocytes and monocytes beside erythrocytes for size comparison.",
+        "viewLimitations": "Complementary MGG-stained fields, not the schematic's single aligned comparison or identical magnification. Use static photographs below the overview viewer, which had tile-loading errors.",
+        "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+        "linkingTerms": "Ordinary outbound link to the public institutional source page with attribution; no photograph copying, embedding or hotlinking.",
+        "reproductionRights": "Source License section credits University of Basel; no reproduction permission is asserted or exercised.",
+        "verification": {
+          "pageOpened": true, "captionChecked": true, "imageVisuallyInspected": true,
+          "visualEvidence": "Main agent inspected screenshots gh65a6, 1fzfhx, 3emksr, 68hdil and 0ylx63: segmented neutrophils, indented monocyte, dense-nucleus lymphocyte, granular eosinophil and coarse-granulated basophil are visible in actual photographed fields.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/basel-human-blood.md",
+          "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+          "redirectNotes": "Original public source page and all eight static images rendered without login or TLS interstitial. Overview tile failures are disclosed, not ignored.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Five human leukocytes; static photos below viewer",
+          "es": "Cinco leucocitos humanos; fotos estáticas bajo el visor"
+        }
+      }
+    ],
+    "historicalReferences": [
       {
         "url": "https://commons.wikimedia.org/wiki/File:Human_peripheral_blood_smear,_May-Gr%C3%BCnwald_stain.jpg",
         "title": "File:Human peripheral blood smear, May-Grünwald stain.jpg",
@@ -6703,9 +6768,9 @@
         }
       }
     ],
-    "reason": "Final check: the human blood SEM image and file caption were inspected; its source description names lymphocyte, monocyte and neutrophil. Eosinophil and basophil are not shown/identified, so it supports only three of five types and remains partial.",
+    "reason": "Newly inspected human MGG micrographs verify all five mature leukocyte types and erythrocyte size context across complementary photographic fields. Static photos below the partially failing overview viewer are the verified content.",
     "coverageKind": "relevant-example",
-    "finalReview": "Final check: the human blood SEM image and file caption were inspected; its source description names lymphocyte, monocyte and neutrophil. Eosinophil and basophil are not shown/identified, so it supports only three of five types and remains partial."
+    "finalReview": "Eosinophils and basophils were individually seen as well as neutrophils, lymphocytes and monocytes; the earlier three-type SEM limitation is no longer the only evidence."
   },
   {
     "assetId": "asset-bvis05-marrow-hematopoiesis",

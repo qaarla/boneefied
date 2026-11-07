@@ -2,6 +2,39 @@
 import type { PhotoReference } from './real-photo-references';
 
 export const references: Readonly<Record<string, readonly PhotoReference[]>> = {
+  "asset-bvis05-blood-smear-schematic": [
+    {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+      "mediaType": "micrograph",
+      "sourceName": "University of Basel",
+      "subject": {
+        "en": "Human blood cells; static photos below viewer",
+        "es": "Células sanguíneas humanas; fotos estáticas bajo el visor"
+      }
+    }
+  ],
+  "asset-bvis05-leukocyte-types": [
+    {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
+      "mediaType": "micrograph",
+      "sourceName": "University of Basel",
+      "subject": {
+        "en": "Five human leukocytes; static photos below viewer",
+        "es": "Cinco leucocitos humanos; fotos estáticas bajo el visor"
+      }
+    }
+  ],
+  "asset-commons-simple-columnar-epithelium": [
+    {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+      "mediaType": "micrograph",
+      "sourceName": "University of Basel",
+      "subject": {
+        "en": "Human columnar epithelium; static photos below viewer",
+        "es": "Epitelio cilíndrico humano; fotos estáticas bajo el visor"
+      }
+    }
+  ],
   "asset-skeletal-atlas-skull-base-external": [
     {
       "url": "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",

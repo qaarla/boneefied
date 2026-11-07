@@ -21,6 +21,10 @@ Commons category alone does not establish a specimen's species. Linking rights
 and reproduction rights are separate questions. Protect Recall and unanswered
 graded contexts from answer leakage when adding links.
 
+Use each illustration's own inventory and description to define its coverage.
+Do not transfer a composite plate's missing subjects or paired-view requirements
+onto a standalone tissue-type specimen just because both involve the same organ.
+
 Treat a destination's caption as potentially revealing the whole plate. In
 Recall, revealing only some markers does not authorize its photo link; complete
 answer revelation does. In graded practice, marker interactions alone never
@@ -68,20 +72,34 @@ region from the URL would attach anatomically incorrect reference links.
 retain the selected image-page associations. Collecting a gallery is not
 evidence that every photograph in it was inspected.
 
-Use bounded, grouped collection research rather than restarting with another
-sample: carry previous attempts forward, reuse inspected sources, and use one
-primary collection browse plus one genuinely different fallback per group.
-Further queries require a specifically missing structure/view and a plausible
-new source. Do not repeatedly retry blocked or failed destinations.
+Use efficient subject-grouped research rather than restarting with another
+sample. Carry previous attempts forward, reuse inspected sources where accurate,
+and pursue specifically missing structures/views through plausible new sources.
+Do not repeatedly retry blocked or failed destinations.
 
-**Why:** The owner explicitly requested efficient grouped completion and honest
-residual exceptions instead of repeated individual searches or sample coverage.
+**Why:** The owner explicitly requires 164/164 individually verified accurate,
+working real-life photographic reference sets, not a sample or a bounded-pass
+completion claim. Concrete exceptions remain blockers, not permission to
+approve partials or declare completion.
 
 **How to apply:** Keep per-image outcomes separate from group research attempts.
 Accounted-for is not the same as photographically covered. A slide overview
 does not verify cellular details merely because the page describes them; keep
 such composites partial. Do not copy, embed, hotlink, rehost, cache or add
 thumbnails of third-party photographs as part of this work.
+
+No new native build, release, submission, scheduling or publishing is authorized.
+The earlier build authorization must not be reused. A new build requires the
+owner's explicit authorization in a separate later message after reviewing
+proof of 164/164 verified live links.
+
+**Why:** The owner repeated "do not build until all illustrations have IRL
+reference and the hyperlinks actually work" and expressly rejected builds 12/8
+as premature.
+
+**How to apply:** Continue substantive reference research and per-illustration
+verification without building. Report verified totals separately from accounted
+records; incomplete coverage leaves the build gate closed.
 
 Distinguish a research-tool access or rate-limit failure from a destination
 failure. A successful page-text fetch verifies metadata, not that its photograph
