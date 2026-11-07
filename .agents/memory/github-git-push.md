@@ -3,9 +3,9 @@ name: GitHub connector vs Git push
 description: Distinguishes Replit's GitHub API connection from workspace Git transport access.
 ---
 
-An authorized GitHub connector can work for API operations while Git pushes from the workspace remain unauthenticated by default. A linked repository in Expo is separate again. When a workspace-managed Git access secret is available, a command-scoped credential helper can authorize a push without storing a credential in Git config.
+An authorized GitHub connector can work for API operations while Git transport authentication differs. A linked repository in Expo is separate again. Try the configured remote first: Replit's managed GitHub proxy can already authenticate ordinary pushes without reading or supplying a secret. Only if that route fails should a workspace-managed Git access secret and command-scoped credential helper be considered, without storing credentials in Git config.
 
-**Why:** An unauthenticated dry-run failed despite a working connector and correct remote; a later dry-run using a workspace-managed secret through a scoped helper succeeded. Neither a connector nor a remote URL alone proves that Git transport will work.
+**Why:** An external Git route previously needed a scoped credential helper, whereas the managed proxy later passed both dry-run and actual push without one. Neither API access nor a remote URL alone establishes which Git authentication route is needed.
 
 **How to apply:** Verify the actual push path non-interactively with a dry-run before promising a push. Check only whether the workspace-managed secret exists; never print it or persist it in Git config. After pushing, compare the remote branch SHA to the local source SHA. If Git transport authentication is unavailable, follow the required build runbook's authenticated Git Database API transfer through the existing GitHub integration. Verify every blob, tree and commit SHA, then independently read the fresh remote ref. Report a source-transfer blocker only if neither route can publish the exact commit; do not ask the user to recreate a working connector.
 

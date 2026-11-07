@@ -14,7 +14,9 @@ The existing development API also serves the exact file at
 This route is disabled in production and works only while the development API
 is running; anyone with the development URL may be able to download the bundle.
 
-The current staged release is version 1.0.0, Android version code 8.
+The current staged release is version 1.0.0, Android version code 9.
+The version-code-8 bundle remains preserved at
+`generated-artifacts/boneefied-builds/native-20261107/boneefied-1.0.0-android-8.aab`.
 The version-code-6 bundle remains preserved at
 `generated-artifacts/boneefied-builds/boneefied-1.0.0-vc6-ce78a88.aab`.
 The previous version-code-4 bundle is preserved as

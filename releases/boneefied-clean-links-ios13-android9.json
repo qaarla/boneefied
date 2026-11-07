@@ -1,0 +1,81 @@
+{
+  "app": "@qaarla1/boneefied",
+  "expoProjectId": "1555c01d-944e-41cb-b923-d4691756ab33",
+  "identifierBothPlatforms": "com.qaarla.boneefied",
+  "version": "1.0.0",
+  "sourceRevision": "ac77535249d644c6a1bccaf645d517f5b5f8b6ec",
+  "verifiedGitHubBranch": "boneefied-photo-links-ios13-android9",
+  "remoteVerification": "Configured GitHub remote ref read back with git ls-remote; exact 40-character SHA matched workspace HEAD before submission.",
+  "sourceTreeCleanAtSubmission": true,
+  "baseDirectory": "artifacts/boneefied",
+  "buildRoute": "Connected mcpExpo_workflowRun, existing validated native-build-artifacts.yml",
+  "effectiveEasCliVersion": "Not reported by connected workflow; eas.json has no CLI-version restriction.",
+  "workflowRunId": "01a1b401-d5c0-7cd5-beda-71e84df9af7a",
+  "workflowStatus": "SUCCESS",
+  "nativeJobsCreated": 2,
+  "authorization": "Owner explicitly requested simple hyperlinks and then a build, and selected both iOS and Android after disclosure of limited comparison coverage.",
+  "storeSubmission": false,
+  "websitePublication": false,
+  "physicalDeviceInstallationTested": false,
+  "references": {
+    "illustrationsWithCompanions": 164,
+    "completeComparisonSets": 47,
+    "limitedSelectedStructureSets": 117,
+    "compiledSourcePageUrlsBothPlatforms": 135,
+    "hyperlinkText": ["Real photo", "Microscope photo", "Medical image"],
+    "sourceViewsAndCoverageNotes": "Separate non-link context, including selected-structure limitations; English and Spanish supported.",
+    "thirdPartyPhotosBundled": 0
+  },
+  "checks": {
+    "focusedTests": "8 passed, 0 failed",
+    "typecheck": "passed",
+    "renderedPreview": "Clean Real photo hyperlink with separate source and selected-structure note visually verified in skeletal module.",
+    "recallAndPracticeAnswerGuards": "Preserved; focused tests passed."
+  },
+  "ios": {
+    "buildId": "3d627860-e92a-45c8-a152-9dcccf9abb91",
+    "status": "FINISHED",
+    "completedAt": "2026-11-07T03:23:08.176Z",
+    "profile": "preview",
+    "distribution": "INTERNAL",
+    "simulator": false,
+    "buildNumber": "13",
+    "artifactUrl": "https://expo.dev/artifacts/eas/-Ry2VBLldTGSC_zfothkvmaAy-wWYoDHuSCM0JYgzl8.ipa",
+    "stagedPath": "generated-artifacts/boneefied-builds/clean-links-13-9/boneefied-ios-13.ipa",
+    "bytes": 122360072,
+    "sha256": "9c199b047bc280078dc058e3a6dd36b2ec8a1ae39dba4bba07ea579624c2a8b7",
+    "verification": [
+      "Downloaded finished EAS IPA; all ZIP entries passed CRC",
+      "Embedded bundle ID, version 1.0.0 and build number 13 match",
+      "Physical-device ad hoc provisioning, not simulator or development client",
+      "Embedded provisioning matches previous internal iOS 12 IPA exactly",
+      "All 135 active source-page URLs and short hyperlink labels present in compiled bundle"
+    ]
+  },
+  "android": {
+    "buildId": "eb782d8d-e67b-4004-9414-4961fcd464d6",
+    "status": "FINISHED",
+    "completedAt": "2026-11-07T03:38:19.236Z",
+    "profile": "production",
+    "distribution": "STORE",
+    "versionCode": 9,
+    "artifactUrl": "https://expo.dev/artifacts/eas/WndEsMvmG7JUIxUYtrynkjKlxRYKmwhfhM3i1gmfud0.aab",
+    "stagedPath": "releases/google-play/boneefied-production.aab",
+    "versionedCopy": "generated-artifacts/boneefied-builds/clean-links-13-9/boneefied-android-9.aab",
+    "downloadRoute": "/api/download/boneefied-production.aab",
+    "bytes": 155286709,
+    "sha256": "c2b02c0fd8904022966f7095f2b7c72a3b493e51b8e01815e9d6ca6aee539621",
+    "signerCertificateSha256": "915ddd6d93e8001698141c980f9d894347fa683727a4fe96b2d2b2b37a3d0859",
+    "verification": [
+      "Downloaded finished EAS AAB; all ZIP entries passed CRC",
+      "BundleConfig.pb and base module present; package identity matches native manifest",
+      "Version code 9 confirmed by finished EAS record and SHA-pinned app config",
+      "OpenSSL verified JAR signature, signed manifest and all 1630 signed entry digests",
+      "Signing certificate matches previous Android version code 8",
+      "All 135 active source-page URLs and short hyperlink labels present in compiled bundle",
+      "Exact public HTTPS API download returned HTTP 200, attachment and application/octet-stream",
+      "Public download matched verified staged byte size and SHA-256; all public-download ZIP entries passed CRC",
+      "Old version-code-8 bytes and manifest retained separately before replacing the generic latest-download file"
+    ]
+  }
+}
