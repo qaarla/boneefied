@@ -1,0 +1,56 @@
+{
+  "expoProjectId": "1555c01d-944e-41cb-b923-d4691756ab33",
+  "app": "@qaarla1/boneefied",
+  "identifierBothPlatforms": "com.qaarla.boneefied",
+  "sourceRevision": "10ecffba1210e74e716393ed543639ff3bb69166",
+  "verifiedGitHubBranch": "boneefied-native-20261107-photo-final",
+  "baseDirectory": "artifacts/boneefied",
+  "workflowRunId": "01a1b386-bf75-7801-9eae-61b5979c8606",
+  "workflowStatus": "SUCCESS",
+  "nativeJobsCreated": 2,
+  "storeSubmission": false,
+  "websitePublication": false,
+  "physicalDeviceInstallationTested": false,
+  "ios": {
+    "buildId": "2e776373-6bfd-4c84-a8c5-b8e73186bd9a",
+    "status": "FINISHED",
+    "profile": "preview",
+    "distribution": "INTERNAL",
+    "simulator": false,
+    "version": "1.0.0",
+    "buildNumber": "12",
+    "artifactUrl": "https://expo.dev/artifacts/eas/-A8Z2C2Ud8NX9GiKRUwDdPud-Rj8_kuHmT-N6nyIHGQ.ipa",
+    "stagedPath": "generated-artifacts/boneefied-builds/native-20261107/boneefied-1.0.0-ios-12.ipa",
+    "bytes": 122342062,
+    "sha256": "3bd9ea09027aa7d2ea8be9f82b19a6319b6f5e73e6e70b14f5a26449de3b9975",
+    "checks": [
+      "Downloaded finished EAS IPA; all ZIP entries passed CRC",
+      "Embedded bundle ID, app version and build number match",
+      "Physical-device ad hoc provisioning, not a simulator or development client",
+      "Signing certificates and provisioning profile match previous internal build",
+      "All three newly linked source-photo pages appear in the compiled bundle"
+    ]
+  },
+  "android": {
+    "buildId": "5a8cffce-c6f8-4a57-8f09-6aff3f734824",
+    "status": "FINISHED",
+    "profile": "production",
+    "distribution": "STORE",
+    "version": "1.0.0",
+    "versionCode": 8,
+    "artifactUrl": "https://expo.dev/artifacts/eas/lAZZUkLkuAKaigvSmpEiJ0F04Ih5ABoPHiTF-rGy2qs.aab",
+    "stagedPath": "releases/google-play/boneefied-production.aab",
+    "downloadRoute": "/api/download/boneefied-production.aab",
+    "bytes": 155273970,
+    "sha256": "ada8585eaf715d7271b647e2410a91d940bbdcffcb14d4abcafc5ce360bf63ed",
+    "checks": [
+      "Downloaded finished EAS AAB; all ZIP entries passed CRC",
+      "BundleConfig.pb, base module and native package identity present",
+      "OpenSSL verified JAR signature and all 1630 signed manifest-entry digests",
+      "Signing certificate matches previously retained Android bundle",
+      "All three newly linked source-photo pages appear in the compiled bundle",
+      "Exact public HTTPS API download returned 200 with attachment and application/octet-stream",
+      "Public download matches staged bytes and SHA-256; all public-download ZIP entries passed CRC"
+    ]
+  }
+}
