@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-11-07T02:02:58.112Z",
+  "checkedAt": "2026-11-07T02:58:18.667Z",
   "method": "Serial HTTPS GETs of approved source HTML only; normal TLS validation; no third-party photos saved. With --reuse-current, prior checks retain their original timestamps.",
   "limitations": "HTTP reachability is not photographic re-inspection, proof of every fine anatomical detail, interactive app navigation, or native-device verification.",
   "expectedIllustrations": 164,
   "accountedIllustrations": 164,
-  "anatomicallyApprovedIllustrations": 43,
-  "approvedAndHttpReachableIllustrations": 42,
-  "uniqueApprovedDestinations": 37,
-  "reachableDestinations": 36,
+  "anatomicallyApprovedIllustrations": 47,
+  "approvedAndHttpReachableIllustrations": 47,
+  "uniqueApprovedDestinations": 41,
+  "reachableDestinations": 41,
   "all164CompleteAndReachable": false,
   "buildAuthorization": "PROHIBITED. Even complete coverage requires owner review and explicit separate later authorization before any build, release, scheduling, submission, or publishing.",
   "destinations": [
@@ -118,6 +118,17 @@
       "redirected": false,
       "contentType": "text/html; charset=UTF-8",
       "title": "File:Foot bones - tarsus, metatarsus and phalanges.jpg - Wikimedia Commons",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+      "checkedAt": "2026-11-07T02:58:12.603Z",
+      "status": 200,
+      "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+      "redirected": false,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "File:Human Body.jpg - Wikimedia Commons",
       "sourcePageReachable": true,
       "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
     },
@@ -320,6 +331,39 @@
       "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
     },
     {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/respiratory-epithelium-trachea-220",
+      "checkedAt": "2026-11-07T02:58:13.608Z",
+      "status": 200,
+      "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/respiratory-epithelium-trachea-220",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Respiratory epithelium (trachea)",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/stratified-keratinized-squamous-epithelium-finger-skin-219",
+      "checkedAt": "2026-11-07T02:58:15.347Z",
+      "status": 200,
+      "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/stratified-keratinized-squamous-epithelium-finger-skin-219",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Stratified Keratinized Squamous Epithelium (Finger / Skin)",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/non-keratinized-stratified-squamous-epithelium-esophagus-218",
+      "checkedAt": "2026-11-07T02:58:16.474Z",
+      "status": 200,
+      "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/non-keratinized-stratified-squamous-epithelium-esophagus-218",
+      "redirected": false,
+      "contentType": "text/html; charset=utf-8",
+      "title": "Non-keratinized stratified squamous epithelium (esophagus)",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
+    },
+    {
       "url": "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
       "checkedAt": "2026-11-07T01:51:06.357Z",
       "status": 200,
@@ -342,12 +386,15 @@
       "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
     },
     {
-      "url": "https://histologylab.ctl.columbia.edu/slides/slide66/",
-      "checkedAt": "2026-11-07T01:51:08.347Z",
-      "sourcePageReachable": false,
-      "error": "TypeError: fetch failed",
-      "cause": "Error: self-signed certificate in certificate chain",
-      "reason": "Access check failed. This alone does not establish that the destination is globally broken."
+      "url": "https://www.digitalscope.org/ViewerUI/?SlideId=a4c22a3f-4620-40fc-9ffb-7c6a72143467",
+      "checkedAt": "2026-11-07T02:58:17.601Z",
+      "status": 200,
+      "finalUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=a4c22a3f-4620-40fc-9ffb-7c6a72143467&_fvsx=1",
+      "redirected": true,
+      "contentType": "text/html",
+      "title": "Viewer - DigitalScope",
+      "sourcePageReachable": true,
+      "reason": "Successful HTML GET with certificate verification enabled; photograph not re-inspected."
     },
     {
       "url": "https://tales.nmc.unibas.ch/en/histology-12/cardiovascular-organs-anatomical-microscopy-50/blood-smear-315",
@@ -653,20 +700,32 @@
     {
       "assetId": "asset-atlas-anterior-position",
       "title": "Anterior anatomical position",
-      "researchStatus": "unresolved",
-      "previouslyApprovedAnatomicalSet": false,
-      "currentlyApprovedAndHttpReachable": false,
-      "unresolvedCoverageReason": "No actual human photograph in the standardized anterior anatomical stance, with palms forward and thumbs lateral, was visually verified. Search surfaced mostly schematic position illustrations.",
-      "checks": []
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T02:21:24.005492+00:00"
+        }
+      ]
     },
     {
       "assetId": "asset-atlas-posterior-position",
       "title": "Posterior anatomical position",
-      "researchStatus": "unresolved",
-      "previouslyApprovedAnatomicalSet": false,
-      "currentlyApprovedAndHttpReachable": false,
-      "unresolvedCoverageReason": "No matching standardized posterior-view human photograph was verified; available anatomical-position results were schematic.",
-      "checks": []
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T02:21:24.005492+00:00"
+        }
+      ]
     },
     {
       "assetId": "asset-atlas-body-planes",
@@ -1504,20 +1563,52 @@
     {
       "assetId": "asset-bvis04-epithelia-simple",
       "title": "Simple epithelia: squamous, cuboidal, columnar (schematic)",
-      "researchStatus": "partial",
-      "previouslyApprovedAnatomicalSet": false,
-      "currentlyApprovedAndHttpReachable": false,
-      "unresolvedCoverageReason": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved.",
-      "checks": []
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-06"
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T00:39:48.741799+00:00"
+        },
+        {
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07"
+        }
+      ]
     },
     {
       "assetId": "asset-bvis04-epithelia-stratified",
       "title": "Pseudostratified and stratified squamous epithelia (schematic)",
-      "researchStatus": "partial",
-      "previouslyApprovedAnatomicalSet": false,
-      "currentlyApprovedAndHttpReachable": false,
-      "unresolvedCoverageReason": "Final comparison: checked nonkeratinized-stratified image has no confirmed human organism, while Duke's human skin slides were not visually inspected. Pseudostratified/ciliated and keratinized human panels remain unsupported; no complete counterpart.",
-      "checks": []
+      "researchStatus": "verified",
+      "previouslyApprovedAnatomicalSet": true,
+      "currentlyApprovedAndHttpReachable": true,
+      "unresolvedCoverageReason": null,
+      "checks": [
+        {
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/respiratory-epithelium-trachea-220",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T02:21:24.005492+00:00"
+        },
+        {
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/stratified-keratinized-squamous-epithelium-finger-skin-219",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T02:21:24.005492+00:00"
+        },
+        {
+          "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/non-keratinized-stratified-squamous-epithelium-esophagus-218",
+          "sourcePageReachable": true,
+          "originalImageInspectionDate": "2026-11-07T02:21:24.005492+00:00"
+        }
+      ]
     },
     {
       "assetId": "asset-bvis04-epithelia-other-stratified",
@@ -1560,7 +1651,7 @@
       "title": "Muscle tissues: skeletal, cardiac, smooth (schematic)",
       "researchStatus": "verified",
       "previouslyApprovedAnatomicalSet": true,
-      "currentlyApprovedAndHttpReachable": false,
+      "currentlyApprovedAndHttpReachable": true,
       "unresolvedCoverageReason": null,
       "checks": [
         {
@@ -1574,8 +1665,8 @@
           "originalImageInspectionDate": "2026-11-06"
         },
         {
-          "url": "https://histologylab.ctl.columbia.edu/slides/slide66/",
-          "sourcePageReachable": false,
+          "url": "https://www.digitalscope.org/ViewerUI/?SlideId=a4c22a3f-4620-40fc-9ffb-7c6a72143467",
+          "sourcePageReachable": true,
           "originalImageInspectionDate": "2026-11-07"
         }
       ]

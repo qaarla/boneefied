@@ -1,6 +1,6 @@
-/** Only individually verified records from research/boneefied-photo-references/verified-references.json.
- * Limited specimen examples disclose their view/laterality in the link label.
- * Artwork provenance URLs and partial research candidates are NOT photo fallbacks.
+/** Individually inspected photographs: complete comparisons and named selected-structure companions.
+ * Selected-structure examples are labeled explicitly; they are not full-comparison approvals.
+ * Uninspected candidates and artwork provenance URLs are NOT photo fallbacks.
  * Metadata only: no external images are fetched, cached or bundled.
  */
 export type PhotoMedia = 'gross-photo' | 'micrograph' | 'diagnostic-imaging';
@@ -11,12 +11,17 @@ export type PhotoReference = {
   mediaType: PhotoMedia;
   /** A short subject/view name only when a verified comparison needs several links. */
   subject?: { en: string; es: string };
+  /** The photograph is inspected, but its set does not cover the whole instructional plate. */
+  coverage?: 'selected-structures';
 };
 
 import { references } from './real-photo-reference-data.ts';
+import { companions } from './real-photo-companion-data.ts';
 
 export function photoReferencesForAsset(assetId?: string): readonly PhotoReference[] {
-  return assetId && Object.hasOwn(references, assetId) ? references[assetId]! : [];
+  if (!assetId) return [];
+  if (Object.hasOwn(references, assetId)) return references[assetId]!;
+  return Object.hasOwn(companions, assetId) ? companions[assetId]! : [];
 }
 
 export function canShowPhotoReferences(mode: PhotoReferenceMode, answerRevealed: boolean, allRecallLabelsRevealed: boolean): boolean {
@@ -32,7 +37,11 @@ export function photoReferenceLabel(reference: PhotoReference, language: 'en' | 
     'diagnostic-imaging': { en: 'See medical imaging', es: 'Ver imagen médica' },
   };
   const subject = reference.subject?.[language];
-  return `${labels[reference.mediaType][language]}${subject ? ` — ${subject}` : ''} · ${reference.sourceName}`;
+  const limit = reference.coverage === 'selected-structures'
+    ? (language === 'en' ? 'Selected structures only' : 'Solo estructuras seleccionadas')
+    : '';
+  const details = [limit, subject].filter(Boolean).join(': ');
+  return `${labels[reference.mediaType][language]}${details ? ` — ${details}` : ''} · ${reference.sourceName}`;
 }
 
 /** No canOpenURL/network preflight: opening a public HTTPS page is attempted directly.

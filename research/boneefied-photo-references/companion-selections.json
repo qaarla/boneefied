@@ -1,0 +1,431 @@
+{
+  "evidencePath": "research/boneefied-photo-references/evidence/companion-source-reviews.md",
+  "inspectedAt": "2026-11-07",
+  "newSources": {
+    "anterior-eye-oct": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4785705/",
+      "title": "Clinical utility of anterior segment swept-source optical coherence tomography in glaucoma",
+      "source": "Original clinical article archived in PubMed Central",
+      "sourceName": "PubMed Central",
+      "creator": "Original article authors; individual image photographer not separately established in this review",
+      "mediaType": "diagnostic-imaging",
+      "matches": "Actual human anterior-segment OCT: Figure 2 shows corneal boundary, chamber and iris/angle; Figure 7 shows cornea, chamber, iris and lens region with dimensional overlays.",
+      "viewLimitations": "Use Figures 2 and 7, not Figure 1 equipment photo. Other figures include named glaucoma/surgical pathology. OCT does not establish all zonular fibres or directly photograph aqueous flow.",
+      "termsUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4785705/",
+      "reproductionRights": "Original article linked, not copied; no reproduction licence asserted or exercised.",
+      "visualEvidence": "Browser inspected actual grayscale clinical OCT panels; 7cavf1 Figure 2, 115sgo Figure 7, ro7nf0 measurement overlays. Main agent directly viewed 115sgo. Article explicitly discusses imaging components of the human eye; this is real diagnostic scan data, not an anatomy outline."
+    },
+    "sciatic-human": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4630888/",
+      "title": "Anatomical variation in bifurcation and trifurcations of sciatic nerve and its clinical implications",
+      "source": "Original cadaveric study archived in PubMed Central",
+      "sourceName": "PubMed Central",
+      "creator": "Original article authors; see article byline",
+      "mediaType": "gross-photo",
+      "matches": "Actual human cadaver photographs show right sciatic trunk/tibial/common peroneal division and posterior gluteal/thigh/popliteal relationships.",
+      "viewLimitations": "These photographs document anatomical VARIANTS, not a normal complete lower-limb nerve map. Figure 1 is right high bifurcation; Figure 3 right popliteal trifurcation. Femoral nerve is not shown. Small static fields do not resolve every fine branch.",
+      "termsUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4630888/",
+      "reproductionRights": "Original study page linked; no source photograph reproduced.",
+      "visualEvidence": "Study Methods explicitly identify 28 formalin-fixed human cadavers. Browser inspected all seven actual photographs: dii5ze Figure 1 right gluteal/thigh, cikozi Figure 3 right popliteal, g6fygs/517unn/jamu6n left-sided variants. Main agent directly viewed dii5ze and its exact caption."
+    },
+    "uterine-myometrium": {
+      "url": "https://www.digitalscope.org/ViewerUI/?SlideId=a4c22a3f-4620-40fc-9ffb-7c6a72143467",
+      "title": "0041_I: human uterine myometrium, smooth muscle at 20X",
+      "source": "Duke Histology / DigitalScope",
+      "sourceName": "Duke Histology / DigitalScope",
+      "creator": "Institutional histology specimen; individual photographer not separately established",
+      "mediaType": "micrograph",
+      "matches": "Actual human myometrial smooth-muscle bundles with elongated/fusiform nuclei, directly inspected at 20X, away from endometrial glands.",
+      "viewLimitations": "Open human uterus 0041_I and zoom to 20X in the muscle-rich upper/intermediate wall. Initial overview includes endometrial glands; do not mistake those for muscle. No calibrated pixel scale asserted.",
+      "termsUrl": "https://histology.oit.duke.edu/NormalBody/FemaleRepro/FemaleRepro.html",
+      "reproductionRights": "Original institutional specimen viewer linked, not copied; no reproduction licence asserted.",
+      "subject": {"en": "Human smooth muscle, myometrium; zoom to 20X away from glands", "es": "Músculo liso del miometrio humano; ampliar a 20X lejos de las glándulas"},
+      "visualEvidence": "Original grouped inspection establishes human specimen 0041_I. New browser review went from overview 80uwcl to actual 20X muscle field z9zjzm; interlacing pink bundles and numerous elongated nuclei were visible, without endometrial gland profiles. Main agent also directly viewed z9zjzm."
+    },
+    "artery-vein": {
+      "baselLesson": "artery-and-vein-313",
+      "matches": "Actual human RFAL photographs show thick-walled artery/thinner irregular vein, endothelium, intima, media, adventitia and corrugated internal elastic lamina.",
+      "viewLimitations": "Five static photos below incomplete viewer. Not independent coverage of every capillary/venule subtype.",
+      "visualEvidence": "Five loaded static photos individually inspected; dz5awd (artery/vein), qry9r1 (arterial endothelium/folded elastic lamina), aov1cq (venous wall/endothelium). Source explicitly Human, RFAL."
+    },
+    "tonsil": {
+      "baselLesson": "palatine-tonsil-330",
+      "matches": "Human H&E palatine tonsil, capsule/septa/lobules, follicles/mantle zones/germinal centres, interfollicular lymphocytes/vessels, surface epithelium and crypts.",
+      "viewLimitations": "Six static photos below incomplete viewer. Palatine tonsil only, not the full tonsillar ring/location map.",
+      "visualEvidence": "All six static photos inspected; y9ag68 (capsule/crypt/follicles), mvig76 (mantle/germinal centres), t0fbh0 (interfollicular tissue/epithelium). Explicit Human, H&E."
+    },
+    "parathyroid": {
+      "baselLesson": "parathyroid-gland-268",
+      "matches": "Human H&E parathyroid tissue with adipocytes, light/dark chief cells, oxyphilic cells and capillaries.",
+      "viewLimitations": "Six static photos below incomplete viewer. Not gross posterior-neck placement.",
+      "visualEvidence": "Six actual photographs inspected: 9y3a5g (gland/adipocytes), swuy2b (chief/oxyphilic cells/vessels), femi4x (mini-follicles/capillaries). Explicit Human, H&E."
+    },
+    "human-node": {
+      "url": "https://www.digitalscope.org/ViewerUI/?SlideId=9b7da464-8c07-44e9-85c6-4e4610cc394e",
+      "title": "0077_E: lymph node, human biopsy, Masson stain",
+      "source": "Duke Histology / DigitalScope",
+      "sourceName": "Duke Histology / DigitalScope",
+      "creator": "Institutional slide collection; individual photographer not separately established",
+      "mediaType": "micrograph",
+      "matches": "Human lymph-node biopsy with peripheral follicular/cortical tissue and paler inner region; follicles and dense lymphoid tissue at 5x.",
+      "viewLimitations": "Overview/5x fields without anatomical overlays; not proof of each sinus, afferent/efferent vessel or individual lymphocyte type.",
+      "termsUrl": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+      "reproductionRights": "Original educational specimen linked, not copied; no reproduction licence asserted.",
+      "visualEvidence": "Browser selected Duke Webslide 0077_E whose specimen entry explicitly states lymph node, human biopsy, Masson stain. Public original viewer rendered 24144x15411 slide at low power and 5x: 5uni2z, mstv8q. The transient _fvsx=2 parameter is omitted from the canonical viewer link."
+    },
+    "human-retina": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652816/",
+      "title": "Improved protocol for histological and histopathological preparation of large eyes",
+      "source": "Original journal article archived in PubMed Central",
+      "sourceName": "PubMed Central",
+      "creator": "Original article authors; individual photographer not separately established in the inspected caption",
+      "mediaType": "micrograph",
+      "matches": "Figure 6 human postmortem retinal panels d-e show labeled GCL/IPL/INL/OPL/ONL/IS/OS/RPE layers, blue nuclear staining and red PNA cone-matrix-sheath signal.",
+      "viewLimitations": "ONLY Figure 6 d-e are the specified human comparison; a-c are rabbit. Other figures include pig/monkey or unspecified preparation photos and are not human evidence. Layer-level stains do not independently establish every retinal cell identity.",
+      "termsUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11652816/",
+      "reproductionRights": "Original article page linked, not copied. No reproduction licence is exercised.",
+      "visualEvidence": "Browser directly inspected rendered Figure 6, 709x492, screenshot mpv8z9. Caption explicitly distinguishes rabbit a-c from human donor d-e. No human anterior-chamber histology was established from the unspecified/unloaded preparation photos."
+    },
+    "photoreceptor-tem": {
+      "url": "https://www.cellimagelibrary.org/images/11458",
+      "title": "CIL 11458: human retinal photoreceptor inner segment, TEM",
+      "source": "Cell Image Library", "sourceName": "Cell Image Library",
+      "creator": "Contributor credited on original CIL record; individual photographer not separately established in this review",
+      "mediaType": "micrograph",
+      "matches": "Actual human photoreceptor inner-segment TEM with densely packed elongated mitochondria and cristae.",
+      "viewLimitations": "A single photoreceptor inner segment, not the whole retinal cell chain or every cell organelle. Contrast stain not individually named; no pixel scale provided.",
+      "termsUrl": "https://www.cellimagelibrary.org/images/11458",
+      "reproductionRights": "Original CIL record/DOI 10.7295/W9CIL11458 linked; no image reproduction or licence assertion.",
+      "visualEvidence": "Browser inspected the actual rendered grayscale 920x1240 TEM and metadata in erl0nq. Organism explicitly Homo sapiens, eye photoreceptor; preparation fixed/embedded/microtome-sectioned and electron microscopy."
+    },
+    "nasal-palate": {
+      "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=72-3",
+      "title": "Dissection of nasal fossae, nasal pharynx, and palate, Bassett 72-3",
+      "source": "Stanford University Lane Medical Library, Bassett Collection",
+      "sourceName": "Stanford Bassett Collection",
+      "creator": "David L. Bassett and William B. Gruber photographic atlas project",
+      "mediaType": "gross-photo",
+      "matches": "Actual gross dissection of right lateral nasal wall/nasopharynx and palatal region.",
+      "viewLimitations": "Palatine tonsil was resected. Not a complete paranasal-sinus or whole-airway set. Use actual specimen photograph, not adjacent line drawing.",
+      "termsUrl": "https://lane.stanford.edu/biomed-resources/bassett/index.html",
+      "reproductionRights": "Stanford collection page states CC BY-SA 4.0. Creator/source retained; no photograph reproduced.",
+      "visualEvidence": "Browser viewed 1968x1802 photograph and caption/key at 0lz3rh, not merely its diagram. Primary institutional collection provenance separately states Bassett/Gruber created photographic images of human anatomy using dissection, and all collection images derive from that photographic atlas project; this is not a mixed-species histology textbook inference."
+    },
+    "skull-side": {
+      "url": "https://commons.wikimedia.org/wiki/File:SkullSideView.JPG",
+      "title": "Photographed human anatomical skull, side view",
+      "source": "Wikimedia Commons", "sourceName": "Wikimedia Commons",
+      "creator": "Bernard bill5", "mediaType": "gross-photo",
+      "matches": "Actual photographed anatomical skull with natural bony texture, facial bones, orbit, zygomatic arch, mandibular ramus/body and cranial vault.",
+      "viewLimitations": "Slightly oblique side view and small original photograph; anatomical preparation has a sawn vault and metal closure. Side is not separately asserted; fine foramina/sutures are not all resolved.",
+      "termsUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reproductionRights": "Source offers GFDL and CC BY-SA 3.0. Creator credited; no photograph reproduced.",
+      "visualEvidence": "Main-agent screenshot SkullSideView_eN9E shows actual dry-bone human craniofacial morphology, natural sutures/texture, mandible and a preparation's metal calvarial closure. Source calls this the contributor's own picture of a skull side view, not an illustration. It is not the rejected Patrick Lynch render."
+    },
+    "skull-xray": {
+      "url": "https://commons.wikimedia.org/wiki/File:X-ray_of_the_human_skull_(side_view).jpg",
+      "title": "Human skull, lateral radiograph",
+      "source": "Wikimedia Commons", "sourceName": "Wikimedia Commons",
+      "creator": "Nyechologist", "mediaType": "diagnostic-imaging",
+      "matches": "Actual lateral human head radiograph with cranial vault, facial profile, mandible and cervical spine.",
+      "viewLimitations": "Radiograph with superimposed bilateral structures/dental metal; not a dry-bone photograph or proof of every named surface landmark.",
+      "termsUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "reproductionRights": "CC BY 3.0; original source and creator retained, no reproduction.",
+      "visualEvidence": "Main-agent screenshot X-ray_of_the_human_skull_side_view_bjwd shows the actual lateral human skull radiograph. Source explicitly identifies human skull side-view X-ray, own work by Nyechologist."
+    },
+    "parotid": {
+      "url": "https://peir.path.uab.edu/library/picture.php?/30672/categories",
+      "title": "Parotid gland, prosected head",
+      "source": "University of Alabama at Birmingham PEIR",
+      "sourceName": "UAB PEIR", "creator": "Peter Anderson",
+      "mediaType": "gross-photo",
+      "matches": "Photographed adult human head prosection with the parotid gland exposed beside the mandibular/auricular region.",
+      "viewLimitations": "External head/parotid dissection, not a full oral cavity/pharynx/all-salivary-gland set.",
+      "termsUrl": "https://peir.path.uab.edu/library/picture.php?/30672/categories",
+      "reproductionRights": "Public institutional original source, author Peter Anderson; no image reproduction licence asserted or exercised.",
+      "visualEvidence": "Main-agent source-page screenshot peir_picture_04Wp shows an actual recognizable human cadaveric face/head dissection, with arrow at exposed parotid. Caption explicitly reads GROSS: SALIVARY GLAND: PAROTID GLAND, PROSECTED HEAD; author and original page visible."
+    },
+    "nasal-skin": {
+      "baselLesson": "nasal-skin-308",
+      "matches": "Actual human skin photographs show epidermal strata, sebaceous glands and follicular infundibulum, eccrine glands/ducts, collagen, elastic fibres, dermis, subcutis and adipocytes.",
+      "viewLimitations": "Van Gieson/Elastin. Hair shaft and infundibulum are visible; bulb/papilla and all specialized cell types are not established. Use the eight loaded static photos below the incomplete overview viewer.",
+      "visualEvidence": "Browser inspected all eight static photos. Evidence: 873vpp (follicular infundibulum, sebaceous/eccrine glands, dermis/subcutis); 5moeme (epidermal strata, hair shaft); 2u0y4d (glands/infundibulum); x0pgwm (collagen, elastic fibres, muscle). Origin explicitly Human."
+    },
+    "ear-cartilage": {
+      "baselLesson": "elastic-cartilage-ear-239",
+      "matches": "Actual human ear micrographs show elastic-cartilage core, perichondrium, chondrones/chondrocytes and elastic fibres.",
+      "viewLimitations": "Elastin-Resorcin-Carmine; elastic cartilage only, not a three-cartilage comparison. Five static photos loaded despite overview tile failures.",
+      "visualEvidence": "Browser individually inspected five static photos; 19tfj7/e6dugd show perichondrium, chondrones and elastic fibres; ccu6os shows cartilage core and surrounding ear tissue. Source explicitly Human."
+    },
+    "pancreas-exocrine": {
+      "baselLesson": "pancreas-exocrine-portion-228",
+      "matches": "Human exocrine pancreas: acini, centroacinar cells, intercalated ducts, interlobular ducts, connective septa and vessels.",
+      "viewLimitations": "H&E; no positively identified endocrine islet in these exocrine fields. Five static photos below an incomplete viewer.",
+      "visualEvidence": "Five actual static micrographs inspected; sgbjrf (lobules/septa/ducts), rpbnhm and hgs6d3 (centroacinar cells/intercalated ducts). Explicit human origin."
+    },
+    "pancreas-endocrine": {
+      "baselLesson": "pancreas-endocrine-portion-229",
+      "matches": "Human pancreatic islets among exocrine acini/ducts; high-power photo labels alpha and beta cells.",
+      "viewLimitations": "Fuchsin/Azocarmin/Fastgreen. No D-cell identification in the inspected fields. Five static photos below an incomplete viewer.",
+      "visualEvidence": "All five static photos inspected; d7i4kh (islets/exocrine tissue), r2lmas (A and B cells), x0yldp (septa/ducts). Explicit human origin."
+    },
+    "spinal-cord": {
+      "baselLesson": "spinal-cord-cervical-337",
+      "matches": "Human transverse spinal cord, horns, central canal, roots/funiculi, motor neurons and glia; high power shows dendrite, perikaryon, Nissl substance and nucleus/nucleolus.",
+      "viewLimitations": "Luxol Fast Blue/Cresyl Violet. Generic glial cells are visible, not independent proof of every specific glial subtype. Four static photos below an incomplete overview viewer.",
+      "visualEvidence": "Four static photographs individually inspected: okz72k (horns/canal/roots), dpr9mt (funiculi), ame7y3 and ga5103 (neurons/glia). Main agent also directly viewed ga5103. Origin Human."
+    },
+    "marrow": {
+      "baselLesson": "bone-marrow-320",
+      "matches": "Human red marrow with fat spaces, erythrocytes/erythroblasts, megakaryocytes and an eosinophilic granulocyte.",
+      "viewLimitations": "May-Grünwald-Giemsa. Myeloid-development field is generically labeled; not independent identification of every developmental stage. Five static photos below an incomplete viewer.",
+      "visualEvidence": "Actual fields inspected: tt1dst (marrow/fat); t2rnkq (erythrocytes/erythroblasts); 74ib6c (megakaryocytes); 8vemu1 (erythroblasts/eosinophil/fat). Explicit human red marrow."
+    },
+    "thymus": {
+      "baselLesson": "thymus-child-328",
+      "matches": "Human child thymus, lobules, cortex, medulla, thymocytes/T cells, epithelial reticular cells and Hassall corpuscles.",
+      "viewLimitations": "H&E; microscopic lobules, not in-situ chest placement. Four static photos below an incomplete viewer.",
+      "visualEvidence": "All four photos inspected: aaoat0/layqai (lobules/cortex/medulla), dxmvko/dj2ovr (Hassall corpuscles and medullary cells). Explicit human child."
+    },
+    "pituitary": {
+      "baselLesson": "pituitary-gland-267",
+      "matches": "Human adenohypophysis, pars intermedia cysts/colloid and neurohypophysis; acidophilic, basophilic and chromophobic cells, pituicyte nuclei and axons.",
+      "viewLimitations": "Azan; pituitary tissue, not a complete photograph of hypothalamic portal/neural connections. Eight static photos below an incomplete viewer.",
+      "visualEvidence": "Eight actual photos inspected: zotz31 (three portions), ow9lkt (posterior lobe), 5m3sg8/dikb12/utczjt (anterior cell types). Explicit human origin."
+    },
+    "thyroid": {
+      "baselLesson": "thyroid-gland-273",
+      "matches": "Human colloid-filled follicles, follicular epithelium, C cells, connective septa and capillaries.",
+      "viewLimitations": "H&E; thyroid, not parathyroid or gross neck placement. Three static photos below an incomplete viewer.",
+      "visualEvidence": "Three actual photos inspected: tvji8w (follicles/colloid), 7uh10q (direct C-cell labels), nz3ddx (follicles/septa/capillaries). Explicit human origin."
+    },
+    "elderly-testis": {
+      "baselLesson": "testis-elderly-289",
+      "matches": "Human elderly testis with intact/atrophic seminiferous tubules, tunica albuginea, Leydig cells and degenerating tubules.",
+      "viewLimitations": "RGAN. Elderly/atrophic tissue with hyaline degeneration; not a normal complete spermatogenic sequence. Some remaining cells explicitly cannot be assigned to a type. Five static photos below an incomplete viewer.",
+      "visualEvidence": "Five static JPEGs actually inspected: dojvwt/9nnm1r (tubules), pj423o (Leydig/degeneration), qzwn9v (unassignable degenerating cells). Explicit human elderly origin."
+    },
+    "taste-buds": {
+      "baselLesson": "taste-bud-vallate-papilla-353",
+      "matches": "Human tongue with vallate/filiform papillae, grooves, actual taste buds, serous/mucous glands and tongue musculature.",
+      "viewLimitations": "Van Gieson. Taste receptor epithelium, not olfactory epithelium or the entire neural pathway. Four static photos below an incomplete viewer.",
+      "visualEvidence": "All four actual photos inspected: y5z3mc/oml4ip (papillae/groove), jjzcyp (explicitly labeled taste buds in epithelium), 8czrl5 (taste buds and glands). Explicit human tongue."
+    },
+    "mitosis": {
+      "url": "https://www.nanolive.com/mitosis-in-mesenchymal-stem-cells/",
+      "title": "Mitosis in human mesenchymal stem cells",
+      "source": "Nanolive", "sourceName": "Nanolive", "creator": "Nanolive",
+      "mediaType": "micrograph",
+      "matches": "Actual grayscale microscopy panels show human cultured mesenchymal cells during prophase, prometaphase, metaphase, anaphase, telophase and cytokinesis, with daughter-cell nuclei/nucleoli.",
+      "viewLimitations": "Use grayscale microscope panels, not adjacent colored schematic drawings. The Vimeo video was not verified because its separate consent blocked playback. Not electron-microscope coverage of all cell organelles.",
+      "termsUrl": "https://www.nanolive.com/mitosis-in-mesenchymal-stem-cells/",
+      "reproductionRights": "Publisher's public original article; no reproduction licence asserted or exercised.",
+      "visualEvidence": "Browser inspected Fig.2 y98rw4 and each separate actual microscopy panel: 3nn9fj prophase, klnz82 prometaphase, elz4qf metaphase, n2ahjm anaphase, i6ndb0 telophase, ih6xte cytokinesis. Main agent directly viewed ih6xte. Article explicitly identifies human mesenchymal stem cells."
+    },
+    "fingernails": {
+      "url": "https://commons.wikimedia.org/wiki/File:Fingernails.jpg",
+      "title": "Photographed human fingernails",
+      "source": "Wikimedia Commons", "sourceName": "Wikimedia Commons",
+      "creator": "Paranoid", "mediaType": "gross-photo",
+      "matches": "Actual external human nail plates, free edges, lunula/cuticle region and nail folds.",
+      "viewLimitations": "External nail surface only, not a longitudinal histological nail-root/bed/matrix section.",
+      "termsUrl": "https://commons.wikimedia.org/wiki/File:Fingernails.jpg",
+      "reproductionRights": "The author released the photograph into the public domain. Only the original page is linked.",
+      "visualEvidence": "Main-agent source-page screenshot Fingernails_4roR shows three photographed human fingertips/nails. Source caption explicitly says human nails and the public-domain grant is visible."
+    },
+    "lateral-brain": {
+      "url": "https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG",
+      "title": "Human brain, intact lateral surface",
+      "source": "Wikimedia Commons / LSU Health Sciences Center",
+      "sourceName": "John A. Beal / Wikimedia Commons",
+      "creator": "John A. Beal, LSU Health Sciences Center Shreveport",
+      "mediaType": "gross-photo",
+      "matches": "Actual human lateral cerebral surface with frontal, parietal, temporal and occipital regions, gyri/sulci and cerebellum.",
+      "viewLimitations": "Intact external surface; the insula is not exposed. The source does not separately assert the illustrated side.",
+      "termsUrl": "https://creativecommons.org/licenses/by/2.5/",
+      "reproductionRights": "CC BY 2.5; creator and original page retained. Photograph is not reproduced.",
+      "visualEvidence": "Main agent inspected source-page screenshot Human_brain_lateral_view_v6S1. Actual preserved brain, gyri, lateral sulcus and cerebellum were visible. Source explicitly identifies human brain and John A. Beal."
+    },
+    "ventricles": {
+      "url": "https://commons.wikimedia.org/wiki/File:Human_brain_right_dissected_lateral_view_description.JPG",
+      "title": "Human right cerebral dissection exposing lateral ventricle",
+      "source": "Wikimedia Commons / LSU Health Sciences Center",
+      "sourceName": "John A. Beal / Wikimedia Commons",
+      "creator": "John A. Beal, LSU Health Sciences Center Shreveport",
+      "mediaType": "gross-photo",
+      "matches": "Real dissected human hemisphere exposes lateral-ventricle horns/body and hippocampal/caudate/internal-capsule relationships.",
+      "viewLimitations": "Lateral cerebral portions were resected. Not the entire ventricular system, CSF flow or all meningeal layers.",
+      "termsUrl": "https://creativecommons.org/licenses/by/2.5/",
+      "reproductionRights": "CC BY 2.5; linked with creator credit, not copied.",
+      "visualEvidence": "Main-agent screenshot Human_brain_right_dissected_lateral_view_description_fH0i shows the real section, numbered anterior/body/posterior/inferior ventricular regions, hippocampus and central structures. Source explicitly human."
+    },
+    "rib-cage-ct": {
+      "url": "https://commons.wikimedia.org/wiki/File:VrParaPersp.gif",
+      "title": "Human rib cage reconstructed from an actual CT scan",
+      "source": "Wikimedia Commons / English Wikibooks",
+      "sourceName": "Kieran Maher / Wikimedia Commons",
+      "creator": "Kieran Maher", "mediaType": "diagnostic-imaging",
+      "matches": "Actual thoracic CT volume rendering, with curved ribs, sternum and vertebral column, comparing parallel/perspective projections.",
+      "viewLimitations": "CT-derived diagnostic imaging, not a camera photograph of a dry specimen; no cartilage differentiation or fine rib head/tubercle/costal-groove detail is claimed.",
+      "termsUrl": "https://commons.wikimedia.org/wiki/File:VrParaPersp.gif",
+      "reproductionRights": "Source records author's public-domain release. Imaging is linked, not copied.",
+      "visualEvidence": "Main-agent screenshot VrParaPersp_ANOu shows both actual CT volume-rendered thoraces. Source explicitly describes a CT scan rendered using OsiriX by Kieran Maher; human thoracic morphology is visible. This is labeled medical imaging, never a specimen photo."
+    }
+  },
+  "selections": {
+    "asset-bvis04-eye-anterior-segment": [
+      {"newSource": "anterior-eye-oct", "subject": {"en": "Human anterior-segment OCT: Figures 2 and 7; not every zonular fibre", "es": "OCT del segmento anterior humano: figuras 2 y 7; no todas las fibras zonulares"}}
+    ],
+    "asset-bvis04-lower-limb-nerves": [
+      {"newSource": "sciatic-human", "subject": {"en": "Right sciatic variants: Figures 1 and 3; femoral nerve not shown", "es": "Variantes ciáticas derechas: figuras 1 y 3; no muestra el nervio femoral"}}
+    ],
+    "asset-bvis06-nephron-pathway": [
+      {"fromAssetId": "asset-commons-kidney-cortex-human", "subject": {"en": "Human renal corpuscle/tubules; not the complete nephron/collecting route", "es": "Corpúsculo y túbulos renales humanos; no toda la vía nefrónica y colectora"}}
+    ],
+    "asset-bvis04-retina-layers": [
+      {"newSource": "human-retina", "subject": {"en": "Human retinal layers: Figure 6 d-e ONLY; a-c are rabbit", "es": "Capas retinianas humanas: SOLO figura 6 d-e; a-c son de conejo"}},
+      {"newSource": "photoreceptor-tem", "subject": {"en": "Human photoreceptor inner segment and mitochondria; TEM", "es": "Segmento interno y mitocondrias de un fotorreceptor humano; MET"}}
+    ],
+    "asset-bvis05-vessel-wall-types": [
+      {"newSource": "artery-vein", "subject": {"en": "Human arterial/venous walls; static photos below viewer", "es": "Paredes arteriales y venosas humanas; fotos bajo el visor"}}
+    ],
+    "asset-bvis05-lymph-node-structure": [
+      {"newSource": "human-node", "subject": {"en": "Human lymph-node biopsy, Masson; overview/5x fields", "es": "Biopsia de ganglio humano, Masson; vista general y campos a 5x"}}
+    ],
+    "asset-bvis05-tonsil-map-structure": [
+      {"newSource": "tonsil", "subject": {"en": "Human palatine tonsil only; static photos below viewer", "es": "Solo amígdala palatina humana; fotos bajo el visor"}}
+    ],
+    "asset-bvis05-upper-airway": [
+      {"newSource": "nasal-palate", "subject": {"en": "Human right nasal wall, nasopharynx and palate; photograph beside drawing", "es": "Pared nasal derecha, nasofaringe y paladar humanos; fotografía junto al dibujo"}}
+    ],
+    "asset-skull-lateral": [
+      {"newSource": "skull-side", "subject": {"en": "Photographed skull, oblique side view; fine landmarks limited", "es": "Cráneo fotografiado, vista lateral oblicua; detalle fino limitado"}},
+      {"newSource": "skull-xray", "subject": {"en": "Human lateral skull X-ray; superimposed structures", "es": "Radiografía lateral de cráneo humano; estructuras superpuestas"}}
+    ],
+    "asset-vertebral-column": [
+      {"fromAssetId": "asset-skeletal-atlas-vertebra-typical", "subject": {"en": "Individual thoracic vertebra; not the articulated lateral column", "es": "Vértebra torácica individual; no es la columna lateral articulada"}}
+    ],
+    "asset-bvis06-oral-cavity": [
+      {"newSource": "parotid", "subject": {"en": "Human parotid/head dissection; not the entire oral/pharyngeal map", "es": "Disección humana de parótida y cabeza; no es todo el mapa oral y faríngeo"}},
+      {"newSource": "nasal-palate", "subject": {"en": "Human nasopharynx/palate; palatine tonsil resected", "es": "Nasofaringe y paladar humanos; amígdala palatina resecada"}}
+    ],
+    "asset-atlas-abdominal-quadrants": [
+      {"fromAssetId": "asset-atlas-anterior-position", "subject": {"en": "Adult abdominal surface; quadrant boundaries are not marked", "es": "Superficie abdominal adulta; límites de cuadrantes sin marcar"}}
+    ],
+    "asset-atlas-abdominal-regions": [
+      {"fromAssetId": "asset-atlas-anterior-position", "subject": {"en": "Adult abdominal surface; nine-region grid is not marked", "es": "Superficie abdominal adulta; nueve regiones sin marcar"}}
+    ],
+    "asset-atlas-body-cavities": [
+      {"fromAssetId": "asset-bvis06-abdominal-placement", "index": 0, "subject": {"en": "Opened abdominal cavity and organ relations; abdominal region only", "es": "Cavidad abdominal abierta y relaciones orgánicas; solo abdomen"}}
+    ],
+    "asset-original-body-cavities": [
+      {"fromAssetId": "asset-bvis06-abdominal-placement", "index": 0, "subject": {"en": "Opened abdominal cavity; other body cavities are not shown", "es": "Cavidad abdominal abierta; no se muestran las otras cavidades"}}
+    ],
+    "asset-atlas-organ-locations": [
+      {"fromAssetId": "asset-bvis06-abdominal-placement", "subject": {"en": "Dissected abdominal organ positions; not a whole-body map", "es": "Posición de órganos abdominales disecados; no es un mapa corporal completo"}}
+    ],
+    "asset-skeletal-atlas-thoracic-cage": [
+      {"newSource": "rib-cage-ct", "subject": {"en": "Thoracic cage on real CT; not a dry-bone photograph", "es": "Caja torácica en TC real; no es fotografía de huesos secos"}}
+    ],
+    "asset-skeletal-atlas-rib-detail": [
+      {"newSource": "rib-cage-ct", "subject": {"en": "Rib curvature on CT; fine head/tubercle/groove details unresolved", "es": "Curvatura costal en TC; sin detalle fino de cabeza, tubérculo o surco"}}
+    ],
+    "asset-servier-brain-lateral": [
+      {"newSource": "lateral-brain", "subject": {"en": "Intact lateral brain surface; insula is not exposed", "es": "Superficie lateral cerebral intacta; ínsula no expuesta"}}
+    ],
+    "asset-bvis04-csf-meninges": [
+      {"newSource": "ventricles", "subject": {"en": "Dissected lateral ventricle; not all ventricles/meninges or CSF flow", "es": "Ventrículo lateral disecado; no muestra todos los ventrículos, meninges ni flujo del LCR"}}
+    ],
+    "asset-servier-ear-section": [
+      {"fromAssetId": "asset-bvis04-cochlea-corti", "subject": {"en": "Human fetal organ of Corti; inner-ear microscopic region only", "es": "Órgano de Corti fetal humano; solo una región microscópica del oído interno"}}
+    ],
+    "asset-bvis04-inner-ear-vestibular": [
+      {"fromAssetId": "asset-bvis04-cochlea-corti", "subject": {"en": "Human fetal cochlear sensory surface; vestibular organs are not shown", "es": "Superficie sensorial coclear fetal humana; no muestra órganos vestibulares"}}
+    ],
+    "asset-gray946-sweat-gland": [
+      {"newSource": "nasal-skin", "subject": {"en": "Human sebaceous/eccrine glands and ducts; static photos below viewer", "es": "Glándulas sebáceas y ecrinas humanas; fotos bajo el visor"}}
+    ],
+    "asset-openstax-historical-skin-structure": [
+      {"newSource": "nasal-skin", "subject": {"en": "Human skin layers and appendages; static photos below viewer", "es": "Capas y anexos cutáneos humanos; fotos bajo el visor"}},
+      {"fromObservation": 2, "subject": {"en": "Human thick skin and Pacinian corpuscle; complementary specimen", "es": "Piel gruesa humana y corpúsculo de Pacini; espécimen complementario"}}
+    ],
+    "asset-bvis04-epidermis-strata": [
+      {"fromAssetId": "asset-bvis04-epithelia-stratified", "index": 1, "subject": {"en": "Human thick epidermis; not identification of every specialized cell", "es": "Epidermis gruesa humana; no identifica cada tipo celular especializado"}},
+      {"newSource": "nasal-skin", "subject": {"en": "Human thin-skin strata; static photos below viewer", "es": "Estratos de piel fina humana; fotos bajo el visor"}}
+    ],
+    "asset-bvis04-dermis-hypodermis": [
+      {"newSource": "nasal-skin", "subject": {"en": "Human dermal collagen/elastin and subcutaneous fat; photos below viewer", "es": "Colágeno y elastina dérmicos y grasa subcutánea humanos; fotos bajo el visor"}}
+    ],
+    "asset-bvis04-hair-follicle": [
+      {"fromObservation": 1, "subject": {"en": "Human scalp longitudinal follicles/bulbs; fine papilla details unresolved", "es": "Folículos y bulbos longitudinales de cuero cabelludo humano; papila sin resolver"}},
+      {"newSource": "nasal-skin", "subject": {"en": "Human follicular infundibulum and sebaceous gland; photos below viewer", "es": "Infundíbulo folicular y glándula sebácea humanos; fotos bajo el visor"}}
+    ],
+    "asset-bvis04-epithelia-other-stratified": [
+      {"newSource": "nasal-skin", "subject": {"en": "Human sweat ducts; not the complete three-epithelium comparison", "es": "Conductos sudoríparos humanos; no completa la comparación de tres epitelios"}}
+    ],
+    "asset-bvis04-connective-loose": [
+      {"newSource": "nasal-skin", "subject": {"en": "Human subcutaneous adipose/connective tissue; reticular comparison incomplete", "es": "Tejido adiposo y conjuntivo subcutáneo humano; comparación reticular incompleta"}}
+    ],
+    "asset-bvis04-connective-dense": [
+      {"newSource": "nasal-skin", "subject": {"en": "Human dermal collagen/elastic fibres; not all dense-tissue types", "es": "Colágeno y fibras elásticas dérmicas humanas; no todos los tejidos densos"}}
+    ],
+    "asset-bvis04-cartilage": [
+      {"newSource": "ear-cartilage", "subject": {"en": "Human elastic cartilage only; static photos below viewer", "es": "Solo cartílago elástico humano; fotos bajo el visor"}}
+    ],
+    "asset-bvis04-nail-section": [
+      {"newSource": "fingernails", "subject": {"en": "External human fingernails; not an internal longitudinal section", "es": "Uñas humanas externas; no es un corte longitudinal interno"}}
+    ],
+    "asset-original-cell-overview": [
+      {"newSource": "mitosis", "subject": {"en": "Human cultured cells/nuclei; grayscale microscope panels, not all organelles", "es": "Células humanas cultivadas y núcleos; paneles microscópicos grises, no todos los orgánulos"}},
+      {"newSource": "photoreceptor-tem", "subject": {"en": "Real human cellular mitochondria/cristae; specialized photoreceptor TEM", "es": "Mitocondrias y crestas celulares humanas reales; MET de fotorreceptor especializado"}}
+    ],
+    "asset-original-mitosis-stages": [
+      {"newSource": "mitosis", "subject": {"en": "Human mitosis; grayscale microscopy panels beside the drawings", "es": "Mitosis humana; paneles microscópicos grises junto a los dibujos"}}
+    ],
+    "asset-bvis04-spinal-cross-section": [
+      {"newSource": "spinal-cord", "subject": {"en": "Human cord horns, canal, tracts and neurons; photos below viewer", "es": "Astas, canal, cordones y neuronas medulares humanos; fotos bajo el visor"}}
+    ],
+    "asset-bvis04-nervous-tissue": [
+      {"newSource": "spinal-cord", "subject": {"en": "Human motor neurons and glia; not every glial subtype", "es": "Neuronas motoras y glía humanas; no cada subtipo glial"}}
+    ],
+    "asset-bvis04-smell-taste": [
+      {"newSource": "taste-buds", "subject": {"en": "Human taste buds; olfactory epithelium/pathway not shown", "es": "Botones gustativos humanos; no muestra epitelio ni vía olfatoria"}}
+    ],
+    "asset-bvis05-marrow-hematopoiesis": [
+      {"newSource": "marrow", "subject": {"en": "Human red-marrow cells; not every developmental stage", "es": "Células de médula roja humana; no cada etapa de desarrollo"}}
+    ],
+    "asset-bvis05-vessel-flow-chain": [
+      {"fromAssetId": "asset-bvis05-upper-limb-arteries", "index": 0, "subject": {"en": "Real aortic arch and arterial branches; not the entire flow chain", "es": "Arco aórtico real y ramas arteriales; no toda la cadena circulatoria"}}
+    ],
+    "asset-bvis05-spleen-pulp": [
+      {"fromObservation": 3, "subject": {"en": "Human spleen red/white pulp; fine cord/sinusoid detail unresolved", "es": "Pulpa roja y blanca esplénica humana; cordones y sinusoides sin resolver"}}
+    ],
+    "asset-bvis05-thymus-lobule": [
+      {"newSource": "thymus", "subject": {"en": "Human child thymic lobules and Hassall corpuscles; photos below viewer", "es": "Lobulillos tímicos y corpúsculos de Hassall de un niño; fotos bajo el visor"}}
+    ],
+    "asset-bvis05-gut-lymphoid-lacteal": [
+      {"fromObservation": 6, "subject": {"en": "Human ileal villi and lymphoid tissue; overview, not resolved lacteal cells", "es": "Vellosidades y tejido linfoide ileales humanos; vista general sin detalle celular del vaso quilífero"}}
+    ],
+    "asset-bvis05-hypothalamus-pituitary-axis": [
+      {"newSource": "pituitary", "subject": {"en": "Human pituitary portions/cells; not the complete hypothalamic pathways", "es": "Porciones y células hipofisarias humanas; no todas las vías hipotalámicas"}}
+    ],
+    "asset-bvis05-thyroid-parathyroid": [
+      {"newSource": "thyroid", "subject": {"en": "Human thyroid follicles and C cells; static photos below viewer", "es": "Folículos tiroideos y células C humanos; fotos bajo el visor"}},
+      {"newSource": "parathyroid", "subject": {"en": "Human parathyroid chief/oxyphilic cells; photos below viewer", "es": "Células principales y oxífilas paratiroideas humanas; fotos bajo el visor"}}
+    ],
+    "asset-bvis05-adrenal-zones": [
+      {"fromObservation": 5, "subject": {"en": "Human adrenal cortex/medulla; overview, not every cortical cell zone", "es": "Corteza y médula suprarrenales humanas; vista general, no cada zona celular"}}
+    ],
+    "asset-bvis05-ovary-testis": [
+      {"fromAssetId": "asset-bvis06-ovary-follicle", "subject": {"en": "Human ovary and follicular specimen; not a full cycle sequence", "es": "Ovario y espécimen folicular humanos; no toda la secuencia cíclica"}},
+      {"newSource": "elderly-testis", "subject": {"en": "Human elderly/atrophic testis; not a healthy spermatogenic sequence", "es": "Testículo humano anciano y atrófico; no una secuencia espermatogénica sana"}}
+    ],
+    "asset-bvis06-testis-ducts": [
+      {"newSource": "elderly-testis", "subject": {"en": "Human elderly seminiferous tubules/Leydig cells; epididymal route not shown", "es": "Túbulos seminíferos y células de Leydig de un anciano; no muestra la vía epididimaria"}}
+    ],
+    "asset-bvis06-liver-lobule-pancreas": [
+      {"newSource": "pancreas-exocrine", "subject": {"en": "Human pancreatic acini and ducts; static photos below viewer", "es": "Acinos y conductos pancreáticos humanos; fotos bajo el visor"}},
+      {"newSource": "pancreas-endocrine", "subject": {"en": "Human pancreatic islets and alpha/beta cells; photos below viewer", "es": "Islotes pancreáticos humanos y células alfa y beta; fotos bajo el visor"}}
+    ]
+  }
+}

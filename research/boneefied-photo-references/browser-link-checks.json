@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-07",
+  "method": "Individually opened original public source pages in a normal browser; actual embedded photographs rendered. No direct-media fallback, downloads or TLS-warning bypass.",
+  "evidencePath": "research/boneefied-photo-references/evidence/companion-source-reviews.md",
+  "destinations": [
+    {"url":"https://calisphere.org/item/74761ef06360839b7e8bc0fcd7d84ef6/","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"2wowp4"},
+    {"url":"https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/","status":202,"sourcePageReachable":false,"photographRendered":false,"screenshot":"h3g6og"},
+    {"url":"https://calisphere.org/item/e3ac55f2986d93e7a83b199d9254ad95/","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"k7iyjh"},
+    {"url":"https://calisphere.org/item/9a7013bf8ccee4934b4789248d2f16d7","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"n3vck5"},
+    {"url":"https://calisphere.org/item/33d419fe3c2fb6e5c76009d048df117c","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"6w8cn7"},
+    {"url":"https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"dejsfw"},
+    {"url":"https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"lkneon"},
+    {"url":"https://calisphere.org/item/287e0f96d086919e57c58c9cb1cb8ab2","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"avsazc"},
+    {"url":"https://calisphere.org/item/a7f4387ffed8c8052efd7972dba545ed","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"ifycw0"},
+    {"url":"https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"btnb7j"},
+    {"url":"https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"qrd8cd"},
+    {"url":"https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"ymfz5l"},
+    {"url":"https://wellcomecollection.org/works/tjxuhj2w","status":200,"sourcePageReachable":true,"photographRendered":true,"screenshot":"6jwl7d"},
+    {"url":"https://wellcomecollection.org/works/cvestqrm","status":429,"sourcePageReachable":false,"photographRendered":false,"screenshot":"9na0sj"},
+    {"url":"https://peir.path.uab.edu/library/picture.php?/30672/categories","sourcePageReachable":true,"photographRendered":true,"screenshot":"peir_picture_04Wp"}
+  ]
+}

@@ -1021,20 +1021,92 @@
   {
     "assetId": "asset-atlas-anterior-position",
     "title": "Anterior anatomical position",
-    "status": "unresolved",
-    "references": [],
-    "reason": "No actual human photograph in the standardized anterior anatomical stance, with palms forward and thumbs lateral, was visually verified. Search surfaced mostly schematic position illustrations.",
-    "coverageKind": "incomplete",
-    "finalReview": "No actual human photograph in the standardized anterior anatomical stance, with palms forward and thumbs lateral, was visually verified. Search surfaced mostly schematic position illustrations."
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+        "title": "Adult human body, anterior and posterior anatomical position",
+        "source": "Wikimedia Commons",
+        "sourceName": "Wikimedia Commons",
+        "creator": "City Studios, Stockholm; uploaded by Mikael Häggström; derivative assembly by Lamilli",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "matches": "Actual adult human photographs show upright anterior and posterior surface anatomy, arms slightly abducted and palms anterior.",
+        "viewLimitations": "Two adult models, hair removed and photographs retouched; not internal anatomy. Front views are above, back views below. The page separately warns about personality rights.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "reproductionRights": "Commons states CC0 1.0 and a separate personality-rights warning; the caption records model consent for the stated publication. Only the original page is linked, with no reproduction.",
+        "subject": {
+          "en": "Anterior anatomical position; upper photographs",
+          "es": "Posición anatómica anterior; fotografías superiores"
+        },
+        "linkingTerms": "Ordinary outbound source-page link with attribution; no photograph copying, embedding, hotlinking or reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Main-agent public-page screenshot Human_Body_EMXj showed all four actual adult photographs; Human_XFVD separately showed the larger anterior photographs. Source caption explicitly identifies photographed adult humans.",
+          "checkedAt": "2026-11-07T02:21:24.005492+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T02:21:24.005492+00:00",
+          "evidencePath": "research/boneefied-photo-references/evidence/expansion-epithelium-body.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+          "redirectNotes": "Public original source page rendered without login or TLS interstitial. Any overview tile failures are disclosed in the review and bilingual labels."
+        },
+        "relationship": "relevant-example"
+      }
+    ],
+    "reason": "Actual photographed adult humans demonstrate anterior anatomical position. Different models, retouching and upper/lower source layout are disclosed.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Actual photographed adult humans demonstrate anterior anatomical position. Different models, retouching and upper/lower source layout are disclosed.",
+    "previousAssessment": {
+      "status": "unresolved",
+      "reason": "No actual human photograph in the standardized anterior anatomical stance, with palms forward and thumbs lateral, was visually verified. Search surfaced mostly schematic position illustrations.",
+      "references": []
+    }
   },
   {
     "assetId": "asset-atlas-posterior-position",
     "title": "Posterior anatomical position",
-    "status": "unresolved",
-    "references": [],
-    "reason": "No matching standardized posterior-view human photograph was verified; available anatomical-position results were schematic.",
-    "coverageKind": "incomplete",
-    "finalReview": "No matching standardized posterior-view human photograph was verified; available anatomical-position results were schematic."
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+        "title": "Adult human body, anterior and posterior anatomical position",
+        "source": "Wikimedia Commons",
+        "sourceName": "Wikimedia Commons",
+        "creator": "City Studios, Stockholm; uploaded by Mikael Häggström; derivative assembly by Lamilli",
+        "mediaType": "gross-photo",
+        "organism": "human",
+        "matches": "Actual adult human photographs show upright anterior and posterior surface anatomy, arms slightly abducted and palms anterior.",
+        "viewLimitations": "Two adult models, hair removed and photographs retouched; not internal anatomy. Front views are above, back views below. The page separately warns about personality rights.",
+        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "reproductionRights": "Commons states CC0 1.0 and a separate personality-rights warning; the caption records model consent for the stated publication. Only the original page is linked, with no reproduction.",
+        "subject": {
+          "en": "Posterior anatomical position; lower photographs",
+          "es": "Posición anatómica posterior; fotografías inferiores"
+        },
+        "linkingTerms": "Ordinary outbound source-page link with attribution; no photograph copying, embedding, hotlinking or reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Main-agent public-page screenshot Human_Body_EMXj showed all four actual adult photographs; Human_XFVD separately showed the larger anterior photographs. Source caption explicitly identifies photographed adult humans.",
+          "checkedAt": "2026-11-07T02:21:24.005492+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T02:21:24.005492+00:00",
+          "evidencePath": "research/boneefied-photo-references/evidence/expansion-epithelium-body.md",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+          "redirectNotes": "Public original source page rendered without login or TLS interstitial. Any overview tile failures are disclosed in the review and bilingual labels."
+        },
+        "relationship": "relevant-example"
+      }
+    ],
+    "reason": "Actual posterior photographs of the same standing adults demonstrate posterior anatomical position. The source's lower photographs, retouching and donor differences are disclosed.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Actual posterior photographs of the same standing adults demonstrate posterior anatomical position. The source's lower photographs, retouching and donor differences are disclosed.",
+    "previousAssessment": {
+      "status": "unresolved",
+      "reason": "No matching standardized posterior-view human photograph was verified; available anatomical-position results were schematic.",
+      "references": []
+    }
   },
   {
     "assetId": "asset-atlas-body-planes",
@@ -5874,7 +5946,7 @@
   {
     "assetId": "asset-bvis04-epithelia-simple",
     "title": "Simple epithelia: squamous, cuboidal, columnar (schematic)",
-    "status": "partial",
+    "status": "verified",
     "references": [
       {
         "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
@@ -5884,75 +5956,25 @@
         "mediaType": "micrograph",
         "organism": "human",
         "relationship": "relevant-example",
-        "matches": "Direct human photomicrograph example of the simple squamous panel.",
-        "viewLimitations": "Only squamous epithelium; does not cover the cuboidal or columnar panels.",
+        "matches": "The file caption identifies human simple squamous epithelium and the source page displays the tissue photomicrograph.",
+        "viewLimitations": "This specimen image illustrates a field of simple squamous epithelium, not a comprehensive comparison of epithelial types.",
         "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
-        "linkingTerms": "Commons page states attribution terms; source-page linking is distinct from image copying.",
+        "linkingTerms": "Commons page states attribution terms for the file; outbound linking to the source page is distinct from reproducing the image.",
         "reproductionRights": "CC BY 4.0 is stated on the file page.",
         "verification": {
           "pageOpened": true,
           "captionChecked": true,
           "imageVisuallyInspected": true,
-          "visualEvidence": "Source page, caption and displayed image checked against saved photographic evidence; image observed as human Direct human photomicrograph example of the simple squamous panel.. Anatomy outside this specific view is not inferred.",
+          "visualEvidence": "Source page, caption and displayed image checked against saved photographic evidence; image observed as human The file caption identifies human simple squamous epithelium and the source page displays the tissue photomicrograph.. Anatomy outside this specific view is not inferred.",
           "checkedAt": "2026-11-06",
-          "evidencePath": "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-epithelia-simple-file-human-simple-squamous-epithelium-tiss.md",
+          "evidencePath": "research/boneefied-photo-references/evidence/final-micro-asset-commons-simple-squamous-epithelium-file-human-simple-squamous-epithelium-tiss.md",
           "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
-          "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
           "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
         },
         "subject": {
-          "en": "human simple squamous panel only",
-          "es": "solo panel de epitelio plano simple humano"
-        }
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
-        "title": "File:Epithelial Tissues Simple Cuboidal Epithelium (41681552782).jpg",
-        "source": "Wikimedia Commons",
-        "creator": "Berkshire Community College Bioscience Image Library",
-        "mediaType": "micrograph",
-        "organism": "unconfirmed",
-        "relationship": "relevant-example",
-        "matches": "Existing specimen record names a simple cuboidal epithelium example.",
-        "viewLimitations": "Current request was rate-limited; no image-level confirmation or human identification.",
-        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "linkingTerms": "The existing project record states CC0; this page was not reached in the current check. Link only.",
-        "reproductionRights": "Existing specimen record states CC0 1.0; current page inspection was rate-limited.",
-        "verification": {
-          "pageOpened": false,
-          "captionChecked": false,
-          "imageVisuallyInspected": false,
-          "visualEvidence": "No current visual inspection; main-agent review needed.",
-          "checkedAt": "2026-11-06",
-          "evidencePath": "research/boneefied-photo-references/micro-evidence.md",
-          "finalUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
-          "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
-          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
-        }
-      },
-      {
-        "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
-        "title": "File:Epithelial Tissues Simple Columnar Epithelium (27854452618).jpg",
-        "source": "Wikimedia Commons",
-        "creator": "Berkshire Community College Bioscience Image Library",
-        "mediaType": "micrograph",
-        "organism": "unconfirmed",
-        "relationship": "relevant-example",
-        "matches": "Photomicrograph shows simple columnar epithelium of mammalian gut.",
-        "viewLimitations": "Mammalian gut is not explicitly human; does not cover the other simple-epithelium panels.",
-        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "linkingTerms": "Commons page provides a CC0 file record; ordinary source-page link only.",
-        "reproductionRights": "CC0 1.0 is stated on the file page.",
-        "verification": {
-          "pageOpened": true,
-          "captionChecked": true,
-          "imageVisuallyInspected": true,
-          "visualEvidence": "Actual gut micrograph and source description checked: research/boneefied-photo-references/micro-visual-simple-columnar.png.",
-          "checkedAt": "2026-11-06",
-          "evidencePath": "research/boneefied-photo-references/micro-05-simple-columnar.md",
-          "finalUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
-          "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
-          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          "en": "Human simple squamous epithelium; complementary specimen",
+          "es": "Epitelio plano simple humano; espécimen complementario"
         }
       },
       {
@@ -5980,75 +6002,315 @@
           "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00"
         },
         "subject": {
-          "en": "Simple cuboidal epithelium: human renal tubules",
-          "es": "Epitelio cúbico simple: túbulos renales humanos"
+          "en": "Human simple cuboidal epithelium; kidney specimen",
+          "es": "Epitelio cúbico simple humano; espécimen renal"
         }
-      }
-    ],
-    "reason": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved.",
-    "coverageKind": "relevant-example",
-    "finalReview": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved.",
-    "completionPassEvidence": "research/boneefied-photo-references/completion-pass.json"
-  },
-  {
-    "assetId": "asset-bvis04-epithelia-stratified",
-    "title": "Pseudostratified and stratified squamous epithelia (schematic)",
-    "status": "partial",
-    "references": [
+      },
       {
-        "url": "https://commons.wikimedia.org/wiki/File:A_classic_view_of_non-keratinized_stratified_squamous_epithelium.jpg",
-        "title": "File:A classic view of non-keratinized stratified squamous epithelium.jpg",
-        "source": "Wikimedia Commons",
-        "creator": "Photograper09",
+        "url": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+        "title": "Ileum, Human 1 — annotated high-power epithelial micrographs",
+        "source": "University of Basel Histology",
+        "sourceName": "University of Basel",
+        "creator": "University of Basel; individual photographer not separately named",
         "mediaType": "micrograph",
-        "organism": "unconfirmed",
+        "organism": "human",
         "relationship": "relevant-example",
-        "matches": "Displayed histology image and caption identify non-keratinized stratified squamous epithelium.",
-        "viewLimitations": "One epithelial type only; it does not cover pseudostratified, goblet-cell, ciliated, or keratinized skin panels.",
-        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "linkingTerms": "Commons file page states attribution/share-alike terms; outbound linking is not image reproduction.",
-        "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+        "matches": "The inspected high-power static human ileum photograph resolves tall single-layered enterocytes with dark nuclei, apical brush border and interspersed goblet cells.",
+        "viewLimitations": "Different specimen and H&E preparation, not the identical original photograph. Use the static annotated micrographs below the overview viewer; the overview had tile-loading errors. Individual microvilli are not resolved as separate ultrastructural projections.",
+        "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+        "linkingTerms": "Ordinary outbound link to the public University of Basel source page; retain its attribution. No photograph is copied, embedded or hotlinked in Boneefied.",
+        "reproductionRights": "The source License section credits University of Basel; no reproduction permission is asserted or exercised.",
         "verification": {
           "pageOpened": true,
           "captionChecked": true,
           "imageVisuallyInspected": true,
-          "visualEvidence": "Image and source caption checked: research/boneefied-photo-references/micro-visual-stratified-squamous.png.",
-          "checkedAt": "2026-11-06",
-          "evidencePath": "research/boneefied-photo-references/micro-07-stratified-squamous.md",
-          "finalUrl": "https://commons.wikimedia.org/wiki/File:A_classic_view_of_non-keratinized_stratified_squamous_epithelium.jpg",
-          "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
-          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
-        }
-      },
-      {
-        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
-        "title": "Duke Histology - Skin",
-        "source": "Duke University Medical School Histology Learning Resources",
-        "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
-        "mediaType": "micrograph",
-        "organism": "human",
-        "relationship": "relevant-example",
-        "matches": "Human skin slide descriptions include keratinized stratified squamous epidermis and skin strata.",
-        "viewLimitations": "Photomicrograph itself is behind a slide viewer and was not visually inspected; pseudostratified respiratory epithelium remains unmatched.",
-        "termsUrl": "",
-        "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
-        "reproductionRights": "No image-copying permission established.",
-        "verification": {
-          "pageOpened": true,
-          "captionChecked": true,
-          "imageVisuallyInspected": false,
-          "visualEvidence": "The captured page shows text descriptions, not slide images: research/boneefied-photo-references/micro-visual-duke-skin.png.",
-          "checkedAt": "2026-11-06",
-          "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md",
-          "finalUrl": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
-          "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
-          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          "visualEvidence": "Main agent viewed browser screenshot 2ja2ob: actual high-power epithelium, columnar cells, nuclei, goblet cells and brush border visible. Browser verified all eight static images loaded. Rendered specimen metadata explicitly states human ileum, H&E.",
+          "checkedAt": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/basel-human-columnar.md",
+          "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/verdauungsorgane-magen-darm-trakt-anatomische-mikroskopie-55/ileum-human-1-359",
+          "redirectNotes": "Certificate-validated GET returned HTTP 200 HTML at the supplied URL. Actual browser source page and static micrographs rendered without a login wall or TLS interstitial; overview viewer tile errors are disclosed.",
+          "reviewedAtFinalCheck": "2026-11-07"
+        },
+        "subject": {
+          "en": "Human simple columnar epithelium; static photos below viewer",
+          "es": "Epitelio cilíndrico simple humano; fotos estáticas bajo el visor"
         }
       }
     ],
-    "reason": "Final comparison: checked nonkeratinized-stratified image has no confirmed human organism, while Duke's human skin slides were not visually inspected. Pseudostratified/ciliated and keratinized human panels remain unsupported; no complete counterpart.",
-    "coverageKind": "incomplete",
-    "finalReview": "Final comparison: checked nonkeratinized-stratified image has no confirmed human organism, while Duke's human skin slides were not visually inspected. Pseudostratified/ciliated and keratinized human panels remain unsupported; no complete counterpart."
+    "reason": "Three separately inspected human specimens supply squamous, cuboidal and columnar epithelial forms and their tissue interfaces. Different sites/stains/donors and irregular cells are expected; routine light micrographs do not resolve basal-lamina ultrastructure.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Three separately inspected human specimens supply squamous, cuboidal and columnar epithelial forms and their tissue interfaces. Different sites/stains/donors and irregular cells are expected; routine light micrographs do not resolve basal-lamina ultrastructure.",
+    "completionPassEvidence": "research/boneefied-photo-references/completion-pass.json",
+    "previousAssessment": {
+      "status": "partial",
+      "reason": "Partial: already verified human squamous and cuboidal epithelial examples now support two of the three tissue types. The inspected low-power human ileum overview does not resolve individual columnar cells, and a basement membrane is not separately resolved across the source set. No complete three-type counterpart is approved.",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+          "title": "File:Human Simple Squamous Epithelium Tissue.jpg",
+          "source": "Wikimedia Commons",
+          "creator": "Naz Amann",
+          "mediaType": "micrograph",
+          "organism": "human",
+          "relationship": "relevant-example",
+          "matches": "Direct human photomicrograph example of the simple squamous panel.",
+          "viewLimitations": "Only squamous epithelium; does not cover the cuboidal or columnar panels.",
+          "termsUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "linkingTerms": "Commons page states attribution terms; source-page linking is distinct from image copying.",
+          "reproductionRights": "CC BY 4.0 is stated on the file page.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Source page, caption and displayed image checked against saved photographic evidence; image observed as human Direct human photomicrograph example of the simple squamous panel.. Anatomy outside this specific view is not inferred.",
+            "checkedAt": "2026-11-06",
+            "evidencePath": "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-epithelia-simple-file-human-simple-squamous-epithelium-tiss.md",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+            "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
+            "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          },
+          "subject": {
+            "en": "human simple squamous panel only",
+            "es": "solo panel de epitelio plano simple humano"
+          }
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+          "title": "File:Epithelial Tissues Simple Cuboidal Epithelium (41681552782).jpg",
+          "source": "Wikimedia Commons",
+          "creator": "Berkshire Community College Bioscience Image Library",
+          "mediaType": "micrograph",
+          "organism": "unconfirmed",
+          "relationship": "relevant-example",
+          "matches": "Existing specimen record names a simple cuboidal epithelium example.",
+          "viewLimitations": "Current request was rate-limited; no image-level confirmation or human identification.",
+          "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "linkingTerms": "The existing project record states CC0; this page was not reached in the current check. Link only.",
+          "reproductionRights": "Existing specimen record states CC0 1.0; current page inspection was rate-limited.",
+          "verification": {
+            "pageOpened": false,
+            "captionChecked": false,
+            "imageVisuallyInspected": false,
+            "visualEvidence": "No current visual inspection; main-agent review needed.",
+            "checkedAt": "2026-11-06",
+            "evidencePath": "research/boneefied-photo-references/micro-evidence.md",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+            "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
+            "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          }
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+          "title": "File:Epithelial Tissues Simple Columnar Epithelium (27854452618).jpg",
+          "source": "Wikimedia Commons",
+          "creator": "Berkshire Community College Bioscience Image Library",
+          "mediaType": "micrograph",
+          "organism": "unconfirmed",
+          "relationship": "relevant-example",
+          "matches": "Photomicrograph shows simple columnar epithelium of mammalian gut.",
+          "viewLimitations": "Mammalian gut is not explicitly human; does not cover the other simple-epithelium panels.",
+          "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "linkingTerms": "Commons page provides a CC0 file record; ordinary source-page link only.",
+          "reproductionRights": "CC0 1.0 is stated on the file page.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Actual gut micrograph and source description checked: research/boneefied-photo-references/micro-visual-simple-columnar.png.",
+            "checkedAt": "2026-11-06",
+            "evidencePath": "research/boneefied-photo-references/micro-05-simple-columnar.md",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+            "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
+            "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          }
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "title": "Human kidney cortex — original specimen photograph",
+          "source": "Wikimedia Commons; author's archive",
+          "creator": "Doc. RNDr. Josef Reischig, CSc.",
+          "mediaType": "micrograph",
+          "organism": "human",
+          "relationship": "relevant-example",
+          "matches": "Human renal tubules lined by cuboidal epithelial cells, with rounded nuclei and lumina, visible in the actual source-page photograph.",
+          "viewLimitations": "A renal-cortex field also containing a glomerulus and vessels, not an isolated idealized epithelial strip or the identical original photograph.",
+          "termsUrl": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+          "linkingTerms": "Ordinary outbound source-page link; retain the named creator and consult the file-specific license. Linking does not exercise reproduction rights.",
+          "reproductionRights": "The source page declares CC BY-SA 3.0 Unported. No copying or embedding is performed by this command.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "The public Commons source page was opened on 2026-11-07. Its actual 600x human renal-cortex photograph visibly resolves cuboidal tubular epithelium and round nuclei around tubular lumina. Caption identifies human kidney cortex. No photograph was downloaded or retained in the project.",
+            "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+            "evidencePath": "research/boneefied-photo-references/additional-reviewed-sources.json",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+            "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+            "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00"
+          },
+          "subject": {
+            "en": "Simple cuboidal epithelium: human renal tubules",
+            "es": "Epitelio cúbico simple: túbulos renales humanos"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "assetId": "asset-bvis04-epithelia-stratified",
+    "title": "Pseudostratified and stratified squamous epithelia (schematic)",
+    "status": "verified",
+    "references": [
+      {
+        "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/respiratory-epithelium-trachea-220",
+        "title": "Human pseudostratified ciliated columnar epithelium",
+        "source": "University of Basel Histology",
+        "sourceName": "University of Basel",
+        "creator": "University of Basel; individual photographer not separately named",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "matches": "Human tracheal micrographs show pseudostratification, cilia, goblet cells and the epithelial/connective-tissue interface.",
+        "viewLimitations": "Azan-stained trachea, not the schematic's evenly spaced cells. Use intact static fields below the partially failing overview viewer; damaged epithelium is separately labeled.",
+        "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/respiratory-epithelium-trachea-220",
+        "reproductionRights": "Source License section identifies University of Basel. No reproduction permission is asserted or exercised.",
+        "subject": {
+          "en": "Human ciliated epithelium; static photos below viewer",
+          "es": "Epitelio ciliado humano; fotos estáticas bajo el visor"
+        },
+        "linkingTerms": "Ordinary outbound source-page link with attribution; no photograph copying, embedding, hotlinking or reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Main agent inspected gn0mtg, an actual high-power micrograph showing cilia, nuclei at different heights and goblet cells. Browser also inspected lri7r7 and wf0sqx; all four static images loaded.",
+          "checkedAt": "2026-11-07T02:21:24.005492+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T02:21:24.005492+00:00",
+          "evidencePath": "research/boneefied-photo-references/evidence/expansion-epithelium-body.md",
+          "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/respiratory-epithelium-trachea-220",
+          "redirectNotes": "Public original source page rendered without login or TLS interstitial. Any overview tile failures are disclosed in the review and bilingual labels."
+        },
+        "relationship": "relevant-example"
+      },
+      {
+        "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/stratified-keratinized-squamous-epithelium-finger-skin-219",
+        "title": "Human keratinized stratified squamous epithelium",
+        "source": "University of Basel Histology",
+        "sourceName": "University of Basel",
+        "creator": "University of Basel; individual photographer not separately named",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "matches": "Human finger-skin photographs show the layered epidermis, thick superficial keratin and epidermal/dermal boundary.",
+        "viewLimitations": "Human thick finger skin, H&E; not proof of every specialized epidermal cell. Use the static photographs below the partially failing overview viewer.",
+        "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/stratified-keratinized-squamous-epithelium-finger-skin-219",
+        "reproductionRights": "Source License section identifies University of Basel. No reproduction permission is asserted or exercised.",
+        "subject": {
+          "en": "Human keratinized epithelium; static photos below viewer",
+          "es": "Epitelio humano queratinizado; fotos estáticas bajo el visor"
+        },
+        "linkingTerms": "Ordinary outbound source-page link with attribution; no photograph copying, embedding, hotlinking or reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Main agent inspected photograph 5x7nau; browser inspected vjjkqr and fsyvac. All three static photographs loaded. Epidermis and surface keratin were actually seen.",
+          "checkedAt": "2026-11-07T02:21:24.005492+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T02:21:24.005492+00:00",
+          "evidencePath": "research/boneefied-photo-references/evidence/expansion-epithelium-body.md",
+          "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/stratified-keratinized-squamous-epithelium-finger-skin-219",
+          "redirectNotes": "Public original source page rendered without login or TLS interstitial. Any overview tile failures are disclosed in the review and bilingual labels."
+        },
+        "relationship": "relevant-example"
+      },
+      {
+        "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/non-keratinized-stratified-squamous-epithelium-esophagus-218",
+        "title": "Human nonkeratinized stratified squamous epithelium",
+        "source": "University of Basel Histology",
+        "sourceName": "University of Basel",
+        "creator": "University of Basel; individual photographer not separately named",
+        "mediaType": "micrograph",
+        "organism": "human",
+        "matches": "Human esophageal photographs show basal/intermediate layers and flattened, still-nucleated superficial cells without surface keratin.",
+        "viewLimitations": "H&E child esophagus, not the idealized drawing's regular cells. Use the static photographs below the partially failing overview viewer.",
+        "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/non-keratinized-stratified-squamous-epithelium-esophagus-218",
+        "reproductionRights": "Source License section identifies University of Basel. No reproduction permission is asserted or exercised.",
+        "subject": {
+          "en": "Human nonkeratinized epithelium; static photos below viewer",
+          "es": "Epitelio humano no queratinizado; fotos estáticas bajo el visor"
+        },
+        "linkingTerms": "Ordinary outbound source-page link with attribution; no photograph copying, embedding, hotlinking or reproduction.",
+        "verification": {
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "Main agent inspected actual high-power photograph s2zv3t; browser also inspected 50uzjb, k6o3vz and 16t4o8. All four static micrographs loaded; superficial nuclei and epithelial layers were seen.",
+          "checkedAt": "2026-11-07T02:21:24.005492+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T02:21:24.005492+00:00",
+          "evidencePath": "research/boneefied-photo-references/evidence/expansion-epithelium-body.md",
+          "finalUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/non-keratinized-stratified-squamous-epithelium-esophagus-218",
+          "redirectNotes": "Public original source page rendered without login or TLS interstitial. Any overview tile failures are disclosed in the review and bilingual labels."
+        },
+        "relationship": "relevant-example"
+      }
+    ],
+    "reason": "Individually inspected human trachea, finger skin and esophagus micrographs cover all three depicted epithelial forms, including cilia/goblet cells, superficial keratin and nonkeratinized nucleated surface cells. Complementary sites/stains and static-photo access are disclosed.",
+    "coverageKind": "relevant-example",
+    "finalReview": "Individually inspected human trachea, finger skin and esophagus micrographs cover all three depicted epithelial forms, including cilia/goblet cells, superficial keratin and nonkeratinized nucleated surface cells. Complementary sites/stains and static-photo access are disclosed.",
+    "previousAssessment": {
+      "status": "partial",
+      "reason": "Final comparison: checked nonkeratinized-stratified image has no confirmed human organism, while Duke's human skin slides were not visually inspected. Pseudostratified/ciliated and keratinized human panels remain unsupported; no complete counterpart.",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:A_classic_view_of_non-keratinized_stratified_squamous_epithelium.jpg",
+          "title": "File:A classic view of non-keratinized stratified squamous epithelium.jpg",
+          "source": "Wikimedia Commons",
+          "creator": "Photograper09",
+          "mediaType": "micrograph",
+          "organism": "unconfirmed",
+          "relationship": "relevant-example",
+          "matches": "Displayed histology image and caption identify non-keratinized stratified squamous epithelium.",
+          "viewLimitations": "One epithelial type only; it does not cover pseudostratified, goblet-cell, ciliated, or keratinized skin panels.",
+          "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "linkingTerms": "Commons file page states attribution/share-alike terms; outbound linking is not image reproduction.",
+          "reproductionRights": "CC BY-SA 4.0 is stated on the file page.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Image and source caption checked: research/boneefied-photo-references/micro-visual-stratified-squamous.png.",
+            "checkedAt": "2026-11-06",
+            "evidencePath": "research/boneefied-photo-references/micro-07-stratified-squamous.md",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:A_classic_view_of_non-keratinized_stratified_squamous_epithelium.jpg",
+            "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
+            "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          }
+        },
+        {
+          "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+          "title": "Duke Histology - Skin",
+          "source": "Duke University Medical School Histology Learning Resources",
+          "creator": "Individual slide creators not established; collection page credits Duke University Medical School",
+          "mediaType": "micrograph",
+          "organism": "human",
+          "relationship": "relevant-example",
+          "matches": "Human skin slide descriptions include keratinized stratified squamous epidermis and skin strata.",
+          "viewLimitations": "Photomicrograph itself is behind a slide viewer and was not visually inspected; pseudostratified respiratory epithelium remains unmatched.",
+          "termsUrl": "",
+          "linkingTerms": "No separate linking restriction stated; ordinary outbound link only.",
+          "reproductionRights": "No image-copying permission established.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": false,
+            "visualEvidence": "The captured page shows text descriptions, not slide images: research/boneefied-photo-references/micro-visual-duke-skin.png.",
+            "checkedAt": "2026-11-06",
+            "evidencePath": "research/boneefied-photo-references/micro-16-duke-skin.md",
+            "finalUrl": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+            "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
+            "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          }
+        }
+      ]
+    }
   },
   {
     "assetId": "asset-bvis04-epithelia-other-stratified",
@@ -6256,33 +6518,33 @@
         }
       },
       {
-        "url": "https://histologylab.ctl.columbia.edu/slides/slide66/",
-        "title": "Uterus. Human. Progravid. H&E. — slide 66",
-        "source": "Columbia University Department of Pathology and Cell Biology",
-        "sourceName": "Columbia Histology",
-        "creator": "Columbia University Department of Pathology and Cell Biology; individual slide photographer not separately named",
+        "url": "https://www.digitalscope.org/ViewerUI/?SlideId=a4c22a3f-4620-40fc-9ffb-7c6a72143467",
+        "title": "0041_I: human uterine myometrium, smooth muscle at 20X",
+        "source": "Duke Histology / DigitalScope",
+        "sourceName": "Duke Histology / DigitalScope",
+        "creator": "Institutional histology specimen; individual photographer not separately established",
         "mediaType": "micrograph",
+        "matches": "Actual human myometrial smooth-muscle bundles with elongated/fusiform nuclei, directly inspected at 20X, away from endometrial glands.",
+        "viewLimitations": "Open human uterus 0041_I and zoom to 20X in the muscle-rich upper/intermediate wall. Initial overview includes endometrial glands; do not mistake those for muscle. No calibrated pixel scale asserted.",
+        "termsUrl": "https://histology.oit.duke.edu/NormalBody/FemaleRepro/FemaleRepro.html",
+        "reproductionRights": "Original institutional specimen viewer linked, not copied; no reproduction licence asserted.",
+        "subject": {
+          "en": "Human smooth muscle, myometrium; zoom to 20X away from glands",
+          "es": "Músculo liso del miometrio humano; ampliar a 20X lejos de las glándulas"
+        },
         "organism": "human",
         "relationship": "relevant-example",
-        "matches": "The human uterine section shows a broad myometrial smooth-muscle region. The linked laboratory commentary specifically describes fascicles arranged in different planes and distinguishes the myometrium from endometrium.",
-        "viewLimitations": "A real organ section requiring the slide viewer's zoom, not isolated idealized spindle cells. Different section planes cross smooth-muscle fascicles; the bottom glandular region is endometrium, not muscle.",
-        "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "linkingTerms": "Public university slide page, ordinary outbound link. Visible footer identifies content CC BY-SA 4.0 separately from GPLv3 viewer code. No image or viewer is embedded.",
-        "reproductionRights": "Page footer states content CC BY-SA 4.0. The slide itself credits Columbia University Department of Pathology and Cell Biology. No reproduction is performed.",
-        "subject": {
-          "en": "Smooth muscle: human uterine myometrium",
-          "es": "Músculo liso: miometrio uterino humano"
-        },
+        "linkingTerms": "Ordinary original-source-page link only. No source media copied or embedded.",
         "verification": {
           "pageOpened": true,
           "captionChecked": true,
           "imageVisuallyInspected": true,
-          "visualEvidence": "Actual rendered slide 66 inspected: caption explicitly reads Uterus. Human. Progravid. H&E.; large pink myometrium and adjacent glandular endometrium are visible. Copyright and content licence are visible. Temporary screenshot: /tmp/replit-screenshots/histologylab_ctl_columbia_edu_slides_slide66_iRSR.png. Commentary also opened at https://histologylab.ctl.columbia.edu/lab06/smooth-muscle.",
+          "visualEvidence": "Original grouped inspection establishes human specimen 0041_I. New browser review went from overview 80uwcl to actual 20X muscle field z9zjzm; interlacing pink bundles and numerous elongated nuclei were visible, without endometrial gland profiles. Main agent also directly viewed z9zjzm.",
           "checkedAt": "2026-11-07",
-          "evidencePath": "research/boneefied-photo-references/additional-reviewed-sources.json",
-          "finalUrl": "https://histologylab.ctl.columbia.edu/slides/slide66/",
-          "redirectNotes": "Public slide viewer rendered without login in source-inspection browser; command-line TLS validation failed and is recorded as a delivery limitation pending separate confirmation.",
-          "reviewedAtFinalCheck": "2026-11-07"
+          "reviewedAtFinalCheck": "2026-11-07",
+          "evidencePath": "research/boneefied-photo-references/evidence/companion-source-reviews.md",
+          "finalUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=a4c22a3f-4620-40fc-9ffb-7c6a72143467",
+          "redirectNotes": "Original public slide viewer inspected at actual 20X. Transient viewer state parameter omitted."
         }
       }
     ],
@@ -6456,7 +6718,42 @@
           }
         }
       ]
-    }
+    },
+    "previousSourceReferences": [
+      {
+        "reference": {
+          "url": "https://histologylab.ctl.columbia.edu/slides/slide66/",
+          "title": "Uterus. Human. Progravid. H&E. — slide 66",
+          "source": "Columbia University Department of Pathology and Cell Biology",
+          "sourceName": "Columbia Histology",
+          "creator": "Columbia University Department of Pathology and Cell Biology; individual slide photographer not separately named",
+          "mediaType": "micrograph",
+          "organism": "human",
+          "relationship": "relevant-example",
+          "matches": "The human uterine section shows a broad myometrial smooth-muscle region. The linked laboratory commentary specifically describes fascicles arranged in different planes and distinguishes the myometrium from endometrium.",
+          "viewLimitations": "A real organ section requiring the slide viewer's zoom, not isolated idealized spindle cells. Different section planes cross smooth-muscle fascicles; the bottom glandular region is endometrium, not muscle.",
+          "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "linkingTerms": "Public university slide page, ordinary outbound link. Visible footer identifies content CC BY-SA 4.0 separately from GPLv3 viewer code. No image or viewer is embedded.",
+          "reproductionRights": "Page footer states content CC BY-SA 4.0. The slide itself credits Columbia University Department of Pathology and Cell Biology. No reproduction is performed.",
+          "subject": {
+            "en": "Smooth muscle: human uterine myometrium",
+            "es": "Músculo liso: miometrio uterino humano"
+          },
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Actual rendered slide 66 inspected: caption explicitly reads Uterus. Human. Progravid. H&E.; large pink myometrium and adjacent glandular endometrium are visible. Copyright and content licence are visible. Temporary screenshot: /tmp/replit-screenshots/histologylab_ctl_columbia_edu_slides_slide66_iRSR.png. Commentary also opened at https://histologylab.ctl.columbia.edu/lab06/smooth-muscle.",
+            "checkedAt": "2026-11-07",
+            "evidencePath": "research/boneefied-photo-references/additional-reviewed-sources.json",
+            "finalUrl": "https://histologylab.ctl.columbia.edu/slides/slide66/",
+            "redirectNotes": "Public slide viewer rendered without login in source-inspection browser; command-line TLS validation failed and is recorded as a delivery limitation pending separate confirmation.",
+            "reviewedAtFinalCheck": "2026-11-07"
+          }
+        },
+        "replacementReason": "Old page's TLS chain could not be confirmed by the link checker. This does not assert global unavailability. New original human myometrium was actually inspected at 20X."
+      }
+    ]
   },
   {
     "assetId": "asset-bvis04-nervous-tissue",
@@ -6592,7 +6889,9 @@
         "linkingTerms": "Ordinary outbound link to the public institutional source page with attribution; no photograph copying, embedding or hotlinking.",
         "reproductionRights": "Source License section credits University of Basel; no reproduction permission is asserted or exercised.",
         "verification": {
-          "pageOpened": true, "captionChecked": true, "imageVisuallyInspected": true,
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
           "visualEvidence": "Main agent inspected screenshots gh65a6, 1fzfhx, 3emksr, 68hdil and 0ylx63, confirming all five mature leukocyte types, erythrocytes and platelets in actual micrographs. The comparison table is not used as photographic proof.",
           "checkedAt": "2026-11-07",
           "evidencePath": "research/boneefied-photo-references/evidence/basel-human-blood.md",
@@ -6692,7 +6991,9 @@
         "linkingTerms": "Ordinary outbound link to the public institutional source page with attribution; no photograph copying, embedding or hotlinking.",
         "reproductionRights": "Source License section credits University of Basel; no reproduction permission is asserted or exercised.",
         "verification": {
-          "pageOpened": true, "captionChecked": true, "imageVisuallyInspected": true,
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
           "visualEvidence": "Main agent inspected screenshots gh65a6, 1fzfhx, 3emksr, 68hdil and 0ylx63: segmented neutrophils, indented monocyte, dense-nucleus lymphocyte, granular eosinophil and coarse-granulated basophil are visible in actual photographed fields.",
           "checkedAt": "2026-11-07",
           "evidencePath": "research/boneefied-photo-references/evidence/basel-human-blood.md",

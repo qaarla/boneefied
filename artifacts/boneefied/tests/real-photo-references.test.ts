@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import test from 'node:test';
 import { canShowPhotoReferences, photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '../content/real-photo-references.ts';
 
@@ -7,14 +7,59 @@ const research = new URL('../../../research/boneefied-photo-references/', import
 const records = JSON.parse(readFileSync(new URL('references.json', research), 'utf8'));
 const read = (path: string) => readFileSync(new URL(path, import.meta.url), 'utf8');
 
-test('the runtime allowlist equals every verified research mapping, including exact pages and media', () => {
+test('all 164 inventory illustrations have a named photographic companion without claiming all comparisons complete', () => {
+  assert.equal(records.length, 164);
+  assert.equal(new Set(records.map((row: { assetId: string }) => row.assetId)).size, 164);
+  for (const record of records) {
+    assert.ok(photoReferencesForAsset(record.assetId).length > 0, record.assetId);
+  }
+  const coverage = JSON.parse(readFileSync(new URL('photo-companion-coverage.json', research), 'utf8'));
+  assert.equal(coverage.illustrationsWithInspectedPhotographs, 164);
+  assert.equal(coverage.allIllustrationsHaveCompanions, true);
+  assert.equal(coverage.buildAuthorized, false);
+  assert.equal(coverage.allComparisonsComplete,
+    records.every((row: { status: string }) => row.status === 'verified'));
+});
+
+test('selected-structure companions require actual human-image inspection evidence and original page links', () => {
+  const companions = JSON.parse(readFileSync(new URL('photo-companions.json', research), 'utf8'));
+  for (const row of companions) {
+    assert.equal(row.completeComparison, false);
+    assert.equal(row.coverage, 'selected-structures');
+    for (const ref of row.references) {
+      assert.equal(ref.organism, 'human');
+      assert.equal(ref.verification.pageOpened, true);
+      assert.equal(ref.verification.captionChecked, true);
+      assert.equal(ref.verification.imageVisuallyInspected, true);
+      assert.ok(ref.verification.checkedAt);
+      assert.ok(existsSync(new URL(`../../../${ref.verification.evidencePath}`, import.meta.url)));
+      assert.ok(ref.subject.en && ref.subject.es && ref.termsUrl);
+      assert.ok(ref.url.startsWith('https://'));
+      assert.doesNotMatch(ref.url, /^https:\/\/(?:upload\.wikimedia\.org|cdn\.ncbi\.nlm\.nih\.gov)\//);
+    }
+  }
+});
+
+test('runtime references equal approved comparisons or explicitly reviewed selected-structure companions', () => {
   const eligible = JSON.parse(readFileSync(new URL('verified-references.json', research), 'utf8'));
+  const companionRows = JSON.parse(readFileSync(new URL('photo-companions.json', research), 'utf8'));
+  const companionById = new Map(companionRows.map((row: { assetId: string }) => [row.assetId, row]));
   assert.equal(eligible.length, records.filter((record: { status: string }) => record.status === 'verified').length);
   assert.ok(eligible.length > 0);
   for (const record of records) {
     const references = photoReferencesForAsset(record.assetId);
     if (record.status !== 'verified') {
-      assert.equal(references.length, 0, record.assetId);
+      const companion = companionById.get(record.assetId) as { completeComparison: boolean; references: { url: string; mediaType: string }[] } | undefined;
+      if (!companion) {
+        assert.equal(references.length, 0, record.assetId);
+        continue;
+      }
+      assert.equal(companion.completeComparison, false);
+      assert.deepEqual(references.map(({ url, mediaType }) => ({ url, mediaType })),
+        companion.references.map(({ url, mediaType }) => ({ url, mediaType })));
+      assert.ok(references.every(ref => ref.coverage === 'selected-structures'));
+      assert.ok(references.every(ref => photoReferenceLabel(ref, 'en').includes('Selected structures only')));
+      assert.ok(references.every(ref => photoReferenceLabel(ref, 'es').includes('Solo estructuras seleccionadas')));
       continue;
     }
     assert.deepEqual(references.map(({ url, mediaType }) => ({ url, mediaType })),

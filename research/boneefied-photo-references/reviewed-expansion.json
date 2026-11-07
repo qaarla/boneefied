@@ -1,0 +1,83 @@
+{
+  "evidencePath": "research/boneefied-photo-references/evidence/expansion-epithelium-body.md",
+  "newSources": {
+    "basel-esophagus": {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/non-keratinized-stratified-squamous-epithelium-esophagus-218",
+      "title": "Human nonkeratinized stratified squamous epithelium",
+      "source": "University of Basel Histology", "sourceName": "University of Basel",
+      "creator": "University of Basel; individual photographer not separately named",
+      "mediaType": "micrograph", "organism": "human",
+      "matches": "Human esophageal photographs show basal/intermediate layers and flattened, still-nucleated superficial cells without surface keratin.",
+      "viewLimitations": "H&E child esophagus, not the idealized drawing's regular cells. Use the static photographs below the partially failing overview viewer.",
+      "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/non-keratinized-stratified-squamous-epithelium-esophagus-218",
+      "reproductionRights": "Source License section identifies University of Basel. No reproduction permission is asserted or exercised.",
+      "subject": {"en": "Human nonkeratinized epithelium; static photos below viewer", "es": "Epitelio humano no queratinizado; fotos estáticas bajo el visor"},
+      "visualEvidence": "Main agent inspected actual high-power photograph s2zv3t; browser also inspected 50uzjb, k6o3vz and 16t4o8. All four static micrographs loaded; superficial nuclei and epithelial layers were seen."
+    },
+    "basel-skin": {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/stratified-keratinized-squamous-epithelium-finger-skin-219",
+      "title": "Human keratinized stratified squamous epithelium",
+      "source": "University of Basel Histology", "sourceName": "University of Basel",
+      "creator": "University of Basel; individual photographer not separately named",
+      "mediaType": "micrograph", "organism": "human",
+      "matches": "Human finger-skin photographs show the layered epidermis, thick superficial keratin and epidermal/dermal boundary.",
+      "viewLimitations": "Human thick finger skin, H&E; not proof of every specialized epidermal cell. Use the static photographs below the partially failing overview viewer.",
+      "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/stratified-keratinized-squamous-epithelium-finger-skin-219",
+      "reproductionRights": "Source License section identifies University of Basel. No reproduction permission is asserted or exercised.",
+      "subject": {"en": "Human keratinized epithelium; static photos below viewer", "es": "Epitelio humano queratinizado; fotos estáticas bajo el visor"},
+      "visualEvidence": "Main agent inspected photograph 5x7nau; browser inspected vjjkqr and fsyvac. All three static photographs loaded. Epidermis and surface keratin were actually seen."
+    },
+    "basel-trachea": {
+      "url": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/respiratory-epithelium-trachea-220",
+      "title": "Human pseudostratified ciliated columnar epithelium",
+      "source": "University of Basel Histology", "sourceName": "University of Basel",
+      "creator": "University of Basel; individual photographer not separately named",
+      "mediaType": "micrograph", "organism": "human",
+      "matches": "Human tracheal micrographs show pseudostratification, cilia, goblet cells and the epithelial/connective-tissue interface.",
+      "viewLimitations": "Azan-stained trachea, not the schematic's evenly spaced cells. Use intact static fields below the partially failing overview viewer; damaged epithelium is separately labeled.",
+      "termsUrl": "https://tales.nmc.unibas.ch/en/histology-12/epithel-allgemeine-histologie-38/respiratory-epithelium-trachea-220",
+      "reproductionRights": "Source License section identifies University of Basel. No reproduction permission is asserted or exercised.",
+      "subject": {"en": "Human ciliated epithelium; static photos below viewer", "es": "Epitelio ciliado humano; fotos estáticas bajo el visor"},
+      "visualEvidence": "Main agent inspected gn0mtg, an actual high-power micrograph showing cilia, nuclei at different heights and goblet cells. Browser also inspected lri7r7 and wf0sqx; all four static images loaded."
+    },
+    "adult-position": {
+      "url": "https://commons.wikimedia.org/wiki/File:Human_Body.jpg",
+      "title": "Adult human body, anterior and posterior anatomical position",
+      "source": "Wikimedia Commons", "sourceName": "Wikimedia Commons",
+      "creator": "City Studios, Stockholm; uploaded by Mikael Häggström; derivative assembly by Lamilli",
+      "mediaType": "gross-photo", "organism": "human",
+      "matches": "Actual adult human photographs show upright anterior and posterior surface anatomy, arms slightly abducted and palms anterior.",
+      "viewLimitations": "Two adult models, hair removed and photographs retouched; not internal anatomy. Front views are above, back views below. The page separately warns about personality rights.",
+      "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reproductionRights": "Commons states CC0 1.0 and a separate personality-rights warning; the caption records model consent for the stated publication. Only the original page is linked, with no reproduction.",
+      "subject": {"en": "Adult surface anatomy; anterior photos above, posterior below", "es": "Anatomía superficial adulta; fotos anteriores arriba y posteriores abajo"},
+      "visualEvidence": "Main-agent public-page screenshot Human_Body_EMXj showed all four actual adult photographs; Human_XFVD separately showed the larger anterior photographs. Source caption explicitly identifies photographed adult humans."
+    }
+  },
+  "mappings": [
+    {
+      "assetId": "asset-atlas-anterior-position",
+      "reason": "Actual photographed adult humans demonstrate anterior anatomical position. Different models, retouching and upper/lower source layout are disclosed.",
+      "refs": [{"newSource": "adult-position", "subject": {"en": "Anterior anatomical position; upper photographs", "es": "Posición anatómica anterior; fotografías superiores"}}]
+    },
+    {
+      "assetId": "asset-atlas-posterior-position",
+      "reason": "Actual posterior photographs of the same standing adults demonstrate posterior anatomical position. The source's lower photographs, retouching and donor differences are disclosed.",
+      "refs": [{"newSource": "adult-position", "subject": {"en": "Posterior anatomical position; lower photographs", "es": "Posición anatómica posterior; fotografías inferiores"}}]
+    },
+    {
+      "assetId": "asset-bvis04-epithelia-simple",
+      "reason": "Three separately inspected human specimens supply squamous, cuboidal and columnar epithelial forms and their tissue interfaces. Different sites/stains/donors and irregular cells are expected; routine light micrographs do not resolve basal-lamina ultrastructure.",
+      "refs": [
+        {"fromAssetId": "asset-commons-simple-squamous-epithelium", "index": 0, "subject": {"en": "Human simple squamous epithelium; complementary specimen", "es": "Epitelio plano simple humano; espécimen complementario"}},
+        {"fromAssetId": "asset-commons-simple-cuboidal-epithelium", "index": 0, "subject": {"en": "Human simple cuboidal epithelium; kidney specimen", "es": "Epitelio cúbico simple humano; espécimen renal"}},
+        {"fromAssetId": "asset-commons-simple-columnar-epithelium", "index": 0, "subject": {"en": "Human simple columnar epithelium; static photos below viewer", "es": "Epitelio cilíndrico simple humano; fotos estáticas bajo el visor"}}
+      ]
+    },
+    {
+      "assetId": "asset-bvis04-epithelia-stratified",
+      "reason": "Individually inspected human trachea, finger skin and esophagus micrographs cover all three depicted epithelial forms, including cilia/goblet cells, superficial keratin and nonkeratinized nucleated surface cells. Complementary sites/stains and static-photo access are disclosed.",
+      "refs": [{"newSource": "basel-trachea"}, {"newSource": "basel-skin"}, {"newSource": "basel-esophagus"}]
+    }
+  ]
+}

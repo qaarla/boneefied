@@ -101,6 +101,19 @@ as premature.
 verification without building. Report verified totals separately from accounted
 records; incomplete coverage leaves the build gate closed.
 
+Having an inspected companion for every illustration is not the same as
+having complete photographic comparison sets for every illustration.
+Explicitly named, limited-view companions must remain visibly distinguished
+from full-set approvals and must never satisfy the owner's build gate.
+
+**Why:** The owner requires full, accurate proof before authorizing a later
+build; a count of linked illustrations alone could conceal missing subjects.
+
+**How to apply:** Report companion availability and complete-comparison
+approval as separate totals, preserve the missing-subject research and
+original inspection dates, and never approve a whole plate from source-level
+inspection flags alone.
+
 Distinguish a research-tool access or rate-limit failure from a destination
 failure. A successful page-text fetch verifies metadata, not that its photograph
 was newly seen. Reused inspection evidence must retain its original date.
