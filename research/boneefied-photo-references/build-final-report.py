@@ -13,6 +13,9 @@ assert len(records) == summary["scope"]["publishedReachableAssets"]
 counts = {status: sum(r["status"] == status for r in records) for status in ("verified", "partial", "unresolved")}
 assert counts == summary["outcomes"]
 links = sum(len(r["references"]) for r in approved)
+audit_path = ROOT / "five-outcome-audit.json"
+audit = json.loads(audit_path.read_text()) if audit_path.exists() else None
+audit_by_id = {r["assetId"]: r for r in audit["records"]} if audit else {}
 
 def esc(value):
     return html.escape(str(value), quote=True)
@@ -102,6 +105,9 @@ sections = [
     f'<p class="status"><strong>Full coverage has not been achieved.</strong><br>{len(approved)} of {len(records)} images have approved links. {len(unlinked)} remain unlinked: {counts["partial"]} partial and {len(unresolved)} unresolved.</p>',
     "".join(f"<p>{esc(t)}</p>" for t in intro[1:]),
     f'<nav aria-label="Report sections"><a href="#approved">Approved links</a><a href="#checks">Verification limits</a><a href="#unresolved">{len(unresolved)} unresolved</a><a href="#unlinked">All {len(unlinked)} unlinked</a></nav>',
+    ('<h2>Five reconciled outcomes</h2><p>All published images are accounted for. This is not proof that every feasible photographic match has been found. Approved real examples retain their disclosed differences; they are not all direct matches.</p>'
+     + table(["Outcome", "Images"], [[esc(audit["definitions"][key]), str(value)] for key, value in audit["counts"].items()])
+     + '<p>The existing authorized iOS internal IPA and Android AAB request is retained, not started, resubmitted or completed. No signing changes, submission or publication occurred. Outstanding reference exceptions remain unsatisfied.</p>') if audit else '',
     f'<h2 id="approved">{len(approved)} instructional images have approved links</h2>',
     table(["Illustration", "Coverage", "Source page, creator and terms"], approved_rows),
     "<h2>Review-area totals</h2>",
@@ -113,7 +119,7 @@ sections = [
     f'<h2 id="unresolved">All {len(unresolved)} unresolved illustrations</h2>',
     table(["Illustration", "Individual reason"], [[esc(r["title"]), esc(r["reason"])] for r in unresolved]),
     f'<h2 id="unlinked">All {len(unlinked)} unlinked illustrations, including partial cases</h2><p>Partial means useful but insufficient candidates were found. Unresolved means no qualifying candidate set was established. Neither means a suitable photograph cannot exist.</p>',
-    table(["Illustration and asset ID", "Outcome", "Individual reason"], [[esc(r["title"]) + f'<small>{esc(r["assetId"])}</small>', esc(r["status"]), esc(r["reason"])] for r in unlinked]),
+    table(["Illustration and asset ID", "Outcome", "Individual reason"], [[esc(r["title"]) + f'<small>{esc(r["assetId"])}</small>', esc(audit["definitions"][audit_by_id[r["assetId"]]["outcome"]] if audit else r["status"]), esc(audit_by_id.get(r["assetId"], r)["reason"])] for r in unlinked]),
     "<footer>Static audit snapshot: tables only, with no scripts, images, remote runtime or data requests. Source links open only when selected. Authoritative assessments and written evidence are under research/boneefied-photo-references.</footer>",
 ]
 css = """*{box-sizing:border-box}body{margin:0;background:#f8f6f1;color:#242723;font:16px/1.55 Georgia,serif}main{max-width:1160px;margin:auto;padding:36px 22px 70px}h1{font-size:34px;line-height:1.15;max-width:760px}h2{font-size:25px;margin:40px 0 14px}p,li{max-width:86ch}a{color:#85451c;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #85451c;outline-offset:3px}.status{border-left:5px solid #9a4826;padding:14px 18px;background:#eee4d9}.eyebrow{color:#555d55;font:12px system-ui,sans-serif;letter-spacing:.1em}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;background:#fff;font-size:14px}th,td{padding:13px 12px;vertical-align:top;text-align:left;border:1px solid #d8d8cf;overflow-wrap:anywhere}thead th{background:#e8e9df}small{display:block;color:#61695e;font:11px/1.5 system-ui,sans-serif;margin-top:6px}td p{margin:0 0 12px}nav{display:flex;gap:16px;flex-wrap:wrap;margin:24px 0}li{margin:10px 0}footer{margin-top:36px;color:#5c655a;font-size:13px}@media(max-width:600px){main{padding:22px 14px 48px}h1{font-size:28px}th,td{padding:10px 9px}table{min-width:620px}}@media print{body{background:white}main{padding:0}nav{display:none}table{font-size:10px}.table-wrap{overflow:visible}tr{break-inside:avoid}h2{break-after:avoid}}"""

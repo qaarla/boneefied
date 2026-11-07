@@ -1,0 +1,1971 @@
+{
+  "inventoryReconciledAt": "2026-11-07T00:31:55.803791+00:00",
+  "scope": "Boneefied only; 164 published assets, not Contract B",
+  "baseline": {
+    "total": 164,
+    "verified": 36,
+    "originalImageHashesConfirmed": 164
+  },
+  "policy": "Reuse inspected source photographs first. One primary collection and one different fallback per group; further queries require a named missing structure/view and a plausible new source. No result is not no equivalent.",
+  "knownFailuresDoNotRepeat": [
+    {
+      "source": "Genoa histology",
+      "outcome": "Explicit deep-link restriction; excluded, not absent anatomy"
+    },
+    {
+      "source": "Histology Guide restricted collection",
+      "outcome": "Excluded by existing source policy"
+    },
+    {
+      "source": "Columbia slide66 command-line TLS",
+      "outcome": "TLS validation failed; existing browser inspection retained; do not disable validation or repeat curl"
+    },
+    {
+      "source": "Calisphere refreshes returning HTTP 429",
+      "outcome": "Retain prior evidence, no repeated refresh loop"
+    },
+    {
+      "source": "BlueLink Drive photo 1eei1xImkmeQ1POH1lGj1SNdtID2OugGd",
+      "outcome": "Screenshot service did not render; use public university subject page, not retrying Drive"
+    },
+    {
+      "source": "Prior individual axial-MRI Commons searches",
+      "outcome": "No-result queries were already attempted; reuse established axial MRI, no query rewording"
+    },
+    {
+      "source": "A previously collected BlueLink embedded-image URL",
+      "result": "Browser returned HTTP 403. No further raw-image requests or access-control workarounds attempted; this does not revoke genuine earlier source-page inspections."
+    },
+    {
+      "source": "https://histology.medicine.umich.edu/resources/slide-list",
+      "result": "404. Followed the site's supplied home link once; current home provides a manual, not the old slide-list collection. No manual or photographs downloaded."
+    }
+  ],
+  "groups": {
+    "muscular-system": {
+      "assetIds": [
+        "asset-muscular-atlas-deep-back",
+        "asset-muscular-atlas-posterior-arm",
+        "asset-muscular-atlas-forearm",
+        "asset-muscular-atlas-abdominal-wall",
+        "asset-muscular-atlas-gluteal",
+        "asset-muscular-atlas-deep-thigh",
+        "asset-muscular-atlas-anterior-leg",
+        "asset-muscular-atlas-calf",
+        "asset-muscular-atlas-hand",
+        "asset-muscular-atlas-foot",
+        "asset-muscular-atlas-pelvic-floor",
+        "asset-openstax-muscle-face-neck",
+        "asset-openstax-muscle-anterior-trunk",
+        "asset-openstax-muscle-anterior-arm",
+        "asset-openstax-muscle-anterior-leg",
+        "asset-openstax-muscle-posterior-back",
+        "asset-openstax-muscle-posterior-leg",
+        "asset-openstax-muscle-labeled-overview",
+        "asset-openstax-diaphragm-labeled",
+        "asset-injurymap-rotator-cuff-labeled"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://calisphere.org/item/287e0f96d086919e57c58c9cb1cb8ab2",
+            "https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64",
+            "https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/",
+            "https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918",
+            "https://calisphere.org/item/a7f4387ffed8c8052efd7972dba545ed",
+            "https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e",
+            "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+            "https://commons.wikimedia.org/wiki/File:Medial_view_of_a_cadaver_dissection_of_the_gastrocnemius%E2%80%93soleus_junction.png",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-1",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=174-5",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=201-4",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=202-1",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=214-3",
+            "https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_(Lange_et_al.)/09:_Muscular_System/9.08:_Anatomical_Atlas_-_Muscular_System",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lumbar-spine-hip-and-knee-images",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-shoulder-images",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-wrist-hand-and-foot-images"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/bluelink-review.json",
+            "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-02.md",
+            "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-03.md",
+            "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-abdominal-wall-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-calf-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-back-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-back-02.md",
+            "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-thigh-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-foot-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-foot-02.md",
+            "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-pelvic-floor-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-openstax-diaphragm-labeled-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-openstax-diaphragm-labeled-02.md",
+            "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-trunk-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-trunk-02.md",
+            "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-face-neck-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-face-neck-02.md",
+            "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-posterior-back-01.md",
+            "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-posterior-leg-01.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-muscular-atlas-deep-back",
+          "outcome": "partial",
+          "reason": "Partial: human posterior deep-back and right scapular dissection photographs verify multifidus/rotator and scapular-region examples, but they do not jointly show the assigned unilateral lumbar quadratus lumborum plus intact-versus-removed erector spinae comparison."
+        },
+        {
+          "assetId": "asset-muscular-atlas-deep-thigh",
+          "outcome": "partial",
+          "reason": "Partial: the verified human right anterior thigh photo supports the vastus-intermedius region, but the source does not establish the full articularis-genus detail or the posterior semimembranosus cutaway."
+        },
+        {
+          "assetId": "asset-muscular-atlas-calf",
+          "outcome": "partial",
+          "reason": "Partial: the inspected human specimen photograph directly shows the gastrocnemius–soleus junction, but it is an isolated medial specimen and does not include in-situ popliteus or tibialis posterior."
+        },
+        {
+          "assetId": "asset-muscular-atlas-foot",
+          "outcome": "partial",
+          "reason": "Partial: two inspected Stanford photos confirm left plantar human specimens and deep plantar structures, but neither shows the assigned first plantar layer (abductor hallucis/flexor digitorum brevis) and the separate dorsal extensor-digitorum-brevis inset is not covered."
+        },
+        {
+          "assetId": "asset-muscular-atlas-pelvic-floor",
+          "outcome": "partial",
+          "reason": "Partial: a verified human male perineum/pelvic-diaphragm photograph names levator ani, but its perineal/superior fascia view does not match the assigned superior pelvic-floor view or establish the pubococcygeus and iliococcygeus bands."
+        },
+        {
+          "assetId": "asset-openstax-muscle-face-neck",
+          "outcome": "partial",
+          "reason": "Partial: distinct inspected human face and left lateral-neck dissection photos offer regional examples, but named facial-muscle coverage is incomplete and the neck side/view does not match the right lateral composite."
+        },
+        {
+          "assetId": "asset-openstax-muscle-anterior-trunk",
+          "outcome": "partial",
+          "reason": "Partial: human anterior thorax and right axilla source photos verify pectoral/intercostal examples, but not the full asymmetric superficial-to-deep chest, shoulder and abdominal muscle plate."
+        },
+        {
+          "assetId": "asset-openstax-muscle-posterior-back",
+          "outcome": "partial",
+          "reason": "Partial: the inspected LibreTexts/BlueLink page includes one actual superficial posterior cadaver-back photo, but its letter markers are not independently decoded and not all assigned scapular structures are confirmed."
+        },
+        {
+          "assetId": "asset-openstax-muscle-posterior-leg",
+          "outcome": "partial",
+          "reason": "Partial: an inspected left posterolateral thigh photograph verifies gluteal and hamstring-region examples, but no retained source establishes the bilateral posterior overview through the calf and all depicted structures."
+        },
+        {
+          "assetId": "asset-openstax-muscle-labeled-overview",
+          "outcome": "partial",
+          "reason": "Partial: specific right shoulder/back, left posterior-lateral thigh/gluteal and anterior thorax source photographs provide regional examples, but no source set forms the whole-body paired superficial views or establishes all pinned muscles."
+        },
+        {
+          "assetId": "asset-openstax-diaphragm-labeled",
+          "outcome": "partial",
+          "reason": "Partial: Stanford's inspected human superior and inferior diaphragm photos verify those real views, but the assigned anterior coronal cutaway and comparative dome-height panel are missing."
+        }
+      ],
+      "existingSources": [
+        "https://calisphere.org/item/287e0f96d086919e57c58c9cb1cb8ab2",
+        "https://calisphere.org/item/3150453dd97f9fd45f760e59c9a51b64",
+        "https://calisphere.org/item/3e11b4c30a17bf5d220dcd44f7bd273a/",
+        "https://calisphere.org/item/5a68ccc28314a457fdfbcba4a1b09918",
+        "https://calisphere.org/item/a7f4387ffed8c8052efd7972dba545ed",
+        "https://calisphere.org/item/af7ea2e6aaca62aa241f1c57ffcaa39e",
+        "https://calisphere.org/item/ef4a33ce7a18d8229561390be729db99/",
+        "https://commons.wikimedia.org/wiki/File:Medial_view_of_a_cadaver_dissection_of_the_gastrocnemius%E2%80%93soleus_junction.png",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-1",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=174-5",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=201-4",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=202-1",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=214-3",
+        "https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_(Lange_et_al.)/09:_Muscular_System/9.08:_Anatomical_Atlas_-_Muscular_System",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lumbar-spine-hip-and-knee-images",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-shoulder-images",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-wrist-hand-and-foot-images"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/bluelink-review.json",
+        "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-02.md",
+        "research/boneefied-photo-references/evidence/final-muscular-labeled-overview-03.md",
+        "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-abdominal-wall-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-calf-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-back-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-back-02.md",
+        "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-deep-thigh-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-foot-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-foot-02.md",
+        "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-pelvic-floor-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-openstax-diaphragm-labeled-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-openstax-diaphragm-labeled-02.md",
+        "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-trunk-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-anterior-trunk-02.md",
+        "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-face-neck-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-face-neck-02.md",
+        "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-posterior-back-01.md",
+        "research/boneefied-photo-references/evidence/final-muscular-openstax-muscle-posterior-leg-01.md"
+      ],
+      "groupOutcomeCounts": {
+        "partial": 11,
+        "fully-matched": 9
+      }
+    },
+    "skeletal-system": {
+      "assetIds": [
+        "asset-skeletal-atlas-skull-base-external",
+        "asset-skeletal-atlas-cranial-floor-internal",
+        "asset-skeletal-atlas-skull-sutures",
+        "asset-skeletal-atlas-vertebra-typical",
+        "asset-skeletal-atlas-atlas-axis",
+        "asset-skeletal-atlas-thoracic-cage",
+        "asset-skeletal-atlas-rib-detail",
+        "asset-skeletal-atlas-scapula",
+        "asset-skeletal-atlas-pectoral-girdle",
+        "asset-skeletal-atlas-humerus",
+        "asset-skeletal-atlas-forearm",
+        "asset-skeletal-atlas-hand-palmar",
+        "asset-skeletal-atlas-hip-bone",
+        "asset-skeletal-atlas-femur",
+        "asset-skeletal-atlas-leg-tibia-fibula",
+        "asset-skeletal-atlas-foot-dorsal",
+        "asset-atlas-skeleton-anterior",
+        "asset-atlas-skeleton-posterior",
+        "asset-atlas-skeleton-axial-appendicular",
+        "asset-skull-front",
+        "asset-skull-lateral",
+        "asset-vertebral-column",
+        "asset-cervical-vertebra",
+        "asset-servier-pelvis",
+        "asset-commons-axial-skeleton-blank",
+        "asset-commons-appendicular-skeleton-blank"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/",
+            "https://calisphere.org/item/74761ef06360839b7e8bc0fcd7d84ef6/",
+            "https://commons.wikimedia.org/wiki/File:AnteriorHumerusRadiusUlnaArticulated.jpg",
+            "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+            "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+            "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+            "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+            "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+            "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+            "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg",
+            "https://commons.wikimedia.org/wiki/File:Hand-bones.jpg",
+            "https://commons.wikimedia.org/wiki/File:Human_skull_1.JPG",
+            "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+            "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+            "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+            "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae_(lateral_view)_2.jpg",
+            "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+            "https://commons.wikimedia.org/wiki/File:Thoracic_vertebrae.jpg",
+            "https://commons.wikimedia.org/wiki/File:Tibia,_fibula_(anterior).jpg",
+            "https://commons.wikimedia.org/wiki/File:Vertebra_-_atlas,_axis_(superior).jpg",
+            "https://commons.wikimedia.org/wiki/File:Vertebra_-_cervicales.jpg"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/additional-reviewed-sources.json",
+            "research/boneefied-photo-references/evidence/final-main-scapula-anterior-verified.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-01-skeletal-atlas-skull-base-external.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-02-skeletal-atlas-cranial-floor-internal.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-03-skeletal-atlas-skull-sutures.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-04-skeletal-atlas-vertebra-typical.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-05-skeletal-atlas-atlas-axis.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-08-skeletal-atlas-scapula.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-09-skeletal-atlas-pectoral-girdle.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-10-skeletal-atlas-humerus.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-11-skeletal-atlas-forearm.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-12-skeletal-atlas-hand-palmar.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-13-skeletal-atlas-hip-bone.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-14-skeletal-atlas-femur.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-15-skeletal-atlas-leg-tibia-fibula.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-27-atlas-skeleton-anterior.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-28-atlas-skeleton-posterior.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-29-atlas-skeleton-axial-appendicular.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-30-skull-front.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-33-cervical-vertebra.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-37-servier-pelvis.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-38-commons-axial-skeleton-blank.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-39-commons-appendicular-skeleton-blank.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-skeletal-atlas-skull-sutures",
+          "outcome": "partial",
+          "reason": "Superior human dry skull photo confirms the sagittal/coronal suture view and a separate human posterior lambda detail confirms the lambdoid junction. The detail is not a full posterior skull view."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-vertebra-typical",
+          "outcome": "partial",
+          "reason": "A dry human thoracic vertebra in superior view shows the common vertebral plan. The assigned thoracic lateral inset, disc, and separate detail are not shown."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-atlas-axis",
+          "outcome": "partial",
+          "reason": "The human dry atlas and axis pair is photographed from above, but the assigned C2 lateral view is absent."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-thoracic-cage",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "Targeted searches found no visually inspected dry human rib-cage photo with the sternum and cartilage arrangement. A Calisphere anterior human thorax dissection page surfaced and its caption was fetched, but the photograph itself was not visually inspected and the complete bone/cartilage plate cannot be confirmed; this is unavailable evidence, not proof that no suitable photo exists."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-rib-detail",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "Two targeted searches yielded no visually inspected, provenance-checked human rib specimen photo showing the head, tubercle and costal groove; candidate illustrations/renders were excluded."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-pectoral-girdle",
+          "outcome": "partial",
+          "reason": "Scapular surface photographs and a right anterior human glenohumeral dissection establish portions of the girdle. Clavicle, complete clavicle-scapula-humerus relationships, and ligament set are not covered."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-forearm",
+          "outcome": "partial",
+          "reason": "A real human articulated radius-ulna specimen is shown anteriorly at the elbow. It is not the complete right forearm, interosseous membrane, or proximal-ulna lateral inset."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-hand-palmar",
+          "outcome": "partial",
+          "reason": "An assembled human hand skeleton photo covers carpals, metacarpals and phalanges. The source does not identify palmar/dorsal orientation or side, so it is not claimed as an exact right-palmar match."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-hip-bone",
+          "outcome": "partial",
+          "reason": "A dry human os coxae lateral view shows acetabulum and obturator foramen; a hip-joint dissection supplies limited context. Medial surface and laterality are unverified."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-leg-tibia-fibula",
+          "outcome": "partial",
+          "reason": "A dry human tibia/fibula anterior pair corresponds to the main leg bones. The superior plateau inset, ankle mortise detail, and laterality are not documented."
+        },
+        {
+          "assetId": "asset-atlas-skeleton-anterior",
+          "outcome": "partial",
+          "reason": "Verified human dry-bone photos give selected anterior skull, scapula, femur, tibia/fibula, hand, and foot examples. They do not form a complete articulated skeleton or include the full rib cage and other bones."
+        },
+        {
+          "assetId": "asset-atlas-skeleton-posterior",
+          "outcome": "partial",
+          "reason": "Verified dry human photos show a posterior scapula and anterior/posterior femur pair. Most posterior axial and appendicular regions are absent."
+        },
+        {
+          "assetId": "asset-atlas-skeleton-axial-appendicular",
+          "outcome": "partial",
+          "reason": "The selected real specimens include skull and thoracic vertebra examples for axial bones, plus scapula, femur, tibia/fibula, hand and foot examples for appendicular bones. The hand and foot source pages were individually visually confirmed in their bone-specific records; this collection still does not form a complete skeleton or demonstrate the full division."
+        },
+        {
+          "assetId": "asset-skull-front",
+          "outcome": "partial",
+          "reason": "A genuine anterior human skull specimen is verified. It is worn and unlabelled, so minor facial foramina and some boundaries are not clearly represented."
+        },
+        {
+          "assetId": "asset-skull-lateral",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "No exact human dry-bone lateral skull photograph with credible specimen provenance and visual inspection was verified. The newly fetched similarly titled Commons candidate credits a medical illustrator and cannot be relied upon as a genuine dry bone specimen."
+        },
+        {
+          "assetId": "asset-vertebral-column",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "No photographed dry human vertebral column with credible specimen provenance was verified; previously inspected display-column imagery did not establish a human dry-bone specimen."
+        },
+        {
+          "assetId": "asset-cervical-vertebra",
+          "outcome": "partial",
+          "reason": "Human dry cervical and thoracic vertebra examples are verified in superior-compatible views. No comparable lumbar specimen or complete three-region comparison is present."
+        },
+        {
+          "assetId": "asset-servier-pelvis",
+          "outcome": "partial",
+          "reason": "A frontal dry human pelvis photo shows both hip bones and sacrum; the assigned plate includes additional structures and landmarks, including attached femora, that are missing."
+        },
+        {
+          "assetId": "asset-commons-axial-skeleton-blank",
+          "outcome": "partial",
+          "reason": "Verified photos cover anterior skull, cranial floor and a thoracic vertebra. A complete axial skeleton, ribs and full vertebral column are not covered."
+        },
+        {
+          "assetId": "asset-commons-appendicular-skeleton-blank",
+          "outcome": "partial",
+          "reason": "Verified human specimens cover selected scapula, femur, tibia/fibula, hand and foot bones. They do not form the full appendicular skeleton and hand/foot laterality/view limits remain."
+        }
+      ],
+      "existingSources": [
+        "https://calisphere.org/item/24a7f9683d12b5f4df0ab22a62243de1/",
+        "https://calisphere.org/item/74761ef06360839b7e8bc0fcd7d84ef6/",
+        "https://commons.wikimedia.org/wiki/File:AnteriorHumerusRadiusUlnaArticulated.jpg",
+        "https://commons.wikimedia.org/wiki/File:Anterior_surface_of_scapula.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cranium_-_basis_cranii_interna.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cranium_-_inferior_view.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cranium_-_neurocranium_superior_view_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Cranium_-_sutura_lambdoidea_(lambda).jpg",
+        "https://commons.wikimedia.org/wiki/File:Femur_-_anterior,_posterior.jpg",
+        "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg",
+        "https://commons.wikimedia.org/wiki/File:Hand-bones.jpg",
+        "https://commons.wikimedia.org/wiki/File:Human_skull_1.JPG",
+        "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Humerus_-_posterior_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae,_os_sacrum_(frontal_view).jpg",
+        "https://commons.wikimedia.org/wiki/File:Pelvis_-_os_coxae_(lateral_view)_2.jpg",
+        "https://commons.wikimedia.org/wiki/File:Scapula_-_posterior_view.jpg",
+        "https://commons.wikimedia.org/wiki/File:Thoracic_vertebrae.jpg",
+        "https://commons.wikimedia.org/wiki/File:Tibia,_fibula_(anterior).jpg",
+        "https://commons.wikimedia.org/wiki/File:Vertebra_-_atlas,_axis_(superior).jpg",
+        "https://commons.wikimedia.org/wiki/File:Vertebra_-_cervicales.jpg"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/additional-reviewed-sources.json",
+        "research/boneefied-photo-references/evidence/final-main-scapula-anterior-verified.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-01-skeletal-atlas-skull-base-external.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-02-skeletal-atlas-cranial-floor-internal.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-03-skeletal-atlas-skull-sutures.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-04-skeletal-atlas-vertebra-typical.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-05-skeletal-atlas-atlas-axis.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-08-skeletal-atlas-scapula.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-09-skeletal-atlas-pectoral-girdle.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-10-skeletal-atlas-humerus.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-11-skeletal-atlas-forearm.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-12-skeletal-atlas-hand-palmar.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-13-skeletal-atlas-hip-bone.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-14-skeletal-atlas-femur.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-15-skeletal-atlas-leg-tibia-fibula.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-27-atlas-skeleton-anterior.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-28-atlas-skeleton-posterior.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-29-atlas-skeleton-axial-appendicular.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-30-skull-front.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-33-cervical-vertebra.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-37-servier-pelvis.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-38-commons-axial-skeleton-blank.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-39-commons-appendicular-skeleton-blank.md"
+      ],
+      "groupOutcomeCounts": {
+        "fully-matched": 6,
+        "partial": 16,
+        "unmatched-after-bounded-research": 4
+      }
+    },
+    "joints-ligaments": {
+      "assetIds": [
+        "asset-skeletal-atlas-synovial-joint",
+        "asset-skeletal-atlas-shoulder-joint",
+        "asset-skeletal-atlas-knee-joint",
+        "asset-servier-elbow-joint"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://calisphere.org/item/33d419fe3c2fb6e5c76009d048df117c",
+            "https://calisphere.org/item/74761ef06360839b7e8bc0fcd7d84ef6/",
+            "https://calisphere.org/item/9a7013bf8ccee4934b4789248d2f16d7",
+            "https://calisphere.org/item/e3ac55f2986d93e7a83b199d9254ad95/"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/evidence/final-skeletal-17-skeletal-atlas-synovial-joint.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-18-skeletal-atlas-shoulder-joint.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-19-skeletal-atlas-knee-joint.md",
+            "research/boneefied-photo-references/evidence/final-skeletal-36-servier-elbow-joint.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-skeletal-atlas-synovial-joint",
+          "outcome": "partial",
+          "reason": "A photographed human left elbow dissection is a specific synovial-joint example, not a generic section proving the full capsule, synovial lining/fluid, and external ligament layers."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-shoulder-joint",
+          "outcome": "partial",
+          "reason": "A right anterior glenohumeral dissection opens the capsule and exposes the glenoid fossa. It does not cover the complete shoulder bones and ligament relationships in the diagram."
+        },
+        {
+          "assetId": "asset-skeletal-atlas-knee-joint",
+          "outcome": "partial",
+          "reason": "Verified left medial knee and posterior popliteal-fossa dissections show joint structures and PCL. The anterior right-knee panel and full cruciate/collateral set remain incomplete; a newly surfaced right anterior Calisphere candidate was not visually inspected."
+        },
+        {
+          "assetId": "asset-servier-elbow-joint",
+          "outcome": "partial",
+          "reason": "A verified human elbow joint dissection is a relevant real example, but it does not reproduce all the original illustration labels and cross-sectional layers."
+        }
+      ],
+      "existingSources": [
+        "https://calisphere.org/item/33d419fe3c2fb6e5c76009d048df117c",
+        "https://calisphere.org/item/74761ef06360839b7e8bc0fcd7d84ef6/",
+        "https://calisphere.org/item/9a7013bf8ccee4934b4789248d2f16d7",
+        "https://calisphere.org/item/e3ac55f2986d93e7a83b199d9254ad95/"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/evidence/final-skeletal-17-skeletal-atlas-synovial-joint.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-18-skeletal-atlas-shoulder-joint.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-19-skeletal-atlas-knee-joint.md",
+        "research/boneefied-photo-references/evidence/final-skeletal-36-servier-elbow-joint.md"
+      ],
+      "groupOutcomeCounts": {
+        "partial": 4
+      }
+    },
+    "anatomy-foundations": {
+      "assetIds": [
+        "asset-atlas-anterior-position",
+        "asset-atlas-posterior-position",
+        "asset-atlas-body-planes",
+        "asset-atlas-body-cavities",
+        "asset-atlas-abdominal-quadrants",
+        "asset-atlas-abdominal-regions",
+        "asset-atlas-organ-locations",
+        "asset-original-anatomical-planes",
+        "asset-original-body-cavities"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+            "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+            "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/additional-reviewed-sources.json",
+            "research/boneefied-photo-references/evidence/final-skeletal-22-atlas-body-planes.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-atlas-anterior-position",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "No actual human photograph in the standardized anterior anatomical stance, with palms forward and thumbs lateral, was visually verified. Search surfaced mostly schematic position illustrations."
+        },
+        {
+          "assetId": "asset-atlas-posterior-position",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "No matching standardized posterior-view human photograph was verified; available anatomical-position results were schematic."
+        },
+        {
+          "assetId": "asset-atlas-body-cavities",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "No single verified human photograph covers the cavities, diaphragm, retroperitoneal kidney, and pleural-space inset. Sectional candidates did not meet this composite coverage."
+        },
+        {
+          "assetId": "asset-atlas-abdominal-quadrants",
+          "outcome": "no-literal-photo",
+          "reason": "Four quadrant boundaries are a surface-location convention, not physical specimen boundaries. This justifies no literal photograph; it does not make the underlying organs unphotographable."
+        },
+        {
+          "assetId": "asset-atlas-abdominal-regions",
+          "outcome": "no-literal-photo",
+          "reason": "The nine-region grid is an imposed surface-location convention, not nine physical specimen partitions. A body photograph alone would not depict these boundaries."
+        },
+        {
+          "assetId": "asset-atlas-organ-locations",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "No one verified human in-situ photograph shows the full set of labeled organs and retroperitoneal kidneys. A valid composite needs separately verified subject-specific sources."
+        },
+        {
+          "assetId": "asset-original-body-cavities",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "No verified human section photograph meets the composite body-cavity/diaphragm coverage; a page describing the NLM dataset is not an inspected specimen image."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+        "https://commons.wikimedia.org/wiki/File:Human_brain,_sagittal_section_1.jpg",
+        "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/additional-reviewed-sources.json",
+        "research/boneefied-photo-references/evidence/final-skeletal-22-atlas-body-planes.md"
+      ],
+      "groupOutcomeCounts": {
+        "unmatched-after-bounded-research": 5,
+        "fully-matched": 2,
+        "no-literal-photo": 2
+      }
+    },
+    "integumentary-system": {
+      "assetIds": [
+        "asset-gray946-sweat-gland",
+        "asset-openstax-historical-skin-structure",
+        "asset-bvis04-epidermis-strata",
+        "asset-bvis04-dermis-hypodermis",
+        "asset-bvis04-hair-follicle",
+        "asset-bvis04-nail-section"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Sweat_gland_histology_2014.jpg",
+            "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/micro-16-duke-skin.md",
+            "research/sources/gapfill-01-sweat-gland.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-gray946-sweat-gland",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: the inspected sweat-gland micrograph shows glandular profiles but its organism is unconfirmed and it does not show the full human eccrine/apocrine/sebaceous arrangement; Duke's human skin slide listing was not an inspected photograph. Human counterpart remains unsupported; absence is not established."
+        },
+        {
+          "assetId": "asset-openstax-historical-skin-structure",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match."
+        },
+        {
+          "assetId": "asset-bvis04-epidermis-strata",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match."
+        },
+        {
+          "assetId": "asset-bvis04-dermis-hypodermis",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match."
+        },
+        {
+          "assetId": "asset-bvis04-hair-follicle",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination."
+        },
+        {
+          "assetId": "asset-bvis04-nail-section",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: Duke describes a human fingertip slide, but no source photograph was visually inspected and nail plate, bed, matrix and fold structures were not confirmed. It is an index lead rather than a verified counterpart."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Sweat_gland_histology_2014.jpg",
+        "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/micro-16-duke-skin.md",
+        "research/sources/gapfill-01-sweat-gland.md"
+      ],
+      "groupOutcomeCounts": {
+        "inaccessible-unverified": 2,
+        "partial": 4
+      }
+    },
+    "special-senses": {
+      "assetIds": [
+        "asset-gray880-optic-nerve-head",
+        "asset-servier-eye-section",
+        "asset-servier-ear-section",
+        "asset-bvis04-eye-anterior-segment",
+        "asset-bvis04-retina-layers",
+        "asset-bvis04-middle-ear",
+        "asset-bvis04-inner-ear-vestibular",
+        "asset-bvis04-cochlea-corti",
+        "asset-bvis04-smell-taste"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+            "https://commons.wikimedia.org/wiki/File:Fundus_of_eye_normal.jpg",
+            "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153736",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176544/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376148",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-nasal-cavity-sinuses-and-ear-images",
+            "https://www.cellimagelibrary.org/images/11458",
+            "https://www.intechopen.com/chapters/62850"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/bluelink-review.json",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-cochlea-corti-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-cochlea-corti-2.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-inner-ear-vestibular-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-retina-layers-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-smell-taste-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-smell-taste-2.md",
+            "research/boneefied-photo-references/evidence/final-neuro-gray880-optic-nerve-head-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-gray880-optic-nerve-head-2.md",
+            "research/boneefied-photo-references/evidence/final-neuro-servier-ear-section-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-servier-eye-section-1.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-gray880-optic-nerve-head",
+          "outcome": "partial",
+          "reason": "Partial: Compared the fundus panel with a human fundus photograph and human optic-nerve-head histology. A fundus image does not show the nerve-head cutaway; macular/foveal detail and permission-qualified figure panels remain limitations."
+        },
+        {
+          "assetId": "asset-servier-eye-section",
+          "outcome": "partial",
+          "reason": "Partial: Compared full-eye section diagram against the available human fundus example only; it does not show cornea, tunics, lens or vitreous section. Full globe photo not verified."
+        },
+        {
+          "assetId": "asset-servier-ear-section",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared ear-section diagram against the NLM historical human-ear photographic-work catalog. Catalog-level record lacks a reviewed individual plate; outer/middle/inner coverage remains unverified."
+        },
+        {
+          "assetId": "asset-bvis04-eye-anterior-segment",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "No source-page image was verified for a human anterior-segment specimen. A targeted NCBI eye-anatomy page fetch failed; no substitute drawing or model was accepted."
+        },
+        {
+          "assetId": "asset-bvis04-retina-layers",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared the retinal cell-chain schematic with a human photoreceptor-cell record. Image not visually inspected and one cell cannot represent layered retinal organization or ganglion/bipolar cells."
+        },
+        {
+          "assetId": "asset-bvis04-inner-ear-vestibular",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared labyrinth schematic with human organ-of-Corti microscopy. Candidate image was not visually inspected and does not show vestibule, utricle, saccule or semicircular canals."
+        },
+        {
+          "assetId": "asset-bvis04-cochlea-corti",
+          "outcome": "partial",
+          "reason": "Partial: Compared the duct/cell schematic with two human cochlear microscopy articles; the SEM organ-of-Corti surface was visually inspected. It does not show the whole duct compartments or complete schematic cross-section."
+        },
+        {
+          "assetId": "asset-bvis04-smell-taste",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared smell/taste panels with human olfactory mucosa micrograph metadata and OpenStax taste-bud micrograph metadata. Neither image was visually inspected; OpenStax taste tissue species is unstated and pathways/territories are absent."
+        }
+      ],
+      "existingSources": [
+        "https://collections.nlm.nih.gov/catalog/nlm:nlmuid-67760940R-bk",
+        "https://commons.wikimedia.org/wiki/File:Fundus_of_eye_normal.jpg",
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10153736",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4176544/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376148",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-nasal-cavity-sinuses-and-ear-images",
+        "https://www.cellimagelibrary.org/images/11458",
+        "https://www.intechopen.com/chapters/62850"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/bluelink-review.json",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-cochlea-corti-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-cochlea-corti-2.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-inner-ear-vestibular-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-retina-layers-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-smell-taste-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-smell-taste-2.md",
+        "research/boneefied-photo-references/evidence/final-neuro-gray880-optic-nerve-head-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-gray880-optic-nerve-head-2.md",
+        "research/boneefied-photo-references/evidence/final-neuro-servier-ear-section-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-servier-eye-section-1.md"
+      ],
+      "groupOutcomeCounts": {
+        "partial": 3,
+        "inaccessible-unverified": 4,
+        "unmatched-after-bounded-research": 1,
+        "fully-matched": 1
+      }
+    },
+    "cytology-mitosis": {
+      "assetIds": [
+        "asset-original-cell-overview",
+        "asset-original-mitosis-stages"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [],
+          "evidencePaths": [],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-original-cell-overview",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "Final comparison: the broad cell schematic groups membrane, cytoplasm, nucleus, nucleolus and multiple organelles, but no qualifying human source-page photo with visually checked organelle coverage and provenance is present in the reviewed candidates. Unavailable evidence, not evidence that none exists."
+        },
+        {
+          "assetId": "asset-original-mitosis-stages",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "Final comparison: the schematic spans interphase through telophase; no source-page set in the reviewed candidates visibly verifies the full sequence in human cells. A single-stage image would not cover the stages. No qualifying set verified; not a claim that none exists."
+        }
+      ],
+      "existingSources": [],
+      "existingEvidence": [],
+      "groupOutcomeCounts": {
+        "unmatched-after-bounded-research": 2
+      }
+    },
+    "nervous-system": {
+      "assetIds": [
+        "asset-servier-brain-lateral",
+        "asset-servier-brain-sagittal",
+        "asset-openstax-spinal-cord-specimen",
+        "asset-bvis04-deep-nuclei",
+        "asset-bvis04-brainstem-cerebellum",
+        "asset-bvis04-csf-meninges",
+        "asset-bvis04-spinal-cross-section",
+        "asset-bvis04-spinal-roots-rami",
+        "asset-bvis04-plexus-overview",
+        "asset-bvis04-upper-limb-nerves",
+        "asset-bvis04-lower-limb-nerves",
+        "asset-bvis04-cranial-nerves-i-vi",
+        "asset-bvis04-cranial-nerves-vii-xii"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353",
+            "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+            "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+            "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+            "https://commons.wikimedia.org/wiki/File:Human_brain_right_dissected_lateral_view.JPG",
+            "https://commons.wikimedia.org/wiki/File:Sciatic_nerve.jpg",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/bluelink-review.json",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-csf-meninges-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-deep-nuclei-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-lower-limb-nerves-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-plexus-overview-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-cross-section-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-cross-section-2.md",
+            "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-1.md",
+            "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-2.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-servier-brain-lateral",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared the lateral-lobe/insula diagram with one human lateral-dissection candidate and a verified medial-section photo. Candidate caption shows resected lateral cortex, but image inspection and exposed insula are not established."
+        },
+        {
+          "assetId": "asset-bvis04-deep-nuclei",
+          "outcome": "partial",
+          "reason": "Partial: Compared the coronal nuclei diagram with a human pathological coronal gross section. Source caption is edema, not basal nuclei; caudate, putamen and pallidum are not identified."
+        },
+        {
+          "assetId": "asset-bvis04-csf-meninges",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared CSF/ventricular and cranial meningeal panels with a cervical spinal meninges/roots dissection. It does not depict ventricular flow or cranial choroid plexus."
+        },
+        {
+          "assetId": "asset-bvis04-spinal-cross-section",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared the cord diagram with transverse cord histology and a separate cervical root dissection. Histology does not identify colored tracts or roots; root photo is a different specimen/view."
+        },
+        {
+          "assetId": "asset-bvis04-plexus-overview",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared body-wide plexus schematic with a visually inspected brachial-plexus photograph. Organism is not explicit on Calisphere record; cervical, lumbar, sacral and phrenic coverage absent."
+        },
+        {
+          "assetId": "asset-bvis04-lower-limb-nerves",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: Compared the femoral/sciatic diagram with a human sciatic-nerve file record. Sciatic photo itself was unavailable for visual inspection and no femoral nerve counterpart was confirmed."
+        }
+      ],
+      "existingSources": [
+        "https://calisphere.org/item/837de55ddbb8453733dff0c51af89353",
+        "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+        "https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg",
+        "https://commons.wikimedia.org/wiki/File:Human_Brain_Dissected.jpg",
+        "https://commons.wikimedia.org/wiki/File:Human_brain_right_dissected_lateral_view.JPG",
+        "https://commons.wikimedia.org/wiki/File:Sciatic_nerve.jpg",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=217-6",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/bluelink-review.json",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-csf-meninges-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-deep-nuclei-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-lower-limb-nerves-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-plexus-overview-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-cross-section-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-bvis04-spinal-cross-section-2.md",
+        "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-1.md",
+        "research/boneefied-photo-references/evidence/final-neuro-servier-brain-lateral-2.md"
+      ],
+      "groupOutcomeCounts": {
+        "inaccessible-unverified": 5,
+        "fully-matched": 7,
+        "partial": 1
+      }
+    },
+    "urinary-system": {
+      "assetIds": [
+        "asset-commons-kidney-cortex-human",
+        "asset-bvis06-urinary-tract",
+        "asset-bvis06-kidney-section",
+        "asset-bvis06-renal-vessels",
+        "asset-bvis06-nephron-pathway",
+        "asset-bvis06-renal-corpuscle",
+        "asset-bvis06-kidney-placement"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+            "https://commons.wikimedia.org/wiki/File:Renal_corpuscle.jpg",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=161-3",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=169-7",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-kidneys-and-urinary-system-images",
+            "https://wellcomecollection.org/works/cvestqrm"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/bluelink-review.json",
+            "research/boneefied-photo-references/evidence/final-micro-asset-commons-kidney-cortex-human-human-kidney-cortex-original-specimen-phot.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-kidney-placement.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-nephron-pathway.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-renal-corpuscle.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-renal-vessels.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-urinary-tract.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis06-urinary-tract",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Urinary tract and the opened bladder; Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.; Lateral pelvic close-up does not establish the testis, epididymis, full duct course or penile cross-section; photograph itself was not visible in screenshot viewport.; Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch."
+        },
+        {
+          "assetId": "asset-bvis06-renal-vessels",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Renal blood vessels, hilum to nephron and back; Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch."
+        },
+        {
+          "assetId": "asset-bvis06-nephron-pathway",
+          "outcome": "partial",
+          "reason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification."
+        },
+        {
+          "assetId": "asset-bvis06-renal-corpuscle",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Renal corpuscle and filtration barrier; Species is not stated; filtration slit/barrier components are not resolved as in the diagram."
+        },
+        {
+          "assetId": "asset-bvis06-kidney-placement",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Kidney placement in the abdomen; Not a microscopic nephron/corpuscle view; does not show every segment or renal vascular branch."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "https://commons.wikimedia.org/wiki/File:Renal_corpuscle.jpg",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=149-7",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=161-3",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=169-7",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-kidneys-and-urinary-system-images",
+        "https://wellcomecollection.org/works/cvestqrm"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/bluelink-review.json",
+        "research/boneefied-photo-references/evidence/final-micro-asset-commons-kidney-cortex-human-human-kidney-cortex-original-specimen-phot.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-kidney-placement.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-nephron-pathway.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-renal-corpuscle.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-renal-vessels.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-urinary-tract.md"
+      ],
+      "groupOutcomeCounts": {
+        "fully-matched": 2,
+        "partial": 4,
+        "inaccessible-unverified": 1
+      }
+    },
+    "respiratory-system": {
+      "assetIds": [
+        "asset-commons-alveolar-sac",
+        "asset-bvis05-upper-airway",
+        "asset-bvis05-larynx-glottis",
+        "asset-bvis05-trachea-bronchial-tree",
+        "asset-bvis05-lung-lobes",
+        "asset-bvis05-pleura-diaphragm",
+        "asset-bvis05-alveolar-unit",
+        "asset-bvis05-respiratory-membrane-histology"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+            "https://commons.wikimedia.org/wiki/File:Human_larynx_cut_section_2.jpg",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=72-3",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lungs-and-ventilation-pathways-images"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/bluelink-review.json",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-alveolar-unit-human-alveolar-sac.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-respiratory-membrane-histology-human-alveolar-sac.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-commons-alveolar-sac-human-alveolar-sac.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-larynx-glottis.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-pleura-diaphragm.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-trachea-bronchial-tree.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-airway.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis05-upper-airway",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: the Stanford item caption and legend specifically identify human nasal fossae, nasopharynx, opened sinus structures and palate, but the specimen photograph itself was not visually inspected, so visible correspondence remains unconfirmed."
+        },
+        {
+          "assetId": "asset-bvis05-larynx-glottis",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Larynx and glottis; A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport."
+        },
+        {
+          "assetId": "asset-bvis05-trachea-bronchial-tree",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Trachea, bronchi and bronchioles; A single in-situ view cannot substitute for distinct lobar, pleural, diaphragm, mucosal or section views; the photograph itself was not visible in screenshot viewport."
+        },
+        {
+          "assetId": "asset-bvis05-pleura-diaphragm",
+          "outcome": "partial",
+          "reason": "Partial: the Stanford diaphragm dissection is a genuine relevant human example, but it does not show pleural layers; broad lung/airway photo is not reused as a proxy for both pleura and diaphragm."
+        },
+        {
+          "assetId": "asset-bvis05-alveolar-unit",
+          "outcome": "partial",
+          "reason": "Final check: visually inspected human alveolar-sac photo confirms alveolar air spaces/septa only. It does not show bronchiole or duct, so it remains a relevant example for the unit schematic, not a complete mapping."
+        },
+        {
+          "assetId": "asset-bvis05-respiratory-membrane-histology",
+          "outcome": "partial",
+          "reason": "Final check: visually inspected human alveolar-sac photo shows air spaces and septa, a relevant tissue example; it does not resolve the respiratory membrane ultrastructure or airway wall, so the composite remains partial."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+        "https://commons.wikimedia.org/wiki/File:Human_larynx_cut_section_2.jpg",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=123-5",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=130-6",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=72-3",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lungs-and-ventilation-pathways-images"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/bluelink-review.json",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-alveolar-unit-human-alveolar-sac.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-respiratory-membrane-histology-human-alveolar-sac.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-commons-alveolar-sac-human-alveolar-sac.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-larynx-glottis.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-pleura-diaphragm.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-trachea-bronchial-tree.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-airway.md"
+      ],
+      "groupOutcomeCounts": {
+        "fully-matched": 2,
+        "inaccessible-unverified": 1,
+        "partial": 5
+      }
+    },
+    "cells-tissues": {
+      "assetIds": [
+        "asset-commons-simple-squamous-epithelium",
+        "asset-commons-simple-cuboidal-epithelium",
+        "asset-commons-simple-columnar-epithelium",
+        "asset-bvis04-epithelia-simple",
+        "asset-bvis04-epithelia-stratified",
+        "asset-bvis04-epithelia-other-stratified",
+        "asset-bvis04-connective-loose",
+        "asset-bvis04-connective-dense",
+        "asset-bvis04-cartilage",
+        "asset-bvis04-muscle-tissue",
+        "asset-bvis04-nervous-tissue"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://blogs.berkshirecc.edu/bccoer/mammalian-histology-connective-tissues/",
+            "https://commons.wikimedia.org/wiki/File:A_classic_view_of_non-keratinized_stratified_squamous_epithelium.jpg",
+            "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+            "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+            "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+            "https://commons.wikimedia.org/wiki/File:Human_cardiac_muscle.jpg",
+            "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+            "https://commons.wikimedia.org/wiki/File:Sweat_gland_histology_2014.jpg",
+            "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+            "https://histologylab.ctl.columbia.edu/lab03/dense-regular-connective-tissue/",
+            "https://histologylab.ctl.columbia.edu/slides/slide66/"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/additional-reviewed-sources.json",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-epithelia-simple-file-human-simple-squamous-epithelium-tiss.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-muscle-tissue-file-human-skeletal-muscle-tissue-1-tem-jp.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-muscle-tissue-human-cardiac-muscle.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-commons-simple-squamous-epithelium-file-human-simple-squamous-epithelium-tiss.md",
+            "research/boneefied-photo-references/micro-05-simple-columnar.md",
+            "research/boneefied-photo-references/micro-07-stratified-squamous.md",
+            "research/boneefied-photo-references/micro-13-connective.md",
+            "research/boneefied-photo-references/micro-14-dense-regular.md",
+            "research/boneefied-photo-references/micro-16-duke-skin.md",
+            "research/boneefied-photo-references/micro-evidence.md",
+            "research/sources/gapfill-01-sweat-gland.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-commons-simple-columnar-epithelium",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view."
+        },
+        {
+          "assetId": "asset-bvis04-epithelia-simple",
+          "outcome": "partial",
+          "reason": "The verified human simple-squamous image supports one panel. A targeted University of Genoa simple-epithelia page contained human cuboidal kidney and columnar intestine photographs; both original images were visually checked. Its official terms state that site images/micrographs are protected and prohibit deep linking, so that page is excluded from eligible references. The human three-panel set therefore remains partial."
+        },
+        {
+          "assetId": "asset-bvis04-epithelia-stratified",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: checked nonkeratinized-stratified image has no confirmed human organism, while Duke's human skin slides were not visually inspected. Pseudostratified/ciliated and keratinized human panels remain unsupported; no complete counterpart."
+        },
+        {
+          "assetId": "asset-bvis04-epithelia-other-stratified",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: inspected sweat-gland image is an unconfirmed-species example for a stratified gland duct only. It does not verify human stratified columnar or transitional epithelium; those panels remain unavailable."
+        },
+        {
+          "assetId": "asset-bvis04-connective-loose",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: the BCC page lists areolar, adipose and reticular examples but individual source photo, species, creator/terms and visual content were not verified in the audited material. All three human panels remain unsupported."
+        },
+        {
+          "assetId": "asset-bvis04-connective-dense",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: Columbia source describes a human dense-regular tendon slide, but its photo was not visually inspected; no checked human images cover dense-irregular and elastic tissue. At most a text-level tendon lead, not a verified mapping."
+        },
+        {
+          "assetId": "asset-bvis04-cartilage",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: the BCC mammalian-histology page is a candidate for cartilage types, but no individual photograph, human specimen identity, creator/terms or image content was verified. Hyaline, elastic and fibrocartilage human panels remain unsupported."
+        },
+        {
+          "assetId": "asset-bvis04-nervous-tissue",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "Final comparison: no reviewed candidate meets the public source-page, human provenance and image-inspection test for both neuron morphology and the represented glia. Evidence unavailable for this composite; not proof that no suitable images exist."
+        }
+      ],
+      "existingSources": [
+        "https://blogs.berkshirecc.edu/bccoer/mammalian-histology-connective-tissues/",
+        "https://commons.wikimedia.org/wiki/File:A_classic_view_of_non-keratinized_stratified_squamous_epithelium.jpg",
+        "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+        "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+        "https://commons.wikimedia.org/wiki/File:Human_Simple_Squamous_Epithelium_Tissue.jpg",
+        "https://commons.wikimedia.org/wiki/File:Human_cardiac_muscle.jpg",
+        "https://commons.wikimedia.org/wiki/File:Human_skeletal_muscle_tissue_1_-_TEM.jpg",
+        "https://commons.wikimedia.org/wiki/File:Sweat_gland_histology_2014.jpg",
+        "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "https://histologylab.ctl.columbia.edu/lab03/dense-regular-connective-tissue/",
+        "https://histologylab.ctl.columbia.edu/slides/slide66/"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/additional-reviewed-sources.json",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-epithelia-simple-file-human-simple-squamous-epithelium-tiss.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-muscle-tissue-file-human-skeletal-muscle-tissue-1-tem-jp.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis04-muscle-tissue-human-cardiac-muscle.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-commons-simple-squamous-epithelium-file-human-simple-squamous-epithelium-tiss.md",
+        "research/boneefied-photo-references/micro-05-simple-columnar.md",
+        "research/boneefied-photo-references/micro-07-stratified-squamous.md",
+        "research/boneefied-photo-references/micro-13-connective.md",
+        "research/boneefied-photo-references/micro-14-dense-regular.md",
+        "research/boneefied-photo-references/micro-16-duke-skin.md",
+        "research/boneefied-photo-references/micro-evidence.md",
+        "research/sources/gapfill-01-sweat-gland.md"
+      ],
+      "groupOutcomeCounts": {
+        "fully-matched": 3,
+        "partial": 2,
+        "inaccessible-unverified": 5,
+        "unmatched-after-bounded-research": 1
+      }
+    },
+    "cardiovascular-system": {
+      "assetIds": [
+        "asset-bvis05-heart-anterior",
+        "asset-bvis05-heart-chambers-valves",
+        "asset-bvis05-heart-valves-superior",
+        "asset-bvis05-heart-wall-pericardium",
+        "asset-bvis05-coronary-anterior",
+        "asset-bvis05-coronary-posterior",
+        "asset-bvis05-conduction-system",
+        "asset-bvis05-blood-composition",
+        "asset-bvis05-blood-smear-schematic",
+        "asset-bvis05-leukocyte-types",
+        "asset-bvis05-marrow-hematopoiesis"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Human_peripheral_blood_smear,_May-Gr%C3%BCnwald_stain.jpg",
+            "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg",
+            "https://embryology.med.unsw.edu.au/embryology/index.php?title=File%3ABone_marrow_histology_01.jpg",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-1",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-2",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-mediastinum",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/bluelink-review.json",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-composition-file-human-peripheral-blood-smear-may-gr-n.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-composition-sem-blood-cells.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-smear-schematic-file-human-peripheral-blood-smear-may-gr-n.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-smear-schematic-sem-blood-cells.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-leukocyte-types-file-human-peripheral-blood-smear-may-gr-n.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-leukocyte-types-sem-blood-cells.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-conduction-system.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-heart-wall-pericardium.md",
+            "research/boneefied-photo-references/micro-20-unsw-bone-marrow.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis05-heart-wall-pericardium",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Pericardium and layers of the heart wall; Captioned plane is an interatrial cleavage view; not a full anterior heart or complete layer specimen. Photograph was not visible in screenshot viewport."
+        },
+        {
+          "assetId": "asset-bvis05-conduction-system",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Conduction system of the heart; Does not show all tiny conduction elements as a grossly distinguishable separate route, and is not a superior four-valve view."
+        },
+        {
+          "assetId": "asset-bvis05-blood-composition",
+          "outcome": "partial",
+          "reason": "Final check: original human blood SEM was visually inspected; source caption and NCI metadata identify human circulating blood, erythrocytes, leukocytes and platelets, with Wetzel/Schaefer attribution and a public-domain note. Plasma/serum separation and clot/centrifugation panels remain unmatched."
+        },
+        {
+          "assetId": "asset-bvis05-blood-smear-schematic",
+          "outcome": "partial",
+          "reason": "Final check: original human blood SEM now visually inspected and caption/provenance confirmed; it is a real human circulating-blood field, not a stained light-microscope smear or schematic-size comparison. Existing human May-Grünwald smear remains a distinct relevant example; this asset stays partial."
+        },
+        {
+          "assetId": "asset-bvis05-leukocyte-types",
+          "outcome": "partial",
+          "reason": "Final check: the human blood SEM image and file caption were inspected; its source description names lymphocyte, monocyte and neutrophil. Eosinophil and basophil are not shown/identified, so it supports only three of five types and remains partial."
+        },
+        {
+          "assetId": "asset-bvis05-marrow-hematopoiesis",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: UNSW marrow histology photo was visually seen, but source does not establish species and its reuse terms are non-commercial; hematopoietic lineage/process schematic is not shown. No verified human counterpart."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Human_peripheral_blood_smear,_May-Gr%C3%BCnwald_stain.jpg",
+        "https://commons.wikimedia.org/wiki/File:SEM_blood_cells.jpg",
+        "https://embryology.med.unsw.edu.au/embryology/index.php?title=File%3ABone_marrow_histology_01.jpg",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-1",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=118-2",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-mediastinum",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/bluelink-review.json",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-composition-file-human-peripheral-blood-smear-may-gr-n.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-composition-sem-blood-cells.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-smear-schematic-file-human-peripheral-blood-smear-may-gr-n.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-blood-smear-schematic-sem-blood-cells.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-leukocyte-types-file-human-peripheral-blood-smear-may-gr-n.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-leukocyte-types-sem-blood-cells.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-conduction-system.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-heart-wall-pericardium.md",
+        "research/boneefied-photo-references/micro-20-unsw-bone-marrow.md"
+      ],
+      "groupOutcomeCounts": {
+        "fully-matched": 5,
+        "partial": 5,
+        "inaccessible-unverified": 1
+      }
+    },
+    "blood-vessels": {
+      "assetIds": [
+        "asset-bvis05-vessel-wall-types",
+        "asset-bvis05-vessel-flow-chain",
+        "asset-bvis05-capillary-types",
+        "asset-bvis05-body-artery-vein-maps",
+        "asset-bvis05-head-neck-vessels",
+        "asset-bvis05-upper-limb-arteries",
+        "asset-bvis05-upper-limb-veins",
+        "asset-bvis05-lower-limb-arteries",
+        "asset-bvis05-great-saphenous-route",
+        "asset-bvis05-hepatic-portal-system",
+        "asset-bvis05-celiac-renal-context"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+            "https://commons.wikimedia.org/wiki/File:Liver_with_portal_vein_dissected.jpg",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=117-2",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=185-4",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=186-7",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=192-4",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=196-7",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317783",
+            "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-duodenum-pancreas-and-abdominal-aorta-images"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/bluelink-review.json",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-capillary-types-file-kidney-cortex-947-21-human-jpg.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-body-artery-vein-maps.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-great-saphenous-route.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-head-neck-vessels.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-hepatic-portal-system.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lower-limb-arteries.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-limb-arteries.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-limb-veins.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis05-vessel-wall-types",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "Final comparison: no reviewed source set provides visually inspected, human-confirmed photos for artery, vein, capillary and all depicted wall layers. This is unavailable source evidence, not proof of no public specimen images."
+        },
+        {
+          "assetId": "asset-bvis05-vessel-flow-chain",
+          "outcome": "no-literal-photo",
+          "reason": "The continuous aorta-to-vein flow chain is a process diagram across scales, not a single static anatomical specimen. Real regional vessels remain photographable."
+        },
+        {
+          "assetId": "asset-bvis05-capillary-types",
+          "outcome": "partial",
+          "reason": "Final comparison: verified human kidney cortex shows glomerular capillary profiles, a relevant example for fenestrated filtration beds. It does not cover continuous or sinusoidal types, and no ultrastructural comparison was verified."
+        },
+        {
+          "assetId": "asset-bvis05-body-artery-vein-maps",
+          "outcome": "partial",
+          "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+        },
+        {
+          "assetId": "asset-bvis05-head-neck-vessels",
+          "outcome": "partial",
+          "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+        },
+        {
+          "assetId": "asset-bvis05-upper-limb-arteries",
+          "outcome": "partial",
+          "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+        },
+        {
+          "assetId": "asset-bvis05-upper-limb-veins",
+          "outcome": "partial",
+          "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+        },
+        {
+          "assetId": "asset-bvis05-lower-limb-arteries",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Arterial route to the leg and foot; Local recurrent branch; no full femoral-popliteal-tibial route.; The page does not identify the great saphenous vein or its proximal course.; Branch-focused thigh view; not the complete lower limb arterial path."
+        },
+        {
+          "assetId": "asset-bvis05-great-saphenous-route",
+          "outcome": "partial",
+          "reason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification."
+        },
+        {
+          "assetId": "asset-bvis05-hepatic-portal-system",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Hepatic portal system; Arterial/nerve dissection, not portal venous return or kidney hilum.; Only liver/portal-vein region, not full gut-to-liver venous drainage; image was not visually checked."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "https://commons.wikimedia.org/wiki/File:Liver_with_portal_vein_dissected.jpg",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=117-2",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=185-4",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=186-7",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=192-4",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=196-7",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12317783",
+        "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-duodenum-pancreas-and-abdominal-aorta-images"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/bluelink-review.json",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-capillary-types-file-kidney-cortex-947-21-human-jpg.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-body-artery-vein-maps.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-great-saphenous-route.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-head-neck-vessels.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-hepatic-portal-system.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lower-limb-arteries.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-limb-arteries.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-upper-limb-veins.md"
+      ],
+      "groupOutcomeCounts": {
+        "unmatched-after-bounded-research": 1,
+        "no-literal-photo": 1,
+        "partial": 8,
+        "fully-matched": 1
+      }
+    },
+    "lymphatic-system": {
+      "assetIds": [
+        "asset-bvis05-lymph-overview",
+        "asset-bvis05-lymph-node-structure",
+        "asset-bvis05-spleen-pulp",
+        "asset-bvis05-thymus-lobule",
+        "asset-bvis05-tonsil-map-structure",
+        "asset-bvis05-gut-lymphoid-lacteal"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=144-4",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lymph-overview.md",
+            "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis05-lymph-overview",
+          "outcome": "partial",
+          "reason": "The named source set covers only regional vessel/lymph structures; missing pathways and orientations prevent full-plate verification."
+        },
+        {
+          "assetId": "asset-bvis05-lymph-node-structure",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: Duke page identifies human lymph-node histology but its linked photo was not visually inspected; node compartments plus gross afferent/efferent/sinus flow are not verified together. Evidence remains unavailable."
+        },
+        {
+          "assetId": "asset-bvis05-spleen-pulp",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human spleen section; red/white pulp visible. Central arteriole, marginal-zone boundary, individual sinusoids and cords were not all resolved in the overview."
+        },
+        {
+          "assetId": "asset-bvis05-thymus-lobule",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human thymus; lobules, cortex and medulla visible. Hassall corpuscles and anterior chest/retrosternal placement not established by this overview."
+        },
+        {
+          "assetId": "asset-bvis05-tonsil-map-structure",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: Duke's tonsil listing has unconfirmed organism and uninspected image; even a tissue image could not replace the gross tonsil locations. Both human tissue photo and location coverage remain unresolved."
+        },
+        {
+          "assetId": "asset-bvis05-gut-lymphoid-lacteal",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: Duke text identifies human ileal lymphoid tissue, but no photo was visually checked for Peyer patches/lacteal and no image shows the lymph route. Not enough evidence for either full panel."
+        }
+      ],
+      "existingSources": [
+        "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=144-4",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=76-6"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis05-lymph-overview.md",
+        "research/boneefied-photo-references/micro-18-duke-lymphoid.md"
+      ],
+      "groupOutcomeCounts": {
+        "partial": 3,
+        "inaccessible-unverified": 3
+      }
+    },
+    "endocrine-system": {
+      "assetIds": [
+        "asset-bvis05-endocrine-body-map",
+        "asset-bvis05-hypothalamus-pituitary-axis",
+        "asset-bvis05-thyroid-parathyroid",
+        "asset-bvis05-adrenal-zones",
+        "asset-bvis05-pancreas-islet",
+        "asset-bvis05-ovary-testis"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg",
+            "https://histology.oit.duke.edu/NormalBody/Endocrine/Endocrine.html"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-endocrine-body-map-human-pancreatic-islet.md",
+            "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-pancreas-islet-human-pancreatic-islet.md",
+            "research/boneefied-photo-references/micro-17-duke-endocrine.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis05-endocrine-body-map",
+          "outcome": "partial",
+          "reason": "Final check: visually inspected human pancreatic-islet micrograph supports one endocrine-tissue example; source identifies red glucagon and blue insulin staining. It does not cover the other endocrine glands, gross body map, or gonads; record remains partial."
+        },
+        {
+          "assetId": "asset-bvis05-hypothalamus-pituitary-axis",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: human pituitary slide description is relevant but photo not inspected and cannot depict portal circulation or hypothalamic nerve fibers. The process schematic has no verified photo counterpart."
+        },
+        {
+          "assetId": "asset-bvis05-thyroid-parathyroid",
+          "outcome": "inaccessible-unverified",
+          "reason": "Final comparison: source text describes human thyroid/parathyroid material but no image was inspected for follicles, colloid, C cells or chief-cell clusters. Human examples remain unverified."
+        },
+        {
+          "assetId": "asset-bvis05-adrenal-zones",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human adrenal section with cortex and medulla; not an in-situ adrenal-on-kidney photograph and not cell-level verification of every cortical zone/chromaffin cell."
+        },
+        {
+          "assetId": "asset-bvis05-pancreas-islet",
+          "outcome": "partial",
+          "reason": "Final check: the original licensed human pancreatic-islet image was visually inspected; caption identifies an islet with red glucagon and blue insulin staining, creator Afferent, CC BY-SA 3.0. It is a relevant islet example only; whole-pancreas position, acinar/duct system and delta cells are not established, so record remains partial."
+        },
+        {
+          "assetId": "asset-bvis05-ovary-testis",
+          "outcome": "unmatched-after-bounded-research",
+          "reason": "Final comparison: reviewed candidates contain no visually inspected, terms/creator-verified human pair for ovarian follicles/corpus luteum and testis tubules/interstitium. No qualifying source set found in this audit; this is unavailable evidence, not proof of absence."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Human_pancreatic_islet.jpg",
+        "https://histology.oit.duke.edu/NormalBody/Endocrine/Endocrine.html"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-endocrine-body-map-human-pancreatic-islet.md",
+        "research/boneefied-photo-references/evidence/final-micro-asset-bvis05-pancreas-islet-human-pancreatic-islet.md",
+        "research/boneefied-photo-references/micro-17-duke-endocrine.md"
+      ],
+      "groupOutcomeCounts": {
+        "partial": 3,
+        "inaccessible-unverified": 2,
+        "unmatched-after-bounded-research": 1
+      }
+    },
+    "digestive-system": {
+      "assetIds": [
+        "asset-bvis06-oral-cavity",
+        "asset-bvis06-stomach",
+        "asset-bvis06-alimentary-canal",
+        "asset-bvis06-liver-biliary-pancreas",
+        "asset-bvis06-liver-lobule-pancreas",
+        "asset-bvis06-digestive-wall-layers",
+        "asset-bvis06-small-intestine",
+        "asset-bvis06-large-intestine",
+        "asset-bvis06-peritoneal-folds",
+        "asset-bvis06-abdominal-placement"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Normal_gastric_mucosa_low_mag.jpg",
+            "https://commons.wikimedia.org/wiki/File:Pancreatic_acinar_cells_-_TEM.jpg",
+            "https://commons.wikimedia.org/wiki/File:Part_of_a_human_stomach_dissected_by_Edward_Jenner,_England,_Wellcome_L0057749.jpg",
+            "https://commons.wikimedia.org/wiki/File:Portal_triad.JPG",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=139-1",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=142-1",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=142-6",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-1",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-5",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=144-4",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=146-6",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+            "https://peir.path.uab.edu/library/picture.php?/30672/categories",
+            "https://wellcomecollection.org/works/b5tfxwc4",
+            "https://wellcomecollection.org/works/tjxuhj2w"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-abdominal-placement.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-alimentary-canal.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-digestive-wall-layers.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-large-intestine.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-biliary-pancreas.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-lobule-pancreas.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-oral-cavity.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-peritoneal-folds.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-small-intestine.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-stomach.md",
+            "research/boneefied-photo-references/evidence/final-visceral-stomach-stanford-142-6.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis06-oral-cavity",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Oral cavity, pharynx and salivary glands; The organism is not stated; it covers only parotid anatomy, not the complete oral cavity or all major glands. No reuse license was found."
+        },
+        {
+          "assetId": "asset-bvis06-stomach",
+          "outcome": "partial",
+          "reason": "Partial: Stanford Bassett 142-6 now visually verifies the opened anterior human stomach with rugae and pyloric-region structures, and the human gastric mucosa micrograph covers pits/glands; available views do not establish the named parietal and chief cells at cell level, while Jenner’s flattened preparation is only a historical vessel/wall example."
+        },
+        {
+          "assetId": "asset-bvis06-alimentary-canal",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Alimentary canal: mouth to anus; Does not show all mesenteric attachments or whole-body organ placement.; Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; No anal-canal sphincter section; does not represent the entire large intestine alone."
+        },
+        {
+          "assetId": "asset-bvis06-liver-biliary-pancreas",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Liver, gallbladder, pancreas and their ducts; Duct-focused specimen, not a complete liver, pancreas or microscopic acinus view.; Does not show all mesenteric attachments or whole-body organ placement.; Arterial/nerve dissection, not portal venous return or kidney hilum."
+        },
+        {
+          "assetId": "asset-bvis06-liver-lobule-pancreas",
+          "outcome": "partial",
+          "reason": "Source-page candidates cover selected named structures only; unresolved views, route context or microscopic detail prevent whole-plate verification."
+        },
+        {
+          "assetId": "asset-bvis06-digestive-wall-layers",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view."
+        },
+        {
+          "assetId": "asset-bvis06-small-intestine",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view."
+        },
+        {
+          "assetId": "asset-bvis06-large-intestine",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Large intestine and anal canal; Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; Regional sigmoid-colon view only; not a whole-body lymph route or anal sphincter view.; No anal-canal sphincter section; does not represent the entire large intestine alone."
+        },
+        {
+          "assetId": "asset-bvis06-peritoneal-folds",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Peritoneal folds: mesentery and omenta; Does not show all mesenteric attachments or whole-body organ placement."
+        },
+        {
+          "assetId": "asset-bvis06-abdominal-placement",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Abdominal placement of the digestive organs; Does not show all mesenteric attachments or whole-body organ placement.; Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; Arterial/nerve dissection, not portal venous return or kidney hilum."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Normal_gastric_mucosa_low_mag.jpg",
+        "https://commons.wikimedia.org/wiki/File:Pancreatic_acinar_cells_-_TEM.jpg",
+        "https://commons.wikimedia.org/wiki/File:Part_of_a_human_stomach_dissected_by_Edward_Jenner,_England,_Wellcome_L0057749.jpg",
+        "https://commons.wikimedia.org/wiki/File:Portal_triad.JPG",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=139-1",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=142-1",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=142-6",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-1",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=143-5",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=144-4",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=146-6",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=148-1",
+        "https://peir.path.uab.edu/library/picture.php?/30672/categories",
+        "https://wellcomecollection.org/works/b5tfxwc4",
+        "https://wellcomecollection.org/works/tjxuhj2w"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-abdominal-placement.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-alimentary-canal.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-digestive-wall-layers.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-large-intestine.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-biliary-pancreas.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-liver-lobule-pancreas.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-oral-cavity.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-peritoneal-folds.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-small-intestine.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-stomach.md",
+        "research/boneefied-photo-references/evidence/final-visceral-stomach-stanford-142-6.md"
+      ],
+      "groupOutcomeCounts": {
+        "inaccessible-unverified": 1,
+        "partial": 9
+      }
+    },
+    "male-reproductive": {
+      "assetIds": [
+        "asset-bvis06-male-system",
+        "asset-bvis06-testis-ducts"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Histology_image_of_testis.jpg",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=169-7"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-male-system.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-testis-ducts.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis06-male-system",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Male reproductive tract, glands and penis; Lateral pelvic close-up does not establish the testis, epididymis, full duct course or penile cross-section; photograph itself was not visible in screenshot viewport."
+        },
+        {
+          "assetId": "asset-bvis06-testis-ducts",
+          "outcome": "inaccessible-unverified",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Testis, epididymis and seminiferous tubule; Species is not identified; actual image was not visually checked and this is not a gross testis/epididymis tract image."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Histology_image_of_testis.jpg",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=169-7"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-male-system.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-testis-ducts.md"
+      ],
+      "groupOutcomeCounts": {
+        "partial": 1,
+        "inaccessible-unverified": 1
+      }
+    },
+    "female-reproductive": {
+      "assetIds": [
+        "asset-bvis06-female-gross",
+        "asset-bvis06-ovary-follicle",
+        "asset-bvis06-uterine-wall"
+      ],
+      "state": "accounted-with-residual-exceptions",
+      "attempts": [
+        {
+          "type": "retained-prior-research",
+          "sourcePages": [
+            "https://commons.wikimedia.org/wiki/File:Graafian_Follicle,_Human_Ovary_(3595010317).jpg",
+            "https://commons.wikimedia.org/wiki/File:Histology_of_normal_simple_columnar_epithelium_of_the_endometrium.jpg",
+            "https://commons.wikimedia.org/wiki/File:Human_ovary.jpg",
+            "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=161-3"
+          ],
+          "evidencePaths": [
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-female-gross.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-ovary-follicle.md",
+            "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-uterine-wall.md"
+          ],
+          "note": "Earlier collection searches, actual inspections, failures and limitations carried forward; these are not fresh inspection claims."
+        }
+      ],
+      "residuals": [
+        {
+          "assetId": "asset-bvis06-female-gross",
+          "outcome": "partial",
+          "reason": "Partial: verified/candidate source pages show limited real examples for Female internal organs: ovary, tube, uterus and vagina; Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.; Shows postovulatory structures, not a full range of follicle stages or wall histology."
+        },
+        {
+          "assetId": "asset-bvis06-ovary-follicle",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human ovary: a corpus luteum and several follicular profiles visible. Does not establish a complete developmental sequence or all oocyte-wall structures at cell level. Human ovary with cortical follicular profiles and medullary vessels. No assertion that all primordial-to-mature stages, corona radiata and zona pellucida were individually resolved."
+        },
+        {
+          "assetId": "asset-bvis06-uterine-wall",
+          "outcome": "partial",
+          "reason": "Partial, not approved: Human uterine tissue with endometrial glands and myometrium visible; a low-power section, not independent verification of the perimetrium and every endometrial sublayer. Human secretory uterine tissue with glandular profiles and muscle visible. Useful companion to proliferative tissue; not proof that every wall layer in the composite is covered."
+        }
+      ],
+      "existingSources": [
+        "https://commons.wikimedia.org/wiki/File:Graafian_Follicle,_Human_Ovary_(3595010317).jpg",
+        "https://commons.wikimedia.org/wiki/File:Histology_of_normal_simple_columnar_epithelium_of_the_endometrium.jpg",
+        "https://commons.wikimedia.org/wiki/File:Human_ovary.jpg",
+        "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=161-3"
+      ],
+      "existingEvidence": [
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-female-gross.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-ovary-follicle.md",
+        "research/boneefied-photo-references/evidence/final-visceral-asset-bvis06-uterine-wall.md"
+      ],
+      "groupOutcomeCounts": {
+        "partial": 3
+      }
+    }
+  },
+  "newCollectionMetadata": {
+    "evidencePath": "research/boneefied-photo-references/duke-grouped-source-metadata.json",
+    "pages": [
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Skin/Skin.html",
+        "status": 200,
+        "slidesListed": 8,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Lymphatic/Lymphatic.html",
+        "status": 200,
+        "slidesListed": 11,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Endocrine/Endocrine.html",
+        "status": 200,
+        "slidesListed": 24,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/MoleculesCells/Epithelium/Epithelium.html",
+        "status": 200,
+        "slidesListed": 0,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/MoleculesCells/ConnTissueBlood/ConnTissueBlood.html",
+        "status": 200,
+        "slidesListed": 6,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/MoleculesCells/CartilageBone/CartilageBone.html",
+        "status": 200,
+        "slidesListed": 0,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/MoleculesCells/Nerve/Nerve.html",
+        "status": 200,
+        "slidesListed": 0,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Cardiovascular/Cardiovascular.html",
+        "status": 200,
+        "slidesListed": 18,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Respiratory/Respiratory.html",
+        "status": 200,
+        "slidesListed": 13,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/Urinary/Urinary.html",
+        "status": 200,
+        "slidesListed": 7,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/GItract/GItract.html",
+        "status": 200,
+        "slidesListed": 34,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/GIglands/GIglands.html",
+        "status": 200,
+        "slidesListed": 0,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/MaleRepro/MaleRepro.html",
+        "status": 200,
+        "slidesListed": 20,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/FemaleRepro/FemaleRepro.html",
+        "status": 200,
+        "slidesListed": 30,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/EyeEar/Eye.html",
+        "status": 200,
+        "slidesListed": 28,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/EyeEar/Ear.html",
+        "status": 200,
+        "slidesListed": 15,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      },
+      {
+        "url": "https://histology.oit.duke.edu/NormalBody/CNS/CNS.html",
+        "status": 200,
+        "slidesListed": 10,
+        "inspection": "Metadata only; actual inspected slides are listed separately."
+      }
+    ]
+  },
+  "actualNewSlideInspectionEvidence": "research/boneefied-photo-references/grouped-inspections.json",
+  "fiveOutcomeCounts": {
+    "fully-matched": 38,
+    "partial": 82,
+    "no-literal-photo": 3,
+    "inaccessible-unverified": 26,
+    "unmatched-after-bounded-research": 15
+  },
+  "allImagesAccountedFor": true,
+  "allFeasibleMatchesEstablished": false,
+  "coverageComplete": false,
+  "nativeBuildDisposition": "Existing authorized iOS internal IPA / Android AAB request retained; not started or resubmitted. Residual photo exceptions must be reported before treating references as satisfied. No signing changes, store submission or publication."
+}

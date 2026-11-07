@@ -67,3 +67,18 @@ region from the URL would attach anatomically incorrect reference links.
 **How to apply:** Check the displayed photographs and embedded captions, and
 retain the selected image-page associations. Collecting a gallery is not
 evidence that every photograph in it was inspected.
+
+Use bounded, grouped collection research rather than restarting with another
+sample: carry previous attempts forward, reuse inspected sources, and use one
+primary collection browse plus one genuinely different fallback per group.
+Further queries require a specifically missing structure/view and a plausible
+new source. Do not repeatedly retry blocked or failed destinations.
+
+**Why:** The owner explicitly requested efficient grouped completion and honest
+residual exceptions instead of repeated individual searches or sample coverage.
+
+**How to apply:** Keep per-image outcomes separate from group research attempts.
+Accounted-for is not the same as photographically covered. A slide overview
+does not verify cellular details merely because the page describes them; keep
+such composites partial. Do not copy, embed, hotlink, rehost, cache or add
+thumbnails of third-party photographs as part of this work.

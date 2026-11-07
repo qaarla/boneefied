@@ -82,7 +82,9 @@
             "es": "Plano coronal: sección cerebral humana regional"
           }
         },
-        {"newSource": "axial-brain-mri"}
+        {
+          "newSource": "axial-brain-mri"
+        }
       ]
     },
     {
@@ -105,7 +107,9 @@
             "es": "Plano coronal: sección cerebral humana regional"
           }
         },
-        {"newSource": "axial-brain-mri"}
+        {
+          "newSource": "axial-brain-mri"
+        }
       ]
     },
     {
@@ -145,7 +149,41 @@
             "es": "Músculo cardíaco: micrografía óptica humana"
           }
         },
-        {"newSource": "human-smooth-muscle"}
+        {
+          "newSource": "human-smooth-muscle"
+        }
+      ]
+    },
+    {
+      "assetId": "asset-muscular-atlas-abdominal-wall",
+      "reason": "The previously inspected human dissection depicts all four required muscles: rectus abdominis, external oblique, internal oblique and transversus abdominis. A single layered left anterolateral field is a suitable limited real example; three separate schematic panels and identical orientation are not required.",
+      "refs": [
+        {
+          "fromAssetId": "asset-muscular-atlas-abdominal-wall",
+          "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+          "subject": {
+            "en": "Abdominal wall: all four muscles, one left anterolateral dissection",
+            "es": "Pared abdominal: los cuatro músculos, una disección anterolateral izquierda"
+          },
+          "viewLimitations": "One left anterolateral layered dissection rather than three sequential schematic panels; complementary real anatomy, not identical artwork."
+        }
+      ]
+    },
+    {
+      "assetId": "asset-commons-simple-cuboidal-epithelium",
+      "reason": "The inspected human renal-cortex photograph shows cuboidal cells with round nuclei surrounding renal-tubule lumina. It is a specifically identified human example of the epithelial type, not a claim that the original unclassified photomicrograph has established species.",
+      "refs": [
+        {
+          "fromAssetId": "asset-commons-kidney-cortex-human",
+          "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "subject": {
+            "en": "Simple cuboidal epithelium: human renal tubules",
+            "es": "Epitelio cúbico simple: túbulos renales humanos"
+          },
+          "matches": "Human renal tubules lined by cuboidal epithelial cells, with rounded nuclei and lumina, visible in the actual source-page photograph.",
+          "viewLimitations": "A renal-cortex field also containing a glomerulus and vessels, not an isolated idealized epithelial strip or the identical original photograph.",
+          "reinspection": "The public Commons source page was opened on 2026-11-07. Its actual 600x human renal-cortex photograph visibly resolves cuboidal tubular epithelium and round nuclei around tubular lumina. Caption identifies human kidney cortex. No photograph was downloaded or retained in the project."
+        }
       ]
     }
   ]

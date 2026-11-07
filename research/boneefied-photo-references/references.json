@@ -725,11 +725,11 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Fresh Commons source-page screenshot inspected, including the actual bone photograph and painted labels: /tmp/replit-screenshots/commons_wikimedia_org_wiki_File_Foot_bones_-_tarsus_metatarsus_and_phalanges_yoKi.png.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
           "evidencePath": "research/boneefied-photo-references/additional-reviewed-sources.json",
           "finalUrl": "https://commons.wikimedia.org/wiki/File:Foot_bones_-_tarsus,_metatarsus_and_phalanges.jpg",
           "redirectNotes": "Fetched public source page resolved at the supplied URL; no redirect observed.",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00"
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00"
         },
         "subject": {
           "en": "Foot bones, dorsal-oblique view; side unstated",
@@ -2358,8 +2358,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 3, 8, 9, 15.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -2470,8 +2470,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 10, 12, 15, 17.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -2498,7 +2498,7 @@
   {
     "assetId": "asset-muscular-atlas-abdominal-wall",
     "title": "Abdominal wall layers",
-    "status": "partial",
+    "status": "verified",
     "references": [
       {
         "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
@@ -2507,9 +2507,9 @@
         "creator": "David L. Bassett",
         "mediaType": "gross-photo",
         "organism": "human",
-        "relationship": "direct-match",
+        "relationship": "relevant-example",
         "matches": "Human abdominal-wall dissection source labels transversus, the two obliques, and rectus abdominis.",
-        "viewLimitations": "One left anterolateral view, not the assigned three-step superficial-to-deep comparison panels or matching orientation.",
+        "viewLimitations": "One left anterolateral layered dissection rather than three sequential schematic panels; complementary real anatomy, not identical artwork.",
         "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
         "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
         "reproductionRights": "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
@@ -2525,14 +2525,49 @@
           "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
         },
         "subject": {
-          "en": "Left anterolateral abdominal-wall dissection",
-          "es": "Disección anterolateral izquierda de la pared abdominal"
+          "en": "Abdominal wall: all four muscles, one left anterolateral dissection",
+          "es": "Pared abdominal: los cuatro músculos, una disección anterolateral izquierda"
         }
       }
     ],
-    "reason": "Partial: the Stanford human anterolateral abdominal dissection labels rectus, obliques and transversus, but is a single field rather than the illustrated three sequential superficial-to-deep panels.",
-    "coverageKind": "incomplete",
-    "finalReview": "Compared the Stanford caption and labeled structures with external-oblique, internal-oblique and transversus sequential layers; only one anterolateral field is shown."
+    "reason": "The previously inspected human dissection depicts all four required muscles: rectus abdominis, external oblique, internal oblique and transversus abdominis. A single layered left anterolateral field is a suitable limited real example; three separate schematic panels and identical orientation are not required.",
+    "coverageKind": "relevant-example",
+    "finalReview": "The previously inspected human dissection depicts all four required muscles: rectus abdominis, external oblique, internal oblique and transversus abdominis. A single layered left anterolateral field is a suitable limited real example; three separate schematic panels and identical orientation are not required.",
+    "previousAssessment": {
+      "status": "partial",
+      "reason": "Partial: the Stanford human anterolateral abdominal dissection labels rectus, obliques and transversus, but is a single field rather than the illustrated three sequential superficial-to-deep panels.",
+      "references": [
+        {
+          "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+          "title": "Anterolateral abdominal-wall dissection showing transversus abdominis",
+          "source": "Stanford Lane Medical Library, Bassett Collection",
+          "creator": "David L. Bassett",
+          "mediaType": "gross-photo",
+          "organism": "human",
+          "relationship": "direct-match",
+          "matches": "Human abdominal-wall dissection source labels transversus, the two obliques, and rectus abdominis.",
+          "viewLimitations": "One left anterolateral view, not the assigned three-step superficial-to-deep comparison panels or matching orientation.",
+          "termsUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "linkingTerms": "The public source record is suitable for an ordinary outbound link; its stated license concerns image reuse and is not itself a grant to copy or embed the image.",
+          "reproductionRights": "CC BY-SA 4.0 is stated by the source; reproduction remains subject to that license's attribution and other conditions, and no broader permission is established.",
+          "verification": {
+            "pageOpened": true,
+            "captionChecked": true,
+            "imageVisuallyInspected": true,
+            "visualEvidence": "Temporary image viewed from /tmp/stanford-abdomen.jpg: human torso with anterolateral abdominal dissection and layered wall visible. Source page identifies transversus, obliques and rectus; not the assigned three sequential panels.",
+            "checkedAt": "2026-11-06T21:20:06.175Z",
+            "evidencePath": "research/boneefied-photo-references/evidence/final-muscular-muscular-atlas-abdominal-wall-01.md",
+            "finalUrl": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+            "redirectNotes": "No page redirect observed; the specific Stanford Lane Bassett item page remained final. A separate larger-view/image link is provided on the record.",
+            "reviewedAtFinalCheck": "2026-11-06T21:58:55.714Z"
+          },
+          "subject": {
+            "en": "Left anterolateral abdominal-wall dissection",
+            "es": "Disección anterolateral izquierda de la pared abdominal"
+          }
+        }
+      ]
+    }
   },
   {
     "assetId": "asset-muscular-atlas-gluteal",
@@ -2562,8 +2597,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 9, 10, 11, 12.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lumbar-spine-hip-and-knee-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -2684,8 +2719,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 7, 8, 9.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -2805,8 +2840,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 9, 11, 12, 14.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-wrist-hand-and-foot-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -3160,8 +3195,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 5, 6, 10, 12.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -3243,8 +3278,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 2, 3, 4, 5, 6.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-lower-limb-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -3599,8 +3634,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 1, 5, 6, 13.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-shoulder-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -3847,8 +3882,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 52, 56.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4006,8 +4041,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 35.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4125,8 +4160,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 52, 56.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4161,8 +4196,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 32, 33, 34.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4379,8 +4414,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 32, 35, 36.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4500,8 +4535,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 7, 9, 16.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-overview-of-upper-limb-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4537,8 +4572,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 13, 14, 15, 17, 18.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-brachial-plexus-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4660,8 +4695,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 58, 59, 63, 64.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4772,8 +4807,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 58, 64, 65, 66.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-cranial-cavity-venous-sinuses-and-brain-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -4903,8 +4938,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 22, 23, 24.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-nasal-cavity-sinuses-and-ear-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -5362,37 +5397,72 @@
   {
     "assetId": "asset-commons-simple-cuboidal-epithelium",
     "title": "Simple cuboidal epithelium specimen",
-    "status": "partial",
+    "status": "verified",
     "references": [
       {
-        "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
-        "title": "File:Epithelial Tissues Simple Cuboidal Epithelium (41681552782).jpg",
-        "source": "Wikimedia Commons",
-        "creator": "Berkshire Community College Bioscience Image Library",
+        "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+        "title": "Human kidney cortex — original specimen photograph",
+        "source": "Wikimedia Commons; author's archive",
+        "creator": "Doc. RNDr. Josef Reischig, CSc.",
         "mediaType": "micrograph",
-        "organism": "unconfirmed",
-        "relationship": "direct-match",
-        "matches": "Existing specimen record names the image as a simple cuboidal epithelium photomicrograph.",
-        "viewLimitations": "Current source-page request was rate-limited and no photograph or caption could be visually checked; human origin is not newly asserted.",
-        "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "linkingTerms": "The existing specimen license record states CC0; a current page inspection was rate-limited. Linking to the Commons page only.",
-        "reproductionRights": "Existing project specimen record identifies CC0 1.0; no new page inspection was possible.",
+        "organism": "human",
+        "relationship": "relevant-example",
+        "matches": "Human renal tubules lined by cuboidal epithelial cells, with rounded nuclei and lumina, visible in the actual source-page photograph.",
+        "viewLimitations": "A renal-cortex field also containing a glomerulus and vessels, not an isolated idealized epithelial strip or the identical original photograph.",
+        "termsUrl": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "linkingTerms": "Ordinary outbound source-page link; retain the named creator and consult the file-specific license. Linking does not exercise reproduction rights.",
+        "reproductionRights": "The source page declares CC BY-SA 3.0 Unported. No copying or embedding is performed by this command.",
         "verification": {
-          "pageOpened": false,
-          "captionChecked": false,
-          "imageVisuallyInspected": false,
-          "visualEvidence": "Current screenshot and page-fetch attempts were rate-limited; main-agent visual review required.",
-          "checkedAt": "2026-11-06",
-          "evidencePath": "research/boneefied-photo-references/micro-evidence.md",
-          "finalUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
-          "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
-          "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          "pageOpened": true,
+          "captionChecked": true,
+          "imageVisuallyInspected": true,
+          "visualEvidence": "The public Commons source page was opened on 2026-11-07. Its actual 600x human renal-cortex photograph visibly resolves cuboidal tubular epithelium and round nuclei around tubular lumina. Caption identifies human kidney cortex. No photograph was downloaded or retained in the project.",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "evidencePath": "research/boneefied-photo-references/additional-reviewed-sources.json",
+          "finalUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+          "redirectNotes": "Final source-page GET: HTTP 200 HTML; 0 HTTP redirects. Original image was inspected separately, not used as the app destination.",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00"
+        },
+        "subject": {
+          "en": "Simple cuboidal epithelium: human renal tubules",
+          "es": "Epitelio cúbico simple: túbulos renales humanos"
         }
       }
     ],
-    "reason": "A targeted human-kidney cuboidal figure on the University of Genoa simple-epithelia page was captioned and its original image visually inspected. Its official terms page says images and micrographs are protected and deep linking is forbidden, so no eligible source-page reference is retained. The existing Commons candidate remains uninspected/unconfirmed; human image subject exists, but permitted linking/terms evidence is unavailable.",
-    "coverageKind": "incomplete",
-    "finalReview": "A targeted human-kidney cuboidal figure on the University of Genoa simple-epithelia page was captioned and its original image visually inspected. Its official terms page says images and micrographs are protected and deep linking is forbidden, so no eligible source-page reference is retained. The existing Commons candidate remains uninspected/unconfirmed; human image subject exists, but permitted linking/terms evidence is unavailable."
+    "reason": "The inspected human renal-cortex photograph shows cuboidal cells with round nuclei surrounding renal-tubule lumina. It is a specifically identified human example of the epithelial type, not a claim that the original unclassified photomicrograph has established species.",
+    "coverageKind": "relevant-example",
+    "finalReview": "The inspected human renal-cortex photograph shows cuboidal cells with round nuclei surrounding renal-tubule lumina. It is a specifically identified human example of the epithelial type, not a claim that the original unclassified photomicrograph has established species.",
+    "previousAssessment": {
+      "status": "partial",
+      "reason": "A targeted human-kidney cuboidal figure on the University of Genoa simple-epithelia page was captioned and its original image visually inspected. Its official terms page says images and micrographs are protected and deep linking is forbidden, so no eligible source-page reference is retained. The existing Commons candidate remains uninspected/unconfirmed; human image subject exists, but permitted linking/terms evidence is unavailable.",
+      "references": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+          "title": "File:Epithelial Tissues Simple Cuboidal Epithelium (41681552782).jpg",
+          "source": "Wikimedia Commons",
+          "creator": "Berkshire Community College Bioscience Image Library",
+          "mediaType": "micrograph",
+          "organism": "unconfirmed",
+          "relationship": "direct-match",
+          "matches": "Existing specimen record names the image as a simple cuboidal epithelium photomicrograph.",
+          "viewLimitations": "Current source-page request was rate-limited and no photograph or caption could be visually checked; human origin is not newly asserted.",
+          "termsUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "linkingTerms": "The existing specimen license record states CC0; a current page inspection was rate-limited. Linking to the Commons page only.",
+          "reproductionRights": "Existing project specimen record identifies CC0 1.0; no new page inspection was possible.",
+          "verification": {
+            "pageOpened": false,
+            "captionChecked": false,
+            "imageVisuallyInspected": false,
+            "visualEvidence": "Current screenshot and page-fetch attempts were rate-limited; main-agent visual review required.",
+            "checkedAt": "2026-11-06",
+            "evidencePath": "research/boneefied-photo-references/micro-evidence.md",
+            "finalUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+            "redirectNotes": "The saved page capture identifies the listed public source page as the effective destination; no alternate redirect URL was recorded.",
+            "reviewedAtFinalCheck": "2026-11-06T21:55:52.349Z"
+          }
+        }
+      ]
+    }
   },
   {
     "assetId": "asset-commons-simple-columnar-epithelium",
@@ -5425,9 +5495,14 @@
         }
       }
     ],
-    "reason": "The existing Commons simple-columnar image is visually inspected but mammalian-only, not human-confirmed. A human intestine figure on the University of Genoa simple-epithelia page was also captioned and visually inspected via its original image URL; the official terms prohibit deep linking and no eligible source-page reference is retained. No eligible human mapping is asserted.",
+    "reason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
     "coverageKind": "incomplete",
-    "finalReview": "The existing Commons simple-columnar image is visually inspected but mammalian-only, not human-confirmed. A human intestine figure on the University of Genoa simple-epithelia page was also captioned and visually inspected via its original image URL; the official terms prohibit deep linking and no eligible source-page reference is retained. No eligible human mapping is asserted."
+    "finalReview": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "The existing Commons simple-columnar image is visually inspected but mammalian-only, not human-confirmed. A human intestine figure on the University of Genoa simple-epithelia page was also captioned and visually inspected via its original image URL; the official terms prohibit deep linking and no eligible source-page reference is retained. No eligible human mapping is asserted."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-openstax-historical-skin-structure",
@@ -5460,9 +5535,14 @@
         }
       }
     ],
-    "reason": "Final comparison: Duke's educational page describes relevant human skin structures, but linked slide images were not visually inspected as source photographs; no one photo was confirmed for the full layer/appendage/receptor diagram. Human image evidence is unavailable, not proof of absence.",
+    "reason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: Duke's educational page describes relevant human skin structures, but linked slide images were not visually inspected as source photographs; no one photo was confirmed for the full layer/appendage/receptor diagram. Human image evidence is unavailable, not proof of absence."
+    "finalReview": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Final comparison: Duke's educational page describes relevant human skin structures, but linked slide images were not visually inspected as source photographs; no one photo was confirmed for the full layer/appendage/receptor diagram. Human image evidence is unavailable, not proof of absence."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis04-epidermis-strata",
@@ -5495,9 +5575,14 @@
         }
       }
     ],
-    "reason": "Final comparison: Duke slide descriptions cover some human skin strata, but no slide photo was visually checked and the thick/thin skin, lucidum, cell-type and receptor panels are not jointly established. This remains a source-index lead only.",
+    "reason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: Duke slide descriptions cover some human skin strata, but no slide photo was visually checked and the thick/thin skin, lucidum, cell-type and receptor panels are not jointly established. This remains a source-index lead only."
+    "finalReview": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Final comparison: Duke slide descriptions cover some human skin strata, but no slide photo was visually checked and the thick/thin skin, lucidum, cell-type and receptor panels are not jointly established. This remains a source-index lead only."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis04-dermis-hypodermis",
@@ -5530,9 +5615,14 @@
         }
       }
     ],
-    "reason": "Final comparison: human dermis/hypodermis slide descriptions are relevant, but no photo was visually confirmed for papillary/reticular fibers, vessels and fat lobules together. The full layered composite lacks verified photographic evidence.",
+    "reason": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: human dermis/hypodermis slide descriptions are relevant, but no photo was visually confirmed for papillary/reticular fibers, vessels and fat lobules together. The full layered composite lacks verified photographic evidence."
+    "finalReview": "Partial, not approved: Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates. Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination. Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Final comparison: human dermis/hypodermis slide descriptions are relevant, but no photo was visually confirmed for papillary/reticular fibers, vessels and fat lobules together. The full layered composite lacks verified photographic evidence."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis04-hair-follicle",
@@ -5565,9 +5655,14 @@
         }
       }
     ],
-    "reason": "Final comparison: a human hair-bearing-skin slide listing is relevant, but no source photograph was visually checked for a longitudinal follicle with bulb, papilla, sebaceous duct and arrector pili. The listed page is not a verified image destination for those details.",
+    "reason": "Partial, not approved: Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: a human hair-bearing-skin slide listing is relevant, but no source photograph was visually checked for a longitudinal follicle with bulb, papilla, sebaceous duct and arrector pili. The listed page is not a verified image destination for those details."
+    "finalReview": "Partial, not approved: Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Final comparison: a human hair-bearing-skin slide listing is relevant, but no source photograph was visually checked for a longitudinal follicle with bulb, papilla, sebaceous duct and arrector pili. The listed page is not a verified image destination for those details."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis04-epithelia-simple",
@@ -6620,9 +6715,14 @@
         }
       }
     ],
-    "reason": "Final comparison: Duke page text identifies human spleen slides, but the photograph and red/white pulp details were not visually checked. The source is a candidate index, not an inspected specimen match.",
+    "reason": "Partial, not approved: Human spleen section; red/white pulp visible. Central arteriole, marginal-zone boundary, individual sinusoids and cords were not all resolved in the overview.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: Duke page text identifies human spleen slides, but the photograph and red/white pulp details were not visually checked. The source is a candidate index, not an inspected specimen match."
+    "finalReview": "Partial, not approved: Human spleen section; red/white pulp visible. Central arteriole, marginal-zone boundary, individual sinusoids and cords were not all resolved in the overview.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Final comparison: Duke page text identifies human spleen slides, but the photograph and red/white pulp details were not visually checked. The source is a candidate index, not an inspected specimen match."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis05-thymus-lobule",
@@ -6655,9 +6755,14 @@
         }
       }
     ],
-    "reason": "Final comparison: Duke describes human thymus slides, but the photo was not inspected and cortex, medulla, septa and Hassall corpuscles were not all confirmed. Remains a text-only source lead.",
+    "reason": "Partial, not approved: Human thymus; lobules, cortex and medulla visible. Hassall corpuscles and anterior chest/retrosternal placement not established by this overview.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: Duke describes human thymus slides, but the photo was not inspected and cortex, medulla, septa and Hassall corpuscles were not all confirmed. Remains a text-only source lead."
+    "finalReview": "Partial, not approved: Human thymus; lobules, cortex and medulla visible. Hassall corpuscles and anterior chest/retrosternal placement not established by this overview.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Final comparison: Duke describes human thymus slides, but the photo was not inspected and cortex, medulla, septa and Hassall corpuscles were not all confirmed. Remains a text-only source lead."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis05-tonsil-map-structure",
@@ -6896,9 +7001,14 @@
         }
       }
     ],
-    "reason": "Final comparison: Duke identifies human adrenal tissue, but no actual photograph was visually inspected and the three cortical zones/medulla are not confirmed by the saved evidence. Candidate only.",
+    "reason": "Partial, not approved: Human adrenal section with cortex and medulla; not an in-situ adrenal-on-kidney photograph and not cell-level verification of every cortical zone/chromaffin cell.",
     "coverageKind": "incomplete",
-    "finalReview": "Final comparison: Duke identifies human adrenal tissue, but no actual photograph was visually inspected and the three cortical zones/medulla are not confirmed by the saved evidence. Candidate only."
+    "finalReview": "Partial, not approved: Human adrenal section with cortex and medulla; not an in-situ adrenal-on-kidney photograph and not cell-level verification of every cortical zone/chromaffin cell.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Final comparison: Duke identifies human adrenal tissue, but no actual photograph was visually inspected and the three cortical zones/medulla are not confirmed by the saved evidence. Candidate only."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis05-pancreas-islet",
@@ -6978,8 +7088,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 1, 2, 4, 5, 9, 22, 23, 24, 25.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -7021,8 +7131,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 15, 27.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-neck-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -7057,8 +7167,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 2, 3, 4, 6.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-posterior-mediastinum",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -7141,8 +7251,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 8, 21, 26, 27, 28, 29, 32, 33, 34, 35.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -7261,8 +7371,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 11, 28, 31, 34, 36.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -7417,8 +7527,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 11, 13, 14, 16, 17, 18.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -7503,8 +7613,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 15, 18, 19, 20, 22, 24.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/heart",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -8179,8 +8289,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 11, 13, 14.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-duodenum-pancreas-and-abdominal-aorta-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -8414,8 +8524,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 3, 4, 5, 6, 7, 9, 10.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lungs-and-ventilation-pathways-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -9149,9 +9259,14 @@
         }
       }
     ],
-    "reason": "Partial: verified/candidate source pages show limited real examples for Layers of the digestive wall; Does not show the complete gut wall or all named epithelial/crypt cell types.; Mucosal field only; not a complete stomach or all named cell types.",
+    "reason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
     "coverageKind": "incomplete",
-    "finalReview": "Compared the assigned plate (Layers of the digestive wall) with Wellcome Collection — Villi from the small intestine; Wikimedia Commons — File:Normal gastric mucosa low mag.jpg. Remaining coverage limitation: Does not show the complete gut wall or all named epithelial/crypt cell types.; Mucosal field only; not a complete stomach or all named cell types. A literal full-plate match is not claimed."
+    "finalReview": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Partial: verified/candidate source pages show limited real examples for Layers of the digestive wall; Does not show the complete gut wall or all named epithelial/crypt cell types.; Mucosal field only; not a complete stomach or all named cell types."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis06-small-intestine",
@@ -9249,9 +9364,14 @@
         }
       }
     ],
-    "reason": "Partial: verified/candidate source pages show limited real examples for Small intestine: regions and mucosa; Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; Does not show the complete gut wall or all named epithelial/crypt cell types.; Organism is not specified; image is not a whole small-intestine section or full set of epithelial cell types.",
+    "reason": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
     "coverageKind": "incomplete",
-    "finalReview": "Compared the assigned plate (Small intestine: regions and mucosa) with Stanford University Lane Medical Library — David L. Bassett Collection — Vessels of ileum, cecum, ascending and transverse colon, image 143-1; Wellcome Collection — Villi from the small intestine; Wellcome Collection — Intestinal villi. Remaining coverage limitation: Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; Does not show the complete gut wall or all named epithelial/crypt cell types.; Organism is not specified; image is not a whole small-intestine section or full set of epithelial cell types. A literal full-plate match is not claimed."
+    "finalReview": "Partial, not approved: Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Partial: verified/candidate source pages show limited real examples for Small intestine: regions and mucosa; Only portions of the alimentary canal, not mouth-to-anus continuity or anal canal.; Does not show the complete gut wall or all named epithelial/crypt cell types.; Organism is not specified; image is not a whole small-intestine section or full set of epithelial cell types."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis06-large-intestine",
@@ -9521,8 +9641,8 @@
           "captionChecked": true,
           "imageVisuallyInspected": true,
           "visualEvidence": "Actual photos and embedded anatomical captions/copyright manually inspected in temporary comparison sheets. Specifically reviewed page image numbers: 3, 4, 5, 6.",
-          "checkedAt": "2026-11-07T00:15:37.311470+00:00",
-          "reviewedAtFinalCheck": "2026-11-07T00:15:37.311470+00:00",
+          "checkedAt": "2026-11-07T00:39:48.741799+00:00",
+          "reviewedAtFinalCheck": "2026-11-07T00:39:48.741799+00:00",
           "finalUrl": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-kidneys-and-urinary-system-images",
           "redirectNotes": "Final public university URL recorded by HTTPS retrieval; no login required.",
           "evidencePath": "research/boneefied-photo-references/bluelink-review.json",
@@ -9943,9 +10063,14 @@
         }
       }
     ],
-    "reason": "Partial: verified/candidate source pages show limited real examples for Ovary: follicle stages and follicle wall; Shows postovulatory structures, not a full range of follicle stages or wall histology.; Does not show the full maturation sequence or all structures of the illustrated follicle wall.",
+    "reason": "Partial, not approved: Human ovary: a corpus luteum and several follicular profiles visible. Does not establish a complete developmental sequence or all oocyte-wall structures at cell level. Human ovary with cortical follicular profiles and medullary vessels. No assertion that all primordial-to-mature stages, corona radiata and zona pellucida were individually resolved.",
     "coverageKind": "incomplete",
-    "finalReview": "Compared the assigned plate (Ovary: follicle stages and follicle wall) with Wikimedia Commons — File:Human ovary.jpg; Wikimedia Commons — File:Graafian Follicle, Human Ovary (3595010317).jpg. Remaining coverage limitation: Shows postovulatory structures, not a full range of follicle stages or wall histology.; Does not show the full maturation sequence or all structures of the illustrated follicle wall. A literal full-plate match is not claimed."
+    "finalReview": "Partial, not approved: Human ovary: a corpus luteum and several follicular profiles visible. Does not establish a complete developmental sequence or all oocyte-wall structures at cell level. Human ovary with cortical follicular profiles and medullary vessels. No assertion that all primordial-to-mature stages, corona radiata and zona pellucida were individually resolved.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Partial: verified/candidate source pages show limited real examples for Ovary: follicle stages and follicle wall; Shows postovulatory structures, not a full range of follicle stages or wall histology.; Does not show the full maturation sequence or all structures of the illustrated follicle wall."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis06-uterine-wall",
@@ -10013,9 +10138,14 @@
         }
       }
     ],
-    "reason": "Partial: verified/candidate source pages show limited real examples for Uterine wall and endometrium; Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.; Does not show the full uterine wall, endometrial layers, myometrium or both cycle states.",
+    "reason": "Partial, not approved: Human uterine tissue with endometrial glands and myometrium visible; a low-power section, not independent verification of the perimetrium and every endometrial sublayer. Human secretory uterine tissue with glandular profiles and muscle visible. Useful companion to proliferative tissue; not proof that every wall layer in the composite is covered.",
     "coverageKind": "relevant-example",
-    "finalReview": "Compared the assigned plate (Uterine wall and endometrium) with Stanford University Lane Medical Library (Bassett Collection) — Bassett Collection - Lane Medical Library - Stanford University School of Medicine; Wikimedia Commons — File:Histology of normal simple columnar epithelium of the endometrium.jpg. Remaining coverage limitation: Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.; Does not show the full uterine wall, endometrial layers, myometrium or both cycle states. A literal full-plate match is not claimed."
+    "finalReview": "Partial, not approved: Human uterine tissue with endometrial glands and myometrium visible; a low-power section, not independent verification of the perimetrium and every endometrial sublayer. Human secretory uterine tissue with glandular profiles and muscle visible. Useful companion to proliferative tissue; not proof that every wall layer in the composite is covered.",
+    "beforeGroupedReview": {
+      "status": "partial",
+      "reason": "Partial: verified/candidate source pages show limited real examples for Uterine wall and endometrium; Median section/lateral approach does not cover every anterior pelvic detail, ligament, follicular feature, or microscopic wall layer; photograph itself was not visible in screenshot viewport.; Does not show the full uterine wall, endometrial layers, myometrium or both cycle states."
+    },
+    "partialReviewEvidence": "research/boneefied-photo-references/grouped-inspections.json"
   },
   {
     "assetId": "asset-bvis06-abdominal-placement",

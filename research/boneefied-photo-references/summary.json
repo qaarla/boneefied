@@ -1,17 +1,18 @@
 {
-  "checkedAt": "2026-11-07T00:15:37.311470+00:00",
+  "checkedAt": "2026-11-07T00:39:48.741799+00:00",
   "coverageComplete": false,
   "finalVerification": {
     "typecheck": "passed",
     "focusedTests": {"passed": 6, "failed": 0},
-    "completeInventoryValidator": "passed; validates all 164 records and approval evidence flags, not anatomical correctness",
+    "completeInventoryValidator": "passed; validates record completeness and evidence flags, not anatomical correctness",
+    "fiveOutcomeReconciliation": "passed; 164 unique published images across 18 groups",
     "originalImageHashesUnchanged": 164,
-    "externalPhotosRetainedInResearch": 0,
-    "browser": "402x874 home screenshot rendered after Metro warm-up; new links were checked through generated-data/runtime parity tests, not a new interactive browser pass",
-    "sourceChecks": "Per-source visual/caption/terms evidence is recorded in the review files. Columbia rendered in the source-inspection browser; command-line TLS validation was unsuccessful. No claim of a fresh all-destination HTTP sweep.",
+    "approvedRuntimeMappings": 38,
+    "externalPhotosAddedToProject": 0,
+    "browser": "402x874 home screenshot rendered after Metro warm-up. No new interactive app pass; focused tests confirm runtime parity, assessment gates and outbound-link behavior. Public source viewers were inspected separately.",
     "physicalDevice": "not tested",
-    "nativeBuild": "not started",
-    "coverage": "incomplete: 36 approved images; 110 partial and 18 unresolved remain unlinked",
+    "nativeBuild": "not started; existing authorized IPA/AAB request retained, not duplicated",
+    "coverage": "incomplete; all images accounted for does not establish all feasible matches",
     "finalReport": "research/boneefied-photo-references/final-report.html"
   },
   "scope": {
@@ -23,8 +24,8 @@
     "excludedUnreferencedOrSupersededAssets": 23
   },
   "outcomes": {
-    "verified": 36,
-    "partial": 110,
+    "verified": 38,
+    "partial": 108,
     "unresolved": 18
   },
   "eligibleAssetIds": [
@@ -38,6 +39,7 @@
     "asset-original-anatomical-planes",
     "asset-muscular-atlas-posterior-arm",
     "asset-muscular-atlas-forearm",
+    "asset-muscular-atlas-abdominal-wall",
     "asset-muscular-atlas-gluteal",
     "asset-muscular-atlas-anterior-leg",
     "asset-muscular-atlas-hand",
@@ -55,6 +57,7 @@
     "asset-commons-kidney-cortex-human",
     "asset-commons-alveolar-sac",
     "asset-commons-simple-squamous-epithelium",
+    "asset-commons-simple-cuboidal-epithelium",
     "asset-bvis04-muscle-tissue",
     "asset-bvis05-heart-anterior",
     "asset-bvis05-heart-chambers-valves",
@@ -98,7 +101,6 @@
     "asset-commons-axial-skeleton-blank",
     "asset-commons-appendicular-skeleton-blank",
     "asset-muscular-atlas-deep-back",
-    "asset-muscular-atlas-abdominal-wall",
     "asset-muscular-atlas-deep-thigh",
     "asset-muscular-atlas-calf",
     "asset-muscular-atlas-foot",
@@ -126,7 +128,6 @@
     "asset-gray946-sweat-gland",
     "asset-original-cell-overview",
     "asset-original-mitosis-stages",
-    "asset-commons-simple-cuboidal-epithelium",
     "asset-commons-simple-columnar-epithelium",
     "asset-openstax-historical-skin-structure",
     "asset-bvis04-epidermis-strata",
@@ -214,15 +215,15 @@
   "referencesWithoutEstablishedTermsUrl": 20,
   "exactFullCoverage": false,
   "verifiedDirectMatches": 5,
-  "verifiedLimitedRealExamples": 31,
+  "verifiedLimitedRealExamples": 33,
   "verifiedImagingRecords": 2,
-  "verifiedSourceLinks": 48,
+  "verifiedSourceLinks": 50,
   "physicalDeviceOpeningTested": false,
   "physicalDeviceLimitation": "Expo device automation reported no connected local device target; no EAS simulator, release/native build or publication was started.",
   "sourceInspectionNote": "Historical aggregate inspection metrics are retained separately. New approval evidence names the exact inspected photos; collecting a gallery never implies all of its photos were inspected.",
   "finalRecordsIndividuallyAssessed": 164,
   "gapFillReview": {
-    "addedVerifiedMappings": 28,
+    "addedVerifiedMappings": 30,
     "evidence": [
       "research/boneefied-photo-references/bluelink-review.json",
       "research/boneefied-photo-references/additional-reviewed-sources.json"
@@ -247,5 +248,19 @@
     "distinctCandidateSourcePages": 128,
     "sourcePagesOpened": 127,
     "sourcePagesWithActualImageInspection": 105
-  }
+  },
+  "fiveOutcomeCounts": {
+    "fully-matched": 38,
+    "partial": 82,
+    "no-literal-photo": 3,
+    "inaccessible-unverified": 26,
+    "unmatched-after-bounded-research": 15
+  },
+  "allImagesAccountedFor": true,
+  "allFeasibleMatchesEstablished": false,
+  "groupedReviewEvidence": [
+    "research/boneefied-photo-references/grouped-review-ledger.json",
+    "research/boneefied-photo-references/grouped-inspections.json",
+    "research/boneefied-photo-references/five-outcome-audit.json"
+  ]
 }

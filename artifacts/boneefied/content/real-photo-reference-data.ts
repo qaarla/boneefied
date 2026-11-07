@@ -166,6 +166,17 @@ export const references: Readonly<Record<string, readonly PhotoReference[]>> = {
       }
     }
   ],
+  "asset-muscular-atlas-abdominal-wall": [
+    {
+      "url": "https://lane.stanford.edu/biomed-resources/bassett/bassettView.html?bn=134-3",
+      "mediaType": "gross-photo",
+      "sourceName": "Wikimedia Commons",
+      "subject": {
+        "en": "Abdominal wall: all four muscles, one left anterolateral dissection",
+        "es": "Pared abdominal: los cuatro músculos, una disección anterolateral izquierda"
+      }
+    }
+  ],
   "asset-muscular-atlas-gluteal": [
     {
       "url": "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink/labeled-lumbar-spine-hip-and-knee-images",
@@ -368,6 +379,17 @@ export const references: Readonly<Record<string, readonly PhotoReference[]>> = {
       "subject": {
         "en": "human simple squamous epithelium",
         "es": "epitelio plano simple humano"
+      }
+    }
+  ],
+  "asset-commons-simple-cuboidal-epithelium": [
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+      "mediaType": "micrograph",
+      "sourceName": "Wikimedia Commons",
+      "subject": {
+        "en": "Simple cuboidal epithelium: human renal tubules",
+        "es": "Epitelio cúbico simple: túbulos renales humanos"
       }
     }
   ],

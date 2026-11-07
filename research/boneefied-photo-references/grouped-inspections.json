@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-11-07T00:39:49.215512+00:00",
+  "method": "Actual public slide viewers inspected through browser screenshots; text metadata is separate. No photograph, thumbnail or screenshot is retained in the workspace or embedded in the app.",
+  "observations": [
+    {
+      "slide": "UMich104-2 thin skin",
+      "dukeSubject": "Skin",
+      "observedAndLimitations": "Human thin skin; real tissue section opened. Does not by itself establish every epidermal stratum, elastin fibre, sensory receptor or hypodermal structure in the composite plates.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=f84c55bb-3e28-453b-810a-11e80a400937"
+    },
+    {
+      "slide": "UMich107 scalp",
+      "dukeSubject": "Skin",
+      "observedAndLimitations": "Human scalp; longitudinal follicles/bulbs and sebaceous glands visible. No claim that the overview resolves the complete papilla, sebaceous duct and arrector-pili combination.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=a16ef7b4-afc1-496d-963b-b81bbcd15c86"
+    },
+    {
+      "slide": "UCSF180 fingertip",
+      "dukeSubject": "Skin",
+      "observedAndLimitations": "Human thick skin with a Pacinian corpuscle; no nail apparatus in the inspected field. Rejected as a nail-section match.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=f957ef21-dae0-4732-b8a1-120fc1b3c7fd"
+    },
+    {
+      "slide": "0003_E spleen",
+      "dukeSubject": "Lymphatic",
+      "observedAndLimitations": "Human spleen section; red/white pulp visible. Central arteriole, marginal-zone boundary, individual sinusoids and cords were not all resolved in the overview.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=80e46a8b-8b01-465f-94d6-d0fb13211b04"
+    },
+    {
+      "slide": "0076_E adult thymus",
+      "dukeSubject": "Lymphatic",
+      "observedAndLimitations": "Human thymus; lobules, cortex and medulla visible. Hassall corpuscles and anterior chest/retrosternal placement not established by this overview.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=c7ea8301-d949-4c16-b60b-8d59cb56a621"
+    },
+    {
+      "slide": "230 adrenal",
+      "dukeSubject": "Endocrine",
+      "observedAndLimitations": "Human adrenal section with cortex and medulla; not an in-situ adrenal-on-kidney photograph and not cell-level verification of every cortical zone/chromaffin cell.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=f28d5a55-ab2c-4156-bf96-a92e1d83b985"
+    },
+    {
+      "slide": "HU_62_20x ileum",
+      "dukeSubject": "GItract",
+      "observedAndLimitations": "Human ileal cross-section, villi and lymphoid tissue visible. The 2x overview does not resolve individual columnar epithelial cells, all crypt-cell types or the paired longitudinal wall view.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=13457083-c943-4131-93c1-13770745e0fe"
+    },
+    {
+      "slide": "236a ovary",
+      "dukeSubject": "FemaleRepro",
+      "observedAndLimitations": "Human ovary: a corpus luteum and several follicular profiles visible. Does not establish a complete developmental sequence or all oocyte-wall structures at cell level.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=881b362b-0ab3-4134-b7e0-79dcd9652de8"
+    },
+    {
+      "slide": "235 ovary",
+      "dukeSubject": "FemaleRepro",
+      "observedAndLimitations": "Human ovary with cortical follicular profiles and medullary vessels. No assertion that all primordial-to-mature stages, corona radiata and zona pellucida were individually resolved.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=a4879405-28d7-478c-9cc0-563678d0dc97"
+    },
+    {
+      "slide": "0041_I proliferative uterus",
+      "dukeSubject": "FemaleRepro",
+      "observedAndLimitations": "Human uterine tissue with endometrial glands and myometrium visible; a low-power section, not independent verification of the perimetrium and every endometrial sublayer.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=a4c22a3f-4620-40fc-9ffb-7c6a72143467"
+    },
+    {
+      "slide": "0067_I secretory uterus",
+      "dukeSubject": "FemaleRepro",
+      "observedAndLimitations": "Human secretory uterine tissue with glandular profiles and muscle visible. Useful companion to proliferative tissue; not proof that every wall layer in the composite is covered.",
+      "viewerUrl": "https://www.digitalscope.org/ViewerUI/?SlideId=292d9e92-9b75-4a6a-8603-db3a6616a0c3"
+    }
+  ],
+  "partialOnlyAssetAssociations": {
+    "asset-openstax-historical-skin-structure": [
+      0,
+      1,
+      2
+    ],
+    "asset-bvis04-epidermis-strata": [
+      0,
+      2
+    ],
+    "asset-bvis04-dermis-hypodermis": [
+      0,
+      1,
+      2
+    ],
+    "asset-bvis04-hair-follicle": [
+      1
+    ],
+    "asset-bvis05-spleen-pulp": [
+      3
+    ],
+    "asset-bvis05-thymus-lobule": [
+      4
+    ],
+    "asset-bvis05-adrenal-zones": [
+      5
+    ],
+    "asset-commons-simple-columnar-epithelium": [
+      6
+    ],
+    "asset-bvis06-digestive-wall-layers": [
+      6
+    ],
+    "asset-bvis06-small-intestine": [
+      6
+    ],
+    "asset-bvis06-ovary-follicle": [
+      7,
+      8
+    ],
+    "asset-bvis06-uterine-wall": [
+      9,
+      10
+    ]
+  },
+  "additionalInspection": "Human kidney-cortex Commons photograph reopened at cell-resolving displayed size; reused for cuboidal epithelium.",
+  "sourceFailures": [
+    {
+      "source": "A previously collected BlueLink embedded-image URL",
+      "result": "Browser returned HTTP 403. No further raw-image requests or access-control workarounds attempted; this does not revoke genuine earlier source-page inspections."
+    },
+    {
+      "source": "https://histology.medicine.umich.edu/resources/slide-list",
+      "result": "404. Followed the site's supplied home link once; current home provides a manual, not the old slide-list collection. No manual or photographs downloaded."
+    }
+  ]
+}
