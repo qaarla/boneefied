@@ -32,16 +32,20 @@ export function canShowPhotoReferences(mode: PhotoReferenceMode, answerRevealed:
 
 export function photoReferenceLabel(reference: PhotoReference, language: 'en' | 'es'): string {
   const labels = {
-    'gross-photo': { en: 'See real photo', es: 'Ver foto real' },
-    micrograph: { en: 'See real photo (microscope)', es: 'Ver foto real (microscopio)' },
-    'diagnostic-imaging': { en: 'See medical imaging', es: 'Ver imagen médica' },
+    'gross-photo': { en: 'Real photo', es: 'Foto real' },
+    micrograph: { en: 'Microscope photo', es: 'Foto al microscopio' },
+    'diagnostic-imaging': { en: 'Medical image', es: 'Imagen médica' },
   };
+  return labels[reference.mediaType][language];
+}
+
+/** Context stays separate from the short hyperlink, including incomplete-set limits. */
+export function photoReferenceDescription(reference: PhotoReference, language: 'en' | 'es'): string {
   const subject = reference.subject?.[language];
   const limit = reference.coverage === 'selected-structures'
     ? (language === 'en' ? 'Selected structures only' : 'Solo estructuras seleccionadas')
     : '';
-  const details = [limit, subject].filter(Boolean).join(': ');
-  return `${labels[reference.mediaType][language]}${details ? ` — ${details}` : ''} · ${reference.sourceName}`;
+  return [limit, subject, reference.sourceName].filter(Boolean).join(' · ');
 }
 
 /** No canOpenURL/network preflight: opening a public HTTPS page is attempted directly.

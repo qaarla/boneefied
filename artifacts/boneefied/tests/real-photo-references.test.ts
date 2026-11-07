@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import test from 'node:test';
-import { canShowPhotoReferences, photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '../content/real-photo-references.ts';
+import { canShowPhotoReferences, photoReferenceDescription, photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '../content/real-photo-references.ts';
 
 const research = new URL('../../../research/boneefied-photo-references/', import.meta.url);
 const records = JSON.parse(readFileSync(new URL('references.json', research), 'utf8'));
@@ -58,8 +58,8 @@ test('runtime references equal approved comparisons or explicitly reviewed selec
       assert.deepEqual(references.map(({ url, mediaType }) => ({ url, mediaType })),
         companion.references.map(({ url, mediaType }) => ({ url, mediaType })));
       assert.ok(references.every(ref => ref.coverage === 'selected-structures'));
-      assert.ok(references.every(ref => photoReferenceLabel(ref, 'en').includes('Selected structures only')));
-      assert.ok(references.every(ref => photoReferenceLabel(ref, 'es').includes('Solo estructuras seleccionadas')));
+      assert.ok(references.every(ref => photoReferenceDescription(ref, 'en').includes('Selected structures only')));
+      assert.ok(references.every(ref => photoReferenceDescription(ref, 'es').includes('Solo estructuras seleccionadas')));
       continue;
     }
     assert.deepEqual(references.map(({ url, mediaType }) => ({ url, mediaType })),
@@ -97,21 +97,23 @@ test('learning is available; active/partially answered Recall is hidden; full re
   assert.equal(canShowPhotoReferences('recall', true, false), true);
 });
 
-test('English and Spanish distinguish photos, microscope photos and imaging, with named comparison views', () => {
+test('English and Spanish keep hyperlinks short and move source, named views and limits into separate context', () => {
   const gross = photoReferencesForAsset('asset-skeletal-atlas-skull-base-external')[0]!;
   const micro = photoReferencesForAsset('asset-commons-kidney-cortex-human')[0]!;
-  assert.equal(photoReferenceLabel(gross, 'en'), `See real photo — ${gross.subject!.en} · Wikimedia Commons`);
-  assert.equal(photoReferenceLabel(gross, 'es'), `Ver foto real — ${gross.subject!.es} · Wikimedia Commons`);
-  assert.equal(photoReferenceLabel({ ...gross, subject: undefined }, 'en'), 'See real photo · Wikimedia Commons');
-  assert.equal(photoReferenceLabel({ ...gross, subject: undefined }, 'es'), 'Ver foto real · Wikimedia Commons');
-  assert.equal(photoReferenceLabel(micro, 'en'), `See real photo (microscope) — ${micro.subject!.en} · Wikimedia Commons`);
-  assert.equal(photoReferenceLabel(micro, 'es'), `Ver foto real (microscopio) — ${micro.subject!.es} · Wikimedia Commons`);
-  assert.equal(photoReferenceLabel({ ...micro, subject: undefined }, 'en'), 'See real photo (microscope) · Wikimedia Commons');
-  assert.equal(photoReferenceLabel({ ...micro, subject: undefined }, 'es'), 'Ver foto real (microscopio) · Wikimedia Commons');
+  assert.equal(photoReferenceLabel(gross, 'en'), 'Real photo');
+  assert.equal(photoReferenceLabel(gross, 'es'), 'Foto real');
+  assert.equal(photoReferenceLabel({ ...gross, subject: undefined }, 'en'), 'Real photo');
+  assert.equal(photoReferenceLabel(micro, 'en'), 'Microscope photo');
+  assert.equal(photoReferenceLabel(micro, 'es'), 'Foto al microscopio');
   const imaging = { ...gross, mediaType: 'diagnostic-imaging' as const };
-  assert.match(photoReferenceLabel(imaging, 'en'), /^See medical imaging/);
-  assert.match(photoReferenceLabel(imaging, 'es'), /^Ver imagen médica/);
-  assert.match(photoReferenceLabel({ ...gross, subject: { en: 'Anterior view', es: 'Vista anterior' } }, 'es'), /Vista anterior/);
+  assert.equal(photoReferenceLabel(imaging, 'en'), 'Medical image');
+  assert.equal(photoReferenceLabel(imaging, 'es'), 'Imagen médica');
+  assert.equal(photoReferenceDescription(gross, 'en'), `${gross.subject!.en} · Wikimedia Commons`);
+  assert.equal(photoReferenceDescription(gross, 'es'), `${gross.subject!.es} · Wikimedia Commons`);
+  assert.equal(photoReferenceDescription({ ...gross, subject: undefined }, 'en'), 'Wikimedia Commons');
+  assert.match(photoReferenceDescription({ ...gross, subject: { en: 'Anterior view', es: 'Vista anterior' } }, 'es'), /Vista anterior/);
+  assert.match(photoReferenceDescription({ ...gross, coverage: 'selected-structures' }, 'en'), /^Selected structures only · /);
+  assert.match(photoReferenceDescription({ ...gross, coverage: 'selected-structures' }, 'es'), /^Solo estructuras seleccionadas · /);
 });
 
 test('outbound open uses the exact URL, catches failures and allows a subsequent retry', async () => {
@@ -138,6 +140,8 @@ test('one shared footer covers learning, lessons, glossary and submitted practic
   assert.match(viewer, /photoReferenceMode, revealLabels \|\| submitted/);
   assert.ok(viewer.indexOf('<PhotoReferenceLinks') > viewer.indexOf('{caption ?'));
   assert.match(links, /accessibilityRole="link"/);
+  assert.match(links, /photoReferenceDescription\(reference, language\)/);
+  assert.match(links, /styles\.description/);
   assert.match(links, /minHeight: 44/);
   assert.match(links, /href: reference.url/);
   assert.match(links, /Linking.openURL\(destination\)/);

@@ -4,7 +4,7 @@ import { Feather } from '@expo/vector-icons';
 import { Text } from '@/components/ScaledText';
 import { useColors } from '@/hooks/useColors';
 import { useLocale } from '@/locales/useLocale';
-import { photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '@/content/real-photo-references';
+import { photoReferenceDescription, photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '@/content/real-photo-references';
 
 /** A footer sibling of the gesture surface, never an overlay or in-app browser.
  * Opening the OS browser/new tab does not navigate or remount the study screen.
@@ -41,12 +41,13 @@ export function PhotoReferenceLinks({ assetId, visible }: { assetId?: string; vi
   return <View testID={`photo-references-${assetId}`} style={styles.footer}>
     {references.map((reference) => {
       const label = photoReferenceLabel(reference, language);
+      const description = photoReferenceDescription(reference, language);
       const webLink = Platform.OS === 'web' ? {
         href: reference.url, hrefAttrs: { target: '_blank', rel: 'noopener noreferrer' },
       } : {};
       return <View key={reference.url}>
         <Pressable {...webLink} testID={`real-photo-link-${assetId}`}
-          accessibilityRole="link" accessibilityLabel={label}
+          accessibilityRole="link" accessibilityLabel={`${label}. ${description}`}
           accessibilityHint={language === 'es' ? 'Abre la página original en el navegador. Requiere internet.' : 'Opens the original source page in your browser. Requires internet.'}
           onPress={(event) => {
             const modifiers = event.nativeEvent as { ctrlKey?: boolean; metaKey?: boolean; shiftKey?: boolean; altKey?: boolean };
@@ -58,6 +59,7 @@ export function PhotoReferenceLinks({ assetId, visible }: { assetId?: string; vi
           <Text style={[styles.label, { color: colors.primary }]}>{label}</Text>
           <Feather name="external-link" size={13} color={colors.primary} accessible={false} />
         </Pressable>
+        <Text style={[styles.description, { color: colors.mutedForeground }]}>{description}</Text>
         {failedUrl === reference.url && <Text accessibilityRole="alert" accessibilityLiveRegion="polite"
           style={[styles.error, { color: colors.mutedForeground }]}>
           {language === 'es' ? 'No se pudo abrir. Revisa tu conexión y toca el enlace de nuevo.' : 'Couldn’t open the link. Check your connection and tap it again.'}
@@ -71,5 +73,6 @@ const styles = StyleSheet.create({
   footer: { paddingHorizontal: 8, paddingBottom: 4 },
   link: { minHeight: 44, paddingHorizontal: 4, paddingVertical: 10, flexDirection: 'row', alignItems: 'center', gap: 7 },
   label: { flexShrink: 1, fontSize: 13, textDecorationLine: 'underline' },
+  description: { fontSize: 12, paddingHorizontal: 4, paddingBottom: 8 },
   error: { fontSize: 12, paddingHorizontal: 4, paddingBottom: 8 },
 });

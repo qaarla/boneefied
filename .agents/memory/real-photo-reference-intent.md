@@ -88,26 +88,31 @@ does not verify cellular details merely because the page describes them; keep
 such composites partial. Do not copy, embed, hotlink, rehost, cache or add
 thumbnails of third-party photographs as part of this work.
 
-No new native build, release, submission, scheduling or publishing is authorized.
-The earlier build authorization must not be reused. A new build requires the
-owner's explicit authorization in a separate later message after reviewing
-proof of 164/164 verified live links.
+The owner explicitly authorized a new build on 2026-11-06 after being told
+that all 164 illustrations have working companions but only 47 comparison
+sets are complete and 117 are selected-structure examples. The request was
+to make the hyperlinks clean, with simple text, and then create a build.
+This overrides the earlier no-build restriction for that request only.
+It does not authorize store submission, publishing, release scheduling,
+or unrelated future builds.
 
-**Why:** The owner repeated "do not build until all illustrations have IRL
-reference and the hyperlinks actually work" and expressly rejected builds 12/8
-as premature.
+**Why:** The owner's later explicit build request followed the disclosed
+47/117 distinction; the earlier prohibition must not be treated as overriding
+their current instruction, nor may approval be misrepresented as full coverage.
 
-**How to apply:** Continue substantive reference research and per-illustration
-verification without building. Report verified totals separately from accounted
-records; incomplete coverage leaves the build gate closed.
+**How to apply:** Preserve the honest complete/limited distinction, follow the
+existing EAS build runbook, verify exact source and artifacts, and keep building
+separate from submission/publishing. Do not reuse this request as future
+build authorization.
 
 Having an inspected companion for every illustration is not the same as
 having complete photographic comparison sets for every illustration.
 Explicitly named, limited-view companions must remain visibly distinguished
-from full-set approvals and must never satisfy the owner's build gate.
+from full-set approvals. Their presence alone is not build authorization;
+the owner's later, explicit build-only request is a separate authorization.
 
-**Why:** The owner requires full, accurate proof before authorizing a later
-build; a count of linked illustrations alone could conceal missing subjects.
+**Why:** A count of linked illustrations alone could conceal missing subjects;
+acceptance of a build must not falsely promote partial comparisons to complete.
 
 **How to apply:** Report companion availability and complete-comparison
 approval as separate totals, preserve the missing-subject research and
