@@ -64,7 +64,7 @@ export default function ModuleDetailScreen() {
        <Text style={[styles.intro, { textAlign: 'center', color: colors.mutedForeground }]}>{localizedModule.summary ?? t('module.fallbackSummary')}</Text>
        <Text style={[styles.meta, { textAlign: 'center', color: colors.mutedForeground }]}>{t(`module.structureCount.${structures.length === 1 ? 'one' : 'other'}`, { count: number(structures.length) })} · {t(`module.lessonCount.${lessons.length === 1 ? 'one' : 'other'}`, { count: number(lessons.length) })}</Text>
     </View>
-         <AdaptiveRow style={[styles.switcher, reflow && styles.switcherLarge, { backgroundColor: colors.secondary }]}>{(['learn', 'recall'] as const).map((item) => <AdaptiveButton key={item} accessibilityRole="tab" accessibilityState={{ selected: mode === item }} hitSlop={4} onPress={() => setMode(item)} style={[styles.switch, reflow && styles.switchLarge, mode === item && { backgroundColor: colors.card }]}><Text style={{ color: mode === item ? colors.foreground : colors.mutedForeground, fontWeight: '700' }}>{t(item === 'learn' ? 'module.learnMode' : 'module.recallMode')}</Text></AdaptiveButton>)}</AdaptiveRow>
+         <AdaptiveRow testID="module-study-mode" style={[styles.switcher, reflow && styles.switcherLarge, modeControlStyles.group, { backgroundColor: colors.secondary }]}>{(['learn', 'recall'] as const).map((item) => <AdaptiveButton key={item} testID={`module-mode-${item}`} accessibilityRole="tab" accessibilityState={{ selected: mode === item }} hitSlop={4} onPress={() => setMode(item)} style={[styles.switch, reflow && styles.switchLarge, modeControlStyles.button, mode === item && { backgroundColor: colors.card }]}><Text style={[modeControlStyles.label, { color: mode === item ? colors.foreground : colors.mutedForeground, fontWeight: '700' }]}>{t(item === 'learn' ? 'module.learnMode' : 'module.recallMode')}</Text></AdaptiveButton>)}</AdaptiveRow>
        {galleryIds.length > 0 && <View style={styles.images}>
         <Heading style={[styles.detailHead, { color: colors.foreground }]}>{language === 'es' ? 'Láminas seleccionadas del atlas' : 'Selected atlas plates'}</Heading>
         {galleryIds.flatMap((id) => { const a = content.assets.find((item) => item.id === id); return a ? [localizeAsset(a)] : []; }).map((asset) => <View key={asset.id} style={styles.imageCard}>
@@ -88,6 +88,14 @@ export default function ModuleDetailScreen() {
         <AdaptiveButton onPress={() => router.push(`/(tabs)/practice?moduleId=${module.id}`)} style={[styles.practice, reflow && styles.practiceLarge, { backgroundColor: colors.primary }]}><Text style={[reflow && styles.practiceTextLarge, { color: colors.primaryForeground, fontWeight: '700' }]}>{t(`module.practiceCount.${content.questions.filter((item) => item.moduleId === module.id).length === 1 ? 'one' : 'other'}`, { count: number(content.questions.filter((item) => item.moduleId === module.id).length) })}</Text></AdaptiveButton>
   </ModuleScreen>;
 }
+
+// Keep this change local to the module mode switch. Headings, atlas controls
+// and global button/text sizing deliberately retain their existing settings.
+const modeControlStyles = StyleSheet.create({
+  group: { width: '100%', maxWidth: 248, alignSelf: 'center', padding: 0 },
+  button: { minHeight: 44, paddingVertical: 6, paddingHorizontal: 12 },
+  label: { fontSize: 14, textAlign: 'center' },
+});
 
 function LessonCard({ lesson, mode, reflow, expanded, onToggle, colors, bookmarks, onBookmark, t, localizeStructure }: { lesson: Lesson; mode: 'learn' | 'recall'; reflow: boolean; expanded: boolean; onToggle: () => void; colors: any; bookmarks: string[]; onBookmark: (id: string) => void; t: (key: string, values?: Record<string, string | number>) => string; localizeStructure: (item: Structure) => Structure }) {
   const { asset: localizeAsset } = useLocale();

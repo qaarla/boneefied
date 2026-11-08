@@ -18,3 +18,7 @@ coordinates, exercise the actual zoom and pan path, and distinguish browser
 evidence and native JavaScript compilation from physical iOS/Android visual
 verification. Raster-only originals have finite detail; report specific limits
 instead of repeatedly attempting speculative replacements.
+
+The user confirmed that the changed viewer “LOOKS BETTER IN THE SIMUALTION.”
+Treat that as positive simulation feedback, not confirmation of native-device
+sharpness.

@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import plistlib
+import re
 import subprocess
 import tempfile
 import zipfile
@@ -13,6 +14,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("platform", choices=["ios", "android"])
 parser.add_argument("path", type=Path)
 parser.add_argument("previous", type=Path)
+parser.add_argument("--expected-ios-build", default="13")
+parser.add_argument("--verify-vectors", action="store_true")
 args = parser.parse_args()
 
 
@@ -52,11 +55,35 @@ with zipfile.ZipFile(args.path) as archive, zipfile.ZipFile(args.previous) as pr
         "compiledCleanHyperlinkLabels": True,
         "physicalDeviceTested": False,
     }
+    if args.verify_vectors:
+        root_path = Path(__file__).resolve().parents[2]
+        app_path = root_path / "artifacts/boneefied"
+        registry = (app_path / "content/vector-image-sources.generated.ts").read_text()
+        pairs = dict(re.findall(
+            r"\[require\('@/([^']+)'\), \(\) => require\('@/([^']+)'\) as string\]",
+            registry))
+        inventory = json.loads((Path(__file__).parent / "inventory.json").read_text())["assets"]
+        vector_assets = [asset for asset in inventory if asset["localAssetPath"] in pairs]
+        assert len(inventory) == 164 and len(vector_assets) == 154
+        missing_vectors = []
+        for asset in vector_assets:
+            xml = (app_path / pairs[asset["localAssetPath"]]).read_text()
+            if xml.encode() not in bundle and xml.encode("utf-16-le") not in bundle:
+                missing_vectors.append(asset["id"])
+        assert not missing_vectors, f"Exact vector masters absent from compiled bundle: {missing_vectors}"
+        for marker in ("viewer-base-diagram", "transformOrigin", "top left", "allowDownscaling"):
+            assert marker.encode() in bundle or marker.encode("utf-16-le") in bundle, marker
+        result.update({
+            "publishedImageAssociations": len(inventory),
+            "exactVectorMastersInCompiledBundle": len(vector_assets),
+            "rasterOnlyPublishedImages": len(inventory) - len(vector_assets),
+            "zoomRendererMarkersPresent": True,
+        })
     if args.platform == "ios":
         root = bundles[0].rsplit("/", 1)[0]
         info = plistlib.loads(archive.read(root + "/Info.plist"))
         assert info["CFBundleIdentifier"] == "com.qaarla.boneefied"
-        assert info["CFBundleVersion"] == "13"
+        assert info["CFBundleVersion"] == args.expected_ios_build
         assert info["CFBundleShortVersionString"] == "1.0.0"
         provision = temp / "provision"
         provision.write_bytes(archive.read(root + "/embedded.mobileprovision"))
