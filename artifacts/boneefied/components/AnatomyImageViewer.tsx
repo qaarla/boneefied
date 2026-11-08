@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Animated, Image, Platform, Pressable, StyleSheet, View } from 'react-native';
+import { Animated, Platform, Pressable, StyleSheet, View } from 'react-native';
 import { GestureDetector } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 import { Asset } from 'expo-asset';
@@ -16,6 +16,8 @@ import { canShowPhotoReferences, type PhotoReferenceMode } from '@/content/real-
 import { containedOverlayBox, protectedOverlayHeight, protectedOverlayRects } from '@/components/viewerOverlayProtection';
 import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/AnimatedAnswerPressable';
 import { useOfflineImage } from '@/hooks/useOfflineImage';
+import { vectorXmlForSource } from '@/content/vector-image-sources.generated';
+import { SharpAtlasImage } from '@/components/SharpAtlasImage';
 import { useLocale } from '@/locales/useLocale';
 import { content } from '@/content/canonical';
 import { annotationIndex, annotationKey, clampMarkerCenter, hasMarkerOverlap, spreadAtlasCallouts } from '@/components/viewerMarkerLayout';
@@ -94,7 +96,8 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
   // Question markers and study labels are mutually exclusive below. In feedback,
   // repeated study targets can outnumber the question's planned marker cells.
   const labelCalloutLayout = !questionHotspotCallouts && (atlasLayout || (labels.length > 0 && avoidRects.length > 0));
-  const image = useOfflineImage(source);
+  const vectorXml = useMemo(() => vectorXmlForSource(source), [source]);
+  const image = useOfflineImage(vectorXml ? undefined : source);
   const imageAspectRatio = useMemo(() => {
     const asset = source ? Asset.fromModule(source) : undefined;
     return asset?.width && asset?.height ? asset.width / asset.height : suppliedAspectRatio;
@@ -214,13 +217,13 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
       <ViewerGestureSurface gesture={gesture.nativeGesture}>
       <View ref={gesture.areaRef} collapsable={false} testID="viewer-gesture-area" {...gesture.handlers} onLayout={({ nativeEvent: { layout } }) => setCanvasSize((current) => current.width === layout.width && current.height === layout.height ? current : { width: layout.width, height: layout.height })} style={[styles.gestureArea, gesture.webStyle]} accessibilityLabel={locale.t('imageViewer.inspectGestures')}>
       {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{locale.t('imageViewer.unavailable')}</Text></View>}
-      {source && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ? locale.t('offlineImage.unavailableOffline') : locale.t('imageViewer.loading')}</Text></View>}
-       {source && image.source && <Animated.View testID="viewer-canvas" pointerEvents="box-none" style={[styles.canvas, gesture.canvasStyle]}>
+      {source && !vectorXml && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ? locale.t('offlineImage.unavailableOffline') : locale.t('imageViewer.loading')}</Text></View>}
+       {source && (vectorXml || image.source) && <Animated.View testID="viewer-canvas" pointerEvents="box-none" style={[styles.canvas, gesture.canvasStyle]}>
         <View testID="viewer-plate" pointerEvents="box-none" style={{ position: 'absolute', left: framing.left, top: framing.top, width: canvasSize.width, height: layoutHeight, transform: [{ scale: framing.scale }] }}>
         {/* Round the fitted raster (including its paper background), not the
             annotation scene. Keep every callout/leader outside this mask. */}
         <View testID="viewer-image-surface" pointerEvents="none" style={[styles.imageSurface, { left: imageBox.x, top: imageBox.y, width: imageBox.width, height: imageBox.height, borderRadius: colors.radius }]}>
-          <Image testID="viewer-base-diagram" source={image.source} resizeMode="contain" style={styles.image} />
+          <SharpAtlasImage xml={vectorXml} source={image.source} width={imageBox.width} height={imageBox.height} scale={gesture.zoom * framing.scale} />
         </View>
         {hotspots.map((hotspot, index) => {
           const selected = selectedHotspotId === hotspot.structureId;

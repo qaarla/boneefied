@@ -49,7 +49,10 @@ test('shared image, overlays and gesture clamp consume the same centered contain
   assert.match(viewer, /viewerPanBounds\(imageBox/);
   assert.match(viewer, /fitViewerScene/);
   assert.match(viewer, /left: imageBox\.x, top: imageBox\.y, width: imageBox\.width, height: imageBox\.height/);
-  assert.match(viewer, /resizeMode="contain"/);
+  assert.match(viewer, /<SharpAtlasImage[^>]*width=\{imageBox\.width\} height=\{imageBox\.height\}/);
+  const renderer = readFileSync(new URL('../components/SharpAtlasImage.tsx', import.meta.url), 'utf8');
+  assert.match(renderer, /preserveAspectRatio="xMidYMid meet"/);
+  assert.match(renderer, /contentFit="contain"/);
   assert.doesNotMatch(viewer, /Math\.min\(columns, 2\)/);
 });
 
