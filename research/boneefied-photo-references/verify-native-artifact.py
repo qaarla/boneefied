@@ -16,6 +16,7 @@ parser.add_argument("path", type=Path)
 parser.add_argument("previous", type=Path)
 parser.add_argument("--expected-ios-build", default="13")
 parser.add_argument("--verify-vectors", action="store_true")
+parser.add_argument("--verify-image-details", action="store_true")
 args = parser.parse_args()
 
 
@@ -55,6 +56,15 @@ with zipfile.ZipFile(args.path) as archive, zipfile.ZipFile(args.previous) as pr
         "compiledCleanHyperlinkLabels": True,
         "physicalDeviceTested": False,
     }
+    if args.verify_image_details:
+        for marker in ("Image details", "Detalles de la imagen",
+                       "image-details-toggle-", "image-details-body-",
+                       "module-study-mode", "module-mode-"):
+            assert marker.encode() in bundle or marker.encode("utf-16-le") in bundle, marker
+        result.update({
+            "imageDetailsDisclosureInCompiledBundle": True,
+            "compactLearnRecallControlsInCompiledBundle": True,
+        })
     if args.verify_vectors:
         root_path = Path(__file__).resolve().parents[2]
         app_path = root_path / "artifacts/boneefied"

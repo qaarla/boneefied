@@ -15,7 +15,8 @@ full wording when expanded and keep required concise image credits visible.
 
 **Why:** The user said the repeated “2D diagram,” “schematic,” and microscopic
 descriptions look like too many words and explicitly requested an expandable
-dropdown “GLOBAL.”
+dropdown “GLOBAL.” The user subsequently approved this collapsed disclosure
+treatment.
 
 **How to apply:** Use the same treatment in module galleries, lessons, glossary
 illustrations and revealed Practice feedback. Preserve Recall and unanswered

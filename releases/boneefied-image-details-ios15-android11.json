@@ -1,0 +1,79 @@
+{
+  "app": "Boneefied",
+  "version": "1.0.0",
+  "sourceCommit": "e7fb0fd85a72b8019a77e82ca378278999e93bd2",
+  "sourceBranch": "boneefied-image-details-ios15-android11",
+  "submissionMethod": "Connected Expo workflow action; validated native-build-artifacts.yml; no EAS CLI invocation.",
+  "effectiveEasCliVersion": "Not reported by connected workflow; eas.json has no CLI-version restriction.",
+  "workflowRunId": "01a1bd97-14aa-7514-bc41-5ab153b5104c",
+  "workflowStatus": "SUCCESS",
+  "nativeJobsCreated": 2,
+  "authorization": "Owner approved the global Image details dropdown treatment and requested another build. Same paired iOS preview and Android production profiles as the preceding builds.",
+  "changes": [
+    "Compact module Learn/Recall controls; heading and subheading preserved",
+    "Image-type descriptions, study descriptions and specimen notes globally collapsed under Image details",
+    "Required concise credits remain visible and Recall/Practice answer guards preserved"
+  ],
+  "storeSubmission": false,
+  "appOrSitePublication": false,
+  "physicalDeviceInstallationTested": false,
+  "compiledContentBothPlatforms": {
+    "imageDetailsDisclosureMarkers": true,
+    "compactLearnRecallMarkers": true,
+    "publishedImageAssociations": 164,
+    "exactAuthenticVectorMasters": 154,
+    "rasterOnlyPublishedImages": 10,
+    "activePhotoReferenceUrls": 135,
+    "cleanHyperlinkLabels": true,
+    "zoomRendererMarkers": true,
+    "proof": "Each exact original SVG XML string and each active reference URL was found in the compiled native JavaScript bundle, together with English/Spanish Image details labels and compact mode-control identifiers.",
+    "verificationBoundary": "Compiled content inclusion and browser-preview checks do not constitute physical-device interaction or sharpness testing."
+  },
+  "ios": {
+    "buildId": "c7905093-a1bb-42c5-bf84-9511a88c2fb6",
+    "status": "FINISHED",
+    "completedAt": "2026-11-09T00:03:06.795Z",
+    "profile": "preview",
+    "distribution": "INTERNAL",
+    "simulator": false,
+    "buildNumber": "15",
+    "artifactUrl": "https://expo.dev/artifacts/eas/qDr950gQgKdbwpGlrQwOgfzXd69zHDJT7VKZD-B_h7M.ipa",
+    "stagedPath": "generated-artifacts/boneefied-builds/image-details-15-11/boneefied-ios-15.ipa",
+    "bytes": 125003882,
+    "sha256": "a6f77c7d6327ed17f650ba4bcc8bce3ce999c64b98821eca273ae5f19d4f1eec",
+    "verification": [
+      "All ZIP entry CRC checks passed",
+      "Embedded identifier com.qaarla.boneefied, version 1.0.0 and build number 15 match",
+      "Physical-device ad hoc provisioning is byte-identical to previous iOS 14",
+      "Finished build record uses the verified source commit",
+      "New UI markers, 154 exact SVG masters and 135 active photo-source URLs verified in compiled bundle"
+    ]
+  },
+  "android": {
+    "buildId": "e5aa3e67-b972-4c1c-93c0-52a0c0d6c18d",
+    "status": "FINISHED",
+    "completedAt": "2026-11-09T00:20:12.142Z",
+    "profile": "production",
+    "distribution": "STORE",
+    "versionCode": 11,
+    "artifactUrl": "https://expo.dev/artifacts/eas/Ztqa5dQ7G3913vaCZaoP_xi8vM7qXOD73ys-jSzECgQ.aab",
+    "stagedPath": "releases/google-play/boneefied-production.aab",
+    "versionedCopy": "generated-artifacts/boneefied-builds/image-details-15-11/boneefied-android-11.aab",
+    "previousVersionPreserved": "generated-artifacts/boneefied-builds/vector-zoom-14-10/boneefied-android-10.aab",
+    "downloadUrl": "https://198e4559-f7a5-4cab-95b5-2eae02bdc149-00-3dp8avzr8qq2.picard.replit.dev/api/download/boneefied-production.aab",
+    "bytes": 157934870,
+    "sha256": "4b6d8b1578096e3459fec26c583abf6a0fdb7b876fa70c08ee3f3ed060c734d2",
+    "signerCertificateSha256": "915ddd6d93e8001698141c980f9d894347fa683727a4fe96b2d2b2b37a3d0859",
+    "verification": [
+      "All ZIP entry CRC checks passed",
+      "Package identifier and AAB structure match",
+      "Version code 11 and source commit verified against finished EAS build record",
+      "OpenSSL verified JAR signature, signed manifest and all 1630 signed entry digests",
+      "Signing certificate matches previous Android 10",
+      "New UI markers, 154 exact SVG masters and 135 active photo-source URLs verified in compiled bundle",
+      "Exact public HTTPS download returned HTTP 200, application/octet-stream and attachment",
+      "Public download matched staged byte count and SHA-256; all ZIP entry CRC checks passed",
+      "Bundle was not modified, rebuilt, resigned or submitted for delivery"
+    ]
+  }
+}
