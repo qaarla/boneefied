@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-11-10T16:43:34.869Z",
+  "project": {
+    "name": "Boneefied",
+    "fullName": "@qaarla1/boneefied",
+    "appId": "1555c01d-944e-41cb-b923-d4691756ab33",
+    "baseDirectory": "artifacts/boneefied",
+    "bundleIdentifier": "com.qaarla.boneefied",
+    "androidPackage": "com.qaarla.boneefied"
+  },
+  "manual": "attached_assets/EAS_Build_Commands_Remastered_1793752743621.pdf",
+  "source": {
+    "sha": "da379caf04f7819e3170c1c882aed44340e5368b",
+    "remoteBranch": "boneefied-atlas-settings-verified-da379ca",
+    "remoteVerified": true,
+    "workingTreeClean": true
+  },
+  "route": {
+    "ipaAndAab": "Existing native-build-artifacts.yml via connected workflowRun",
+    "apk": "Connected buildRun, Android preview, autoSubmit false",
+    "effectiveCliVersion": "Not exposed by submission responses; eas.json has no cli.version restriction"
+  },
+  "workflowRunId": "01a1c657-4d95-7dee-99b6-ab484ca05457",
+  "preflight": "No NEW, IN_QUEUE, IN_PROGRESS or PENDING_CANCEL builds; all five existing workflow runs SUCCESS. No recovery or cancellation required.",
+  "preserved": "No source, profile, identity, signing, credential, version, app behavior or website changes. No store submission.",
+  "builds": [
+    {
+      "id": "5f0a647b-7d5c-475a-aea1-4db8d2e1d39a",
+      "status": "IN_PROGRESS",
+      "platform": "IOS",
+      "distribution": "INTERNAL",
+      "buildProfile": "preview",
+      "gitCommitHash": "da379caf04f7819e3170c1c882aed44340e5368b",
+      "appVersion": null,
+      "appBuildVersion": null,
+      "sdkVersion": null,
+      "createdAt": "2026-11-10T16:42:53.584Z",
+      "updatedAt": "2026-11-10T16:43:21.440Z",
+      "completedAt": null,
+      "error": null,
+      "artifacts": {
+        "buildUrl": null,
+        "applicationArchiveUrl": null
+      }
+    },
+    {
+      "id": "51e4913a-1c6b-49e3-8617-c3013901a749",
+      "status": "IN_PROGRESS",
+      "platform": "ANDROID",
+      "distribution": "INTERNAL",
+      "buildProfile": "preview",
+      "gitCommitHash": "da379caf04f7819e3170c1c882aed44340e5368b",
+      "appVersion": null,
+      "appBuildVersion": null,
+      "sdkVersion": null,
+      "createdAt": "2026-11-10T16:42:55.180Z",
+      "updatedAt": "2026-11-10T16:43:20.158Z",
+      "completedAt": null,
+      "error": null,
+      "artifacts": {
+        "buildUrl": null,
+        "applicationArchiveUrl": null
+      }
+    },
+    {
+      "id": "4de4b062-41bf-432f-9946-be5aefbe8759",
+      "status": "IN_PROGRESS",
+      "platform": "ANDROID",
+      "distribution": "STORE",
+      "buildProfile": "production",
+      "gitCommitHash": "da379caf04f7819e3170c1c882aed44340e5368b",
+      "appVersion": null,
+      "appBuildVersion": null,
+      "sdkVersion": null,
+      "createdAt": "2026-11-10T16:42:53.584Z",
+      "updatedAt": "2026-11-10T16:43:15.033Z",
+      "completedAt": null,
+      "error": null,
+      "artifacts": {
+        "buildUrl": null,
+        "applicationArchiveUrl": null
+      }
+    }
+  ]
+}
