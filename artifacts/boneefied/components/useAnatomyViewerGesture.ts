@@ -195,6 +195,7 @@ export function useAnatomyViewerGesture(source?: number) {
     }
   };
   return { ...transform, areaRef, updateScene, reset, measure, nativeGesture,
+    translationStyle: { transform: [{ translateX: animated.x }, { translateY: animated.y }] },
     canvasStyle: { transform: [{ translateX: animated.x }, { translateY: animated.y }, { scale: animated.zoom }] },
     canPress: () => controller.canPress(),
     changeZoom: (amount: number) => { controller.changeZoom(amount, scene.current); commit(true); },

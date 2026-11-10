@@ -138,6 +138,7 @@ const vectorSources = new Map<number, () => string>([
   [require('@/assets/images/anatomy/servier-heart-anterior.png'), () => require('@/assets/images/anatomy/servier-heart-anterior.svg') as string],
   [require('@/assets/images/anatomy/servier-kidney.png'), () => require('@/assets/images/anatomy/servier-kidney.svg') as string],
   [require('@/assets/images/anatomy/servier-ovary.png'), () => require('@/assets/images/anatomy/servier-ovary.svg') as string],
+  [require('@/assets/images/anatomy/servier-pelvis.png'), () => require('@/assets/images/anatomy/servier-pelvis.svg') as string],
   [require('@/assets/images/anatomy/servier-thyroid-anterior.png'), () => require('@/assets/images/anatomy/servier-thyroid-anterior.svg') as string],
   [require('@/assets/images/anatomy/servier-uterus.png'), () => require('@/assets/images/anatomy/servier-uterus.svg') as string],
   [require('@/assets/images/anatomy/skeletal-atlas/skeletal-atlas-01-skull-anterior.png'), () => require('@/assets/images/anatomy/skeletal-atlas/skeletal-atlas-01-skull-anterior.svg') as string],

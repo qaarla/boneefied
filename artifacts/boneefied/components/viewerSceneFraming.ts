@@ -40,6 +40,18 @@ export function fittedSceneRect(rect: SceneRect, sceneWidth: number, sceneHeight
   };
 }
 
+/** Same center-origin zoom as the annotation canvas, without scaling a texture.
+ * Pan is applied separately by the shared animated translation.
+ */
+export function zoomedViewportRect(rect: SceneRect, width: number, height: number, zoom: number): SceneRect {
+  return {
+    x: width / 2 + (rect.x - width / 2) * zoom,
+    y: height / 2 + (rect.y - height / 2) * zoom,
+    width: rect.width * zoom,
+    height: rect.height * zoom,
+  };
+}
+
 /** External numbered callouts must remain reachable, not just their raster. */
 export function viewerPanBounds(image: SceneRect, sceneWidth: number, sceneHeight: number, fit: ReturnType<typeof fitViewerScene>, includeAnnotations = false): SceneRect {
   return includeAnnotations ? fit.bounds : fittedSceneRect(image, sceneWidth, sceneHeight, fit);

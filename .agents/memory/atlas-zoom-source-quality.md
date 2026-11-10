@@ -22,3 +22,15 @@ instead of repeatedly attempting speculative replacements.
 The user confirmed that the changed viewer “LOOKS BETTER IN THE SIMUALTION.”
 Treat that as positive simulation feedback, not confirmation of native-device
 sharpness.
+
+The user subsequently clarified that the earlier repair was only partially
+successful: some iPhone plates remained crisp but others blurred on the first
+Zoom in. Do not treat the earlier positive simulation feedback as acceptance of
+native-device sharpness or assume vector inclusion alone settled the issue.
+
+**Why:** This is a repeated device-specific report despite successful browser
+and compiled-content checks.
+
+**How to apply:** Require direct device evidence before claiming the native
+blur eliminated. When no native build is authorized, preserve that boundary
+explicitly in the result rather than quietly declaring every plate fixed.

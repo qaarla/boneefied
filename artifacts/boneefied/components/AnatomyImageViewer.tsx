@@ -22,7 +22,7 @@ import { useLocale } from '@/locales/useLocale';
 import { content } from '@/content/canonical';
 import { annotationIndex, annotationKey, clampMarkerCenter, hasMarkerOverlap, spreadAtlasCallouts } from '@/components/viewerMarkerLayout';
 import { useAnatomyViewerGesture } from '@/components/useAnatomyViewerGesture';
-import { fitViewerScene, viewerPanBounds, imageCenteredSceneBounds } from '@/components/viewerSceneFraming';
+import { fitViewerScene, fittedSceneRect, zoomedViewportRect, viewerPanBounds, imageCenteredSceneBounds } from '@/components/viewerSceneFraming';
 import { peripheralAtlasAssetIds } from '@/content/peripheral-atlas-corrections';
 
 const IMAGE_INSET = 12;
@@ -195,6 +195,9 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
      const fitRects = centeredNervousAssets.has(diagramAssetId ?? '')
        ? imageCenteredSceneBounds(annotationRects, imageBox) : annotationRects;
      const framing = fitViewerScene(canvasSize.width, canvasSize.height, canvasSize.width, layoutHeight, fitRects);
+     const displayedImage = zoomedViewportRect(
+       fittedSceneRect(imageBox, canvasSize.width, layoutHeight, framing),
+       canvasSize.width, canvasSize.height, gesture.zoom);
      const panBounds = viewerPanBounds(imageBox, canvasSize.width, layoutHeight, framing, vascularAssets.has(diagramAssetId ?? '') || lymphaticAssets.has(diagramAssetId ?? '') || respiratoryAssets.has(diagramAssetId ?? '') || digestiveAssets.has(diagramAssetId ?? '') || urinaryAssets.has(diagramAssetId ?? '') || maleReproductiveAssets.has(diagramAssetId ?? '') || femaleReproductiveAssets.has(diagramAssetId ?? '') || centeredNervousAssets.has(diagramAssetId ?? ''));
    useEffect(() => {
      gesture.updateScene({
@@ -218,13 +221,21 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
       <View ref={gesture.areaRef} collapsable={false} testID="viewer-gesture-area" {...gesture.handlers} onLayout={({ nativeEvent: { layout } }) => setCanvasSize((current) => current.width === layout.width && current.height === layout.height ? current : { width: layout.width, height: layout.height })} style={[styles.gestureArea, gesture.webStyle]} accessibilityLabel={locale.t('imageViewer.inspectGestures')}>
       {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{locale.t('imageViewer.unavailable')}</Text></View>}
       {source && !vectorXml && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ? locale.t('offlineImage.unavailableOffline') : locale.t('imageViewer.loading')}</Text></View>}
+       {/* Paint at actual display dimensions, outside the scaled annotation
+           scene. This avoids enlarging a native compositor's small snapshot.
+           Both layers share the exact same animated pan and geometry. */}
+       {source && (vectorXml || image.source) && <Animated.View
+         testID="viewer-image-surface" pointerEvents="none"
+         style={[styles.imageSurface, {
+           left: displayedImage.x, top: displayedImage.y,
+           width: displayedImage.width, height: displayedImage.height,
+           borderRadius: colors.radius * framing.scale * gesture.zoom,
+         }, gesture.translationStyle]}>
+         <SharpAtlasImage xml={vectorXml} source={image.source}
+           width={displayedImage.width} height={displayedImage.height} />
+       </Animated.View>}
        {source && (vectorXml || image.source) && <Animated.View testID="viewer-canvas" pointerEvents="box-none" style={[styles.canvas, gesture.canvasStyle]}>
         <View testID="viewer-plate" pointerEvents="box-none" style={{ position: 'absolute', left: framing.left, top: framing.top, width: canvasSize.width, height: layoutHeight, transform: [{ scale: framing.scale }] }}>
-        {/* Round the fitted raster (including its paper background), not the
-            annotation scene. Keep every callout/leader outside this mask. */}
-        <View testID="viewer-image-surface" pointerEvents="none" style={[styles.imageSurface, { left: imageBox.x, top: imageBox.y, width: imageBox.width, height: imageBox.height, borderRadius: colors.radius }]}>
-          <SharpAtlasImage xml={vectorXml} source={image.source} width={imageBox.width} height={imageBox.height} scale={gesture.zoom * framing.scale} />
-        </View>
         {hotspots.map((hotspot, index) => {
           const selected = selectedHotspotId === hotspot.structureId;
           const feedback: AnswerFeedback | undefined = submitted

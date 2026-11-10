@@ -1,0 +1,75 @@
+{
+  "scope": "Bounded rendered-output verification of atlas-source/zoom and two Settings button-group alignment repairs. No app-source edits or builds/publishing.",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "nativeDeviceVerified": false,
+  "result": {
+    "assignmentId": "a72d8c63-b55d-4ecf-bcb0-783247ea51e4",
+    "jobId": "atlas-actual-size-zoom:2821",
+    "kind": "testing",
+    "name": "atlas-actual-size-zoom",
+    "screenshots": [
+      {
+        "description": "Settings page with English and Haptics On selected; appearance card and radio rows visible.",
+        "id": "4rmgrh"
+      },
+      {
+        "description": "Heart source SVG at first zoom (1.5×), with numbered markers and leaders.",
+        "id": "vrlyd4"
+      },
+      {
+        "description": "Heart viewer at 2× with crop and callouts.",
+        "id": "csxxo4"
+      },
+      {
+        "description": "Heart viewer at 3× with leader lines and rounded crop.",
+        "id": "chxnwd"
+      },
+      {
+        "description": "Heart viewer at 4×.",
+        "id": "jbv4sh"
+      },
+      {
+        "description": "Heart viewer after pan at 4×; image and annotations move together.",
+        "id": "io1ze8"
+      },
+      {
+        "description": "Heart viewer after Reset, restored to baseline.",
+        "id": "04xofs"
+      },
+      {
+        "description": "Exact source-matched Servier pelvis viewer at first zoom (1.5×), showing tall anterior pelvis and femurs.",
+        "id": "z168u6"
+      },
+      {
+        "description": "Servier pelvis viewer at 2×.",
+        "id": "ivy2rc"
+      },
+      {
+        "description": "Servier pelvis viewer at 3×.",
+        "id": "hyq5s1"
+      },
+      {
+        "description": "Servier pelvis viewer at 4×.",
+        "id": "w5wmzt"
+      },
+      {
+        "description": "Servier pelvis viewer after pan at 4×.",
+        "id": "nb0fiz"
+      },
+      {
+        "description": "Servier pelvis viewer after Reset at baseline dimensions.",
+        "id": "z9c7nw"
+      },
+      {
+        "description": "Finite 233×800 vertebral-column raster at 4×, showing the scan’s softness/aliasing.",
+        "id": "p6mqjn"
+      }
+    ],
+    "status": "completed",
+    "text": "Completed the requested bounded verification in the existing 390×844 browser session. No settings were changed, no source files were edited, and no build/publishing/store actions were taken; only the requested atlas-viewer Reset controls were used.\n\n**Settings alignment:** Appearance card bounds were x=20–370 (center x=195). The combined English/Español bounds were x=79–311 (center x=195; horizontal offset **0.0px**). The Haptics On/Off bounds were x=95–295 (center x=195; horizontal offset **0.0px**). Both pairs are centered within 1px. Language options were 112×44px each; haptics options were 96×44px each. English and On remained selected.\n\n**Heart source and zoom:** The baseline heart SVG matched the specified source master’s first `path d`, with `viewBox=\"0 0 1450 1000\"`, 29 paths, and no embedded `<image>`. SVG and surface dimensions progressed from 283.918×195.805px at 1× to 425.876×293.708 at 1.5×, 567.8×391.6 at 2×, 851.8×587.4 at 3×, and 1135.67×783.22 at 4×. The rounded mask scaled from about 7px to 28px. At 4×, panning shifted surface, canvas, and marker together; Reset restored scale 1, zero translation, and baseline dimensions/marker size.\n\n**Exact Servier pelvis source and zoom:** Scoped via `image-details-asset-servier-pelvis` and its two ancestors (not the paired-hip plate). The inline SVG matched the genuine `servier-pelvis.svg` first `path d`, had `viewBox=\"0 0 256 294\"`, 253 paths, and no embedded `<image>`. It is the tall anterior pelvis/sacrum/femurs artwork. Dimensions progressed from 202.5×232.559px at 1× to 303.75×348.838 at 1.5×, 405×465.12 at 2×, 607.5×697.7 at 3×, and 810×930.234 at 4×. The rounded mask scaled from 5px to 20px. Pan moved the surface, canvas, and marker together (+40,+22px); Reset restored scale 1, zero translation, and baseline geometry.\n\n**Optional Gray raster check:** The neighboring vertebral-column image is an `<img>` with native dimensions **233×800**. At 4× it rendered about 377.45×1296px; the browser screenshot shows the expected softness/aliasing of a finite scan compared with the SVGs. This is browser evidence only, not physical-iPhone proof.",
+    "verdict": "success"
+  }
+}

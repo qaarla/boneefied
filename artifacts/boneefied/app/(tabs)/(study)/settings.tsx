@@ -38,7 +38,7 @@ export default function SettingsScreen() {
       <View style={styles.language}>
         <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.language.heading')}</Heading>
         <Text style={{ color: colors.mutedForeground }}>{t('settings.language.description')}</Text>
-        <View style={styles.choices}>
+        <View style={[styles.choices, styles.centeredChoices]}>
           {([
             { value: 'en', label: 'English' },
             { value: 'es', label: 'Español' },
@@ -63,7 +63,7 @@ export default function SettingsScreen() {
       <View style={styles.haptics}>
         <Heading style={[styles.heading, { color: colors.foreground }]}>{t('settings.haptics.heading')}</Heading>
         <Text style={{ color: colors.mutedForeground }}>{t('settings.haptics.description')}</Text>
-        <View style={styles.choices}>
+        <View style={[styles.choices, styles.centeredChoices]}>
           {([true, false] as const).map((enabled) => {
             const selected = preferences.haptics === enabled;
             return <AdaptiveButton
@@ -141,6 +141,7 @@ const styles = StyleSheet.create({
   panel: { borderWidth: 1, borderRadius: 16, padding: 16, gap: 16 },
   heading: { fontSize: 17, fontWeight: '700' },
   choices: { flexDirection: 'row', gap: 8, flexWrap: 'wrap' },
+  centeredChoices: { justifyContent: 'center' },
   choice: { borderWidth: 1, borderRadius: 10, padding: 10 },
   choiceReflow: { minHeight: 44, justifyContent: 'center' },
   haptics: { gap: 8 },

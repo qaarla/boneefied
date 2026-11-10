@@ -1,0 +1,2962 @@
+{
+  "activeRuntimeImages": 164,
+  "vectors": 155,
+  "finiteRasters": 9,
+  "rendering": "Image layer is outside the scaled annotation canvas; same fit, center-origin zoom and animated pan. No inverse-scaled SVG, no low-resolution image enlargement used as a repair.",
+  "nativeDeviceVisualVerification": false,
+  "nativeBuildsOrPublication": false,
+  "rows": [
+    {
+      "index": 1,
+      "id": "asset-muscular-atlas-deep-back",
+      "title": "Deep back muscles (trapezius and latissimus dorsi removed)",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-05-deep-back.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "1a1e8dbce08521abd75f8208d75dc3340d444b638128f5a48e1612d95652587a",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-05-deep-back.svg",
+      "vectorSha256": "46ad77d2599be3ee80118d33a303770d8a92dd2a74b3769ef1e7529257d87399",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 2,
+      "id": "asset-muscular-atlas-posterior-arm",
+      "title": "Posterior arm and elbow",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-07-posterior-arm.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "4c4b1a0b78f1ebab4417fdfa4470795b0ec888298cb8ac1b428259f97b2305bc",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-07-posterior-arm.svg",
+      "vectorSha256": "4a2bfe91caec77e2e72b9d1e22f38e2a406700bc722dd9aacebffe499de66f24",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 3,
+      "id": "asset-muscular-atlas-forearm",
+      "title": "Forearm: anterior and posterior views",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-08-forearm.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "53204cab3af965d180dde8d4bd319441023647f497cf23af636ac9a579649738",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-08-forearm.svg",
+      "vectorSha256": "b3f57992680a0c2cecfdf86c9e234885876617dda8b50f467ffa74a1fcdb87c8",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 4,
+      "id": "asset-muscular-atlas-abdominal-wall",
+      "title": "Abdominal wall layers",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-09-abdominal-wall.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e81918f41f03d8e86e11cb59ce7aa296b1b655de2259665b178a5af8bd56e6f2",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-09-abdominal-wall.svg",
+      "vectorSha256": "b51cce8fbbc0b1bf3271ede82185f3f9a368dad8748d512b3a20ef26a6a07275",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 5,
+      "id": "asset-muscular-atlas-gluteal",
+      "title": "Gluteal region: surface and cutaway",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-10-gluteal.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "3b7ee4652e784cb2176cf7d6929df52342b76940f27ebecb7dbfd667a0aa2c60",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-10-gluteal.svg",
+      "vectorSha256": "b9bbfafb5af31538fd2008624411d1cc2d15c15798ed8c0c8368652d2eb25f9d",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 6,
+      "id": "asset-muscular-atlas-deep-thigh",
+      "title": "Deep thigh: anterior and posterior cutaways",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-12-deep-thigh.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "3858e2a8fa282c51560f712611c6ea86ecdeebb4adfba02fa9839d5a9b5aa392",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-12-deep-thigh.svg",
+      "vectorSha256": "17840a308e574dd3da768ccf67359efce0a05e72df98dbc8aa11a201d9d7d4b2",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 7,
+      "id": "asset-muscular-atlas-anterior-leg",
+      "title": "Anterior and lateral leg",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-14-anterior-lateral-leg.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "03bf4e8faa2358b7aec3d3d5d1ebae7199cad4b4f59f7124646953e1521b9f25",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-14-anterior-lateral-leg.svg",
+      "vectorSha256": "8b36e665824e3ac4cec00c4f94efedf5a1de08efbe10a65c4ec41861b4496ed4",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 8,
+      "id": "asset-muscular-atlas-calf",
+      "title": "Calf: surface and cutaway",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-15-calf.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "3c752d1c4c79263de78e1f92de4bce4fa9ba7fa34e98f828d65998ef7dd3f220",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-15-calf.svg",
+      "vectorSha256": "4627463b187f085d0825fe4260c416b3b47816bb1765762388e22ec452f6dfef",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 9,
+      "id": "asset-muscular-atlas-hand",
+      "title": "Hand: intrinsic muscles, palmar view",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-18-hand-intrinsics.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "a50b53b3e101bddcc1cc54307fc52c2abc8bb6eae6cb9ba650ec435df3b19345",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-18-hand-intrinsics.svg",
+      "vectorSha256": "fe95c5985bb9b3c4236c7ff067e8a311050b649efb53281a014d358212bfa32d",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 10,
+      "id": "asset-muscular-atlas-foot",
+      "title": "Foot: plantar first layer and dorsal inset",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-19-foot-intrinsics.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f3b2e8468b1f19f2b560c3fbd26217d85ffb46e05d3ebce03158ae4799eab435",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-19-foot-intrinsics.svg",
+      "vectorSha256": "5bf0f3bf3fead1c685f3845ba041c831b972fe44c1827caadaf71c3e0c0ade7e",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 11,
+      "id": "asset-muscular-atlas-pelvic-floor",
+      "title": "Pelvic floor: levator ani, superior view",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-20-pelvic-floor.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "42cd8f39b523090b431ef90a33d19b9e05e7537e0b6182c6a18c7754578d4dc1",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-20-pelvic-floor.svg",
+      "vectorSha256": "3f2752279fd23aac15d969a884ff3071251f55641089ecd2bc21f69468cf4cd8",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 12,
+      "id": "asset-skeletal-atlas-skull-base-external",
+      "title": "Skull base, external (inferior) view",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-03-skull-base-external.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "a438853145eee8dd033cada12707cc2b7cfe3dc16373bb4fb50fc7788ccabdcf",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-03-skull-base-external.svg",
+      "vectorSha256": "4399fa06c42301441219a8b4db662013b8dfbc801f08b87459a7447ac9b75b6f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 13,
+      "id": "asset-skeletal-atlas-cranial-floor-internal",
+      "title": "Cranial floor, internal (superior) view",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-04-cranial-floor-internal.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "6ad300359d1c0f42c66874c7ac6cca3a151723a41848ab966655f01292f25c35",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-04-cranial-floor-internal.svg",
+      "vectorSha256": "2cb2e3500ec8a3a0b5a24f26235546ab02e8a9a899f7c8abb2bb6afa97a5c930",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 14,
+      "id": "asset-skeletal-atlas-skull-sutures",
+      "title": "Cranial sutures: superior and posterior views",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-05-skull-sutures.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "da8ae728415c91273b7917ce1e0459fa6a6c3caee314f9f8dd643a5afe347653",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-05-skull-sutures.svg",
+      "vectorSha256": "72b098a100eeb74204feb4a4f4b37b1e8e1ae0442408f9537997bb1a0c86b43a",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 15,
+      "id": "asset-skeletal-atlas-vertebra-typical",
+      "title": "Typical vertebra: superior view with lateral inset",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-06-vertebra-typical.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e33bdb6ce959ef87fd6d4bc5e2efcfaf3023537c74cefbc1aed40a3e29827147",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-06-vertebra-typical.svg",
+      "vectorSha256": "9e31e97dd330781c5b6264b74ce17f6ebf27b7392af03279dac6c7ffd6da6cef",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 16,
+      "id": "asset-skeletal-atlas-atlas-axis",
+      "title": "Atlas (C1) from above and axis (C2) from the side",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-08-atlas-axis.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "802a0a59a7ddc670777ab71da1949ae251f38b837772905f9b593b873973636e",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-08-atlas-axis.svg",
+      "vectorSha256": "75873b668dd3fb8da5dbbb8b2736f5e67b04bf120edf2f6906f1e20848d5ee71",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 17,
+      "id": "asset-skeletal-atlas-thoracic-cage",
+      "title": "Thoracic cage, anterior view",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-09-thoracic-cage.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "5089f3853d965e23b57eb0c87c68f9eb8df7a51a90419e1964f65299e741fec8",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-09-thoracic-cage.svg",
+      "vectorSha256": "6b9fd09b9d4f097282be58517f9848700871fc9efbd9a403aa10ab5a465ac800",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 18,
+      "id": "asset-skeletal-atlas-rib-detail",
+      "title": "Rib detail: head, tubercle and costal groove",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-10-rib-detail.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "28f4129d772ccad57a0ccf061d6ae49bedd3285ecad8c8dd3aef865894c1f4e0",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-10-rib-detail.svg",
+      "vectorSha256": "361afce56c02def8b7bf5ebe8bc60ac6fa51809f4f4eb59ca992141eabf89250",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 19,
+      "id": "asset-skeletal-atlas-scapula",
+      "title": "Right scapula: anterior (left) and posterior (right)",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-11-scapula.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e215eac93e4877c7d02c1c0080e4d5e2bcf0207705a08bf0ea12d780a0abb903",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-11-scapula.svg",
+      "vectorSha256": "0c94ad1c7db8ac49f2bc818995dbcac89e4ed07cf5063b918049318006e4f4cc",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 20,
+      "id": "asset-skeletal-atlas-pectoral-girdle",
+      "title": "Pectoral girdle relationships, anterior view (right side detailed)",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-12-pectoral-girdle.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "7bf473512c3cbc7c246ddfe5e367e36494537c0653f51a3268a01b54f0572a71",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-12-pectoral-girdle.svg",
+      "vectorSha256": "b3a80b13d35597dbae0e7108ce92ed1617a39510760bc8922222ac91036f00f4",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 21,
+      "id": "asset-skeletal-atlas-humerus",
+      "title": "Right humerus: anterior (left) and posterior (right)",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-13-humerus.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "6d64f25978efb9660e3249bc67c83a3e44941c5441e8c2b54141025ec73c7a26",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-13-humerus.svg",
+      "vectorSha256": "51acf7e1d4280e1d97064eda482791893635844463240485f9dc80c45bb6c25c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 22,
+      "id": "asset-skeletal-atlas-forearm",
+      "title": "Right forearm, anterior view, with proximal-ulna inset",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-14-forearm.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "8b0e108677d9df7c68290972f61d1414edc0d6824a5d0e1bdcdf14ffc1b72d17",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-14-forearm.svg",
+      "vectorSha256": "9d898d127e095d814e1714911fbaaea16c51abc44610f29a10a6649964b3f5b7",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 23,
+      "id": "asset-skeletal-atlas-hand-palmar",
+      "title": "Right hand, palmar view: carpals, metacarpals, phalanges",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-15-hand-palmar.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "7db7e650f3189fb6e455a82c7e1c91be72c7704b04db07b79d60e2d7df8ea71d",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-15-hand-palmar.svg",
+      "vectorSha256": "d36cdb01494856fcbfadf951d47ef131a0880192bdc0a7bfd6f9b7c2992a1391",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 24,
+      "id": "asset-skeletal-atlas-hip-bone",
+      "title": "Right hip bone: lateral (left) and medial (right) views",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-16-hip-bone.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "593507da21dd38037ba6d17a47753731139c439f172652b452c2b827af9abb58",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-16-hip-bone.svg",
+      "vectorSha256": "702516ab7b244d4c5e94f6ea6f9736a7bc7ad00aab50e835da47a49683cfa33e",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 25,
+      "id": "asset-skeletal-atlas-femur",
+      "title": "Right femur: anterior (left) and posterior (right)",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-17-femur.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "716fc178a3e10f60b5b65f522527e9cc05f5307278e10e13d679a75414fe0500",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-17-femur.svg",
+      "vectorSha256": "80a3bbd113b40d8ce64c2c23febcdd83d5447731ce527dfb640dec394d9f1f73",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 26,
+      "id": "asset-skeletal-atlas-leg-tibia-fibula",
+      "title": "Right leg, anterior view, with tibial-plateau inset",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-18-leg-tibia-fibula.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f3444f70e561118462dc48091bb5e962502630126c24df5c3a6c8d38a5b636da",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-18-leg-tibia-fibula.svg",
+      "vectorSha256": "3e2a90f04eed06ec07c26e49110a233eda8a9f9da489d787022967d625192127",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 27,
+      "id": "asset-skeletal-atlas-foot-dorsal",
+      "title": "Right foot, dorsal view: tarsals, metatarsals, phalanges",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-19-foot-dorsal.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "b7ffeb6cbe7e3cc940c5fdd56eec5052756a3fe85d7aac537ccccdd8c7088965",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-19-foot-dorsal.svg",
+      "vectorSha256": "75a2420de664e8174062c81e8fc7b771bf9adda32a14aeae0d12e8057abedea2",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 28,
+      "id": "asset-skeletal-atlas-synovial-joint",
+      "title": "Generic synovial joint in section",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-20-synovial-joint.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "90298a0cf7436193d35d04737b18a8c605dc34bac7dee6f0d4a5fcf375c70f64",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-20-synovial-joint.svg",
+      "vectorSha256": "9b995b577b5a7c7f659f90cf23bfbaae0f41f5e6cb09af79b85544ebb3a8c5e3",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 29,
+      "id": "asset-skeletal-atlas-shoulder-joint",
+      "title": "Right shoulder joint relationships, anterior view",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-21-shoulder-joint.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "96d5f7ff3c2ae9067298b1780553c68deec7d2dd9b88616d178f235c693bd15b",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-21-shoulder-joint.svg",
+      "vectorSha256": "65e669d19d3a4f655b260d2919a30ef2bbcfe71e2516c4d56765c7d3f3cd59e3",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 30,
+      "id": "asset-skeletal-atlas-knee-joint",
+      "title": "Right knee: anterior layer (left) and deep cruciates, patella omitted (right)",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-22-knee-joint.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "7319024c60b16167f29d53e7795fd6ea4b178e669d971176bdcd4a6583cf268c",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-22-knee-joint.svg",
+      "vectorSha256": "2a0afe5fe28f34a01e1c420b0d4605c0d820a61069a85b18fde77581ee1e1668",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 31,
+      "id": "asset-atlas-anterior-position",
+      "title": "Anterior anatomical position",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-01-anterior-position.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "defff023d7e8c8cd96e376cd82fe09a4066b6dbc10d067600398a7bd2dca8e3c",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-01-anterior-position.svg",
+      "vectorSha256": "8c447b29997f44036c8a2456eb5aa72379544a16dc4f46a43f354310fd080e50",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 32,
+      "id": "asset-atlas-posterior-position",
+      "title": "Posterior anatomical position",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-02-posterior-position.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e64a1267343b8dfcd17c5c3302086d3dbe0b59df1def913d56480029339ccad3",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-02-posterior-position.svg",
+      "vectorSha256": "90ff424662d54fada968f7be893289802b67ca1a5327349e0add5bdfc8d33e0e",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 33,
+      "id": "asset-atlas-body-planes",
+      "title": "Three body planes compared",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-03-body-planes.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "4f97452f939d2e476dcfc3979af369a0d08bb9aafb31970112047741fedc51db",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-03-body-planes.svg",
+      "vectorSha256": "f71accd8ab82afc92395c055bb4a78a5494128d20e5cd2f685fe281eca11a9f0",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 34,
+      "id": "asset-atlas-body-cavities",
+      "title": "Major body cavities with serous-space inset",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-04-body-cavities.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "958976e1e7bda848de2d396c1b654aa2765fc4d0258893fcf6294c6640361b08",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-04-body-cavities.svg",
+      "vectorSha256": "4e07efb8af53ad85841f298a5f4c114156cbb9b956c016f9af6424ee293abca7",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 35,
+      "id": "asset-atlas-abdominal-quadrants",
+      "title": "Four abdominal quadrants",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-05-abdominal-quadrants.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e64b1095953ad6089779cd891d76e75935f2d5fa17cfa1a1c9f0899e58ac4282",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-05-abdominal-quadrants.svg",
+      "vectorSha256": "d0d4126aacf9825175f97c087d9d581c6062c9f6319284071de4f0454bfc702f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 36,
+      "id": "asset-atlas-abdominal-regions",
+      "title": "Nine abdominal regions",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-06-abdominal-regions.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "14a06529e12c24f5704041669fc49d996be8b660f1c5b278aeb454fbd115a043",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-06-abdominal-regions.svg",
+      "vectorSha256": "606838b1f31678ef60fbe66f76bfcf32089c8845de3a2d6f2004c669a1caa3c6",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 37,
+      "id": "asset-atlas-organ-locations",
+      "title": "Whole-body organ locations",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-07-organ-locations.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "1477af2c9fa152242d1a45d7f4cfd176dbbeef1eb7940c6de7de53bf4b7e86f7",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-07-organ-locations.svg",
+      "vectorSha256": "1ff87ec0ce45eeea96c52d3149aeeedfe5cbdc1939addcc4afa38850e1f18dd4",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 38,
+      "id": "asset-atlas-skeleton-anterior",
+      "title": "Anterior skeleton",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-08-skeleton-anterior.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "716d215b30bc923e214d3bfffea1557106897eb50033f63823ebb79f6f18c758",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-08-skeleton-anterior.svg",
+      "vectorSha256": "69a6ee73ce0c305a67c0877bd59040d3fafe78d8f831f1fa55824c66623de688",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 39,
+      "id": "asset-atlas-skeleton-posterior",
+      "title": "Posterior skeleton",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-09-skeleton-posterior.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "5d7d413d8adc33663eb619002944b24d1c75b00abb7f419d91bb3928bf91d6ba",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-09-skeleton-posterior.svg",
+      "vectorSha256": "1776c4a2f5b554866a90d39afb0849e2a82e007e876a68c9357e32d79b377ac1",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 40,
+      "id": "asset-atlas-skeleton-axial-appendicular",
+      "title": "Axial and appendicular skeleton",
+      "activeRequire": "assets/images/anatomy/atlas/atlas-10-skeleton-axial-appendicular.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "39444dbc24b8aa547ab5d632cfdb56144d09b5b31f9330f4dacabdfc4df004ad",
+      "vectorMaster": "assets/images/anatomy/atlas/atlas-10-skeleton-axial-appendicular.svg",
+      "vectorSha256": "1800bb5091f7f943fd97ebdf7ae29461aaad8ca343a3f800fb3904aa251296f3",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 41,
+      "id": "asset-skull-front",
+      "title": "Anterior skull: facial bones and openings",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-01-skull-anterior.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "1fae35c0877f81e1d07fd7602f8d586f37ef9c2897aa4de3a3eb64553766667b",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-01-skull-anterior.svg",
+      "vectorSha256": "e85f0eb6792da28146f283af7fbd321927d8f43049c15da95b1fed2749b392fa",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 42,
+      "id": "asset-skull-lateral",
+      "title": "Left lateral skull",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-02-skull-lateral.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "414dc8c711e8f10c12a3d32516acc16c3f2e7826af142e7d69c6ddd54663ad69",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-02-skull-lateral.svg",
+      "vectorSha256": "f8344fb37964383acc83765fee944a2cff5a44b717cd50422d1c9ecd3006b93c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 43,
+      "id": "asset-vertebral-column",
+      "title": "Lateral vertebral column plate",
+      "activeRequire": "assets/images/anatomy/gray111-vertebral-column.png",
+      "rasterDimensions": [
+        233,
+        800
+      ],
+      "rasterSha256": "422a58679d55bae60111c145469dcccc9cfdf536035b93e5d0c8c727a2eeacbc",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray_111_-_Vertebral_column.png",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Finite authentic raster original; no faithful higher-resolution version established in current source-page review."
+    },
+    {
+      "index": 44,
+      "id": "asset-cervical-vertebra",
+      "title": "Regional vertebrae compared: cervical, thoracic, lumbar (superior view)",
+      "activeRequire": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-07-vertebrae-regional.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "c806dcc1e8a88a6d5eb54f9c9ad89442fdbf652a8458c6dfd32a6d9b408420e8",
+      "vectorMaster": "assets/images/anatomy/skeletal-atlas/skeletal-atlas-07-vertebrae-regional.svg",
+      "vectorSha256": "33aa643131169f2ceded8ca7b7c520a05f295d99e1b066bb0cbed25522cb872f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 45,
+      "id": "asset-gray946-sweat-gland",
+      "title": "Sweat and sebaceous glands",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-26-sweat-glands.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "1a97d64e6403ea8c45d32330a4c390bfa5b95f3e5d288c0fcded776740714af7",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-26-sweat-glands.svg",
+      "vectorSha256": "faa7773c38a5dda43eccd1e93eb04a67ff369b56787b09a8ed212c7cd4ddd3bc",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 46,
+      "id": "asset-gray880-optic-nerve-head",
+      "title": "Optic disc, macula and optic nerve head",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-16-optic-disc.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "9aaa50c48dd24d3f73f5264378c4820ab51e190ec136b6fd51fe568593bbd1fa",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-16-optic-disc.svg",
+      "vectorSha256": "0fbc1f445f7e253181467f6b65b3d81ed24b6d672bdddb33a8a8522eab427599",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 47,
+      "id": "asset-original-cell-overview",
+      "title": "Original cell overview",
+      "activeRequire": "assets/images/anatomy/original-cell-overview.png",
+      "rasterDimensions": [
+        1200,
+        900
+      ],
+      "rasterSha256": "9271c08ef90ebf8148b6867ee2cc82665d89eb0dd9870bcd6a443bea5b554f27",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Only this original raster is available; no recoverable original vector master located. Not repaired by enlargement."
+    },
+    {
+      "index": 48,
+      "id": "asset-original-mitosis-stages",
+      "title": "Original mitosis stages",
+      "activeRequire": "assets/images/anatomy/original-mitosis-stages.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "1725559acbfb5a966a85eacab2c6a21b49f583d407f07674a2320bd58181a7ec",
+      "vectorMaster": "assets/images/anatomy/foundations-corrections/original-mitosis-stages.svg",
+      "vectorSha256": "4a81756c300ef063bc891b9ecad45e57c432f0da8f1b7c55f4f50688fc89164f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 49,
+      "id": "asset-original-anatomical-planes",
+      "title": "Original anatomical planes",
+      "activeRequire": "assets/images/anatomy/original-anatomical-planes.png",
+      "rasterDimensions": [
+        1000,
+        1000
+      ],
+      "rasterSha256": "bc4096fbd99d83c5e46803665700ea852d3b2ef0c128a685be0ba84d0bc36354",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Only this original raster is available; no recoverable original vector master located. Not repaired by enlargement."
+    },
+    {
+      "index": 50,
+      "id": "asset-original-body-cavities",
+      "title": "Original body cavities",
+      "activeRequire": "assets/images/anatomy/original-body-cavities.png",
+      "rasterDimensions": [
+        1600,
+        2200
+      ],
+      "rasterSha256": "5b4afeb3983544439c96c82d6502ffb86dad3daf3415c13def57e07dd7959eb8",
+      "vectorMaster": "assets/images/anatomy/foundations-corrections/original-body-cavities.svg",
+      "vectorSha256": "a5414bc9cdff9b7b63dc59578fb75ea0d4156419947150737196ba081e314e70",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 51,
+      "id": "asset-servier-elbow-joint",
+      "title": "Elbow joint",
+      "activeRequire": "assets/images/anatomy/servier-elbow-joint.png",
+      "rasterDimensions": [
+        2628,
+        2790
+      ],
+      "rasterSha256": "fd7563ca5dc5139386231ff713a0d6e22978330467c320cfefd056f396b6e1d3",
+      "vectorMaster": "assets/images/anatomy/servier-elbow-joint.svg",
+      "vectorSha256": "42735c903085e76d7b7105ac50d1941387e7463eafa445695e50e2c75909683c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": "https://smart.servier.com",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 52,
+      "id": "asset-servier-brain-lateral",
+      "title": "Brain, lateral surface: lobes and insula",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-01-brain-lateral.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "3ff0cea3b2cb72c0da995a3bece7b69f76afc8fe974d5ea3e7d391ac1a81dd36",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-01-brain-lateral.svg",
+      "vectorSha256": "9264977dc3850720ee2a2fbab65132f85bba7875dc4e758eddda1e447746302d",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 53,
+      "id": "asset-servier-brain-sagittal",
+      "title": "Brain, midsagittal view: callosum, diencephalon, ventricles",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-02-brain-medial.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "8ac8a3c3896363a57eed68aac7f702fb812f7e005b588fa932466f20b12d1e5c",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-02-brain-medial.svg",
+      "vectorSha256": "f722b14c622e0ad403b6608fa6620f7a9619d3517e9d6a92c057aef57ac1e0c6",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 54,
+      "id": "asset-servier-eye-section",
+      "title": "Eye in section: tunics, lens and vitreous chamber",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-13-eye-section.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "b88b3e137bfef2781dee81a681bafae0a323cdaaed1092ab009ae590f1fd3da5",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-13-eye-section.svg",
+      "vectorSha256": "1dae4a6a3aa3ce5637b5937ec643f969ac9f9af1762dce671cb9fda899543066",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 55,
+      "id": "asset-servier-ear-section",
+      "title": "Ear in section: outer, middle and inner",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-17-ear-section.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "0740288d452adbed44dd284cf2ecdd0b40ef3677c1c72358bac344d9fac76a31",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-17-ear-section.svg",
+      "vectorSha256": "f3e2328be441049cdaa34838376f4c1ba8422219f148c491227388e884bfa560",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 56,
+      "id": "asset-servier-pelvis",
+      "title": "Pelvis",
+      "activeRequire": "assets/images/anatomy/servier-pelvis.png",
+      "rasterDimensions": [
+        2560,
+        2940
+      ],
+      "rasterSha256": "21e49156eda2e2a8015d1a378dea2e97d0e4d6cc9bbeb59071687a58b00c1bed",
+      "vectorMaster": "assets/images/anatomy/servier-pelvis.svg",
+      "vectorSha256": "77613dddcba7d8833e93e43b5c87c777141860167ec9a71fddaa2982569aa57f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": "https://smart.servier.com",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 57,
+      "id": "asset-commons-kidney-cortex-human",
+      "title": "Human kidney cortex specimen",
+      "activeRequire": "assets/images/anatomy/commons-kidney-cortex-human.jpg",
+      "rasterDimensions": [
+        3750,
+        2399
+      ],
+      "rasterSha256": "3a4333edc68cfc40e901ab4df0e30c1ea889134fdb62675e13411a85e1b74627",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kidney_cortex_(947_21)_Human.jpg",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Finite authentic raster original; no faithful higher-resolution version established in current source-page review."
+    },
+    {
+      "index": 58,
+      "id": "asset-commons-alveolar-sac",
+      "title": "Alveolar sac specimen",
+      "activeRequire": "assets/images/anatomy/commons-alveolar-sac.jpg",
+      "rasterDimensions": [
+        2816,
+        2112
+      ],
+      "rasterSha256": "35f8a56951bf2a6747c45388fc970c22652efd9f7de2b1482d830abd7f799a84",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alveolar_sac.JPG",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Finite authentic raster original; no faithful higher-resolution version established in current source-page review."
+    },
+    {
+      "index": 59,
+      "id": "asset-commons-axial-skeleton-blank",
+      "title": "Axial skeleton, anterior view",
+      "activeRequire": "assets/images/anatomy/commons-axial-skeleton-blank.png",
+      "rasterDimensions": [
+        2880,
+        4131
+      ],
+      "rasterSha256": "c92f2706531a48761312e2447564704f859ceecee3d6defd8bcf1174615051cb",
+      "vectorMaster": "assets/images/anatomy/commons-axial-skeleton-blank.svg",
+      "vectorSha256": "25d2c8dc5552ab0a159c1e372b3819d930231cc0f412f385cea3772b0370613c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Axial_skeleton_diagram_blank.svg",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 60,
+      "id": "asset-commons-appendicular-skeleton-blank",
+      "title": "Appendicular skeleton, anterior view",
+      "activeRequire": "assets/images/anatomy/commons-appendicular-skeleton-blank.png",
+      "rasterDimensions": [
+        2880,
+        5322
+      ],
+      "rasterSha256": "2172ae6ee8054dfa916607c031cfa584344e741284d2559b7040d23e50d02fc9",
+      "vectorMaster": "assets/images/anatomy/commons-appendicular-skeleton-blank.svg",
+      "vectorSha256": "be9b9640b42a79d4cfc38239e69f6d680044eef6e5d65eb336ce1c0528a6e958",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicular_skeleton_diagram_blank.svg",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 61,
+      "id": "asset-openstax-spinal-cord-specimen",
+      "title": "Spinal cord cross-section specimen",
+      "activeRequire": "assets/images/anatomy/openstax-spinal-cord-specimen.jpg",
+      "rasterDimensions": [
+        1200,
+        749
+      ],
+      "rasterSha256": "5f7db7a0008ba0f85d7d3847e368c951a36c38072f15d310d2149ff6c08ea681",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1313_Spinal_Cord_Cross_Section.jpg",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Finite existing micrograph crop. Upstream is a two-panel illustration/photo composite, not a larger interchangeable crop; do not expose its labeled diagram or move this crop’s anchors."
+    },
+    {
+      "index": 62,
+      "id": "asset-commons-simple-squamous-epithelium",
+      "title": "Simple squamous epithelium specimen",
+      "activeRequire": "assets/images/anatomy/commons-simple-squamous-epithelium.jpg",
+      "rasterDimensions": [
+        3264,
+        1840
+      ],
+      "rasterSha256": "d9bb1a9fa3889baff3df974f64c19ff3b57c886e4f259c74cb21b0aebf81298c",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Squamous_Epithelium_(40823230315).jpg",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Finite authentic raster original; no faithful higher-resolution version established in current source-page review."
+    },
+    {
+      "index": 63,
+      "id": "asset-commons-simple-cuboidal-epithelium",
+      "title": "Simple cuboidal epithelium specimen",
+      "activeRequire": "assets/images/anatomy/commons-simple-cuboidal-epithelium.jpg",
+      "rasterDimensions": [
+        3264,
+        1840
+      ],
+      "rasterSha256": "b4ba208e7ec00099622fa689f6c27857a323b67c6c00a0c4cc5dac6488b6a5c2",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Cuboidal_Epithelium_(41681552782).jpg",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Finite authentic raster original; no faithful higher-resolution version established in current source-page review."
+    },
+    {
+      "index": 64,
+      "id": "asset-commons-simple-columnar-epithelium",
+      "title": "Simple columnar epithelium specimen",
+      "activeRequire": "assets/images/anatomy/commons-simple-columnar-epithelium.jpg",
+      "rasterDimensions": [
+        3264,
+        1840
+      ],
+      "rasterSha256": "696fbdfed21d16dfc8f3d9dd659a428398e42d563a05e63647c8290c17dc36e1",
+      "vectorMaster": null,
+      "vectorSha256": null,
+      "renderer": "Full-resolution raster at actual display dimensions; native allowDownscaling=false",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epithelial_Tissues_Simple_Columnar_Epithelium_(27854452618).jpg",
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Finite authentic raster original; no faithful higher-resolution version established in current source-page review."
+    },
+    {
+      "index": 65,
+      "id": "asset-openstax-muscle-face-neck",
+      "title": "Face and neck muscles, right lateral view",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-02-face-neck.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "8052ac6f9512321a8057868f225bbb8c92e805fd2b1b2391657411d35c399587",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-02-face-neck.svg",
+      "vectorSha256": "510fefd8046ed1689e4ce666adaa7f679c5b57896da98cd6a247fd74e425da07",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 66,
+      "id": "asset-openstax-muscle-anterior-trunk",
+      "title": "Anterior chest and shoulder muscles",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-03-anterior-chest.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "41cdd521d1892cf15cf8a420c891fab247c0f3108d47c54430719b8b88c1eb85",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-03-anterior-chest.svg",
+      "vectorSha256": "15f5a9e01caf9100d626566efe68ea2ebd16d685328d2b39b5e55d40728848a8",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 67,
+      "id": "asset-openstax-muscle-anterior-arm",
+      "title": "Anterior arm: superficial and deep layers",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-06-anterior-arm.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "d205cd25f18cea99e5f89c2a38ea1e176efa144b9ab447ded5d3fcc7791e49f2",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-06-anterior-arm.svg",
+      "vectorSha256": "d599b3890127742204560eeaa1832ad7fed034fc9412bd2eb3ad11148889becb",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 68,
+      "id": "asset-openstax-muscle-anterior-leg",
+      "title": "Anterior thigh: superficial layer",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-11-anterior-thigh.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "1f4d9677354dfa42bc5f6f7e2db9df607f347109a45f57aff9efc13e2e9d4a8c",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-11-anterior-thigh.svg",
+      "vectorSha256": "dc924e403697b683ffcf777bfc2b522b8ad8602d989c6949ba60ea39ddd745f1",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 69,
+      "id": "asset-openstax-muscle-posterior-back",
+      "title": "Superficial back and scapular muscles",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-04-superficial-back.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "291e882b297c71b1dcbf8090303bd8eaf88768558e5a17332f68d3617f489cfc",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-04-superficial-back.svg",
+      "vectorSha256": "231301214fea648283865ad806920f173ffbc2a8e247bace3ff3f02e571642ad",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 70,
+      "id": "asset-openstax-muscle-posterior-leg",
+      "title": "Posterior lower limb: contextual overview",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-13-posterior-leg-overview.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e31f911e7f4e2100ee81eb29392a05b5b86762d02d579456004085c983be4bdb",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-13-posterior-leg-overview.svg",
+      "vectorSha256": "8807e67b09a0169c761be044aa44732cddcd141170e790c2e0655733ade2f1e0",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 71,
+      "id": "asset-openstax-muscle-labeled-overview",
+      "title": "Superficial muscles, anterior and posterior views",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-01-overview.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "2f59bc8484c5b73d20daaf8f5ca02469d8f850be0c04e9fc11c9058589e85ac4",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-01-overview.svg",
+      "vectorSha256": "d91476574459d57f8ed35db30f9d971f875ef0faebb961840742b4b87780a184",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 72,
+      "id": "asset-openstax-diaphragm-labeled",
+      "title": "Diaphragm: domes and inferior view",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-17-diaphragm.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "27eaf572c7999d3e3dfbe59b80f80144dcee5a7e1aa838ccd7f07b7a7fc10c2a",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-17-diaphragm.svg",
+      "vectorSha256": "3eef9f96e3cc975100c49e16fd15410b66e5683f62ab57d5c916563b4423be3d",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 73,
+      "id": "asset-injurymap-rotator-cuff-labeled",
+      "title": "Rotator cuff: anterior and posterior views",
+      "activeRequire": "assets/images/anatomy/muscular-atlas/muscular-atlas-16-rotator-cuff.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "242ca0ff1637b01cb489d8c1720577f85b1ca897a8c3746b3e20f7c680dff426",
+      "vectorMaster": "assets/images/anatomy/muscular-atlas/muscular-atlas-16-rotator-cuff.svg",
+      "vectorSha256": "5cb0ce891ee5ea8f4826f9faf3c29086c76a9a80de9343e18440703328d4a73d",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 74,
+      "id": "asset-openstax-historical-skin-structure",
+      "title": "Skin in section: layers, appendages and receptors",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-22-skin-overview.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "1e92adc09203ede1ef71162ee3b3c4828d56118fd4d0537975c7370a24d1a5b2",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-22-skin-overview.svg",
+      "vectorSha256": "051449a97efa0847137c29c523833f341e8db0a1c9d793a0239e2ebd97335704",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 75,
+      "id": "asset-bvis04-deep-nuclei",
+      "title": "Deep brain nuclei, coronal slice",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-03-deep-nuclei.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "1e937a8ac8cd80b13bc86f7b8575b4f5b7997add4b1687504f448862048fb394",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-03-deep-nuclei.svg",
+      "vectorSha256": "91b049e9667f137e023bdb763e125e097b18f04a6c17fa96cb38075cee7d5cf3",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 76,
+      "id": "asset-bvis04-brainstem-cerebellum",
+      "title": "Brainstem, cerebellum and spinal cord, midsagittal",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-04-brainstem-cerebellum.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "fea3ca7d294d8ad401b70ca0aa8cfe8303b021c679f4cefdc60a14f766921ae4",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-04-brainstem-cerebellum.svg",
+      "vectorSha256": "8a2b331b3d1a9e05ece47fc6b648281eb65d50f72103a6fae33a951d1c2f9dcc",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 77,
+      "id": "asset-bvis04-csf-meninges",
+      "title": "Ventricles, CSF and meninges",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-05-csf-meninges.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "31682cac7c0886d7960900c26fb18f7def01575d34df480b57c2daa6ed3e3552",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-05-csf-meninges.svg",
+      "vectorSha256": "5675274028d27c970a4834ec151459e6cf68f5de8a0e99736b89541722763a13",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 78,
+      "id": "asset-bvis04-spinal-cross-section",
+      "title": "Spinal cord in cross-section: gray matter, tracts and roots",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-06-spinal-cross-section.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "01cb796c762b616a174ed3b2fbc9feaaf826b5fb5838ef95cb23dee774ed9bee",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-06-spinal-cross-section.svg",
+      "vectorSha256": "f98bd3f60b56068aebd7ca3cf5d97b7f478f213ac99e49c019efffe98d26cf25",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 79,
+      "id": "asset-bvis04-spinal-roots-rami",
+      "title": "Spinal nerve: roots, ganglion and rami",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-07-spinal-roots-rami.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "b8cdedf250925ef855bd4b31b78c0727a5e1a4e03cb26e32d004b482017de996",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-07-spinal-roots-rami.svg",
+      "vectorSha256": "685fbe73a91429601ddf5c79936ae28b36ed1a49a56a74c5faab34fe91169cbb",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 80,
+      "id": "asset-bvis04-plexus-overview",
+      "title": "The four major plexuses and the phrenic nerve",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-08-plexus-overview.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "169dd3d03bb5bd238ce80d8c2bcfbfff093602a3208b7e8e1e54b304fdc41869",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-08-plexus-overview.svg",
+      "vectorSha256": "e252a679c0041ab1804b7489133aa66aab0707148637692596f06d6f4490bd16",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 81,
+      "id": "asset-bvis04-upper-limb-nerves",
+      "title": "Median, ulnar and radial nerves of the right upper limb",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-09-upper-limb-nerves.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "5120254654b1163937634046b6b0878d613952b62110904e454598b1ec41b3eb",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-09-upper-limb-nerves.svg",
+      "vectorSha256": "6263a4c04e46c21fa47ee19d805c12081c464214d7d185f3697a987fb6418261",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 82,
+      "id": "asset-bvis04-lower-limb-nerves",
+      "title": "Femoral and sciatic nerves of the right lower limb",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-10-lower-limb-nerves.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "db51e6e9b3a4e139174620053388bfb5004242e6ada7124c5439b93bdb6ae2c8",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-10-lower-limb-nerves.svg",
+      "vectorSha256": "c7cc196e7d99bac53c599870018e3c046998d88a1aa9070dae4ef08f00b0636c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 83,
+      "id": "asset-bvis04-cranial-nerves-i-vi",
+      "title": "Cranial nerves I-VI, inferior surface of the brain",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-11-cranial-nerves-i-vi.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f1411568ffe66b10a9939636341ac512a5d60cceb72b19a859f7e179a09adf1c",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-11-cranial-nerves-i-vi.svg",
+      "vectorSha256": "f50563e3acfa12b4b34db245dd3727a234bb2310cb04d232d76757280d11d92d",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 84,
+      "id": "asset-bvis04-cranial-nerves-vii-xii",
+      "title": "Cranial nerves VII-XII, brainstem and cerebellopontine angle",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-12-cranial-nerves-vii-xii.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "678d2af305ccc3c655ba470e4ff5d5ba7dbabcede58a1b609042bbbe98f48824",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-12-cranial-nerves-vii-xii.svg",
+      "vectorSha256": "a73d6d0eb5f2de99909b1dad4e85fde9ed3bf0a0f81893fe53a1c9270bd05bd7",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 85,
+      "id": "asset-bvis04-eye-anterior-segment",
+      "title": "Anterior eye: chambers, aqueous humor and zonules",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-14-eye-anterior-segment.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "c48ba3874f4e3ff661ffc0744ec17d6ee91224455ef0391a3327b598a2f75d02",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-14-eye-anterior-segment.svg",
+      "vectorSha256": "7c540eb09a6e96657f420773f0eaee823ff378ce219e12e09a523cf0c7777bb3",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 86,
+      "id": "asset-bvis04-retina-layers",
+      "title": "Retina: cell chain (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-15-retina-layers.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "b09bf287d09beb6b96e9029d4f8412c79be6dc9e203f14bb6e74f7a39bd0b765",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-15-retina-layers.svg",
+      "vectorSha256": "75806e01ea6cbbb542cb90ed5270d71d7cbfe3b57c11e40608cf5a3464b8f0e2",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 87,
+      "id": "asset-bvis04-middle-ear",
+      "title": "Middle ear: ossicles and windows",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-18-middle-ear.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "7579c44d670793433a1a849337c7ad4efca434731b1b0be6fdb9692bba3b5a28",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-18-middle-ear.svg",
+      "vectorSha256": "3327604702e93e7c7d610891a6e972998f78787c82758154b078e9e60cdc2345",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 88,
+      "id": "asset-bvis04-inner-ear-vestibular",
+      "title": "Inner ear: vestibule, canals and cochlea",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-19-inner-ear-vestibular.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "aa12253a5f36652176ed14714c7e58dbbdf04d003d76cd8c2929aaede9105b51",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-19-inner-ear-vestibular.svg",
+      "vectorSha256": "d0d5078dce31c42e6e1687234e28ddbea44f1a799c060b1bddb0b66431b13af5",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 89,
+      "id": "asset-bvis04-cochlea-corti",
+      "title": "Cochlear ducts and the organ of Corti (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-20-cochlea-corti.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e66e74abd0ac75b8b908904c946d6780f1a835e567756ea30e2d873379edc030",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-20-cochlea-corti.svg",
+      "vectorSha256": "78328f1df83d89fe0dc352e00e480c891be61a8e12cd52d820402ea9e43aed92",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 90,
+      "id": "asset-bvis04-smell-taste",
+      "title": "Smell and taste: pathways and receptor cells (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-21-smell-taste.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "43648280b138a600a2a71df1528a5feef7018c2986292f72d44d2360a5e6efb9",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-21-smell-taste.svg",
+      "vectorSha256": "9904fbd8b9999aadc8d8588d52548da7fe272d96dc42421e59bfe9bb93ef3248",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 91,
+      "id": "asset-bvis04-epidermis-strata",
+      "title": "Epidermis: strata and cell types (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-23-epidermis-strata.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "3e03d9fd594884944a32e34382e806b82bdfdf7d3a546149faa6f0b5e202e559",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-23-epidermis-strata.svg",
+      "vectorSha256": "4478554e7ff14b324b28ae2984124ca0b504a05b618e9d28377d8b184e8bac88",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 92,
+      "id": "asset-bvis04-dermis-hypodermis",
+      "title": "Dermis and hypodermis: fibres and vessels",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-24-dermis-hypodermis.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "320a4980174eb0ae46a03b172b59d3b6ba9f89754c41385618b06b949e3dd15a",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-24-dermis-hypodermis.svg",
+      "vectorSha256": "bfcecd21e076fa8d76f369ee20d9d24bb9c34180030dc9a4a03894ea56812c32",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 93,
+      "id": "asset-bvis04-hair-follicle",
+      "title": "Hair follicle in longitudinal section",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-25-hair-follicle.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "40a38b720301f05e2779a8299a213159a55ae370c004d570b1ff6dfbcf8b4a6c",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-25-hair-follicle.svg",
+      "vectorSha256": "49e89cdeac929e24b2a879dc7348a7a22ef6d63806ed589f1f28a246efa6177e",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 94,
+      "id": "asset-bvis04-epithelia-simple",
+      "title": "Simple epithelia: squamous, cuboidal, columnar (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-27-epithelia-simple.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "a39fe92e29018c97088a58887c187ca9800efc4fc6456c97608316d4da2551ab",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-27-epithelia-simple.svg",
+      "vectorSha256": "72deb41e67b5d23ebf8f8f5fb0167f8ec005e8de78b2b0afb7937d308dbf5af0",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 95,
+      "id": "asset-bvis04-epithelia-stratified",
+      "title": "Pseudostratified and stratified squamous epithelia (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-28-epithelia-stratified.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "eeaa2e1fc5b2adadb141f90626b913d5375b8dd59c8ed0ebb7089cde55aa136a",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-28-epithelia-stratified.svg",
+      "vectorSha256": "2f19428f5b4feb0b0a8074719a8aaea1591878cf9e4df7404c50bf368bc7af2c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 96,
+      "id": "asset-bvis04-epithelia-other-stratified",
+      "title": "Stratified cuboidal, columnar and transitional epithelia (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-29-epithelia-other-stratified.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "45fc5007c0e9c4c03940cea483d8438cd22da1f8b7fbab8aabd8c5e26e9da42e",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-29-epithelia-other-stratified.svg",
+      "vectorSha256": "74113c937bed983562ef05e9a86bb3c75c59a08aa5f68621c4781e0174db6bf9",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 97,
+      "id": "asset-bvis04-connective-loose",
+      "title": "Loose connective tissues: areolar, adipose, reticular (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-30-connective-loose.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "cd40ce1e35035cc8795bd34056af33bc19ebd791aa9c538f67fcae3175f44611",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-30-connective-loose.svg",
+      "vectorSha256": "601adb9b79742796df68c4e3e6b50e2dfe1921f478e7c7f6410b294fb24ce8fb",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 98,
+      "id": "asset-bvis04-connective-dense",
+      "title": "Dense connective tissues: regular, irregular, elastic (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-31-connective-dense.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "9d2dca146433d4a07af0b68b1c2527bda053464fa852f0abf1ec3893e561b4d4",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-31-connective-dense.svg",
+      "vectorSha256": "db43ac91e11907dd2e42439e38ae2950dae01baca3d29aefd64f3953cfe931b6",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 99,
+      "id": "asset-bvis04-cartilage",
+      "title": "Cartilages: hyaline, elastic, fibrocartilage (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-32-cartilage.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f726a27065746186af817af90e6adf58cb0032f63d46fcf99dbfd4f34dbde043",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-32-cartilage.svg",
+      "vectorSha256": "ee12f4a7746cfd5f21a0c374c9e34b834d101508d2944e298b0e74168fd71e7e",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 100,
+      "id": "asset-bvis04-muscle-tissue",
+      "title": "Muscle tissues: skeletal, cardiac, smooth (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-33-muscle-tissue.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "b26865baf7eaa01257439c9cdce61a47c2c0f49b260773a7b2e46ecceb083c50",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-33-muscle-tissue.svg",
+      "vectorSha256": "b6073e4648d534ed579a3ae91be543f7a7372e69cd0a51652ed1f492a197f166",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 101,
+      "id": "asset-bvis04-nervous-tissue",
+      "title": "Nervous tissue: neuron and neuroglia (schematic)",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-34-nervous-tissue.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "8203b090fced57bcb14044922feabf7ac788be2f52afce5909a725d998645ddd",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-34-nervous-tissue.svg",
+      "vectorSha256": "101b9a5041c699e8476881ca0f922aedd82e7aa81e8f53b662d32c92536b945c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 102,
+      "id": "asset-bvis04-nail-section",
+      "title": "Nail in longitudinal section",
+      "activeRequire": "assets/images/anatomy/bvis04-atlas/bvis04-35-nail-section.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "83b74fb4d286c1869a37a372141f096aa3343208426759843b7a74964697d56d",
+      "vectorMaster": "assets/images/anatomy/bvis04-atlas/bvis04-35-nail-section.svg",
+      "vectorSha256": "64bee1257dab28497ff4f3a852ab57fdc053b1df09dd87eff59e878b284bd490",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 103,
+      "id": "asset-bvis05-heart-anterior",
+      "title": "Heart from the front: chambers, apex and great vessels",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-01-heart-anterior.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "fd116f216a5615eb3242da5bbdbc46e2bdb4a0e40c9a4bcfe310a1ca6ed6d019",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-01-heart-anterior.svg",
+      "vectorSha256": "5ba2523b6681d0a1978e76e94615469854c933db57c9eea83d291b751f12494b",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 104,
+      "id": "asset-bvis05-heart-chambers-valves",
+      "title": "Opened heart: chambers, valves and flow",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-02-heart-chambers-valves.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "ad148944220cd6dd5e3de0eee53beae12a66b09c0f8ad38ebc11cbd6687164b8",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-02-heart-chambers-valves.svg",
+      "vectorSha256": "237cab5f928ee60ef56a7a4f156eb42f8ce3d5c4bc5783e581a775ad0374b6b2",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 105,
+      "id": "asset-bvis05-heart-valves-superior",
+      "title": "Valves of the heart from above",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-03-heart-valves-superior.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "0cd60b434d11f940e71de76db55fa31f69183c943e3a338bf62d97b1204bdf50",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-03-heart-valves-superior.svg",
+      "vectorSha256": "e179c5eb3462333f72e306f01b322382b838566cb79985516f0717834660b741",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 106,
+      "id": "asset-bvis05-heart-wall-pericardium",
+      "title": "Pericardium and layers of the heart wall",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-04-heart-wall-pericardium.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "50c5e6c53ac2663d54d9948b4823aeeed3ad745ec3124adfdb46a54f12a60edd",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-04-heart-wall-pericardium.svg",
+      "vectorSha256": "fb5800fc10e3e13d343e3a69e131581cdd686035761d6343ff8df01c67114429",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 107,
+      "id": "asset-bvis05-coronary-anterior",
+      "title": "Coronary vessels, anterior surface",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-05-coronary-anterior.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "6aa2dd16453fbaaf13013a1f7d63e0402cfe0430868480e24462bea79536f45e",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-05-coronary-anterior.svg",
+      "vectorSha256": "bbf016df715aa3e846ea27a4ddb4af020a2b71e6238a65b85f5c69150bfe5642",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 108,
+      "id": "asset-bvis05-coronary-posterior",
+      "title": "Coronary sinus and posterior coronary vessels",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-06-coronary-posterior.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f7f46e24878a24a178fa36639b39391104dd23fcd929efcc8f3a831407ff3172",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-06-coronary-posterior.svg",
+      "vectorSha256": "3a36fc28fa2e3ba4d32aadfe374c2f8e9e4d3226759c950491a15a1091724079",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 109,
+      "id": "asset-bvis05-conduction-system",
+      "title": "Conduction system of the heart",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-07-conduction-system.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "30229f9a21a6f39908c6fde23ae4fae69392cc2011f63705c9b80f32b029caa3",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-07-conduction-system.svg",
+      "vectorSha256": "e2292251d8c0ef0933dc47a976a913cfeb1b0515da53c1a7ef03a191c935253c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 110,
+      "id": "asset-bvis05-blood-composition",
+      "title": "Composition of blood: plasma, serum and formed elements",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-08-blood-composition.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "dbedce27a0fbfed85d2ffad144a197032c4fc4f2fd7f20327a4230ca226af951",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-08-blood-composition.svg",
+      "vectorSha256": "f937a5f8bb426a80b14f4d5e0352f29f625261e188bb23ed24957207906e3103",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 111,
+      "id": "asset-bvis05-blood-smear-schematic",
+      "title": "Peripheral blood smear (schematic field)",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-09-blood-smear-schematic.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f23c83d82ea662beaced367914399a3cc57a8073698056ce031fb1836b85a0e0",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-09-blood-smear-schematic.svg",
+      "vectorSha256": "b1dcb0ac3584d4f4ce27c56ba84d0fb6721f3ecf13d8620e783ba13847ac36f0",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 112,
+      "id": "asset-bvis05-leukocyte-types",
+      "title": "The five leukocytes, compared",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-10-leukocyte-types.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "278a0bacc637443e838a99635fd7ce189b7e4138fa546e91d0bd3d247e3f79c2",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-10-leukocyte-types.svg",
+      "vectorSha256": "da1e23825f981f54ff53ca85ded73d98981d1bd0d0ceda4075fd42691c4b0a94",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 113,
+      "id": "asset-bvis05-marrow-hematopoiesis",
+      "title": "Red bone marrow and hematopoiesis",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-11-marrow-hematopoiesis.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f45431839b1874e7a6efe2ba30f87573eae30088aa0ec0d5cead6144791fc412",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-11-marrow-hematopoiesis.svg",
+      "vectorSha256": "c072aab8958146f7d14d9427b81ee7a84d524726cb78ebf4ddc0b03f247bef5f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 114,
+      "id": "asset-bvis05-vessel-wall-types",
+      "title": "Vessel wall layers and vessel types",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-12-vessel-wall-types.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "aa12e37cf73465a8c7b9de56b7a5cafa10d3cab7902903facba14e23e7617cfb",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-12-vessel-wall-types.svg",
+      "vectorSha256": "ea4fa7f6afdbf06279e1b1f1c445d92f81abbf785d12342d9d105e6dc0a292f6",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 115,
+      "id": "asset-bvis05-vessel-flow-chain",
+      "title": "Flow chain: aorta to vein",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-13-vessel-flow-chain.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e3d31bf0fc6657529d1b51e36d43e7f5080531524969bda26e923c9b77d15c45",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-13-vessel-flow-chain.svg",
+      "vectorSha256": "2fbdd994456a770d7136e39d2f50e1242521b17a2674a47b325d96713a566eb3",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 116,
+      "id": "asset-bvis05-capillary-types",
+      "title": "Three capillary types",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-14-capillary-types.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "153a7059f8f4cb012aa82e517fce44d53f3f47e265abdae2f733b4f4a2ae4473",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-14-capillary-types.svg",
+      "vectorSha256": "e436c3083b4a0ad8a4cfb6f9fefd1b22e566b815a4fba47af93ce524d20046cf",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 117,
+      "id": "asset-bvis05-body-artery-vein-maps",
+      "title": "Major arteries and major veins of the body",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-15-body-artery-vein-maps.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "3090d2e1eaf1662f64eddd0abd072c318947c8990e4d182b5e01a8e9a52bbad5",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-15-body-artery-vein-maps.svg",
+      "vectorSha256": "33582168bbeb3de83ae7be643d1146565c23dbfb14c45ab6da89f3b13290d366",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 118,
+      "id": "asset-bvis05-head-neck-vessels",
+      "title": "Carotid arteries and jugular veins of the head and neck",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-16-head-neck-vessels.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "5a62d6d1ac8e3212c9f451b0c3c8251b3d6522e1efd169c06a4fdedfd8fefdb4",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-16-head-neck-vessels.svg",
+      "vectorSha256": "a8a045924c92c5805382e01bb85118a02b994827e2b6f3b1a402b8230d0f1f0f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 119,
+      "id": "asset-bvis05-upper-limb-arteries",
+      "title": "Arterial route to the arm and hand",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-17-upper-limb-arteries.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "915fe336278afabf90579de7f4572b22e2af9e4be92f801aeadc90d3ad57565a",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-17-upper-limb-arteries.svg",
+      "vectorSha256": "37bcf24d53a6a0a8f4af96d2684c58ff60604b10abb301a66c19174b4e61a574",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 120,
+      "id": "asset-bvis05-upper-limb-veins",
+      "title": "Venous return from the arm and the median cubital vein",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-18-upper-limb-veins.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f92c6ae74bbe14571a6b6648a2a0a2e0552669188546840c7ee733170803ae64",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-18-upper-limb-veins.svg",
+      "vectorSha256": "96daae24a8244f5c9f72981baf041703e8a0317d09edb05d809190f56a346a25",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 121,
+      "id": "asset-bvis05-lower-limb-arteries",
+      "title": "Arterial route to the leg and foot",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-19-lower-limb-arteries.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "08178f5748c753ae2d8da09fe1f45c5a16288229ffcdf4f539ef26a394ca4db8",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-19-lower-limb-arteries.svg",
+      "vectorSha256": "0172034bfadebd28e1c6ece124d5250fa3f84c8fa627e73e190d973388cca84e",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 122,
+      "id": "asset-bvis05-great-saphenous-route",
+      "title": "Great saphenous vein: foot to groin",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-20-great-saphenous-route.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "d0ca8d912aeaf1fe63fd8af58bbd9cff61ec214c36adaa99cfad4a3a8210e485",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-20-great-saphenous-route.svg",
+      "vectorSha256": "e9f11621ec617567ebef9c40a2277ed0da752c00ca1daec0a2a291a4aa019bf2",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 123,
+      "id": "asset-bvis05-hepatic-portal-system",
+      "title": "Hepatic portal system",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-21-hepatic-portal-system.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "c99813c863dcd754ee62d113257b5c8d7ae4289d183f213a7b1c4addf38b4419",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-21-hepatic-portal-system.svg",
+      "vectorSha256": "92e462b56d70bba27f151ce56de28f9e7cfad81a61f3dbe81a5d8bb9935fd6e1",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 124,
+      "id": "asset-bvis05-celiac-renal-context",
+      "title": "Celiac trunk and renal vessels",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-22-celiac-renal-context.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "8003aad53260bd5585ccfb27c56a9b7efe6551f58f8c551199e7ed812245f945",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-22-celiac-renal-context.svg",
+      "vectorSha256": "49463cf30e53de517d5b69bf8aebe4755b41acf73e5552746ce3341e0bf9b6d8",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 125,
+      "id": "asset-bvis05-upper-airway",
+      "title": "Upper airway: nasal cavity, sinuses and pharynx",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-23-upper-airway.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "385e8c0cd536059a24333086a95a0b74740f798ebc6ce49235e877c40ed3587c",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-23-upper-airway.svg",
+      "vectorSha256": "e357a4992c3f0d4dd681f6a8787d79b36e572a987bec93af36d699e469c7ea77",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 126,
+      "id": "asset-bvis05-larynx-glottis",
+      "title": "Larynx and glottis",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-24-larynx-glottis.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "a9f1de4121e5b58b9ade24c0e63eefcbc729f5d2d50a1d15a2f4c274e3434b12",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-24-larynx-glottis.svg",
+      "vectorSha256": "050094d97a7a0d2a0b9dcaf228509094a205fee21b0baff9f41637b1981b3d13",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 127,
+      "id": "asset-bvis05-trachea-bronchial-tree",
+      "title": "Trachea, bronchi and bronchioles",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-25-trachea-bronchial-tree.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "8cf1edb5703f79abae9d88c49f591e8d37e4bbf14fb5e0dc7c5ed62a150a5564",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-25-trachea-bronchial-tree.svg",
+      "vectorSha256": "6fd5070517063209a0269fccb8a91bb5e4d04e127d8b1383410d8481901875d4",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 128,
+      "id": "asset-bvis05-lung-lobes",
+      "title": "Lungs: lobes, fissures and hilum",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-26-lung-lobes.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "857b6ec1022123e3f17017fa87b530b8d7ee822facc34b2080524e75661f4b8f",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-26-lung-lobes.svg",
+      "vectorSha256": "23f84806fbc241d6006bb62fe3d9a5790f94956166dcb63f0881d645b93643f0",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 129,
+      "id": "asset-bvis05-pleura-diaphragm",
+      "title": "Pleura and diaphragm",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-27-pleura-diaphragm.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "b3617bb2745bf33f6d7a0ca71714a6e9fd44e6a421f7df313b656ae5030829be",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-27-pleura-diaphragm.svg",
+      "vectorSha256": "73a281896b56188eed3e367c65d37f7219b8782119aed7a1590cf112b846ba44",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 130,
+      "id": "asset-bvis05-alveolar-unit",
+      "title": "Alveolar unit: bronchiole, duct, sac and alveoli",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-28-alveolar-unit.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "15d9a488d248d6daa4a454cd4070cb53a0d0eaca6b9f90d15fd89010a15a90d3",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-28-alveolar-unit.svg",
+      "vectorSha256": "3e6636279e32db6abdf5a2f202644f3db41f6e41b81bcec114d299369f9dccdf",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 131,
+      "id": "asset-bvis05-respiratory-membrane-histology",
+      "title": "Respiratory membrane and airway wall",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-29-respiratory-membrane-histology.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "764555c481a4f5e06851b49981d1b5ce48c05aca4eca2c43ca217ee5af8f201a",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-29-respiratory-membrane-histology.svg",
+      "vectorSha256": "bb42d556557806ca688952cc80749754ac5e3d9f0b8850065ed2c12cf96d1fdf",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 132,
+      "id": "asset-bvis05-lymph-overview",
+      "title": "Lymphatic drainage routes and node groups",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-30-lymph-overview.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "a9faf64afe149e9b050cc65a774eb6dec4601301750ab07fb79f240aaf3bc9d2",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-30-lymph-overview.svg",
+      "vectorSha256": "f9e9d6ab3969389b8d7dcd6cfbf864a5d30bc6c5876310c23502e19db95211c6",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 133,
+      "id": "asset-bvis05-lymph-node-structure",
+      "title": "Lymph node: afferent, sinuses, efferent and hilum",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-31-lymph-node-structure.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "26f0160a92ae4fa5c84e097e6aebf699a0de6c97ce5735fe490d7ce1eccd4794",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-31-lymph-node-structure.svg",
+      "vectorSha256": "c747e98eab7e3cdd2bfc8962f4f88657cb4971fe546a366c32d782fbcdaff92a",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 134,
+      "id": "asset-bvis05-spleen-pulp",
+      "title": "Spleen: red pulp and white pulp",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-32-spleen-pulp.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "253c8d29d228aff76a7b92da239c25752c66ac2abc12f499700f89931ca375f7",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-32-spleen-pulp.svg",
+      "vectorSha256": "3cba1f9259fbf6ecca54abadc9af4563caabc5ff6e6fd2d4bfe3d725bf85a276",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 135,
+      "id": "asset-bvis05-thymus-lobule",
+      "title": "Thymus and thymic lobule",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-33-thymus-lobule.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "597c09716e5ac6e3f2758fb1bcbb27ad65aa8bb73bba04eec5f0361bc9645d3e",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-33-thymus-lobule.svg",
+      "vectorSha256": "5222ae09de008ba15dde3fe9e29031eb8301ece10c2ab1a2eef39224f9328c2d",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 136,
+      "id": "asset-bvis05-tonsil-map-structure",
+      "title": "Tonsils: where they sit and how they are built",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-34-tonsil-map-structure.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "6988d05118db18ab92b8e8017c2e1089a5c0261d9321a0f691bbe5098716c254",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-34-tonsil-map-structure.svg",
+      "vectorSha256": "d2d7b2ebc18544f87f6f893aeaf535c72bad066dfb7332867dc8f624f33337eb",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 137,
+      "id": "asset-bvis05-gut-lymphoid-lacteal",
+      "title": "Gut-associated lymphoid tissue and the lacteal",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-35-gut-lymphoid-lacteal.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "52f6bef9b549592402394a3f31b6bb284c13d7d961de0c3941eefdec50596b5a",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-35-gut-lymphoid-lacteal.svg",
+      "vectorSha256": "39dbb5ffaab843be8dc0dea2692d49fddc321b8ae4b103b5d3e0cfc819a95902",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 138,
+      "id": "asset-bvis05-endocrine-body-map",
+      "title": "Endocrine glands of the body",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-36-endocrine-body-map.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "bce76cc6b135ee36f42eeb74ef3e97669e83642148e16fcec4031461c277a4e6",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-36-endocrine-body-map.svg",
+      "vectorSha256": "b230ab6e2f9e63d4721fa9368526c57b3f28be0fe7c1397d6710904d1a4c4cb3",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 139,
+      "id": "asset-bvis05-hypothalamus-pituitary-axis",
+      "title": "Hypothalamus and pituitary: portal and neural links",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-37-hypothalamus-pituitary-axis.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e558602dc29886d5dd801df21e1d8030315695d55e4c05743a84c73eebaeb501",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-37-hypothalamus-pituitary-axis.svg",
+      "vectorSha256": "0378d3d3c7445495bafaddc16408bf51eb944a76f1c5a7c87c24d39f8e577662",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 140,
+      "id": "asset-bvis05-thyroid-parathyroid",
+      "title": "Thyroid and parathyroid glands",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-38-thyroid-parathyroid.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "c7dd60d358cce9d68caa54c3e0e474c47228f20cb39d1ee029d3eb1eb3031b0a",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-38-thyroid-parathyroid.svg",
+      "vectorSha256": "3bd691a1b78d77f13fef3d41b3d0e3b32941e02b92a3cc7424723256cf8832aa",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 141,
+      "id": "asset-bvis05-adrenal-zones",
+      "title": "Adrenal gland: cortex zones and medulla",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-39-adrenal-zones.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "15ec974a0df2c93ad3eb64fc0cdca38ac3e3f790e5470e3d259532dcf40e3deb",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-39-adrenal-zones.svg",
+      "vectorSha256": "efd0c6871a8eac9e555d768a2a6464d56117001fb62af6f5cfb09158649e65cb",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 142,
+      "id": "asset-bvis05-pancreas-islet",
+      "title": "Pancreas: exocrine acini and the endocrine islet",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-40-pancreas-islet.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "e0a19868e15be8210927167444c4259273dacea50fc9361c9355ce51e3354bb9",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-40-pancreas-islet.svg",
+      "vectorSha256": "f7680f8791738d0a5eb984824088498df3733164ee352d209593ecf55304ea45",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 143,
+      "id": "asset-bvis05-ovary-testis",
+      "title": "Gonads: ovary and testis",
+      "activeRequire": "assets/images/anatomy/bvis05-atlas/bvis05-41-ovary-testis.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "210122bd1314254714690fed235a9dcc47e0c324b0ee2b2fd5c00e2dbc8f6eab",
+      "vectorMaster": "assets/images/anatomy/bvis05-atlas/bvis05-41-ovary-testis.svg",
+      "vectorSha256": "0134109afdc27b837558f8cd4978b0d20332e55d95b41f1162eb267a7c0ac676",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 144,
+      "id": "asset-bvis06-oral-cavity",
+      "title": "Oral cavity, pharynx and salivary glands",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-01-oral-cavity.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "461041c6277e8f85d143a018c25f997522904771de6bb7437e4e2aa60e457b47",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-01-oral-cavity.svg",
+      "vectorSha256": "baa11b7ffc63c4ae6c701571deccbad2669c630f5c0f7cdfaf7c607d001c4596",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 145,
+      "id": "asset-bvis06-stomach",
+      "title": "Stomach: regions, rugae and gastric glands",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-02-stomach.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "65c8ec71b7e63efcef784af2e7ab39a62489b274fec1a16cf3f6c675ece1f878",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-02-stomach.svg",
+      "vectorSha256": "fca34160e68876f058ca8f30e079e2729eed0f005c0f0101a6114842257deccf",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 146,
+      "id": "asset-bvis06-alimentary-canal",
+      "title": "Alimentary canal: mouth to anus",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-03-alimentary-canal.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "dc8f3a807a5b897b082b6830f7ee001ba249c495be0e936fd723dd686b2ce2a6",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-03-alimentary-canal.svg",
+      "vectorSha256": "c0a81509b5ed770db8238570ecaf1fa993e74676d8211035ab8cdfefda284154",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 147,
+      "id": "asset-bvis06-liver-biliary-pancreas",
+      "title": "Liver, gallbladder, pancreas and their ducts",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-04-liver-biliary-pancreas.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "ca2b4f7724fddefe4efcc462c5a06bd5c0453dd18602dd9934cfbace44dc37c7",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-04-liver-biliary-pancreas.svg",
+      "vectorSha256": "fe2bcb680bc5deb65d071379a6de81b413cc8823a369ef1cc8bcfc23b234b43f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 148,
+      "id": "asset-bvis06-liver-lobule-pancreas",
+      "title": "Liver lobule and pancreatic acini",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-05-liver-lobule-pancreas.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "46415d0cfe2bc4f5f9c5af8c7f4b23628709d86bae6ccf3f4f98ce49d2b58a46",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-05-liver-lobule-pancreas.svg",
+      "vectorSha256": "278dd0d745540c5b79c676a3e0c9afc11e614c8e9e71c9f98b2ef767054a83c0",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 149,
+      "id": "asset-bvis06-digestive-wall-layers",
+      "title": "Layers of the digestive wall",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-06-digestive-wall-layers.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "99a6e8ec635ab39c666ceb7868eb29f25da719c99c8719c697d8ea5ee1c155f0",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-06-digestive-wall-layers.svg",
+      "vectorSha256": "f792015217832642c7a8d85eec0cd612a5f063ffe324e4e55c63f922fa448ebf",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 150,
+      "id": "asset-bvis06-small-intestine",
+      "title": "Small intestine: regions and mucosa",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-07-small-intestine.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "70183f36ea25ad3548c3e74c107b75dbaada48a9efc91a43735ce6ac190e2e70",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-07-small-intestine.svg",
+      "vectorSha256": "af24972a119f92d232fda2506a2b0fdaaab69b80d50edb222f678c6066b72e18",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 151,
+      "id": "asset-bvis06-large-intestine",
+      "title": "Large intestine and anal canal",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-08-large-intestine.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "3a574564585907a542f730eaa590c7d414b64200b0a6ad3000bd39c7b16c6c32",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-08-large-intestine.svg",
+      "vectorSha256": "ff02a6314304d0df3f14c94d9ee2c3142a5690f9a8c71791006a83f868863e2a",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 152,
+      "id": "asset-bvis06-peritoneal-folds",
+      "title": "Peritoneal folds: mesentery and omenta",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-09-peritoneal-folds.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "741efb5f028c9549c5c05a2daf5e9a6b523bae0bd7944b97e116cb9a7e67faf9",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-09-peritoneal-folds.svg",
+      "vectorSha256": "1ac34a759ddd6f0f77bc63ac32522c4f4826bd7a12922aaaef8825d2e33f2c92",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 153,
+      "id": "asset-bvis06-urinary-tract",
+      "title": "Urinary tract and the opened bladder",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-10-urinary-tract.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "2cc2c948ae212a00cc43d09ff5d29c4b8c594162d18006c8e71b6027b8a53544",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-10-urinary-tract.svg",
+      "vectorSha256": "89cb95612057f255658bd156d5fc819c4baf292c46504dd06c58b898195ae47a",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 154,
+      "id": "asset-bvis06-kidney-section",
+      "title": "Kidney in section: cortex, medulla and collecting system",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-11-kidney-section.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "8340d8b0248364a6b2f0ca65361dfaa69860e2d94cf453c118fc55bce3e61eeb",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-11-kidney-section.svg",
+      "vectorSha256": "77ac0e3d125e5bd0c4916cbfa891b1ca632f589380aa1d13a77d4b67eebe6d2a",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 155,
+      "id": "asset-bvis06-renal-vessels",
+      "title": "Renal blood vessels, hilum to nephron and back",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-12-renal-vessels.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "50e3965bb2d808d3e1efe4aeae0d73019ac20818673cd5f97355f6e0b05eb54d",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-12-renal-vessels.svg",
+      "vectorSha256": "4dc7757177db2463f5af446011b86c8729c70bddda206ef6a5b60754a290021e",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 156,
+      "id": "asset-bvis06-nephron-pathway",
+      "title": "Nephron segments and the urine pathway",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-13-nephron-pathway.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "960f265b199314588270ae76a1b6acd19675a9dd8be79e32b11d9c736ab7b6f8",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-13-nephron-pathway.svg",
+      "vectorSha256": "813a22faf9cf1a86e834191f408a148eb88958d7fea1c198ff370718b749cdc0",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 157,
+      "id": "asset-bvis06-renal-corpuscle",
+      "title": "Renal corpuscle and filtration barrier",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-14-renal-corpuscle.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f527ec5a25e4511b22927f4e83737d14ac2863cc211b07f3c975aac4c5a7a5e1",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-14-renal-corpuscle.svg",
+      "vectorSha256": "9ae8b9392a5b516070800b477d95bd5ae0ee964882860e01e7b92d5a31a0c62f",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 158,
+      "id": "asset-bvis06-male-system",
+      "title": "Male reproductive tract, glands and penis",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-15-male-system.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "14ac6a2b32c924bc0b1bb14b819e95dbaf2af90156f90ef2e7539127901e5f1e",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-15-male-system.svg",
+      "vectorSha256": "9beb714c0f1d1f37753eff6dc6e1356feafae7e925431a23dc14ac0edabfe367",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 159,
+      "id": "asset-bvis06-testis-ducts",
+      "title": "Testis, epididymis and seminiferous tubule",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-16-testis-ducts.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "19dcf490390ce44ed4e270118add0517c3e3a2b40dd2dd6dc146c9780150add5",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-16-testis-ducts.svg",
+      "vectorSha256": "f5d7b132ca62fd63fcb840b5ea2e3cde0bb42f9c70302bbd2d2be3e6b9a521cf",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 160,
+      "id": "asset-bvis06-female-gross",
+      "title": "Female internal organs: ovary, tube, uterus and vagina",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-17-female-gross.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "743fb5b129aedbf0c938a35ba16dcf884bc2546fd67cc6978b1eb912dcbbbd49",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-17-female-gross.svg",
+      "vectorSha256": "054c4dc3c3d43f6d893cca159234b428dc7f0553bec6ba42fba53e84739f457d",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 161,
+      "id": "asset-bvis06-ovary-follicle",
+      "title": "Ovary: follicle stages and follicle wall",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-18-ovary-follicle.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "fcaebd28f73f0816d1fcfbcf891b48ef19ab9e03c4436e9862cd2cb94678f7c6",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-18-ovary-follicle.svg",
+      "vectorSha256": "11b42a2e3dc9f11cc250bc168ea5c7e9b658fae3aaffafe7fa911bdae81821fd",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 162,
+      "id": "asset-bvis06-uterine-wall",
+      "title": "Uterine wall and endometrium",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-19-uterine-wall.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "7e9d8f594c5ef4ecbdab4f75ec1847b523927f24557f01ffb0ab9ac13c4a886d",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-19-uterine-wall.svg",
+      "vectorSha256": "e617e96b7c0967f4e632a4dd69dd29356988bb326b54716064f3d51250477706",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 163,
+      "id": "asset-bvis06-abdominal-placement",
+      "title": "Abdominal placement of the digestive organs",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-20-abdominal-placement.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "f1df4f74e9d070750559bb2bb73287321b272b939a6f5e608d6e5b7795760032",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-20-abdominal-placement.svg",
+      "vectorSha256": "dcfb44c52174beffaf08f996fc9fc652fa9a6da26c4527f69af70902fabd645c",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    },
+    {
+      "index": 164,
+      "id": "asset-bvis06-kidney-placement",
+      "title": "Kidney placement in the abdomen",
+      "activeRequire": "assets/images/anatomy/bvis06-atlas/bvis06-21-kidney-placement.png",
+      "rasterDimensions": [
+        2900,
+        2000
+      ],
+      "rasterSha256": "346502ab424cfc07e2e487f7bb5ffb6ddcdad93c63e2231f8c3f40a4bdc1ab6d",
+      "vectorMaster": "assets/images/anatomy/bvis06-atlas/bvis06-21-kidney-placement.svg",
+      "vectorSha256": "4a0ef6381b08d83f2d9c0092badfd91c810094d5ea186eb75010da844170dcfe",
+      "renderer": "SvgXml at actual display dimensions",
+      "sourceUrl": null,
+      "rightsUnchanged": true,
+      "markersUnchanged": true,
+      "note": "Authentic vector, drawn at actual displayed size; raster identity is not the displayed artwork."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "assetId": "asset-servier-pelvis",
+  "sourcePage": "https://smart.servier.com/smart_image/pelvis-overview/",
+  "publisherDeck": "https://smart.servier.com/wp-content/uploads/2016/10/SMART-Bone-fractures.pptx",
+  "publisherDeckSha256": "ac4c025fb10d77fdfadd53d72f8b61dab02ce14addd48213a530a8daf0781be2",
+  "sourceGroup": "slide7-group2",
+  "license": "CC BY 4.0; existing visible attribution retained",
+  "originalThumbnailSha256": "56b526821c7eb4e0f3422ce525bab00a910e3b05a363e21382510f594df29a8b",
+  "originalFrame": [
+    256,
+    294
+  ],
+  "pngExport": [
+    2560,
+    2940
+  ],
+  "vectorSha256": "77613dddcba7d8833e93e43b5c87c777141860167ec9a71fddaa2982569aa57f",
+  "pngSha256": "21e49156eda2e2a8015d1a378dea2e97d0e4d6cc9bbeb59071687a58b00c1bed",
+  "review": "Side-by-side source/candidate and seven existing anatomical target regions inspected; no target coordinates changed.",
+  "automaticThumbnailMse": 0.013300434448289121,
+  "automaticMatchAccepted": false,
+  "manualAnatomicalMatchAccepted": true,
+  "lowResolutionImageUpscaled": false
+}

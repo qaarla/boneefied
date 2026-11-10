@@ -7,12 +7,12 @@ const generated = readFileSync('content/vector-image-sources.generated.ts', 'utf
 const pairs = [...generated.matchAll(/\[require\('@\/([^']+)'\), \(\) => require\('@\/([^']+)'\) as string\]/g)]
   .map((m) => ({ raster: m[1]!, vector: m[2]! }));
 
-test('the exact masters cover 154/164 published images, preserving all existing raster identities', () => {
+test('the exact masters cover 155/164 published images, preserving all existing raster identities', () => {
   const inventory = JSON.parse(readFileSync('../../research/boneefied-photo-references/inventory.json', 'utf8'));
   const byRaster = new Map(pairs.map((p) => [p.raster, p.vector]));
   const vector = inventory.assets.filter((a: { localAssetPath: string }) => byRaster.has(a.localAssetPath));
   assert.equal(inventory.assets.length, 164);
-  assert.equal(vector.length, 154);
+  assert.equal(vector.length, 155);
   for (const { raster, vector } of pairs) {
     assert.ok(existsSync(raster), raster);
     const xml = readFileSync(vector, 'utf8');
@@ -27,10 +27,12 @@ test('the actual heart plate source resolves to its original vector, not a PNG e
   const viewer = readFileSync('components/AnatomyImageViewer.tsx', 'utf8');
   assert.match(viewer, /vectorXmlForSource\(source\)/);
   assert.match(viewer, /<SharpAtlasImage xml=\{vectorXml\}/);
-  assert.match(viewer, /scale=\{gesture.zoom \* framing.scale\}/);
+  assert.match(viewer, /zoomedViewportRect/);
+  assert.match(viewer, /width=\{displayedImage.width\} height=\{displayedImage.height\}/);
   const renderer = readFileSync('components/SharpAtlasImage.tsx', 'utf8');
-  assert.match(renderer, /width=\{width \* resolutionScale\}/);
-  assert.match(renderer, /height=\{height \* resolutionScale\}/);
+  assert.match(renderer, /width=\{width\}/);
+  assert.match(renderer, /height=\{height\}/);
+  assert.doesNotMatch(renderer, /transformOrigin|resolutionScale|transform:\s*\[/);
   assert.match(renderer, /allowDownscaling=\{false\}/);
 });
 

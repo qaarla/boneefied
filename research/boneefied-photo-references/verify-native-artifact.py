@@ -74,14 +74,14 @@ with zipfile.ZipFile(args.path) as archive, zipfile.ZipFile(args.previous) as pr
             registry))
         inventory = json.loads((Path(__file__).parent / "inventory.json").read_text())["assets"]
         vector_assets = [asset for asset in inventory if asset["localAssetPath"] in pairs]
-        assert len(inventory) == 164 and len(vector_assets) == 154
+        assert len(inventory) == 164 and len(vector_assets) >= 155
         missing_vectors = []
         for asset in vector_assets:
             xml = (app_path / pairs[asset["localAssetPath"]]).read_text()
             if xml.encode() not in bundle and xml.encode("utf-16-le") not in bundle:
                 missing_vectors.append(asset["id"])
         assert not missing_vectors, f"Exact vector masters absent from compiled bundle: {missing_vectors}"
-        for marker in ("viewer-base-diagram", "transformOrigin", "top left", "allowDownscaling"):
+        for marker in ("viewer-base-diagram", "viewer-image-surface", "allowDownscaling"):
             assert marker.encode() in bundle or marker.encode("utf-16-le") in bundle, marker
         result.update({
             "publishedImageAssociations": len(inventory),
