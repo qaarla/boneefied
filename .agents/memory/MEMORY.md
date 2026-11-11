@@ -41,3 +41,5 @@
 - [Resend template updates](resend-template-updates.md) — HTML-only PATCH regenerates plain text; always send both bodies and verify the published result.
 - [Real-photo references](real-photo-reference-intent.md) — supplemental links only; preserve illustrations and keep partial/unverified candidates out of the approved link set.
 - [Atlas zoom quality](atlas-zoom-source-quality.md) — verify the active zoom renderer, not an unused SVG or larger export; disclose raster and native-evidence limits.
+- [Practice highlight intent](practice-highlight-intent.md) — subtle, fitted selection paint only; preserve the working tap/scoring interaction and verify the rendered question.
+- [Atlas canvas comfort](atlas-canvas-comfort.md) — warm ivory image paper globally; preserve anatomical whites, colored artwork and scientific photos.

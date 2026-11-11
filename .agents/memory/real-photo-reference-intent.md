@@ -130,3 +130,15 @@ as a new image inspection would invent evidence.
 **How to apply:** Preserve prior genuine approvals, record the inspection
 limitation separately, and do not promote newly found images from their titles,
 attribution lists or metadata alone.
+
+Use concise, learner-recognizable subject-and-view text for companion
+hyperlinks rather than repeating “Real photo” or “dry skull.” Describe the
+actual linked photograph, not whatever structure the question asks for.
+
+**Why:** The user said the links can stay but “REALLY need to be clarified”:
+generic repeated names did not explain their relationship to the illustration.
+
+**How to apply:** Preserve destinations, opening behavior and coverage
+disclaimers. A multi-photo group may have one unobtrusive sentence explaining
+that its links show different parts or views. A labeling-only request does not
+authorize new links, new source research or a redesign.

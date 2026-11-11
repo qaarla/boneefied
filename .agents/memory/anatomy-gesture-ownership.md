@@ -53,6 +53,19 @@ with ordinary lesson scrolling, then record that same offset during pinch and pa
 
 ## External numbered callouts must remain reachable
 
+The whole Study page must remain centered and viewport-width during image
+interaction. Horizontal drags belong to the image box even at 1×; ordinary
+vertical page scrolling outside it must remain available.
+
+**Why:** The user reported the entire screen moving sideways and exposing
+adjacent content while studying an image, and explicitly asked for the screen
+to stay steady while only the image moves.
+
+**How to apply:** Check surrounding cards' horizontal positions and the actual
+scrollable ancestor's offsets, not just the image transform or window offset.
+Keep browser overflow/overscroll containment separate from iPhone native
+back-swipe interception, and do not claim native proof from a browser screenshot.
+
 For Blood Vessels and Lymphatic plates, magnified pan constraints include the complete annotated
 plate, not only the raster. The older raster-only policy above remains scoped
 to earlier groups; do not silently change those outside their own correction pass.

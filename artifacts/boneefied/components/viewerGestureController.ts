@@ -62,6 +62,9 @@ export class ViewerGestureController {
     const center = touchCenter(touches), dx = center.x - this.origin.x, dy = center.y - this.origin.y;
     if (Math.hypot(dx, dy) >= VIEWER_DRAG_THRESHOLD || touches.length > 1) this.moved = true;
     if (this.moved) this.suppressUntil = now + 400;
+    // Even at reset, a sideways image drag belongs to this box, not the
+    // lesson or iPhone back-swipe. Ordinary 1× vertical scrolling stays free.
+    if (this.moved && Math.abs(dx) > Math.abs(dy)) this.owns = true;
     if (!this.owns || !this.moved) return this.transform;
     const distance = touchDistance(touches);
     const zoom = clamp(this.base.zoom * (this.distance > 0 && distance > 0 ? distance / this.distance : 1), 1, 4);

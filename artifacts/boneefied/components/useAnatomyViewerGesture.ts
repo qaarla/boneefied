@@ -200,6 +200,14 @@ export function useAnatomyViewerGesture(source?: number) {
     canPress: () => controller.canPress(),
     changeZoom: (amount: number) => { controller.changeZoom(amount, scene.current); commit(true); },
     handlers: Platform.OS === 'web' ? webHandlers : {},
-    webStyle: Platform.OS === 'web' ? { touchAction: ownsGesture || transform.zoom > 1 ? 'none' : 'pan-y', userSelect: 'none' as const } : undefined,
+    webStyle: Platform.OS === 'web' ? {
+      touchAction: ownsGesture || transform.zoom > 1 ? 'none' : 'pan-y',
+      userSelect: 'none' as const,
+      // Clip transformed SVG/image bounds to this box before they can
+      // contribute to the browser's scrollable page or chain overscroll.
+      contain: 'layout paint',
+      overscrollBehaviorX: 'none' as const,
+      overscrollBehaviorY: 'contain' as const,
+    } : undefined,
   };
 }

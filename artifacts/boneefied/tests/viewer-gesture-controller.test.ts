@@ -34,6 +34,18 @@ test('zoomed horizontal, vertical and diagonal pans use both axes', () => {
     assert.equal(g.canPress(403), true, 'keyboard presses recover after suppression window');
   }
 });
+test('a sideways drag at 1× is contained without moving the image or navigating the page', () => {
+  const g = new ViewerGestureController();
+  g.start(touch(140, 360), scene, origin, 0);
+  g.move(touch(142, 361), scene, origin, 1);
+  assert.equal(g.owns, false, 'minor tap jitter does not claim the page');
+  g.move(touch(210, 365), scene, origin, 2);
+  assert.equal(g.owns, true);
+  assert.deepEqual(g.transform, { zoom: 1, offset: { x: 0, y: 0 } });
+  assert.equal(g.canPress(2), false);
+  g.end(3);
+  assert.equal(g.owns, false, 'normal page scrolling/navigation resumes on release');
+});
 test('minor jitter is a tap, not a pan; a fresh tap after dragging remains usable', () => {
   const g = new ViewerGestureController();
   g.changeZoom(0.5, scene);

@@ -1,0 +1,87 @@
+{
+  "canvas": "#ECEAE2",
+  "activeIllustrations": 164,
+  "vectorMastersUnchanged": 155,
+  "protectedPhotographicSourcesUnchanged": 6,
+  "method": "Global viewer paper; three background-only bitmap display copies. No overlay, global tint, recoloring of vector art or photo retouching.",
+  "displayCopies": [
+    {
+      "original": "assets/images/anatomy/original-cell-overview.png",
+      "displayCopy": "assets/images/anatomy/soft-canvas/original-cell-overview.png",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "originalSha256": "9271c08ef90ebf8148b6867ee2cc82665d89eb0dd9870bcd6a443bea5b554f27",
+      "displaySha256": "c2a542a47dd1cfd6010cd2989a56e979cc7309be016f7f66f81f104290cf00b9",
+      "backgroundPixelsChanged": 504078,
+      "nonwhitePixelsChanged": 0,
+      "enclosedOrProtectedWhitePixels": 0,
+      "protectedBoneProbes": [],
+      "classificationOnlyClosingSize": 1
+    },
+    {
+      "original": "assets/images/anatomy/original-anatomical-planes.png",
+      "displayCopy": "assets/images/anatomy/soft-canvas/original-anatomical-planes.png",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "originalSha256": "bc4096fbd99d83c5e46803665700ea852d3b2ef0c128a685be0ba84d0bc36354",
+      "displaySha256": "d6a86db7ea861fa83d4bca292b30c8be776bde6fcfaf5d3d06f59b9e6a0a36a5",
+      "backgroundPixelsChanged": 690249,
+      "nonwhitePixelsChanged": 0,
+      "enclosedOrProtectedWhitePixels": 0,
+      "protectedBoneProbes": [],
+      "classificationOnlyClosingSize": 1
+    },
+    {
+      "original": "assets/images/anatomy/gray111-vertebral-column.png",
+      "displayCopy": "assets/images/anatomy/soft-canvas/gray111-vertebral-column.png",
+      "dimensions": [
+        233,
+        800
+      ],
+      "originalSha256": "422a58679d55bae60111c145469dcccc9cfdf536035b93e5d0c8c727a2eeacbc",
+      "displaySha256": "f148f7d3c426b38c12a42f7b0e38eeec91c4b0359e91f775e95d3c57ba6fbab9",
+      "backgroundPixelsChanged": 126665,
+      "nonwhitePixelsChanged": 0,
+      "enclosedOrProtectedWhitePixels": 17435,
+      "protectedBoneProbes": [
+        [
+          150,
+          240
+        ],
+        [
+          143,
+          365
+        ],
+        [
+          139,
+          400
+        ],
+        [
+          139,
+          430
+        ],
+        [
+          128,
+          460
+        ],
+        [
+          123,
+          495
+        ],
+        [
+          113,
+          535
+        ],
+        [
+          124,
+          700
+        ]
+      ],
+      "classificationOnlyClosingSize": 5
+    }
+  ]
+}

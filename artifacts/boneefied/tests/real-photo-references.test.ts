@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import test from 'node:test';
-import { canShowPhotoReferences, photoReferenceDescription, photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '../content/real-photo-references.ts';
+import { canShowPhotoReferences, photoReferenceDescription, photoReferenceIntroduction, photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '../content/real-photo-references.ts';
 
 const research = new URL('../../../research/boneefied-photo-references/', import.meta.url);
 const records = JSON.parse(readFileSync(new URL('references.json', research), 'utf8'));
@@ -97,12 +97,12 @@ test('learning is available; active/partially answered Recall is hidden; full re
   assert.equal(canShowPhotoReferences('recall', true, false), true);
 });
 
-test('English and Spanish keep hyperlinks short and move source, named views and limits into separate context', () => {
+test('English and Spanish name inspected photo subjects while preserving source and coverage context', () => {
   const gross = photoReferencesForAsset('asset-skeletal-atlas-skull-base-external')[0]!;
   const micro = photoReferencesForAsset('asset-commons-kidney-cortex-human')[0]!;
-  assert.equal(photoReferenceLabel(gross, 'en'), 'Real photo');
-  assert.equal(photoReferenceLabel(gross, 'es'), 'Foto real');
-  assert.equal(photoReferenceLabel({ ...gross, subject: undefined }, 'en'), 'Real photo');
+  assert.equal(photoReferenceLabel(gross, 'en'), 'Skull base — underside');
+  assert.equal(photoReferenceLabel(gross, 'es'), 'Base del cráneo — vista inferior');
+  assert.equal(photoReferenceLabel({ ...gross, subject: undefined }, 'en'), 'Skull base — underside');
   assert.equal(photoReferenceLabel(micro, 'en'), 'Microscope photo');
   assert.equal(photoReferenceLabel(micro, 'es'), 'Foto al microscopio');
   const imaging = { ...gross, mediaType: 'diagnostic-imaging' as const };
@@ -114,6 +114,38 @@ test('English and Spanish keep hyperlinks short and move source, named views and
   assert.match(photoReferenceDescription({ ...gross, subject: { en: 'Anterior view', es: 'Vista anterior' } }, 'es'), /Vista anterior/);
   assert.match(photoReferenceDescription({ ...gross, coverage: 'selected-structures' }, 'en'), /^Selected structures only · /);
   assert.match(photoReferenceDescription({ ...gross, coverage: 'selected-structures' }, 'es'), /^Solo estructuras seleccionadas · /);
+});
+
+test('axial companion names distinguish views without claiming the underside shows the mandible', () => {
+  const axial = photoReferencesForAsset('asset-commons-axial-skeleton-blank');
+  assert.deepEqual(axial.map(reference => photoReferenceLabel(reference, 'en')), [
+    'Skull — front view', 'Skull base — underside',
+    'Cranial floor — inside view', 'Thoracic vertebrae — specimen',
+  ]);
+  assert.ok(axial.every(reference => reference.coverage === 'selected-structures'));
+  assert.ok(axial.every(reference => photoReferenceDescription(reference, 'en').startsWith('Selected structures only · ')));
+  assert.doesNotMatch(photoReferenceLabel(axial[1]!, 'en'), /mandible|jaw/i);
+  assert.equal(photoReferenceIntroduction(axial, 'en'), 'These links show different parts or views of this illustration.');
+  assert.equal(photoReferenceIntroduction(axial, 'es'), 'Estos enlaces muestran distintas partes o vistas de esta ilustración.');
+  assert.equal(photoReferenceIntroduction([axial[0]!], 'en'), undefined);
+  assert.equal(photoReferenceIntroduction([], 'en'), undefined);
+});
+
+test('descriptive labels reuse the original destination for every renamed reference', async () => {
+  const renamed = new Set<string>();
+  for (const { assetId } of records) {
+    for (const reference of photoReferencesForAsset(assetId)) {
+      if (['Real photo', 'Microscope photo', 'Medical image'].includes(photoReferenceLabel(reference, 'en'))) continue;
+      const originalUrl = reference.url;
+      const destinations: string[] = [];
+      assert.equal(await tryOpenPhotoReference(originalUrl, async url => { destinations.push(url); }), true);
+      assert.deepEqual(destinations, [originalUrl]);
+      assert.equal(reference.url, originalUrl);
+      assert.ok(!['Foto real', 'Foto al microscopio', 'Imagen médica'].includes(photoReferenceLabel(reference, 'es')));
+      renamed.add(originalUrl);
+    }
+  }
+  assert.equal(renamed.size, 20);
 });
 
 test('outbound open uses the exact URL, catches failures and allows a subsequent retry', async () => {

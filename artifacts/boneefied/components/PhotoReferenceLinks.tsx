@@ -4,7 +4,7 @@ import { Feather } from '@expo/vector-icons';
 import { Text } from '@/components/ScaledText';
 import { useColors } from '@/hooks/useColors';
 import { useLocale } from '@/locales/useLocale';
-import { photoReferenceDescription, photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '@/content/real-photo-references';
+import { photoReferenceDescription, photoReferenceIntroduction, photoReferenceLabel, photoReferencesForAsset, tryOpenPhotoReference } from '@/content/real-photo-references';
 
 /** A footer sibling of the gesture surface, never an overlay or in-app browser.
  * Opening the OS browser/new tab does not navigate or remount the study screen.
@@ -15,6 +15,7 @@ export function PhotoReferenceLinks({ assetId, visible }: { assetId?: string; vi
   const [failedUrl, setFailedUrl] = useState<string | null>(null);
   const references = visible ? photoReferencesForAsset(assetId) : [];
   if (!references.length) return null;
+  const introduction = photoReferenceIntroduction(references, language);
 
   async function open(url: string) {
     setFailedUrl(null);
@@ -39,6 +40,7 @@ export function PhotoReferenceLinks({ assetId, visible }: { assetId?: string; vi
   }
 
   return <View testID={`photo-references-${assetId}`} style={styles.footer}>
+    {introduction && <Text style={[styles.description, { color: colors.mutedForeground }]}>{introduction}</Text>}
     {references.map((reference) => {
       const label = photoReferenceLabel(reference, language);
       const description = photoReferenceDescription(reference, language);

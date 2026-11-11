@@ -7,6 +7,7 @@ import { useTypographyLayout } from '@/components/ScaledText';
 import { KeyboardAwareScrollViewCompat } from '@/components/KeyboardAwareScrollViewCompat';
 import { ViewerScrollOwnership } from '@/components/ViewerScrollOwnership';
 import { OrganicBackground } from '@/components/OrganicBackground';
+import { useNavigation } from 'expo-router';
 
 export function Screen({ children, scroll = true, keyboardAware = false, belowHeader = false, systemHeading = false, scrollRef, onScroll, onViewportLayout, keyboardShouldPersistTaps }: {
   children: React.ReactNode;
@@ -20,6 +21,7 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
   keyboardShouldPersistTaps?: ScrollViewProps['keyboardShouldPersistTaps'];
 }) {
   const colors = useColors();
+  const navigation = useNavigation();
   const scrollNode = useRef<ScrollView | null>(null);
   const owners = useRef(new Set<symbol>());
   const scrollY = useRef(0);
@@ -29,6 +31,11 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
     if (active === owners.current.has(owner)) return;
     if (active) owners.current.add(owner); else owners.current.delete(owner);
     const locked = owners.current.size > 0;
+    // On iPhone, an image drag must not become the native stack's sideways
+    // back-swipe. Restore normal navigation as soon as the image releases it.
+    if (Platform.OS === 'ios' && navigation.getState()?.type === 'stack') {
+      navigation.setOptions({ gestureEnabled: !locked });
+    }
     // Stop native scroll interception before the next render commits.
     if (Platform.OS !== 'web') scrollNode.current?.setNativeProps({ scrollEnabled: !locked });
     if (locked && lockedScrollY.current === null) {
@@ -39,7 +46,7 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
       lockedScrollY.current = null;
     }
     setViewerOwnsGesture(locked);
-  }, []);
+  }, [navigation]);
   const ownership = useMemo(() => ({ setOwnership, getScrollY: () => scrollY.current }), [setOwnership]);
   const attachScroll = useCallback((node: ScrollView | null) => {
     scrollNode.current = node;
@@ -53,6 +60,13 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
   // The top inset belongs outside the scroll view so it cannot scroll under the status bar.
   // Bottom clearance belongs to the scrollable container so the final child can clear the fixed tabs.
   const scrollProps = {
+    // A magnified descendant must never turn the lesson into a horizontal
+    // scroller. Keep vertical scrolling available outside an owned image drag.
+    horizontal: false,
+    directionalLockEnabled: true,
+    alwaysBounceHorizontal: false,
+    showsHorizontalScrollIndicator: false,
+    style: [styles.scroller, Platform.OS === 'web' && { overflowX: 'hidden' as const, overscrollBehaviorX: 'none' as const }],
     // A non-transparent stack header already lays content below the safe area.
     ...(belowHeader && { contentInsetAdjustmentBehavior: 'never' as const, automaticallyAdjustContentInsets: false }),
     scrollEnabled: !viewerOwnsGesture,
@@ -75,10 +89,11 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
   const scroller = keyboardAware
     ? <KeyboardAwareScrollViewCompat viewerScrollRef={attachScroll} {...scrollProps} bottomOffset={64}>{content}</KeyboardAwareScrollViewCompat>
     : <ScrollView ref={attachScroll} {...scrollProps}>{content}</ScrollView>;
-  return <ViewerScrollOwnership.Provider value={ownership}><View style={[styles.screen, { backgroundColor: colors.background, paddingTop: belowHeader ? 0 : insets.top }]}><OrganicBackground />{scroll ? scroller : content}</View></ViewerScrollOwnership.Provider>;
+  return <ViewerScrollOwnership.Provider value={ownership}><View style={[styles.screen, Platform.OS === 'web' && { overflowX: 'hidden' as const, overscrollBehaviorX: 'none' as const }, { backgroundColor: colors.background, paddingTop: belowHeader ? 0 : insets.top }]}><OrganicBackground />{scroll ? scroller : content}</View></ViewerScrollOwnership.Provider>;
 }
 const styles = StyleSheet.create({
-  screen: { flex: 1 },
-  scroll: { flexGrow: 1 },
+  screen: { flex: 1, width: '100%', maxWidth: '100%', minWidth: 0, overflow: 'hidden' },
+  scroller: { width: '100%', maxWidth: '100%', minWidth: 0 },
+  scroll: { flexGrow: 1, width: '100%', maxWidth: '100%', minWidth: 0 },
   content: { paddingHorizontal: 20, gap: 18, width: '100%', maxWidth: 720, alignSelf: 'center' },
 });

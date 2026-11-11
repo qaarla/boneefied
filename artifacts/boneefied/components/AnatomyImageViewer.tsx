@@ -18,12 +18,15 @@ import { AnimatedAnswerPressable, type AnswerFeedback } from '@/components/Anima
 import { useOfflineImage } from '@/hooks/useOfflineImage';
 import { vectorXmlForSource } from '@/content/vector-image-sources.generated';
 import { SharpAtlasImage } from '@/components/SharpAtlasImage';
+import { atlasCanvasRasterSource } from '@/content/atlas-canvas-raster-sources';
+import { ATLAS_CANVAS_COLOR, ATLAS_CANVAS_INK } from '@/constants/atlasCanvas';
 import { useLocale } from '@/locales/useLocale';
 import { content } from '@/content/canonical';
 import { annotationIndex, annotationKey, clampMarkerCenter, hasMarkerOverlap, spreadAtlasCallouts } from '@/components/viewerMarkerLayout';
 import { useAnatomyViewerGesture } from '@/components/useAnatomyViewerGesture';
 import { fitViewerScene, fittedSceneRect, zoomedViewportRect, viewerPanBounds, imageCenteredSceneBounds } from '@/components/viewerSceneFraming';
 import { peripheralAtlasAssetIds } from '@/content/peripheral-atlas-corrections';
+import { hasFittedPracticeHighlight, PracticeSelectionHighlight } from '@/components/PracticeSelectionHighlight';
 
 const IMAGE_INSET = 12;
 const vascularAssets = new Set(content.modules.find(m => m.id === 'blood-vessels')?.lessons?.flatMap(l => l.assetIds ?? []) ?? []);
@@ -97,7 +100,7 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
   // repeated study targets can outnumber the question's planned marker cells.
   const labelCalloutLayout = !questionHotspotCallouts && (atlasLayout || (labels.length > 0 && avoidRects.length > 0));
   const vectorXml = useMemo(() => vectorXmlForSource(source), [source]);
-  const image = useOfflineImage(vectorXml ? undefined : source);
+  const image = useOfflineImage(vectorXml ? undefined : atlasCanvasRasterSource(source));
   const imageAspectRatio = useMemo(() => {
     const asset = source ? Asset.fromModule(source) : undefined;
     return asset?.width && asset?.height ? asset.width / asset.height : suppliedAspectRatio;
@@ -219,8 +222,8 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
   return <View style={[styles.frame, { backgroundColor: colors.card, borderColor: colors.border }]} accessibilityLabel={locale.t('imageViewer.accessibility')}>
       <ViewerGestureSurface gesture={gesture.nativeGesture}>
       <View ref={gesture.areaRef} collapsable={false} testID="viewer-gesture-area" {...gesture.handlers} onLayout={({ nativeEvent: { layout } }) => setCanvasSize((current) => current.width === layout.width && current.height === layout.height ? current : { width: layout.width, height: layout.height })} style={[styles.gestureArea, gesture.webStyle]} accessibilityLabel={locale.t('imageViewer.inspectGestures')}>
-      {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{locale.t('imageViewer.unavailable')}</Text></View>}
-      {source && !vectorXml && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: colors.mutedForeground }]}>{image.error ? locale.t('offlineImage.unavailableOffline') : locale.t('imageViewer.loading')}</Text></View>}
+      {!source && <View style={styles.empty}><Text style={[styles.blocked, { color: ATLAS_CANVAS_INK }]}>{locale.t('imageViewer.unavailable')}</Text></View>}
+      {source && !vectorXml && !image.source && <View style={styles.empty}><Text style={[styles.blocked, { color: ATLAS_CANVAS_INK }]}>{image.error ? locale.t('offlineImage.unavailableOffline') : locale.t('imageViewer.loading')}</Text></View>}
        {/* Paint at actual display dimensions, outside the scaled annotation
            scene. This avoids enlarging a native compositor's small snapshot.
            Both layers share the exact same animated pan and geometry. */}
@@ -247,8 +250,16 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
            const ay = ((1 - containedHeight) / 2 + hotspot.y * containedHeight) * layoutHeight;
           const dx = callout ? callout.x - ax : 0, dy = callout ? callout.y - ay : 0;
           const length = Math.hypot(dx, dy);
-          const targetColor = feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : colors.foreground;
+          const targetColor = feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : ATLAS_CANVAS_INK;
+          const fittedHighlight = !questionHotspotCallouts && hasFittedPracticeHighlight(diagramAssetId, hotspot.structureId);
+          const highlightColor = feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : colors.primary;
           return <React.Fragment key={`${hotspot.structureId}-${hotspot.x}-${hotspot.y}`}>
+            {fittedHighlight && (selected || feedback || revealLabels) && <PracticeSelectionHighlight
+              left={(1 - containedWidth) * canvasSize.width / 2}
+              top={(1 - containedHeight) * layoutHeight / 2}
+              width={containedWidth * canvasSize.width} height={containedHeight * layoutHeight}
+              color={highlightColor}
+            />}
             {callout && <><View pointerEvents="none" style={{ position: 'absolute', left: ax + dx / 2 - length / 2, top: ay + dy / 2, width: length, height: 1, backgroundColor: targetColor, opacity: 0.6, transform: [{ rotate: `${Math.atan2(dy, dx)}rad` }] }} /><View pointerEvents="none" style={{ position: 'absolute', left: ax - 2, top: ay - 2, width: 4, height: 4, borderRadius: 2, backgroundColor: targetColor }} /></>}
             <AnimatedAnswerPressable
             key={`${hotspot.structureId}-${hotspot.x}-${hotspot.y}`}
@@ -263,11 +274,11 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
             decorate={false}
             testID={`hotspot-${hotspot.structureId}`}
              containerStyle={[styles.hotspot, questionHotspotCallouts && { alignItems: 'center', justifyContent: 'center' }, { left: position.x - position.width / 2, top: position.y - position.height / 2, width: position.width, height: position.height }]}
-             contentStyle={[styles.hotspotContent, questionHotspotCallouts && { width: paint.diameter, height: paint.diameter, alignSelf: 'center', borderWidth: paint.borderWidth }, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected || revealLabels ? colors.primary : questionHotspotCallouts ? colors.foreground : 'transparent', backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected ? colors.secondary : questionHotspotCallouts ? colors.card : 'transparent' }]}
+              contentStyle={[styles.hotspotContent, questionHotspotCallouts && { width: paint.diameter, height: paint.diameter, alignSelf: 'center', borderWidth: paint.borderWidth }, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected || revealLabels ? colors.primary : questionHotspotCallouts ? colors.foreground : 'transparent', backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected ? colors.secondary : questionHotspotCallouts ? colors.card : 'transparent' }, !questionHotspotCallouts && { width: Math.min(position.width, 20), height: Math.min(position.height, 20), alignSelf: 'center', marginTop: Math.max(0, (position.height - Math.min(position.height, 20)) / 2), borderWidth: fittedHighlight ? 0 : 1.25, backgroundColor: 'transparent' }]}
           >
-            {feedback ? reflow
-              ? <Feather name={feedback === 'correct' ? 'check' : 'x'} size={questionHotspotCallouts ? paint.numeralSize : 16} color={feedback === 'correct' ? colors.successForeground : colors.destructiveForeground} />
-              : <Text style={{ color: feedback === 'correct' ? colors.successForeground : colors.destructiveForeground, fontWeight: '800' }}>{feedback === 'correct' ? '✓' : '✕'}</Text> : questionHotspotCallouts ? <MarkerText style={{ color: colors.foreground, fontSize: paint.numeralSize, fontWeight: '700', textAlign: 'center' }}>{locale.number(index + 1)}</MarkerText> : null}
+             {fittedHighlight ? null : feedback ? reflow
+              ? <Feather name={feedback === 'correct' ? 'check' : 'x'} size={questionHotspotCallouts ? paint.numeralSize : 16} color={questionHotspotCallouts ? feedback === 'correct' ? colors.successForeground : colors.destructiveForeground : highlightColor} />
+              : <Text style={{ color: questionHotspotCallouts ? feedback === 'correct' ? colors.successForeground : colors.destructiveForeground : highlightColor, fontWeight: '800' }}>{feedback === 'correct' ? '✓' : '✕'}</Text> : questionHotspotCallouts ? <MarkerText style={{ color: colors.foreground, fontSize: paint.numeralSize, fontWeight: '700', textAlign: 'center' }}>{locale.number(index + 1)}</MarkerText> : null}
            </AnimatedAnswerPressable></React.Fragment>;
         })}
          {!questionHotspotCallouts && labels.map((label, index) => {
@@ -286,8 +297,8 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
            const dy = callout ? callout.y - y * layoutHeight : 0;
           const length = Math.hypot(dx, dy);
           return <React.Fragment key={`label-${annotationKey(label)}`}>
-             {callout && <View pointerEvents="none" style={{ position: 'absolute', left: x * canvasSize.width + dx / 2 - length / 2, top: y * layoutHeight + dy / 2, width: length, height: 1, backgroundColor: visible ? colors.primary : colors.foreground, opacity: 0.6, transform: [{ rotate: `${Math.atan2(dy, dx)}rad` }] }} />}
-             {callout && <View pointerEvents="none" style={{ position: 'absolute', left: x * canvasSize.width - 2, top: y * layoutHeight - 2, width: 4, height: 4, borderRadius: 2, backgroundColor: visible ? colors.primary : colors.foreground }} />}
+             {callout && <View pointerEvents="none" style={{ position: 'absolute', left: x * canvasSize.width + dx / 2 - length / 2, top: y * layoutHeight + dy / 2, width: length, height: 1, backgroundColor: visible ? colors.primary : ATLAS_CANVAS_INK, opacity: 0.6, transform: [{ rotate: `${Math.atan2(dy, dx)}rad` }] }} />}
+             {callout && <View pointerEvents="none" style={{ position: 'absolute', left: x * canvasSize.width - 2, top: y * layoutHeight - 2, width: 4, height: 4, borderRadius: 2, backgroundColor: visible ? colors.primary : ATLAS_CANVAS_INK }} />}
               <Pressable onLayout={({ nativeEvent: { layout } }) => recordMarkerSize(label.structureId, { width: layout.width, height: layout.height })} disabled={revealLabels} onPress={() => toggleLabel(label.structureId)} accessibilityRole="button" accessibilityState={{ selected: visible, disabled: revealLabels }} accessibilityLabel={revealLabels ? locale.t('imageViewer.structureHotspot', { structureId: label.displayLabel }) : visible ? locale.t('imageViewer.hideMarker', { index: locale.number(index + 1), label: label.displayLabel }) : locale.t('imageViewer.revealMarker', { index: locale.number(index + 1), label: label.displayLabel })} accessibilityHint={revealLabels ? undefined : locale.t('imageViewer.markerHint')} hitSlop={labelCalloutLayout ? undefined : reflow ? 7 : undefined} style={[styles.labelMarker, labelCalloutLayout && { minWidth: 44, minHeight: 44 }, position, { borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card }, reflow && { minWidth: 44, minHeight: 44, paddingHorizontal: 0, borderWidth: 0, backgroundColor: 'transparent' }]}>
                {reflow ? <View pointerEvents="none" testID={`marker-paint-${index + 1}`} style={{ width: paint.diameter, height: paint.diameter, borderRadius: paint.diameter / 2, borderWidth: paint.borderWidth, borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card, alignItems: 'center', justifyContent: 'center' }}>
                  {/* Numerals scale explicitly with typography settings, capped to fit;
@@ -319,8 +330,8 @@ function ViewerGestureSurface({ gesture, children }: { gesture: ReturnType<typeo
 }
 
 const styles = StyleSheet.create({
-  frame: { width: '100%', borderRadius: 16, borderWidth: 1, overflow: 'hidden', position: 'relative' },
-   gestureArea: { aspectRatio: 1, overflow: 'hidden' },
+  frame: { width: '100%', maxWidth: '100%', minWidth: 0, borderRadius: 16, borderWidth: 1, overflow: 'hidden', position: 'relative' },
+   gestureArea: { width: '100%', maxWidth: '100%', minWidth: 0, aspectRatio: 1, overflow: 'hidden', backgroundColor: ATLAS_CANVAS_COLOR },
   canvas: { position: 'absolute', left: 0, right: 0, top: 0, bottom: 0 },
    imageSurface: { position: 'absolute', overflow: 'hidden' },
    image: { width: '100%', height: '100%' },
