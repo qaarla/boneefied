@@ -1,0 +1,10 @@
+name: Boneefied iOS build artifact
+
+# Manual, build-only workflow. No Android jobs and no store submission.
+jobs:
+  ios_preview:
+    name: Internal iPhone IPA
+    type: build
+    params:
+      platform: ios
+      profile: preview
