@@ -70,6 +70,10 @@ function RootLayoutNav() {
     <ThemeProvider value={navigationTheme}>
       <Stack screenOptions={{
         headerShown: false,
+        // Also cover image routes outside the nested Study stack (Practice,
+        // glossary/deep links). Explicit Back/Up actions remain available.
+        gestureEnabled: false,
+        fullScreenGestureEnabled: false,
         // Study navigation stays in the persistent dock; the full accessible
         // heading and safe-area clearance belong to the page content.
         headerTitle: () => null,

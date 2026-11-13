@@ -66,6 +66,19 @@ scrollable ancestor's offsets, not just the image transform or window offset.
 Keep browser overflow/overscroll containment separate from iPhone native
 back-swipe interception, and do not claim native proof from a browser screenshot.
 
+Native swipe-back must be disabled before touch-down, including ancestor stacks;
+do not re-enable it when an image gesture ends. Explicit Back/Up remains available.
+
+**Why:** The user's iPhone recording showed the whole lymphatic Study screen
+revealing the previous page during repeated image pans despite the prior
+gesture-time navigation lock. Changing navigation options after gesture
+ownership is acquired does not reliably prevent native interactive-pop startup.
+
+**How to apply:** Keep the navigation policy independent of the temporary
+page-scroll lease. Cover nested Study and ancestor navigation, including other
+image entry points. Preserve vertical page scrolling outside owned image
+gestures, and require installed-iPhone evidence before declaring this resolved.
+
 For Blood Vessels and Lymphatic plates, magnified pan constraints include the complete annotated
 plate, not only the raster. The older raster-only policy above remains scoped
 to earlier groups; do not silently change those outside their own correction pass.

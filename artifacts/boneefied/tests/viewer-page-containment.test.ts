@@ -24,10 +24,18 @@ test('web transformed artwork cannot contribute horizontal page overflow or over
   assert.match(gesture, /touchAction: ownsGesture \|\| transform\.zoom > 1 \? 'none' : 'pan-y'/);
 });
 
-test('only an actively owned iPhone viewer gesture suspends stack back-swiping', () => {
+test('native back-swiping is disabled before any image touch, including the ancestor stack', () => {
+  for (const path of ['app/_layout.tsx', 'app/(tabs)/(study)/_layout.tsx']) {
+    const layout = readFileSync(path, 'utf8');
+    assert.match(layout, /gestureEnabled: false/);
+    assert.match(layout, /fullScreenGestureEnabled: false/);
+  }
+  // A release must never restore swipe-back and reopen the race on the next pan.
+  assert.doesNotMatch(screen, /setOptions|gestureEnabled/);
+});
+
+test('page-scroll ownership remains tied to active image gestures, not the navigation policy', () => {
   assert.match(screen, /const locked = owners\.current\.size > 0/);
-  assert.match(screen, /Platform\.OS === 'ios' && navigation\.getState\(\)\?\.type === 'stack'/);
-  assert.match(screen, /navigation\.setOptions\(\{ gestureEnabled: !locked \}\)/);
   assert.match(gesture, /const owns = controller\.active && controller\.owns/);
   assert.match(gesture, /live\.current\.setOwnership\(owner, false\)/);
 });
@@ -35,7 +43,7 @@ test('only an actively owned iPhone viewer gesture suspends stack back-swiping',
 test('transforms stay on the viewer layers, with controls and legend outside the gesture box', () => {
   assert.doesNotMatch(screen, /translateX|translateY|scale:/);
   assert.match(viewer, /gesture\.translationStyle/);
-  assert.match(viewer, /gesture\.canvasStyle/);
+  assert.doesNotMatch(viewer, /gesture\.canvasStyle/);
   assert.ok(viewer.indexOf('</ViewerGestureSurface>') < viewer.indexOf('<AtlasViewerControls'));
   assert.ok(viewer.indexOf('</ViewerGestureSurface>') < viewer.indexOf('<AtlasLegend'));
 });

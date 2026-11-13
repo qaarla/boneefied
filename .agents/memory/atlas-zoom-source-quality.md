@@ -34,3 +34,16 @@ and compiled-content checks.
 **How to apply:** Require direct device evidence before claiming the native
 blur eliminated. When no native build is authorized, preserve that boundary
 explicitly in the result rather than quietly declaring every plate fixed.
+
+Annotations need the same final-display-size rendering policy as the underlying
+diagram: lay out glyphs, marker circles, leader lines and real hit regions at
+zoomed dimensions, not inside a magnified native annotation subtree.
+
+**Why:** The user reported that the diagram looked good on iPhone while its
+numbers still looked blurry. A sharp base drawing does not establish annotation
+sharpness; native composition can enlarge a low-resolution text layer separately.
+
+**How to apply:** Preserve scene coordinates and fitting in unzoomed units,
+project all visible annotations and hit areas through the same fit/zoom as the
+image, and normalize layout measurements back into scene units. Preserve genuine
+vectors/full-resolution raster sources without promising infinite raster detail.

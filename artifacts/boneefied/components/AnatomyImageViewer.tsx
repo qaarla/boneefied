@@ -201,6 +201,14 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
      const displayedImage = zoomedViewportRect(
        fittedSceneRect(imageBox, canvasSize.width, layoutHeight, framing),
        canvasSize.width, canvasSize.height, gesture.zoom);
+     // Lay out annotations at their final display resolution, just like the
+     // diagram. A scaled native Text/View subtree can magnify cached glyphs.
+     // Translation alone stays animated; there is no ancestor scale texture.
+     const annotationScale = framing.scale * gesture.zoom;
+     const displayedScene = zoomedViewportRect(
+       fittedSceneRect({ x: 0, y: 0, width: canvasSize.width, height: layoutHeight },
+         canvasSize.width, layoutHeight, framing),
+       canvasSize.width, canvasSize.height, gesture.zoom);
      const panBounds = viewerPanBounds(imageBox, canvasSize.width, layoutHeight, framing, vascularAssets.has(diagramAssetId ?? '') || lymphaticAssets.has(diagramAssetId ?? '') || respiratoryAssets.has(diagramAssetId ?? '') || digestiveAssets.has(diagramAssetId ?? '') || urinaryAssets.has(diagramAssetId ?? '') || maleReproductiveAssets.has(diagramAssetId ?? '') || femaleReproductiveAssets.has(diagramAssetId ?? '') || centeredNervousAssets.has(diagramAssetId ?? ''));
    useEffect(() => {
      gesture.updateScene({
@@ -215,7 +223,11 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [canvasSize.width, canvasSize.height, panBounds.x, panBounds.y, panBounds.width, panBounds.height]);
   const recordMarkerSize = (id: string, size: { width: number; height: number }) => {
-    const update = (current: Record<string, { width: number; height: number }>) => current[id]?.width === size.width && current[id]?.height === size.height ? current : { ...current, [id]: size };
+    // Geometry and fitting stay in unzoomed scene units.
+    const measured = { width: size.width / annotationScale, height: size.height / annotationScale };
+    const update = (current: Record<string, { width: number; height: number }>) =>
+      current[id] && Math.abs(current[id].width - measured.width) < 0.1 && Math.abs(current[id].height - measured.height) < 0.1
+        ? current : { ...current, [id]: measured };
     setMarkerSizes(update);
     if (!reflow) setFullMarkerSizes(update);
   };
@@ -237,8 +249,11 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
          <SharpAtlasImage xml={vectorXml} source={image.source}
            width={displayedImage.width} height={displayedImage.height} />
        </Animated.View>}
-       {source && (vectorXml || image.source) && <Animated.View testID="viewer-canvas" pointerEvents="box-none" style={[styles.canvas, gesture.canvasStyle]}>
-        <View testID="viewer-plate" pointerEvents="box-none" style={{ position: 'absolute', left: framing.left, top: framing.top, width: canvasSize.width, height: layoutHeight, transform: [{ scale: framing.scale }] }}>
+       {source && (vectorXml || image.source) && <Animated.View testID="viewer-canvas" pointerEvents="box-none" style={[{
+         position: 'absolute', left: displayedScene.x, top: displayedScene.y,
+         width: displayedScene.width, height: displayedScene.height,
+       }, gesture.translationStyle]}>
+        <View testID="viewer-plate" pointerEvents="box-none" style={{ width: displayedScene.width, height: displayedScene.height }}>
         {hotspots.map((hotspot, index) => {
           const selected = selectedHotspotId === hotspot.structureId;
           const feedback: AnswerFeedback | undefined = submitted
@@ -255,12 +270,12 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
           const highlightColor = feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : colors.primary;
           return <React.Fragment key={`${hotspot.structureId}-${hotspot.x}-${hotspot.y}`}>
             {fittedHighlight && (selected || feedback || revealLabels) && <PracticeSelectionHighlight
-              left={(1 - containedWidth) * canvasSize.width / 2}
-              top={(1 - containedHeight) * layoutHeight / 2}
-              width={containedWidth * canvasSize.width} height={containedHeight * layoutHeight}
+              left={(1 - containedWidth) * canvasSize.width / 2 * annotationScale}
+              top={(1 - containedHeight) * layoutHeight / 2 * annotationScale}
+              width={containedWidth * canvasSize.width * annotationScale} height={containedHeight * layoutHeight * annotationScale}
               color={highlightColor}
             />}
-            {callout && <><View pointerEvents="none" style={{ position: 'absolute', left: ax + dx / 2 - length / 2, top: ay + dy / 2, width: length, height: 1, backgroundColor: targetColor, opacity: 0.6, transform: [{ rotate: `${Math.atan2(dy, dx)}rad` }] }} /><View pointerEvents="none" style={{ position: 'absolute', left: ax - 2, top: ay - 2, width: 4, height: 4, borderRadius: 2, backgroundColor: targetColor }} /></>}
+            {callout && <><View pointerEvents="none" style={{ position: 'absolute', left: (ax + dx / 2 - length / 2) * annotationScale, top: (ay + dy / 2) * annotationScale, width: length * annotationScale, height: annotationScale, backgroundColor: targetColor, opacity: 0.6, transform: [{ rotate: `${Math.atan2(dy, dx)}rad` }] }} /><View pointerEvents="none" style={{ position: 'absolute', left: (ax - 2) * annotationScale, top: (ay - 2) * annotationScale, width: 4 * annotationScale, height: 4 * annotationScale, borderRadius: 2 * annotationScale, backgroundColor: targetColor }} /></>}
             <AnimatedAnswerPressable
             key={`${hotspot.structureId}-${hotspot.x}-${hotspot.y}`}
             disabled={!onHotspotPress || submitted}
@@ -270,15 +285,15 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
             accessibilityLabel={feedback === 'correct' ? locale.t('imageViewer.correctHotspot') : feedback === 'incorrect' ? locale.t('imageViewer.incorrectHotspot') : revealLabels ? locale.t('imageViewer.structureHotspot', { structureId: structureName(hotspot.structureId) }) : locale.t('imageViewer.hotspotNumber', { index: locale.number(index + 1) })}
             accessibilityHint={onHotspotPress && !submitted ? locale.t('imageViewer.selectHotspotHint') : undefined}
             accessibilityState={{ selected }}
-            hitSlop={questionHotspotCallouts ? undefined : reflow ? 16 : undefined}
+            hitSlop={questionHotspotCallouts ? undefined : reflow ? 16 * annotationScale : undefined}
             decorate={false}
             testID={`hotspot-${hotspot.structureId}`}
-             containerStyle={[styles.hotspot, questionHotspotCallouts && { alignItems: 'center', justifyContent: 'center' }, { left: position.x - position.width / 2, top: position.y - position.height / 2, width: position.width, height: position.height }]}
-              contentStyle={[styles.hotspotContent, questionHotspotCallouts && { width: paint.diameter, height: paint.diameter, alignSelf: 'center', borderWidth: paint.borderWidth }, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected || revealLabels ? colors.primary : questionHotspotCallouts ? colors.foreground : 'transparent', backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected ? colors.secondary : questionHotspotCallouts ? colors.card : 'transparent' }, !questionHotspotCallouts && { width: Math.min(position.width, 20), height: Math.min(position.height, 20), alignSelf: 'center', marginTop: Math.max(0, (position.height - Math.min(position.height, 20)) / 2), borderWidth: fittedHighlight ? 0 : 1.25, backgroundColor: 'transparent' }]}
+             containerStyle={[styles.hotspot, questionHotspotCallouts && { alignItems: 'center', justifyContent: 'center' }, { left: (position.x - position.width / 2) * annotationScale, top: (position.y - position.height / 2) * annotationScale, width: position.width * annotationScale, height: position.height * annotationScale }]}
+              contentStyle={[styles.hotspotContent, questionHotspotCallouts && { width: paint.diameter * annotationScale, height: paint.diameter * annotationScale, alignSelf: 'center', borderWidth: paint.borderWidth * annotationScale }, { borderColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected || revealLabels ? colors.primary : questionHotspotCallouts ? colors.foreground : 'transparent', backgroundColor: feedback === 'correct' ? colors.success : feedback === 'incorrect' ? colors.destructive : selected ? colors.secondary : questionHotspotCallouts ? colors.card : 'transparent' }, !questionHotspotCallouts && { width: Math.min(position.width, 20) * annotationScale, height: Math.min(position.height, 20) * annotationScale, alignSelf: 'center', marginTop: Math.max(0, (position.height - Math.min(position.height, 20)) / 2) * annotationScale, borderWidth: fittedHighlight ? 0 : 1.25 * annotationScale, backgroundColor: 'transparent' }]}
           >
              {fittedHighlight ? null : feedback ? reflow
-              ? <Feather name={feedback === 'correct' ? 'check' : 'x'} size={questionHotspotCallouts ? paint.numeralSize : 16} color={questionHotspotCallouts ? feedback === 'correct' ? colors.successForeground : colors.destructiveForeground : highlightColor} />
-              : <Text style={{ color: questionHotspotCallouts ? feedback === 'correct' ? colors.successForeground : colors.destructiveForeground : highlightColor, fontWeight: '800' }}>{feedback === 'correct' ? '✓' : '✕'}</Text> : questionHotspotCallouts ? <MarkerText style={{ color: colors.foreground, fontSize: paint.numeralSize, fontWeight: '700', textAlign: 'center' }}>{locale.number(index + 1)}</MarkerText> : null}
+              ? <Feather name={feedback === 'correct' ? 'check' : 'x'} size={(questionHotspotCallouts ? paint.numeralSize : 16) * annotationScale} color={questionHotspotCallouts ? feedback === 'correct' ? colors.successForeground : colors.destructiveForeground : highlightColor} />
+              : <Text style={{ color: questionHotspotCallouts ? feedback === 'correct' ? colors.successForeground : colors.destructiveForeground : highlightColor, fontSize: 14 * annotationScale, fontWeight: '800' }}>{feedback === 'correct' ? '✓' : '✕'}</Text> : questionHotspotCallouts ? <MarkerText style={{ color: colors.foreground, fontSize: paint.numeralSize * annotationScale, fontWeight: '700', textAlign: 'center' }}>{locale.number(index + 1)}</MarkerText> : null}
            </AnimatedAnswerPressable></React.Fragment>;
         })}
          {!questionHotspotCallouts && labels.map((label, index) => {
@@ -288,23 +303,26 @@ export function AnatomyImageViewer({ source, hotspots: suppliedHotspots = [], re
           const callout = callouts[index];
            const marker = labelPosition(label, index);
            const position = {
-             left: marker.x, top: marker.y,
-             maxWidth: Math.max(0, canvasSize.width - IMAGE_INSET * 2),
-             transform: [{ translateX: -marker.width / 2 }, { translateY: -marker.height / 2 }],
-             ...(reflow && { width: marker.width, height: marker.height }),
+             left: (marker.x - marker.width / 2) * annotationScale,
+             top: (marker.y - marker.height / 2) * annotationScale,
+             maxWidth: Math.max(0, canvasSize.width - IMAGE_INSET * 2) * annotationScale,
+             minWidth: 30 * annotationScale, minHeight: 30 * annotationScale,
+             paddingHorizontal: 6 * annotationScale, borderWidth: 2 * annotationScale,
+             borderRadius: 999,
+             ...(reflow && { width: marker.width * annotationScale, height: marker.height * annotationScale }),
            };
           const dx = callout ? callout.x - x * canvasSize.width : 0;
            const dy = callout ? callout.y - y * layoutHeight : 0;
           const length = Math.hypot(dx, dy);
           return <React.Fragment key={`label-${annotationKey(label)}`}>
-             {callout && <View pointerEvents="none" style={{ position: 'absolute', left: x * canvasSize.width + dx / 2 - length / 2, top: y * layoutHeight + dy / 2, width: length, height: 1, backgroundColor: visible ? colors.primary : ATLAS_CANVAS_INK, opacity: 0.6, transform: [{ rotate: `${Math.atan2(dy, dx)}rad` }] }} />}
-             {callout && <View pointerEvents="none" style={{ position: 'absolute', left: x * canvasSize.width - 2, top: y * layoutHeight - 2, width: 4, height: 4, borderRadius: 2, backgroundColor: visible ? colors.primary : ATLAS_CANVAS_INK }} />}
-              <Pressable onLayout={({ nativeEvent: { layout } }) => recordMarkerSize(label.structureId, { width: layout.width, height: layout.height })} disabled={revealLabels} onPress={() => toggleLabel(label.structureId)} accessibilityRole="button" accessibilityState={{ selected: visible, disabled: revealLabels }} accessibilityLabel={revealLabels ? locale.t('imageViewer.structureHotspot', { structureId: label.displayLabel }) : visible ? locale.t('imageViewer.hideMarker', { index: locale.number(index + 1), label: label.displayLabel }) : locale.t('imageViewer.revealMarker', { index: locale.number(index + 1), label: label.displayLabel })} accessibilityHint={revealLabels ? undefined : locale.t('imageViewer.markerHint')} hitSlop={labelCalloutLayout ? undefined : reflow ? 7 : undefined} style={[styles.labelMarker, labelCalloutLayout && { minWidth: 44, minHeight: 44 }, position, { borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card }, reflow && { minWidth: 44, minHeight: 44, paddingHorizontal: 0, borderWidth: 0, backgroundColor: 'transparent' }]}>
-               {reflow ? <View pointerEvents="none" testID={`marker-paint-${index + 1}`} style={{ width: paint.diameter, height: paint.diameter, borderRadius: paint.diameter / 2, borderWidth: paint.borderWidth, borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card, alignItems: 'center', justifyContent: 'center' }}>
+             {callout && <View pointerEvents="none" style={{ position: 'absolute', left: (x * canvasSize.width + dx / 2 - length / 2) * annotationScale, top: (y * layoutHeight + dy / 2) * annotationScale, width: length * annotationScale, height: annotationScale, backgroundColor: visible ? colors.primary : ATLAS_CANVAS_INK, opacity: 0.6, transform: [{ rotate: `${Math.atan2(dy, dx)}rad` }] }} />}
+             {callout && <View pointerEvents="none" style={{ position: 'absolute', left: (x * canvasSize.width - 2) * annotationScale, top: (y * layoutHeight - 2) * annotationScale, width: 4 * annotationScale, height: 4 * annotationScale, borderRadius: 2 * annotationScale, backgroundColor: visible ? colors.primary : ATLAS_CANVAS_INK }} />}
+              <Pressable onLayout={({ nativeEvent: { layout } }) => recordMarkerSize(label.structureId, { width: layout.width, height: layout.height })} disabled={revealLabels} onPress={() => toggleLabel(label.structureId)} accessibilityRole="button" accessibilityState={{ selected: visible, disabled: revealLabels }} accessibilityLabel={revealLabels ? locale.t('imageViewer.structureHotspot', { structureId: label.displayLabel }) : visible ? locale.t('imageViewer.hideMarker', { index: locale.number(index + 1), label: label.displayLabel }) : locale.t('imageViewer.revealMarker', { index: locale.number(index + 1), label: label.displayLabel })} accessibilityHint={revealLabels ? undefined : locale.t('imageViewer.markerHint')} hitSlop={labelCalloutLayout ? undefined : reflow ? 7 * annotationScale : undefined} style={[styles.labelMarker, position, { borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card }, reflow && { minWidth: 44 * annotationScale, minHeight: 44 * annotationScale, paddingHorizontal: 0, borderWidth: 0, backgroundColor: 'transparent' }]}>
+               {reflow ? <View pointerEvents="none" testID={`marker-paint-${index + 1}`} style={{ width: paint.diameter * annotationScale, height: paint.diameter * annotationScale, borderRadius: paint.diameter / 2 * annotationScale, borderWidth: paint.borderWidth * annotationScale, borderColor: visible ? colors.primary : colors.foreground, backgroundColor: visible ? colors.primary : colors.card, alignItems: 'center', justifyContent: 'center' }}>
                  {/* Numerals scale explicitly with typography settings, capped to fit;
                      accessible names remain complete; the dense legend has its own bounded scaling. */}
-                 <MarkerText style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: paint.numeralSize, fontWeight: '700', textAlign: 'center' }}>{visible ? locale.number(index + 1) : '?'}</MarkerText>
-               </View> : <Text style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: 11, fontWeight: '700', fontFamily: compactOverlayFont }}>{visible ? label.displayLabel : '?'}</Text>}
+                 <MarkerText style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: paint.numeralSize * annotationScale, fontWeight: '700', textAlign: 'center' }}>{visible ? locale.number(index + 1) : '?'}</MarkerText>
+               </View> : <Text style={{ color: visible ? colors.primaryForeground : colors.foreground, fontSize: 11 * annotationScale, fontWeight: '700', fontFamily: compactOverlayFont }}>{visible ? label.displayLabel : '?'}</Text>}
           </Pressable></React.Fragment>;
         })}
         </View>
@@ -332,7 +350,6 @@ function ViewerGestureSurface({ gesture, children }: { gesture: ReturnType<typeo
 const styles = StyleSheet.create({
   frame: { width: '100%', maxWidth: '100%', minWidth: 0, borderRadius: 16, borderWidth: 1, overflow: 'hidden', position: 'relative' },
    gestureArea: { width: '100%', maxWidth: '100%', minWidth: 0, aspectRatio: 1, overflow: 'hidden', backgroundColor: ATLAS_CANVAS_COLOR },
-  canvas: { position: 'absolute', left: 0, right: 0, top: 0, bottom: 0 },
    imageSurface: { position: 'absolute', overflow: 'hidden' },
    image: { width: '100%', height: '100%' },
   empty: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 24 },

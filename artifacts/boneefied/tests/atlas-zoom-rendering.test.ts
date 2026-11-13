@@ -55,6 +55,44 @@ test('SVG is drawn at final dimensions outside every scaled scene, with no inver
   assert.match(renderer, /allowDownscaling=\{false\}/);
 });
 
+test('annotations use final-size positions, glyphs and borders instead of magnifying a native layer', () => {
+  const viewer = readFileSync('components/AnatomyImageViewer.tsx', 'utf8');
+  const layer = viewer.slice(viewer.indexOf('testID="viewer-canvas"'), viewer.indexOf('</ViewerGestureSurface>'));
+  assert.match(layer, /gesture\.translationStyle/);
+  assert.doesNotMatch(layer, /gesture\.canvasStyle|scale: framing\.scale/);
+  assert.match(layer, /fontSize: paint\.numeralSize \* annotationScale/g);
+  assert.match(layer, /borderWidth: paint\.borderWidth \* annotationScale/);
+  assert.match(layer, /width: paint\.diameter \* annotationScale/);
+  assert.match(layer, /height: annotationScale/);
+  assert.match(viewer, /size\.width \/ annotationScale/);
+  assert.match(viewer, /size\.height \/ annotationScale/);
+});
+
+test('final-size annotation layout preserves every target and callout coordinate at all zoom levels', () => {
+  for (const width of [239, 316, 348, 390]) for (const height of [220, 396, 780]) {
+    const image = containedOverlayBox(width, height, 1.45, 12);
+    const fit = fitViewerScene(width, width, width, height,
+      [image, { x: -20, y: 0, width: 44, height: 44 }, { x: width - 44, y: height - 44, width: 80, height: 44 }]);
+    for (const zoom of [1, 1.5, 2, 2.5, 3, 4]) {
+      const scale = fit.scale * zoom;
+      const displayed = zoomedViewportRect(fittedSceneRect(
+        { x: 0, y: 0, width, height }, width, height, fit), width, width, zoom);
+      for (const point of [{ x: -20, y: 0 }, { x: 0, y: 0 }, { x: width / 2, y: height / 2 }, { x: width + 36, y: height }]) {
+        for (const pan of [-87, 0, 123]) {
+          const oldX = pan + width / 2 + zoom * (fit.left + fit.scale * (point.x - width / 2));
+          const oldY = pan + width / 2 + zoom * (fit.top + height / 2 + fit.scale * (point.y - height / 2) - width / 2);
+          assert.ok(Math.abs(displayed.x + point.x * scale + pan - oldX) < 1e-8);
+          assert.ok(Math.abs(displayed.y + point.y * scale + pan - oldY) < 1e-8);
+        }
+      }
+      // A marker's painted center and real hit area must share that projection.
+      const marker = { x: width / 3, y: height / 3, width: 44, height: 60 };
+      assert.ok(Math.abs((marker.x - marker.width / 2) * scale + marker.width * scale / 2 - marker.x * scale) < 1e-8);
+      assert.ok(Math.abs((marker.y - marker.height / 2) * scale + marker.height * scale / 2 - marker.y * scale) < 1e-8);
+    }
+  }
+});
+
 test('the retained pelvis uses a real publisher vector and a genuinely vector-rendered high-resolution fallback', () => {
   const base = 'assets/images/anatomy/';
   const proof = JSON.parse(readFileSync(base + 'pelvis-vector-recovery.json', 'utf8'));

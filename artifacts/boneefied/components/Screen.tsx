@@ -7,7 +7,6 @@ import { useTypographyLayout } from '@/components/ScaledText';
 import { KeyboardAwareScrollViewCompat } from '@/components/KeyboardAwareScrollViewCompat';
 import { ViewerScrollOwnership } from '@/components/ViewerScrollOwnership';
 import { OrganicBackground } from '@/components/OrganicBackground';
-import { useNavigation } from 'expo-router';
 
 export function Screen({ children, scroll = true, keyboardAware = false, belowHeader = false, systemHeading = false, scrollRef, onScroll, onViewportLayout, keyboardShouldPersistTaps }: {
   children: React.ReactNode;
@@ -21,7 +20,6 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
   keyboardShouldPersistTaps?: ScrollViewProps['keyboardShouldPersistTaps'];
 }) {
   const colors = useColors();
-  const navigation = useNavigation();
   const scrollNode = useRef<ScrollView | null>(null);
   const owners = useRef(new Set<symbol>());
   const scrollY = useRef(0);
@@ -31,11 +29,6 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
     if (active === owners.current.has(owner)) return;
     if (active) owners.current.add(owner); else owners.current.delete(owner);
     const locked = owners.current.size > 0;
-    // On iPhone, an image drag must not become the native stack's sideways
-    // back-swipe. Restore normal navigation as soon as the image releases it.
-    if (Platform.OS === 'ios' && navigation.getState()?.type === 'stack') {
-      navigation.setOptions({ gestureEnabled: !locked });
-    }
     // Stop native scroll interception before the next render commits.
     if (Platform.OS !== 'web') scrollNode.current?.setNativeProps({ scrollEnabled: !locked });
     if (locked && lockedScrollY.current === null) {
@@ -46,7 +39,7 @@ export function Screen({ children, scroll = true, keyboardAware = false, belowHe
       lockedScrollY.current = null;
     }
     setViewerOwnsGesture(locked);
-  }, [navigation]);
+  }, []);
   const ownership = useMemo(() => ({ setOwnership, getScrollY: () => scrollY.current }), [setOwnership]);
   const attachScroll = useCallback((node: ScrollView | null) => {
     scrollNode.current = node;
